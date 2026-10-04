@@ -1,0 +1,234 @@
+{
+  "recorded_utc": "2026-10-04T21:54:21.959496+00:00",
+  "scope": "Independent read-only audit of saved faithful_seed0 75k/80k/85k/90k/95k clean-validation records; not model execution, checkpoint selection, test evidence or final100k results",
+  "files": {
+    "75000": {
+      "path": "validation/step-075000.json",
+      "sha256": "38dd37f468fa80cdb451ffc5a020a6d8d41ac996ba986e02dec994a0fe2d0a9c"
+    },
+    "80000": {
+      "path": "validation/step-080000.json",
+      "sha256": "b0eaf88af367549136785fc499dd00e293c22c5a31c45f7be549456e5c5ab134"
+    },
+    "85000": {
+      "path": "validation/step-085000.json",
+      "sha256": "86a6d28e0af76d614c190841c5a13062f58518d1c1f7536e98c7cb1e154517b8"
+    },
+    "90000": {
+      "path": "validation/step-090000.json",
+      "sha256": "491a2ac991e40edee4d729cee808bdffcb1e899784cb4dceccba4d20f0ec1a09"
+    },
+    "95000": {
+      "path": "validation/step-095000.json",
+      "sha256": "37b03fca2cba2eb877bb7ca99ef3ac8213d5949701031f2c27fe254241da6e79"
+    }
+  },
+  "configuration": {
+    "protocol_file_sha256": "8db3f38465491a0daf6e3bd19a91e250c02f0543cf67562f9c232aa67ec607fe",
+    "canonical_run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+    "matches_previously_verified_config": true
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413",
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d"
+    },
+    "protocol_sha256": {
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true
+  },
+  "checks": {
+    "identity": 47,
+    "source_identity": 18,
+    "finite_scalar": 5360,
+    "domain": 1380,
+    "arithmetic": 1440,
+    "hash_stability": 20
+  },
+  "checks_total": 8265,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "75000": {
+      "coordinate_mse": 0.010776737417364186,
+      "constant_free_gaussian_nll": -4.001292216294064,
+      "realized_vector_se": 0.021553474834728373,
+      "predicted_vector_se": 0.029899820803910303,
+      "binned_vector_se_calibration_gap": 0.008346345969181924
+    },
+    "80000": {
+      "coordinate_mse": 0.009729250960350651,
+      "constant_free_gaussian_nll": -4.150785201598745,
+      "realized_vector_se": 0.019458501920701303,
+      "predicted_vector_se": 0.02669881769925138,
+      "binned_vector_se_calibration_gap": 0.0072403157785500775
+    },
+    "85000": {
+      "coordinate_mse": 0.008991907453859454,
+      "constant_free_gaussian_nll": -4.202498557723232,
+      "realized_vector_se": 0.017983814907718908,
+      "predicted_vector_se": 0.028576840045667996,
+      "binned_vector_se_calibration_gap": 0.010593025137949085
+    },
+    "90000": {
+      "coordinate_mse": 0.008911862054014985,
+      "constant_free_gaussian_nll": -4.214704824346024,
+      "realized_vector_se": 0.01782372410802997,
+      "predicted_vector_se": 0.029382809242329038,
+      "binned_vector_se_calibration_gap": 0.011559085134299062
+    },
+    "95000": {
+      "coordinate_mse": 0.0087990398717906,
+      "constant_free_gaussian_nll": -4.32454246658986,
+      "realized_vector_se": 0.0175980797435812,
+      "predicted_vector_se": 0.02472759799915713,
+      "binned_vector_se_calibration_gap": 0.007129518255575929
+    }
+  },
+  "comparisons": {
+    "80000_versus_75000": {
+      "coordinate_mse": {
+        "difference": -0.001047486457013535,
+        "percent_change": -9.719884752186282
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.14949298530468091,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.00209497291402707,
+        "percent_change": -9.719884752186282
+      },
+      "predicted_vector_se": {
+        "difference": -0.0032010031046589248,
+        "percent_change": -10.705760163754219
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.0011060301906318463,
+        "percent_change": -13.251669589491687
+      }
+    },
+    "85000_versus_80000": {
+      "coordinate_mse": {
+        "difference": -0.0007373435064911976,
+        "percent_change": -7.578625625919955
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.051713356124487575,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.0014746870129823952,
+        "percent_change": -7.578625625919955
+      },
+      "predicted_vector_se": {
+        "difference": 0.0018780223464166176,
+        "percent_change": 7.034103036215256
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0033527093593990077,
+        "percent_change": 46.30612064368289
+      }
+    },
+    "90000_versus_85000": {
+      "coordinate_mse": {
+        "difference": -8.004539984446911e-05,
+        "percent_change": -0.8901937687327166
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.01220626662279134,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.00016009079968893822,
+        "percent_change": -0.8901937687327166
+      },
+      "predicted_vector_se": {
+        "difference": 0.0008059691966610417,
+        "percent_change": 2.8203580079989354
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0009660599963499765,
+        "percent_change": 9.119774415422711
+      }
+    },
+    "95000_versus_90000": {
+      "coordinate_mse": {
+        "difference": -0.00011282218222438516,
+        "percent_change": -1.2659776547321755
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.10983764224383652,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.0002256443644487703,
+        "percent_change": -1.2659776547321755
+      },
+      "predicted_vector_se": {
+        "difference": -0.004655211243171909,
+        "percent_change": -15.843315745540032
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.004429566878723133,
+        "percent_change": -38.32108533900629
+      }
+    },
+    "95000_versus_75000": {
+      "coordinate_mse": {
+        "difference": -0.001977697545573587,
+        "percent_change": -18.351542484342165
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.32325025029579635,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.003955395091147174,
+        "percent_change": -18.351542484342165
+      },
+      "predicted_vector_se": {
+        "difference": -0.0051722228047531744,
+        "percent_change": -17.298507702349674
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.0012168277136059948,
+        "percent_change": -14.5791669564024
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Reads completed validation JSON, saved configuration, frozen numerical source/protocol bytes and the prior75k scalar audit.",
+    "No checkpoints, models, datasets, reserved test files or particle-level predictions were loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be recovered independently.",
+    "Raw dataset content hashes and native process identity are not reverified here; saved dataset identities remain protected by the canonical configuration hash.",
+    "These records follow previously documented20k restart/recovery; this audit does not certify bitwise-identical continuation.",
+    "No100k artifact was checked and no wait or polling for completion was performed."
+  ]
+}

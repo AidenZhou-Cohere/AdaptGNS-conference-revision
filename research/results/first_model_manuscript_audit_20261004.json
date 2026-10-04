@@ -1,0 +1,277 @@
+{
+  "schema": "new_paragraph_saved_evidence_audit_v1",
+  "recorded_utc": "2026-10-04T22:26:52.286312+00:00",
+  "scope": "Only the First completed model; study incomplete paragraph against retained summary/status/hash records, plus structural label/citation inventory of the actual complete document. No prior-manuscript numerical re-audit.",
+  "source_sha256": "59c97b7fa0572b40dcd6c5805031d16d7bf880ea6434868fe83ea182fc89d971",
+  "paragraph_sha256": "15e4724d517046bf67c58cd257a973dc1f4dd66fe50c96e71065ea630bb75584",
+  "paragraph_lines": [
+    1124,
+    1137
+  ],
+  "inputs": {
+    "manuscript": {
+      "path": "outputs/revised_manuscript.tex",
+      "sha256": "59c97b7fa0572b40dcd6c5805031d16d7bf880ea6434868fe83ea182fc89d971"
+    },
+    "validation_summary": {
+      "path": "work/validation_2223/full_validation_curves.json",
+      "sha256": "02277dff6839561f5f28cfc889fece165d44d22b53a9fd88df41658ee7a0c6aa"
+    },
+    "progress_snapshot": {
+      "path": "outputs/training_progress.json",
+      "sha256": "b4a87c314fdd60b2f901e3191c9dfd2dd17984115eb3cbf155da66aac90fcb95"
+    },
+    "checkpoint_hash_record": {
+      "path": "work/validation_2223/checkpoint100k_hash.json",
+      "sha256": "7790917e6ee27b7c00d0d5df1ae1aae7f35222cdc947dc07c06859946df0955c"
+    }
+  },
+  "check_count": 33,
+  "passed_count": 33,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "new paragraph occurs exactly once",
+      "passed": true
+    },
+    {
+      "name": "faithful final coordinate MSE",
+      "passed": true,
+      "source_value": 0.008118621072848638,
+      "printed": "0.00811862",
+      "decimal_places": 8
+    },
+    {
+      "name": "faithful final binned vector-risk gap",
+      "passed": true,
+      "source_value": 0.012286419130256788,
+      "printed": "0.01228642",
+      "decimal_places": 8
+    },
+    {
+      "name": "faithful 95k binned vector-risk gap",
+      "passed": true,
+      "source_value": 0.007129518255575928,
+      "printed": "0.00712952",
+      "decimal_places": 8
+    },
+    {
+      "name": "faithful 95k Gaussian NLL",
+      "passed": true,
+      "source_value": -4.32454246658986,
+      "printed": "-4.32454",
+      "decimal_places": 5
+    },
+    {
+      "name": "faithful final Gaussian NLL",
+      "passed": true,
+      "source_value": -4.286717604983559,
+      "printed": "-4.28672",
+      "decimal_places": 5
+    },
+    {
+      "name": "NLL 5k coordinate MSE",
+      "passed": true,
+      "source_value": 0.03379660164042116,
+      "printed": "0.03379660",
+      "decimal_places": 8
+    },
+    {
+      "name": "NLL initial coordinate MSE",
+      "passed": true,
+      "source_value": 0.0211256104354069,
+      "printed": "0.02112561",
+      "decimal_places": 8
+    },
+    {
+      "name": "faithful error falls from95k to100k",
+      "passed": true
+    },
+    {
+      "name": "faithful risk gap rises from95k to100k",
+      "passed": true
+    },
+    {
+      "name": "faithful constant-free Gaussian NLL worsens",
+      "passed": true
+    },
+    {
+      "name": "NLL 5k MSE is above initialization",
+      "passed": true
+    },
+    {
+      "name": "faithful seed0 completes specified100k",
+      "passed": true
+    },
+    {
+      "name": "all21 scheduled faithful records retained",
+      "passed": true
+    },
+    {
+      "name": "NLL seed0 started but is incomplete",
+      "passed": true
+    },
+    {
+      "name": "exactly four requested models not started",
+      "passed": true
+    },
+    {
+      "name": "no matched final objective pair",
+      "passed": true
+    },
+    {
+      "name": "no three-seed result caveat present",
+      "passed": true
+    },
+    {
+      "name": "reserved full-model test result caveat present",
+      "passed": true
+    },
+    {
+      "name": "no convergence calibration allocation runtime claim",
+      "passed": true
+    },
+    {
+      "name": "diagnostic direction differences retained",
+      "passed": true
+    },
+    {
+      "name": "saved status agrees on completed final model",
+      "passed": true
+    },
+    {
+      "name": "saved checkpoint hash agrees with final pointer",
+      "passed": true
+    },
+    {
+      "name": "byte hash verification scope limits preserved",
+      "passed": true
+    },
+    {
+      "name": "October4 snapshot dating matches retained evidence",
+      "passed": true
+    },
+    {
+      "name": "exactly one actual begin and end document",
+      "passed": true
+    },
+    {
+      "name": "actual document delimiters correctly ordered",
+      "passed": true
+    },
+    {
+      "name": "all document labels unique",
+      "passed": true
+    },
+    {
+      "name": "all document references resolve",
+      "passed": true
+    },
+    {
+      "name": "all bibliography keys unique",
+      "passed": true
+    },
+    {
+      "name": "all document citation keys resolve",
+      "passed": true
+    },
+    {
+      "name": "new paragraph contains no unregistered label or citation",
+      "passed": true
+    },
+    {
+      "name": "audited input bytes unchanged during check",
+      "passed": true
+    }
+  ],
+  "structural_inventory": {
+    "actual_document_begin_count": 1,
+    "actual_document_end_count": 1,
+    "label_count": 25,
+    "unique_label_count": 25,
+    "labels": [
+      "eq:budget",
+      "eq:decomposition",
+      "eq:faithful",
+      "eq:interaction-regret",
+      "eq:mixed-difference-remainder",
+      "eq:nll",
+      "eq:noise-risk-decomposition",
+      "eq:noise-target-identity",
+      "eq:noise-toy-clean-risk",
+      "eq:noise-toy-posterior",
+      "eq:nonadditive-regret",
+      "eq:regret",
+      "eq:uniform-additive-approximation",
+      "sec:full-protocol",
+      "sec:noise-augmentation",
+      "sec:nonadditive-allocation",
+      "sec:physical-allocation",
+      "sec:physical-rank",
+      "sec:tie-symmetry",
+      "tab:legacy",
+      "tab:physical-allocation-mse",
+      "tab:physical-allocation-paired",
+      "tab:physical-rank",
+      "tab:pilot",
+      "tab:rollout"
+    ],
+    "reference_count": 12,
+    "unique_reference_count": 10,
+    "references": {
+      "eq:budget": 1,
+      "eq:faithful": 1,
+      "eq:nll": 3,
+      "sec:full-protocol": 1,
+      "sec:noise-augmentation": 1,
+      "sec:nonadditive-allocation": 1,
+      "tab:legacy": 1,
+      "tab:physical-allocation-mse": 1,
+      "tab:pilot": 1,
+      "tab:rollout": 1
+    },
+    "bibliography_count": 12,
+    "unique_bibliography_count": 12,
+    "bibliography_keys": [
+      "battaglia2016",
+      "graber2020",
+      "kipf2018",
+      "kumar2023",
+      "pfaff2021",
+      "sanchez2020",
+      "seitzer2022",
+      "seo2025",
+      "stirn2023",
+      "topping2022",
+      "toshev2024",
+      "wu2023"
+    ],
+    "citation_command_count": 14,
+    "citation_key_occurrence_count": 15,
+    "unique_citation_count": 12,
+    "citations": {
+      "battaglia2016": 2,
+      "graber2020": 1,
+      "kipf2018": 1,
+      "kumar2023": 1,
+      "pfaff2021": 1,
+      "sanchez2020": 2,
+      "seitzer2022": 1,
+      "seo2025": 1,
+      "stirn2023": 2,
+      "topping2022": 1,
+      "toshev2024": 1,
+      "wu2023": 1
+    },
+    "duplicate_labels": [],
+    "duplicate_bibliography_keys": [],
+    "missing_reference_keys": [],
+    "missing_citation_keys": []
+  },
+  "limitations": [
+    "Numeric claims checked against saved scalar records only; models, datasets and checkpoint bytes were not loaded or rehashed by this audit.",
+    "Checkpoint byte-verification claim relies on the retained hash record and its saved pointer agreement.",
+    "Structural checks are not a TeX parser, visual inspection or a new native compilation; native compilation was performed separately.",
+    "No three-seed means, test results, convergence, calibration, allocation usefulness or runtime superiority are certified."
+  ]
+}

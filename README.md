@@ -123,6 +123,8 @@ Training and the evaluation scripts accept `--device=mps --radius_backend=scipy_
 
 The [fixed protocol](research/protocols/full_waterdrop_100k.md) uses the original 128-wide, ten-block architecture, all 1,000 training trajectories, three paired seeds and two objectives. Its 100,000-update target is shorter than the historical 500,000-update runs. The completed compact pilot must not be presented as this larger experiment.
 
+At the October 4, 2026, 22:24 UTC snapshot, the first fixed model (faithful seed 0) has completed 100,000 updates and its final checkpoint byte hash matches the saved pointer. NLL seed 0 is training; the other four models remain unstarted. The [complete saved validation curves](research/results/full_validation_curves_20261004.md) retain all 21 faithful and first two NLL observations, including adverse risk-scale/likelihood changes at the faithful endpoint. The [completion audit](research/results/first_model_completion_audit_20261004.json) keeps retained-checkpoint elapsed time, original wall span and rollback-omitted work distinct. The [verification record](research/results/first_model_verification_20261004.json) records checkpoint identity, 6,818 new saved-record checks and the incomplete six-model/test scope. No full-model three-seed or reserved test result is available.
+
 Download complete official `train.tfrecord`, `valid.tfrecord`, and `metadata.json` to a data directory. The conversion streams and verifies every CRC, retains trajectory IDs, verifies content uniqueness across splits, and publishes a numeric memory-mapped manifest only when complete. It defaults to converting train and validation; test evaluation remains a separate locked step.
 
 ```bash
