@@ -142,3 +142,28 @@ PYTORCH_ENABLE_MPS_FALLBACK=0 python -m research.full_training \
 `full_training` derives a paired frame/noise schedule from seed and update index, uses clean fixed validation frames with stored training normalization, records source/data/software hashes, and atomically saves model and Adam state. `--resume` requires identical configuration and hashes. `--clear-stale-lock` verifies a previous PID is dead before taking ownership. `--stop-after` pauses at an optimizer boundary without changing the target budget; nonstandard `--steps` and other protocol overrides are explicitly labeled.
 
 `research/run_full_queue.py` executes the six fixed jobs sequentially, stops on a numerical failure, verifies completed checkpoint hashes, and enforces an explicit UTC deadline. Its default deadline is specific to this October 2026 revision; set `--deadline-utc` for later reproduction. It never evaluates the test split. Live long-run output is kept local and gitignored until curated final results are published.
+
+`research/monitor_training.py` reads progress without changing the run. It verifies the saved configuration and frozen source hashes, separates PID presence from command-identity verification, and reports conditional throughput projections. A projection is not a promised completion time or permission to change the fixed budget.
+
+```bash
+python -m research.monitor_training --output training_progress.json
+python -m research.summarize_full_rollouts \
+  --evaluation-root research/results/full_waterdrop_rollouts \
+  --output-prefix research/results/full_rollout_summary
+```
+
+The rollout summarizer reads only evaluator artifacts. It verifies protocol, data/checkpoint provenance and record/trace hashes, recomputes metrics from per-step records, and gives equal-trajectory seed means followed by the three-seed mean and sample SD. Boundary excursions include ground-truth references; failed prefixes are separate from undefined full-horizon means. Missing models, interrupted evaluations and failed trajectories remain explicit. `full_rollout_pending.json` is a pending-only schema demonstration, not an experiment result.
+
+`research/full_same_state.py` implements the [separate companion diagnostic](research/protocols/full_same_state_diagnostic.md): identical observed histories, exact pair budgets, signed dense-intervention benefit, tie/overlap audits and repeated synchronized runtime. Its previous-observed-base score is a teacher-forced lag diagnostic, not the autonomous cached-own-graph controller. Natural base-radius timing is separated from the expanded-superset reference overhead. No new full-model test outcomes have been collected.
+
+```bash
+python -m research.full_same_state --help
+python -m research.summarize_full_same_state \
+  --evaluation-root research/results/full_waterdrop_same_state \
+  --output-prefix research/results/full_same_state_summary
+python -m research.noise_target_toy
+```
+
+The [noise-target derivation](research/notes/noise_augmentation_analysis.md) and [tie-symmetry analysis](research/notes/tie_symmetry_analysis.md) state their assumptions and limits. The Gaussian toy uses synthetic draws only; it does not estimate WaterDrop's augmentation effect.
+
+The same-state summarizer validates all six final-model identities and 297 prescribed frames per model, keeps natural/shared-base costs and current/previous risk correlations separate, and requires exactly three seed means. Its `full_same_state_pending` artifacts contain no experimental outcomes. Latest verification: 161 tests passed with one sandbox-only MPS skip in the combined suite; the subsequent standalone same-state summarizer passed 29 additional focused tests. Native Metal integration was tested separately before the fixed training queue launched.

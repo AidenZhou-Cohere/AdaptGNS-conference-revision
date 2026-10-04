@@ -1,0 +1,39 @@
+{
+  "scope": "Software verification; no new full-model test outcomes",
+  "date_utc": "2026-10-04",
+  "checks": [
+    {
+      "command": "PYTHONPATH=\"$PWD:$PWD/adaptive-gns\" PYTORCH_ENABLE_MPS_FALLBACK=0 python -m pytest tests research/tests -q",
+      "passed": 161,
+      "skipped": 1,
+      "seconds": 115.89,
+      "scope": "Combined suite before subsequent standalone same-state summarizer was added",
+      "skip_reason": "Native MPS unavailable inside restricted sandbox; previously verified separately outside it"
+    },
+    {
+      "command": "python -m pytest research/tests/test_summarize_full_same_state.py -q",
+      "passed": 29,
+      "skipped": 0,
+      "seconds": 32.16,
+      "scope": "Subsequent standalone same-state summarizer; synthetic artifacts only"
+    }
+  ],
+  "source_sha256": {
+    "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+    "research/monitor_training.py": "29c598845b8816a25c03c0effd3e23a3374baa3a67490e641927e6ed6ba1b0d6",
+    "research/noise_target_toy.py": "8624830b6790333123f5cb0d5e7d8a13f1ac72670c89a209928e2738c37eea3a",
+    "research/summarize_full_rollouts.py": "fee246c0abe0a289374dcc7b383be8827579fdeb711f966ae9d2a3480048070b",
+    "research/summarize_full_same_state.py": "2d8de802b4109c9dc84cdbb5c53a72b28942cb6fdbacfd8437ea884bb7487065",
+    "research/tests/test_full_same_state.py": "e4d4cf25d788b341ffb476e20dd8d8c90654e4c1b992de188121f019524354bb",
+    "research/tests/test_monitor_training.py": "0a95e4e453c281c362e8e06faf1b4a16784801a255cc7d220e3c75a009b91ed6",
+    "research/tests/test_summarize_full_rollouts.py": "1d1c5d9a1d8e14ff5eb5647e710249e0683b624ff439677dd3bd34fcd309fb17",
+    "research/tests/test_summarize_full_same_state.py": "a2c555e7a760e223580ce0a85a5b2951a782c063210a8288b002d5adc07f2dcc",
+    "research/protocols/full_same_state_diagnostic.md": "e59a351b14753802d43bbfaec69d9d45e009c895330d599a2848bc268783d381",
+    "research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+  },
+  "notes": [
+    "No frozen training source or training protocol changed.",
+    "Same-state evaluator CPU integration and strict resume passed on an existing 100-update smoke checkpoint; no performance claim.",
+    "Gaussian covariance/Monte Carlo check is synthetic, not a particle benchmark."
+  ]
+}

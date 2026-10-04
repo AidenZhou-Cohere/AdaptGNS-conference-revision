@@ -1,0 +1,111 @@
+{
+  "scope": "interim training validation, not final model evaluation or test evidence",
+  "recorded_utc": "2026-10-04T17:05:46.429148+00:00",
+  "total_requested_updates": 600000,
+  "total_completed_updates": 6700,
+  "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+  "cutoff_utc": "2026-10-07T08:00:00+00:00",
+  "conditional_projections": {
+    "observed_average": {
+      "seconds_per_update": 0.42659665486758797,
+      "remaining_training_hours": 70.30549870359442,
+      "projected_training_finish_utc": "2026-10-07T15:24:06.224481+00:00",
+      "after_cutoff": true
+    },
+    "recent_median": {
+      "seconds_per_update": 0.4707830747845583,
+      "remaining_training_hours": 77.58766618602178,
+      "projected_training_finish_utc": "2026-10-07T22:41:02.027418+00:00",
+      "after_cutoff": true
+    }
+  },
+  "projection_limitations": "Uses the queue-designated child only. Process command identities require separate verification. Assumes the same future per-update throughput for all models; ignores future contention changes, startup and new evaluation time. Not a promised completion time.",
+  "models": [
+    {
+      "name": "faithful_seed0",
+      "objective": "faithful",
+      "seed": 0,
+      "state": "running",
+      "completed_steps": 6700,
+      "frozen_source_mismatches": [],
+      "error": null,
+      "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+      "validation_history": [
+        {
+          "completed_steps": 0,
+          "file": "step-000000.json",
+          "sha256": "c4edb1bfb3cd5c4bd5218350f302576aa1ac2315b9a9fb79a95cd6ebac18a603",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.021125610390886555,
+            "constant_free_gaussian_nll": -0.3152761122887743,
+            "realized_vector_se": 0.04225122078177311,
+            "predicted_vector_se": 1.4183808358257457
+          },
+          "binned_vector_se_calibration_gap": 1.3761296150439724
+        },
+        {
+          "completed_steps": 5000,
+          "file": "step-005000.json",
+          "sha256": "48429967b65b4a5d9cfeab71fe80f16dc9321bc6866b5b3734478a76331f55fa",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.03245334100884738,
+            "constant_free_gaussian_nll": -2.5843131234270804,
+            "realized_vector_se": 0.06490668201769476,
+            "predicted_vector_se": 0.11158324338982735
+          },
+          "binned_vector_se_calibration_gap": 0.04667656137213259
+        }
+      ]
+    },
+    {
+      "name": "nll_seed0",
+      "objective": "nll",
+      "seed": 0,
+      "state": "not_started",
+      "completed_steps": 0,
+      "frozen_source_mismatches": null,
+      "error": null,
+      "validation_history": []
+    },
+    {
+      "name": "faithful_seed1",
+      "objective": "faithful",
+      "seed": 1,
+      "state": "not_started",
+      "completed_steps": 0,
+      "frozen_source_mismatches": null,
+      "error": null,
+      "validation_history": []
+    },
+    {
+      "name": "nll_seed1",
+      "objective": "nll",
+      "seed": 1,
+      "state": "not_started",
+      "completed_steps": 0,
+      "frozen_source_mismatches": null,
+      "error": null,
+      "validation_history": []
+    },
+    {
+      "name": "faithful_seed2",
+      "objective": "faithful",
+      "seed": 2,
+      "state": "not_started",
+      "completed_steps": 0,
+      "frozen_source_mismatches": null,
+      "error": null,
+      "validation_history": []
+    },
+    {
+      "name": "nll_seed2",
+      "objective": "nll",
+      "seed": 2,
+      "state": "not_started",
+      "completed_steps": 0,
+      "frozen_source_mismatches": null,
+      "error": null,
+      "validation_history": []
+    }
+  ]
+}
