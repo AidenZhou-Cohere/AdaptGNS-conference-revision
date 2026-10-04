@@ -137,5 +137,49 @@
     "analysis_sha256": "9a3856d0a7906b3023e473e62bc7269d5139651e255b425994d264cb7ac68b8b",
     "independent_saved_array_checks": 33070,
     "mismatches": 0
+  },
+  "interim_saved_validation_1953": {
+    "scope": "Interim saved-record update; no model/data/test-source access or training modification",
+    "progress_recorded_utc": "2026-10-04T19:53:48.547964+00:00",
+    "recorded_training_updates": 36700,
+    "latest_validation_updates": 35000,
+    "latest_validation_sha256": "d821bf984aa0f8825f75899328f7c4d59242518bb130a46688f16e9823110224",
+    "preserved_previous_points": 6,
+    "new_points": 2,
+    "independent_saved_record_checks": 4940,
+    "independent_saved_record_anomalies": 0,
+    "checkpoint_verified": {
+      "model": "faithful_seed0",
+      "completed_steps": 30000,
+      "path": "checkpoint-030000.pt",
+      "sha256": "5b882bc93ea063aa52a7314fac2bccb3a3b70f5cd42ffb978a20e6ff77f9502d",
+      "file_hash_verified_utc": "2026-10-04T19:55:09+00:00",
+      "scope": "byte hash only; no checkpoint reload, selection or test evaluation"
+    },
+    "current_frozen_sources_verified": true,
+    "native_process_identity": {
+      "supervisor": 2778,
+      "child": 2780,
+      "caffeinate": 2779,
+      "scope": "command and parent chain reverified19:53; no process action"
+    },
+    "report": {
+      "pages": 8,
+      "sha256": "db4766aec8de9f6bb2f77e54d846061c5b871f14f832bcf7831b8b4a0316a4d3",
+      "source_sha256": "8644a0683e6c8afa499151fc92b8f1a1004e15ae31da88bc31376ba75cc9b40c",
+      "visual_checked_pages": [
+        1,
+        7,
+        8
+      ],
+      "new_physical_page": "Previously reported exploratory compact-pilot results; no new physical outcome calculations"
+    },
+    "manuscript": {
+      "sha256": "9cbc9c122fc5bdbdf48884e5e46e813a7651fe35da6923bbbb0d3f55500cf51c",
+      "changed": false,
+      "prior_native_compile": "success after physical appendix; no redundant compilation"
+    },
+    "all_three_seed_means": "null; required seeds incomplete",
+    "full_test_evaluation": "not started; gate remains closed"
   }
 }
