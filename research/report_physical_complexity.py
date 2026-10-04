@@ -37,6 +37,7 @@ def render(source, prefix):
     matrix = np.array([[table[group][key]['mean'] if table[group][key]['mean'] is not None else np.nan
                         for group in groups] for key in METRICS])
     fig, ax = plt.subplots(figsize=(13.5, 9.5), layout='constrained')
+    fig.get_layout_engine().set(rect=(0, .035, 1, .965))
     cmap = plt.get_cmap('RdBu_r').copy()
     cmap.set_bad('#dddddd')
     heat = ax.imshow(np.ma.masked_invalid(matrix), cmap=cmap, vmin=-1, vmax=1, aspect='auto')
@@ -84,7 +85,7 @@ def render(source, prefix):
               'included and excluded particles are preserved in JSON. Particle–frame pairs are repeated '
               'observations, not independent samples. Box clearance is not a free-surface detector.', '']
     for conditional, title in ((False, 'Unconditional associations'), (True, 'Defined-frame conditional associations')):
-        lines += ['## '+title, '', '| Descriptor | '+' | '.join(groups)+' |', '|---|'+'---:|'*len(groups)]
+        lines += ['', '## '+title, '', '| Descriptor | '+' | '.join(groups)+' |', '|---|'+'---:|'*len(groups)]
         for key in METRICS:
             lines.append('| '+LABELS[key]+' | '+' | '.join(format_stat(table[g][key], conditional) for g in groups)+' |')
         if conditional:

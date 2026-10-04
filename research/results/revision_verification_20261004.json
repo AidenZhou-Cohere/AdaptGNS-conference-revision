@@ -50,6 +50,13 @@
       "skipped": 0,
       "seconds": 0.06,
       "scope": "Synthetic restart-marker regression, no benchmark data/model/GPU; independently reviewed"
+    },
+    {
+      "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 python -m pytest research/tests/test_physical_complexity.py research/tests/test_rank_diagnostics.py research/tests/test_analyze_physical_complexity.py -q",
+      "passed": 122,
+      "failed": 0,
+      "seconds": 1.07,
+      "scope": "New physical diagnostics: analytic geometry, rank and wrapper tests, synthetic only"
     }
   ],
   "source_sha256": {
@@ -124,5 +131,11 @@
     "numerical_mismatches": 0,
     "scope": "Saved scalar artifacts, source and manuscript text; no new experiments, checkpoint/raw-array/test-source reads",
     "record_sha256": "e885ad69885924eaac34c1d66edaa151a7bfbc857258dfebaf724771a54bb93a"
+  },
+  "physical_complexity_diagnostic": {
+    "verification_sha256": "bfd2ec716a04af7dbfc7d9ad554fd3de5ca605ec0cbfd2d380b23cdc7e4a79ae",
+    "analysis_sha256": "9a3856d0a7906b3023e473e62bc7269d5139651e255b425994d264cb7ac68b8b",
+    "independent_saved_array_checks": 33070,
+    "mismatches": 0
   }
 }

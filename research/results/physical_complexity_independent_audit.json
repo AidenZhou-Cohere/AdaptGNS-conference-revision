@@ -1,0 +1,65 @@
+{
+  "scope": "Independent read-only cached-artifact audit; no source datasets, checkpoints, models or training accessed",
+  "recorded_utc": "2026-10-04T19:41:32.438499+00:00",
+  "analysis_sha256": "9a3856d0a7906b3023e473e62bc7269d5139651e255b425994d264cb7ac68b8b",
+  "geometry_sha256": "3ec040367eb6ca27941244f4b93675daa1e580d3d6fd23d3d4bdf283b6f9f67f",
+  "reference_summary_sha256": "dccb0a318feb252c02b284f72fc683627060c5723d1d379b7ad66c7345522a4d",
+  "audit_source_sha256": "ec267e5d534ce2427a12c9d42a6392b3501964ea41b7f7cd42425b4873bc6d0c",
+  "methods": {
+    "all_particle_correlations": "scipy.stats.spearmanr across all 15 models x 72 frames x 2 outcomes; compare current and original summaries",
+    "primary_representatives": "Every objective/seed/split, split frame indexes 0,17,35: 90 frames x strain/vorticity, direct scipy Spearman and pivoted-QR partial ranks",
+    "gradient_descriptors": "All 72 cached gradient fields: independent closed-form strain, vorticity and divergence scalars",
+    "aggregation": "All 14 metrics, all trajectory/split/seed levels; direct equal-weight sums and sample-SD formula",
+    "qr_rank_tolerance": "1e-12 times largest pivoted-R diagonal; independent from producer SVD solve; all compared ranks required to agree",
+    "numeric_tolerances": {
+      "atol": 2e-11,
+      "rtol": 1e-11,
+      "identities_counts_signed_benefit": "exact"
+    }
+  },
+  "counts": {
+    "hash": 38,
+    "geometry_count": 434,
+    "gradient_scalar": 216,
+    "mask": 216,
+    "frame_count": 30,
+    "frame_identity": 10800,
+    "signed_benefit": 1080,
+    "all_particle_scipy": 2160,
+    "original_summary_scipy": 2160,
+    "risk_coverage": 6480,
+    "representative_scipy": 180,
+    "representative_qr": 180,
+    "representative_qr_rank": 180,
+    "representative_qr_dof": 180,
+    "trajectory_aggregation": 5040,
+    "split_aggregation": 2100,
+    "seed_aggregation": 1596
+  },
+  "total_checks": 33070,
+  "maximum_absolute_discrepancy_by_check_kind": {
+    "geometry_count": 0.0,
+    "gradient_scalar": 5.551115123125783e-17,
+    "mask": 0.0,
+    "frame_count": 0.0,
+    "frame_identity": 0.0,
+    "signed_benefit": 0.0,
+    "all_particle_scipy": 4.440892098500626e-16,
+    "original_summary_scipy": 0.0,
+    "risk_coverage": 0.0,
+    "representative_scipy": 3.3306690738754696e-16,
+    "representative_qr": 4.440892098500626e-16,
+    "representative_qr_rank": 0.0,
+    "representative_qr_dof": 0.0,
+    "trajectory_aggregation": 2.220446049250313e-16,
+    "split_aggregation": 2.220446049250313e-16,
+    "seed_aggregation": 2.220446049250313e-16
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1"
+  }
+}

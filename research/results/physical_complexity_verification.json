@@ -1,0 +1,82 @@
+{
+  "scope": "Exploratory cached compact-pilot physical descriptors; no new models or reserved full-test access",
+  "recorded_utc": "2026-10-04T19:42:07+00:00",
+  "analysis_source_commit_before_outcomes": "4a10565",
+  "input_summary_commit": "d061cefd372ae31f7d3f71a0540cd595cffb23db",
+  "tests": {
+    "command": "OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 python -m pytest research/tests/test_physical_complexity.py research/tests/test_rank_diagnostics.py research/tests/test_analyze_physical_complexity.py -q",
+    "passed": 122,
+    "failed": 0,
+    "seconds": 1.07,
+    "scope": "synthetic only"
+  },
+  "development_failure": {
+    "passed": 121,
+    "failed": 1,
+    "cause": "Oldest of three observed frames was not checked for finite values",
+    "resolution": "Full-history finite validation added before any real physical correlations; all122 tests then passed"
+  },
+  "independent_saved_array_audit": {
+    "checks": 33070,
+    "mismatches": 0,
+    "sha256": "ddaab5388ec38135c2b59ea18ae100afd94c439ea32f86edc2fa3243e5dc06e2"
+  },
+  "manuscript_audit": {
+    "scope": "New physical appendix table and coverage check against saved scalar results; structural manuscript references only",
+    "manuscript_sha256": "9cbc9c122fc5bdbdf48884e5e46e813a7651fe35da6923bbbb0d3f55500cf51c",
+    "numeric_checks": 26,
+    "checks": [
+      "faithful/valid/strain",
+      "faithful/valid/strain_partial",
+      "faithful/valid/vorticity",
+      "faithful/valid/vorticity_partial",
+      "faithful/test/strain",
+      "faithful/test/strain_partial",
+      "faithful/test/vorticity",
+      "faithful/test/vorticity_partial",
+      "nll/valid/strain",
+      "nll/valid/strain_partial",
+      "nll/valid/vorticity",
+      "nll/valid/vorticity_partial",
+      "nll/test/strain",
+      "nll/test/strain_partial",
+      "nll/test/vorticity",
+      "nll/test/vorticity_partial",
+      "beta_nll/valid/strain",
+      "beta_nll/valid/strain_partial",
+      "beta_nll/valid/vorticity",
+      "beta_nll/valid/vorticity_partial",
+      "beta_nll/test/strain",
+      "beta_nll/test/strain_partial",
+      "beta_nll/test/vorticity",
+      "beta_nll/test/vorticity_partial",
+      "valid/coverage",
+      "test/coverage"
+    ],
+    "mismatches": 0,
+    "labels": 22,
+    "bibliography_entries": 12,
+    "undefined_references": [],
+    "undefined_citations": [],
+    "native_latex": "success; eight-page main-text assertion remains satisfied; exported-PDF visual verification outstanding"
+  },
+  "figure_visual_check": "passed after preserving first render and reserving footer space",
+  "analysis_sha256": "9a3856d0a7906b3023e473e62bc7269d5139651e255b425994d264cb7ac68b8b",
+  "report_sha256": "692442a3e2ca005a39e21209d06af596d2e69a6bf9ad9026ff5026f2e992fd20",
+  "figure_sha256": "eea291dbd38467b809f6b8b08b09ebb892f39192c87ea74abd7a04e53edb1745",
+  "source_sha256": {
+    "research/analyze_physical_complexity.py": "51b972bdf8dcfea136992ab33159f9c16c0c1863a29eea8a34866b23a2501664",
+    "research/physical_complexity.py": "751aebc35d55c35ab9aa71c26a7d4e7cd55692ea90c82c3442471ed8535291c7",
+    "research/rank_diagnostics.py": "c6cbd6ec5e232382102735db84f15b5df6a6a0ff1d0f4a9a99fe5bbd98e8b0bb",
+    "research/report_physical_complexity.py": "dd7ce522546ef6d24c23942547ac0e7994e89c3d7ecd68a9d085fa9d614be974",
+    "research/protocols/physical_complexity_pilot.md": "a60a2e625aefd937a88424792882db0913565b09dbbef2afe015cad8071cf653",
+    "research/protocols/physical_complexity_inputs.json": "8de6d4ab8b0594188e14cc7df22aecd385aeba95304ba382ded4e2c4d2a020c2",
+    "research/tests/test_physical_complexity.py": "14c0e1a3bb96531fd3c6e30ec718776ec1789f60f8fadb2668900e5241f2cbc3",
+    "research/tests/test_rank_diagnostics.py": "85b1023cfa5383ae9f37d74a7b25c5a25e0738794b8594f65a567ce1b414ba5b",
+    "research/tests/test_analyze_physical_complexity.py": "abaef95a4a8538152cb2ad51eba7a27bcb4ba68519ede33525dc713b5428d8c1"
+  },
+  "original_experiment_outcomes_modified": false,
+  "new_full_model_training_started": false,
+  "local_raw_descriptors": "work/physical_complexity_pilot/analysis.npz",
+  "frozen_training_verification": "19:39 read-only monitor recorded32400updates with frozen hashes intact; native supervisor2778/child2780command chain verified19:38; no process action"
+}

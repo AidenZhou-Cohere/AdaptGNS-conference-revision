@@ -189,3 +189,19 @@ python -m research.run_evaluation_queue --help
 The supervisor and genuine child parsers passed 65 synthetic tests. Its real read-only check during active training returned `not_ready`, preserved both lock hashes and created no evaluation directory; no checkpoint or test data was loaded. Raw final evaluation artifacts belong in a separate local work directory, with only reviewed compact results curated for publication.
 
 The [manuscript evidence audit](research/results/manuscript_evidence_audit_20261004.json) maps 97 entries and reports 16,491 saved-scalar, rounding, aggregation, identity and provenance checks with no numerical mismatches. It does not rerun simulations, raw ranks or historical bootstraps. The compact rollout report now states the base-only cached-risk first forecast and the risk-head cost included in base timings. Only report text changed; the original numerical summary and producer hash remain preserved.
+
+
+## Exploratory physical descriptors from cached pilot predictions
+
+[The complete report](research/results/physical_complexity_pilot.md) and [figure](research/results/physical_complexity_pilot.png) preserve all 15 models, both inspected splits, fit coverage, every descriptor and all seed values. The protocol and pinned summary identity were committed at `4a10565` before computing outcomes. Risk correlates moderately with local strain; the association is smaller after speed/count/wall adjustment, and adjusted vorticity is weak. This is descriptive compact-pilot evidence and does not establish useful allocation or independent confirmation.
+
+```sh
+OMP_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 python -m research.analyze_physical_complexity \
+  --data-dir data-pilot --output-prefix work/physical_complexity/analysis
+python -m research.report_physical_complexity \
+  --input work/physical_complexity/analysis.json --output-prefix research/results/physical_complexity_pilot
+python -m pytest research/tests/test_physical_complexity.py \
+  research/tests/test_rank_diagnostics.py research/tests/test_analyze_physical_complexity.py -q
+```
+
+The analysis loads no checkpoints and runs no model inference. Exact cached-source hashes are required; fresh output prefixes preserve earlier outcomes. All 122 focused synthetic tests passed. Independent scipy/QR and aggregation checks found no mismatch across 33,070 saved-array checks. Numerical sources/protocols remain at their pre-analysis hashes. Raw descriptor arrays remain local; the scalar artifact records their hash. The larger training/evaluation protocols are unchanged.
