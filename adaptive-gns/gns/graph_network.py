@@ -345,7 +345,7 @@ class Decoder(nn.Module):
 
 
 class VarianceHead(nn.Module):
-  """Variance head: predicts per-particle uncertainty sigma_i > 0 from final node embeddings."""
+  """Positive scalar head: variance for corrected NLL; std for legacy checkpoints."""
 
   def __init__(self, nnode_in: int, nmlp_layers: int = 2, mlp_hidden_dim: int = 128):
     super(VarianceHead, self).__init__()
@@ -354,7 +354,7 @@ class VarianceHead(nn.Module):
         output_activation=nn.Softplus)
 
   def forward(self, x: torch.tensor) -> torch.tensor:
-    """Returns sigma_i > 0 per particle, shape (nparticles,)."""
+    """Returns a positive head output per particle, shape (nparticles,)."""
     return self.mlp(x).squeeze(-1)
 
 
@@ -368,6 +368,7 @@ class EncodeProcessDecode(nn.Module):
       nmessage_passing_steps: int,
       nmlp_layers: int,
       mlp_hidden_dim: int,
+      detach_variance_features: bool = False,
   ):
     """Encode-Process-Decode function approximator for learnable simulator.
 
@@ -386,6 +387,7 @@ class EncodeProcessDecode(nn.Module):
 
     """
     super(EncodeProcessDecode, self).__init__()
+    self.detach_variance_features = detach_variance_features
     self._encoder = Encoder(
         nnode_in_features=nnode_in_features,
         nnode_out_features=latent_dim,
@@ -431,10 +433,10 @@ class EncodeProcessDecode(nn.Module):
           
       Returns:
         acceleration: (nparticles, nnode_out_features)
-        variance: (nparticles,), sigma_i > 0 per particle
+        variance: (nparticles,), positive scalar head output
     """
     x, edge_features = self._encoder(x, edge_features)
     x, edge_features = self._processor(x, edge_index, edge_features)
     acceleration = self._decoder(x)
-    variance = self._variance_head(x)  # (nparticles,)
+    variance = self._variance_head(x.detach() if self.detach_variance_features else x)
     return acceleration, variance

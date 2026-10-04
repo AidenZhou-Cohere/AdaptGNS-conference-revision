@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 import numpy as np
+import warnings
 from gns import graph_network
 from torch_geometric.nn import radius_graph
 from typing import Dict
@@ -24,7 +25,12 @@ class LearnedSimulator(nn.Module):
           nparticle_types: int,
           particle_type_embedding_size: int,
           boundary_clamp_limit: float = 1.0,
-          device="cpu"
+          device="cpu",
+          uncertainty_parameterization="variance",
+          variance_floor=1e-6,
+          max_num_neighbors=128,
+          detach_variance_features=False,
+          radius_backend="pyg",
   ):
     """Initializes the model.
 
@@ -50,6 +56,33 @@ class LearnedSimulator(nn.Module):
 
     """
     super(LearnedSimulator, self).__init__()
+    if connectivity_radius <= 0 or variance_floor <= 0:
+      raise ValueError("connectivity_radius and variance_floor must be positive")
+    if uncertainty_parameterization not in {"variance", "legacy_std"}:
+      raise ValueError("Unknown uncertainty parameterization")
+    self._uncertainty_parameterization = uncertainty_parameterization
+    self._variance_floor = variance_floor
+    self._max_num_neighbors = max_num_neighbors
+    if radius_backend not in {"pyg", "scipy"}:
+      raise ValueError("radius_backend must be pyg or scipy")
+    self._radius_backend = radius_backend
+    self._checkpoint_config = dict(
+        particle_dimensions=particle_dimensions, nnode_in=nnode_in,
+        nedge_in=nedge_in, latent_dim=latent_dim,
+        nmessage_passing_steps=nmessage_passing_steps, nmlp_layers=nmlp_layers,
+        mlp_hidden_dim=mlp_hidden_dim, connectivity_radius=connectivity_radius,
+        boundaries=np.asarray(boundaries).tolist(),
+        normalization_stats={name: {key: value.detach().cpu().clone()
+                                   for key, value in stats.items()}
+                             for name, stats in normalization_stats.items()},
+        nparticle_types=nparticle_types,
+        particle_type_embedding_size=particle_type_embedding_size,
+        boundary_clamp_limit=boundary_clamp_limit,
+        uncertainty_parameterization=uncertainty_parameterization,
+        variance_floor=variance_floor, max_num_neighbors=max_num_neighbors,
+        detach_variance_features=detach_variance_features,
+        radius_backend=radius_backend)
+    self._training_config = {}
     self._boundaries = boundaries
     self._connectivity_radius = connectivity_radius
     self._normalization_stats = normalization_stats
@@ -68,13 +101,14 @@ class LearnedSimulator(nn.Module):
         latent_dim=latent_dim,
         nmessage_passing_steps=nmessage_passing_steps,
         nmlp_layers=nmlp_layers,
-        mlp_hidden_dim=mlp_hidden_dim)
+        mlp_hidden_dim=mlp_hidden_dim,
+        detach_variance_features=detach_variance_features)
 
     self._device = device
 
-  def forward(self):
-    """Forward hook runs on class instantiation"""
-    pass
+  def forward(self, *args, **kwargs):
+    """Training entry point so DDP can install gradient synchronization hooks."""
+    return self.predict_accelerations(*args, **kwargs)
 
   def _compute_graph_connectivity(
           self,
@@ -92,21 +126,48 @@ class LearnedSimulator(nn.Module):
       add_self_edges: Boolean flag to include self edge (default: True)
     """
     # Specify examples id for particles
-    batch_ids = torch.cat(
-        [torch.LongTensor([i for _ in range(n)])
-         for i, n in enumerate(nparticles_per_example)]).to(self._device)
+    counts = torch.as_tensor(nparticles_per_example, device=node_features.device,
+                             dtype=torch.long).flatten()
+    if bool((counts <= 0).any()) or int(counts.sum()) != len(node_features):
+      raise ValueError("Particle counts must be positive and sum to node count")
+    batch_ids = torch.repeat_interleave(
+        torch.arange(len(counts), device=node_features.device), counts)
 
     # radius_graph accepts r < radius not r <= radius
     # A torch tensor list of source and target nodes with shape (2, nedges)
-    edge_index = radius_graph(
-        node_features, r=radius, batch=batch_ids, loop=add_self_edges, max_num_neighbors=128)
+    if self._radius_backend == "scipy":
+      if node_features.device.type != "cpu":
+        raise ValueError("scipy radius backend is an explicit CPU reference backend")
+      from scipy.spatial import cKDTree
+      points = node_features.detach().numpy()
+      sources, targets, offset = [], [], 0
+      for count in counts.tolist():
+        local = points[offset:offset + count]
+        tree = cKDTree(local)
+        for target, neighbors in enumerate(tree.query_ball_point(local, radius)):
+          # Match PyG's strict-radius rule. When capped, choose nearest neighbors
+          # deterministically; PyG's cap can choose a different subset.
+          neighbors = np.asarray(neighbors, dtype=np.int64)
+          distances = np.linalg.norm(local[neighbors] - local[target], axis=1)
+          keep = distances < radius
+          if not add_self_edges:
+            keep &= neighbors != target
+          neighbors, distances = neighbors[keep], distances[keep]
+          order = np.lexsort((neighbors, distances))[:self._max_num_neighbors]
+          sources.extend((neighbors[order] + offset).tolist())
+          targets.extend([target + offset] * len(order))
+        offset += count
+      edge_index = torch.tensor([sources, targets], dtype=torch.long)
+    else:
+      edge_index = radius_graph(
+          node_features, r=radius, batch=batch_ids, loop=add_self_edges,
+          max_num_neighbors=self._max_num_neighbors)
 
     # The flow direction when using in combination with message passing is
     # "source_to_target"
-    receivers = edge_index[0, :]
-    senders = edge_index[1, :]
-
-    return receivers, senders
+    senders = edge_index[0, :]
+    receivers = edge_index[1, :]
+    return senders, receivers
 
   def _encoder_preprocessor(
           self,
@@ -290,11 +351,13 @@ class LearnedSimulator(nn.Module):
           nparticles_per_example: torch.tensor,
           particle_types: torch.tensor,
           material_property: torch.tensor = None):
-    """Predict position and per-particle variance sigma_i.
+    """Predict position and positive uncertainty-head output.
 
     Returns:
       next_positions (torch.tensor): Next position of particles.
-      variance (torch.tensor): Per-particle sigma_i, shape (nparticles,).
+      variance (torch.tensor): Head output, shape (nparticles,). It is variance
+        for corrected objectives and std for legacy checkpoints. Convert with
+        head_to_variance before calibration in normalized acceleration units.
     """
     if material_property is not None:
         node_features, edge_index, edge_features = self._encoder_preprocessor(
@@ -320,8 +383,12 @@ class LearnedSimulator(nn.Module):
     Returns senders, receivers in the same (edge_index[0], edge_index[1]) convention
     used throughout _encoder_preprocessor.
     """
+    if r_large < self._connectivity_radius:
+      raise ValueError("Expanded radius cannot be smaller than base radius")
     base_s, base_r = self._compute_graph_connectivity(
         most_recent_position, nparticles_per_example, self._connectivity_radius)
+    if r_large == self._connectivity_radius or not bool(high_sigma_mask.any()):
+      return base_s, base_r
     ext_s, ext_r = self._compute_graph_connectivity(
         most_recent_position, nparticles_per_example, r_large)
 
@@ -347,8 +414,8 @@ class LearnedSimulator(nn.Module):
           material_property: torch.tensor = None):
     """Run the GNN forward pass with a pre-built edge index.
 
-    senders / receivers follow the same edge_index[0] / edge_index[1] convention
-    as _encoder_preprocessor (i.e., senders=targets, receivers=sources in PyG).
+    senders / receivers follow PyG's source_to_target convention:
+    edge_index[0] is source, edge_index[1] is target.
     """
     nparticles = position_sequence.shape[0]
     most_recent_position = position_sequence[:, -1]
@@ -412,13 +479,14 @@ class LearnedSimulator(nn.Module):
     """Single-pass adaptive rollout step using sigma from the *previous* step.
 
     The graph topology is decided using sigma_prev (already known), so only ONE
-    GNN forward pass is needed — matching the per-step cost of the fixed-graph
-    baselines while using a heterogeneous connectivity radius.
+    GNN forward pass is needed. The two graph searches, union and larger graph
+    add overhead that must be timed separately from the neural forward pass.
 
     High-uncertainty particles (sigma_prev > sigma_percentile-th percentile) receive
-    extra edges out to radius_factor * base_radius. Low-uncertainty particles keep
-    the base radius. The total edge count lies between k=5 and k=10, giving the
-    efficiency advantage over a uniformly large graph.
+    extra edges out to radius_factor * base_radius. Either selected endpoint
+    admits the edge, so unselected particles can also gain neighbors. At a
+    common state, base edges are preserved; counts across different rollouts
+    are additionally affected by the predicted geometry.
 
     Args:
       current_positions: Position history (nparticles, history_len, dim).
@@ -433,8 +501,8 @@ class LearnedSimulator(nn.Module):
       next_positions: Predicted positions, shape (nparticles, dim).
       sigma_curr: Per-particle sigma from this step, shape (nparticles,).
     """
-    tau = torch.quantile(sigma_prev, sigma_percentile / 100.0)
-    high_sigma_mask = sigma_prev > tau
+    high_sigma_mask = self._select_high_uncertainty(
+        sigma_prev, nparticles_per_example, sigma_percentile)
 
     most_recent_position = current_positions[:, -1]
     r_large = self._connectivity_radius * radius_factor
@@ -447,6 +515,34 @@ class LearnedSimulator(nn.Module):
         senders, receivers, material_property)
 
     return next_positions, sigma_curr
+
+  @staticmethod
+  def _select_high_uncertainty(scores, nparticles_per_example, percentile):
+    """Threshold independently in each trajectory; ties are not expanded.
+
+    This preserves the released strict-quantile policy for a single trajectory.
+    It is not an exact edge or particle budget, particularly when scores tie.
+    """
+    if not 0 <= percentile <= 100:
+      raise ValueError("percentile must lie in [0, 100]")
+    counts = [int(n) for n in nparticles_per_example]
+    if any(n <= 0 for n in counts) or sum(counts) != scores.numel():
+      raise ValueError("Particle counts must be positive and match scores")
+    if scores.ndim != 1 or not bool(torch.isfinite(scores).all()):
+      raise ValueError("Uncertainty scores must be a finite one-dimensional tensor")
+    mask = torch.zeros_like(scores, dtype=torch.bool)
+    start = 0
+    for count in counts:
+      local = scores[start:start + count]
+      mask[start:start + count] = local > torch.quantile(local, percentile / 100)
+      start += count
+    return mask
+
+  def head_to_variance(self, head):
+    """Convert head output to per-coordinate normalized acceleration variance."""
+    if self._uncertainty_parameterization == "legacy_std":
+      return head.square() + self._variance_floor
+    return head.clamp_min(self._variance_floor)
 
   def predict_accelerations(
           self,
@@ -476,8 +572,8 @@ class LearnedSimulator(nn.Module):
       augment_radius_factor: Multiplier on connectivity_radius for augmented particles.
 
     Returns:
-      Tensors of shape (nparticles_in_batch, dim) with the predicted and target
-        normalized accelerations.
+      Predicted normalized acceleration (N,d), positive raw head output (N,),
+        and target normalized acceleration (N,d), in that order.
 
     """
 
@@ -549,17 +645,49 @@ class LearnedSimulator(nn.Module):
     Args:
       path: Model path
     """
-    torch.save(self.state_dict(), path)
+    torch.save({"format_version": 2, "state_dict": self.state_dict(),
+                "simulator_config": self._checkpoint_config,
+                "training_config": self._training_config}, path)
 
   def load(
           self,
-          path: str):
+          path: str,
+          allow_missing_variance_head: bool = False):
     """Load model state from file
 
     Args:
       path: Model path
     """
-    self.load_state_dict(torch.load(path, map_location=torch.device('cpu')))
+    payload = torch.load(path, map_location="cpu", weights_only=True)
+    if "state_dict" in payload:
+      config = payload["simulator_config"]
+      for key in ("connectivity_radius", "uncertainty_parameterization",
+                  "variance_floor", "max_num_neighbors"):
+        if self._checkpoint_config[key] != config[key]:
+          raise ValueError(f"Checkpoint {key} differs from simulator configuration; "
+                           "load with gns.model_io.load_for_evaluation")
+      for name, stats in config["normalization_stats"].items():
+        self._normalization_stats[name] = {
+            key: value.to(self._device) for key, value in stats.items()}
+      self._checkpoint_config = config
+      self._training_config = payload.get("training_config", {})
+      state = payload["state_dict"]
+    else:
+      warnings.warn("Legacy checkpoint omits normalization, architecture and loss "
+                    "metadata; verify these settings against the training recipe.",
+                    UserWarning)
+      state = payload
+    if allow_missing_variance_head:
+      incompatible = self.load_state_dict(state, strict=False)
+      allowed = "_encode_process_decode._variance_head."
+      if incompatible.unexpected_keys or any(
+          not key.startswith(allowed) for key in incompatible.missing_keys):
+        raise RuntimeError(f"Unexpected checkpoint mismatch: {incompatible}")
+      if incompatible.missing_keys:
+        warnings.warn("Upstream mean-only checkpoint: variance head is untrained; "
+                      "use only fixed-graph mean evaluation.", UserWarning)
+    else:
+      self.load_state_dict(state)
 
 
 def time_diff(

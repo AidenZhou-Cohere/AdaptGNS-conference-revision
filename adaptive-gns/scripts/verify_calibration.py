@@ -8,6 +8,7 @@ import os
 import sys
 import argparse
 import glob
+import json
 
 import numpy as np
 import torch
@@ -15,24 +16,25 @@ import torch
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from gns import learned_simulator, data_loader, reading_utils, noise_utils
+from gns.model_io import load_for_evaluation
+from gns.calibration import regression_calibration
 
 INPUT_SEQUENCE_LENGTH = 6
 KINEMATIC_PARTICLE_ID = 3
 NUM_PARTICLE_TYPES = 9
 
 
-def get_simulator(data_path, model_path, model_file, device):
+def get_simulator(data_path, model_path, model_file, device, normalization_noise_std=None):
     """Load simulator from checkpoint."""
-    from gns.train import _get_simulator
     metadata = reading_utils.read_metadata(data_path, 'train')
-    simulator = _get_simulator(metadata, acc_noise_std=0.0, vel_noise_std=0.0, device=device)
-    simulator.load(os.path.join(model_path, model_file))
-    simulator.to(device)
-    simulator.eval()
+    simulator, provenance = load_for_evaluation(
+        os.path.join(model_path, model_file), metadata, device,
+        normalization_noise_std=normalization_noise_std)
+    simulator._evaluation_provenance = provenance
     return simulator
 
 
-def compute_ece(simulator, data_path, device, dim, n_bins=10, max_batches=100, noise_std=0.0):
+def compute_ece(simulator, data_path, device, dim, n_bins=10, max_batches=None, noise_std=0.0):
     """
     Compute Expected Calibration Error on validation set.
     Percentile binning (not classification ECE): bins particles by predicted sigma^2,
@@ -54,7 +56,7 @@ def compute_ece(simulator, data_path, device, dim, n_bins=10, max_batches=100, n
 
     with torch.no_grad():
         for batch_idx, example in enumerate(loader):
-            if batch_idx >= max_batches:
+            if max_batches is not None and batch_idx >= max_batches:
                 break
             position = example[0][0].to(device)
             particle_type = example[0][1].to(device)
@@ -81,12 +83,15 @@ def compute_ece(simulator, data_path, device, dim, n_bins=10, max_batches=100, n
             )
 
             se = ((pred_acc - target_acc) ** 2).sum(dim=-1)  # (n,)
-            sigma_sq = pred_variance ** 2  # (n,)
+            model = simulator.module if hasattr(simulator, "module") else simulator
+            sigma_sq = model.head_to_variance(pred_variance)
 
             all_se.append(se.cpu().numpy())
             all_sigma_sq.append(sigma_sq.cpu().numpy())
             all_non_kinematic.append(non_kinematic.cpu().numpy())
 
+    if not all_se:
+        raise ValueError("No validation samples evaluated")
     all_se = np.concatenate(all_se)
     all_sigma_sq = np.concatenate(all_sigma_sq)
     all_non_kinematic = np.concatenate(all_non_kinematic)
@@ -95,26 +100,7 @@ def compute_ece(simulator, data_path, device, dim, n_bins=10, max_batches=100, n
     se = all_se[all_non_kinematic]
     sigma_sq = all_sigma_sq[all_non_kinematic]
 
-    # Bin by sigma^2 percentiles (standard for regression; not classification ECE)
-    percentiles = np.linspace(0, 100, n_bins + 1)
-    bin_edges = np.percentile(sigma_sq, percentiles)
-    bin_edges[-1] += 1e-9  # include max
-
-    ece = 0.0
-    bin_info = []
-    for i in range(n_bins):
-        mask = (sigma_sq >= bin_edges[i]) & (sigma_sq < bin_edges[i + 1])
-        n_bin = mask.sum()
-        if n_bin == 0:
-            continue
-        mean_se = se[mask].mean()
-        mean_sigma_sq = sigma_sq[mask].mean()
-        # For dim-D isotropic Gaussian: E[SE] = dim * sigma^2
-        calibration_error = abs(mean_se - float(dim) * mean_sigma_sq)
-        ece += (n_bin / len(se)) * calibration_error
-        bin_info.append((n_bin, mean_se, mean_sigma_sq, calibration_error))
-
-    return ece, bin_info
+    return regression_calibration(se, sigma_sq, dim=dim, n_bins=n_bins)
 
 
 def rollout_with_variance(simulator, positions, particle_type, material_property,
@@ -144,7 +130,8 @@ def rollout_with_variance(simulator, positions, particle_type, material_property
                 gt_step, next_pos,
             )
             pred_positions.append(next_pos.cpu().numpy())
-            variances.append(var.cpu().numpy())
+            model = simulator.module if hasattr(simulator, "module") else simulator
+            variances.append(model.head_to_variance(var).cpu().numpy())
             current = torch.cat([current[:, 1:], next_pos[:, None, :]], dim=1)
 
     return np.stack(pred_positions), np.stack(variances), ground_truth.cpu().numpy()
@@ -196,7 +183,9 @@ def main():
     parser.add_argument('--model_file', default='latest', help='Model checkpoint')
     parser.add_argument('--output_dir', default=None, help='Output dir for plots (default: model_path)')
     parser.add_argument('--n_bins', type=int, default=10, help='ECE bins')
-    parser.add_argument('--max_batches', type=int, default=100, help='Max validation batches for ECE')
+    parser.add_argument('--max_batches', type=int, default=None, help='Optional cap; default evaluates all validation samples')
+    parser.add_argument('--normalization_noise_std', type=float, default=None,
+                        help='Legacy checkpoint training normalization, not input noise')
     parser.add_argument('--n_rollout_trajectories', type=int, default=3, help='Trajectories for spatial plots')
     parser.add_argument('--n_rollout_steps', type=int, default=50, help='Steps per rollout')
     parser.add_argument('--plot_steps', nargs='+', type=int, default=[1, 10, 30], help='Steps to plot sigma')
@@ -217,7 +206,7 @@ def main():
         model_file = args.model_file
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    simulator = get_simulator(data_path, model_path, model_file, device)
+    simulator = get_simulator(data_path, model_path, model_file, device, args.normalization_noise_std)
     metadata = reading_utils.read_metadata(data_path, 'rollout')
     bounds = metadata.get('bounds', None)
     dim = metadata.get('dim', 2)  # WaterDrop/Sand are 2D
@@ -234,6 +223,13 @@ def main():
         for i, (n, me, ms, ce) in enumerate(bin_info):
             f.write(f"  {i}: {n}, {me:.6f}, {ms:.6f}, {ce:.6f}\n")
     print(f"Saved ECE to {ece_path}")
+
+    with open(os.path.join(output_dir, f'calibration_{model_file.replace(".pt", "")}.json'), 'w') as f:
+        json.dump({"split": "valid", "ece": float(ece), "bins": bin_info,
+                   "n_dynamic_samples": sum(b[0] for b in bin_info),
+                   "max_batches": args.max_batches, "dim": dim,
+                   "units": "squared normalized acceleration",
+                   "provenance": simulator._evaluation_provenance}, f, indent=2)
 
     # Calibration curve: mean SE vs dim*sigma^2 per bin
     if bin_info:
@@ -280,14 +276,14 @@ def main():
 
             pred_pos, variances, _ = rollout_with_variance(
                 simulator, positions, particle_type, material_property,
-                n_particles, args.n_rollout_steps, device)
+                n_particles, min(args.n_rollout_steps, positions.shape[1] - INPUT_SEQUENCE_LENGTH), device)
 
             for step in args.plot_steps:
-                if step >= pred_pos.shape[0]:
+                if step < 1 or step > pred_pos.shape[0]:
                     continue
                 out_path = os.path.join(output_dir, f'sigma_traj{traj_idx}_step{step}.pdf')
                 plot_sigma_spatial(
-                    pred_pos[step], variances[step],
+                    pred_pos[step - 1], variances[step - 1],
                     out_path, step, bounds=bounds)
 
     print("Calibration verification complete.")

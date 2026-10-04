@@ -2,9 +2,8 @@
 """
 Week 3: Evaluate adaptive rollout MSE at every step.
 
-At each rollout step the model runs a two-pass adaptive graph:
-  Pass 1 (fixed radius r) → per-particle sigma_i
-  Pass 2 (augmented graph: base edges + extended edges for high-sigma particles) → next position
+Each rollout step performs one neural pass. The first uses the base graph;
+later steps expand it using the previous step's uncertainty ranking.
 
 Results are saved in the same .npz / .json format as evaluate_rollout_mse.py so
 all curves can be plotted together.
@@ -21,10 +20,11 @@ import torch
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from gns import learned_simulator, data_loader, reading_utils
+from gns.model_io import load_for_evaluation
 
 INPUT_SEQUENCE_LENGTH = 6
 KINEMATIC_PARTICLE_ID = 3
-EVAL_STEPS = [1, 10, 50, 200]
+EVAL_STEPS = [1, 10, 50, 200, 500, 1000]
 
 
 def adaptive_rollout_mse(simulator, positions, particle_type, material_property,
@@ -34,18 +34,22 @@ def adaptive_rollout_mse(simulator, positions, particle_type, material_property,
 
     Step 0 uses the base graph (no prior sigma).  From step 1 onward the graph
     topology is built from sigma of the *previous* step, so each step requires
-    exactly ONE GNN forward pass — the same cost as the fixed-graph baselines.
+    exactly ONE GNN forward pass. Graph construction adds separate overhead.
 
     Returns:
       mse_per_step: np.ndarray (nsteps,)
       edge_counts: np.ndarray (nsteps,) — number of edges used at each step
     """
     initial_positions = positions[:, :INPUT_SEQUENCE_LENGTH]
-    ground_truth = positions[:, INPUT_SEQUENCE_LENGTH:]
+    if nsteps < 1 or nsteps > positions.shape[1] - INPUT_SEQUENCE_LENGTH:
+        raise ValueError("nsteps must be within the available forecast horizon")
+    ground_truth = positions[:, INPUT_SEQUENCE_LENGTH:INPUT_SEQUENCE_LENGTH + nsteps]
     current = initial_positions
 
     kinematic_mask = (particle_type == KINEMATIC_PARTICLE_ID).bool()
     non_kinematic = ~kinematic_mask
+    if not bool(non_kinematic.any()):
+        raise ValueError("MSE requires at least one dynamic particle")
 
     predictions = []
     edge_counts = []
@@ -71,8 +75,8 @@ def adaptive_rollout_mse(simulator, positions, particle_type, material_property,
 
     for step in range(1, nsteps):
         # Build adaptive graph using lagged sigma
-        tau = torch.quantile(sigma_prev, sigma_percentile / 100.0)
-        high_sigma_mask = sigma_prev > tau
+        high_sigma_mask = simulator._select_high_uncertainty(
+            sigma_prev, [n_particles_per_example], sigma_percentile)
         most_recent_position = current[:, -1]
         r_large = simulator._connectivity_radius * radius_factor
         senders, receivers = simulator._build_adaptive_edge_index(
@@ -108,7 +112,7 @@ def adaptive_rollout_mse(simulator, positions, particle_type, material_property,
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Evaluate adaptive two-pass rollout MSE')
+        description='Evaluate single-pass lagged-uncertainty rollout MSE')
     parser.add_argument('--data_path', required=True,
                         help='Dataset directory (contains test.npz, metadata.json)')
     parser.add_argument('--model_path', required=True,
@@ -123,7 +127,17 @@ def main():
                         help='Limit evaluation to N test trajectories')
     parser.add_argument('--output', '-o', default=None,
                         help='Output path stem (default: <model_path>/adaptive_rollout_mse_<model>)')
+    parser.add_argument('--split', choices=['train', 'valid', 'test'], default='valid',
+                        help='Use valid for selection; test only after settings are frozen.')
+    parser.add_argument('--normalization_noise_std', type=float, default=None,
+                        help='Legacy checkpoint training normalization noise (not input noise).')
+    parser.add_argument('--nmessage_passing_steps', type=int, default=None,
+                        help='Legacy checkpoint depth, including zero for an MLP.')
+    parser.add_argument('--radius_backend', choices=['pyg', 'scipy'], default=None,
+                        help='Legacy checkpoint graph backend; scipy is an explicit CPU reference')
     args = parser.parse_args()
+    if args.max_trajectories is not None and args.max_trajectories <= 0:
+        parser.error('--max_trajectories must be positive')
 
     data_path = args.data_path.rstrip('/') + '/'
     model_path = args.model_path.rstrip('/') + '/'
@@ -142,7 +156,7 @@ def main():
         model_basename = model_file.replace('.pt', '')
         output_stem = os.path.join(
             model_path,
-            f'adaptive_rollout_mse_{model_basename}_p{int(args.sigma_percentile)}_r{args.radius_factor}')
+            f'adaptive_rollout_mse_{model_basename}_{args.split}_p{args.sigma_percentile:g}_r{args.radius_factor}')
     # Strip any extension that might have been passed
     for ext in ('.npz', '.json'):
         if output_stem.endswith(ext):
@@ -154,13 +168,13 @@ def main():
     print(f"Sigma percentile: {args.sigma_percentile}  |  Radius factor: {args.radius_factor}")
 
     metadata = reading_utils.read_metadata(data_path, 'rollout')
-    from gns.train import _get_simulator
-    simulator = _get_simulator(metadata, acc_noise_std=0.0, vel_noise_std=0.0, device=device)
-    simulator.load(os.path.join(model_path, model_file))
-    simulator.to(device)
-    simulator.eval()
+    simulator, provenance = load_for_evaluation(
+        os.path.join(model_path, model_file), metadata, device,
+        normalization_noise_std=args.normalization_noise_std,
+        radius_backend=args.radius_backend,
+        nmessage_passing_steps=args.nmessage_passing_steps)
 
-    ds = data_loader.get_data_loader_by_trajectories(path=data_path + 'test.npz')
+    ds = data_loader.get_data_loader_by_trajectories(path=data_path + args.split + '.npz')
     has_material = len(ds.dataset._data[0]) == 3
 
     mse_at_steps = {s: [] for s in EVAL_STEPS}
@@ -201,6 +215,8 @@ def main():
             if (i + 1) % 5 == 0:
                 print(f"  Evaluated {i + 1} trajectories...")
 
+    if not mse_all_trajectories:
+        raise ValueError("No trajectories evaluated")
     max_steps = max(len(m) for m in mse_all_trajectories)
     mse_stacked = np.full((n_eval, max_steps), np.nan)
     for i, m in enumerate(mse_all_trajectories):
@@ -218,8 +234,10 @@ def main():
     mean_edges_per_step = float(np.nanmean(edge_counts_stacked))
     mean_edges_by_step = np.nanmean(edge_counts_stacked, axis=0)
 
+    os.makedirs(os.path.dirname(os.path.abspath(output_stem)), exist_ok=True)
     np.savez(
         output_stem + '.npz',
+        split=args.split,
         steps=steps,
         mse_mean=mse_mean,
         mse_std=mse_std,
@@ -234,11 +252,16 @@ def main():
     )
     summary = {
         'data_path': data_path,
+        'split': args.split,
+        'evaluation_provenance': provenance,
+        'horizon_convention': 'forecast steps after 6-frame context',
+        'mse_convention': 'mean over dynamic particles and coordinates, then trajectories',
         'model_file': model_file,
         'sigma_percentile': args.sigma_percentile,
         'radius_factor': args.radius_factor,
         'n_trajectories': n_eval,
         'max_steps': int(max_steps),
+        'mse_at_final_available_step': float(mse_mean[-1]),
         'mean_edges_per_step': mean_edges_per_step,
         'mse_at_steps': {s: float(np.mean(mse_at_steps[s])) if mse_at_steps[s] else None
                          for s in EVAL_STEPS},

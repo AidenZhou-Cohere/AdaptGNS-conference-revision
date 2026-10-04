@@ -5,6 +5,7 @@ import pickle
 import glob
 import re
 import sys
+import random
 
 import numpy as np
 import torch
@@ -20,12 +21,22 @@ from gns import noise_utils
 from gns import reading_utils
 from gns import data_loader
 from gns import distribute
+from gns.losses import acceleration_loss
+from gns.model_io import build_simulator, load_for_evaluation
 
 flags.DEFINE_enum(
     'mode', 'train', ['train', 'valid', 'rollout'],
     help='Train model, validation or rollout evaluation.')
 flags.DEFINE_integer('batch_size', 2, help='The batch size.')
 flags.DEFINE_float('noise_std', 6.7e-4, help='The std deviation of the noise.')
+flags.DEFINE_enum('loss', 'nll', ['nll', 'legacy_nll', 'mse', 'faithful'],
+                  help='Correct NLL, released legacy objective, MSE, or faithful heteroscedastic regression.')
+flags.DEFINE_float('variance_floor', 1e-6, help='Floor in normalized acceleration variance units.')
+flags.DEFINE_integer('seed', 0, help='Training initialization and sampling seed.')
+flags.DEFINE_enum('radius_backend', 'pyg', ['pyg', 'scipy'],
+                  help='PyG production backend or explicit SciPy CPU reference backend.')
+flags.DEFINE_float('connectivity_radius', None, help='Override dataset connectivity radius.')
+flags.DEFINE_integer('nmessage_passing_steps', 10, help='Processor depth; zero is a particle MLP.')
 flags.DEFINE_string('data_path', None, help='The dataset directory.')
 flags.DEFINE_string('model_path', 'models/', help=('The path for saving checkpoints of the model.'))
 flags.DEFINE_string('output_path', 'rollouts/', help='The path for saving outputs (e.g. rollouts).')
@@ -136,23 +147,22 @@ def predict(device: str):
   """
   # Read metadata
   metadata = reading_utils.read_metadata(FLAGS.data_path, "rollout")
-  simulator = _get_simulator(metadata, FLAGS.noise_std, FLAGS.noise_std, device)
-
-  # Load simulator
-  if os.path.exists(FLAGS.model_path + FLAGS.model_file):
-    simulator.load(FLAGS.model_path + FLAGS.model_file)
-  else:
-    raise Exception(f"Model does not exist at {FLAGS.model_path + FLAGS.model_file}")
-
-  simulator.to(device)
-  simulator.eval()
+  checkpoint = os.path.join(FLAGS.model_path, FLAGS.model_file)
+  simulator, provenance = load_for_evaluation(
+      checkpoint, metadata, device,
+      normalization_noise_std=(FLAGS.noise_std if FLAGS['noise_std'].present else None),
+      connectivity_radius=FLAGS.connectivity_radius,
+      nmessage_passing_steps=(FLAGS.nmessage_passing_steps
+                             if FLAGS['nmessage_passing_steps'].present else None),
+      allow_missing_variance_head=True,
+      radius_backend=(FLAGS.radius_backend if FLAGS["radius_backend"].present else None))
 
   # Output path
   if not os.path.exists(FLAGS.output_path):
     os.makedirs(FLAGS.output_path)
 
-  # Use `valid`` set for eval mode if not use `test`
-  split = 'test' if (FLAGS.mode == 'rollout' or (not os.path.isfile("{FLAGS.data_path}valid.npz"))) else 'valid'
+  # Missing validation data must never silently redirect model selection to test.
+  split = "test" if FLAGS.mode == "rollout" else "valid"
 
   # Get dataset
   ds = data_loader.get_data_loader_by_trajectories(path=f"{FLAGS.data_path}{split}.npz")
@@ -169,13 +179,7 @@ def predict(device: str):
     for example_i, features in enumerate(ds):
       print(f"processing example number {example_i}")
       positions = features[0].to(device)
-      if metadata['sequence_length'] is not None:
-        # If `sequence_length` is predefined in metadata,
-        nsteps = metadata['sequence_length'] - INPUT_SEQUENCE_LENGTH
-      else:
-        # If no predefined `sequence_length`, then get the sequence length
-        sequence_length = positions.shape[1]
-        nsteps = sequence_length - INPUT_SEQUENCE_LENGTH
+      nsteps = positions.shape[1] - INPUT_SEQUENCE_LENGTH
       particle_type = features[1].to(device)
       if material_property_as_feature:
         material_property = features[2].to(device)
@@ -194,13 +198,18 @@ def predict(device: str):
                                       device)
 
       example_rollout['metadata'] = metadata
-      print("Predicting example {} loss: {}".format(example_i, loss.mean()))
-      eval_loss.append(torch.flatten(loss))
+      example_rollout['evaluation_provenance'] = provenance
+      example_rollout['split'] = split
+      dynamic_loss = loss[:, particle_type != KINEMATIC_PARTICLE_ID]
+      if not dynamic_loss.numel():
+        raise ValueError("Rollout MSE requires a dynamic particle")
+      print("Predicting example {} loss: {}".format(example_i, dynamic_loss.mean()))
+      eval_loss.append(torch.flatten(dynamic_loss))
 
       # Save rollout in testing
       if FLAGS.mode == 'rollout':
         example_rollout['metadata'] = metadata
-        example_rollout['loss'] = loss.mean()
+        example_rollout['loss'] = dynamic_loss.mean()
         filename = f'{FLAGS.output_filename}_ex{example_i}.pkl'
         filename = os.path.join(FLAGS.output_path, filename)
         with open(filename, 'wb') as f:
@@ -223,36 +232,6 @@ def optimizer_to(optim, device):
           subparam.data = subparam.data.to(device)
           if subparam._grad is not None:
             subparam._grad.data = subparam._grad.data.to(device)
-
-def acceleration_loss(pred_acc, target_acc, non_kinematic_mask, pred_variance=None):
-  """
-  Compute the loss between predicted and target accelerations.
-  Uses heteroscedastic NLL when pred_variance is provided, else MSE.
-
-  NLL: L = (1/N) sum_i [ (â_i - a_i)^2 / (2 σ_i^2) + (1/2) log(σ_i^2) ]
-
-  Args:
-    pred_acc: Predicted accelerations (nparticles, dim).
-    target_acc: Target accelerations (nparticles, dim).
-    non_kinematic_mask: Mask for kinematic particles.
-    pred_variance: Optional (nparticles,) sigma_i per particle. If None, use MSE.
-  """
-  non_kinematic = non_kinematic_mask.bool()
-  num_non_kinematic = non_kinematic.sum()
-
-  if pred_variance is not None:
-    # Heteroscedastic NLL. pred_variance is sigma_i (scalar per particle), shape (n,)
-    sigma_sq = pred_variance ** 2 + 1e-6  # for stability
-    se = ((pred_acc - target_acc) ** 2).sum(dim=-1)  # squared error per particle
-    nll_per_particle = se / (2 * sigma_sq) + 0.5 * torch.log(sigma_sq)
-    loss = torch.where(non_kinematic, nll_per_particle, torch.zeros_like(nll_per_particle))
-    loss = loss.sum() / num_non_kinematic
-  else:
-    loss = (pred_acc - target_acc) ** 2
-    loss = loss.sum(dim=-1)
-    loss = torch.where(non_kinematic, loss, torch.zeros_like(loss))
-    loss = loss.sum() / num_non_kinematic
-  return loss
 
 def save_model_and_train_state(rank, device, simulator, flags, step, epoch, optimizer,
                                 train_loss, valid_loss, train_loss_hist, valid_loss_hist):
@@ -302,16 +281,35 @@ def train(rank, flags, world_size, device):
   else:
     device_id = device
 
+  seed_rank = 0 if rank is None else rank
+  random.seed(flags["seed"] + seed_rank)
+  np.random.seed(flags["seed"] + seed_rank)
+  torch.manual_seed(flags["seed"] + seed_rank)
+  if torch.cuda.is_available():
+    torch.cuda.manual_seed_all(flags["seed"] + seed_rank)
+
   # Read metadata
   metadata = reading_utils.read_metadata(flags["data_path"], "train")
+  def make_simulator(target_device):
+    result = build_simulator(
+        metadata, flags["noise_std"], flags["noise_std"], target_device,
+        connectivity_radius=flags["connectivity_radius"],
+        nmessage_passing_steps=flags["nmessage_passing_steps"],
+        uncertainty_parameterization=("legacy_std" if flags["loss"] == "legacy_nll" else "variance"),
+        variance_floor=flags["variance_floor"],
+        detach_variance_features=(flags["loss"] == "faithful"),
+        radius_backend=flags["radius_backend"])
+    result._training_config = dict(flags)
+    return result
 
   # Get simulator and optimizer
   if device == torch.device("cuda"):
-    serial_simulator = _get_simulator(metadata, flags["noise_std"], flags["noise_std"], rank)
-    simulator = DDP(serial_simulator.to(rank), device_ids=[rank], output_device=rank)
+    serial_simulator = make_simulator(rank)
+    simulator = DDP(serial_simulator.to(rank), device_ids=[rank], output_device=rank,
+                    find_unused_parameters=(flags["loss"] == "mse"))
     optimizer = torch.optim.Adam(simulator.parameters(), lr=flags["lr_init"]*world_size)
   else:
-    simulator = _get_simulator(metadata, flags["noise_std"], flags["noise_std"], device)
+    simulator = make_simulator(device)
     optimizer = torch.optim.Adam(simulator.parameters(), lr=flags["lr_init"] * world_size)
 
   # Initialize training state
@@ -349,6 +347,11 @@ def train(rank, flags, world_size, device):
       else:
         simulator.load(flags["model_path"] + flags["model_file"])
 
+      loaded_simulator = simulator.module if hasattr(simulator, "module") else simulator
+      saved_loss = loaded_simulator._training_config.get("loss")
+      if saved_loss is not None and saved_loss != flags["loss"]:
+        raise ValueError("Resume loss differs from checkpoint; start a new experiment")
+      loaded_simulator._training_config = dict(flags)
       # load train state
       train_state = torch.load(flags["model_path"] + flags["train_state_file"])
       
@@ -405,6 +408,8 @@ def train(rank, flags, world_size, device):
       if device == torch.device("cuda"):
         torch.distributed.barrier()
 
+      if hasattr(dl.sampler, "set_epoch"):
+        dl.sampler.set_epoch(epoch)
       for example in dl:  
         steps_per_epoch += 1
         # ((position, particle_type, material_property, n_particles_per_example), labels) are in dl
@@ -430,7 +435,7 @@ def train(rank, flags, world_size, device):
 
         # Get the predictions and target accelerations
         device_or_rank = rank if device == torch.device("cuda") else device
-        predict_fn = simulator.module.predict_accelerations if device == torch.device("cuda") else simulator.predict_accelerations
+        predict_fn = simulator
         pred_acc, pred_variance, target_acc = predict_fn(
             next_positions=labels.to(device_or_rank),
             position_sequence_noise=sampled_noise.to(device_or_rank),
@@ -450,7 +455,9 @@ def train(rank, flags, world_size, device):
           print(f"Validation loss at {step}: {valid_loss.item()}")
 
         # Calculate the loss (heteroscedastic NLL) and mask out kinematic particles
-        loss = acceleration_loss(pred_acc, target_acc, non_kinematic_mask, pred_variance=pred_variance)
+        loss = acceleration_loss(pred_acc, target_acc, non_kinematic_mask,
+                                 pred_variance=pred_variance, loss_type=flags["loss"],
+                                 variance_floor=flags["variance_floor"])
 
         train_loss = loss.item()
         epoch_train_loss += train_loss
@@ -467,13 +474,14 @@ def train(rank, flags, world_size, device):
      
         print(f'rank = {rank}, epoch = {epoch}, step = {step}/{flags["ntraining_steps"]}, loss = {train_loss}', flush=True)
 
+        step += 1
+        # Checkpoint step is the number of completed optimizer updates.
         # Save model state
         if rank == 0 or device == torch.device("cpu"):
           if step % flags["nsave_steps"] == 0:
             save_model_and_train_state(rank, device, simulator, flags, step, epoch, 
                                        optimizer, train_loss, valid_loss, train_loss_hist, valid_loss_hist)
 
-        step += 1
         if step >= flags["ntraining_steps"]:
             break
 
@@ -537,48 +545,8 @@ def _get_simulator(
     device: PyTorch device 'cpu' or 'cuda'.
   """
 
-  # Normalization stats
-  normalization_stats = {
-      'acceleration': {
-          'mean': torch.FloatTensor(metadata['acc_mean']).to(device),
-          'std': torch.sqrt(torch.FloatTensor(metadata['acc_std'])**2 +
-                            acc_noise_std**2).to(device),
-      },
-      'velocity': {
-          'mean': torch.FloatTensor(metadata['vel_mean']).to(device),
-          'std': torch.sqrt(torch.FloatTensor(metadata['vel_std'])**2 +
-                            vel_noise_std**2).to(device),
-      },
-  }
+  return build_simulator(metadata, acc_noise_std, vel_noise_std, device)
 
-  # Get necessary parameters for loading simulator.
-  if "nnode_in" in metadata and "nedge_in" in metadata:
-    nnode_in = metadata['nnode_in']
-    nedge_in = metadata['nedge_in']
-  else:
-    # Given that there is no additional node feature (e.g., material_property) except for:
-    # (position (dim), velocity (dim*6), particle_type (16)),
-    nnode_in = 37 if metadata['dim'] == 3 else 30
-    nedge_in = metadata['dim'] + 1
-
-  # Init simulator.
-  simulator = learned_simulator.LearnedSimulator(
-      particle_dimensions=metadata['dim'],
-      nnode_in=nnode_in,
-      nedge_in=nedge_in,
-      latent_dim=128,
-      nmessage_passing_steps=10,
-      nmlp_layers=2,
-      mlp_hidden_dim=128,
-      connectivity_radius=metadata['default_connectivity_radius'],
-      boundaries=np.array(metadata['bounds']),
-      normalization_stats=normalization_stats,
-      nparticle_types=NUM_PARTICLE_TYPES,
-      particle_type_embedding_size=16,
-      boundary_clamp_limit=metadata["boundary_augment"] if "boundary_augment" in metadata else 1.0,
-      device=device)
-
-  return simulator
 
 def validation(
         simulator,
@@ -621,7 +589,9 @@ def validation(
       )
 
   # Compute loss (heteroscedastic NLL)
-  loss = acceleration_loss(pred_acc, target_acc, non_kinematic_mask, pred_variance=pred_variance)
+  loss = acceleration_loss(pred_acc, target_acc, non_kinematic_mask,
+                                 pred_variance=pred_variance, loss_type=flags["loss"],
+                                 variance_floor=flags["variance_floor"])
 
   return loss
 

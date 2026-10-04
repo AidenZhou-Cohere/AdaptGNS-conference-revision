@@ -1,234 +1,101 @@
-# AdaptGNS: Adaptive Interaction Graphs for Particle Simulation
+# Adaptive Interaction Graphs: correctness and controlled experiments
 
-Code release for *Adaptive Interaction Graphs for Particle Simulation*.
+This research fork repairs material inconsistencies in the released AdaptGNS implementation and adds reproducible tests of edge allocation. **The original strict Pareto and long-horizon-superiority claims are not established by the released arrays.** See the statistical audit and the clearly separated new WaterDrop pilot. Corrected code does not retroactively validate old checkpoints or numbers.
 
-A standard GNS ([Sanchez-Gonzalez et al., 2020](https://arxiv.org/abs/2002.09405))
-is augmented with a per-particle variance head trained jointly under a
-heteroscedastic Gaussian NLL. At inference time, particles whose predicted
-variance is above the 70th percentile receive an expanded neighbourhood
-(`radius_factor = 1.267`); the rest keep the default `r = 0.015`. The
-variance estimate from the previous step drives the current step's graph,
-so the cost is one forward pass per step. AdaptGNS achieves a strict
-Pareto improvement on WaterDrop (20% fewer edges than fixed `k = 5`, lower
-MSE@200) and a modest gain on Sand.
+Based on `aidenzhou8/AdaptGNS` commit `5cf0d7cb9d927f4277c4538917ae570d8dc9d7b6`, itself derived from [geoelements/gns](https://github.com/geoelements/gns). The original release description is preserved in `README_legacy_release.md` as historical context; its commands and claims should not be treated as the corrected protocol.
 
-Upstream: [geoelements/gns](https://github.com/geoelements/gns).
+## What changed
 
-## Repository layout
+- Correct d-dimensional Gaussian NLL with explicit variance semantics; `legacy_nll` remains available for forensic reproduction.
+- `mse` and established faithful heteroscedastic regression objectives, with tests verifying that the latter preserves mean-network MSE gradients. Faithful regression is prior work (Stirn et al., AISTATS 2023), not a new loss.
+- Checkpoints retain architecture, trained normalization, seed/configuration, uncertainty interpretation, and graph backend. Validation uses its own split without silently falling back to test.
+- Batched adaptive selection is trajectory-local. Calibration binning, dynamic-particle masking, checkpoint compatibility, and saved update counts are tested.
+- Explicit SciPy CPU radius backend for portable execution. Its capped-neighbor selection can differ from PyG; CPU results are not GPU performance measurements.
+- Exact optional-pair budgets with random/speed/risk controls, historical whole-trajectory bootstraps, and local pilot experiments with immutable frame selection and five training seeds.
 
-```
-AdaptiveGNS/
-├── README.md                      # this file
-├── .gitignore
-├── adaptive-gns/                  # fork of geoelements/gns with VarianceHead + adaptive loop
-│   ├── gns/                       # core simulator
-│   │   ├── graph_network.py       # includes VarianceHead
-│   │   ├── learned_simulator.py   # includes predict_positions_adaptive
-│   │   ├── train.py               # NLL loss + adaptive loop entry points
-│   │   └── ...
-│   ├── scripts/                   # evaluation, calibration, plots
-│   ├── utils/                     # dataset converters (HDF5/TFRecord -> npz)
-│   ├── slurm_scripts/             # upstream SLURM templates
-│   ├── test/                      # pytest suite (inherited from upstream)
-│   ├── requirements.txt
-│   ├── references.bib             # upstream's bib
-│   └── license.md                 # upstream MIT license
-├── jobs/                          # my SLURM scripts, run on Yale's Misha cluster
-├── figures/                       # paper figures (regen instructions in figures/README.md)
-├── calibration_plots/paper/       # Figure 2 in the paper
-├── combined_results_plots/        # Figure 3 in the paper
-├── Sand/                          # Dataset 1
-│   ├── dataset/metadata.json      
-│   └── models/                   
-└── WaterDrop/                     # Dataset 2
-    ├── dataset/metadata.json
-    └── models/
-```
+## Environment
 
-## Setup
-
-Tested on Python 3.10 with CUDA 11.8.
+The local work used Python 3.12, CPU Torch, SciPy and PyG. `research/requirements-local-lock.txt` records the exact installed packages. For a fresh CPU environment:
 
 ```bash
-git clone https://github.com/<your-username>/AdaptiveGNS.git
-cd AdaptiveGNS
-
 python3 -m venv .venv
 source .venv/bin/activate
-
-# Replace cu118 with your CUDA version (or cpu).
-pip install torch --index-url https://download.pytorch.org/whl/cu118
-pip install torch_geometric
-pip install torch_scatter torch_sparse torch_cluster \
-    -f https://data.pyg.org/whl/torch-2.4.0+cu118.html
-
-pip install -r adaptive-gns/requirements.txt
-
-# Make the package importable.
-export PYTHONPATH=$PWD/adaptive-gns:$PYTHONPATH
+python -m pip install numpy scipy torch torch-geometric absl-py matplotlib pytest tfrecord crc32c protobuf
+export PYTHONPATH="$PWD:$PWD/adaptive-gns"
+python -m pytest tests research/tests -q
 ```
 
-Optional, for the TFRecord -> npz conversion only:
+GPU use needs a Torch build matching the machine and the appropriate PyG radius backend (`torch_cluster`/supported compiled dependencies). CUDA, distributed training, and the inherited full upstream test suite were not validated in this local revision. Do not assume the macOS lock file is a portable CUDA installation recipe.
+
+## Corrected full model
+
+The original NPZ data format is documented in `adaptive-gns/README.md`. Supply separate `train.npz`, `valid.npz`, and `test.npz` with `metadata.json`. No original full-model checkpoints or complete benchmark datasets are bundled.
 
 ```bash
-pip install tensorflow-cpu
-```
+python -m gns.train --mode=train --data_path=WaterDrop/dataset/ \
+  --model_path=WaterDrop/models/faithful_seed0/ \
+  --loss=faithful --seed=0 --radius_backend=scipy \
+  --ntraining_steps=500000 --nsave_steps=5000 --lr_decay_steps=500000
 
-## Data
-
-Datasets are not bundled in this repo, as they are rather large. Both are publicly hosted.
-
-### Sand
-
-DesignSafe-CI DOI: [10.17603/ds2-0phb-dg64](https://doi.org/10.17603/ds2-0phb-dg64).
-Place the resulting files at `Sand/dataset/`:
-
-```
-Sand/dataset/
-├── metadata.json
-├── train.npz
-├── valid.npz
-└── test.npz
-```
-
-### WaterDrop
-
-Found at the original GNS release. Dataset consists of TFRecords; convert
-to `.npz` with:
-
-```bash
-python adaptive-gns/utils/convert_tfrecord_to_npz.py \
-    --input_dir  WaterDrop/dataset \
-    --output_dir WaterDrop/dataset \
-    --splits train valid test \
-    --ndim 2
-```
-
-Final layout:
-
-```
-WaterDrop/dataset/
-├── metadata.json
-├── train.npz
-├── valid.npz
-└── test.npz
-```
-
-## Reproducing the paper
-
-Make sure to have `PYTHONPATH=$PWD/adaptive-gns`. Training each model
-takes ~6 hours on an Nvidia A100 GPU; evaluation per dataset is ~30 min.
-
-### 1. Exploratory data analysis (Section 2)
-
-```bash
-python adaptive-gns/scripts/dataset_eda.py \
-    --data_path WaterDrop/dataset/test.npz \
-    --step 100 --radius 0.015 --n_trajectories 30
-python adaptive-gns/scripts/dataset_eda.py \
-    --data_path Sand/dataset/test.npz \
-    --step 100 --radius 0.015 --n_trajectories 30
-```
-
-This reproduces the numbers in Table 1.
-
-### 2. Training
-
-The actual SLURM submissions are in `jobs/`. Paths are hardcoded, so make sure to replace mine with your own! To run on native without a
-scheduler:
-
-```bash
-# AdaptGNS (NLL loss, variance head trained jointly).
-python -m gns.train \
-    --data_path=Sand/dataset/ \
-    --model_path=Sand/models/adaptive_gns/ \
-    --ntraining_steps=500000 \
-    --nsave_steps=5000 \
-    --lr_decay_steps=500000 \
-    --mode=train
-
-# Same recipe, swap data path for WaterDrop.
-```
-
-Baselines `k=5`, `k=10`, `k_mid` (`r=0.0176`), and the per-particle MLP
-were trained with the unmodified upstream
-[geoelements/gns](https://github.com/geoelements/gns) so that their loss
-remained MSE rather than NLL. Clone it alongside this repo and point the
-training scripts at it:
-
-```bash
-git clone https://github.com/geoelements/gns.git ../gns-upstream
-PYTHONPATH=$PWD/../gns-upstream python -m gns.train \
-    --data_path=Sand/dataset/ \
-    --model_path=Sand/models/baseline_k5/ \
-    --connectivity_radius=0.015 \
-    --ntraining_steps=500000 --mode=train
-
-# k=10: --connectivity_radius=0.019
-# k_mid: --connectivity_radius=0.0176
-# MLP:  --nmessage_passing_steps=0
-```
-
-The `jobs/train_baseline_*.sh` and `jobs/eval_baselines.sh` SLURM scripts
-encode the same recipes for the Misha cluster (and refer to a separate
-`gns-main/` clone of the upstream).
-
-### 3. Evaluation
-
-```bash
-# Adaptive rollout with the paper's tuned hyperparameters.
-python adaptive-gns/scripts/evaluate_adaptive_rollout.py \
-    --data_path=Sand/dataset/ \
-    --model_path=Sand/models/adaptive_gns/ \
-    --model_file=latest \
-    --sigma_percentile=70 \
-    --radius_factor=1.267
-
-# Standard MSE rollout (any baseline or AdaptGNS-as-fixed-graph).
 python adaptive-gns/scripts/evaluate_rollout_mse.py \
-    --data_path=Sand/dataset/ \
-    --model_path=Sand/models/baseline_k5/ \
-    --model_file=latest
+  --data_path=WaterDrop/dataset/ --model_path=WaterDrop/models/faithful_seed0/ \
+  --model_file=latest --split=valid
+
+python adaptive-gns/scripts/evaluate_adaptive_rollout.py \
+  --data_path=WaterDrop/dataset/ --model_path=WaterDrop/models/faithful_seed0/ \
+  --model_file=latest --split=valid --sigma_percentile=70 --radius_factor=1.267
+
+python adaptive-gns/scripts/evaluate_budget_policies.py \
+  --data_path=WaterDrop/dataset/ \
+  --checkpoint=WaterDrop/models/faithful_seed0/model-500000.pt \
+  --split=valid --extra_fraction=.25 --max_steps=50 \
+  --output=WaterDrop/models/faithful_seed0/budget_valid.json
 ```
 
-The grid sweep behind Section 4.1 (`sigma_percentile in {65,70,75,80,90}`,
-`radius_factor in {1.2,1.267,1.5,2}`) was driven by
-`jobs/eval_adaptive_rollout.sh` with `--export=SIGMA_PCT=70,RADIUS=1.267`
-etc.; the resulting `.npz` files are kept in
-`Sand/models/adaptive_gns/adaptive_rollout_*.npz`.
+The last evaluator is a same-observed-state diagnostic, not an autonomous rollout. Its uncapped symmetric pair construction differs from the capped original graph. Old checkpoints require their original architecture and normalization settings; defaults are documented assumptions, not recovered facts. `--normalization_noise_std=0` reproduces the old normalization mismatch and is not the recommended trained-model evaluation.
 
-### 4. Calibration analysis (Table 3)
+The 500,000-step command is a **future full experiment**, not a run completed by this revision. A separate two-update, original-architecture CLI smoke test verified real training, checkpoint restoration, validation, fixed/adaptive rollouts, exact-budget evaluation, and calibration. Its numerical losses are not performance evidence.
+
+## Reproduce the new small WaterDrop pilot
+
+This is a 48-wide, three-block CPU model with no training noise. It uses 8 training, 3 validation and 3 test trajectories, 3,000 updates, and 5 seeds per objective. It does not replace the full benchmark. Data are fetched from the [official GNS release](https://github.com/google-deepmind/deepmind-research/tree/master/learning_to_simulate).
 
 ```bash
-python adaptive-gns/scripts/verify_calibration.py \
-    --data_path=Sand/dataset/ \
-    --model_path=Sand/models/adaptive_gns/ \
-    --model_file=latest --ntrajectories=30
+mkdir -p data-pilot
+curl -L --fail --range 0-67108863 \
+  https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/WaterDrop/train.tfrecord \
+  -o data-pilot/train-prefix.tfrecord
+curl -L --fail --range 0-16777215 \
+  https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/WaterDrop/valid.tfrecord \
+  -o data-pilot/valid-prefix.tfrecord
+curl -L --fail --range 0-16777215 \
+  https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/WaterDrop/test.tfrecord \
+  -o data-pilot/test-prefix.tfrecord
+curl -L --fail \
+  https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/WaterDrop/metadata.json \
+  -o data-pilot/metadata.json
+python research/prepare_waterdrop.py --data-dir data-pilot \
+  --manifest research/results/data_manifest.json
+python -m research.pilot --data-dir data-pilot \
+  --output-dir research/results/waterdrop_pilot --steps 3000 --seeds 0 1 2 3 4
+python -m research.summarize_pilot --data-dir data-pilot
+python -m research.risk_benefit --data-dir data-pilot
 ```
 
-Writes per-decile expected calibration error and the per-particle
-`sigma_traj*.png` snapshots used to assemble the strip in Figure 2.
+The parser verifies TFRecord CRCs, takes complete records only, and stores numeric arrays without pickle. The training protocol fixes frames, graph schedules, budgets and final-checkpoint selection before the full run. Risk and random selectors have exactly equal retained pair counts at each observed state. The previous-base score diagnostic is distinct from the actual cached-score controller in an autonomous rollout.
 
-### 5. Figures
+## Reanalyze historical results and graph cost
 
+```bash
+python research/reanalyze.py
+python research/plot_reanalysis.py
+python research/benchmark_graph.py --data data-pilot/test-pilot.npz
+```
 
-| Figure                            | Script                                                                                                                                                                     |
-| --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1. Graph snapshots at Step 100    | `python adaptive-gns/scripts/make_graph_snapshot.py --waterdrop_path WaterDrop/dataset/test.npz --sand_path Sand/dataset/test.npz --output figures/fig_graph_snapshot.pdf` |
-| 2. Per-particle uncertainty strip | `python adaptive-gns/scripts/verify_calibration.py ...` then `python adaptive-gns/scripts/make_sigma_strip.py --traj 0 --steps 1 10 50`                                    |
-| 3. Per-step edges + MSE           | `python adaptive-gns/scripts/plot_mse_vs_steps_sand_waterdrop.py`                                                                                                          |
+Historical bootstrap intervals resample whole trajectories, condition on single saved models and assume aligned row ordering. They are not multi-seed confidence intervals. The CPU graph benchmark includes tree construction and selection on identical states; it excludes any neural model and cannot establish end-to-end speedup. Its synthetic scoring function is not learned risk.
 
+## Scientific scope
 
-The rollout `.npz` files committed under `Sand/models/` and `WaterDrop/models/`
-are sufficient input for Figure 3 without retraining.
+Residual magnitude, calibrated variance, and benefit from adding edges are different targets. The theory gives conditional bookkeeping and perturbation bounds, not universal stability guarantees. Mandatory base edges may grow with density, so an optional-edge budget is not a hard total-compute bound. A deterministic ID tie-break is not permutation equivariant at ties.
 
-## Acknowledgments
-
-`adaptive-gns/` is a fork of [geoelements/gns](https://github.com/geoelements/gns)
-(MIT-licensed). The non-trivial
-modifications relative to upstream are the variance head in
-`adaptive-gns/gns/graph_network.py`,
-the adaptive mechanism in 
-`adaptive-gns/gns/learned_simulator.py`
-and `(adaptive-gns/gns/train.py`, and everything
-under `adaptive-gns/scripts/`.
+Keep historical artifacts, new small-model measurements, and software smoke tests separate. Full corrected multi-seed Sand/WaterDrop experiments and broader regimes remain necessary for a general conference-level performance claim.

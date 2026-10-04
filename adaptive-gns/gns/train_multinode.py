@@ -17,7 +17,7 @@ from absl import app
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from gns import learned_simulator
 from gns import noise_utils
-from gns.train import acceleration_loss
+from gns.losses import acceleration_loss
 from gns import reading_utils
 from gns import data_loader
 import torch

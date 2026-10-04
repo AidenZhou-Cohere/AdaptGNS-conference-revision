@@ -15,10 +15,11 @@ import torch
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from gns import learned_simulator, data_loader, reading_utils
+from gns.model_io import load_for_evaluation
 
 INPUT_SEQUENCE_LENGTH = 6
 KINEMATIC_PARTICLE_ID = 3
-EVAL_STEPS = [1, 10, 50, 200]  # Summary steps printed to console
+EVAL_STEPS = [1, 10, 50, 200, 500, 1000]  # Summary steps printed to console
 
 
 def rollout_with_step_mse(simulator, positions, particle_type, material_property,
@@ -30,13 +31,17 @@ def rollout_with_step_mse(simulator, positions, particle_type, material_property
     is comparable to `evaluate_adaptive_rollout.py`'s `mean_edges_per_step`).
     """
     initial_positions = positions[:, :INPUT_SEQUENCE_LENGTH]
-    ground_truth = positions[:, INPUT_SEQUENCE_LENGTH:]
+    if nsteps < 1 or nsteps > positions.shape[1] - INPUT_SEQUENCE_LENGTH:
+        raise ValueError("nsteps must be within the available forecast horizon")
+    ground_truth = positions[:, INPUT_SEQUENCE_LENGTH:INPUT_SEQUENCE_LENGTH + nsteps]
     current = initial_positions
     predictions = []
     edge_counts = []
 
     kinematic_mask = (particle_type == KINEMATIC_PARTICLE_ID).bool()
     non_kinematic = ~kinematic_mask
+    if not bool(non_kinematic.any()):
+        raise ValueError("MSE requires at least one dynamic particle")
 
     for step in range(nsteps):
         if material_property is not None:
@@ -87,7 +92,17 @@ def main():
                         help='Override connectivity radius (default: use metadata value)')
     parser.add_argument('--output', '-o', default=None,
                         help='Save per-step MSE to .npz and .json (default: <model_path>/rollout_mse_<model_name>.npz)')
+    parser.add_argument('--split', choices=['train', 'valid', 'test'], default='valid',
+                        help='Use valid for selection; test only after settings are frozen.')
+    parser.add_argument('--normalization_noise_std', type=float, default=None,
+                        help='Legacy checkpoint training normalization noise (not input noise).')
+    parser.add_argument('--nmessage_passing_steps', type=int, default=None,
+                        help='Legacy checkpoint depth, including zero for an MLP.')
+    parser.add_argument('--radius_backend', choices=['pyg', 'scipy'], default=None,
+                        help='Legacy checkpoint graph backend; scipy is an explicit CPU reference')
     args = parser.parse_args()
+    if args.max_trajectories is not None and args.max_trajectories <= 0:
+        parser.error('--max_trajectories must be positive')
 
     data_path = args.data_path.rstrip('/') + '/'
     model_path = args.model_path.rstrip('/') + '/'
@@ -107,23 +122,21 @@ def main():
     if output_path is None:
         model_basename = model_file.replace('.pt', '')
         if args.connectivity_radius is not None:
-            output_path = os.path.join(model_path, f'rollout_mse_{model_basename}_r{args.connectivity_radius}')
+            output_path = os.path.join(model_path, f'rollout_mse_{model_basename}_{args.split}_r{args.connectivity_radius}')
         else:
-            output_path = os.path.join(model_path, f'rollout_mse_{model_basename}')
+            output_path = os.path.join(model_path, f'rollout_mse_{model_basename}_{args.split}')
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     metadata = reading_utils.read_metadata(data_path, 'rollout')
-    if args.connectivity_radius is not None:
-        print(f"Overriding connectivity radius: {metadata['default_connectivity_radius']} → {args.connectivity_radius}")
-        metadata['default_connectivity_radius'] = args.connectivity_radius
-    # Use train.py's _get_simulator logic for consistency
-    from gns.train import _get_simulator
-    simulator = _get_simulator(metadata, acc_noise_std=0.0, vel_noise_std=0.0, device=device)
-    simulator.load(os.path.join(model_path, model_file))
-    simulator.to(device)
-    simulator.eval()
+    simulator, provenance = load_for_evaluation(
+        os.path.join(model_path, model_file), metadata, device,
+        normalization_noise_std=args.normalization_noise_std,
+        connectivity_radius=args.connectivity_radius,
+        radius_backend=args.radius_backend,
+        nmessage_passing_steps=args.nmessage_passing_steps,
+        allow_missing_variance_head=True)
 
-    ds = data_loader.get_data_loader_by_trajectories(path=data_path + 'test.npz')
+    ds = data_loader.get_data_loader_by_trajectories(path=data_path + args.split + '.npz')
     has_material = len(ds.dataset._data[0]) == 3
 
     mse_at_steps = {s: [] for s in EVAL_STEPS}
@@ -148,7 +161,7 @@ def main():
 
             mse_per_step, edge_counts = rollout_with_step_mse(
                 simulator, positions, particle_type, material_property,
-                torch.tensor([n_particles], dtype=torch.int32).to(device),
+                n_particles,
                 nsteps, device,
             )
 
@@ -165,6 +178,8 @@ def main():
                 print(f"  Evaluated {i + 1} trajectories...")
 
     # Aggregate per-step MSE across trajectories (handle variable length)
+    if not mse_all_trajectories:
+        raise ValueError("No trajectories evaluated")
     max_steps = max(len(m) for m in mse_all_trajectories)
     mse_stacked = np.full((n_eval, max_steps), np.nan)
     for i, m in enumerate(mse_all_trajectories):
@@ -186,8 +201,10 @@ def main():
         if base.endswith(ext):
             base = base[:-len(ext)]
             break
+    os.makedirs(os.path.dirname(os.path.abspath(base)), exist_ok=True)
     np.savez(
         base + '.npz',
+        split=args.split,
         steps=steps,
         mse_mean=mse_mean,
         mse_std=mse_std,
@@ -200,9 +217,14 @@ def main():
     )
     summary = {
         'data_path': data_path,
+        'split': args.split,
+        'evaluation_provenance': provenance,
+        'horizon_convention': 'forecast steps after 6-frame context',
+        'mse_convention': 'mean over dynamic particles and coordinates, then trajectories',
         'model_file': model_file,
         'n_trajectories': n_eval,
         'max_steps': int(max_steps),
+        'mse_at_final_available_step': float(mse_mean[-1]),
         'mean_edges_per_step': mean_edges_per_step,
         'mse_at_steps': {s: float(np.mean(mse_at_steps[s])) if mse_at_steps[s] else None
                          for s in EVAL_STEPS},
