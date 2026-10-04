@@ -187,3 +187,5 @@ python -m research.run_evaluation_queue --help
 ```
 
 The supervisor and genuine child parsers passed 65 synthetic tests. Its real read-only check during active training returned `not_ready`, preserved both lock hashes and created no evaluation directory; no checkpoint or test data was loaded. Raw final evaluation artifacts belong in a separate local work directory, with only reviewed compact results curated for publication.
+
+The [manuscript evidence audit](research/results/manuscript_evidence_audit_20261004.json) maps 97 entries and reports 16,491 saved-scalar, rounding, aggregation, identity and provenance checks with no numerical mismatches. It does not rerun simulations, raw ranks or historical bootstraps. The compact rollout report now states the base-only cached-risk first forecast and the risk-head cost included in base timings. Only report text changed; the original numerical summary and producer hash remain preserved.

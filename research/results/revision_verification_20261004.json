@@ -35,6 +35,14 @@
       "skipped": 0,
       "seconds": 21.18,
       "scope": "Synthetic headers, complete validation histories, safe numeric manifests, genuine child parsers, completed guard failures, locked interruption/resume and inert subprocess cutoff/SIGTERM; no benchmark model/data/GPU"
+    },
+    {
+      "command": "work/venv/bin/python work/audit_manuscript_evidence.py; separate work/audit_benefit_manuscript.py",
+      "scope": "Saved scalar artifacts and source/manuscript text only; no new experiments or raw-array/model/test-source access",
+      "mapped_entries": 97,
+      "main_checks": 647,
+      "independent_benefit_checks": 15844,
+      "numeric_mismatches": 0
     }
   ],
   "source_sha256": {
@@ -54,13 +62,15 @@
     "research/nonadditive_allocation_toy.py": "6e9b963b3309d4dda278f9334477d9a4a18599a1a5e9d309fed58bbc612654ea",
     "research/run_evaluation_queue.py": "d8e81659fd804bbc8ec6b35af3e7c25d6f9f546cc7b396de019e1d90dcac8f86",
     "research/tests/test_run_evaluation_queue.py": "5156f59b035ee6ba0a1577bece8ca0fc4280ff361d29f7af47d69f73ec3b2da1",
-    "research/tests/test_evaluation_queue_parsers.py": "5b73636ae9606013c51abbcb976e0067cdf63163fbdfa23bad392174c8830036"
+    "research/tests/test_evaluation_queue_parsers.py": "5b73636ae9606013c51abbcb976e0067cdf63163fbdfa23bad392174c8830036",
+    "research/summarize_rollouts.py": "52c9273b8b7edaa01bef7d0c21bc8c7a4f110606c861015fbb9a8593706bfe73"
   },
   "notes": [
     "No frozen training source or training protocol changed.",
     "Same-state evaluator CPU integration and strict resume passed on an existing 100-update smoke checkpoint; no performance claim.",
     "Gaussian covariance/Monte Carlo check is synthetic, not a particle benchmark.",
     "Validation curves retain every scheduled point and failed history; this tool verifies saved arithmetic, not raw predictions.",
-    "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation."
+    "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation.",
+    "Only write_report prose changed in compact rollout summarizer: first-forecast budget exception and risk-head baseline scope. AST outside that function is identical to the original producer, and rollout_summary.json bytes/provenance remain unchanged."
   ]
 }

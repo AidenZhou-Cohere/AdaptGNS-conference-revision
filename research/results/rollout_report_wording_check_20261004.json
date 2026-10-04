@@ -1,0 +1,11 @@
+{
+  "scope": "Presentation-only report regeneration; numeric evidence unchanged",
+  "numeric_summary_sha256_before_and_after": "0b8a805ddfabd4793c22f5dbb02396814d70150257dd9129fee51fc520c0a374",
+  "report_sha256": "23578769bcd730ed97a22b18f4dbe04eadd79069e626560638812bc576efbf6e",
+  "current_reporting_source_sha256": "52c9273b8b7edaa01bef7d0c21bc8c7a4f110606c861015fbb9a8593706bfe73",
+  "checks": [
+    "budget initialization qualified",
+    "risk-head baseline scope explicit",
+    "numeric evidence unchanged"
+  ]
+}

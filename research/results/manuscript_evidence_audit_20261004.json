@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-04T17:54:06.864863+00:00",
+  "scope": "Saved JSON summaries, scalar traces, source and manuscript text only. No model/raw-array/dataset/GPU access or experiment rerun.",
+  "mapped_entries": 97,
+  "main_checks": 647,
+  "independent_benefit_checks": 15844,
+  "numeric_mismatches": 0,
+  "clarifications_resolved": {
+    "compact_first_forecast": true,
+    "dense_compared_specifically_with_benefit_head": true
+  },
+  "producer_provenance": [
+    {
+      "file": "outputs/AdaptGNS/research/summarize_rollouts.py",
+      "recorded_producer_sha256": "d017d0c8e87e5daa3b07fdfabe1fcc17ecf6e6720c37c613ef85c3719b076352",
+      "current_sha256": "52c9273b8b7edaa01bef7d0c21bc8c7a4f110606c861015fbb9a8593706bfe73",
+      "producer_commit": "f3d0d24753c181a10babfd6d277959d0efdf78ff",
+      "non_report_ast_identical": true,
+      "meaning": "Parent corrected the report-only initialization prose during this audit. Saved numerical provenance remains the exact original producer hash; no evidence hash was silently replaced."
+    }
+  ],
+  "audit_script_sha256": "a7b42d84641ba27f34f0c05e7e35ce581a9ec8293c5e6ee87315a2e410f89b61",
+  "detailed_map_sha256": "8d912e16db6967de779f543b151c25df3e898e5fe0d6143e90638b7c8fb0b5b5",
+  "benefit_audit_sha256": "d341184ffb9aa3f4322d160a9c28e11f85a76e890de6f185fc937c654a0052c5",
+  "manuscript_sources_sha256": {
+    "work/manuscript_body.tex": "910b76dc32573a727dd200d2085fdc1e03ca96dd66ce492dea51a3721a465278",
+    "work/pilot_results.tex": "5c7cfffa406194c1f03d4ba05e22b27ba9bbed3060275342eb082b01d504bf92",
+    "work/rollout_results.tex": "b52c6297d2b7ed79d87948f6fddfc7f1081cadf9722c38bd6d179bf0261801fe",
+    "outputs/revised_manuscript.tex": "1a37262ff28eed3368dab6a3347bc9dbc77105ff6bf04f666d4e56e075e72402"
+  },
+  "numeric_summaries_sha256": {
+    "outputs/AdaptGNS/research/results/reanalysis.json": "8d96870957b3ba0e0d0c975756d2bd2dc22e4567ec91c5ea9b60d3a571793d37",
+    "outputs/AdaptGNS/research/results/pilot_summary.json": "93bc62a02a2f0b9b809b95b8a70b9c780e1e0f8d34d9a66495cc8b5075b6056b",
+    "outputs/AdaptGNS/research/results/rollout_summary.json": "0b8a805ddfabd4793c22f5dbb02396814d70150257dd9129fee51fc520c0a374",
+    "outputs/AdaptGNS/research/results/risk_benefit.json": "dccb0a318feb252c02b284f72fc683627060c5723d1d379b7ad66c7345522a4d",
+    "outputs/AdaptGNS/research/results/benefit_head.json": "fc379e557aea5bb50bdc4d5c7ea1507bf4f1ba05a369ea1b304fcece87f0085f"
+  },
+  "limitations": [
+    "Historical NPZ digests and bootstrap draws are inherited from the saved reanalysis; NPZ arrays were not reopened.",
+    "Checkpoint hashes in saved rollout JSON were compared across horizons but checkpoints were not opened.",
+    "Manuscript source locations refer to this audit snapshot; parent edits can move lines.",
+    "Risk/benefit frame Spearman values are accepted as saved; the parallel audit independently recomputes aggregation from those scalars, without raw ranks."
+  ]
+}
