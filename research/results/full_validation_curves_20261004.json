@@ -1,0 +1,272 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-04T17:32:36.400068+00:00",
+  "scope": "Fixed clean-validation learning diagnostics; never checkpoint selection or test evidence",
+  "research_protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+  "source_sha256": "df3f790980cb1690eb959b199a9df999481d77d46f2d96bcbffdc269fce27fd6",
+  "current_frozen_source_files_verified": true,
+  "units": "normalized acceleration using stored noise-adjusted training scales; not position MSE or compact-pilot units",
+  "aggregation": "particles within each frame, equal frames within trajectory, equal trajectories; exactly three seeds for group mean/sample SD",
+  "verification_limit": "Checks saved frame/trajectory means, arithmetic consistency of bin counts/masses/risk totals and configuration hashes. Bin membership cannot be recovered from frame means; no checkpoint/data is loaded or predictions recomputed.",
+  "runs": [
+    {
+      "objective": "faithful",
+      "seed": 0,
+      "state": "running",
+      "points": [
+        {
+          "completed_steps": 0,
+          "record_file": "step-000000.json",
+          "record_sha256": "c4edb1bfb3cd5c4bd5218350f302576aa1ac2315b9a9fb79a95cd6ebac18a603",
+          "metrics": {
+            "coordinate_mse": 0.02112561039088656,
+            "constant_free_gaussian_nll": -0.3152761122887743,
+            "realized_vector_se": 0.04225122078177312,
+            "predicted_vector_se": 1.418380835825746,
+            "binned_vector_se_calibration_gap": 1.3761296150439726
+          }
+        },
+        {
+          "completed_steps": 5000,
+          "record_file": "step-005000.json",
+          "record_sha256": "48429967b65b4a5d9cfeab71fe80f16dc9321bc6866b5b3734478a76331f55fa",
+          "metrics": {
+            "coordinate_mse": 0.03245334100884738,
+            "constant_free_gaussian_nll": -2.584313123427081,
+            "realized_vector_se": 0.06490668201769476,
+            "predicted_vector_se": 0.11158324338982735,
+            "binned_vector_se_calibration_gap": 0.04667656137213259
+          }
+        },
+        {
+          "completed_steps": 10000,
+          "record_file": "step-010000.json",
+          "record_sha256": "bd8fcc4a6079a4223adaad1b41b3f9f93ce404fccab3068beb66ed7a381a9478",
+          "metrics": {
+            "coordinate_mse": 0.028823436173986437,
+            "constant_free_gaussian_nll": -2.8676545305887697,
+            "realized_vector_se": 0.057646872347972875,
+            "predicted_vector_se": 0.07869576356760581,
+            "binned_vector_se_calibration_gap": 0.021048891219632933
+          }
+        }
+      ],
+      "last_recorded_updates": 10100,
+      "error": null,
+      "status_file_sha256": "f9c24c32e3292393e4db769c6617ebd89d37052bd6aa9be2bf8923c03e364385",
+      "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+      "protocol_file_sha256": "8db3f38465491a0daf6e3bd19a91e250c02f0543cf67562f9c232aa67ec607fe",
+      "missing_scheduled_updates": [
+        15000,
+        20000,
+        25000,
+        30000,
+        35000,
+        40000,
+        45000,
+        50000,
+        55000,
+        60000,
+        65000,
+        70000,
+        75000,
+        80000,
+        85000,
+        90000,
+        95000,
+        100000
+      ]
+    },
+    {
+      "objective": "faithful",
+      "seed": 1,
+      "state": "not_started",
+      "points": []
+    },
+    {
+      "objective": "faithful",
+      "seed": 2,
+      "state": "not_started",
+      "points": []
+    },
+    {
+      "objective": "nll",
+      "seed": 0,
+      "state": "not_started",
+      "points": []
+    },
+    {
+      "objective": "nll",
+      "seed": 1,
+      "state": "not_started",
+      "points": []
+    },
+    {
+      "objective": "nll",
+      "seed": 2,
+      "state": "not_started",
+      "points": []
+    }
+  ],
+  "three_seed_curves": {
+    "faithful": [
+      {
+        "completed_steps": 0,
+        "available_seeds": 1,
+        "required_seeds": 3,
+        "statistics": {
+          "coordinate_mse": {
+            "seed_values": [
+              0.02112561039088656,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "constant_free_gaussian_nll": {
+            "seed_values": [
+              -0.3152761122887743,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "realized_vector_se": {
+            "seed_values": [
+              0.04225122078177312,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "predicted_vector_se": {
+            "seed_values": [
+              1.418380835825746,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "binned_vector_se_calibration_gap": {
+            "seed_values": [
+              1.3761296150439726,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          }
+        }
+      },
+      {
+        "completed_steps": 5000,
+        "available_seeds": 1,
+        "required_seeds": 3,
+        "statistics": {
+          "coordinate_mse": {
+            "seed_values": [
+              0.03245334100884738,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "constant_free_gaussian_nll": {
+            "seed_values": [
+              -2.584313123427081,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "realized_vector_se": {
+            "seed_values": [
+              0.06490668201769476,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "predicted_vector_se": {
+            "seed_values": [
+              0.11158324338982735,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "binned_vector_se_calibration_gap": {
+            "seed_values": [
+              0.04667656137213259,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          }
+        }
+      },
+      {
+        "completed_steps": 10000,
+        "available_seeds": 1,
+        "required_seeds": 3,
+        "statistics": {
+          "coordinate_mse": {
+            "seed_values": [
+              0.028823436173986437,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "constant_free_gaussian_nll": {
+            "seed_values": [
+              -2.8676545305887697,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "realized_vector_se": {
+            "seed_values": [
+              0.057646872347972875,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "predicted_vector_se": {
+            "seed_values": [
+              0.07869576356760581,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          },
+          "binned_vector_se_calibration_gap": {
+            "seed_values": [
+              0.021048891219632933,
+              null,
+              null
+            ],
+            "mean": null,
+            "sample_sd": null
+          }
+        }
+      }
+    ],
+    "nll": []
+  }
+}

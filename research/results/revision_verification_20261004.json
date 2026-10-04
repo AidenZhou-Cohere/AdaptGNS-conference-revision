@@ -16,6 +16,25 @@
       "skipped": 0,
       "seconds": 32.16,
       "scope": "Subsequent standalone same-state summarizer; synthetic artifacts only"
+    },
+    {
+      "command": "python -m pytest research/tests/test_summarize_training_validation.py -q",
+      "passed": 30,
+      "skipped": 0,
+      "seconds": 7.48,
+      "scope": "Synthetic validation records only; subsequent provenance fixes independently reviewed"
+    },
+    {
+      "command": "python -m research.nonadditive_allocation_toy",
+      "bounded_quadratic_cases": 20,
+      "scope": "Finite synthetic set functions; all relevant mixed differences and two counterexamples verified"
+    },
+    {
+      "command": "python -m pytest research/tests/test_run_evaluation_queue.py research/tests/test_evaluation_queue_parsers.py -q",
+      "passed": 65,
+      "skipped": 0,
+      "seconds": 21.18,
+      "scope": "Synthetic headers, complete validation histories, safe numeric manifests, genuine child parsers, completed guard failures, locked interruption/resume and inert subprocess cutoff/SIGTERM; no benchmark model/data/GPU"
     }
   ],
   "source_sha256": {
@@ -29,11 +48,19 @@
     "research/tests/test_summarize_full_rollouts.py": "1d1c5d9a1d8e14ff5eb5647e710249e0683b624ff439677dd3bd34fcd309fb17",
     "research/tests/test_summarize_full_same_state.py": "a2c555e7a760e223580ce0a85a5b2951a782c063210a8288b002d5adc07f2dcc",
     "research/protocols/full_same_state_diagnostic.md": "e59a351b14753802d43bbfaec69d9d45e009c895330d599a2848bc268783d381",
-    "research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    "research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+    "research/summarize_training_validation.py": "df3f790980cb1690eb959b199a9df999481d77d46f2d96bcbffdc269fce27fd6",
+    "research/tests/test_summarize_training_validation.py": "b27c98799198e257edda54c2f1d1d31f1c8bfd5dc6dd23b3031744bbedffe837",
+    "research/nonadditive_allocation_toy.py": "6e9b963b3309d4dda278f9334477d9a4a18599a1a5e9d309fed58bbc612654ea",
+    "research/run_evaluation_queue.py": "d8e81659fd804bbc8ec6b35af3e7c25d6f9f546cc7b396de019e1d90dcac8f86",
+    "research/tests/test_run_evaluation_queue.py": "5156f59b035ee6ba0a1577bece8ca0fc4280ff361d29f7af47d69f73ec3b2da1",
+    "research/tests/test_evaluation_queue_parsers.py": "5b73636ae9606013c51abbcb976e0067cdf63163fbdfa23bad392174c8830036"
   },
   "notes": [
     "No frozen training source or training protocol changed.",
     "Same-state evaluator CPU integration and strict resume passed on an existing 100-update smoke checkpoint; no performance claim.",
-    "Gaussian covariance/Monte Carlo check is synthetic, not a particle benchmark."
+    "Gaussian covariance/Monte Carlo check is synthetic, not a particle benchmark.",
+    "Validation curves retain every scheduled point and failed history; this tool verifies saved arithmetic, not raw predictions.",
+    "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation."
   ]
 }

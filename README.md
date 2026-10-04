@@ -167,3 +167,23 @@ python -m research.noise_target_toy
 The [noise-target derivation](research/notes/noise_augmentation_analysis.md) and [tie-symmetry analysis](research/notes/tie_symmetry_analysis.md) state their assumptions and limits. The Gaussian toy uses synthetic draws only; it does not estimate WaterDrop's augmentation effect.
 
 The same-state summarizer validates all six final-model identities and 297 prescribed frames per model, keeps natural/shared-base costs and current/previous risk correlations separate, and requires exactly three seed means. Its `full_same_state_pending` artifacts contain no experimental outcomes. Latest verification: 161 tests passed with one sandbox-only MPS skip in the combined suite; the subsequent standalone same-state summarizer passed 29 additional focused tests. Native Metal integration was tested separately before the fixed training queue launched.
+
+`research/summarize_training_validation.py` reads every saved scheduled clean-validation point without loading models or data. It checks configuration and current frozen-source hashes, recomputes trajectory-weighted metrics, and checks calibration-bin arithmetic. Bin membership cannot be recovered from saved frame means. Group curves require all three seeds; failed histories and missing measurements remain explicit. Its 30 synthetic tests include corrupt provenance, unequal frame/particle weighting and missing seeds.
+
+```sh
+python -m research.summarize_training_validation \
+  --output-prefix research/results/full_validation_curves --plot
+python -m research.nonadditive_allocation_toy
+```
+
+The [actual-set allocation note](research/notes/nonadditive_allocation_analysis.md) proves the additional uniform-approximation term needed to transfer an additive-score regret bound to nonlinear set benefit. A monotone exact-budget counterexample shows that perfect singleton gains alone are insufficient. The synthetic enumeration does not establish an interaction bound for the trained simulator.
+
+`research/run_evaluation_queue.py` defaults to read-only preflight. It refuses checkpoint loading while training is active and never reads reserved test data in check-only mode. Execution requires all six fixed final models, every scheduled validation record, exact source/configuration hashes, inactive process checks and exclusive training/model/evaluation locks. It then converts the pinned test source and runs the twelve locked evaluations plus two summaries sequentially. Numerical/protocol errors stop for review; completed guard failures remain results. The hard cutoff is October 7, 2026, 08:00 UTC. SIGTERM, SIGINT, orphan children and deadline recovery have synthetic coverage.
+
+```sh
+python -m research.run_evaluation_queue --help
+# Supply --training-dir, --data-dir, --raw-test and a separate local --output-dir.
+# --check-only is the default; --run retains the six-model and inactivity gates.
+```
+
+The supervisor and genuine child parsers passed 65 synthetic tests. Its real read-only check during active training returned `not_ready`, preserved both lock hashes and created no evaluation directory; no checkpoint or test data was loaded. Raw final evaluation artifacts belong in a separate local work directory, with only reviewed compact results curated for publication.

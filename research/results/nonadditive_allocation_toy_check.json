@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "scope": "synthetic finite set functions only; no model or data access",
+  "synergy": {
+    "ground_set_size": 8,
+    "budget": 2,
+    "estimated_singletons": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 0.0,
+      "d": 0.0,
+      "e": 0.0,
+      "f": 0.0,
+      "g": 0.0,
+      "h": 0.0
+    },
+    "delta": 0.0,
+    "chosen": [
+      "a",
+      "b"
+    ],
+    "optimum": [
+      "c",
+      "d"
+    ],
+    "chosen_value": 2.0,
+    "optimal_value": 10.0,
+    "regret": 8.0
+  },
+  "triple_synergy": {
+    "baseline_mixed_differences": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mixed_difference_given_a": 10.0
+  },
+  "quadratic_checks": [
+    {
+      "seed": 0,
+      "regret": 0.9746003332032274,
+      "epsilon_B": 1.1343926592676152,
+      "bounds": {
+        "oscillation": 2.1918102290364017,
+        "absolute_approximation": 3.4687853185352306,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.1597195167726537,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6758996664527144,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 1,
+      "regret": 1.5318174163756186,
+      "epsilon_B": 1.497662810853027,
+      "bounds": {
+        "oscillation": 3.3355480590939046,
+        "absolute_approximation": 4.195325621706054,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.18838368497005287,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.697051525308445,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 2,
+      "regret": 0.22637778418271148,
+      "epsilon_B": 1.2446969146763758,
+      "bounds": {
+        "oscillation": 2.6960699510011206,
+        "absolute_approximation": 3.6893938293527517,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.18902205716367237,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6927473881296399,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 3,
+      "regret": 0.0,
+      "epsilon_B": 1.6816229146503072,
+      "bounds": {
+        "oscillation": 2.7682298888290395,
+        "absolute_approximation": 4.563245829300614,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.18759529941210001,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6939027697146479,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 4,
+      "regret": 0.0,
+      "epsilon_B": 1.4795809262492245,
+      "bounds": {
+        "oscillation": 2.7668801144122885,
+        "absolute_approximation": 4.15916185249845,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.1653126989460314,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.5984658839992847,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 5,
+      "regret": 0.9262276336811244,
+      "epsilon_B": 1.7648436127804836,
+      "bounds": {
+        "oscillation": 3.7427934311738555,
+        "absolute_approximation": 4.729687225560967,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.19929005511898612,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.681640134575537,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 6,
+      "regret": 0.6953320683409041,
+      "epsilon_B": 0.9993088799026171,
+      "bounds": {
+        "oscillation": 2.223377562844577,
+        "absolute_approximation": 3.1986177598052343,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.16274616312342705,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.42982117393027774,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 7,
+      "regret": 0.0,
+      "epsilon_B": 1.7476811667014402,
+      "bounds": {
+        "oscillation": 3.2196373453391613,
+        "absolute_approximation": 4.695362333402881,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.18136692775289753,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6667571478300882,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 8,
+      "regret": 1.4773137706585024,
+      "epsilon_B": 1.1734266198552195,
+      "bounds": {
+        "oscillation": 2.677723625650346,
+        "absolute_approximation": 3.546853239710439,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.19664095882842725,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6987799548276106,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 9,
+      "regret": 0.987340485258043,
+      "epsilon_B": 1.774278883095842,
+      "bounds": {
+        "oscillation": 3.3676046492993943,
+        "absolute_approximation": 4.748557766191684,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.15933222496820865,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.642745928321264,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 10,
+      "regret": 0.2748502716894752,
+      "epsilon_B": 1.4735903177149725,
+      "bounds": {
+        "oscillation": 3.002208086158263,
+        "absolute_approximation": 4.147180635429946,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.19296529960447634,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6951797895552372,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 11,
+      "regret": 0.09612465304599693,
+      "epsilon_B": 1.4896670089193047,
+      "bounds": {
+        "oscillation": 2.9915775142240557,
+        "absolute_approximation": 4.17933401783861,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.19399970522015808,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6750707891182895,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 12,
+      "regret": 0.05286130915535259,
+      "epsilon_B": 1.2764340588509224,
+      "bounds": {
+        "oscillation": 2.8524799504718716,
+        "absolute_approximation": 3.752868117701845,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.1925582798751989,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6176459416247877,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 13,
+      "regret": 0.3342375677687097,
+      "epsilon_B": 1.5822683082024536,
+      "bounds": {
+        "oscillation": 2.8735406247639768,
+        "absolute_approximation": 4.364536616404907,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.179729366718254,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6797946498530716,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 14,
+      "regret": 0.3518832170664403,
+      "epsilon_B": 1.3765653416531796,
+      "bounds": {
+        "oscillation": 2.6874540967506446,
+        "absolute_approximation": 3.9531306833063593,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.16671679832323005,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.5620483207845783,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 15,
+      "regret": 0.0,
+      "epsilon_B": 1.620091176058511,
+      "bounds": {
+        "oscillation": 2.0472314595834655,
+        "absolute_approximation": 4.440182352117022,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.16841628414062604,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6997427278325674,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 16,
+      "regret": 0.3168692185836459,
+      "epsilon_B": 1.4240305941014757,
+      "bounds": {
+        "oscillation": 2.9937636212847605,
+        "absolute_approximation": 4.048061188202952,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.1102657950441498,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6858202769217172,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 17,
+      "regret": 0.1683075287147724,
+      "epsilon_B": 1.758749888046936,
+      "bounds": {
+        "oscillation": 3.5961289436247568,
+        "absolute_approximation": 4.717499776093872,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.1820751449043475,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6978258071218295,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 18,
+      "regret": 1.0312966034419295,
+      "epsilon_B": 1.1566462557638104,
+      "bounds": {
+        "oscillation": 2.532194913711869,
+        "absolute_approximation": 3.513292511527621,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.19733482795136076,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6216397787296235,
+      "enumerated_mixed_differences": 75
+    },
+    {
+      "seed": 19,
+      "regret": 0.0,
+      "epsilon_B": 1.3350196609141622,
+      "bounds": {
+        "oscillation": 0.890478121595714,
+        "absolute_approximation": 3.8700393218283247,
+        "mixed_difference": 5.3999999999999995
+      },
+      "assumed_score_error_bound": 0.2,
+      "actual_score_error": 0.16025663441688637,
+      "assumed_mixed_difference_bound": 0.7,
+      "maximum_absolute_mixed_difference": 0.6008971922951898,
+      "enumerated_mixed_differences": 75
+    }
+  ],
+  "all_checks_passed": true,
+  "software": {
+    "python": "3.14.6"
+  },
+  "source": {
+    "path": "research/nonadditive_allocation_toy.py",
+    "sha256": "6e9b963b3309d4dda278f9334477d9a4a18599a1a5e9d309fed58bbc612654ea"
+  },
+  "reproduction_command": "python -m research.nonadditive_allocation_toy --output research/results/nonadditive_allocation_toy_check.json"
+}

@@ -1,21 +1,21 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-04T17:05:46.429148+00:00",
+  "recorded_utc": "2026-10-04T17:32:35.913372+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 6700,
+  "total_completed_updates": 10100,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.42659665486758797,
-      "remaining_training_hours": 70.30549870359442,
-      "projected_training_finish_utc": "2026-10-07T15:24:06.224481+00:00",
+      "seconds_per_update": 0.4424008676931277,
+      "remaining_training_hours": 72.49229773671556,
+      "projected_training_finish_utc": "2026-10-07T18:02:08.185224+00:00",
       "after_cutoff": true
     },
     "recent_median": {
-      "seconds_per_update": 0.4707830747845583,
-      "remaining_training_hours": 77.58766618602178,
-      "projected_training_finish_utc": "2026-10-07T22:41:02.027418+00:00",
+      "seconds_per_update": 0.4154293627094012,
+      "remaining_training_hours": 68.07271696174327,
+      "projected_training_finish_utc": "2026-10-07T13:36:57.694434+00:00",
       "after_cutoff": true
     }
   },
@@ -26,7 +26,7 @@
       "objective": "faithful",
       "seed": 0,
       "state": "running",
-      "completed_steps": 6700,
+      "completed_steps": 10100,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
@@ -54,6 +54,18 @@
             "predicted_vector_se": 0.11158324338982735
           },
           "binned_vector_se_calibration_gap": 0.04667656137213259
+        },
+        {
+          "completed_steps": 10000,
+          "file": "step-010000.json",
+          "sha256": "bd8fcc4a6079a4223adaad1b41b3f9f93ce404fccab3068beb66ed7a381a9478",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.02882343617398644,
+            "constant_free_gaussian_nll": -2.8676545305887697,
+            "realized_vector_se": 0.05764687234797288,
+            "predicted_vector_se": 0.0786957635676058
+          },
+          "binned_vector_se_calibration_gap": 0.021048891219632933
         }
       ]
     },
@@ -107,5 +119,13 @@
       "error": null,
       "validation_history": []
     }
-  ]
+  ],
+  "first_recovery_checkpoint": {
+    "model": "faithful_seed0",
+    "completed_steps": 10000,
+    "path": "checkpoint-010000.pt",
+    "sha256": "d90c817be6206da2ec19f5742073a11fa8e14835dc9286be5c3a37c785c01d19",
+    "file_hash_verified_utc": "2026-10-04T17:32:14+00:00",
+    "verification_limit": "File bytes and pointer checked; checkpoint not loaded or used for selection/evaluation"
+  }
 }
