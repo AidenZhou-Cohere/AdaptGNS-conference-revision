@@ -1,21 +1,23 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-04T17:32:35.913372+00:00",
+  "recorded_utc": "2026-10-04T18:20:04.716603+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 10100,
+  "total_completed_updates": 17100,
+  "total_recorded_checkpoint_updates": 10000,
+  "hours_to_cutoff": 61.66535649916666,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.4424008676931277,
-      "remaining_training_hours": 72.49229773671556,
-      "projected_training_finish_utc": "2026-10-07T18:02:08.185224+00:00",
+      "seconds_per_update": 0.42769294264524,
+      "remaining_training_hours": 69.2506156299751,
+      "projected_training_finish_utc": "2026-10-07T15:35:06.932871+00:00",
       "after_cutoff": true
     },
     "recent_median": {
-      "seconds_per_update": 0.4154293627094012,
-      "remaining_training_hours": 68.07271696174327,
-      "projected_training_finish_utc": "2026-10-07T13:36:57.694434+00:00",
+      "seconds_per_update": 0.38527443062514066,
+      "remaining_training_hours": 62.38235155872069,
+      "projected_training_finish_utc": "2026-10-07T08:43:01.182214+00:00",
       "after_cutoff": true
     }
   },
@@ -26,7 +28,7 @@
       "objective": "faithful",
       "seed": 0,
       "state": "running",
-      "completed_steps": 10100,
+      "completed_steps": 17100,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
@@ -66,6 +68,18 @@
             "predicted_vector_se": 0.0786957635676058
           },
           "binned_vector_se_calibration_gap": 0.021048891219632933
+        },
+        {
+          "completed_steps": 15000,
+          "file": "step-015000.json",
+          "sha256": "270d9877c33ca4180e5348a2dd0616b8447607c277f6f019275b5e6229c26d11",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.026382878185142837,
+            "constant_free_gaussian_nll": -2.9310248230440648,
+            "realized_vector_se": 0.052765756370285674,
+            "predicted_vector_se": 0.06484233021230318
+          },
+          "binned_vector_se_calibration_gap": 0.012076573842017489
         }
       ]
     },

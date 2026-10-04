@@ -71,6 +71,27 @@
     "Gaussian covariance/Monte Carlo check is synthetic, not a particle benchmark.",
     "Validation curves retain every scheduled point and failed history; this tool verifies saved arithmetic, not raw predictions.",
     "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation.",
-    "Only write_report prose changed in compact rollout summarizer: first-forecast budget exception and risk-head baseline scope. AST outside that function is identical to the original producer, and rollout_summary.json bytes/provenance remain unchanged."
-  ]
+    "Only write_report prose changed in compact rollout summarizer: first-forecast budget exception and risk-head baseline scope. AST outside that function is identical to the original producer, and rollout_summary.json bytes/provenance remain unchanged.",
+    "15k clean-validation update: saved arithmetic and frozen identities rechecked; prior points and original 10k checkpoint byte-verification timestamp preserved. No source or protocol change; prior software test records remain applicable and were not rerun for this result-only update."
+  ],
+  "latest_interim_validation": {
+    "progress_recorded_utc": "2026-10-04T18:20:04.716603+00:00",
+    "validation_record_sha256": "270d9877c33ca4180e5348a2dd0616b8447607c277f6f019275b5e6229c26d11",
+    "completed_model_count": 0,
+    "latest_validation_updates": 15000,
+    "recorded_training_updates": 17100,
+    "preserved_previous_points": 3,
+    "preserved_first_checkpoint_verification": true,
+    "current_frozen_sources_verified": true,
+    "all_three_seed_means": "null; required seeds incomplete",
+    "scope": "read-only saved-validation audit and report update; no new test/model data reads; no scientific source changes"
+  },
+  "latest_report_visual_check": {
+    "pages": [
+      7
+    ],
+    "result": "passed",
+    "scope": "15k validation update; seven-page report, other pages unchanged"
+  },
+  "latest_report_sha256": "d7b1077d41e012a534e19e8c6cd300aee481d3154ecedb684b47135fb9d440d4"
 }
