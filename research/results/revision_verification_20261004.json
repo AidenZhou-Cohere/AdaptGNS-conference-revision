@@ -80,27 +80,30 @@
     "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation.",
     "Only write_report prose changed in compact rollout summarizer: first-forecast budget exception and risk-head baseline scope. AST outside that function is identical to the original producer, and rollout_summary.json bytes/provenance remain unchanged.",
     "15k clean-validation update: saved arithmetic and frozen identities rechecked; prior points and original 10k checkpoint byte-verification timestamp preserved. No source or protocol change; prior software test records remain applicable and were not rerun for this result-only update.",
-    "System restart interrupted faithful seed0; reviewed exact-state recovery from20k replays at least1600 recorded updates. Prior logs/status/locks/checkpoint and validation hashes preserved. Six replay log points match sampled identities/rates but not bitwise losses. Monitor-only restart-marker fix15 tests; frozen scientific source/protocol unchanged. Manuscript appendix updated and native compilation passes."
+    "System restart interrupted faithful seed0; reviewed exact-state recovery from20k replays at least1600 recorded updates. Prior logs/status/locks/checkpoint and validation hashes preserved. Six replay log points match sampled identities/rates but not bitwise losses. Monitor-only restart-marker fix15 tests; frozen scientific source/protocol unchanged. Manuscript appendix updated and native compilation passes.",
+    "25k result update: prior five scheduled points and checkpoint/recovery metadata preserved; independent saved-record audit4002 checks; no scientific or monitoring source change and no software suite rerun needed. Manuscript source unchanged from native compiled077387e snapshot."
   ],
   "latest_interim_validation": {
-    "progress_recorded_utc": "2026-10-04T18:56:20.055906+00:00",
-    "validation_record_sha256": "c1510b9f66edb3edd20b477020fac14db28c399b60275c333679c7aeec018e9e",
+    "progress_recorded_utc": "2026-10-04T19:23:53.867207+00:00",
+    "validation_record_sha256": "9d544406c0003af534d7f11e4b5c2ade0fcc656f09c08998581880fbc4c40741",
     "completed_model_count": 0,
-    "latest_validation_updates": 20000,
-    "recorded_training_updates": 20500,
-    "preserved_previous_points": 4,
+    "latest_validation_updates": 25000,
+    "recorded_training_updates": 27700,
+    "preserved_previous_points": 5,
+    "preserved_checkpoint_and_interruption_metadata": true,
     "current_frozen_sources_verified": true,
     "all_three_seed_means": "null; required seeds incomplete",
-    "scope": "saved validation arithmetic and identities checked; validation precedes reboot and recovery; no reserved test access"
+    "independent_saved_record_checks": 4002,
+    "scope": "saved initialization/20k/25k arithmetic, finite metrics, frame identities, vector units and calibration bins; no model/raw-data/test access"
   },
   "latest_report_visual_check": {
     "pages": [
       7
     ],
     "result": "passed",
-    "scope": "20k validation and recovery update; seven-page report and five-point plot rendered/viewed"
+    "scope": "25k update; seven-page report and six-point plot rendered/viewed; manuscript unchanged"
   },
-  "latest_report_sha256": "8d74339c99b8793a069432d4f893c526bf333049791ff8814710e2c4ca137007",
+  "latest_report_sha256": "4eeb5009a3685dd8f459d7133af80ad6a307df812ff9f968fcd8a132487ca32e",
   "superseded_monitor_sha256": {
     "research/monitor_training.py": "29c598845b8816a25c03c0effd3e23a3374baa3a67490e641927e6ed6ba1b0d6",
     "research/tests/test_monitor_training.py": "0a95e4e453c281c362e8e06faf1b4a16784801a255cc7d220e3c75a009b91ed6"
