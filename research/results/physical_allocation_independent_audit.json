@@ -1,0 +1,70 @@
+{
+  "recorded_utc": "2026-10-04T20:34:54.670384+00:00",
+  "scope": "Independent final-artifact audit; no models, checkpoint files or source datasets opened",
+  "frozen_experiment_commit": "3d1320b",
+  "audit_source_sha256": "9462f7040d321e748301e90d196a41ac223876edf3284160bb62de8c4dd35265",
+  "limitations": [
+    "Original replay MSE references are checked as embedded in the final result; original model/control execution is not repeated.",
+    "Graph radii and target residuals are not recomputed from source positions/targets; raw graph integrity and per-particle error means are checked.",
+    "All 1080 raw hashes and scalar hierarchies are verified; raw numerical calculations use predetermined indexes 0,17,35 per model/split (90 frames)."
+  ],
+  "methods": {
+    "scores": "Direct endpoint bincount and unscaled squared velocity differences, independent of overflow-scaled implementation",
+    "top_k": "Python tuple sorting by negative max endpoint score, then pair IDs; raw frozen scores define floating-point ordering",
+    "ties_overlaps": "Direct pair-set calculations and exact cutoff equality",
+    "aggregation": "Independent sum/12, sum/3, sum/5 and sum squared deviations/4",
+    "replay": "All 6480 embedded original comparisons; exact edge counts and explicit atol+rtol*abs(original) inequality"
+  },
+  "tolerances": {
+    "atol": 2e-11,
+    "rtol": 1e-11,
+    "hashes_graphs_ids_counts_ties": "exact"
+  },
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.5.3"
+  },
+  "summary_sha256": "9921346dd542276dfbf3557c8f4b246e0c06da8e862e33c95becd8e9572e2594",
+  "raw_frames_hashed": 1080,
+  "raw_frames_numerically_checked": 90,
+  "checkpoint_and_source_dataset_files_opened": 0,
+  "elapsed_experiment_seconds": 37.73683224999968,
+  "state": "passed",
+  "counts": {
+    "completion": 22,
+    "hash": 7,
+    "input_identity": 31,
+    "frame_identity": 10860,
+    "frame_scalar": 19440,
+    "control_replay": 33480,
+    "raw_frame_hash": 1080,
+    "raw_graph": 810,
+    "physical_score": 630,
+    "selected_graph": 2160,
+    "selection_and_ID_ties": 720,
+    "raw_error_mean": 2160,
+    "cutoff_tie_audit": 3150,
+    "pair_overlap": 5400,
+    "aggregation": 2670,
+    "five_seed_statistics": 1992
+  },
+  "total_checks": 84612,
+  "maximum_absolute_discrepancy_by_kind": {
+    "completion": 0.0,
+    "frame_identity": 0.0,
+    "frame_scalar": 0.0,
+    "control_replay": 0.0,
+    "raw_graph": 0.0,
+    "physical_score": 2.168404344971009e-19,
+    "selected_graph": 0.0,
+    "raw_error_mean": 0.0,
+    "selection_and_ID_ties": 0.0,
+    "cutoff_tie_audit": 0.0,
+    "pair_overlap": 0.0,
+    "aggregation": 1.8189894035458565e-12,
+    "five_seed_statistics": 8.637535131583718e-14
+  },
+  "mismatch_count": 0,
+  "mismatches": [],
+  "alternate_arithmetic_rms_selection_changes": []
+}

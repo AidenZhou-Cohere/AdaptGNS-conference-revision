@@ -1,0 +1,52 @@
+{
+  "scope": "Interim saved-record update; no model/data/test-source access or training modification",
+  "progress_recorded_utc": "2026-10-04T20:24:15.075505+00:00",
+  "recorded_training_updates": 47400,
+  "latest_validation_updates": 45000,
+  "latest_validation_sha256": "17b0bc2d58dcd9c52b2906e155233124a1cd86af3af7b7e1ee51fc3f2fcbc99f",
+  "preserved_previous_points": 8,
+  "new_points": 2,
+  "independent_saved_record_checks": 4940,
+  "independent_saved_record_anomalies": 0,
+  "checkpoint_verified": {
+    "model": "faithful_seed0",
+    "completed_steps": 40000,
+    "path": "checkpoint-040000.pt",
+    "sha256": "f35f8a9cfb5e8211ea35680a74c2e678b1d1755828452577738c2dc898b7f1d9",
+    "file_hash_verified_utc": "2026-10-04T20:31:51.159435+00:00",
+    "scope": "Byte hash checked before this recorded timestamp; no load, selection or test evaluation"
+  },
+  "current_frozen_sources_verified": true,
+  "native_process_identity": {
+    "supervisor": 2778,
+    "child": 2780,
+    "caffeinate": 2779,
+    "scope": "command/parent chain verified20:24 and again20:37; no process action"
+  },
+  "later_status_observation": {
+    "updated_utc": "2026-10-04T20:37:13.162183+00:00",
+    "recorded_updates": 53000,
+    "state": "running",
+    "error": null,
+    "scope": "status read only; not included in curated45k curves/checkpoint verification"
+  },
+  "report": {
+    "pages": 9,
+    "sha256": "4524518703561d7f6ca944e38303c82907c7fe4d6936039dfcc3af175d7cde5f",
+    "source_sha256": "acfcf74b2184ad9c1eff830ac3a2c16c3faa39fa7fb959ff7d88d5bc9909a05c",
+    "visual_checked_pages": [
+      1,
+      7,
+      8,
+      9
+    ],
+    "result": "passed"
+  },
+  "manuscript": {
+    "sha256": "e2a48d677704d6e328c5b77842a87bc6e7ff18630401b17b8cc0a4c89e7ffb43",
+    "changed": true,
+    "native_compile": "success; new physical-allocation appendix"
+  },
+  "all_three_seed_means": "null; required seeds incomplete",
+  "full_test_evaluation": "not started; gate remains closed"
+}

@@ -1,0 +1,102 @@
+{
+  "recorded_utc": "2026-10-04T20:39:08.228897+00:00",
+  "scope": "Separate exploratory compact-model physical allocation follow-up; previously inspected validation and test; no full-model evaluation",
+  "source_commit_before_outcomes": "3d1320bf8558ed9c2f55e2d1eaac592d606f0294",
+  "tests": {
+    "command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 python -m pytest research/tests/test_physical_allocation.py research/tests/test_physical_allocation_pilot.py -q",
+    "passed": 54,
+    "failed": 0,
+    "seconds": 1.32,
+    "timing": "immediately before inference",
+    "evidence": "Observed tool output; independently audited manuscript treats test count as separately attested"
+  },
+  "review_fixes_before_outcomes": [
+    "Immutable per-frame NPZ and atomic publication replace appended ZIP",
+    "Partial failed frames retained and excluded from accepted summaries",
+    "Final provenance failure suppresses validated summaries",
+    "Attempted policy recorded before forward exception",
+    "Undefined percent differences handled without division by zero"
+  ],
+  "completed_models": 15,
+  "completed_model_frames": 1080,
+  "original_control_replays_passed": 6480,
+  "failed_experiment_attempts": 0,
+  "numerical_experiment_failures": 0,
+  "elapsed_seconds": 37.73683224999968,
+  "timing_limit": "Operational single-thread CPU attempt with shared work and concurrent training; not fair policy latency",
+  "result_sha256": "9921346dd542276dfbf3557c8f4b246e0c06da8e862e33c95becd8e9572e2594",
+  "protocol_sha256": "0d2a35e6422f5e732984f18abf44da17b6f23a87dba1bd1b7e746274be0f02ce",
+  "input_identity_sha256": "a195fb894d0de35a8d312421cf06817a9bd97f2cf9167c6aad262647b3b105c2",
+  "source_sha256": {
+    "physical_allocation_pilot.py": "130306e2c36d97c19220663b34b58d82a335c8b4c0221ede2a7e706babd7e1bf",
+    "physical_allocation.py": "24f9cbaac38ea4edceb3d32aa7d18a38bb836e185e5f709d8fe707894f67a47e",
+    "pilot.py": "902f4ca1afae681c318763c5082c341d1d15ff5a094f32cf8fd414bfe85fcf7a",
+    "budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+    "risk_benefit.py": "f413916824eff03c85c622388b519cd0d0a37e5fbdd7acafd817063d7f4dfa5e"
+  },
+  "independent_artifact_audit": {
+    "checks": 84612,
+    "mismatches": 0,
+    "record_sha256": "70cba145116385d9b404a8768063ac90c543b047083d01255930561efe8de885",
+    "raw_hashes": 1080,
+    "raw_numerical_sample": 90,
+    "limitations": [
+      "Original replay MSE references are checked as embedded in the final result; original model/control execution is not repeated.",
+      "Graph radii and target residuals are not recomputed from source positions/targets; raw graph integrity and per-particle error means are checked.",
+      "All 1080 raw hashes and scalar hierarchies are verified; raw numerical calculations use predetermined indexes 0,17,35 per model/split (90 frames)."
+    ]
+  },
+  "manuscript_audit": {
+    "checks": 188,
+    "findings": 0,
+    "record_sha256": "80d151b39df28944fe776b7e5c46be63edb87dcc38e7ea49053b0003b7b2a4ec",
+    "structural_inventory": {
+      "labels": 25,
+      "reference_occurrences": 12,
+      "unique_cited_keys": 12,
+      "bibliography_keys": 12,
+      "new_labels": [
+        "sec:physical-allocation",
+        "tab:physical-allocation-mse",
+        "tab:physical-allocation-paired"
+      ]
+    },
+    "limitations": [
+      "Native compilation and visual page layout are not performed by this audit.",
+      "The pre-inference synthetic-test count needs a test-log/verification record, absent from the three permitted inputs.",
+      "Other sections' scientific or numerical claims are not re-audited here."
+    ],
+    "separately_attested_claims": [
+      {
+        "claim": "54 synthetic checks passed before inference",
+        "evidence": "Root reports the immediately pre-inference tool invocation returned 54 passed in 1.32 seconds; no independent saved log artifact was accessed.",
+        "independently_audited": false
+      }
+    ]
+  },
+  "preserved_review_outcomes": {
+    "paired_percentage_wording": "Corrected before final audit",
+    "initial_structural_scanner": "False positives from two stringified document markers in embedded class warning text; original JSON/script preserved in local work directory"
+  },
+  "manuscript_sha256": "e2a48d677704d6e328c5b77842a87bc6e7ff18630401b17b8cc0a4c89e7ffb43",
+  "native_latex": {
+    "result": "success after paired-percentage wording correction",
+    "main_text_at_most_eight_pages_assertion": "passed",
+    "exported_pdf_visual_metadata_check": "outstanding"
+  },
+  "report": {
+    "pages": 9,
+    "sha256": "4524518703561d7f6ca944e38303c82907c7fe4d6936039dfcc3af175d7cde5f",
+    "source_sha256": "acfcf74b2184ad9c1eff830ac3a2c16c3faa39fa7fb959ff7d88d5bc9909a05c",
+    "visual_checked_pages": [
+      1,
+      7,
+      8,
+      9
+    ],
+    "result": "passed"
+  },
+  "frozen_full_training_sources_and_protocols_unchanged": true,
+  "reserved_full_test_accessed": false,
+  "raw_archive": "Local work/physical_allocation_pilot/attempt_20261004; raw frame paths/hashes in summary; no raw dataset/checkpoint publication"
+}

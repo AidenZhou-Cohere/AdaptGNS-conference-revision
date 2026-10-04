@@ -205,3 +205,23 @@ python -m pytest research/tests/test_physical_complexity.py \
 ```
 
 The analysis loads no checkpoints and runs no model inference. Exact cached-source hashes are required; fresh output prefixes preserve earlier outcomes. All 122 focused synthetic tests passed. Independent scipy/QR and aggregation checks found no mismatch across 33,070 saved-array checks. Numerical sources/protocols remain at their pre-analysis hashes. Raw descriptor arrays remain local; the scalar artifact records their hash. The larger training/evaluation protocols are unchanged.
+
+
+## Cheap physical allocation on the fixed compact pilot
+
+The [complete exploratory comparison](research/results/physical_allocation_pilot.md), [scalar artifact](research/results/physical_allocation_pilot.json) and [figure](research/results/physical_allocation_pilot.png) retain two new exact-budget controls and all six original policies. Negative mandatory-base degree and observed velocity RMS use only the original observed graph/history. All 15 fixed checkpoints, both previously inspected splits and all particles are included. The protocol and input identity were frozen at `3d1320b` before inference, after inspecting the earlier correlation results.
+
+```sh
+OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 \
+  python -m research.physical_allocation_pilot \
+  --data-dir data-pilot --output-dir work/physical-allocation-attempt
+python -m research.report_physical_allocation \
+  --input work/physical-allocation-attempt/summary.json \
+  --output-prefix research/results/physical_allocation_pilot
+python -m pytest research/tests/test_physical_allocation.py \
+  research/tests/test_physical_allocation_pilot.py -q
+```
+
+The runner requires the pinned compact checkpoints, original controls and data hashes; fresh output directories preserve failed or partial attempts. One CPU thread completed the attempt in 37.737 seconds. All 6,480 original-policy replay comparisons and exact edge counts passed. The 54 focused tests passed before inference; the independent artifact audit passed 84,612 checks, including all 1,080 raw-frame hashes and a predetermined 90-frame numerical sample. Its JSON states what was not independently recomputed. The accompanying audit script is archived verbatim, with its original local `work/physical_allocation_pilot/attempt_20261004` layout; it is not the portable experiment entry point. Raw arrays and model files remain local, with their hashes retained.
+
+Velocity RMS improves NLL test error over random/current/previous risk, but faithful favors risk policies and beta-NLL reverses its random-control comparison between validation and test. Reported percentage changes are computed separately within seed, then averaged. These exploratory one-step outcomes establish neither autonomous stability nor a full-architecture or runtime advantage. The locked full-model evaluation still has its original five policies.

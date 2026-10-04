@@ -1,23 +1,23 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-04T19:53:48.547964+00:00",
+  "recorded_utc": "2026-10-04T20:24:15.075505+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 36700,
-  "total_recorded_checkpoint_updates": 30000,
-  "hours_to_cutoff": 60.10318112111111,
+  "total_completed_updates": 47400,
+  "total_recorded_checkpoint_updates": 40000,
+  "hours_to_cutoff": 59.595812359722224,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.21178199361951808,
-      "remaining_training_hours": 33.13799916829848,
-      "projected_training_finish_utc": "2026-10-06T05:02:05.344970+00:00",
+      "seconds_per_update": 0.19604918414835165,
+      "remaining_training_hours": 30.09354976677198,
+      "projected_training_finish_utc": "2026-10-06T02:29:51.854665+00:00",
       "after_cutoff": false
     },
     "recent_median": {
-      "seconds_per_update": 0.1951215539599889,
-      "remaining_training_hours": 30.531103151572708,
-      "projected_training_finish_utc": "2026-10-06T02:25:40.519310+00:00",
+      "seconds_per_update": 0.14495396083500056,
+      "remaining_training_hours": 22.250432988172587,
+      "projected_training_finish_utc": "2026-10-05T18:39:16.634262+00:00",
       "after_cutoff": false
     }
   },
@@ -28,7 +28,7 @@
       "objective": "faithful",
       "seed": 0,
       "state": "running",
-      "completed_steps": 36700,
+      "completed_steps": 47400,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
@@ -128,6 +128,30 @@
             "predicted_vector_se": 0.04482356208592742
           },
           "binned_vector_se_calibration_gap": 0.013204168920560755
+        },
+        {
+          "completed_steps": 40000,
+          "file": "step-040000.json",
+          "sha256": "daea88cb303b68c22835c1ba281d9c8f4bfb1f30597e831746050b5870770a22",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.015426828005414119,
+            "constant_free_gaussian_nll": -3.4390297944851764,
+            "realized_vector_se": 0.030853656010828238,
+            "predicted_vector_se": 0.04107561267510271
+          },
+          "binned_vector_se_calibration_gap": 0.011108899184630244
+        },
+        {
+          "completed_steps": 45000,
+          "file": "step-045000.json",
+          "sha256": "17b0bc2d58dcd9c52b2906e155233124a1cd86af3af7b7e1ee51fc3f2fcbc99f",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.013791307902362259,
+            "constant_free_gaussian_nll": -3.6696881993769703,
+            "realized_vector_se": 0.027582615804724517,
+            "predicted_vector_se": 0.03840751445856834
+          },
+          "binned_vector_se_calibration_gap": 0.010930559201861315
         }
       ]
     },
@@ -206,6 +230,14 @@
       "sha256": "5b882bc93ea063aa52a7314fac2bccb3a3b70f5cd42ffb978a20e6ff77f9502d",
       "file_hash_verified_utc": "2026-10-04T19:55:09+00:00",
       "scope": "byte hash only; no checkpoint reload, selection or test evaluation"
+    },
+    {
+      "model": "faithful_seed0",
+      "completed_steps": 40000,
+      "path": "checkpoint-040000.pt",
+      "sha256": "f35f8a9cfb5e8211ea35680a74c2e678b1d1755828452577738c2dc898b7f1d9",
+      "file_hash_verified_utc": "2026-10-04T20:31:51.159435+00:00",
+      "scope": "Byte hash checked before this recorded timestamp; no load, selection or test evaluation"
     }
   ],
   "interruption_records": [
