@@ -1,23 +1,23 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-04T20:24:15.075505+00:00",
+  "recorded_utc": "2026-10-04T20:54:09.241493+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 47400,
-  "total_recorded_checkpoint_updates": 40000,
-  "hours_to_cutoff": 59.595812359722224,
+  "total_completed_updates": 61200,
+  "total_recorded_checkpoint_updates": 60000,
+  "hours_to_cutoff": 59.09743291861111,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.19604918414835165,
-      "remaining_training_hours": 30.09354976677198,
-      "projected_training_finish_utc": "2026-10-06T02:29:51.854665+00:00",
+      "seconds_per_update": 0.1737561376814842,
+      "remaining_training_hours": 26.005501939662135,
+      "projected_training_finish_utc": "2026-10-05T22:54:29.048476+00:00",
       "after_cutoff": false
     },
     "recent_median": {
-      "seconds_per_update": 0.14495396083500056,
-      "remaining_training_hours": 22.250432988172587,
-      "projected_training_finish_utc": "2026-10-05T18:39:16.634262+00:00",
+      "seconds_per_update": 0.11884566271000949,
+      "remaining_training_hours": 17.787234185598088,
+      "projected_training_finish_utc": "2026-10-05T14:41:23.284561+00:00",
       "after_cutoff": false
     }
   },
@@ -28,7 +28,7 @@
       "objective": "faithful",
       "seed": 0,
       "state": "running",
-      "completed_steps": 47400,
+      "completed_steps": 61200,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
@@ -152,6 +152,42 @@
             "predicted_vector_se": 0.03840751445856834
           },
           "binned_vector_se_calibration_gap": 0.010930559201861315
+        },
+        {
+          "completed_steps": 50000,
+          "file": "step-050000.json",
+          "sha256": "5faac827f3ef73543214e1e7267624a3f2ec213bc0464dacacda9d1a6f903dd1",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.011584991516696936,
+            "constant_free_gaussian_nll": -3.91593216084519,
+            "realized_vector_se": 0.023169983033393873,
+            "predicted_vector_se": 0.03463906779785087
+          },
+          "binned_vector_se_calibration_gap": 0.011469084764457004
+        },
+        {
+          "completed_steps": 55000,
+          "file": "step-055000.json",
+          "sha256": "ca9d7e0b82d888532e0e1faf58ab43c092f1e2ba084bc2e9cda777b6b1716035",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.011509614768405695,
+            "constant_free_gaussian_nll": -3.8892094844733456,
+            "realized_vector_se": 0.02301922953681139,
+            "predicted_vector_se": 0.03883968728447859
+          },
+          "binned_vector_se_calibration_gap": 0.015820457747667212
+        },
+        {
+          "completed_steps": 60000,
+          "file": "step-060000.json",
+          "sha256": "25127501802e397c833d3559f90182a2951a742247a840e7b7d64c619ee00481",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.010387798298038573,
+            "constant_free_gaussian_nll": -3.9768192634701536,
+            "realized_vector_se": 0.020775596596077146,
+            "predicted_vector_se": 0.03362206700643436
+          },
+          "binned_vector_se_calibration_gap": 0.012846470410357212
         }
       ]
     },
@@ -238,6 +274,14 @@
       "sha256": "f35f8a9cfb5e8211ea35680a74c2e678b1d1755828452577738c2dc898b7f1d9",
       "file_hash_verified_utc": "2026-10-04T20:31:51.159435+00:00",
       "scope": "Byte hash checked before this recorded timestamp; no load, selection or test evaluation"
+    },
+    {
+      "model": "faithful_seed0",
+      "completed_steps": 60000,
+      "path": "checkpoint-060000.pt",
+      "sha256": "a54cff4cddac817b1ccad6f1a45ec70998b1a636ee13a5e8919fd54afec3584f",
+      "file_hash_verified_utc": "2026-10-04T20:54:09.432179+00:00",
+      "scope": "byte hash and saved pointer comparison only; no model reload or checkpoint selection"
     }
   ],
   "interruption_records": [

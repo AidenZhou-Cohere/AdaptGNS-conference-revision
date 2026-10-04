@@ -1,0 +1,200 @@
+{
+  "recorded_utc": "2026-10-04T20:54:19.840613+00:00",
+  "scope": "Independent read-only audit of saved faithful_seed0 45k/50k/55k/60k clean-validation records; not model execution, checkpoint selection, test evidence or final100k results",
+  "files": {
+    "45000": {
+      "path": "validation/step-045000.json",
+      "sha256": "17b0bc2d58dcd9c52b2906e155233124a1cd86af3af7b7e1ee51fc3f2fcbc99f"
+    },
+    "50000": {
+      "path": "validation/step-050000.json",
+      "sha256": "5faac827f3ef73543214e1e7267624a3f2ec213bc0464dacacda9d1a6f903dd1"
+    },
+    "55000": {
+      "path": "validation/step-055000.json",
+      "sha256": "ca9d7e0b82d888532e0e1faf58ab43c092f1e2ba084bc2e9cda777b6b1716035"
+    },
+    "60000": {
+      "path": "validation/step-060000.json",
+      "sha256": "25127501802e397c833d3559f90182a2951a742247a840e7b7d64c619ee00481"
+    }
+  },
+  "configuration": {
+    "protocol_file_sha256": "8db3f38465491a0daf6e3bd19a91e250c02f0543cf67562f9c232aa67ec607fe",
+    "canonical_run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+    "matches_previously_verified_config": true
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413",
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d"
+    },
+    "protocol_sha256": {
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true
+  },
+  "checks": {
+    "identity": 38,
+    "source_identity": 18,
+    "finite_scalar": 4288,
+    "domain": 1104,
+    "arithmetic": 1152,
+    "hash_stability": 19
+  },
+  "checks_total": 6619,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "45000": {
+      "coordinate_mse": 0.013791307902362259,
+      "constant_free_gaussian_nll": -3.6696881993769703,
+      "realized_vector_se": 0.027582615804724517,
+      "predicted_vector_se": 0.03840751445856834,
+      "binned_vector_se_calibration_gap": 0.010930559201861315
+    },
+    "50000": {
+      "coordinate_mse": 0.011584991516696936,
+      "constant_free_gaussian_nll": -3.91593216084519,
+      "realized_vector_se": 0.023169983033393873,
+      "predicted_vector_se": 0.03463906779785087,
+      "binned_vector_se_calibration_gap": 0.011469084764457004
+    },
+    "55000": {
+      "coordinate_mse": 0.011509614768405695,
+      "constant_free_gaussian_nll": -3.8892094844733456,
+      "realized_vector_se": 0.02301922953681139,
+      "predicted_vector_se": 0.03883968728447859,
+      "binned_vector_se_calibration_gap": 0.015820457747667212
+    },
+    "60000": {
+      "coordinate_mse": 0.010387798298038573,
+      "constant_free_gaussian_nll": -3.9768192634701536,
+      "realized_vector_se": 0.020775596596077146,
+      "predicted_vector_se": 0.03362206700643436,
+      "binned_vector_se_calibration_gap": 0.012846470410357212
+    }
+  },
+  "comparisons": {
+    "50000_versus_45000": {
+      "coordinate_mse": {
+        "difference": -0.0022063163856653224,
+        "percent_change": -15.997876352883189
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.24624396146821947,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.004412632771330645,
+        "percent_change": -15.997876352883189
+      },
+      "predicted_vector_se": {
+        "difference": -0.0037684466607174685,
+        "percent_change": -9.811743128503247
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0005385255625956886,
+        "percent_change": 4.926788763963552
+      }
+    },
+    "55000_versus_50000": {
+      "coordinate_mse": {
+        "difference": -7.537674829124173e-05,
+        "percent_change": -0.6506413766691588
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.026722676371844223,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.00015075349658248346,
+        "percent_change": -0.6506413766691588
+      },
+      "predicted_vector_se": {
+        "difference": 0.00420061948662772,
+        "percent_change": 12.126826019516447
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.004351372983210209,
+        "percent_change": 37.940019387555914
+      }
+    },
+    "60000_versus_55000": {
+      "coordinate_mse": {
+        "difference": -0.0011218164703671214,
+        "percent_change": -9.746776872554829
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.087609778996808,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.002243632940734243,
+        "percent_change": -9.746776872554829
+      },
+      "predicted_vector_se": {
+        "difference": -0.005217620278044233,
+        "percent_change": -13.43373400467448
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.0029739873373100002,
+        "percent_change": -18.79836465382
+      }
+    },
+    "60000_versus_45000": {
+      "coordinate_mse": {
+        "difference": -0.0034035096043236856,
+        "percent_change": -24.67865722685164
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.30713106409318325,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.006807019208647371,
+        "percent_change": -24.67865722685164
+      },
+      "predicted_vector_se": {
+        "difference": -0.004785447452133981,
+        "percent_change": -12.45966452032773
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.001915911208495897,
+        "percent_change": 17.528025539348846
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Reads completed validation JSON, saved configuration, frozen numerical source/protocol bytes and the prior45k scalar audit.",
+    "No checkpoints, models, datasets, reserved test files or particle-level predictions were loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be recovered independently.",
+    "Raw dataset content hashes and native process identity are not reverified here; saved dataset identities remain protected by the canonical configuration hash.",
+    "These records follow previously documented20k restart/recovery; this audit does not certify bitwise-identical continuation."
+  ]
+}

@@ -212,7 +212,8 @@ def plot(result, prefix):
                     marker='o', ms=3, lw=1.3, alpha=.85, color=colors[row['objective']],
                     linestyle=('-', '--', ':')[row['seed']], label=f"{row['objective']} seed {row['seed']}")
     for ax, title in zip(axes, ('Clean acceleration coordinate MSE', 'Binned vector-risk gap')):
-        ax.set(title=title, xlabel='Optimizer updates', ylabel='Normalized squared-acceleration units')
+        ax.set(title=title, xlabel='Optimizer updates (thousands)', ylabel='Normalized squared-acceleration units')
+        ax.xaxis.set_major_formatter(lambda value, position: f'{value / 1000:g}')
         ax.grid(alpha=.2)
         if ax.lines:
             ax.legend(fontsize=8)

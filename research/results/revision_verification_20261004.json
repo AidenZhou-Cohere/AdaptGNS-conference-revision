@@ -91,56 +91,54 @@
     "25k result update: prior five scheduled points and checkpoint/recovery metadata preserved; independent saved-record audit4002 checks; no scientific or monitoring source change and no software suite rerun needed. Manuscript source unchanged from native compiled077387e snapshot."
   ],
   "latest_interim_validation": {
-    "scope": "Interim saved-record update; no model/data/test-source access or training modification",
-    "progress_recorded_utc": "2026-10-04T20:24:15.075505+00:00",
-    "recorded_training_updates": 47400,
-    "latest_validation_updates": 45000,
-    "latest_validation_sha256": "17b0bc2d58dcd9c52b2906e155233124a1cd86af3af7b7e1ee51fc3f2fcbc99f",
-    "preserved_previous_points": 8,
-    "new_points": 2,
-    "independent_saved_record_checks": 4940,
+    "scope": "Routine interim clean-validation update; no model reload, predictions, training action or reserved test access",
+    "recorded_utc": "2026-10-04T20:55:01.236194+00:00",
+    "progress_recorded_utc": "2026-10-04T20:54:09.241493+00:00",
+    "recorded_training_updates": 61200,
+    "latest_validation_updates": 60000,
+    "preserved_previous_points": 10,
+    "new_points": 3,
+    "independent_saved_record_checks": 6619,
     "independent_saved_record_anomalies": 0,
+    "independent_audit_sha256": "17264e02016368b344586881562178543c68ce6d0bbb484a766d3d08befc1aeb",
     "checkpoint_verified": {
       "model": "faithful_seed0",
-      "completed_steps": 40000,
-      "path": "checkpoint-040000.pt",
-      "sha256": "f35f8a9cfb5e8211ea35680a74c2e678b1d1755828452577738c2dc898b7f1d9",
-      "file_hash_verified_utc": "2026-10-04T20:31:51.159435+00:00",
-      "scope": "Byte hash checked before this recorded timestamp; no load, selection or test evaluation"
+      "completed_steps": 60000,
+      "path": "checkpoint-060000.pt",
+      "sha256": "a54cff4cddac817b1ccad6f1a45ec70998b1a636ee13a5e8919fd54afec3584f",
+      "file_hash_verified_utc": "2026-10-04T20:54:09.432179+00:00",
+      "scope": "byte hash and saved pointer comparison only; no model reload or checkpoint selection"
     },
     "current_frozen_sources_verified": true,
     "native_process_identity": {
       "supervisor": 2778,
       "child": 2780,
       "caffeinate": 2779,
-      "scope": "command/parent chain verified20:24 and again20:37; no process action"
+      "scope": "command and parent chain verified20:53; no process action"
     },
-    "later_status_observation": {
-      "updated_utc": "2026-10-04T20:37:13.162183+00:00",
-      "recorded_updates": 53000,
-      "state": "running",
-      "error": null,
-      "scope": "status read only; not included in curated45k curves/checkpoint verification"
-    },
-    "report": {
-      "pages": 9,
-      "sha256": "4524518703561d7f6ca944e38303c82907c7fe4d6936039dfcc3af175d7cde5f",
-      "source_sha256": "acfcf74b2184ad9c1eff830ac3a2c16c3faa39fa7fb959ff7d88d5bc9909a05c",
-      "visual_checked_pages": [
-        1,
-        7,
-        8,
-        9
-      ],
-      "result": "passed"
-    },
+    "all_three_seed_means": "null; requested seeds incomplete",
     "manuscript": {
       "sha256": "e2a48d677704d6e328c5b77842a87bc6e7ff18630401b17b8cc0a4c89e7ffb43",
-      "changed": true,
-      "native_compile": "success; new physical-allocation appendix"
+      "changed": false,
+      "native_compilation": "prior successful compile still applies; no redundant compilation"
     },
-    "all_three_seed_means": "null; required seeds incomplete",
-    "full_test_evaluation": "not started; gate remains closed"
+    "overview_report": {
+      "sha256": "4524518703561d7f6ca944e38303c82907c7fe4d6936039dfcc3af175d7cde5f",
+      "changed": false,
+      "snapshot_utc": "2026-10-04T20:24:15.075505+00:00",
+      "validation_through": 45000,
+      "scope": "Nine-page report is explicitly dated; this heartbeat updates the separate live curves/progress only"
+    },
+    "validation_plot_visual_check": "passed; x ticks now explicitly in thousands to prevent crowded labels",
+    "full_test_evaluation": "not started; completion gate closed",
+    "plot_only_source_change": {
+      "source_sha256": "d66a68529c8f18dfc98bd42be9510680237e506350043a1346863d842dec81ed",
+      "change": "Display optimizer-update axis in thousands; data and all non-plot AST nodes unchanged",
+      "numerical_summary_sha256": "8223d3ceecdce71228620f4d0a8d3eceb514201810d3724729eba024ecc5c029",
+      "prior_numeric_producer_hash_preserved": true,
+      "verification": "Read-only AST comparison and cached-array replot; no model calls or scientific code changes",
+      "additional_tests": "not needed for tick-label-only change; existing scientific checks retained"
+    }
   },
   "latest_report_visual_check": {
     "pages": 9,
@@ -379,5 +377,55 @@
     },
     "all_three_seed_means": "null; required seeds incomplete",
     "full_test_evaluation": "not started; gate remains closed"
+  },
+  "interim_saved_validation_2053": {
+    "scope": "Routine interim clean-validation update; no model reload, predictions, training action or reserved test access",
+    "recorded_utc": "2026-10-04T20:55:01.236194+00:00",
+    "progress_recorded_utc": "2026-10-04T20:54:09.241493+00:00",
+    "recorded_training_updates": 61200,
+    "latest_validation_updates": 60000,
+    "preserved_previous_points": 10,
+    "new_points": 3,
+    "independent_saved_record_checks": 6619,
+    "independent_saved_record_anomalies": 0,
+    "independent_audit_sha256": "17264e02016368b344586881562178543c68ce6d0bbb484a766d3d08befc1aeb",
+    "checkpoint_verified": {
+      "model": "faithful_seed0",
+      "completed_steps": 60000,
+      "path": "checkpoint-060000.pt",
+      "sha256": "a54cff4cddac817b1ccad6f1a45ec70998b1a636ee13a5e8919fd54afec3584f",
+      "file_hash_verified_utc": "2026-10-04T20:54:09.432179+00:00",
+      "scope": "byte hash and saved pointer comparison only; no model reload or checkpoint selection"
+    },
+    "current_frozen_sources_verified": true,
+    "native_process_identity": {
+      "supervisor": 2778,
+      "child": 2780,
+      "caffeinate": 2779,
+      "scope": "command and parent chain verified20:53; no process action"
+    },
+    "all_three_seed_means": "null; requested seeds incomplete",
+    "manuscript": {
+      "sha256": "e2a48d677704d6e328c5b77842a87bc6e7ff18630401b17b8cc0a4c89e7ffb43",
+      "changed": false,
+      "native_compilation": "prior successful compile still applies; no redundant compilation"
+    },
+    "overview_report": {
+      "sha256": "4524518703561d7f6ca944e38303c82907c7fe4d6936039dfcc3af175d7cde5f",
+      "changed": false,
+      "snapshot_utc": "2026-10-04T20:24:15.075505+00:00",
+      "validation_through": 45000,
+      "scope": "Nine-page report is explicitly dated; this heartbeat updates the separate live curves/progress only"
+    },
+    "validation_plot_visual_check": "passed; x ticks now explicitly in thousands to prevent crowded labels",
+    "full_test_evaluation": "not started; completion gate closed",
+    "plot_only_source_change": {
+      "source_sha256": "d66a68529c8f18dfc98bd42be9510680237e506350043a1346863d842dec81ed",
+      "change": "Display optimizer-update axis in thousands; data and all non-plot AST nodes unchanged",
+      "numerical_summary_sha256": "8223d3ceecdce71228620f4d0a8d3eceb514201810d3724729eba024ecc5c029",
+      "prior_numeric_producer_hash_preserved": true,
+      "verification": "Read-only AST comparison and cached-array replot; no model calls or scientific code changes",
+      "additional_tests": "not needed for tick-label-only change; existing scientific checks retained"
+    }
   }
 }
