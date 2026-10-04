@@ -100,6 +100,35 @@ def test_checkpoint_rollback_uses_only_new_log_segment(tmp_path):
     assert [s['seconds_per_update'] for s in spans] == [.6, .8]
 
 
+@pytest.mark.parametrize('fresh_progress', [[], [(20100, 8532)]])
+def test_queue_start_withholds_projection_until_a_fresh_span(running, fresh_progress):
+    root, repo, now, status = running
+    folder = root / 'faithful_seed0'
+    status['completed_steps'] = 20000
+    write(folder / 'status.json', status)
+    old = [(21400, 9058), (21500, 9075)]
+    encode = lambda values: '\n'.join(json.dumps({'completed_steps': n, 'elapsed_seconds': t})
+                                      for n, t in values)
+    (folder / 'run.log').write_text(encode(old) + '\nQUEUE START 2026-10-04T19:00:00+00:00\n'
+                                   + encode(fresh_progress))
+    before = (folder / 'status.json').read_bytes()
+    result = monitor.snapshot(root, repo, now)
+    assert 'conditional_projections' not in result
+    assert 'observed_average_seconds_per_update' not in result['jobs'][0]
+    assert 'recent_median_seconds_per_update' not in result['jobs'][0]
+    assert monitor.recent_progress(folder / 'run.log') == []
+    assert (folder / 'status.json').read_bytes() == before
+
+
+def test_queue_start_discards_old_spans_even_when_new_progress_is_monotone(tmp_path):
+    path = tmp_path / 'log'
+    encode = lambda n, t: json.dumps({'completed_steps': n, 'elapsed_seconds': t})
+    path.write_text('\n'.join([encode(100, 10), encode(200, 20),
+                               'QUEUE START 2026-10-04T19:00:00+00:00',
+                               encode(300, 80), encode(400, 100)]))
+    assert monitor.recent_progress(path) == [{'steps': 100, 'seconds': 20, 'seconds_per_update': .2}]
+
+
 def test_permission_denial_does_not_claim_process_absence(monkeypatch):
     def denied(pid, signal):
         assert signal == 0

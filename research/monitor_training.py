@@ -22,13 +22,17 @@ def config_hash(value):
 
 
 def recent_progress(log_path):
-    """Use only the final monotone log segment after a checkpoint rollback.
+    """Use only the final monotone log segment of the current queue attempt.
 
     Repeated progress from earlier interrupted attempts must not count as new
-    completed updates. A partly written final JSON line is ignored.
+    completed updates. A queue-start marker resets the segment before resumed
+    progress arrives. A partly written final JSON line is ignored.
     """
     log = []
     for line in log_path.read_text().splitlines() if log_path.exists() else []:
+        if line.startswith('QUEUE START '):
+            log = []
+            continue
         if not line.startswith('{'):
             continue
         try:

@@ -1,24 +1,24 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-04T18:20:04.716603+00:00",
+  "recorded_utc": "2026-10-04T18:56:20.055906+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 17100,
-  "total_recorded_checkpoint_updates": 10000,
-  "hours_to_cutoff": 61.66535649916666,
+  "total_completed_updates": 20500,
+  "total_recorded_checkpoint_updates": 20000,
+  "hours_to_cutoff": 61.06109558166667,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.42769294264524,
-      "remaining_training_hours": 69.2506156299751,
-      "projected_training_finish_utc": "2026-10-07T15:35:06.932871+00:00",
-      "after_cutoff": true
+      "seconds_per_update": 0.18496481229250095,
+      "remaining_training_hours": 29.774196867640082,
+      "projected_training_finish_utc": "2026-10-06T00:42:47.164630+00:00",
+      "after_cutoff": false
     },
     "recent_median": {
-      "seconds_per_update": 0.38527443062514066,
-      "remaining_training_hours": 62.38235155872069,
-      "projected_training_finish_utc": "2026-10-07T08:43:01.182214+00:00",
-      "after_cutoff": true
+      "seconds_per_update": 0.1386720074999994,
+      "remaining_training_hours": 22.322341207291565,
+      "projected_training_finish_utc": "2026-10-05T17:15:40.484252+00:00",
+      "after_cutoff": false
     }
   },
   "projection_limitations": "Uses the queue-designated child only. Process command identities require separate verification. Assumes the same future per-update throughput for all models; ignores future contention changes, startup and new evaluation time. Not a promised completion time.",
@@ -28,7 +28,7 @@
       "objective": "faithful",
       "seed": 0,
       "state": "running",
-      "completed_steps": 17100,
+      "completed_steps": 20500,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
@@ -80,6 +80,18 @@
             "predicted_vector_se": 0.06484233021230318
           },
           "binned_vector_se_calibration_gap": 0.012076573842017489
+        },
+        {
+          "completed_steps": 20000,
+          "file": "step-020000.json",
+          "sha256": "c1510b9f66edb3edd20b477020fac14db28c399b60275c333679c7aeec018e9e",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.016609289407260166,
+            "constant_free_gaussian_nll": -3.3819138433813936,
+            "realized_vector_se": 0.03321857881452033,
+            "predicted_vector_se": 0.059592076084483206
+          },
+          "binned_vector_se_calibration_gap": 0.02637349726996288
         }
       ]
     },
@@ -141,5 +153,18 @@
     "sha256": "d90c817be6206da2ec19f5742073a11fa8e14835dc9286be5c3a37c785c01d19",
     "file_hash_verified_utc": "2026-10-04T17:32:14+00:00",
     "verification_limit": "File bytes and pointer checked; checkpoint not loaded or used for selection/evaluation"
-  }
+  },
+  "verified_recovery_checkpoints": [
+    {
+      "model": "faithful_seed0",
+      "completed_steps": 20000,
+      "path": "checkpoint-020000.pt",
+      "sha256": "3c4a073d658d882990cf90e5e90456d30d2f087894fb29e50f4d07186ac14aab",
+      "file_hash_verified_utc": "2026-10-04T18:54:19.115370+00:00",
+      "scope": "byte verified before recovery; later restored by unchanged trainer; not checkpoint selection"
+    }
+  ],
+  "interruption_records": [
+    "full_training_recovery_20261004T1853.json"
+  ]
 }

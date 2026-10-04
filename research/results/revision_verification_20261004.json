@@ -43,16 +43,23 @@
       "main_checks": 647,
       "independent_benefit_checks": 15844,
       "numeric_mismatches": 0
+    },
+    {
+      "command": "python -m pytest research/tests/test_monitor_training.py -q",
+      "passed": 15,
+      "skipped": 0,
+      "seconds": 0.06,
+      "scope": "Synthetic restart-marker regression, no benchmark data/model/GPU; independently reviewed"
     }
   ],
   "source_sha256": {
     "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
-    "research/monitor_training.py": "29c598845b8816a25c03c0effd3e23a3374baa3a67490e641927e6ed6ba1b0d6",
+    "research/monitor_training.py": "2056c89d0ecdffb87274355b67834af7f4147a79d33b6ff63357fc042ac419ff",
     "research/noise_target_toy.py": "8624830b6790333123f5cb0d5e7d8a13f1ac72670c89a209928e2738c37eea3a",
     "research/summarize_full_rollouts.py": "fee246c0abe0a289374dcc7b383be8827579fdeb711f966ae9d2a3480048070b",
     "research/summarize_full_same_state.py": "2d8de802b4109c9dc84cdbb5c53a72b28942cb6fdbacfd8437ea884bb7487065",
     "research/tests/test_full_same_state.py": "e4d4cf25d788b341ffb476e20dd8d8c90654e4c1b992de188121f019524354bb",
-    "research/tests/test_monitor_training.py": "0a95e4e453c281c362e8e06faf1b4a16784801a255cc7d220e3c75a009b91ed6",
+    "research/tests/test_monitor_training.py": "efe6639f5a7b7f23251b58b951084f35781ceea25ebd308be8de39bfbfcd95bc",
     "research/tests/test_summarize_full_rollouts.py": "1d1c5d9a1d8e14ff5eb5647e710249e0683b624ff439677dd3bd34fcd309fb17",
     "research/tests/test_summarize_full_same_state.py": "a2c555e7a760e223580ce0a85a5b2951a782c063210a8288b002d5adc07f2dcc",
     "research/protocols/full_same_state_diagnostic.md": "e59a351b14753802d43bbfaec69d9d45e009c895330d599a2848bc268783d381",
@@ -72,26 +79,47 @@
     "Validation curves retain every scheduled point and failed history; this tool verifies saved arithmetic, not raw predictions.",
     "Reviewed supervisor real read-only preflight returned not_ready during active training; no checkpoint/test access, unchanged lock hashes, no evaluation directory creation.",
     "Only write_report prose changed in compact rollout summarizer: first-forecast budget exception and risk-head baseline scope. AST outside that function is identical to the original producer, and rollout_summary.json bytes/provenance remain unchanged.",
-    "15k clean-validation update: saved arithmetic and frozen identities rechecked; prior points and original 10k checkpoint byte-verification timestamp preserved. No source or protocol change; prior software test records remain applicable and were not rerun for this result-only update."
+    "15k clean-validation update: saved arithmetic and frozen identities rechecked; prior points and original 10k checkpoint byte-verification timestamp preserved. No source or protocol change; prior software test records remain applicable and were not rerun for this result-only update.",
+    "System restart interrupted faithful seed0; reviewed exact-state recovery from20k replays at least1600 recorded updates. Prior logs/status/locks/checkpoint and validation hashes preserved. Six replay log points match sampled identities/rates but not bitwise losses. Monitor-only restart-marker fix15 tests; frozen scientific source/protocol unchanged. Manuscript appendix updated and native compilation passes."
   ],
   "latest_interim_validation": {
-    "progress_recorded_utc": "2026-10-04T18:20:04.716603+00:00",
-    "validation_record_sha256": "270d9877c33ca4180e5348a2dd0616b8447607c277f6f019275b5e6229c26d11",
+    "progress_recorded_utc": "2026-10-04T18:56:20.055906+00:00",
+    "validation_record_sha256": "c1510b9f66edb3edd20b477020fac14db28c399b60275c333679c7aeec018e9e",
     "completed_model_count": 0,
-    "latest_validation_updates": 15000,
-    "recorded_training_updates": 17100,
-    "preserved_previous_points": 3,
-    "preserved_first_checkpoint_verification": true,
+    "latest_validation_updates": 20000,
+    "recorded_training_updates": 20500,
+    "preserved_previous_points": 4,
     "current_frozen_sources_verified": true,
     "all_three_seed_means": "null; required seeds incomplete",
-    "scope": "read-only saved-validation audit and report update; no new test/model data reads; no scientific source changes"
+    "scope": "saved validation arithmetic and identities checked; validation precedes reboot and recovery; no reserved test access"
   },
   "latest_report_visual_check": {
     "pages": [
       7
     ],
     "result": "passed",
-    "scope": "15k validation update; seven-page report, other pages unchanged"
+    "scope": "20k validation and recovery update; seven-page report and five-point plot rendered/viewed"
   },
-  "latest_report_sha256": "d7b1077d41e012a534e19e8c6cd300aee481d3154ecedb684b47135fb9d440d4"
+  "latest_report_sha256": "8d74339c99b8793a069432d4f893c526bf333049791ff8814710e2c4ca137007",
+  "superseded_monitor_sha256": {
+    "research/monitor_training.py": "29c598845b8816a25c03c0effd3e23a3374baa3a67490e641927e6ed6ba1b0d6",
+    "research/tests/test_monitor_training.py": "0a95e4e453c281c362e8e06faf1b4a16784801a255cc7d220e3c75a009b91ed6"
+  },
+  "recovery_after_system_restart": {
+    "system_boot_utc": "2026-10-04T18:50:24+00:00",
+    "last_interrupted_updates": 21600,
+    "restored_updates": 20000,
+    "checkpoint_sha256": "3c4a073d658d882990cf90e5e90456d30d2f087894fb29e50f4d07186ac14aab",
+    "interrupted_evidence_preserved": true,
+    "sample_schedule_matches_in_six_compared_points": true,
+    "bitwise_logged_losses_match": false,
+    "record_sha256": "3acf9ea6b3f8ec36db86b9505ee7184812a3eaca3986b42033e8a0e090f8ac28"
+  },
+  "manuscript_evidence_audit": {
+    "mapped_entries": 98,
+    "checks": 16497,
+    "numerical_mismatches": 0,
+    "scope": "Saved scalar artifacts, source and manuscript text; no new experiments, checkpoint/raw-array/test-source reads",
+    "record_sha256": "e885ad69885924eaac34c1d66edaa151a7bfbc857258dfebaf724771a54bb93a"
+  }
 }
