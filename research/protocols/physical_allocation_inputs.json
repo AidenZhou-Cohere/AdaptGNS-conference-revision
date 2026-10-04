@@ -1,0 +1,49 @@
+{
+  "scope": "Separate exploratory fixed-compact-model physical allocation controls; identity pinned before new policy predictions",
+  "source_commit_at_input_pin": "15844aba0ecf644e110515e95bd90bb1c457a529",
+  "files": {
+    "research/results/risk_benefit.json": "dccb0a318feb252c02b284f72fc683627060c5723d1d379b7ad66c7345522a4d",
+    "research/results/benefit_head.json": "fc379e557aea5bb50bdc4d5c7ea1507bf4f1ba05a369ea1b304fcece87f0085f",
+    "research/results/waterdrop_pilot/protocol.json": "0789adffe76b0b2ef7efb281b1db9631cb0376733be9c02bee46fd65e76ba9f4",
+    "research/results/waterdrop_pilot/faithful_seed0.pt": "b25a804b671fb09669d19102b2d86e827daabc2f6102d96ddb8001666862d4eb",
+    "research/results/waterdrop_pilot/faithful_seed0.json": "47439e886aefb1013d764a54d35bd8696711d709d41f64a758168c84c9e6db3f",
+    "research/results/waterdrop_pilot/nll_seed0.pt": "a3e9723b0f8613d2ebf15b7f92c6c0643302ed0ef6dffc207dc53c4acb6113e0",
+    "research/results/waterdrop_pilot/nll_seed0.json": "c3ac9d61b21282afa5da0fb2377a2feccef023aed11531eddd165e1b922ae133",
+    "research/results/waterdrop_pilot/beta_nll_seed0.pt": "a564466c6e6980b18a245784a04eaa2304917525d6bd4a36dcf28248d8fea4f3",
+    "research/results/waterdrop_pilot/beta_nll_seed0.json": "7d18db67cd39b2f910abb6df0d94a9921e9605bdb0bcccd066675b6bf75b1e43",
+    "research/results/waterdrop_pilot/faithful_seed1.pt": "c0aea74e2d86cdd7960ec5edd46928f76a80b0535269bf2a90a2cd7daec1593d",
+    "research/results/waterdrop_pilot/faithful_seed1.json": "6a6dcdbb591a6d2ed89ad11ba9d215ad67c267a49ddfc17a675789726d48a2ea",
+    "research/results/waterdrop_pilot/nll_seed1.pt": "a860e761c73579e3ac9c35757f2abf60b374b93f70870d68b75bdba1eb4720da",
+    "research/results/waterdrop_pilot/nll_seed1.json": "3cade4c0351357bc794d75709b43e62d2b270a2ac6d30b21e9549cb6b8d77d57",
+    "research/results/waterdrop_pilot/beta_nll_seed1.pt": "76639d6308b2a1b17f9819bce85437442ef6724257e030f2d11ccd9fb10f7b2d",
+    "research/results/waterdrop_pilot/beta_nll_seed1.json": "d35d4b2ac6f199c1af434be3a130a2d600f52119f3af6145a01c5dd4ab4eb3a2",
+    "research/results/waterdrop_pilot/faithful_seed2.pt": "deddfa24041afb632f9526a5ee0bbd9d269f347b37061d2481e5eafc981ccc25",
+    "research/results/waterdrop_pilot/faithful_seed2.json": "f5138a284f1d34c3edd9401ef5787f5132d15e6a5b2014e31ecf42fff72d9ad6",
+    "research/results/waterdrop_pilot/nll_seed2.pt": "ed3ddc7ee6801a2a49121ad826cf9b913128a1ca91c5ee5663d5810fe3f86209",
+    "research/results/waterdrop_pilot/nll_seed2.json": "cc450f92784325c21d5d47e37814f1622a6f490a6da6458551e5ec1d463b8d1e",
+    "research/results/waterdrop_pilot/beta_nll_seed2.pt": "fda604deb04637d00688de6d738769c8a12aa017a7d1ff0c48d73ada19419197",
+    "research/results/waterdrop_pilot/beta_nll_seed2.json": "ee05c722d89a8096dd9b27f0c7b3cd766702a29397341820e8fe465d17c547aa",
+    "research/results/waterdrop_pilot/faithful_seed3.pt": "ce7c0526e41ee48d626530dbc65fa6c4d85593eda1071bdd3a477858f796f05e",
+    "research/results/waterdrop_pilot/faithful_seed3.json": "db25ac3e4d893f37f2dabbac8858c53a967f575cd8240a4668ca9ac1fbd39756",
+    "research/results/waterdrop_pilot/nll_seed3.pt": "30c09e990fe5d7fdba5275a6dd049bf7b2bc0c3d4cfa16d9269806f7e1c35325",
+    "research/results/waterdrop_pilot/nll_seed3.json": "56bd3608cc4915a057bf3b4f338e9993bea2aa4ee6c248c59a5c140f72816570",
+    "research/results/waterdrop_pilot/beta_nll_seed3.pt": "385174da662fbd4920474ed52cf6ab49486a0ca86159b764eaaa8bc52a9ee247",
+    "research/results/waterdrop_pilot/beta_nll_seed3.json": "be173b794926fea79b4fc64b5ce785f35c4443a4edff639731e917731290b0db",
+    "research/results/waterdrop_pilot/faithful_seed4.pt": "447c504bbaf5b96869c35374056e34a811c4fd529c9283cfb0e2cdcc60a08add",
+    "research/results/waterdrop_pilot/faithful_seed4.json": "9f2ffdd19386f4878c25370969ac6c9ed76027a0ff1217ab5e728e9521a9de84",
+    "research/results/waterdrop_pilot/nll_seed4.pt": "69549585a4fdceeb5a8c0160d5d7d710c7c2b45e7ccb09835602cd7a29d2a119",
+    "research/results/waterdrop_pilot/nll_seed4.json": "34a0e57f7d6d584bc313d8fce45960c41807429a13eb5175867d67d7629913d3",
+    "research/results/waterdrop_pilot/beta_nll_seed4.pt": "a899fc5bccad548d7a694012727c7f5fce27a8e528e283512831e0219dad2ba4",
+    "research/results/waterdrop_pilot/beta_nll_seed4.json": "58206b927194a00a57753ada4b6a2fbcdc3a96950d95478cced52f71114729c0"
+  },
+  "data_sha256": {
+    "metadata.json": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+    "valid-pilot.npz": "9cb87a2f31dc894fe8bfd9400ad47ca95c36cf47c3cc06f06b69f4c3603ffa1e",
+    "test-pilot.npz": "5ab9c6fd71a8c1ae85c3fc55d713384b1fef591241ac22d575cfe35c6b2c04ed"
+  },
+  "existing_numeric_source_sha256": {
+    "pilot.py": "902f4ca1afae681c318763c5082c341d1d15ff5a094f32cf8fd414bfe85fcf7a",
+    "budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+    "risk_benefit.py": "f413916824eff03c85c622388b519cd0d0a37e5fbdd7acafd817063d7f4dfa5e"
+  }
+}
