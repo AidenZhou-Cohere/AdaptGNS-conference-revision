@@ -15,7 +15,7 @@ Based on `aidenzhou8/AdaptGNS` commit `5cf0d7cb9d927f4277c4538917ae570d8dc9d7b6`
 
 ## Environment
 
-The local work used Python 3.12, CPU Torch, SciPy and PyG. `research/requirements-local-lock.txt` records the exact installed packages. For a fresh CPU environment:
+The local work used Python 3.12, PyTorch with native Apple Metal support, SciPy and PyG. Compact pilot experiments used CPU. `research/requirements-local-lock.txt` records the exact installed packages. For a fresh CPU environment:
 
 ```bash
 python3 -m venv .venv
@@ -25,7 +25,7 @@ export PYTHONPATH="$PWD:$PWD/adaptive-gns"
 python -m pytest tests research/tests -q
 ```
 
-GPU use needs a Torch build matching the machine and the appropriate PyG radius backend (`torch_cluster`/supported compiled dependencies). CUDA, distributed training, and the inherited full upstream test suite were not validated in this local revision. Do not assume the macOS lock file is a portable CUDA installation recipe.
+CUDA use needs a matching Torch build and the appropriate PyG radius backend (`torch_cluster`/supported compiled dependencies). Native Metal uses the explicit `scipy_host` backend for CPU neighbor search and edge transfer; unsupported-kernel fallback must stay disabled. CUDA, distributed training, and the inherited full upstream test suite were not validated in this local revision. Do not assume the macOS lock file is a portable CUDA installation recipe.
 
 ## Corrected full model
 
@@ -99,3 +99,46 @@ Historical bootstrap intervals resample whole trajectories, condition on single 
 Residual magnitude, calibrated variance, and benefit from adding edges are different targets. The theory gives conditional bookkeeping and perturbation bounds, not universal stability guarantees. Mandatory base edges may grow with density, so an optional-edge budget is not a hard total-compute bound. A deterministic ID tie-break is not permutation equivariant at ties.
 
 Keep historical artifacts, new small-model measurements, and software smoke tests separate. Full corrected multi-seed Sand/WaterDrop experiments and broader regimes remain necessary for a general conference-level performance claim.
+
+## Autonomous pilot and benefit-head extensions
+
+```bash
+python -m research.benefit_head --data-dir data-pilot
+python -m research.pilot_rollout --help
+python -m research.summarize_rollouts \
+  --result-root research/results --output research/results/rollout_summary.json \
+  --report pilot_rollout_results.md
+python -m research.plot_pilot_rollouts
+```
+
+All 15 compact models were evaluated under five policies on three test trajectories at both 200 and 995 forecast steps. Every 200-step run completed; 66/225 long runs crossed the predeclared coordinate guard. Full-horizon accuracy is undefined for any group containing a failure. The signed-benefit ridge extension uses training labels only, but was designed after inspecting the pilot test results and remains exploratory. Its complete coefficients and measurements are saved under `research/results/`.
+
+## Original architecture on local Metal
+
+Training and the evaluation scripts accept `--device=mps --radius_backend=scipy_host`. Set `PYTORCH_ENABLE_MPS_FALLBACK=0` before Python starts. The host backend preserves its deterministic strict-radius/nearest-neighbor-cap rules and reports graph-transfer provenance; it is not an optimized native GPU neighbor search. The original CLI completed a 100-update CPU/Metal smoke check with checkpoint restoration and short validation rollouts. Forward parity is close, but strict gradient and longer optimization-path identity are not certified.
+
+`research/benchmark_devices.py` records the hardware feasibility measurements; `research/smoke_metal_cli.py` reproduces the original-CLI check. A sandbox may hide the local Metal device even when it is available in a normal local terminal.
+
+## Bounded full-data training extension
+
+The [fixed protocol](research/protocols/full_waterdrop_100k.md) uses the original 128-wide, ten-block architecture, all 1,000 training trajectories, three paired seeds and two objectives. Its 100,000-update target is shorter than the historical 500,000-update runs. The completed compact pilot must not be presented as this larger experiment.
+
+Download complete official `train.tfrecord`, `valid.tfrecord`, and `metadata.json` to a data directory. The conversion streams and verifies every CRC, retains trajectory IDs, verifies content uniqueness across splits, and publishes a numeric memory-mapped manifest only when complete. It defaults to converting train and validation; test evaluation remains a separate locked step.
+
+```bash
+python -m research.prepare_full_waterdrop \
+  --input-dir data-full/raw --output-dir data-full/converted \
+  --metadata data-full/raw/metadata.json --expected-train-bytes 4541246980
+
+PYTORCH_ENABLE_MPS_FALLBACK=0 python -m research.full_training \
+  --train-manifest data-full/converted/train.json \
+  --valid-manifest data-full/converted/valid.json \
+  --metadata data-full/converted/metadata.json \
+  --protocol research/protocols/full_waterdrop_100k.md \
+  --output-dir research/results/full_waterdrop_100k/faithful_seed0 \
+  --objective faithful --seed 0 --device mps
+```
+
+`full_training` derives a paired frame/noise schedule from seed and update index, uses clean fixed validation frames with stored training normalization, records source/data/software hashes, and atomically saves model and Adam state. `--resume` requires identical configuration and hashes. `--clear-stale-lock` verifies a previous PID is dead before taking ownership. `--stop-after` pauses at an optimizer boundary without changing the target budget; nonstandard `--steps` and other protocol overrides are explicitly labeled.
+
+`research/run_full_queue.py` executes the six fixed jobs sequentially, stops on a numerical failure, verifies completed checkpoint hashes, and enforces an explicit UTC deadline. Its default deadline is specific to this October 2026 revision; set `--deadline-utc` for later reproduction. It never evaluates the test split. Live long-run output is kept local and gitignored until curated final results are published.

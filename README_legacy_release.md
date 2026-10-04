@@ -38,8 +38,8 @@ AdaptiveGNS/
 ├── calibration_plots/paper/       # Figure 2 in the paper
 ├── combined_results_plots/        # Figure 3 in the paper
 ├── Sand/                          # Dataset 1
-│   ├── dataset/metadata.json      
-│   └── models/                   
+│   ├── dataset/metadata.json
+│   └── models/
 └── WaterDrop/                     # Dataset 2
     ├── dataset/metadata.json
     └── models/
@@ -228,7 +228,7 @@ are sufficient input for Figure 3 without retraining.
 (MIT-licensed). The non-trivial
 modifications relative to upstream are the variance head in
 `adaptive-gns/gns/graph_network.py`,
-the adaptive mechanism in 
+the adaptive mechanism in
 `adaptive-gns/gns/learned_simulator.py`
 and `(adaptive-gns/gns/train.py`, and everything
 under `adaptive-gns/scripts/`.

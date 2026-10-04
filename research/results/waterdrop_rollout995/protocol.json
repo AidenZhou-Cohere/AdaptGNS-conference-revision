@@ -1,0 +1,57 @@
+{
+  "scope": "Autonomous rollout extension of small CPU WaterDrop pilot; not full-paper reproduction",
+  "split": "first three official test trajectories",
+  "trajectories": [
+    "position_0",
+    "position_1",
+    "position_2"
+  ],
+  "horizon": 995,
+  "context_frames": 6,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "objectives": [
+    "faithful",
+    "nll",
+    "beta_nll"
+  ],
+  "policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25"
+  ],
+  "integration": "x_next=2*x_current-x_previous + acc_std*normalized_mean + acc_mean; no extra dt",
+  "policy": {
+    "base_radius": 0.015,
+    "radius_factor": 1.267,
+    "allocation_fraction": 0.25,
+    "candidate_rule": "uncapped undirected pairs within <= radius",
+    "pair_score": "max of endpoint scores; lexicographic tie break",
+    "directions": "both directions, no self-loops",
+    "first_step": "base/dense/random/speed apply immediately; lagged risk uses base then previous actual policy risk",
+    "budget_caveat": "Exact quarter annulus within each predicted state; counts differ across policy rollouts"
+  },
+  "failure_rules_predeclared": {
+    "nonfinite": "any state, prediction or risk value is nonfinite",
+    "max_absolute_coordinate": 10.0,
+    "max_candidate_undirected_pairs": 100000,
+    "interpretation": "Resource guards are not physical-validity thresholds",
+    "reporting": "all failures retained; incomplete trajectory final/mean accuracy null; group accuracy null if any trajectory incomplete"
+  },
+  "timing": "Single-thread CPU wall time includes candidate counting/building, selection, features, forward, integration and metrics; concurrent training may affect timing",
+  "hardware": "macOS-26.6.2-arm64-arm-64bit",
+  "torch": "2.14.1",
+  "threads": 1,
+  "data_sha256": "5ab9c6fd71a8c1ae85c3fc55d713384b1fef591241ac22d575cfe35c6b2c04ed",
+  "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+  "code_sha256": "ff08870f4828c8ed11112b0100fc4ae3fdca8ab575040e7eaa51b35879d60775",
+  "model_source_sha256": "902f4ca1afae681c318763c5082c341d1d15ff5a094f32cf8fd414bfe85fcf7a",
+  "graph_source_sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187"
+}

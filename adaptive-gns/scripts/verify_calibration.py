@@ -17,6 +17,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from gns import learned_simulator, data_loader, reading_utils, noise_utils
 from gns.model_io import load_for_evaluation
+from gns.device_utils import add_device_argument, resolve_device
 from gns.calibration import regression_calibration
 
 INPUT_SEQUENCE_LENGTH = 6
@@ -24,12 +25,14 @@ KINEMATIC_PARTICLE_ID = 3
 NUM_PARTICLE_TYPES = 9
 
 
-def get_simulator(data_path, model_path, model_file, device, normalization_noise_std=None):
+def get_simulator(data_path, model_path, model_file, device, normalization_noise_std=None,
+                  radius_backend=None):
     """Load simulator from checkpoint."""
     metadata = reading_utils.read_metadata(data_path, 'train')
     simulator, provenance = load_for_evaluation(
         os.path.join(model_path, model_file), metadata, device,
-        normalization_noise_std=normalization_noise_std)
+        normalization_noise_std=normalization_noise_std,
+        radius_backend=radius_backend)
     simulator._evaluation_provenance = provenance
     return simulator
 
@@ -178,6 +181,7 @@ def plot_sigma_spatial(positions, sigma, output_path, step_idx, bounds=None):
 
 def main():
     parser = argparse.ArgumentParser()
+    add_device_argument(parser)
     parser.add_argument('--data_path', required=True, help='Dataset dir (e.g. ../WaterDropSample/dataset/)')
     parser.add_argument('--model_path', required=True, help='Model dir')
     parser.add_argument('--model_file', default='latest', help='Model checkpoint')
@@ -186,6 +190,7 @@ def main():
     parser.add_argument('--max_batches', type=int, default=None, help='Optional cap; default evaluates all validation samples')
     parser.add_argument('--normalization_noise_std', type=float, default=None,
                         help='Legacy checkpoint training normalization, not input noise')
+    parser.add_argument('--radius_backend', choices=['auto', 'pyg', 'scipy', 'scipy_host'], default=None)
     parser.add_argument('--n_rollout_trajectories', type=int, default=3, help='Trajectories for spatial plots')
     parser.add_argument('--n_rollout_steps', type=int, default=50, help='Steps per rollout')
     parser.add_argument('--plot_steps', nargs='+', type=int, default=[1, 10, 30], help='Steps to plot sigma')
@@ -205,8 +210,9 @@ def main():
     else:
         model_file = args.model_file
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    simulator = get_simulator(data_path, model_path, model_file, device, args.normalization_noise_std)
+    device = resolve_device(args.device)
+    simulator = get_simulator(data_path, model_path, model_file, device,
+                               args.normalization_noise_std, args.radius_backend)
     metadata = reading_utils.read_metadata(data_path, 'rollout')
     bounds = metadata.get('bounds', None)
     dim = metadata.get('dim', 2)  # WaterDrop/Sand are 2D

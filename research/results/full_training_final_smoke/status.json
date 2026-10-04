@@ -1,0 +1,38 @@
+{
+  "state": "complete",
+  "completed_steps": 5,
+  "pid": 75711,
+  "started_utc": "2026-10-04T16:16:23.165506+00:00",
+  "updated_utc": "2026-10-04T16:16:49.852974+00:00",
+  "requested_steps": 5,
+  "scope": "explicit_smoke_or_protocol_override_not_standard_100k",
+  "objective": "nll",
+  "seed": 0,
+  "run_config_sha256": "57803827d59b47d6973ce96011b2f120105f9fc5399f7222947cb62c1c61e784",
+  "elapsed_seconds": 5.712422166951001,
+  "latest_checkpoint": {
+    "path": "checkpoint-000005.pt",
+    "sha256": "f69a38865954657fe330262c84af6e41c2f5eaff8d0da3f6fc3cfb11de112c06",
+    "completed_steps": 5
+  },
+  "last_training": {
+    "completed_steps": 5,
+    "loss": 0.9266044497489929,
+    "lr": 9.999078999167102e-05,
+    "frame_ids": [
+      "train:000882:810",
+      "train:000902:50"
+    ],
+    "particles": 1218,
+    "elapsed_seconds": 3.9667778750881553
+  },
+  "last_validation": {
+    "completed_steps": 5,
+    "coordinate_mse": 0.04541627504907944,
+    "constant_free_gaussian_nll": 0.028176162030855153,
+    "realized_vector_se": 0.09083255009815888,
+    "predicted_vector_se": 1.9642786699931336,
+    "binned_vector_se_calibration_gap": 1.8734461198949743
+  },
+  "error": null
+}

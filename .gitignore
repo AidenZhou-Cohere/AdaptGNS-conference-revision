@@ -47,3 +47,9 @@ tectonic
 # Stray rollout outputs from accidental --output_path=. invocations
 **/..json
 **/..npz
+
+# Atomic model writes and active long-running local experiment state
+*.pt.tmp
+research/results/**/run.lock*
+research/results/**/queue.lock*
+research/results/full_waterdrop_100k/

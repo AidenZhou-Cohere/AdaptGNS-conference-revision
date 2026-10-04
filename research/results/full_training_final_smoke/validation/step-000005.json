@@ -1,0 +1,600 @@
+{
+  "history": "clean observed histories; no validation noise; stored noise-adjusted training normalization",
+  "aggregation": "equal frames within trajectory, then equal trajectories; dynamic particles within frame",
+  "calibration_definition": "weighted absolute bin gap between vector squared residual and 2*variance; quantile boundaries preserve ties",
+  "frames": [
+    {
+      "dataset_index": 960,
+      "trajectory": "valid:000000",
+      "target_frame": 966,
+      "id": "valid:000000:966",
+      "dynamic_particles": 482,
+      "coordinate_mse": 0.010610392648548938,
+      "constant_free_gaussian_nll": 0.003085325915644248,
+      "realized_vector_se": 0.021220785297097877,
+      "predicted_vector_se": 1.9852519750100448
+    },
+    {
+      "dataset_index": 1580,
+      "trajectory": "valid:000001",
+      "target_frame": 591,
+      "id": "valid:000001:591",
+      "dynamic_particles": 362,
+      "coordinate_mse": 0.012929302008125275,
+      "constant_free_gaussian_nll": -0.0012412067734937843,
+      "realized_vector_se": 0.02585860401625055,
+      "predicted_vector_se": 1.9720445835129332
+    },
+    {
+      "dataset_index": 2879,
+      "trajectory": "valid:000002",
+      "target_frame": 895,
+      "id": "valid:000002:895",
+      "dynamic_particles": 537,
+      "coordinate_mse": 0.008651832522181846,
+      "constant_free_gaussian_nll": -0.01276276293417856,
+      "realized_vector_se": 0.017303665044363693,
+      "predicted_vector_se": 1.9577124727060897
+    },
+    {
+      "dataset_index": 3005,
+      "trajectory": "valid:000003",
+      "target_frame": 26,
+      "id": "valid:000003:26",
+      "dynamic_particles": 544,
+      "coordinate_mse": 0.0338636927228489,
+      "constant_free_gaussian_nll": 0.01797254350869144,
+      "realized_vector_se": 0.0677273854456978,
+      "predicted_vector_se": 1.9670276582679327
+    },
+    {
+      "dataset_index": 4270,
+      "trajectory": "valid:000004",
+      "target_frame": 296,
+      "id": "valid:000004:296",
+      "dynamic_particles": 696,
+      "coordinate_mse": 0.030474710533268792,
+      "constant_free_gaussian_nll": 0.0018337425932835342,
+      "realized_vector_se": 0.060949421066537585,
+      "predicted_vector_se": 1.942964375875462
+    },
+    {
+      "dataset_index": 5887,
+      "trajectory": "valid:000005",
+      "target_frame": 918,
+      "id": "valid:000005:918",
+      "dynamic_particles": 899,
+      "coordinate_mse": 0.01351711888080442,
+      "constant_free_gaussian_nll": 0.009644962849627885,
+      "realized_vector_se": 0.02703423776160884,
+      "predicted_vector_se": 1.9927637017476014
+    },
+    {
+      "dataset_index": 6345,
+      "trajectory": "valid:000006",
+      "target_frame": 381,
+      "id": "valid:000006:381",
+      "dynamic_particles": 841,
+      "coordinate_mse": 0.054532485749815035,
+      "constant_free_gaussian_nll": 0.024081843468324322,
+      "realized_vector_se": 0.10906497149963007,
+      "predicted_vector_se": 1.9381386797153142
+    },
+    {
+      "dataset_index": 6996,
+      "trajectory": "valid:000007",
+      "target_frame": 37,
+      "id": "valid:000007:37",
+      "dynamic_particles": 556,
+      "coordinate_mse": 0.039064520802482856,
+      "constant_free_gaussian_nll": 0.030647254211182293,
+      "realized_vector_se": 0.07812904160496571,
+      "predicted_vector_se": 1.9825782889513661
+    },
+    {
+      "dataset_index": 8104,
+      "trajectory": "valid:000008",
+      "target_frame": 150,
+      "id": "valid:000008:150",
+      "dynamic_particles": 614,
+      "coordinate_mse": 0.038358560628303194,
+      "constant_free_gaussian_nll": 0.0026345909880135365,
+      "realized_vector_se": 0.07671712125660639,
+      "predicted_vector_se": 1.928457691343289
+    },
+    {
+      "dataset_index": 9005,
+      "trajectory": "valid:000009",
+      "target_frame": 56,
+      "id": "valid:000009:56",
+      "dynamic_particles": 955,
+      "coordinate_mse": 0.05879263887230638,
+      "constant_free_gaussian_nll": 0.04816343064258134,
+      "realized_vector_se": 0.11758527774461276,
+      "predicted_vector_se": 1.977526742375958
+    },
+    {
+      "dataset_index": 10094,
+      "trajectory": "valid:000010",
+      "target_frame": 150,
+      "id": "valid:000010:150",
+      "dynamic_particles": 617,
+      "coordinate_mse": 0.03687375286707052,
+      "constant_free_gaussian_nll": 0.0020541078575839196,
+      "realized_vector_se": 0.07374750573414104,
+      "predicted_vector_se": 1.9307948316128947
+    },
+    {
+      "dataset_index": 11133,
+      "trajectory": "valid:000011",
+      "target_frame": 194,
+      "id": "valid:000011:194",
+      "dynamic_particles": 442,
+      "coordinate_mse": 0.03868060200767511,
+      "constant_free_gaussian_nll": 0.006359431255242427,
+      "realized_vector_se": 0.07736120401535022,
+      "predicted_vector_se": 1.9356359712678384
+    },
+    {
+      "dataset_index": 12223,
+      "trajectory": "valid:000012",
+      "target_frame": 289,
+      "id": "valid:000012:289",
+      "dynamic_particles": 443,
+      "coordinate_mse": 0.027046360108683686,
+      "constant_free_gaussian_nll": -0.0016162406241763934,
+      "realized_vector_se": 0.05409272021736737,
+      "predicted_vector_se": 1.9424978155583883
+    },
+    {
+      "dataset_index": 13209,
+      "trajectory": "valid:000013",
+      "target_frame": 280,
+      "id": "valid:000013:280",
+      "dynamic_particles": 298,
+      "coordinate_mse": 0.03373708680581501,
+      "constant_free_gaussian_nll": 0.008066175122105007,
+      "realized_vector_se": 0.06747417361163002,
+      "predicted_vector_se": 1.948823099168355
+    },
+    {
+      "dataset_index": 14553,
+      "trajectory": "valid:000014",
+      "target_frame": 629,
+      "id": "valid:000014:629",
+      "dynamic_particles": 469,
+      "coordinate_mse": 0.013905349965211623,
+      "constant_free_gaussian_nll": 0.00862919292108961,
+      "realized_vector_se": 0.027810699930423247,
+      "predicted_vector_se": 1.990195081178059
+    },
+    {
+      "dataset_index": 15329,
+      "trajectory": "valid:000015",
+      "target_frame": 410,
+      "id": "valid:000015:410",
+      "dynamic_particles": 377,
+      "coordinate_mse": 0.0555018518843574,
+      "constant_free_gaussian_nll": 0.039745312819760945,
+      "realized_vector_se": 0.1110037037687148,
+      "predicted_vector_se": 1.9661256922334829
+    },
+    {
+      "dataset_index": 16658,
+      "trajectory": "valid:000016",
+      "target_frame": 744,
+      "id": "valid:000016:744",
+      "dynamic_particles": 510,
+      "coordinate_mse": 0.012872154147315122,
+      "constant_free_gaussian_nll": 0.0014480596503675509,
+      "realized_vector_se": 0.025744308294630244,
+      "predicted_vector_se": 1.9780169998898225
+    },
+    {
+      "dataset_index": 16971,
+      "trajectory": "valid:000017",
+      "target_frame": 62,
+      "id": "valid:000017:62",
+      "dynamic_particles": 383,
+      "coordinate_mse": 0.27659528502638514,
+      "constant_free_gaussian_nll": 0.27411752936225603,
+      "realized_vector_se": 0.5531905700527703,
+      "predicted_vector_se": 1.9915227893127163
+    },
+    {
+      "dataset_index": 18595,
+      "trajectory": "valid:000018",
+      "target_frame": 691,
+      "id": "valid:000018:691",
+      "dynamic_particles": 744,
+      "coordinate_mse": 0.015676692883308994,
+      "constant_free_gaussian_nll": 0.011576481206103845,
+      "realized_vector_se": 0.03135338576661799,
+      "predicted_vector_se": 1.9924880945554344
+    },
+    {
+      "dataset_index": 19472,
+      "trajectory": "valid:000019",
+      "target_frame": 573,
+      "id": "valid:000019:573",
+      "dynamic_particles": 844,
+      "coordinate_mse": 0.017154712428823177,
+      "constant_free_gaussian_nll": 0.008950902784176493,
+      "realized_vector_se": 0.034309424857646355,
+      "predicted_vector_se": 1.9854411406539627
+    },
+    {
+      "dataset_index": 20128,
+      "trajectory": "valid:000020",
+      "target_frame": 234,
+      "id": "valid:000020:234",
+      "dynamic_particles": 312,
+      "coordinate_mse": 0.020835379812921655,
+      "constant_free_gaussian_nll": -0.010832096540829454,
+      "realized_vector_se": 0.04167075962584331,
+      "predicted_vector_se": 1.9372265621637688
+    },
+    {
+      "dataset_index": 21862,
+      "trajectory": "valid:000021",
+      "target_frame": 973,
+      "id": "valid:000021:973",
+      "dynamic_particles": 338,
+      "coordinate_mse": 0.007039672968572987,
+      "constant_free_gaussian_nll": -0.01967343789350772,
+      "realized_vector_se": 0.014079345937145974,
+      "predicted_vector_se": 1.94729786511709
+    },
+    {
+      "dataset_index": 21947,
+      "trajectory": "valid:000022",
+      "target_frame": 63,
+      "id": "valid:000022:63",
+      "dynamic_particles": 555,
+      "coordinate_mse": 0.06064930946843044,
+      "constant_free_gaussian_nll": 0.0486552401022517,
+      "realized_vector_se": 0.12129861893686088,
+      "predicted_vector_se": 1.974661390416257
+    },
+    {
+      "dataset_index": 23749,
+      "trajectory": "valid:000023",
+      "target_frame": 870,
+      "id": "valid:000023:870",
+      "dynamic_particles": 642,
+      "coordinate_mse": 0.00837564761230883,
+      "constant_free_gaussian_nll": -0.011146710225318424,
+      "realized_vector_se": 0.01675129522461766,
+      "predicted_vector_se": 1.9613325107506132
+    },
+    {
+      "dataset_index": 24839,
+      "trajectory": "valid:000024",
+      "target_frame": 965,
+      "id": "valid:000024:965",
+      "dynamic_particles": 825,
+      "coordinate_mse": 0.012430742487186128,
+      "constant_free_gaussian_nll": 0.011009559334104019,
+      "realized_vector_se": 0.024861484974372256,
+      "predicted_vector_se": 1.9974983723958333
+    },
+    {
+      "dataset_index": 24969,
+      "trajectory": "valid:000025",
+      "target_frame": 100,
+      "id": "valid:000025:100",
+      "dynamic_particles": 408,
+      "coordinate_mse": 0.36457423260463995,
+      "constant_free_gaussian_nll": 0.36279596325566416,
+      "realized_vector_se": 0.7291484652092799,
+      "predicted_vector_se": 1.9609034973032333
+    },
+    {
+      "dataset_index": 26758,
+      "trajectory": "valid:000026",
+      "target_frame": 894,
+      "id": "valid:000026:894",
+      "dynamic_particles": 398,
+      "coordinate_mse": 0.00923381954485354,
+      "constant_free_gaussian_nll": -0.008536959619403277,
+      "realized_vector_se": 0.01846763908970708,
+      "predicted_vector_se": 1.965038308246651
+    },
+    {
+      "dataset_index": 27443,
+      "trajectory": "valid:000027",
+      "target_frame": 584,
+      "id": "valid:000027:584",
+      "dynamic_particles": 1044,
+      "coordinate_mse": 0.01047985311964032,
+      "constant_free_gaussian_nll": -0.006764887521930194,
+      "realized_vector_se": 0.02095970623928064,
+      "predicted_vector_se": 1.965914717236698
+    },
+    {
+      "dataset_index": 28811,
+      "trajectory": "valid:000028",
+      "target_frame": 957,
+      "id": "valid:000028:957",
+      "dynamic_particles": 405,
+      "coordinate_mse": 0.011994452114730074,
+      "constant_free_gaussian_nll": 0.007903344663304794,
+      "realized_vector_se": 0.023988904229460147,
+      "predicted_vector_se": 1.992242623847208
+    },
+    {
+      "dataset_index": 29147,
+      "trajectory": "valid:000029",
+      "target_frame": 298,
+      "id": "valid:000029:298",
+      "dynamic_particles": 503,
+      "coordinate_mse": 0.02803603824576752,
+      "constant_free_gaussian_nll": -0.011515831452866712,
+      "realized_vector_se": 0.05607207649153504,
+      "predicted_vector_se": 1.920236567379703
+    }
+  ],
+  "trajectories": {
+    "valid:000000": {
+      "coordinate_mse": 0.010610392648548938,
+      "constant_free_gaussian_nll": 0.003085325915644248,
+      "realized_vector_se": 0.021220785297097877,
+      "predicted_vector_se": 1.9852519750100448
+    },
+    "valid:000001": {
+      "coordinate_mse": 0.012929302008125275,
+      "constant_free_gaussian_nll": -0.0012412067734937843,
+      "realized_vector_se": 0.02585860401625055,
+      "predicted_vector_se": 1.9720445835129332
+    },
+    "valid:000002": {
+      "coordinate_mse": 0.008651832522181846,
+      "constant_free_gaussian_nll": -0.01276276293417856,
+      "realized_vector_se": 0.017303665044363693,
+      "predicted_vector_se": 1.9577124727060897
+    },
+    "valid:000003": {
+      "coordinate_mse": 0.0338636927228489,
+      "constant_free_gaussian_nll": 0.01797254350869144,
+      "realized_vector_se": 0.0677273854456978,
+      "predicted_vector_se": 1.9670276582679327
+    },
+    "valid:000004": {
+      "coordinate_mse": 0.030474710533268792,
+      "constant_free_gaussian_nll": 0.0018337425932835342,
+      "realized_vector_se": 0.060949421066537585,
+      "predicted_vector_se": 1.942964375875462
+    },
+    "valid:000005": {
+      "coordinate_mse": 0.01351711888080442,
+      "constant_free_gaussian_nll": 0.009644962849627885,
+      "realized_vector_se": 0.02703423776160884,
+      "predicted_vector_se": 1.9927637017476014
+    },
+    "valid:000006": {
+      "coordinate_mse": 0.054532485749815035,
+      "constant_free_gaussian_nll": 0.024081843468324322,
+      "realized_vector_se": 0.10906497149963007,
+      "predicted_vector_se": 1.9381386797153142
+    },
+    "valid:000007": {
+      "coordinate_mse": 0.039064520802482856,
+      "constant_free_gaussian_nll": 0.030647254211182293,
+      "realized_vector_se": 0.07812904160496571,
+      "predicted_vector_se": 1.9825782889513661
+    },
+    "valid:000008": {
+      "coordinate_mse": 0.038358560628303194,
+      "constant_free_gaussian_nll": 0.0026345909880135365,
+      "realized_vector_se": 0.07671712125660639,
+      "predicted_vector_se": 1.928457691343289
+    },
+    "valid:000009": {
+      "coordinate_mse": 0.05879263887230638,
+      "constant_free_gaussian_nll": 0.04816343064258134,
+      "realized_vector_se": 0.11758527774461276,
+      "predicted_vector_se": 1.977526742375958
+    },
+    "valid:000010": {
+      "coordinate_mse": 0.03687375286707052,
+      "constant_free_gaussian_nll": 0.0020541078575839196,
+      "realized_vector_se": 0.07374750573414104,
+      "predicted_vector_se": 1.9307948316128947
+    },
+    "valid:000011": {
+      "coordinate_mse": 0.03868060200767511,
+      "constant_free_gaussian_nll": 0.006359431255242427,
+      "realized_vector_se": 0.07736120401535022,
+      "predicted_vector_se": 1.9356359712678384
+    },
+    "valid:000012": {
+      "coordinate_mse": 0.027046360108683686,
+      "constant_free_gaussian_nll": -0.0016162406241763934,
+      "realized_vector_se": 0.05409272021736737,
+      "predicted_vector_se": 1.9424978155583883
+    },
+    "valid:000013": {
+      "coordinate_mse": 0.03373708680581501,
+      "constant_free_gaussian_nll": 0.008066175122105007,
+      "realized_vector_se": 0.06747417361163002,
+      "predicted_vector_se": 1.948823099168355
+    },
+    "valid:000014": {
+      "coordinate_mse": 0.013905349965211623,
+      "constant_free_gaussian_nll": 0.00862919292108961,
+      "realized_vector_se": 0.027810699930423247,
+      "predicted_vector_se": 1.990195081178059
+    },
+    "valid:000015": {
+      "coordinate_mse": 0.0555018518843574,
+      "constant_free_gaussian_nll": 0.039745312819760945,
+      "realized_vector_se": 0.1110037037687148,
+      "predicted_vector_se": 1.9661256922334829
+    },
+    "valid:000016": {
+      "coordinate_mse": 0.012872154147315122,
+      "constant_free_gaussian_nll": 0.0014480596503675509,
+      "realized_vector_se": 0.025744308294630244,
+      "predicted_vector_se": 1.9780169998898225
+    },
+    "valid:000017": {
+      "coordinate_mse": 0.27659528502638514,
+      "constant_free_gaussian_nll": 0.27411752936225603,
+      "realized_vector_se": 0.5531905700527703,
+      "predicted_vector_se": 1.9915227893127163
+    },
+    "valid:000018": {
+      "coordinate_mse": 0.015676692883308994,
+      "constant_free_gaussian_nll": 0.011576481206103845,
+      "realized_vector_se": 0.03135338576661799,
+      "predicted_vector_se": 1.9924880945554344
+    },
+    "valid:000019": {
+      "coordinate_mse": 0.017154712428823177,
+      "constant_free_gaussian_nll": 0.008950902784176493,
+      "realized_vector_se": 0.034309424857646355,
+      "predicted_vector_se": 1.9854411406539627
+    },
+    "valid:000020": {
+      "coordinate_mse": 0.020835379812921655,
+      "constant_free_gaussian_nll": -0.010832096540829454,
+      "realized_vector_se": 0.04167075962584331,
+      "predicted_vector_se": 1.9372265621637688
+    },
+    "valid:000021": {
+      "coordinate_mse": 0.007039672968572987,
+      "constant_free_gaussian_nll": -0.01967343789350772,
+      "realized_vector_se": 0.014079345937145974,
+      "predicted_vector_se": 1.94729786511709
+    },
+    "valid:000022": {
+      "coordinate_mse": 0.06064930946843044,
+      "constant_free_gaussian_nll": 0.0486552401022517,
+      "realized_vector_se": 0.12129861893686088,
+      "predicted_vector_se": 1.974661390416257
+    },
+    "valid:000023": {
+      "coordinate_mse": 0.00837564761230883,
+      "constant_free_gaussian_nll": -0.011146710225318424,
+      "realized_vector_se": 0.01675129522461766,
+      "predicted_vector_se": 1.9613325107506132
+    },
+    "valid:000024": {
+      "coordinate_mse": 0.012430742487186128,
+      "constant_free_gaussian_nll": 0.011009559334104019,
+      "realized_vector_se": 0.024861484974372256,
+      "predicted_vector_se": 1.9974983723958333
+    },
+    "valid:000025": {
+      "coordinate_mse": 0.36457423260463995,
+      "constant_free_gaussian_nll": 0.36279596325566416,
+      "realized_vector_se": 0.7291484652092799,
+      "predicted_vector_se": 1.9609034973032333
+    },
+    "valid:000026": {
+      "coordinate_mse": 0.00923381954485354,
+      "constant_free_gaussian_nll": -0.008536959619403277,
+      "realized_vector_se": 0.01846763908970708,
+      "predicted_vector_se": 1.965038308246651
+    },
+    "valid:000027": {
+      "coordinate_mse": 0.01047985311964032,
+      "constant_free_gaussian_nll": -0.006764887521930194,
+      "realized_vector_se": 0.02095970623928064,
+      "predicted_vector_se": 1.965914717236698
+    },
+    "valid:000028": {
+      "coordinate_mse": 0.011994452114730074,
+      "constant_free_gaussian_nll": 0.007903344663304794,
+      "realized_vector_se": 0.023988904229460147,
+      "predicted_vector_se": 1.992242623847208
+    },
+    "valid:000029": {
+      "coordinate_mse": 0.02803603824576752,
+      "constant_free_gaussian_nll": -0.011515831452866712,
+      "realized_vector_se": 0.05607207649153504,
+      "predicted_vector_se": 1.920236567379703
+    }
+  },
+  "equal_trajectory_mean": {
+    "coordinate_mse": 0.04541627504907944,
+    "constant_free_gaussian_nll": 0.028176162030855153,
+    "realized_vector_se": 0.09083255009815888,
+    "predicted_vector_se": 1.9642786699931336
+  },
+  "binned_vector_se_calibration_gap": 1.8734461198949743,
+  "calibration_bins": [
+    {
+      "index": 0,
+      "particles": 1705,
+      "weight": 0.1086781195994766,
+      "predicted_vector_se": 1.8523155301208665,
+      "realized_vector_se": 0.20092179083543704
+    },
+    {
+      "index": 1,
+      "particles": 1704,
+      "weight": 0.10209913682422887,
+      "predicted_vector_se": 1.903164977983558,
+      "realized_vector_se": 0.11080389118219885
+    },
+    {
+      "index": 2,
+      "particles": 1704,
+      "weight": 0.10091612027152651,
+      "predicted_vector_se": 1.9273295680067835,
+      "realized_vector_se": 0.07027434942472192
+    },
+    {
+      "index": 3,
+      "particles": 1704,
+      "weight": 0.10242002795878014,
+      "predicted_vector_se": 1.9466897310302642,
+      "realized_vector_se": 0.06010122906725047
+    },
+    {
+      "index": 4,
+      "particles": 1704,
+      "weight": 0.09742142693384545,
+      "predicted_vector_se": 1.9639760619714042,
+      "realized_vector_se": 0.07028755590815738
+    },
+    {
+      "index": 5,
+      "particles": 1705,
+      "weight": 0.10289402452828202,
+      "predicted_vector_se": 1.9788064269785177,
+      "realized_vector_se": 0.06195627899091412
+    },
+    {
+      "index": 6,
+      "particles": 1704,
+      "weight": 0.09386451050671879,
+      "predicted_vector_se": 1.9933666294859007,
+      "realized_vector_se": 0.07753449829957422
+    },
+    {
+      "index": 7,
+      "particles": 1704,
+      "weight": 0.0961990995745984,
+      "predicted_vector_se": 2.005926290172588,
+      "realized_vector_se": 0.06860487927685213
+    },
+    {
+      "index": 8,
+      "particles": 1704,
+      "weight": 0.09709305765555795,
+      "predicted_vector_se": 2.0224749394725188,
+      "realized_vector_se": 0.07316066982610589
+    },
+    {
+      "index": 9,
+      "particles": 1705,
+      "weight": 0.09841447614698529,
+      "predicted_vector_se": 2.0667558204787637,
+      "realized_vector_se": 0.1039794024078906
+    }
+  ],
+  "completed_steps": 5,
+  "run_config_sha256": "57803827d59b47d6973ce96011b2f120105f9fc5399f7222947cb62c1c61e784"
+}

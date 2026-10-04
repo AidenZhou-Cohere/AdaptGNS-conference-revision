@@ -1,0 +1,3185 @@
+{
+  "seed": 1,
+  "objective": "beta_nll",
+  "training_seconds": 41.59546745894477,
+  "curve": [
+    {
+      "step": 100,
+      "loss": 0.3113543689250946,
+      "seconds": 1.5383500000461936
+    },
+    {
+      "step": 200,
+      "loss": -0.5340512990951538,
+      "seconds": 3.139774499926716
+    },
+    {
+      "step": 300,
+      "loss": -0.11791861057281494,
+      "seconds": 4.591708292020485
+    },
+    {
+      "step": 400,
+      "loss": -0.7060651183128357,
+      "seconds": 5.959207999985665
+    },
+    {
+      "step": 500,
+      "loss": -0.4603011906147003,
+      "seconds": 7.253765458939597
+    },
+    {
+      "step": 600,
+      "loss": -0.15590672194957733,
+      "seconds": 8.534353709081188
+    },
+    {
+      "step": 700,
+      "loss": -0.4881744682788849,
+      "seconds": 9.923905000090599
+    },
+    {
+      "step": 800,
+      "loss": 1.1550297737121582,
+      "seconds": 11.23023062502034
+    },
+    {
+      "step": 900,
+      "loss": -0.518682599067688,
+      "seconds": 12.574603999964893
+    },
+    {
+      "step": 1000,
+      "loss": -0.4753396809101105,
+      "seconds": 13.928927792003378
+    },
+    {
+      "step": 1100,
+      "loss": -0.5117900371551514,
+      "seconds": 15.445842375047505
+    },
+    {
+      "step": 1200,
+      "loss": -0.07994040101766586,
+      "seconds": 17.03397229197435
+    },
+    {
+      "step": 1300,
+      "loss": 0.3652544617652893,
+      "seconds": 18.355822124984115
+    },
+    {
+      "step": 1400,
+      "loss": -0.48172473907470703,
+      "seconds": 19.80045979213901
+    },
+    {
+      "step": 1500,
+      "loss": -0.49897944927215576,
+      "seconds": 21.22322754212655
+    },
+    {
+      "step": 1600,
+      "loss": -0.4482913911342621,
+      "seconds": 22.596730459015816
+    },
+    {
+      "step": 1700,
+      "loss": -0.17596417665481567,
+      "seconds": 23.900465584127232
+    },
+    {
+      "step": 1800,
+      "loss": -0.4131852686405182,
+      "seconds": 25.155347125139087
+    },
+    {
+      "step": 1900,
+      "loss": -0.5445521473884583,
+      "seconds": 26.436464875005186
+    },
+    {
+      "step": 2000,
+      "loss": -0.1867363005876541,
+      "seconds": 27.845449791988358
+    },
+    {
+      "step": 2100,
+      "loss": -0.22593608498573303,
+      "seconds": 29.263931875117123
+    },
+    {
+      "step": 2200,
+      "loss": 0.890937089920044,
+      "seconds": 30.577372417086735
+    },
+    {
+      "step": 2300,
+      "loss": 11.608534812927246,
+      "seconds": 32.02487324993126
+    },
+    {
+      "step": 2400,
+      "loss": -0.5216334462165833,
+      "seconds": 33.3314445419237
+    },
+    {
+      "step": 2500,
+      "loss": -0.527887225151062,
+      "seconds": 34.5779866669327
+    },
+    {
+      "step": 2600,
+      "loss": -0.3708271384239197,
+      "seconds": 35.899746084120125
+    },
+    {
+      "step": 2700,
+      "loss": -0.3863661289215088,
+      "seconds": 37.432765499921516
+    },
+    {
+      "step": 2800,
+      "loss": -0.38669121265411377,
+      "seconds": 38.97438537492417
+    },
+    {
+      "step": 2900,
+      "loss": 0.13117484748363495,
+      "seconds": 40.288833250058815
+    },
+    {
+      "step": 3000,
+      "loss": -0.46724599599838257,
+      "seconds": 41.59542470914312
+    }
+  ],
+  "validation": [
+    {
+      "id": "position_0:10",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 201,
+      "risk_error_spearman": 0.4708259496280425,
+      "realized_vector_se": 0.007420603651553392,
+      "predicted_vector_se": 0.025503527373075485,
+      "current_risk_scoring_seconds": 0.006124375155195594,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0037103015929460526,
+          "directed_edges": 2588,
+          "forward_seconds": 0.004516292130574584
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0036088041961193085,
+          "directed_edges": 4196,
+          "forward_seconds": 0.00716566713526845
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.003285045502707362,
+          "directed_edges": 2990,
+          "forward_seconds": 0.005960916168987751
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0036633533891290426,
+          "directed_edges": 2990,
+          "forward_seconds": 0.0051743751391768456
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0033924118615686893,
+          "directed_edges": 2990,
+          "forward_seconds": 0.0044833330903202295
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0033849512692540884,
+          "directed_edges": 2990,
+          "forward_seconds": 0.004940791986882687
+        }
+      }
+    },
+    {
+      "id": "position_0:28",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 201,
+      "risk_error_spearman": 0.212943426185353,
+      "realized_vector_se": 0.0009691706509329379,
+      "predicted_vector_se": 0.022531237453222275,
+      "current_risk_scoring_seconds": 0.004361334023997188,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.000484585267258808,
+          "directed_edges": 2588,
+          "forward_seconds": 0.005026957951486111
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0009023599559441209,
+          "directed_edges": 4196,
+          "forward_seconds": 0.005679000169038773
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0005589763750322163,
+          "directed_edges": 2990,
+          "forward_seconds": 0.00502070807851851
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0006003155722282827,
+          "directed_edges": 2990,
+          "forward_seconds": 0.00501645915210247
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0005717343301512301,
+          "directed_edges": 2990,
+          "forward_seconds": 0.005083750002086163
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0005684744101017714,
+          "directed_edges": 2990,
+          "forward_seconds": 0.0067054168321192265
+        }
+      }
+    },
+    {
+      "id": "position_0:127",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 191,
+      "risk_error_spearman": 0.39042647431606486,
+      "realized_vector_se": 3.8942630290985107,
+      "predicted_vector_se": 1.2309273481369019,
+      "current_risk_scoring_seconds": 0.0057746670208871365,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 1.9471315145492554,
+          "directed_edges": 2478,
+          "forward_seconds": 0.0055838339030742645
+        },
+        "dense": {
+          "mse_normalized_acceleration": 1.9669415950775146,
+          "directed_edges": 4006,
+          "forward_seconds": 0.005836124997586012
+        },
+        "random25": {
+          "mse_normalized_acceleration": 1.9726042747497559,
+          "directed_edges": 2860,
+          "forward_seconds": 0.004200374940410256
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 1.967543363571167,
+          "directed_edges": 2860,
+          "forward_seconds": 0.00509483297355473
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 1.966890811920166,
+          "directed_edges": 2860,
+          "forward_seconds": 0.004930750001221895
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 1.9668864011764526,
+          "directed_edges": 2860,
+          "forward_seconds": 0.004738165996968746
+        }
+      }
+    },
+    {
+      "id": "position_0:129",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 188,
+      "risk_error_spearman": 0.32405572203515565,
+      "realized_vector_se": 1.3179024457931519,
+      "predicted_vector_se": 1.3069989681243896,
+      "current_risk_scoring_seconds": 0.0034177908673882484,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.6589512825012207,
+          "directed_edges": 2478,
+          "forward_seconds": 0.004877291852608323
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.7080237865447998,
+          "directed_edges": 3988,
+          "forward_seconds": 0.005311707966029644
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.6680392622947693,
+          "directed_edges": 2854,
+          "forward_seconds": 0.005638583097606897
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.7087017893791199,
+          "directed_edges": 2854,
+          "forward_seconds": 0.00433816690929234
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.7084025740623474,
+          "directed_edges": 2854,
+          "forward_seconds": 0.005972333950921893
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.7084168791770935,
+          "directed_edges": 2854,
+          "forward_seconds": 0.004796834196895361
+        }
+      }
+    },
+    {
+      "id": "position_0:181",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 173,
+      "risk_error_spearman": 0.27662611949099414,
+      "realized_vector_se": 0.18538318574428558,
+      "predicted_vector_se": 0.20291747152805328,
+      "current_risk_scoring_seconds": 0.0038357500452548265,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.09269160032272339,
+          "directed_edges": 2482,
+          "forward_seconds": 0.0038909169379621744
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.09127901494503021,
+          "directed_edges": 3866,
+          "forward_seconds": 0.006027458002790809
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.08869089186191559,
+          "directed_edges": 2828,
+          "forward_seconds": 0.004525542026385665
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.09112129360437393,
+          "directed_edges": 2828,
+          "forward_seconds": 0.003622167045250535
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.09111466258764267,
+          "directed_edges": 2828,
+          "forward_seconds": 0.004460541997104883
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.091160848736763,
+          "directed_edges": 2828,
+          "forward_seconds": 0.005332499975338578
+        }
+      }
+    },
+    {
+      "id": "position_0:206",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 169,
+      "risk_error_spearman": 0.3458713931382163,
+      "realized_vector_se": 0.12348494678735733,
+      "predicted_vector_se": 0.1663137525320053,
+      "current_risk_scoring_seconds": 0.005422832909971476,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.06174246594309807,
+          "directed_edges": 2494,
+          "forward_seconds": 0.004197041969746351
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.05846745893359184,
+          "directed_edges": 3846,
+          "forward_seconds": 0.004434874979779124
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.059413760900497437,
+          "directed_edges": 2832,
+          "forward_seconds": 0.0037907499354332685
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.059445735067129135,
+          "directed_edges": 2832,
+          "forward_seconds": 0.003136667190119624
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.05924474820494652,
+          "directed_edges": 2832,
+          "forward_seconds": 0.005096457898616791
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.05920882895588875,
+          "directed_edges": 2832,
+          "forward_seconds": 0.0038090830203145742
+        }
+      }
+    },
+    {
+      "id": "position_0:427",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 243,
+      "risk_error_spearman": 0.5069873298269475,
+      "realized_vector_se": 0.08916838467121124,
+      "predicted_vector_se": 0.048669520765542984,
+      "current_risk_scoring_seconds": 0.0043811670038849115,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.04458419606089592,
+          "directed_edges": 3270,
+          "forward_seconds": 0.003996209008619189
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.05054207891225815,
+          "directed_edges": 5218,
+          "forward_seconds": 0.005993249826133251
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.046332355588674545,
+          "directed_edges": 3756,
+          "forward_seconds": 0.005263833096250892
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.050043780356645584,
+          "directed_edges": 3756,
+          "forward_seconds": 0.005214042030274868
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.05060695484280586,
+          "directed_edges": 3756,
+          "forward_seconds": 0.005892708199098706
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.050586652010679245,
+          "directed_edges": 3756,
+          "forward_seconds": 0.00463433307595551
+        }
+      }
+    },
+    {
+      "id": "position_0:558",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 243,
+      "risk_error_spearman": 0.30231302845410735,
+      "realized_vector_se": 0.022902078926563263,
+      "predicted_vector_se": 0.09184405207633972,
+      "current_risk_scoring_seconds": 0.005329415900632739,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.011451039463281631,
+          "directed_edges": 3598,
+          "forward_seconds": 0.004647750174626708
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.012988900765776634,
+          "directed_edges": 5548,
+          "forward_seconds": 0.005922083044424653
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.011763716116547585,
+          "directed_edges": 4084,
+          "forward_seconds": 0.006032040808349848
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.012450801208615303,
+          "directed_edges": 4084,
+          "forward_seconds": 0.005437249783426523
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.012387006543576717,
+          "directed_edges": 4084,
+          "forward_seconds": 0.004897917155176401
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.012363390065729618,
+          "directed_edges": 4084,
+          "forward_seconds": 0.005265875020995736
+        }
+      }
+    },
+    {
+      "id": "position_0:606",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 244,
+      "risk_error_spearman": 0.07053422360554462,
+      "realized_vector_se": 0.014175298623740673,
+      "predicted_vector_se": 0.03278057277202606,
+      "current_risk_scoring_seconds": 0.004635208053514361,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.007087648380547762,
+          "directed_edges": 3770,
+          "forward_seconds": 0.004287875024601817
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.007945448160171509,
+          "directed_edges": 5726,
+          "forward_seconds": 0.006497292080894113
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.007230638060718775,
+          "directed_edges": 4258,
+          "forward_seconds": 0.005312165943905711
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.007216984871774912,
+          "directed_edges": 4258,
+          "forward_seconds": 0.005112042184919119
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.007150784134864807,
+          "directed_edges": 4258,
+          "forward_seconds": 0.005892499815672636
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0071572838351130486,
+          "directed_edges": 4258,
+          "forward_seconds": 0.005651500076055527
+        }
+      }
+    },
+    {
+      "id": "position_0:643",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 264,
+      "risk_error_spearman": 0.0637677265856952,
+      "realized_vector_se": 0.013978148810565472,
+      "predicted_vector_se": 0.031520090997219086,
+      "current_risk_scoring_seconds": 0.004733582958579063,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.006989074870944023,
+          "directed_edges": 3758,
+          "forward_seconds": 0.0053773748222738504
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.007795022800564766,
+          "directed_edges": 5870,
+          "forward_seconds": 0.005704957991838455
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.007152608595788479,
+          "directed_edges": 4286,
+          "forward_seconds": 0.004641208099201322
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0073279584757983685,
+          "directed_edges": 4286,
+          "forward_seconds": 0.005819333950057626
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.007014343980699778,
+          "directed_edges": 4286,
+          "forward_seconds": 0.004694083007052541
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0070146494545042515,
+          "directed_edges": 4286,
+          "forward_seconds": 0.005300083197653294
+        }
+      }
+    },
+    {
+      "id": "position_0:782",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 274,
+      "risk_error_spearman": 0.24824418600352213,
+      "realized_vector_se": 0.008761434815824032,
+      "predicted_vector_se": 0.027415236458182335,
+      "current_risk_scoring_seconds": 0.005605374928563833,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.004380717407912016,
+          "directed_edges": 3950,
+          "forward_seconds": 0.004865875001996756
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.004977025557309389,
+          "directed_edges": 6148,
+          "forward_seconds": 0.006311292061582208
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.004593005869537592,
+          "directed_edges": 4498,
+          "forward_seconds": 0.00546837504953146
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.004350236151367426,
+          "directed_edges": 4498,
+          "forward_seconds": 0.006116542033851147
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.004312301520258188,
+          "directed_edges": 4498,
+          "forward_seconds": 0.005708750104531646
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.004321732558310032,
+          "directed_edges": 4498,
+          "forward_seconds": 0.005183459026739001
+        }
+      }
+    },
+    {
+      "id": "position_0:976",
+      "trajectory": "position_0",
+      "n_particles": 482,
+      "extra_pair_budget": 279,
+      "risk_error_spearman": 0.18437202976261252,
+      "realized_vector_se": 0.0031281630508601665,
+      "predicted_vector_se": 0.01737692765891552,
+      "current_risk_scoring_seconds": 0.00546783278696239,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0015640815254300833,
+          "directed_edges": 4140,
+          "forward_seconds": 0.005258082877844572
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0018733588512986898,
+          "directed_edges": 6372,
+          "forward_seconds": 0.007070709019899368
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0016322910087183118,
+          "directed_edges": 4698,
+          "forward_seconds": 0.006590916076675057
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0016407007351517677,
+          "directed_edges": 4698,
+          "forward_seconds": 0.006867042044177651
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0016374876722693443,
+          "directed_edges": 4698,
+          "forward_seconds": 0.006457207957282662
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0016368753276765347,
+          "directed_edges": 4698,
+          "forward_seconds": 0.005161084001883864
+        }
+      }
+    },
+    {
+      "id": "position_1:138",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 140,
+      "risk_error_spearman": 0.29546646638657637,
+      "realized_vector_se": 0.03775091469287872,
+      "predicted_vector_se": 0.18724030256271362,
+      "current_risk_scoring_seconds": 0.004152457928285003,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.01887545734643936,
+          "directed_edges": 1956,
+          "forward_seconds": 0.005781583953648806
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.01676354743540287,
+          "directed_edges": 3082,
+          "forward_seconds": 0.007291499990969896
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.017809689044952393,
+          "directed_edges": 2236,
+          "forward_seconds": 0.0051232080440968275
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.01845228485763073,
+          "directed_edges": 2236,
+          "forward_seconds": 0.004812999861314893
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.018102338537573814,
+          "directed_edges": 2236,
+          "forward_seconds": 0.0029921249952167273
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.018018493428826332,
+          "directed_edges": 2236,
+          "forward_seconds": 0.0044267079792916775
+        }
+      }
+    },
+    {
+      "id": "position_1:202",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 120,
+      "risk_error_spearman": 0.5284532094247837,
+      "realized_vector_se": 0.10175266861915588,
+      "predicted_vector_se": 0.16239440441131592,
+      "current_risk_scoring_seconds": 0.0032512079924345016,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.05087633430957794,
+          "directed_edges": 2018,
+          "forward_seconds": 0.003031041007488966
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.045661985874176025,
+          "directed_edges": 2982,
+          "forward_seconds": 0.004298999905586243
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.049383800476789474,
+          "directed_edges": 2258,
+          "forward_seconds": 0.0029408331029117107
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.04724729061126709,
+          "directed_edges": 2258,
+          "forward_seconds": 0.004233082989230752
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.04852656275033951,
+          "directed_edges": 2258,
+          "forward_seconds": 0.0038246670737862587
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.04842504858970642,
+          "directed_edges": 2258,
+          "forward_seconds": 0.003598417155444622
+        }
+      }
+    },
+    {
+      "id": "position_1:309",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 171,
+      "risk_error_spearman": 0.45359810408485124,
+      "realized_vector_se": 0.2886074483394623,
+      "predicted_vector_se": 0.2301040142774582,
+      "current_risk_scoring_seconds": 0.004644833039492369,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.14430372416973114,
+          "directed_edges": 2330,
+          "forward_seconds": 0.004033166915178299
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.14813104271888733,
+          "directed_edges": 3702,
+          "forward_seconds": 0.0055539170280098915
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.14492172002792358,
+          "directed_edges": 2672,
+          "forward_seconds": 0.0033161670435220003
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.14397276937961578,
+          "directed_edges": 2672,
+          "forward_seconds": 0.004408207954838872
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.1464289277791977,
+          "directed_edges": 2672,
+          "forward_seconds": 0.0035083750262856483
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.14636605978012085,
+          "directed_edges": 2672,
+          "forward_seconds": 0.004901541862636805
+        }
+      }
+    },
+    {
+      "id": "position_1:384",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 178,
+      "risk_error_spearman": 0.6748478199745747,
+      "realized_vector_se": 0.1061040535569191,
+      "predicted_vector_se": 0.21947142481803894,
+      "current_risk_scoring_seconds": 0.0034581669606268406,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.053052034229040146,
+          "directed_edges": 2492,
+          "forward_seconds": 0.0038329169619828463
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.050337616354227066,
+          "directed_edges": 3922,
+          "forward_seconds": 0.004679291043430567
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.051555659621953964,
+          "directed_edges": 2848,
+          "forward_seconds": 0.003631124971434474
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.052301499992609024,
+          "directed_edges": 2848,
+          "forward_seconds": 0.005228125024586916
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.05103575065732002,
+          "directed_edges": 2848,
+          "forward_seconds": 0.004046916030347347
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.05063527822494507,
+          "directed_edges": 2848,
+          "forward_seconds": 0.005174458026885986
+        }
+      }
+    },
+    {
+      "id": "position_1:493",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 183,
+      "risk_error_spearman": 0.6883566075038504,
+      "realized_vector_se": 6.841659069061279,
+      "predicted_vector_se": 1.0062000751495361,
+      "current_risk_scoring_seconds": 0.003874459071084857,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 3.4208295345306396,
+          "directed_edges": 2578,
+          "forward_seconds": 0.004042291082441807
+        },
+        "dense": {
+          "mse_normalized_acceleration": 3.352555513381958,
+          "directed_edges": 4042,
+          "forward_seconds": 0.00475449999794364
+        },
+        "random25": {
+          "mse_normalized_acceleration": 3.3587419986724854,
+          "directed_edges": 2944,
+          "forward_seconds": 0.0037972917780280113
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 3.346652030944824,
+          "directed_edges": 2944,
+          "forward_seconds": 0.0033193330746144056
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 3.3521242141723633,
+          "directed_edges": 2944,
+          "forward_seconds": 0.0026246251072734594
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 3.3524234294891357,
+          "directed_edges": 2944,
+          "forward_seconds": 0.0038991249166429043
+        }
+      }
+    },
+    {
+      "id": "position_1:536",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 179,
+      "risk_error_spearman": 0.3623595274681673,
+      "realized_vector_se": 0.0178214218467474,
+      "predicted_vector_se": 0.03645557910203934,
+      "current_risk_scoring_seconds": 0.0030627090018242598,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.008910709992051125,
+          "directed_edges": 2618,
+          "forward_seconds": 0.0032179581467062235
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.008255633525550365,
+          "directed_edges": 4052,
+          "forward_seconds": 0.005267791915684938
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.00799266155809164,
+          "directed_edges": 2976,
+          "forward_seconds": 0.004290416836738586
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.007734186947345734,
+          "directed_edges": 2976,
+          "forward_seconds": 0.004340165993198752
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.007803072687238455,
+          "directed_edges": 2976,
+          "forward_seconds": 0.005002249963581562
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.00779296550899744,
+          "directed_edges": 2976,
+          "forward_seconds": 0.004901791922748089
+        }
+      }
+    },
+    {
+      "id": "position_1:541",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 183,
+      "risk_error_spearman": 0.42726707352565263,
+      "realized_vector_se": 0.05746191740036011,
+      "predicted_vector_se": 0.0846407487988472,
+      "current_risk_scoring_seconds": 0.0049145829398185015,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.028730956837534904,
+          "directed_edges": 2616,
+          "forward_seconds": 0.005335833178833127
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.025287317112088203,
+          "directed_edges": 4082,
+          "forward_seconds": 0.0035063340328633785
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.028438830748200417,
+          "directed_edges": 2982,
+          "forward_seconds": 0.0030404170975089073
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.024655591696500778,
+          "directed_edges": 2982,
+          "forward_seconds": 0.0034970000851899385
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.02449743263423443,
+          "directed_edges": 2982,
+          "forward_seconds": 0.003805625019595027
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.024496261030435562,
+          "directed_edges": 2982,
+          "forward_seconds": 0.003633958986029029
+        }
+      }
+    },
+    {
+      "id": "position_1:567",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 185,
+      "risk_error_spearman": 0.39680134516176485,
+      "realized_vector_se": 0.01877794973552227,
+      "predicted_vector_se": 0.033711813390254974,
+      "current_risk_scoring_seconds": 0.004666625056415796,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.00938897579908371,
+          "directed_edges": 2646,
+          "forward_seconds": 0.0037505419459193945
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.010011106729507446,
+          "directed_edges": 4130,
+          "forward_seconds": 0.005331041989848018
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.009745607152581215,
+          "directed_edges": 3016,
+          "forward_seconds": 0.0036956248804926872
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.00913329515606165,
+          "directed_edges": 3016,
+          "forward_seconds": 0.0037725421134382486
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.009165058843791485,
+          "directed_edges": 3016,
+          "forward_seconds": 0.004238791996613145
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.009171579964458942,
+          "directed_edges": 3016,
+          "forward_seconds": 0.004687875043600798
+        }
+      }
+    },
+    {
+      "id": "position_1:717",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 180,
+      "risk_error_spearman": 0.04858908962081388,
+      "realized_vector_se": 0.010790089145302773,
+      "predicted_vector_se": 0.020053204149007797,
+      "current_risk_scoring_seconds": 0.005020166980102658,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.005395044572651386,
+          "directed_edges": 2758,
+          "forward_seconds": 0.004224166041240096
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.006376202683895826,
+          "directed_edges": 4198,
+          "forward_seconds": 0.005814458010718226
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.005658968351781368,
+          "directed_edges": 3118,
+          "forward_seconds": 0.003866167040541768
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.006010414566844702,
+          "directed_edges": 3118,
+          "forward_seconds": 0.0043929158709943295
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0055827368050813675,
+          "directed_edges": 3118,
+          "forward_seconds": 0.003328499849885702
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.005572571884840727,
+          "directed_edges": 3118,
+          "forward_seconds": 0.0042695419397205114
+        }
+      }
+    },
+    {
+      "id": "position_1:753",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 180,
+      "risk_error_spearman": 0.19464220790600095,
+      "realized_vector_se": 0.010759874247014523,
+      "predicted_vector_se": 0.01898711919784546,
+      "current_risk_scoring_seconds": 0.0037645830307155848,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.005379937589168549,
+          "directed_edges": 2742,
+          "forward_seconds": 0.00500666699372232
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.006408417597413063,
+          "directed_edges": 4186,
+          "forward_seconds": 0.004648624919354916
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0056546879932284355,
+          "directed_edges": 3102,
+          "forward_seconds": 0.004407375119626522
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.00598079152405262,
+          "directed_edges": 3102,
+          "forward_seconds": 0.004134250106289983
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.005723744630813599,
+          "directed_edges": 3102,
+          "forward_seconds": 0.004769082879647613
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.005729552358388901,
+          "directed_edges": 3102,
+          "forward_seconds": 0.004834125051274896
+        }
+      }
+    },
+    {
+      "id": "position_1:810",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 183,
+      "risk_error_spearman": 0.5737201187767517,
+      "realized_vector_se": 0.008148511871695518,
+      "predicted_vector_se": 0.01968761906027794,
+      "current_risk_scoring_seconds": 0.004525667056441307,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.004074255935847759,
+          "directed_edges": 2832,
+          "forward_seconds": 0.004639333812519908
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.004787013866007328,
+          "directed_edges": 4296,
+          "forward_seconds": 0.004937666933983564
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.004304459784179926,
+          "directed_edges": 3198,
+          "forward_seconds": 0.004895417019724846
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.004466635640710592,
+          "directed_edges": 3198,
+          "forward_seconds": 0.003142833011224866
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.004410452209413052,
+          "directed_edges": 3198,
+          "forward_seconds": 0.004609792027622461
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.004404089413583279,
+          "directed_edges": 3198,
+          "forward_seconds": 0.002673249924555421
+        }
+      }
+    },
+    {
+      "id": "position_1:967",
+      "trajectory": "position_1",
+      "n_particles": 362,
+      "extra_pair_budget": 185,
+      "risk_error_spearman": 0.28594085118110824,
+      "realized_vector_se": 0.003287926549091935,
+      "predicted_vector_se": 0.017117727547883987,
+      "current_risk_scoring_seconds": 0.004105791915208101,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0016439632745459676,
+          "directed_edges": 2822,
+          "forward_seconds": 0.005255083087831736
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.002007493982091546,
+          "directed_edges": 4304,
+          "forward_seconds": 0.00391558394767344
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0017019795486703515,
+          "directed_edges": 3192,
+          "forward_seconds": 0.004592624958604574
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.001708021853119135,
+          "directed_edges": 3192,
+          "forward_seconds": 0.004235791973769665
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0016321177827194333,
+          "directed_edges": 3192,
+          "forward_seconds": 0.0054620420560240746
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.001639760215766728,
+          "directed_edges": 3192,
+          "forward_seconds": 0.005434666993096471
+        }
+      }
+    },
+    {
+      "id": "position_2:51",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 238,
+      "risk_error_spearman": -0.07975966153738379,
+      "realized_vector_se": 2.5171701908111572,
+      "predicted_vector_se": 1.3780946731567383,
+      "current_risk_scoring_seconds": 0.004784459015354514,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 1.2585850954055786,
+          "directed_edges": 2942,
+          "forward_seconds": 0.005601957906037569
+        },
+        "dense": {
+          "mse_normalized_acceleration": 1.1853914260864258,
+          "directed_edges": 4846,
+          "forward_seconds": 0.006178166950121522
+        },
+        "random25": {
+          "mse_normalized_acceleration": 1.241292953491211,
+          "directed_edges": 3418,
+          "forward_seconds": 0.005334583111107349
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 1.256140112876892,
+          "directed_edges": 3418,
+          "forward_seconds": 0.004979625111445785
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 1.2493497133255005,
+          "directed_edges": 3418,
+          "forward_seconds": 0.005603499943390489
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 1.2503161430358887,
+          "directed_edges": 3418,
+          "forward_seconds": 0.004933750024065375
+        }
+      }
+    },
+    {
+      "id": "position_2:103",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 233,
+      "risk_error_spearman": 0.5027399037294679,
+      "realized_vector_se": 0.4078669250011444,
+      "predicted_vector_se": 0.7504810690879822,
+      "current_risk_scoring_seconds": 0.0038534170016646385,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.2039334625005722,
+          "directed_edges": 2906,
+          "forward_seconds": 0.005416834028437734
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.18714946508407593,
+          "directed_edges": 4772,
+          "forward_seconds": 0.005798207828775048
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.1989820897579193,
+          "directed_edges": 3372,
+          "forward_seconds": 0.004863166017457843
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.18729527294635773,
+          "directed_edges": 3372,
+          "forward_seconds": 0.004723291844129562
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.18778540194034576,
+          "directed_edges": 3372,
+          "forward_seconds": 0.004824667004868388
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.18847514688968658,
+          "directed_edges": 3372,
+          "forward_seconds": 0.0047247090842574835
+        }
+      }
+    },
+    {
+      "id": "position_2:128",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 222,
+      "risk_error_spearman": 0.6517351974525412,
+      "realized_vector_se": 0.4265056550502777,
+      "predicted_vector_se": 1.3216339349746704,
+      "current_risk_scoring_seconds": 0.007270917063578963,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.21325282752513885,
+          "directed_edges": 2926,
+          "forward_seconds": 0.004487999947741628
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.21581785380840302,
+          "directed_edges": 4702,
+          "forward_seconds": 0.006313750054687262
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.21474063396453857,
+          "directed_edges": 3370,
+          "forward_seconds": 0.004626208916306496
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.21424219012260437,
+          "directed_edges": 3370,
+          "forward_seconds": 0.005020915996283293
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.213887020945549,
+          "directed_edges": 3370,
+          "forward_seconds": 0.004422167083248496
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.2140558660030365,
+          "directed_edges": 3370,
+          "forward_seconds": 0.005965041927993298
+        }
+      }
+    },
+    {
+      "id": "position_2:147",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 211,
+      "risk_error_spearman": 0.616976163158686,
+      "realized_vector_se": 0.21482814848423004,
+      "predicted_vector_se": 0.9001244306564331,
+      "current_risk_scoring_seconds": 0.00484916684217751,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.10741408914327621,
+          "directed_edges": 2958,
+          "forward_seconds": 0.004481625044718385
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.11699355393648148,
+          "directed_edges": 4648,
+          "forward_seconds": 0.004331083036959171
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.1103428527712822,
+          "directed_edges": 3380,
+          "forward_seconds": 0.0061533330008387566
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.11504063010215759,
+          "directed_edges": 3380,
+          "forward_seconds": 0.005535791860893369
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.11488619446754456,
+          "directed_edges": 3380,
+          "forward_seconds": 0.0036885410081595182
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.1148802861571312,
+          "directed_edges": 3380,
+          "forward_seconds": 0.004254917148500681
+        }
+      }
+    },
+    {
+      "id": "position_2:208",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 218,
+      "risk_error_spearman": 0.11582779150267551,
+      "realized_vector_se": 0.0905013158917427,
+      "predicted_vector_se": 0.20936933159828186,
+      "current_risk_scoring_seconds": 0.0038643749430775642,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.045250654220581055,
+          "directed_edges": 2946,
+          "forward_seconds": 0.003498333040624857
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.04794749245047569,
+          "directed_edges": 4690,
+          "forward_seconds": 0.0062757080886512995
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.04537703096866608,
+          "directed_edges": 3382,
+          "forward_seconds": 0.005501041887328029
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.046818263828754425,
+          "directed_edges": 3382,
+          "forward_seconds": 0.004335458856076002
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.04770241305232048,
+          "directed_edges": 3382,
+          "forward_seconds": 0.0049340829718858
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.04777216538786888,
+          "directed_edges": 3382,
+          "forward_seconds": 0.004138249903917313
+        }
+      }
+    },
+    {
+      "id": "position_2:345",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 271,
+      "risk_error_spearman": 0.3226005132485895,
+      "realized_vector_se": 0.08137178421020508,
+      "predicted_vector_se": 0.19330963492393494,
+      "current_risk_scoring_seconds": 0.004975000163540244,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.04068589583039284,
+          "directed_edges": 3486,
+          "forward_seconds": 0.005967790959402919
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.04043496772646904,
+          "directed_edges": 5656,
+          "forward_seconds": 0.007069583982229233
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.040269527584314346,
+          "directed_edges": 4028,
+          "forward_seconds": 0.006295208120718598
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.04197636619210243,
+          "directed_edges": 4028,
+          "forward_seconds": 0.005572125082835555
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0411258339881897,
+          "directed_edges": 4028,
+          "forward_seconds": 0.004924749955534935
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.04107707738876343,
+          "directed_edges": 4028,
+          "forward_seconds": 0.005893334047868848
+        }
+      }
+    },
+    {
+      "id": "position_2:392",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 261,
+      "risk_error_spearman": 0.25555032567014774,
+      "realized_vector_se": 0.04013602435588837,
+      "predicted_vector_se": 0.0430753119289875,
+      "current_risk_scoring_seconds": 0.005885042017325759,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.020068014040589333,
+          "directed_edges": 3638,
+          "forward_seconds": 0.005541791906580329
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.021863725036382675,
+          "directed_edges": 5726,
+          "forward_seconds": 0.006475124973803759
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.020582742989063263,
+          "directed_edges": 4160,
+          "forward_seconds": 0.006315500009804964
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.021002696827054024,
+          "directed_edges": 4160,
+          "forward_seconds": 0.0055625829845666885
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.020206334069371223,
+          "directed_edges": 4160,
+          "forward_seconds": 0.00541008310392499
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.020318925380706787,
+          "directed_edges": 4160,
+          "forward_seconds": 0.005861207842826843
+        }
+      }
+    },
+    {
+      "id": "position_2:577",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 295,
+      "risk_error_spearman": 0.3940516571469664,
+      "realized_vector_se": 0.013597268611192703,
+      "predicted_vector_se": 0.03338707983493805,
+      "current_risk_scoring_seconds": 0.004409666173160076,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.006798634305596352,
+          "directed_edges": 3996,
+          "forward_seconds": 0.004882959183305502
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.006246552802622318,
+          "directed_edges": 6358,
+          "forward_seconds": 0.007273207884281874
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0065808710642158985,
+          "directed_edges": 4586,
+          "forward_seconds": 0.005853249924257398
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.006338144186884165,
+          "directed_edges": 4586,
+          "forward_seconds": 0.0074212499894201756
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0062542869709432125,
+          "directed_edges": 4586,
+          "forward_seconds": 0.006072208052501082
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.006253390107303858,
+          "directed_edges": 4586,
+          "forward_seconds": 0.00497458316385746
+        }
+      }
+    },
+    {
+      "id": "position_2:705",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 314,
+      "risk_error_spearman": 0.37996777550225236,
+      "realized_vector_se": 0.014270658604800701,
+      "predicted_vector_se": 0.02611956186592579,
+      "current_risk_scoring_seconds": 0.0054468330927193165,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.007135329302400351,
+          "directed_edges": 4190,
+          "forward_seconds": 0.005308875115588307
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.007591055706143379,
+          "directed_edges": 6704,
+          "forward_seconds": 0.009006832959130406
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.007184806279838085,
+          "directed_edges": 4818,
+          "forward_seconds": 0.005588207859545946
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0072305030189454556,
+          "directed_edges": 4818,
+          "forward_seconds": 0.006675458047538996
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.007184947840869427,
+          "directed_edges": 4818,
+          "forward_seconds": 0.007474750047549605
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.00719117745757103,
+          "directed_edges": 4818,
+          "forward_seconds": 0.0064689170103520155
+        }
+      }
+    },
+    {
+      "id": "position_2:772",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 309,
+      "risk_error_spearman": 0.2193448036757501,
+      "realized_vector_se": 0.00829068198800087,
+      "predicted_vector_se": 0.02487710490822792,
+      "current_risk_scoring_seconds": 0.00561191700398922,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.004145340528339148,
+          "directed_edges": 4264,
+          "forward_seconds": 0.006357667036354542
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.004814038053154945,
+          "directed_edges": 6740,
+          "forward_seconds": 0.008674209006130695
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.004261967726051807,
+          "directed_edges": 4882,
+          "forward_seconds": 0.006698874989524484
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0041921623051166534,
+          "directed_edges": 4882,
+          "forward_seconds": 0.006367959082126617
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.00446637999266386,
+          "directed_edges": 4882,
+          "forward_seconds": 0.006597042083740234
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.004486795514822006,
+          "directed_edges": 4882,
+          "forward_seconds": 0.007233416894450784
+        }
+      }
+    },
+    {
+      "id": "position_2:784",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 308,
+      "risk_error_spearman": 0.18008840038969448,
+      "realized_vector_se": 0.010802914388477802,
+      "predicted_vector_se": 0.022567084059119225,
+      "current_risk_scoring_seconds": 0.00543541694059968,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0054014576599001884,
+          "directed_edges": 4292,
+          "forward_seconds": 0.005729000084102154
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.006235518958419561,
+          "directed_edges": 6760,
+          "forward_seconds": 0.00953845796175301
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.005645896773785353,
+          "directed_edges": 4908,
+          "forward_seconds": 0.00636858306825161
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.00557065661996603,
+          "directed_edges": 4908,
+          "forward_seconds": 0.007272375049069524
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.005713570397347212,
+          "directed_edges": 4908,
+          "forward_seconds": 0.005307208048179746
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.005732289515435696,
+          "directed_edges": 4908,
+          "forward_seconds": 0.006754915928468108
+        }
+      }
+    },
+    {
+      "id": "position_2:837",
+      "trajectory": "position_2",
+      "n_particles": 537,
+      "extra_pair_budget": 310,
+      "risk_error_spearman": 0.5552231211701248,
+      "realized_vector_se": 0.09491310268640518,
+      "predicted_vector_se": 0.023504914715886116,
+      "current_risk_scoring_seconds": 0.007793624885380268,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.04745655134320259,
+          "directed_edges": 4382,
+          "forward_seconds": 0.007470125099644065
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.047932032495737076,
+          "directed_edges": 6868,
+          "forward_seconds": 0.009063165867701173
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0475994311273098,
+          "directed_edges": 5002,
+          "forward_seconds": 0.00610454217530787
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.04770883172750473,
+          "directed_edges": 5002,
+          "forward_seconds": 0.007163541857153177
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.047760941088199615,
+          "directed_edges": 5002,
+          "forward_seconds": 0.005663417046889663
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.04772000014781952,
+          "directed_edges": 5002,
+          "forward_seconds": 0.00660020811483264
+        }
+      }
+    }
+  ],
+  "test": [
+    {
+      "id": "position_0:151",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 93,
+      "risk_error_spearman": 0.7087382089803399,
+      "realized_vector_se": 2.314431667327881,
+      "predicted_vector_se": 1.9746121168136597,
+      "current_risk_scoring_seconds": 0.003704500151798129,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 1.1572158336639404,
+          "directed_edges": 1498,
+          "forward_seconds": 0.003461709013208747
+        },
+        "dense": {
+          "mse_normalized_acceleration": 1.180238127708435,
+          "directed_edges": 2242,
+          "forward_seconds": 0.004543874878436327
+        },
+        "random25": {
+          "mse_normalized_acceleration": 1.158663272857666,
+          "directed_edges": 1684,
+          "forward_seconds": 0.004974500043317676
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 1.1811307668685913,
+          "directed_edges": 1684,
+          "forward_seconds": 0.0032387920655310154
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 1.180468201637268,
+          "directed_edges": 1684,
+          "forward_seconds": 0.003261165926232934
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 1.1792924404144287,
+          "directed_edges": 1684,
+          "forward_seconds": 0.003813541028648615
+        }
+      }
+    },
+    {
+      "id": "position_0:349",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 136,
+      "risk_error_spearman": 0.5972183009713277,
+      "realized_vector_se": 0.5158665776252747,
+      "predicted_vector_se": 0.5093545913696289,
+      "current_risk_scoring_seconds": 0.0038912079762667418,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.25793328881263733,
+          "directed_edges": 2030,
+          "forward_seconds": 0.005505833076313138
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.26474741101264954,
+          "directed_edges": 3124,
+          "forward_seconds": 0.004577707964926958
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.25996819138526917,
+          "directed_edges": 2302,
+          "forward_seconds": 0.004818832967430353
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.2674665153026581,
+          "directed_edges": 2302,
+          "forward_seconds": 0.003652332816272974
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.26291948556900024,
+          "directed_edges": 2302,
+          "forward_seconds": 0.003756582969799638
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.2626723647117615,
+          "directed_edges": 2302,
+          "forward_seconds": 0.004281291039660573
+        }
+      }
+    },
+    {
+      "id": "position_0:418",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 119,
+      "risk_error_spearman": 0.7177330391616107,
+      "realized_vector_se": 0.11116565763950348,
+      "predicted_vector_se": 0.19830650091171265,
+      "current_risk_scoring_seconds": 0.004963458050042391,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.05558282881975174,
+          "directed_edges": 2006,
+          "forward_seconds": 0.004021167056635022
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.05455316975712776,
+          "directed_edges": 2964,
+          "forward_seconds": 0.003050500061362982
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.05488572269678116,
+          "directed_edges": 2244,
+          "forward_seconds": 0.004478165879845619
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.05601528659462929,
+          "directed_edges": 2244,
+          "forward_seconds": 0.0034532498102635145
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.05727978050708771,
+          "directed_edges": 2244,
+          "forward_seconds": 0.004230250138789415
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.05722416937351227,
+          "directed_edges": 2244,
+          "forward_seconds": 0.0033826669678092003
+        }
+      }
+    },
+    {
+      "id": "position_0:496",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 125,
+      "risk_error_spearman": 0.5507609823590455,
+      "realized_vector_se": 0.10061933845281601,
+      "predicted_vector_se": 0.11477053165435791,
+      "current_risk_scoring_seconds": 0.005801582941785455,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.050309669226408005,
+          "directed_edges": 2040,
+          "forward_seconds": 0.003544250037521124
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.04795175418257713,
+          "directed_edges": 3046,
+          "forward_seconds": 0.003312957938760519
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.049742598086595535,
+          "directed_edges": 2290,
+          "forward_seconds": 0.004344874992966652
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.04918673262000084,
+          "directed_edges": 2290,
+          "forward_seconds": 0.002908499911427498
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.04792653024196625,
+          "directed_edges": 2290,
+          "forward_seconds": 0.003495542099699378
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.04800568148493767,
+          "directed_edges": 2290,
+          "forward_seconds": 0.003953958163037896
+        }
+      }
+    },
+    {
+      "id": "position_0:523",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 137,
+      "risk_error_spearman": 0.5024460815017717,
+      "realized_vector_se": 0.10402484983205795,
+      "predicted_vector_se": 0.20577630400657654,
+      "current_risk_scoring_seconds": 0.003624583128839731,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.05201242119073868,
+          "directed_edges": 2042,
+          "forward_seconds": 0.0022473749704658985
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.051442086696624756,
+          "directed_edges": 3142,
+          "forward_seconds": 0.0052232081070542336
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.05303913727402687,
+          "directed_edges": 2316,
+          "forward_seconds": 0.0036641668993979692
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.05087055265903473,
+          "directed_edges": 2316,
+          "forward_seconds": 0.003740167012438178
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.05128015577793121,
+          "directed_edges": 2316,
+          "forward_seconds": 0.002937082899734378
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.05134735628962517,
+          "directed_edges": 2316,
+          "forward_seconds": 0.003608499886468053
+        }
+      }
+    },
+    {
+      "id": "position_0:578",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 137,
+      "risk_error_spearman": 0.31641440818196276,
+      "realized_vector_se": 0.04061393067240715,
+      "predicted_vector_se": 0.09741069376468658,
+      "current_risk_scoring_seconds": 0.003692499827593565,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.020306961610913277,
+          "directed_edges": 2046,
+          "forward_seconds": 0.004052374977618456
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.020648006349802017,
+          "directed_edges": 3144,
+          "forward_seconds": 0.0036452910862863064
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.020433997735381126,
+          "directed_edges": 2320,
+          "forward_seconds": 0.0036249998956918716
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.020507069304585457,
+          "directed_edges": 2320,
+          "forward_seconds": 0.0038132090121507645
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0204548891633749,
+          "directed_edges": 2320,
+          "forward_seconds": 0.0038322501350194216
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.02046397514641285,
+          "directed_edges": 2320,
+          "forward_seconds": 0.0030005828011780977
+        }
+      }
+    },
+    {
+      "id": "position_0:635",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 130,
+      "risk_error_spearman": 0.2883300457150337,
+      "realized_vector_se": 0.011659327894449234,
+      "predicted_vector_se": 0.04699208587408066,
+      "current_risk_scoring_seconds": 0.004322624998167157,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.005829663947224617,
+          "directed_edges": 2066,
+          "forward_seconds": 0.004022917011752725
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.005533918272703886,
+          "directed_edges": 3110,
+          "forward_seconds": 0.003893500193953514
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.005292711779475212,
+          "directed_edges": 2326,
+          "forward_seconds": 0.005564874969422817
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.005299578886479139,
+          "directed_edges": 2326,
+          "forward_seconds": 0.0033578749280422926
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.00513808149844408,
+          "directed_edges": 2326,
+          "forward_seconds": 0.0034641248639672995
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.005135820712894201,
+          "directed_edges": 2326,
+          "forward_seconds": 0.003786749904975295
+        }
+      }
+    },
+    {
+      "id": "position_0:636",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 128,
+      "risk_error_spearman": 0.4454186805276395,
+      "realized_vector_se": 0.017069969326257706,
+      "predicted_vector_se": 0.04882974922657013,
+      "current_risk_scoring_seconds": 0.004499249858781695,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.008534984663128853,
+          "directed_edges": 2070,
+          "forward_seconds": 0.004434667062014341
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.007540035992860794,
+          "directed_edges": 3098,
+          "forward_seconds": 0.0034800840076059103
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.00818414893001318,
+          "directed_edges": 2326,
+          "forward_seconds": 0.0022979581262916327
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.007314880844205618,
+          "directed_edges": 2326,
+          "forward_seconds": 0.004833624931052327
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.007103241980075836,
+          "directed_edges": 2326,
+          "forward_seconds": 0.0028982909861952066
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.007101946976035833,
+          "directed_edges": 2326,
+          "forward_seconds": 0.0035128749441355467
+        }
+      }
+    },
+    {
+      "id": "position_0:652",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 128,
+      "risk_error_spearman": 0.1920933558948087,
+      "realized_vector_se": 0.009161889553070068,
+      "predicted_vector_se": 0.023464635014533997,
+      "current_risk_scoring_seconds": 0.003742750035598874,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.004580944776535034,
+          "directed_edges": 2112,
+          "forward_seconds": 0.0035571670159697533
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.005477662198245525,
+          "directed_edges": 3142,
+          "forward_seconds": 0.0055484159383922815
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.004694802220910788,
+          "directed_edges": 2368,
+          "forward_seconds": 0.00620662490837276
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.004767348524183035,
+          "directed_edges": 2368,
+          "forward_seconds": 0.003645332995802164
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.004771096631884575,
+          "directed_edges": 2368,
+          "forward_seconds": 0.004789208061993122
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0047615752555429935,
+          "directed_edges": 2368,
+          "forward_seconds": 0.003716832958161831
+        }
+      }
+    },
+    {
+      "id": "position_0:729",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 134,
+      "risk_error_spearman": -0.25407789318200946,
+      "realized_vector_se": 0.006227595265954733,
+      "predicted_vector_se": 0.01727563515305519,
+      "current_risk_scoring_seconds": 0.004395542200654745,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0031137976329773664,
+          "directed_edges": 2148,
+          "forward_seconds": 0.0044387090019881725
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0038550207391381264,
+          "directed_edges": 3224,
+          "forward_seconds": 0.005696624983102083
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.003308678977191448,
+          "directed_edges": 2416,
+          "forward_seconds": 0.004131667083129287
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0033429639879614115,
+          "directed_edges": 2416,
+          "forward_seconds": 0.0028543330263346434
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0032322772312909365,
+          "directed_edges": 2416,
+          "forward_seconds": 0.004665500018745661
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0032338183373212814,
+          "directed_edges": 2416,
+          "forward_seconds": 0.004132583970203996
+        }
+      }
+    },
+    {
+      "id": "position_0:746",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 136,
+      "risk_error_spearman": -0.2098581805603598,
+      "realized_vector_se": 0.006098305340856314,
+      "predicted_vector_se": 0.016930975019931793,
+      "current_risk_scoring_seconds": 0.0035390001721680164,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.003049152670428157,
+          "directed_edges": 2108,
+          "forward_seconds": 0.005926917074248195
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.003857833333313465,
+          "directed_edges": 3200,
+          "forward_seconds": 0.005042375065386295
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0032620499841868877,
+          "directed_edges": 2380,
+          "forward_seconds": 0.003923750016838312
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0033104841131716967,
+          "directed_edges": 2380,
+          "forward_seconds": 0.004258208908140659
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0031761066056787968,
+          "directed_edges": 2380,
+          "forward_seconds": 0.003996500046923757
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.003173975506797433,
+          "directed_edges": 2380,
+          "forward_seconds": 0.005816917167976499
+        }
+      }
+    },
+    {
+      "id": "position_0:988",
+      "trajectory": "position_0",
+      "n_particles": 295,
+      "extra_pair_budget": 129,
+      "risk_error_spearman": 0.3341778305458694,
+      "realized_vector_se": 0.004059486091136932,
+      "predicted_vector_se": 0.015255875885486603,
+      "current_risk_scoring_seconds": 0.00734966597519815,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0020297428127378225,
+          "directed_edges": 2256,
+          "forward_seconds": 0.004223875002935529
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.002531943144276738,
+          "directed_edges": 3292,
+          "forward_seconds": 0.004358207806944847
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0021754433400928974,
+          "directed_edges": 2514,
+          "forward_seconds": 0.004331457894295454
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0022131323348730803,
+          "directed_edges": 2514,
+          "forward_seconds": 0.0047822080086916685
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.002133983187377453,
+          "directed_edges": 2514,
+          "forward_seconds": 0.005006875144317746
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0021369692403823137,
+          "directed_edges": 2514,
+          "forward_seconds": 0.005648500053212047
+        }
+      }
+    },
+    {
+      "id": "position_1:24",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 350,
+      "risk_error_spearman": 0.19360412347138675,
+      "realized_vector_se": 0.0015144915087148547,
+      "predicted_vector_se": 0.02225315198302269,
+      "current_risk_scoring_seconds": 0.005501417210325599,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0007572458125650883,
+          "directed_edges": 4364,
+          "forward_seconds": 0.006971666822209954
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.001183185027912259,
+          "directed_edges": 7168,
+          "forward_seconds": 0.007914250018075109
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.000836534018162638,
+          "directed_edges": 5064,
+          "forward_seconds": 0.0065713750664144754
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0008460682001896203,
+          "directed_edges": 5064,
+          "forward_seconds": 0.006503709126263857
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0008129682973958552,
+          "directed_edges": 5064,
+          "forward_seconds": 0.0061012080404907465
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.000817163207102567,
+          "directed_edges": 5064,
+          "forward_seconds": 0.006907207891345024
+        }
+      }
+    },
+    {
+      "id": "position_1:90",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 379,
+      "risk_error_spearman": 0.6126276936049683,
+      "realized_vector_se": 158.1768798828125,
+      "predicted_vector_se": 15.118544578552246,
+      "current_risk_scoring_seconds": 0.007279250072315335,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 79.08843994140625,
+          "directed_edges": 4612,
+          "forward_seconds": 0.005959083093330264
+        },
+        "dense": {
+          "mse_normalized_acceleration": 78.66468811035156,
+          "directed_edges": 7650,
+          "forward_seconds": 0.010063708992674947
+        },
+        "random25": {
+          "mse_normalized_acceleration": 78.9595947265625,
+          "directed_edges": 5370,
+          "forward_seconds": 0.006811250001192093
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 79.23822784423828,
+          "directed_edges": 5370,
+          "forward_seconds": 0.011017084121704102
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 78.90032196044922,
+          "directed_edges": 5370,
+          "forward_seconds": 0.011070084059610963
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 79.1535415649414,
+          "directed_edges": 5370,
+          "forward_seconds": 0.007940999930724502
+        }
+      }
+    },
+    {
+      "id": "position_1:95",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 376,
+      "risk_error_spearman": 0.3505464930080145,
+      "realized_vector_se": 89.58391571044922,
+      "predicted_vector_se": 12.630380630493164,
+      "current_risk_scoring_seconds": 0.011008416069671512,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 44.791961669921875,
+          "directed_edges": 4570,
+          "forward_seconds": 0.0056522919330745935
+        },
+        "dense": {
+          "mse_normalized_acceleration": 44.599281311035156,
+          "directed_edges": 7584,
+          "forward_seconds": 0.008026499999687076
+        },
+        "random25": {
+          "mse_normalized_acceleration": 44.7669677734375,
+          "directed_edges": 5322,
+          "forward_seconds": 0.005001915851607919
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 44.806663513183594,
+          "directed_edges": 5322,
+          "forward_seconds": 0.006482457974925637
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 44.69932556152344,
+          "directed_edges": 5322,
+          "forward_seconds": 0.006587332813069224
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 44.886966705322266,
+          "directed_edges": 5322,
+          "forward_seconds": 0.006441332865506411
+        }
+      }
+    },
+    {
+      "id": "position_1:138",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 382,
+      "risk_error_spearman": 0.43985246545167545,
+      "realized_vector_se": 9.184033393859863,
+      "predicted_vector_se": 3.849263906478882,
+      "current_risk_scoring_seconds": 0.005539916921406984,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 4.592016696929932,
+          "directed_edges": 4548,
+          "forward_seconds": 0.006873667007312179
+        },
+        "dense": {
+          "mse_normalized_acceleration": 4.552620887756348,
+          "directed_edges": 7610,
+          "forward_seconds": 0.00815533404238522
+        },
+        "random25": {
+          "mse_normalized_acceleration": 4.578619480133057,
+          "directed_edges": 5312,
+          "forward_seconds": 0.007625542115420103
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 4.602302551269531,
+          "directed_edges": 5312,
+          "forward_seconds": 0.0066097090020775795
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 4.584975719451904,
+          "directed_edges": 5312,
+          "forward_seconds": 0.005670082988217473
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 4.586427688598633,
+          "directed_edges": 5312,
+          "forward_seconds": 0.006372625008225441
+        }
+      }
+    },
+    {
+      "id": "position_1:552",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 480,
+      "risk_error_spearman": 0.481025763132549,
+      "realized_vector_se": 0.2669847011566162,
+      "predicted_vector_se": 0.12520360946655273,
+      "current_risk_scoring_seconds": 0.006773083005100489,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.1334923356771469,
+          "directed_edges": 6544,
+          "forward_seconds": 0.006669084075838327
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.14087489247322083,
+          "directed_edges": 10386,
+          "forward_seconds": 0.008944917004555464
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.1352783441543579,
+          "directed_edges": 7504,
+          "forward_seconds": 0.007472208002582192
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.13558106124401093,
+          "directed_edges": 7504,
+          "forward_seconds": 0.008022916037589312
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.13905416429042816,
+          "directed_edges": 7504,
+          "forward_seconds": 0.007944332901388407
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.13991068303585052,
+          "directed_edges": 7504,
+          "forward_seconds": 0.009249582886695862
+        }
+      }
+    },
+    {
+      "id": "position_1:709",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 515,
+      "risk_error_spearman": 0.41493156571592155,
+      "realized_vector_se": 0.05588126182556152,
+      "predicted_vector_se": 0.11811543256044388,
+      "current_risk_scoring_seconds": 0.010160832898691297,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.027940629050135612,
+          "directed_edges": 7306,
+          "forward_seconds": 0.007731042103841901
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.027410538867115974,
+          "directed_edges": 11430,
+          "forward_seconds": 0.010436334181576967
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.027429522946476936,
+          "directed_edges": 8336,
+          "forward_seconds": 0.008972082985565066
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.028490277007222176,
+          "directed_edges": 8336,
+          "forward_seconds": 0.009044250007718801
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.026653772220015526,
+          "directed_edges": 8336,
+          "forward_seconds": 0.009723749943077564
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.02665066346526146,
+          "directed_edges": 8336,
+          "forward_seconds": 0.008350542047992349
+        }
+      }
+    },
+    {
+      "id": "position_1:712",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 516,
+      "risk_error_spearman": 0.375571220459103,
+      "realized_vector_se": 0.04441552236676216,
+      "predicted_vector_se": 0.1015462875366211,
+      "current_risk_scoring_seconds": 0.009066749829798937,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.02220776118338108,
+          "directed_edges": 7306,
+          "forward_seconds": 0.008093209005892277
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.02131510153412819,
+          "directed_edges": 11440,
+          "forward_seconds": 0.010627750074490905
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0215854924172163,
+          "directed_edges": 8338,
+          "forward_seconds": 0.009197541046887636
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.02116631343960762,
+          "directed_edges": 8338,
+          "forward_seconds": 0.008927958086133003
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.02033657394349575,
+          "directed_edges": 8338,
+          "forward_seconds": 0.008235707879066467
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.020329352468252182,
+          "directed_edges": 8338,
+          "forward_seconds": 0.008653957862406969
+        }
+      }
+    },
+    {
+      "id": "position_1:746",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 535,
+      "risk_error_spearman": 0.15890799385803445,
+      "realized_vector_se": 0.03133997693657875,
+      "predicted_vector_se": 0.04005954787135124,
+      "current_risk_scoring_seconds": 0.0075699579901993275,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.015669988468289375,
+          "directed_edges": 7372,
+          "forward_seconds": 0.007583583006635308
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.016844574362039566,
+          "directed_edges": 11654,
+          "forward_seconds": 0.010696916840970516
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.015837250277400017,
+          "directed_edges": 8442,
+          "forward_seconds": 0.008256749948486686
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.015159265138208866,
+          "directed_edges": 8442,
+          "forward_seconds": 0.00966216716915369
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.015700019896030426,
+          "directed_edges": 8442,
+          "forward_seconds": 0.008893582969903946
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.015697425231337547,
+          "directed_edges": 8442,
+          "forward_seconds": 0.007434833096340299
+        }
+      }
+    },
+    {
+      "id": "position_1:901",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 556,
+      "risk_error_spearman": 0.3829335347282012,
+      "realized_vector_se": 0.07961662858724594,
+      "predicted_vector_se": 0.1680113971233368,
+      "current_risk_scoring_seconds": 0.007946166908368468,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.03980831429362297,
+          "directed_edges": 7626,
+          "forward_seconds": 0.009305041981860995
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.04392203316092491,
+          "directed_edges": 12078,
+          "forward_seconds": 0.01227195793762803
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.04005977511405945,
+          "directed_edges": 8738,
+          "forward_seconds": 0.00990941608324647
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.04367683827877045,
+          "directed_edges": 8738,
+          "forward_seconds": 0.009522541193291545
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.04312632605433464,
+          "directed_edges": 8738,
+          "forward_seconds": 0.009914624970406294
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0431143082678318,
+          "directed_edges": 8738,
+          "forward_seconds": 0.008753499947488308
+        }
+      }
+    },
+    {
+      "id": "position_1:910",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 551,
+      "risk_error_spearman": 0.06510676803279992,
+      "realized_vector_se": 0.030187755823135376,
+      "predicted_vector_se": 0.04386254772543907,
+      "current_risk_scoring_seconds": 0.007762708002701402,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.015093879774212837,
+          "directed_edges": 7644,
+          "forward_seconds": 0.008252292172983289
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.014473081566393375,
+          "directed_edges": 12058,
+          "forward_seconds": 0.01096216612495482
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.015017696656286716,
+          "directed_edges": 8746,
+          "forward_seconds": 0.011341250035911798
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.013735608197748661,
+          "directed_edges": 8746,
+          "forward_seconds": 0.009325291030108929
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.013584161177277565,
+          "directed_edges": 8746,
+          "forward_seconds": 0.009134999942034483
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.013560640625655651,
+          "directed_edges": 8746,
+          "forward_seconds": 0.009037916082888842
+        }
+      }
+    },
+    {
+      "id": "position_1:936",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 563,
+      "risk_error_spearman": 0.03711191899992032,
+      "realized_vector_se": 0.024120839312672615,
+      "predicted_vector_se": 0.030176974833011627,
+      "current_risk_scoring_seconds": 0.008243625052273273,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.012060419656336308,
+          "directed_edges": 7714,
+          "forward_seconds": 0.00990366586484015
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.012617435306310654,
+          "directed_edges": 12224,
+          "forward_seconds": 0.012078291969373822
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.011783350259065628,
+          "directed_edges": 8840,
+          "forward_seconds": 0.008874791907146573
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.011787820607423782,
+          "directed_edges": 8840,
+          "forward_seconds": 0.0083360830321908
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.011619817465543747,
+          "directed_edges": 8840,
+          "forward_seconds": 0.007829125039279461
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.011634321883320808,
+          "directed_edges": 8840,
+          "forward_seconds": 0.008002917049452662
+        }
+      }
+    },
+    {
+      "id": "position_1:945",
+      "trajectory": "position_1",
+      "n_particles": 803,
+      "extra_pair_budget": 555,
+      "risk_error_spearman": 0.0753669162533528,
+      "realized_vector_se": 0.020287780091166496,
+      "predicted_vector_se": 0.03543233498930931,
+      "current_risk_scoring_seconds": 0.007848750101402402,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.010143890045583248,
+          "directed_edges": 7758,
+          "forward_seconds": 0.007548541994765401
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.010694191791117191,
+          "directed_edges": 12198,
+          "forward_seconds": 0.010542125208303332
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.010412180796265602,
+          "directed_edges": 8868,
+          "forward_seconds": 0.013577708043158054
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.01000636164098978,
+          "directed_edges": 8868,
+          "forward_seconds": 0.007934915833175182
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.009652523323893547,
+          "directed_edges": 8868,
+          "forward_seconds": 0.008210167055949569
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.00962896179407835,
+          "directed_edges": 8868,
+          "forward_seconds": 0.007670875173062086
+        }
+      }
+    },
+    {
+      "id": "position_2:88",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 175,
+      "risk_error_spearman": -0.0875326517082921,
+      "realized_vector_se": 20.95847511291504,
+      "predicted_vector_se": 3.8442704677581787,
+      "current_risk_scoring_seconds": 0.003622167045250535,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 10.47923755645752,
+          "directed_edges": 2166,
+          "forward_seconds": 0.0028577500488609076
+        },
+        "dense": {
+          "mse_normalized_acceleration": 10.519140243530273,
+          "directed_edges": 3572,
+          "forward_seconds": 0.003311458043754101
+        },
+        "random25": {
+          "mse_normalized_acceleration": 10.499554634094238,
+          "directed_edges": 2516,
+          "forward_seconds": 0.0031083340290933847
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 10.586708068847656,
+          "directed_edges": 2516,
+          "forward_seconds": 0.0037108331453055143
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 10.575457572937012,
+          "directed_edges": 2516,
+          "forward_seconds": 0.005099625093862414
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 10.599830627441406,
+          "directed_edges": 2516,
+          "forward_seconds": 0.0051009999588131905
+        }
+      }
+    },
+    {
+      "id": "position_2:227",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 128,
+      "risk_error_spearman": 0.3608698358502155,
+      "realized_vector_se": 0.25387898087501526,
+      "predicted_vector_se": 0.48315051198005676,
+      "current_risk_scoring_seconds": 0.0033283329103142023,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.12693949043750763,
+          "directed_edges": 2088,
+          "forward_seconds": 0.002116542076691985
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.13384918868541718,
+          "directed_edges": 3116,
+          "forward_seconds": 0.0043981249909847975
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.1281784474849701,
+          "directed_edges": 2344,
+          "forward_seconds": 0.003935832995921373
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.1364651769399643,
+          "directed_edges": 2344,
+          "forward_seconds": 0.0033392501063644886
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.136176198720932,
+          "directed_edges": 2344,
+          "forward_seconds": 0.0026485419366508722
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.13634170591831207,
+          "directed_edges": 2344,
+          "forward_seconds": 0.005577417090535164
+        }
+      }
+    },
+    {
+      "id": "position_2:362",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 176,
+      "risk_error_spearman": 0.4398253990570888,
+      "realized_vector_se": 1.0380492210388184,
+      "predicted_vector_se": 1.1827375888824463,
+      "current_risk_scoring_seconds": 0.003941625123843551,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.5190245509147644,
+          "directed_edges": 2608,
+          "forward_seconds": 0.0034199580550193787
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.5318413376808167,
+          "directed_edges": 4018,
+          "forward_seconds": 0.006296040955930948
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.5198370218276978,
+          "directed_edges": 2960,
+          "forward_seconds": 0.004270832985639572
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.5239150524139404,
+          "directed_edges": 2960,
+          "forward_seconds": 0.004525749944150448
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.5300353765487671,
+          "directed_edges": 2960,
+          "forward_seconds": 0.0054285828955471516
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.5300770998001099,
+          "directed_edges": 2960,
+          "forward_seconds": 0.0034961251076310873
+        }
+      }
+    },
+    {
+      "id": "position_2:540",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 216,
+      "risk_error_spearman": 0.09628864175422758,
+      "realized_vector_se": 0.040256015956401825,
+      "predicted_vector_se": 0.038166195154190063,
+      "current_risk_scoring_seconds": 0.004166792146861553,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.020128007978200912,
+          "directed_edges": 3086,
+          "forward_seconds": 0.0034118331968784332
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.021425368264317513,
+          "directed_edges": 4814,
+          "forward_seconds": 0.006103791994974017
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.020428340882062912,
+          "directed_edges": 3518,
+          "forward_seconds": 0.006729500135406852
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.020311402156949043,
+          "directed_edges": 3518,
+          "forward_seconds": 0.004214083775877953
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.019962068647146225,
+          "directed_edges": 3518,
+          "forward_seconds": 0.003559292061254382
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.019918687641620636,
+          "directed_edges": 3518,
+          "forward_seconds": 0.004818083019927144
+        }
+      }
+    },
+    {
+      "id": "position_2:559",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 228,
+      "risk_error_spearman": 0.2947385969853131,
+      "realized_vector_se": 0.029958520084619522,
+      "predicted_vector_se": 0.045026179403066635,
+      "current_risk_scoring_seconds": 0.0034366659820079803,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.014979260042309761,
+          "directed_edges": 3072,
+          "forward_seconds": 0.0037903329357504845
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.01577109843492508,
+          "directed_edges": 4898,
+          "forward_seconds": 0.0045197089202702045
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.015151246450841427,
+          "directed_edges": 3528,
+          "forward_seconds": 0.0035547909792512655
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.014728344045579433,
+          "directed_edges": 3528,
+          "forward_seconds": 0.0032857919577509165
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.01464135106652975,
+          "directed_edges": 3528,
+          "forward_seconds": 0.0034961251076310873
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.014515303075313568,
+          "directed_edges": 3528,
+          "forward_seconds": 0.004378250101581216
+        }
+      }
+    },
+    {
+      "id": "position_2:583",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 221,
+      "risk_error_spearman": 0.1324372005521137,
+      "realized_vector_se": 0.027103470638394356,
+      "predicted_vector_se": 0.047346483916044235,
+      "current_risk_scoring_seconds": 0.004160500131547451,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.013551734387874603,
+          "directed_edges": 3146,
+          "forward_seconds": 0.0032842918299138546
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.015154427848756313,
+          "directed_edges": 4916,
+          "forward_seconds": 0.004287209128960967
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.013931804336607456,
+          "directed_edges": 3588,
+          "forward_seconds": 0.0044302919413894415
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.014635346829891205,
+          "directed_edges": 3588,
+          "forward_seconds": 0.004706292180344462
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.014002693817019463,
+          "directed_edges": 3588,
+          "forward_seconds": 0.004044624976813793
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.013989584520459175,
+          "directed_edges": 3588,
+          "forward_seconds": 0.0043264999985694885
+        }
+      }
+    },
+    {
+      "id": "position_2:589",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 214,
+      "risk_error_spearman": 0.3061261373415405,
+      "realized_vector_se": 0.019735917448997498,
+      "predicted_vector_se": 0.04140322655439377,
+      "current_risk_scoring_seconds": 0.004045790992677212,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.009867958724498749,
+          "directed_edges": 3180,
+          "forward_seconds": 0.0037321250420063734
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.010931981727480888,
+          "directed_edges": 4898,
+          "forward_seconds": 0.004922457970678806
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.01011420413851738,
+          "directed_edges": 3608,
+          "forward_seconds": 0.004356249934062362
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.010532846674323082,
+          "directed_edges": 3608,
+          "forward_seconds": 0.005073125008493662
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.010093196295201778,
+          "directed_edges": 3608,
+          "forward_seconds": 0.004147875122725964
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.010092515498399734,
+          "directed_edges": 3608,
+          "forward_seconds": 0.005422834074124694
+        }
+      }
+    },
+    {
+      "id": "position_2:660",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 218,
+      "risk_error_spearman": 0.33768889674333896,
+      "realized_vector_se": 0.010473745875060558,
+      "predicted_vector_se": 0.02786165475845337,
+      "current_risk_scoring_seconds": 0.004806166980415583,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0052368720062077045,
+          "directed_edges": 3190,
+          "forward_seconds": 0.004856458865106106
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.005499223247170448,
+          "directed_edges": 4934,
+          "forward_seconds": 0.005002457881346345
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0051711369305849075,
+          "directed_edges": 3626,
+          "forward_seconds": 0.005508166970685124
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0049377852119505405,
+          "directed_edges": 3626,
+          "forward_seconds": 0.006354625103995204
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.005139356479048729,
+          "directed_edges": 3626,
+          "forward_seconds": 0.003519000019878149
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.005140954628586769,
+          "directed_edges": 3626,
+          "forward_seconds": 0.006207040976732969
+        }
+      }
+    },
+    {
+      "id": "position_2:765",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 235,
+      "risk_error_spearman": 0.12084229110632976,
+      "realized_vector_se": 0.004413315560668707,
+      "predicted_vector_se": 0.021539753302931786,
+      "current_risk_scoring_seconds": 0.004826958989724517,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.002206658013164997,
+          "directed_edges": 3300,
+          "forward_seconds": 0.0055022090673446655
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0024646061938256025,
+          "directed_edges": 5184,
+          "forward_seconds": 0.006355041870847344
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0022583482787013054,
+          "directed_edges": 3770,
+          "forward_seconds": 0.005249707959592342
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0022516415920108557,
+          "directed_edges": 3770,
+          "forward_seconds": 0.004832292208448052
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.00233128247782588,
+          "directed_edges": 3770,
+          "forward_seconds": 0.0036315841134637594
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0023345225490629673,
+          "directed_edges": 3770,
+          "forward_seconds": 0.005270083900541067
+        }
+      }
+    },
+    {
+      "id": "position_2:791",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 230,
+      "risk_error_spearman": 0.029890487008309128,
+      "realized_vector_se": 0.005511454772204161,
+      "predicted_vector_se": 0.020001037046313286,
+      "current_risk_scoring_seconds": 0.005072042113170028,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0027557273861020803,
+          "directed_edges": 3322,
+          "forward_seconds": 0.005241040838882327
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0031388686038553715,
+          "directed_edges": 5166,
+          "forward_seconds": 0.004977957811206579
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.002811659360304475,
+          "directed_edges": 3782,
+          "forward_seconds": 0.0047303750179708
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.0028125152457505465,
+          "directed_edges": 3782,
+          "forward_seconds": 0.004591082921251655
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.0028795951511710882,
+          "directed_edges": 3782,
+          "forward_seconds": 0.004478583112359047
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0028804708272218704,
+          "directed_edges": 3782,
+          "forward_seconds": 0.005174957914277911
+        }
+      }
+    },
+    {
+      "id": "position_2:828",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 218,
+      "risk_error_spearman": 0.01218924562311495,
+      "realized_vector_se": 0.0039701154455542564,
+      "predicted_vector_se": 0.020121676847338676,
+      "current_risk_scoring_seconds": 0.004224375123158097,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.0019850574899464846,
+          "directed_edges": 3340,
+          "forward_seconds": 0.004660000093281269
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.002322076354175806,
+          "directed_edges": 5084,
+          "forward_seconds": 0.005762625019997358
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.002077090786769986,
+          "directed_edges": 3776,
+          "forward_seconds": 0.005468833027407527
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.002047883113846183,
+          "directed_edges": 3776,
+          "forward_seconds": 0.003848459105938673
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.002073104726150632,
+          "directed_edges": 3776,
+          "forward_seconds": 0.010961874853819609
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.002074002055451274,
+          "directed_edges": 3776,
+          "forward_seconds": 0.004673750139772892
+        }
+      }
+    },
+    {
+      "id": "position_2:878",
+      "trajectory": "position_2",
+      "n_particles": 410,
+      "extra_pair_budget": 235,
+      "risk_error_spearman": 0.39077468721611347,
+      "realized_vector_se": 0.004872179590165615,
+      "predicted_vector_se": 0.021550461649894714,
+      "current_risk_scoring_seconds": 0.005750082898885012,
+      "policies": {
+        "base": {
+          "mse_normalized_acceleration": 0.002436090027913451,
+          "directed_edges": 3342,
+          "forward_seconds": 0.0042634590063244104
+        },
+        "dense": {
+          "mse_normalized_acceleration": 0.0021668937988579273,
+          "directed_edges": 5224,
+          "forward_seconds": 0.009668542072176933
+        },
+        "random25": {
+          "mse_normalized_acceleration": 0.0023496956564486027,
+          "directed_edges": 3812,
+          "forward_seconds": 0.006290541961789131
+        },
+        "speed25": {
+          "mse_normalized_acceleration": 0.00220917584374547,
+          "directed_edges": 3812,
+          "forward_seconds": 0.0053446670062839985
+        },
+        "current_risk25": {
+          "mse_normalized_acceleration": 0.002104253973811865,
+          "directed_edges": 3812,
+          "forward_seconds": 0.00424050004221499
+        },
+        "lagged_base_risk25": {
+          "mse_normalized_acceleration": 0.0021022672299295664,
+          "directed_edges": 3812,
+          "forward_seconds": 0.004883458139374852
+        }
+      }
+    }
+  ]
+}

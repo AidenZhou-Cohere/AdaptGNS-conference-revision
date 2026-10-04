@@ -16,6 +16,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from gns import learned_simulator, data_loader, reading_utils
 from gns.model_io import load_for_evaluation
+from gns.device_utils import add_device_argument, resolve_device
 
 INPUT_SEQUENCE_LENGTH = 6
 KINEMATIC_PARTICLE_ID = 3
@@ -84,6 +85,7 @@ def rollout_with_step_mse(simulator, positions, particle_type, material_property
 
 def main():
     parser = argparse.ArgumentParser()
+    add_device_argument(parser)
     parser.add_argument('--data_path', required=True, help='Dataset dir (e.g. ../Sand/dataset/)')
     parser.add_argument('--model_path', required=True, help='Model dir')
     parser.add_argument('--model_file', default='latest', help='Model checkpoint (e.g. model-100000.pt)')
@@ -98,8 +100,8 @@ def main():
                         help='Legacy checkpoint training normalization noise (not input noise).')
     parser.add_argument('--nmessage_passing_steps', type=int, default=None,
                         help='Legacy checkpoint depth, including zero for an MLP.')
-    parser.add_argument('--radius_backend', choices=['pyg', 'scipy'], default=None,
-                        help='Legacy checkpoint graph backend; scipy is an explicit CPU reference')
+    parser.add_argument('--radius_backend', choices=['auto', 'pyg', 'scipy', 'scipy_host'], default=None,
+                        help='Explicit runtime graph backend override; scipy_host builds on CPU and transfers edges')
     args = parser.parse_args()
     if args.max_trajectories is not None and args.max_trajectories <= 0:
         parser.error('--max_trajectories must be positive')
@@ -126,7 +128,7 @@ def main():
         else:
             output_path = os.path.join(model_path, f'rollout_mse_{model_basename}_{args.split}')
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = resolve_device(args.device)
     metadata = reading_utils.read_metadata(data_path, 'rollout')
     simulator, provenance = load_for_evaluation(
         os.path.join(model_path, model_file), metadata, device,

@@ -23,6 +23,7 @@ from gns import data_loader
 from gns import distribute
 from gns.losses import acceleration_loss
 from gns.model_io import build_simulator, load_for_evaluation
+from gns.device_utils import resolve_device, resolve_radius_backend, runtime_provenance
 
 flags.DEFINE_enum(
     'mode', 'train', ['train', 'valid', 'rollout'],
@@ -33,8 +34,11 @@ flags.DEFINE_enum('loss', 'nll', ['nll', 'legacy_nll', 'mse', 'faithful'],
                   help='Correct NLL, released legacy objective, MSE, or faithful heteroscedastic regression.')
 flags.DEFINE_float('variance_floor', 1e-6, help='Floor in normalized acceleration variance units.')
 flags.DEFINE_integer('seed', 0, help='Training initialization and sampling seed.')
-flags.DEFINE_enum('radius_backend', 'pyg', ['pyg', 'scipy'],
-                  help='PyG production backend or explicit SciPy CPU reference backend.')
+flags.DEFINE_enum('device', 'auto', ['auto', 'cpu', 'cuda', 'mps'],
+                  help='auto prefers CUDA, then Metal, then CPU; explicit unavailable devices fail.')
+flags.DEFINE_integer('cpu_threads', None, help='Optional PyTorch CPU thread cap; default preserves runtime settings.')
+flags.DEFINE_enum('radius_backend', 'auto', ['auto', 'pyg', 'scipy', 'scipy_host'],
+                  help='auto uses PyG on CPU/CUDA and explicit host SciPy graphs on Metal.')
 flags.DEFINE_float('connectivity_radius', None, help='Override dataset connectivity radius.')
 flags.DEFINE_integer('nmessage_passing_steps', 10, help='Processor depth; zero is a particle MLP.')
 flags.DEFINE_string('data_path', None, help='The dataset directory.')
@@ -250,11 +254,9 @@ def save_model_and_train_state(rank, device, simulator, flags, step, epoch, opti
     train_loss_hist: training loss history at each epoch
     valid_loss_hist: validation loss history at each epoch
   """
-  if rank == 0 or device == torch.device("cpu"):
-      if device == torch.device("cpu"):
-          simulator.save(flags["model_path"] + 'model-' + str(step) + '.pt')
-      else:
-          simulator.module.save(flags["model_path"] + 'model-' + str(step) + '.pt')
+  if rank in (None, 0):
+      serial_simulator = simulator.module if hasattr(simulator, "module") else simulator
+      serial_simulator.save(flags["model_path"] + 'model-' + str(step) + '.pt')
 
       train_state = dict(optimizer_state=optimizer.state_dict(),
                           global_train_state={
@@ -291,6 +293,7 @@ def train(rank, flags, world_size, device):
   # Read metadata
   metadata = reading_utils.read_metadata(flags["data_path"], "train")
   def make_simulator(target_device):
+    backend = resolve_radius_backend(flags["radius_backend"], target_device)
     result = build_simulator(
         metadata, flags["noise_std"], flags["noise_std"], target_device,
         connectivity_radius=flags["connectivity_radius"],
@@ -298,8 +301,9 @@ def train(rank, flags, world_size, device):
         uncertainty_parameterization=("legacy_std" if flags["loss"] == "legacy_nll" else "variance"),
         variance_floor=flags["variance_floor"],
         detach_variance_features=(flags["loss"] == "faithful"),
-        radius_backend=flags["radius_backend"])
+        radius_backend=backend)
     result._training_config = dict(flags)
+    result._training_config["runtime"] = runtime_provenance(target_device, backend)
     return result
 
   # Get simulator and optimizer
@@ -352,8 +356,13 @@ def train(rank, flags, world_size, device):
       if saved_loss is not None and saved_loss != flags["loss"]:
         raise ValueError("Resume loss differs from checkpoint; start a new experiment")
       loaded_simulator._training_config = dict(flags)
+      loaded_simulator._training_config["runtime"] = runtime_provenance(
+          device_id, loaded_simulator._radius_backend)
+      loaded_simulator._checkpoint_config = dict(loaded_simulator._checkpoint_config)
+      loaded_simulator._checkpoint_config["radius_backend"] = loaded_simulator._radius_backend
       # load train state
-      train_state = torch.load(flags["model_path"] + flags["train_state_file"])
+      train_state = torch.load(flags["model_path"] + flags["train_state_file"],
+                               map_location="cpu", weights_only=True)
       
       # set optimizer state
       optimizer = torch.optim.Adam(
@@ -477,7 +486,7 @@ def train(rank, flags, world_size, device):
         step += 1
         # Checkpoint step is the number of completed optimizer updates.
         # Save model state
-        if rank == 0 or device == torch.device("cpu"):
+        if rank in (None, 0):
           if step % flags["nsave_steps"] == 0:
             save_model_and_train_state(rank, device, simulator, flags, step, epoch, 
                                        optimizer, train_loss, valid_loss, train_loss_hist, valid_loss_hist)
@@ -507,7 +516,7 @@ def train(rank, flags, world_size, device):
         valid_loss_hist.append((epoch, epoch_valid_loss.item()))
 
       # Print epoch statistics
-      if rank == 0 or device == torch.device("cpu"):
+      if rank in (None, 0):
         print(f'Epoch {epoch}, training loss: {epoch_train_loss.item()}')
         if flags["validation_interval"] is not None:
           print(f'Epoch {epoch}, validation loss: {epoch_valid_loss.item()}')
@@ -527,7 +536,7 @@ def train(rank, flags, world_size, device):
   # Save model state on keyboard interrupt
   save_model_and_train_state(rank, device, simulator, flags, step, epoch, optimizer, train_loss, valid_loss, train_loss_hist, valid_loss_hist)
 
-  if torch.cuda.is_available():
+  if torch.device(device).type == "cuda":
     distribute.cleanup()
 
 
@@ -600,12 +609,18 @@ def main(_):
   """Train or evaluates the model.
 
   """
-  device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+  device = resolve_device(FLAGS.device)
+  if FLAGS.cpu_threads is not None:
+    if FLAGS.cpu_threads < 1:
+      raise ValueError("cpu_threads must be positive")
+    torch.set_num_threads(FLAGS.cpu_threads)
   if device == torch.device('cuda'):
     os.environ["MASTER_ADDR"] = "localhost"
     os.environ["MASTER_PORT"] = "29500"
 
   myflags = reading_utils.flags_to_dict(FLAGS)
+  myflags["radius_backend"] = resolve_radius_backend(FLAGS.radius_backend, device)
+  print(f"Runtime: {runtime_provenance(device, myflags['radius_backend'])}", flush=True)
 
   if FLAGS.mode == 'train':
     # If model_path does not exist create new directory.
@@ -640,7 +655,7 @@ def main(_):
   elif FLAGS.mode in ['valid', 'rollout']:
     # Set device
     world_size = torch.cuda.device_count()
-    if FLAGS.cuda_device_number is not None and torch.cuda.is_available():
+    if FLAGS.cuda_device_number is not None and device.type == "cuda":
       device = torch.device(f'cuda:{int(FLAGS.cuda_device_number)}')
     #test code
     print(f"device is {device} world size is {world_size}")

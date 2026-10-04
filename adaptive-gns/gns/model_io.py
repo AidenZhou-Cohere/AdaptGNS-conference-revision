@@ -5,6 +5,7 @@ import warnings
 import torch
 
 from gns.learned_simulator import LearnedSimulator
+from gns.device_utils import resolve_radius_backend, runtime_provenance
 
 
 def build_simulator(metadata, acc_noise_std, vel_noise_std, device,
@@ -50,22 +51,29 @@ def load_for_evaluation(path, metadata, device, normalization_noise_std=None,
     """
     payload = torch.load(path, map_location="cpu", weights_only=True)
     if "simulator_config" in payload:
-        if (normalization_noise_std is not None or nmessage_passing_steps is not None
-                or radius_backend is not None):
+        if (normalization_noise_std is not None or nmessage_passing_steps is not None):
             raise ValueError("Configured checkpoints already store normalization and "
                              "architecture; legacy reconstruction overrides are invalid")
         config = copy.deepcopy(payload["simulator_config"])
+        checkpoint_radius_backend = config.get("radius_backend", "pyg")
+        # Graph backend is an explicit runtime override, unlike architecture or
+        # normalization. Record both values because neighbor caps may differ.
+        config["radius_backend"] = resolve_radius_backend(
+            checkpoint_radius_backend if radius_backend is None else radius_backend, device)
         config["normalization_stats"] = {
             name: {key: value.to(device) for key, value in stats.items()}
             for name, stats in config["normalization_stats"].items()}
         simulator = LearnedSimulator(**config, device=device)
         simulator.load(path, allow_missing_variance_head=allow_missing_variance_head)
+        simulator._checkpoint_config = copy.deepcopy(simulator._checkpoint_config)
+        simulator._checkpoint_config["radius_backend"] = simulator._radius_backend
         if (payload.get("training_config", {}).get("loss") == "mse"
                 and not allow_missing_variance_head):
             raise ValueError("MSE checkpoint has an untrained variance head; use "
                              "fixed-graph mean evaluation, not risk allocation/calibration")
         provenance = {"checkpoint_format": 2,
                       "normalization_source": "checkpoint",
+                      "checkpoint_radius_backend": checkpoint_radius_backend,
                       "training_config": payload.get("training_config", {})}
     else:
         noise = 6.7e-4 if normalization_noise_std is None else normalization_noise_std
@@ -78,7 +86,7 @@ def load_for_evaluation(path, metadata, device, normalization_noise_std=None,
             nmessage_passing_steps=(10 if nmessage_passing_steps is None
                                     else nmessage_passing_steps),
             uncertainty_parameterization="legacy_std",
-            radius_backend="pyg" if radius_backend is None else radius_backend)
+            radius_backend=resolve_radius_backend(radius_backend, device))
         simulator.load(path, allow_missing_variance_head=allow_missing_variance_head)
         provenance = {"checkpoint_format": "legacy_state_dict",
                       "normalization_source": "explicit_or_assumed_training_recipe",
@@ -94,5 +102,6 @@ def load_for_evaluation(path, metadata, device, normalization_noise_std=None,
         "max_num_neighbors": simulator._max_num_neighbors,
         "radius_backend": simulator._radius_backend,
         "edge_convention": "directed_with_self_loops",
+        "runtime": runtime_provenance(device, simulator._radius_backend),
     })
     return simulator, provenance

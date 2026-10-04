@@ -1,0 +1,571 @@
+{
+  "experiment_type": "full_size_gns_cpu_mps_feasibility",
+  "core_files_modified_by_benchmark": false,
+  "fresh_training_for_accuracy": false,
+  "platform": {
+    "system": "Darwin",
+    "machine": "arm64",
+    "python": "3.12.14",
+    "torch": "2.14.1",
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "mps_built": true,
+    "mps_available": true,
+    "mps_cpu_fallback": "0",
+    "torch_threads": 1,
+    "torch_interop_threads": 1,
+    "cpu_isolated": false,
+    "load_average_start": [
+      14.82275390625,
+      14.0419921875,
+      15.33203125
+    ],
+    "load_average_end": [
+      15.64208984375,
+      14.400390625,
+      15.38330078125
+    ]
+  },
+  "protocol": {
+    "width": 128,
+    "message_passing_steps": 10,
+    "hidden_mlp_layers": 2,
+    "history_frames": 6,
+    "recorded_frames_zero_based": [
+      100,
+      250,
+      400,
+      550
+    ],
+    "noise_std": 0.00067,
+    "loss": "corrected_nll",
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "repeats": 20,
+    "warmups": 4,
+    "seed": 20261004,
+    "float_precision": "float32"
+  },
+  "source_sha256": {
+    "data": "68122c51fc8392e7cc02da38586fa21b27c2e25e9b8a119235de0888d4cbbb8c",
+    "metadata": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+    "benchmark_script": "4ec42a562bc33132ef8e0ccef8c152eaeb1e4eff51a85b0337c335a4b47ac735",
+    "learned_simulator.py": "d5e446fafe9496b72781ba671772f0931a7a7de411049296d6767a10af0a60ff",
+    "graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+    "model_io.py": "5259f88777e114e8b1f285f2f1990cbd1665ef8dd37dcdccbd73e8e8b3351e83",
+    "losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+    "noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9"
+  },
+  "experiments": [
+    {
+      "batch_examples": 1,
+      "n_particles": 678,
+      "edge_counts": [
+        4618,
+        4508,
+        5292,
+        6162
+      ],
+      "parameter_count": 1624979,
+      "parity": {
+        "prediction": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 9.760260581970215e-07,
+          "relative_l2_difference": 1.4711880858275176e-06,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "variance_head": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 4.76837158203125e-07,
+          "relative_l2_difference": 2.0308508628992918e-07,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "normalized_target": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "loss": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "parameter_gradients": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 4.752352833747864e-05,
+          "relative_l2_difference": 4.568615327831553e-05,
+          "atol": 2e-05,
+          "rtol": 0.002,
+          "allclose": true
+        },
+        "all_checks_pass": true,
+        "cpu_loss": 1.2505887746810913,
+        "mps_loss": 1.2505887746810913
+      },
+      "timings": {
+        "precomputed_graph": {
+          "forward_no_grad": {
+            "cpu": {
+              "median_ms": 50.1000415,
+              "q25_ms": 43.4136985,
+              "q75_ms": 54.86608375,
+              "raw_ms": [
+                45.854834,
+                41.025417,
+                51.583208,
+                56.62675,
+                40.10725,
+                41.664292,
+                51.679,
+                57.887,
+                45.952125,
+                39.106208,
+                52.4515,
+                60.522,
+                44.048209,
+                41.625875,
+                55.654708,
+                48.616875,
+                56.397125,
+                43.996834,
+                54.603209,
+                54.04725
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 15.606375,
+              "q25_ms": 13.2964585,
+              "q75_ms": 19.368603750000002,
+              "raw_ms": [
+                12.9485,
+                13.304792,
+                13.082167,
+                23.253667,
+                15.932959,
+                14.317875,
+                15.279791,
+                15.949584,
+                20.111292,
+                16.682458,
+                28.895542,
+                22.7195,
+                13.271458,
+                14.870625,
+                13.166291,
+                15.1185,
+                12.952666,
+                19.121041,
+                23.523125,
+                16.566292
+              ],
+              "n": 20
+            }
+          },
+          "forward_backward_adam": {
+            "cpu": {
+              "median_ms": 229.5421665,
+              "q25_ms": 199.81622975,
+              "q75_ms": 252.92429175,
+              "raw_ms": [
+                173.144667,
+                221.798333,
+                191.574834,
+                232.647958,
+                169.493792,
+                171.260666,
+                205.21025,
+                319.232625,
+                248.541958,
+                244.647792,
+                250.860167,
+                287.252458,
+                226.436375,
+                252.414875,
+                291.8945,
+                464.972125,
+                201.083209,
+                196.015292,
+                205.145834,
+                254.452542
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 64.0039375,
+              "q25_ms": 53.14183325,
+              "q75_ms": 81.284469,
+              "raw_ms": [
+                50.998417,
+                51.609083,
+                57.780667,
+                61.95275,
+                44.856458,
+                46.597791,
+                67.697291,
+                53.65275,
+                165.951791,
+                88.059,
+                67.788625,
+                59.849292,
+                79.026292,
+                88.661042,
+                106.455375,
+                70.008791,
+                66.055125,
+                108.598666,
+                55.621917,
+                49.6365
+              ],
+              "n": 20
+            }
+          }
+        },
+        "host_graph_and_transfer": {
+          "forward_backward_adam": {
+            "cpu": {
+              "median_ms": 206.70162499999998,
+              "q25_ms": 192.0255,
+              "q75_ms": 253.26178125,
+              "raw_ms": [
+                173.97175,
+                189.003708,
+                256.262625,
+                270.409334,
+                207.089542,
+                193.271875,
+                250.385667,
+                244.666958,
+                205.964042,
+                218.633667,
+                363.348291,
+                306.762167,
+                192.828,
+                187.000792,
+                204.605958,
+                252.2615,
+                186.359625,
+                189.618,
+                206.313708,
+                258.105125
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 68.848333,
+              "q25_ms": 64.82031275,
+              "q75_ms": 76.4635315,
+              "raw_ms": [
+                62.936708,
+                73.42475,
+                87.89725,
+                69.070541,
+                69.536542,
+                64.932667,
+                62.14725,
+                83.26375,
+                56.71125,
+                66.593583,
+                77.897959,
+                105.38375,
+                76.389292,
+                65.367834,
+                61.428708,
+                76.68625,
+                68.593167,
+                70.689958,
+                64.48325,
+                68.626125
+              ],
+              "n": 20
+            }
+          }
+        }
+      },
+      "projections": {
+        "cpu": {
+          "hours_for_500k_updates": 28.708559027777774,
+          "updates_in_72_hours": 1253981.4333825388,
+          "planning_estimate_only": true
+        },
+        "mps": {
+          "hours_for_500k_updates": 9.562268472222222,
+          "updates_in_72_hours": 3764797.035826561,
+          "planning_estimate_only": true
+        }
+      },
+      "mps_live_allocated_bytes_at_end": 60950528,
+      "mps_driver_allocated_bytes_at_end": 411041792
+    },
+    {
+      "batch_examples": 2,
+      "n_particles": 1033,
+      "edge_counts": [
+        6757,
+        6743,
+        7963,
+        9067
+      ],
+      "parameter_count": 1624979,
+      "parity": {
+        "prediction": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 1.3932585716247559e-06,
+          "relative_l2_difference": 1.4450340824526763e-06,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "variance_head": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 5.364418029785156e-07,
+          "relative_l2_difference": 1.980431666502476e-07,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "normalized_target": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 0.0,
+          "relative_l2_difference": 0.0,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "loss": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 1.1920928955078125e-07,
+          "relative_l2_difference": 9.801633559852352e-08,
+          "atol": 2e-05,
+          "rtol": 0.0002,
+          "allclose": true
+        },
+        "parameter_gradients": {
+          "finite_cpu": true,
+          "finite_mps": true,
+          "max_abs_difference": 0.0006485916674137115,
+          "relative_l2_difference": 0.0008252495470991154,
+          "atol": 2e-05,
+          "rtol": 0.002,
+          "allclose": false
+        },
+        "all_checks_pass": false,
+        "cpu_loss": 1.2162185907363892,
+        "mps_loss": 1.2162187099456787
+      },
+      "timings": {
+        "precomputed_graph": {
+          "forward_no_grad": {
+            "cpu": {
+              "median_ms": 81.185292,
+              "q25_ms": 72.19189575,
+              "q75_ms": 87.17384375,
+              "raw_ms": [
+                82.023541,
+                62.284041,
+                88.798625,
+                107.757458,
+                74.893375,
+                86.312166,
+                93.551541,
+                83.949667,
+                62.082458,
+                61.189875,
+                68.168208,
+                86.63225,
+                73.533125,
+                67.652084,
+                80.130875,
+                80.956209,
+                81.414375,
+                76.803375,
+                89.608959,
+                95.866
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 19.4275625,
+              "q25_ms": 18.639,
+              "q75_ms": 22.1284165,
+              "raw_ms": [
+                18.587625,
+                28.539084,
+                22.628542,
+                20.422667,
+                21.961708,
+                19.860875,
+                19.522875,
+                18.749334,
+                16.671125,
+                26.614667,
+                31.039166,
+                20.43475,
+                17.166375,
+                14.514417,
+                18.656125,
+                17.883917,
+                18.702625,
+                19.33225,
+                27.589292,
+                18.6625
+              ],
+              "n": 20
+            }
+          },
+          "forward_backward_adam": {
+            "cpu": {
+              "median_ms": 435.602938,
+              "q25_ms": 398.4692705,
+              "q75_ms": 599.100687,
+              "raw_ms": [
+                373.750292,
+                399.135958,
+                459.943875,
+                571.671166,
+                364.508625,
+                590.523791,
+                584.42525,
+                641.393667,
+                313.673625,
+                359.557292,
+                864.789041,
+                625.065375,
+                452.888209,
+                396.469208,
+                414.987791,
+                410.703,
+                418.317667,
+                653.870417,
+                414.947,
+                624.831375
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 98.65383349999999,
+              "q25_ms": 86.350646,
+              "q75_ms": 116.49800025,
+              "raw_ms": [
+                118.394625,
+                109.769,
+                90.428375,
+                85.882958,
+                140.80175,
+                96.304667,
+                80.285708,
+                86.506542,
+                101.822458,
+                126.894375,
+                215.6325,
+                80.176791,
+                134.039375,
+                87.516209,
+                75.597583,
+                101.003,
+                115.865792,
+                81.566542,
+                101.330709,
+                88.808833
+              ],
+              "n": 20
+            }
+          }
+        },
+        "host_graph_and_transfer": {
+          "forward_backward_adam": {
+            "cpu": {
+              "median_ms": 347.50547900000004,
+              "q25_ms": 304.129677,
+              "q75_ms": 393.1973125,
+              "raw_ms": [
+                307.682041,
+                290.917417,
+                675.987209,
+                437.737084,
+                300.024708,
+                420.01,
+                749.469459,
+                532.3715,
+                320.252917,
+                291.579375,
+                305.498,
+                359.643,
+                298.580875,
+                316.384,
+                383.037458,
+                357.281583,
+                279.585667,
+                372.692875,
+                337.729375,
+                384.25975
+              ],
+              "n": 20
+            },
+            "mps": {
+              "median_ms": 90.0039375,
+              "q25_ms": 83.128896,
+              "q75_ms": 113.86847949999999,
+              "raw_ms": [
+                90.424833,
+                98.594625,
+                201.674042,
+                84.287833,
+                181.048959,
+                133.007542,
+                127.797667,
+                150.456417,
+                70.548542,
+                81.585333,
+                83.643417,
+                89.583042,
+                84.016125,
+                109.225417,
+                78.917333,
+                103.47875,
+                74.33375,
+                80.42675,
+                106.3755,
+                89.179417
+              ],
+              "n": 20
+            }
+          }
+        }
+      },
+      "projections": {
+        "cpu": {
+          "hours_for_500k_updates": 48.26464986111112,
+          "updates_in_72_hours": 745887.5202367671,
+          "planning_estimate_only": true
+        },
+        "mps": {
+          "hours_for_500k_updates": 12.500546875,
+          "updates_in_72_hours": 2879874.0055122585,
+          "planning_estimate_only": true
+        }
+      },
+      "mps_live_allocated_bytes_at_end": 122101248,
+      "mps_driver_allocated_bytes_at_end": 1562378240
+    }
+  ]
+}

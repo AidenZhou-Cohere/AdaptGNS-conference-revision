@@ -21,12 +21,8 @@ sys.path.insert(0, str(REPO / "adaptive-gns"))
 
 from gns import data_loader, reading_utils
 from gns.model_io import load_for_evaluation
+from gns.device_utils import add_device_argument, resolve_device, synchronize
 from research.budget_graph import candidates, select_pairs, random_pairs, directed
-
-
-def synchronize(device):
-    if torch.device(device).type == "cuda":
-        torch.cuda.synchronize(device)
 
 
 def predict_pairs(simulator, history, particle_types, material, pairs):
@@ -107,6 +103,7 @@ def sha256(path):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    add_device_argument(parser)
     parser.add_argument("--data_path", type=Path, required=True)
     parser.add_argument("--checkpoint", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
@@ -122,17 +119,19 @@ def main():
     budgets.add_argument("--extra_budget", type=int, default=None)
     parser.add_argument("--normalization_noise_std", type=float, default=None)
     parser.add_argument("--nmessage_passing_steps", type=int, default=None)
+    parser.add_argument("--radius_backend", choices=["auto", "pyg", "scipy", "scipy_host"], default=None)
     args = parser.parse_args()
     if (args.start_step < 2 or args.max_steps < 1 or not 0 <= args.extra_fraction <= 1
             or (args.extra_budget is not None and args.extra_budget < 0)
             or (args.max_trajectories is not None and args.max_trajectories < 1)):
         parser.error("Invalid start step, limits or pair budget")
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = resolve_device(args.device)
     metadata = reading_utils.read_metadata(str(args.data_path), "rollout")
     simulator, provenance = load_for_evaluation(
         args.checkpoint, metadata, device,
         normalization_noise_std=args.normalization_noise_std,
-        nmessage_passing_steps=args.nmessage_passing_steps)
+        nmessage_passing_steps=args.nmessage_passing_steps,
+        radius_backend=args.radius_backend)
     data_file = args.data_path / (args.split + ".npz")
     loader = data_loader.get_data_loader_by_trajectories(data_file)
     rng = np.random.default_rng(args.seed)

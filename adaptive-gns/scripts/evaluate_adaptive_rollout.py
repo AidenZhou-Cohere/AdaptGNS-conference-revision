@@ -21,6 +21,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 
 from gns import learned_simulator, data_loader, reading_utils
 from gns.model_io import load_for_evaluation
+from gns.device_utils import add_device_argument, resolve_device
 
 INPUT_SEQUENCE_LENGTH = 6
 KINEMATIC_PARTICLE_ID = 3
@@ -113,6 +114,7 @@ def adaptive_rollout_mse(simulator, positions, particle_type, material_property,
 def main():
     parser = argparse.ArgumentParser(
         description='Evaluate single-pass lagged-uncertainty rollout MSE')
+    add_device_argument(parser)
     parser.add_argument('--data_path', required=True,
                         help='Dataset directory (contains test.npz, metadata.json)')
     parser.add_argument('--model_path', required=True,
@@ -133,8 +135,8 @@ def main():
                         help='Legacy checkpoint training normalization noise (not input noise).')
     parser.add_argument('--nmessage_passing_steps', type=int, default=None,
                         help='Legacy checkpoint depth, including zero for an MLP.')
-    parser.add_argument('--radius_backend', choices=['pyg', 'scipy'], default=None,
-                        help='Legacy checkpoint graph backend; scipy is an explicit CPU reference')
+    parser.add_argument('--radius_backend', choices=['auto', 'pyg', 'scipy', 'scipy_host'], default=None,
+                        help='Explicit runtime graph backend override; scipy_host builds on CPU and transfers edges')
     args = parser.parse_args()
     if args.max_trajectories is not None and args.max_trajectories <= 0:
         parser.error('--max_trajectories must be positive')
@@ -162,7 +164,7 @@ def main():
         if output_stem.endswith(ext):
             output_stem = output_stem[:-len(ext)]
 
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    device = resolve_device(args.device)
     print(f"Device: {device}")
     print(f"Model:  {model_file}")
     print(f"Sigma percentile: {args.sigma_percentile}  |  Radius factor: {args.radius_factor}")

@@ -81,6 +81,17 @@ def main():
         "metadata_sha256": digest(args.data_dir/"metadata.json"),
         "code": {p.name:digest(p) for p in Path(__file__).parent.glob("*.py")},
     }
+    from research.pilot import load_frames
+    meta = json.loads((args.data_dir / "metadata.json").read_text())
+    reference = {"scope": "Post-hoc descriptive reference: zero normalized acceleration, no fitting or selection", "splits": {}}
+    for split, rng_seed in [("valid", 811), ("test", 812)]:
+        frames = load_frames(args.data_dir / (split + "-pilot.npz"), meta, 12, rng_seed)
+        groups = defaultdict(list)
+        for frame in frames:
+            groups[frame["trajectory"]].append(float(frame["target"].square().mean()))
+        reference["splits"][split] = {"trajectory_means": {k: float(np.mean(v)) for k,v in groups.items()}, "mean": float(np.mean([np.mean(v) for v in groups.values()])), "frame_ids": [f["id"] for f in frames]}
+    (args.folder.parent/"constant_acceleration_reference.json").write_text(json.dumps(reference,indent=2)+"\n")
+    result["constant_acceleration_reference"] = reference
     (args.folder.parent/"pilot_summary.json").write_text(json.dumps(result,indent=2)+"\n")
     names = {"base":"Base", "dense":"Dense", "random25":"Random", "speed25":"Speed", "current_risk25":"Current risk", "lagged_base_risk25":"Previous-base risk"}
     lines = ["# New WaterDrop pilot: five seeds, controlled edge budgets", "",

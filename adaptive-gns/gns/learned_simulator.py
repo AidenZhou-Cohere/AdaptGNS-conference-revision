@@ -5,6 +5,7 @@ import warnings
 from gns import graph_network
 from torch_geometric.nn import radius_graph
 from typing import Dict
+from gns.device_utils import resolve_radius_backend
 
 
 class LearnedSimulator(nn.Module):
@@ -63,8 +64,7 @@ class LearnedSimulator(nn.Module):
     self._uncertainty_parameterization = uncertainty_parameterization
     self._variance_floor = variance_floor
     self._max_num_neighbors = max_num_neighbors
-    if radius_backend not in {"pyg", "scipy"}:
-      raise ValueError("radius_backend must be pyg or scipy")
+    radius_backend = resolve_radius_backend(radius_backend, device)
     self._radius_backend = radius_backend
     self._checkpoint_config = dict(
         particle_dimensions=particle_dimensions, nnode_in=nnode_in,
@@ -130,18 +130,17 @@ class LearnedSimulator(nn.Module):
                              dtype=torch.long).flatten()
     if bool((counts <= 0).any()) or int(counts.sum()) != len(node_features):
       raise ValueError("Particle counts must be positive and sum to node count")
-    batch_ids = torch.repeat_interleave(
-        torch.arange(len(counts), device=node_features.device), counts)
 
     # radius_graph accepts r < radius not r <= radius
     # A torch tensor list of source and target nodes with shape (2, nedges)
-    if self._radius_backend == "scipy":
+    if self._radius_backend in {"scipy", "scipy_host"}:
       if node_features.device.type != "cpu":
-        raise ValueError("scipy radius backend is an explicit CPU reference backend")
+        if self._radius_backend != "scipy_host":
+          raise ValueError("scipy is CPU-only; use scipy_host for explicit host graph transfer")
       from scipy.spatial import cKDTree
-      points = node_features.detach().numpy()
+      points = node_features.detach().cpu().numpy()
       sources, targets, offset = [], [], 0
-      for count in counts.tolist():
+      for count in counts.cpu().tolist():
         local = points[offset:offset + count]
         tree = cKDTree(local)
         for target, neighbors in enumerate(tree.query_ball_point(local, radius)):
@@ -157,8 +156,11 @@ class LearnedSimulator(nn.Module):
           sources.extend((neighbors[order] + offset).tolist())
           targets.extend([target + offset] * len(order))
         offset += count
-      edge_index = torch.tensor([sources, targets], dtype=torch.long)
+      edge_index = torch.tensor([sources, targets], dtype=torch.long,
+                                device=node_features.device)
     else:
+      batch_ids = torch.repeat_interleave(
+          torch.arange(len(counts), device=node_features.device), counts)
       edge_index = radius_graph(
           node_features, r=radius, batch=batch_ids, loop=add_self_edges,
           max_num_neighbors=self._max_num_neighbors)
@@ -401,7 +403,12 @@ class LearnedSimulator(nn.Module):
     all_r = torch.cat([base_r, ext_r])
 
     combined = torch.stack([all_s, all_r], dim=0)  # (2, n_edges)
-    combined = torch.unique(combined, dim=1)
+    # Metal does not provide every unique(dim=...) variant. Graph set operations
+    # remain explicitly on the host for the hybrid backend, not a hidden kernel fallback.
+    if combined.device.type == "mps":
+      combined = torch.unique(combined.cpu(), dim=1).to(most_recent_position.device)
+    else:
+      combined = torch.unique(combined, dim=1)
     return combined[0], combined[1]
 
   def _forward_with_edge_index(
@@ -530,13 +537,18 @@ class LearnedSimulator(nn.Module):
       raise ValueError("Particle counts must be positive and match scores")
     if scores.ndim != 1 or not bool(torch.isfinite(scores).all()):
       raise ValueError("Uncertainty scores must be a finite one-dimensional tensor")
+    output_device = scores.device
+    if scores.device.type == "mps":
+      # The controller is discrete; host quantiles preserve the CPU policy and
+      # avoid relying on unsupported Metal sort/quantile kernels.
+      scores = scores.detach().cpu()
     mask = torch.zeros_like(scores, dtype=torch.bool)
     start = 0
     for count in counts:
       local = scores[start:start + count]
       mask[start:start + count] = local > torch.quantile(local, percentile / 100)
       start += count
-    return mask
+    return mask.to(output_device)
 
   def head_to_variance(self, head):
     """Convert head output to per-coordinate normalized acceleration variance."""

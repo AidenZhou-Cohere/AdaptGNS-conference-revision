@@ -1,0 +1,78 @@
+{
+  "training": [
+    {
+      "completed_steps": 1,
+      "loss": 1.133432149887085,
+      "lr": 0.0001,
+      "frame_ids": [
+        "train:000595:505",
+        "train:000580:962"
+      ],
+      "particles": 789,
+      "elapsed_seconds": 2.6910657919943333
+    },
+    {
+      "completed_steps": 2,
+      "loss": 0.988225519657135,
+      "lr": 9.999769741839075e-05,
+      "frame_ids": [
+        "train:000102:722",
+        "train:000797:594"
+      ],
+      "particles": 1095,
+      "elapsed_seconds": 2.97228837502189
+    },
+    {
+      "completed_steps": 3,
+      "loss": 0.9653638005256653,
+      "lr": 9.999539488980031e-05,
+      "frame_ids": [
+        "train:000532:290",
+        "train:000410:869"
+      ],
+      "particles": 920,
+      "elapsed_seconds": 3.3538315419573337
+    },
+    {
+      "completed_steps": 4,
+      "loss": 0.9301665425300598,
+      "lr": 9.999309241422748e-05,
+      "frame_ids": [
+        "train:000176:317",
+        "train:000082:197"
+      ],
+      "particles": 1074,
+      "elapsed_seconds": 3.6818787090014666
+    },
+    {
+      "completed_steps": 5,
+      "loss": 0.9266044497489929,
+      "lr": 9.999078999167102e-05,
+      "frame_ids": [
+        "train:000882:810",
+        "train:000902:50"
+      ],
+      "particles": 1218,
+      "elapsed_seconds": 3.9667778750881553
+    }
+  ],
+  "validation": [
+    {
+      "completed_steps": 0,
+      "coordinate_mse": 0.03192639140558314,
+      "constant_free_gaussian_nll": -0.3075191036670594,
+      "realized_vector_se": 0.06385278281116628,
+      "predicted_vector_se": 1.4069727739838627,
+      "binned_vector_se_calibration_gap": 1.3431199911726959
+    },
+    {
+      "completed_steps": 5,
+      "coordinate_mse": 0.04541627504907944,
+      "constant_free_gaussian_nll": 0.028176162030855153,
+      "realized_vector_se": 0.09083255009815888,
+      "predicted_vector_se": 1.9642786699931336,
+      "binned_vector_se_calibration_gap": 1.8734461198949743
+    }
+  ],
+  "elapsed_seconds": 5.506049874937162
+}
