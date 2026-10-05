@@ -2,7 +2,7 @@
 
 [Saved curves](full_validation_curves_20261005.png) · [Numeric summary](full_validation_curves_20261005.json)
 
-At the October 5, 08:53 UTC snapshot, faithful and NLL seeds 0 and 1 have each completed the fixed 100,000 updates. Faithful seed 2 is running at 6,500 updates; NLL seed 2 is unstarted. The existing supervisor advanced automatically, with no duplicate training. All four final checkpoint byte hashes match their saved pointers. All 86 scheduled validation records are retained (21 per completed model plus faithful seed 2 at initialization and 5k). The six-model study and all full-model test evaluations remain incomplete.
+At the October 5, 11:53 UTC snapshot, faithful seeds 0–2 and NLL seeds 0–1 have each completed the fixed 100,000 updates. NLL seed 2 is running at 2,100 updates. The existing supervisor advanced automatically, with no duplicate training. All five final checkpoint byte hashes match their saved pointers. All 106 scheduled validation records are retained (21 per completed model plus NLL seed 2 initialization). The six-model study and all full-model test evaluations remain incomplete.
 
 | Model | Update | Coordinate MSE | Binned vector-risk gap |
 |---|---:|---:|---:|
@@ -50,6 +50,25 @@ At the October 5, 08:53 UTC snapshot, faithful and NLL seeds 0 and 1 have each c
 | faithful seed 1 | 100,000 | 0.00905942 | 0.00831614 |
 | faithful seed 2 | 0 | 0.04784364 | 0.99512302 |
 | faithful seed 2 | 5,000 | 0.02855401 | 0.03308256 |
+| faithful seed 2 | 10,000 | 0.04210602 | 0.01473980 |
+| faithful seed 2 | 15,000 | 0.02090587 | 0.02971389 |
+| faithful seed 2 | 20,000 | 0.02161414 | 0.02653115 |
+| faithful seed 2 | 25,000 | 0.02089469 | 0.01056508 |
+| faithful seed 2 | 30,000 | 0.02131099 | 0.00864989 |
+| faithful seed 2 | 35,000 | 0.01514568 | 0.00677632 |
+| faithful seed 2 | 40,000 | 0.01470791 | 0.01423152 |
+| faithful seed 2 | 45,000 | 0.01348364 | 0.00894491 |
+| faithful seed 2 | 50,000 | 0.01409105 | 0.01921253 |
+| faithful seed 2 | 55,000 | 0.01153141 | 0.01465916 |
+| faithful seed 2 | 60,000 | 0.00981675 | 0.01969201 |
+| faithful seed 2 | 65,000 | 0.01151657 | 0.01195382 |
+| faithful seed 2 | 70,000 | 0.01009408 | 0.01389522 |
+| faithful seed 2 | 75,000 | 0.00992735 | 0.01410624 |
+| faithful seed 2 | 80,000 | 0.01057413 | 0.00705749 |
+| faithful seed 2 | 85,000 | 0.00892347 | 0.00990891 |
+| faithful seed 2 | 90,000 | 0.00897560 | 0.01112693 |
+| faithful seed 2 | 95,000 | 0.00924206 | 0.00955363 |
+| faithful seed 2 | 100,000 | 0.00875011 | 0.01110184 |
 | nll seed 0 | 0 | 0.02112561 | 1.37612962 |
 | nll seed 0 | 5,000 | 0.03379660 | 0.03363214 |
 | nll seed 0 | 10,000 | 0.03238986 | 0.00671458 |
@@ -92,18 +111,19 @@ At the October 5, 08:53 UTC snapshot, faithful and NLL seeds 0 and 1 have each c
 | nll seed 1 | 90,000 | 0.01126841 | 0.00592475 |
 | nll seed 1 | 95,000 | 0.00940738 | 0.00862123 |
 | nll seed 1 | 100,000 | 0.01003003 | 0.00484836 |
+| nll seed 2 | 0 | 0.04784364 | 0.99512302 |
 
-At the fixed seed-0 endpoints, NLL coordinate MSE is **0.00945431** versus faithful **0.00811862** (**16.45% worse**); its binned vector-risk gap is **0.00663060** versus **0.01228642** (**46.03% smaller**), and Gaussian NLL is **−4.48935** versus **−4.28672**. At seed 1, NLL coordinate MSE is **0.01003003** versus faithful **0.00905942** (**10.71% worse**); its gap is **0.00484836** versus **0.00831614** (**41.70% smaller**), and Gaussian NLL is **−4.43652** versus **−4.30024**. Both completed pairs show this validation tradeoff. These are clean normalized-acceleration diagnostics, not a complete three-seed estimate, conditional-calibration guarantee, policy comparison or rollout result.
+At the fixed seed-0 endpoints, NLL coordinate MSE is **0.00945431** versus faithful **0.00811862** (**16.45% worse**); its binned vector-risk gap is **0.00663060** versus **0.01228642** (**46.03% smaller**), and Gaussian NLL is **−4.48935** versus **−4.28672**. At seed 1, NLL coordinate MSE is **0.01003003** versus faithful **0.00905942** (**10.71% worse**); its gap is **0.00484836** versus **0.00831614** (**41.70% smaller**), and Gaussian NLL is **−4.43652** versus **−4.30024**. Both completed pairs show this validation tradeoff. These are clean normalized-acceleration diagnostics, not a complete paired three-seed objective estimate, conditional-calibration guarantee, policy comparison or rollout result.
 
-Every scheduled adverse interval remains. Faithful seed 0 final MSE improves 7.73% from 95k while its gap worsens 72.33% and Gaussian NLL worsens by 0.03782486. NLL seed 0 final MSE changes by less than 0.01% from 95k while its gap worsens 12.37% and Gaussian NLL worsens by 0.00831541; final MSE is 1.39% above 90k. NLL seed 0's earlier 5k error of 0.03379660 remains 60.0% above its initialization. Faithful and NLL seed 1 final MSE are **2.74% and 6.62% worse than 95k**, respectively, despite smaller gaps and better likelihood. Their gaps increased **77.69% and 45.51% at 95k**, respectively. Earlier adverse intervals and both seed-0 endpoint reversals remain recorded. These diagnostics do not select an earlier checkpoint. These observations do not select an earlier checkpoint.
+Every scheduled adverse interval remains. Faithful seed 0 final MSE improves 7.73% from 95k while its gap worsens 72.33% and Gaussian NLL worsens by 0.03782486. NLL seed 0 final MSE changes by less than 0.01% from 95k while its gap worsens 12.37% and Gaussian NLL worsens by 0.00831541; final MSE is 1.39% above 90k. NLL seed 0's earlier 5k error of 0.03379660 remains 60.0% above its initialization. Faithful and NLL seed 1 final MSE are **2.74% and 6.62% worse than 95k**, respectively, despite smaller gaps and better likelihood. Their gaps increased **77.69% and 45.51% at 95k**, respectively. Earlier adverse intervals and both seed-0 endpoint reversals remain recorded. These diagnostics do not select an earlier checkpoint.
 
 The 20k validation predates a system restart. Its saved bytes were preserved when the reviewed recovery restored the 20k model/optimizer/RNG state; resumed training replayed at least 1,600 unsaved updates before the 25k validation. [Recovery evidence](full_training_recovery_20261004T1853.json) retains the interrupted logs' identities and differing replay losses. Restoring state does not establish bitwise-identical Metal continuation.
 
 The read-only summarizer verifies the declared protocol, fixed configuration, complete frozen-source file set and its current hashes. It recomputes equal-frame trajectory means and equal-trajectory means from saved records, checks coordinate/vector units, and checks the arithmetic consistency of calibration-bin counts, masses, risk totals and gap. It does not load models or data, recompute predictions, or recover particle-level bin membership from frame means. Missing protocol files cannot hide existing results as unstarted models.
 
-The latest independent audit of NLL seed 1 at 90k/95k/100k and faithful seed 2 at 0/5k passes 13,168 saved-record checks without anomalies. Fixed source/configuration/frame identities were verified. All six pending NLL-seed-1 audits through 90k and earlier audits remain preserved, including every adverse interval. These checks do not load models, reconstruct predictions or recover particle-level calibration-bin membership. Curves were generated at 08:54:16 UTC; their 86 validation records agree with the 08:53:34 progress snapshot, while the raw running-status sample is separately dated.
+The latest independent audit of faithful seed 2 at 80k/85k/90k/95k/100k and NLL seed 2 initialization passes 15,780 saved-record checks without anomalies. Fixed source/configuration/frame identities were verified. Five earlier faithful-seed-2 audits through 80k and all previous audits remain preserved, including every adverse interval. These checks do not load models, reconstruct predictions or recover particle-level calibration-bin membership. Curves were generated at 11:54:07 UTC; their 106 validation records agree with the 11:53:35 progress snapshot, while the raw running-status sample is separately dated.
 
-Only faithful initialization and 5k currently have all three seed measurements; their learning-curve means and sample SDs are descriptive early diagnostics. Every final three-seed endpoint remains undefined until seed 2 finishes; two completed seeds do not replace the requested three. Every seed remains visible. Objective-level means and sample SDs require all three seed measurements at the same scheduled update; available seeds are never substituted for the requested group. Failed-run histories are retained. All scheduled records are required for a run declared complete. The plotted units use the stored noise-adjusted training normalization and must not be confused with position-rollout MSE or the compact pilot's differently normalized acceleration metrics.
+All 21 scheduled faithful learning-curve updates now have all three seeds. At the fixed final endpoint, faithful coordinate MSE is **0.00864272 ± 0.00047951**, binned vector-risk gap **0.01056813 ± 0.00203824**, and Gaussian NLL **−4.269077 ± 0.042800** (three-seed mean ± sample SD). The NLL three-seed curve is defined only at initialization in this snapshot; its final endpoint and the paired three-seed objective comparison remain incomplete. Faithful seed 2 completed at 11:46:32 UTC: final coordinate MSE **0.00875011**, binned vector-risk gap **0.01110184**, and Gaussian NLL **−4.220276**. Its final gap worsens **16.21%** from 95k despite improving MSE and likelihood. Its 85k gap increased 40.40%; at 90k MSE increased 0.58%, gap 12.29% and NLL worsened 0.039170; at 95k MSE increased 2.97% and NLL worsened 0.044306. All earlier adverse observations are retained. Every seed remains visible. Objective-level means and sample SDs require all three seed measurements at the same scheduled update; available seeds are never substituted for the requested group. Failed-run histories are retained. All scheduled records are required for a run declared complete. The plotted units use the stored noise-adjusted training normalization and must not be confused with position-rollout MSE or the compact pilot's differently normalized acceleration metrics.
 
 Verification: **30 synthetic tests passed**. They include unequal frame and particle weights, missing seeds, corrupt identities/metrics/bins, incomplete validation histories, missing provenance and incorrect source-file lists. An independent read-only agent review found two provenance gaps; both were reproduced, fixed and added to the tests. The plot was visually inspected. These checks do not replace human author verification.
 

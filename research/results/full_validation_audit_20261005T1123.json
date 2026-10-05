@@ -1,0 +1,267 @@
+{
+  "recorded_utc": "2026-10-05T11:23:49.475822+00:00",
+  "scope": "Independent read-only saved clean-validation audit of faithful_seed2 at updates [60000, 65000, 70000, 75000, 80000]; first record is prior reference. Not model execution, checkpoint selection, final-model certification or test evidence.",
+  "files": {
+    "60000": {
+      "path": "faithful_seed2/validation/step-060000.json",
+      "sha256": "86632139b4801874815f5f87dcd6546540c4b91083969f31ffef47253665645e"
+    },
+    "65000": {
+      "path": "faithful_seed2/validation/step-065000.json",
+      "sha256": "979eeaf613dee4c5b30da85de0d88300a59107e658f9ede400ec68670310653d"
+    },
+    "70000": {
+      "path": "faithful_seed2/validation/step-070000.json",
+      "sha256": "d1f78cdae9847399b5e880fb9cca331dae39cd8aa4fbc14b3b88167f5f1d0ebc"
+    },
+    "75000": {
+      "path": "faithful_seed2/validation/step-075000.json",
+      "sha256": "87f3dcad5abc8ba81ca52da205aba56d68f22aa7c62c9efcadae68afca8e502e"
+    },
+    "80000": {
+      "path": "faithful_seed2/validation/step-080000.json",
+      "sha256": "02311fd0e900ee31ba71f010b1bf97d6fe8245fa924725c4186882aa57d16e28"
+    }
+  },
+  "configuration": {
+    "protocol_file_sha256": "0445f7308cbe9b9795811c2d80ae28280fe29cb63dff25e044041735c91ea409",
+    "canonical_run_config_sha256": "0f7af597a04ea0ca2bb11a7010dd43d1e4f995900828b894a8c3ff182354b31f",
+    "matches_previously_verified_config": true
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+    },
+    "protocol_sha256": {
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true
+  },
+  "checks": {
+    "saved_snapshot": 5,
+    "identity": 1713,
+    "source_identity": 36,
+    "finite_scalar": 5360,
+    "domain": 4560,
+    "arithmetic": 1435,
+    "hash_stability": 26
+  },
+  "checks_total": 13135,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "60000": {
+      "coordinate_mse": 0.009816750542118625,
+      "constant_free_gaussian_nll": -3.941076335755727,
+      "realized_vector_se": 0.01963350108423725,
+      "predicted_vector_se": 0.03932551370414037,
+      "binned_vector_se_calibration_gap": 0.019692012619903127
+    },
+    "65000": {
+      "coordinate_mse": 0.011516573659779872,
+      "constant_free_gaussian_nll": -3.8933860442272405,
+      "realized_vector_se": 0.023033147319559744,
+      "predicted_vector_se": 0.034986971275983804,
+      "binned_vector_se_calibration_gap": 0.011953823956424064
+    },
+    "70000": {
+      "coordinate_mse": 0.010094082552990876,
+      "constant_free_gaussian_nll": -3.983259751758932,
+      "realized_vector_se": 0.020188165105981752,
+      "predicted_vector_se": 0.034083381310722555,
+      "binned_vector_se_calibration_gap": 0.01389521620474081
+    },
+    "75000": {
+      "coordinate_mse": 0.009927347285855762,
+      "constant_free_gaussian_nll": -4.056803628600189,
+      "realized_vector_se": 0.019854694571711524,
+      "predicted_vector_se": 0.0339609385825391,
+      "binned_vector_se_calibration_gap": 0.014106244010827572
+    },
+    "80000": {
+      "coordinate_mse": 0.01057412613751303,
+      "constant_free_gaussian_nll": -3.9969570816597826,
+      "realized_vector_se": 0.02114825227502606,
+      "predicted_vector_se": 0.02820574590994693,
+      "binned_vector_se_calibration_gap": 0.007057493634920871
+    }
+  },
+  "comparisons": {
+    "65000_versus_60000": {
+      "coordinate_mse": {
+        "difference": 0.0016998231176612467,
+        "percent_change": 17.315537461894138
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.04769029152848647,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.0033996462353224934,
+        "percent_change": 17.315537461894138
+      },
+      "predicted_vector_se": {
+        "difference": -0.0043385424281565665,
+        "percent_change": -11.032385897859953
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.007738188663479063,
+        "percent_change": -39.29607812488356
+      }
+    },
+    "70000_versus_65000": {
+      "coordinate_mse": {
+        "difference": -0.0014224911067889957,
+        "percent_change": -12.35168678473234
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.08987370753169133,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.0028449822135779915,
+        "percent_change": -12.35168678473234
+      },
+      "predicted_vector_se": {
+        "difference": -0.0009035899652612492,
+        "percent_change": -2.5826470034618354
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0019413922483167458,
+        "percent_change": 16.240763251941903
+      }
+    },
+    "75000_versus_70000": {
+      "coordinate_mse": {
+        "difference": -0.00016673526713511383,
+        "percent_change": -1.6518120023271465
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.0735438768412573,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.00033347053427022766,
+        "percent_change": -1.6518120023271465
+      },
+      "predicted_vector_se": {
+        "difference": -0.00012244272818345142,
+        "percent_change": -0.35924466257380994
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.00021102780608676236,
+        "percent_change": 1.5187083308193738
+      }
+    },
+    "80000_versus_75000": {
+      "coordinate_mse": {
+        "difference": 0.0006467788516572679,
+        "percent_change": 6.51512265092995
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.059846546940406586,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.0012935577033145358,
+        "percent_change": 6.51512265092995
+      },
+      "predicted_vector_se": {
+        "difference": -0.005755192672592172,
+        "percent_change": -16.946506524266624
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.007048750375906701,
+        "percent_change": -49.969009259277456
+      }
+    },
+    "80000_versus_60000": {
+      "coordinate_mse": {
+        "difference": 0.000757375595394405,
+        "percent_change": 7.715135391745931
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.05588074590405556,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.00151475119078881,
+        "percent_change": 7.715135391745931
+      },
+      "predicted_vector_se": {
+        "difference": -0.01111976779419344,
+        "percent_change": -28.27621751581264
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.012634518984982256,
+        "percent_change": -64.16062811280287
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Only the five specified faithful_seed2 validation records, faithful_seed2 saved configuration, frozen source/protocol bytes, the needed60k reference from the prior10:53 audit, saved11:23 progress snapshot and this audit source were read.",
+    "No model, checkpoint, dataset, test file, training log or particle-level prediction was loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be independently recovered.",
+    "Raw dataset hashes and native process identity are not reverified here; data identity fields are protected by canonical configuration checks.",
+    "No later validation records were polled or evaluated. No scientific source, protocol, manuscript or public result artifact was edited."
+  ],
+  "audit_script_sha256": "ce8373efa975cd5aacb458d0401db76cc8a6e0be9480c253444e28730d780ce7",
+  "saved_snapshot": {
+    "path": "work/training_progress_20261005T1123.json",
+    "sha256": "b4718f528ca0387bcc2987eed618bdca09cd5eaa028d3005ad7470676b28654d",
+    "recorded_utc": "2026-10-05T11:23:35.465826+00:00",
+    "states": {
+      "faithful_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed2": {
+        "state": "running",
+        "completed_steps": 82900
+      },
+      "nll_seed2": {
+        "state": "not_started",
+        "completed_steps": 0
+      }
+    },
+    "limit": "Saved status only; no independent native process or checkpoint verification."
+  }
+}

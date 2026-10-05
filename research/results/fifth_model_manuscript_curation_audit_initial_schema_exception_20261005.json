@@ -1,0 +1,10 @@
+{
+  "recorded_utc": "2026-10-05T11:57:38.047183+00:00",
+  "passed": false,
+  "failure_kind": "audit_optional_schema_field_exception",
+  "exception": "KeyError: 'snapshot_scope'",
+  "location": "manuscript_curation_audit.py:37",
+  "script_sha256": "f86d123624d8b3097bab052d2abc294a2a0eb99b6d3d953db2ceb58d05fd024b",
+  "classification": "Reused audit expected an optional narrative field in the curated status JSON. This is an audit schema assumption, not an experimental defect.",
+  "scientific_artifacts_changed": false
+}
