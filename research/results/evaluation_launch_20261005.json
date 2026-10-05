@@ -1,0 +1,142 @@
+{
+  "recorded_utc": "2026-10-05T17:01:26.182514+00:00",
+  "scope": "Completion gate and authorized local evaluation launch; not a complete scientific result",
+  "preflight": {
+    "state": "ready",
+    "test_source_accessed": false,
+    "test_manifest_accessed": false,
+    "models": [
+      {
+        "objective": "faithful",
+        "seed": 0,
+        "name": "faithful_seed0",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed0/checkpoint-100000.pt",
+        "checkpoint_sha256": "35eef43a0d50c812f9d440a528649a086e141eec20062e649c1487ef381a48db",
+        "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      },
+      {
+        "objective": "nll",
+        "seed": 0,
+        "name": "nll_seed0",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed0/checkpoint-100000.pt",
+        "checkpoint_sha256": "5cc7382c800f48133bf680c265339d4594af0bbd4af7f73b2d5c1271071f6b45",
+        "run_config_sha256": "a42e2512fb5914adaa7834117d9c6c921d570692162e8b654a619f3c862620d2",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      },
+      {
+        "objective": "faithful",
+        "seed": 1,
+        "name": "faithful_seed1",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/checkpoint-100000.pt",
+        "checkpoint_sha256": "14dcd33ffd5ce5952ad5c2dfafe18812d044561927cfd00ae1bc6bbcbe2f83bf",
+        "run_config_sha256": "1af22899a0af5750df7de2481b8f53ffd1a5509231e6e4b5757295cd4b5b5774",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      },
+      {
+        "objective": "nll",
+        "seed": 1,
+        "name": "nll_seed1",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/checkpoint-100000.pt",
+        "checkpoint_sha256": "fcc25057d75a4dfab5eec36264e89ad760f2d878d60a93915a5a66374e716833",
+        "run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      },
+      {
+        "objective": "faithful",
+        "seed": 2,
+        "name": "faithful_seed2",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed2/checkpoint-100000.pt",
+        "checkpoint_sha256": "42c8c157c8a48cffaa58e4377193c14cc2403b4e5119299a1a90eebd018a55d3",
+        "run_config_sha256": "0f7af597a04ea0ca2bb11a7010dd43d1e4f995900828b894a8c3ff182354b31f",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      },
+      {
+        "objective": "nll",
+        "seed": 2,
+        "name": "nll_seed2",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/checkpoint-100000.pt",
+        "checkpoint_sha256": "1453a4b1e7ba3c52c02acc42f6273c66f331b891e9a03caf24ada4b007eae5c8",
+        "run_config_sha256": "9d79c7c8115302134e4c95cdf4c02f390c43192955b0bedc30948a44c8fa2cb7",
+        "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+        "common_training_sha256": "de1368cf3ddc7b263a325cefef74463a6ffb8a75e96148177c0f57b2c8941089"
+      }
+    ],
+    "blocking_reasons": [],
+    "validation_record_count": 126
+  },
+  "launch": {
+    "recorded_utc": "2026-10-05T16:05:10.293300+00:00",
+    "supervisor_pid": 95586,
+    "caffeinate_pid": 95587,
+    "command": [
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python",
+      "-m",
+      "research.run_evaluation_queue",
+      "--training-dir",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k",
+      "--data-dir",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted",
+      "--raw-test",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/test.tfrecord",
+      "--output-dir",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-evaluation",
+      "--deadline-utc",
+      "2026-10-07T08:00:00+00:00",
+      "--run"
+    ],
+    "native_local_only": true,
+    "preflight_state": "ready"
+  },
+  "verified_test_identity": {
+    "manifest_sha256": "fd1fdfcb0e526778a1da6f279992eb2db263f228cfecafcc74735b7f0f8b3476",
+    "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+    "source_sha256": "b7f147c22e96fd3fbb8d595702cb8c85e412bfb449d7b4d761cc03eb76246c31",
+    "record_count": 30,
+    "evaluated_source_indices": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ]
+  },
+  "queue_protocol_sha256": "b197edfd2d3e8e98990ac3ebb3289a54b5a8ee9b44e518fd7e93aab631717679",
+  "latest_recorded_queue_state": {
+    "state": "running",
+    "pid": 95586,
+    "updated_utc": "2026-10-05T16:05:17.766874+00:00",
+    "current_job": "rollout/faithful_seed0",
+    "child_pid": 95606,
+    "error": null
+  },
+  "prior_test_exposure": "Historical aggregate benchmark outcomes and official indices0-2 were already inspected; no pristine independent confirmation claim.",
+  "training_source_protocol_changed": false
+}

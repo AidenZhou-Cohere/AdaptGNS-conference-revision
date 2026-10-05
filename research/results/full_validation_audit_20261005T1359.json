@@ -1,0 +1,352 @@
+{
+  "recorded_utc": "2026-10-05T13:59:54.828642+00:00",
+  "scope": "Independent bounded audit of NLL seed2 30k(reference),35k,40k,45k(new) saved validation only, tied to the 13:59:09 UTC snapshot. No later records inspected.",
+  "audit_script_sha256": "9f505e3a904e05a69820109d493edfc4c875d8d45d2d853fc916f8735bef1b90",
+  "saved_snapshot": {
+    "path": "work/training_progress_20261005T1359.json",
+    "sha256": "14325df8552e66e09fce0f1d99553933c053de21d02841bd142896809a0ca0ec",
+    "recorded_utc": "2026-10-05T13:59:09.532420+00:00",
+    "states": {
+      "faithful_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed2": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed2": {
+        "state": "running",
+        "completed_steps": 46800
+      }
+    },
+    "limit": "Saved statuses only; no native process or checkpoint-byte verification."
+  },
+  "files": {
+    "nll_seed2/30000": {
+      "path": "nll_seed2/validation/step-030000.json",
+      "sha256": "60fc0df59feeb317a5055ec35f670589f98bb34f89e0eafeac614694e195cfc3"
+    },
+    "nll_seed2/35000": {
+      "path": "nll_seed2/validation/step-035000.json",
+      "sha256": "70fc24c9d70fda36a6c994b053423f75278ba0be1939982f4a68419e1e644874"
+    },
+    "nll_seed2/40000": {
+      "path": "nll_seed2/validation/step-040000.json",
+      "sha256": "9c6a8553d637f22ab81bdcfd3df3d8e3cee3dbdcd4bce39f939431ee6f493dcc"
+    },
+    "nll_seed2/45000": {
+      "path": "nll_seed2/validation/step-045000.json",
+      "sha256": "a7edb26bdf31de9a4fff9d8f3dd6c9eaa02a62fe6d5cdc351ecf09d2abf921e9"
+    }
+  },
+  "configuration": {
+    "nll_seed2": {
+      "protocol_file_sha256": "ca6fa06f758e5337e3dab1dca5a8b1db44b4e749556f2089b0ebabcdb810546c",
+      "canonical_run_config_sha256": "9d79c7c8115302134e4c95cdf4c02f390c43192955b0bedc30948a44c8fa2cb7"
+    }
+  },
+  "data_identity_fields": {
+    "train": {
+      "manifest_sha256": "7cb030a131523679a97b7bcf5595434bb9c9660c96bda0d6e70e8e62ab6cfdab",
+      "source": {
+        "file": "train.tfrecord",
+        "size_bytes": 4541246980,
+        "sha256": "3fc97233eecff0216751ed36810f7e6f95f0224b2e93c86f991fab98e73f04eb",
+        "CRC_verified": true,
+        "record_count": 1000
+      },
+      "n_trajectories": 1000,
+      "eligible_frames": 995000,
+      "trajectory_ids_sha256": "75bd0ed478261ebfaa313cc90b71ae64474bf98fa9176e70b538ca3747f18cd5"
+    },
+    "valid": {
+      "manifest_sha256": "cb5146de5d50384492001288b6fe4137551cc4553494f0ff64bd4d5830f0d125",
+      "source": {
+        "file": "valid.tfrecord",
+        "size_bytes": 137190408,
+        "sha256": "805fd3e03b15aa45e2f79e2ebe53f35473de10f9fb42c5d7cc963d663d44d364",
+        "CRC_verified": true,
+        "record_count": 30
+      },
+      "n_trajectories": 30,
+      "eligible_frames": 29850,
+      "trajectory_ids_sha256": "902a80b8dd46beeda4868499a73f21127b49fd92a44b06d4815d069ca682c761"
+    },
+    "metadata_sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec",
+    "verification_limit": "Saved data identity fields are protected by exact prior configuration byte/canonical hashes; no raw dataset or manifest bytes were read."
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "verified_file_count": 17,
+    "source_sha256": {
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+    },
+    "protocol_sha256": {
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_checked": true,
+    "dynamic_particle_counts_across_records_checked": true,
+    "training_schedules": "Only NLLseed2 is audited; no training minibatch/noise schedule comparisons or assertions."
+  },
+  "checks": {
+    "identity": 1384,
+    "data_identity_fields": 10,
+    "source_identity": 37,
+    "saved_snapshot": 12,
+    "finite_scalar": 4288,
+    "domain": 3648,
+    "arithmetic": 1148,
+    "hash_stability": 25
+  },
+  "checks_total": 10552,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "nll_seed2/30000": {
+      "coordinate_mse": 0.015777409516835338,
+      "constant_free_gaussian_nll": -3.867347413563358,
+      "realized_vector_se": 0.031554819033670675,
+      "predicted_vector_se": 0.03986515781080731,
+      "binned_vector_se_calibration_gap": 0.008310338777136635
+    },
+    "nll_seed2/35000": {
+      "coordinate_mse": 0.017087082636353144,
+      "constant_free_gaussian_nll": -3.857642125395664,
+      "realized_vector_se": 0.03417416527270629,
+      "predicted_vector_se": 0.035480197386759935,
+      "binned_vector_se_calibration_gap": 0.0024713115840645935
+    },
+    "nll_seed2/40000": {
+      "coordinate_mse": 0.014337565111424637,
+      "constant_free_gaussian_nll": -3.8705579977481075,
+      "realized_vector_se": 0.028675130222849274,
+      "predicted_vector_se": 0.03925012098973628,
+      "binned_vector_se_calibration_gap": 0.010574990766887005
+    },
+    "nll_seed2/45000": {
+      "coordinate_mse": 0.012554549177940877,
+      "constant_free_gaussian_nll": -4.009052789462633,
+      "realized_vector_se": 0.025109098355881754,
+      "predicted_vector_se": 0.03612671091431948,
+      "binned_vector_se_calibration_gap": 0.01101761255843773
+    }
+  },
+  "comparisons": {
+    "nll_seed2/35000_versus_30000": {
+      "coordinate_mse": {
+        "difference": 0.0013096731195178062,
+        "percent_change": 8.300938871620932,
+        "direction_for_lower_is_better": "higher"
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.009705288167694004,
+        "percent_change": null,
+        "direction_for_lower_is_better": "higher"
+      },
+      "realized_vector_se": {
+        "difference": 0.0026193462390356123,
+        "percent_change": 8.300938871620932,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "predicted_vector_se": {
+        "difference": -0.004384960424047374,
+        "percent_change": -10.999480912273285,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.005839027193072041,
+        "percent_change": -70.26220410094888,
+        "direction_for_lower_is_better": "lower"
+      }
+    },
+    "nll_seed2/40000_versus_35000": {
+      "coordinate_mse": {
+        "difference": -0.002749517524928507,
+        "percent_change": -16.091205172021862,
+        "direction_for_lower_is_better": "lower"
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.012915872352443625,
+        "percent_change": null,
+        "direction_for_lower_is_better": "lower"
+      },
+      "realized_vector_se": {
+        "difference": -0.005499035049857014,
+        "percent_change": -16.091205172021862,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "predicted_vector_se": {
+        "difference": 0.003769923602976344,
+        "percent_change": 10.625430185411421,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.00810367918282241,
+        "percent_change": 327.9100553356449,
+        "direction_for_lower_is_better": "higher"
+      }
+    },
+    "nll_seed2/45000_versus_40000": {
+      "coordinate_mse": {
+        "difference": -0.0017830159334837597,
+        "percent_change": -12.43597444633744,
+        "direction_for_lower_is_better": "lower"
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.13849479171452517,
+        "percent_change": null,
+        "direction_for_lower_is_better": "lower"
+      },
+      "realized_vector_se": {
+        "difference": -0.0035660318669675194,
+        "percent_change": -12.43597444633744,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "predicted_vector_se": {
+        "difference": -0.003123410075416798,
+        "percent_change": -7.957708146259101,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.00044262179155072495,
+        "percent_change": 4.185552510709378,
+        "direction_for_lower_is_better": "higher"
+      }
+    },
+    "nll_seed2/45000_versus_30000": {
+      "coordinate_mse": {
+        "difference": -0.0032228603388944604,
+        "percent_change": -20.427056390058816,
+        "direction_for_lower_is_better": "lower"
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.1417053758992748,
+        "percent_change": null,
+        "direction_for_lower_is_better": "lower"
+      },
+      "realized_vector_se": {
+        "difference": -0.006445720677788921,
+        "percent_change": -20.427056390058816,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "predicted_vector_se": {
+        "difference": -0.003738446896487828,
+        "percent_change": -9.377730082569368,
+        "direction_for_lower_is_better": "not_assessed"
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0027072737813010946,
+        "percent_change": 32.577177103168566,
+        "direction_for_lower_is_better": "higher"
+      }
+    }
+  },
+  "adverse_outcomes": {
+    "nll_seed2/35000_versus_30000": {
+      "coordinate_mse": {
+        "difference": 0.0013096731195178062,
+        "percent_change": 8.300938871620932,
+        "direction_for_lower_is_better": "higher"
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.009705288167694004,
+        "percent_change": null,
+        "direction_for_lower_is_better": "higher"
+      }
+    },
+    "nll_seed2/40000_versus_35000": {
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.00810367918282241,
+        "percent_change": 327.9100553356449,
+        "direction_for_lower_is_better": "higher"
+      }
+    },
+    "nll_seed2/45000_versus_40000": {
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.00044262179155072495,
+        "percent_change": 4.185552510709378,
+        "direction_for_lower_is_better": "higher"
+      }
+    },
+    "nll_seed2/45000_versus_30000": {
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.0027072737813010946,
+        "percent_change": 32.577177103168566,
+        "direction_for_lower_is_better": "higher"
+      }
+    }
+  },
+  "all_read_file_sha256": {
+    "work/validation_audit_20261005T1359.py": "9f505e3a904e05a69820109d493edfc4c875d8d45d2d853fc916f8735bef1b90",
+    "work/validation_audit_20261005T1329.json": "d3f2b207d771b173335a400d9aae6193793df83595621ebe19d9963de037deaa",
+    "work/training_progress_20261005T1359.json": "14325df8552e66e09fce0f1d99553933c053de21d02841bd142896809a0ca0ec",
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/protocol.json": "ca6fa06f758e5337e3dab1dca5a8b1db44b4e749556f2089b0ebabcdb810546c",
+    "outputs/AdaptGNS/research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+    "outputs/AdaptGNS/adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+    "outputs/AdaptGNS/adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+    "outputs/AdaptGNS/adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+    "outputs/AdaptGNS/adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+    "outputs/AdaptGNS/adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+    "outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+    "outputs/AdaptGNS/adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+    "outputs/AdaptGNS/adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+    "outputs/AdaptGNS/adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+    "outputs/AdaptGNS/adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+    "outputs/AdaptGNS/adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+    "outputs/AdaptGNS/adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+    "outputs/AdaptGNS/adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+    "outputs/AdaptGNS/adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413",
+    "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+    "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/validation/step-030000.json": "60fc0df59feeb317a5055ec35f670589f98bb34f89e0eafeac614694e195cfc3",
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/validation/step-035000.json": "70fc24c9d70fda36a6c994b053423f75278ba0be1939982f4a68419e1e644874",
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/validation/step-040000.json": "9c6a8553d637f22ab81bdcfd3df3d8e3cee3dbdcd4bce39f939431ee6f493dcc",
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/validation/step-045000.json": "a7edb26bdf31de9a4fff9d8f3dd6c9eaa02a62fe6d5cdc351ecf09d2abf921e9"
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Only the four specified saved validation records, one run configuration, saved 13:59:09 snapshot, 17 frozen numerical-source/protocol files, prior audit and this audit source were read by the executable audit.",
+    "No dataset, checkpoint, model, reserved test, training log, later validation record or particle-level prediction was loaded.",
+    "All 128 frames, 30 trajectory means and saved calibration-bin arithmetic are checked in each of the four specified records; particle-level bin membership cannot be independently recovered.",
+    "Data identity hashes are saved config fields protected by prior byte/canonical config hashes; raw data bytes were not independently hashed.",
+    "Snapshot says NLL seed2 is active at 46800 updates with 45k validation and 40k checkpoint metadata; this does not verify current process identity, recoverable updates or checkpoint bytes.",
+    "NLL changes use absolute differences; percent changes are omitted for NLL. All adjacent-checkpoint changes and 45k versus 30k changes, including adverse changes, are retained explicitly.",
+    "No scientific manuscript, public result, frozen source, protocol or process state was changed."
+  ]
+}

@@ -1,0 +1,1549 @@
+{
+  "audit_started_utc": "2026-10-05T16:06:11.158163+00:00",
+  "audit_source_sha256": "1307a1b7d62832917a32f03cc3302649e2720e55a1a53ed8fb25d4e6c9906d73",
+  "evidence_path": "work/validation_20261005T1603/timing_input_evidence.json",
+  "evidence_sha256": "2a7c5874d1f16e52e2a8cfbd337e6fcca50def2c3cd1fe2c20fbb58440b857c0",
+  "input_files": {
+    "work/training_progress_20261005T1429.json": {
+      "sha256": "767b32894d4af40b87f1f11b38a01d17d005d0c9e2d726714c5ef0789fd1db26",
+      "expected_sha256": "767b32894d4af40b87f1f11b38a01d17d005d0c9e2d726714c5ef0789fd1db26",
+      "bytes": 8746
+    },
+    "work/training_progress_20261005T1533.json": {
+      "sha256": "bb98951440fc3e88c453baaa8ea25ef6d8d76a91444967915879f1d691d988cb",
+      "expected_sha256": "bb98951440fc3e88c453baaa8ea25ef6d8d76a91444967915879f1d691d988cb",
+      "bytes": 8751
+    },
+    "work/training_progress_20261005T1603.json": {
+      "sha256": "e98eb7e512070a7120598f887a40da7446a0a0fa75c6f0d831f00ed95b1542b0",
+      "expected_sha256": "e98eb7e512070a7120598f887a40da7446a0a0fa75c6f0d831f00ed95b1542b0",
+      "bytes": 8053
+    },
+    "outputs/training_progress.json": {
+      "sha256": "e98eb7e512070a7120598f887a40da7446a0a0fa75c6f0d831f00ed95b1542b0",
+      "expected_sha256": "4e547f44729c4cd67a9bccc2606c9b02b65604e8af78dda8d38bd91278860ede",
+      "bytes": 8053
+    },
+    "outputs/full_training_progress.md": {
+      "sha256": "13bc536b7e7690266e65724383790946a6b921d31b8da6390a27c78901419d07",
+      "expected_sha256": "4df6f4c53f81e85dee4cd4e2d822ae9ceca4649e1d4e397cf9be6288111ed917",
+      "bytes": 20863
+    },
+    "outputs/AdaptGNS/research/results/full_training_recovery_20261004T1853.json": {
+      "sha256": "3acf9ea6b3f8ec36db86b9505ee7184812a3eaca3986b42033e8a0e090f8ac28",
+      "expected_sha256": "3acf9ea6b3f8ec36db86b9505ee7184812a3eaca3986b42033e8a0e090f8ac28",
+      "bytes": 6876
+    },
+    "outputs/training_recovery_20261004.json": {
+      "sha256": "3acf9ea6b3f8ec36db86b9505ee7184812a3eaca3986b42033e8a0e090f8ac28",
+      "expected_sha256": "3acf9ea6b3f8ec36db86b9505ee7184812a3eaca3986b42033e8a0e090f8ac28",
+      "bytes": 6876
+    }
+  },
+  "scope": "Saved progress snapshots and preserved recovery timing metadata only.",
+  "seconds_encoding": "Decimal strings preserve source JSON numeric precision; signed gaps are timestamp interval minus retained counter.",
+  "limitations": [
+    "No current process inspection, model/checkpoint-byte verification, raw validation audit, or source/protocol hash audit is performed here.",
+    "Six completed states and update counts describe the saved 2026-10-05T16:03:27.535178+00:00 snapshot, not live process state.",
+    "Trainer elapsed counters and UTC timestamp differences are distinct bookkeeping measures, neither GPU/CPU busy time nor fair objective-speed measurements.",
+    "The six-job timestamp envelope uses the first resumed job start and the last completed job update. It is not exact supervisor lifetime, and does not include the earlier interrupted attempt before that start.",
+    "The faithful_seed0 current start is after recovery; its retained elapsed counter contains earlier accumulated timing. Signed discrepancies are retained without assigning a cause.",
+    "NLL seed2's counter-versus-timestamp gap is retained without attributing it to sleep, clock behavior, contention, or any other cause.",
+    "Preserved recovery metadata reports rolled-back updates/counter time, not a complete hardware-cost or total-experiment-runtime measurement; no prior counter is added twice.",
+    "Public progress artifacts were older at capture; their timestamps are preserved, not replaced by the final snapshot timestamp."
+  ],
+  "final_snapshot_recorded_utc": "2026-10-05T16:03:27.535178+00:00",
+  "final_model_completion_utc": "2026-10-05T15:58:10.390665+00:00",
+  "final_queue_state_in_snapshot": "complete",
+  "models": [
+    {
+      "name": "faithful_seed0",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-04T18:54:43.659646+00:00",
+      "updated_utc": "2026-10-04T21:58:57.274959+00:00",
+      "timestamp_interval_seconds": "11053.615313",
+      "retained_trainer_counter_seconds": "19550.767140208",
+      "timestamp_interval_minus_counter_seconds": "-8497.151827208",
+      "timestamp_interval_hours": "3.070448698055555555555555555555555555556",
+      "retained_trainer_counter_hours": "5.430768650057777777777777777777777777778"
+    },
+    {
+      "name": "nll_seed0",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-04T21:59:07.568379+00:00",
+      "updated_utc": "2026-10-05T01:36:20.819877+00:00",
+      "timestamp_interval_seconds": "13033.251498",
+      "retained_trainer_counter_seconds": "13023.416320999999",
+      "timestamp_interval_minus_counter_seconds": "9.835177000001",
+      "timestamp_interval_hours": "3.620347638333333333333333333333333333333",
+      "retained_trainer_counter_hours": "3.617615644722221944444444444444444444444"
+    },
+    {
+      "name": "faithful_seed1",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-05T01:36:34.116461+00:00",
+      "updated_utc": "2026-10-05T05:09:52.068885+00:00",
+      "timestamp_interval_seconds": "12797.952424",
+      "retained_trainer_counter_seconds": "12794.132387041001",
+      "timestamp_interval_minus_counter_seconds": "3.820036958999",
+      "timestamp_interval_hours": "3.554986784444444444444444444444444444444",
+      "retained_trainer_counter_hours": "3.553925663066944722222222222222222222222"
+    },
+    {
+      "name": "nll_seed1",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-05T05:10:01.409147+00:00",
+      "updated_utc": "2026-10-05T08:32:09.460121+00:00",
+      "timestamp_interval_seconds": "12128.050974",
+      "retained_trainer_counter_seconds": "12124.411300790998",
+      "timestamp_interval_minus_counter_seconds": "3.639673209002",
+      "timestamp_interval_hours": "3.368903048333333333333333333333333333333",
+      "retained_trainer_counter_hours": "3.367892027997499444444444444444444444444"
+    },
+    {
+      "name": "faithful_seed2",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-05T08:32:20.563274+00:00",
+      "updated_utc": "2026-10-05T11:46:32.074982+00:00",
+      "timestamp_interval_seconds": "11651.511708",
+      "retained_trainer_counter_seconds": "11642.209294540997",
+      "timestamp_interval_minus_counter_seconds": "9.302413459003",
+      "timestamp_interval_hours": "3.23653103",
+      "retained_trainer_counter_hours": "3.233947026261388055555555555555555555556"
+    },
+    {
+      "name": "nll_seed2",
+      "state": "complete",
+      "completed_steps": 100000,
+      "started_utc": "2026-10-05T11:46:44.707049+00:00",
+      "updated_utc": "2026-10-05T15:58:10.390665+00:00",
+      "timestamp_interval_seconds": "15085.683616",
+      "retained_trainer_counter_seconds": "13306.718343417",
+      "timestamp_interval_minus_counter_seconds": "1778.965272583",
+      "timestamp_interval_hours": "4.190467671111111111111111111111111111111",
+      "retained_trainer_counter_hours": "3.696310650949166666666666666666666666667"
+    }
+  ],
+  "totals": {
+    "sum_six_current_model_timestamp_intervals_seconds": "75750.065533",
+    "sum_six_retained_trainer_counters_seconds": "82441.654786997995",
+    "sum_timestamp_intervals_minus_sum_counters_seconds": "-6691.589253997995",
+    "sum_six_current_model_timestamp_intervals_hours": "21.04168487027777777777777777777777777778",
+    "sum_six_retained_trainer_counters_hours": "22.90045966305499861111111111111111111111",
+    "six_job_timestamp_envelope_start_utc": "2026-10-04T18:54:43.659646+00:00",
+    "six_job_timestamp_envelope_end_utc": "2026-10-05T15:58:10.390665+00:00",
+    "six_job_timestamp_envelope_seconds": "75806.731019",
+    "six_job_timestamp_envelope_hours": "21.05742528305555555555555555555555555556",
+    "sum_inter_model_timestamp_gaps_seconds": "56.665486",
+    "envelope_minus_sum_retained_counters_seconds": "-6634.923767997995",
+    "exact_supervisor_lifetime_seconds": null,
+    "exact_supervisor_lifetime_unavailable_reason": "Assigned saved progress snapshots do not contain supervisor start/end timestamps; no extra raw queue record accessed."
+  },
+  "inter_model_timestamp_gaps": [
+    {
+      "from_model": "faithful_seed0",
+      "to_model": "nll_seed0",
+      "from_updated_utc": "2026-10-04T21:58:57.274959+00:00",
+      "to_started_utc": "2026-10-04T21:59:07.568379+00:00",
+      "timestamp_gap_seconds": "10.29342"
+    },
+    {
+      "from_model": "nll_seed0",
+      "to_model": "faithful_seed1",
+      "from_updated_utc": "2026-10-05T01:36:20.819877+00:00",
+      "to_started_utc": "2026-10-05T01:36:34.116461+00:00",
+      "timestamp_gap_seconds": "13.296584"
+    },
+    {
+      "from_model": "faithful_seed1",
+      "to_model": "nll_seed1",
+      "from_updated_utc": "2026-10-05T05:09:52.068885+00:00",
+      "to_started_utc": "2026-10-05T05:10:01.409147+00:00",
+      "timestamp_gap_seconds": "9.340262"
+    },
+    {
+      "from_model": "nll_seed1",
+      "to_model": "faithful_seed2",
+      "from_updated_utc": "2026-10-05T08:32:09.460121+00:00",
+      "to_started_utc": "2026-10-05T08:32:20.563274+00:00",
+      "timestamp_gap_seconds": "11.103153"
+    },
+    {
+      "from_model": "faithful_seed2",
+      "to_model": "nll_seed2",
+      "from_updated_utc": "2026-10-05T11:46:32.074982+00:00",
+      "to_started_utc": "2026-10-05T11:46:44.707049+00:00",
+      "timestamp_gap_seconds": "12.632067"
+    }
+  ],
+  "prior_snapshots": [
+    {
+      "path": "work/training_progress_20261005T1429.json",
+      "recorded_utc": "2026-10-05T14:29:11.875972+00:00",
+      "queue_state": "running",
+      "total_completed_updates": 553200,
+      "completed_timing_objects_exactly_preserved": [
+        "faithful_seed0",
+        "nll_seed0",
+        "faithful_seed1",
+        "nll_seed1",
+        "faithful_seed2"
+      ],
+      "nll_seed2": {
+        "name": "nll_seed2",
+        "state": "running",
+        "completed_steps": 53200,
+        "started_utc": "2026-10-05T11:46:44.707049+00:00",
+        "updated_utc": "2026-10-05T14:29:04.148933+00:00",
+        "timestamp_interval_seconds": "9739.441884",
+        "retained_trainer_counter_seconds": "8650.402486624997",
+        "timestamp_interval_minus_counter_seconds": "1089.039397375003",
+        "timestamp_interval_hours": "2.705400523333333333333333333333333333333",
+        "retained_trainer_counter_hours": "2.402889579618054722222222222222222222222"
+      }
+    },
+    {
+      "path": "work/training_progress_20261005T1533.json",
+      "recorded_utc": "2026-10-05T15:35:09.186281+00:00",
+      "queue_state": "running",
+      "total_completed_updates": 586200,
+      "completed_timing_objects_exactly_preserved": [
+        "faithful_seed0",
+        "nll_seed0",
+        "faithful_seed1",
+        "nll_seed1",
+        "faithful_seed2"
+      ],
+      "nll_seed2": {
+        "name": "nll_seed2",
+        "state": "running",
+        "completed_steps": 86200,
+        "started_utc": "2026-10-05T11:46:44.707049+00:00",
+        "updated_utc": "2026-10-05T15:35:02.666926+00:00",
+        "timestamp_interval_seconds": "13697.959877",
+        "retained_trainer_counter_seconds": "11919.03355079201",
+        "timestamp_interval_minus_counter_seconds": "1778.92632620799",
+        "timestamp_interval_hours": "3.804988854722222222222222222222222222222",
+        "retained_trainer_counter_hours": "3.310842652997780555555555555555555555556"
+      }
+    },
+    {
+      "path": "outputs/training_progress.json",
+      "recorded_utc": "2026-10-05T16:03:27.535178+00:00",
+      "queue_state": "complete",
+      "total_completed_updates": 600000,
+      "completed_timing_objects_exactly_preserved": [
+        "faithful_seed0",
+        "nll_seed0",
+        "faithful_seed1",
+        "nll_seed1",
+        "faithful_seed2"
+      ],
+      "nll_seed2": {
+        "name": "nll_seed2",
+        "state": "complete",
+        "completed_steps": 100000,
+        "started_utc": "2026-10-05T11:46:44.707049+00:00",
+        "updated_utc": "2026-10-05T15:58:10.390665+00:00",
+        "timestamp_interval_seconds": "15085.683616",
+        "retained_trainer_counter_seconds": "13306.718343417",
+        "timestamp_interval_minus_counter_seconds": "1778.965272583",
+        "timestamp_interval_hours": "4.190467671111111111111111111111111111111",
+        "retained_trainer_counter_hours": "3.696310650949166666666666666666666666667"
+      }
+    }
+  ],
+  "nll_seed2_recent_timing_intervals": [
+    {
+      "from_status_utc": "2026-10-05T14:29:04.148933+00:00",
+      "to_status_utc": "2026-10-05T15:35:02.666926+00:00",
+      "from_completed_steps": 53200,
+      "to_completed_steps": 86200,
+      "delta_steps": 33000,
+      "timestamp_interval_seconds": "3958.517993",
+      "trainer_counter_increment_seconds": "3268.631064167013",
+      "timestamp_interval_minus_counter_increment_seconds": "689.886928832987"
+    },
+    {
+      "from_status_utc": "2026-10-05T15:35:02.666926+00:00",
+      "to_status_utc": "2026-10-05T15:58:10.390665+00:00",
+      "from_completed_steps": 86200,
+      "to_completed_steps": 100000,
+      "delta_steps": 13800,
+      "timestamp_interval_seconds": "1387.723739",
+      "trainer_counter_increment_seconds": "1387.68479262499",
+      "timestamp_interval_minus_counter_increment_seconds": "0.03894637501"
+    }
+  ],
+  "preserved_recovery_timing_metadata": {
+    "detected_utc": "2026-10-04T18:54:19.115370+00:00",
+    "classification": "training interruption spanning a system restart; cause of the restart unestablished",
+    "last_status_utc": "2026-10-04T18:49:23.670401+00:00",
+    "last_recorded_updates": 21600,
+    "previous_status_elapsed_seconds": "9089.941669957945",
+    "updates_to_replay": 1600,
+    "runtime_caveat": "Checkpoint history may omit work since the 20k save and downtime; retain this interrupted-attempt record in training cost accounting.",
+    "recovery_launched_utc": "2026-10-04T18:54:41.219055+00:00",
+    "restored_status": {
+      "updated_utc": "2026-10-04T18:54:48.076945+00:00",
+      "completed_steps": 20000,
+      "elapsed_seconds": "8501.729844792002",
+      "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4"
+    },
+    "recorded_rolled_back_elapsed_lower_bound_seconds": "588.2118251659431"
+  },
+  "observations": [
+    "The T1533 snapshot filename corresponds to recorded_utc 2026-10-05T15:35:09.186281+00:00; this original timestamp is retained.",
+    "NLL seed2 final UTC timestamp interval exceeds its retained trainer counter by 1778.965272583 seconds; its interval gap after the T1533 status is only 0.03894637501 seconds. Both are retained; neither explains the earlier accumulated difference.",
+    "Faithful seed0's current resumed timestamp interval is 8497.151827208 seconds shorter than its retained counter. Current start and retained counter have different historical coverage; the prior recovery record is retained separately.",
+    "The older public progress Markdown/JSON describe five complete models at 11:53:35 UTC; this is stale-public-curation state, not a contradiction of the later private snapshot."
+  ],
+  "checks": [
+    {
+      "check": "input_hash:work/training_progress_20261005T1429.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input_hash:work/training_progress_20261005T1533.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input_hash:work/training_progress_20261005T1603.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input_hash:outputs/training_progress.json",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "input_hash:outputs/full_training_progress.md",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "input_hash:outputs/AdaptGNS/research/results/full_training_recovery_20261004T1853.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "input_hash:outputs/training_recovery_20261004.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "six_models_unique_expected_order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "snapshot_queue_complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "snapshot_timestamp_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "requested_updates_600k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "completed_updates_600k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "completed_total_equals_job_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "requested_total_equals_job_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed0:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed0:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed1:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed1:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful_seed2:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:100k",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:saved_error_null",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:timestamp_interval_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:counter_positive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:UTC:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:UTC:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_seed2:status_age_matches_snapshot",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:same_job_names",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:snapshot_before_final",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:same_queue_pid_metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:nll_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:completed_job_field_unchanged:faithful_seed2:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:start_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:pid_metadata_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:nll2_updates_increased",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1429.json:nll2_counter_increased",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:same_job_names",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:snapshot_before_final",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:same_queue_pid_metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:nll_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:completed_job_field_unchanged:faithful_seed2:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:start_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:pid_metadata_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:nll2_updates_increased",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "work/training_progress_20261005T1533.json:nll2_counter_increased",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:same_job_names",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:snapshot_before_final",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:same_queue_pid_metadata",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:faithful_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed0:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:nll_seed1:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:state",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:completed_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:requested_steps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:started_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:updated_utc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:elapsed_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:completed_job_field_unchanged:faithful_seed2:error",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:start_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:pid_metadata_unchanged:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:nll2_updates_increased",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:nll2_counter_increased",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_1:positive_updates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_1:positive_wall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_1:positive_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_1:gap_telescopes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_2:positive_updates",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_2:positive_wall",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_2:positive_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nll_interval_2:gap_telescopes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nonoverlapping_saved_job_windows:faithful_seed0:nll_seed0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nonoverlapping_saved_job_windows:nll_seed0:faithful_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nonoverlapping_saved_job_windows:faithful_seed1:nll_seed1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nonoverlapping_saved_job_windows:nll_seed1:faithful_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "nonoverlapping_saved_job_windows:faithful_seed2:nll_seed2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "envelope_equals_model_intervals_plus_inter_model_gaps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "signed_model_gaps_sum",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "both_signed_model_gap_directions_retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "recovery_copies_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved_rolled_back_counter_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "preserved_replayed_update_count_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful0_start_after_recovery_launch",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "faithful0_counter_above_restored_counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "public_markdown_snapshot_matches_public_json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "public_markdown_is_explicit_five_model_snapshot",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "checks_total": 241,
+  "checks_passed": 235,
+  "passed": false,
+  "anomalies": [
+    {
+      "check": "input_hash:outputs/training_progress.json",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "input_hash:outputs/full_training_progress.md",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:snapshot_before_final",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:nll2_updates_increased",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "outputs/training_progress.json:nll2_counter_increased",
+      "passed": false,
+      "detail": null
+    },
+    {
+      "check": "public_markdown_is_explicit_five_model_snapshot",
+      "passed": false,
+      "detail": null
+    }
+  ],
+  "audit_finished_utc": "2026-10-05T16:06:11.160798+00:00"
+}

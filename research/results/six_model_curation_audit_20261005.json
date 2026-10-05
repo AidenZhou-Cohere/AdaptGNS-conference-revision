@@ -1,0 +1,3621 @@
+{
+  "recorded_utc": "2026-10-05T16:07:28.021113+00:00",
+  "passed": true,
+  "scope": "Completed training numeric curation; no model deserialization, test access, training or evaluation process action",
+  "curation_script_sha256": "1b38716d90fea569bc77d855a369e6b64999a93dab2c8b32a59accbfb03bcad0",
+  "original_artifact_manifest": {
+    "outputs/training_progress.json": "4e547f44729c4cd67a9bccc2606c9b02b65604e8af78dda8d38bd91278860ede",
+    "outputs/full_training_progress.md": "4df6f4c53f81e85dee4cd4e2d822ae9ceca4649e1d4e397cf9be6288111ed917",
+    "outputs/full_validation_curves.json": "e679c9d51cc1981395cecd1bf23a09b87fc38f3c9362f4f69e0a2247037a2c82",
+    "outputs/full_validation_curves.md": "8557b5773b78f7bfa3eda4fcd87a37cf9d65934875eccb325193a3977454ad50",
+    "outputs/full_validation_curves.png": "fbb374a4a5f84e3d8f56e0b92f5471bb33254a9dfaf68a759f20567927ca64eb",
+    "outputs/full_validation_curves.pdf": "bee8a9620aa6cce00ceca9e2f277abb11a5a801559ab62717a50f1c9729500d9",
+    "outputs/AdaptGNS/research/results/full_training_status_20261005.json": "a74c1366b11159d629e766b36a5a81d845791025430412e26b34e4a7f890380d",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.json": "e679c9d51cc1981395cecd1bf23a09b87fc38f3c9362f4f69e0a2247037a2c82",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.md": "a9b92889c7e51bd155931ab2aef78ff356de7f4200af6e0ea444a54ce837a47f",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.png": "fbb374a4a5f84e3d8f56e0b92f5471bb33254a9dfaf68a759f20567927ca64eb",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.pdf": "bee8a9620aa6cce00ceca9e2f277abb11a5a801559ab62717a50f1c9729500d9"
+  },
+  "snapshot_utc": "2026-10-05T16:03:27.535178+00:00",
+  "curves_utc": "2026-10-05T16:05:58.148487+00:00",
+  "completed_models": 6,
+  "completed_updates": 600000,
+  "scheduled_validation_points": 126,
+  "prior_curve_points_preserved_exactly": 106,
+  "prior_status_points_preserved_exactly": 106,
+  "prior_checkpoint_verification_objects_preserved_exactly": 34,
+  "checkpoint_verification_objects": 41,
+  "original_pending_checkpoint_records_preserved_exactly": [
+    "work/validation_20261005T1259/nll_seed2_checkpoint20k_hash.json",
+    "work/validation_20261005T1329/nll_seed2_checkpoint30k_hash.json",
+    "work/validation_20261005T1359/nll_seed2_checkpoint40k_hash.json",
+    "work/validation_20261005T1429/nll_seed2_checkpoint50k_hash.json",
+    "work/validation_20261005T1459/nll_seed2_checkpoint70k_hash.json",
+    "work/validation_20261005T1533/nll_seed2_checkpoint80k_hash.json"
+  ],
+  "final_checkpoint_byte_check": {
+    "model": "nll_seed2",
+    "completed_steps": 100000,
+    "path": "checkpoint-100000.pt",
+    "sha256": "1453a4b1e7ba3c52c02acc42f6273c66f331b891e9a03caf24ada4b007eae5c8",
+    "expected_pointer_sha256": "1453a4b1e7ba3c52c02acc42f6273c66f331b891e9a03caf24ada4b007eae5c8",
+    "verified": true,
+    "file_hash_verified_utc": "2026-10-05T16:07:28.012668+00:00",
+    "pointer_snapshot": "work/training_progress_20261005T1603.json",
+    "pointer_snapshot_sha256": "e98eb7e512070a7120598f887a40da7446a0a0fa75c6f0d831f00ed95b1542b0",
+    "preflight_evidence": "work/validation_20261005T1603/evaluation_preflight.json",
+    "preflight_evidence_sha256": "e211da5504b8172c07ce0cfeeb2540f7001482b7f218dcc747d6526ea28c4979",
+    "scope": "Final checkpoint bytes match saved final pointer and reviewed preflight; no model/checkpoint deserialization or test access by this curation."
+  },
+  "first_recovery_and_interruption_records_unchanged": true,
+  "all_three_seed_groups_complete": true,
+  "final_three_seed_statistics": {
+    "faithful": {
+      "coordinate_mse": {
+        "seed_values": [
+          0.008118621072848638,
+          0.009059420293137969,
+          0.008750111744774608
+        ],
+        "mean": 0.008642717703587072,
+        "sample_sd": 0.000479505894944156
+      },
+      "constant_free_gaussian_nll": {
+        "seed_values": [
+          -4.286717604983559,
+          -4.300237582109349,
+          -4.220276039824592
+        ],
+        "mean": -4.269077075639166,
+        "sample_sd": 0.042800154997406664
+      },
+      "realized_vector_se": {
+        "seed_values": [
+          0.016237242145697276,
+          0.018118840586275938,
+          0.017500223489549216
+        ],
+        "mean": 0.017285435407174143,
+        "sample_sd": 0.000959011789888312
+      },
+      "predicted_vector_se": {
+        "seed_values": [
+          0.02852366127595406,
+          0.026434982157355777,
+          0.028602065546929893
+        ],
+        "mean": 0.027853569660079913,
+        "sample_sd": 0.0012291581202557435
+      },
+      "binned_vector_se_calibration_gap": {
+        "seed_values": [
+          0.012286419130256788,
+          0.008316141571079834,
+          0.011101842057380677
+        ],
+        "mean": 0.010568134252905766,
+        "sample_sd": 0.0020382367354269968
+      }
+    },
+    "nll": {
+      "coordinate_mse": {
+        "seed_values": [
+          0.009454307789297232,
+          0.010030030963538354,
+          0.00897527827827515
+        ],
+        "mean": 0.009486539010370245,
+        "sample_sd": 0.0005281145192819245
+      },
+      "constant_free_gaussian_nll": {
+        "seed_values": [
+          -4.4893484572310705,
+          -4.4365231683361115,
+          -4.54691340156414
+        ],
+        "mean": -4.490928342377107,
+        "sample_sd": 0.055212072283520035
+      },
+      "realized_vector_se": {
+        "seed_values": [
+          0.018908615578594464,
+          0.020060061927076708,
+          0.0179505565565503
+        ],
+        "mean": 0.01897307802074049,
+        "sample_sd": 0.001056229038563849
+      },
+      "predicted_vector_se": {
+        "seed_values": [
+          0.02553921146905763,
+          0.024908425214140512,
+          0.025495123895686443
+        ],
+        "mean": 0.02531425352629486,
+        "sample_sd": 0.0003521482539229405
+      },
+      "binned_vector_se_calibration_gap": {
+        "seed_values": [
+          0.006630595890463164,
+          0.004848363287063805,
+          0.0075445673391361465
+        ],
+        "mean": 0.006341175505554371,
+        "sample_sd": 0.0013712046499350103
+      }
+    }
+  },
+  "paired_seed_comparisons": [
+    {
+      "seed": 0,
+      "nll_minus_faithful": {
+        "coordinate_mse": 0.001335686716448594,
+        "binned_vector_se_calibration_gap": -0.005655823239793624,
+        "constant_free_gaussian_nll": -0.20263085224751176
+      },
+      "coordinate_mse_relative_percent": 16.452137677857316,
+      "binned_gap_relative_percent": -46.03312958667899
+    },
+    {
+      "seed": 1,
+      "nll_minus_faithful": {
+        "coordinate_mse": 0.0009706106704003847,
+        "binned_vector_se_calibration_gap": -0.003467778284016029,
+        "constant_free_gaussian_nll": -0.13628558622676223
+      },
+      "coordinate_mse_relative_percent": 10.71382758492363,
+      "binned_gap_relative_percent": -41.69936567789508
+    },
+    {
+      "seed": 2,
+      "nll_minus_faithful": {
+        "coordinate_mse": 0.00022516653350054122,
+        "binned_vector_se_calibration_gap": -0.0035572747182445307,
+        "constant_free_gaussian_nll": -0.3266373617395484
+      },
+      "coordinate_mse_relative_percent": 2.573298948267788,
+      "binned_gap_relative_percent": -32.04220254493352
+    }
+  ],
+  "paired_difference_statistics": {
+    "coordinate_mse": {
+      "seed_differences": [
+        0.001335686716448594,
+        0.0009706106704003847,
+        0.00022516653350054122
+      ],
+      "mean_difference": 0.0008438213067831733,
+      "sample_sd_difference": 0.0005660127438747181
+    },
+    "binned_vector_se_calibration_gap": {
+      "seed_differences": [
+        -0.005655823239793624,
+        -0.003467778284016029,
+        -0.0035572747182445307
+      ],
+      "mean_difference": -0.004226958747351395,
+      "sample_sd_difference": 0.0012382417802095627
+    },
+    "constant_free_gaussian_nll": {
+      "seed_differences": [
+        -0.20263085224751176,
+        -0.13628558622676223,
+        -0.3266373617395484
+      ],
+      "mean_difference": -0.22185126673794078,
+      "sample_sd_difference": 0.09662048364661323
+    }
+  },
+  "nll_seed2_adverse_intervals": [
+    {
+      "previous_update": 5000,
+      "update": 10000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.03512825669581142,
+      "value": 0.037573534427346664,
+      "absolute_increase": 0.0024452777315352447
+    },
+    {
+      "previous_update": 10000,
+      "update": 15000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.013828274289950442,
+      "value": 0.026898251107598265,
+      "absolute_increase": 0.013069976817647823
+    },
+    {
+      "previous_update": 15000,
+      "update": 20000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.020709868055627516,
+      "value": 0.021811873948214825,
+      "absolute_increase": 0.0011020058925873093
+    },
+    {
+      "previous_update": 25000,
+      "update": 30000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.015775300741057676,
+      "value": 0.015777409516835334,
+      "absolute_increase": 2.1087757776580562e-06
+    },
+    {
+      "previous_update": 30000,
+      "update": 35000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.015777409516835334,
+      "value": 0.017087082636353144,
+      "absolute_increase": 0.0013096731195178096
+    },
+    {
+      "previous_update": 30000,
+      "update": 35000,
+      "metric": "constant_free_gaussian_nll",
+      "previous_value": -3.867347413563358,
+      "value": -3.8576421253956634,
+      "absolute_increase": 0.009705288167694448
+    },
+    {
+      "previous_update": 35000,
+      "update": 40000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.0024713115840645935,
+      "value": 0.010574990766887005,
+      "absolute_increase": 0.00810367918282241
+    },
+    {
+      "previous_update": 40000,
+      "update": 45000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.010574990766887005,
+      "value": 0.011017612558437728,
+      "absolute_increase": 0.0004426217915507232
+    },
+    {
+      "previous_update": 45000,
+      "update": 50000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.012554549177940877,
+      "value": 0.013889604316488724,
+      "absolute_increase": 0.0013350551385478467
+    },
+    {
+      "previous_update": 45000,
+      "update": 50000,
+      "metric": "constant_free_gaussian_nll",
+      "previous_value": -4.009052789462633,
+      "value": -4.005360018622512,
+      "absolute_increase": 0.0036927708401206516
+    },
+    {
+      "previous_update": 50000,
+      "update": 55000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.008084491968747493,
+      "value": 0.009069106397240864,
+      "absolute_increase": 0.000984614428493371
+    },
+    {
+      "previous_update": 55000,
+      "update": 60000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.009069106397240864,
+      "value": 0.009197415297525852,
+      "absolute_increase": 0.00012830890028498777
+    },
+    {
+      "previous_update": 60000,
+      "update": 65000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.011200797600274483,
+      "value": 0.012013173011635089,
+      "absolute_increase": 0.0008123754113606059
+    },
+    {
+      "previous_update": 60000,
+      "update": 65000,
+      "metric": "constant_free_gaussian_nll",
+      "previous_value": -4.176706443256348,
+      "value": -4.141190630232596,
+      "absolute_increase": 0.03551581302375251
+    },
+    {
+      "previous_update": 65000,
+      "update": 70000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.003927314063778211,
+      "value": 0.010216347775479204,
+      "absolute_increase": 0.006289033711700993
+    },
+    {
+      "previous_update": 75000,
+      "update": 80000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.009859405556761161,
+      "value": 0.009915289441700144,
+      "absolute_increase": 5.588388493898283e-05
+    },
+    {
+      "previous_update": 85000,
+      "update": 90000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.003646066332160553,
+      "value": 0.008172453196755606,
+      "absolute_increase": 0.004526386864595054
+    },
+    {
+      "previous_update": 90000,
+      "update": 95000,
+      "metric": "coordinate_mse",
+      "previous_value": 0.009256958294980027,
+      "value": 0.009462780505106995,
+      "absolute_increase": 0.0002058222101269675
+    },
+    {
+      "previous_update": 90000,
+      "update": 95000,
+      "metric": "constant_free_gaussian_nll",
+      "previous_value": -4.509705354144235,
+      "value": -4.440502545006406,
+      "absolute_increase": 0.06920280913782939
+    },
+    {
+      "previous_update": 95000,
+      "update": 100000,
+      "metric": "binned_vector_se_calibration_gap",
+      "previous_value": 0.006488559609305043,
+      "value": 0.0075445673391361465,
+      "absolute_increase": 0.0010560077298311038
+    }
+  ],
+  "software": "Unchanged reviewed progress curator and126-record provenance/arithmetic summarizer; no broad or GPU tests",
+  "plot_title": "Original summarizer retains Interim validation label; the full schedule is complete and remains validation-only evidence",
+  "artifacts_sha256": {
+    "outputs/training_progress.json": "e98eb7e512070a7120598f887a40da7446a0a0fa75c6f0d831f00ed95b1542b0",
+    "outputs/full_training_progress.md": "10692e3adc8b6376d618b124382357e257f35e40f5782326c3d61227082d9860",
+    "outputs/full_validation_curves.json": "4e483ee94d88e3975868694939a24e12ba295ee3966988d34db0c185fd233595",
+    "outputs/full_validation_curves.md": "8bbe1c2659dc6048f6adb631bb17981af16f850ceb0efbbe8e2e8f2df845f609",
+    "outputs/full_validation_curves.png": "42160593be9fbfad333c4717abec02caafedef4e05564495d795995c324ce815",
+    "outputs/full_validation_curves.pdf": "65aa54b36694e46df1efaabe8e3643baf1acf8ce81b913a8a27ed6c7a9a109d1",
+    "outputs/AdaptGNS/research/results/full_training_status_20261005.json": "b0542083dc2c3bb279319010ae16e85d645b207efeff74e0e608a22fa5d479fc",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.json": "4e483ee94d88e3975868694939a24e12ba295ee3966988d34db0c185fd233595",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.md": "278f1dba41a03b396fec2430849b80dfbbf5c64b066c2e054192027ad73225aa",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.png": "42160593be9fbfad333c4717abec02caafedef4e05564495d795995c324ce815",
+    "outputs/AdaptGNS/research/results/full_validation_curves_20261005.pdf": "65aa54b36694e46df1efaabe8e3643baf1acf8ce81b913a8a27ed6c7a9a109d1"
+  },
+  "independent_validation_audit": {
+    "path": "work/validation_20261005T1603/full_validation_audit_v2.json",
+    "sha256": "ec6dd94ce3097ae6703ce4eef4ec5a982930669c2485da7071ede912ccdc698f",
+    "checks_passed": 330370,
+    "limitations": "Saved-record arithmetic and provenance; no independent prediction or bin-membership reconstruction. Initial exact-initialization-equality audit failure preserved separately."
+  },
+  "final_integrity_checks": {
+    "recorded_utc": "2026-10-05T16:08:16.716072+00:00",
+    "passed": true,
+    "checks_total": 804,
+    "checks": [
+      {
+        "check": "backup outputs/training_progress.json",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/full_training_progress.md",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/full_validation_curves.json",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/full_validation_curves.md",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/full_validation_curves.png",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/full_validation_curves.pdf",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/AdaptGNS/research/results/full_training_status_20261005.json",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/AdaptGNS/research/results/full_validation_curves_20261005.json",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/AdaptGNS/research/results/full_validation_curves_20261005.md",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/AdaptGNS/research/results/full_validation_curves_20261005.png",
+        "passed": true
+      },
+      {
+        "check": "backup outputs/AdaptGNS/research/results/full_validation_curves_20261005.pdf",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/training_progress.json",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/full_training_progress.md",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/full_validation_curves.json",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/full_validation_curves.md",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/full_validation_curves.png",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/full_validation_curves.pdf",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/AdaptGNS/research/results/full_training_status_20261005.json",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/AdaptGNS/research/results/full_validation_curves_20261005.json",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/AdaptGNS/research/results/full_validation_curves_20261005.md",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/AdaptGNS/research/results/full_validation_curves_20261005.png",
+        "passed": true
+      },
+      {
+        "check": "published artifact outputs/AdaptGNS/research/results/full_validation_curves_20261005.pdf",
+        "passed": true
+      },
+      {
+        "check": "published progress equals immutable16:03 snapshot",
+        "passed": true
+      },
+      {
+        "check": "six complete jobs",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 complete status",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 complete status",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 complete status",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 complete status",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 complete status",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 complete schedule",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 complete status",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 0",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 0 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 0 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 0 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 0 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 0 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 5000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 5000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 5000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 5000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 5000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 5000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 10000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 10000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 10000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 10000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 10000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 10000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 15000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 15000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 15000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 15000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 15000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 15000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 20000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 20000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 20000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 20000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 20000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 20000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 25000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 25000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 25000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 25000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 25000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 25000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 30000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 30000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 30000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 30000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 30000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 30000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 35000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 35000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 35000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 35000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 35000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 35000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 40000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 40000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 40000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 40000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 40000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 40000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 45000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 45000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 45000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 45000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 45000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 45000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 50000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 50000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 50000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 50000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 50000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 50000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 55000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 55000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 55000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 55000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 55000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 55000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 60000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 60000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 60000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 60000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 60000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 60000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 65000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 65000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 65000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 65000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 65000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 65000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 70000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 70000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 70000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 70000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 70000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 70000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 75000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 75000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 75000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 75000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 75000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 75000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 80000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 80000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 80000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 80000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 80000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 80000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 85000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 85000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 85000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 85000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 85000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 85000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 90000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 90000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 90000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 90000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 90000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 90000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 95000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 95000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 95000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 95000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 95000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 95000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 validation bytes 100000",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 100000 coordinate_mse",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 100000 constant_free_gaussian_nll",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 100000 realized_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 100000 predicted_vector_se",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 metric 100000 binned_vector_se_calibration_gap",
+        "passed": true
+      },
+      {
+        "check": "six distinct final checkpoint verification records",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed0 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "nll_seed0 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed1 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "nll_seed1 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "faithful_seed2 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "nll_seed2 final verification matches independent preflight",
+        "passed": true
+      },
+      {
+        "check": "public Markdown mirrors content with distribution links",
+        "passed": true
+      },
+      {
+        "check": "126Markdown numeric rows exact",
+        "passed": true
+      },
+      {
+        "check": "full_training_progress.md dated evaluation-start note",
+        "passed": true
+      },
+      {
+        "check": "full_validation_curves.md dated evaluation-start note",
+        "passed": true
+      },
+      {
+        "check": "NLLseed2 all adverse diagnostic intervals enumerated",
+        "passed": true
+      }
+    ]
+  },
+  "plot_visual_check": {
+    "recorded_utc": "2026-10-05T16:08:16.716269+00:00",
+    "png_sha256": "42160593be9fbfad333c4717abec02caafedef4e05564495d795995c324ce815",
+    "observed": "Both panels, all six seed legends, units and complete0\u2013100k axes readable with no clipping. Large initialization gap sets scale and hides some later distinctions; exact later values remain in126row table and JSON. Original interim-validation title retained without source changes.",
+    "pdf_byte_mirror_only": true
+  }
+}
