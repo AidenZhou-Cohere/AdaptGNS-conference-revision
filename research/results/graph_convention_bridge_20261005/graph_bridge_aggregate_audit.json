@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "checks": 5777,
+  "summary_sha256": "1623cab0517dd4a20ceb668e322aa98ff064a6dc4e54b62b63d46d7c05ff27d5",
+  "source_sha256": "7260423b70a758504312240a94362347793f7d466a5998011bcc941a066e203c",
+  "findings": {
+    "faithful/valid": {
+      "base_mse_relative_reduction_percent": {
+        "seed_values": [
+          20.182251040918224,
+          17.832064923814794,
+          16.378827285168597
+        ],
+        "mean": 18.131047749967205,
+        "sample_sd": 1.9192579592646506
+      },
+      "loops1_risk_minus_random": {
+        "seed_values": [
+          0.0006501270351000378,
+          0.0010391838494857742,
+          0.000943436249565173
+        ],
+        "mean": 0.0008775823780503284,
+        "sample_sd": 0.000202716182136786
+      },
+      "loops1_dense_minus_base": {
+        "seed_values": [
+          0.001962132017256457,
+          0.001819818994520911,
+          0.003224857807670822
+        ],
+        "mean": 0.002335602939816063,
+        "sample_sd": 0.0007733976429447987
+      },
+      "loops1_current_minus_previous_risk": {
+        "seed_values": [
+          6.8423343476640974e-06,
+          -5.3536255849719744e-05,
+          4.9859031274218646e-05
+        ],
+        "mean": 1.0550365907209998e-06,
+        "sample_sd": 5.194002273157044e-05
+      }
+    },
+    "faithful/test": {
+      "base_mse_relative_reduction_percent": {
+        "seed_values": [
+          18.641042221580836,
+          17.153239062566378,
+          17.767725178563516
+        ],
+        "mean": 17.85400215423691,
+        "sample_sd": 0.7476445327773491
+      },
+      "loops1_risk_minus_random": {
+        "seed_values": [
+          0.00032855830429478084,
+          0.0005374357063006744,
+          0.0006385232332149268
+        ],
+        "mean": 0.000501505747936794,
+        "sample_sd": 0.00015807525334833537
+      },
+      "loops1_dense_minus_base": {
+        "seed_values": [
+          0.0016182945421425827,
+          0.0014534168136147545,
+          0.0030553664604009018
+        ],
+        "mean": 0.0020423592720527463,
+        "sample_sd": 0.0008811548326343677
+      },
+      "loops1_current_minus_previous_risk": {
+        "seed_values": [
+          -2.357782175856169e-05,
+          8.695519776966143e-05,
+          5.4167367684212e-05
+        ],
+        "mean": 3.918158123177058e-05,
+        "sample_sd": 5.676986390863793e-05
+      }
+    },
+    "nll/valid": {
+      "base_mse_relative_reduction_percent": {
+        "seed_values": [
+          17.730595001406513,
+          14.298522398285922,
+          19.006215419120746
+        ],
+        "mean": 17.01177760627106,
+        "sample_sd": 2.4347725212565994
+      },
+      "loops1_risk_minus_random": {
+        "seed_values": [
+          0.0010268747468083414,
+          0.0020700119173288605,
+          0.00164646544907005
+        ],
+        "mean": 0.001581117371069084,
+        "sample_sd": 0.0005246299339574553
+      },
+      "loops1_dense_minus_base": {
+        "seed_values": [
+          0.0026291607403512683,
+          0.003948945198749861,
+          0.0031877125170898923
+        ],
+        "mean": 0.0032552728187303405,
+        "sample_sd": 0.0006624809808031683
+      },
+      "loops1_current_minus_previous_risk": {
+        "seed_values": [
+          1.4070197298600776e-05,
+          6.299562154028597e-05,
+          1.9056263934984913e-05
+        ],
+        "mean": 3.204069425795722e-05,
+        "sample_sd": 2.69234258112951e-05
+      }
+    },
+    "nll/test": {
+      "base_mse_relative_reduction_percent": {
+        "seed_values": [
+          18.800687096413583,
+          13.738691817181069,
+          19.103891924007364
+        ],
+        "mean": 17.214423612534006,
+        "sample_sd": 3.013887344740933
+      },
+      "loops1_risk_minus_random": {
+        "seed_values": [
+          0.0005072810112231596,
+          0.0008756424856233395,
+          0.0009090619937757432
+        ],
+        "mean": 0.0007639951635407474,
+        "sample_sd": 0.00022294804973668287
+      },
+      "loops1_dense_minus_base": {
+        "seed_values": [
+          0.0019109346431805604,
+          0.0019139549035480184,
+          0.002198166084789458
+        ],
+        "mean": 0.0020076852105060123,
+        "sample_sd": 0.00016496818812732116
+      },
+      "loops1_current_minus_previous_risk": {
+        "seed_values": [
+          2.4673011615435406e-05,
+          -6.116957215588498e-06,
+          -1.0736751315616397e-05
+        ],
+        "mean": 2.6064343614101704e-06,
+        "sample_sd": 1.9249311628278065e-05
+      }
+    }
+  },
+  "scope": "Independent scalar aggregation and primary interaction reconstruction from all2550 hashed original frame records; no inference. Full array/geometry/source audit performed by separately reviewed strict summarizer."
+}

@@ -1,0 +1,1299 @@
+{
+  "required_models": 6,
+  "required_frames_per_model": {
+    "valid": 128,
+    "test": 297
+  },
+  "required_cases_per_frame": 16,
+  "models": {
+    "faithful_seed0": {
+      "objective": "faithful",
+      "seed": 0,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "faithful_seed1": {
+      "objective": "faithful",
+      "seed": 1,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "faithful_seed2": {
+      "objective": "faithful",
+      "seed": 2,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "nll_seed0": {
+      "objective": "nll",
+      "seed": 0,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "nll_seed1": {
+      "objective": "nll",
+      "seed": 1,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    },
+    "nll_seed2": {
+      "objective": "nll",
+      "seed": 2,
+      "splits": {
+        "valid": {
+          "required_frames": 128,
+          "observed_frames": 128,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 128,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 128,
+              "complete": 128,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        },
+        "test": {
+          "required_frames": 297,
+          "observed_frames": 297,
+          "failed_frames": 0,
+          "native_parity_passed_frames": 297,
+          "cases": {
+            "base_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "base_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_cap128_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops0": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "dense_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "random25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "speed25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "previous-observed-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            },
+            "current-base-risk25_uncapped_loops1": {
+              "observed": 297,
+              "complete": 297,
+              "failed": 0,
+              "missing": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "total_frames": 2550,
+  "failed_frames": 0,
+  "total_case_outcomes": 40800,
+  "failed_case_outcomes": 0,
+  "native_parity_passed_frames": 2550
+}

@@ -1,0 +1,197 @@
+{
+  "scope": "Identities copied from the audited run protocols; no training or prediction performed by publication",
+  "original_raw_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/graph-convention-bridge-20261005",
+  "models": {
+    "faithful_seed0": {
+      "seed": 0,
+      "objective": "faithful",
+      "checkpoint_sha256": "35eef43a0d50c812f9d440a528649a086e141eec20062e649c1487ef381a48db",
+      "run_config_sha256": "3678f94a4ec35b8855241add4a8806dbb7a5b36aa9d8e1f6747af90d44774be4",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/faithful_seed0/protocol.json",
+      "original_protocol_sha256": "f03f95110d0dc6c5cea94753ac015b85f3a5c648ae92a068703470cfb4154b97"
+    },
+    "faithful_seed1": {
+      "seed": 1,
+      "objective": "faithful",
+      "checkpoint_sha256": "14dcd33ffd5ce5952ad5c2dfafe18812d044561927cfd00ae1bc6bbcbe2f83bf",
+      "run_config_sha256": "1af22899a0af5750df7de2481b8f53ffd1a5509231e6e4b5757295cd4b5b5774",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/faithful_seed1/protocol.json",
+      "original_protocol_sha256": "4118a0eb8770b8c3bf1284bbd43aa34529ad632c3ce858597527e5afe011d9b5"
+    },
+    "faithful_seed2": {
+      "seed": 2,
+      "objective": "faithful",
+      "checkpoint_sha256": "42c8c157c8a48cffaa58e4377193c14cc2403b4e5119299a1a90eebd018a55d3",
+      "run_config_sha256": "0f7af597a04ea0ca2bb11a7010dd43d1e4f995900828b894a8c3ff182354b31f",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/faithful_seed2/protocol.json",
+      "original_protocol_sha256": "8f32a5be2c978188a059651fabee331b69ca281ea7018113abd6d7af08aba29e"
+    },
+    "nll_seed0": {
+      "seed": 0,
+      "objective": "nll",
+      "checkpoint_sha256": "5cc7382c800f48133bf680c265339d4594af0bbd4af7f73b2d5c1271071f6b45",
+      "run_config_sha256": "a42e2512fb5914adaa7834117d9c6c921d570692162e8b654a619f3c862620d2",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/nll_seed0/protocol.json",
+      "original_protocol_sha256": "13a907410b7eab6bb70979c75429a27dcfd17515dc235905168f485095a0fa5b"
+    },
+    "nll_seed1": {
+      "seed": 1,
+      "objective": "nll",
+      "checkpoint_sha256": "fcc25057d75a4dfab5eec36264e89ad760f2d878d60a93915a5a66374e716833",
+      "run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/nll_seed1/protocol.json",
+      "original_protocol_sha256": "7dcb50c247c9a4f44601c826387e3b28a249d34234828e0c74a8a55be9b3f86f"
+    },
+    "nll_seed2": {
+      "seed": 2,
+      "objective": "nll",
+      "checkpoint_sha256": "1453a4b1e7ba3c52c02acc42f6273c66f331b891e9a03caf24ada4b007eae5c8",
+      "run_config_sha256": "9d79c7c8115302134e4c95cdf4c02f390c43192955b0bedc30948a44c8fa2cb7",
+      "bridge_protocol_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "runtime": {
+        "device": "mps",
+        "radius_backend": "scipy_host",
+        "graph_execution": "cpu_scipy_with_device_transfer",
+        "mps_fallback_environment": "0",
+        "torch_version": "2.14.1"
+      },
+      "software": {
+        "numpy": "2.5.3",
+        "scipy": "1.18.1",
+        "python": "3.12.14",
+        "platform": "macOS-26.6.2-arm64-arm-64bit"
+      },
+      "threads": 2,
+      "original_protocol": "runs/nll_seed2/protocol.json",
+      "original_protocol_sha256": "652b813cb174e01198747f8a93200cc113d7f443a939fbb0e634a7da372f370a"
+    }
+  },
+  "source_files_rechecked": {
+    "research/graph_convention_bridge.py": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+    "research/full_rollout.py": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+    "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+    "research/budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+    "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+    "research/protocols/graph_convention_bridge_20261005.md": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+    "research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+    "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+    "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+    "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+    "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+    "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+    "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+    "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+    "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+    "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+    "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+    "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+    "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+    "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+    "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+  },
+  "converted_manifest_identities": {
+    "valid.json": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted/valid.json",
+      "sha256": "cb5146de5d50384492001288b6fe4137551cc4553494f0ff64bd4d5830f0d125",
+      "official_source": {
+        "file": "valid.tfrecord",
+        "size_bytes": 137190408,
+        "sha256": "805fd3e03b15aa45e2f79e2ebe53f35473de10f9fb42c5d7cc963d663d44d364",
+        "CRC_verified": true,
+        "record_count": 30
+      }
+    },
+    "test.json": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted/test.json",
+      "sha256": "fd1fdfcb0e526778a1da6f279992eb2db263f228cfecafcc74735b7f0f8b3476",
+      "official_source": {
+        "file": "test.tfrecord",
+        "size_bytes": 136885800,
+        "sha256": "b7f147c22e96fd3fbb8d595702cb8c85e412bfb449d7b4d761cc03eb76246c31",
+        "CRC_verified": true,
+        "record_count": 30
+      }
+    },
+    "metadata.json": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted/metadata.json",
+      "sha256": "b43119104074abbbf6011c8fb0a214ceab51a68129d53f868d0f6ac9b211f7ec"
+    }
+  },
+  "summary_sha256": "1623cab0517dd4a20ceb668e322aa98ff064a6dc4e54b62b63d46d7c05ff27d5",
+  "summary_source_sha256": "67558f70cc3774eca5134b8d900f7312b2f2091b01e1870ab9954915b56855c9"
+}

@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-10-05T23:43:10.119776+00:00",
+  "checks": {
+    "old_tables_preserved": true,
+    "title_unchanged": true,
+    "abstract_unchanged": true,
+    "labels_unique": true,
+    "references_resolve": true
+  },
+  "labels": 43,
+  "native_latex": "success after final introduction refinement; eight-page main-text assertion passed",
+  "manuscript_sha256": "888828fc598af39b775ddab4987dfe0cf0e96e884984a5410d28555597d7f21b",
+  "report_sha256": "de4bb6abd98eb4599ae04091ee18aefedaa3af7f909d1da17c6a6169a1f7d437",
+  "report_pages": 15,
+  "report_visual_check": "Pages1,14,15 inspected, no clipping/overlap; previous pages2-13 text exactly unchanged. Submission manuscript exported PDF remains unavailable.",
+  "bridge_summary_sha256": "1623cab0517dd4a20ceb668e322aa98ff064a6dc4e54b62b63d46d7c05ff27d5",
+  "summary_checks": 851400,
+  "independent_aggregate_checks": 5777,
+  "raw_files_preserved": 5129,
+  "source_tests": 17,
+  "summary_tests": 21,
+  "native_summary_tests": 23,
+  "native_summary_frozen_commit": "51ef0e6",
+  "attempts": [
+    "Initial root native-summary pytest command used workspace cwd and failed import collection; correct repository cwd passed23tests.",
+    "Initial renderer KeyError for missing contrast__ field prefix; files preserved in bridge_render. Corrected bridge_render_v2 complete.",
+    "Initial report rendering invoked nonexistent fallback/pdftoppm path; corrected discovered override binary rendered successfully."
+  ],
+  "ongoing": "Native autonomous queue active; paired faithful10k continuation frozen89b01f9, not launched; automation ACTIVE.",
+  "document_independent_review": {
+    "file": "graph_bridge_render_independent_review.json",
+    "sha256": "c9a6b48ea80f2f582b140390d6599d830710cd0fc3c0059449545d407f2e6476",
+    "mse_cells": 48,
+    "interaction_cells": 12,
+    "report_cells": 8,
+    "plot_coordinates": 24
+  }
+}

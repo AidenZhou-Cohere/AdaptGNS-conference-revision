@@ -1,0 +1,123 @@
+{
+  "review": "Read-only compact graph bridge publication review",
+  "state": "pass",
+  "generated_utc": "2026-10-05T23:41:46.783347+00:00",
+  "manifest_sha256": "c1df28fb661a945bfd3b69ffcb8c69fbaa9047d14112e44fb2af69535c69736e",
+  "checks": {
+    "publication_verifier_passed": true,
+    "manifest_files": 34,
+    "inventory_entries": 5129,
+    "full_summary_sha256": "1623cab0517dd4a20ceb668e322aa98ff064a6dc4e54b62b63d46d7c05ff27d5",
+    "readme_numeric_cells_checked": [
+      {
+        "split": "valid",
+        "objective": "faithful",
+        "text": "0.010553652 \u00b1 0.00043402866",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "faithful",
+        "text": "0.0086427241 \u00b1 0.00047950937",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "faithful",
+        "text": "18.131 \u00b1 1.9193%",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "faithful",
+        "text": "0.00087758238 \u00b1 0.00020271618",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "nll",
+        "text": "0.011425601 \u00b1 0.00031625571",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "nll",
+        "text": "0.0094865454 \u00b1 0.00052811387",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "nll",
+        "text": "17.012 \u00b1 2.4348%",
+        "verified": true
+      },
+      {
+        "split": "valid",
+        "objective": "nll",
+        "text": "0.0015811174 \u00b1 0.00052462993",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "faithful",
+        "text": "0.0095913586 \u00b1 0.00013784493",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "faithful",
+        "text": "0.0078792879 \u00b1 0.00016405576",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "faithful",
+        "text": "17.854 \u00b1 0.74764%",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "faithful",
+        "text": "0.00050150575 \u00b1 0.00015807525",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "nll",
+        "text": "0.010610015 \u00b1 0.00050569341",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "nll",
+        "text": "0.008774932 \u00b1 0.00022189036",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "nll",
+        "text": "17.214 \u00b1 3.0139%",
+        "verified": true
+      },
+      {
+        "split": "test",
+        "objective": "nll",
+        "text": "0.00076399516 \u00b1 0.00022294805",
+        "verified": true
+      }
+    ],
+    "numeric_tolerance": "Half of last printed decimal place plus1e-16; within-seed ratio arithmetic relative tolerance1e-12.",
+    "within_seed_ratio_arithmetic": true,
+    "readme_all_seed_sign_claims": true,
+    "declared_contrasts": 37,
+    "omitted_particle_archives": 2550,
+    "omitted_raw_frame_json": 2550
+  },
+  "review_test_history": "An initial generic relative tolerance was too strict for rounded five-significant-digit percentages. Exact display-precision rounding checks then passed every number; no publication bytes were changed.",
+  "scope": "Reviewed final curated aggregate outcomes and README by request; no new experiment, model inference, raw-output searches or raw-data/checkpoint rehash. Package verifier checks compact data against compressed exact summary, coverage and stored inventory hashes. Curator owns the reported prior full raw-file rehash.",
+  "limitations": [
+    "The package is explicitly not a standalone inference/reproduction bundle: raw particle arrays, original frame records, data and checkpoints remain external.",
+    "Observed-history outcomes, same previously inspected test population, three paired seeds and jointly changed risk/edge ordering semantics are clearly disclosed.",
+    "Native autonomous inference and new110k results are not included in or inferred from this package."
+  ]
+}

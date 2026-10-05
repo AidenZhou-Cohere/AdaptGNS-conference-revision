@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "scope": "Package byte identity, all raw output hashes stable, result-index correspondence and complete all-case coverage; no model execution",
+  "created_utc": "2026-10-05T23:40:32.261012+00:00",
+  "manifest_sha256": "c1df28fb661a945bfd3b69ffcb8c69fbaa9047d14112e44fb2af69535c69736e",
+  "raw_files_checked_before_and_after": 5129,
+  "raw_bytes_preserved": 2242802064,
+  "copied_original_artifacts": 29,
+  "package_files_excluding_manifest_and_audit": 34,
+  "package_bytes_excluding_manifest_and_audit": 19020367,
+  "hash_and_manifest_checks": 5163,
+  "all_case_outcomes": 40800,
+  "failed_case_outcomes": 0,
+  "omitted_counts": {
+    "raw_frame_json": 2550,
+    "particle_arrays": 2550,
+    "process_log": 6
+  },
+  "omitted_bytes": {
+    "raw_frame_json": 37240635,
+    "particle_arrays": 2148615161,
+    "process_log": 372588
+  }
+}

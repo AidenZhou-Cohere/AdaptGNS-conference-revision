@@ -1,5 +1,11 @@
 # Adaptive Interaction Graphs: correctness and controlled experiments
 
+## October 5: exploratory graph-convention follow-up
+
+The [six-model graph bridge](research/results/graph_convention_bridge_20261005/README.md) completed40,800 cases across2,550 observed histories, with no failures. Restoring trained self-messages reduces baseline test error by17.85±0.75% (faithful) and17.21±3.01% (NLL), but risk still loses to random in every seed on validation and test. These are paired within-seed reductions, with sample SD across three seeds. Cap128 is inactive on the observed histories; all native parity gates pass. The [figure and tables](research/results/graph_convention_bridge_analysis_20261005/README.md) reproduce from the hash-pinned compact publication.
+
+The earlier [saved-action analysis](research/results/full_action_benefit_20261005/README.md) also retains weak risk/actual-action rank association, nonmonotone high-risk structure and a nondeployable whole-frame abstention reference. These separate exploratory findings refine the mechanism question without replacing the original outcomes below. Native autonomous controls are running; an equal-update paired faithful graph-exposure continuation is prepared. All failed/negative evidence is retained.
+
 ## October 5: locked full-architecture evaluation complete
 
 All six fixed 100,000-update models and all twelve evaluation jobs completed. The final queue status is **October 5, 20:22:35 UTC**. The experiment covers **810 autonomous trajectory-policy outcomes** (27 test trajectories × five policies × six models) and **1,782 same-state frames**. Official test indices are **3–29**; prior inspection of indices 0–2 and historical aggregates prevents a claim of pristine independent confirmation.
