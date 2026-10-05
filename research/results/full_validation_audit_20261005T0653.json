@@ -1,0 +1,234 @@
+{
+  "recorded_utc": "2026-10-05T06:53:51.384709+00:00",
+  "scope": "Independent read-only saved clean-validation audit of nll_seed1 at updates [20000, 25000, 30000, 35000]; first record is prior reference. Not model execution, checkpoint selection, final-model certification or test evidence.",
+  "files": {
+    "20000": {
+      "path": "nll_seed1/validation/step-020000.json",
+      "sha256": "16a83e07dbc341bc9013e4a8be1c755ab1be40ac4ba5412e52a16ddb2a8b7118"
+    },
+    "25000": {
+      "path": "nll_seed1/validation/step-025000.json",
+      "sha256": "f3fb92a710d77083f2ddac1388aa85956bffb785d0a0c21679226917d1bf27ac"
+    },
+    "30000": {
+      "path": "nll_seed1/validation/step-030000.json",
+      "sha256": "f4281cd678ab831ccf162c367d53245123bc76b280920cc43403b5cb34a9c97e"
+    },
+    "35000": {
+      "path": "nll_seed1/validation/step-035000.json",
+      "sha256": "98facd345c1e2c0d0dd8165cccad183aac2bfab9281d8ecd2814855911d977a4"
+    }
+  },
+  "configuration": {
+    "protocol_file_sha256": "7a7c1ecb5854616a24be4aee85f6be9f4d2408f2fff3f58e954efd7290eda7ed",
+    "canonical_run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75",
+    "matches_previously_verified_config": true
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+    },
+    "protocol_sha256": {
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true
+  },
+  "checks": {
+    "saved_snapshot": 5,
+    "identity": 1373,
+    "source_identity": 36,
+    "finite_scalar": 4288,
+    "domain": 3648,
+    "arithmetic": 1148,
+    "hash_stability": 25
+  },
+  "checks_total": 10523,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "20000": {
+      "coordinate_mse": 0.0205894775300086,
+      "constant_free_gaussian_nll": -3.5193214402983575,
+      "realized_vector_se": 0.0411789550600172,
+      "predicted_vector_se": 0.05445385313331096,
+      "binned_vector_se_calibration_gap": 0.013274898073293767
+    },
+    "25000": {
+      "coordinate_mse": 0.01720839587607945,
+      "constant_free_gaussian_nll": -3.7409814181950005,
+      "realized_vector_se": 0.0344167917521589,
+      "predicted_vector_se": 0.036443856091010085,
+      "binned_vector_se_calibration_gap": 0.0022380967958257414
+    },
+    "30000": {
+      "coordinate_mse": 0.016182072591732148,
+      "constant_free_gaussian_nll": -3.6994518578288744,
+      "realized_vector_se": 0.032364145183464296,
+      "predicted_vector_se": 0.0493160923659375,
+      "binned_vector_se_calibration_gap": 0.017902715184108492
+    },
+    "35000": {
+      "coordinate_mse": 0.016911474552353162,
+      "constant_free_gaussian_nll": -3.7057534295275714,
+      "realized_vector_se": 0.033822949104706325,
+      "predicted_vector_se": 0.03678451565593403,
+      "binned_vector_se_calibration_gap": 0.0029615665512277103
+    }
+  },
+  "comparisons": {
+    "25000_versus_20000": {
+      "coordinate_mse": {
+        "difference": -0.0033810816539291515,
+        "percent_change": -16.421405783616006
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.22165997789664305,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.006762163307858303,
+        "percent_change": -16.421405783616006
+      },
+      "predicted_vector_se": {
+        "difference": -0.018009997042300878,
+        "percent_change": -33.07387082087613
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.011036801277468027,
+        "percent_change": -83.14038432936589
+      }
+    },
+    "30000_versus_25000": {
+      "coordinate_mse": {
+        "difference": -0.0010263232843473018,
+        "percent_change": -5.964084576726547
+      },
+      "constant_free_gaussian_nll": {
+        "difference": 0.041529560366126095,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.0020526465686946035,
+        "percent_change": -5.964084576726547
+      },
+      "predicted_vector_se": {
+        "difference": 0.012872236274927416,
+        "percent_change": 35.32073072284665
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.01566461838828275,
+        "percent_change": 699.9079940375555
+      }
+    },
+    "35000_versus_30000": {
+      "coordinate_mse": {
+        "difference": 0.0007294019606210143,
+        "percent_change": 4.507469339827863
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.0063015716986969394,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.0014588039212420287,
+        "percent_change": 4.507469339827863
+      },
+      "predicted_vector_se": {
+        "difference": -0.012531576710003468,
+        "percent_change": -25.410725199020423
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.014941148632880782,
+        "percent_change": -83.45744474638924
+      }
+    },
+    "35000_versus_20000": {
+      "coordinate_mse": {
+        "difference": -0.003678002977655439,
+        "percent_change": -17.8635080579138
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.1864319892292139,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.007356005955310878,
+        "percent_change": -17.8635080579138
+      },
+      "predicted_vector_se": {
+        "difference": -0.01766933747737693,
+        "percent_change": -32.44827768958758
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.010313331522066057,
+        "percent_change": -77.69047615374356
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Only the four specified NLLseed1 validation records, NLLseed1 saved configuration, frozen source/protocol bytes, the needed20k reference from the prior06:23 audit, saved06:53 progress snapshot and this audit source were read.",
+    "No model, checkpoint, dataset, test file, training log or particle-level prediction was loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be independently recovered.",
+    "Raw dataset hashes and native process identity are not reverified here; data identity fields are protected by canonical configuration checks.",
+    "No later validation records were polled or evaluated. No scientific source, protocol, manuscript or public result artifact was edited."
+  ],
+  "audit_script_sha256": "af245abc4ecebe563498c9ff46e24620cb5aef9bd3440fa6b2e9283941d8e808",
+  "saved_snapshot": {
+    "path": "work/training_progress_20261005T0653.json",
+    "sha256": "b2a2298538bbebc48ff5c99c099b5de1fe0be6d325e7ed8e2be48222bf830bb2",
+    "recorded_utc": "2026-10-05T06:53:34.198383+00:00",
+    "states": {
+      "faithful_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed1": {
+        "state": "running",
+        "completed_steps": 35400
+      },
+      "faithful_seed2": {
+        "state": "not_started",
+        "completed_steps": 0
+      },
+      "nll_seed2": {
+        "state": "not_started",
+        "completed_steps": 0
+      }
+    },
+    "limit": "Saved status only; no independent native process or checkpoint verification."
+  }
+}

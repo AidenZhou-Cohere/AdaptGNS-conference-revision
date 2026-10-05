@@ -1,23 +1,23 @@
 {
   "scope": "interim training validation, not final model evaluation or test evidence",
-  "recorded_utc": "2026-10-05T05:23:38.120476+00:00",
+  "recorded_utc": "2026-10-05T08:53:34.368887+00:00",
   "total_requested_updates": 600000,
-  "total_completed_updates": 304200,
-  "total_recorded_checkpoint_updates": 300000,
-  "hours_to_cutoff": 50.60607764555555,
+  "total_completed_updates": 406500,
+  "total_recorded_checkpoint_updates": 400000,
+  "hours_to_cutoff": 47.107119753611116,
   "protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "cutoff_utc": "2026-10-07T08:00:00+00:00",
   "conditional_projections": {
     "observed_average": {
-      "seconds_per_update": 0.1920866567635165,
-      "remaining_training_hours": 15.783120297402272,
-      "projected_training_finish_utc": "2026-10-05T21:10:37.353547+00:00",
+      "seconds_per_update": 0.1927719779646098,
+      "remaining_training_hours": 10.361493815597777,
+      "projected_training_finish_utc": "2026-10-05T19:15:15.746623+00:00",
       "after_cutoff": false
     },
     "recent_median": {
-      "seconds_per_update": 0.2281061862500428,
-      "remaining_training_hours": 18.74272497021185,
-      "projected_training_finish_utc": "2026-10-06T00:08:11.930369+00:00",
+      "seconds_per_update": 0.2028270802049883,
+      "remaining_training_hours": 10.90195556101812,
+      "projected_training_finish_utc": "2026-10-05T19:47:41.408907+00:00",
       "after_cutoff": false
     }
   },
@@ -819,8 +819,8 @@
       "name": "nll_seed1",
       "objective": "nll",
       "seed": 1,
-      "state": "running",
-      "completed_steps": 4200,
+      "state": "complete",
+      "completed_steps": 100000,
       "frozen_source_mismatches": [],
       "error": null,
       "run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75",
@@ -836,6 +836,246 @@
             "predicted_vector_se": 1.291293533202495
           },
           "binned_vector_se_calibration_gap": 1.1061269836352268
+        },
+        {
+          "completed_steps": 5000,
+          "file": "step-005000.json",
+          "sha256": "0ce187e173a61edbc0e322508e484ae889bea040171c37e88fd23d032210124f",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.04016201725203737,
+            "constant_free_gaussian_nll": -2.595146199474052,
+            "realized_vector_se": 0.08032403450407474,
+            "predicted_vector_se": 0.10662498715771498
+          },
+          "binned_vector_se_calibration_gap": 0.026300952653640273
+        },
+        {
+          "completed_steps": 10000,
+          "file": "step-010000.json",
+          "sha256": "319be87c26712d24661a1b78563e6b831d52e15b565d6cd5cc8a40569bdbda6a",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.027840900860872472,
+            "constant_free_gaussian_nll": -2.940394455371319,
+            "realized_vector_se": 0.055681801721744945,
+            "predicted_vector_se": 0.07558033562006668
+          },
+          "binned_vector_se_calibration_gap": 0.020923210036732497
+        },
+        {
+          "completed_steps": 15000,
+          "file": "step-015000.json",
+          "sha256": "4e2060adc1eeaa35cafad35e845931bcc55b67219554498281c626fb8d11e7d9",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.0208844361972042,
+            "constant_free_gaussian_nll": -3.4530368288967273,
+            "realized_vector_se": 0.0417688723944084,
+            "predicted_vector_se": 0.04976251109869501
+          },
+          "binned_vector_se_calibration_gap": 0.007993638704286616
+        },
+        {
+          "completed_steps": 20000,
+          "file": "step-020000.json",
+          "sha256": "16a83e07dbc341bc9013e4a8be1c755ab1be40ac4ba5412e52a16ddb2a8b7118",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.0205894775300086,
+            "constant_free_gaussian_nll": -3.5193214402983575,
+            "realized_vector_se": 0.0411789550600172,
+            "predicted_vector_se": 0.05445385313331096
+          },
+          "binned_vector_se_calibration_gap": 0.013274898073293767
+        },
+        {
+          "completed_steps": 25000,
+          "file": "step-025000.json",
+          "sha256": "f3fb92a710d77083f2ddac1388aa85956bffb785d0a0c21679226917d1bf27ac",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.01720839587607945,
+            "constant_free_gaussian_nll": -3.7409814181950005,
+            "realized_vector_se": 0.0344167917521589,
+            "predicted_vector_se": 0.036443856091010085
+          },
+          "binned_vector_se_calibration_gap": 0.0022380967958257414
+        },
+        {
+          "completed_steps": 30000,
+          "file": "step-030000.json",
+          "sha256": "f4281cd678ab831ccf162c367d53245123bc76b280920cc43403b5cb34a9c97e",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.016182072591732148,
+            "constant_free_gaussian_nll": -3.6994518578288744,
+            "realized_vector_se": 0.032364145183464296,
+            "predicted_vector_se": 0.0493160923659375
+          },
+          "binned_vector_se_calibration_gap": 0.017902715184108492
+        },
+        {
+          "completed_steps": 35000,
+          "file": "step-035000.json",
+          "sha256": "98facd345c1e2c0d0dd8165cccad183aac2bfab9281d8ecd2814855911d977a4",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.016911474552353162,
+            "constant_free_gaussian_nll": -3.7057534295275714,
+            "realized_vector_se": 0.033822949104706325,
+            "predicted_vector_se": 0.03678451565593403
+          },
+          "binned_vector_se_calibration_gap": 0.0029615665512277103
+        },
+        {
+          "completed_steps": 40000,
+          "file": "step-040000.json",
+          "sha256": "208a57dbd931e9a18ae6ac92ade421f0d43719db155ba8bd445dc7263a17ae6c",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.013969560288717557,
+            "constant_free_gaussian_nll": -3.959188975467917,
+            "realized_vector_se": 0.027939120577435115,
+            "predicted_vector_se": 0.03858373258919628
+          },
+          "binned_vector_se_calibration_gap": 0.010644612011761168
+        },
+        {
+          "completed_steps": 45000,
+          "file": "step-045000.json",
+          "sha256": "5e816fee2b0eeec4b24d11eb32c55ab9d499c61d82357765500917408dc3975b",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.012847475415986442,
+            "constant_free_gaussian_nll": -4.17002810855756,
+            "realized_vector_se": 0.025694950831972884,
+            "predicted_vector_se": 0.03015287273555485
+          },
+          "binned_vector_se_calibration_gap": 0.004457921903581972
+        },
+        {
+          "completed_steps": 50000,
+          "file": "step-050000.json",
+          "sha256": "a15dfd77c933c0de24be26a93033fe6cb1ad4591d7a9a408c324f24e52186a50",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.01204816860392118,
+            "constant_free_gaussian_nll": -4.233449541799334,
+            "realized_vector_se": 0.02409633720784236,
+            "predicted_vector_se": 0.031231246898907248
+          },
+          "binned_vector_se_calibration_gap": 0.007134909691064882
+        },
+        {
+          "completed_steps": 55000,
+          "file": "step-055000.json",
+          "sha256": "9f047e5ae71541529960e4b1edb39c832d91e7ac4ca4cb91a336d528aa87b245",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.011404245903079625,
+            "constant_free_gaussian_nll": -4.147257280267457,
+            "realized_vector_se": 0.02280849180615925,
+            "predicted_vector_se": 0.03232690248159954
+          },
+          "binned_vector_se_calibration_gap": 0.0095184106754403
+        },
+        {
+          "completed_steps": 60000,
+          "file": "step-060000.json",
+          "sha256": "5f7850177bd05306be599c2b383602334a815b135e72035a2e2e58ce152e563f",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.011595198934354563,
+            "constant_free_gaussian_nll": -4.179517031477891,
+            "realized_vector_se": 0.023190397868709127,
+            "predicted_vector_se": 0.028369239237395278
+          },
+          "binned_vector_se_calibration_gap": 0.00517884136868616
+        },
+        {
+          "completed_steps": 65000,
+          "file": "step-065000.json",
+          "sha256": "e8afefb96f8dbdbfeaa68d5e04989ed17dad9bef10198521fce6a9fbb8ef0924",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.01332596665206028,
+            "constant_free_gaussian_nll": -3.940382379470514,
+            "realized_vector_se": 0.02665193330412056,
+            "predicted_vector_se": 0.034108572445425006
+          },
+          "binned_vector_se_calibration_gap": 0.00745663914130445
+        },
+        {
+          "completed_steps": 70000,
+          "file": "step-070000.json",
+          "sha256": "e1fba9de42c7223e4e5a0d0a14397f1158b5d9f4e403e6e733fd7cda915cb424",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.011286448316697223,
+            "constant_free_gaussian_nll": -4.22532011281729,
+            "realized_vector_se": 0.022572896633394447,
+            "predicted_vector_se": 0.03160662002185896
+          },
+          "binned_vector_se_calibration_gap": 0.009033723388464513
+        },
+        {
+          "completed_steps": 75000,
+          "file": "step-075000.json",
+          "sha256": "ed53ef59894316252a262079304887bbc6a86d14344289dbd0ad3b17decc57ac",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.010097160764834138,
+            "constant_free_gaussian_nll": -4.420866526183381,
+            "realized_vector_se": 0.020194321529668276,
+            "predicted_vector_se": 0.029687672613225958
+          },
+          "binned_vector_se_calibration_gap": 0.009493351083557677
+        },
+        {
+          "completed_steps": 80000,
+          "file": "step-080000.json",
+          "sha256": "2faa31976efa8770a293b83389ad44954b5fa7fe559aafd88310a7ab76a46f30",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.00986227665364567,
+            "constant_free_gaussian_nll": -4.374013414030372,
+            "realized_vector_se": 0.01972455330729134,
+            "predicted_vector_se": 0.029421228937870334
+          },
+          "binned_vector_se_calibration_gap": 0.009696675630578987
+        },
+        {
+          "completed_steps": 85000,
+          "file": "step-085000.json",
+          "sha256": "c8cce02247a5359bac47bd1adcb751f0491180ed971dffb4a4b3ef8f229a7d29",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.009832498570258169,
+            "constant_free_gaussian_nll": -4.447649285042377,
+            "realized_vector_se": 0.019664997140516338,
+            "predicted_vector_se": 0.02622593154807649
+          },
+          "binned_vector_se_calibration_gap": 0.00656093440756015
+        },
+        {
+          "completed_steps": 90000,
+          "file": "step-090000.json",
+          "sha256": "d80d57271f7663c1b69a3ae8114ef5bfccd96fe918638e6c518414dadd8354fc",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.01126840721131535,
+            "constant_free_gaussian_nll": -4.20628902548322,
+            "realized_vector_se": 0.0225368144226307,
+            "predicted_vector_se": 0.028461563757848158
+          },
+          "binned_vector_se_calibration_gap": 0.005924749335217454
+        },
+        {
+          "completed_steps": 95000,
+          "file": "step-095000.json",
+          "sha256": "3f5260874e8d2be24c5376798f602c5a8f3bf93d308c91204786c04ed8b56751",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.009407384665019173,
+            "constant_free_gaussian_nll": -4.41550294461192,
+            "realized_vector_se": 0.018814769330038346,
+            "predicted_vector_se": 0.02743599779419902
+          },
+          "binned_vector_se_calibration_gap": 0.008621228464160677
+        },
+        {
+          "completed_steps": 100000,
+          "file": "step-100000.json",
+          "sha256": "df2e0a3da2e57fdc2ed7e3043a31196c9f75052faa9c2dd1edb036d0e651ac81",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.010030030963538354,
+            "constant_free_gaussian_nll": -4.4365231683361115,
+            "realized_vector_se": 0.020060061927076708,
+            "predicted_vector_se": 0.02490842521414051
+          },
+          "binned_vector_se_calibration_gap": 0.004848363287063805
         }
       ]
     },
@@ -843,11 +1083,37 @@
       "name": "faithful_seed2",
       "objective": "faithful",
       "seed": 2,
-      "state": "not_started",
-      "completed_steps": 0,
-      "frozen_source_mismatches": null,
+      "state": "running",
+      "completed_steps": 6500,
+      "frozen_source_mismatches": [],
       "error": null,
-      "validation_history": []
+      "run_config_sha256": "0f7af597a04ea0ca2bb11a7010dd43d1e4f995900828b894a8c3ff182354b31f",
+      "validation_history": [
+        {
+          "completed_steps": 0,
+          "file": "step-000000.json",
+          "sha256": "7751f6656254dfa5b8b74e0263fe205d576dcc2783d17d3adbde2afcb1e208e7",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.047843640668025114,
+            "constant_free_gaussian_nll": -0.5194394808404007,
+            "realized_vector_se": 0.09568728133605023,
+            "predicted_vector_se": 1.090810305264408
+          },
+          "binned_vector_se_calibration_gap": 0.9951230239283577
+        },
+        {
+          "completed_steps": 5000,
+          "file": "step-005000.json",
+          "sha256": "f3952fb4743b0c5866e5cb890122276ff44af2733c064ad168ff543f23bcbbf4",
+          "equal_trajectory_mean": {
+            "coordinate_mse": 0.028554010293428942,
+            "constant_free_gaussian_nll": -2.829477946869042,
+            "realized_vector_se": 0.057108020586857884,
+            "predicted_vector_se": 0.09019057793580706
+          },
+          "binned_vector_se_calibration_gap": 0.033082557348949194
+        }
+      ]
     },
     {
       "name": "nll_seed2",
@@ -1042,10 +1308,80 @@
       "scope": "Byte hash and checkpoint pointer from saved native progress snapshot only; no checkpoint loading or selection",
       "pointer_snapshot": "work/training_progress_20261005T0523.json",
       "pointer_snapshot_sha256": "520be557762ae430c512ce2257f2cd28ba6bf431b872f058b102253ad39ab8d0"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 10000,
+      "path": "checkpoint-010000.pt",
+      "sha256": "bda8f2a318d0ad94aca6368bec873153c32ea0816420ce13619e3d6fbc453ff7",
+      "file_hash_verified_utc": "2026-10-05T05:53:48.835812+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only;no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0553.json",
+      "pointer_snapshot_sha256": "ac199f24aac93359e865dc7759b9b70a5cc5fc8170753fe117c9bfa04edf39ad"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 20000,
+      "path": "checkpoint-020000.pt",
+      "sha256": "337894db8ef310d793a242d93236593d0e73c5f6c0bb068dbb1e3b64eb3d63f4",
+      "file_hash_verified_utc": "2026-10-05T06:23:47.591337+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0623.json",
+      "pointer_snapshot_sha256": "a69e04c9c375134afc5a3df766c60b51fac38fdc2eb7579e1bb8db939ca987b7"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 30000,
+      "path": "checkpoint-030000.pt",
+      "sha256": "7f744ae4d20854aa6275e3c3dec716d19249c99ffe2561f39b52784ce5346084",
+      "file_hash_verified_utc": "2026-10-05T06:53:49.600067+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0653.json",
+      "pointer_snapshot_sha256": "b2a2298538bbebc48ff5c99c099b5de1fe0be6d325e7ed8e2be48222bf830bb2"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 50000,
+      "path": "checkpoint-050000.pt",
+      "sha256": "a824ef3581e9b043e8d5ff1c390532ce1fe9ffdddbed787c00c67c0683618d51",
+      "file_hash_verified_utc": "2026-10-05T07:23:51.488153+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0723.json",
+      "pointer_snapshot_sha256": "f71344095e47b8db96d0f099b09061637d8f67c99b796f97859f45a4fc850138"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 70000,
+      "path": "checkpoint-070000.pt",
+      "sha256": "fc5ccc0512d6484abd7f39ce100ec5339fd83b88de69e93e83810fc0c8978b42",
+      "file_hash_verified_utc": "2026-10-05T07:53:50.090161+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0753.json",
+      "pointer_snapshot_sha256": "1164d34985fba438771eee1a947ba04a5f9fd00914518740e6f0219242abcdae"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 90000,
+      "path": "checkpoint-090000.pt",
+      "sha256": "9552e142dc5110aef8c92eb317aec7400e0d25d3b1ca64e449c28ead3bb2f88f",
+      "file_hash_verified_utc": "2026-10-05T08:23:52.484673+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0823.json",
+      "pointer_snapshot_sha256": "08a070e2c12dc0c1360711a2d0ef9ade23152fb5ad86594b63166b37aa2d0962"
+    },
+    {
+      "model": "nll_seed1",
+      "completed_steps": 100000,
+      "path": "checkpoint-100000.pt",
+      "sha256": "fcc25057d75a4dfab5eec36264e89ad760f2d878d60a93915a5a66374e716833",
+      "file_hash_verified_utc": "2026-10-05T08:54:02.985119+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0853.json",
+      "pointer_snapshot_sha256": "9519d7068dd6f8b5a663f6de427f5fa322b99883da01952bf6557ca5e981e203"
     }
   ],
   "interruption_records": [
     "full_training_recovery_20261004T1853.json"
   ],
-  "snapshot_scope": "Training progress at05:23:38UTC;64validation records agree with the last_validation pointers at that snapshot. Curves source statuses were sampled separately at their recorded generation time."
+  "snapshot_scope": "Progress at08:53:34UTC;86validation records agree with snapshot last_validation pointers. Curves raw running statuses were sampled separately at curve generation time."
 }

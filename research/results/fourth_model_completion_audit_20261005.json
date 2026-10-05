@@ -1,0 +1,461 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-05T08:55:10.847319+00:00",
+  "scope": "Read-only saved-file fourth completion/cost and full logged seed1 pair audit; no checkpoint/model/dataset loads, training actions or document edits",
+  "audit_source_sha256": "b22cf5861039746558d95b449a1ff0761d7fcfdc0a63e3c15166cd4ec786fcc3",
+  "limitations": [
+    "Completion UTC is the final status after validation/checkpoint; exact optimizer-update100000 UTC is not separately recorded.",
+    "Trainer elapsed and invocation wall spans are accounting durations, not hardware utilization, GPU compute, CPU core-seconds or energy. Setup before the timer is excluded, and elapsed differences do not establish objective-level speed effects.",
+    "Single queue markers, unique log points and monotonic elapsed are scoped no-restart evidence from saved logs, not proof that no unlogged interruption occurred.",
+    "All1001 recorded sampling/LR/particle-count points are compared across the full100k schedule, not every unlogged optimizer step. Configured noise is identical; actual noise arrays and unlogged draws are not empirically compared.",
+    "Seed1 final and NLL95k means/bin arithmetic are independently reaggregated from saved scalar records. Raw residuals, Gaussian-likelihood terms and quantile-bin membership are not reconstructed.",
+    "Seed0 contrasts are carried from its saved exact-final statuses, previously audited separately; no two-seed mean, SD, significance test or substitute three-seed estimate is produced.",
+    "All comparisons concern descriptive clean validation on128 fixed observed frames from30 trajectories with training-noise-adjusted normalization. They do not select an earlier checkpoint, establish across-seed generalization, or imply test/rollout superiority.",
+    "Source/protocol bytes are verified; data identities are inherited from matching saved configs. Checkpoint and source-dataset bytes are not opened, and no native process is polled or changed."
+  ],
+  "snapshot_recorded_utc": "2026-10-05T08:53:34.368887+00:00",
+  "completion": {
+    "name": "nll_seed1",
+    "completed_steps": 100000,
+    "recorded_complete_status_utc": "2026-10-05T08:32:09.460121+00:00",
+    "trainer_started_utc": "2026-10-05T05:10:01.409147+00:00",
+    "recorded_elapsed_seconds": 12124.411300790998,
+    "invocation_wall_span_seconds": 12128.050974,
+    "wall_minus_recorded_elapsed_seconds": 3.6396732090015576,
+    "elapsed_after_final_update_log_seconds": 2.448750583003857,
+    "final_checkpoint_pointer": {
+      "path": "checkpoint-100000.pt",
+      "sha256": "fcc25057d75a4dfab5eec36264e89ad760f2d878d60a93915a5a66374e716833",
+      "completed_steps": 100000
+    },
+    "checkpoint_bytes_verified_here": false,
+    "queue_start_markers": [
+      {
+        "line": 2,
+        "utc": "2026-10-05T05:09:59.861726+00:00"
+      }
+    ],
+    "logged_points": 1001
+  },
+  "paired_seed1_configuration_differences": [
+    {
+      "path": "/objective",
+      "faithful": "faithful",
+      "nll": "nll"
+    }
+  ],
+  "paired_seed1_logged_schedule": {
+    "compared_points": 1001,
+    "schedule": "update1 and every100 updates through100000",
+    "fields_checked": [
+      "completed_steps",
+      "frame_ids",
+      "particles",
+      "lr"
+    ],
+    "noise_arrays_empirically_checked": false,
+    "canonical_faithful_log_record_sha256": "8c83e6d18030a79a072ec71dca23e724e74432d6be3cad7097fa0f23a0bec6eb",
+    "canonical_nll_log_record_sha256": "7867c2819753cb3b58a870f3a3c9fc1d593dbdcd0b6675ce966c17b2319ee27f"
+  },
+  "individual_seed_final_validation_contrasts": {
+    "0": {
+      "coordinate_mse": {
+        "faithful_final": 0.008118621072848636,
+        "nll_final": 0.009454307789297232,
+        "nll_minus_faithful": 0.0013356867164485958,
+        "percent_nll_difference_from_faithful": 16.452137677857333
+      },
+      "constant_free_gaussian_nll": {
+        "faithful_final": -4.28671760498356,
+        "nll_final": -4.4893484572310705,
+        "nll_minus_faithful": -0.20263085224751087,
+        "percent_nll_difference_from_faithful": null
+      },
+      "binned_vector_se_calibration_gap": {
+        "faithful_final": 0.012286419130256788,
+        "nll_final": 0.006630595890463164,
+        "nll_minus_faithful": -0.005655823239793624,
+        "percent_nll_difference_from_faithful": -46.03312958667898
+      }
+    },
+    "1": {
+      "coordinate_mse": {
+        "faithful_final": 0.009059420293137969,
+        "nll_final": 0.010030030963538354,
+        "nll_minus_faithful": 0.0009706106704003847,
+        "percent_nll_difference_from_faithful": 10.713827584923628
+      },
+      "constant_free_gaussian_nll": {
+        "faithful_final": -4.300237582109349,
+        "nll_final": -4.4365231683361115,
+        "nll_minus_faithful": -0.13628558622676223,
+        "percent_nll_difference_from_faithful": null
+      },
+      "binned_vector_se_calibration_gap": {
+        "faithful_final": 0.008316141571079835,
+        "nll_final": 0.004848363287063805,
+        "nll_minus_faithful": -0.0034677782840160307,
+        "percent_nll_difference_from_faithful": -41.699365677895095
+      }
+    }
+  },
+  "nll_seed1_final_validation": {
+    "coordinate_mse": 0.010030030963538354,
+    "constant_free_gaussian_nll": -4.4365231683361115,
+    "realized_vector_se": 0.020060061927076708,
+    "predicted_vector_se": 0.02490842521414051,
+    "binned_vector_se_calibration_gap": 0.004848363287063805
+  },
+  "nll_seed1_changes_since95000": {
+    "coordinate_mse": {
+      "at95000": 0.009407384665019173,
+      "at100000": 0.010030030963538354,
+      "final_minus95000": 0.0006226462985191809,
+      "percent_change_from95000": 6.618697126678107
+    },
+    "constant_free_gaussian_nll": {
+      "at95000": -4.41550294461192,
+      "at100000": -4.4365231683361115,
+      "final_minus95000": -0.02102022372419121,
+      "percent_change_from95000": null
+    },
+    "realized_vector_se": {
+      "at95000": 0.018814769330038346,
+      "at100000": 0.020060061927076708,
+      "final_minus95000": 0.0012452925970383617,
+      "percent_change_from95000": 6.618697126678107
+    },
+    "predicted_vector_se": {
+      "at95000": 0.02743599779419902,
+      "at100000": 0.02490842521414051,
+      "final_minus95000": -0.0025275725800585104,
+      "percent_change_from95000": -9.212614022708998
+    },
+    "binned_vector_se_calibration_gap": {
+      "at95000": 0.008621228464160677,
+      "at100000": 0.004848363287063805,
+      "final_minus95000": -0.003772865177096872,
+      "percent_change_from95000": -43.762500817384165
+    }
+  },
+  "three_seed_summary": {
+    "state": "pending",
+    "computed_here": false,
+    "reason": "Seed2 pair is incomplete; two completed seeds do not replace the predeclared three-seed population."
+  },
+  "saved_transition_evidence": {
+    "queue_pid_from_snapshot": 2778,
+    "next_job": "faithful_seed2",
+    "next_trainer_pid": 74837,
+    "next_trainer_started_utc": "2026-10-05T08:32:20.563274+00:00",
+    "complete_status_to_next_start_seconds": 11.103153,
+    "native_process_identity_checked_here": false
+  },
+  "state": "passed",
+  "checks_by_kind": {
+    "snapshot_identity": 24,
+    "completion": 10,
+    "provenance": 21,
+    "logged_schedule": 4,
+    "no_restart_evidence": 6,
+    "validation_identity": 17,
+    "paired_configuration": 1,
+    "paired_logged_sampling": 4004,
+    "validation_aggregation": 372,
+    "dimensional_identity": 384,
+    "calibration_arithmetic": 15,
+    "validation_status": 10,
+    "paired_validation_identity": 640,
+    "snapshot_transition": 3
+  },
+  "total_checks": 5511,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "maximum_reaggregation_absolute_difference": {
+    "validation_aggregation": 8.881784197001252e-16,
+    "dimensional_identity": 0,
+    "calibration_arithmetic": 6.938893903907228e-18
+  },
+  "input_snapshots": {
+    "work/training_progress_20261005T0853.json": {
+      "sha256": "9519d7068dd6f8b5a663f6de427f5fa322b99883da01952bf6557ca5e981e203",
+      "bytes": 7677
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed0/status.json": {
+      "sha256": "a897a083d72b2f77e82b974eb9501670e70b7186beb5db38ffbe01120e5dc262",
+      "bytes": 1166
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed0/status.json": {
+      "sha256": "882f36cadcdf982becd600b059f538a8af394e8b22bcd4293a74ed1a680d0740",
+      "bytes": 1162
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/status.json": {
+      "sha256": "45b88f155eea282a59da3ea8c1c5ea8f88defc7997038fd4af35f8491c5ce783",
+      "bytes": 1171
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/status.json": {
+      "sha256": "2e644284aaa55207bb5a25213ab899175314d2dbfaa6f219a86058970dc2e890",
+      "bytes": 1166
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/protocol.json": {
+      "sha256": "aed4b98b7d790fadc2941c6138a09399d5c96bd27aeebd098c0ab28d3484789b",
+      "bytes": 44317
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/protocol.json": {
+      "sha256": "7a7c1ecb5854616a24be4aee85f6be9f4d2408f2fff3f58e954efd7290eda7ed",
+      "bytes": 44312
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/latest.json": {
+      "sha256": "67813bbac476037f91b15f94da91ae6708fb5b51d7c1303de8c6e49c85c8ca2e",
+      "bytes": 146
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/run.log": {
+      "sha256": "4f501de897f43a3e63cd1d34dcea8dd7483465b560fdb0f8b85bfb2039e18885",
+      "bytes": 199088
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-000000.json": {
+      "sha256": "9092966e4805d1433993d7a762726138b47ed37e7679f47c128cfa5a109960c9",
+      "bytes": 56691
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-005000.json": {
+      "sha256": "dd12730949cdb9a793d84130e964d2e64c76e20dfe5c420723fd04ea0804ba43",
+      "bytes": 56906
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-010000.json": {
+      "sha256": "200780b59da9b1374e3e36e05bb0790bdc07aadedcfe1c701eacb74034a54e5e",
+      "bytes": 56964
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-015000.json": {
+      "sha256": "745644754082e30a3d7e1aac279356bfdc862090cb580562263a5323c022ea8d",
+      "bytes": 56982
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-020000.json": {
+      "sha256": "36205352ab7dd1e05496ef550142c25dbfe7510cbef53d52502a9da537a16446",
+      "bytes": 57025
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-025000.json": {
+      "sha256": "82826a6fbf345eca20d75e7050cc4a61b081fd6b361d38b6d2a657dad3c4daeb",
+      "bytes": 57079
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-030000.json": {
+      "sha256": "0314c5850ef99d2c31e4434416485f360bddd192081fba43a03a2e71e03e0dfb",
+      "bytes": 57051
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-035000.json": {
+      "sha256": "66f6ef57a83b5e57ff1d19faf5ca8d352d8c23ae4eac19e98c64061815823483",
+      "bytes": 57091
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-040000.json": {
+      "sha256": "722a4f4e9f288232bbfc6c7852b9abb243a99f3ea4bb1a036e2f2e126f3b7590",
+      "bytes": 57062
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-045000.json": {
+      "sha256": "7ebad880eb1729af80033e7e39a41053dcadae78fa9c2371eb787cc89a9457e3",
+      "bytes": 57124
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-050000.json": {
+      "sha256": "4987ddc6eac14b2e6df18bc8beae96656c69d0188ae319c170523fd6390a2d4a",
+      "bytes": 57133
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-055000.json": {
+      "sha256": "f35482db6abac757f6dab6266cfff47a6140aa16e1eac4159fbf0a5d1a9ff60e",
+      "bytes": 57139
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-060000.json": {
+      "sha256": "8ebe5390d0ef6a30c0803aeab0f8e0459d92f96aa97ae5b53db802dd5c4e7299",
+      "bytes": 57111
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-065000.json": {
+      "sha256": "941d1fcbd5cd6b5c1a9f0f0f76a325369d622f72574bf8dab9ee772308a80805",
+      "bytes": 57111
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-070000.json": {
+      "sha256": "8675df55d0411e9798fc7a96ecf87a45ec4d7749b17410b98b99c934b5c654cf",
+      "bytes": 57139
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-075000.json": {
+      "sha256": "77965137d4a8dd2f138467dedd79e12cf851c93706a6840a46c01ace25188218",
+      "bytes": 57191
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-080000.json": {
+      "sha256": "c46fad0d1855c902344d889c565e3f1f9f2aa5902923feb13948a71c9555625b",
+      "bytes": 57132
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-085000.json": {
+      "sha256": "b0e1e679d7d7bc4d84b0ac8b013da89a8e516bd0b39282c11365d6aa0e2dc076",
+      "bytes": 57140
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-090000.json": {
+      "sha256": "8ab8a321a87ca5ec7e22386580d77753087976e3741cea63d936395162efb854",
+      "bytes": 57145
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-095000.json": {
+      "sha256": "ab2f583f5177e2de79063440f047194d978d697bd161999059aca1b5643850d7",
+      "bytes": 57178
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/faithful_seed1/validation/step-100000.json": {
+      "sha256": "565f1082b37e2a0eb3a6208d69bb1ec0c522b6706a8fa11b30750c4ae8058d5f",
+      "bytes": 57181
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/latest.json": {
+      "sha256": "3c132c018662da9a25d654eb074ba5d63aa2ce706ec389fe2e2530b81710bb1c",
+      "bytes": 146
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/run.log": {
+      "sha256": "bc95fb35877daea71f45397c0558598a4c6f579482e78eb405b78af38e7ba47f",
+      "bytes": 199023
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-000000.json": {
+      "sha256": "161a41581ebcd4b136c4e732eb90637e62aa1b855873303d0f3ca96ed1fbf09d",
+      "bytes": 56693
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-005000.json": {
+      "sha256": "0ce187e173a61edbc0e322508e484ae889bea040171c37e88fd23d032210124f",
+      "bytes": 56877
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-010000.json": {
+      "sha256": "319be87c26712d24661a1b78563e6b831d52e15b565d6cd5cc8a40569bdbda6a",
+      "bytes": 56958
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-015000.json": {
+      "sha256": "4e2060adc1eeaa35cafad35e845931bcc55b67219554498281c626fb8d11e7d9",
+      "bytes": 57047
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-020000.json": {
+      "sha256": "16a83e07dbc341bc9013e4a8be1c755ab1be40ac4ba5412e52a16ddb2a8b7118",
+      "bytes": 57043
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-025000.json": {
+      "sha256": "f3fb92a710d77083f2ddac1388aa85956bffb785d0a0c21679226917d1bf27ac",
+      "bytes": 57068
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-030000.json": {
+      "sha256": "f4281cd678ab831ccf162c367d53245123bc76b280920cc43403b5cb34a9c97e",
+      "bytes": 57061
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-035000.json": {
+      "sha256": "98facd345c1e2c0d0dd8165cccad183aac2bfab9281d8ecd2814855911d977a4",
+      "bytes": 57104
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-040000.json": {
+      "sha256": "208a57dbd931e9a18ae6ac92ade421f0d43719db155ba8bd445dc7263a17ae6c",
+      "bytes": 57091
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-045000.json": {
+      "sha256": "5e816fee2b0eeec4b24d11eb32c55ab9d499c61d82357765500917408dc3975b",
+      "bytes": 57172
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-050000.json": {
+      "sha256": "a15dfd77c933c0de24be26a93033fe6cb1ad4591d7a9a408c324f24e52186a50",
+      "bytes": 57144
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-055000.json": {
+      "sha256": "9f047e5ae71541529960e4b1edb39c832d91e7ac4ca4cb91a336d528aa87b245",
+      "bytes": 57160
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-060000.json": {
+      "sha256": "5f7850177bd05306be599c2b383602334a815b135e72035a2e2e58ce152e563f",
+      "bytes": 57150
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-065000.json": {
+      "sha256": "e8afefb96f8dbdbfeaa68d5e04989ed17dad9bef10198521fce6a9fbb8ef0924",
+      "bytes": 57121
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-070000.json": {
+      "sha256": "e1fba9de42c7223e4e5a0d0a14397f1158b5d9f4e403e6e733fd7cda915cb424",
+      "bytes": 57150
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-075000.json": {
+      "sha256": "ed53ef59894316252a262079304887bbc6a86d14344289dbd0ad3b17decc57ac",
+      "bytes": 57150
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-080000.json": {
+      "sha256": "2faa31976efa8770a293b83389ad44954b5fa7fe559aafd88310a7ab76a46f30",
+      "bytes": 57150
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-085000.json": {
+      "sha256": "c8cce02247a5359bac47bd1adcb751f0491180ed971dffb4a4b3ef8f229a7d29",
+      "bytes": 57180
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-090000.json": {
+      "sha256": "d80d57271f7663c1b69a3ae8114ef5bfccd96fe918638e6c518414dadd8354fc",
+      "bytes": 57128
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-095000.json": {
+      "sha256": "3f5260874e8d2be24c5376798f602c5a8f3bf93d308c91204786c04ed8b56751",
+      "bytes": 57173
+    },
+    "outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed1/validation/step-100000.json": {
+      "sha256": "df2e0a3da2e57fdc2ed7e3043a31196c9f75052faa9c2dd1edb036d0e651ac81",
+      "bytes": 57187
+    },
+    "outputs/AdaptGNS/research/full_training.py": {
+      "sha256": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "bytes": 29638
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/calibration.py": {
+      "sha256": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "bytes": 1387
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/data_loader.py": {
+      "sha256": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "bytes": 16683
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/device_utils.py": {
+      "sha256": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "bytes": 3178
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/distribute.py": {
+      "sha256": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "bytes": 1901
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/graph_network.py": {
+      "sha256": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "bytes": 17276
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py": {
+      "sha256": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "bytes": 32300
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/losses.py": {
+      "sha256": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "bytes": 2117
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/metadata.py": {
+      "sha256": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "bytes": 47
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/model_io.py": {
+      "sha256": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "bytes": 6308
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/noise_utils.py": {
+      "sha256": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "bytes": 1557
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/reading_utils.py": {
+      "sha256": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "bytes": 940
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/render_rollout.py": {
+      "sha256": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "bytes": 10649
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/train.py": {
+      "sha256": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "bytes": 27715
+    },
+    "outputs/AdaptGNS/adaptive-gns/gns/train_multinode.py": {
+      "sha256": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413",
+      "bytes": 25767
+    },
+    "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": {
+      "sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "bytes": 5796
+    },
+    "outputs/full_experiment_protocol.md": {
+      "sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "bytes": 5796
+    }
+  }
+}
