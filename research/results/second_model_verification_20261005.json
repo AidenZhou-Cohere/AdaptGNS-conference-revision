@@ -1,0 +1,203 @@
+{
+  "recorded_utc": "2026-10-05T01:57:51.365161+00:00",
+  "scope": "First completed pair of full-architecture seed0 models; four requested models and all full-test evaluation incomplete",
+  "progress_recorded_utc": "2026-10-05T01:53:34.267147+00:00",
+  "recorded_training_updates": 205000,
+  "completed_models": 2,
+  "requested_models": 6,
+  "completed_model_names": [
+    "faithful_seed0",
+    "nll_seed0"
+  ],
+  "final_checkpoint_byte_checks": [
+    {
+      "model": "faithful_seed0",
+      "completed_steps": 100000,
+      "path": "checkpoint-100000.pt",
+      "sha256": "35eef43a0d50c812f9d440a528649a086e141eec20062e649c1487ef381a48db",
+      "file_hash_verified_utc": "2026-10-04T22:24:08.746644+00:00",
+      "scope": "Final fixed100k checkpoint byte hash and saved pointer only; no checkpoint loading or test evaluation"
+    },
+    {
+      "model": "nll_seed0",
+      "path": "checkpoint-100000.pt",
+      "sha256": "5cc7382c800f48133bf680c265339d4594af0bbd4af7f73b2d5c1271071f6b45",
+      "completed_steps": 100000,
+      "file_hash_verified_utc": "2026-10-05T01:54:14.829558+00:00",
+      "scope": "Final fixed100k checkpoint byte hash and saved pointer only; no model loading or test evaluation"
+    }
+  ],
+  "completed_validation_points": {
+    "faithful_seed0": 21,
+    "nll_seed0": 21,
+    "faithful_seed1": 2
+  },
+  "preserved_previously_curated_point_objects": 23,
+  "pending_nll_audits_now_integrated": [
+    "20261004T2253",
+    "20261004T2323",
+    "20261004T2353",
+    "20261005T0023",
+    "20261005T0053",
+    "20261005T0123"
+  ],
+  "independent_validation_audit": {
+    "checks": 13165,
+    "anomalies": 0,
+    "sha256": "e1b8269b1b926678489cb517e7b61290b90b61de5d477194e9bdaee1eb3fff9f",
+    "limits": [
+      "Only five specified saved validation JSON records, their saved configurations, frozen numerical source/protocol bytes and prior90k audit were read.",
+      "No checkpoints, models, datasets, reserved test files, training logs or particle-level predictions were loaded.",
+      "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be reconstructed from saved aggregates.",
+      "Raw dataset content hashes and native-process identity are not reverified here; saved data identity fields are covered by canonical configuration checks.",
+      "Final100k validation is audited as a saved record; this does not certify final checkpoint bytes or model execution.",
+      "Validation records share a fixed validation frame schedule despite different training seeds; no cross-seed or cross-objective performance comparison was inferred.",
+      "No later validation steps were polled or evaluated."
+    ]
+  },
+  "completion_pairing_cost_audit": {
+    "checks": 4225,
+    "mismatches": 0,
+    "sha256": "f1298e83d588b58964a6574a992855f71d1237d0e0b6df60fcbf18d83226a390",
+    "distinct_logged_paired_schedule_points": 1001,
+    "comparison": {
+      "coordinate_mse": {
+        "faithful": 0.008118621072848636,
+        "nll": 0.009454307789297232,
+        "nll_minus_faithful": 0.0013356867164485958,
+        "nll_percent_difference_from_faithful": 16.452137677857333,
+        "interpretation": "Lower is better as a descriptive validation diagnostic; one paired seed only."
+      },
+      "constant_free_gaussian_nll": {
+        "faithful": -4.28671760498356,
+        "nll": -4.4893484572310705,
+        "nll_minus_faithful": -0.20263085224751087,
+        "nll_percent_difference_from_faithful": null,
+        "interpretation": "Lower is better as a descriptive validation diagnostic; one paired seed only."
+      },
+      "binned_vector_se_calibration_gap": {
+        "faithful": 0.012286419130256788,
+        "nll": 0.006630595890463164,
+        "nll_minus_faithful": -0.005655823239793624,
+        "nll_percent_difference_from_faithful": -46.03312958667898,
+        "interpretation": "Lower is better as a descriptive validation diagnostic; one paired seed only."
+      }
+    },
+    "cost": {
+      "objective": "nll",
+      "seed": 0,
+      "completed_steps": 100000,
+      "recorded_complete_status_utc": "2026-10-05T01:36:20.819877+00:00",
+      "trainer_started_utc": "2026-10-04T21:59:07.568379+00:00",
+      "recorded_elapsed_seconds": 13023.416320999999,
+      "invocation_wall_span_seconds": 13033.251498,
+      "wall_span_minus_trainer_timer_seconds": 9.83517700000084,
+      "last_update_logged_elapsed_seconds": 13020.728276,
+      "elapsed_after_last_update_log_to_complete_seconds": 2.688044999998965,
+      "queue_start_markers": [
+        {
+          "line": 2,
+          "utc": "2026-10-04T21:59:05.938452+00:00"
+        }
+      ],
+      "final_checkpoint_pointer": {
+        "path": "checkpoint-100000.pt",
+        "sha256": "5cc7382c800f48133bf680c265339d4594af0bbd4af7f73b2d5c1271071f6b45",
+        "completed_steps": 100000
+      },
+      "checkpoint_bytes_verified_by_this_audit": false
+    },
+    "limits": [
+      "Only the1001 logged schedule points spanning the full100k run are empirically compared, not every unlogged optimizer update. Configured host sampling/noise settings match, but actual noise arrays and every sample draw were not inspected.",
+      "Final validation means are independently reaggregated from saved frame means, and calibration-bin arithmetic is checked. Raw model outputs, Gaussian-likelihood terms and quantile bin memberships are not reconstructed.",
+      "The comparison is a single paired training seed on the fixed clean128-frame/30-trajectory validation schedule with training-noise-adjusted normalization. It is not an across-seed estimate, test result, rollout result, checkpoint-selection rule or superiority claim.",
+      "NLL has higher coordinate MSE but lower constant-free Gaussian NLL and a smaller binned vector-risk gap in this descriptive comparison. These objectives/diagnostics need not rank models identically.",
+      "The exact optimizer-update100000 UTC is not logged; completion time is the final complete-status timestamp after validation/checkpoint. Trainer timers exclude setup before initialization and are not GPU busy time, CPU core-seconds or energy.",
+      "One queue-start marker and no duplicated training records are consistent with an uninterrupted NLL invocation in the saved records; unlogged interruptions cannot be ruled out by logs alone.",
+      "Faithful elapsed retains checkpoint-lineage timing and omits recovered work/downtime already detailed in first_model_completion_audit.json. Machine contention and faithful recovery prevent a causal training-speed comparison from these durations.",
+      "Faithful duplicate losses differ after recovery despite matching logged frame/lr/count schedules; no bitwise replay claim is made.",
+      "Checkpoint digests are read from saved final pointers/status only; checkpoint bytes, raw datasets and native live process identity are not verified in this audit.",
+      "Saved source/data hashes are equal across paired configs, but source and dataset byte contents are not independently rehashed here."
+    ]
+  },
+  "curation_audit": {
+    "checks": 100,
+    "sha256": "8557addebd737d7842d55c3eea3cdad686f6ed3b3d9aa6cb5e67e5f989b917db",
+    "previous_checkpoint_records_preserved": 7,
+    "new_nll_checkpoint_records": 7
+  },
+  "native_process_identity": {
+    "supervisor": 2778,
+    "caffeinate": 2779,
+    "exited_previous_child": 25763,
+    "current_child": 47290,
+    "current_model": "faithful_seed1",
+    "scope": "Commands and parent chain verified; no process action"
+  },
+  "frozen_training_sources_protocols_unchanged": true,
+  "raw_dataset_bytes_rechecked_this_turn": false,
+  "model_loading_or_reserved_test_access": false,
+  "all_three_seed_means": "null; required models incomplete",
+  "manuscript": {
+    "sha256": "06bc6551c5d67a582c9b37c4ac1967cf1854c27e36874131dba35e90360cda30",
+    "paragraph_audit_checks": 344,
+    "audit_failures": 0,
+    "audit_sha256": "4f3295917b579e6646bd970a107a0d3ad8b1c4582dbd3953b6229506d111876a",
+    "audit_expectation_corrections": {
+      "initial_attempt_path": "work/validation_20261005T0153/manuscript_audit_initial_expectation.json",
+      "initial_attempt_sha256": "ebd956ffce64086304de2eb537cdc3720d99863c66a8bca80fa23bb814bbd3d4",
+      "initial_checks": 332,
+      "initial_failed_checks": 45,
+      "corrections": [
+        {
+          "initial_expectation": "First raw occurrence of \\begin{document} identifies the document body.",
+          "reviewed_fact": "Embedded official class text contains that string within typeout instructions. A standalone line beginning \\begin{document} identifies the actual body.",
+          "resolution": "Body-only structure rechecked from the anchored document-start line; environments, labels, references, bibliography keys and braces pass."
+        },
+        {
+          "initial_expectation": "Raw manuscript_body.tex exactly equals the complete standalone body.",
+          "reviewed_fact": "work/build_manuscript.py expands five documented insertion markers for pilot/rollout tables and three theory appendices.",
+          "resolution": "Reconstructed expansions entirely in memory from existing saved source text; both current and previous body mirrors match exactly."
+        },
+        {
+          "initial_expectation": "Floating curve-summary metrics equal the saved validation JSON scalar representation bit for bit.",
+          "reviewed_fact": "The summary reaggregates saved scalars, introducing discrepancies of at most8.881784197001252e-16.",
+          "resolution": "All42 records pass the established relative/absolute2e-12 reaggregation tolerance; original record byte hashes match exactly."
+        },
+        {
+          "initial_expectation": "No available three-seed result means no grouped curve entries.",
+          "reviewed_fact": "Grouped entries deliberately retain individual seed values and null mean/sample SD while required seeds are missing.",
+          "resolution": "Verified every grouped record has fewer than3seeds and all group means/sample SDs null."
+        }
+      ],
+      "scientific_artifacts_changed": false,
+      "classification": "Audit-expectation false positives; no experimental or manuscript defect identified."
+    },
+    "native_compilation": "success",
+    "main_text_eight_page_assertion": "passed",
+    "exported_pdf_visual_author_check": "outstanding"
+  },
+  "report": {
+    "pages": 9,
+    "sha256": "5d1929194ad02fbb3e3ec64eeca5b02255f22df7e5e3bdc619154519f092938d",
+    "source_sha256": "7483ad13866b4dcf92087f85a05cabd5713ecc49cf8439fce0bf322f4e4b5277",
+    "visual_checked_pages": [
+      1,
+      7
+    ],
+    "validation_plot_visual_check": "passed; all44points and3model traces",
+    "scope": "Mixed one-seed validation; wall time bookkeeping does not establish objective-speed superiority"
+  },
+  "software_tests": "No frozen numerical code changes or repeated broad tests; saved-record audits,100curationchecks,report build/visual verification and native LaTeX compilation passed",
+  "artifacts_sha256": {
+    "README.md": "b381e2907a02850e2fcd9c65935714c7e9e7bd4dbd5fe47a29db10f91cff6e73",
+    "research_findings.md": "b7803923052e73eb38857b0bee57b1dc237b52a48958698c30dcaa1161be182a",
+    "submission_checklist.md": "4e391868167dba7310d6ca2cef53ea095327b037b87ae738f6d4b9dcea17af0d",
+    "full_training_progress.md": "0065143e67c98ce7e9f942870b7b692c2a20bf1994b1cbe5ea0dadd7c4a85f62",
+    "full_validation_curves.md": "2e7dd4d322f3f7a842587a2f301cd881940bdb2c754b95a10eb0e93df069a273",
+    "full_validation_curves.json": "9df796ab7957a95402a5ecb6b996d808c71350a6b35f823df778c46b09f35dd7",
+    "full_validation_curves.png": "b3583518d6d0b513c8935236ef334508a7d6dfe451e9c9f641133d27c30015fa",
+    "full_validation_curves.pdf": "a12ea72eea304e226c3be7a06bff17e2395d0356ffe66c61bd5eb7df311e4afc",
+    "training_progress.json": "a213210908be6c84f98217f6e84ee82ce37533bfd4d5f620d2cda27ea38d8d0b"
+  }
+}
