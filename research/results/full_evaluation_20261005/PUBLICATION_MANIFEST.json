@@ -1,0 +1,340 @@
+{
+  "schema": 1,
+  "scope": "Original compact evaluation evidence plus a provenance explanation and integrity records",
+  "construction": "Explicit allowlist; original43file bytes unchanged; deterministic payload copies",
+  "original_evaluation_file_count": 43,
+  "original_evaluation_bytes": 43130202,
+  "manifest_excludes": [
+    "PUBLICATION_MANIFEST.json",
+    "PUBLICATION_AUDIT.json"
+  ],
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "a6d68c12acb9636b5cf8463bf2e055e7ab12339e5de2e37208f98d4d5d705438",
+      "bytes": 4338,
+      "category": "publication provenance explanation"
+    },
+    {
+      "path": "integrity_ledger.json",
+      "sha256": "24e131a1b6ded812c3dba058a54d370eb35f0ca93ac422e12b60d6361155b68e",
+      "bytes": 81257,
+      "category": "original final integrity audit",
+      "original_path": "work/evaluation_completion_20261005/integrity_ledger.json"
+    },
+    {
+      "path": "omitted_raw_inventory.json",
+      "sha256": "02124b2e6954727024cf402c86da44e955e3524f9bad8d0b4103582f008161ac",
+      "bytes": 1133644,
+      "category": "complete omitted original-output inventory",
+      "original_path": "work/evaluation_completion_20261005/integrity_ledger_omitted_raw_inventory.json"
+    },
+    {
+      "path": "queue_protocol.json",
+      "sha256": "b197edfd2d3e8e98990ac3ebb3289a54b5a8ee9b44e518fd7e93aab631717679",
+      "bytes": 79394,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/queue_protocol.json"
+    },
+    {
+      "path": "queue_status.json",
+      "sha256": "f056522ec76f6da61721f73a4dcf7c65154bddf206718ae66c1644b4289c94c4",
+      "bytes": 237,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/queue_status.json"
+    },
+    {
+      "path": "reports/full_rollouts.json",
+      "sha256": "260bfafe1fd5a11c8bb84a229daee3e6de4ff841aa29a89574f6a096da9ae324",
+      "bytes": 3403059,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/reports/full_rollouts.json"
+    },
+    {
+      "path": "reports/full_rollouts.md",
+      "sha256": "2cf452e2be6d9f7e18049aefddfe376b0a134c40e23528b1d7b8e801290b8997",
+      "bytes": 4349,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/reports/full_rollouts.md"
+    },
+    {
+      "path": "reports/full_same_state.json",
+      "sha256": "bef3c5958aa61a48cb3d1d294a6b458a0e8ca0069d4a631a227d356318b080b1",
+      "bytes": 10453794,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/reports/full_same_state.json"
+    },
+    {
+      "path": "reports/full_same_state.md",
+      "sha256": "fbb1ca1ee892be8b459e037deaed61c9f35211abfda128c5b6c89225bd062d44",
+      "bytes": 3139,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/reports/full_same_state.md"
+    },
+    {
+      "path": "rollout/faithful_seed0/protocol.json",
+      "sha256": "47a5adb829a0bc94238a802dae0cd51bae9c264f1f5bbaa801a63aa1a9f93381",
+      "bytes": 96582,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed0/protocol.json"
+    },
+    {
+      "path": "rollout/faithful_seed0/result.json",
+      "sha256": "4455281fb37deae3302e575a516e9b0d840e4d9a688a7d8114d12f0af9faa891",
+      "bytes": 148406,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed0/result.json"
+    },
+    {
+      "path": "rollout/faithful_seed0/status.json",
+      "sha256": "8dc65fa58830d2e3b479436c24782fb8a7c78728ad484424be621b5927687924",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed0/status.json"
+    },
+    {
+      "path": "rollout/faithful_seed1/protocol.json",
+      "sha256": "363f47f5a6dd66559b5544bd16a9f4889ed844f7b3527ddaa31eb5dd20bf9428",
+      "bytes": 96582,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed1/protocol.json"
+    },
+    {
+      "path": "rollout/faithful_seed1/result.json",
+      "sha256": "1cb3060ed935381b540cf2f17fc51dc8d312ff9b5979c57895adbb5cabd3e903",
+      "bytes": 148510,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed1/result.json"
+    },
+    {
+      "path": "rollout/faithful_seed1/status.json",
+      "sha256": "f47721f4ffe94b2223bc55d6230df5da5cae3ff7ff6fbd52251114ca31a442e0",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed1/status.json"
+    },
+    {
+      "path": "rollout/faithful_seed2/protocol.json",
+      "sha256": "fda5e01c02e1aab80a2b303b8a50a28870970395e371fa52134f0ecc5cc03692",
+      "bytes": 96582,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed2/protocol.json"
+    },
+    {
+      "path": "rollout/faithful_seed2/result.json",
+      "sha256": "9e7cabd7abbc79e671814cc4fd100fc38a18f02e67ba7092441accda0b2aaa61",
+      "bytes": 148167,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed2/result.json"
+    },
+    {
+      "path": "rollout/faithful_seed2/status.json",
+      "sha256": "8c8884869ff59ed19a41bd4ae2df473fc100d8724b9be528318331052ab5bad4",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/faithful_seed2/status.json"
+    },
+    {
+      "path": "rollout/nll_seed0/protocol.json",
+      "sha256": "7c6ab757712bb62f9cd9359195bf3922cdecd492cfc4bc75dcb8405c701ac722",
+      "bytes": 96567,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed0/protocol.json"
+    },
+    {
+      "path": "rollout/nll_seed0/result.json",
+      "sha256": "db16b53d3f7906af27f4086cf4b185b718c8e34f6b16e4797424bc6777b52386",
+      "bytes": 148096,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed0/result.json"
+    },
+    {
+      "path": "rollout/nll_seed0/status.json",
+      "sha256": "908152ebf831881687013352c80f778b4d8cb00a3c47d452a62e84f8747e1fc4",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed0/status.json"
+    },
+    {
+      "path": "rollout/nll_seed1/protocol.json",
+      "sha256": "bc54d8d3110e7d889e4590308c6ee0fb4397f2ed1caa84d330b1e8ecdbc9c8c8",
+      "bytes": 96567,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed1/protocol.json"
+    },
+    {
+      "path": "rollout/nll_seed1/result.json",
+      "sha256": "0013f397a50659d8acb71b5786e150511525cd82f5f67d5ac248799091a769ea",
+      "bytes": 148389,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed1/result.json"
+    },
+    {
+      "path": "rollout/nll_seed1/status.json",
+      "sha256": "3e70fed0dad9ab228e079de9d1b3a607f00d9e69dbb6f05fb0673be1d9221265",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed1/status.json"
+    },
+    {
+      "path": "rollout/nll_seed2/protocol.json",
+      "sha256": "f6cf28214d62b5f64ac2433c9d9c3eeeb232c1d86191cd6c9d33e1f6c0f2d1a9",
+      "bytes": 96567,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed2/protocol.json"
+    },
+    {
+      "path": "rollout/nll_seed2/result.json",
+      "sha256": "9c2cb1f72185544ee7aa258afc73e7ff2f91d97d3f648f3b784bf5ddf2add247",
+      "bytes": 149050,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed2/result.json"
+    },
+    {
+      "path": "rollout/nll_seed2/status.json",
+      "sha256": "59eb20f67d94873f996b32549548447f1e93627bb32a70cda4a83f45e30470a5",
+      "bytes": 157,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/rollout/nll_seed2/status.json"
+    },
+    {
+      "path": "same_state/faithful_seed0/protocol.json",
+      "sha256": "9d41f6f7b3dbf3a10d0de9739c9d61df8a046db610e83df4553486b1f4f7bda8",
+      "bytes": 95718,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed0/protocol.json"
+    },
+    {
+      "path": "same_state/faithful_seed0/result.json",
+      "sha256": "8192273686cedb06d2022cdf53ea718ac5dc7d40ef12c791c76577c541bd0309",
+      "bytes": 4523209,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed0/result.json"
+    },
+    {
+      "path": "same_state/faithful_seed0/status.json",
+      "sha256": "a21cd5d1fa3c363b13f635f939a50852381bb1ed7656fe96753074d2f785f19b",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed0/status.json"
+    },
+    {
+      "path": "same_state/faithful_seed1/protocol.json",
+      "sha256": "9d522e830a18ed7198faf6cc6baf36bddeac63469f3341cb9629cdc2b2de9cc0",
+      "bytes": 95718,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed1/protocol.json"
+    },
+    {
+      "path": "same_state/faithful_seed1/result.json",
+      "sha256": "bf551095b1303d3824925887c35d2eca0b2ed3e218ccb13ad9f89c845c246f92",
+      "bytes": 4523142,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed1/result.json"
+    },
+    {
+      "path": "same_state/faithful_seed1/status.json",
+      "sha256": "2924122a7ea7c3971d82daf62aefec5ab1817212a15d5c582f983684ce127bc8",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed1/status.json"
+    },
+    {
+      "path": "same_state/faithful_seed2/protocol.json",
+      "sha256": "5391516340a1a1b2a8e6c36e1621a7c90156b5071e566bb57459b68bcfd30d54",
+      "bytes": 95718,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed2/protocol.json"
+    },
+    {
+      "path": "same_state/faithful_seed2/result.json",
+      "sha256": "c4d4e145caf927f337e583b7b0dc8fbc9217070734f0fec0e726a8cc5a672ad6",
+      "bytes": 4522855,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed2/result.json"
+    },
+    {
+      "path": "same_state/faithful_seed2/status.json",
+      "sha256": "fdeaab31fb3f0f851a20e8c26907e30b5edd66d565a24b8a76c737b1e7c62455",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/faithful_seed2/status.json"
+    },
+    {
+      "path": "same_state/nll_seed0/protocol.json",
+      "sha256": "0a45a62dedefbcaeeb9646b1636d3be1036fe3062cfd27f0e95600b558e23fe4",
+      "bytes": 95703,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed0/protocol.json"
+    },
+    {
+      "path": "same_state/nll_seed0/result.json",
+      "sha256": "d6766008c91a133ce742610d2018cff1050ad471d8d9827be3ed0f6e0d99456c",
+      "bytes": 4523337,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed0/result.json"
+    },
+    {
+      "path": "same_state/nll_seed0/status.json",
+      "sha256": "7be67d5d9232c26485903c89c03695bef50bc9e3f6810c2a68bd2b98527fcff5",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed0/status.json"
+    },
+    {
+      "path": "same_state/nll_seed1/protocol.json",
+      "sha256": "3c9e6676f256af5d396efc7c5443cb849f80612ae5cd7e0775fae8992d044d16",
+      "bytes": 95703,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed1/protocol.json"
+    },
+    {
+      "path": "same_state/nll_seed1/result.json",
+      "sha256": "01b9631fa58820e432d5985a94699e18618d803e3087d4b427be46798a7e2dd5",
+      "bytes": 4523782,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed1/result.json"
+    },
+    {
+      "path": "same_state/nll_seed1/status.json",
+      "sha256": "ff8f80a43fa143ce22dcdc4fe0232577e19a4bfe3afab1d43d9021f1eae3d489",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed1/status.json"
+    },
+    {
+      "path": "same_state/nll_seed2/protocol.json",
+      "sha256": "eca9d397919e175db15dc2cfa02096e75e3801d069cd1d6b2bd8590d12d7680d",
+      "bytes": 95703,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed2/protocol.json"
+    },
+    {
+      "path": "same_state/nll_seed2/result.json",
+      "sha256": "a6ba3d07774160fbf768800db5f515b4d9f5fb1ae071019f92fb44b195721c0a",
+      "bytes": 4523290,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed2/result.json"
+    },
+    {
+      "path": "same_state/nll_seed2/status.json",
+      "sha256": "c4557b3ad40c2cf89a9f3b221cd38e828f5cf0d055e9aee9e0d155bd444889d1",
+      "bytes": 135,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/same_state/nll_seed2/status.json"
+    },
+    {
+      "path": "test_identity.json",
+      "sha256": "7b7ebd3d6c78158a5262737f1c0193da78617fe6b72dee2c370f5056e4b4e91c",
+      "bytes": 535,
+      "category": "original compact evaluation evidence",
+      "original_path": "work/full-evaluation/test_identity.json"
+    },
+    {
+      "path": "verify_compact_publication.py",
+      "sha256": "8f97336c20f44c1ab01249d10d9130744711427b79f460cefc79c13b912b0bf8",
+      "bytes": 1599,
+      "category": "standalone package checksum verifier"
+    }
+  ]
+}

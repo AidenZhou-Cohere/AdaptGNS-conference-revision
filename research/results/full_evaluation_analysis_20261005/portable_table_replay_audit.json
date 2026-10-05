@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "byte_comparisons": {
+    "full_evaluation_main.tex": true,
+    "full_evaluation_appendix.tex": true
+  }
+}

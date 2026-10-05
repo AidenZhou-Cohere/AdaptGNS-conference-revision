@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": {
+    "unique_labels": true,
+    "references_resolve": true,
+    "citations_resolve": true,
+    "abstract_unchanged": true,
+    "title_unchanged": true,
+    "no_unexpanded_inserts": true,
+    "main_page_assertion": true,
+    "no_page_counter_reset": true,
+    "only_one_document": true
+  },
+  "labels": 36,
+  "bibliography_entries": 12,
+  "source_sha256": "999837597a585169431565b4a549d5bda7cc87b438d3f89b2f49188cc3c3cab7"
+}

@@ -1,0 +1,26 @@
+{
+  "scope": "Derived analysis and original unsuccessful audit attempts; separate from immutable compact original evidence",
+  "files": {
+    "README.md": "21eede4e51f149a1b2fa17b34fe1ebbd19c3821405939734564521a877a88347",
+    "audit_same_state_arrays.json": "5bc28fce116ff2b38732c8fa7121ad4c1052d02d2997d472d1e30c7fc6f247de",
+    "audit_same_state_arrays.py": "82b1f83a76af2c1d3135932ed57f33eff7d11e56dc9712ebd5e07f62966077be",
+    "final_doc_audit.json": "ad451d8b2417710e69cf2460fed1621910c5ab6784eae0b09e55e7edaa8503d6",
+    "final_doc_audit.md": "fd67a86fd82a6e2de9b9a33e164fcdb860a18bdc3f7b7828a66b71ac7292444c",
+    "final_doc_numeric_check.json": "0b3775e412d4439a45cd8587010e1504bda4ba6ab310632a9b1043b0add78e8f",
+    "full_evaluation_appendix.tex": "daba11cfb914a41028f598317042266a8cfe29ab30c843c18525238f226f323b",
+    "full_evaluation_main.tex": "29090bdea3f5faed03f4357fe6cd35b2039cebc3a304e9d57285358a866239f8",
+    "make_same_state_findings.py": "485544477f761a977806403fd0736761eb9051cc608e9b3654e32875703ac1c9",
+    "manuscript_structure.json": "3c4390328e00b7864e74b51333875aa1f2e88c27d1526e971fb99cbf21ea9907",
+    "paper_results_generation.json": "9119e891da77fd15a3b1a0054b5ea8a4483c824f27c7f53bf16d62c30db3118f",
+    "portable_table_replay_audit.json": "f76694895230a4ee654040638652d2512ae5e3483dd1c731faa20968831f057e",
+    "rollout_analysis.json": "379efe8a3f6bc7d9844173e41363e913757815682678e8db567559b4261e3536",
+    "rollout_analysis.md": "30638d683862acf843c88ddb94738271961cc6d304c6191349e5c83a5759b8a8",
+    "rollout_analysis.py": "a3e875b8db0cc6cd8ce83f54acd7865a348eb1130c241fefc579de10b24edb71",
+    "rollout_analysis_attempt1.json": "53ac7c5b9136793b786c867a1e918021d1a9578af443afb70751dfa1dd74f4b7",
+    "rollout_analysis_attempt1.md": "a97e2d877ef6ac7269cc71963a6fb3dc4c892445abaff4c4c292bd10d04b3962",
+    "rollout_analysis_attempt1.py": "5f9a54e49c6cae679a5c0bb8596c5171b46c59ed7b283db2a8dc0486e8320e72",
+    "same_state_findings.json": "d2293293857aca575909a6e3acd51354393e0cb474de2b965e89ed09435b0a0c",
+    "same_state_findings.md": "40825fc7e459218394271aeb593cfac5e36262ec13838f7ede7f17bf2cb20bf8",
+    "verification.json": "73b0e3fdfa0c1e3a833aee60d770fdb1736bfa786d1d7dfa9fefeb4414b5f463"
+  }
+}

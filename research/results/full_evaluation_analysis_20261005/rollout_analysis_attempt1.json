@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-10-05T20:25:31.003422+00:00",
+  "passed": false,
+  "scope": "Independent arithmetic from all saved scalar trajectory records, including per-step JSON MSE, edges and boundary diagnostics. No model/checkpoint/data-array access, inference, process action, or production summarizer invocation.",
+  "anomalies": [
+    {
+      "type": "AttributeError",
+      "message": "'NoneType' object has no attribute 'get'",
+      "traceback": "Traceback (most recent call last):\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/evaluation_completion_20261005/rollout_analysis.py\", line 230, in <module>\n    if raw[\"warmup\"].get(\"passes\"):\n       ^^^^^^^^^^^^^^^^^\nAttributeError: 'NoneType' object has no attribute 'get'\n"
+    }
+  ],
+  "checks_total": 76,
+  "input_sha256": {
+    "work/evaluation_completion_20261005/rollout_analysis.py": "5f9a54e49c6cae679a5c0bb8596c5171b46c59ed7b283db2a8dc0486e8320e72",
+    "work/full-evaluation/reports/full_rollouts.json": "260bfafe1fd5a11c8bb84a229daee3e6de4ff841aa29a89574f6a096da9ae324",
+    "work/evaluation_monitor_20261005T1751_faithful0_audit.json": "b92a3ac47926d08617659f5fde5cba5fa6f3cef14d8c894bd25b6f02c845f0b3",
+    "work/full-evaluation/rollout/faithful_seed0/result.json": "4455281fb37deae3302e575a516e9b0d840e4d9a688a7d8114d12f0af9faa891",
+    "work/full-evaluation/rollout/faithful_seed0/status.json": "8dc65fa58830d2e3b479436c24782fb8a7c78728ad484424be621b5927687924",
+    "work/full-evaluation/rollout/faithful_seed0/protocol.json": "47a5adb829a0bc94238a802dae0cd51bae9c264f1f5bbaa801a63aa1a9f93381",
+    "work/full-evaluation/rollout/faithful_seed0/trajectory_000003_base.json": "d2b0019987d6bdf6b53349688f3eef5e2726ed3e3f6289c73896c4dcd7fa3fe3"
+  },
+  "completed_utc": "2026-10-05T20:25:31.027909+00:00"
+}

@@ -1,0 +1,130 @@
+{
+  "recorded_utc": "2026-10-05T20:31:41.541131+00:00",
+  "passed": true,
+  "scope": "Read-only final correspondence review of full-result additions, named current documentation and public table renderer; no inference, production summarizer, model/checkpoint/data-array access, manuscript/scientific-source edits or broad test suite.",
+  "checks_total": 658,
+  "final_byte_stability_checks": 19,
+  "issues": [],
+  "resolved_during_review": [
+    {
+      "file": "outputs/README.md",
+      "observed_line": 76,
+      "finding": "Current locked-test evaluation described as running",
+      "resolution": "Now explicitly complete; all results linked."
+    },
+    {
+      "file": "outputs/README.md",
+      "observed_line": 34,
+      "finding": "Refinement paragraph left full evaluation pending without supersession",
+      "resolution": "Now states later full-model evaluation complete; author verification remains pending."
+    },
+    {
+      "file": "outputs/submission_checklist.md",
+      "observed_line": 24,
+      "finding": "Completed comparative experiments described generally as a small convenience sample",
+      "resolution": "Small-sample scope now specifically applies to compact-pilot experiments."
+    },
+    {
+      "file": "outputs/AdaptGNS/research/results/full_evaluation_analysis_20261005/paper_results_generation.json",
+      "finding": "Transient stale appendix output digest during publication integration",
+      "resolution": "Current public/local generated manifests and fresh renderer outputs match."
+    },
+    {
+      "file": "work/full_evaluation_main.tex",
+      "observed_line": 6,
+      "finding": "Final checkpoints fixed before test access was broader than evidence permits because first three test trajectories were previously inspected",
+      "resolution": "Now explicitly before the locked test evaluation, with prior inspection disclosure retained."
+    }
+  ],
+  "numeric_review": {
+    "recorded_utc": "2026-10-05T20:30:59.212662+00:00",
+    "numeric_passed": true,
+    "checks_total": 658,
+    "issues": [],
+    "input_sha256": {
+      "outputs/revised_manuscript.tex": "999837597a585169431565b4a549d5bda7cc87b438d3f89b2f49188cc3c3cab7",
+      "work/full_evaluation_main.tex": "29090bdea3f5faed03f4357fe6cd35b2039cebc3a304e9d57285358a866239f8",
+      "work/full_evaluation_appendix.tex": "daba11cfb914a41028f598317042266a8cfe29ab30c843c18525238f226f323b",
+      "work/evaluation_completion_20261005/authoring_before/work/manuscript_body.tex": "4076b9162400d697a7c0009d7dfe76e404d43e0a77fdd2da1d302c6637066f23",
+      "work/full-evaluation/reports/full_rollouts.json": "260bfafe1fd5a11c8bb84a229daee3e6de4ff841aa29a89574f6a096da9ae324",
+      "work/full-evaluation/reports/full_same_state.json": "bef3c5958aa61a48cb3d1d294a6b458a0e8ca0069d4a631a227d356318b080b1",
+      "work/evaluation_completion_20261005/rollout_analysis.json": "379efe8a3f6bc7d9844173e41363e913757815682678e8db567559b4261e3536",
+      "work/evaluation_completion_20261005/audit_same_state_arrays.json": "5bc28fce116ff2b38732c8fa7121ad4c1052d02d2997d472d1e30c7fc6f247de",
+      "outputs/full_evaluation_findings.md": "0e1e729b3e913df2448516b81ab4b433e306921b3c9fc8255d48330d8ceb14d7",
+      "outputs/README.md": "2b0f6f54f5b8b052f3fb907fb3c18d665b9386ee7a0734b4cde9ebafe7561403",
+      "outputs/research_findings.md": "f4baf24b8b78af52a23018f7411010ee702e449924dbed0bae5eb012098233c6",
+      "outputs/submission_checklist.md": "0628ba1b2c05b7005da5862a30dbfb0c64970c795628d731a25f0ca5da28fdb2",
+      "outputs/AdaptGNS/research/results/full_evaluation_analysis_20261005/README.md": "21eede4e51f149a1b2fa17b34fe1ebbd19c3821405939734564521a877a88347"
+    },
+    "changed_during_read": [],
+    "prior_tables_retained": 4,
+    "previous_label_count": 12,
+    "current_label_count": 36,
+    "checked_tables": [
+      "full-rollouts",
+      "full-endpoints",
+      "full-failures",
+      "full-seeds",
+      "full-paired",
+      "full-boundaries",
+      "full-same-state",
+      "full-benefit",
+      "full-cost-controls",
+      "full-autonomous-cost"
+    ]
+  },
+  "renderer_review": {
+    "recorded_utc": "2026-10-05T20:30:41.073921+00:00",
+    "scope": "Narrow renderer replay after access-scope wording edit; no inference or scientific recomputation",
+    "passed": true,
+    "issues": [],
+    "renderer": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/render_full_evaluation_tables.py",
+    "renderer_sha256": "b73939a86cda44e621fbd9a44b51376eaa005c63c64e62ce6bcadc151383002f",
+    "output_directory": "/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/adaptgns_render_guard_v2_yuqsyb2c",
+    "reviewed_input_sha256": {
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/render_full_evaluation_tables.py": "b73939a86cda44e621fbd9a44b51376eaa005c63c64e62ce6bcadc151383002f",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_evaluation_analysis_20261005/paper_results_generation.json": "9119e891da77fd15a3b1a0054b5ea8a4483c824f27c7f53bf16d62c30db3118f",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_evaluation_20261005/reports/full_rollouts.json": "260bfafe1fd5a11c8bb84a229daee3e6de4ff841aa29a89574f6a096da9ae324",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_evaluation_20261005/reports/full_same_state.json": "bef3c5958aa61a48cb3d1d294a6b458a0e8ca0069d4a631a227d356318b080b1",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full_evaluation_main.tex": "29090bdea3f5faed03f4357fe6cd35b2039cebc3a304e9d57285358a866239f8",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full_evaluation_appendix.tex": "daba11cfb914a41028f598317042266a8cfe29ab30c843c18525238f226f323b"
+    },
+    "generated_manifest": {
+      "inputs": {
+        "full_rollouts.json": "260bfafe1fd5a11c8bb84a229daee3e6de4ff841aa29a89574f6a096da9ae324",
+        "full_same_state.json": "bef3c5958aa61a48cb3d1d294a6b458a0e8ca0069d4a631a227d356318b080b1"
+      },
+      "generated": {
+        "full_evaluation_main.tex": "29090bdea3f5faed03f4357fe6cd35b2039cebc3a304e9d57285358a866239f8",
+        "full_evaluation_appendix.tex": "daba11cfb914a41028f598317042266a8cfe29ab30c843c18525238f226f323b"
+      }
+    },
+    "public_generation_manifest_sha256": "9119e891da77fd15a3b1a0054b5ea8a4483c824f27c7f53bf16d62c30db3118f",
+    "supersedes_prior_output_directory": "/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/adaptgns_render_guard_b68w19t1",
+    "prior_evidence_preserved": true
+  },
+  "preservation": {
+    "main_title_and_abstract": "Unchanged byte-for-byte relative to pre-integration body",
+    "earlier_body_tabular_blocks_preserved": 4,
+    "earlier_body_labels_retained": 12,
+    "current_unique_labels": 36,
+    "new_main_and_appendix_inserts": "Both occur verbatim in current standalone manuscript"
+  },
+  "interpretation_review": [
+    "All 810 autonomous outcomes and all eight NLL seed2 coordinate guard failures retained; affected full-horizon errors, edges and boundaries remain undefined.",
+    "Paired percentages are means of three within-seed percentage changes; signs and sample SDs match the audited values.",
+    "Full-model WaterDrop, compact pilot, historical arrays and integration smokes remain distinct.",
+    "Observed-history previous-risk scoring cost is distinguished from autonomous cached risk; no optimized speedup, physical-validity or conference-readiness claim.",
+    "Current evaluation completion is stated consistently after corrections; clearly dated historical progress records remain preserved.",
+    "Prior test inspection, sample-size limits, unmeasured memory/conservation/mean-only cost, repeat variation and author verification requirements remain explicit."
+  ],
+  "review_execution_note": {
+    "earlier_attempt": "An initial scalar-check process printed its entire check ledger; tool output was truncated and orchestration JSON parsing failed. The process did not edit artifacts; no numerical mismatch was observed in that failed transport attempt. The focused check was repeated with compact output and saved as final_doc_numeric_check.json.",
+    "scientific_change": false
+  },
+  "limitations": [
+    "This correspondence review does not replace exported-manuscript PDF visual inspection, registered-abstract comparison, human proof/citation verification, asset-rights checks or anonymous submission packaging.",
+    "Native compilation is handled by the parent; no compiler or broad software test suite was rerun here.",
+    "Parent will refresh the derived-publication manifest after adding these audit records."
+  ]
+}

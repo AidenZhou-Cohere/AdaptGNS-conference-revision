@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "recorded_utc": "2026-10-05T20:26:24.082625+00:00",
+  "passed": true,
+  "manifest_sha256": "dbe1d79d6320692a4ccc5caf80adbcb605adf1ff30b0a103d1177e0dc644771b",
+  "source_integrity_ledger_sha256": "24e131a1b6ded812c3dba058a54d370eb35f0ca93ac422e12b60d6361155b68e",
+  "publication_script_sha256": "eab626e082990a59e179a97e7ab49ad166a343f697e81c2da6d14d649c26ab49",
+  "original_files": 43,
+  "all_original_bytes_unchanged": true,
+  "included_payload_files": 47,
+  "included_payload_bytes": 44351040,
+  "largest_payload_file_bytes": 10453794,
+  "all_files_below50MiB": true,
+  "explicit_allowlist_excludes_datasets_checkpoints_private_documents_logs": true,
+  "omitted_raw_files": 5184,
+  "all_prior_provenance_untouched": true,
+  "absolute_local_paths": "Preserved within original provenance; explicitly not portable paths",
+  "limitations": "Checksum identity and publication scope only. Full raw files are required to rerun strict summaries and inspect omitted per-step/particle-level data."
+}

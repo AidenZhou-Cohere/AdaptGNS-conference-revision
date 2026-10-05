@@ -1,0 +1,21 @@
+# Fixed six-model evaluation: compact original evidence
+
+The local sequential evaluation completed on October 5, 2026 at **20:22:35.547373 UTC**. This directory preserves the original bytes of all twelve evaluation protocol/result/status triplets, both final summary JSON/Markdown pairs, the queue protocol/status, and the frozen test identity. It contains **43 original files totaling 43,130,202 bytes**. The result records retain every successful and unsuccessful outcome; a complete job can contain guard-failed scientific outcomes.
+
+The fixed training budget is faithful and corrected-NLL models at seeds 0, 1 and 2, each trained for 100,000 updates. Autonomous evaluations cover official test trajectories **3–29**, horizon **995**, and the five predeclared policies. Same-state diagnostics cover all 27 trajectories at the eleven declared targets. The first three test trajectories and historical aggregate test evidence were inspected earlier; this release is not pristine independent confirmation.
+
+`integrity_ledger.json` records 20,928 final integrity checks with no anomalies: six final checkpoint byte hashes, source/configuration/protocol identities, the official raw-test hash, numeric manifest and 90 NPY checksums/headers, every saved row and output NPZ checksum, and final status/result/report correspondence. It preserves all 41 earlier checkpoint-verification objects and timestamps separately from fresh final checks. All **761** row hashes from the earlier monitoring snapshot match. Scientific arithmetic was not rerun by this checksum audit; the unchanged strict summarizers produced the accompanying original reports.
+
+## Included and omitted material
+
+The `rollout/` results contain 810 compact policy-trajectory records. The `same_state/` results contain 1,782 compact frame records, including timing, accuracy, graph diagnostics, failures, and source-row/array hashes. All twelve original `result.json` files are below 50 MiB; the largest included original file is 10,453,794 bytes. The summary files are original generated artifacts, not replacements for the result records.
+
+`omitted_raw_inventory.json` lists the relative path, byte size and SHA256 of every omitted original per-step/frame JSON and NPZ output. These 5,184 files remain unchanged in the local evaluation directory. Raw row JSON preserves more detailed per-step, boundary and timing information; NPZ files preserve selected rollout traces or particle-level same-state diagnostics. They are not embedded here. This compact release alone therefore cannot rerun the strict hash-checking summaries or independently reconstruct all per-step and particle-level diagnostics: those checks require the inventoried original files or a full rerun from the released source and official data.
+
+No training/test/validation datasets, checkpoint files, raw numerical data arrays, private authoring documents, or process logs are included. Checkpoint and dataset hashes are identifiers only. Absolute local paths in the unmodified queue, reports and ledger are **provenance strings, not portable paths**. The research fork is nonanonymous; paths were preserved to keep original JSON bytes and hashes intact. Original artifacts were copied into a new dated directory and no prior release or verification object was overwritten.
+
+## Check this package
+
+Run `python3 verify_compact_publication.py` from this directory (or invoke the script by its path). It checks all files listed in `PUBLICATION_MANIFEST.json`, rejects unexpected files except the manifest and publication audit, and verifies the manifest hash against `PUBLICATION_AUDIT.json`. It performs no inference and requires only Python's standard library. The manifest documents original locations and exact hashes; the audit is a record of package construction, not another scientific result.
+
+The original reusable full checksum verifier remains at `work/evaluation_completion_20261005/verify_final_integrity.py` in the local workspace, with its source hash recorded in `integrity_ledger.json`. It requires the original workspace layout and numeric data files and never loads models or reruns inference/summarizers. The fixed evaluator and summarizer code is in this repository's `research/` directory. This evidence does not by itself establish conference readiness or replace author verification.
