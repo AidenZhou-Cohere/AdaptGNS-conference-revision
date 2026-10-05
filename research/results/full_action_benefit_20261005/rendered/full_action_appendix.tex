@@ -1,0 +1,48 @@
+\section{Benefits of the actual saved graph actions}
+\label{sec:actual-action-benefit}
+This exploratory analysis uses all 1,782 saved observed-history cases, each with five policy predictions.
+For each complete graph action $a$, its signed particle benefit is
+$b_{i,a}=\|y_i-p_{i,0}\|^2-\|y_i-p_{i,a}\|^2$.
+We compute the same quantity after dividing coordinate residuals by the stored
+acceleration scales, and verify $b_{i,a}=2r_i^\top\Delta_{i,a}-\|\Delta_{i,a}\|^2$.
+Position and normalized signs are retained separately. This is a whole-graph
+intervention, not a marginal edge value. The correlation shares the base residual
+algebraically and does not identify a causal role for the risk signal.
+
+\begin{table}[t]
+\centering\small
+\caption{Actual signed normalized vector benefit, harmful-particle fraction,
+and previous-risk/benefit Spearman correlation. Means and sample SD use three
+equal-trajectory seed means. Negative benefits and correlations are retained.}
+\label{tab:actual-action-benefit}
+\begin{tabular}{llrrr}
+\toprule
+Objective & Action & Benefit & Harm fraction & Correlation\\
+\midrule
+faithful & Dense & $-0.00465\pm0.00189$ & $0.603\pm0.017$ & $-0.022\pm0.045$\\
+faithful & Random25 & $0.00121\pm0.00072$ & $0.507\pm0.016$ & $0.013\pm0.032$\\
+faithful & Speed25 & $0.00032\pm0.00052$ & $0.422\pm0.009$ & $-0.035\pm0.021$\\
+faithful & Previous risk25 & $0.00023\pm0.00076$ & $0.514\pm0.008$ & $-0.021\pm0.049$\\
+nll & Dense & $-0.00351\pm0.00064$ & $0.614\pm0.012$ & $-0.048\pm0.012$\\
+nll & Random25 & $0.00154\pm0.00074$ & $0.502\pm0.012$ & $0.008\pm0.008$\\
+nll & Speed25 & $0.00007\pm0.00070$ & $0.421\pm0.009$ & $-0.042\pm0.010$\\
+nll & Previous risk25 & $-0.00018\pm0.00094$ & $0.501\pm0.021$ & $-0.052\pm0.013$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The hindsight portfolios choose a single complete prediction for the entire
+observed frame; they never mix particles from incompatible graph actions.
+The budgeted portfolio includes base and the three 25\% actions; a separate
+five-action portfolio also includes dense and therefore has unequal cost.
+Exact ties retain all co-best information and use the fixed base-first order
+only to record a representative choice. These target-using diagnostics bound
+improvement attainable by choosing from the saved menu, not arbitrary graphs.
+
+Particle benefit signs, all nine dense/actual sign combinations, frame and
+trajectory harm frequencies, lag agreement, risk quartiles, optional-degree
+concentration, pair overlaps, every seed, and both coordinate systems are saved.
+Tied risks remain together in rank quartiles; empty groups remain undefined.
+One undefined required value makes its corresponding unconditional aggregate
+undefined rather than dropping that observation. Neither these post-inspection
+diagnostics nor a hindsight portfolio establish a learned abstention policy.

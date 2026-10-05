@@ -34,6 +34,12 @@ The locked evaluation covers 27 official test trajectories (indices 3--29),
 995 forecasts, and all five policies. Indices 0--2 and historical aggregate
 results were already inspected; this is not pristine independent confirmation.
 
+Training uses base-only graphs with self-loops and a 128-neighbor cap; the locked
+policy evaluation uses uncapped symmetric pairs without self-loops. Expanded
+annulus edges were not exposed during this full-model training, unlike the
+compact pilot. Thus these results jointly reflect allocation and graph-input
+shift; they do not by themselves isolate a defect in the risk score.
+
 '''+table('Full-architecture position MSE over 995 forecasts, mean $\\pm$ sample SD of three equal-trajectory seed means. Failures are counts out of 81 outcomes per objective/policy, shown faithful / NLL. A failed trajectory makes the full-horizon group mean undefined.','tab:full-rollouts',['Policy','Faithful','NLL','Failures'],rows,'lrrr',wide=True)+r'''
 All 405 faithful outcomes completed; NLL had eight coordinate-guard failures,
 all at seed 2 (Table~\ref{tab:full-rollouts}). Cached risk has higher faithful
