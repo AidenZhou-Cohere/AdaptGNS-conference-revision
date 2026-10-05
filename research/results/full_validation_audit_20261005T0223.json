@@ -1,0 +1,112 @@
+{
+  "recorded_utc": "2026-10-05T02:24:11.763730+00:00",
+  "scope": "Independent read-only saved clean-validation audit of faithful_seed1 5k reference and10k update only; not model execution, checkpoint selection, final100k or test evidence",
+  "files": {
+    "5000": {
+      "path": "faithful_seed1/validation/step-005000.json",
+      "sha256": "dd12730949cdb9a793d84130e964d2e64c76e20dfe5c420723fd04ea0804ba43"
+    },
+    "10000": {
+      "path": "faithful_seed1/validation/step-010000.json",
+      "sha256": "200780b59da9b1374e3e36e05bb0790bdc07aadedcfe1c701eacb74034a54e5e"
+    }
+  },
+  "configuration": {
+    "protocol_file_sha256": "aed4b98b7d790fadc2941c6138a09399d5c96bd27aeebd098c0ab28d3484789b",
+    "canonical_run_config_sha256": "1af22899a0af5750df7de2481b8f53ffd1a5509231e6e4b5757295cd4b5b5774",
+    "matches_previously_verified_config": true
+  },
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+    },
+    "protocol_sha256": {
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true
+  },
+  "checks": {
+    "identity": 693,
+    "source_identity": 36,
+    "finite_scalar": 2144,
+    "domain": 1824,
+    "arithmetic": 574,
+    "hash_stability": 21
+  },
+  "checks_total": 5292,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 4.440892098500626e-16,
+  "metrics": {
+    "5000": {
+      "coordinate_mse": 0.03634266972561431,
+      "constant_free_gaussian_nll": -2.5534792395803225,
+      "realized_vector_se": 0.07268533945122863,
+      "predicted_vector_se": 0.11917098282486158,
+      "binned_vector_se_calibration_gap": 0.04648564337363295
+    },
+    "10000": {
+      "coordinate_mse": 0.024705867712638437,
+      "constant_free_gaussian_nll": -2.91885815814804,
+      "realized_vector_se": 0.049411735425276875,
+      "predicted_vector_se": 0.09065088065546065,
+      "binned_vector_se_calibration_gap": 0.04123914523018375
+    }
+  },
+  "comparisons": {
+    "10000_versus_5000": {
+      "coordinate_mse": {
+        "difference": -0.011636802012975875,
+        "percent_change": -32.019667517090134
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.36537891856771765,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.02327360402595175,
+        "percent_change": -32.019667517090134
+      },
+      "predicted_vector_se": {
+        "difference": -0.02852010216940093,
+        "percent_change": -23.932086061013024
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.005246498143449199,
+        "percent_change": -11.28627628379788
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Only the two requested saved validation records, saved configuration, frozen source/protocol files and prior5k audit were read.",
+    "No model, checkpoint, dataset, test file, training log or particle-level prediction was loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be independently recovered.",
+    "Raw dataset hashes and native process identity are not reverified here; data identity fields are protected by canonical configuration checks.",
+    "No later validation records were polled or evaluated. No scientific source, protocol, manuscript or public result artifact was edited."
+  ]
+}

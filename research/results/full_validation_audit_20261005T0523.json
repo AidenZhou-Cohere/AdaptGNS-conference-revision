@@ -1,0 +1,256 @@
+{
+  "recorded_utc": "2026-10-05T05:25:41.856865+00:00",
+  "scope": "Independent saved-record audit of faithful_seed1 85k reference,90k,95k,final100k and NLL seed1 initialization only, tied to saved05:23:38 snapshot. No later NLL records were inspected.",
+  "audit_script_sha256": "a4eecda4175bad87c5520495d8a4c0f503a195689a948398ad703a96cca069af",
+  "saved_snapshot": {
+    "path": "work/training_progress_20261005T0523.json",
+    "sha256": "520be557762ae430c512ce2257f2cd28ba6bf431b872f058b102253ad39ab8d0",
+    "recorded_utc": "2026-10-05T05:23:38.120476+00:00",
+    "states": {
+      "faithful_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed0": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "faithful_seed1": {
+        "state": "complete",
+        "completed_steps": 100000
+      },
+      "nll_seed1": {
+        "state": "running",
+        "completed_steps": 4200
+      },
+      "faithful_seed2": {
+        "state": "not_started",
+        "completed_steps": 0
+      },
+      "nll_seed2": {
+        "state": "not_started",
+        "completed_steps": 0
+      }
+    },
+    "limit": "Saved statuses only; no native process or checkpoint verification."
+  },
+  "files": {
+    "faithful_seed1/85000": {
+      "path": "faithful_seed1/validation/step-085000.json",
+      "sha256": "b0e1e679d7d7bc4d84b0ac8b013da89a8e516bd0b39282c11365d6aa0e2dc076"
+    },
+    "faithful_seed1/90000": {
+      "path": "faithful_seed1/validation/step-090000.json",
+      "sha256": "8ab8a321a87ca5ec7e22386580d77753087976e3741cea63d936395162efb854"
+    },
+    "faithful_seed1/95000": {
+      "path": "faithful_seed1/validation/step-095000.json",
+      "sha256": "ab2f583f5177e2de79063440f047194d978d697bd161999059aca1b5643850d7"
+    },
+    "faithful_seed1/100000": {
+      "path": "faithful_seed1/validation/step-100000.json",
+      "sha256": "565f1082b37e2a0eb3a6208d69bb1ec0c522b6706a8fa11b30750c4ae8058d5f"
+    },
+    "nll_seed1/0": {
+      "path": "nll_seed1/validation/step-000000.json",
+      "sha256": "161a41581ebcd4b136c4e732eb90637e62aa1b855873303d0f3ca96ed1fbf09d"
+    }
+  },
+  "configuration": {
+    "faithful_seed1": {
+      "protocol_file_sha256": "aed4b98b7d790fadc2941c6138a09399d5c96bd27aeebd098c0ab28d3484789b",
+      "canonical_run_config_sha256": "1af22899a0af5750df7de2481b8f53ffd1a5509231e6e4b5757295cd4b5b5774"
+    },
+    "nll_seed1": {
+      "protocol_file_sha256": "7a7c1ecb5854616a24be4aee85f6be9f4d2408f2fff3f58e954efd7290eda7ed",
+      "canonical_run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75"
+    }
+  },
+  "configuration_differences": [
+    "objective"
+  ],
+  "source_verification": {
+    "complete_source_file_set_verified": true,
+    "source_sha256": {
+      "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "adaptive-gns/gns/calibration.py": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "adaptive-gns/gns/distribute.py": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "adaptive-gns/gns/metadata.py": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "adaptive-gns/gns/noise_utils.py": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "adaptive-gns/gns/reading_utils.py": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "adaptive-gns/gns/render_rollout.py": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "adaptive-gns/gns/train.py": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "adaptive-gns/gns/train_multinode.py": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413"
+    },
+    "protocol_sha256": {
+      "outputs/full_experiment_protocol.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926"
+    }
+  },
+  "identities": {
+    "frames_per_record": 128,
+    "trajectories_per_record": 30,
+    "fixed_config_frame_order_verified": true,
+    "dynamic_particle_counts_equal_across_records": true,
+    "seed1_paired_validation_schedule_identical": true
+  },
+  "checks": {
+    "identity": 1725,
+    "source_identity": 54,
+    "saved_snapshot": 7,
+    "finite_scalar": 5360,
+    "domain": 4560,
+    "arithmetic": 1435,
+    "hash_stability": 27
+  },
+  "checks_total": 13168,
+  "arithmetic_tolerance": {
+    "relative": 2e-12,
+    "absolute": 2e-12
+  },
+  "maximum_absolute_arithmetic_discrepancy": 8.881784197001252e-16,
+  "metrics": {
+    "faithful_seed1/85000": {
+      "coordinate_mse": 0.009431621776423637,
+      "constant_free_gaussian_nll": -4.129422461174985,
+      "realized_vector_se": 0.018863243552847273,
+      "predicted_vector_se": 0.0314925971175896,
+      "binned_vector_se_calibration_gap": 0.012629353564742325
+    },
+    "faithful_seed1/90000": {
+      "coordinate_mse": 0.009754648396224364,
+      "constant_free_gaussian_nll": -4.20101736926753,
+      "realized_vector_se": 0.019509296792448727,
+      "predicted_vector_se": 0.025628370651520946,
+      "binned_vector_se_calibration_gap": 0.006119073859072223
+    },
+    "faithful_seed1/95000": {
+      "coordinate_mse": 0.008818162560411812,
+      "constant_free_gaussian_nll": -4.221917570240671,
+      "realized_vector_se": 0.017636325120823623,
+      "predicted_vector_se": 0.028509077776134144,
+      "binned_vector_se_calibration_gap": 0.010872752655310524
+    },
+    "faithful_seed1/100000": {
+      "coordinate_mse": 0.009059420293137969,
+      "constant_free_gaussian_nll": -4.300237582109349,
+      "realized_vector_se": 0.018118840586275938,
+      "predicted_vector_se": 0.02643498215735577,
+      "binned_vector_se_calibration_gap": 0.008316141571079835
+    },
+    "nll_seed1/0": {
+      "coordinate_mse": 0.0925832747836342,
+      "constant_free_gaussian_nll": -0.29721503030412494,
+      "realized_vector_se": 0.1851665495672684,
+      "predicted_vector_se": 1.291293533202495,
+      "binned_vector_se_calibration_gap": 1.1061269836352268
+    }
+  },
+  "comparisons": {
+    "faithful_seed1/90000_versus_85000": {
+      "coordinate_mse": {
+        "difference": 0.00032302661980072693,
+        "percent_change": 3.424931867053882
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.07159490809254443,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.0006460532396014539,
+        "percent_change": 3.424931867053882
+      },
+      "predicted_vector_se": {
+        "difference": -0.005864226466068656,
+        "percent_change": -18.620968109337998
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.006510279705670102,
+        "percent_change": -51.54879600366093
+      }
+    },
+    "faithful_seed1/95000_versus_90000": {
+      "coordinate_mse": {
+        "difference": -0.0009364858358125519,
+        "percent_change": -9.60040585547941
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.02090020097314138,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.0018729716716251038,
+        "percent_change": -9.60040585547941
+      },
+      "predicted_vector_se": {
+        "difference": 0.002880707124613198,
+        "percent_change": 11.240305377908367
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": 0.004753678796238301,
+        "percent_change": 77.68624641113672
+      }
+    },
+    "faithful_seed1/100000_versus_95000": {
+      "coordinate_mse": {
+        "difference": 0.00024125773272615746,
+        "percent_change": 2.735918407869442
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.07832001186867821,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": 0.0004825154654523149,
+        "percent_change": 2.735918407869442
+      },
+      "predicted_vector_se": {
+        "difference": -0.002074095618778374,
+        "percent_change": -7.275211197868581
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.0025566110842306887,
+        "percent_change": -23.513926650230342
+      }
+    },
+    "faithful_seed1/100000_versus_85000": {
+      "coordinate_mse": {
+        "difference": -0.0003722014832856675,
+        "percent_change": -3.946314770764714
+      },
+      "constant_free_gaussian_nll": {
+        "difference": -0.17081512093436402,
+        "percent_change": null
+      },
+      "realized_vector_se": {
+        "difference": -0.000744402966571335,
+        "percent_change": -3.946314770764714
+      },
+      "predicted_vector_se": {
+        "difference": -0.005057614960233832,
+        "percent_change": -16.059694731905726
+      },
+      "binned_vector_se_calibration_gap": {
+        "difference": -0.00431321199366249,
+        "percent_change": -34.15227843255405
+      }
+    }
+  },
+  "anomalies": [],
+  "passed": true,
+  "limits": [
+    "Only the five specified saved validation records, two saved configurations, saved05:23 progress snapshot, frozen numerical source/protocol files, prior85k audit and this audit source were read.",
+    "No model, checkpoint, dataset, reserved test file, training log or particle-level prediction was loaded.",
+    "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be independently recovered.",
+    "Raw dataset hashes and native process identity are not reverified here; saved data identity fields are protected by canonical configuration hashes.",
+    "Final100k validation is a saved-record audit and does not certify checkpoint bytes or model contents.",
+    "NLL seed1 initialization is not a trained-model result; no later NLL validation record was inspected.",
+    "No training, evaluation, source, protocol, manuscript or public artifact was changed."
+  ]
+}

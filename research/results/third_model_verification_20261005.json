@@ -1,0 +1,232 @@
+{
+  "recorded_utc": "2026-10-05T05:29:35.008849+00:00",
+  "scope": "Three fixed full-architecture models complete,one complete paired seed;three models and all full-test evaluation incomplete",
+  "progress_recorded_utc": "2026-10-05T05:23:38.120476+00:00",
+  "recorded_training_updates": 304200,
+  "completed_models": 3,
+  "requested_models": 6,
+  "completed_model_names": [
+    "faithful_seed0",
+    "nll_seed0",
+    "faithful_seed1"
+  ],
+  "final_checkpoint_byte_checks": [
+    {
+      "model": "faithful_seed0",
+      "completed_steps": 100000,
+      "path": "checkpoint-100000.pt",
+      "sha256": "35eef43a0d50c812f9d440a528649a086e141eec20062e649c1487ef381a48db",
+      "file_hash_verified_utc": "2026-10-04T22:24:08.746644+00:00",
+      "scope": "Final fixed100k checkpoint byte hash and saved pointer only; no checkpoint loading or test evaluation"
+    },
+    {
+      "model": "nll_seed0",
+      "path": "checkpoint-100000.pt",
+      "sha256": "5cc7382c800f48133bf680c265339d4594af0bbd4af7f73b2d5c1271071f6b45",
+      "completed_steps": 100000,
+      "file_hash_verified_utc": "2026-10-05T01:54:14.829558+00:00",
+      "scope": "Final fixed100k checkpoint byte hash and saved pointer only; no model loading or test evaluation"
+    },
+    {
+      "model": "faithful_seed1",
+      "completed_steps": 100000,
+      "path": "checkpoint-100000.pt",
+      "sha256": "14dcd33ffd5ce5952ad5c2dfafe18812d044561927cfd00ae1bc6bbcbe2f83bf",
+      "file_hash_verified_utc": "2026-10-05T05:25:30.823870+00:00",
+      "scope": "Byte hash and checkpoint pointer from saved native progress snapshot only; no checkpoint loading or selection",
+      "pointer_snapshot": "work/training_progress_20261005T0523.json",
+      "pointer_snapshot_sha256": "520be557762ae430c512ce2257f2cd28ba6bf431b872f058b102253ad39ab8d0"
+    }
+  ],
+  "validation_points": {
+    "faithful_seed0": 21,
+    "nll_seed0": 21,
+    "faithful_seed1": 21,
+    "nll_seed1": 1
+  },
+  "previously_curated_points_preserved": 44,
+  "previous_checkpoint_verification_records_preserved": 14,
+  "new_faithful_seed1_checkpoint_records": 7,
+  "newly_integrated_validation_audits": [
+    "full_validation_audit_20261005T0223.json",
+    "full_validation_audit_20261005T0253.json",
+    "full_validation_audit_20261005T0323.json",
+    "full_validation_audit_20261005T0353.json",
+    "full_validation_audit_20261005T0423.json",
+    "full_validation_audit_20261005T0453.json",
+    "full_validation_audit_20261005T0523.json"
+  ],
+  "independent_validation_audit": {
+    "checks": 13168,
+    "anomalies": 0,
+    "sha256": "a709b9cd8d93a42bb47e56f99b58f8b6905d2aee613326f1cd45daacdc2f5073",
+    "limits": [
+      "Only the five specified saved validation records, two saved configurations, saved05:23 progress snapshot, frozen numerical source/protocol files, prior85k audit and this audit source were read.",
+      "No model, checkpoint, dataset, reserved test file, training log or particle-level prediction was loaded.",
+      "Saved calibration-bin arithmetic is checked; particle-level bin membership cannot be independently recovered.",
+      "Raw dataset hashes and native process identity are not reverified here; saved data identity fields are protected by canonical configuration hashes.",
+      "Final100k validation is a saved-record audit and does not certify checkpoint bytes or model contents.",
+      "NLL seed1 initialization is not a trained-model result; no later NLL validation record was inspected.",
+      "No training, evaluation, source, protocol, manuscript or public artifact was changed."
+    ]
+  },
+  "completion_audit": {
+    "checks": 714,
+    "mismatches": 0,
+    "sha256": "8a0605674099509c8fa3dc21a47fa9328ce380c121f573067ae9fa53571609be",
+    "completion": {
+      "objective": "faithful",
+      "seed": 1,
+      "completed_updates": 100000,
+      "final_complete_status_utc": "2026-10-05T05:09:52.068885+00:00",
+      "trainer_started_utc": "2026-10-05T01:36:34.116461+00:00",
+      "recorded_elapsed_seconds": 12794.132387041001,
+      "invocation_wall_span_seconds": 12797.952424,
+      "wall_minus_recorded_elapsed_seconds": 3.8200369589976617,
+      "elapsed_after_final_update_log_seconds": 2.6092023750024964,
+      "final_checkpoint_pointer": {
+        "path": "checkpoint-100000.pt",
+        "sha256": "14dcd33ffd5ce5952ad5c2dfafe18812d044561927cfd00ae1bc6bbcbe2f83bf",
+        "completed_steps": 100000
+      },
+      "checkpoint_bytes_verified_here": false,
+      "queue_start_markers": [
+        {
+          "line": 2,
+          "utc": "2026-10-05T01:36:32.563470+00:00"
+        }
+      ],
+      "distinct_log_points": 1001
+    },
+    "final_validation": {
+      "coordinate_mse": 0.009059420293137969,
+      "constant_free_gaussian_nll": -4.300237582109349,
+      "realized_vector_se": 0.018118840586275938,
+      "predicted_vector_se": 0.02643498215735577,
+      "binned_vector_se_calibration_gap": 0.008316141571079835
+    },
+    "changes_since_95000": {
+      "coordinate_mse": {
+        "at_95000": 0.008818162560411812,
+        "at_100000": 0.009059420293137969,
+        "final_minus_95000": 0.00024125773272615746,
+        "percent_change_from_95000": 2.735918407869435
+      },
+      "constant_free_gaussian_nll": {
+        "at_95000": -4.221917570240671,
+        "at_100000": -4.300237582109349,
+        "final_minus_95000": -0.07832001186867821,
+        "percent_change_from_95000": null
+      },
+      "realized_vector_se": {
+        "at_95000": 0.017636325120823623,
+        "at_100000": 0.018118840586275938,
+        "final_minus_95000": 0.0004825154654523149,
+        "percent_change_from_95000": 2.735918407869435
+      },
+      "predicted_vector_se": {
+        "at_95000": 0.028509077776134144,
+        "at_100000": 0.02643498215735577,
+        "final_minus_95000": -0.002074095618778374,
+        "percent_change_from_95000": -7.275211197868579
+      },
+      "binned_vector_se_calibration_gap": {
+        "at_95000": 0.010872752655310524,
+        "at_100000": 0.008316141571079835,
+        "final_minus_95000": -0.0025566110842306887,
+        "percent_change_from_95000": -23.513926650230346
+      }
+    },
+    "paired_seed1_logged_schedule": {
+      "cutoff_update": 4200,
+      "compared_log_points": 43,
+      "fields": [
+        "frame_ids",
+        "particles",
+        "lr"
+      ],
+      "noise_values_empirically_checked": false,
+      "nll_prefix_sha256": "743061dd78e2df576a38fcae6d0b740a7a8a581eced77d8e824d519ac73f7246",
+      "nll_prefix_queue_markers": [
+        {
+          "line": 2,
+          "utc": "2026-10-05T05:09:59.861726+00:00"
+        }
+      ]
+    },
+    "limits": [
+      "Completion UTC is the final complete-status timestamp after final validation/checkpoint; exact optimizer-update100000 UTC is not separately recorded.",
+      "Wall-clock spans and trainer elapsed are accounting durations, not GPU busy time, CPU core-seconds or energy; pre-timer setup and timestamp effects are not separately measured.",
+      "One invocation marker, no duplicate log steps and monotonic elapsed provide no-restart evidence in saved records; they cannot rule out every unlogged interruption.",
+      "The paired comparison covers43 logged points (update1 and each100 through4200), not all4200 optimizer steps or future NLLseed1 training. Noise arrays and unlogged sample draws were not empirically compared.",
+      "Final and95k validation are descriptive diagnostics on the same fixed128 observed frames from30 validation trajectories. They do not select a checkpoint or establish cross-seed, test or rollout superiority.",
+      "Frame/trajectory means and bin arithmetic are independently reaggregated; per-particle predictions, Gaussian likelihood terms and quantile-bin memberships are not reconstructed.",
+      "Frozen numerical source and protocol bytes are hashed; training/validation dataset and checkpoint bytes are not opened. Dataset identities are inherited from the saved matched configurations.",
+      "The NLL training log is read once as a byte snapshot and may append later; the compared prefix has a separate canonical checksum. No active process is polled or modified.",
+      "Checkpoint byte verification, native process verification and manuscript/report curation remain outside this audit."
+    ]
+  },
+  "manuscript_curation_audit": {
+    "file": "third_model_manuscript_curation_audit_20261005.json",
+    "sha256": "e4be6f447208cee99f8966664f82c5dbabb75e13ae8e856bf402d6adba68d713",
+    "passed": true
+  },
+  "native_process_identity": {
+    "supervisor": 2778,
+    "caffeinate": 2779,
+    "exited_previous_child": 47290,
+    "current_child": 67842,
+    "current_model": "nll_seed1",
+    "saved_native_ps_sha256": "ff50e946c6392cf60f9a8ee3c98ba69fb53d3e73f3d438161ef3c767e64f74cc",
+    "scope": "Commands and parent chain verified;no process action"
+  },
+  "frozen_training_sources_protocols_unchanged": true,
+  "raw_dataset_bytes_rechecked_this_turn": false,
+  "model_loading_or_reserved_test_access": false,
+  "all_three_seed_means": "null;required models incomplete",
+  "manuscript": {
+    "result": "success",
+    "path": "outputs/revised_manuscript.tex",
+    "sha256": "13afc25e45c1f0b7e60be952e5fcb2aa2a5b505954f4223594759da9fb723707",
+    "main_text_eight_page_assertion": "passed",
+    "exported_pdf_visual_metadata_check": "outstanding"
+  },
+  "report": {
+    "result": "built",
+    "pages": 9,
+    "visual_checked_pages": [
+      1,
+      7
+    ],
+    "sha256": "9aa5ffb1b174bbf3e99fbb1896b045c12a80fde0cbd1a2c7bfd586e5fcfdd768",
+    "source_sha256": "f105dbb314dffd88507e9497b827d3478953f8fab57455e654c47c2f755eed64"
+  },
+  "validation_plot": {
+    "visual_check": "passed;four model traces and all64points",
+    "numeric_summary_sha256": "b51cb9aa8266b611b2bd8614787bfeb3739beb8d491a4ea1eeedb2e64b3a71cc"
+  },
+  "software_tests": "No numerical source changes or repeated broad software tests;checked validation summarizer,independent saved-record/completion/curation audits,native LaTeX compilation,and report build/visual inspection",
+  "artifacts_sha256": {
+    "README.md": "66c89022c54b665a4a24da804f0381face98691bf2a0f39acbeedd161728268c",
+    "research_findings.md": "f66863743ccf78dbea6bbcbf5ea6d2e0dfe2b8d281993430829e105a028e0d6a",
+    "submission_checklist.md": "68319d172a593e6065848e9527b177a3a9b3bfe665191351c426551921c0f94b",
+    "full_training_progress.md": "db1432802407c037b43e8d37d859baefeb73a297af3e3d3c8da2fa96cc1e4524",
+    "full_validation_curves.md": "4de20ec306a5c5fb85424c80c340a390a177d9bf57dc07a86d041d1f0c188b5d",
+    "full_validation_curves.json": "b51cb9aa8266b611b2bd8614787bfeb3739beb8d491a4ea1eeedb2e64b3a71cc",
+    "full_validation_curves.png": "6c96f111a9f00340d892e16b3deb52b603d9fd6d4b02c3c7ec2dc484ee0fd820",
+    "full_validation_curves.pdf": "bbf38e73dbae8180845dc4f3a3456247b90832b88de0899f877f019ade60e525",
+    "training_progress.json": "520be557762ae430c512ce2257f2cd28ba6bf431b872f058b102253ad39ab8d0"
+  },
+  "document_operation_attempts": [
+    {
+      "command": "python -m research.summarize_training_validation from workspace root",
+      "result": "ModuleNotFoundError: research; wrong working directory; no numerical output produced"
+    },
+    {
+      "command": "python -m research.summarize_training_validation from outputs/AdaptGNS with --plot",
+      "result": "success",
+      "saved_records": 64,
+      "models_with_records": 4
+    }
+  ]
+}

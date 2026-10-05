@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "recorded_utc": "2026-10-05T01:54:14.059164+00:00",
+  "recorded_utc": "2026-10-05T05:25:41.725365+00:00",
   "scope": "Fixed clean-validation learning diagnostics; never checkpoint selection or test evidence",
   "research_protocol_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
   "source_sha256": "d66a68529c8f18dfc98bd42be9510680237e506350043a1346863d842dec81ed",
@@ -277,7 +277,7 @@
     {
       "objective": "faithful",
       "seed": 1,
-      "state": "running",
+      "state": "complete",
       "points": [
         {
           "completed_steps": 0,
@@ -302,34 +302,242 @@
             "predicted_vector_se": 0.11917098282486156,
             "binned_vector_se_calibration_gap": 0.04648564337363295
           }
+        },
+        {
+          "completed_steps": 10000,
+          "record_file": "step-010000.json",
+          "record_sha256": "200780b59da9b1374e3e36e05bb0790bdc07aadedcfe1c701eacb74034a54e5e",
+          "metrics": {
+            "coordinate_mse": 0.024705867712638434,
+            "constant_free_gaussian_nll": -2.91885815814804,
+            "realized_vector_se": 0.04941173542527687,
+            "predicted_vector_se": 0.09065088065546063,
+            "binned_vector_se_calibration_gap": 0.04123914523018375
+          }
+        },
+        {
+          "completed_steps": 15000,
+          "record_file": "step-015000.json",
+          "record_sha256": "745644754082e30a3d7e1aac279356bfdc862090cb580562263a5323c022ea8d",
+          "metrics": {
+            "coordinate_mse": 0.021653279049804065,
+            "constant_free_gaussian_nll": -3.083486985358532,
+            "realized_vector_se": 0.04330655809960813,
+            "predicted_vector_se": 0.0680222440213907,
+            "binned_vector_se_calibration_gap": 0.02471568592178259
+          }
+        },
+        {
+          "completed_steps": 20000,
+          "record_file": "step-020000.json",
+          "record_sha256": "36205352ab7dd1e05496ef550142c25dbfe7510cbef53d52502a9da537a16446",
+          "metrics": {
+            "coordinate_mse": 0.022872912427367578,
+            "constant_free_gaussian_nll": -3.1124848773509277,
+            "realized_vector_se": 0.045745824854735155,
+            "predicted_vector_se": 0.05428315606552779,
+            "binned_vector_se_calibration_gap": 0.008537331210792629
+          }
+        },
+        {
+          "completed_steps": 25000,
+          "record_file": "step-025000.json",
+          "record_sha256": "82826a6fbf345eca20d75e7050cc4a61b081fd6b361d38b6d2a657dad3c4daeb",
+          "metrics": {
+            "coordinate_mse": 0.015328899434764601,
+            "constant_free_gaussian_nll": -3.5985734404441687,
+            "realized_vector_se": 0.030657798869529202,
+            "predicted_vector_se": 0.04598324877373534,
+            "binned_vector_se_calibration_gap": 0.015325449904206128
+          }
+        },
+        {
+          "completed_steps": 30000,
+          "record_file": "step-030000.json",
+          "record_sha256": "0314c5850ef99d2c31e4434416485f360bddd192081fba43a03a2e71e03e0dfb",
+          "metrics": {
+            "coordinate_mse": 0.014792552846106699,
+            "constant_free_gaussian_nll": -3.5375493475290316,
+            "realized_vector_se": 0.029585105692213398,
+            "predicted_vector_se": 0.05827269059405033,
+            "binned_vector_se_calibration_gap": 0.028687584901836934
+          }
+        },
+        {
+          "completed_steps": 35000,
+          "record_file": "step-035000.json",
+          "record_sha256": "66f6ef57a83b5e57ff1d19faf5ca8d352d8c23ae4eac19e98c64061815823483",
+          "metrics": {
+            "coordinate_mse": 0.012663386215028404,
+            "constant_free_gaussian_nll": -3.6651539472154977,
+            "realized_vector_se": 0.025326772430056807,
+            "predicted_vector_se": 0.049988135992088054,
+            "binned_vector_se_calibration_gap": 0.02466136356203125
+          }
+        },
+        {
+          "completed_steps": 40000,
+          "record_file": "step-040000.json",
+          "record_sha256": "722a4f4e9f288232bbfc6c7852b9abb243a99f3ea4bb1a036e2f2e126f3b7590",
+          "metrics": {
+            "coordinate_mse": 0.012786375828113013,
+            "constant_free_gaussian_nll": -3.8022474738374075,
+            "realized_vector_se": 0.025572751656226026,
+            "predicted_vector_se": 0.03899762570860367,
+            "binned_vector_se_calibration_gap": 0.013424874052377642
+          }
+        },
+        {
+          "completed_steps": 45000,
+          "record_file": "step-045000.json",
+          "record_sha256": "7ebad880eb1729af80033e7e39a41053dcadae78fa9c2371eb787cc89a9457e3",
+          "metrics": {
+            "coordinate_mse": 0.012180577883503225,
+            "constant_free_gaussian_nll": -3.9115518528932687,
+            "realized_vector_se": 0.02436115576700645,
+            "predicted_vector_se": 0.03290533490335183,
+            "binned_vector_se_calibration_gap": 0.008544179136345378
+          }
+        },
+        {
+          "completed_steps": 50000,
+          "record_file": "step-050000.json",
+          "record_sha256": "4987ddc6eac14b2e6df18bc8beae96656c69d0188ae319c170523fd6390a2d4a",
+          "metrics": {
+            "coordinate_mse": 0.012468142932796761,
+            "constant_free_gaussian_nll": -3.8194139820890083,
+            "realized_vector_se": 0.024936285865593523,
+            "predicted_vector_se": 0.03752466136100781,
+            "binned_vector_se_calibration_gap": 0.012588375495414278
+          }
+        },
+        {
+          "completed_steps": 55000,
+          "record_file": "step-055000.json",
+          "record_sha256": "f35482db6abac757f6dab6266cfff47a6140aa16e1eac4159fbf0a5d1a9ff60e",
+          "metrics": {
+            "coordinate_mse": 0.011359555293541991,
+            "constant_free_gaussian_nll": -3.8546794052126603,
+            "realized_vector_se": 0.022719110587083983,
+            "predicted_vector_se": 0.0352818006129318,
+            "binned_vector_se_calibration_gap": 0.01256269002584781
+          }
+        },
+        {
+          "completed_steps": 60000,
+          "record_file": "step-060000.json",
+          "record_sha256": "8ebe5390d0ef6a30c0803aeab0f8e0459d92f96aa97ae5b53db802dd5c4e7299",
+          "metrics": {
+            "coordinate_mse": 0.012899280022081967,
+            "constant_free_gaussian_nll": -3.7227418661192635,
+            "realized_vector_se": 0.025798560044163935,
+            "predicted_vector_se": 0.03212649478852616,
+            "binned_vector_se_calibration_gap": 0.00666376889678623
+          }
+        },
+        {
+          "completed_steps": 65000,
+          "record_file": "step-065000.json",
+          "record_sha256": "941d1fcbd5cd6b5c1a9f0f0f76a325369d622f72574bf8dab9ee772308a80805",
+          "metrics": {
+            "coordinate_mse": 0.013448606782067715,
+            "constant_free_gaussian_nll": -3.681441826113307,
+            "realized_vector_se": 0.02689721356413543,
+            "predicted_vector_se": 0.031069908909222125,
+            "binned_vector_se_calibration_gap": 0.006617516667325339
+          }
+        },
+        {
+          "completed_steps": 70000,
+          "record_file": "step-070000.json",
+          "record_sha256": "8675df55d0411e9798fc7a96ecf87a45ec4d7749b17410b98b99c934b5c654cf",
+          "metrics": {
+            "coordinate_mse": 0.010463465328589546,
+            "constant_free_gaussian_nll": -3.9955689509952914,
+            "realized_vector_se": 0.020926930657179092,
+            "predicted_vector_se": 0.03702299160557284,
+            "binned_vector_se_calibration_gap": 0.016096060948393748
+          }
+        },
+        {
+          "completed_steps": 75000,
+          "record_file": "step-075000.json",
+          "record_sha256": "77965137d4a8dd2f138467dedd79e12cf851c93706a6840a46c01ace25188218",
+          "metrics": {
+            "coordinate_mse": 0.010197896322409252,
+            "constant_free_gaussian_nll": -4.0886582373100975,
+            "realized_vector_se": 0.020395792644818504,
+            "predicted_vector_se": 0.03357338910663354,
+            "binned_vector_se_calibration_gap": 0.013177596461815039
+          }
+        },
+        {
+          "completed_steps": 80000,
+          "record_file": "step-080000.json",
+          "record_sha256": "c46fad0d1855c902344d889c565e3f1f9f2aa5902923feb13948a71c9555625b",
+          "metrics": {
+            "coordinate_mse": 0.00955121120572779,
+            "constant_free_gaussian_nll": -4.141724040465518,
+            "realized_vector_se": 0.01910242241145558,
+            "predicted_vector_se": 0.030488756671826704,
+            "binned_vector_se_calibration_gap": 0.011386334260371129
+          }
+        },
+        {
+          "completed_steps": 85000,
+          "record_file": "step-085000.json",
+          "record_sha256": "b0e1e679d7d7bc4d84b0ac8b013da89a8e516bd0b39282c11365d6aa0e2dc076",
+          "metrics": {
+            "coordinate_mse": 0.009431621776423638,
+            "constant_free_gaussian_nll": -4.129422461174985,
+            "realized_vector_se": 0.018863243552847277,
+            "predicted_vector_se": 0.0314925971175896,
+            "binned_vector_se_calibration_gap": 0.012629353564742323
+          }
+        },
+        {
+          "completed_steps": 90000,
+          "record_file": "step-090000.json",
+          "record_sha256": "8ab8a321a87ca5ec7e22386580d77753087976e3741cea63d936395162efb854",
+          "metrics": {
+            "coordinate_mse": 0.009754648396224362,
+            "constant_free_gaussian_nll": -4.20101736926753,
+            "realized_vector_se": 0.019509296792448724,
+            "predicted_vector_se": 0.025628370651520946,
+            "binned_vector_se_calibration_gap": 0.006119073859072223
+          }
+        },
+        {
+          "completed_steps": 95000,
+          "record_file": "step-095000.json",
+          "record_sha256": "ab2f583f5177e2de79063440f047194d978d697bd161999059aca1b5643850d7",
+          "metrics": {
+            "coordinate_mse": 0.00881816256041181,
+            "constant_free_gaussian_nll": -4.221917570240671,
+            "realized_vector_se": 0.01763632512082362,
+            "predicted_vector_se": 0.028509077776134147,
+            "binned_vector_se_calibration_gap": 0.010872752655310524
+          }
+        },
+        {
+          "completed_steps": 100000,
+          "record_file": "step-100000.json",
+          "record_sha256": "565f1082b37e2a0eb3a6208d69bb1ec0c522b6706a8fa11b30750c4ae8058d5f",
+          "metrics": {
+            "coordinate_mse": 0.009059420293137969,
+            "constant_free_gaussian_nll": -4.300237582109349,
+            "realized_vector_se": 0.018118840586275938,
+            "predicted_vector_se": 0.026434982157355777,
+            "binned_vector_se_calibration_gap": 0.008316141571079834
+          }
         }
       ],
-      "last_recorded_updates": 5200,
+      "last_recorded_updates": 100000,
       "error": null,
-      "status_file_sha256": "b2a51c94069e1677e074a4c8eb57b15e84dcfa17bf97a4fbcb0666e30385f49e",
+      "status_file_sha256": "45b88f155eea282a59da3ea8c1c5ea8f88defc7997038fd4af35f8491c5ce783",
       "run_config_sha256": "1af22899a0af5750df7de2481b8f53ffd1a5509231e6e4b5757295cd4b5b5774",
       "protocol_file_sha256": "aed4b98b7d790fadc2941c6138a09399d5c96bd27aeebd098c0ab28d3484789b",
-      "missing_scheduled_updates": [
-        10000,
-        15000,
-        20000,
-        25000,
-        30000,
-        35000,
-        40000,
-        45000,
-        50000,
-        55000,
-        60000,
-        65000,
-        70000,
-        75000,
-        80000,
-        85000,
-        90000,
-        95000,
-        100000
-      ]
+      "missing_scheduled_updates": []
     },
     {
       "objective": "faithful",
@@ -605,8 +813,48 @@
     {
       "objective": "nll",
       "seed": 1,
-      "state": "not_started",
-      "points": []
+      "state": "running",
+      "points": [
+        {
+          "completed_steps": 0,
+          "record_file": "step-000000.json",
+          "record_sha256": "161a41581ebcd4b136c4e732eb90637e62aa1b855873303d0f3ca96ed1fbf09d",
+          "metrics": {
+            "coordinate_mse": 0.09258327478363419,
+            "constant_free_gaussian_nll": -0.2972150303041248,
+            "realized_vector_se": 0.18516654956726838,
+            "predicted_vector_se": 1.2912935332024953,
+            "binned_vector_se_calibration_gap": 1.1061269836352268
+          }
+        }
+      ],
+      "last_recorded_updates": 4600,
+      "error": null,
+      "status_file_sha256": "338b925cf81184fa583174730781b28e542ff0a985e54be2cf1301f43ad904c4",
+      "run_config_sha256": "0e116c4b64aceb9a23d15189c14c56c15d9be42bf77a0502bd9b81c76966ff75",
+      "protocol_file_sha256": "7a7c1ecb5854616a24be4aee85f6be9f4d2408f2fff3f58e954efd7290eda7ed",
+      "missing_scheduled_updates": [
+        5000,
+        10000,
+        15000,
+        20000,
+        25000,
+        30000,
+        35000,
+        40000,
+        45000,
+        50000,
+        55000,
+        60000,
+        65000,
+        70000,
+        75000,
+        80000,
+        85000,
+        90000,
+        95000,
+        100000
+      ]
     },
     {
       "objective": "nll",
@@ -723,13 +971,13 @@
       },
       {
         "completed_steps": 10000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.028823436173986437,
-              null,
+              0.024705867712638434,
               null
             ],
             "mean": null,
@@ -738,7 +986,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -2.8676545305887697,
-              null,
+              -2.91885815814804,
               null
             ],
             "mean": null,
@@ -747,7 +995,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.057646872347972875,
-              null,
+              0.04941173542527687,
               null
             ],
             "mean": null,
@@ -756,7 +1004,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.07869576356760581,
-              null,
+              0.09065088065546063,
               null
             ],
             "mean": null,
@@ -765,7 +1013,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.021048891219632933,
-              null,
+              0.04123914523018375,
               null
             ],
             "mean": null,
@@ -775,13 +1023,13 @@
       },
       {
         "completed_steps": 15000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.026382878185142837,
-              null,
+              0.021653279049804065,
               null
             ],
             "mean": null,
@@ -790,7 +1038,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -2.9310248230440648,
-              null,
+              -3.083486985358532,
               null
             ],
             "mean": null,
@@ -799,7 +1047,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.052765756370285674,
-              null,
+              0.04330655809960813,
               null
             ],
             "mean": null,
@@ -808,7 +1056,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.06484233021230316,
-              null,
+              0.0680222440213907,
               null
             ],
             "mean": null,
@@ -817,7 +1065,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.012076573842017487,
-              null,
+              0.02471568592178259,
               null
             ],
             "mean": null,
@@ -827,13 +1075,13 @@
       },
       {
         "completed_steps": 20000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.016609289407260166,
-              null,
+              0.022872912427367578,
               null
             ],
             "mean": null,
@@ -842,7 +1090,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.3819138433813927,
-              null,
+              -3.1124848773509277,
               null
             ],
             "mean": null,
@@ -851,7 +1099,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.03321857881452033,
-              null,
+              0.045745824854735155,
               null
             ],
             "mean": null,
@@ -860,7 +1108,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.05959207608448321,
-              null,
+              0.05428315606552779,
               null
             ],
             "mean": null,
@@ -869,7 +1117,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.02637349726996288,
-              null,
+              0.008537331210792629,
               null
             ],
             "mean": null,
@@ -879,13 +1127,13 @@
       },
       {
         "completed_steps": 25000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.018962209336128525,
-              null,
+              0.015328899434764601,
               null
             ],
             "mean": null,
@@ -894,7 +1142,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.237667897830869,
-              null,
+              -3.5985734404441687,
               null
             ],
             "mean": null,
@@ -903,7 +1151,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.03792441867225705,
-              null,
+              0.030657798869529202,
               null
             ],
             "mean": null,
@@ -912,7 +1160,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.056316054165237356,
-              null,
+              0.04598324877373534,
               null
             ],
             "mean": null,
@@ -921,7 +1169,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.01839163549298031,
-              null,
+              0.015325449904206128,
               null
             ],
             "mean": null,
@@ -931,13 +1179,13 @@
       },
       {
         "completed_steps": 30000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.014844925040134417,
-              null,
+              0.014792552846106699,
               null
             ],
             "mean": null,
@@ -946,7 +1194,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.5981792187453676,
-              null,
+              -3.5375493475290316,
               null
             ],
             "mean": null,
@@ -955,7 +1203,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.029689850080268834,
-              null,
+              0.029585105692213398,
               null
             ],
             "mean": null,
@@ -964,7 +1212,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.04460888627323974,
-              null,
+              0.05827269059405033,
               null
             ],
             "mean": null,
@@ -973,7 +1221,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.014919036192970895,
-              null,
+              0.028687584901836934,
               null
             ],
             "mean": null,
@@ -983,13 +1231,13 @@
       },
       {
         "completed_steps": 35000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.015809696582683327,
-              null,
+              0.012663386215028404,
               null
             ],
             "mean": null,
@@ -998,7 +1246,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.506095716034601,
-              null,
+              -3.6651539472154977,
               null
             ],
             "mean": null,
@@ -1007,7 +1255,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.031619393165366654,
-              null,
+              0.025326772430056807,
               null
             ],
             "mean": null,
@@ -1016,7 +1264,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.044823562085927415,
-              null,
+              0.049988135992088054,
               null
             ],
             "mean": null,
@@ -1025,7 +1273,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.013204168920560757,
-              null,
+              0.02466136356203125,
               null
             ],
             "mean": null,
@@ -1035,13 +1283,13 @@
       },
       {
         "completed_steps": 40000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.01542682800541412,
-              null,
+              0.012786375828113013,
               null
             ],
             "mean": null,
@@ -1050,7 +1298,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.4390297944851764,
-              null,
+              -3.8022474738374075,
               null
             ],
             "mean": null,
@@ -1059,7 +1307,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.03085365601082824,
-              null,
+              0.025572751656226026,
               null
             ],
             "mean": null,
@@ -1068,7 +1316,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.041075612675102714,
-              null,
+              0.03899762570860367,
               null
             ],
             "mean": null,
@@ -1077,7 +1325,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.011108899184630242,
-              null,
+              0.013424874052377642,
               null
             ],
             "mean": null,
@@ -1087,13 +1335,13 @@
       },
       {
         "completed_steps": 45000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.013791307902362255,
-              null,
+              0.012180577883503225,
               null
             ],
             "mean": null,
@@ -1102,7 +1350,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.6696881993769703,
-              null,
+              -3.9115518528932687,
               null
             ],
             "mean": null,
@@ -1111,7 +1359,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.02758261580472451,
-              null,
+              0.02436115576700645,
               null
             ],
             "mean": null,
@@ -1120,7 +1368,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.03840751445856833,
-              null,
+              0.03290533490335183,
               null
             ],
             "mean": null,
@@ -1129,7 +1377,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.010930559201861317,
-              null,
+              0.008544179136345378,
               null
             ],
             "mean": null,
@@ -1139,13 +1387,13 @@
       },
       {
         "completed_steps": 50000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.011584991516696936,
-              null,
+              0.012468142932796761,
               null
             ],
             "mean": null,
@@ -1154,7 +1402,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.9159321608451902,
-              null,
+              -3.8194139820890083,
               null
             ],
             "mean": null,
@@ -1163,7 +1411,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.023169983033393873,
-              null,
+              0.024936285865593523,
               null
             ],
             "mean": null,
@@ -1172,7 +1420,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.03463906779785088,
-              null,
+              0.03752466136100781,
               null
             ],
             "mean": null,
@@ -1181,7 +1429,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.011469084764457006,
-              null,
+              0.012588375495414278,
               null
             ],
             "mean": null,
@@ -1191,13 +1439,13 @@
       },
       {
         "completed_steps": 55000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.011509614768405696,
-              null,
+              0.011359555293541991,
               null
             ],
             "mean": null,
@@ -1206,7 +1454,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.889209484473346,
-              null,
+              -3.8546794052126603,
               null
             ],
             "mean": null,
@@ -1215,7 +1463,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.023019229536811393,
-              null,
+              0.022719110587083983,
               null
             ],
             "mean": null,
@@ -1224,7 +1472,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.0388396872844786,
-              null,
+              0.0352818006129318,
               null
             ],
             "mean": null,
@@ -1233,7 +1481,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.015820457747667212,
-              null,
+              0.01256269002584781,
               null
             ],
             "mean": null,
@@ -1243,13 +1491,13 @@
       },
       {
         "completed_steps": 60000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.010387798298038571,
-              null,
+              0.012899280022081967,
               null
             ],
             "mean": null,
@@ -1258,7 +1506,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.976819263470154,
-              null,
+              -3.7227418661192635,
               null
             ],
             "mean": null,
@@ -1267,7 +1515,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.020775596596077143,
-              null,
+              0.025798560044163935,
               null
             ],
             "mean": null,
@@ -1276,7 +1524,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.03362206700643435,
-              null,
+              0.03212649478852616,
               null
             ],
             "mean": null,
@@ -1285,7 +1533,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.01284647041035721,
-              null,
+              0.00666376889678623,
               null
             ],
             "mean": null,
@@ -1295,13 +1543,13 @@
       },
       {
         "completed_steps": 65000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.010259628602668113,
-              null,
+              0.013448606782067715,
               null
             ],
             "mean": null,
@@ -1310,7 +1558,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -3.999270664930131,
-              null,
+              -3.681441826113307,
               null
             ],
             "mean": null,
@@ -1319,7 +1567,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.020519257205336226,
-              null,
+              0.02689721356413543,
               null
             ],
             "mean": null,
@@ -1328,7 +1576,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.03432448800382634,
-              null,
+              0.031069908909222125,
               null
             ],
             "mean": null,
@@ -1337,7 +1585,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.013805230798490116,
-              null,
+              0.006617516667325339,
               null
             ],
             "mean": null,
@@ -1347,13 +1595,13 @@
       },
       {
         "completed_steps": 70000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.010546896385080233,
-              null,
+              0.010463465328589546,
               null
             ],
             "mean": null,
@@ -1362,7 +1610,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.026861317513058,
-              null,
+              -3.9955689509952914,
               null
             ],
             "mean": null,
@@ -1371,7 +1619,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.021093792770160467,
-              null,
+              0.020926930657179092,
               null
             ],
             "mean": null,
@@ -1380,7 +1628,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.031064482588956378,
-              null,
+              0.03702299160557284,
               null
             ],
             "mean": null,
@@ -1389,7 +1637,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.00997068981879591,
-              null,
+              0.016096060948393748,
               null
             ],
             "mean": null,
@@ -1399,13 +1647,13 @@
       },
       {
         "completed_steps": 75000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.010776737417364186,
-              null,
+              0.010197896322409252,
               null
             ],
             "mean": null,
@@ -1414,7 +1662,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.001292216294063,
-              null,
+              -4.0886582373100975,
               null
             ],
             "mean": null,
@@ -1423,7 +1671,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.021553474834728373,
-              null,
+              0.020395792644818504,
               null
             ],
             "mean": null,
@@ -1432,7 +1680,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.0298998208039103,
-              null,
+              0.03357338910663354,
               null
             ],
             "mean": null,
@@ -1441,7 +1689,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.008346345969181924,
-              null,
+              0.013177596461815039,
               null
             ],
             "mean": null,
@@ -1451,13 +1699,13 @@
       },
       {
         "completed_steps": 80000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.009729250960350653,
-              null,
+              0.00955121120572779,
               null
             ],
             "mean": null,
@@ -1466,7 +1714,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.150785201598745,
-              null,
+              -4.141724040465518,
               null
             ],
             "mean": null,
@@ -1475,7 +1723,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.019458501920701306,
-              null,
+              0.01910242241145558,
               null
             ],
             "mean": null,
@@ -1484,7 +1732,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.026698817699251382,
-              null,
+              0.030488756671826704,
               null
             ],
             "mean": null,
@@ -1493,7 +1741,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.0072403157785500775,
-              null,
+              0.011386334260371129,
               null
             ],
             "mean": null,
@@ -1503,13 +1751,13 @@
       },
       {
         "completed_steps": 85000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.008991907453859454,
-              null,
+              0.009431621776423638,
               null
             ],
             "mean": null,
@@ -1518,7 +1766,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.202498557723232,
-              null,
+              -4.129422461174985,
               null
             ],
             "mean": null,
@@ -1527,7 +1775,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.017983814907718908,
-              null,
+              0.018863243552847277,
               null
             ],
             "mean": null,
@@ -1536,7 +1784,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.028576840045667996,
-              null,
+              0.0314925971175896,
               null
             ],
             "mean": null,
@@ -1545,7 +1793,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.010593025137949085,
-              null,
+              0.012629353564742323,
               null
             ],
             "mean": null,
@@ -1555,13 +1803,13 @@
       },
       {
         "completed_steps": 90000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.008911862054014986,
-              null,
+              0.009754648396224362,
               null
             ],
             "mean": null,
@@ -1570,7 +1818,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.214704824346024,
-              null,
+              -4.20101736926753,
               null
             ],
             "mean": null,
@@ -1579,7 +1827,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.017823724108029973,
-              null,
+              0.019509296792448724,
               null
             ],
             "mean": null,
@@ -1588,7 +1836,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.029382809242329035,
-              null,
+              0.025628370651520946,
               null
             ],
             "mean": null,
@@ -1597,7 +1845,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.011559085134299062,
-              null,
+              0.006119073859072223,
               null
             ],
             "mean": null,
@@ -1607,13 +1855,13 @@
       },
       {
         "completed_steps": 95000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.0087990398717906,
-              null,
+              0.00881816256041181,
               null
             ],
             "mean": null,
@@ -1622,7 +1870,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.32454246658986,
-              null,
+              -4.221917570240671,
               null
             ],
             "mean": null,
@@ -1631,7 +1879,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.0175980797435812,
-              null,
+              0.01763632512082362,
               null
             ],
             "mean": null,
@@ -1640,7 +1888,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.02472759799915713,
-              null,
+              0.028509077776134147,
               null
             ],
             "mean": null,
@@ -1649,7 +1897,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.007129518255575928,
-              null,
+              0.010872752655310524,
               null
             ],
             "mean": null,
@@ -1659,13 +1907,13 @@
       },
       {
         "completed_steps": 100000,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.008118621072848638,
-              null,
+              0.009059420293137969,
               null
             ],
             "mean": null,
@@ -1674,7 +1922,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -4.286717604983559,
-              null,
+              -4.300237582109349,
               null
             ],
             "mean": null,
@@ -1683,7 +1931,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.016237242145697276,
-              null,
+              0.018118840586275938,
               null
             ],
             "mean": null,
@@ -1692,7 +1940,7 @@
           "predicted_vector_se": {
             "seed_values": [
               0.02852366127595406,
-              null,
+              0.026434982157355777,
               null
             ],
             "mean": null,
@@ -1701,7 +1949,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               0.012286419130256788,
-              null,
+              0.008316141571079834,
               null
             ],
             "mean": null,
@@ -1713,13 +1961,13 @@
     "nll": [
       {
         "completed_steps": 0,
-        "available_seeds": 1,
+        "available_seeds": 2,
         "required_seeds": 3,
         "statistics": {
           "coordinate_mse": {
             "seed_values": [
               0.0211256104354069,
-              null,
+              0.09258327478363419,
               null
             ],
             "mean": null,
@@ -1728,7 +1976,7 @@
           "constant_free_gaussian_nll": {
             "seed_values": [
               -0.3152761116944165,
-              null,
+              -0.2972150303041248,
               null
             ],
             "mean": null,
@@ -1737,7 +1985,7 @@
           "realized_vector_se": {
             "seed_values": [
               0.0422512208708138,
-              null,
+              0.18516654956726838,
               null
             ],
             "mean": null,
@@ -1746,7 +1994,7 @@
           "predicted_vector_se": {
             "seed_values": [
               1.418380837086663,
-              null,
+              1.2912935332024953,
               null
             ],
             "mean": null,
@@ -1755,7 +2003,7 @@
           "binned_vector_se_calibration_gap": {
             "seed_values": [
               1.3761296162158494,
-              null,
+              1.1061269836352268,
               null
             ],
             "mean": null,
