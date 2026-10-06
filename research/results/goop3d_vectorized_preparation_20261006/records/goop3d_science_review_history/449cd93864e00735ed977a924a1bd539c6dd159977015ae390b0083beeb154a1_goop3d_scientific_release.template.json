@@ -1,0 +1,81 @@
+{
+  "schema": "adaptgns_goop3d_scientific_release_v1",
+  "status": "not_admitted",
+  "issued_by": "root_required",
+  "scientific_training_admitted": false,
+  "files_sha256": null,
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "B",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "B",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "endpoint_updates": null,
+  "hostname": null,
+  "cohort_id": null,
+  "cost_basis": null,
+  "gpu_uuids": [],
+  "compute_analysis_deadline_utc": "2026-10-07T01:00:00+00:00",
+  "independent_source_and_feasibility_reviews_complete": false,
+  "process_identity_checked_utc": null,
+  "clock_checked_utc": null,
+  "clock_error_bound_seconds": null,
+  "waves": {
+    "A": {
+      "latest_start_utc": null,
+      "stop_utc": null
+    },
+    "B": {
+      "latest_start_utc": null,
+      "stop_utc": null
+    }
+  }
+}

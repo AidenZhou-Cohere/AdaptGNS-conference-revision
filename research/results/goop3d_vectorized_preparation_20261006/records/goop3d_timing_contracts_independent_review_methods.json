@@ -1,0 +1,35 @@
+{
+  "schema": "adaptgns_independent_source_review_v1",
+  "reviewer": "conference_critique_methods",
+  "reviewed_utc": "2026-10-06T05:37:48.206920+00:00",
+  "status": "passed_for_separate_root_contract_generation",
+  "scope": "Independent source and mocked/scalar CPU tests of the timing contract generator only; no process launch, official arrays, checkpoint deserialization, endpoint selection or admission by this review. Timing supervisor independently reviewed by code_audit.",
+  "files_sha256": {
+    "prepare_goop3d_validation_timing_release_v1.py": "136c9cf30c2f7422514e8fc48f79edab5e17e511f1f639fb9ff6688a5ceaa4b7",
+    "test_prepare_goop3d_validation_timing_release_v1.py": "fa3f0e2a004621b000f34e3f214ec1307a767dad32f2b944c97c6d3d7c9415d3",
+    "run_goop3d_validation_timing_v1.py": "104e7887a2e9fd9760e2cdacbcab6e850856120a9b6e941a8908b764ccccbb29",
+    "goop3d_valid_timing_split_admission.template.json": "858347060fdd69a39ed147ec714474d4f4771f09601016e3c3ac02f38e3e2d08",
+    "goop3d_timing_contracts_methods_review_tests_final.log": "1b31e3fc3c18a42910709d5a3afabfbc07474fc3e627801defb18fc76e853e8f"
+  },
+  "remaining_blocking_findings": [],
+  "tests": {
+    "passed": 8,
+    "seconds": 0.25,
+    "command": "../../venv/bin/python -B -m pytest -q test_prepare_goop3d_validation_timing_release_v1.py",
+    "log": "goop3d_timing_contracts_methods_review_tests_final.log"
+  },
+  "reviewed": [
+    "Exact root preparation spec binds generator/supervisor, explicit valid-source-only approval, hostname, output, process inventory, bounds and checkpoint identities.",
+    "Valid admission template is checked against original complete valid manifest and source SHA, core context/converter metadata and evidence file bytes before the source-only admitted derivative is written.",
+    "Both verified seed0 capacity checkpoint byte hashes are checked; six exact full-rollout/same-state/boundary policy timing releases use those fixed capacity endpoints.",
+    "Fresh separate contracts directory prevents overwriting source/data/capacity/output; failed preflight retains partial contracts and an error without publishing the active supervisor release.",
+    "Pinned supervisor scalar preflight validates all generated child contracts and bound inputs before active parent release publication; source/spec/template are rehashed after preflight.",
+    "Real scalar preflight composition test uses actual local source/manifest evidence with explicitly fake checkpoint byte files; no model content is deserialized.",
+    "Final update from previously reviewed generator only substitutes the reviewed supervisor SHA 104e7887a2e9fd9760e2cdacbcab6e850856120a9b6e941a8908b764ccccbb29; generator tests remain byte-identical."
+  ],
+  "limits": [
+    "This is preparation-only review, not verification of actual remote input bytes or proof of successful timing.",
+    "No scientific endpoint or complete runtime forecast is supported until actual timing outcomes are retained and audited.",
+    "Separate root release and process/device identity checks remain required."
+  ]
+}

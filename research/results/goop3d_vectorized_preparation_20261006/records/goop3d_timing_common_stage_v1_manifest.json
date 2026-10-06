@@ -1,0 +1,9 @@
+{
+  "evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+  "goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+  "goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+  "goop3d_deadline_worksheet_v1.py": "8a4946e813a6b9ef3d0cb86c5649d614d2bc89fd08b9962bf3ec877e94a20db6",
+  "goop3d_validation_timing_protocol_v1.md": "fd792a71854b050cf02efb45dfb858d820d81f6a501274e18bf817e7eac35db1",
+  "goop3d_valid_timing_split_admission.template.json": "858347060fdd69a39ed147ec714474d4f4771f09601016e3c3ac02f38e3e2d08",
+  "goop3d_capacity_stopped_receipt_v1.json": "40f13d2e66d94cf607e3bf21b69dac135fd6458693bb9ef2e2cfb367cece9fa5"
+}

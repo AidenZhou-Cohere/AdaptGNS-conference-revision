@@ -1,0 +1,57 @@
+{
+  "files": {
+    "records/goop3d_vectorized_package_scope_review_statistics_v1.json": {
+      "bytes": 4950,
+      "sha256": "65a124d491e9b256156493d9f4e969d7ae9893cb029492678bf5159651d7f624",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_package_scope_review_statistics_v1.json"
+    },
+    "records/goop3d_vectorized_publication_independent_review_methods_v1.json": {
+      "bytes": 4014,
+      "sha256": "479b70263b4efc5597a4937ffba97ff0b233fe17adc7a0d867dd33d5271b932e",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_publication_independent_review_methods_v1.json"
+    },
+    "verification_history/audit_goop3d_vectorized_publication_methods_v1.py": {
+      "bytes": 11907,
+      "sha256": "3daf5b7159bb27bafb0e8ad2c8c77f7155aa69a76096dce31e7b9fc924db07ab",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_publication_methods_v1.py"
+    },
+    "verification_history/audit_goop3d_vectorized_publication_methods_v1_initial_category_count.py": {
+      "bytes": 11451,
+      "sha256": "1e3d2e3be1afed792d87f693efc03edc9ac2c4faef8a23bf4988968235fd8bdc",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_publication_methods_v1_initial_category_count.py"
+    },
+    "verification_history/goop3d_vectorized_package_methods_byte_check_v1.json": {
+      "bytes": 506,
+      "sha256": "793a65127fe321ffaa688d97328b6face117a6e026d54a237f1a473d4d3601f3",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_package_methods_byte_check_v1.json"
+    },
+    "verification_history/goop3d_vectorized_package_methods_byte_check_v1.stderr.log": {
+      "bytes": 1261,
+      "sha256": "9d30c664ac948a95858e4091797f31662e0967e096b03001c58fd8147ecf1f5f",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_package_methods_byte_check_v1.stderr.log"
+    },
+    "verification_history/goop3d_vectorized_package_scope_statistics_verifier_v1.stderr.log": {
+      "bytes": 1261,
+      "sha256": "9d30c664ac948a95858e4091797f31662e0967e096b03001c58fd8147ecf1f5f",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_package_scope_statistics_verifier_v1.stderr.log"
+    },
+    "verification_history/goop3d_vectorized_package_scope_statistics_verifier_v1.stdout.json": {
+      "bytes": 506,
+      "sha256": "1eff1319f8b06f0969569169b79798901e8f08f83bbaf6c252fde357bc9a26f8",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_package_scope_statistics_verifier_v1.stdout.json"
+    },
+    "verification_history/goop3d_vectorized_publication_methods_attempt1.log": {
+      "bytes": 601,
+      "sha256": "c09efb0b9b4ea00fc40da742beb2d3304c55a8793ea65b5f833a125b4035884d",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_publication_methods_attempt1.log"
+    },
+    "verification_history/goop3d_vectorized_publication_methods_attempt2.log": {
+      "bytes": 301,
+      "sha256": "8f1f6b216107d35d90091a94c33040678f4f50c6fe5a4d4f5912e26d961b9447",
+      "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_publication_methods_attempt2.log"
+    }
+  },
+  "reviewed_manifest_sha256": "890896aa99a19b27872d5610588cde2aaa2165d0bc078f0421b7a60526f0235d",
+  "reviewed_payload_policy": "Previously reviewed payloads and provenance.json remain unchanged. Only exact review/evidence copies, this addition inventory, the saved pre-inclusion manifest, and a refreshed current manifest are added.",
+  "schema": "adaptgns_goop3d_post_review_exact_copy_provenance_v1"
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "adaptgns_goop3d_publication_review_corrections_v1",
+  "created_utc": "2026-10-06T05:47:40.589488+00:00",
+  "findings": [
+    {
+      "reviewer": "conference_critique_methods",
+      "finding": "q table label incorrectly said guarded time.",
+      "resolution": "Corrected to steady wall seconds per update. Exact reported values unchanged."
+    },
+    {
+      "reviewer": "conference_critique_statistics",
+      "finding": "Frozen timing first-identity snapshot contained progress counters beyond declarations-only scope.",
+      "resolution": "Excluded public copy and current copy provenance row; immutable original retained, identified by SHA in omissions. Historical tested manifest preserves the original package attempt metadata only."
+    }
+  ],
+  "research_source_or_test_changes": false
+}

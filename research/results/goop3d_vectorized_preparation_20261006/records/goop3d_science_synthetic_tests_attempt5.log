@@ -1,0 +1,20 @@
+....................................................                     [100%]
+=============================== warnings summary ===============================
+test_supervise_goop3d_science_v1.py::test_tiny_fresh_scientific_endpoint_and_nonmultiple_checkpoint_audit[base]
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+52 passed, 61 warnings in 3.08s

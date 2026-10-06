@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_publication_methods_v1.py", line 33, in <module>
+    check(len(closure)==110,'Complete110-file support closure')
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_publication_methods_v1.py", line 15, in check
+    if not v:raise AssertionError(label)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Complete110-file support closure

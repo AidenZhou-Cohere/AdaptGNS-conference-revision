@@ -1,0 +1,56 @@
+.........................................F..........                     [100%]
+=================================== FAILURES ===================================
+_ test_inert_admission_template_has_exact_trainer_fields_after_explicit_root_substitution _
+
+    def test_inert_admission_template_has_exact_trainer_fields_after_explicit_root_substitution():
+        admission=M.read(Path(M.__file__).with_name('goop3d_scientific_training_admission.template.json'))
+        assert admission['status']=='not_admitted' and admission['issued_by']=='root_required'
+        assert admission['prospective_endpoint_updates'] is None and admission['scientific_training_admitted'] is False
+        admission.update(status='admitted',issued_by='root',prospective_endpoint_updates=37,
+            scientific_training_admitted=True,checkpoint_every=10,log_every=5,selection_evidence_sha256=['a'*64])
+        a=SimpleNamespace(updates=37,checkpoint_every=10,log_every=5,protocol=Path(M.__file__).with_name('goop3d_scientific_protocol_v1.md'))
+>       M.T.validate_prospective_endpoint(a,admission)
+
+test_supervise_goop3d_science_v1.py:314: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+args = namespace(updates=37, checkpoint_every=10, log_every=5, protocol=PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_scientific_protocol_v1.md'))
+admission = {'schema': 'adaptgns_goop3d_training_admission_v2', 'status': 'admitted', 'issued_by': 'root', 'dataset': 'Goop-3D', ...}
+
+    def validate_prospective_endpoint(args, admission):
+        if (admission.get("schema") != ADMISSION or admission.get("status") != "admitted"
+                or admission.get("issued_by") != "root" or admission.get("dataset") != "Goop-3D"
+                or admission.get("prospective_endpoint_updates") != args.updates
+                or not integer(args.updates, 2) or admission.get("endpoint_selection_basis") != ENDPOINT_BASIS
+                or admission.get("paired_arm_seed_schedule") != PAIRED_SCHEDULE
+                or admission.get("checkpoint_every") != args.checkpoint_every or admission.get("log_every") != args.log_every
+                or admission.get("trainer_sha256") != sha(__file__) or admission.get("graph_adapter_sha256") != GRAPH_SHA
+                or admission.get("protocol_sha256") != sha(args.protocol)
+                or not isinstance(admission.get("selection_evidence_sha256"), list) or not admission["selection_evidence_sha256"]
+                or not all(digest_string(v) for v in admission["selection_evidence_sha256"])
+                or admission.get("initialization") != "fresh_no_probe_or_parent_checkpoint"):
+>           raise ValueError("Prospective root endpoint/protocol/paired-cohort admission required")
+E           ValueError: Prospective root endpoint/protocol/paired-cohort admission required
+
+train_goop3d_graph_support_cuda_v2.py:250: ValueError
+=============================== warnings summary ===============================
+test_supervise_goop3d_science_v1.py::test_tiny_fresh_scientific_endpoint_and_nonmultiple_checkpoint_audit[base]
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+test_supervise_goop3d_science_v1.py: 15 warnings
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED test_supervise_goop3d_science_v1.py::test_inert_admission_template_has_exact_trainer_fields_after_explicit_root_substitution
+1 failed, 51 passed, 61 warnings in 3.30s

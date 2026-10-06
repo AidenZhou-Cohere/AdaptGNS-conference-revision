@@ -1,0 +1,202 @@
+{
+  "capacity_checkpoints": {
+    "jobs/base_seed0/checkpoint-000000000.pt": {
+      "sha256": "0da11152fd39608d07b0e921173dffedc07f2e75809a33d8fa81248d2b30521e",
+      "size_bytes": 6606841
+    },
+    "jobs/base_seed0/checkpoint-000000512.pt": {
+      "sha256": "79e96a576e3d29939c0a5c5aa14540cf6abe53f117d5bbb6c555a5444936d638",
+      "size_bytes": 20288843
+    },
+    "jobs/base_seed1/checkpoint-000000000.pt": {
+      "sha256": "14163fd6eafbe8601f79d2ff21ca46d7cb950ab9bbd22d6f0282be203c7deda2",
+      "size_bytes": 6606841
+    },
+    "jobs/base_seed1/checkpoint-000000512.pt": {
+      "sha256": "ab0b6b7559af6d1950b2b8e249d637fbae083f725614b95b6595247c3f5fd55f",
+      "size_bytes": 20288971
+    },
+    "jobs/base_seed2/checkpoint-000000000.pt": {
+      "sha256": "e990f2ebeb54928cdea41d75afa04287134f327db3712829b01fbd37295468e3",
+      "size_bytes": 6606841
+    },
+    "jobs/base_seed2/checkpoint-000000512.pt": {
+      "sha256": "3dc79c5a931bb17d8854b3ce3ee4cf90d8a9c24a1af3837d2a7aed65a70212c9",
+      "size_bytes": 20288971
+    },
+    "jobs/mix_seed0/checkpoint-000000000.pt": {
+      "sha256": "4b178624a4acd9357b0920db37d7de863d5bb0e3e163373e03f1e514e6eebb76",
+      "size_bytes": 6606841
+    },
+    "jobs/mix_seed0/checkpoint-000000512.pt": {
+      "sha256": "f78da9f00c3e848ab59950242b66b9ed670d43f16e1644faa69a6f700dad52f2",
+      "size_bytes": 20289355
+    },
+    "jobs/mix_seed1/checkpoint-000000000.pt": {
+      "sha256": "4cf8ee614729c1b3838dede6994eca0768222b797989c11fd1732becc3e1fa26",
+      "size_bytes": 6606841
+    },
+    "jobs/mix_seed1/checkpoint-000000512.pt": {
+      "sha256": "dd06fa7b53ba650020525cdd743f1bb2c48d84b7e2471f8c2a88e1a48c2a465e",
+      "size_bytes": 20289483
+    },
+    "jobs/mix_seed2/checkpoint-000000000.pt": {
+      "sha256": "f83cc404c60507982506f376dc11b47a8e00576f5a58706ddbb7f2ab1f4e889f",
+      "size_bytes": 6606841
+    },
+    "jobs/mix_seed2/checkpoint-000000512.pt": {
+      "sha256": "914f56f1e5105b0e4af391c22dbb16b45262bf5d0ec556b84f942f4b6e10c2c0",
+      "size_bytes": 20289483
+    }
+  },
+  "capacity_summary": {
+    "bytes": 8752360,
+    "public_location": "archives/goop3d_vectorized_capacity_v1_scalar_snapshot.tar.gz::goop3d_vectorized_capacity_20261006_v1/summary.json",
+    "sha256": "39f048a7257428b0ffe342e52ed2f956e90cd5dec4463835b40a9d75855a47e1",
+    "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_vectorized_capacity_v1_summary.json"
+  },
+  "excluded_first_timing_snapshot": {
+    "reason": "Declarations-only public timing scope; original retained unchanged.",
+    "sha256": "ffac04086f68bf1936db0b5c6a09e2a118f8a06d5b696fbef36255cc3726661f",
+    "source_workspace_path": "work/deadline_research_20261005/cuda_preparation/goop3d_timing_first_identity_v1.json"
+  },
+  "not_included": [
+    "official numeric TFRecord, NPY and NPZ data",
+    "checkpoint/model/gradient/RNG payload bytes",
+    "live validation timing stdout/stderr and outputs",
+    "scientific run results or chosen endpoint",
+    "SSH/Coder/authentication/session files and unrelated personal files",
+    "immutable early timing first-process snapshot containing progress counters"
+  ],
+  "numerical_payloads": {
+    "base_bounded_replay_checkpoint_step1.pt": {
+      "sha256": "80d1801b0f8ffdf1374c7f6a4ef4b8a1cb3c273abca3e3d314bbbf58527fb206",
+      "size_bytes": 19739595
+    },
+    "base_bounded_replay_step2.pt": {
+      "sha256": "c9932deae90e528b2b55b369dd21a949d8ba429bfb1acda6b60ac81d44e16c69",
+      "size_bytes": 29524619
+    },
+    "initial_seed0.pt": {
+      "sha256": "414aee3fb7853d0e3059b5f2b7c70598fb2cf8658ca919b84fbfccbbf20c8e30",
+      "size_bytes": 6568069
+    },
+    "large_base_candidate_step1.pt": {
+      "sha256": "73d1283defe3397197a15333041b1c04bd49f3222305274eebb5fd7f300947e5",
+      "size_bytes": 46060619
+    },
+    "large_base_candidate_step2.pt": {
+      "sha256": "a23a899491188ceae04fef3fb61a6c45181627e6f6a470c5af6c36243b27d7af",
+      "size_bytes": 46053579
+    },
+    "large_base_original_step1.pt": {
+      "sha256": "73d1283defe3397197a15333041b1c04bd49f3222305274eebb5fd7f300947e5",
+      "size_bytes": 46060619
+    },
+    "large_base_original_step2.pt": {
+      "sha256": "a23a899491188ceae04fef3fb61a6c45181627e6f6a470c5af6c36243b27d7af",
+      "size_bytes": 46053579
+    },
+    "large_mix_candidate_step1.pt": {
+      "sha256": "f0a3d4fbe4dcd59e377339a522515ad7528cc991b7ab4041c2a9819c32c5abb6",
+      "size_bytes": 49619915
+    },
+    "large_mix_candidate_step2.pt": {
+      "sha256": "04e3a9af2ac0ce9b34680b8e476b4125df3947d84bd5e6b8ef5efcc7fd7741ff",
+      "size_bytes": 47841995
+    },
+    "large_mix_original_step1.pt": {
+      "sha256": "f0a3d4fbe4dcd59e377339a522515ad7528cc991b7ab4041c2a9819c32c5abb6",
+      "size_bytes": 49619915
+    },
+    "large_mix_original_step2.pt": {
+      "sha256": "04e3a9af2ac0ce9b34680b8e476b4125df3947d84bd5e6b8ef5efcc7fd7741ff",
+      "size_bytes": 47841995
+    },
+    "large_prospective_batch.npz": {
+      "sha256": "3ceb3bf4777d5d1e30b69b2e9d7c88681f0ecfb9d4c19ca3f2da49dd984d8d1e",
+      "size_bytes": 2714456
+    },
+    "median_base_candidate_step1.pt": {
+      "sha256": "912375b2a306813c1f8abc0d3bfdd8f50468fafc4c0e16bfb72afa2b55edd873",
+      "size_bytes": 36140619
+    },
+    "median_base_candidate_step2.pt": {
+      "sha256": "cb5098565b33b59665dc20c57d8a41522b08321d0c9c9f8b8daa51f35ac551a4",
+      "size_bytes": 36136907
+    },
+    "median_base_original_step1.pt": {
+      "sha256": "912375b2a306813c1f8abc0d3bfdd8f50468fafc4c0e16bfb72afa2b55edd873",
+      "size_bytes": 36140619
+    },
+    "median_base_original_step2.pt": {
+      "sha256": "cb5098565b33b59665dc20c57d8a41522b08321d0c9c9f8b8daa51f35ac551a4",
+      "size_bytes": 36136907
+    },
+    "median_mix_candidate_step1.pt": {
+      "sha256": "862664a5bcd3032ae6b7a828b93fb07cbbb006487ef02571b86a9cd21a229b29",
+      "size_bytes": 37857995
+    },
+    "median_mix_candidate_step2.pt": {
+      "sha256": "301f1e4f7ad4fc788762152d476d83158988558defc789000b957fa33bb01cc8",
+      "size_bytes": 36986827
+    },
+    "median_mix_original_step1.pt": {
+      "sha256": "862664a5bcd3032ae6b7a828b93fb07cbbb006487ef02571b86a9cd21a229b29",
+      "size_bytes": 37857995
+    },
+    "median_mix_original_step2.pt": {
+      "sha256": "301f1e4f7ad4fc788762152d476d83158988558defc789000b957fa33bb01cc8",
+      "size_bytes": 36986827
+    },
+    "median_prospective_batch.npz": {
+      "sha256": "d6df696462ca0b43d8afd692b178c29b22ad891a18f0b0321dfc43e8dcd1c751",
+      "size_bytes": 1372820
+    },
+    "mix_bounded_replay_checkpoint_step1.pt": {
+      "sha256": "e3626435abdb2064867b75bae4f45e96b011aef04fdb52490c7468feabe8c19a",
+      "size_bytes": 19739595
+    },
+    "mix_bounded_replay_step2.pt": {
+      "sha256": "e4a703234470f15c759ad609d2673edaa7c198de506407cc48c41621b67a924c",
+      "size_bytes": 29524619
+    },
+    "small_base_candidate_step1.pt": {
+      "sha256": "c8437641c7da0da5d87c1f76995b3db709123b46f257504ba2810dc70f768ca7",
+      "size_bytes": 29518091
+    },
+    "small_base_candidate_step2.pt": {
+      "sha256": "c9932deae90e528b2b55b369dd21a949d8ba429bfb1acda6b60ac81d44e16c69",
+      "size_bytes": 29524619
+    },
+    "small_base_original_step1.pt": {
+      "sha256": "c8437641c7da0da5d87c1f76995b3db709123b46f257504ba2810dc70f768ca7",
+      "size_bytes": 29518091
+    },
+    "small_base_original_step2.pt": {
+      "sha256": "c9932deae90e528b2b55b369dd21a949d8ba429bfb1acda6b60ac81d44e16c69",
+      "size_bytes": 29524619
+    },
+    "small_mix_candidate_step1.pt": {
+      "sha256": "fb551161f858e70b388a7a3d5315192e57a34e6250c2bccdd167783a563af040",
+      "size_bytes": 29800587
+    },
+    "small_mix_candidate_step2.pt": {
+      "sha256": "e4a703234470f15c759ad609d2673edaa7c198de506407cc48c41621b67a924c",
+      "size_bytes": 29524619
+    },
+    "small_mix_original_step1.pt": {
+      "sha256": "fb551161f858e70b388a7a3d5315192e57a34e6250c2bccdd167783a563af040",
+      "size_bytes": 29800587
+    },
+    "small_mix_original_step2.pt": {
+      "sha256": "e4a703234470f15c759ad609d2673edaa7c198de506407cc48c41621b67a924c",
+      "size_bytes": 29524619
+    },
+    "small_prospective_batch.npz": {
+      "sha256": "e9a4a416f2461eb9dab217706e5f107fb8ce9d180a83253b8a5c4b547614621d",
+      "size_bytes": 457972
+    }
+  },
+  "payload_scope": "Only scalar path/hash/size references are public; no payload was opened or copied by this curator."
+}

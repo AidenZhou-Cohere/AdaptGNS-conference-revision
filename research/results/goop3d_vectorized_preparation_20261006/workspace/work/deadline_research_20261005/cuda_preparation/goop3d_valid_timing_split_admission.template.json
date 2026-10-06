@@ -1,0 +1,21 @@
+{
+  "schema": "adaptgns_goop3d_evaluation_split_admission_v1",
+  "status": "not_admitted",
+  "issued_by": "root_required",
+  "split": "valid",
+  "dataset": "Goop-3D",
+  "manifest_sha256": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+  "structural_report_sha256": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+  "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+  "context_semantics_sha256": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+  "acquisition_report_sha256": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+  "auxiliary_report_sha256": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+  "frames": 301,
+  "dimension": 3,
+  "record_count": 100,
+  "particle_type_ids": [
+    7
+  ],
+  "converter_sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+  "source_sha256": "5242810fa2057fbcf8e2d4da203823855f6b71e77dcfa848a618fb6871f6778b"
+}

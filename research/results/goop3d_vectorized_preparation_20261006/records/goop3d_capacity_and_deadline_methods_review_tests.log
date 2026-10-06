@@ -1,0 +1,6 @@
+Independent methods-review test run, captured from exec session 51955.
+Command: ../../venv/bin/python -m pytest -q test_measure_goop3d_vectorized_capacity_v1.py test_goop3d_deadline_worksheet_v1.py
+Exit code: 0
+59 passed, 85 warnings in 3.36s
+Breakdown: 48 capacity synthetic CPU/mocked lifecycle tests; 11 pure scalar worksheet tests.
+Warnings: one torch.jit.script deprecation; 84 inherited invalid-escape SyntaxWarnings from AST-extracted frozen numerical code. No CUDA, official arrays, remote host, or test-source access.

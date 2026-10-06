@@ -1,0 +1,128 @@
+{
+  "schema": "adaptgns_goop3d_vectorized_capacity_release_v1",
+  "status": "admitted_for_capacity_only",
+  "issued_by": "root",
+  "purpose": "bounded_capacity_only_never_promote",
+  "scientific_training_admitted": false,
+  "scientific_endpoint_selected": false,
+  "files_sha256": {
+    "train_manifest": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864",
+    "structural_report": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+    "acquisition_report": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "context_semantics": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+    "auxiliary_report": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+    "data_review": "040630e9464e6ade3aab57ef33a28e8ba02e721ba04a5b8630d3d2e834545334",
+    "cpu_proof": "01e2262037342bd866565e1bd55b46d4c0e64160542df413c1c40e11cb2d113c",
+    "protocol": "b7c7742a43f0bcb0eb23730f036630dc6a4fe68fa655e313fc76d31c7be2c7f3",
+    "numerical_report": "c5367c9e1c3dbd11a9ef280bd8dac81f7bd8e8b35674ab94dcc2e7d4c105f552",
+    "python": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "supervisor": "dc72264af052ac32e13c0ef1af4746b2cf5c7a25fb85117d89cb03c553871af5",
+    "trainer": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+    "graph": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+    "validator": "984a358a07e6b3e7bc80d7e0c64a2b23d4076fdf1a278c0f5d03121616fd3dd1",
+    "lifecycle": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+  },
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "B",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "B",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "updates_per_job": 512,
+  "warmup_updates": 64,
+  "probe_lr_horizon": 100000,
+  "numerical_report_independently_reviewed": true,
+  "review_rationale": "721 independent scalar/source checks passed; all numerical payload bytes were independently reread on the VM. Exact graph/forward/gradient/model/Adam/RNG comparisons and checkpoint replays pass. This release permits only six 512-update capacity probes; it selects no scientific endpoint.",
+  "gpu_uuids": [
+    "GPU-4c793205-e7f5-13b2-3599-757310f5fb03",
+    "GPU-7c4ea995-bf18-1d7e-3266-43a594348ae7",
+    "GPU-c022ee1f-6cac-9134-e64e-a3e379573e4c",
+    "GPU-f1dbbf17-65ef-b109-1cb2-3a2979356d26"
+  ],
+  "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "process_identity_checked_utc": "2026-10-06T05:20:34.180660+00:00",
+  "data_contract": {
+    "schema": "adaptgns_goop3d_training_admission_v2",
+    "status": "admitted",
+    "issued_by": "root",
+    "dataset": "Goop-3D",
+    "scope": "bounded_implementation_data_only",
+    "scientific_training_admitted": false,
+    "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+    "converter_sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+    "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+    "context_semantics_sha256": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+    "auxiliary_validator_sha256": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb",
+    "manifest_sha256": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864",
+    "source_sha256": "7db27c78fbe67aa08909a2ed87415734ea6126b2d638c504884217ee29329f65",
+    "acquisition_report_sha256": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "structural_report_sha256": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+    "auxiliary_report_sha256": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+    "record_count": 1000,
+    "particle_type_ids": [
+      7
+    ],
+    "frames_per_trajectory": 301,
+    "dimension": 3,
+    "eligible_six_frame_histories": 295000,
+    "position_dtype": "<f4",
+    "particle_type_dtype": "<i8",
+    "auxiliary_policy": {
+      "name": "step_context",
+      "handling": "preserved_and_excluded_from_model_inputs",
+      "reason": "unused_by_released_parser_model_contract_without_context_mean",
+      "official_commit": "f5de0ede8430809180254ee957abf36ed62579ef"
+    }
+  },
+  "independent_review_sha256": "859152504ac7141c1b281a42bfb9d0ecf4a04459775feaeaa9a87c8a9d052c52",
+  "numerical_artifact_audit_sha256": "d535fac1781834850c95aabd0ef994a60f4a1d6d2ce2081e6ad905b9fbe6b2e6",
+  "process_inventory_sha256": "068e555dfe3d0bbef57f0592111598b557f7d18167627e394fb6b5ac70651f90"
+}

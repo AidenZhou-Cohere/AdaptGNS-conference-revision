@@ -1,0 +1,382 @@
+{
+  "schema": "goop3d_first_record_vectorized_cpu_comparison_v1",
+  "status": "complete_same_state_cpu_graph_equivalence_and_timing_only",
+  "source_sha256": "d2fefeecb37061e0bfb6d71262c095238dce070cb41ffce7bdc75ad9a2fa229f",
+  "candidate_sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+  "cpu_profiler_sha256": "43a35689e7639166be0da55ce96a12920833ad8f0a99d57a1a6841c906bd74fb",
+  "cuda_calls": false,
+  "model_or_optimizer": false,
+  "test_accessed": false,
+  "scientific_training_admitted": false,
+  "cases": [
+    {
+      "case": "base",
+      "exact_proof": {
+        "canonical_pairs_exact": true,
+        "all_ordered_edges_exact": true,
+        "all_ledger_fields_exact": true,
+        "global_cpu_rng_unchanged": true,
+        "graph_ledger": [
+          {
+            "example_slot": 0,
+            "n_particles": 9271,
+            "exposure_coin": true,
+            "expanded": false,
+            "coin_seed_material": [
+              20261005,
+              0,
+              0,
+              0,
+              4409
+            ],
+            "pair_seed_material": [
+              20261005,
+              0,
+              0,
+              0,
+              5501
+            ],
+            "native_directed_edges": 144667,
+            "native_self_edges": 9271,
+            "receivers_above_native_cap": 0,
+            "annulus_pairs": 70711,
+            "optional_budget_if_exposed": 17677,
+            "selected_optional_pairs": 0,
+            "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+            "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+            "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+          },
+          {
+            "example_slot": 1,
+            "n_particles": 9271,
+            "exposure_coin": false,
+            "expanded": false,
+            "coin_seed_material": [
+              20261005,
+              0,
+              0,
+              1,
+              4409
+            ],
+            "pair_seed_material": [
+              20261005,
+              0,
+              0,
+              1,
+              5501
+            ],
+            "native_directed_edges": 145103,
+            "native_self_edges": 9271,
+            "receivers_above_native_cap": 0,
+            "annulus_pairs": 69997,
+            "optional_budget_if_exposed": 17499,
+            "selected_optional_pairs": 0,
+            "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+            "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+            "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+          }
+        ],
+        "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+        "final_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+        "final_directed_edges": 289770
+      },
+      "repetitions": [
+        {
+          "repetition": 0,
+          "warmup": true,
+          "measurement_order": [
+            "reference",
+            "candidate"
+          ],
+          "reference": {
+            "candidate_precheck": 0.02311630640178919,
+            "native_connectivity_cpu": 0.23190607875585556,
+            "optional_graph_and_ledger_cpu": 0.9517718283459544
+          },
+          "candidate": {
+            "candidate_precheck": 0.02317787427455187,
+            "native_connectivity_cpu": 0.23128521256148815,
+            "optional_graph_and_ledger_cpu": 0.21030241902917624
+          }
+        },
+        {
+          "repetition": 1,
+          "warmup": false,
+          "measurement_order": [
+            "candidate",
+            "reference"
+          ],
+          "candidate": {
+            "candidate_precheck": 0.023227187804877758,
+            "native_connectivity_cpu": 0.22923634201288223,
+            "optional_graph_and_ledger_cpu": 0.20892874896526337
+          },
+          "reference": {
+            "candidate_precheck": 0.023173651657998562,
+            "native_connectivity_cpu": 0.22652257233858109,
+            "optional_graph_and_ledger_cpu": 0.9478909829631448
+          }
+        },
+        {
+          "repetition": 2,
+          "warmup": false,
+          "measurement_order": [
+            "reference",
+            "candidate"
+          ],
+          "reference": {
+            "candidate_precheck": 0.023267922922968864,
+            "native_connectivity_cpu": 0.22744126431643963,
+            "optional_graph_and_ledger_cpu": 0.9480537995696068
+          },
+          "candidate": {
+            "candidate_precheck": 0.023168339394032955,
+            "native_connectivity_cpu": 0.2320023998618126,
+            "optional_graph_and_ledger_cpu": 0.20951271895319223
+          }
+        },
+        {
+          "repetition": 3,
+          "warmup": false,
+          "measurement_order": [
+            "candidate",
+            "reference"
+          ],
+          "candidate": {
+            "candidate_precheck": 0.023136339150369167,
+            "native_connectivity_cpu": 0.22495955787599087,
+            "optional_graph_and_ledger_cpu": 0.20993060898035765
+          },
+          "reference": {
+            "candidate_precheck": 0.023130258545279503,
+            "native_connectivity_cpu": 0.2286244360730052,
+            "optional_graph_and_ledger_cpu": 0.9647437147796154
+          }
+        }
+      ],
+      "mean_measured_stage_seconds": {
+        "reference": {
+          "candidate_precheck": 0.02319061104208231,
+          "native_connectivity_cpu": 0.2275294242426753,
+          "optional_graph_and_ledger_cpu": 0.9535628324374557
+        },
+        "candidate": {
+          "candidate_precheck": 0.023177288783093292,
+          "native_connectivity_cpu": 0.2287327665835619,
+          "optional_graph_and_ledger_cpu": 0.20945735896627107
+        }
+      }
+    },
+    {
+      "case": "expanded25",
+      "exact_proof": {
+        "canonical_pairs_exact": true,
+        "all_ordered_edges_exact": true,
+        "all_ledger_fields_exact": true,
+        "global_cpu_rng_unchanged": true,
+        "graph_ledger": [
+          {
+            "example_slot": 0,
+            "n_particles": 9271,
+            "exposure_coin": true,
+            "expanded": true,
+            "coin_seed_material": [
+              20261005,
+              0,
+              0,
+              0,
+              4409
+            ],
+            "pair_seed_material": [
+              20261005,
+              0,
+              0,
+              0,
+              5501
+            ],
+            "native_directed_edges": 144667,
+            "native_self_edges": 9271,
+            "receivers_above_native_cap": 0,
+            "annulus_pairs": 70711,
+            "optional_budget_if_exposed": 17677,
+            "selected_optional_pairs": 17677,
+            "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+            "optional_pair_sha256": "a40e9e402f0e8a128ab7a3097f59d23ebe91810e2d386801dc00dab4d8d854b7",
+            "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+          },
+          {
+            "example_slot": 1,
+            "n_particles": 9271,
+            "exposure_coin": false,
+            "expanded": true,
+            "coin_seed_material": [
+              20261005,
+              0,
+              0,
+              1,
+              4409
+            ],
+            "pair_seed_material": [
+              20261005,
+              0,
+              0,
+              1,
+              5501
+            ],
+            "native_directed_edges": 145103,
+            "native_self_edges": 9271,
+            "receivers_above_native_cap": 0,
+            "annulus_pairs": 69997,
+            "optional_budget_if_exposed": 17499,
+            "selected_optional_pairs": 17499,
+            "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+            "optional_pair_sha256": "864ea4436377cf4764b5804f6122ff2276aae59dcd0015ddaa046e92261f94d0",
+            "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+          }
+        ],
+        "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+        "final_batch_edge_sha256": "b93b7e39bb256d706041d469bc36789b887a4efbb3312b5f4abc4e010b802a0f",
+        "final_directed_edges": 360122
+      },
+      "repetitions": [
+        {
+          "repetition": 0,
+          "warmup": true,
+          "measurement_order": [
+            "reference",
+            "candidate"
+          ],
+          "reference": {
+            "candidate_precheck": 0.023151570931077003,
+            "native_connectivity_cpu": 0.22909691743552685,
+            "optional_graph_and_ledger_cpu": 0.9838725198060274
+          },
+          "candidate": {
+            "candidate_precheck": 0.023190835490822792,
+            "native_connectivity_cpu": 0.2248784713447094,
+            "optional_graph_and_ledger_cpu": 0.236906704492867
+          }
+        },
+        {
+          "repetition": 1,
+          "warmup": false,
+          "measurement_order": [
+            "candidate",
+            "reference"
+          ],
+          "candidate": {
+            "candidate_precheck": 0.02317073941230774,
+            "native_connectivity_cpu": 0.21837911941111088,
+            "optional_graph_and_ledger_cpu": 0.23673544079065323
+          },
+          "reference": {
+            "candidate_precheck": 0.02319064363837242,
+            "native_connectivity_cpu": 0.22491261549293995,
+            "optional_graph_and_ledger_cpu": 0.9912479063495994
+          }
+        },
+        {
+          "repetition": 2,
+          "warmup": false,
+          "measurement_order": [
+            "reference",
+            "candidate"
+          ],
+          "reference": {
+            "candidate_precheck": 0.023144658654928207,
+            "native_connectivity_cpu": 0.23079247493296862,
+            "optional_graph_and_ledger_cpu": 0.9893489237874746
+          },
+          "candidate": {
+            "candidate_precheck": 0.02321736328303814,
+            "native_connectivity_cpu": 0.2294283751398325,
+            "optional_graph_and_ledger_cpu": 0.23692299239337444
+          }
+        },
+        {
+          "repetition": 3,
+          "warmup": false,
+          "measurement_order": [
+            "candidate",
+            "reference"
+          ],
+          "candidate": {
+            "candidate_precheck": 0.023193074390292168,
+            "native_connectivity_cpu": 0.22385245095938444,
+            "optional_graph_and_ledger_cpu": 0.23715768195688725
+          },
+          "reference": {
+            "candidate_precheck": 0.023263284005224705,
+            "native_connectivity_cpu": 0.220894455909729,
+            "optional_graph_and_ledger_cpu": 0.9827399402856827
+          }
+        }
+      ],
+      "mean_measured_stage_seconds": {
+        "reference": {
+          "candidate_precheck": 0.02319952876617511,
+          "native_connectivity_cpu": 0.2255331821118792,
+          "optional_graph_and_ledger_cpu": 0.9877789234742522
+        },
+        "candidate": {
+          "candidate_precheck": 0.02319372569521268,
+          "native_connectivity_cpu": 0.22388664850344261,
+          "optional_graph_and_ledger_cpu": 0.23693870504697165
+        }
+      }
+    }
+  ],
+  "input": {
+    "trajectory": "train:000000",
+    "target_frames": [
+      6,
+      6
+    ],
+    "batch_particles": [
+      9271,
+      9271
+    ],
+    "observed_type_ids": [
+      7
+    ],
+    "history_sha256": "e9cfc92dcb2e4bf12ea76584f91944d1b1e0455e60f6d01ce61b6068701e0c9f",
+    "labels_sha256": "996c0db696c1fd02e754d18e39b783bcfc6b67a169d59f4736d4fa38080c3c25",
+    "noise_sha256": "7460e8de9cd21b95c329069b745a1c28069b6a6cc8693d923a5a565a72bd9b6a",
+    "auxiliary": {
+      "shape": [
+        301,
+        1
+      ],
+      "nan_count": 1,
+      "inf_count": 0,
+      "finite_count": 300,
+      "handling": "preserved/excluded: official parser returns no context when context_mean is absent"
+    },
+    "whole_dataset_admission": false,
+    "whole_source_checksum_claim": false
+  },
+  "input_files_sha256": {
+    "goop3d_first_record_20261006_v1/report.json": "c003d147b93eb0eb2cebafe7c9a79ac4179d7224fd41d139e1719f5ceefedd78",
+    "goop3d_source_train_valid_20261006_v1/metadata.json": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+    "cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+    "goop3d_first_record_20261006_v1/numeric/position_000000.npy": "afc643f410b2a4d1739fceb36de9f209aa096ecf5a92a8eb60b57b8892417324",
+    "goop3d_first_record_20261006_v1/numeric/type_000000.npy": "44de10f5fb4010a71a670cd98c45bf018d37d223ec6b86b63b9b6f2dd57405f3",
+    "goop3d_first_record_20261006_v1/numeric/step_context_000000.npy": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405"
+  },
+  "reference_report_sha256": "500a333a397f706f1e0ff9d482cb7389279d0ab5fdb6bdca0c8f612d14e26367",
+  "cpu_report_sha256": "e1ee532ce7d31a9a851736475a22c78a5801bbc1873140cd9880278aeee35bf5",
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+    "torch": "2.13.0+cu129",
+    "numpy": "2.5.3",
+    "cpu_threads": 2
+  },
+  "limitations": [
+    "One previously inspected training state; no whole-cohort capacity or scientific efficacy evidence.",
+    "Only CPU graph stages measured. No CUDA transfer, GNN, backward or Adam timing/numerical check.",
+    "Do not subtract CPU time from the prior GPU benchmark as a measured end-to-end speedup.",
+    "Any GPU adoption requires a separate pinned lineage and numerical review before scientific launch."
+  ],
+  "elapsed_seconds": 18.403003714047372
+}

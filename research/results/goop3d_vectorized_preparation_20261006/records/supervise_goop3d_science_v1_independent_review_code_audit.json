@@ -1,0 +1,65 @@
+{
+  "schema": "adaptgns_goop3d_scientific_supervisor_independent_review_v1",
+  "reviewer": "code_audit",
+  "reviewed_utc": "2026-10-06T05:39:57.036212+00:00",
+  "status": "passed_as_unadmitted_source_candidate_requires_root_endpoint_and_release",
+  "remaining_blocking_findings": [],
+  "scientific_endpoint_selected": false,
+  "scientific_training_or_test_execution_admitted_by_review": false,
+  "scope": "Independent source/protocol/template review plus tiny synthetic CPU/model/scalar/process-mock tests. No actual official numeric arrays, CUDA, remote process, endpoint selection or admission by reviewer.",
+  "files_sha256": {
+    "supervise_goop3d_science_v1.py": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e",
+    "test_supervise_goop3d_science_v1.py": "b13034bb1d749cbc1692d71ffa8f07e4fcd1ee797a76ee17fdfadb5fa5646df5",
+    "goop3d_scientific_protocol_v1.md": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+    "goop3d_scientific_training_admission.template.json": "4de8574c03099742ae237bd7e00a6eb94127201fc735c1da54cc6fcab87b4191",
+    "goop3d_scientific_release.template.json": "5631b85f4165fa52420330f3f763602007fce35e5443f9685651ec61d17e251a",
+    "goop3d_scientific_endpoint_plan.template.json": "cfd02c87b683713c99a9c0d515d21e1f391b691b7ec3aa9a37f518f05daf73c9"
+  },
+  "independent_tests": {
+    "passed": 52,
+    "failed": 0,
+    "seconds": 3.11,
+    "log": "goop3d_science_independent_review_code_audit_final.log",
+    "log_sha256": "49c9733c79615fa72bc3dc1c6a6e9c87398576c75397cbd6ff743a6e6eb7ace4",
+    "command": "work/venv/bin/python -B -m pytest -q work/deadline_research_20261005/cuda_preparation/test_supervise_goop3d_science_v1.py"
+  },
+  "resolved_findings": [
+    {
+      "finding": "Scientific release did not bind one concrete output directory.",
+      "resolution": "release.output_dir must exactly equal resolved CLI output; template remains null; mismatch fixture rejects."
+    },
+    {
+      "finding": "Terminal input verification preceded large final worker-artifact hashing.",
+      "resolution": "verify_publication_inputs first rehashes all worker checkpoints/scalars, then verifies all source/input/release snapshots before candidate/summary publication; actual late-mutation fixture rejects."
+    },
+    {
+      "finding": "A repeated interrupt could abort owned-child failure cleanup.",
+      "resolution": "Cleanup-only SIGINT/SIGTERM suppression surrounds unchanged pinned cleanup and restores previous handlers, including when cleanup raises."
+    },
+    {
+      "finding": "Direct pairing and unadmitted cohort boundaries lacked targeted negative coverage.",
+      "resolution": "Tests now reject initial RNG, native graph, noise, frame, coin material and annulus-budget changes; unchanged final evaluator rejects generated supervisor cohort candidates."
+    }
+  ],
+  "reviewed": [
+    "Default is inert and endpoint is absent. All three templates remain unadmitted/unselected. CLI endpoint and checkpoint/log cadence agree across prospective plan, trainer admission, root release and fixed commands; no resume, stop-after, parent checkpoint or promotion option is exposed.",
+    "Explicit scientific admission flag and absence of bounded-implementation scope prevent accidental reuse of the capacity source-only contract. Exact complete training manifest/context/auxiliary/core hashes and metadata are reverified.",
+    "Measured branch recomputes complete worksheet arithmetic and retains runtime multiplier plus full serial evaluation/review reserve. Failed-H branch requires unavailable worksheet, preserved failure hashes, explicit operational-quota basis, no full-runtime claim and no promise of every evaluation outcome. Neither branch selects by validation/test accuracy.",
+    "Four-plus-two waves have exact paired base/mix seeds0/1/2, same faithful recipe, dynamic common endpoint and LR horizon. Release binds physical UUIDs, hostname, fresh idle-process evidence, root-reviewed clock bound, exact output and all input bytes. Absolute latest-start/stop windows include measured training/checkpoint cost, wave audit and cleanup reserves before evaluation reserve/cutoff.",
+    "Owned Popen registration precedes identity validation. Pinned wait4/reaping/cleanup functions retain command/PID/start/parent identity, raw overlapping lifetimes, RSS, signals, wave observations and failures. Every wave child is reaped before full CPU endpoint audits; failed wave blocks later work.",
+    "Worker audit checks complete final status, one fresh attempt, exact recipe/runtime/source/data config, deterministic complete graph sample/coin rows, arbitrary nonmultiple checkpoint/log cadence and exact stdout/history. Every checkpoint is hashed; initial/final checkpoints are deserialized only for exact tensor/model/Adam/RNG audit.",
+    "Paired initial state/model/empty Adam/RNG, every sample/noise schedule and native graph/noisy-state/coin/material/annulus budget are checked. Initial pairing is verified after training; no pre-step1 barrier is claimed.",
+    "Final source/input/release snapshots and all worker artifacts are reverified under the bounded audit alarm. Only a full six-cell cohort produces candidates with issued_by=scientific_supervisor_not_root and evaluation_admitted=false; the unchanged evaluator rejects those candidates until root independently freezes them."
+  ],
+  "limits": [
+    "This source review is not a scientific execution admission or an actual-data/model feasibility result. Root must select one prospective endpoint from admissible timing/quota evidence, issue matching plan/admission/release and enforce the declared process/clock windows.",
+    "Engineering capacity extrapolation and reserved audit/evaluation time are assumptions, not runtime guarantees. Any operational-quota fallback must remain explicitly labeled and preserve failed full-H timing.",
+    "Initial/final checkpoint audit is CPU serialization verification; same-CUDA replay belongs to the separate reviewed numerical proof. Intermediate checkpoint bytes are retained and hashed, not all deserialized.",
+    "Any failure/timeout or unreaped child prevents successful cohort publication; root must resolve owned processes before a new separately authorized attempt. Final evaluation and reserved-test access require subsequent independent cohort/source/integrity gates."
+  ],
+  "preserved_history": {
+    "prior_review_source": "goop3d_science_review_history/58ee4ccbdf35a35efa00953e4269ec30df35698ce142480774fc407051c0823d_supervise_goop3d_science_v1.py",
+    "initial_independent_test_log": "goop3d_science_independent_review_code_audit_attempt1.log",
+    "authoring_attempts": "Initial fixture-overlap failures and later stale protocol-template pin failure remain preserved by author; final source changes were independently diffed against saved58ee4ccb source."
+  }
+}

@@ -1,0 +1,109 @@
+...FFF
+=================================== FAILURES ===================================
+____ test_tiny_worker_serializes_separate_capacity_payload_and_audits[base] ____
+
+synthetic = namespace(repo=PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS'), helpers=namespa...2000, 0.2000],
+        [0.2226, 0.2000, 0.2220],
+        [0.2226, 0.2220, 0.2000],
+        [0.2226, 0.2220, 0.2220]])))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-207/test_tiny_worker_serializes_se0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10b415bb0>
+arm = 'base'
+
+    @pytest.mark.parametrize('arm',['base','mix'])
+    def test_tiny_worker_serializes_separate_capacity_payload_and_audits(synthetic,tmp_path,monkeypatch,arm):
+        s,a,hashes,release,job=fixture_setup(synthetic,tmp_path,monkeypatch,arm)
+>       with contextlib.redirect_stdout(io.StringIO()) as out:M.worker(a,release,hashes)
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:148: in worker
+    require(all(output != p and p not in output.parents and output not in p.parents for p in
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = False, message = 'Separate fresh capacity output required'
+
+    def require(value, message):
+>       if not value: raise ValueError(message)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Separate fresh capacity output required
+
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:36: ValueError
+____ test_tiny_worker_serializes_separate_capacity_payload_and_audits[mix] _____
+
+synthetic = namespace(repo=PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS'), helpers=namespa...2000, 0.2000],
+        [0.2226, 0.2000, 0.2220],
+        [0.2226, 0.2220, 0.2000],
+        [0.2226, 0.2220, 0.2220]])))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-207/test_tiny_worker_serializes_se1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x11579aff0>
+arm = 'mix'
+
+    @pytest.mark.parametrize('arm',['base','mix'])
+    def test_tiny_worker_serializes_separate_capacity_payload_and_audits(synthetic,tmp_path,monkeypatch,arm):
+        s,a,hashes,release,job=fixture_setup(synthetic,tmp_path,monkeypatch,arm)
+>       with contextlib.redirect_stdout(io.StringIO()) as out:M.worker(a,release,hashes)
+                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py:73: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:148: in worker
+    require(all(output != p and p not in output.parents and output not in p.parents for p in
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = False, message = 'Separate fresh capacity output required'
+
+    def require(value, message):
+>       if not value: raise ValueError(message)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Separate fresh capacity output required
+
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:36: ValueError
+________ test_worker_failure_keeps_initial_checkpoint_context_and_stops ________
+
+synthetic = namespace(repo=PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS'), helpers=namespa...2000, 0.2000],
+        [0.2226, 0.2000, 0.2220],
+        [0.2226, 0.2220, 0.2000],
+        [0.2226, 0.2220, 0.2220]])))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-207/test_worker_failure_keeps_init0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1157aa7b0>
+
+    def test_worker_failure_keeps_initial_checkpoint_context_and_stops(synthetic,tmp_path,monkeypatch):
+        s,a,hashes,release,job=fixture_setup(synthetic,tmp_path,monkeypatch)
+        calls=[];original=s.support.forward_batch
+        def fail(*args):
+            calls.append(1)
+            if len(calls)==2:raise RuntimeError('synthetic graph failure')
+            return original(*args)
+        monkeypatch.setattr(s.support,'forward_batch',fail)
+        with pytest.raises(RuntimeError,match='synthetic graph'):
+>           with contextlib.redirect_stdout(io.StringIO()):M.worker(a,release,hashes)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py:106: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:148: in worker
+    require(all(output != p and p not in output.parents and output not in p.parents for p in
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = False, message = 'Separate fresh capacity output required'
+
+    def require(value, message):
+>       if not value: raise ValueError(message)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Separate fresh capacity output required
+
+work/deadline_research_20261005/cuda_preparation/measure_goop3d_vectorized_capacity_v1.py:36: ValueError
+=============================== warnings summary ===============================
+work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py::test_tiny_worker_serializes_separate_capacity_payload_and_audits[base]
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py::test_tiny_worker_serializes_separate_capacity_payload_and_audits[base]
+FAILED work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py::test_tiny_worker_serializes_separate_capacity_payload_and_audits[mix]
+FAILED work/deadline_research_20261005/cuda_preparation/test_measure_goop3d_vectorized_capacity_v1.py::test_worker_failure_keeps_initial_checkpoint_context_and_stops
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 3 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+3 failed, 3 passed, 1 warning in 2.70s

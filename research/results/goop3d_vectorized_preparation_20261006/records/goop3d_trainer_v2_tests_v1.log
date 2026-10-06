@@ -1,0 +1,20 @@
+...................................................                      [100%]
+=============================== warnings summary ===============================
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v2.py::test_native_base_output_target_loss_gradients_and_first_adam_step_are_exact[0]
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v2.py: 15 warnings
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v2.py: 15 warnings
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v2.py: 15 warnings
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v2.py: 15 warnings
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+51 passed, 61 warnings in 2.55s

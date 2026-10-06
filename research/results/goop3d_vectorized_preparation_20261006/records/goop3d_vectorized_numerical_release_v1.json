@@ -1,0 +1,127 @@
+{
+  "schema": "adaptgns_goop3d_vectorized_cuda_validation_release_v1",
+  "status": "admitted_for_bounded_validation",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "source_sha256": "984a358a07e6b3e7bc80d7e0c64a2b23d4076fdf1a278c0f5d03121616fd3dd1",
+  "trainer_sha256": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+  "original_graph_sha256": "7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f",
+  "candidate_graph_sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+  "data_files_sha256": {
+    "train_manifest": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864",
+    "structural_report": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+    "acquisition_report": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "context_semantics": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+    "auxiliary_report": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+    "data_review": "040630e9464e6ade3aab57ef33a28e8ba02e721ba04a5b8630d3d2e834545334",
+    "cpu_proof": "01e2262037342bd866565e1bd55b46d4c0e64160542df413c1c40e11cb2d113c"
+  },
+  "schedule": [
+    {
+      "case": "small",
+      "trajectory_indices": [
+        785,
+        253
+      ],
+      "target_frames": [
+        6,
+        150
+      ],
+      "trajectory_ids": [
+        "train:000785",
+        "train:000253"
+      ],
+      "particle_counts": [
+        2478,
+        2488
+      ],
+      "dataset_indices": [
+        231575,
+        74779
+      ]
+    },
+    {
+      "case": "median",
+      "trajectory_indices": [
+        944,
+        772
+      ],
+      "target_frames": [
+        6,
+        150
+      ],
+      "trajectory_ids": [
+        "train:000944",
+        "train:000772"
+      ],
+      "particle_counts": [
+        7439,
+        7471
+      ],
+      "dataset_indices": [
+        278480,
+        227884
+      ]
+    },
+    {
+      "case": "large",
+      "trajectory_indices": [
+        513,
+        217
+      ],
+      "target_frames": [
+        6,
+        150
+      ],
+      "trajectory_ids": [
+        "train:000513",
+        "train:000217"
+      ],
+      "particle_counts": [
+        14656,
+        14837
+      ],
+      "dataset_indices": [
+        151335,
+        64159
+      ]
+    }
+  ],
+  "cuda_index": 0,
+  "gpu_uuid": "GPU-4c793205-e7f5-13b2-3599-757310f5fb03",
+  "max_optimizer_updates": 26,
+  "process_identity_checked_utc": "2026-10-06T05:16:04.518595+00:00",
+  "data_contract": {
+    "schema": "adaptgns_goop3d_training_admission_v2",
+    "status": "admitted",
+    "issued_by": "root",
+    "dataset": "Goop-3D",
+    "scope": "bounded_implementation_data_only",
+    "scientific_training_admitted": false,
+    "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+    "converter_sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+    "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+    "context_semantics_sha256": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+    "auxiliary_validator_sha256": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb",
+    "manifest_sha256": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864",
+    "source_sha256": "7db27c78fbe67aa08909a2ed87415734ea6126b2d638c504884217ee29329f65",
+    "acquisition_report_sha256": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "structural_report_sha256": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+    "auxiliary_report_sha256": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+    "record_count": 1000,
+    "particle_type_ids": [
+      7
+    ],
+    "frames_per_trajectory": 301,
+    "dimension": 3,
+    "eligible_six_frame_histories": 295000,
+    "position_dtype": "<f4",
+    "particle_type_dtype": "<i8",
+    "auxiliary_policy": {
+      "name": "step_context",
+      "handling": "preserved_and_excluded_from_model_inputs",
+      "reason": "unused_by_released_parser_model_contract_without_context_mean",
+      "official_commit": "f5de0ede8430809180254ee957abf36ed62579ef"
+    }
+  }
+}

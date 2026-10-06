@@ -1,0 +1,141 @@
+{
+  "schema": "adaptgns_goop3d_bounded_validation_timing_release_v1",
+  "status": "admitted_for_six_validation_timing",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "scientific_endpoint_selected": false,
+  "test_access_allowed": false,
+  "supervisor_sha256": "104e7887a2e9fd9760e2cdacbcab6e850856120a9b6e941a8908b764ccccbb29",
+  "schedule": [
+    {
+      "id": "base_seed0_full-rollout",
+      "arm": "base",
+      "seed": 0,
+      "mode": "full-rollout",
+      "gpu": 0
+    },
+    {
+      "id": "mix_seed0_full-rollout",
+      "arm": "mix",
+      "seed": 0,
+      "mode": "full-rollout",
+      "gpu": 1
+    },
+    {
+      "id": "base_seed0_same-state",
+      "arm": "base",
+      "seed": 0,
+      "mode": "same-state",
+      "gpu": 0
+    },
+    {
+      "id": "mix_seed0_same-state",
+      "arm": "mix",
+      "seed": 0,
+      "mode": "same-state",
+      "gpu": 1
+    },
+    {
+      "id": "base_seed0_clean-validation",
+      "arm": "base",
+      "seed": 0,
+      "mode": "clean-validation",
+      "gpu": 0
+    },
+    {
+      "id": "mix_seed0_clean-validation",
+      "arm": "mix",
+      "seed": 0,
+      "mode": "clean-validation",
+      "gpu": 1
+    }
+  ],
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "output_dir": "/root/repos/AdaptGNS-cuda-20261006/goop3d_validation_timing_20261006_v1",
+  "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "process_identity_checked_utc": "2026-10-06T05:38:38.383246+00:00",
+  "gpu_uuids": [
+    "GPU-4c793205-e7f5-13b2-3599-757310f5fb03",
+    "GPU-7c4ea995-bf18-1d7e-3266-43a594348ae7"
+  ],
+  "evaluation_overlap_credit": false,
+  "cleanup_seconds": 15.0,
+  "whole_supervisor_outer_timeout_required": true,
+  "inner_seconds": {
+    "full-rollout": 3600,
+    "same-state": 600,
+    "clean-validation": 600
+  },
+  "outer_seconds": {
+    "full-rollout": 3900,
+    "same-state": 900,
+    "clean-validation": 900
+  },
+  "python": "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+  "capacity_summary": "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/summary.json",
+  "capacity_stop_receipt": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_capacity_stopped_receipt_v1.json",
+  "common": {
+    "repo": "/root/repos/AdaptGNS-cuda-20261006",
+    "manifest": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid.json",
+    "structural_report": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/structural_report.json",
+    "acquisition_report": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_acquisition_v1_report.json",
+    "context_semantics": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_context_semantics_review.json",
+    "auxiliary_report": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_auxiliary_v1_report.json",
+    "trainer_source": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+    "protocol": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_validation_timing_protocol_v1.md",
+    "split_admission": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/valid_split_admission.json"
+  },
+  "checkpoints": {
+    "base": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/jobs/base_seed0/checkpoint-000000512.pt",
+      "sha256": "79e96a576e3d29939c0a5c5aa14540cf6abe53f117d5bbb6c555a5444936d638"
+    },
+    "mix": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/jobs/mix_seed0/checkpoint-000000512.pt",
+      "sha256": "f78da9f00c3e848ab59950242b66b9ed670d43f16e1644faa69a6f700dad52f2"
+    }
+  },
+  "evaluator_releases": {
+    "base_seed0_full-rollout": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_full-rollout.release.json",
+    "mix_seed0_full-rollout": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_full-rollout.release.json",
+    "base_seed0_same-state": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_same-state.release.json",
+    "mix_seed0_same-state": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_same-state.release.json",
+    "base_seed0_clean-validation": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_clean-validation.release.json",
+    "mix_seed0_clean-validation": "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_clean-validation.release.json"
+  },
+  "root_preparation_spec_sha256": "7744b55d657b229276a1a9389297930d8272e0551bd56d6052c967e3e583468b",
+  "files_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid.json": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/structural_report.json": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_acquisition_v1_report.json": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_context_semantics_review.json": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_auxiliary_v1_report.json": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_validation_timing_protocol_v1.md": "fd792a71854b050cf02efb45dfb858d820d81f6a501274e18bf817e7eac35db1",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/valid_split_admission.json": "f582362d28f915d8d47778e276d63e28d793483468ec55abc2149f2faa7cef5e",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_graph_support_vectorized_v1.py": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_deadline_worksheet_v1.py": "8a4946e813a6b9ef3d0cb86c5649d614d2bc89fd08b9962bf3ec877e94a20db6",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_auxiliary.py": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_validation_timing_root_spec_v1.json": "7744b55d657b229276a1a9389297930d8272e0551bd56d6052c967e3e583468b",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_goop3d_validation_timing_release_v1.py": "136c9cf30c2f7422514e8fc48f79edab5e17e511f1f639fb9ff6688a5ceaa4b7",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_valid_timing_split_admission.template.json": "858347060fdd69a39ed147ec714474d4f4771f09601016e3c3ac02f38e3e2d08",
+    "/usr/bin/python3.12": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/summary.json": "39f048a7257428b0ffe342e52ed2f956e90cd5dec4463835b40a9d75855a47e1",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_capacity_stopped_receipt_v1.json": "40f13d2e66d94cf607e3bf21b69dac135fd6458693bb9ef2e2cfb367cece9fa5",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_full-rollout.release.json": "118c40feeca0a0057c0cdcdf4fadb16e9c098f6ea3140e828ab3580f4098ba0d",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_full-rollout.release.json": "8e90bebf7466ac2b40d42ed43d4cc600b4c729a5e4e8e36a83454a6a4569aa88",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_same-state.release.json": "8e5ba690a148fcf68154e88cde9497df07bd37a931a7024a50f71a2c54f6596a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_same-state.release.json": "0ac0a76a0c832c10edc3f846eb86ea46ef72112ceb957538459b9ccbe69b18f4",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/base_seed0_clean-validation.release.json": "549417d0abe0fe55a79809b2abcbe65995dcf5b212a84066cd0b86a51003f79b",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_timing_contracts_20261006_v1/mix_seed0_clean-validation.release.json": "0713a9c86363678337432b7fcf5db09571a0099ad131addf35be1f7265466d47",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/jobs/base_seed0/checkpoint-000000512.pt": "79e96a576e3d29939c0a5c5aa14540cf6abe53f117d5bbb6c555a5444936d638",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_vectorized_capacity_20261006_v1/jobs/mix_seed0/checkpoint-000000512.pt": "f78da9f00c3e848ab59950242b66b9ed670d43f16e1644faa69a6f700dad52f2"
+  }
+}

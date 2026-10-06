@@ -1,0 +1,20 @@
+{
+  "schema": "adaptgns_goop3d_timing_actual_capacity_scalar_interface_v1",
+  "status": "passed_scalar_interface_only",
+  "capacity_summary_sha256": "39f048a7257428b0ffe342e52ed2f956e90cd5dec4463835b40a9d75855a47e1",
+  "q4_q2": {
+    "A": 0.5898935052661857,
+    "B": 0.5723552509152796
+  },
+  "r4_r2": {
+    "A": 83.57391821965575,
+    "B": 68.27403342351317
+  },
+  "selected512_sha256": {
+    "base": "79e96a576e3d29939c0a5c5aa14540cf6abe53f117d5bbb6c555a5444936d638",
+    "mix": "f78da9f00c3e848ab59950242b66b9ed670d43f16e1644faa69a6f700dad52f2"
+  },
+  "checkpoint_bytes_verified_by_this_check": false,
+  "runtime_forecast_made": false,
+  "numeric_arrays_or_test_accessed": false
+}

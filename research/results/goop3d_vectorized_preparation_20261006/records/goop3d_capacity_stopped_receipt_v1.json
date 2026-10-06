@@ -1,0 +1,23 @@
+{
+  "schema": "adaptgns_goop3d_capacity_stopped_receipt_v1",
+  "issued_by": "root",
+  "status": "supervisor_and_all_six_workers_stopped",
+  "capacity_summary_sha256": "39f048a7257428b0ffe342e52ed2f956e90cd5dec4463835b40a9d75855a47e1",
+  "all_owned_processes_reaped_or_independently_verified_absent": true,
+  "supervisor_unified_session": 1221,
+  "supervisor_unified_exit_code": 0,
+  "process_observation": "2026-10-06T05:34:23.557110+00:00",
+  "process_inventory_sha256": "d886dffb43c98832b922901f2fe399b7ffa98d81f4bfd92385c048f13fd9d9a1",
+  "artifact_inventory_sha256": "df741af7c0e69d6050d2de7d3fc1c82a1628d1f0b6efa4cb8ed07b298416f248",
+  "all_six_external_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "all_twelve_checkpoint_hashes_rechecked": true,
+  "valid_copied_array_byte_hashes_rechecked": 300,
+  "created_utc": "2026-10-06T05:36:08.871888+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-06T05:16:04.518595+00:00",
+  "gpu_apps": "",
+  "gpu_inventory": "0, GPU-4c793205-e7f5-13b2-3599-757310f5fb03, NVIDIA GB200\n1, GPU-7c4ea995-bf18-1d7e-3266-43a594348ae7, NVIDIA GB200\n2, GPU-c022ee1f-6cac-9134-e64e-a3e379573e4c, NVIDIA GB200\n3, GPU-f1dbbf17-65ef-b109-1cb2-3a2979356d26, NVIDIA GB200\n",
+  "native_processes": "    PID    PPID                  STARTED COMMAND\n      1       0 Tue Oct  6 04:59:52 2026 ./coder agent\n     39       1 Tue Oct  6 04:59:53 2026 ./coder agent --no-reap\n    225       1 Tue Oct  6 05:00:02 2026 /tmp/code-server/lib/code-server-4.122.0/lib/node /tmp/code-server/lib/code-server-4.122.0 --auth none --port 13337\n    248     225 Tue Oct  6 05:00:02 2026 /tmp/code-server/lib/code-server-4.122.0/lib/node /tmp/code-server/lib/code-server-4.122.0/out/node/entry\n   1371      39 Tue Oct  6 05:16:03 2026 python3 -B -\n   1373    1371 Tue Oct  6 05:16:03 2026 ps -eo pid,ppid,lstart,args\n",
+  "verified_metadata_and_source": {
+    "goop3d_numeric_train_valid_20261006_v1/train.json": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864",
+    "goop3d_numeric_train_valid_20261006_v1/valid.json": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+    "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py": "984a358a07e6b3e7bc80d7e0c64a2b23d4076fdf1a278c0f5d03121616fd3dd1",
+    "cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc"
+  },
+  "scientific_training_admitted": false
+}

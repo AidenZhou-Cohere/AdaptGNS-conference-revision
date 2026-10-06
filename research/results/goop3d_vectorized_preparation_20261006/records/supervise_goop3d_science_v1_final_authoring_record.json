@@ -1,0 +1,61 @@
+{
+  "schema": "adaptgns_goop3d_scientific_supervisor_final_authoring_record_v1",
+  "author": "conference_critique_methods",
+  "created_utc": "2026-10-06T05:41:07.978363+00:00",
+  "status": "independently_reviewed_unadmitted_scientific_supervisor",
+  "files_sha256": {
+    "supervise_goop3d_science_v1.py": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e",
+    "test_supervise_goop3d_science_v1.py": "b13034bb1d749cbc1692d71ffa8f07e4fcd1ee797a76ee17fdfadb5fa5646df5",
+    "goop3d_scientific_protocol_v1.md": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+    "goop3d_scientific_training_admission.template.json": "4de8574c03099742ae237bd7e00a6eb94127201fc735c1da54cc6fcab87b4191",
+    "goop3d_scientific_endpoint_plan.template.json": "cfd02c87b683713c99a9c0d515d21e1f391b691b7ec3aa9a37f518f05daf73c9",
+    "goop3d_scientific_release.template.json": "5631b85f4165fa52420330f3f763602007fce35e5443f9685651ec61d17e251a",
+    "supervise_goop3d_science_v1_independent_review_code_audit.json": "abf314494207410855a9328cb6cfaf3e73d8658d54087b7d657529368b4cc2f0",
+    "goop3d_science_synthetic_tests_attempt5.log": "d4f131bab4c189505903bd4451bd9cdc1df6c048db8a0214c1239b615a94072d"
+  },
+  "tests": {
+    "passed": 52,
+    "author_seconds": 3.08,
+    "independent_seconds": 3.11
+  },
+  "protocol_or_training_source_changed_after_admission": false,
+  "scientific_training_admitted": false,
+  "scientific_endpoint_selected": false,
+  "actual_processes_launched": 0,
+  "test_accessed": false,
+  "resolved_independent_findings": [
+    "Root release binds one absolute fresh output directory.",
+    "Terminal checkpoint/artifact hashing is followed immediately by complete source/input/release/snapshot revalidation before publication.",
+    "Repeated SIGINT/SIGTERM are suppressed only during owned-child cleanup and previous handlers restored.",
+    "Direct initial RNG/native graph/noise/frame/coin/annulus mismatch tests reject; unchanged frozen evaluator rejects supervisor candidates before root freeze."
+  ],
+  "preserved_development_outcomes": [
+    {
+      "log": "goop3d_science_synthetic_tests_attempt1.log",
+      "result": "7 failed and31 passed: synthetic output fixture accidentally nested under declared data parent; frozen trainer correctly refused it; fixture corrected."
+    },
+    {
+      "log": "goop3d_science_synthetic_tests_attempt2.log",
+      "result": "38 passed."
+    },
+    {
+      "log": "goop3d_science_synthetic_tests_attempt3.log",
+      "result": "41 passed after explicit scientific-scope gate and template contract test."
+    },
+    {
+      "log": "goop3d_science_synthetic_tests_attempt4.log",
+      "result": "51 passed and1 failed: inert template protocol hash stale following reviewed protocol wording additions; mechanical template pin refreshed."
+    },
+    {
+      "log": "goop3d_science_synthetic_tests_attempt5.log",
+      "result": "52 passed."
+    }
+  ],
+  "prior_evidence": "supervise_goop3d_science_v1_authoring_record.json and goop3d_science_review_history/ preserve previous candidate source, tests, templates and protocol.",
+  "limits": [
+    "This source review and synthetic CPU testing provide no actual CUDA/scientific result.",
+    "Root must separately select the prospective endpoint from feasibility, bind clock/process receipts and issue actual admission/release.",
+    "Capacity measurements, validation timing probes and scientific models retain distinct schemas/lineages.",
+    "Candidate cohorts cannot admit reserved test access or final evaluation until separate root verification and freeze."
+  ]
+}

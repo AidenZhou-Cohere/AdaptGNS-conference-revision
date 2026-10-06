@@ -1,0 +1,26 @@
+{
+  "schema": "adaptgns_goop3d_validation_numerical_dependencies_v1",
+  "files": [
+    {
+      "path": "research/graph_convention_bridge.py",
+      "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "bytes": 36931
+    },
+    {
+      "path": "research/full_rollout.py",
+      "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "bytes": 36701
+    },
+    {
+      "path": "research/full_same_state.py",
+      "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "bytes": 35249
+    },
+    {
+      "path": "research/budget_graph.py",
+      "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "bytes": 2304
+    }
+  ],
+  "policy": "Verify existing files match; install missing exact pinned dependencies only. Do not overwrite divergent frozen files."
+}

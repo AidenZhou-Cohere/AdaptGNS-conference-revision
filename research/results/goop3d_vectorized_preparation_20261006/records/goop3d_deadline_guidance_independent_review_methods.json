@@ -1,0 +1,32 @@
+{
+  "schema": "adaptgns_goop3d_deadline_guidance_independent_review_v1",
+  "reviewer": "conference_critique_methods",
+  "created_utc": "2026-10-06T05:43:23.510603+00:00",
+  "status": "passed_inert_schema_and_guidance_review",
+  "files_sha256": {
+    "goop3d_deadline_planning_config.template.json": "581726340f840fdbe7c2c43fbd7b7a84936b243f0f9f3cb44add8ee42eda1057",
+    "goop3d_deadline_worksheet_release.template.json": "067a1a97173f5fa541fe597184a2d7f80873f8c98d8b35725a339e916d18b7a2",
+    "goop3d_deadline_worksheet_invocation.NOTES.md": "abe08f2a3019364f4723a81efbb658c7838628da9aa1442c7dbf099cfed93ca5",
+    "goop3d_deadline_worksheet_v1.py": "8a4946e813a6b9ef3d0cb86c5649d614d2bc89fd08b9962bf3ec877e94a20db6",
+    "supervise_goop3d_science_v1.py": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e",
+    "goop3d_scientific_endpoint_plan.template.json": "cfd02c87b683713c99a9c0d515d21e1f391b691b7ec3aa9a37f518f05daf73c9"
+  },
+  "scope": "Static schema, absolute-path and feasibility-accounting review against frozen worksheet and scientific supervisor; no actual timing output read, no forecast computed, no endpoint selected and no process launched.",
+  "remaining_blocking_findings": [],
+  "reviewed": [
+    "Inert configuration has a null fresh-root decision timestamp, unselected endpoint, exact four-candidate grid, checkpoint2500/log100, multiplier1.35 and3600second minimum analysis reserve.",
+    "Worksheet release has the exact five absolute execution-host file bindings consumed by main; capacity/manifest/source hashes prefilled, actual stopped inventory and fresh root planning configuration remain null and require root hashes.",
+    "Invocation uses correct CLI names and exclusive-create output. Preparation/path/hash failures remain distinct from actual failed full-horizon timing.",
+    "Preferred branch budgets all six scientific models serially over all declared sources/policies/diagnostics; evaluation reserve is selected evaluation_serial_seconds*multiplier plus transfer/review/analysis reserve.",
+    "Proposed600second audit allowance per training wave is additional to worksheet projected total, followed by clock error and15second owned cleanup allowance. A fitting worksheet row alone is insufficient; both latest-start/stop windows must satisfy scientific supervisor checks.",
+    "Conditional quota branch is available only after actual attempted fullH failure and preserved unavailable worksheet. It has explicit no-all-evaluation-promise/no-full-study-runtime-claim flags and preserved failure hashes.",
+    "Proposed21600second evaluation plus3600second transfer/review/analysis yields25200second operational reserve, not a measurement or guarantee; root may set other explicit prospective quotas.",
+    "Fixed evaluation grid remains unchanged under quota. Missing/failed cells remain in denominators and affected complete-cohort means stay undefined.",
+    "One concrete fresh output directory, fresh process/clock receipts, full source/admission/release bindings and separate root cohort freeze remain required."
+  ],
+  "limits": [
+    "The current templates/guidance admit neither scalar execution nor scientific training.",
+    "Actual timing evidence, remaining clock capacity and root release must be separately reviewed.",
+    "Synthetic/source reviews do not establish completion feasibility or conference readiness."
+  ]
+}

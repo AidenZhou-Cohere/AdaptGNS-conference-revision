@@ -1,0 +1,56 @@
+{
+  "schema": "adaptgns_goop3d_timing_independent_review_v1",
+  "reviewer": "code_audit",
+  "reviewed_utc": "2026-10-06T05:37:29.983193+00:00",
+  "status": "passed_for_root_released_bounded_validation_timing_only",
+  "remaining_blocking_findings": [],
+  "files_sha256": {
+    "run_goop3d_validation_timing_v1.py": "104e7887a2e9fd9760e2cdacbcab6e850856120a9b6e941a8908b764ccccbb29",
+    "test_run_goop3d_validation_timing_v1.py": "15b2d6d9422bc7337cbdaa1463899d76753b98e6f9dbd058aac6d09988944a53",
+    "prepare_goop3d_validation_timing_release_v1.py": "136c9cf30c2f7422514e8fc48f79edab5e17e511f1f639fb9ff6688a5ceaa4b7",
+    "test_prepare_goop3d_validation_timing_release_v1.py": "fa3f0e2a004621b000f34e3f214ec1307a767dad32f2b944c97c6d3d7c9415d3",
+    "goop3d_validation_timing_protocol_v1.md": "fd792a71854b050cf02efb45dfb858d820d81f6a501274e18bf817e7eac35db1",
+    "goop3d_validation_timing_root_spec.template.json": "6a22664a8e2b0c8c86e962bb8ec1ffbef40ab790663910bcd18bcf1322a33324",
+    "goop3d_validation_timing_launch.NOTES.md": "390cdf73f2265c0507414e2bee650b4914d64c03272e9d1fc699b362fd9daf57",
+    "goop3d_valid_timing_split_admission.template.json": "858347060fdd69a39ed147ec714474d4f4771f09601016e3c3ac02f38e3e2d08",
+    "goop3d_capacity_stopped_receipt.template.json": "e6a72f5f7922fbf3eaf0a3be7d59fe5e61736020ef382f018e7b9937e43c23b0",
+    "goop3d_validation_timing_authoring_record_v1.json": "ca7d1d27a9833941055ad18b382f283516c261ba36379460b498192a127e6849"
+  },
+  "scope": "Independent source/template/protocol review and synthetic scalar/process-mock tests only; no CUDA, official numeric-array reads, checkpoint deserialization, remote command, actual release or inference by reviewer.",
+  "scientific_training_or_test_execution_admitted": false,
+  "independent_tests": {
+    "supervisor": 22,
+    "generator": 8,
+    "total_passed": 30,
+    "failed": 0,
+    "seconds": 0.75,
+    "command": "work/venv/bin/python -B -m pytest -q work/deadline_research_20261005/cuda_preparation/test_run_goop3d_validation_timing_v1.py work/deadline_research_20261005/cuda_preparation/test_prepare_goop3d_validation_timing_release_v1.py",
+    "log": "goop3d_timing_independent_review_code_audit_tests_final.log",
+    "log_sha256": "21f17455177fc5865f879c9e6f80b708ca0aa5f05b46388315c184f87ec7d710"
+  },
+  "resolved_findings": [
+    {
+      "finding": "A process reaped after its outer limit could previously pass because only live processes were checked.",
+      "resolution": "Normal reaping first preserves the raw receipt, then requires its measured elapsed time within the declared outer limit; delayed-exit fixture blocks later waves."
+    },
+    {
+      "finding": "Last source check preceded potentially long stopped-artifact hashing.",
+      "resolution": "All launch bindings are reverified after artifact inventories; late mutation retains prior failure and publishes failed_or_incomplete_timing_collection, which the worksheet rejects."
+    }
+  ],
+  "reviewed": [
+    "Default is inert; actual invocation requires exact root source/protocol/data/child-release/interpreter/checkpoint bindings, fresh host identity, output path, two distinct UUIDs, fixed schedule, no scientific/test/overlap permission.",
+    "Complete six-cell capacity summary and root stopped receipt precede seed0 checkpoint selection. The generator binds original100-record valid source and all fixed native/metric/graph/auxiliary sibling hashes.",
+    "Three fixed mode waves each launch base0/GPU0 and mix0/GPU1 once; all children are reaped before the next wave. Ancestor exclusion is confined to actual supervisor ancestors, preserving sibling duplicate detection.",
+    "Child monotonic lifetime starts before Popen and ends after wait4 reaping. Raw elapsed/CPU/RSS/command/PID/start identity/signals remain in receipt; whole-child limit and absolute cutoff are enforced. Root6300second watchdog includes preflight and publication; child limits are3600/3900 full and600/900 diagnostics.",
+    "Spawn registers ownership before validating process identity. Pinned stop_owned checks live PID/parent/start/argv before group signals. Bounded cleanup suppresses repeat SIGINT/TERM, escalates0/5/10 seconds, retains unreaped identities/lock and never automatically retries.",
+    "Guard-complete exit0 preserves adverse full-H outcomes and permits predeclared diagnostic waves; nonzero, timeout, implementation/input failure or contamination blocks later waves. All six identities remain with explicit missing entries.",
+    "Final file inventory is created only after reaping; late source/artifact inventory failures cannot produce an admissible completed collection. Complete collection is not a claim that every full-H timing outcome succeeded; worksheet independently checks each full-H/diagnostic row.",
+    "Generator performs scalar/byte checks only. Root-approved spec enables exact valid admission and six child releases; active parent is published only after unchanged reviewed preflight passes. Fresh separate directories and inert templates prevent silent overwrites; venv path is retained for execution while its resolved executable is hashed."
+  ],
+  "limits": [
+    "Root must verify actual stopped/reaped capacity processes and idle physical devices, issue the new factual stopped receipt/spec, inspect generated contracts, and enforce the external6300second watchdog plus30second grace.",
+    "The evaluator inner limit is an inference-call alarm; it does not replace the independent whole-child/supervisor watchdogs.",
+    "Neither reviewed source nor synthetic tests establish actual full-H execution success, a scientific endpoint, checkpoint promotion or reserved-test permission."
+  ]
+}

@@ -1,0 +1,4264 @@
+{
+  "converter_sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+  "dataset": "Goop-3D",
+  "format": "gns-trajectory-manifest",
+  "metadata": {
+    "acc_mean": [
+      1.5020995830261864e-07,
+      2.8187584183195246e-07,
+      2.5286408043226297e-07
+    ],
+    "acc_std": [
+      0.00015043941738572504,
+      0.00015936919490354664,
+      0.00015088553534233195
+    ],
+    "bounds": [
+      [
+        0.2,
+        0.8
+      ],
+      [
+        0.2,
+        0.8
+      ],
+      [
+        0.2,
+        0.8
+      ]
+    ],
+    "default_connectivity_radius": 0.025,
+    "dim": 3,
+    "dt": 0.0025,
+    "sequence_length": 300,
+    "vel_mean": [
+      -1.3808529231275798e-05,
+      -0.000675672407796915,
+      -1.764108376624863e-05
+    ],
+    "vel_std": [
+      0.0014865057729956796,
+      0.001849156219671171,
+      0.001509917079940141
+    ]
+  },
+  "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+  "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+  "record_count": 100,
+  "records": [
+    {
+      "id": "valid:000000",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000000.npy",
+        "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+        "shape": [
+          8540
+        ],
+        "size_bytes": 68448
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000000.npy",
+        "sha256": "7d5bfb70a2b3fa39fcb1ca63d27b1576f789b0f407a585954a22d87a3747aaea",
+        "shape": [
+          301,
+          8540,
+          3
+        ],
+        "size_bytes": 30846608
+      },
+      "record_payload_bytes": 30921516,
+      "record_payload_sha256": "33670f7a3a00e08071a5948e71f6002cbe91a844fbec2ce84e73d8eda8582196",
+      "source_index": 0,
+      "source_key": [
+        0
+      ],
+      "source_offset_bytes": 0,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000000.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "68ad5e93c7bd4824fb8e5662a18308ef16e86ca8700196cc02fb51b1ad44f1e0"
+    },
+    {
+      "id": "valid:000001",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000001.npy",
+        "sha256": "316fcfe8f16691a483cde9564f412e616e54805ff4eb52f435588b053a49380c",
+        "shape": [
+          4641
+        ],
+        "size_bytes": 37256
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000001.npy",
+        "sha256": "5ea410b7a35b82c5e0ec04d66b090348cbd766a673eb6b83dabca69f74b42abf",
+        "shape": [
+          301,
+          4641,
+          3
+        ],
+        "size_bytes": 16763420
+      },
+      "record_payload_bytes": 16807136,
+      "record_payload_sha256": "2509c271e01aad6fb3f7dc45d93748139cc1ebdfff4d6d94651ec071da389767",
+      "source_index": 1,
+      "source_key": [
+        1
+      ],
+      "source_offset_bytes": 30921532,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000001.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "0c3866ff2ea333918c08ce309a6d288991db0df7c84f083d454d6294541c1f81"
+    },
+    {
+      "id": "valid:000002",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000002.npy",
+        "sha256": "a8718f430f72ded43cf4dd23bf6074e339a9139d172644801283c5f9b0495a92",
+        "shape": [
+          4150
+        ],
+        "size_bytes": 33328
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000002.npy",
+        "sha256": "a2c7e2caa2935c84620634e6566f6dd440bddd7fba344210ccdd347856cefe00",
+        "shape": [
+          301,
+          4150,
+          3
+        ],
+        "size_bytes": 14989928
+      },
+      "record_payload_bytes": 15029716,
+      "record_payload_sha256": "9ec3b180a1594b6388bf5eeaa8339868ec39770431a6ca0d29d84fceca1ec2e8",
+      "source_index": 2,
+      "source_key": [
+        2
+      ],
+      "source_offset_bytes": 47728684,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000002.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "296470b33513457e97ab72868b034886f1fbf8bd6b2e1cf8cb65e90eb4d611aa"
+    },
+    {
+      "id": "valid:000003",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000003.npy",
+        "sha256": "1919e070001a3c26a752d7e1e3166b180f115e14c9392eaaf5f70c32bb28f226",
+        "shape": [
+          6941
+        ],
+        "size_bytes": 55656
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000003.npy",
+        "sha256": "d514fc10dc1db3fb6672599fd547b3a67a62a3041536369feb601ed130bcedc7",
+        "shape": [
+          301,
+          6941,
+          3
+        ],
+        "size_bytes": 25071020
+      },
+      "record_payload_bytes": 25133136,
+      "record_payload_sha256": "c0096756751cab46fb9c36375d766e9ee896721679034c6efb07d55b25502d6b",
+      "source_index": 3,
+      "source_key": [
+        3
+      ],
+      "source_offset_bytes": 62758416,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000003.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "70153eb30d8b5adc54e4304925cbe84adfbea69bae83a7ecde5cb602e484b60a"
+    },
+    {
+      "id": "valid:000004",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000004.npy",
+        "sha256": "1c88f792d23c2ea63d269a04115523eac667ad6ad0fbcb901c80b4c3c0542797",
+        "shape": [
+          4263
+        ],
+        "size_bytes": 34232
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000004.npy",
+        "sha256": "b3a8534119d5db8875c2c0f70eebb4b0c582cdad64a2111360edd088ea5b3abd",
+        "shape": [
+          301,
+          4263,
+          3
+        ],
+        "size_bytes": 15398084
+      },
+      "record_payload_bytes": 15438776,
+      "record_payload_sha256": "8906055857969bc80fd4607d51a0c7cc1fa960157d8531bcaca689ab9292a463",
+      "source_index": 4,
+      "source_key": [
+        4
+      ],
+      "source_offset_bytes": 87891568,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000004.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "daf800d403a11bdca97cf7cd3210763bf4941b34b40132dc5e9b42c40e19a255"
+    },
+    {
+      "id": "valid:000005",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000005.npy",
+        "sha256": "b870cb18ec1e4cb6e8b9e1e962191f8502ad6dacce1ac9348fec0c9c1bdc558c",
+        "shape": [
+          9472
+        ],
+        "size_bytes": 75904
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000005.npy",
+        "sha256": "1266307c08b4ab497e430e61fe9146587cc4956de5c28dfe122e151dec56b3c9",
+        "shape": [
+          301,
+          9472,
+          3
+        ],
+        "size_bytes": 34212992
+      },
+      "record_payload_bytes": 34295356,
+      "record_payload_sha256": "06ed2fc48c71eb640f22a18f40ed582bdc04c45cde157796244aedfc3a8da65f",
+      "source_index": 5,
+      "source_key": [
+        5
+      ],
+      "source_offset_bytes": 103330360,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000005.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3e691a39c1d95c2c69f52649a0f0a591575c6811b3df22d46a423efd278443b1"
+    },
+    {
+      "id": "valid:000006",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000006.npy",
+        "sha256": "8969cfb43803b1e4dd845690b864b3afef46975fc83debb99a2d1fb78120fab7",
+        "shape": [
+          7810
+        ],
+        "size_bytes": 62608
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000006.npy",
+        "sha256": "0371e5bc7fe15412ae673d442c937d3f68c576a7add217081644c1f22693b194",
+        "shape": [
+          301,
+          7810,
+          3
+        ],
+        "size_bytes": 28209848
+      },
+      "record_payload_bytes": 28278916,
+      "record_payload_sha256": "d160814b14907ded1bc337161c7fb8bee046249224bdf8a411d9f45350b81e40",
+      "source_index": 6,
+      "source_key": [
+        6
+      ],
+      "source_offset_bytes": 137625732,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000006.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3d0b5674a6fd5372d7a53e694f54ced522929a6f9df564c7b95edde20ab7b537"
+    },
+    {
+      "id": "valid:000007",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000007.npy",
+        "sha256": "53d0d0a02a59f7458988c16b651368d7097fd13579cba270cc9228e06c297029",
+        "shape": [
+          12065
+        ],
+        "size_bytes": 96648
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000007.npy",
+        "sha256": "6d261bfbc557486b3c7d4499630db364f2a3103cd96b1b3593011fee8a997381",
+        "shape": [
+          301,
+          12065,
+          3
+        ],
+        "size_bytes": 43578908
+      },
+      "record_payload_bytes": 43682016,
+      "record_payload_sha256": "d45ac3845ea0bd4db8ad7f1b41a31679c4d6dc6585cb54e9a88df36ad6083096",
+      "source_index": 7,
+      "source_key": [
+        7
+      ],
+      "source_offset_bytes": 165904664,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000007.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3eef3e649ce00acc9b2b507910003225a873f9a7ecc7e8875aa36e4b6f4971f3"
+    },
+    {
+      "id": "valid:000008",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000008.npy",
+        "sha256": "51dd00dfce6b409772f987d2351142982403399e06dbfcf7832991be6c1fd854",
+        "shape": [
+          4094
+        ],
+        "size_bytes": 32880
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000008.npy",
+        "sha256": "8170feba90795eea2698fbf787b2bd19a06c6767b1f8314440c6d58204aef738",
+        "shape": [
+          301,
+          4094,
+          3
+        ],
+        "size_bytes": 14787656
+      },
+      "record_payload_bytes": 14826996,
+      "record_payload_sha256": "ad1cf11a015ce560aeba1473b4f85fc92643fe08adcb1d0638cf4880fb7f3bfe",
+      "source_index": 8,
+      "source_key": [
+        8
+      ],
+      "source_offset_bytes": 209586696,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000008.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "eac755924534b9bf31811484a5212687c4fb5ac625e09af15abead27877c50ba"
+    },
+    {
+      "id": "valid:000009",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000009.npy",
+        "sha256": "30ad0ce0aed393f3f902e299aba1d4e9a89d878ef390ab0d0b101ae337fcdf4b",
+        "shape": [
+          3711
+        ],
+        "size_bytes": 29816
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000009.npy",
+        "sha256": "51d1290bbe3e6240e1de0b10b1555f41353a80b7093a976f38815c2ff83a03e2",
+        "shape": [
+          301,
+          3711,
+          3
+        ],
+        "size_bytes": 13404260
+      },
+      "record_payload_bytes": 13440536,
+      "record_payload_sha256": "0ae7a6354689c476403fd7c2265bfa1821cde41c4b79eaaafc10f527d66d002f",
+      "source_index": 9,
+      "source_key": [
+        9
+      ],
+      "source_offset_bytes": 224413708,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000009.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "601e52af97f1c53e7316cf821806f45449ea4f7e18a99f04f8f91727a9a5cb77"
+    },
+    {
+      "id": "valid:000010",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000010.npy",
+        "sha256": "fae8f4a957ada2ce0dc7557ce0aa2ea39c647457a99204d882ccd28d3f84dcf1",
+        "shape": [
+          10456
+        ],
+        "size_bytes": 83776
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000010.npy",
+        "sha256": "544b2b5597009258de75d3730a8eabf4512af2ccba9661903808a3196ddc00db",
+        "shape": [
+          301,
+          10456,
+          3
+        ],
+        "size_bytes": 37767200
+      },
+      "record_payload_bytes": 37857436,
+      "record_payload_sha256": "75208656cd202f965bf1587028b5fae739becd30364bd4ea47e86616b215977e",
+      "source_index": 10,
+      "source_key": [
+        10
+      ],
+      "source_offset_bytes": 237854260,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000010.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "07d86fccf983a79749b379d0a5bbcc4e51b5e9b685766914b299bc410bd1e8b6"
+    },
+    {
+      "id": "valid:000011",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000011.npy",
+        "sha256": "146c618bea228aadb0b872718b379d74be02dfe0105f778423b810220a85ae62",
+        "shape": [
+          8261
+        ],
+        "size_bytes": 66216
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000011.npy",
+        "sha256": "b54f42995aa6f1d1e0f1b7a4a6ec28f9f1ebd2b6a685780101e11ee6447f9008",
+        "shape": [
+          301,
+          8261,
+          3
+        ],
+        "size_bytes": 29838860
+      },
+      "record_payload_bytes": 29911536,
+      "record_payload_sha256": "d49a3994a8b6eaabec98587b12a26ca9b126655e8d941f80ac8f10fc33097664",
+      "source_index": 11,
+      "source_key": [
+        11
+      ],
+      "source_offset_bytes": 275711712,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000011.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3ef3f55e8a3d46b523ad8aa9c16afcd6f0f9e4697ca83d9cd4fb712d1c0d5498"
+    },
+    {
+      "id": "valid:000012",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000012.npy",
+        "sha256": "fdfc28b5ba8813447eb00a89f669786a593b56225a8756031046bc291061fa3d",
+        "shape": [
+          3765
+        ],
+        "size_bytes": 30248
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000012.npy",
+        "sha256": "4012bc22c84fb6b5c5e0a74e7d691afed2fb34ff22b902e5b38a725772016752",
+        "shape": [
+          301,
+          3765,
+          3
+        ],
+        "size_bytes": 13599308
+      },
+      "record_payload_bytes": 13636016,
+      "record_payload_sha256": "50b56bdd0384a90658b3dc9425145e8311eb79d61a8c1c4a8943839e3077089f",
+      "source_index": 12,
+      "source_key": [
+        12
+      ],
+      "source_offset_bytes": 305623264,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000012.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "d6af4e0e65e6bbb0f381776ed4f83d8e5747f6e79bb5ea0c01d922ce49d23ca5"
+    },
+    {
+      "id": "valid:000013",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000013.npy",
+        "sha256": "a58a78526f8a041948649714c5fdd62bac1f25a479b5121c097b15d4d9b772a2",
+        "shape": [
+          4847
+        ],
+        "size_bytes": 38904
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000013.npy",
+        "sha256": "b059db7f9046e21d9f37cdf6f43f4c023ccfc9bb3a2ebbfb62e5bab78137489b",
+        "shape": [
+          301,
+          4847,
+          3
+        ],
+        "size_bytes": 17507492
+      },
+      "record_payload_bytes": 17552856,
+      "record_payload_sha256": "8df14fb9ef7974a26c5831164ad1146db21f3a69a095d2d56156a686be9ffce7",
+      "source_index": 13,
+      "source_key": [
+        13
+      ],
+      "source_offset_bytes": 319259296,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000013.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "77b2c5dfa402f77e74ef824b055e01ae6bb860484dcb2576f6e3e755435209ed"
+    },
+    {
+      "id": "valid:000014",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000014.npy",
+        "sha256": "6840e740e8f13293136e91a6baa051d60e4e7fcdcde539e276da730dee381e8e",
+        "shape": [
+          8233
+        ],
+        "size_bytes": 65992
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000014.npy",
+        "sha256": "c6f08da7fed1acd7e5051c613752bde0cfef887ad912938556569e18203ca5ee",
+        "shape": [
+          301,
+          8233,
+          3
+        ],
+        "size_bytes": 29737724
+      },
+      "record_payload_bytes": 29810176,
+      "record_payload_sha256": "ef5a805a7770cfc85942a2b1c181b06e2c67f22ef5b1900751a37450d1cb1e3a",
+      "source_index": 14,
+      "source_key": [
+        14
+      ],
+      "source_offset_bytes": 336812168,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000014.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "8a3d494170df30980a35e72e72b33b4ebce17aee925ec224d534b8bf3e651317"
+    },
+    {
+      "id": "valid:000015",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000015.npy",
+        "sha256": "fb647b47ffec2df4048a2fa20de6a6930ac997786ceada2d95a777929b84b54c",
+        "shape": [
+          9284
+        ],
+        "size_bytes": 74400
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000015.npy",
+        "sha256": "5d98481303a9f3e08274f6d7129fa05fe769ffe797d7a15f2d6d1115248fb94f",
+        "shape": [
+          301,
+          9284,
+          3
+        ],
+        "size_bytes": 33533936
+      },
+      "record_payload_bytes": 33614796,
+      "record_payload_sha256": "edfd73cd3137519241367531327ad410d3d242402b121fc865ea2fdf783e9b8f",
+      "source_index": 15,
+      "source_key": [
+        15
+      ],
+      "source_offset_bytes": 366622360,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000015.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "700c46f133981783027f1d3367d4b588bec22deccd447db0927d623e65782b19"
+    },
+    {
+      "id": "valid:000016",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000016.npy",
+        "sha256": "7f3c490eba7dbe87844d3dd2c4da1eb5b0637e8604af907309d39efae775273a",
+        "shape": [
+          8740
+        ],
+        "size_bytes": 70048
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000016.npy",
+        "sha256": "1ecdbfe4a335ae975fc36fafedec8c63907419e53dc99a2c6ac5120c12743ae4",
+        "shape": [
+          301,
+          8740,
+          3
+        ],
+        "size_bytes": 31569008
+      },
+      "record_payload_bytes": 31645516,
+      "record_payload_sha256": "87baa00fceb6da451e7c26ced06315baca6940b4a2893821fd5e2ab945a9e03a",
+      "source_index": 16,
+      "source_key": [
+        16
+      ],
+      "source_offset_bytes": 400237172,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000016.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "1aa881d851f8a10d3ffa6699eced7e02a701cf99e8d42a9edc098422ee618732"
+    },
+    {
+      "id": "valid:000017",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000017.npy",
+        "sha256": "1d18cc1748b2bf63984b257690f98c3f2e09c95b156e2a53fc088a52166ab349",
+        "shape": [
+          10463
+        ],
+        "size_bytes": 83832
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000017.npy",
+        "sha256": "5d4f317cdefa9406b388c8e053f0c90a4848f0c96fbf17d16b97f97af9372bc7",
+        "shape": [
+          301,
+          10463,
+          3
+        ],
+        "size_bytes": 37792484
+      },
+      "record_payload_bytes": 37882776,
+      "record_payload_sha256": "3a642df6ca327aabfd3acf3fbc604ae60f9fdc75703b3f26f27387efa69c6887",
+      "source_index": 17,
+      "source_key": [
+        17
+      ],
+      "source_offset_bytes": 431882704,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000017.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "75540267d7503df327f870fdf648970d5853eda478ef9099fd78ff261d17764d"
+    },
+    {
+      "id": "valid:000018",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000018.npy",
+        "sha256": "0a7c9080ed0b3428c1aad1e70a3448c283fb1b81cb7ca0b3e90f04f6dab4b7f2",
+        "shape": [
+          4836
+        ],
+        "size_bytes": 38816
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000018.npy",
+        "sha256": "cb9c9272b4d3d2e79fdb6207cec736e819d4ddad2a2d6d044bdc471d06470688",
+        "shape": [
+          301,
+          4836,
+          3
+        ],
+        "size_bytes": 17467760
+      },
+      "record_payload_bytes": 17513036,
+      "record_payload_sha256": "c751d8e52c357aeb8ebb89bc2a6dd55892716d6d07b5542e4b0c5051e02922bf",
+      "source_index": 18,
+      "source_key": [
+        18
+      ],
+      "source_offset_bytes": 469765496,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000018.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "8e880feec810249866e76d8229cb5c6e925ebce11717e269b77427578de32626"
+    },
+    {
+      "id": "valid:000019",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000019.npy",
+        "sha256": "c48182c9043ebbe74cb73a410781d1e9bd53faf23e661916f1107963d266739d",
+        "shape": [
+          11362
+        ],
+        "size_bytes": 91024
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000019.npy",
+        "sha256": "f2877b462427c3cfed53b0f1a8620e9d8b1806b81f3ff3674d4bda295ba745a7",
+        "shape": [
+          301,
+          11362,
+          3
+        ],
+        "size_bytes": 41039672
+      },
+      "record_payload_bytes": 41137156,
+      "record_payload_sha256": "406148eb7f2806c3db6c1ed3940f214591ed344aa540d66bb0c603eb83b61f05",
+      "source_index": 19,
+      "source_key": [
+        19
+      ],
+      "source_offset_bytes": 487278548,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000019.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "49c8933d3c2c0fda6430403e4b328e109aec74dc326f909074a440f37924c84e"
+    },
+    {
+      "id": "valid:000020",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000020.npy",
+        "sha256": "8176e96be81f551f688a259b2a13e9d8c5a40e872d83290487968664e70adf7b",
+        "shape": [
+          10900
+        ],
+        "size_bytes": 87328
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000020.npy",
+        "sha256": "1084289db888d007566be424aef6ce43279267b9e0e41b271cb5f59808278259",
+        "shape": [
+          301,
+          10900,
+          3
+        ],
+        "size_bytes": 39370928
+      },
+      "record_payload_bytes": 39464716,
+      "record_payload_sha256": "eee2ff2dbc1423560363b06cf8d4cb53c0dee86c934ee529639e2f1f3c24eaf6",
+      "source_index": 20,
+      "source_key": [
+        20
+      ],
+      "source_offset_bytes": 528415720,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000020.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "49ad4251933605d8b54db62fa4e33adfd106d668e2434f66b0b4b4769e0cfa8a"
+    },
+    {
+      "id": "valid:000021",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000021.npy",
+        "sha256": "515eeb67bc48d8457fac6395757703bcb46a59b449e148c5733bf78ed3bfa392",
+        "shape": [
+          13231
+        ],
+        "size_bytes": 105976
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000021.npy",
+        "sha256": "828917d35f0997b8f60bde82dddf6f52d36993f3b7fcad10c8ae75186238a449",
+        "shape": [
+          301,
+          13231,
+          3
+        ],
+        "size_bytes": 47790500
+      },
+      "record_payload_bytes": 47902936,
+      "record_payload_sha256": "36485f2e3930611469aea7b696af576a17a85c10402038b69eb10e8b1150deb0",
+      "source_index": 21,
+      "source_key": [
+        21
+      ],
+      "source_offset_bytes": 567880452,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000021.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "a5d41bb947df54ed0580549299450da94604da6565ede563646f31773bd056eb"
+    },
+    {
+      "id": "valid:000022",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000022.npy",
+        "sha256": "9d4c3d49f78116fde23a80cae8c90bb6f32447708f5437064ac0951c53ddc9c4",
+        "shape": [
+          8284
+        ],
+        "size_bytes": 66400
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000022.npy",
+        "sha256": "2518873f9e782f983e9ea0d15923f7f1c8b99da5e98ef4c6f254123cc81b8636",
+        "shape": [
+          301,
+          8284,
+          3
+        ],
+        "size_bytes": 29921936
+      },
+      "record_payload_bytes": 29994796,
+      "record_payload_sha256": "f718ae084b990a87ed6fd9c2a5ba426f59600db8f271008d19614134b324b4d1",
+      "source_index": 22,
+      "source_key": [
+        22
+      ],
+      "source_offset_bytes": 615783404,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000022.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "5447bd460644ffcf9af5cc979e83ef9ada47ca23b04bbe3433fac493a13fa614"
+    },
+    {
+      "id": "valid:000023",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000023.npy",
+        "sha256": "e9ab34abb3e1b27bf2eb956b635ddb5a2584bd2ca3ba2cfe699f5077631f8db2",
+        "shape": [
+          3259
+        ],
+        "size_bytes": 26200
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000023.npy",
+        "sha256": "ca0f60f48ab5b3e60b0a13b2405d704cb8189bd8db3073b0c9336c91c84092b6",
+        "shape": [
+          301,
+          3259,
+          3
+        ],
+        "size_bytes": 11771636
+      },
+      "record_payload_bytes": 11804296,
+      "record_payload_sha256": "3155a9d41b2f501dedbf315956554bfe807fc26edc69563e65847f29f69c203f",
+      "source_index": 23,
+      "source_key": [
+        23
+      ],
+      "source_offset_bytes": 645778216,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000023.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "7466f4a22e17746da25e7d4b03e589944ae2f3fdb8515f56d6b58210644f45f3"
+    },
+    {
+      "id": "valid:000024",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000024.npy",
+        "sha256": "f036c4727b82b0345a798407f6b108b833136e5ec1a4ca49906a0e8ca8236ddf",
+        "shape": [
+          13405
+        ],
+        "size_bytes": 107368
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000024.npy",
+        "sha256": "6ecaa351fb713a296109ab797e4ac330ab6d340fc890028ba4e9e259c3b3664a",
+        "shape": [
+          301,
+          13405,
+          3
+        ],
+        "size_bytes": 48418988
+      },
+      "record_payload_bytes": 48532816,
+      "record_payload_sha256": "790134c832c65e7791580b67d1a82beaa3689e29618e672670e9dc7b616462bf",
+      "source_index": 24,
+      "source_key": [
+        24
+      ],
+      "source_offset_bytes": 657582528,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000024.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e65003219cb6a5b8c257de8d9c5900f30b30e423fcae014442e8d4341cf0d84e"
+    },
+    {
+      "id": "valid:000025",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000025.npy",
+        "sha256": "d0073d2744940e3b1057d0ad232e192d6263382d88618aed301c83f48b4fa504",
+        "shape": [
+          6654
+        ],
+        "size_bytes": 53360
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000025.npy",
+        "sha256": "1c8c10c9a20ff8a55641b36094330914b8db500356594154ba7fc38cb5e8a3ce",
+        "shape": [
+          301,
+          6654,
+          3
+        ],
+        "size_bytes": 24034376
+      },
+      "record_payload_bytes": 24094196,
+      "record_payload_sha256": "3437b6d52f794cf6790a76c395267c5c4d810039b86d0ef2631f02f29e1f3e15",
+      "source_index": 25,
+      "source_key": [
+        25
+      ],
+      "source_offset_bytes": 706115360,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000025.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b9da61bdf659e1c67f71916ab5cc82e559df2de5a527646b045da7a9c1679380"
+    },
+    {
+      "id": "valid:000026",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000026.npy",
+        "sha256": "43f7b03c9daae2b09195799c09d4b8ea06f870d14688dc795037d1c998fec557",
+        "shape": [
+          7212
+        ],
+        "size_bytes": 57824
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000026.npy",
+        "sha256": "5b1cd3a18c4597e0962b835532e0c0b25303fc5a18e84eba985f279950a2a287",
+        "shape": [
+          301,
+          7212,
+          3
+        ],
+        "size_bytes": 26049872
+      },
+      "record_payload_bytes": 26114156,
+      "record_payload_sha256": "d224a6212b9b6d85110d8d3bc8fafe5aee88b071633b3a33587f3ef2e515b17d",
+      "source_index": 26,
+      "source_key": [
+        26
+      ],
+      "source_offset_bytes": 730209572,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000026.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "83b614febfb8973f156cc4a0f1d1a7d055ea6cad7e608c325cc97af755af9fd4"
+    },
+    {
+      "id": "valid:000027",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000027.npy",
+        "sha256": "a4195a03a59fc6a5d0e546fe29b5faf029d7fb9140adcd159fd2785caf367487",
+        "shape": [
+          7523
+        ],
+        "size_bytes": 60312
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000027.npy",
+        "sha256": "18c1aa9b1cb26d9cd7b1160785d9809436d43313f5bcb2b89a6f4ac531eaac74",
+        "shape": [
+          301,
+          7523,
+          3
+        ],
+        "size_bytes": 27173204
+      },
+      "record_payload_bytes": 27239976,
+      "record_payload_sha256": "a9ec5e98fdabea4ce6151b2a959f21a0b9854643f39326f3fb14f5688bf23409",
+      "source_index": 27,
+      "source_key": [
+        27
+      ],
+      "source_offset_bytes": 756323744,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000027.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "595d2128b83a0f62db4d722a9b0d3193f412b6c92f68ebe2fc9eb5e59c92655a"
+    },
+    {
+      "id": "valid:000028",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000028.npy",
+        "sha256": "c3d83fb142433ff2095b549adc5410b20f730c007bf1967dd53c21ee6a4c0c05",
+        "shape": [
+          8862
+        ],
+        "size_bytes": 71024
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000028.npy",
+        "sha256": "161dca4d38c3d8f589103a583b0ccba7a8d58668777cfefaa5d86358f01e055b",
+        "shape": [
+          301,
+          8862,
+          3
+        ],
+        "size_bytes": 32009672
+      },
+      "record_payload_bytes": 32087156,
+      "record_payload_sha256": "206cdf6468e96aae83565efde7210f35316278c3f3ad52e652bf01657204a129",
+      "source_index": 28,
+      "source_key": [
+        28
+      ],
+      "source_offset_bytes": 783563736,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000028.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "100a29ea7cf387fbb9ac5701b43d15e88d376e22852be7df939ba3ed5e817869"
+    },
+    {
+      "id": "valid:000029",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000029.npy",
+        "sha256": "7a0e558fec316197755c84c84f3c4f8470e3ce0c46b2246b6fe30a159a66d907",
+        "shape": [
+          6597
+        ],
+        "size_bytes": 52904
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000029.npy",
+        "sha256": "567d62a97fb6288d080b27f436d3817c42aea3a26389b3ffed0769d0a28ba884",
+        "shape": [
+          301,
+          6597,
+          3
+        ],
+        "size_bytes": 23828492
+      },
+      "record_payload_bytes": 23887856,
+      "record_payload_sha256": "33c8a8a3669a43d53a0c2c82967c0740c005e38b4efd474507512fb8a6fecc4d",
+      "source_index": 29,
+      "source_key": [
+        29
+      ],
+      "source_offset_bytes": 815650908,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000029.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e9282059b3a252468ea230dfb4d269db6155331c699c8bcc1dfbbd3867c533e8"
+    },
+    {
+      "id": "valid:000030",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000030.npy",
+        "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+        "shape": [
+          8540
+        ],
+        "size_bytes": 68448
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000030.npy",
+        "sha256": "9147376b15c74fae3fce5c488e8239f23708c3a1877221831b68d5dbc963d50e",
+        "shape": [
+          301,
+          8540,
+          3
+        ],
+        "size_bytes": 30846608
+      },
+      "record_payload_bytes": 30921516,
+      "record_payload_sha256": "e2f70e2e0d40b403879c3eb275cc65c4c899aa5249e8988145f510dceaeab0dc",
+      "source_index": 30,
+      "source_key": [
+        30
+      ],
+      "source_offset_bytes": 839538780,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000030.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "5dcb932d13f65c1c34845f673ee73068c95e5b5740e4da9762c774f45dce5ca3"
+    },
+    {
+      "id": "valid:000031",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000031.npy",
+        "sha256": "c76faa7653e0f2b7a53c5b6c0c3b2fe8795acd1b3d0c12aac2ed64af445e876b",
+        "shape": [
+          3228
+        ],
+        "size_bytes": 25952
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000031.npy",
+        "sha256": "24f3e38046c776b14dfba16f2bfef6d4a8682a0f4e189476be8b0d987a28d140",
+        "shape": [
+          301,
+          3228,
+          3
+        ],
+        "size_bytes": 11659664
+      },
+      "record_payload_bytes": 11692076,
+      "record_payload_sha256": "a36374ffc124eb2d15899deeca29fbe982695a1f47c1e47f6b25c271d96dede1",
+      "source_index": 31,
+      "source_key": [
+        31
+      ],
+      "source_offset_bytes": 870460312,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000031.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "78a1f62eac2e200c793b97d80c4118a1f5b589f339426efaf50bc418ab3c23b7"
+    },
+    {
+      "id": "valid:000032",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000032.npy",
+        "sha256": "f5e0204627d8b251b81c91648033f01b69777dd2b5df641c979828e7074f6d9e",
+        "shape": [
+          6662
+        ],
+        "size_bytes": 53424
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000032.npy",
+        "sha256": "567507ed39df2c45541e82eb6de723035f59bdf8a1d41fcc28331089d2b7f390",
+        "shape": [
+          301,
+          6662,
+          3
+        ],
+        "size_bytes": 24063272
+      },
+      "record_payload_bytes": 24123156,
+      "record_payload_sha256": "ee2dc9539268b64faaee7d0a2f07f5504274beef4edc4cd3f02caeaf93f8cb23",
+      "source_index": 32,
+      "source_key": [
+        32
+      ],
+      "source_offset_bytes": 882152404,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000032.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2cc3246999ea590e5c2ce870b7e667a946745eb574520f2a5e41dfddb29e8aac"
+    },
+    {
+      "id": "valid:000033",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000033.npy",
+        "sha256": "4f7332b1e9561e946c1b76ac665d2a7e1b6c430e3d17178309a19b8077c5027d",
+        "shape": [
+          7772
+        ],
+        "size_bytes": 62304
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000033.npy",
+        "sha256": "5aa0998b45e7e38a776730f833a9ac436ddea650a5faaec0574ec3f27fedf030",
+        "shape": [
+          301,
+          7772,
+          3
+        ],
+        "size_bytes": 28072592
+      },
+      "record_payload_bytes": 28141356,
+      "record_payload_sha256": "e3458e094c74e528130c9bd82ab0cf9782970954795e9c40c01061dbe978abc4",
+      "source_index": 33,
+      "source_key": [
+        33
+      ],
+      "source_offset_bytes": 906275576,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000033.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "fde93f49d5e3ad6d4bc5e7bbe90bda7a4fc663add447c07aa88bf60a8d955d3e"
+    },
+    {
+      "id": "valid:000034",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000034.npy",
+        "sha256": "9d77c1ba121c64b9ac6ee6f1244914290b655cba754f69d0f5a7c8f410ce0e36",
+        "shape": [
+          5354
+        ],
+        "size_bytes": 42960
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000034.npy",
+        "sha256": "d2b62402f1292e14eaeace58779db026d1c2cb44166f70b791c192221c8d42a7",
+        "shape": [
+          301,
+          5354,
+          3
+        ],
+        "size_bytes": 19338776
+      },
+      "record_payload_bytes": 19388196,
+      "record_payload_sha256": "dec082318a0dd97f2633014bc7be67018c9b2190561bce688ccbe1a10b41e00e",
+      "source_index": 34,
+      "source_key": [
+        34
+      ],
+      "source_offset_bytes": 934416948,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000034.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "044c0abcfe35d27bdc722a881a35f2928fdab20ab6375512f18cd6cdc56e2e4e"
+    },
+    {
+      "id": "valid:000035",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000035.npy",
+        "sha256": "d718455e0c715d0af336655c754496e30f9078451f11e814421e98f556b25aa9",
+        "shape": [
+          11593
+        ],
+        "size_bytes": 92872
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000035.npy",
+        "sha256": "a333462bf80660924c54c2541ebe61129482876990f546b2ee4fc3dab93398d7",
+        "shape": [
+          301,
+          11593,
+          3
+        ],
+        "size_bytes": 41874044
+      },
+      "record_payload_bytes": 41973376,
+      "record_payload_sha256": "6de6fe5763a2e877bbcb75d1d7e957e006bc0ee23c950c9af7bce918d15e615d",
+      "source_index": 35,
+      "source_key": [
+        35
+      ],
+      "source_offset_bytes": 953805160,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000035.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "daac2134f90c16e35c9d956b62817fee2fad8181c2ee1b9a013cf6709a2ba7c1"
+    },
+    {
+      "id": "valid:000036",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000036.npy",
+        "sha256": "5001b991ecba8a538083e56c479ef8949f0a0ab091db4f210577d6a45dee99be",
+        "shape": [
+          7302
+        ],
+        "size_bytes": 58544
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000036.npy",
+        "sha256": "6b003ea0ca0d6290980788b40c7aa1ee850e6a4ad5c551561ae7b2999158c29f",
+        "shape": [
+          301,
+          7302,
+          3
+        ],
+        "size_bytes": 26374952
+      },
+      "record_payload_bytes": 26439956,
+      "record_payload_sha256": "b59d801dde2242420d41f35a67fa1d2c33afb97b1543317b11b0111ebd34af49",
+      "source_index": 36,
+      "source_key": [
+        36
+      ],
+      "source_offset_bytes": 995778552,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000036.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "f608e69d3ef4ba0855a45d4ce2c74b1d41dee9d92aa8ca30afe81031c9b30596"
+    },
+    {
+      "id": "valid:000037",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000037.npy",
+        "sha256": "b0ecc13156284618b34c3e844bf7f6f8d358530ae7ccdf5c26a6b6ac62fb1ae3",
+        "shape": [
+          2588
+        ],
+        "size_bytes": 20832
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000037.npy",
+        "sha256": "c4c8243ce027de692996d5bc7b957ee9066487933a94bde3d12317d6692de434",
+        "shape": [
+          301,
+          2588,
+          3
+        ],
+        "size_bytes": 9347984
+      },
+      "record_payload_bytes": 9375276,
+      "record_payload_sha256": "e5ccc0b8f5cd86616fec35ae9e43720fff9699b41128f099f9514763654a6a3d",
+      "source_index": 37,
+      "source_key": [
+        37
+      ],
+      "source_offset_bytes": 1022218524,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000037.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "1f65293f9d636301d5c96449ff933879be46bffbacaa9f2f9ef78f1428cfabac"
+    },
+    {
+      "id": "valid:000038",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000038.npy",
+        "sha256": "3074320600c6aa50dd3fd499350789a86e0314aa8060121adc83658bf20d299e",
+        "shape": [
+          10787
+        ],
+        "size_bytes": 86424
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000038.npy",
+        "sha256": "4438a34285c0559b5f1d619ab08762869899c8a0095eca86ed921a34a23592ca",
+        "shape": [
+          301,
+          10787,
+          3
+        ],
+        "size_bytes": 38962772
+      },
+      "record_payload_bytes": 39055656,
+      "record_payload_sha256": "3d5db46c34cf4ed6993b13b521b973bb18796446bd2731d65d4a2c24a02d2573",
+      "source_index": 38,
+      "source_key": [
+        38
+      ],
+      "source_offset_bytes": 1031593816,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000038.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b897648e122c8b776dbeeda4eb9621aeb729bedb1ccbd2eb714c85b90c6bb4ee"
+    },
+    {
+      "id": "valid:000039",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000039.npy",
+        "sha256": "141296e2b4e6d29c5bafbfa9fafb7059f3e7a30288b3020e5d7d52e3be78aa29",
+        "shape": [
+          3920
+        ],
+        "size_bytes": 31488
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000039.npy",
+        "sha256": "b84678fb7935b732a68e665f4ffa677845eeaa41d0fb5a364060d0a24ed96780",
+        "shape": [
+          301,
+          3920,
+          3
+        ],
+        "size_bytes": 14159168
+      },
+      "record_payload_bytes": 14197116,
+      "record_payload_sha256": "c0f7f2e00a5f8435c89a4985d0889d541aaebefc1313d7e400125854d306522a",
+      "source_index": 39,
+      "source_key": [
+        39
+      ],
+      "source_offset_bytes": 1070649488,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000039.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e8e4e966732fba41d5d9ab4953695b96c20a65d6cd778155a8a795f0d9a40fb2"
+    },
+    {
+      "id": "valid:000040",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000040.npy",
+        "sha256": "411b042385a712d6b522babe4ea55821c23ba0204bfd3c59a2c5bc7eb29afffa",
+        "shape": [
+          3515
+        ],
+        "size_bytes": 28248
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000040.npy",
+        "sha256": "e07f83040cf0eea432d7a74fbce3aa9b51185ae9abbb3cf5b6430099cc88b4e4",
+        "shape": [
+          301,
+          3515,
+          3
+        ],
+        "size_bytes": 12696308
+      },
+      "record_payload_bytes": 12731016,
+      "record_payload_sha256": "9e0804451a1f397383d2da29158bbcac59141bd32aebe94d93f3c001d01f3bce",
+      "source_index": 40,
+      "source_key": [
+        40
+      ],
+      "source_offset_bytes": 1084846620,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000040.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "0dc5577f02abc6595c3bcb450dc16994b7445b7aa4de3f0bcda81e96ea6c62e7"
+    },
+    {
+      "id": "valid:000041",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000041.npy",
+        "sha256": "c2da2cc64d57d2f1ac15d7caf134de8febfafda09d6260086613cec66ddb66f6",
+        "shape": [
+          9050
+        ],
+        "size_bytes": 72528
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000041.npy",
+        "sha256": "b0ca214cda61e6d1673dd9c1a50958a96dd1c2733694b16af7916344ed781ad7",
+        "shape": [
+          301,
+          9050,
+          3
+        ],
+        "size_bytes": 32688728
+      },
+      "record_payload_bytes": 32767716,
+      "record_payload_sha256": "dcd7bdf06931e831458316940d7247c43ade552310cea648448b825dfb7c2181",
+      "source_index": 41,
+      "source_key": [
+        41
+      ],
+      "source_offset_bytes": 1097577652,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000041.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "1f78a451bb5874b241a9c18a183bd3182d9002f021a8f8a8e50df46aa93f8021"
+    },
+    {
+      "id": "valid:000042",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000042.npy",
+        "sha256": "a815088bb554cc050987eee5d8de9a7d19cdfb17b47cc574e80c48b2717f848d",
+        "shape": [
+          10609
+        ],
+        "size_bytes": 85000
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000042.npy",
+        "sha256": "fe03ac40a6d2094deda71de9d6d16c3c4292e35fe6af29f5d5e49499734f2572",
+        "shape": [
+          301,
+          10609,
+          3
+        ],
+        "size_bytes": 38319836
+      },
+      "record_payload_bytes": 38411296,
+      "record_payload_sha256": "e16cd062ee5d6a9e0cf93742a45a18c20e90343443585e9799f6a626db7cf4a1",
+      "source_index": 42,
+      "source_key": [
+        42
+      ],
+      "source_offset_bytes": 1130345384,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000042.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "cb8b176749048bec1d8d3e4d1586962f6e0825caac1f75ebf0686e99c6b0c51f"
+    },
+    {
+      "id": "valid:000043",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000043.npy",
+        "sha256": "a256d6b715cb0220c552fc1067c38a13f13c790d8a3f575f6c5ce8c26bc61604",
+        "shape": [
+          9924
+        ],
+        "size_bytes": 79520
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000043.npy",
+        "sha256": "f50e9809e0d3c0a82ec94c6a22f86a1f28ff2a92a1fd301e8e9fc83874400144",
+        "shape": [
+          301,
+          9924,
+          3
+        ],
+        "size_bytes": 35845616
+      },
+      "record_payload_bytes": 35931596,
+      "record_payload_sha256": "2c79f11376702ac9875fa72889b282b83a00b00e1cebe46310e6b02255845027",
+      "source_index": 43,
+      "source_key": [
+        43
+      ],
+      "source_offset_bytes": 1168756696,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000043.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2922e91e3294e2efb3cb22cb7389653b9d34979cd57d83dc83975421fc13e080"
+    },
+    {
+      "id": "valid:000044",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000044.npy",
+        "sha256": "844db1a90c997615f166fe7faffd6be2b2967b8a35b622765ebaa90e22cbee7c",
+        "shape": [
+          4986
+        ],
+        "size_bytes": 40016
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000044.npy",
+        "sha256": "c1fffd3c3a36f0cc7c133e8c82739575466148fcc8e07739bdec3f90e5d983e3",
+        "shape": [
+          301,
+          4986,
+          3
+        ],
+        "size_bytes": 18009560
+      },
+      "record_payload_bytes": 18056036,
+      "record_payload_sha256": "89d2f82c6244a259fabb507fc6bb8e6e0f9ecaf22b464c0a1ff3f2f6864cd475",
+      "source_index": 44,
+      "source_key": [
+        44
+      ],
+      "source_offset_bytes": 1204688308,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000044.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "c2236455349109d5b52a00c4d510d7e94a4ee030e7762472741d794f8f0a4dcd"
+    },
+    {
+      "id": "valid:000045",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000045.npy",
+        "sha256": "aaa3c5d833322a4d875d276aee7dc0d97c7998ada59c1167a84123b1704f698f",
+        "shape": [
+          13072
+        ],
+        "size_bytes": 104704
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000045.npy",
+        "sha256": "bf7c54afec4cab6b0475da9a34a06739ce07a940ac4ed2e63521a4094f404d92",
+        "shape": [
+          301,
+          13072,
+          3
+        ],
+        "size_bytes": 47216192
+      },
+      "record_payload_bytes": 47327356,
+      "record_payload_sha256": "cb22439f987ef4465bbd56f97e3780445f801a37251432e9bc9d95736032e6fd",
+      "source_index": 45,
+      "source_key": [
+        45
+      ],
+      "source_offset_bytes": 1222744360,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000045.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e1127862525786fb66259430e800f0644f9f2238d7e84f6aaca6d9227a6fea9a"
+    },
+    {
+      "id": "valid:000046",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000046.npy",
+        "sha256": "667eecfbaee627d3e4ec2aed7360fbc0ab265706a26a95ef5b22c776f87fa472",
+        "shape": [
+          9738
+        ],
+        "size_bytes": 78032
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000046.npy",
+        "sha256": "80cd8afc20c33e652935c1c3bf00be5f0d9c4ec5594b30556885609fd7f4dbcd",
+        "shape": [
+          301,
+          9738,
+          3
+        ],
+        "size_bytes": 35173784
+      },
+      "record_payload_bytes": 35258276,
+      "record_payload_sha256": "f6af6d7a67cc51d089b0ba97ec2184299df254a2d5399d89144feaca1fb0ff9a",
+      "source_index": 46,
+      "source_key": [
+        46
+      ],
+      "source_offset_bytes": 1270071732,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000046.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "4241319c3b74e8708a3ca7609f815af61541501093ac7bf26970ddbf15d415dc"
+    },
+    {
+      "id": "valid:000047",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000047.npy",
+        "sha256": "cdf3a82a7af3fb97f96c524b8b6f7baebf97576ecb201a5da4e71753be060850",
+        "shape": [
+          5032
+        ],
+        "size_bytes": 40384
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000047.npy",
+        "sha256": "4937d926b06bd020de2814b9c8c7b52a4981e9f31319879842771c50382133e3",
+        "shape": [
+          301,
+          5032,
+          3
+        ],
+        "size_bytes": 18175712
+      },
+      "record_payload_bytes": 18222556,
+      "record_payload_sha256": "99bfc0790b6a4d7bbeef98c6392c517a45d28a75cd4bcb7704e5de80ea33fc4f",
+      "source_index": 47,
+      "source_key": [
+        47
+      ],
+      "source_offset_bytes": 1305330024,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000047.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "6258d422546dc14d210da0258c8ec588f3fac3be21422cb73806172dba1584d2"
+    },
+    {
+      "id": "valid:000048",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000048.npy",
+        "sha256": "5f119d963e3796720201b130f270be467d1d986a956bd619a9c01f86eb59aa32",
+        "shape": [
+          12511
+        ],
+        "size_bytes": 100216
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000048.npy",
+        "sha256": "426a6de11be095106404f61416a5c0750c62e494800142edd1f9a60fe8b9d9b6",
+        "shape": [
+          301,
+          12511,
+          3
+        ],
+        "size_bytes": 45189860
+      },
+      "record_payload_bytes": 45296536,
+      "record_payload_sha256": "cf66512ffd2ab7ad9d53aca383fc1fed5c274fca64a1f8fa91f04fab42448cfb",
+      "source_index": 48,
+      "source_key": [
+        48
+      ],
+      "source_offset_bytes": 1323552596,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000048.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e5049a3c810cdbcd922a24d59f6f7935c2d9fa0b6a9303f7f8b03e84a0329ede"
+    },
+    {
+      "id": "valid:000049",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000049.npy",
+        "sha256": "76291be671357288d8ac933cc4f19af6c37cc0fc5d30e34e57918c3a912f230e",
+        "shape": [
+          6979
+        ],
+        "size_bytes": 55960
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000049.npy",
+        "sha256": "d6011bc4db2c70391db66539b88e0d3a1504107ff096e40f72d80e6f5b427fe0",
+        "shape": [
+          301,
+          6979,
+          3
+        ],
+        "size_bytes": 25208276
+      },
+      "record_payload_bytes": 25270696,
+      "record_payload_sha256": "27a1af699f727f949006c93eb416ff124b41373753a2080fb4976b87387f4583",
+      "source_index": 49,
+      "source_key": [
+        49
+      ],
+      "source_offset_bytes": 1368849148,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000049.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3bd403bdd8a9100e5cc87150404542d75c71bbdd598bcbfcfee255d21024254d"
+    },
+    {
+      "id": "valid:000050",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000050.npy",
+        "sha256": "edb524c17d00a208b73bbd7a76acd6f7b70c6472ce2af06b477153331b4796fe",
+        "shape": [
+          7830
+        ],
+        "size_bytes": 62768
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000050.npy",
+        "sha256": "98f7b6743c9063a2b3e9402411ce4e543a99e9d1309eb0a47d7cc7a744bd0e9e",
+        "shape": [
+          301,
+          7830,
+          3
+        ],
+        "size_bytes": 28282088
+      },
+      "record_payload_bytes": 28351316,
+      "record_payload_sha256": "940b09d95f30dd5910d3edcb009768489dbcecc1bb209a7e69e9beeef6234386",
+      "source_index": 50,
+      "source_key": [
+        50
+      ],
+      "source_offset_bytes": 1394119860,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000050.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "014952631eaf3523d827d4083908a0cb02dc45009466c3d9a052cc3719f6d99d"
+    },
+    {
+      "id": "valid:000051",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000051.npy",
+        "sha256": "a66b5c9a10f3fda2c3cab91cc184797ef1395de88c77379d1175a7a29e2836ab",
+        "shape": [
+          12699
+        ],
+        "size_bytes": 101720
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000051.npy",
+        "sha256": "1f87d6e816bf481d51e724d00382973ea550cb955dacf05f1f767223035001c5",
+        "shape": [
+          301,
+          12699,
+          3
+        ],
+        "size_bytes": 45868916
+      },
+      "record_payload_bytes": 45977096,
+      "record_payload_sha256": "40a60525860d793a32b3e49ada8383488c3cf7a76db07ed3029e1b592c5c0df4",
+      "source_index": 51,
+      "source_key": [
+        51
+      ],
+      "source_offset_bytes": 1422471192,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000051.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "21afb9a7fbeb6528bdd2a095596ec0ee478b7ae311b16928c2f79b00f5aee2c4"
+    },
+    {
+      "id": "valid:000052",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000052.npy",
+        "sha256": "2c9ca464be7ad2c486180cbbaabbb20eeb205aad18a72f74a18a6d208e141dfe",
+        "shape": [
+          8825
+        ],
+        "size_bytes": 70728
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000052.npy",
+        "sha256": "1a75aefd2d77c1dda4bed2391e015494a23a244b6629d81ce68ba82ee839ce00",
+        "shape": [
+          301,
+          8825,
+          3
+        ],
+        "size_bytes": 31876028
+      },
+      "record_payload_bytes": 31953216,
+      "record_payload_sha256": "36188fd62bc95d5adff79a83fcc86b84172b5965aa1ab5e5ab1af7e2a32265b3",
+      "source_index": 52,
+      "source_key": [
+        52
+      ],
+      "source_offset_bytes": 1468448304,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000052.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "ae562a70887f29789b7a2a24227b5507a1826a0ccfafe33507285fee847de919"
+    },
+    {
+      "id": "valid:000053",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000053.npy",
+        "sha256": "19b0cfc12cf371c4ef00b489292667c996122c0ba4a1830e65d7a67762b86fcd",
+        "shape": [
+          12207
+        ],
+        "size_bytes": 97784
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000053.npy",
+        "sha256": "b2ce41f71966763538a4f742cac4c01b3c4c21d9427eec7ebbd958bed8b9587b",
+        "shape": [
+          301,
+          12207,
+          3
+        ],
+        "size_bytes": 44091812
+      },
+      "record_payload_bytes": 44196056,
+      "record_payload_sha256": "5d5221b7166eae1aeb9a11db01b0d5f93ba4303f5cedc001c848458285e7f5a1",
+      "source_index": 53,
+      "source_key": [
+        53
+      ],
+      "source_offset_bytes": 1500401536,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000053.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "4cbc13888b089ec182f03d0e275f5c495ec6b7b225e5f69785c38004d3345c33"
+    },
+    {
+      "id": "valid:000054",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000054.npy",
+        "sha256": "5e8e7f11ec80b42e6d6ca312b0292e1467a8dfd2e981f3115ceb4fed9fbbde5a",
+        "shape": [
+          3675
+        ],
+        "size_bytes": 29528
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000054.npy",
+        "sha256": "98a52ea97e7fe50cd01be65a457d8b74f10a7d6dc48ffc9cd49fcdb56d5208de",
+        "shape": [
+          301,
+          3675,
+          3
+        ],
+        "size_bytes": 13274228
+      },
+      "record_payload_bytes": 13310216,
+      "record_payload_sha256": "1d00db61ca76609552be96b186c32aaac0e4eda5245ec9304b757fed88b6cfbe",
+      "source_index": 54,
+      "source_key": [
+        54
+      ],
+      "source_offset_bytes": 1544597608,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000054.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "724390f0b29363e0649b0ef3f07a80fbb6fa428a20e04b5376deda1b0850cc05"
+    },
+    {
+      "id": "valid:000055",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000055.npy",
+        "sha256": "813bdd981520a443a11d1f777c3568cb60292c497871365ac85bfe105e5b4bd9",
+        "shape": [
+          3560
+        ],
+        "size_bytes": 28608
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000055.npy",
+        "sha256": "da9d2f9f2539dc94f1836629004b6796787a231e98ac76a6762da99d5a36d71e",
+        "shape": [
+          301,
+          3560,
+          3
+        ],
+        "size_bytes": 12858848
+      },
+      "record_payload_bytes": 12893916,
+      "record_payload_sha256": "403ca9efa78c07486f0063d1122ef60170475b2cb62a0c3181504a6875a2d036",
+      "source_index": 55,
+      "source_key": [
+        55
+      ],
+      "source_offset_bytes": 1557907840,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000055.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2b27f71731dcf8772863350711ddc7a2fef672730378ee2f7ebfc6e218075933"
+    },
+    {
+      "id": "valid:000056",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000056.npy",
+        "sha256": "83714ffd838b0e854ed26ab37ac8d29388c9a57825616d90bb862d3c07576294",
+        "shape": [
+          10180
+        ],
+        "size_bytes": 81568
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000056.npy",
+        "sha256": "344c910bac1fd6c2874d71648953c55a456beae4c25cf3cfd41b84ec45f10dcc",
+        "shape": [
+          301,
+          10180,
+          3
+        ],
+        "size_bytes": 36770288
+      },
+      "record_payload_bytes": 36858316,
+      "record_payload_sha256": "80348c79b666a8dd76f8e08e141c6640dabb7ffcff10025668b58672638be266",
+      "source_index": 56,
+      "source_key": [
+        56
+      ],
+      "source_offset_bytes": 1570801772,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000056.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "e3c7aca753c9636a437a2ca0f059b904226ca29cca1ab17bde0fbe2663149748"
+    },
+    {
+      "id": "valid:000057",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000057.npy",
+        "sha256": "51429485532620b6816a65f5584d9fd20cad5036b12f9778e1aeebfbd7094121",
+        "shape": [
+          5908
+        ],
+        "size_bytes": 47392
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000057.npy",
+        "sha256": "ae972f409e8f2832be64377c0c75dc8caf8d46d0fed331f75f8ae082990c57df",
+        "shape": [
+          301,
+          5908,
+          3
+        ],
+        "size_bytes": 21339824
+      },
+      "record_payload_bytes": 21393676,
+      "record_payload_sha256": "8f4080cff3aafe2516ba313a8befae511627f6d580e9e3164b02fc01c8f26e7d",
+      "source_index": 57,
+      "source_key": [
+        57
+      ],
+      "source_offset_bytes": 1607660104,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000057.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b919e9c00356e6496da895a59b03f9ed089f676827b7604a7d7dc13246293179"
+    },
+    {
+      "id": "valid:000058",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000058.npy",
+        "sha256": "93cc8a21bd739df34cff0b3bec8158eaecc1e750578c37aacf78a3af9b9fe017",
+        "shape": [
+          4223
+        ],
+        "size_bytes": 33912
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000058.npy",
+        "sha256": "137f18434b8bc733bc7ee1a1a545511b2a003bbef3c7007920d2c107052272c4",
+        "shape": [
+          301,
+          4223,
+          3
+        ],
+        "size_bytes": 15253604
+      },
+      "record_payload_bytes": 15293976,
+      "record_payload_sha256": "1c766d34d8e7958c7cbdd35ac3537a1e404df6788a37f98780104cac6c63e559",
+      "source_index": 58,
+      "source_key": [
+        58
+      ],
+      "source_offset_bytes": 1629053796,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000058.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b838094beefdd42a7a1f68e5bd540df20ccbc6751e1bca355557d108d725406e"
+    },
+    {
+      "id": "valid:000059",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000059.npy",
+        "sha256": "e7c473c943e76bc6a6fde35f931ef1e6c9103a24b9e5ead9767f7814f4d6ece0",
+        "shape": [
+          4665
+        ],
+        "size_bytes": 37448
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000059.npy",
+        "sha256": "e00bbca95364f2dcc90e279ad37d0ec75e071f6c73c649e5912bc28e2aba8dfd",
+        "shape": [
+          301,
+          4665,
+          3
+        ],
+        "size_bytes": 16850108
+      },
+      "record_payload_bytes": 16894016,
+      "record_payload_sha256": "052fe6b3829a539fadf78625fe93e391a61d151a967726dca304a5b22c322054",
+      "source_index": 59,
+      "source_key": [
+        59
+      ],
+      "source_offset_bytes": 1644347788,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000059.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "ece88d828e180a3a6d2b93bdcf8f559e2357a48250b7a6b1f648cbde33120504"
+    },
+    {
+      "id": "valid:000060",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000060.npy",
+        "sha256": "8c634a70f6be14a9713919fbd170546e8b9257a8d234f0c4c6030ddc7d7c9d45",
+        "shape": [
+          8970
+        ],
+        "size_bytes": 71888
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000060.npy",
+        "sha256": "1e1dd8dbc43f650789f7aeb10ccb5e0616240ba0a89cfea58107884192912e24",
+        "shape": [
+          301,
+          8970,
+          3
+        ],
+        "size_bytes": 32399768
+      },
+      "record_payload_bytes": 32478116,
+      "record_payload_sha256": "7d86968ddba55fc9d07cac8fc5fdf71788ba507ef9e0bcac6d779054a507bd73",
+      "source_index": 60,
+      "source_key": [
+        60
+      ],
+      "source_offset_bytes": 1661241820,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000060.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "cf5be88602e659ca9faaf1dbe07f20d78a3bf319f555227a1ece611972f99cb0"
+    },
+    {
+      "id": "valid:000061",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000061.npy",
+        "sha256": "9b3832c473fb07c18b0df96c8bc1266105fc6ef82f6123d6515a632e6c7028f3",
+        "shape": [
+          3140
+        ],
+        "size_bytes": 25248
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000061.npy",
+        "sha256": "a561f046ab27065d8f365e799846bd2e3f1b10b0a6221b88f620cf5c83ce45d8",
+        "shape": [
+          301,
+          3140,
+          3
+        ],
+        "size_bytes": 11341808
+      },
+      "record_payload_bytes": 11373516,
+      "record_payload_sha256": "c98e789e9bd3ebb53660a0e401924645b2665b576e173dd5bd7ac38217aa972d",
+      "source_index": 61,
+      "source_key": [
+        61
+      ],
+      "source_offset_bytes": 1693719952,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000061.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "49e68e0c57ce49e561e909e767f0abafed391104ef6c0cffb1f78ac5504b2a5f"
+    },
+    {
+      "id": "valid:000062",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000062.npy",
+        "sha256": "e672bd35e020dffc8b67de09ffca7e9fa37205ffa2bedf457ecb55f0eb8ed079",
+        "shape": [
+          3302
+        ],
+        "size_bytes": 26544
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000062.npy",
+        "sha256": "67dc912646342882c40713ef2ab7c6d45d88c3f996073f693b1c576909103720",
+        "shape": [
+          301,
+          3302,
+          3
+        ],
+        "size_bytes": 11926952
+      },
+      "record_payload_bytes": 11959956,
+      "record_payload_sha256": "13f8156490a86b5b1d3749556ac2ce8952e48e2db709ad96cf471a1c120fc4a3",
+      "source_index": 62,
+      "source_key": [
+        62
+      ],
+      "source_offset_bytes": 1705093484,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000062.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "47290830f0d604fc9741d92ccc71e936e91cbf3feb0ee59ab4266590ae48d173"
+    },
+    {
+      "id": "valid:000063",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000063.npy",
+        "sha256": "d25af5521204aaf68b713fa27e720c9fb4f4af36e195604552c8e27b8fea183f",
+        "shape": [
+          10163
+        ],
+        "size_bytes": 81432
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000063.npy",
+        "sha256": "7d05b6474d67c58b6f8221cad58ebfe690cdc6153a1074aadbfe1b3c1791ffb3",
+        "shape": [
+          301,
+          10163,
+          3
+        ],
+        "size_bytes": 36708884
+      },
+      "record_payload_bytes": 36796776,
+      "record_payload_sha256": "ccd405ff283d14e455f2202445c0ca2474fda03db21eb560724526eea032bc0e",
+      "source_index": 63,
+      "source_key": [
+        63
+      ],
+      "source_offset_bytes": 1717053456,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000063.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "7140cb491f48cd5a48be5d293930dfa7226afaad3c4275527a93ace1a1654893"
+    },
+    {
+      "id": "valid:000064",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000064.npy",
+        "sha256": "54d2418383cf13468ca7ed6c57c3092e5b40e0848d7a61d0b34af4f00540ed91",
+        "shape": [
+          7004
+        ],
+        "size_bytes": 56160
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000064.npy",
+        "sha256": "b5e63015195eaaa2361e8e0d2cdafb461d67cd03c34d09d91f7fb755c2d47e32",
+        "shape": [
+          301,
+          7004,
+          3
+        ],
+        "size_bytes": 25298576
+      },
+      "record_payload_bytes": 25361196,
+      "record_payload_sha256": "565d83754229605dc245b7da333920f0e8882f289f6211b97905484e5467c7a8",
+      "source_index": 64,
+      "source_key": [
+        64
+      ],
+      "source_offset_bytes": 1753850248,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000064.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "4283cf970afa7dcfd8632167b4d2187549688449c41751bd3794f6832f032a0c"
+    },
+    {
+      "id": "valid:000065",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000065.npy",
+        "sha256": "43a72fcc2418cc24ddc9eb1f6af456afe0eda26ebaf407005c35c6268e720c70",
+        "shape": [
+          5123
+        ],
+        "size_bytes": 41112
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000065.npy",
+        "sha256": "90bcbf5af505587c2cbca90f535de8758f7616e8a57171f5c30647cb58b0f6dc",
+        "shape": [
+          301,
+          5123,
+          3
+        ],
+        "size_bytes": 18504404
+      },
+      "record_payload_bytes": 18551976,
+      "record_payload_sha256": "89d7b8ec9a2adc9329fb98ddf574b129646d4682441cb19de905c8bf288374d3",
+      "source_index": 65,
+      "source_key": [
+        65
+      ],
+      "source_offset_bytes": 1779211460,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000065.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "5d67c9411284b6f16b70d97fc0edfd0ef7078adecae92245a428e2b390aba86d"
+    },
+    {
+      "id": "valid:000066",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000066.npy",
+        "sha256": "45ec91263d40b1c6f3d218473107bdd9c599e98e158122fc84112f2aa51d3cd7",
+        "shape": [
+          3926
+        ],
+        "size_bytes": 31536
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000066.npy",
+        "sha256": "6fa4015b54babc516d17cdffc882427fa5c32fe7e15ff6683c6f9f7d315c5445",
+        "shape": [
+          301,
+          3926,
+          3
+        ],
+        "size_bytes": 14180840
+      },
+      "record_payload_bytes": 14218836,
+      "record_payload_sha256": "fda94d95e0bdc9982bc50cbffae3f3d48139fc472aec45ff26d2ffccf122a7c2",
+      "source_index": 66,
+      "source_key": [
+        66
+      ],
+      "source_offset_bytes": 1797763452,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000066.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "bf1582bf4c5915cf2c658ae0971dbbcc8ed2d75913914d076d1fb14f7dae1772"
+    },
+    {
+      "id": "valid:000067",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000067.npy",
+        "sha256": "26e8776ecba550064f40ca3272bee2f369b53cb1cd2e93f8c27b3942858eedcd",
+        "shape": [
+          4572
+        ],
+        "size_bytes": 36704
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000067.npy",
+        "sha256": "aaa39ad48b117cca7b28e6a4a6cd1bcba0e5197fffa1c3dc13a78962168e8fea",
+        "shape": [
+          301,
+          4572,
+          3
+        ],
+        "size_bytes": 16514192
+      },
+      "record_payload_bytes": 16557356,
+      "record_payload_sha256": "ddc4865e9c720c999b92fe4f77a763d476dc8b97b93689445ea9b4881082bd36",
+      "source_index": 67,
+      "source_key": [
+        67
+      ],
+      "source_offset_bytes": 1811982304,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000067.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2e41008a77f7dd4e3e59aec41460494468165b48b3df2467b1a382d83b8f7a06"
+    },
+    {
+      "id": "valid:000068",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000068.npy",
+        "sha256": "f1f2caae729b90fb4e2ff578e3c9d07a59d49c159201d958e4ab9e5ea6fa26bd",
+        "shape": [
+          11135
+        ],
+        "size_bytes": 89208
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000068.npy",
+        "sha256": "be8704c2217c697efaff9e635a497866e1ce524181556df97ac6c0c148e97711",
+        "shape": [
+          301,
+          11135,
+          3
+        ],
+        "size_bytes": 40219748
+      },
+      "record_payload_bytes": 40315416,
+      "record_payload_sha256": "9ed8788d1205dea9fcb69f053e987fde83035f87d1e5773f60c609ecd7149ba9",
+      "source_index": 68,
+      "source_key": [
+        68
+      ],
+      "source_offset_bytes": 1828539676,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000068.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "1df56d2f2a2bc93d0b30fb77338028b209d39d2ea1135c3a2b3cefb290127ebb"
+    },
+    {
+      "id": "valid:000069",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000069.npy",
+        "sha256": "9df8321592777784d370905161539abdb0e8c5fdbb31de1e11b192c5a86a7dbd",
+        "shape": [
+          8334
+        ],
+        "size_bytes": 66800
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000069.npy",
+        "sha256": "5948e0c43fd71109422531e704ca7c15be38eaa3891411273fa12fdf1b268d47",
+        "shape": [
+          301,
+          8334,
+          3
+        ],
+        "size_bytes": 30102536
+      },
+      "record_payload_bytes": 30175796,
+      "record_payload_sha256": "02a86cb7544cc61faaa0b6a1df888d9b5013a3e8e001707a99edf6bce6d60507",
+      "source_index": 69,
+      "source_key": [
+        69
+      ],
+      "source_offset_bytes": 1868855108,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000069.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "7b7eeb03d379b0260e279f8da4d306cca9e5db6022b93e25e708f78a975030df"
+    },
+    {
+      "id": "valid:000070",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000070.npy",
+        "sha256": "d35665b119f3e18934af189e277b2b6cca6397081da7cfe02d6c16e9f3edf864",
+        "shape": [
+          7766
+        ],
+        "size_bytes": 62256
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000070.npy",
+        "sha256": "24231fa94867d17656315700c102a8767582fc518ee44b9aa3879540b52f68ed",
+        "shape": [
+          301,
+          7766,
+          3
+        ],
+        "size_bytes": 28050920
+      },
+      "record_payload_bytes": 28119636,
+      "record_payload_sha256": "8006f670ef7416aac7e1ed9a8b1002efab7dcf44c11a0b9e3885e0c31753be33",
+      "source_index": 70,
+      "source_key": [
+        70
+      ],
+      "source_offset_bytes": 1899030920,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000070.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "c9c04d02b10b6fc414541531ffd946994f4394c409453d1a7b592d603779cd68"
+    },
+    {
+      "id": "valid:000071",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000071.npy",
+        "sha256": "c6591ee0e459e1f6749a2e4cbb0342d1ee752c7ff6ea489591eda9818ae6753b",
+        "shape": [
+          4296
+        ],
+        "size_bytes": 34496
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000071.npy",
+        "sha256": "b72f8995fcac9b2c0f982c0f3b4b242492659816a3a884708c107f7bf0ed0749",
+        "shape": [
+          301,
+          4296,
+          3
+        ],
+        "size_bytes": 15517280
+      },
+      "record_payload_bytes": 15558236,
+      "record_payload_sha256": "baeddb4bacafdc708a2044a805019fea734a4194c53f7237ca824d819391bf13",
+      "source_index": 71,
+      "source_key": [
+        71
+      ],
+      "source_offset_bytes": 1927150572,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000071.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "9b27b95e3dc8a390a21ec9a0baafd7c1e58199846fa7f08cf2ca879a83d1fcf0"
+    },
+    {
+      "id": "valid:000072",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000072.npy",
+        "sha256": "754ba8833e6f350ddcc05bfc0600a952a32866b07c214c120c06d473cdf8fd54",
+        "shape": [
+          10747
+        ],
+        "size_bytes": 86104
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000072.npy",
+        "sha256": "153e3a27a86bda2eaaee4570eae356f2f2eb5e1fa65903382e630895a9245a82",
+        "shape": [
+          301,
+          10747,
+          3
+        ],
+        "size_bytes": 38818292
+      },
+      "record_payload_bytes": 38910856,
+      "record_payload_sha256": "adcfc9a5739e56e5ce7dba7a19a0051cf92be0e2fe8caf77bcbcd0823dd6a85b",
+      "source_index": 72,
+      "source_key": [
+        72
+      ],
+      "source_offset_bytes": 1942708824,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000072.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "5187474c9da44d25f8daa986beada5f5a778c661b36683910bdbf6f35750c7ff"
+    },
+    {
+      "id": "valid:000073",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000073.npy",
+        "sha256": "47f4f42a2be97eb98be31fbd512e6af500e90123797fd1ede44f2ec037fd293f",
+        "shape": [
+          3740
+        ],
+        "size_bytes": 30048
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000073.npy",
+        "sha256": "be86f6e448d5ccfb108bf27b379d68ca006472d82e9511b61be1ce2681f78459",
+        "shape": [
+          301,
+          3740,
+          3
+        ],
+        "size_bytes": 13509008
+      },
+      "record_payload_bytes": 13545516,
+      "record_payload_sha256": "9cbd0f8fe7093af9a405de9c206ab02699f27130522348a798a1e829fd62fa8b",
+      "source_index": 73,
+      "source_key": [
+        73
+      ],
+      "source_offset_bytes": 1981619696,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000073.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "7d772e3f5dec7a1208b243c455ff8339a08052a761e8f2637694db7ed027bb87"
+    },
+    {
+      "id": "valid:000074",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000074.npy",
+        "sha256": "55b4828aeeede79efa5152fe5dfc507c3ab00551246f632c54a5f4f9c79bbe10",
+        "shape": [
+          7254
+        ],
+        "size_bytes": 58160
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000074.npy",
+        "sha256": "8036eafb3bb58abbe37bb5e6a369166107703a5ee7aa167eb32ec4c0aac7681c",
+        "shape": [
+          301,
+          7254,
+          3
+        ],
+        "size_bytes": 26201576
+      },
+      "record_payload_bytes": 26266196,
+      "record_payload_sha256": "89172eb03eed4e555c86851c3e1f6064780377f22bb0384fc95924864fbcf62d",
+      "source_index": 74,
+      "source_key": [
+        74
+      ],
+      "source_offset_bytes": 1995165228,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000074.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "28cefc81ea55bb748317c5258668691ea85354d5e19e3c8b3a817034eb8c9c0a"
+    },
+    {
+      "id": "valid:000075",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000075.npy",
+        "sha256": "dfb4bde7484691091f4fb52bbc19a152b66dd63917829c9182559c2c94942ca5",
+        "shape": [
+          12297
+        ],
+        "size_bytes": 98504
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000075.npy",
+        "sha256": "8f1ec8123fbc1be2efccb298f2658546c311f2ac6f3a962517319fc078955c44",
+        "shape": [
+          301,
+          12297,
+          3
+        ],
+        "size_bytes": 44416892
+      },
+      "record_payload_bytes": 44521856,
+      "record_payload_sha256": "19649527fc785774869f110b2ae0657ad746ff3b66a568186ef3b5c86881940d",
+      "source_index": 75,
+      "source_key": [
+        75
+      ],
+      "source_offset_bytes": 2021431440,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000075.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "493745545b113084f8fb48064e32df9bc47a97662846a248f8cb8cb24bc87d7a"
+    },
+    {
+      "id": "valid:000076",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000076.npy",
+        "sha256": "b56d6a1a9e47aba2f215fbe7dbde140b77936294a037a135b1eea5077141185c",
+        "shape": [
+          12185
+        ],
+        "size_bytes": 97608
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000076.npy",
+        "sha256": "96e4f01fb801abe9a1147f1f50d6274aafb3b136ade1529b8eeb8e224ad2efc7",
+        "shape": [
+          301,
+          12185,
+          3
+        ],
+        "size_bytes": 44012348
+      },
+      "record_payload_bytes": 44116416,
+      "record_payload_sha256": "e3c42dc7ef2553b5f57366351545dfc7cb91a3b23f956c48a97fe32c3b424975",
+      "source_index": 76,
+      "source_key": [
+        76
+      ],
+      "source_offset_bytes": 2065953312,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000076.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "30019f2e0f4ee00e8ff69342b8025517ec489141c26028e507c69c9819bb5ab2"
+    },
+    {
+      "id": "valid:000077",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000077.npy",
+        "sha256": "2797f799eafbedfd4ffa3aa17b7584aa323739ff5e2c3aa0544a8185cf9b555f",
+        "shape": [
+          4169
+        ],
+        "size_bytes": 33480
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000077.npy",
+        "sha256": "7e6f4dd145a1e096e96b720fc3b561a9c952f124e276b0314505c271ddb0fffd",
+        "shape": [
+          301,
+          4169,
+          3
+        ],
+        "size_bytes": 15058556
+      },
+      "record_payload_bytes": 15098496,
+      "record_payload_sha256": "7eff2b69071c6d09eed97dc89309b67f847a6c5f2aba5672938108e70c8fdeb4",
+      "source_index": 77,
+      "source_key": [
+        77
+      ],
+      "source_offset_bytes": 2110069744,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000077.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "52df86ad0afdb3ee0a5b746caef5d831ec89a26226080d448989f91327d1b417"
+    },
+    {
+      "id": "valid:000078",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000078.npy",
+        "sha256": "fcef9744bf4504fb67ee8d71b88ab378ee00bb9983da694ec8031c2389959d0c",
+        "shape": [
+          8094
+        ],
+        "size_bytes": 64880
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000078.npy",
+        "sha256": "b827134eaaaa305d1b1edd64747e519c133afd0a58e7684d2859d3b7a9ce355b",
+        "shape": [
+          301,
+          8094,
+          3
+        ],
+        "size_bytes": 29235656
+      },
+      "record_payload_bytes": 29306996,
+      "record_payload_sha256": "fe88134cda6315d067dfdca53f38de176652b07fff046fe2543782e9d9076391",
+      "source_index": 78,
+      "source_key": [
+        78
+      ],
+      "source_offset_bytes": 2125168256,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000078.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "3ec2af6f7cb55256835cde7a0228b2b66ad02971322913c140e96d13834950f8"
+    },
+    {
+      "id": "valid:000079",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000079.npy",
+        "sha256": "d01b57327301b287eb1b908e51f2fcf3821e8a0cbd8cb62229dabc94b2847a74",
+        "shape": [
+          11366
+        ],
+        "size_bytes": 91056
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000079.npy",
+        "sha256": "d54dd8b2b415f3fc6fc4c2c2a71902277982be82e4a9e896447b999aa84dc220",
+        "shape": [
+          301,
+          11366,
+          3
+        ],
+        "size_bytes": 41054120
+      },
+      "record_payload_bytes": 41151636,
+      "record_payload_sha256": "335d0b8026a37d0e3d93b83d8f026b8dce10829d53c9b73bbdf886ff5bf37cf5",
+      "source_index": 79,
+      "source_key": [
+        79
+      ],
+      "source_offset_bytes": 2154475268,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000079.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "c932e66977b6ab5c1c2ef366ec1984d8505b2770c3aa22cfbaeea75dc9647b67"
+    },
+    {
+      "id": "valid:000080",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000080.npy",
+        "sha256": "4319d2a82b2dd542d28bb01a5776cffe86dbc3f0f5e10a9e920d3f69a308ac17",
+        "shape": [
+          8768
+        ],
+        "size_bytes": 70272
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000080.npy",
+        "sha256": "d24d299af71f10fefcafc226a7b87711d1c8664162a24b497219eb4fc5ad8c2f",
+        "shape": [
+          301,
+          8768,
+          3
+        ],
+        "size_bytes": 31670144
+      },
+      "record_payload_bytes": 31746876,
+      "record_payload_sha256": "0db01cca94e02863cc453a9769733c2258a4753dab561f449e366ab58c25988a",
+      "source_index": 80,
+      "source_key": [
+        80
+      ],
+      "source_offset_bytes": 2195626920,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000080.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "d001a4280dc610030f70827151d3d7bb874a86345e3f5ae46b96a9b8879c1ce7"
+    },
+    {
+      "id": "valid:000081",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000081.npy",
+        "sha256": "326f3657137e1d772a2e5e72a35fdfbedfcfed9d1e3ac2327d36c0c0dfe36b93",
+        "shape": [
+          5864
+        ],
+        "size_bytes": 47040
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000081.npy",
+        "sha256": "7e519ad611795ea9ffeda3bdebc30210759525aa46f9e3a9ca8a30f193f4ca21",
+        "shape": [
+          301,
+          5864,
+          3
+        ],
+        "size_bytes": 21180896
+      },
+      "record_payload_bytes": 21234396,
+      "record_payload_sha256": "c5d20924fe2547b849ad02ea6adeda664421aaab31bf23249058d211738016d8",
+      "source_index": 81,
+      "source_key": [
+        81
+      ],
+      "source_offset_bytes": 2227373812,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000081.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "bf1eca69203459e8ac4151939ebddf00a9b4591bce49cc8643dd47356f87b6b7"
+    },
+    {
+      "id": "valid:000082",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000082.npy",
+        "sha256": "5b95f2dded56e4a1b3802f39def1fd8323f30e8f5aa859817984d3048e04843f",
+        "shape": [
+          8943
+        ],
+        "size_bytes": 71672
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000082.npy",
+        "sha256": "071192839771b6d0d08c61c39e70b2506752ab7421d8088f572e8a90878db77e",
+        "shape": [
+          301,
+          8943,
+          3
+        ],
+        "size_bytes": 32302244
+      },
+      "record_payload_bytes": 32380376,
+      "record_payload_sha256": "de75474c3bfef66dfc54c36938072ab5094d4115705c82ce6db3eb0eac209bd4",
+      "source_index": 82,
+      "source_key": [
+        82
+      ],
+      "source_offset_bytes": 2248608224,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000082.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "adda2e8785710cf84e5af7a6203cc353a5fc87ac90faf94dde0deab3902e3a96"
+    },
+    {
+      "id": "valid:000083",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000083.npy",
+        "sha256": "74baab2ce2395d44367b8ce204684164710f741813b25d7c1e28ff2b8476b84d",
+        "shape": [
+          8426
+        ],
+        "size_bytes": 67536
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000083.npy",
+        "sha256": "c6b03753d15ce6a60f5ec5e62270be460939697aaad7e593a9768a6da276b324",
+        "shape": [
+          301,
+          8426,
+          3
+        ],
+        "size_bytes": 30434840
+      },
+      "record_payload_bytes": 30508836,
+      "record_payload_sha256": "2e1d05e3a4bf2bc544f2d4f3addf7df11b51b4f5a28e73cf249da822fddc3f71",
+      "source_index": 83,
+      "source_key": [
+        83
+      ],
+      "source_offset_bytes": 2280988616,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000083.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "7ff6844c1daba1e5426d00f14d0978c138a9837adcd74486c4e43ea7b6922580"
+    },
+    {
+      "id": "valid:000084",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000084.npy",
+        "sha256": "ea680ffc7321c962cf5594f9bbc4b8908f4bb66a7443d49de428ee5e4f75569c",
+        "shape": [
+          3866
+        ],
+        "size_bytes": 31056
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000084.npy",
+        "sha256": "5b1e2f378729da811918f7fa06ebb4d58e6f85e06af2850858474487403752d3",
+        "shape": [
+          301,
+          3866,
+          3
+        ],
+        "size_bytes": 13964120
+      },
+      "record_payload_bytes": 14001636,
+      "record_payload_sha256": "2b20a69de4bb5a5915acbcba465141d4cd96f46ceb17a0dabd429c1ff0104819",
+      "source_index": 84,
+      "source_key": [
+        84
+      ],
+      "source_offset_bytes": 2311497468,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000084.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "042cd17c7a5827ef3d7b0a8a11ee62e37f51a23bb1a6490886ca20d4d6d63814"
+    },
+    {
+      "id": "valid:000085",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000085.npy",
+        "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+        "shape": [
+          11533
+        ],
+        "size_bytes": 92392
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000085.npy",
+        "sha256": "0624713a0cccc03c4c515a6ffc4591b5376f9ef0c7b278dd0219bc8f134f5516",
+        "shape": [
+          301,
+          11533,
+          3
+        ],
+        "size_bytes": 41657324
+      },
+      "record_payload_bytes": 41756176,
+      "record_payload_sha256": "bc8ed1ba6a0b91d5c0a72450b49f5b6efe4c08511fa7ab9d7ee1699881621886",
+      "source_index": 85,
+      "source_key": [
+        85
+      ],
+      "source_offset_bytes": 2325499120,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000085.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "14c49e8b9d8115e0a073982b5bf3ed021ad36c10c56504d69308fc63cedcb8b2"
+    },
+    {
+      "id": "valid:000086",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000086.npy",
+        "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+        "shape": [
+          11533
+        ],
+        "size_bytes": 92392
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000086.npy",
+        "sha256": "a12cd850b6917474b71fefa840474cce1b1bc938704e7ecb3374a80e1261ffd4",
+        "shape": [
+          301,
+          11533,
+          3
+        ],
+        "size_bytes": 41657324
+      },
+      "record_payload_bytes": 41756176,
+      "record_payload_sha256": "2f93eeff9f0acfa07258f31c6919d00a49394cdf3b47f1ffc292ce9143f2f4a7",
+      "source_index": 86,
+      "source_key": [
+        86
+      ],
+      "source_offset_bytes": 2367255312,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000086.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "389f9f48abca6657c07d788cbbcea2a88844dc64ed8c08c8ee346e3114de8d0d"
+    },
+    {
+      "id": "valid:000087",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000087.npy",
+        "sha256": "2d1326079bcd9261a9e14aeb8c7bb589e72c2d5396ccd91e9c1732cdf64efcba",
+        "shape": [
+          9963
+        ],
+        "size_bytes": 79832
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000087.npy",
+        "sha256": "8ab86b71ccfde796815fc9ea4acf9f95e198e586c7c016afefbba05c345dbc8a",
+        "shape": [
+          301,
+          9963,
+          3
+        ],
+        "size_bytes": 35986484
+      },
+      "record_payload_bytes": 36072776,
+      "record_payload_sha256": "78500e74c7d63a2596470bee3d909771f49d07f9208d54fd586bd6824fcc6eb0",
+      "source_index": 87,
+      "source_key": [
+        87
+      ],
+      "source_offset_bytes": 2409011504,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000087.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2a4edc464437b1ad201dc85f003efebf58866cef4cc85ec3ea9103deca45499a"
+    },
+    {
+      "id": "valid:000088",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000088.npy",
+        "sha256": "6d604746702826c8dd73fceb6c558ae4434f35db1f48b6630b94f82ff6329f94",
+        "shape": [
+          2841
+        ],
+        "size_bytes": 22856
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000088.npy",
+        "sha256": "2b2b150e29477e03ca9abaa5de85aa2764b973cc6fc17a4fd7c3f7ff2e205637",
+        "shape": [
+          301,
+          2841,
+          3
+        ],
+        "size_bytes": 10261820
+      },
+      "record_payload_bytes": 10291136,
+      "record_payload_sha256": "4472363bb9fa979388396604811ac618146da2cb983be8d71206a080494e2e53",
+      "source_index": 88,
+      "source_key": [
+        88
+      ],
+      "source_offset_bytes": 2445084296,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000088.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b21c7a937f4d2eba104174ec5c3af52d0f65dfe26ecfc2bed181611ceb09dd18"
+    },
+    {
+      "id": "valid:000089",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000089.npy",
+        "sha256": "5c6c3f557914d38495c884926d304c8559c7edf0736f69321a0e3cf5c5132bc2",
+        "shape": [
+          13008
+        ],
+        "size_bytes": 104192
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000089.npy",
+        "sha256": "496ad397a53071f287abf0834800edb1614820f9955d3d2b65dab71ed048e29e",
+        "shape": [
+          301,
+          13008,
+          3
+        ],
+        "size_bytes": 46985024
+      },
+      "record_payload_bytes": 47095676,
+      "record_payload_sha256": "eda14dde24ce06c502382eed6c8f4b9da77da648726ac49bb36be59c74e0bbcb",
+      "source_index": 89,
+      "source_key": [
+        89
+      ],
+      "source_offset_bytes": 2455375448,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000089.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "637d543887b409f6bcd7065d2a8e8210cd676f99a03b319f0f11af1a22df3085"
+    },
+    {
+      "id": "valid:000090",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000090.npy",
+        "sha256": "9a34bec5f8032b1e069174b88629a4a2a8163c1b60554ae126c88826dc40df19",
+        "shape": [
+          13597
+        ],
+        "size_bytes": 108904
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000090.npy",
+        "sha256": "693c7e8bf01619caa72dbf4fa25c2aa95dca9edf105ce961aa771a84bcd7d4a5",
+        "shape": [
+          301,
+          13597,
+          3
+        ],
+        "size_bytes": 49112492
+      },
+      "record_payload_bytes": 49227856,
+      "record_payload_sha256": "97ba99ef51f968644a7c2d406f7b41fac597e223bf04f02b25fa28fc684d023c",
+      "source_index": 90,
+      "source_key": [
+        90
+      ],
+      "source_offset_bytes": 2502471140,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000090.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "05cc3517c23e969cda5bc9e1e1e64d70abf40241c1298dbaa30faff315a3ac97"
+    },
+    {
+      "id": "valid:000091",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000091.npy",
+        "sha256": "5e79270696aeae22b217f467d6b8c436463d0e0f6d93226d7664b4958e93c311",
+        "shape": [
+          6688
+        ],
+        "size_bytes": 53632
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000091.npy",
+        "sha256": "82a62e42ec17225435066e41a78e507e9995d251af162614050667231b3c0930",
+        "shape": [
+          301,
+          6688,
+          3
+        ],
+        "size_bytes": 24157184
+      },
+      "record_payload_bytes": 24217276,
+      "record_payload_sha256": "c58d6b32dbc21aa308e69f7d93222e5a8861c8382c7336b0fadb75e0be6b7ceb",
+      "source_index": 91,
+      "source_key": [
+        91
+      ],
+      "source_offset_bytes": 2551699012,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000091.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "de900e2c75e8dda3bf6515f44644f0801abd7fec5f40d99185a2a5c109d73820"
+    },
+    {
+      "id": "valid:000092",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000092.npy",
+        "sha256": "b1a824eb3114ba7daef5d73266357bd35ef9218e57add252f537e311711031d5",
+        "shape": [
+          11767
+        ],
+        "size_bytes": 94264
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000092.npy",
+        "sha256": "fedeaa4d4bc1c6e8accee54e44d7cc3a67ea9dc4484814f5e932522bbedc42a0",
+        "shape": [
+          301,
+          11767,
+          3
+        ],
+        "size_bytes": 42502532
+      },
+      "record_payload_bytes": 42603256,
+      "record_payload_sha256": "5180bdacfd74b00d547e7c727d4ec64cc199276654fa944be89a9b2a30f51c76",
+      "source_index": 92,
+      "source_key": [
+        92
+      ],
+      "source_offset_bytes": 2575916304,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000092.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "cbea515e1fdcea2221c406c26cf79c5e53b0ad8231829a58ed060d4fca98d8f4"
+    },
+    {
+      "id": "valid:000093",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000093.npy",
+        "sha256": "7a1f9b2b016a94526141f2bff8bf1f952ba649db66ae2133ea781f2dabd0134e",
+        "shape": [
+          10804
+        ],
+        "size_bytes": 86560
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000093.npy",
+        "sha256": "955a474cb8f21b924199ec4eea7a914dcfc2a57397c140241f17d3304f45ddda",
+        "shape": [
+          301,
+          10804,
+          3
+        ],
+        "size_bytes": 39024176
+      },
+      "record_payload_bytes": 39117196,
+      "record_payload_sha256": "75718a6b6384d95b66a94803d2edcb8ad5f6bbd42faedbf7fbdc47380ada2760",
+      "source_index": 93,
+      "source_key": [
+        93
+      ],
+      "source_offset_bytes": 2618519576,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000093.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "9cd9cb09b3c6e80529c78b530557df808b879a2ab14d18a7e400171025060035"
+    },
+    {
+      "id": "valid:000094",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000094.npy",
+        "sha256": "b456734363db53699bb027ba9c0b7da31c25a211bc5b2774196b70a724300cc3",
+        "shape": [
+          11101
+        ],
+        "size_bytes": 88936
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000094.npy",
+        "sha256": "8a04393ae3e95ad292958ce6661f44074db983e5f169a3a15fe747d05c2aa131",
+        "shape": [
+          301,
+          11101,
+          3
+        ],
+        "size_bytes": 40096940
+      },
+      "record_payload_bytes": 40192336,
+      "record_payload_sha256": "09c95db82fab341bb4a123f064b93575a2e942dd77d17bda24191445fc83372a",
+      "source_index": 94,
+      "source_key": [
+        94
+      ],
+      "source_offset_bytes": 2657636788,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000094.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "88ce8280edd784f44378aa6590fa08e363602aaf7a776fec9ded92d97656aa31"
+    },
+    {
+      "id": "valid:000095",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000095.npy",
+        "sha256": "a32520e9f80c2e38f01bf3c0ec964e0045e6c49c762bdba590cc8b7f96c5b70b",
+        "shape": [
+          10438
+        ],
+        "size_bytes": 83632
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000095.npy",
+        "sha256": "3341058620392a9011cce8609d66cf25100f38787774dc7a6bf4e85033783f77",
+        "shape": [
+          301,
+          10438,
+          3
+        ],
+        "size_bytes": 37702184
+      },
+      "record_payload_bytes": 37792276,
+      "record_payload_sha256": "45f5c9d85f7e9f07a1a0bb424dd6e4a635917310ba13f2551fc6c1487f947d50",
+      "source_index": 95,
+      "source_key": [
+        95
+      ],
+      "source_offset_bytes": 2697829140,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000095.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "b511215bccf7146aed70f8b630cb4cb22f33e62bdccb899a7bc53c922ec54963"
+    },
+    {
+      "id": "valid:000096",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000096.npy",
+        "sha256": "cfb6527ff059f60dd9a2fa54781a08f7105dd72953bf05971fd2545e1af22e36",
+        "shape": [
+          7563
+        ],
+        "size_bytes": 60632
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000096.npy",
+        "sha256": "4faf75049c9b034d7ec8f39a9992fef380bb45c5ec08ce6a892479bf20dcd037",
+        "shape": [
+          301,
+          7563,
+          3
+        ],
+        "size_bytes": 27317684
+      },
+      "record_payload_bytes": 27384776,
+      "record_payload_sha256": "0a2ba1695d02759e26fc1992a6046abd27ffef401c9fe4caf08c244e1e726be3",
+      "source_index": 96,
+      "source_key": [
+        96
+      ],
+      "source_offset_bytes": 2735621432,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000096.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "57c992a9fb2059f6cdf52d3fca5ea74cc6308955ad05f0fea9a087e5fffb8851"
+    },
+    {
+      "id": "valid:000097",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000097.npy",
+        "sha256": "195e4bcf0235fe2b519db70e8e1108dec67a3f175d3366b9ae649b0488897491",
+        "shape": [
+          10022
+        ],
+        "size_bytes": 80304
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000097.npy",
+        "sha256": "416479b3e3d0ff64655285771e9b5cea39f4cc05242566a343240cf46f92046f",
+        "shape": [
+          301,
+          10022,
+          3
+        ],
+        "size_bytes": 36199592
+      },
+      "record_payload_bytes": 36286356,
+      "record_payload_sha256": "79ffa3183b5083788fc11b4c6e39b4fcf75ac0ff9f7c8a512b8b763db9122312",
+      "source_index": 97,
+      "source_key": [
+        97
+      ],
+      "source_offset_bytes": 2763006224,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000097.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "2a0feac5145be57ce184f657eb64b751ed2817813747f1a58423deec3ce27fcb"
+    },
+    {
+      "id": "valid:000098",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000098.npy",
+        "sha256": "381817db127e85cd816fb6333b1eb6917337e7f33e7f249f002323bc6d195b9e",
+        "shape": [
+          7500
+        ],
+        "size_bytes": 60128
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000098.npy",
+        "sha256": "93fa3ed3495d9aa0c876e0b63621af86ab1cdc8d298ae201935b4fca7a56c2c1",
+        "shape": [
+          301,
+          7500,
+          3
+        ],
+        "size_bytes": 27090128
+      },
+      "record_payload_bytes": 27156716,
+      "record_payload_sha256": "e26805c8566ebaa446daf45fb77ca14e8710cb14da4370c20575115e124dabf9",
+      "source_index": 98,
+      "source_key": [
+        98
+      ],
+      "source_offset_bytes": 2799292596,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000098.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "c6991fdad40f879f377e2ec921bfafa242c0c8a9a205855ebfb9e03aa5791e0f"
+    },
+    {
+      "id": "valid:000099",
+      "particle_types": {
+        "dtype": "<i8",
+        "path": "valid/type_000099.npy",
+        "sha256": "77c4b54f6abbfc5e9fb9798efe9794390e8b430de459d9f4b3fdc9372482c667",
+        "shape": [
+          8544
+        ],
+        "size_bytes": 68480
+      },
+      "positions": {
+        "dtype": "<f4",
+        "path": "valid/position_000099.npy",
+        "sha256": "ea04331b23f05ea24ff701f11c61644c95979fcf6b4c4cb5cc92eab27a24157c",
+        "shape": [
+          301,
+          8544,
+          3
+        ],
+        "size_bytes": 30861056
+      },
+      "record_payload_bytes": 30935996,
+      "record_payload_sha256": "7c2c9dca9c1338a0a4b6bfde9393b1e97c7134f08bec8ca65ffd5bf14c096a1e",
+      "source_index": 99,
+      "source_key": [
+        99
+      ],
+      "source_offset_bytes": 2826449328,
+      "step_context": {
+        "dtype": "<f4",
+        "path": "valid/step_context_000099.npy",
+        "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+        "shape": [
+          301,
+          1
+        ],
+        "size_bytes": 1332,
+        "use": "Preserved source auxiliary data; semantics unreviewed and model admission required"
+      },
+      "trajectory_content_sha256": "c2203ec157bdd8404035950a4fe35cf55bb98ecf4c5f7c8fd431ed4e2d18088a"
+    }
+  ],
+  "source": {
+    "CRC_verified": true,
+    "acquisition_report_sha256": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d",
+    "crc32c_base64": "rw9odw==",
+    "dataset": "Goop-3D",
+    "family": "official_gns_tfrecord",
+    "file": "valid.tfrecord",
+    "generation": "1599154482348408",
+    "record_count": 100,
+    "sha256": "5242810fa2057fbcf8e2d4da203823855f6b71e77dcfa848a618fb6871f6778b",
+    "size_bytes": 2857385340
+  },
+  "split": "valid",
+  "version": 1
+}

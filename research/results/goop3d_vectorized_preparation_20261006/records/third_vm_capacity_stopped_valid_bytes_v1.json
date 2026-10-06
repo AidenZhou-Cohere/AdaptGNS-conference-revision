@@ -1,0 +1,2124 @@
+{
+  "schema": "goop3d_capacity_stopped_valid_bytes_v1",
+  "utc": "2026-10-06T05:34:23.557110+00:00",
+  "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "gpu_apps": "",
+  "matching_processes": [],
+  "known_capacity_pids": [
+    1962,
+    1963,
+    1966,
+    1967,
+    1968,
+    1969,
+    3826,
+    3827
+  ],
+  "capacity_summary_sha256": "39f048a7257428b0ffe342e52ed2f956e90cd5dec4463835b40a9d75855a47e1",
+  "valid_manifest_sha256": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+  "checked_array_bytes": [
+    {
+      "id": "valid:000000",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000000.npy",
+      "sha256": "7d5bfb70a2b3fa39fcb1ca63d27b1576f789b0f407a585954a22d87a3747aaea",
+      "size_bytes": 30846608
+    },
+    {
+      "id": "valid:000000",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000000.npy",
+      "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+      "size_bytes": 68448
+    },
+    {
+      "id": "valid:000000",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000000.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000001",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000001.npy",
+      "sha256": "5ea410b7a35b82c5e0ec04d66b090348cbd766a673eb6b83dabca69f74b42abf",
+      "size_bytes": 16763420
+    },
+    {
+      "id": "valid:000001",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000001.npy",
+      "sha256": "316fcfe8f16691a483cde9564f412e616e54805ff4eb52f435588b053a49380c",
+      "size_bytes": 37256
+    },
+    {
+      "id": "valid:000001",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000001.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000002",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000002.npy",
+      "sha256": "a2c7e2caa2935c84620634e6566f6dd440bddd7fba344210ccdd347856cefe00",
+      "size_bytes": 14989928
+    },
+    {
+      "id": "valid:000002",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000002.npy",
+      "sha256": "a8718f430f72ded43cf4dd23bf6074e339a9139d172644801283c5f9b0495a92",
+      "size_bytes": 33328
+    },
+    {
+      "id": "valid:000002",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000002.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000003",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000003.npy",
+      "sha256": "d514fc10dc1db3fb6672599fd547b3a67a62a3041536369feb601ed130bcedc7",
+      "size_bytes": 25071020
+    },
+    {
+      "id": "valid:000003",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000003.npy",
+      "sha256": "1919e070001a3c26a752d7e1e3166b180f115e14c9392eaaf5f70c32bb28f226",
+      "size_bytes": 55656
+    },
+    {
+      "id": "valid:000003",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000003.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000004",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000004.npy",
+      "sha256": "b3a8534119d5db8875c2c0f70eebb4b0c582cdad64a2111360edd088ea5b3abd",
+      "size_bytes": 15398084
+    },
+    {
+      "id": "valid:000004",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000004.npy",
+      "sha256": "1c88f792d23c2ea63d269a04115523eac667ad6ad0fbcb901c80b4c3c0542797",
+      "size_bytes": 34232
+    },
+    {
+      "id": "valid:000004",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000004.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000005",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000005.npy",
+      "sha256": "1266307c08b4ab497e430e61fe9146587cc4956de5c28dfe122e151dec56b3c9",
+      "size_bytes": 34212992
+    },
+    {
+      "id": "valid:000005",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000005.npy",
+      "sha256": "b870cb18ec1e4cb6e8b9e1e962191f8502ad6dacce1ac9348fec0c9c1bdc558c",
+      "size_bytes": 75904
+    },
+    {
+      "id": "valid:000005",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000005.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000006",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000006.npy",
+      "sha256": "0371e5bc7fe15412ae673d442c937d3f68c576a7add217081644c1f22693b194",
+      "size_bytes": 28209848
+    },
+    {
+      "id": "valid:000006",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000006.npy",
+      "sha256": "8969cfb43803b1e4dd845690b864b3afef46975fc83debb99a2d1fb78120fab7",
+      "size_bytes": 62608
+    },
+    {
+      "id": "valid:000006",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000006.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000007",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000007.npy",
+      "sha256": "6d261bfbc557486b3c7d4499630db364f2a3103cd96b1b3593011fee8a997381",
+      "size_bytes": 43578908
+    },
+    {
+      "id": "valid:000007",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000007.npy",
+      "sha256": "53d0d0a02a59f7458988c16b651368d7097fd13579cba270cc9228e06c297029",
+      "size_bytes": 96648
+    },
+    {
+      "id": "valid:000007",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000007.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000008",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000008.npy",
+      "sha256": "8170feba90795eea2698fbf787b2bd19a06c6767b1f8314440c6d58204aef738",
+      "size_bytes": 14787656
+    },
+    {
+      "id": "valid:000008",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000008.npy",
+      "sha256": "51dd00dfce6b409772f987d2351142982403399e06dbfcf7832991be6c1fd854",
+      "size_bytes": 32880
+    },
+    {
+      "id": "valid:000008",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000008.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000009",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000009.npy",
+      "sha256": "51d1290bbe3e6240e1de0b10b1555f41353a80b7093a976f38815c2ff83a03e2",
+      "size_bytes": 13404260
+    },
+    {
+      "id": "valid:000009",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000009.npy",
+      "sha256": "30ad0ce0aed393f3f902e299aba1d4e9a89d878ef390ab0d0b101ae337fcdf4b",
+      "size_bytes": 29816
+    },
+    {
+      "id": "valid:000009",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000009.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000010",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000010.npy",
+      "sha256": "544b2b5597009258de75d3730a8eabf4512af2ccba9661903808a3196ddc00db",
+      "size_bytes": 37767200
+    },
+    {
+      "id": "valid:000010",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000010.npy",
+      "sha256": "fae8f4a957ada2ce0dc7557ce0aa2ea39c647457a99204d882ccd28d3f84dcf1",
+      "size_bytes": 83776
+    },
+    {
+      "id": "valid:000010",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000010.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000011",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000011.npy",
+      "sha256": "b54f42995aa6f1d1e0f1b7a4a6ec28f9f1ebd2b6a685780101e11ee6447f9008",
+      "size_bytes": 29838860
+    },
+    {
+      "id": "valid:000011",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000011.npy",
+      "sha256": "146c618bea228aadb0b872718b379d74be02dfe0105f778423b810220a85ae62",
+      "size_bytes": 66216
+    },
+    {
+      "id": "valid:000011",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000011.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000012",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000012.npy",
+      "sha256": "4012bc22c84fb6b5c5e0a74e7d691afed2fb34ff22b902e5b38a725772016752",
+      "size_bytes": 13599308
+    },
+    {
+      "id": "valid:000012",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000012.npy",
+      "sha256": "fdfc28b5ba8813447eb00a89f669786a593b56225a8756031046bc291061fa3d",
+      "size_bytes": 30248
+    },
+    {
+      "id": "valid:000012",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000012.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000013",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000013.npy",
+      "sha256": "b059db7f9046e21d9f37cdf6f43f4c023ccfc9bb3a2ebbfb62e5bab78137489b",
+      "size_bytes": 17507492
+    },
+    {
+      "id": "valid:000013",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000013.npy",
+      "sha256": "a58a78526f8a041948649714c5fdd62bac1f25a479b5121c097b15d4d9b772a2",
+      "size_bytes": 38904
+    },
+    {
+      "id": "valid:000013",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000013.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000014",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000014.npy",
+      "sha256": "c6f08da7fed1acd7e5051c613752bde0cfef887ad912938556569e18203ca5ee",
+      "size_bytes": 29737724
+    },
+    {
+      "id": "valid:000014",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000014.npy",
+      "sha256": "6840e740e8f13293136e91a6baa051d60e4e7fcdcde539e276da730dee381e8e",
+      "size_bytes": 65992
+    },
+    {
+      "id": "valid:000014",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000014.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000015",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000015.npy",
+      "sha256": "5d98481303a9f3e08274f6d7129fa05fe769ffe797d7a15f2d6d1115248fb94f",
+      "size_bytes": 33533936
+    },
+    {
+      "id": "valid:000015",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000015.npy",
+      "sha256": "fb647b47ffec2df4048a2fa20de6a6930ac997786ceada2d95a777929b84b54c",
+      "size_bytes": 74400
+    },
+    {
+      "id": "valid:000015",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000015.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000016",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000016.npy",
+      "sha256": "1ecdbfe4a335ae975fc36fafedec8c63907419e53dc99a2c6ac5120c12743ae4",
+      "size_bytes": 31569008
+    },
+    {
+      "id": "valid:000016",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000016.npy",
+      "sha256": "7f3c490eba7dbe87844d3dd2c4da1eb5b0637e8604af907309d39efae775273a",
+      "size_bytes": 70048
+    },
+    {
+      "id": "valid:000016",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000016.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000017",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000017.npy",
+      "sha256": "5d4f317cdefa9406b388c8e053f0c90a4848f0c96fbf17d16b97f97af9372bc7",
+      "size_bytes": 37792484
+    },
+    {
+      "id": "valid:000017",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000017.npy",
+      "sha256": "1d18cc1748b2bf63984b257690f98c3f2e09c95b156e2a53fc088a52166ab349",
+      "size_bytes": 83832
+    },
+    {
+      "id": "valid:000017",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000017.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000018",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000018.npy",
+      "sha256": "cb9c9272b4d3d2e79fdb6207cec736e819d4ddad2a2d6d044bdc471d06470688",
+      "size_bytes": 17467760
+    },
+    {
+      "id": "valid:000018",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000018.npy",
+      "sha256": "0a7c9080ed0b3428c1aad1e70a3448c283fb1b81cb7ca0b3e90f04f6dab4b7f2",
+      "size_bytes": 38816
+    },
+    {
+      "id": "valid:000018",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000018.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000019",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000019.npy",
+      "sha256": "f2877b462427c3cfed53b0f1a8620e9d8b1806b81f3ff3674d4bda295ba745a7",
+      "size_bytes": 41039672
+    },
+    {
+      "id": "valid:000019",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000019.npy",
+      "sha256": "c48182c9043ebbe74cb73a410781d1e9bd53faf23e661916f1107963d266739d",
+      "size_bytes": 91024
+    },
+    {
+      "id": "valid:000019",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000019.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000020",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000020.npy",
+      "sha256": "1084289db888d007566be424aef6ce43279267b9e0e41b271cb5f59808278259",
+      "size_bytes": 39370928
+    },
+    {
+      "id": "valid:000020",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000020.npy",
+      "sha256": "8176e96be81f551f688a259b2a13e9d8c5a40e872d83290487968664e70adf7b",
+      "size_bytes": 87328
+    },
+    {
+      "id": "valid:000020",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000020.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000021",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000021.npy",
+      "sha256": "828917d35f0997b8f60bde82dddf6f52d36993f3b7fcad10c8ae75186238a449",
+      "size_bytes": 47790500
+    },
+    {
+      "id": "valid:000021",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000021.npy",
+      "sha256": "515eeb67bc48d8457fac6395757703bcb46a59b449e148c5733bf78ed3bfa392",
+      "size_bytes": 105976
+    },
+    {
+      "id": "valid:000021",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000021.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000022",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000022.npy",
+      "sha256": "2518873f9e782f983e9ea0d15923f7f1c8b99da5e98ef4c6f254123cc81b8636",
+      "size_bytes": 29921936
+    },
+    {
+      "id": "valid:000022",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000022.npy",
+      "sha256": "9d4c3d49f78116fde23a80cae8c90bb6f32447708f5437064ac0951c53ddc9c4",
+      "size_bytes": 66400
+    },
+    {
+      "id": "valid:000022",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000022.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000023",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000023.npy",
+      "sha256": "ca0f60f48ab5b3e60b0a13b2405d704cb8189bd8db3073b0c9336c91c84092b6",
+      "size_bytes": 11771636
+    },
+    {
+      "id": "valid:000023",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000023.npy",
+      "sha256": "e9ab34abb3e1b27bf2eb956b635ddb5a2584bd2ca3ba2cfe699f5077631f8db2",
+      "size_bytes": 26200
+    },
+    {
+      "id": "valid:000023",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000023.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000024",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000024.npy",
+      "sha256": "6ecaa351fb713a296109ab797e4ac330ab6d340fc890028ba4e9e259c3b3664a",
+      "size_bytes": 48418988
+    },
+    {
+      "id": "valid:000024",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000024.npy",
+      "sha256": "f036c4727b82b0345a798407f6b108b833136e5ec1a4ca49906a0e8ca8236ddf",
+      "size_bytes": 107368
+    },
+    {
+      "id": "valid:000024",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000024.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000025",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000025.npy",
+      "sha256": "1c8c10c9a20ff8a55641b36094330914b8db500356594154ba7fc38cb5e8a3ce",
+      "size_bytes": 24034376
+    },
+    {
+      "id": "valid:000025",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000025.npy",
+      "sha256": "d0073d2744940e3b1057d0ad232e192d6263382d88618aed301c83f48b4fa504",
+      "size_bytes": 53360
+    },
+    {
+      "id": "valid:000025",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000025.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000026",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000026.npy",
+      "sha256": "5b1cd3a18c4597e0962b835532e0c0b25303fc5a18e84eba985f279950a2a287",
+      "size_bytes": 26049872
+    },
+    {
+      "id": "valid:000026",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000026.npy",
+      "sha256": "43f7b03c9daae2b09195799c09d4b8ea06f870d14688dc795037d1c998fec557",
+      "size_bytes": 57824
+    },
+    {
+      "id": "valid:000026",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000026.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000027",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000027.npy",
+      "sha256": "18c1aa9b1cb26d9cd7b1160785d9809436d43313f5bcb2b89a6f4ac531eaac74",
+      "size_bytes": 27173204
+    },
+    {
+      "id": "valid:000027",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000027.npy",
+      "sha256": "a4195a03a59fc6a5d0e546fe29b5faf029d7fb9140adcd159fd2785caf367487",
+      "size_bytes": 60312
+    },
+    {
+      "id": "valid:000027",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000027.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000028",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000028.npy",
+      "sha256": "161dca4d38c3d8f589103a583b0ccba7a8d58668777cfefaa5d86358f01e055b",
+      "size_bytes": 32009672
+    },
+    {
+      "id": "valid:000028",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000028.npy",
+      "sha256": "c3d83fb142433ff2095b549adc5410b20f730c007bf1967dd53c21ee6a4c0c05",
+      "size_bytes": 71024
+    },
+    {
+      "id": "valid:000028",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000028.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000029",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000029.npy",
+      "sha256": "567d62a97fb6288d080b27f436d3817c42aea3a26389b3ffed0769d0a28ba884",
+      "size_bytes": 23828492
+    },
+    {
+      "id": "valid:000029",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000029.npy",
+      "sha256": "7a0e558fec316197755c84c84f3c4f8470e3ce0c46b2246b6fe30a159a66d907",
+      "size_bytes": 52904
+    },
+    {
+      "id": "valid:000029",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000029.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000030",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000030.npy",
+      "sha256": "9147376b15c74fae3fce5c488e8239f23708c3a1877221831b68d5dbc963d50e",
+      "size_bytes": 30846608
+    },
+    {
+      "id": "valid:000030",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000030.npy",
+      "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+      "size_bytes": 68448
+    },
+    {
+      "id": "valid:000030",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000030.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000031",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000031.npy",
+      "sha256": "24f3e38046c776b14dfba16f2bfef6d4a8682a0f4e189476be8b0d987a28d140",
+      "size_bytes": 11659664
+    },
+    {
+      "id": "valid:000031",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000031.npy",
+      "sha256": "c76faa7653e0f2b7a53c5b6c0c3b2fe8795acd1b3d0c12aac2ed64af445e876b",
+      "size_bytes": 25952
+    },
+    {
+      "id": "valid:000031",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000031.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000032",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000032.npy",
+      "sha256": "567507ed39df2c45541e82eb6de723035f59bdf8a1d41fcc28331089d2b7f390",
+      "size_bytes": 24063272
+    },
+    {
+      "id": "valid:000032",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000032.npy",
+      "sha256": "f5e0204627d8b251b81c91648033f01b69777dd2b5df641c979828e7074f6d9e",
+      "size_bytes": 53424
+    },
+    {
+      "id": "valid:000032",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000032.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000033",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000033.npy",
+      "sha256": "5aa0998b45e7e38a776730f833a9ac436ddea650a5faaec0574ec3f27fedf030",
+      "size_bytes": 28072592
+    },
+    {
+      "id": "valid:000033",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000033.npy",
+      "sha256": "4f7332b1e9561e946c1b76ac665d2a7e1b6c430e3d17178309a19b8077c5027d",
+      "size_bytes": 62304
+    },
+    {
+      "id": "valid:000033",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000033.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000034",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000034.npy",
+      "sha256": "d2b62402f1292e14eaeace58779db026d1c2cb44166f70b791c192221c8d42a7",
+      "size_bytes": 19338776
+    },
+    {
+      "id": "valid:000034",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000034.npy",
+      "sha256": "9d77c1ba121c64b9ac6ee6f1244914290b655cba754f69d0f5a7c8f410ce0e36",
+      "size_bytes": 42960
+    },
+    {
+      "id": "valid:000034",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000034.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000035",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000035.npy",
+      "sha256": "a333462bf80660924c54c2541ebe61129482876990f546b2ee4fc3dab93398d7",
+      "size_bytes": 41874044
+    },
+    {
+      "id": "valid:000035",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000035.npy",
+      "sha256": "d718455e0c715d0af336655c754496e30f9078451f11e814421e98f556b25aa9",
+      "size_bytes": 92872
+    },
+    {
+      "id": "valid:000035",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000035.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000036",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000036.npy",
+      "sha256": "6b003ea0ca0d6290980788b40c7aa1ee850e6a4ad5c551561ae7b2999158c29f",
+      "size_bytes": 26374952
+    },
+    {
+      "id": "valid:000036",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000036.npy",
+      "sha256": "5001b991ecba8a538083e56c479ef8949f0a0ab091db4f210577d6a45dee99be",
+      "size_bytes": 58544
+    },
+    {
+      "id": "valid:000036",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000036.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000037",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000037.npy",
+      "sha256": "c4c8243ce027de692996d5bc7b957ee9066487933a94bde3d12317d6692de434",
+      "size_bytes": 9347984
+    },
+    {
+      "id": "valid:000037",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000037.npy",
+      "sha256": "b0ecc13156284618b34c3e844bf7f6f8d358530ae7ccdf5c26a6b6ac62fb1ae3",
+      "size_bytes": 20832
+    },
+    {
+      "id": "valid:000037",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000037.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000038",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000038.npy",
+      "sha256": "4438a34285c0559b5f1d619ab08762869899c8a0095eca86ed921a34a23592ca",
+      "size_bytes": 38962772
+    },
+    {
+      "id": "valid:000038",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000038.npy",
+      "sha256": "3074320600c6aa50dd3fd499350789a86e0314aa8060121adc83658bf20d299e",
+      "size_bytes": 86424
+    },
+    {
+      "id": "valid:000038",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000038.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000039",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000039.npy",
+      "sha256": "b84678fb7935b732a68e665f4ffa677845eeaa41d0fb5a364060d0a24ed96780",
+      "size_bytes": 14159168
+    },
+    {
+      "id": "valid:000039",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000039.npy",
+      "sha256": "141296e2b4e6d29c5bafbfa9fafb7059f3e7a30288b3020e5d7d52e3be78aa29",
+      "size_bytes": 31488
+    },
+    {
+      "id": "valid:000039",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000039.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000040",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000040.npy",
+      "sha256": "e07f83040cf0eea432d7a74fbce3aa9b51185ae9abbb3cf5b6430099cc88b4e4",
+      "size_bytes": 12696308
+    },
+    {
+      "id": "valid:000040",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000040.npy",
+      "sha256": "411b042385a712d6b522babe4ea55821c23ba0204bfd3c59a2c5bc7eb29afffa",
+      "size_bytes": 28248
+    },
+    {
+      "id": "valid:000040",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000040.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000041",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000041.npy",
+      "sha256": "b0ca214cda61e6d1673dd9c1a50958a96dd1c2733694b16af7916344ed781ad7",
+      "size_bytes": 32688728
+    },
+    {
+      "id": "valid:000041",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000041.npy",
+      "sha256": "c2da2cc64d57d2f1ac15d7caf134de8febfafda09d6260086613cec66ddb66f6",
+      "size_bytes": 72528
+    },
+    {
+      "id": "valid:000041",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000041.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000042",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000042.npy",
+      "sha256": "fe03ac40a6d2094deda71de9d6d16c3c4292e35fe6af29f5d5e49499734f2572",
+      "size_bytes": 38319836
+    },
+    {
+      "id": "valid:000042",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000042.npy",
+      "sha256": "a815088bb554cc050987eee5d8de9a7d19cdfb17b47cc574e80c48b2717f848d",
+      "size_bytes": 85000
+    },
+    {
+      "id": "valid:000042",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000042.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000043",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000043.npy",
+      "sha256": "f50e9809e0d3c0a82ec94c6a22f86a1f28ff2a92a1fd301e8e9fc83874400144",
+      "size_bytes": 35845616
+    },
+    {
+      "id": "valid:000043",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000043.npy",
+      "sha256": "a256d6b715cb0220c552fc1067c38a13f13c790d8a3f575f6c5ce8c26bc61604",
+      "size_bytes": 79520
+    },
+    {
+      "id": "valid:000043",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000043.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000044",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000044.npy",
+      "sha256": "c1fffd3c3a36f0cc7c133e8c82739575466148fcc8e07739bdec3f90e5d983e3",
+      "size_bytes": 18009560
+    },
+    {
+      "id": "valid:000044",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000044.npy",
+      "sha256": "844db1a90c997615f166fe7faffd6be2b2967b8a35b622765ebaa90e22cbee7c",
+      "size_bytes": 40016
+    },
+    {
+      "id": "valid:000044",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000044.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000045",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000045.npy",
+      "sha256": "bf7c54afec4cab6b0475da9a34a06739ce07a940ac4ed2e63521a4094f404d92",
+      "size_bytes": 47216192
+    },
+    {
+      "id": "valid:000045",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000045.npy",
+      "sha256": "aaa3c5d833322a4d875d276aee7dc0d97c7998ada59c1167a84123b1704f698f",
+      "size_bytes": 104704
+    },
+    {
+      "id": "valid:000045",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000045.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000046",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000046.npy",
+      "sha256": "80cd8afc20c33e652935c1c3bf00be5f0d9c4ec5594b30556885609fd7f4dbcd",
+      "size_bytes": 35173784
+    },
+    {
+      "id": "valid:000046",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000046.npy",
+      "sha256": "667eecfbaee627d3e4ec2aed7360fbc0ab265706a26a95ef5b22c776f87fa472",
+      "size_bytes": 78032
+    },
+    {
+      "id": "valid:000046",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000046.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000047",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000047.npy",
+      "sha256": "4937d926b06bd020de2814b9c8c7b52a4981e9f31319879842771c50382133e3",
+      "size_bytes": 18175712
+    },
+    {
+      "id": "valid:000047",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000047.npy",
+      "sha256": "cdf3a82a7af3fb97f96c524b8b6f7baebf97576ecb201a5da4e71753be060850",
+      "size_bytes": 40384
+    },
+    {
+      "id": "valid:000047",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000047.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000048",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000048.npy",
+      "sha256": "426a6de11be095106404f61416a5c0750c62e494800142edd1f9a60fe8b9d9b6",
+      "size_bytes": 45189860
+    },
+    {
+      "id": "valid:000048",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000048.npy",
+      "sha256": "5f119d963e3796720201b130f270be467d1d986a956bd619a9c01f86eb59aa32",
+      "size_bytes": 100216
+    },
+    {
+      "id": "valid:000048",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000048.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000049",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000049.npy",
+      "sha256": "d6011bc4db2c70391db66539b88e0d3a1504107ff096e40f72d80e6f5b427fe0",
+      "size_bytes": 25208276
+    },
+    {
+      "id": "valid:000049",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000049.npy",
+      "sha256": "76291be671357288d8ac933cc4f19af6c37cc0fc5d30e34e57918c3a912f230e",
+      "size_bytes": 55960
+    },
+    {
+      "id": "valid:000049",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000049.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000050",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000050.npy",
+      "sha256": "98f7b6743c9063a2b3e9402411ce4e543a99e9d1309eb0a47d7cc7a744bd0e9e",
+      "size_bytes": 28282088
+    },
+    {
+      "id": "valid:000050",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000050.npy",
+      "sha256": "edb524c17d00a208b73bbd7a76acd6f7b70c6472ce2af06b477153331b4796fe",
+      "size_bytes": 62768
+    },
+    {
+      "id": "valid:000050",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000050.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000051",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000051.npy",
+      "sha256": "1f87d6e816bf481d51e724d00382973ea550cb955dacf05f1f767223035001c5",
+      "size_bytes": 45868916
+    },
+    {
+      "id": "valid:000051",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000051.npy",
+      "sha256": "a66b5c9a10f3fda2c3cab91cc184797ef1395de88c77379d1175a7a29e2836ab",
+      "size_bytes": 101720
+    },
+    {
+      "id": "valid:000051",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000051.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000052",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000052.npy",
+      "sha256": "1a75aefd2d77c1dda4bed2391e015494a23a244b6629d81ce68ba82ee839ce00",
+      "size_bytes": 31876028
+    },
+    {
+      "id": "valid:000052",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000052.npy",
+      "sha256": "2c9ca464be7ad2c486180cbbaabbb20eeb205aad18a72f74a18a6d208e141dfe",
+      "size_bytes": 70728
+    },
+    {
+      "id": "valid:000052",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000052.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000053",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000053.npy",
+      "sha256": "b2ce41f71966763538a4f742cac4c01b3c4c21d9427eec7ebbd958bed8b9587b",
+      "size_bytes": 44091812
+    },
+    {
+      "id": "valid:000053",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000053.npy",
+      "sha256": "19b0cfc12cf371c4ef00b489292667c996122c0ba4a1830e65d7a67762b86fcd",
+      "size_bytes": 97784
+    },
+    {
+      "id": "valid:000053",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000053.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000054",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000054.npy",
+      "sha256": "98a52ea97e7fe50cd01be65a457d8b74f10a7d6dc48ffc9cd49fcdb56d5208de",
+      "size_bytes": 13274228
+    },
+    {
+      "id": "valid:000054",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000054.npy",
+      "sha256": "5e8e7f11ec80b42e6d6ca312b0292e1467a8dfd2e981f3115ceb4fed9fbbde5a",
+      "size_bytes": 29528
+    },
+    {
+      "id": "valid:000054",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000054.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000055",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000055.npy",
+      "sha256": "da9d2f9f2539dc94f1836629004b6796787a231e98ac76a6762da99d5a36d71e",
+      "size_bytes": 12858848
+    },
+    {
+      "id": "valid:000055",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000055.npy",
+      "sha256": "813bdd981520a443a11d1f777c3568cb60292c497871365ac85bfe105e5b4bd9",
+      "size_bytes": 28608
+    },
+    {
+      "id": "valid:000055",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000055.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000056",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000056.npy",
+      "sha256": "344c910bac1fd6c2874d71648953c55a456beae4c25cf3cfd41b84ec45f10dcc",
+      "size_bytes": 36770288
+    },
+    {
+      "id": "valid:000056",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000056.npy",
+      "sha256": "83714ffd838b0e854ed26ab37ac8d29388c9a57825616d90bb862d3c07576294",
+      "size_bytes": 81568
+    },
+    {
+      "id": "valid:000056",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000056.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000057",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000057.npy",
+      "sha256": "ae972f409e8f2832be64377c0c75dc8caf8d46d0fed331f75f8ae082990c57df",
+      "size_bytes": 21339824
+    },
+    {
+      "id": "valid:000057",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000057.npy",
+      "sha256": "51429485532620b6816a65f5584d9fd20cad5036b12f9778e1aeebfbd7094121",
+      "size_bytes": 47392
+    },
+    {
+      "id": "valid:000057",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000057.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000058",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000058.npy",
+      "sha256": "137f18434b8bc733bc7ee1a1a545511b2a003bbef3c7007920d2c107052272c4",
+      "size_bytes": 15253604
+    },
+    {
+      "id": "valid:000058",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000058.npy",
+      "sha256": "93cc8a21bd739df34cff0b3bec8158eaecc1e750578c37aacf78a3af9b9fe017",
+      "size_bytes": 33912
+    },
+    {
+      "id": "valid:000058",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000058.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000059",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000059.npy",
+      "sha256": "e00bbca95364f2dcc90e279ad37d0ec75e071f6c73c649e5912bc28e2aba8dfd",
+      "size_bytes": 16850108
+    },
+    {
+      "id": "valid:000059",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000059.npy",
+      "sha256": "e7c473c943e76bc6a6fde35f931ef1e6c9103a24b9e5ead9767f7814f4d6ece0",
+      "size_bytes": 37448
+    },
+    {
+      "id": "valid:000059",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000059.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000060",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000060.npy",
+      "sha256": "1e1dd8dbc43f650789f7aeb10ccb5e0616240ba0a89cfea58107884192912e24",
+      "size_bytes": 32399768
+    },
+    {
+      "id": "valid:000060",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000060.npy",
+      "sha256": "8c634a70f6be14a9713919fbd170546e8b9257a8d234f0c4c6030ddc7d7c9d45",
+      "size_bytes": 71888
+    },
+    {
+      "id": "valid:000060",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000060.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000061",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000061.npy",
+      "sha256": "a561f046ab27065d8f365e799846bd2e3f1b10b0a6221b88f620cf5c83ce45d8",
+      "size_bytes": 11341808
+    },
+    {
+      "id": "valid:000061",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000061.npy",
+      "sha256": "9b3832c473fb07c18b0df96c8bc1266105fc6ef82f6123d6515a632e6c7028f3",
+      "size_bytes": 25248
+    },
+    {
+      "id": "valid:000061",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000061.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000062",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000062.npy",
+      "sha256": "67dc912646342882c40713ef2ab7c6d45d88c3f996073f693b1c576909103720",
+      "size_bytes": 11926952
+    },
+    {
+      "id": "valid:000062",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000062.npy",
+      "sha256": "e672bd35e020dffc8b67de09ffca7e9fa37205ffa2bedf457ecb55f0eb8ed079",
+      "size_bytes": 26544
+    },
+    {
+      "id": "valid:000062",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000062.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000063",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000063.npy",
+      "sha256": "7d05b6474d67c58b6f8221cad58ebfe690cdc6153a1074aadbfe1b3c1791ffb3",
+      "size_bytes": 36708884
+    },
+    {
+      "id": "valid:000063",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000063.npy",
+      "sha256": "d25af5521204aaf68b713fa27e720c9fb4f4af36e195604552c8e27b8fea183f",
+      "size_bytes": 81432
+    },
+    {
+      "id": "valid:000063",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000063.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000064",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000064.npy",
+      "sha256": "b5e63015195eaaa2361e8e0d2cdafb461d67cd03c34d09d91f7fb755c2d47e32",
+      "size_bytes": 25298576
+    },
+    {
+      "id": "valid:000064",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000064.npy",
+      "sha256": "54d2418383cf13468ca7ed6c57c3092e5b40e0848d7a61d0b34af4f00540ed91",
+      "size_bytes": 56160
+    },
+    {
+      "id": "valid:000064",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000064.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000065",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000065.npy",
+      "sha256": "90bcbf5af505587c2cbca90f535de8758f7616e8a57171f5c30647cb58b0f6dc",
+      "size_bytes": 18504404
+    },
+    {
+      "id": "valid:000065",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000065.npy",
+      "sha256": "43a72fcc2418cc24ddc9eb1f6af456afe0eda26ebaf407005c35c6268e720c70",
+      "size_bytes": 41112
+    },
+    {
+      "id": "valid:000065",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000065.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000066",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000066.npy",
+      "sha256": "6fa4015b54babc516d17cdffc882427fa5c32fe7e15ff6683c6f9f7d315c5445",
+      "size_bytes": 14180840
+    },
+    {
+      "id": "valid:000066",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000066.npy",
+      "sha256": "45ec91263d40b1c6f3d218473107bdd9c599e98e158122fc84112f2aa51d3cd7",
+      "size_bytes": 31536
+    },
+    {
+      "id": "valid:000066",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000066.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000067",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000067.npy",
+      "sha256": "aaa39ad48b117cca7b28e6a4a6cd1bcba0e5197fffa1c3dc13a78962168e8fea",
+      "size_bytes": 16514192
+    },
+    {
+      "id": "valid:000067",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000067.npy",
+      "sha256": "26e8776ecba550064f40ca3272bee2f369b53cb1cd2e93f8c27b3942858eedcd",
+      "size_bytes": 36704
+    },
+    {
+      "id": "valid:000067",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000067.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000068",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000068.npy",
+      "sha256": "be8704c2217c697efaff9e635a497866e1ce524181556df97ac6c0c148e97711",
+      "size_bytes": 40219748
+    },
+    {
+      "id": "valid:000068",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000068.npy",
+      "sha256": "f1f2caae729b90fb4e2ff578e3c9d07a59d49c159201d958e4ab9e5ea6fa26bd",
+      "size_bytes": 89208
+    },
+    {
+      "id": "valid:000068",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000068.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000069",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000069.npy",
+      "sha256": "5948e0c43fd71109422531e704ca7c15be38eaa3891411273fa12fdf1b268d47",
+      "size_bytes": 30102536
+    },
+    {
+      "id": "valid:000069",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000069.npy",
+      "sha256": "9df8321592777784d370905161539abdb0e8c5fdbb31de1e11b192c5a86a7dbd",
+      "size_bytes": 66800
+    },
+    {
+      "id": "valid:000069",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000069.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000070",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000070.npy",
+      "sha256": "24231fa94867d17656315700c102a8767582fc518ee44b9aa3879540b52f68ed",
+      "size_bytes": 28050920
+    },
+    {
+      "id": "valid:000070",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000070.npy",
+      "sha256": "d35665b119f3e18934af189e277b2b6cca6397081da7cfe02d6c16e9f3edf864",
+      "size_bytes": 62256
+    },
+    {
+      "id": "valid:000070",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000070.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000071",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000071.npy",
+      "sha256": "b72f8995fcac9b2c0f982c0f3b4b242492659816a3a884708c107f7bf0ed0749",
+      "size_bytes": 15517280
+    },
+    {
+      "id": "valid:000071",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000071.npy",
+      "sha256": "c6591ee0e459e1f6749a2e4cbb0342d1ee752c7ff6ea489591eda9818ae6753b",
+      "size_bytes": 34496
+    },
+    {
+      "id": "valid:000071",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000071.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000072",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000072.npy",
+      "sha256": "153e3a27a86bda2eaaee4570eae356f2f2eb5e1fa65903382e630895a9245a82",
+      "size_bytes": 38818292
+    },
+    {
+      "id": "valid:000072",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000072.npy",
+      "sha256": "754ba8833e6f350ddcc05bfc0600a952a32866b07c214c120c06d473cdf8fd54",
+      "size_bytes": 86104
+    },
+    {
+      "id": "valid:000072",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000072.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000073",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000073.npy",
+      "sha256": "be86f6e448d5ccfb108bf27b379d68ca006472d82e9511b61be1ce2681f78459",
+      "size_bytes": 13509008
+    },
+    {
+      "id": "valid:000073",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000073.npy",
+      "sha256": "47f4f42a2be97eb98be31fbd512e6af500e90123797fd1ede44f2ec037fd293f",
+      "size_bytes": 30048
+    },
+    {
+      "id": "valid:000073",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000073.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000074",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000074.npy",
+      "sha256": "8036eafb3bb58abbe37bb5e6a369166107703a5ee7aa167eb32ec4c0aac7681c",
+      "size_bytes": 26201576
+    },
+    {
+      "id": "valid:000074",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000074.npy",
+      "sha256": "55b4828aeeede79efa5152fe5dfc507c3ab00551246f632c54a5f4f9c79bbe10",
+      "size_bytes": 58160
+    },
+    {
+      "id": "valid:000074",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000074.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000075",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000075.npy",
+      "sha256": "8f1ec8123fbc1be2efccb298f2658546c311f2ac6f3a962517319fc078955c44",
+      "size_bytes": 44416892
+    },
+    {
+      "id": "valid:000075",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000075.npy",
+      "sha256": "dfb4bde7484691091f4fb52bbc19a152b66dd63917829c9182559c2c94942ca5",
+      "size_bytes": 98504
+    },
+    {
+      "id": "valid:000075",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000075.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000076",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000076.npy",
+      "sha256": "96e4f01fb801abe9a1147f1f50d6274aafb3b136ade1529b8eeb8e224ad2efc7",
+      "size_bytes": 44012348
+    },
+    {
+      "id": "valid:000076",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000076.npy",
+      "sha256": "b56d6a1a9e47aba2f215fbe7dbde140b77936294a037a135b1eea5077141185c",
+      "size_bytes": 97608
+    },
+    {
+      "id": "valid:000076",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000076.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000077",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000077.npy",
+      "sha256": "7e6f4dd145a1e096e96b720fc3b561a9c952f124e276b0314505c271ddb0fffd",
+      "size_bytes": 15058556
+    },
+    {
+      "id": "valid:000077",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000077.npy",
+      "sha256": "2797f799eafbedfd4ffa3aa17b7584aa323739ff5e2c3aa0544a8185cf9b555f",
+      "size_bytes": 33480
+    },
+    {
+      "id": "valid:000077",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000077.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000078",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000078.npy",
+      "sha256": "b827134eaaaa305d1b1edd64747e519c133afd0a58e7684d2859d3b7a9ce355b",
+      "size_bytes": 29235656
+    },
+    {
+      "id": "valid:000078",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000078.npy",
+      "sha256": "fcef9744bf4504fb67ee8d71b88ab378ee00bb9983da694ec8031c2389959d0c",
+      "size_bytes": 64880
+    },
+    {
+      "id": "valid:000078",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000078.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000079",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000079.npy",
+      "sha256": "d54dd8b2b415f3fc6fc4c2c2a71902277982be82e4a9e896447b999aa84dc220",
+      "size_bytes": 41054120
+    },
+    {
+      "id": "valid:000079",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000079.npy",
+      "sha256": "d01b57327301b287eb1b908e51f2fcf3821e8a0cbd8cb62229dabc94b2847a74",
+      "size_bytes": 91056
+    },
+    {
+      "id": "valid:000079",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000079.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000080",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000080.npy",
+      "sha256": "d24d299af71f10fefcafc226a7b87711d1c8664162a24b497219eb4fc5ad8c2f",
+      "size_bytes": 31670144
+    },
+    {
+      "id": "valid:000080",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000080.npy",
+      "sha256": "4319d2a82b2dd542d28bb01a5776cffe86dbc3f0f5e10a9e920d3f69a308ac17",
+      "size_bytes": 70272
+    },
+    {
+      "id": "valid:000080",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000080.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000081",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000081.npy",
+      "sha256": "7e519ad611795ea9ffeda3bdebc30210759525aa46f9e3a9ca8a30f193f4ca21",
+      "size_bytes": 21180896
+    },
+    {
+      "id": "valid:000081",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000081.npy",
+      "sha256": "326f3657137e1d772a2e5e72a35fdfbedfcfed9d1e3ac2327d36c0c0dfe36b93",
+      "size_bytes": 47040
+    },
+    {
+      "id": "valid:000081",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000081.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000082",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000082.npy",
+      "sha256": "071192839771b6d0d08c61c39e70b2506752ab7421d8088f572e8a90878db77e",
+      "size_bytes": 32302244
+    },
+    {
+      "id": "valid:000082",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000082.npy",
+      "sha256": "5b95f2dded56e4a1b3802f39def1fd8323f30e8f5aa859817984d3048e04843f",
+      "size_bytes": 71672
+    },
+    {
+      "id": "valid:000082",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000082.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000083",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000083.npy",
+      "sha256": "c6b03753d15ce6a60f5ec5e62270be460939697aaad7e593a9768a6da276b324",
+      "size_bytes": 30434840
+    },
+    {
+      "id": "valid:000083",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000083.npy",
+      "sha256": "74baab2ce2395d44367b8ce204684164710f741813b25d7c1e28ff2b8476b84d",
+      "size_bytes": 67536
+    },
+    {
+      "id": "valid:000083",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000083.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000084",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000084.npy",
+      "sha256": "5b1e2f378729da811918f7fa06ebb4d58e6f85e06af2850858474487403752d3",
+      "size_bytes": 13964120
+    },
+    {
+      "id": "valid:000084",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000084.npy",
+      "sha256": "ea680ffc7321c962cf5594f9bbc4b8908f4bb66a7443d49de428ee5e4f75569c",
+      "size_bytes": 31056
+    },
+    {
+      "id": "valid:000084",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000084.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000085",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000085.npy",
+      "sha256": "0624713a0cccc03c4c515a6ffc4591b5376f9ef0c7b278dd0219bc8f134f5516",
+      "size_bytes": 41657324
+    },
+    {
+      "id": "valid:000085",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000085.npy",
+      "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+      "size_bytes": 92392
+    },
+    {
+      "id": "valid:000085",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000085.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000086",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000086.npy",
+      "sha256": "a12cd850b6917474b71fefa840474cce1b1bc938704e7ecb3374a80e1261ffd4",
+      "size_bytes": 41657324
+    },
+    {
+      "id": "valid:000086",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000086.npy",
+      "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+      "size_bytes": 92392
+    },
+    {
+      "id": "valid:000086",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000086.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000087",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000087.npy",
+      "sha256": "8ab86b71ccfde796815fc9ea4acf9f95e198e586c7c016afefbba05c345dbc8a",
+      "size_bytes": 35986484
+    },
+    {
+      "id": "valid:000087",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000087.npy",
+      "sha256": "2d1326079bcd9261a9e14aeb8c7bb589e72c2d5396ccd91e9c1732cdf64efcba",
+      "size_bytes": 79832
+    },
+    {
+      "id": "valid:000087",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000087.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000088",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000088.npy",
+      "sha256": "2b2b150e29477e03ca9abaa5de85aa2764b973cc6fc17a4fd7c3f7ff2e205637",
+      "size_bytes": 10261820
+    },
+    {
+      "id": "valid:000088",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000088.npy",
+      "sha256": "6d604746702826c8dd73fceb6c558ae4434f35db1f48b6630b94f82ff6329f94",
+      "size_bytes": 22856
+    },
+    {
+      "id": "valid:000088",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000088.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000089",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000089.npy",
+      "sha256": "496ad397a53071f287abf0834800edb1614820f9955d3d2b65dab71ed048e29e",
+      "size_bytes": 46985024
+    },
+    {
+      "id": "valid:000089",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000089.npy",
+      "sha256": "5c6c3f557914d38495c884926d304c8559c7edf0736f69321a0e3cf5c5132bc2",
+      "size_bytes": 104192
+    },
+    {
+      "id": "valid:000089",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000089.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000090",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000090.npy",
+      "sha256": "693c7e8bf01619caa72dbf4fa25c2aa95dca9edf105ce961aa771a84bcd7d4a5",
+      "size_bytes": 49112492
+    },
+    {
+      "id": "valid:000090",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000090.npy",
+      "sha256": "9a34bec5f8032b1e069174b88629a4a2a8163c1b60554ae126c88826dc40df19",
+      "size_bytes": 108904
+    },
+    {
+      "id": "valid:000090",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000090.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000091",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000091.npy",
+      "sha256": "82a62e42ec17225435066e41a78e507e9995d251af162614050667231b3c0930",
+      "size_bytes": 24157184
+    },
+    {
+      "id": "valid:000091",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000091.npy",
+      "sha256": "5e79270696aeae22b217f467d6b8c436463d0e0f6d93226d7664b4958e93c311",
+      "size_bytes": 53632
+    },
+    {
+      "id": "valid:000091",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000091.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000092",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000092.npy",
+      "sha256": "fedeaa4d4bc1c6e8accee54e44d7cc3a67ea9dc4484814f5e932522bbedc42a0",
+      "size_bytes": 42502532
+    },
+    {
+      "id": "valid:000092",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000092.npy",
+      "sha256": "b1a824eb3114ba7daef5d73266357bd35ef9218e57add252f537e311711031d5",
+      "size_bytes": 94264
+    },
+    {
+      "id": "valid:000092",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000092.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000093",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000093.npy",
+      "sha256": "955a474cb8f21b924199ec4eea7a914dcfc2a57397c140241f17d3304f45ddda",
+      "size_bytes": 39024176
+    },
+    {
+      "id": "valid:000093",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000093.npy",
+      "sha256": "7a1f9b2b016a94526141f2bff8bf1f952ba649db66ae2133ea781f2dabd0134e",
+      "size_bytes": 86560
+    },
+    {
+      "id": "valid:000093",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000093.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000094",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000094.npy",
+      "sha256": "8a04393ae3e95ad292958ce6661f44074db983e5f169a3a15fe747d05c2aa131",
+      "size_bytes": 40096940
+    },
+    {
+      "id": "valid:000094",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000094.npy",
+      "sha256": "b456734363db53699bb027ba9c0b7da31c25a211bc5b2774196b70a724300cc3",
+      "size_bytes": 88936
+    },
+    {
+      "id": "valid:000094",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000094.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000095",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000095.npy",
+      "sha256": "3341058620392a9011cce8609d66cf25100f38787774dc7a6bf4e85033783f77",
+      "size_bytes": 37702184
+    },
+    {
+      "id": "valid:000095",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000095.npy",
+      "sha256": "a32520e9f80c2e38f01bf3c0ec964e0045e6c49c762bdba590cc8b7f96c5b70b",
+      "size_bytes": 83632
+    },
+    {
+      "id": "valid:000095",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000095.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000096",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000096.npy",
+      "sha256": "4faf75049c9b034d7ec8f39a9992fef380bb45c5ec08ce6a892479bf20dcd037",
+      "size_bytes": 27317684
+    },
+    {
+      "id": "valid:000096",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000096.npy",
+      "sha256": "cfb6527ff059f60dd9a2fa54781a08f7105dd72953bf05971fd2545e1af22e36",
+      "size_bytes": 60632
+    },
+    {
+      "id": "valid:000096",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000096.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000097",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000097.npy",
+      "sha256": "416479b3e3d0ff64655285771e9b5cea39f4cc05242566a343240cf46f92046f",
+      "size_bytes": 36199592
+    },
+    {
+      "id": "valid:000097",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000097.npy",
+      "sha256": "195e4bcf0235fe2b519db70e8e1108dec67a3f175d3366b9ae649b0488897491",
+      "size_bytes": 80304
+    },
+    {
+      "id": "valid:000097",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000097.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000098",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000098.npy",
+      "sha256": "93fa3ed3495d9aa0c876e0b63621af86ab1cdc8d298ae201935b4fca7a56c2c1",
+      "size_bytes": 27090128
+    },
+    {
+      "id": "valid:000098",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000098.npy",
+      "sha256": "381817db127e85cd816fb6333b1eb6917337e7f33e7f249f002323bc6d195b9e",
+      "size_bytes": 60128
+    },
+    {
+      "id": "valid:000098",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000098.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "id": "valid:000099",
+      "field": "positions",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000099.npy",
+      "sha256": "ea04331b23f05ea24ff701f11c61644c95979fcf6b4c4cb5cc92eab27a24157c",
+      "size_bytes": 30861056
+    },
+    {
+      "id": "valid:000099",
+      "field": "particle_types",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000099.npy",
+      "sha256": "77c4b54f6abbfc5e9fb9798efe9794390e8b430de459d9f4b3fdc9372482c667",
+      "size_bytes": 68480
+    },
+    {
+      "id": "valid:000099",
+      "field": "step_context",
+      "path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000099.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    }
+  ],
+  "count": 300,
+  "scope": "Exact copied bytes; original structural/numerical validation retains semantic shape/finiteness checks",
+  "test_accessed": false
+}

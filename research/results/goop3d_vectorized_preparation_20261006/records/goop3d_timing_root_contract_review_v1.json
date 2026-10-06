@@ -1,0 +1,17 @@
+{
+  "status": "reviewed_six_exact_validation_only_commands",
+  "supervisor_release_sha256": "dcc0c42720c5f2d47f14db3d752be5021e7699bf33165423de84d15ee2e96d22",
+  "preparation_report_sha256": "84529f63706c6964817e6183f23a4c1559762c31fbabb8395c2e0b461b456afc",
+  "no_science_or_test": true,
+  "budgets": {
+    "full-rollout": 3600,
+    "same-state": 600,
+    "clean-validation": 600
+  },
+  "outer": {
+    "full-rollout": 3900,
+    "same-state": 900,
+    "clean-validation": 900
+  },
+  "fresh_process_check": "2026-10-06T05:38:38.383246+00:00"
+}
