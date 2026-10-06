@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_goop_graph_support_cuda.py", line 323, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_goop_graph_support_cuda.py", line 318, in main
+    mods = modules()
+           ^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_goop_graph_support_cuda.py", line 64, in modules
+    return {name: private_import(directory, name) for name in PINS}
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_goop_graph_support_cuda.py", line 55, in private_import
+    require(sha(path) == PINS[name], 'Pinned preparation helper differs: '+name)
+            ^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_goop_graph_support_cuda.py", line 43, in sha
+    with Path(path).open('rb') as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/pathlib.py", line 1015, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/validate_sand_graph_support_cuda.py'

@@ -1,0 +1,20 @@
+test_auxiliary_nan_payload_bits_are_preserved_and_not_admitted (__main__.GoopPreparationTests.test_auxiliary_nan_payload_bits_are_preserved_and_not_admitted) ... ok
+test_complete_record_crc_corruption_retains_failure (__main__.GoopPreparationTests.test_complete_record_crc_corruption_retains_failure) ... ok
+test_description_only_has_no_reader_import_or_input_reads (__main__.GoopPreparationTests.test_description_only_has_no_reader_import_or_input_reads) ... ok
+test_duplicate_within_and_across_splits_not_silently_accepted (__main__.GoopPreparationTests.test_duplicate_within_and_across_splits_not_silently_accepted) ... ok
+test_existing_output_refused_without_reading_acquisition (__main__.GoopPreparationTests.test_existing_output_refused_without_reading_acquisition) ... ok
+test_main_duplicate_valid_retains_train_staging_no_manifest_publication (__main__.GoopPreparationTests.test_main_duplicate_valid_retains_train_staging_no_manifest_publication) ... ok
+test_main_publishes_both_only_after_complete_exact_conversion (__main__.GoopPreparationTests.test_main_publishes_both_only_after_complete_exact_conversion) ... ok
+test_native_values_actual_horizon_source_order_and_keys (__main__.GoopPreparationTests.test_native_values_actual_horizon_source_order_and_keys) ... ok
+test_reader_hash_rejected_before_import (__main__.GoopPreparationTests.test_reader_hash_rejected_before_import) ... ok
+test_receipt_exact_source_family_bytes_generation_crc_and_metadata (__main__.GoopPreparationTests.test_receipt_exact_source_family_bytes_generation_crc_and_metadata) ... ok
+test_saved_byte_verification_detects_decoder_output_change (__main__.GoopPreparationTests.test_saved_byte_verification_detects_decoder_output_change) ... ok
+test_source_crc_and_sha_continue_across_multiple_hashing_chunks (__main__.GoopPreparationTests.test_source_crc_and_sha_continue_across_multiple_hashing_chunks) ... ok
+test_test_and_duplicate_split_refused (__main__.GoopPreparationTests.test_test_and_duplicate_split_refused) ... ok
+test_unexpected_fields_and_nonfinite_positions_preserved_as_failure (__main__.GoopPreparationTests.test_unexpected_fields_and_nonfinite_positions_preserved_as_failure) ... ok
+test_whole_object_checksum_failure_before_staging (__main__.GoopPreparationTests.test_whole_object_checksum_failure_before_staging) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.188s
+
+OK

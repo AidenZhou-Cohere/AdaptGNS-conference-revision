@@ -1,0 +1,161 @@
+........................................F........................................... [ 12%]
+.........................................EE
+==================================== ERRORS ====================================
+_ ERROR at setup of test_natural_base_preserves_native_strict_cap_and_self_prefix _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x111f04e90>
+
+    @pytest.fixture
+    def synthetic(monkeypatch):
+        # Import pinned numerical definitions; instantiate no GNS model.
+        repo = ROOT.parents[2] / "outputs" / "AdaptGNS"
+        spec = importlib.util.spec_from_file_location("_final_test_benchmark", ROOT / "benchmark_goop_graph_support_rollout.py")
+        bench = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bench)
+>       native, h = bench.load_helpers(repo)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_evaluate_goop_graph_support_final.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py:171: in load_helpers
+    require({name: sha(repo / name) for name in SOURCE_PINS} == SOURCE_PINS, "Frozen numerical helper source mismatch")
+                   ^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py:74: in sha
+    with Path(path).open("rb") as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/research/native_graph_rollout.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/research/native_graph_rollout.py'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_ ERROR at setup of test_same_state_charges_previous_base_pass_and_has_exact_budgets _
+
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x112124bf0>
+
+    @pytest.fixture
+    def synthetic(monkeypatch):
+        # Import pinned numerical definitions; instantiate no GNS model.
+        repo = ROOT.parents[2] / "outputs" / "AdaptGNS"
+        spec = importlib.util.spec_from_file_location("_final_test_benchmark", ROOT / "benchmark_goop_graph_support_rollout.py")
+        bench = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(bench)
+>       native, h = bench.load_helpers(repo)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_evaluate_goop_graph_support_final.py:208: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py:171: in load_helpers
+    require({name: sha(repo / name) for name in SOURCE_PINS} == SOURCE_PINS, "Frozen numerical helper source mismatch")
+                   ^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py:74: in sha
+    with Path(path).open("rb") as stream:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/research/native_graph_rollout.py')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/research/native_graph_rollout.py'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=================================== FAILURES ===================================
+_ Goop3DFirstRecordV2Tests.test_real_inspection_descriptor_uses_numeric_staging_with_synthetic_values _
+
+self = <test_benchmark_goop3d_first_record_v2.Goop3DFirstRecordV2Tests testMethod=test_real_inspection_descriptor_uses_numeric_staging_with_synthetic_values>
+
+    def test_real_inspection_descriptor_uses_numeric_staging_with_synthetic_values(self):
+        # Use the real immutable JSON descriptor only, never its official arrays.
+        source_report = GRAPH_PATH.parent.parent / 'goop3d_first_record_20261006_v1/report.json'
+>       raw = source_report.read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py:45: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1019: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/work/deadline_research_20261005/goop3d_first_record_20261006_v1/report.json')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/work/deadline_research_20261005/goop3d_first_record_20261006_v1/report.json'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=============================== warnings summary ===============================
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:50
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:50: SyntaxWarning: invalid escape sequence '\m'
+    :math: `\mathcal{X} \rightarrow \mathcal{G}` embeds the particle-based state
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:237
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:237: SyntaxWarning: invalid escape sequence '\m'
+    """The Processor: :math: `\mathcal{G} \rightarrow \mathcal{G}` computes
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:308
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:308: SyntaxWarning: invalid escape sequence '\m'
+    """The Decoder: :math: `\mathcal{G} \rightarrow \mathcal{Y}` extracts the
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:320
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:320: SyntaxWarning: invalid escape sequence '\d'
+    """The Decoder coder's learned function, :math: `\detla v`, is an MLP.
+
+../../../../../../work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py::Goop3DFirstRecordV2Tests::test_real_inspection_descriptor_uses_numeric_staging_with_synthetic_values
+ERROR work/deadline_research_20261005/cuda_preparation/test_evaluate_goop_graph_support_final.py::test_natural_base_preserves_native_strict_cap_and_self_prefix
+ERROR work/deadline_research_20261005/cuda_preparation/test_evaluate_goop_graph_support_final.py::test_same_state_charges_previous_base_pass_and_has_exact_budgets
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 3 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 124 passed, 329 warnings, 2 errors, 80 subtests passed in 3.38s

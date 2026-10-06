@@ -1,0 +1,8 @@
+.....................................                                    [100%]
+=============================== warnings summary ===============================
+work/deadline_research_20261005/cuda_preparation/test_sand_graph_support_policy.py::test_exact_annulus_budget_native_prefix_and_lexicographic_ties
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+37 passed, 1 warning in 2.94s

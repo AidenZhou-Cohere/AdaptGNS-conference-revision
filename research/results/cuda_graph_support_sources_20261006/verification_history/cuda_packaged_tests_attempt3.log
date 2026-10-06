@@ -1,0 +1,77 @@
+.................................................................................... [ 12%]
+.................................................... [ 19%]
+...................................................................... [ 29%]
+................................................ [ 36%]
+................................................ [ 43%]
+.....................F...................................................................................... [ 59%]
+........................................................................ [ 69%]
+........................................................................ [ 80%]
+........................................................................ [ 90%]
+.................................................................        [100%]
+=================================== FAILURES ===================================
+_ CpuGraphProfileTests.test_no_gns_import_and_no_cuda_initialization_in_graph_work _
+
+self = <test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests testMethod=test_no_gns_import_and_no_cuda_initialization_in_graph_work>
+
+    def test_no_gns_import_and_no_cuda_initialization_in_graph_work(self):
+>       self.assertFalse(any(name == 'gns' or name.startswith('gns.') for name in sys.modules))
+E       AssertionError: True is not false
+
+work/deadline_research_20261005/cuda_preparation/test_profile_goop3d_first_record_cpu_graph.py:39: AssertionError
+=============================== warnings summary ===============================
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:50
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:50: SyntaxWarning: invalid escape sequence '\m'
+    :math: `\mathcal{X} \rightarrow \mathcal{G}` embeds the particle-based state
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:237
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:237: SyntaxWarning: invalid escape sequence '\m'
+    """The Processor: :math: `\mathcal{G} \rightarrow \mathcal{G}` computes
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:308
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:308: SyntaxWarning: invalid escape sequence '\m'
+    """The Decoder: :math: `\mathcal{G} \rightarrow \mathcal{Y}` extracts the
+
+outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:320
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:320: SyntaxWarning: invalid escape sequence '\d'
+    """The Decoder coder's learned function, :math: `\detla v`, is an MLP.
+
+../../../../../../work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v1.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_sand_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_validate_sand_graph_support_cuda.py: 21 warnings
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v1.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_sand_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_validate_sand_graph_support_cuda.py: 21 warnings
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v1.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_sand_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_validate_sand_graph_support_cuda.py: 21 warnings
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record.py: 41 warnings
+work/deadline_research_20261005/cuda_preparation/test_benchmark_goop3d_first_record_v2.py: 40 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop3d_graph_support_cuda_v1.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_goop_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_train_sand_graph_support_cuda.py: 14 warnings
+work/deadline_research_20261005/cuda_preparation/test_validate_sand_graph_support_cuda.py: 21 warnings
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED work/deadline_research_20261005/cuda_preparation/test_profile_goop3d_first_record_cpu_graph.py::CpuGraphProfileTests::test_no_gns_import_and_no_cuda_initialization_in_graph_work
+1 failed, 690 passed, 581 warnings, 166 subtests passed in 19.65s

@@ -1,0 +1,12 @@
+test_absent_auxiliary_is_explicit (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_absent_auxiliary_is_explicit) ... ok
+test_bad_hash_shape_and_path_rejected (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_bad_hash_shape_and_path_rejected) ... ok
+test_complete_counts_are_observed_and_both_splits_covered (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_complete_counts_are_observed_and_both_splits_covered) ... ok
+test_default_does_not_read_arrays (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_default_does_not_read_arrays) ... ok
+test_existing_output_is_not_replaced (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_existing_output_is_not_replaced) ... ok
+test_failed_array_retains_partial_census_and_source (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_failed_array_retains_partial_census_and_source) ... ok
+test_raw_nan_negativezero_infinity_bits_and_counts (test_audit_goop3d_auxiliary.Goop3DAuxiliaryTests.test_raw_nan_negativezero_infinity_bits_and_counts) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.018s
+
+OK

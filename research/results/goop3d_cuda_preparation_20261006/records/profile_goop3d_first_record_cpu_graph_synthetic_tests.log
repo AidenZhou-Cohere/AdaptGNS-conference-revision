@@ -1,0 +1,11 @@
+test_changed_pinned_helpers_fail_before_execution (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_changed_pinned_helpers_fail_before_execution) ... ok
+test_default_has_no_helper_or_data_work (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_default_has_no_helper_or_data_work) ... ok
+test_literal_native_algorithm_matches_strict_cap_reference_in_3d (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_literal_native_algorithm_matches_strict_cap_reference_in_3d) ... ok
+test_native_batch_partitions_never_cross (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_native_batch_partitions_never_cross) ... ok
+test_no_gns_import_and_no_cuda_initialization_in_graph_work (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_no_gns_import_and_no_cuda_initialization_in_graph_work) ... ok
+test_stages_preserve_exact_repeated_graph_hashes_and_budget (test_profile_goop3d_first_record_cpu_graph.CpuGraphProfileTests.test_stages_preserve_exact_repeated_graph_hashes_and_budget) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.722s
+
+OK

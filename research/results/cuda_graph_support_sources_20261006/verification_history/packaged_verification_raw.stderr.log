@@ -1,0 +1,8 @@
+/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:50: SyntaxWarning: invalid escape sequence '\m'
+  :math: `\mathcal{X} \rightarrow \mathcal{G}` embeds the particle-based state
+/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:237: SyntaxWarning: invalid escape sequence '\m'
+  """The Processor: :math: `\mathcal{G} \rightarrow \mathcal{G}` computes
+/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:308: SyntaxWarning: invalid escape sequence '\m'
+  """The Decoder: :math: `\mathcal{G} \rightarrow \mathcal{Y}` extracts the
+/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/cuda_graph_support_sources_20261006/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py:320: SyntaxWarning: invalid escape sequence '\d'
+  """The Decoder coder's learned function, :math: `\detla v`, is an MLP.
