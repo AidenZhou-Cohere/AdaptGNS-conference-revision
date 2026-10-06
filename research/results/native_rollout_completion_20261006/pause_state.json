@@ -1,0 +1,26 @@
+{
+  "schema": "adaptgns_human_requested_in_memory_pause_v1",
+  "requested_by": "human",
+  "utc_before": "2026-10-06T02:59:27.498507+00:00",
+  "monotonic_ns_before": 109942645769916,
+  "processes": [
+    {
+      "pid": 30422,
+      "identity_before": "30422 86158 Mon Oct  5 19:31:46 2026     Ss   work/venv/bin/python -u work/deadline_research_20261005/run_native_rollout_queue.py",
+      "state_after": "Ts",
+      "identity_after": "30422 86158 Mon Oct  5 19:31:46 2026     Ts   work/venv/bin/python -u work/deadline_research_20261005/run_native_rollout_queue.py"
+    },
+    {
+      "pid": 56376,
+      "identity_before": "56376 30422 Mon Oct  5 22:51:22 2026     R    /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python -u -m research.native_graph_rollout --checkpoint /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/checkpoint-100000.pt --test-manifest /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted/test.json --output-dir /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/native-graph-rollout-20261005/nll_seed2 --device mps --threads 2",
+      "state_after": "T",
+      "identity_after": "56376 30422 Mon Oct  5 22:51:22 2026     T    /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python -u -m research.native_graph_rollout --checkpoint /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/full_waterdrop_100k/nll_seed2/checkpoint-100000.pt --test-manifest /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/full-data/converted/test.json --output-dir /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/native-graph-rollout-20261005/nll_seed2 --device mps --threads 2"
+    }
+  ],
+  "signals": "SIGSTOP only; no termination, new training or automatic resume",
+  "timing_notice": "All active timing intervals spanning this pause are affected. Preserve the pause interval and do not treat raw elapsed time as uninterrupted compute.",
+  "status": "both_owned_processes_suspended_in_memory",
+  "utc_after": "2026-10-06T02:59:46.522871+00:00",
+  "monotonic_ns_after": 109961669445916,
+  "resume": "Only on human resume: reverify each exact identity/start/parent, SIGCONT child then parent, record resumed UTC/monotonic interval and mark affected timing. Do not relaunch or duplicate the queue."
+}
