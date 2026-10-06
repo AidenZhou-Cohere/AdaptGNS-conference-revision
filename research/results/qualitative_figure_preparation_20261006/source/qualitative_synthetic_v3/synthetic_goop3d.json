@@ -1,0 +1,236 @@
+{
+  "bounds": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "caveat": "One trajectory illustration, not population evidence or a causal dimensionality comparison.",
+  "count": 33,
+  "display_steps": [
+    1,
+    200,
+    295
+  ],
+  "horizon": 295,
+  "inputs_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_protocol.json": "c05703bbae48eeeda5fab6a13c1630672c3f3e0dd76fdfd63285dc843ef4f97a",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_row.json": "9bc612c09a2994431bbf9723d89876add3a143f3ff9105987fb6d37616f55399",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_trace.npz": "e3ca85deaf5ad04403ce3ddb3e9acf303d4dd9b21aae3c6eca95a58d76d67cfe",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_row.json": "9678fa1248c7ec70b4b1fd14ad45a8590443c16699363172ed555123975776c9",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_trace.npz": "2e28c37cf167541890796380b42ba80cdfe7cdfe967175252e06a69878c6fc72",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_row.json": "005a308fa4a945dd48cc470c9ec9e67727ded0989be49236045f4cba648edba8",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_trace.npz": "2492320303b98efb9bbfef5637a825edf7ed3019cf9e285b141594c54dc2f5f7",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/request.json": "f99c07aac0f4678e37a3b2ba7ebf87acc2773c046ed48d7a30747692d2eaccad",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/synthetic_manifest.json": "b69063824d8562deb49e9deb6ce0eadcfd165b02c297f2d74158fcf869a0d919"
+  },
+  "panels": [
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "random25",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "random25",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "original_source_frame": 300,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "original_source_frame": 300,
+      "outside_box": 2,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "original_source_frame": 300,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "random25",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 295,
+      "original_source_frame": 300,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "FAILED BEFORE FRAME"
+    }
+  ],
+  "pdf_sha256": "c100435735716734f805b50c8001c0cd5e8992d82ba5e3b73c02b18304d83956",
+  "renderer_sha256": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb",
+  "root_admission_note": null,
+  "schema": "qualitative-render-receipt-v1",
+  "seed": 0,
+  "selection": "lower median of full test census sorted by (initial particle count, original source index)",
+  "source_index": 1,
+  "study": "Goop3D",
+  "suggested_caption": "Goop3D rollout at 25,000 training updates. The source is the lower median of all test sources sorted by initial particle count and original source index, selected without policy errors. All predictors use training seed 0; columns show ground truth, ordinary-graph-trained base, mixture-trained random25, and mixture-trained laggedrisk25 (cached rollout risk, distinct from the previous-observed same-state diagnostic). Rows show forecasts 1, 200, and H=295. All particles are shown on shared metadata bounds; out-of-box particles are counted and marked at the boundary with red crosses. The 3D view is orthographic, at elevation 25 and azimuth -55 degrees. Failed or missing frames retain their accepted prefix; an unreturned prefix remains unknown. Truth uses agreeing targets saved by accepted traces. This single example does not estimate population performance or isolate dimensionality as a cause.",
+  "synthetic": true,
+  "updates": 25000,
+  "view": {
+    "azimuth": -55,
+    "elevation": 25,
+    "kind": "orthographic"
+  }
+}

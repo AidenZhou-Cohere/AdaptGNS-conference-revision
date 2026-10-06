@@ -1,0 +1,45 @@
+{
+  "cells": [
+    {
+      "arm": "base",
+      "policy": "base",
+      "protocol": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/base_base_protocol.json",
+        "sha256": "9dd04140a301101ea59d618d4f7b9b94d005c68a141a0850693f635af1ded700"
+      },
+      "row": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/base_base_row.json",
+        "sha256": "ce430c67f18cb1cc2f51fdd2b6445fe2d0312c8ce784578dbc9004e1aa1c21c1"
+      }
+    },
+    {
+      "arm": "mix",
+      "policy": "random25",
+      "protocol": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/mix_random25_protocol.json",
+        "sha256": "46233c8fe6fb621e64a8be88f7d1a746f7e4b544186d1448b80013cc8e53e3e0"
+      },
+      "row": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/mix_random25_row.json",
+        "sha256": "8fdc365ba58861e2d2b00cd113c321e2937b7dc0897ea9a42269dc20929f2414"
+      }
+    },
+    {
+      "arm": "mix",
+      "coverage_state": "timed_out_current",
+      "policy": "laggedrisk25",
+      "reason": "Synthetic invocation ended without a committed row"
+    }
+  ],
+  "manifest": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/synthetic_manifest.json",
+    "sha256": "aa9a51f37397a03d41c4d571931a153f8bf49c99d87fa0e08ff544d7ff201e66"
+  },
+  "schema": "qualitative-render-request-v1",
+  "selection_plan": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md",
+    "sha256": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f"
+  },
+  "study": "Goop2D",
+  "synthetic": true
+}

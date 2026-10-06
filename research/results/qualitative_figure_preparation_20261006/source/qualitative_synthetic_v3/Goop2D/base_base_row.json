@@ -1,0 +1,16 @@
+{
+  "arm": "base",
+  "completed_steps": 395,
+  "failure": null,
+  "horizon": 395,
+  "objective": "faithful",
+  "particles": 33,
+  "policy": "base",
+  "protocol_sha256": "9dd04140a301101ea59d618d4f7b9b94d005c68a141a0850693f635af1ded700",
+  "source_index": 1,
+  "status": "complete",
+  "trace_file": "base_base_trace.npz",
+  "trace_sha256": "02ca18574a04e1b2c46e818d31ebce8d0c74c05d45574034822d8d5a353fac15",
+  "training_seed": 0,
+  "trajectory_id": "test:000001"
+}

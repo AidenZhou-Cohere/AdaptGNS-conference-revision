@@ -1,0 +1,22 @@
+test_checksum_failure (__main__.QualitativeChecks.test_checksum_failure) ... ok
+test_committed_prefix_and_unreturned_unknown_remain_distinct (__main__.QualitativeChecks.test_committed_prefix_and_unreturned_unknown_remain_distinct) ... ok
+test_different_mix_checkpoints_rejected (__main__.QualitativeChecks.test_different_mix_checkpoints_rejected) ... ok
+test_false_outside_grid_claim_rejected (__main__.QualitativeChecks.test_false_outside_grid_claim_rejected) ... ok
+test_forecast_lookup_and_ground_truth (__main__.QualitativeChecks.test_forecast_lookup_and_ground_truth) ... ok
+test_inconsistent_completion_rejected (__main__.QualitativeChecks.test_inconsistent_completion_rejected) ... ok
+test_lower_median_is_not_source_order_median (__main__.QualitativeChecks.test_lower_median_is_not_source_order_median) ... ok
+test_missing_saved_frame_is_not_backfilled (__main__.QualitativeChecks.test_missing_saved_frame_is_not_backfilled) ... ok
+test_no_truth_is_invented_for_all_missing (__main__.QualitativeChecks.test_no_truth_is_invented_for_all_missing) ... ok
+test_same_state_control_mislabelling_rejected (__main__.QualitativeChecks.test_same_state_control_mislabelling_rejected) ... ok
+test_sand_endpoint (__main__.QualitativeChecks.test_sand_endpoint) ... ok
+test_three_dimensions_and_zero_prefix (__main__.QualitativeChecks.test_three_dimensions_and_zero_prefix) ... ok
+test_truth_disagreement_rejected (__main__.QualitativeChecks.test_truth_disagreement_rejected) ... ok
+test_wrong_objective_rejected (__main__.QualitativeChecks.test_wrong_objective_rejected) ... ok
+test_wrong_seed_rejected (__main__.QualitativeChecks.test_wrong_seed_rejected) ... ok
+test_wrong_source_rejected (__main__.QualitativeChecks.test_wrong_source_rejected) ... ok
+test_wrong_training_endpoint_rejected (__main__.QualitativeChecks.test_wrong_training_endpoint_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 0.126s
+
+OK

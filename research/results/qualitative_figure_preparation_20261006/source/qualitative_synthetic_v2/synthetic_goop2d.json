@@ -1,0 +1,226 @@
+{
+  "bounds": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "caveat": "One trajectory illustration, not population evidence or a causal dimensionality comparison.",
+  "count": 33,
+  "display_steps": [
+    1,
+    200,
+    395
+  ],
+  "horizon": 395,
+  "inputs_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/base_base_protocol.json": "6628c5280d571fdf1a75107bf32430ce539e38b61a67ebac6217ca5f15b5b9bf",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/base_base_row.json": "82c2f6d6490a09a4ffdf5b2829ca7c5ff904343781d6f488592651a76f3a7c32",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/base_base_trace.npz": "02ca18574a04e1b2c46e818d31ebce8d0c74c05d45574034822d8d5a353fac15",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/mix_random25_protocol.json": "2efe3fc798748297c950396008c3e38c37bc6a82a4d0a56c2ec05949a209d330",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/mix_random25_row.json": "b97831f723f2164b35ee87821f7e56169bd9058758efa2a1b0b3297f6f21fb2e",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/mix_random25_trace.npz": "985ed5554cdcf466f7b539cd4c166a55e0892a07483f5cb2384d048e193ce476",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/request.json": "761966bee8c4ebfde8ea9ccb2bf92596294138437b1e5f764ff601aaccf7015d",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v2/Goop2D/synthetic_manifest.json": "aa9a51f37397a03d41c4d571931a153f8bf49c99d87fa0e08ff544d7ff201e66"
+  },
+  "panels": [
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Run failed; accepted 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "random25",
+      "state": "SAVED PREFIX"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 1,
+      "original_source_frame": 6,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "MISSING"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "random25",
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 200,
+      "original_source_frame": 205,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "MISSING"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "original_source_frame": 400,
+      "outside_box": 0,
+      "particles_plotted": 33,
+      "policy": "truth",
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "original_source_frame": 400,
+      "outside_box": 2,
+      "particles_plotted": 33,
+      "policy": "base",
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 395,
+      "original_source_frame": 400,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "random25",
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 395,
+      "original_source_frame": 400,
+      "outside_box": null,
+      "particles_plotted": 0,
+      "policy": "laggedrisk25",
+      "state": "MISSING"
+    }
+  ],
+  "pdf_sha256": "10bb10f2b16f6b0317e3066deacf81b5aff7b34ea04084f6c05a78e6c2cb1797",
+  "renderer_sha256": "e4c3b8a38500869c04395d87a02ed788f4ce3967d5e1db57783318475766a886",
+  "root_admission_note": null,
+  "schema": "qualitative-render-receipt-v1",
+  "seed": 0,
+  "selection": "lower median of full test census sorted by (initial particle count, original source index)",
+  "source_index": 1,
+  "study": "Goop2D",
+  "synthetic": true,
+  "updates": 100000,
+  "view": {
+    "kind": "physical xy"
+  }
+}

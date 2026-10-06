@@ -1,0 +1,84 @@
+{
+  "final_files_sha256": {
+    "qualitative_renderer_checks_v1.log": "14741bbbcc4f71c60ffd972fb07ed9e723045d7bcc9ee6d9b0d2eec35570d7ff",
+    "qualitative_renderer_v1.md": "b08ce2e525779c33f6bd80c9febacb39df02f0869910fe4aa4c952ae31982c35",
+    "qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f",
+    "qualitative_synthetic_checks_v1.py": "a22de3a54138dbd3a7a5726d2802e7bd67074fa0a3ae9905f503f2af68e2895e",
+    "qualitative_synthetic_v3/Goop2D/base_base_protocol.json": "9dd04140a301101ea59d618d4f7b9b94d005c68a141a0850693f635af1ded700",
+    "qualitative_synthetic_v3/Goop2D/base_base_row.json": "ce430c67f18cb1cc2f51fdd2b6445fe2d0312c8ce784578dbc9004e1aa1c21c1",
+    "qualitative_synthetic_v3/Goop2D/base_base_trace.npz": "02ca18574a04e1b2c46e818d31ebce8d0c74c05d45574034822d8d5a353fac15",
+    "qualitative_synthetic_v3/Goop2D/mix_random25_protocol.json": "46233c8fe6fb621e64a8be88f7d1a746f7e4b544186d1448b80013cc8e53e3e0",
+    "qualitative_synthetic_v3/Goop2D/mix_random25_row.json": "8fdc365ba58861e2d2b00cd113c321e2937b7dc0897ea9a42269dc20929f2414",
+    "qualitative_synthetic_v3/Goop2D/mix_random25_trace.npz": "985ed5554cdcf466f7b539cd4c166a55e0892a07483f5cb2384d048e193ce476",
+    "qualitative_synthetic_v3/Goop2D/request.json": "1b8d32ee99c6afbf5c4b90ba29f9226a6b0fff270edd0325433c4f6322457fb8",
+    "qualitative_synthetic_v3/Goop2D/synthetic_manifest.json": "aa9a51f37397a03d41c4d571931a153f8bf49c99d87fa0e08ff544d7ff201e66",
+    "qualitative_synthetic_v3/Goop3D/base_base_protocol.json": "c05703bbae48eeeda5fab6a13c1630672c3f3e0dd76fdfd63285dc843ef4f97a",
+    "qualitative_synthetic_v3/Goop3D/base_base_row.json": "9bc612c09a2994431bbf9723d89876add3a143f3ff9105987fb6d37616f55399",
+    "qualitative_synthetic_v3/Goop3D/base_base_trace.npz": "e3ca85deaf5ad04403ce3ddb3e9acf303d4dd9b21aae3c6eca95a58d76d67cfe",
+    "qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_row.json": "9678fa1248c7ec70b4b1fd14ad45a8590443c16699363172ed555123975776c9",
+    "qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_trace.npz": "2e28c37cf167541890796380b42ba80cdfe7cdfe967175252e06a69878c6fc72",
+    "qualitative_synthetic_v3/Goop3D/mix_random25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "qualitative_synthetic_v3/Goop3D/mix_random25_row.json": "005a308fa4a945dd48cc470c9ec9e67727ded0989be49236045f4cba648edba8",
+    "qualitative_synthetic_v3/Goop3D/mix_random25_trace.npz": "2492320303b98efb9bbfef5637a825edf7ed3019cf9e285b141594c54dc2f5f7",
+    "qualitative_synthetic_v3/Goop3D/request.json": "f99c07aac0f4678e37a3b2ba7ebf87acc2773c046ed48d7a30747692d2eaccad",
+    "qualitative_synthetic_v3/Goop3D/synthetic_manifest.json": "b69063824d8562deb49e9deb6ce0eadcfd165b02c297f2d74158fcf869a0d919",
+    "qualitative_synthetic_v3/synthetic_goop2d.json": "09955278ba005c89ca471ae43988248bb31f65200afc48c05b5cee7ad28e7353",
+    "qualitative_synthetic_v3/synthetic_goop2d.pdf": "07c2378f36c2cfd76a2a95aa6d28174bf2a040876022e24188546636ce2daf30",
+    "qualitative_synthetic_v3/synthetic_goop2d.png": "a7019974f06bc5ea9c695b4bb3c4f0df7c77643bbb15aa09a916fc716113284c",
+    "qualitative_synthetic_v3/synthetic_goop3d.json": "b67df013961d0c606d5d7cd1d851e9d32b1a82a602113e4e79734d9f7b0d0758",
+    "qualitative_synthetic_v3/synthetic_goop3d.pdf": "c100435735716734f805b50c8001c0cd5e8992d82ba5e3b73c02b18304d83956",
+    "qualitative_synthetic_v3/synthetic_goop3d.png": "c9331580f3aae6f13509aa87c9b9af9199ba637f15f322cb9fd0d9cbcc897eed",
+    "render_qualitative_v1.py": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb"
+  },
+  "final_fixture_family": "qualitative_synthetic_v3",
+  "independent_source_review": {
+    "findings_fixed": [
+      "Goop-3D manifest spelling",
+      "same checkpoint within each arm",
+      "final evaluator schema/faithful objective/D3 purpose",
+      "outside-grid claim derived from declared D3 source grid"
+    ],
+    "reviewer": "/root/conference_critique_statistics/qualitative_schema_check",
+    "status": "all four findings fixed; 17 synthetic checks passed; no remaining actionable findings"
+  },
+  "limitations": [
+    "Real outcome rendering awaits root admission and request files.",
+    "Optional separate global action gate schema is not supported.",
+    "Native standalone LaTeX external-image integration is not provided.",
+    "Final manuscript-scale image inspection is still required."
+  ],
+  "receipt_checks": [
+    {
+      "fixed_controls": "passed",
+      "forecast_mapping": "passed",
+      "missing_prefix": null,
+      "outside_box_count": 2,
+      "study": "goop2d"
+    },
+    {
+      "fixed_controls": "passed",
+      "forecast_mapping": "passed",
+      "missing_prefix": 0,
+      "outside_box_count": 2,
+      "study": "goop3d"
+    }
+  ],
+  "schema": "qualitative_renderer_authoring_record_v1",
+  "scope": "source-only and inert synthetic presentation preparation; no research outcomes, data arrays, models or inference accessed",
+  "synthetic_tests": {
+    "command": [
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_checks_v1.py"
+    ],
+    "count": 17,
+    "returncode": 0
+  },
+  "visual_review": {
+    "final_2d": "passed",
+    "final_3d": "passed; independently inspected by root",
+    "method": "Poppler pdftoppm at120dpi, followed by image inspection",
+    "superseded_v1": "3D header overlap and right z-axis clipping, retained",
+    "superseded_v2": "layout fixed; long explanatory footer removed in v3 at root request, retained"
+  }
+}

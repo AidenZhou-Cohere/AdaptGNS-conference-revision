@@ -1,0 +1,51 @@
+{
+  "cells": [
+    {
+      "arm": "base",
+      "policy": "base",
+      "protocol": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/base_base_protocol.json",
+        "sha256": "4f140a5b6b54105ffa52bafd0cfd324e5202db4fb977522beaf709bcf9ed30a4"
+      },
+      "row": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/base_base_row.json",
+        "sha256": "799a808c36942ff620fdde7f42dbd75a2eb1ce9a2b6deeb9c3cd6b4e1ed4a5fd"
+      }
+    },
+    {
+      "arm": "mix",
+      "policy": "random25",
+      "protocol": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/mix_random25_protocol.json",
+        "sha256": "723e0dc5887ecb61d0bf334835e59fce1b46979097057a3cb5d860fd8606be3c"
+      },
+      "row": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/mix_random25_row.json",
+        "sha256": "de9e3d621d8ffd3f325ce735bcaba55730a33db924c2847f9e1c036c8942bcbf"
+      }
+    },
+    {
+      "arm": "mix",
+      "policy": "laggedrisk25",
+      "protocol": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/mix_laggedrisk25_protocol.json",
+        "sha256": "723e0dc5887ecb61d0bf334835e59fce1b46979097057a3cb5d860fd8606be3c"
+      },
+      "row": {
+        "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/mix_laggedrisk25_row.json",
+        "sha256": "e52e607c88a9db10677a94d25d0d77a627c6ec0350d693da0bfe528291d9c3d8"
+      }
+    }
+  ],
+  "manifest": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v1/Goop3D/synthetic_manifest.json",
+    "sha256": "b69063824d8562deb49e9deb6ce0eadcfd165b02c297f2d74158fcf869a0d919"
+  },
+  "schema": "qualitative-render-request-v1",
+  "selection_plan": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md",
+    "sha256": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f"
+  },
+  "study": "Goop3D",
+  "synthetic": true
+}
