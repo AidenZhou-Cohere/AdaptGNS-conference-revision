@@ -1,0 +1,74 @@
+{
+  "files": {
+    "README.md": {
+      "bytes": 1313,
+      "sha256": "3e66f2f1a3193edc0190d99216456f57a1953231fbf17b02b5d61aedc78a27a8"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/README.md": {
+      "bytes": 1428,
+      "sha256": "10db984594cebdf70efc4832ceb9c71a220c7ecfd688c9af9530b00d03ceaba7"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/build_addendum.py": {
+      "bytes": 11834,
+      "sha256": "774e55bb4867fc09b985f7755ee6e27ce66b25c6c2c35e9ef60c5f13fcacd7cc"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/displayed_statistic_objects.json": {
+      "bytes": 11248,
+      "sha256": "942dfd814d6f486aeb607a09f14a7bae15d3c14c29a6a1e4e877ac95cfdbea72"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/first_authoring_attempt.json": {
+      "bytes": 479,
+      "sha256": "6bed05306294a6aead76eaa42720330a865bcd0d0ce4449e4f5932e47f13a24a"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/goop2d_paired_random.png": {
+      "bytes": 37056,
+      "sha256": "074b1bfc5e48f26f74624e60398ee4187dad9e184e6e0c3e544100cf2341554c"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/graph_exposure_addendum.pdf": {
+      "bytes": 81910,
+      "sha256": "780e844c3e669cbb8637024aa7500f7bc30fb32e6e9e6c5d735e54d9b60c4ad2"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/page-19.png": {
+      "bytes": 221012,
+      "sha256": "e761fdc41725919d9fce41fbd64f66b3676ec72502a18bb6a9aa5cbd0bb5a3a8"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/page-20.png": {
+      "bytes": 243316,
+      "sha256": "327d95b0fcede26eff550f4246f12c5edb82f605e938b78c653ffe24777317bf"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/prior_page_preservation.json": {
+      "bytes": 1218,
+      "sha256": "a4db1675732f980c686f2860e879682d620d3971d05dde7baba135a587a8acbb"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/publication_receipt.json": {
+      "bytes": 487,
+      "sha256": "bdbc417701ac0e7d434f3ed53834a773c52e22cfff5dfded47955ad38267446b"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/report_checks.json": {
+      "bytes": 2004,
+      "sha256": "3c9d821323c6dc403d23cddf39108459034aceb69102c61706b7b10b168c028e"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/revision_report_before.pdf": {
+      "bytes": 919839,
+      "sha256": "f412f1f809c96f1dbd0f75844be2fbda11dc6f8f0dc0020bbb1bea1839440574"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/revision_report_candidate.pdf": {
+      "bytes": 1000573,
+      "sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/second_authoring_attempt.json": {
+      "bytes": 301,
+      "sha256": "216d4cd04dc8fd695b960611c5c904c4b2858d111a658ef7cc995fe16f97b3d4"
+    },
+    "workspace/work/graph-exposure-report-update-20261006_v1/waterdrop110k_paired_random.png": {
+      "bytes": 29900,
+      "sha256": "62e8876641850fbc51eb61ba0bdc29697718a556880686b252cfa7b4242d0f95"
+    }
+  },
+  "new_pages": 2,
+  "original_pages_unchanged": 18,
+  "payload_count": 16,
+  "report_sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731",
+  "scientific_experiments_rerun": false,
+  "status": "reviewed_scientific_report_from_admitted_results"
+}

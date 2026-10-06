@@ -1,0 +1,14 @@
+{
+  "status": "root_reviewed_report_updated",
+  "published_utc": "2026-10-06T15:26:09.903121+00:00",
+  "output_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revision_report.pdf",
+  "output_sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731",
+  "pages": 20,
+  "all18_prior_pages_pixel_identical": true,
+  "new_pages_visually_reviewed": [
+    19,
+    20
+  ],
+  "manuscript_changed": false,
+  "submission_manuscript_pdf_exported": false
+}

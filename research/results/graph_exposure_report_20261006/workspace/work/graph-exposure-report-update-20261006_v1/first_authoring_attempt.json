@@ -1,0 +1,8 @@
+{
+  "status": "failed_before_pdf_authoring",
+  "interpreter": "work/venv/bin/python",
+  "error": "ModuleNotFoundError: No module named pypdf",
+  "additional_diagnostic": "Matplotlib default cache path was not writable; temporary cache was used.",
+  "source_sha256": "774e55bb4867fc09b985f7755ee6e27ce66b25c6c2c35e9ef60c5f13fcacd7cc",
+  "repair": "Use the already available bundled document Python and a writable MPLCONFIGDIR. No source/data change or dependency installation."
+}
