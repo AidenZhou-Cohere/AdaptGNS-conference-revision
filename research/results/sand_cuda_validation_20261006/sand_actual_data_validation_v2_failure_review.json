@@ -1,0 +1,57 @@
+{
+  "schema": "adaptgns_sand_cuda_actual_v2_failure_review",
+  "reviewed_utc": "2026-10-06T01:55:02.615764+00:00",
+  "status": "validation_failed_preserved",
+  "report_sha256": "1d46bd0044859a7f6f969275cdfaf91c57f4935d786453074fcecd2ec6e73245",
+  "failed_tensor_comparisons": [
+    {
+      "path": "/cases/1/objectives/faithful/parity/per_parameter_gradients/tensors/_encode_process_decode._processor.gnn_stacks.4.edge_fn.0.NN-1.weight",
+      "tolerance": "gradient",
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "passed": false,
+      "bitwise_equal": false,
+      "finite": true,
+      "max_absolute_error": 5.7948287576436996e-05,
+      "max_relative_error_floor1e-12": 1.3195173642535043,
+      "relative_l2_error_floor1e-12": 9.620261795438823e-05,
+      "maximum_tolerance_ratio": 1.1292619065711178,
+      "outside_tolerance_elements": 1
+    },
+    {
+      "path": "/cases/2/objectives/faithful/parity/per_parameter_gradients/tensors/_encode_process_decode._processor.gnn_stacks.0.node_fn.0.NN-0.weight",
+      "tolerance": "gradient",
+      "atol": 5e-05,
+      "rtol": 0.0005,
+      "passed": false,
+      "bitwise_equal": false,
+      "finite": true,
+      "max_absolute_error": 0.00011637993156909943,
+      "max_relative_error_floor1e-12": 2.0149523028937004,
+      "relative_l2_error_floor1e-12": 7.233652122324086e-05,
+      "maximum_tolerance_ratio": 1.7991015842822728,
+      "outside_tolerance_elements": 12
+    }
+  ],
+  "outside_tolerance_elements_total": 13,
+  "cuda_faithful_shared_gradient_control": {
+    "small": {
+      "passed": true,
+      "all_shared_tensors_bitwise_equal": true,
+      "tensors": 183
+    },
+    "median": {
+      "passed": true,
+      "all_shared_tensors_bitwise_equal": true,
+      "tensors": 183
+    },
+    "large": {
+      "passed": true,
+      "all_shared_tensors_bitwise_equal": true,
+      "tensors": 183
+    }
+  },
+  "root_interpretation": "Strict deterministic mode removes the within-CUDA faithful/MSE control failures. Two sparse CPU/CUDA gradient comparisons still fail unchanged thresholds; remaining ReLU-boundary/rounding explanation is a hypothesis awaiting diagnostic review.",
+  "tolerance_relaxation": false,
+  "scientific_training_started": false
+}

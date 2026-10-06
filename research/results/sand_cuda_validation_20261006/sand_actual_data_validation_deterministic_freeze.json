@@ -1,0 +1,23 @@
+{
+  "schema": "adaptgns_sand_actual_data_deterministic_validation_freeze_v1",
+  "frozen_utc": "2026-10-06T01:51:38.265148+00:00",
+  "files_sha256": {
+    "train_sand_cuda_deterministic.py": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+    "test_train_sand_cuda_deterministic.py": "62fff3483b894857eb1936b09213a0c4c57543a5063e36bdd44179ba2ac34b6e",
+    "validate_sand_cuda.py": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c",
+    "validate_cuda_execution.py": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68",
+    "sand_deterministic_variant_changes.json": "c2c7ecf7b2b3c149c5aa08eeba5ce4bb0450a65cd73fd8756c2823f28d6d648b",
+    "sand_actual_data_validation_v1_failure_review.json": "f105489e3366820d212893f9045a19eb6303055fe8952bb284fa4eb08dc1ca37",
+    "torch_cuda_determinism_documentation.txt": "e61f7081ea419c36f5eb27b3f199ff0b77c5cf2c73eff666bc04522f522767a7",
+    "sand_train_admission.json": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73"
+  },
+  "review": "root and code_audit minimal diff review;7runtime gate tests passed",
+  "previous_status": "v1validation_failed, retained unchanged",
+  "permitted_check": "one strict deterministic backend rerun of identical validator/source records/model seeds/noise/tolerances; fresh output; no scientific training",
+  "required_process_environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "changed_tolerances": false,
+  "scientific_training_admitted": false
+}

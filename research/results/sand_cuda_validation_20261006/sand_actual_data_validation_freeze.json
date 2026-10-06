@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_sand_actual_data_cuda_validation_freeze_v1",
+  "frozen_utc": "2026-10-06T01:46:58.000204+00:00",
+  "files_sha256": {
+    "train_sand_cuda.py": "7a9dec9ac2ae1b49856655441ab52fa881c5bb93d8850108dc52939fdfe6ef3a",
+    "validate_sand_cuda.py": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c",
+    "test_train_sand_cuda.py": "880bba89dff07e763916a51180f6f1b391df7ef759b3c9fc97561566e766253b",
+    "test_validate_sand_cuda.py": "a0a1ed311c4745b87f36e4e0d32ecd26c09898d2b789b416abad34a0918cffec",
+    "validate_cuda_execution.py": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68",
+    "sand_train_admission.json": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "sand_numeric_structural_report.json": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+    "train.json": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f"
+  },
+  "independent_review": "code_audit plus its independent validator reviewer: pass; root source review and63CPU/mock tests in1.57s pass",
+  "authorized_execution": "single bounded CPU/CUDA actual-training-data parity and two-update CUDA restoration/replay; cases fixed by source sizes; no scientific training or test access",
+  "scientific_training_admitted": false,
+  "tolerances_source": "unchanged validate_cuda_execution.py engineering tolerances",
+  "failed_attempts": "all retained; no automatic retry or tolerance change"
+}

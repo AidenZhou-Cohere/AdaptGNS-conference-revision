@@ -1,0 +1,17 @@
+{
+  "schema": "designsafe_sand_root_admission_review_v1",
+  "status": "pass",
+  "per_record_correspondence_checks": 5150,
+  "training_trajectories": 1000,
+  "validation_trajectories": 30,
+  "frames": 320,
+  "full_forecast_horizon": 314,
+  "training_eligible_histories": 314000,
+  "validation_eligible_histories": 9420,
+  "data_compatibility_admitted": true,
+  "scientific_training_launched": false,
+  "test_accessed": false,
+  "truth_boundary_excursions_retained": true,
+  "structural_report_sha256": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+  "duplicate_scope": "identical decoded dtype, shape and C-order element bytes for both arrays; selected splits only"
+}

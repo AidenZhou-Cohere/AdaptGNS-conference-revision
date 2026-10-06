@@ -1,0 +1,12 @@
+{
+  "original_sha256": "e106d2e62b02679a610dd77e2286dad3c503750fd40b704b561a9f14a675c217",
+  "v2_sha256": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+  "source_diff": [
+    "Add exactly designsafe-download01.tacc.utexas.edu to HTTPS download hosts, observed in normal public metadata link response",
+    "Require standard ZIP64 end-record size44 to match CPython zipfile parser; reject extensible sectors",
+    "Bump acquisition schema to v2; identify separate source in module docstring"
+  ],
+  "host_probe": "sand_download_host_probe_v2.json",
+  "downloader_executed": false,
+  "bulk_payload_downloaded": false
+}

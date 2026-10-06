@@ -1,5 +1,7 @@
 # Adaptive Interaction Graphs: correctness and controlled experiments
 
+The [DesignSafe Sand arrays](research/results/sand_data_admission_20261006/README.md) are now admitted for data compatibility:1,000training/30validation trajectories,T320,type6,with lossless numeric repackaging and full source/member checks. No test data was fetched. The [two actual-data CUDA comparisons](research/results/sand_cuda_validation_20261006/README.md) retain their **failed strict gradient-parity outcomes**; deterministic execution fixes repeated-CUDA gradient discrepancies but a localized CPU/CUDA difference still needs mechanism review. No scientific Sand model or timing benchmark has launched. These preparation records remain separate from all completed experiments.
+
 ## October 5: exploratory graph-convention follow-up
 
 The [six-model graph bridge](research/results/graph_convention_bridge_20261005/README.md) completed40,800 cases across2,550 observed histories, with no failures. Restoring trained self-messages reduces baseline test error by17.85±0.75% (faithful) and17.21±3.01% (NLL), but risk still loses to random in every seed on validation and test. These are paired within-seed reductions, with sample SD across three seeds. Cap128 is inactive on the observed histories; all native parity gates pass. The [figure and tables](research/results/graph_convention_bridge_analysis_20261005/README.md) reproduce from the hash-pinned compact publication.

@@ -1,0 +1,22 @@
+# DesignSafe Sand numeric repackager: source and synthetic review
+
+`repackage_designsafe_sand.py` is ready for root review/freeze and supervised execution on the exact already-acquired train/valid archives. This preparation did not open actual NPZ payloads, access a network, run inference/training, or inspect test data. The output is structural evidence; root must separately admit data for training.
+
+- Converter SHA256: `37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9`
+- Tests SHA256: `6d64ab51aa75c7994ca919b08499f3451378da2012f6770622b646fbd09520d5`
+- Result: **27 tiny synthetic tests passed** with `work/venv/bin/python -B work/deadline_research_20261005/cuda_preparation/test_repackage_designsafe_sand.py`.
+- Machine-readable review: `repackage_designsafe_sand_review.json`; complete final test output: `repackage_designsafe_sand_tests.log`.
+
+The CLI pins the exact train/valid bytes and SHA256, metadata bytes and SHA256, completed acquisition receipt schema/version/project/DOI/directory, receipt statuses, saved filenames and inventory counts. ZIP physical order must agree with acquisition inventory. Full archive SHA before/after, file stability, ZIP termination, member size/order/name, full decompression/CRC/EOF, NPY envelope, reviewed pickle protocol/opcodes/globals and numeric array validity are checked. Only the three observed NumPy reconstruction primitives are resolved. This is an exact-source decoder profile, not a general-purpose pickle sandbox.
+
+Actual frame count comes from each decoded position array and is preserved. Native floating dtypes, shapes, integer particle types and C-order element bytes are checked after numeric `.npy` save/reload. There is no cast, temporal reconstruction, clipping or assumption that sequence length implies 321 stored frames. Type3 counts and boundary excursions are reported; either may require a separate scientific decision. Unsupported auxiliaries or schema differences are refused instead of dropped. Test is excluded from the CLI.
+
+Native float32 and float64, actual T=9 and T=331, Fortran-position input, exact roundtrip, source order, CRC corruption, hash/inventory mismatch, duplicate values, retained failures, refusal of unreviewed globals/protocol/opcodes, schema guards, fresh-output protection and two-split publication are covered. Scalar type arrays are preserved by the numeric validation/save helpers, but an actual scalar-array pickle using an unobserved opcode remains unsupported. The decoder does not silently expand its profile to make a synthetic fixture pass.
+
+Two unsuccessful test iterations are preserved in the JSON review. First, three test expectations incorrectly assumed that a scalar-array pickle's `EMPTY_TUPLE` opcode was admitted; the whitelist was kept unchanged and tests were corrected to verify refusal. Second, a nonnative-endian fixture exposed NumPy protocol3 `ndarray.__setstate__` normalization. The decoder now captures the serialized dtype objects and refuses nonnative, structured or subarray dtypes before claiming losslessness. It does not normalize such data itself. Both endian position and type fixtures now test this refusal.
+
+Exact numeric duplicate detection hashes dtype, shape and C-order value bytes for both arrays, within and across the selected splits. Equivalent scalar versus uniform-vector types and different dtype representations are distinct under this audit. No stronger near-duplicate or semantic-independence claim is made.
+
+A fresh output directory is required. Every selected split is structurally validated before any manifest is published. Failures retain staged numeric arrays, per-member completion details, error type/reason and a failed structural report. On pre-staging source/receipt rejection, no numeric output exists. Any partially published output caused by a filesystem failure remains inadmissible because consumers must require `structural_report.json` status `complete_structural_only` and matching hashes. Training also requires root's separately bound admission artifact.
+
+Manifest fields match the agreed numeric-loader contract. `source.family` is `designsafe_published_npz`; this is the published NPZ source family, not a reconstruction from the official TFRecord stream. The statistics agent independently reviewed the receipt/manifest/pickle/CRC/preservation design and final captured-dtype guard, reporting no remaining blocker. Root owns execution, any source freeze, source-family wording, scientific admission and subsequent experiments.

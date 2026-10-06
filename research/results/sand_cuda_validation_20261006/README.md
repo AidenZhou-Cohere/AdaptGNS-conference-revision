@@ -1,0 +1,11 @@
+# Sand CUDA numerical checks: strict gradient parity not passed
+
+Both bounded real-training-data comparisons **failed the original elementwise CPU/CUDA gradient tolerance**. Neither result is a scientific Sand model or a backend launch approval. The original three fixed source-size cases, initialization, noise and tolerances were preserved. Source arrays and checkpoint binaries remain on the research machine; their hashes and input identities are retained in the reports.
+
+The first variant passed ordered graph, encoder-feature, prediction/variance/target/loss and checkpoint/Adam/RNG replay checks, but failed20gradient elements across4comparisons, including repeated CUDA faithful-versus-MSE mean-gradient checks. After independent review, a separately named deterministic variant enabled strict deterministic algorithms and required CUBLAS_WORKSPACE_CONFIG=:4096:8 before process start. Original source and numerical tolerances stayed unchanged.
+
+Under deterministic execution, all183shared faithful/MSE gradient tensors are byte-identical for each of the3cases. AllNLL, graph, feature, output/loss and replay checks pass. However,13CPU/CUDAfaithful gradient elements remain outside the original thresholds:1in the median-size case and12in the large case, with maximum tolerance ratio1.7991. Both failures are retained. ReLU-boundary sensitivity is currently a hypothesis requiring a separate diagnostic; no threshold is relaxed and the failed checks are not reclassified.
+
+The trainer uses the original hash-pinned full-model core and training helpers with a separate CUDA lineage. Local review covers63CPU/mock tests for the trainer/validator and7strict-runtime-gate tests for the deterministic variant. Those tests verify orchestration and contracts; they do not make the numerical result pass. The included synthetic comparison helper is byte-identical to the one in the sibling `cuda_execution_validation_20261006` family; actual-data execution also requires the exact admitted numeric training data. Source-only inspection does not import a model.
+
+No scientific CUDA training, capacity benchmark or test evaluation has launched at this snapshot. Native local WaterDrop work is unchanged. The proposed Sand scientific protocol remains unfrozen while numerical interpretation and complete-cohort timing are reviewed.
