@@ -1,0 +1,19 @@
+\begin{table}[ht]
+\centering\small
+\caption{Previously computed graph-bridge correlations with self-loops on. Dimensionless particle Spearman correlations are averaged over frames within trajectory, trajectories within seed, then three seeds (mean $\pm$ sample SD). Benefit is signed base-minus-own-selected-action normalized vector squared error. Both risk rules use observed histories; these are exploratory results on inspected data.}
+\label{tab:graph-bridge-risk-benefit}
+\begin{tabular}{lllrr}
+\toprule
+Split & Objective & Score & Base residual & Own sparse benefit\\
+\midrule
+Validation&Faithful&Previous&$0.341\pm0.023$&$-0.047\pm0.027$\\
+Validation&Faithful&Current&$0.344\pm0.023$&$-0.048\pm0.029$\\
+Validation&NLL&Previous&$0.406\pm0.013$&$-0.079\pm0.030$\\
+Validation&NLL&Current&$0.410\pm0.013$&$-0.079\pm0.031$\\
+Test&Faithful&Previous&$0.325\pm0.054$&$-0.030\pm0.047$\\
+Test&Faithful&Current&$0.325\pm0.055$&$-0.030\pm0.048$\\
+Test&NLL&Previous&$0.386\pm0.025$&$-0.075\pm0.014$\\
+Test&NLL&Current&$0.387\pm0.027$&$-0.075\pm0.014$\\
+\bottomrule
+\end{tabular}
+\end{table}
