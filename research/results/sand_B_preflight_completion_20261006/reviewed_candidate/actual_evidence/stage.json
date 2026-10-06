@@ -1,0 +1,57 @@
+{
+  "checked_utc": "2026-10-06T19:51:32.928852+00:00",
+  "files": [
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_B_preflight_amendment_cpu_v1.py",
+      "sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/launch_sand_B_preflight_amendment_cpu_v1.py",
+      "sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/history/sand_original_source_window_disposition_independent_review_code_audit_v1.json",
+      "sha256": "d3c7493bc8a5995eb312fef061d8522a722007d6d4a5178eedb49c23928fe5a3"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/history/sand_original_source_phase_incomplete_root_v1.json",
+      "sha256": "5b07542ec04a11f8fef58f563d693ccb20514dbcac603b17a5736f45b97a1120"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/history/root_original_external_exit.json",
+      "sha256": "b89c1844e4cae32b191da7c0e2300c7351833b704e68fa8cd7313760fa847f3f"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/history/sand_completed_transfer_independent_review_code_audit_v1.json",
+      "sha256": "fbbb549456d289cf8d533f6e1a078c915ac0f1728c5e3314b92192cbdf4395c8"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/history/target_publish.json",
+      "sha256": "77bc2bc1ad6d9efddf5594402f4f85249e06853e8461cf85f9ad6889dbcb1e4f"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/human_approval.json",
+      "sha256": "fe20b5a99d5638d336a4dd0cfd521324165da4553b0c32e101a1fb844b124ccb"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/amendment_phase.json",
+      "sha256": "e22a9b0e23eae4cccb872a7543805fdaccf3ea2d9d6a875fdec17d7c2271ef39"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_valid.mode_release.json",
+      "sha256": "8847f168cfacd5d5535372ab3c80ef0dde1232b4830ac8bff1cce9effcdb2692"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_valid.cpu_release.json",
+      "sha256": "04c342149fc50c9b5e64cd9b322e0439a8011aa51f7d52a41ffcb7bc2cc66cbb"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_test.mode_release.json",
+      "sha256": "63a5011da1c7ab79e0974c29323ee7ee19cc4ecf316896be9f45c157258b7cb8"
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_test.cpu_release.json",
+      "sha256": "50e6df9760131e79cd972942a855ea71b0905eab09fb6ed325f4cbced370c5ae"
+    }
+  ]
+}

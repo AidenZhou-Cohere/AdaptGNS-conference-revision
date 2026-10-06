@@ -1,0 +1,28 @@
+{
+  "amendment_id": "sand_B_preflight_completion_600s_20261006_v1",
+  "approved_new_shared_seconds": 600,
+  "authorization_source": null,
+  "automatic_retry": false,
+  "bootstrap_source_sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+  "global_analysis_deadline_utc": "2026-10-07T04:00:00+00:00",
+  "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+  "human_approval_observed_utc": null,
+  "human_message_reference": null,
+  "human_message_text": null,
+  "operations": [
+    "preflight_valid",
+    "preflight_test"
+  ],
+  "original_analysis_seconds": 3600,
+  "original_evaluation_seconds": 11760,
+  "original_source_phase_sha256": "895e25aa38490f42bb2f24a4129ccde8c1e91f8f01a8cf960eda15d0ee15e7ed",
+  "owner_source_sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+  "preparation_source_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+  "preserves_original_incomplete_history": true,
+  "recorded_by": null,
+  "recorded_utc": null,
+  "reviewed_candidate_manifest_sha256": null,
+  "schema": "adaptgns_sand_B_preflight_explicit_human_approval_v1",
+  "status": "template_not_admitted",
+  "subsequent_gpu_control_seconds": 600
+}

@@ -1,0 +1,223 @@
+{
+  "schema": "sand_B_completion_uniform_exclusions_v1",
+  "files": [
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/collected/sand_reserved_B_preflight_amendment_20261006_v1/owners/preflight_test/child.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/collected/sand_reserved_B_preflight_amendment_20261006_v1/owners/preflight_test/child.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/collected/sand_reserved_B_preflight_amendment_20261006_v1/owners/preflight_valid/child.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/collected/sand_reserved_B_preflight_amendment_20261006_v1/owners/preflight_valid/child.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/human_approval.json",
+      "sha256": "fe20b5a99d5638d336a4dd0cfd521324165da4553b0c32e101a1fb844b124ccb",
+      "bytes": 1507,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.collect.command.json",
+      "sha256": "cb96934767aa0aaa5fea220bb619a147f68669f731aae298b9dd363e288d9078",
+      "bytes": 2351,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.collect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.collect.stdout",
+      "sha256": "01fb7f60cf0c233d00108bc56e112ef3800608b2b7a093af17c93d580eca1277",
+      "bytes": 886268,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.command.json",
+      "sha256": "f4eadeb7c235aba7c99b759ab43a97ca62b24ad834101642dc81c6ff6166bcb1",
+      "bytes": 664,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_test.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.collect.command.json",
+      "sha256": "4acc2599bc92d22da7404b5dbecaa25cd1f7328ed3e3e8259112498cc6befd71",
+      "bytes": 2351,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.collect.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.collect.stdout",
+      "sha256": "a5d279bc90b2c8ecb81fdad9fe1a37227461a64749becc1218b46fd54c0de40e",
+      "bytes": 886233,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.command.json",
+      "sha256": "2024dc3b468ecb456e6b2ca9a0ad9ea4993ef2bb8b0ec6712cb793cbbfa85fb6",
+      "bytes": 665,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/preflight_valid.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/setup_parent.command.json",
+      "sha256": "20b8109c67c27ba2c984e3432cfafb6ff9917ab4682375318d7d2f53ffbc2cb5",
+      "bytes": 2355,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/setup_parent.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/setup_parent.stdout",
+      "sha256": "89e9596d4382a7365a88ad8dbc30b33aa1e832bedf680b39f33dc3b39b15d67d",
+      "bytes": 462,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/stage_attempt2.command.json",
+      "sha256": "6391771dad0090dcc23262d1f81b3c369f1df914c6a193dfc7a13a5c62bc7924",
+      "bytes": 1768,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/stage_attempt2.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/attempt2/stage_attempt2.stdout",
+      "sha256": "832788c69bcf14a3032be94b9a8b90bcdf8a5e458d73165003684eb9e6d57892",
+      "bytes": 1099,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/human_approval.json",
+      "sha256": "fe20b5a99d5638d336a4dd0cfd521324165da4553b0c32e101a1fb844b124ccb",
+      "bytes": 1507,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/precheck.command.json",
+      "sha256": "07da0fc2e8b586ac59ad7612cafd5a2e3ccf4111e9b0979214d86c7f7e22d106",
+      "bytes": 1410,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/precheck.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/precheck.stdout",
+      "sha256": "5aee089d9d142962c8fee79db1394598897b71e60feb32ceef7630722d6d41c6",
+      "bytes": 17531,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.command.json",
+      "sha256": "bb4ccd37bf04551c0f6c88b218079dc82dea865428118e02a29f361cfa52457c",
+      "bytes": 665,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.stderr",
+      "sha256": "1b256c8529cfb77d5b054d8f8aeb5b0e9cf3c2f14dc556e12b25fab9fcd57cf3",
+      "bytes": 1091,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.command.json",
+      "sha256": "8abf35c2004ac409fd0e3a774280f87ab78919cb0928854d5ed69dcf0f1b1fd8",
+      "bytes": 666,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.stderr",
+      "sha256": "7c23bb3e39c00527524918757129a81e9d5479941fcc8f4b1763cdc3d1e109af",
+      "bytes": 1092,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/stage.command.json",
+      "sha256": "b6c8b981ad81852a55da31801945ca39d0c023731f8da21d5f1db8c295bd2a7e",
+      "bytes": 961,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/stage.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    },
+    {
+      "source_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/stage.stdout",
+      "sha256": "50fcf285eec1f930053ae2a76bd65d5c7005e248ce91a08a8110e76fbe102362",
+      "bytes": 2910,
+      "reason": "uniform raw-log/command-capture/direct-human-message exclusion; retained unchanged locally"
+    }
+  ],
+  "raw_model_numeric_payloads_copied": false,
+  "credentials_or_ssh_config_copied": false
+}

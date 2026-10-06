@@ -1,0 +1,15 @@
+{
+  "clock": {
+    "error_bound_seconds": 5,
+    "host_boot_id": "3d254b4e-ede4-492f-839a-5f16b6f3d1b3",
+    "host_monotonic_seconds": 5365202.061665544,
+    "host_utc": "2026-10-06T19:57:35.272004+00:00",
+    "root_reference_utc": "2026-10-06T19:57:35.347996+00:00",
+    "source": "root_fresh_tool_and_host_clock_evidence"
+  },
+  "created_empty_parent": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/owners",
+  "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+  "matching_processes": [],
+  "operation_and_worker_leaves_absent": true,
+  "same_stop_utc": "2026-10-06T20:00:02.215311+00:00"
+}

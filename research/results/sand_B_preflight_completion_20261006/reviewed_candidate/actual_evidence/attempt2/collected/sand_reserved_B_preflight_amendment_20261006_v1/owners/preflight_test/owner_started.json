@@ -1,0 +1,95 @@
+{
+  "amendment_clock_sample": {
+    "error_bound_seconds": 5,
+    "host_boot_id": "3d254b4e-ede4-492f-839a-5f16b6f3d1b3",
+    "host_monotonic_seconds": 5365202.061665544,
+    "host_utc": "2026-10-06T19:57:35.272004+00:00",
+    "root_reference_utc": "2026-10-06T19:57:35.347996+00:00",
+    "source": "root_fresh_tool_and_host_clock_evidence"
+  },
+  "entry_monotonic": 5365254.594105504,
+  "native_hard_guard": {
+    "absolute_deadline_ns": 5365344004972544,
+    "armed_monotonic_ns": 5365254600289557,
+    "clock": "CLOCK_MONOTONIC",
+    "deleted_before_exit": false,
+    "signal": "SIGKILL",
+    "timer_id": 0
+  },
+  "native_outer_timing": {
+    "bootstrap_allowance_seconds": 5,
+    "bootstrap_process_start": {
+      "lower_ns": 5365254559999776,
+      "offset_lower_ns": -1408,
+      "offset_upper_ns": 224,
+      "ticks": 536525456,
+      "ticks_per_second": 100,
+      "upper_ns": 5365254570001408
+    },
+    "computed_monotonic_ns": 5365254579809008,
+    "earliest_relative_kill_monotonic_ns": 5365338579809008,
+    "original_absolute_hard_deadline_ns": 5365344004972544,
+    "owner_guard_armed_monotonic_ns": 5365254600289557,
+    "term_seconds": 69
+  },
+  "outer_timeout_identity": {
+    "argv": [
+      "/usr/bin/timeout",
+      "--signal=TERM",
+      "--kill-after=15s",
+      "69s",
+      "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_B_preflight_amendment_cpu_v1.py",
+      "--execute",
+      "--hard-deadline-monotonic-ns",
+      "5365344004972544",
+      "--outer-term-seconds",
+      "69",
+      "--outer-computed-monotonic-ns",
+      "5365254579809008",
+      "--release",
+      "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_test.cpu_release.json",
+      "--release-sha256",
+      "76d16590bed745d306dceb5407ac7119621e1d37e3f9e273951edaf47650f806"
+    ],
+    "executable": "/usr/bin/timeout",
+    "pgid": 73223,
+    "pid": 73223,
+    "ppid": 41,
+    "sid": 73223,
+    "start_id": "536525456",
+    "state": "S"
+  },
+  "owner_identity": {
+    "argv": [
+      "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_B_preflight_amendment_cpu_v1.py",
+      "--execute",
+      "--hard-deadline-monotonic-ns",
+      "5365344004972544",
+      "--outer-term-seconds",
+      "69",
+      "--outer-computed-monotonic-ns",
+      "5365254579809008",
+      "--release",
+      "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/controls/preflight_test.cpu_release.json",
+      "--release-sha256",
+      "76d16590bed745d306dceb5407ac7119621e1d37e3f9e273951edaf47650f806"
+    ],
+    "executable": "/usr/bin/python3.12",
+    "pgid": 73223,
+    "pid": 73224,
+    "ppid": 73223,
+    "sid": 73223,
+    "start_id": "536525458",
+    "state": "R"
+  },
+  "release_sha256": "76d16590bed745d306dceb5407ac7119621e1d37e3f9e273951edaf47650f806",
+  "scientific_admission": false
+}

@@ -1,0 +1,44 @@
+{
+  "bootstrap_source_sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+  "current_output_absence_independently_observed_by_this_review": false,
+  "execution_authority": false,
+  "first_attempt_evidence_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.external.json": "e30fcfcd699877fdbf21e55d39fd5e2bdce96a1da6e2dd5fee3e0f7cecc742fe",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.root_original_external_exit.json": "d1ab317d5fe20b0d4593baf74064b2150a5ff7ace0cb5552adea95e00434558c",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_test.stderr": "1b256c8529cfb77d5b054d8f8aeb5b0e9cf3c2f14dc556e12b25fab9fcd57cf3",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.external.json": "65363f71fc307b69368f0e5d54c21f887b040730a6bcaa0a1ba1d72fdadc4c13",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.root_original_external_exit.json": "abc0be6b1131b7ac7da60a0d4f6cc74c482567d9c478de66f0528a3a105969f9",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_released_root_v1/preflight_valid.stderr": "7c23bb3e39c00527524918757129a81e9d5479941fcc8f4b1763cdc3d1e109af"
+  },
+  "first_attempt_exit_codes": [
+    1,
+    1
+  ],
+  "first_attempt_original_sessions": [
+    48709,
+    4106
+  ],
+  "native_closure_independently_observed_by_this_review": false,
+  "native_probe_or_launch": false,
+  "new_clock_read_or_issued": false,
+  "owner_source_sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+  "permitted_minimal_recovery_description": "Root-directed manually recorded second operational owner startup after original failed setup, with no repeated preflight worker; retain both failed attempts and their exact released controls. This receipt itself grants no execution authority.",
+  "requirements": [
+    "Root separately establishes native closure of both first original owner/timeout processes and absence of both canonical owner operation leaves and worker output leaves.",
+    "Create only the empty exact amendment-root/owners parent; operation owner leaves and preflight worker output leaves are still created exclusively by the unchanged owner/worker.",
+    "Do not run unchanged operator issue, restart the phase, edit approval, renew600 seconds, shorten/relabel original history, alter scientific inputs/argv, or repeat a started worker.",
+    "If original CPU clock is stale, preserve and hash the old remote canonical CPU-release bytes before an explicitly recorded replacement; preserve original local attempt1 controls and receipts unchanged.",
+    "Fresh CPU controls may change only issued_utc, clock_sample, invocation_origin_utc, remaining_shared_amendment_seconds, hard_deadline_monotonic_ns and derived CPU byte hash/bootstrap literal bindings; use the SAME phase stop, work_stop E-15, cleanup E-5, phase/approval/core/source/input/command/output bindings.",
+    "Owner requires canonical remote controls/{operation}.cpu_release.json; attempt2 is a separate local evidence namespace, not a new remote control/output path.",
+    "Fresh host sample must pass <=300-second age, exact boot, UTC/monotonic consistency and root/host <=5-second checks. Derive hard deadline from fresh sample plus remaining-to-original-stop minus5 seconds; do not extend effective deadline.",
+    "Original mode/core release has no independent300-second staleness check and can remain byte-identical; mode issuance must precede new CPU issuance and retain the same approved phase start/stop.",
+    "Complete original attempt2 tool exit, native closure, input/output capture and product review must fit inside the unchanged phase. Source compatibility alone does not establish time feasibility."
+  ],
+  "reviewer": "transition_review",
+  "schema": "sand_B_preflight_failed_startup_recovery_constraints_transition_v1",
+  "scientific_or_operational_sources_changed": false,
+  "scientific_results_arrays_or_checkpoints_read": false,
+  "status": "confirmed_pre_worker_owner_startup_failure_same_phase_recovery_source_compatible",
+  "unchanged_amendment_stop_utc": "2026-10-06T20:00:02.215311+00:00",
+  "worker_launch_reached_by_failed_execute": false
+}

@@ -1,0 +1,7 @@
+{
+  "observed_utc": "2026-10-06T19:58:46+00:00",
+  "original_tool_exit_code": 0,
+  "original_tool_session": 17452,
+  "recorded_by": "root",
+  "scope": "Root observation of the original tool session, separate from SSH transport and remote native closure."
+}

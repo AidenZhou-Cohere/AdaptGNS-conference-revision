@@ -1,0 +1,63 @@
+{
+  "amendment_phase_sha256": "e22a9b0e23eae4cccb872a7543805fdaccf3ea2d9d6a875fdec17d7c2271ef39",
+  "amendment_stop_utc": "2026-10-06T20:00:02.215311+00:00",
+  "bindings": {
+    "preflight_test": {
+      "attempt2_cpu_release_sha256": "76d16590bed745d306dceb5407ac7119621e1d37e3f9e273951edaf47650f806",
+      "attempt2_launch_sha256": "9878e31c3a92d7025b3560e1483b9c0f5523404b79927dd3147633b3752543d0",
+      "original_cpu_release_sha256": "50e6df9760131e79cd972942a855ea71b0905eab09fb6ed325f4cbced370c5ae",
+      "unchanged_core_sha256": "63a5011da1c7ab79e0974c29323ee7ee19cc4ecf316896be9f45c157258b7cb8"
+    },
+    "preflight_valid": {
+      "attempt2_cpu_release_sha256": "233c91c5df1c35fbe49be0af3ce88329e884e1742258e43c2f02ad5b9eb64332",
+      "attempt2_launch_sha256": "7d91c1a6380c160d1201932651cf51c286392c020cb98f0375d4c0f099e16f2d",
+      "original_cpu_release_sha256": "04c342149fc50c9b5e64cd9b322e0439a8011aa51f7d52a41ffcb7bc2cc66cbb",
+      "unchanged_core_sha256": "8847f168cfacd5d5535372ab3c80ef0dde1232b4830ac8bff1cce9effcdb2692"
+    }
+  },
+  "check_count": 33,
+  "checked_utc": "2026-10-06T19:58:07.953686+00:00",
+  "checks": [
+    "Unchanged original600 phase",
+    "Root setup exact empty parent no worker",
+    "Root setup fresh exact host/boot/clock",
+    "Manual second owner startup only",
+    "Reviewed wrapper unchanged",
+    "Unchanged original human approval",
+    "preflight_valid exactly five permitted scalar-control changes",
+    "preflight_valid unchanged original core bytes and bindings",
+    "preflight_valid same-stop fresh remaining interval",
+    "preflight_valid native deadline derives sameUTCstop and5seconduncertainty",
+    "preflight_valid exact unchanged bootstrap worker and two updated literals",
+    "preflight_valid preserved first-failure .command.json",
+    "preflight_valid preserved first-failure .cpu_release.json",
+    "preflight_valid preserved first-failure .external.json",
+    "preflight_valid preserved first-failure .launch.json",
+    "preflight_valid preserved first-failure .mode_release.json",
+    "preflight_valid preserved first-failure .root_original_external_exit.json",
+    "preflight_valid preserved first-failure .stderr",
+    "preflight_valid preserved first-failure .stdout",
+    "preflight_test exactly five permitted scalar-control changes",
+    "preflight_test unchanged original core bytes and bindings",
+    "preflight_test same-stop fresh remaining interval",
+    "preflight_test native deadline derives sameUTCstop and5seconduncertainty",
+    "preflight_test exact unchanged bootstrap worker and two updated literals",
+    "preflight_test preserved first-failure .command.json",
+    "preflight_test preserved first-failure .cpu_release.json",
+    "preflight_test preserved first-failure .external.json",
+    "preflight_test preserved first-failure .launch.json",
+    "preflight_test preserved first-failure .mode_release.json",
+    "preflight_test preserved first-failure .root_original_external_exit.json",
+    "preflight_test preserved first-failure .stderr",
+    "preflight_test preserved first-failure .stdout",
+    "Both second operational calls same native deadline"
+  ],
+  "manual_authorization_sha256": "ae4f7de4c8fc068da5f4b2a22c49e03a26d112502a69d176a7145daad7168171",
+  "new_clock_or_native_action_by_reviewer": false,
+  "original_failures_preserved": true,
+  "root_stage_and_both_worker_closures_still_required": true,
+  "schema": "sand_B_attempt2_actual_control_delta_independent_review_v1",
+  "scientific_commands_inputs_cores_unchanged": true,
+  "setup_capture_sha256": "91842e5bb05da5a62099bf7e40911022813a3036196dc4f0d4756245b117bdfe",
+  "status": "passed_same_phase_manual_operational_recovery_controls"
+}
