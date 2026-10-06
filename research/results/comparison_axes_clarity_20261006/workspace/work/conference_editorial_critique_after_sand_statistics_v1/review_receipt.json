@@ -1,0 +1,26 @@
+{
+  "schema": "conference_editorial_review_after_sand_statistics_v1",
+  "status": "recommendations_only_canonical_title_abstract_unchanged",
+  "manuscript": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+  "manuscript_sha256": "d4ed535ce1ec78803d85ba37449c5fe6eec7d32c9e55303e7fff2cdec71c76fe",
+  "title_verbatim": "Adaptive Interaction Graphs for Particle Simulation",
+  "current_abstract_verbatim": "Particle graph-network simulators reconstruct local interaction graphs from a fixed geometric rule, even when prediction difficulty varies across a scene. We study a lightweight controller that uses the preceding step's predicted residual scale to allocate extra local edges. A reproducibility audit shows why three quantities must be distinguished: predicted residual risk, the benefit of additional interactions, and the geometry-dependent cost of a free rollout. In particular, an expansion policy cannot reduce edges on identical positions, and accurate residual prediction does not guarantee useful allocation. We formulate an exact incremental pair budget, apply established faithful heteroscedastic regression to preserve the mean predictor's squared-error gradients, and derive a conditional allocation-regret bound separating estimation error, temporal lag, and risk--benefit mismatch. Reanalysis of released rollouts does not resolve the previously reported WaterDrop accuracy advantage at step 200 and reverses its sign over the full saved horizon. New controlled CPU experiments evaluate alternative objectives and matched-budget policies on a small public WaterDrop subset. The resulting evidence supports a reproducible study of adaptive computation, while leaving full-scale accuracy--runtime superiority unestablished.",
+  "current_abstract_sha256": "4fd6b124ea2eeebb6c47fce04e3d8e52f7547f157435331531b72f367738a695",
+  "ranked_recommendations": 3,
+  "abstract_draft_separate": true,
+  "registration_record_inspected": false,
+  "author_comparison_required": true,
+  "scientific_or_numerical_recomputation": false,
+  "tests_run": false,
+  "d3_products_read": false,
+  "canonical_files_written": false,
+  "files_sha256": {
+    "ranked_memo.md": "474c47f43183898df353897df6f98ec51f3864ed89515089421954000e8f6873",
+    "optional_abstract_alignment.md": "e55de4c7e8fc84387a64796a8f47af2e8fe4cd929615d340e3d8f4e039ea3530"
+  },
+  "word_counts_editorial_only": {
+    "current_abstract": 174,
+    "optional_abstract": 181
+  },
+  "expanded_first_draft_retained": true
+}
