@@ -1,0 +1,107 @@
+{
+  "execution_authority": false,
+  "hosts": {
+    "A": {
+      "environment_override": {
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+      },
+      "environment_variables_required_absent": [
+        "CUDA_VISIBLE_DEVICES"
+      ],
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+      "launcher_candidate": "A.launcher.candidate.json",
+      "owner_argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+        "--execute",
+        "--release",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/A.evaluation_release.json",
+        "--lifecycle-source",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "--output-dir",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1"
+      ],
+      "physical_owned_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "release_candidate": "A.evaluation_release.candidate.json",
+      "stage_descriptors": [
+        "stages/A.base_seed1.full_rollout_test.candidate.json",
+        "stages/A.base_seed1.same_state_valid.candidate.json",
+        "stages/A.base_seed1.same_state_test.candidate.json",
+        "stages/A.base_seed1.clean_validation.candidate.json",
+        "stages/A.mix_seed1.full_rollout_test.candidate.json",
+        "stages/A.mix_seed1.same_state_valid.candidate.json",
+        "stages/A.mix_seed1.same_state_test.candidate.json",
+        "stages/A.mix_seed1.clean_validation.candidate.json",
+        "stages/A.base_seed2.full_rollout_test.candidate.json",
+        "stages/A.base_seed2.same_state_valid.candidate.json",
+        "stages/A.base_seed2.same_state_test.candidate.json",
+        "stages/A.base_seed2.clean_validation.candidate.json",
+        "stages/A.mix_seed2.full_rollout_test.candidate.json",
+        "stages/A.mix_seed2.same_state_valid.candidate.json",
+        "stages/A.mix_seed2.same_state_test.candidate.json",
+        "stages/A.mix_seed2.clean_validation.candidate.json"
+      ],
+      "stage_invocation_count": 16,
+      "stream_ids": [
+        "base_seed1",
+        "mix_seed1",
+        "base_seed2",
+        "mix_seed2"
+      ]
+    },
+    "B": {
+      "environment_override": {
+        "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+        "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+      },
+      "environment_variables_required_absent": [
+        "CUDA_VISIBLE_DEVICES"
+      ],
+      "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+      "launcher_candidate": "B.launcher.candidate.json",
+      "owner_argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+        "--execute",
+        "--release",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/B.evaluation_release.json",
+        "--lifecycle-source",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "--output-dir",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1"
+      ],
+      "physical_owned_indices": [
+        2,
+        3
+      ],
+      "release_candidate": "B.evaluation_release.candidate.json",
+      "stage_descriptors": [
+        "stages/B.base_seed0.full_rollout_test.candidate.json",
+        "stages/B.base_seed0.same_state_valid.candidate.json",
+        "stages/B.base_seed0.same_state_test.candidate.json",
+        "stages/B.base_seed0.clean_validation.candidate.json",
+        "stages/B.mix_seed0.full_rollout_test.candidate.json",
+        "stages/B.mix_seed0.same_state_valid.candidate.json",
+        "stages/B.mix_seed0.same_state_test.candidate.json",
+        "stages/B.mix_seed0.clean_validation.candidate.json"
+      ],
+      "stage_invocation_count": 8,
+      "stream_ids": [
+        "base_seed0",
+        "mix_seed0"
+      ]
+    }
+  },
+  "issued_by": null,
+  "model_count": 6,
+  "queue_owner_count": 2,
+  "schema": "sand_final_evaluation_24_stage_commands_candidate_v1",
+  "stage_invocation_count": 24,
+  "status": "unadmitted_inert_argv_only"
+}

@@ -1,0 +1,97 @@
+{
+  "actual_B_preflight_sha256": {
+    "test": {
+      "must_fill_both_fields": [
+        "B.evaluation_release.split_preflight.test.sha256",
+        "B.evaluation_release.files_sha256[path]"
+      ],
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_test/split_preflight.json",
+      "sha256": null
+    },
+    "valid": {
+      "must_fill_both_fields": [
+        "B.evaluation_release.split_preflight.valid.sha256",
+        "B.evaluation_release.files_sha256[path]"
+      ],
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_valid/split_preflight.json",
+      "sha256": null
+    }
+  },
+  "actual_B_preflights_read": false,
+  "allowed_runtime_changes": [
+    "B split_preflight.valid.path",
+    "B split_preflight.test.path",
+    "B files_sha256 key for valid preflight",
+    "B files_sha256 key for test preflight"
+  ],
+  "amendment_manifest_sha256": "72cfe26b2d8c13ea50d24b8d85e450ef228a4bf9ef681fb18a2de525f8640e6d",
+  "base_generator_sha256": "cbf4e06082e42ad69ee77a63e52e8e76b12668caf67e50adc262eeb7900b1dd2",
+  "base_manifest_sha256": "49f1f655303d5af180758d681495f4fae7335f4ed800da1543333741857029e9",
+  "byte_identical_base_payloads": {
+    "A.evaluation_release.candidate.json": "db82def08418d8e1e5d4474a684a78a5e4a7b381541c77d5aa7434a95df5ab09",
+    "A.launcher.candidate.json": "b1ce17e23290e4649d1e399c20f236c008b9cce5d44a0af0c1c522733f7e9296",
+    "HANDOFF.md": "232332e31ae76528b0fda082b1cb3285b0c55e85c91df91594a08ea077ea04fb",
+    "commands.json": "f652404e5a6cd4daad47b50b178b4b785d487b9c1bf25294cccd844cbfc9acea",
+    "frozen_source_closure.json": "da287485b6969992fa805ff799dc6193f42292c2ec38e4855df52de8c4f05484",
+    "stages/A.base_seed1.clean_validation.candidate.json": "1c3ff8bf9dcd796fa2c3c03ab373c5d606b3f2874c358d3d3edd3b8220b1ae3c",
+    "stages/A.base_seed1.full_rollout_test.candidate.json": "1c1e9b70252c9d6dcea3232687d687fcead6209b50da8c5510e06321491b70f6",
+    "stages/A.base_seed1.same_state_test.candidate.json": "cbb6f95ca98e838eb61e011fa0e115aea18cb65ffab096b4e78ea8585fb36210",
+    "stages/A.base_seed1.same_state_valid.candidate.json": "d89cd5778087e741e3587b4baa0854242aa39f1743e53e1c23ec7a471cb57e2f",
+    "stages/A.base_seed2.clean_validation.candidate.json": "c6bf66d8e1aa83879277d955fd95789698d359d5e5cf60c6134e3904a98561e3",
+    "stages/A.base_seed2.full_rollout_test.candidate.json": "817a5743b6435d593242113687aaeaf39cee2fb9f669c0cff23c4558147bec22",
+    "stages/A.base_seed2.same_state_test.candidate.json": "e84d32334be745cb522fca2676628858841478d88b12e7b66dde35e79031dcd0",
+    "stages/A.base_seed2.same_state_valid.candidate.json": "ae7efd9a60bc7a6f3fc1331f407fead5fc2c4ea2bfeed83e200cd69711616e75",
+    "stages/A.mix_seed1.clean_validation.candidate.json": "bc068e4e4332b56ec6bf76d2cb998080ab3be49a64de73c91de2ba7854ba91fd",
+    "stages/A.mix_seed1.full_rollout_test.candidate.json": "b928b3d810ae3cf0b5b50eb57f7aa10e4ff678ecdbed18dff453de2af68fcb4a",
+    "stages/A.mix_seed1.same_state_test.candidate.json": "6de0c6e415dd12161bb3169b66b8522010f5936c419d8fe8d8dac42b71c69bf9",
+    "stages/A.mix_seed1.same_state_valid.candidate.json": "9b1136f81966dc87e739981e6ec5064c97591daec0c80b1a7fad7d8ab1142f51",
+    "stages/A.mix_seed2.clean_validation.candidate.json": "58b7125d3faf03f9c2024f0d4333c827b57daf390719adc35be33c037a381a04",
+    "stages/A.mix_seed2.full_rollout_test.candidate.json": "404098f2931be8ae2c5cdae85f4d247774eb76189b0728fa19f24188a3aa1f26",
+    "stages/A.mix_seed2.same_state_test.candidate.json": "d26de109af8a915f33bc330b128e3fa26fafb16a1b1bf98fde623e74d17819a6",
+    "stages/A.mix_seed2.same_state_valid.candidate.json": "d9f94874d00d99d839e38ccbbfcb5169f53231da2678250a0a1b071dbf8ed475",
+    "stages/B.base_seed0.clean_validation.candidate.json": "2a68e6fd0650accc6dda44d333b6527a507e6868d918853126409c3f2eb2c27d",
+    "stages/B.base_seed0.full_rollout_test.candidate.json": "3c037ecb962299c9770660050b435699891991ac8c00a121ddfa10da7179a774",
+    "stages/B.base_seed0.same_state_test.candidate.json": "1f5ab3a78790f79c25c5d6d26993b12cea745daaa647e407067da45af4b09213",
+    "stages/B.base_seed0.same_state_valid.candidate.json": "998e0624e0ec8c72e344108b331b4182932cd8b072bae56040eefa6e43d3d9a7",
+    "stages/B.mix_seed0.clean_validation.candidate.json": "142ee711808d2498031dc4cb5d2f362fda870804028e3b728c14887393c99089",
+    "stages/B.mix_seed0.full_rollout_test.candidate.json": "6f8b78e021b2521a9bc8afc2ff8d887b728466c05872b0a2ee82731bba947719",
+    "stages/B.mix_seed0.same_state_test.candidate.json": "c111112aca9446747b15ef22f34dec23d735c2b169c5a2fe79bbaa1c8f3b0132",
+    "stages/B.mix_seed0.same_state_valid.candidate.json": "812a6b4ad0839df1e75dcead1e49b6e3df37fe4e022a73bcb8185afe76abcdd5"
+  },
+  "changed_files": {
+    "B.evaluation_release.candidate.json": {
+      "base_sha256": "303607a9ef4099a158d90e97d54279d5237d263ae39bc21d79afe8a1563a1f1f",
+      "successor_sha256": "f35894c7a53443934c4a15ee118484c83d9c639c0ec286f9d2f00a4032085e5b"
+    },
+    "B.launcher.candidate.json": {
+      "base_sha256": "b86d13c5a870729d2008736455c988f9566ca5fe3784b8eeeaa45570bd9851fc",
+      "successor_sha256": "4d6df6a57cb1199ae333a0c2352f6db7352b1c0dd7dc9b39c9853df7f1b8240c"
+    },
+    "immutable_input_requirements.json": {
+      "base_sha256": "270a48cb75c80a170323af9d2081a4b087bb89a705a0d9ebe2956c66ca40fda5",
+      "successor_sha256": "69a56bc6beed4f5ca7d6005a883b7d598072f1a6fc42b210b0cbc9f063989fd6"
+    }
+  },
+  "clock_issued": false,
+  "derived_control_changes": [
+    "B launcher release_candidate_sha256",
+    "immutable_input_requirements.per_host_split_preflight_paths.B.valid",
+    "immutable_input_requirements.per_host_split_preflight_paths.B.test"
+  ],
+  "execution_authority": false,
+  "frozen_sources_changed": false,
+  "models_or_checkpoints_changed": false,
+  "original_900_second_source_phase_remains_incomplete": true,
+  "owner_argv_changed": false,
+  "path_replacements": {
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_test_B/split_preflight.json": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_test/split_preflight.json",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_valid_B/split_preflight.json": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_valid/split_preflight.json"
+  },
+  "quotas_changed": false,
+  "schema": "sand_final24_B_amendment_path_delta_v1",
+  "scientific_argv_changed": false,
+  "scientific_data_paths_or_pins_changed": false,
+  "separate_approved_B_amendment_product_and_native_closure_still_required": true,
+  "status": "unadmitted_source_only_operational_path_successor",
+  "supersession_scope": "Only the old never-launched B preflight locations are superseded. The original source-phase incomplete disposition remains preserved. Inherited original-window promotion prose is historical; current prerequisites are specified by AMENDMENT_HANDOFF.md and the separately approved B amendment."
+}

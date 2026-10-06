@@ -1,0 +1,2656 @@
+{
+  "created_utc": "2026-10-06T07:53:45.502188+00:00",
+  "evidence_files_sha256": {
+    "aquamarine-toad-75_approved_operational_stage_v1.json": "b199e808e7f3a2c818791bae92ab0fb916727d028ad67f5826d48a73aba9dd3c",
+    "aquamarine-toad-75_sand_final_operational_stage_v1.json": "12879ae05b18e6fe03b7d399ebb5325e9921f2ac366f051c2804958b200ce2a5",
+    "aquamarine_gate_approved_sources_stage_v3.json": "8ec104c1be203d4c0e712cc87dee09b36866359037bc9b0024d946b627693602",
+    "goop3d_runtime_stage_v1_manifest.json": "fae3e89bb18b3541f56036dedfcec20eed14f765646c1e6f974708679f86ff56",
+    "goop3d_science_sources_stage_v1.manifest.json": "fa328687f7e5c77ac9730b202240e2188071166233cc3c4a334b175a5a4049b1",
+    "goop3d_timing_common_stage_v1_manifest.json": "ceffa9c0dc7d0a28e658eff192052e27639fe48fb4865d66e6a95fffb7a41848",
+    "goop3d_validation_numerical_dependencies_v1.manifest.json": "8f1636e7e9cf9fcdb62f55ef8085beffaf202406622c131b45a32df208ce3776",
+    "goop3d_validation_timing_stage_v1.manifest.json": "3a1f63c65f6035e26eb727a87af82e5d6f1b4295bd94ab0071d5ccf1fb3d5d22",
+    "goop_runtime_stage_v1_manifest.json": "db9b485f0ce4210b289bd3b27d39d3729eb40ae82d846506721b08a5ead5a113",
+    "teal-rat-80_approved_operational_stage_v1.json": "820a4fbd28739d4aaede773b693175462b40358f0ed5a2d8aae09d7304f3faed",
+    "yellow-worm-77_approved_operational_stage_v1.json": "78b0dab6790b149ce498f07bdb0725e4bdd2e68f862d4dc1732056f992a2522d",
+    "yellow-worm-77_sand_final_operational_stage_v1.json": "26c54229974339e9b4ac8c615280e45769ec93f046023c18fd2b5070656730ca",
+    "yellow_scalar_dependency_stage_v1.json": "a506d975379fcd8bcad702c3b6b786259a70ceaba338fae305ef3a706671f3ff"
+  },
+  "excluded_execution_branches": [
+    "No tests, installer/packaging programs, authoring receipts, review fixtures, or proposal templates belong to executable closure.",
+    "supervise_graph_support_science_quota_v2.py is not the Sand training verifier; the actual verifier is supervise_sand_graph_support_science.py.",
+    "The original lifecycle measure_sand_cuda_capacity_v2.py training/capacity branches are unused; train_sand_deterministic_cuda.py is not required by process-helper reuse.",
+    "B gate does not execute D3 supervisor.modules; D3 evaluator/collector/trainer/preparation/numerical dependencies are excluded from B unless independently needed by Goop.",
+    "The old quota-v2 collector contributes pure scalar functions, not the older quota supervisor or evaluation execution branches.",
+    "D3 collector does not import summarize_goop_graph_support_quota_v2.py; no teal staging of that file is required by these profiles.",
+    "D3 final-cohort adapter does not call science.configure, validator execution, or training load_helpers: old D3 v1 trainer, original graph and deadline worksheet current PREP files are excluded. Their retained scientific-input snapshots remain required.",
+    "research and gns are namespace packages in this pinned tree. No __init__.py files are required or invented."
+  ],
+  "files": {
+    "adaptive-gns/gns/data_loader.py": {
+      "bytes": 16683,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/data_loader.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/data_loader.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/data_loader.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/data_loader.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/data_loader.py]"
+      ],
+      "sha256": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef"
+    },
+    "adaptive-gns/gns/device_utils.py": {
+      "bytes": 3178,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/device_utils.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/device_utils.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/device_utils.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/device_utils.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/device_utils.py]"
+      ],
+      "sha256": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326"
+    },
+    "adaptive-gns/gns/graph_network.py": {
+      "bytes": 17276,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/graph_network.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/graph_network.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/graph_network.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/graph_network.py]"
+      ],
+      "sha256": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91"
+    },
+    "adaptive-gns/gns/learned_simulator.py": {
+      "bytes": 32300,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/learned_simulator.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/learned_simulator.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/learned_simulator.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/learned_simulator.py]"
+      ],
+      "sha256": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf"
+    },
+    "adaptive-gns/gns/losses.py": {
+      "bytes": 2117,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/losses.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/losses.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/losses.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/losses.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/losses.py]"
+      ],
+      "sha256": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5"
+    },
+    "adaptive-gns/gns/model_io.py": {
+      "bytes": 6308,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/adaptive-gns/gns/model_io.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/model_io.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[adaptive-gns/gns/model_io.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[adaptive-gns/gns/model_io.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[adaptive-gns/gns/model_io.py]"
+      ],
+      "sha256": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e"
+    },
+    "cuda_preparation/audit_goop3d_auxiliary.py": {
+      "bytes": 7809,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_goop3d_auxiliary.py",
+      "pin_references": [
+        "prepare_goop3d_reserved_test_v1.py:AUXILIARY_SHA"
+      ],
+      "sha256": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb"
+    },
+    "cuda_preparation/benchmark_goop_graph_support_rollout.py": {
+      "bytes": 40923,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[benchmark_goop_graph_support_rollout.py]"
+      ],
+      "sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f"
+    },
+    "cuda_preparation/benchmark_sand_graph_support_rollout.py": {
+      "bytes": 45780,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/benchmark_sand_graph_support_rollout.py",
+      "pin_references": [
+        "supervise_sand_final_evaluation_scoped_v1.py:BENCH_SHA"
+      ],
+      "sha256": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13"
+    },
+    "cuda_preparation/download_sand_public_v2.py": {
+      "bytes": 17938,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/download_sand_public_v2.py",
+      "pin_references": [
+        "prepare_sand_reserved_test_scoped_v1.py:DOWNLOADER_SHA"
+      ],
+      "sha256": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a"
+    },
+    "cuda_preparation/evaluate_goop3d_graph_support_v1.py": {
+      "bytes": 31215,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+      "pin_references": [
+        "summarize_goop3d_graph_support_v1.py:SOURCE_PINS[evaluate_goop3d_graph_support_v1.py]",
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[evaluate_goop3d_graph_support_v1.py]"
+      ],
+      "sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de"
+    },
+    "cuda_preparation/evaluate_goop_graph_support_final.py": {
+      "bytes": 44814,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/evaluate_goop_graph_support_final.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[evaluate_goop_graph_support_final.py]",
+        "summarize_goop_graph_support_scoped_v3.py:SOURCE_PINS[evaluate_goop_graph_support_final.py]"
+      ],
+      "sha256": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d"
+    },
+    "cuda_preparation/evaluate_sand_graph_support_final.py": {
+      "bytes": 49814,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/evaluate_sand_graph_support_final.py",
+      "pin_references": [
+        "summarize_sand_graph_support_scoped_v1.py:SOURCE_PINS[evaluate_sand_graph_support_final.py]"
+      ],
+      "sha256": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58"
+    },
+    "cuda_preparation/fit_goop_action_gate_v1.py": {
+      "bytes": 23380,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/fit_goop_action_gate_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256"
+      ],
+      "sha256": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3"
+    },
+    "cuda_preparation/goop3d_diagnostic_metrics_v1.py": {
+      "bytes": 24433,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_diagnostic_metrics_v1.py",
+      "pin_references": [
+        "summarize_goop3d_graph_support_v1.py:SOURCE_PINS[goop3d_diagnostic_metrics_v1.py]"
+      ],
+      "sha256": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b"
+    },
+    "cuda_preparation/goop3d_graph_support_vectorized_v1.py": {
+      "bytes": 14036,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+      "pin_references": [
+        "summarize_goop3d_graph_support_v1.py:SOURCE_PINS[goop3d_graph_support_vectorized_v1.py]"
+      ],
+      "sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50"
+    },
+    "cuda_preparation/goop3d_native_evaluation_v1.py": {
+      "bytes": 25545,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_native_evaluation_v1.py",
+      "pin_references": [
+        "summarize_goop3d_graph_support_v1.py:SOURCE_PINS[goop3d_native_evaluation_v1.py]"
+      ],
+      "sha256": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5"
+    },
+    "cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md": {
+      "bytes": 14069,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md",
+      "pin_references": [
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[goop3d_scalar_final_ledger_interface_v1.md]",
+        "teal-rat-80_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "0b27bb725a7616f057047ad1fc104cfdc0144c6c12cbcfe4fbe79b08bbc1f078"
+    },
+    "cuda_preparation/goop3d_scientific_protocol_v1.md": {
+      "bytes": 7909,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_scientific_protocol_v1.md",
+      "pin_references": [
+        "prepare_goop3d_final_cohort_v1.py:PROTOCOL_SHA"
+      ],
+      "sha256": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70"
+    },
+    "cuda_preparation/goop_action_gate_cost_plan_v1.py": {
+      "bytes": 13771,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_cost_plan_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256"
+      ],
+      "sha256": "b4b7a18da848b7222521eecddf4f612e0a0615dd4d990ea65c35741cf1c8a28b"
+    },
+    "cuda_preparation/goop_action_gate_scalar_core_v1.py": {
+      "bytes": 27612,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[goop_action_gate_scalar_core_v1.py]"
+      ],
+      "sha256": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1"
+    },
+    "cuda_preparation/goop_context_semantics_sources/README.md": {
+      "bytes": 4146,
+      "kind": "preserved_context_evidence",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/README.md",
+      "pin_references": [
+        "goop_evaluation_contract.py:CONTEXT_SOURCES[README.md]",
+        "train_goop3d_graph_support_cuda_v2.py:CONTEXT_SOURCE_PINS[README.md]"
+      ],
+      "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+    },
+    "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": {
+      "bytes": 11197,
+      "kind": "preserved_context_evidence",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+      "pin_references": [
+        "goop_evaluation_contract.py:CONTEXT_SOURCES[learned_simulator.py]",
+        "train_goop3d_graph_support_cuda_v2.py:CONTEXT_SOURCE_PINS[learned_simulator.py]"
+      ],
+      "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+    },
+    "cuda_preparation/goop_context_semantics_sources/reading_utils.py": {
+      "bytes": 5129,
+      "kind": "preserved_context_evidence",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+      "pin_references": [
+        "goop_evaluation_contract.py:CONTEXT_SOURCES[reading_utils.py]",
+        "train_goop3d_graph_support_cuda_v2.py:CONTEXT_SOURCE_PINS[reading_utils.py]"
+      ],
+      "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+    },
+    "cuda_preparation/goop_context_semantics_sources/train.py": {
+      "bytes": 18753,
+      "kind": "preserved_context_evidence",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/train.py",
+      "pin_references": [
+        "goop_evaluation_contract.py:CONTEXT_SOURCES[train.py]",
+        "train_goop3d_graph_support_cuda_v2.py:CONTEXT_SOURCE_PINS[train.py]"
+      ],
+      "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+    },
+    "cuda_preparation/goop_evaluation_contract.py": {
+      "bytes": 16007,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_evaluation_contract.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[goop_evaluation_contract.py]"
+      ],
+      "sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090"
+    },
+    "cuda_preparation/goop_global_action_gate_core_v1.py": {
+      "bytes": 11870,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_global_action_gate_core_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[goop_global_action_gate_core_v1.py]",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[goop_global_action_gate_core_v1.py]"
+      ],
+      "sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca"
+    },
+    "cuda_preparation/goop_global_action_gate_protocol_v1.md": {
+      "bytes": 14809,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_global_action_gate_protocol_v1.md",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "supervise_goop_action_gate_scoped_v1.py:PINS[goop_global_action_gate_protocol_v1.md]"
+      ],
+      "sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024"
+    },
+    "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md": {
+      "bytes": 3529,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4"
+    },
+    "cuda_preparation/goop_graph_support_100k_protocol_v2.md": {
+      "bytes": 13475,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+      "pin_references": [
+        "run_goop_action_gate_v1.py:TRAINING_PROTOCOL_SHA"
+      ],
+      "sha256": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851"
+    },
+    "cuda_preparation/measure_sand_cuda_capacity_v2.py": {
+      "bytes": 40239,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/measure_sand_cuda_capacity_v2.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[measure_sand_cuda_capacity_v2.py]",
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[measure_sand_cuda_capacity_v2.py]",
+        "supervise_goop_action_gate_scoped_v1.py:PINS[measure_sand_cuda_capacity_v2.py]"
+      ],
+      "sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+    },
+    "cuda_preparation/measure_sand_graph_support_capacity.py": {
+      "bytes": 27024,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/measure_sand_graph_support_capacity.py",
+      "pin_references": [
+        "supervise_sand_scoped_science_v1.py:CAPACITY_SHA"
+      ],
+      "sha256": "ca9b5ed45455b575179464d35c42d0d03e87edb7508f4deea2451f9f3fb50878"
+    },
+    "cuda_preparation/prepare_goop3d_final_cohort_v1.py": {
+      "bytes": 21069,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_goop3d_final_cohort_v1.py",
+      "pin_references": [
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[prepare_goop3d_final_cohort_v1.py]",
+        "teal-rat-80_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a"
+    },
+    "cuda_preparation/prepare_goop3d_official.py": {
+      "bytes": 15469,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_goop3d_official.py",
+      "pin_references": [
+        "prepare_goop3d_reserved_test_v1.py:CONVERTER_SHA"
+      ],
+      "sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74"
+    },
+    "cuda_preparation/prepare_goop3d_reserved_test_v1.py": {
+      "bytes": 38134,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_goop3d_reserved_test_v1.py",
+      "pin_references": [
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[prepare_goop3d_reserved_test_v1.py]",
+        "teal-rat-80_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a"
+    },
+    "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": {
+      "bytes": 24233,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+      "pin_references": [
+        "aquamarine-toad-75_sand_final_operational_stage_v1.json:files",
+        "yellow-worm-77_sand_final_operational_stage_v1.json:files"
+      ],
+      "sha256": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f"
+    },
+    "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py": {
+      "bytes": 25467,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+      "pin_references": [
+        "aquamarine-toad-75_sand_final_operational_stage_v1.json:files",
+        "yellow-worm-77_sand_final_operational_stage_v1.json:files"
+      ],
+      "sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd"
+    },
+    "cuda_preparation/repackage_designsafe_sand.py": {
+      "bytes": 20511,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/repackage_designsafe_sand.py",
+      "pin_references": [
+        "prepare_sand_reserved_test_scoped_v1.py:CONVERTER_SHA"
+      ],
+      "sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9"
+    },
+    "cuda_preparation/run_goop_action_gate_v1.py": {
+      "bytes": 41721,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/run_goop_action_gate_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[run_goop_action_gate_v1.py]"
+      ],
+      "sha256": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079"
+    },
+    "cuda_preparation/sand_graph_support_100k_protocol_v1.md": {
+      "bytes": 26201,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+      "pin_references": [
+        "supervise_sand_scoped_science_v1.py:PROTOCOL_SHA"
+      ],
+      "sha256": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d"
+    },
+    "cuda_preparation/sand_graph_support_policy.py": {
+      "bytes": 18219,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_graph_support_policy.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[sand_graph_support_policy.py]"
+      ],
+      "sha256": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a"
+    },
+    "cuda_preparation/sand_scoped_operational_amendment_v1.md": {
+      "bytes": 5024,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738"
+    },
+    "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": {
+      "bytes": 10169,
+      "kind": "fixed_protocol_or_schedule_contract",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b"
+    },
+    "cuda_preparation/summarize_goop3d_graph_support_v1.py": {
+      "bytes": 57671,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+      "pin_references": [
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[summarize_goop3d_graph_support_v1.py]",
+        "teal-rat-80_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd"
+    },
+    "cuda_preparation/summarize_goop_action_gate_v1.py": {
+      "bytes": 42005,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop_action_gate_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256"
+      ],
+      "sha256": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f"
+    },
+    "cuda_preparation/summarize_goop_graph_support_quota_v2.py": {
+      "bytes": 27859,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[summarize_goop_graph_support_quota_v2.py]",
+        "summarize_goop_graph_support_scoped_v3.py:SOURCE_PINS[summarize_goop_graph_support_quota_v2.py]",
+        "summarize_sand_graph_support_scoped_v1.py:SOURCE_PINS[summarize_goop_graph_support_quota_v2.py]",
+        "yellow_scalar_dependency_stage_v1.json:final_sha256"
+      ],
+      "sha256": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c"
+    },
+    "cuda_preparation/summarize_goop_graph_support_scoped_v3.py": {
+      "bytes": 31765,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop_graph_support_scoped_v3.py",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b"
+    },
+    "cuda_preparation/summarize_sand_graph_support_scoped_v1.py": {
+      "bytes": 39697,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+      "pin_references": [
+        "aquamarine-toad-75_sand_final_operational_stage_v1.json:files",
+        "yellow-worm-77_sand_final_operational_stage_v1.json:files"
+      ],
+      "sha256": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272"
+    },
+    "cuda_preparation/supervise_goop3d_final_evaluation_v1.py": {
+      "bytes": 45954,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_goop3d_final_evaluation_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "supervise_goop_action_gate_scoped_v1.py:PINS[supervise_goop3d_final_evaluation_v1.py]",
+        "teal-rat-80_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989"
+    },
+    "cuda_preparation/supervise_goop3d_science_v1.py": {
+      "bytes": 43638,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_goop3d_science_v1.py",
+      "pin_references": [
+        "prepare_goop3d_final_cohort_v1.py:SUPERVISOR_SHA"
+      ],
+      "sha256": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e"
+    },
+    "cuda_preparation/supervise_goop_action_gate_scoped_v1.py": {
+      "bytes": 24987,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_goop_action_gate_scoped_v1.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:final_sha256",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[supervise_goop_action_gate_scoped_v1.py]"
+      ],
+      "sha256": "4cda31a408c097944e5f15b3502d05bcfab0d3db5b8ee25dcc5fdc1968fd61df"
+    },
+    "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": {
+      "bytes": 30819,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "summarize_goop_graph_support_scoped_v3.py:SOURCE_PINS[supervise_goop_evaluation_gpu_scoped_v3.py]",
+        "summarize_sand_graph_support_scoped_v1.py:SOURCE_PINS[supervise_goop_evaluation_gpu_scoped_v3.py]",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21"
+    },
+    "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": {
+      "bytes": 13006,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+      "pin_references": [
+        "aquamarine-toad-75_sand_final_operational_stage_v1.json:files",
+        "summarize_sand_graph_support_scoped_v1.py:SOURCE_PINS[supervise_sand_final_evaluation_scoped_v1.py]",
+        "yellow-worm-77_sand_final_operational_stage_v1.json:files"
+      ],
+      "sha256": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829"
+    },
+    "cuda_preparation/supervise_sand_graph_support_science.py": {
+      "bytes": 37604,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_graph_support_science.py",
+      "pin_references": [
+        "supervise_sand_scoped_science_v1.py:VERIFIER_SHA"
+      ],
+      "sha256": "a22a59c46231c328e4939a0f021b3bb2fab9e2f93c0848bb1abd39aad2d5d305"
+    },
+    "cuda_preparation/supervise_sand_scoped_science_v1.py": {
+      "bytes": 30641,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_scoped_science_v1.py",
+      "pin_references": [
+        "aquamarine-toad-75_approved_operational_stage_v1.json:files",
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "summarize_goop_action_gate_v1.py:SOURCE_PINS[supervise_sand_scoped_science_v1.py]",
+        "supervise_goop_action_gate_scoped_v1.py:PINS[supervise_sand_scoped_science_v1.py]",
+        "yellow-worm-77_approved_operational_stage_v1.json:files"
+      ],
+      "sha256": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13"
+    },
+    "cuda_preparation/train_goop3d_graph_support_cuda_v2.py": {
+      "bytes": 53415,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+      "pin_references": [
+        "summarize_goop3d_graph_support_v1.py:SOURCE_PINS[train_goop3d_graph_support_cuda_v2.py]",
+        "supervise_goop3d_final_evaluation_v1.py:SOURCE_PINS[train_goop3d_graph_support_cuda_v2.py]"
+      ],
+      "sha256": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc"
+    },
+    "cuda_preparation/train_goop_graph_support_cuda.py": {
+      "bytes": 49091,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_goop_graph_support_cuda.py",
+      "pin_references": [
+        "aquamarine_gate_approved_sources_stage_v3.json:dependencies_verified",
+        "run_goop_action_gate_v1.py:SOURCE_PINS[train_goop_graph_support_cuda.py]"
+      ],
+      "sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1"
+    },
+    "cuda_preparation/train_sand_graph_support_cuda.py": {
+      "bytes": 40940,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_sand_graph_support_cuda.py",
+      "pin_references": [
+        "supervise_sand_scoped_science_v1.py:TRAINER_SHA"
+      ],
+      "sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124"
+    },
+    "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py": {
+      "bytes": 25230,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/validate_goop3d_vectorized_cuda_v1.py",
+      "pin_references": [
+        "supervise_goop3d_science_v1.py:VALIDATOR_SHA"
+      ],
+      "sha256": "984a358a07e6b3e7bc80d7e0c64a2b23d4076fdf1a278c0f5d03121616fd3dd1"
+    },
+    "research/budget_graph.py": {
+      "bytes": 2304,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/budget_graph.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/budget_graph.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/budget_graph.py]",
+        "evaluate_goop3d_graph_support_v1.py:NUMERICAL_SOURCE_PINS[research/budget_graph.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/budget_graph.py]"
+      ],
+      "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187"
+    },
+    "research/faithful_graph_support.py": {
+      "bytes": 27583,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/faithful_graph_support.py",
+      "pin_references": [
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/faithful_graph_support.py]"
+      ],
+      "sha256": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa"
+    },
+    "research/full_rollout.py": {
+      "bytes": 36701,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/full_rollout.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/full_rollout.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/full_rollout.py]",
+        "evaluate_goop3d_graph_support_v1.py:NUMERICAL_SOURCE_PINS[research/full_rollout.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/full_rollout.py]"
+      ],
+      "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8"
+    },
+    "research/full_same_state.py": {
+      "bytes": 35249,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/full_same_state.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/full_same_state.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/full_same_state.py]",
+        "evaluate_goop3d_graph_support_v1.py:NUMERICAL_SOURCE_PINS[research/full_same_state.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/full_same_state.py]"
+      ],
+      "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592"
+    },
+    "research/full_training.py": {
+      "bytes": 29638,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/full_training.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/full_training.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/full_training.py]",
+        "train_goop3d_graph_support_cuda_v2.py:SOURCE_PINS[research/full_training.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/full_training.py]"
+      ],
+      "sha256": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d"
+    },
+    "research/graph_convention_bridge.py": {
+      "bytes": 36931,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/graph_convention_bridge.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/graph_convention_bridge.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/graph_convention_bridge.py]",
+        "evaluate_goop3d_graph_support_v1.py:NUMERICAL_SOURCE_PINS[research/graph_convention_bridge.py]",
+        "train_sand_graph_support_cuda.py:SOURCE_PINS[research/graph_convention_bridge.py]"
+      ],
+      "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d"
+    },
+    "research/native_graph_rollout.py": {
+      "bytes": 25591,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/native_graph_rollout.py",
+      "pin_references": [
+        "benchmark_goop_graph_support_rollout.py:SOURCE_PINS[research/native_graph_rollout.py]",
+        "benchmark_sand_graph_support_rollout.py:SOURCE_PINS[research/native_graph_rollout.py]"
+      ],
+      "sha256": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5"
+    },
+    "research/prepare_full_waterdrop.py": {
+      "bytes": 14780,
+      "kind": "python_runtime_source",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/prepare_full_waterdrop.py",
+      "pin_references": [
+        "prepare_goop3d_reserved_test_v1.py:READER_SHA"
+      ],
+      "sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33"
+    }
+  },
+  "generator_sha256": "94c7714b7dd2cda9dbaaf56f67ca9f0281c3dc768880a53aaebc10315da09ec5",
+  "hosts": {
+    "A": {
+      "archive_manifest_only": [
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py",
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/goop_evaluation_contract.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/train_goop_graph_support_cuda.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/graph_convention_bridge.py"
+      ],
+      "confirmed_staged": [
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py",
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py"
+      ],
+      "files_sha256": {
+        "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+        "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+        "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+        "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+        "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+        "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+        "cuda_preparation/download_sand_public_v2.py": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+        "cuda_preparation/evaluate_goop_graph_support_final.py": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+        "cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+        "cuda_preparation/goop_context_semantics_sources/README.md": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+        "cuda_preparation/goop_context_semantics_sources/train.py": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+        "cuda_preparation/goop_evaluation_contract.py": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+        "cuda_preparation/measure_sand_graph_support_capacity.py": "ca9b5ed45455b575179464d35c42d0d03e87edb7508f4deea2451f9f3fb50878",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+        "cuda_preparation/repackage_designsafe_sand.py": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+        "cuda_preparation/sand_graph_support_policy.py": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+        "cuda_preparation/supervise_sand_graph_support_science.py": "a22a59c46231c328e4939a0f021b3bb2fab9e2f93c0848bb1abd39aad2d5d305",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+        "cuda_preparation/train_goop_graph_support_cuda.py": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+        "cuda_preparation/train_sand_graph_support_cuda.py": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+        "research/budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+        "research/faithful_graph_support.py": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa",
+        "research/full_rollout.py": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+        "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+        "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+        "research/graph_convention_bridge.py": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+        "research/native_graph_rollout.py": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5"
+      },
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-kgdt9",
+      "not_evidenced_in_available_receipts": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/download_sand_public_v2.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/repackage_designsafe_sand.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "research/faithful_graph_support.py",
+        "research/full_training.py",
+        "research/native_graph_rollout.py"
+      ],
+      "profiles": [
+        "goop_scoped_evaluation",
+        "goop_scoped_collection",
+        "sand_scoped_training",
+        "sand_final_cohort_preparation",
+        "sand_reserved_test_preparation",
+        "sand_scoped_evaluation",
+        "sand_scoped_collection"
+      ],
+      "remote_repo_root": "/root/repos/AdaptGNS-cuda-20261006",
+      "staging_evidence": {
+        "adaptive-gns/gns/data_loader.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/device_utils.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/graph_network.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/learned_simulator.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/losses.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/model_io.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/download_sand_public_v2.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/evaluate_goop_graph_support_final.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/evaluate_sand_graph_support_final.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/goop_context_semantics_sources/README.md": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/train.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_evaluation_contract.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/measure_sand_graph_support_capacity.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_sand_final_operational_stage_v1.json",
+              "sha256": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+              "utc": "2026-10-06T07:07:41.371490+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_sand_final_operational_stage_v1.json",
+              "sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+              "utc": "2026-10-06T07:07:41.371490+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/repackage_designsafe_sand.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/sand_graph_support_policy.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "yellow_scalar_dependency_stage_v1.json",
+              "sha256": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+              "utc": "2026-10-06T07:51:55.837457+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_sand_final_operational_stage_v1.json",
+              "sha256": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+              "utc": "2026-10-06T07:07:41.371490+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_sand_final_operational_stage_v1.json",
+              "sha256": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+              "utc": "2026-10-06T07:07:41.371490+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_sand_graph_support_science.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/supervise_sand_scoped_science_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "yellow-worm-77_approved_operational_stage_v1.json",
+              "sha256": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+              "utc": "2026-10-06T06:50:59.142211+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/train_goop_graph_support_cuda.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/train_sand_graph_support_cuda.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/budget_graph.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/faithful_graph_support.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/full_rollout.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_same_state.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_training.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/graph_convention_bridge.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/native_graph_rollout.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        }
+      },
+      "verify_then_stage_if_absent": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/download_sand_public_v2.py",
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/goop_evaluation_contract.py",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/repackage_designsafe_sand.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "cuda_preparation/train_goop_graph_support_cuda.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/faithful_graph_support.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/native_graph_rollout.py"
+      ]
+    },
+    "B": {
+      "archive_manifest_only": [
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/graph_convention_bridge.py"
+      ],
+      "confirmed_staged": [
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py",
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/fit_goop_action_gate_v1.py",
+        "cuda_preparation/goop_action_gate_cost_plan_v1.py",
+        "cuda_preparation/goop_action_gate_scalar_core_v1.py",
+        "cuda_preparation/goop_evaluation_contract.py",
+        "cuda_preparation/goop_global_action_gate_core_v1.py",
+        "cuda_preparation/goop_global_action_gate_protocol_v1.md",
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+        "cuda_preparation/run_goop_action_gate_v1.py",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+        "cuda_preparation/summarize_goop_action_gate_v1.py",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py",
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py",
+        "cuda_preparation/supervise_goop_action_gate_scoped_v1.py",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py",
+        "cuda_preparation/train_goop_graph_support_cuda.py"
+      ],
+      "files_sha256": {
+        "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+        "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+        "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+        "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+        "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+        "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+        "cuda_preparation/download_sand_public_v2.py": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+        "cuda_preparation/evaluate_goop_graph_support_final.py": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+        "cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+        "cuda_preparation/fit_goop_action_gate_v1.py": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3",
+        "cuda_preparation/goop_action_gate_cost_plan_v1.py": "b4b7a18da848b7222521eecddf4f612e0a0615dd4d990ea65c35741cf1c8a28b",
+        "cuda_preparation/goop_action_gate_scalar_core_v1.py": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1",
+        "cuda_preparation/goop_context_semantics_sources/README.md": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+        "cuda_preparation/goop_context_semantics_sources/train.py": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+        "cuda_preparation/goop_evaluation_contract.py": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+        "cuda_preparation/goop_global_action_gate_core_v1.py": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+        "cuda_preparation/goop_global_action_gate_protocol_v1.md": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+        "cuda_preparation/measure_sand_graph_support_capacity.py": "ca9b5ed45455b575179464d35c42d0d03e87edb7508f4deea2451f9f3fb50878",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+        "cuda_preparation/repackage_designsafe_sand.py": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+        "cuda_preparation/run_goop_action_gate_v1.py": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+        "cuda_preparation/sand_graph_support_policy.py": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+        "cuda_preparation/summarize_goop_action_gate_v1.py": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+        "cuda_preparation/supervise_goop_action_gate_scoped_v1.py": "4cda31a408c097944e5f15b3502d05bcfab0d3db5b8ee25dcc5fdc1968fd61df",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+        "cuda_preparation/supervise_sand_graph_support_science.py": "a22a59c46231c328e4939a0f021b3bb2fab9e2f93c0848bb1abd39aad2d5d305",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+        "cuda_preparation/train_goop_graph_support_cuda.py": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+        "cuda_preparation/train_sand_graph_support_cuda.py": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+        "research/budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+        "research/faithful_graph_support.py": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa",
+        "research/full_rollout.py": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+        "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+        "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+        "research/graph_convention_bridge.py": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+        "research/native_graph_rollout.py": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5"
+      },
+      "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+      "not_evidenced_in_available_receipts": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/download_sand_public_v2.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/repackage_designsafe_sand.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "research/faithful_graph_support.py",
+        "research/full_training.py",
+        "research/native_graph_rollout.py"
+      ],
+      "profiles": [
+        "goop_scoped_evaluation",
+        "goop_scoped_collection",
+        "sand_scoped_training",
+        "sand_final_cohort_preparation",
+        "sand_reserved_test_preparation",
+        "sand_scoped_evaluation",
+        "sand_scoped_collection",
+        "b_gate_whole_pipeline"
+      ],
+      "remote_repo_root": "/root/repos/AdaptGNS-cuda-20261006",
+      "staging_evidence": {
+        "adaptive-gns/gns/data_loader.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/device_utils.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/graph_network.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/learned_simulator.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/losses.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/model_io.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f"
+            }
+          ],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/download_sand_public_v2.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/evaluate_goop_graph_support_final.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d"
+            }
+          ],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/evaluate_sand_graph_support_final.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/fit_goop_action_gate_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_action_gate_cost_plan_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "b4b7a18da848b7222521eecddf4f612e0a0615dd4d990ea65c35741cf1c8a28b",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_action_gate_scalar_core_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_context_semantics_sources/README.md": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/train.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_evaluation_contract.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090"
+            }
+          ],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_global_action_gate_core_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_global_action_gate_protocol_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+            }
+          ],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/measure_sand_graph_support_capacity.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_sand_final_operational_stage_v1.json",
+              "sha256": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+              "utc": "2026-10-06T07:07:40.898729+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_sand_final_operational_stage_v1.json",
+              "sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+              "utc": "2026-10-06T07:07:40.898729+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/repackage_designsafe_sand.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/run_goop_action_gate_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/sand_graph_support_policy.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop_action_gate_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_sand_final_operational_stage_v1.json",
+              "sha256": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+              "utc": "2026-10-06T07:07:40.898729+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop_action_gate_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "final_sha256",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "4cda31a408c097944e5f15b3502d05bcfab0d3db5b8ee25dcc5fdc1968fd61df",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_sand_final_operational_stage_v1.json",
+              "sha256": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+              "utc": "2026-10-06T07:07:40.898729+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_sand_graph_support_science.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/supervise_sand_scoped_science_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "aquamarine-toad-75_approved_operational_stage_v1.json",
+              "sha256": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+              "utc": "2026-10-06T06:50:57.585264+00:00"
+            },
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/train_goop_graph_support_cuda.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1"
+            }
+          ],
+          "host_receipts": [
+            {
+              "field": "dependencies_verified",
+              "receipt": "aquamarine_gate_approved_sources_stage_v3.json",
+              "sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+              "utc": "2026-10-06T07:46:22.992957+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/train_sand_graph_support_cuda.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/budget_graph.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/faithful_graph_support.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/full_rollout.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_same_state.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_training.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/graph_convention_bridge.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/native_graph_rollout.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        }
+      },
+      "verify_then_stage_if_absent": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/download_sand_public_v2.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/repackage_designsafe_sand.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/faithful_graph_support.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/native_graph_rollout.py"
+      ]
+    },
+    "D3": {
+      "archive_manifest_only": [
+        "cuda_preparation/audit_goop3d_auxiliary.py",
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py",
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+        "cuda_preparation/goop3d_native_evaluation_v1.py",
+        "cuda_preparation/goop3d_scientific_protocol_v1.md",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/supervise_goop3d_science_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/graph_convention_bridge.py"
+      ],
+      "confirmed_staged": [
+        "cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md",
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py",
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py",
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py"
+      ],
+      "files_sha256": {
+        "adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+        "adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+        "adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+        "adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+        "adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+        "adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+        "cuda_preparation/audit_goop3d_auxiliary.py": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb",
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+        "cuda_preparation/goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+        "cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md": "0b27bb725a7616f057047ad1fc104cfdc0144c6c12cbcfe4fbe79b08bbc1f078",
+        "cuda_preparation/goop3d_scientific_protocol_v1.md": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+        "cuda_preparation/goop_context_semantics_sources/README.md": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+        "cuda_preparation/goop_context_semantics_sources/train.py": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a",
+        "cuda_preparation/prepare_goop3d_official.py": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a",
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+        "cuda_preparation/supervise_goop3d_science_v1.py": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+        "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py": "984a358a07e6b3e7bc80d7e0c64a2b23d4076fdf1a278c0f5d03121616fd3dd1",
+        "research/budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+        "research/full_rollout.py": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+        "research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+        "research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+        "research/graph_convention_bridge.py": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+        "research/prepare_full_waterdrop.py": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33"
+      },
+      "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+      "not_evidenced_in_available_receipts": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/prepare_goop3d_official.py",
+        "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py",
+        "research/full_training.py",
+        "research/prepare_full_waterdrop.py"
+      ],
+      "profiles": [
+        "d3_final_cohort_preparation",
+        "d3_reserved_test_preparation",
+        "d3_final_evaluation",
+        "d3_collection"
+      ],
+      "remote_repo_root": "/root/repos/AdaptGNS-cuda-20261006",
+      "staging_evidence": {
+        "adaptive-gns/gns/data_loader.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/device_utils.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/graph_network.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/learned_simulator.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/losses.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "adaptive-gns/gns/model_io.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/audit_goop3d_auxiliary.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "1b5a8c24fde395b2633ee197557fde3e5bf30ca74908a77f1fb0e011b85e41fb"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_timing_stage_v1.manifest.json",
+              "sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de"
+            },
+            {
+              "manifest": "goop3d_timing_common_stage_v1_manifest.json",
+              "sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_timing_stage_v1.manifest.json",
+              "sha256": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b"
+            },
+            {
+              "manifest": "goop3d_timing_common_stage_v1_manifest.json",
+              "sha256": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop3d_native_evaluation_v1.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_timing_stage_v1.manifest.json",
+              "sha256": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5"
+            },
+            {
+              "manifest": "goop3d_timing_common_stage_v1_manifest.json",
+              "sha256": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "teal-rat-80_approved_operational_stage_v1.json",
+              "sha256": "0b27bb725a7616f057047ad1fc104cfdc0144c6c12cbcfe4fbe79b08bbc1f078",
+              "utc": "2026-10-06T06:50:58.614998+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/goop3d_scientific_protocol_v1.md": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_science_sources_stage_v1.manifest.json",
+              "sha256": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/README.md": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/goop_context_semantics_sources/train.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            },
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop_runtime_stage_v1_manifest.json",
+              "sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "teal-rat-80_approved_operational_stage_v1.json",
+              "sha256": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a",
+              "utc": "2026-10-06T06:50:58.614998+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/prepare_goop3d_official.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "teal-rat-80_approved_operational_stage_v1.json",
+              "sha256": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a",
+              "utc": "2026-10-06T06:50:58.614998+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "teal-rat-80_approved_operational_stage_v1.json",
+              "sha256": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+              "utc": "2026-10-06T06:50:58.614998+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [
+            {
+              "field": "files",
+              "receipt": "teal-rat-80_approved_operational_stage_v1.json",
+              "sha256": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+              "utc": "2026-10-06T06:50:58.614998+00:00"
+            }
+          ],
+          "status": "confirmed_staged_by_host_receipt"
+        },
+        "cuda_preparation/supervise_goop3d_science_v1.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_science_sources_stage_v1.manifest.json",
+              "sha256": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_runtime_stage_v1_manifest.json",
+              "sha256": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/budget_graph.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_rollout.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_same_state.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/full_training.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        },
+        "research/graph_convention_bridge.py": {
+          "archive_manifests": [
+            {
+              "manifest": "goop3d_validation_numerical_dependencies_v1.manifest.json",
+              "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d"
+            }
+          ],
+          "host_receipts": [],
+          "status": "archive_manifest_only_not_host_verified"
+        },
+        "research/prepare_full_waterdrop.py": {
+          "archive_manifests": [],
+          "host_receipts": [],
+          "status": "not_evidenced_in_available_receipts"
+        }
+      },
+      "verify_then_stage_if_absent": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/audit_goop3d_auxiliary.py",
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py",
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+        "cuda_preparation/goop3d_native_evaluation_v1.py",
+        "cuda_preparation/goop3d_scientific_protocol_v1.md",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/prepare_goop3d_official.py",
+        "cuda_preparation/supervise_goop3d_science_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+        "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/prepare_full_waterdrop.py"
+      ]
+    }
+  },
+  "local_hash_validation": {
+    "checked_files": 67,
+    "mismatches": [],
+    "missing": []
+  },
+  "local_repo_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS",
+  "profiles": {
+    "b_gate_whole_pipeline": {
+      "entry_points": [
+        "cuda_preparation/supervise_goop_action_gate_scoped_v1.py",
+        "cuda_preparation/run_goop_action_gate_v1.py",
+        "cuda_preparation/fit_goop_action_gate_v1.py",
+        "cuda_preparation/goop_action_gate_cost_plan_v1.py",
+        "cuda_preparation/summarize_goop_action_gate_v1.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py",
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/fit_goop_action_gate_v1.py",
+        "cuda_preparation/goop_action_gate_cost_plan_v1.py",
+        "cuda_preparation/goop_action_gate_scalar_core_v1.py",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/goop_evaluation_contract.py",
+        "cuda_preparation/goop_global_action_gate_core_v1.py",
+        "cuda_preparation/goop_global_action_gate_protocol_v1.md",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/run_goop_action_gate_v1.py",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/summarize_goop_action_gate_v1.py",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py",
+        "cuda_preparation/supervise_goop_action_gate_scoped_v1.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py",
+        "cuda_preparation/train_goop_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/native_graph_rollout.py"
+      ],
+      "reviewed_execution_path": "Labels and rollouts execute Goop numerical stack; fitter imports gate core; cost planner binds bytes. Supervisor reuses D3 Runtime/cleanup only, Sand environment identity helpers only and lifecycle process helpers. Collector loads driver scalar admission, gate/scalar cores, quota-v2 primitives, lifecycle and Sand identity helpers. D3 simulation/training/collection and old Sand capacity branches are not called."
+    },
+    "d3_collection": {
+      "entry_points": [
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py"
+      ],
+      "required_files": [
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py",
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+        "cuda_preparation/goop3d_native_evaluation_v1.py",
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py"
+      ],
+      "reviewed_execution_path": "Collector hashes all five SOURCE_PINS, dynamically loads only evaluator scalar schedules and diagnostic arithmetic. It does not import quota-v2, native module, trainer or graph runtime. Thus no numerical repo source closure is intrinsic to scalar collection."
+    },
+    "d3_final_cohort_preparation": {
+      "entry_points": [
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py"
+      ],
+      "required_files": [
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py",
+        "cuda_preparation/supervise_goop3d_science_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+        "cuda_preparation/validate_goop3d_vectorized_cuda_v1.py"
+      ],
+      "reviewed_execution_path": "freeze imports science supervisor verify_wave_receipt, evaluator cohort_gate, trainer constants/scalar validation and validator data constants. It does not call configure, train, load_helpers or validator runtime. Protocol, graph, original graph, worksheet and source closure are verified within the completed scientific tree retained snapshots."
+    },
+    "d3_final_evaluation": {
+      "entry_points": [
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/audit_goop3d_auxiliary.py",
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/goop3d_diagnostic_metrics_v1.py",
+        "cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+        "cuda_preparation/goop3d_native_evaluation_v1.py",
+        "cuda_preparation/goop3d_scalar_final_ledger_interface_v1.md",
+        "cuda_preparation/goop3d_scientific_protocol_v1.md",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/prepare_goop3d_final_cohort_v1.py",
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py",
+        "cuda_preparation/summarize_goop3d_graph_support_v1.py",
+        "cuda_preparation/supervise_goop3d_final_evaluation_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py"
+      ],
+      "reviewed_execution_path": "Supervisor loads D3 collector/evaluator/trainer/lifecycle and hashes its SOURCE_PINS. Evaluation loads vectorized graph, native full-rollout/same-state, diagnostic and auxiliary modules plus pinned numerical helpers. Cohort/reserved prep sources are hash-bound only here; their own imports belong to their separate preparation profiles."
+    },
+    "d3_reserved_test_preparation": {
+      "entry_points": [
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "cuda_preparation/audit_goop3d_auxiliary.py",
+        "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+        "cuda_preparation/goop3d_scientific_protocol_v1.md",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/prepare_goop3d_official.py",
+        "cuda_preparation/prepare_goop3d_reserved_test_v1.py",
+        "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+        "research/prepare_full_waterdrop.py"
+      ],
+      "reviewed_execution_path": "Union of inspect/acquire/convert/census/preflight modes. Converter loads pinned TFRecord reader; census loads auxiliary helper; preflight loads evaluator scalar contracts and numeric data loader. Trainer/protocol are bound source bytes. No simulation helpers are loaded."
+    },
+    "goop_scoped_collection": {
+      "entry_points": [
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py"
+      ],
+      "required_files": [
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+        "cuda_preparation/summarize_goop_graph_support_scoped_v3.py",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py"
+      ],
+      "reviewed_execution_path": "Immediate quota-v2 pure-scalar import; collect loads scoped supervisor argv helpers and evaluator scalar schedules. It checks its SOURCE_PINS and amendment. Original queue/cohort/release/input snapshots remain separately required; no lifecycle or model helper is called by this collector."
+    },
+    "goop_scoped_evaluation": {
+      "entry_points": [
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_goop_graph_support_rollout.py",
+        "cuda_preparation/evaluate_goop_graph_support_final.py",
+        "cuda_preparation/goop_context_semantics_sources/README.md",
+        "cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+        "cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+        "cuda_preparation/goop_context_semantics_sources/train.py",
+        "cuda_preparation/goop_evaluation_contract.py",
+        "cuda_preparation/goop_gpu_scoped_evaluation_amendment_v3.md",
+        "cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+        "cuda_preparation/train_goop_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/native_graph_rollout.py"
+      ],
+      "reviewed_execution_path": "Supervisor imports lifecycle process helpers and launches the Goop evaluator; evaluator loads benchmark, data contract, scalar trainer checks, policy adapter and pinned numerical helpers. Context source bytes are evidence checked by the data contract."
+    },
+    "sand_final_cohort_preparation": {
+      "entry_points": [
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py"
+      ],
+      "required_files": [
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py"
+      ],
+      "reviewed_execution_path": "No local dynamic imports. Current supervisor/verifier/trainer/capacity/lifecycle/protocol/spec/amendment and final benchmark/evaluator are fixed file bindings. Completed training-tree snapshots and inventories are separate retained inputs; simulator source execution is not needed by the adapter."
+    },
+    "sand_reserved_test_preparation": {
+      "entry_points": [
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py"
+      ],
+      "required_files": [
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/download_sand_public_v2.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+        "cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+        "cuda_preparation/repackage_designsafe_sand.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json"
+      ],
+      "reviewed_execution_path": "Union of authorized acquire/convert/census/candidate/preflight modes. Downloader and converter have no local runtime helper. Preflight calls evaluator/benchmark scalar split validation without load_helpers; cohort adapter is a hash binding, not imported."
+    },
+    "sand_scoped_collection": {
+      "entry_points": [
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py"
+      ],
+      "required_files": [
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+        "cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py"
+      ],
+      "reviewed_execution_path": "Immediate quota-v2 pure-scalar import; collect loads scoped queue argv helpers and Sand evaluator scalar functions. Sand final supervisor is hash-checked only. Original stopped queue and root-bound input bytes are separate retained inputs."
+    },
+    "sand_scoped_evaluation": {
+      "entry_points": [
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/benchmark_sand_graph_support_rollout.py",
+        "cuda_preparation/evaluate_sand_graph_support_final.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_graph_support_policy.py",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+        "cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py",
+        "cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py",
+        "research/native_graph_rollout.py"
+      ],
+      "reviewed_execution_path": "Adapter loads Goop scoped queue engine, lifecycle, Sand environment helpers, evaluator and benchmark. Evaluator imports policy and numerical helpers plus scalar trainer checkpoint checks. Sand scoped supervisor configure is not called here."
+    },
+    "sand_scoped_training": {
+      "entry_points": [
+        "cuda_preparation/supervise_sand_scoped_science_v1.py"
+      ],
+      "required_files": [
+        "adaptive-gns/gns/data_loader.py",
+        "adaptive-gns/gns/device_utils.py",
+        "adaptive-gns/gns/graph_network.py",
+        "adaptive-gns/gns/learned_simulator.py",
+        "adaptive-gns/gns/losses.py",
+        "adaptive-gns/gns/model_io.py",
+        "cuda_preparation/measure_sand_cuda_capacity_v2.py",
+        "cuda_preparation/measure_sand_graph_support_capacity.py",
+        "cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+        "cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+        "cuda_preparation/supervise_sand_graph_support_science.py",
+        "cuda_preparation/supervise_sand_scoped_science_v1.py",
+        "cuda_preparation/train_sand_graph_support_cuda.py",
+        "research/budget_graph.py",
+        "research/faithful_graph_support.py",
+        "research/full_rollout.py",
+        "research/full_same_state.py",
+        "research/full_training.py",
+        "research/graph_convention_bridge.py"
+      ],
+      "reviewed_execution_path": "configure loads old Sand scientific verifier; verifier.configure loads graph-support capacity helper; capacity.configure loads lifecycle and trainer. Training calls faithful_graph_support and its pinned numerical closure. Old capacity measurement and old supervisor launch branches are unused."
+    }
+  },
+  "remote_access_performed": false,
+  "remote_repo_root": "/root/repos/AdaptGNS-cuda-20261006",
+  "schema": "adaptgns_approved_runtime_dependency_closure_code_audit_v1",
+  "scientific_data_or_models_opened": false,
+  "scope": "Static local source and saved staging-receipt audit only",
+  "separate_retained_input_and_environment_requirements": [
+    "Each concrete root release files_sha256/input_sha256/source snapshot map must still be verified in full. This manifest is intrinsic fixed-source closure, not authorization or a replacement release.",
+    "Data manifests, source acquisition/context/auxiliary/structural/cross-split reports, metadata, admissions, cohort/audit files, checkpoint/config files, stopped queues, inventories, source snapshots and process/clock receipts are preserved input requirements. They were not opened or checked here.",
+    "D3 endpoint-plan SHA256 f38131f2851afdcbf774af506ebe8e02c8eca1be5e143430f68abedb95304c6d is a root-released control input, not an executable helper. Retain its exact original release path and byte binding.",
+    "Canonical fixed protocol locations are listed for staging. If a root release binds a separate preserved copy or retained training snapshot, that original path and bytes must also remain available.",
+    "External packages/interpreter/CUDA libraries are outside this source-file manifest. Numerical runtime requires the released lexical interpreter and validated Torch 2.13.0+cu129 / CUDA 12.9 GB200 environment, NumPy, SciPy and torch_geometric. D3 acquisition/conversion also uses requests, crc32c and tfrecord/protobuf; package versions remain governed by existing environment releases."
+  ],
+  "source_modules_imported_or_executed": false,
+  "stage_policy": "For each exact path, verify a regular existing file against its expected SHA256. Keep identical files. Create a missing exact file new-only and verify it afterward. Reject a divergent existing file; never overwrite it. Do not execute/import programs, touch scientific input/output bytes, or launch work while checking/staging this manifest.",
+  "staging_limitation": "Unconfirmed means absent from available explicit host receipts, not proven absent remotely. Archive membership alone is not proof of host staging or present integrity."
+}

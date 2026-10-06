@@ -1,0 +1,109 @@
+{
+  "actual_cohort": {
+    "audit_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort_audit.json",
+    "audit_sha256": "0786ee20abc2333c3bc2b1536f42f5b2f949617a331e70bb7897e9f4ee0e7d37",
+    "models": [
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/base_seed1/checkpoint-000100000.pt",
+        "checkpoint_sha256": "68cec3c0e02281c630c5033d51d80450c2ed50e6ec5fbbbc5e17117bbee5d7ec",
+        "completed_steps": 100000,
+        "config_sha256": "43d98d24af446896bcda3e649c1a734e18cf170f1da48e1a7f0e92cab14cbbc1",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 1
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/mix_seed1/checkpoint-000100000.pt",
+        "checkpoint_sha256": "9b237f5297fd47ff5e214b7ff26dc69a708f023644b2dd94797b69b4c765c6cf",
+        "completed_steps": 100000,
+        "config_sha256": "6ffce60503ec142f83bd21836283d305d7eb4406527f2d139ebec24e67120380",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 1
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/mix_seed2/checkpoint-000100000.pt",
+        "checkpoint_sha256": "15b29c13596d3398f0935703f42d018a520d769dd634581046a1098013865679",
+        "completed_steps": 100000,
+        "config_sha256": "a74a3cb52707065d9ce4840caaeff8e06d687804f67d2b55d44f958e912c0df3",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 2
+      },
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/base_seed2/checkpoint-000100000.pt",
+        "checkpoint_sha256": "84cded9870d2eb51d1ebe0df89c3155d1c88de7cd56ccece95acdd6702bd16a7",
+        "completed_steps": 100000,
+        "config_sha256": "8745137c049782995bceff4c9b2b649ae250f88a813ab68e181a66f710b30cff",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 2
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_scoped_science_B_20261006_v1/jobs/mix_seed0/checkpoint-000100000.pt",
+        "checkpoint_sha256": "f7abcf804bacf7d4b21f7557a4823a15c85effd013188548f0b98a0f306beccb",
+        "completed_steps": 100000,
+        "config_sha256": "506189a12993e57544840aecbd64e6dd27071ed8e7fceb5da73df7a4b740a92b",
+        "host_role": "B",
+        "objective": "faithful",
+        "seed": 0
+      },
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_scoped_science_B_20261006_v1/jobs/base_seed0/checkpoint-000100000.pt",
+        "checkpoint_sha256": "f4cbea33853233228e569cc7363851d2f0b396d87fc20f9c80825a7023d8d829",
+        "completed_steps": 100000,
+        "config_sha256": "2d25aacb99b5f683565c47fad0b8e09bc4440c969931c1a552eb3bcf82815904",
+        "host_role": "B",
+        "objective": "faithful",
+        "seed": 0
+      }
+    ],
+    "path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json",
+    "sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba"
+  },
+  "execution_authority": false,
+  "future_shared_files_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/sand_numeric_train_valid_20261006_v1/metadata.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/census/all_split_census.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/test.root_admission.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/valid.root_admission.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/metadata.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/structural_report.json": null,
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/test.json": null
+  },
+  "metadata_expected_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+  "numeric_arrays": {
+    "actual_path_size_sha256_map": null,
+    "derive_from_actual_admitted_valid_and_test_manifests": true,
+    "expected_array_count": 120,
+    "same_bytes_as_original_window_census_and_host_preflights_required": true,
+    "wildcards_and_guessed_hashes_forbidden": true
+  },
+  "per_host_split_preflight_paths": {
+    "A": {
+      "test": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_test/split_preflight.json",
+      "valid": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_valid/split_preflight.json"
+    },
+    "B": {
+      "test": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_test/split_preflight.json",
+      "valid": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_B_preflight_amendment_20261006_v1/preflight_valid/split_preflight.json"
+    }
+  },
+  "root_requirements": [
+    "Populate all future hashes from actual reviewed bytes, preserving canonical paths.",
+    "Bind both host-specific preflight receipts and their complete all-split census provenance; do not reuse A preflight as B local-byte attestation.",
+    "Extend each release files_sha256 with the exact admitted valid/test numeric-array paths and digests, metadata and required immutable provenance.",
+    "Verify the 23 frozen sources, lexical interpreter, binary and pyvenv config on each host.",
+    "Verify all original training/recovery and preparation owners/workers exited with no live handoff, all four fresh physical GPU UUIDs, and no foreign work on assigned devices.",
+    "Verify new output roots and root controls publication before issuing fresh clock bounds.",
+    "Preserve exactly four original quotas, all six models, 11760 concurrent stream seconds and 3600 analysis seconds; no retry, endpoint selection or later reduced work is created here."
+  ],
+  "schema": "sand_final_evaluation_unresolved_immutable_inputs_v1",
+  "status": "root_actual_input_binding_required"
+}

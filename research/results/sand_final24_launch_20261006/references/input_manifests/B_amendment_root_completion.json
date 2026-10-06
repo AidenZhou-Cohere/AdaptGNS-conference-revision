@@ -1,0 +1,24 @@
+{
+  "schema": "sand_B_amendment_root_completion_admission_v1",
+  "status": "both_B_preflights_completed_and_reviewed_inside_original_amendment",
+  "checked_utc": "2026-10-06T19:59:40.714460+00:00",
+  "recorded_by": "root",
+  "phase_sha256": "e22a9b0e23eae4cccb872a7543805fdaccf3ea2d9d6a875fdec17d7c2271ef39",
+  "original_stop_utc": "2026-10-06T20:00:02.215311+00:00",
+  "root_byte_review_sha256": "fdf3551a990473e80dcb8fdd2bcaa401e225cdf71f8c51a67550f7809dbea2de",
+  "independent_reviews": {
+    "preflight_valid": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_B_amendment_attempt2_preflight_valid_independent_review_code_audit_v1.json",
+      "sha256": "5be588cd1c42270fccadbdca6e93ebb9cbbc2739b1dc8fe52c58d2ca9422c73c"
+    },
+    "preflight_test": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_B_amendment_attempt2_preflight_test_independent_review_code_audit_v1.json",
+      "sha256": "1611b9c885d9d34ebdc9569c3a30c7d080713fa6531bbda7197ddbc89331815a"
+    }
+  },
+  "original_source_phase_disposition": "seven_complete_two_unexecuted_unchanged",
+  "first_amendment_attempts": "both_owner_startups_failed_before_scientific_worker; all_original_bytes_preserved",
+  "scientific_preflights_executed_once_each": true,
+  "full_24_stage_evaluation_launched": false,
+  "final_evaluation_requires_separate_fresh_controls_review_native_checks_and_full_time_fit": true
+}

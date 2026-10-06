@@ -1,0 +1,18 @@
+{
+  "control_phase_sha256": "f3573270536485b42baee73c3ec3f2fa2fa251bb6af2bd4f79e738a70b625497",
+  "dispatched_utc": "2026-10-06T20:13:08.091148+00:00",
+  "exact_owner_argv": [
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py",
+    "--execute",
+    "--release",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/B.evaluation_release.json",
+    "--lifecycle-source",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity_v2.py",
+    "--output-dir",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1"
+  ],
+  "original_tool_session_must_be_recorded": true,
+  "release_sha256": "8fa068d3ea1768da53bf62297c0bfe2220c8aefc44b7c334acfc5f0c9e64a466",
+  "remote_launch_shell": "test \"$(sha256sum -- /root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/B.evaluation_release.json)\" = '8fa068d3ea1768da53bf62297c0bfe2220c8aefc44b7c334acfc5f0c9e64a466  /root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/B.evaluation_release.json' && exec /usr/bin/env -u CUDA_VISIBLE_DEVICES CUBLAS_WORKSPACE_CONFIG=:4096:8 LD_LIBRARY_PATH=/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 /root/repos/AdaptGNS-cuda-20261006/.venv/bin/python /root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py --execute --release /root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_controls_20261006_v1/B.evaluation_release.json --lifecycle-source /root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity_v2.py --output-dir /root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1"
+}

@@ -1,0 +1,9 @@
+{
+  "added_forbidden_program_token": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_sand_graph_support_cuda.py",
+  "clock_probe_or_scientific_execution": false,
+  "current_sha256": "dfd1cb9c210196abd87dafc2d7164487e0aba18586e34eb098d92f85acfdf604",
+  "only_field_changed": "forbidden_program_tokens",
+  "original_sha256": "ee5d55c136aeae25332d9234a41da8056878781a9533f683b024136714cc91d3",
+  "scientific_inputs_streams_candidates_unchanged": true,
+  "status": "local_preparation_only_forbidden_token_completion"
+}

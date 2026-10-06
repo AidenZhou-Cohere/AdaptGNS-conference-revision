@@ -1,0 +1,10 @@
+{
+  "checked_utc": "2026-10-06T20:13:46.697085+00:00",
+  "control_phase_sha256": "f3573270536485b42baee73c3ec3f2fa2fa251bb6af2bd4f79e738a70b625497",
+  "owner_observation_sha256": {
+    "A": "81cc079eaed085c9697484e1329ccc574808f599780937460085b2c653699a4b",
+    "B": "b5f26cdd2862c1e2dd9b0b723578eb19c49d4fa671d6247d3bd2b43a3f7cf460"
+  },
+  "scientific_completion": false,
+  "status": "both_original_owners_observed_inside_same_control_window"
+}

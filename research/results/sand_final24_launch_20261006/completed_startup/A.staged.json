@@ -1,0 +1,8 @@
+{
+  "capture_sha256": "7db607538d5c32a241c3efea65b7f01a444874c4a2ea16f5e1f040cf0c23c84a",
+  "independent_issue_review": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_final24_actual_issuance_independent_review_code_audit_v1.json",
+    "sha256": "0276b168cabff772e525e4f2c3b9f3786e513e0fb1bd7a69cb41a822ce583c6a"
+  },
+  "release_sha256": "37cf446c894cb0e46567d060365716bcfc9bae685f1a7bb44a2d473b58127af4"
+}

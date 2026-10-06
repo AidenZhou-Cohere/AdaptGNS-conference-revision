@@ -1,0 +1,18 @@
+{
+  "admission_sha256": "6d6881cfa45d1de9876622862034be63329c33e341f85aba30902f56c4105153",
+  "all_split_numeric_duplicates_checked": true,
+  "census_sha256": "d5de93fdd581d0cba192c4db45a9b5dbde48fe8d64e4fa674ed0c3de7e47c002",
+  "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "evaluation_executed": false,
+  "evaluator_sha256": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+  "frames": 320,
+  "horizon": 314,
+  "manifest_sha256": "53bed919f0f65a6308ff25388d0a43c864ded00f28b73cbfe1291e6b1c989e1c",
+  "preparation_source_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+  "record_count": 30,
+  "root_release_sha256": "63a5011da1c7ab79e0974c29323ee7ee19cc4ecf316896be9f45c157258b7cb8",
+  "schema": "adaptgns_sand_final_split_preflight_v1",
+  "split": "test",
+  "status": "complete_split_contract_passed",
+  "structural_report_sha256": "ec33156cc4fb126a42330248a70098a6f9c04dfcfdc795799472b703ec788d2d"
+}
