@@ -1,0 +1,9 @@
+{
+  "manuscript_sha256": "4cd942d9ba1f054b513d57e652eade88f13df63fdb760d81d1dfb25a91daee98",
+  "body_sha256": "17201631acea97246d6ef37dc168f45bb835201dcd980452a4db79540ada0b0e",
+  "main_sha256": "05cc45b758c27627c9e2adc651c1cea4fd327758d852f09f7a55d0e246919fb4",
+  "old_labels_preserved": 66,
+  "labels": 70,
+  "title_abstract_exact": true,
+  "prior_appendix_bytes_preserved": true
+}

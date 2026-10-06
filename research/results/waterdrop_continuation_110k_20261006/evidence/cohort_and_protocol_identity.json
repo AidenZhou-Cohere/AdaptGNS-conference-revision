@@ -1,0 +1,439 @@
+{
+  "source_path": "work/continuation-summary-20261006-v1/result.json",
+  "source_sha256": "082bdc9c33614fea6445e3373e94eeafcfdfc516d4a27d04096f380ad7781e64",
+  "source_key_values": {
+    "scope": "post-inspection exploratory paired faithful110k continuation analysis",
+    "completed_total_updates": 110000,
+    "completed_additional_updates": 10000,
+    "cohort": [
+      {
+        "arm": "base",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/base_seed0/checkpoint-extra-10000.pt",
+        "seed": 0,
+        "sha256": "dfb417aa9ef63d8fa7f23629612fd39696bfe5b10dbb896d3ea2d594368accfd"
+      },
+      {
+        "arm": "mix",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/mix_seed0/checkpoint-extra-10000.pt",
+        "seed": 0,
+        "sha256": "f6c174dc60b678a83d27d25b02bc8013d165514f3ef9e9710f0a9fb2cd29f7bb"
+      },
+      {
+        "arm": "base",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/base_seed1/checkpoint-extra-10000.pt",
+        "seed": 1,
+        "sha256": "8352cbacff04a4031fe04a823f69b6f38dd019bb1ef004430ac60e95b32e296a"
+      },
+      {
+        "arm": "mix",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/mix_seed1/checkpoint-extra-10000.pt",
+        "seed": 1,
+        "sha256": "f68939977661159062373af351505306946f3555a9414f90b0b9fff94dcabe9f"
+      },
+      {
+        "arm": "base",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/base_seed2/checkpoint-extra-10000.pt",
+        "seed": 2,
+        "sha256": "115a0472213cdd4f4119954d74c9602a68b173b91053608850902915c2f534c2"
+      },
+      {
+        "arm": "mix",
+        "checkpoint": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/faithful-graph-support-10k-20261006/mix_seed2/checkpoint-extra-10000.pt",
+        "seed": 2,
+        "sha256": "aa358b0e96fa95c82cf151075e2b17a09adc63d1e4896d8d0613364f3dbae2e2"
+      }
+    ],
+    "coverage": {
+      "endpoints": 6,
+      "jobs": 12,
+      "observed_frames": 2550,
+      "observed_policy_slots": 12750,
+      "autonomous_outcomes": 810
+    },
+    "common_contract_sha256": "bca6e04b6b7989405fd99fc10143e202002a1afd320c0188ad7ba39f3c3fbd28",
+    "source_and_input_reverified_after_analysis": true,
+    "interpretation": [
+      "Exploratory conditional on three faithful100k parents and fixed paired continuation schedules; no fresh-training or NLL generality.",
+      "Observed histories and autonomous own-prediction geometries are distinct populations. Tests were inspected before this follow-up.",
+      "Arm means and paired contrasts use equal trajectories within each seed; all three seeds required; any required null propagates.",
+      "Negative error/failure arm effects favor mix; negative risk-random interaction favors relative risk allocation after mix exposure.",
+      "Positive signed gain favors the action; correlation direction is associative. Edge savings and operational timing are not causal speedups.",
+      "Prediction, truth and observed boundary diagnostics are distinct; numerical completion does not establish physical validity.",
+      "Raw rejected attempts and all unsuccessful outcomes remain in input artifacts and the lossless audited record archive.",
+      "Observed base forward reuses parity; previous graph is untimed. No exact standalone policy latency is reconstructed."
+    ]
+  },
+  "protocol_sources": {
+    "outputs/AdaptGNS/research/protocols/faithful_graph_support_10k_20261005.md": {
+      "sha256": "90f896adefedf6e63503835db2479ac7e4f357043c01918b3334a846a8ffbba3",
+      "numbered_lines": [
+        {
+          "line": 1,
+          "text": "# Exploratory paired faithful graph-support continuation"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "Prepared after the locked full-model study and graph-convention screen were designed. This is a separate 100k-to-110k continuation, not an amendment or replacement of the fixed experiment. Root must review and commit this protocol, trainer and tests before the first real update. No outcome-based changes to this cohort are allowed. All original failures and source/configuration/checkpoint/data hashes remain preserved."
+        },
+        {
+          "line": 4,
+          "text": ""
+        },
+        {
+          "line": 5,
+          "text": "## Cohort and fixed optimization"
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "Clone all three final faithful100k checkpoints at seeds0,1,2 into two arms each: `base` and `mix`, six runs. Both arms restore identical parent weights, normalization/architecture, Adam moments and parameter-step counters, and CPU/MPS RNG state for that seed. Parent byte hashes are fixed in `faithful_graph_support.PARENT_HASHES`; verify before loading. No optimizer reset. Every arm performs exactly10000 additional updates. Absolute data/noise schedule steps are100000..109999. Batch size2, all1000 original training trajectories, all30 original validation trajectories, original128 fixed validation histories, original noise6.7e-4, faithful loss scale and stop-gradients, and no gradient clipping remain unchanged."
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "Set Adam LR to1e-5 before every update, with original betas(.9,.999), eps1e-8, weight_decay0 and inherited moments/counters. Use frozen `full_training.sample_indices(seed,absolute_step,...)` and `host_noise(...,seed,absolute_step)` unchanged. Graph RNG must not change data/noise streams. Use direct network normalized acceleration, not decoded positions followed by inverse decoding. Preserve the original target: noisy history, target shifted by final input noise, original inverse decoder."
+        },
+        {
+          "line": 10,
+          "text": ""
+        },
+        {
+          "line": 11,
+          "text": "## Graph exposure and exact budget"
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "Both arms first invoke the native model preprocessor on noisy current positions. Keep its directed base prefix exactly: strict radiusr=.015, native float32 norm and query semantics, receiver cap128, self-edge candidates, native receiver/distance/source ordering. Native caps can cause asymmetry and can remove a self candidate in pathological zero-distance ties; preserve that behavior."
+        },
+        {
+          "line": 14,
+          "text": ""
+        },
+        {
+          "line": 15,
+          "text": "For each example independently, the optional universe is the full uncapped strict geometric radiusR=1.267r pair set minus the full strict radiusr pair set, using separate queries and float32 norm filters. Do not treat short-range pairs omitted by the cap as annulus candidates. Never connect particles across examples."
+        },
+        {
+          "line": 16,
+          "text": ""
+        },
+        {
+          "line": 17,
+          "text": "The base arm never adds pairs. For each example slotj, the mixture arm uses a Bernoulli.5 coin from NumPy `SeedSequence([20261005,seed,absolute_step,j,4409])`, successful iff one uniform draw<.5. Pair permutation uses independent `SeedSequence([20261005,seed,absolute_step,j,5501])`. On success retain exactlyB=floor(.25*annulus_count) uniformly sampled nonself unordered pairs without replacement; otherwise retain0. Lexicographically sort selected pairs, emit both directions using frozen bridge receiver/distance/source ordering, and append them as a suffix after the unchanged native base prefix. This suffix convention matches the separate native autonomous evaluator. Never reapply a cap, symmetrize the mandatory base, or add self edges. Directed count is exactlynative_count+2B for exposed examples. B=0 is exactly nativebase. Record realized coins, zero-budget exposures, pair hashes, native/cap counts and noisy-state hashes."
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "The graph streams are independent per step/example, omit arm identity, and touch neither torch nor the original data/noise RNG. A batch can have0,1,2 expanded examples. All selection uses noisy observed inputs only, never target labels."
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "## Validation, checkpointing and lineage"
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "Validate original clean native-base histories at additional0,2500,5000,7500,10000 using frozen validation metrics/aggregation. Save checkpoints at those same updates. These metrics monitor training; the only scientific endpoints are all six10000-additional-update models. No checkpoint selection. A planned `--stop-after` is operational and explicitly incomplete, never an alternative endpoint."
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "New checkpoints have `graph_support_schema=1`, `format_version=2`, full simulator configuration/state_dict, `continuation_config`+hash, parent checkpoint/config/training provenance, preserved Adam/RNG state, additional and total update counts, and continuation-only history/graph ledger. They intentionally omit the old full-training schema so old fixed100k validators cannot silently accept them. Validation rejects an old schema, mismatched nested training configuration, changed parent simulator metadata/normalization bytes, nonfaithful risk semantics, ledger length differences, and any absolute-step/completed-index discrepancy. Existing generic model loading can reconstruct their architecture/normalization. A new evaluation wrapper must call `validate_continuation_payload(require_complete=True)` and independently check lineage/input/checkpoint bytes; it must use matching native-base-plus-optional graph semantics."
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "Every run uses a new output directory outside parent/data trees and an exclusive reviewed RunLock. Source/protocol/data/metadata/parent byte hashes are pinned and verified after training. Each attempt has a unique immutable directory. Checkpoints refuse overwrite, and any stray temporary output is preserved and blocks all run writes pending review. `latest.json` is the only committed resume pointer; missing pointer does not trigger automatic restart. Exact configuration and byte identity, optimizer/RNG restoration, graph-ledger length and absolute-step schedule are required. Prior attempt statuses/validation records/unsuccessful history/raw state remain present when resuming. Native process identity and reviewed stale-lock checks are required before restarting; never run duplicate trainers. Elapsed counters are operational retained-attempt counters, not total scientific runtime; replayed/discarded work and downtime require separate accounting."
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "Nonfinite losses/gradients stop before optimizer.step; nonfinite parameters after a step stop without promoting that state. Save the unsuccessful attempt/raw state and retain the last good checkpoint. No automatic numerical retry. An interruption may replay uncheckpointed work, whose original attempt evidence remains separate."
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "## Planned evaluation and claims"
+        },
+        {
+          "line": 32,
+          "text": ""
+        },
+        {
+          "line": 33,
+          "text": "All final models use matching native capped mandatory+self graph semantics with uncapped optional append. Fixed policies: base, dense(full annulus), random25, speed25, cachedrisk25. Same-state diagnostic uses previous-observed-native-base risk, explicitly distinct from cached own-graph autonomous risk. Random draws pair by original seed/state/trajectory and omit arm label. Autonomous risk pays one initial native-base scoring pass, usesB from forecast1, then caches its own selected-graph risk."
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "Minimum observed-state evidence is all six endpoints on128 fixed validation and297 fixed test histories under all five policies, with signed actual-action/dense benefits, risk residual/benefit correlations, graph/cap/physical diagnostics, and all failures. Validation/test remain separate. Planned autonomous evidence is six endpoints\u00d7fivepolicies\u00d727 official test sources3\u201329\u00d7995forecasts. Preserve the original computational guards and boundary truth references. Any required failed/missing outcome makes the relevant full-sample metric undefined. No survival-only means or favorable seed/policy/trajectory subset. No autonomous claim from observed-history results alone. Old no-loop results and new continuations remain distinct; inspected test exposure remains disclosed."
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "Primary contrasts: mix-minus-base-continuation within original seed for each policy, and `(risk\u2212random)_mix \u2212 (risk\u2212random)_base`. Retain risk-versus-speed, dense-minus-base, every policy result, validation tradeoffs, failures and boundary outcomes. Difference within matched frames/trajectories before equal-trajectory seed aggregation; show all three seed effects, mean and sampleSD. Timing is measured by explicit scope; no speedup inferred from edge counts or operational training counters."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "## Review and cost gate"
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "Before real updates require tiny CPU normalized-output/target/loss/gradient/Adam-step parity against the original base path, faithful isolation, cap-active/coincident/strict-boundary/batched budget tests, graph-RNG/data/noise independence, save/resume moment/RNG parity, nonfinite failure retention, and malformed/hash/overwrite refusal. Root independently reviews source and exact parent/config/data identity. No real checkpoints are used in synthetic tests. MPS runs are sequential with2threads and CPU fallback disabled; no parallel heavy jobs."
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "Previous timing suggests2.29h retained compute for60000 updates, before expanded-graph overhead. Plan3\u20135h wall training,2\u20134h full evaluation and7\u201312h total including implementation/audit/integration. Reserve six hours before October7 08:00UTC cutoff for manuscript/compilation/release work; update feasibility before launch. Stop starting research jobs at that cutoff and preserve unfinished state. Local compute only; no purchase, submission or external messages."
+        }
+      ]
+    },
+    "outputs/AdaptGNS/research/protocols/continuation_summary_20261006.md": {
+      "sha256": "ea582e278a9bcfcd8a6eeb98f994e450dc2036352debfeb74a3c512602338454",
+      "numbered_lines": [
+        {
+          "line": 1,
+          "text": "# Strict paired analysis of faithful 110k continuation endpoints"
+        },
+        {
+          "line": 2,
+          "text": ""
+        },
+        {
+          "line": 3,
+          "text": "This analysis is specified from the frozen evaluator and the methods design before reading continuation outcomes. Root must review and freeze this new source, protocol, and synthetic tests before real analysis. Existing trainers, evaluators, original 100k summaries and their protocols remain unchanged. No new training or inference is performed by the summarizer."
+        },
+        {
+          "line": 4,
+          "text": ""
+        },
+        {
+          "line": 5,
+          "text": "The estimand is the effect of the fixed random graph exposure continuation relative to equal-update base-only continuation, conditional on the three original faithful 100k parents and their paired frame/noise schedules. The endpoints have exactly 10,000 additional updates, 110,000 total. Training arm `base` is distinct from inference policy `base`. Arms are `base` and `mix`, at original seeds 0, 1 and 2. The analysis is exploratory and motivated by inspected tests. It is neither independent confirmation nor evidence about NLL or fresh-training generality."
+        },
+        {
+          "line": 6,
+          "text": ""
+        },
+        {
+          "line": 7,
+          "text": "## Admission and complete coverage"
+        },
+        {
+          "line": 8,
+          "text": ""
+        },
+        {
+          "line": 9,
+          "text": "The CLI requires the explicit cohort manifest, validation and test manifests, observed and autonomous family roots, and a fresh separate output directory. Each family root contains exactly six direct job directories. Job identity is read from the protocol, never inferred from directory names. Duplicate, unknown or missing arm/seed identities, wrong families, symlinks, temporary files, orphan records, unexpected nested directories and uncommitted jobs are refused. Existing valid `attempt_history` status archives are inventoried, checked and retained. No source or failed artifact is replaced. Invalid analysis attempts produce an explicit failure status without eligible partial-population means."
+        },
+        {
+          "line": 10,
+          "text": ""
+        },
+        {
+          "line": 11,
+          "text": "The frozen `continuation_evaluation.load_verified_cohort` loads all six endpoints and the three original parents onto CPU without constructing a simulator or calling a forward pass. It verifies checkpoint byte hashes, new endpoint schema, 10k/110k counters, frozen trainer/protocol hashes, all committed statuses/latest pointers/configurations, full 128-dimensional/10-block architecture, native capped/self graph contract, parent tensor and normalization identity, inherited Adam shapes/groups/counter advances, and identical paired frame/noise ledgers. No 110k endpoint is passed to an original 100k admission validator. One additional CPU-only read of each admitted endpoint supplies its exact normalization/bounds for saved-array comparison."
+        },
+        {
+          "line": 12,
+          "text": ""
+        },
+        {
+          "line": 13,
+          "text": "All twelve completed evaluation jobs are required: six observed and six autonomous. Each observed job has 425 histories: the original 128 fixed validation histories and 297 official test histories, for 2,550 frame records and 12,750 policy slots. Each autonomous job has 27 official test sources 3\u201329, all five policies, and a 995-forecast contract: 135 trajectory-policy outcomes, 810 overall. Scientific failures count as committed outcomes. They are never silently retried or removed."
+        },
+        {
+          "line": 14,
+          "text": ""
+        },
+        {
+          "line": 15,
+          "text": "Validate committed status/result/protocol hashes; exact result/index/record/array-or-trace identities; explicit arm, original seed, endpoint/parent/config identities; original validation schedule; official source identity and converted-array checksums; common graph/software/runtime contract; and all frozen numerical source dependencies. Autonomous jobs additionally require the exact completed `lineage_identity.json` written after native publication. The original complete official test source and excluded sources 0\u20132 have known prior exposure; they are not described as pristine. Excluded sources are not analyzed. Source and data pins are rechecked after the audit and again before final publication."
+        },
+        {
+          "line": 16,
+          "text": ""
+        },
+        {
+          "line": 17,
+          "text": "## Saved observed arrays"
+        },
+        {
+          "line": 18,
+          "text": ""
+        },
+        {
+          "line": 19,
+          "text": "Validate five policies in fixed order: `base`, `dense`, `random25`, `speed25`, `previous-observed-base-risk25`. Reconstruct native strict-float32 radius geometry, capped-128/self mandatory directed prefix, uncapped symmetric optional annulus suffix, exact floor(0.25 annulus) budget and deterministic scores/random masks. No cap-omitted short-range pair becomes optional. Check histories, targets and particle types against the checksum-verified converted sources and the frozen fixed frame schedule. Pair arms on the identical histories, types, target, normalization, geometry and random seed material. Base/dense/random/speed graph selections must match between arms whenever their required graph phases were reached; risk selections may differ."
+        },
+        {
+          "line": 20,
+          "text": ""
+        },
+        {
+          "line": 21,
+          "text": "Independently recompute coordinate position MSE, coordinate normalized acceleration MSE, residual arrays, per-particle normalized coordinate squared error, signed action gains relative to the same endpoint's base prediction, harmful-particle fraction, previous-risk Spearman association with base residual and each actual-action gain. Gains are base squared error minus action squared error; positive values favor the action. Dense and sparse actions remain distinct. Constant-rank or unavailable-input correlations are null with explicit reasons. Base gain is zero and its gain correlation is undefined. A failed previous scoring pass invalidates its dependent risk policy and correlations while retaining valid other policies. Early current-history/graph/parity failures are validated by phase and do not invent absent downstream target or prediction arrays. Retained guard failures must reproduce from raw failed inputs/outputs."
+        },
+        {
+          "line": 22,
+          "text": ""
+        },
+        {
+          "line": 23,
+          "text": "Keep native parity arrays and numerical checks, all original failure reasons and raw output references, graph/cap/self/asymmetry counts and exact selection hashes. Preserve risk/random optional overlap in each arm and risk overlap across arms. Overlap is descriptive, not a causal estimate of edge value. Empty optional union gives undefined Jaccard with a reason, not fabricated perfect overlap."
+        },
+        {
+          "line": 24,
+          "text": ""
+        },
+        {
+          "line": 25,
+          "text": "Boundary metrics for prediction, target and current observed state remain separate, including outside-by-more-than-1e-6 fraction, maximum excursion, mean particle excursion and original coordinate extrema. Finite rejected predictions retain their physical diagnostics. Measured per-frame duration, graph/forward/scoring components, pass counts and base parity reuse are retained. The base forward is shared with verification and the previous scoring graph is not separately timed. Do not reconstruct exact standalone latency by summing overlapping or unmeasured components."
+        },
+        {
+          "line": 26,
+          "text": ""
+        },
+        {
+          "line": 27,
+          "text": "## Saved autonomous outcomes"
+        },
+        {
+          "line": 28,
+          "text": ""
+        },
+        {
+          "line": 29,
+          "text": "Use unchanged low-level native trace/graph/parity/failure validators after separate continuation admission. The unchanged original scalar/boundary validator receives only a structural view with verified trajectory descriptions, original seed and guard-key mapping; it is never supplied an invented original100k scope or identity. Do not invoke the native100k loader, checkpoint compatibility view, original protocol validator, or top-level original/native summarizers."
+        },
+        {
+          "line": 30,
+          "text": ""
+        },
+        {
+          "line": 31,
+          "text": "Retain all 995-step scalar sequences, six trace horizons 1, 10, 50, 200, 500 and 995, exact RNG progression, capped mandatory prefix checks, optional budget counts, accepted prefixes and rejected attempts. Recompute saved trace scalar/boundary values against actual source trajectories and preserve immutable raw records for unsaved intermediate predicted arrays. The primary error is mean coordinate position MSE across all 995 forecasts. Full error, full boundary and full edge means become null after a required failure. Earlier fixed-horizon errors can remain defined when later forecasts fail. Distinguish mean per-step maximum excursion from trajectory maximum excursion; finite computational completion is not physical validity or conservation."
+        },
+        {
+          "line": 32,
+          "text": ""
+        },
+        {
+          "line": 33,
+          "text": "Runtime remains failure-inclusive. Preserve policy total elapsed time including warmup/failed attempts, native parity-inclusive duration, separate parity and graph/forward components, attempted pass counts and completed forecast counts. Job invocation duration covers the final invocation only if status archives indicate prior attempts; do not invent total job latency. Different geometries, completion lengths, fixed policy order and shared preprocessing prevent causal speedup claims."
+        },
+        {
+          "line": 34,
+          "text": ""
+        },
+        {
+          "line": 35,
+          "text": "## Hierarchy, paired effects and null propagation"
+        },
+        {
+          "line": 36,
+          "text": ""
+        },
+        {
+          "line": 37,
+          "text": "Observed validation and test are separate populations; autonomous test is a third population. Particles/coordinates are averaged within each observed frame, frames equally within trajectory, and trajectories equally within original seed. Autonomous trajectory metrics are averaged equally over the 27 declared trajectories. Unequal validation histories per trajectory do not change equal trajectory weighting. Report all three explicit seed values, their mean and sample SD with ddof=1, without p-values or treating particles/frames/policy outcomes as independent replications."
+        },
+        {
+          "line": 38,
+          "text": ""
+        },
+        {
+          "line": 39,
+          "text": "For every fixed metric preserve absolute arm/policy values, five same-policy mix-minus-base arm effects, `(risk\u2212random)_mix \u2212 (risk\u2212random)_base`, and risk-minus-random, risk-minus-speed, dense-minus-base within each arm. Compute each two- or four-term difference at the identical frame/trajectory unit before hierarchical averaging. Cross-check the paired means against frozen `continuation_evaluation.paired_contrasts`; retain every unit difference and trajectory value beyond what that helper returns. Autonomous `laggedrisk25` and observed `previous-observed-base-risk25` are different controllers."
+        },
+        {
+          "line": 40,
+          "text": ""
+        },
+        {
+          "line": 41,
+          "text": "Any required undefined unit nulls its trajectory, seed and corresponding three-seed summary; show required/defined counts, every missing reason and contributing ID. Integrity-invalid families are ineligible, not ordinary scientific nulls. Committed failure indicators remain defined. Negative error/failure arm effects favor mix; negative allocation interaction improves risk relative to random after mixed graph exposure. Positive gain favors the action; correlation direction is associative. Display unfavorable, failed and null outcomes alongside favorable ones."
+        },
+        {
+          "line": 42,
+          "text": ""
+        },
+        {
+          "line": 43,
+          "text": "## Publication and validation"
+        },
+        {
+          "line": 44,
+          "text": ""
+        },
+        {
+          "line": 45,
+          "text": "Write a versioned fresh analysis directory. `result.json` contains complete coverage, cohort/job/input identities and every metric's absolute/paired seed values and summary statistics. Each metric has a deterministic lossless gzip JSON detail file containing all unit/trajectory/seed values and null reasons. `audited_records.json.gz` retains audited observed/autonomous raw scalar records, failures, physical diagnostics, timing, graph hashes and overlap checks. Raw numeric arrays/checkpoints remain at their immutable input paths and hashes. Compact publication may omit them only with an explicit omission manifest and no claim of standalone raw reproducibility. Summary/audit duration is separate from inference time."
+        },
+        {
+          "line": 46,
+          "text": ""
+        },
+        {
+          "line": 47,
+          "text": "Synthetic tests must cover swapped identity/parent/checkpoint, original-schema or incomplete/relabelled endpoint, unequal paired noise, duplicate/missing/unknown units, noninteger or boolean identifiers, nonfinite/boolean metric values, changed random selection, tampered arrays/scalars and hashes, uncommitted status, hostile artifact paths, unequal trajectory frame counts, constant correlations, isolated previous-score failure, full-horizon failure with defined early horizons, failure-inclusive timing and four-term paired arithmetic. Independent review and bounded saved-array audit precede manuscript integration. Root controls all real launches and refuses new work at October 7 08:00 UTC."
+        }
+      ]
+    }
+  },
+  "note": "Copied exact saved metadata and protocol text, not new admission or scientific execution."
+}

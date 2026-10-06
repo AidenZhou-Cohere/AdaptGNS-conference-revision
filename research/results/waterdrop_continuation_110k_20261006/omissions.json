@@ -1,0 +1,26 @@
+{
+  "standalone_raw_reproduction_bundle": false,
+  "included": "Original result/status, all91 per-metric detail archives, original independent audit, every required cohort/policy/seed/failure statistic, focused frozen code/protocols, report and reviewed manuscript.",
+  "external_combined_records": "external_artifacts.json",
+  "raw_inputs": {
+    "copied": false,
+    "hash_reference": "summary/result.json::input_files_sha256",
+    "original_hash_reference_count": 10736,
+    "extension_counts_of_original_references": {
+      ".py": 28,
+      ".md": 6,
+      ".json": 4322,
+      ".pt": 9,
+      ".npy": 2120,
+      ".npz": 4251
+    },
+    "scope": "Original models, source datasets, per-job prediction arrays, trace arrays and auxiliary committed input artifacts are not duplicated."
+  },
+  "native_process_inventories_credentials_ssh_configuration": "Not packaged.",
+  "goop_comparison_source": {
+    "path": "../goop2d_graph_exposure_100k_20261006/paired_scalar_summary.json.gz",
+    "sha256": "bb3c3f54cdeaf2b1198f49b8437dc711d80ce5e8347ab70363558ab515852978",
+    "scope": "Neighboring published source for comparative Goop values in report/claim mappings; not duplicated."
+  },
+  "manuscript_builder_scope": "Current standalone revised_manuscript.tex is included. The original builder and numerical tools retain workspace-relative/absolute dependencies; their copied presence does not imply a self-contained runnable raw experiment."
+}

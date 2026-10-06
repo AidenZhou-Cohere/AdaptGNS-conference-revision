@@ -1,0 +1,1105 @@
+{
+  "schema": "waterdrop110k_publication_copy_plan_v2",
+  "status": "revised_compact_scope_authorized_by_root",
+  "output_root": "outputs/AdaptGNS/research/results/waterdrop_continuation_110k_20261006",
+  "external_report": "outputs/waterdrop_continuation_110k_20261006.md",
+  "required_fixed_files": [
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__cap_active_step_fraction.json.gz",
+      "destination": "summary/autonomous_test__cap_active_step_fraction.json.gz",
+      "bytes": 3111,
+      "expected_sha256": "f398bb7252bc33a5148d3870e219c9a8b5016abaf0c9212eb9000761d3289074",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__completed_steps.json.gz",
+      "destination": "summary/autonomous_test__completed_steps.json.gz",
+      "bytes": 3266,
+      "expected_sha256": "b814fb98202a9f91ea8c9c1d720fd368f12358062fdb21d6f0580a4845fbe50d",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__failure_fraction.json.gz",
+      "destination": "summary/autonomous_test__failure_fraction.json.gz",
+      "bytes": 3111,
+      "expected_sha256": "f398bb7252bc33a5148d3870e219c9a8b5016abaf0c9212eb9000761d3289074",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__forecast_network_passes.json.gz",
+      "destination": "summary/autonomous_test__forecast_network_passes.json.gz",
+      "bytes": 3266,
+      "expected_sha256": "b814fb98202a9f91ea8c9c1d720fd368f12358062fdb21d6f0580a4845fbe50d",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__ground_truth_boundary_mean_fraction_outside_gt_1e_minus6.json.gz",
+      "destination": "summary/autonomous_test__ground_truth_boundary_mean_fraction_outside_gt_1e_minus6.json.gz",
+      "bytes": 4056,
+      "expected_sha256": "709d105b8023fbfd1bec7471553d1429e05b3116a622dd8a81e478b9ff43e316",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__ground_truth_boundary_mean_step_maximum_excursion.json.gz",
+      "destination": "summary/autonomous_test__ground_truth_boundary_mean_step_maximum_excursion.json.gz",
+      "bytes": 4031,
+      "expected_sha256": "ac26b3885afbb5885e06d0e54994cb8f8d4c90db5743ec9b2327e8909c4e7ddd",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__ground_truth_boundary_trajectory_maximum_excursion.json.gz",
+      "destination": "summary/autonomous_test__ground_truth_boundary_trajectory_maximum_excursion.json.gz",
+      "bytes": 4034,
+      "expected_sha256": "c05ccb243eab82d07376c6231bb89ca6d2b55c76abea4a6ad1b1cac67d8f3609",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_directed_edges.json.gz",
+      "destination": "summary/autonomous_test__mean_directed_edges.json.gz",
+      "bytes": 25007,
+      "expected_sha256": "5aa7ac5f5557097dde8b773157ff1c9cf353cfb9310f574feaf83ca976314ded",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_forward_component_seconds.json.gz",
+      "destination": "summary/autonomous_test__mean_forward_component_seconds.json.gz",
+      "bytes": 30963,
+      "expected_sha256": "9a936e698bb9d2a9c23f2fa76e94ad8c36b952f4aed8867b20dc4bd51887bd5e",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_graph_operational_seconds.json.gz",
+      "destination": "summary/autonomous_test__mean_graph_operational_seconds.json.gz",
+      "bytes": 31147,
+      "expected_sha256": "caba47640b1a145337fabfb9b0d8afd9ce6f5a64e1dcba6bbafb1a677238aedf",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_base_asymmetric_directed_edges.json.gz",
+      "destination": "summary/autonomous_test__mean_native_base_asymmetric_directed_edges.json.gz",
+      "bytes": 3111,
+      "expected_sha256": "f398bb7252bc33a5148d3870e219c9a8b5016abaf0c9212eb9000761d3289074",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_base_directed_edges.json.gz",
+      "destination": "summary/autonomous_test__mean_native_base_directed_edges.json.gz",
+      "bytes": 25093,
+      "expected_sha256": "fd2da47bacaec4010d1ec212d3819366af240bd852b849b6bffd78db775b13e1",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_base_edges_removed_by_cap.json.gz",
+      "destination": "summary/autonomous_test__mean_native_base_edges_removed_by_cap.json.gz",
+      "bytes": 3111,
+      "expected_sha256": "f398bb7252bc33a5148d3870e219c9a8b5016abaf0c9212eb9000761d3289074",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_base_receivers_above_cap_before_capping.json.gz",
+      "destination": "summary/autonomous_test__mean_native_base_receivers_above_cap_before_capping.json.gz",
+      "bytes": 3111,
+      "expected_sha256": "f398bb7252bc33a5148d3870e219c9a8b5016abaf0c9212eb9000761d3289074",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_base_self_edges.json.gz",
+      "destination": "summary/autonomous_test__mean_native_base_self_edges.json.gz",
+      "bytes": 3495,
+      "expected_sha256": "a056a045da542af7333190502cca4ca50c80fc4ca39c332b47327963af5de178",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_parity_passes.json.gz",
+      "destination": "summary/autonomous_test__mean_native_parity_passes.json.gz",
+      "bytes": 3246,
+      "expected_sha256": "1d5fafa4fe3d1daf89d999fd71e06f5e655f2183349be9b5f292f677dde82d21",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_native_parity_seconds.json.gz",
+      "destination": "summary/autonomous_test__mean_native_parity_seconds.json.gz",
+      "bytes": 30358,
+      "expected_sha256": "495e1a1cce7217fe8b9a5c2517a7620fc86e7082f7fa658bc61d23c9e25ec5a6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_retained_optional_pairs.json.gz",
+      "destination": "summary/autonomous_test__mean_retained_optional_pairs.json.gz",
+      "bytes": 21773,
+      "expected_sha256": "daefcda24571aa51591b58754529974cee2b5cee2e2b441234260d7a69241876",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_rollout_mse.json.gz",
+      "destination": "summary/autonomous_test__mean_rollout_mse.json.gz",
+      "bytes": 31163,
+      "expected_sha256": "caae499a9410dcd157604b58f300b9598142a7083af7cd177b230c338f178a74",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_rollout_wall_seconds.json.gz",
+      "destination": "summary/autonomous_test__mean_rollout_wall_seconds.json.gz",
+      "bytes": 30618,
+      "expected_sha256": "836856130427e0603c4db679c277ef4cca92268a78e1c32938593b05514ea32a",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_total_network_passes.json.gz",
+      "destination": "summary/autonomous_test__mean_total_network_passes.json.gz",
+      "bytes": 3908,
+      "expected_sha256": "7711c836cd08400d80f4cbde1f8a69544861e1952e6ddf4d47ca05e5c79e5236",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mean_wall_seconds_including_native_parity.json.gz",
+      "destination": "summary/autonomous_test__mean_wall_seconds_including_native_parity.json.gz",
+      "bytes": 30595,
+      "expected_sha256": "6ef64e6696aa4ff0fc87db23d005079caec76567b8b99892150f77cf5c4979de",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_1.json.gz",
+      "destination": "summary/autonomous_test__mse_at_1.json.gz",
+      "bytes": 32216,
+      "expected_sha256": "3f51b89913dec13bae91ba064d0787cd83ec763e5d5fb6b15432bcd1dfa9a334",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_10.json.gz",
+      "destination": "summary/autonomous_test__mse_at_10.json.gz",
+      "bytes": 32099,
+      "expected_sha256": "1bf5089e4656dba6633c5f6179945ddf452fd8494da488e9b5c2a0ec300f6fe2",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_200.json.gz",
+      "destination": "summary/autonomous_test__mse_at_200.json.gz",
+      "bytes": 31197,
+      "expected_sha256": "bdef16b7303faedb259bc373005db3a3069041e093b3dbdf3b766722143366aa",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_50.json.gz",
+      "destination": "summary/autonomous_test__mse_at_50.json.gz",
+      "bytes": 32648,
+      "expected_sha256": "deeac4fc383678fc9305953c7f9b3056f9d5b9cb8407e326e85e8f7cc7f106c4",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_500.json.gz",
+      "destination": "summary/autonomous_test__mse_at_500.json.gz",
+      "bytes": 31117,
+      "expected_sha256": "d9a765af3dfc2dae08009eb2e91194fd672fc20bcca4cd63a8f4bbe6321d1af6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__mse_at_995.json.gz",
+      "destination": "summary/autonomous_test__mse_at_995.json.gz",
+      "bytes": 31126,
+      "expected_sha256": "15ee58efbe42348b6c9d86ab023c4703b91754663f457e808d7abbcd1d61d162",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__predicted_boundary_mean_fraction_outside_gt_1e_minus6.json.gz",
+      "destination": "summary/autonomous_test__predicted_boundary_mean_fraction_outside_gt_1e_minus6.json.gz",
+      "bytes": 31000,
+      "expected_sha256": "1451ae941ae86c87b828d83c18dde5ae48b6e1de86f8204dc9ace6d5d48993f8",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__predicted_boundary_mean_step_maximum_excursion.json.gz",
+      "destination": "summary/autonomous_test__predicted_boundary_mean_step_maximum_excursion.json.gz",
+      "bytes": 31324,
+      "expected_sha256": "e83d0167647218e41a25bb8814eeeb552608011043f968178da7077c0e7ccc95",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/autonomous_test__predicted_boundary_trajectory_maximum_excursion.json.gz",
+      "destination": "summary/autonomous_test__predicted_boundary_trajectory_maximum_excursion.json.gz",
+      "bytes": 31259,
+      "expected_sha256": "54695994a1a7171eefeefc00d1f5215dff0c0d831667b84ae2d83d593c54f8ac",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__current_observed_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_test__current_observed_boundary_fraction_particles_outside.json.gz",
+      "bytes": 213714,
+      "expected_sha256": "35c550a67bc336aae40f230c885cb26f1c98502d18fe1b5cf9fed5bd1b1ca55e",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__current_observed_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_test__current_observed_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 214507,
+      "expected_sha256": "3d7ca80d0362eda04c19209815f90aece6313d3b130ef83a8225fa3f24aab68d",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__current_observed_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_test__current_observed_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 216593,
+      "expected_sha256": "4124496a0e0d29aa66bc02f3479809973c4831360e933ad005a89647b91d65c2",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__current_observed_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_test__current_observed_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 246762,
+      "expected_sha256": "b225f68b90c26d0e304afc90b431b340a1ca964154fa51cb144d49c473400a09",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__directed_edges.json.gz",
+      "destination": "summary/observed_test__directed_edges.json.gz",
+      "bytes": 186907,
+      "expected_sha256": "85cd98aff2d750e947866d775eb7fe3af6069b67990ced1605f67aac73054a87",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__failure_fraction.json.gz",
+      "destination": "summary/observed_test__failure_fraction.json.gz",
+      "bytes": 138737,
+      "expected_sha256": "ed03176a317ea5b130118b82325ae4f520b1fd8e2903777470c9014471e871c6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__forward_operational_seconds.json.gz",
+      "destination": "summary/observed_test__forward_operational_seconds.json.gz",
+      "bytes": 387137,
+      "expected_sha256": "cede4801480f3d3e32f87c7a7197c053cef4c2faa56c83310c3eb84a5f218be3",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__graph_build_and_selection_seconds.json.gz",
+      "destination": "summary/observed_test__graph_build_and_selection_seconds.json.gz",
+      "bytes": 389116,
+      "expected_sha256": "8712feaffd3e26bef928e854bd1e045996d10b2c0025c931bcd8f250454c5767",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__ground_truth_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_test__ground_truth_boundary_fraction_particles_outside.json.gz",
+      "bytes": 213720,
+      "expected_sha256": "727505bff82add9c271dd1478fc727eeb55af588b16895137930d3d5940746f6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__ground_truth_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_test__ground_truth_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 213392,
+      "expected_sha256": "77a61f0b1de03156d7012c78eb4ca9d31b1906e0cd914288f8f6e9a4a6883c04",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__ground_truth_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_test__ground_truth_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 216934,
+      "expected_sha256": "e2ad2f2987c825c35c40fe3069f58342aa25690e8c20697ff3a4192cf594140a",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__ground_truth_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_test__ground_truth_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 246352,
+      "expected_sha256": "c2fe7b8b6f642ac5e302683d8bf2d1ed9d1421438005ec1e1db8517a5ef48644",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__harmful_particle_fraction.json.gz",
+      "destination": "summary/observed_test__harmful_particle_fraction.json.gz",
+      "bytes": 314193,
+      "expected_sha256": "b187d9414fa95f36b5007bb4afe3eacaaa58e555739612288c5eec4d28c5caf3",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__mean_signed_normalized_coordinate_gain.json.gz",
+      "destination": "summary/observed_test__mean_signed_normalized_coordinate_gain.json.gz",
+      "bytes": 370034,
+      "expected_sha256": "e55f78f1294ebab8b18ea89d4d2aef254d8e27c2e61e2044abcb221024d961d4",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__native_base_asymmetric_directed_edges.json.gz",
+      "destination": "summary/observed_test__native_base_asymmetric_directed_edges.json.gz",
+      "bytes": 138737,
+      "expected_sha256": "ed03176a317ea5b130118b82325ae4f520b1fd8e2903777470c9014471e871c6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__native_base_directed_edges.json.gz",
+      "destination": "summary/observed_test__native_base_directed_edges.json.gz",
+      "bytes": 178210,
+      "expected_sha256": "60dc12e31be4ad994e576987a36f2d81369b1856508100a11170270b04552979",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__native_base_edges_removed_by_cap.json.gz",
+      "destination": "summary/observed_test__native_base_edges_removed_by_cap.json.gz",
+      "bytes": 138737,
+      "expected_sha256": "ed03176a317ea5b130118b82325ae4f520b1fd8e2903777470c9014471e871c6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__native_base_receivers_above_cap_before_capping.json.gz",
+      "destination": "summary/observed_test__native_base_receivers_above_cap_before_capping.json.gz",
+      "bytes": 138737,
+      "expected_sha256": "ed03176a317ea5b130118b82325ae4f520b1fd8e2903777470c9014471e871c6",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__native_base_self_edges.json.gz",
+      "destination": "summary/observed_test__native_base_self_edges.json.gz",
+      "bytes": 155956,
+      "expected_sha256": "f461c3fcaf923387c05f4c24d1b4961e10dd403ce7c273917c35d6d6a24861a4",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__network_passes_for_standalone_policy.json.gz",
+      "destination": "summary/observed_test__network_passes_for_standalone_policy.json.gz",
+      "bytes": 139020,
+      "expected_sha256": "87ad33106d376aca83b9e8e06593c8f403ae9da226d88fe3aabfc982c277e105",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__normalized_coordinate_mse.json.gz",
+      "destination": "summary/observed_test__normalized_coordinate_mse.json.gz",
+      "bytes": 397013,
+      "expected_sha256": "9b97e5e570eca3393b9efc304ee847666020ef24c21b919104992295d694ad4c",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__position_coordinate_mse.json.gz",
+      "destination": "summary/observed_test__position_coordinate_mse.json.gz",
+      "bytes": 403082,
+      "expected_sha256": "f15777883039f605a3ce95c514ff973c2ad64d3f21453a13c2c292f97d37bbb5",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__predicted_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_test__predicted_boundary_fraction_particles_outside.json.gz",
+      "bytes": 227742,
+      "expected_sha256": "69e51474843908172ba7d72f0c96d20a80548b68f468f15176742f4730c2948e",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__predicted_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_test__predicted_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 227892,
+      "expected_sha256": "5eda30b7ddd9c7197efedec1f5575d2792eeb6bc2dcf066e1b9ab0637a6834d7",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__predicted_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_test__predicted_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 362449,
+      "expected_sha256": "ac6f548593bfb807fd3521ec2853270c37ea1616e9fb91898724b0c403dc1f31",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__predicted_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_test__predicted_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 381433,
+      "expected_sha256": "aa1b9457b4084ef62c69f6ab18d1e9b2700ff5e375429f9cf40d6dc7da79417a",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__previous_risk_base_residual_spearman.json.gz",
+      "destination": "summary/observed_test__previous_risk_base_residual_spearman.json.gz",
+      "bytes": 315461,
+      "expected_sha256": "7e9d6356a87a4d98f0a12ed953d890761ae843f88101bf9c8c5765dc1192950b",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__previous_risk_gain_spearman.json.gz",
+      "destination": "summary/observed_test__previous_risk_gain_spearman.json.gz",
+      "bytes": 344957,
+      "expected_sha256": "8805f115f6e5ca3377041d2b8aed1e620a16e2c370da0867e1c84503219ed435",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__retained_optional_pairs.json.gz",
+      "destination": "summary/observed_test__retained_optional_pairs.json.gz",
+      "bytes": 174593,
+      "expected_sha256": "18055edb8db194adf456eea937f9a0ad9f8bebf3836cc86cbd78177993a37f17",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_test__scoring_seconds.json.gz",
+      "destination": "summary/observed_test__scoring_seconds.json.gz",
+      "bytes": 234598,
+      "expected_sha256": "11a0f95e2e38b12920a971e0e83848878f6a08b2acbf7b458c123d13bb5b0246",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__current_observed_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_valid__current_observed_boundary_fraction_particles_outside.json.gz",
+      "bytes": 16022,
+      "expected_sha256": "32a026500f76c35581561fc2a74304a47bfd02a5dedecad2f1664ea57b6d7ca8",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__current_observed_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_valid__current_observed_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 16031,
+      "expected_sha256": "8a32e89b662195ad25cb2f6879a6d65bc382f3ff145391137c7cc2c46774d3ce",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__current_observed_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_valid__current_observed_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 16233,
+      "expected_sha256": "1d82b761a5873dafb0cc278004b68b374f1e99f0c403e9e02bccf9b8068ab03e",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__current_observed_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_valid__current_observed_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 16749,
+      "expected_sha256": "46f6be5d58a5bdcfec5e447eb92e10421032e6b2de2ec9490597cf5114915c18",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__directed_edges.json.gz",
+      "destination": "summary/observed_valid__directed_edges.json.gz",
+      "bytes": 21186,
+      "expected_sha256": "3b7172fdfa6c7ebdd18160c913885cf05045afec2b4820c70ad2af5d14de3ee9",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__failure_fraction.json.gz",
+      "destination": "summary/observed_valid__failure_fraction.json.gz",
+      "bytes": 13469,
+      "expected_sha256": "ae0e1d109eb232baae37a6f4f9883a5830fef057ea212100b8f5eb8bcce10208",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__forward_operational_seconds.json.gz",
+      "destination": "summary/observed_valid__forward_operational_seconds.json.gz",
+      "bytes": 139283,
+      "expected_sha256": "ebf5d8810b49ee8a6d9e903d1d8b5cd14b018c1f7d5f90749b525f20f1fe06f5",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__graph_build_and_selection_seconds.json.gz",
+      "destination": "summary/observed_valid__graph_build_and_selection_seconds.json.gz",
+      "bytes": 139336,
+      "expected_sha256": "c5050d19211e4ef827e3d0138c738a2fa246facdab66d2016b1008e2cc6e389f",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__ground_truth_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_valid__ground_truth_boundary_fraction_particles_outside.json.gz",
+      "bytes": 16000,
+      "expected_sha256": "d064a1b9fa4fdf2cc8e467c4004109b2c3283cffa3240e398705132a7fbe35e7",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__ground_truth_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_valid__ground_truth_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 16015,
+      "expected_sha256": "48e2d1c4cfb94ad9ede88f6ce7aff3034084aaae1a11d612119001df5fed7f02",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__ground_truth_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_valid__ground_truth_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 16060,
+      "expected_sha256": "1f62d756037771aa2898bbbda80c47f57034778f949230e2ec7d7b9e8267ac67",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__ground_truth_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_valid__ground_truth_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 16746,
+      "expected_sha256": "cfbda35d0e6e3c4d6d4ff7e0ae118ad740c6b53c3f608c766770aab79bcc52f1",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__harmful_particle_fraction.json.gz",
+      "destination": "summary/observed_valid__harmful_particle_fraction.json.gz",
+      "bytes": 101867,
+      "expected_sha256": "3ca3d24d73a0ff1512f451e5cfdb173e08382286752345ee2a477b4390e6a7ce",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__mean_signed_normalized_coordinate_gain.json.gz",
+      "destination": "summary/observed_valid__mean_signed_normalized_coordinate_gain.json.gz",
+      "bytes": 130959,
+      "expected_sha256": "25da9281b77b6a708e8adcf8a2848a3395b371dbcd29600c30039421ae5762cc",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__native_base_asymmetric_directed_edges.json.gz",
+      "destination": "summary/observed_valid__native_base_asymmetric_directed_edges.json.gz",
+      "bytes": 13469,
+      "expected_sha256": "ae0e1d109eb232baae37a6f4f9883a5830fef057ea212100b8f5eb8bcce10208",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__native_base_directed_edges.json.gz",
+      "destination": "summary/observed_valid__native_base_directed_edges.json.gz",
+      "bytes": 14822,
+      "expected_sha256": "e83a521653c8269c23f612605ecefc469f866ea1fd55e6a4831e8d26965fdc7f",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__native_base_edges_removed_by_cap.json.gz",
+      "destination": "summary/observed_valid__native_base_edges_removed_by_cap.json.gz",
+      "bytes": 13469,
+      "expected_sha256": "ae0e1d109eb232baae37a6f4f9883a5830fef057ea212100b8f5eb8bcce10208",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__native_base_receivers_above_cap_before_capping.json.gz",
+      "destination": "summary/observed_valid__native_base_receivers_above_cap_before_capping.json.gz",
+      "bytes": 13469,
+      "expected_sha256": "ae0e1d109eb232baae37a6f4f9883a5830fef057ea212100b8f5eb8bcce10208",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__native_base_self_edges.json.gz",
+      "destination": "summary/observed_valid__native_base_self_edges.json.gz",
+      "bytes": 14332,
+      "expected_sha256": "5f77f04b41525f5831d04e6a3325e7690be9186df06e010148350de29907d124",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__network_passes_for_standalone_policy.json.gz",
+      "destination": "summary/observed_valid__network_passes_for_standalone_policy.json.gz",
+      "bytes": 16916,
+      "expected_sha256": "65ca4bdc585a4e3a819e32a621c5e61364072897a7591bb3769e3661ee4c91ce",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__normalized_coordinate_mse.json.gz",
+      "destination": "summary/observed_valid__normalized_coordinate_mse.json.gz",
+      "bytes": 143140,
+      "expected_sha256": "24b1dcddcae29c7058fa4a9dbe6f580f6982c73b1254b69a5b912e77cb4381a7",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__position_coordinate_mse.json.gz",
+      "destination": "summary/observed_valid__position_coordinate_mse.json.gz",
+      "bytes": 148253,
+      "expected_sha256": "e3793201c062035ece7dfb5f1a2cc5e516db74ae60cbce95eab6b1f503403f69",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__predicted_boundary_fraction_particles_outside.json.gz",
+      "destination": "summary/observed_valid__predicted_boundary_fraction_particles_outside.json.gz",
+      "bytes": 32721,
+      "expected_sha256": "2fbc4b282ea67ec1e1656997aa578a4530692a61740ed39ffd26bcb6b1a8b5da",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__predicted_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "destination": "summary/observed_valid__predicted_boundary_fraction_particles_outside_by_more_than_1e-6.json.gz",
+      "bytes": 32508,
+      "expected_sha256": "dbee25c1938dfe217aaaef0e0636550a1c810b75cfe3642629e69b552e41c48d",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__predicted_boundary_maximum_coordinate_excursion.json.gz",
+      "destination": "summary/observed_valid__predicted_boundary_maximum_coordinate_excursion.json.gz",
+      "bytes": 124146,
+      "expected_sha256": "c43b32ca504dca9c8cf72fe8097d3e65aef2e3b85c8ab03541f6443b861580af",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__predicted_boundary_mean_particle_maximum_excursion.json.gz",
+      "destination": "summary/observed_valid__predicted_boundary_mean_particle_maximum_excursion.json.gz",
+      "bytes": 133294,
+      "expected_sha256": "3219ab1dddd3a383149de20c0874fb1aad15510210e24fdd936fb78fdc19dbd2",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__previous_risk_base_residual_spearman.json.gz",
+      "destination": "summary/observed_valid__previous_risk_base_residual_spearman.json.gz",
+      "bytes": 102263,
+      "expected_sha256": "abde01488596e0800f9739213f6662525957744c5762413058925a97d68c8477",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__previous_risk_gain_spearman.json.gz",
+      "destination": "summary/observed_valid__previous_risk_gain_spearman.json.gz",
+      "bytes": 122692,
+      "expected_sha256": "069a1cc004c34090fc5ee5e5f40574c007cc9ecdad3d6f3553d0686918511379",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__retained_optional_pairs.json.gz",
+      "destination": "summary/observed_valid__retained_optional_pairs.json.gz",
+      "bytes": 19784,
+      "expected_sha256": "23f1f9ee24b1680e979ce43b755fbf601b76bd5318a6f452fb5a4f1b6bbd7e4c",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/observed_valid__scoring_seconds.json.gz",
+      "destination": "summary/observed_valid__scoring_seconds.json.gz",
+      "bytes": 61667,
+      "expected_sha256": "008933656ea64a7f82b5fe40768b5ccd7e8b4edb3c903e3dd8b53ce737370523",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/result.json",
+      "destination": "summary/result.json",
+      "bytes": 3290804,
+      "expected_sha256": "082bdc9c33614fea6445e3373e94eeafcfdfc516d4a27d04096f380ad7781e64",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-20261006-v1/status.json",
+      "destination": "summary/status.json",
+      "bytes": 113,
+      "expected_sha256": "ba3f93254a492fe65685cf69f87f327652810d1e99b000f0a346133bc1edf2fb",
+      "role": "original summary output, copied without recompression"
+    },
+    {
+      "source": "work/continuation-summary-audit-20261006-v1/audit.json",
+      "destination": "audit/audit.json",
+      "bytes": 1468995,
+      "expected_sha256": "caebc314c5188b7bed6776bb1adc1b060c602fc1d77bd16f93c8960302e3cbbe",
+      "role": "original independent audit"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/waterdrop110k_full_report.md",
+      "destination": "report.md",
+      "bytes": 79290,
+      "expected_sha256": "ab5706b7dd15fe63666daf751e7b0a8f4cbd20fb2b56948c20ae5ac0a514984d",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/waterdrop_all_scalar_mappings.json",
+      "destination": "evidence/waterdrop_all_scalar_mappings.json",
+      "bytes": 1548156,
+      "expected_sha256": "e19e1641eb91b65b9d413fb460f970543d9c36a686d4e8788ae115327343e9e6",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/claim_source_map.json",
+      "destination": "evidence/claim_source_map.json",
+      "bytes": 106139,
+      "expected_sha256": "f9101fb07ca9ecb3ec99343c51265518d4ad174cc59f990684f34cac77dee5b4",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/cohort_and_protocol_identity.json",
+      "destination": "evidence/cohort_and_protocol_identity.json",
+      "bytes": 30410,
+      "expected_sha256": "ac506ebf0f850ca5d36b4e9d4e37c4517e9d32923caf8ec568dc874b61b29afe",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/integration_notes.md",
+      "destination": "evidence/integration_notes.md",
+      "bytes": 3369,
+      "expected_sha256": "a2746249d560e0592b60c3909ed292fc3dafec6c91c03ac4c3a650ca08cf9203",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/candidate_main_waterdrop.tex",
+      "destination": "evidence/candidate_main_waterdrop.tex",
+      "bytes": 1134,
+      "expected_sha256": "220a2465f339b546319cf57453c3463ea924543d3325f542b8885a98d8b3c7b3",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/candidate_observed_contrast_table.tex",
+      "destination": "evidence/candidate_observed_contrast_table.tex",
+      "bytes": 907,
+      "expected_sha256": "de5af5c765c3ed4502b532575c3dd661ce81059545ec2053e5ccf2b870e82a4e",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/candidate_waterdrop_appendix.tex",
+      "destination": "evidence/candidate_waterdrop_appendix.tex",
+      "bytes": 7781,
+      "expected_sha256": "957a47512ea8c5810f648b9058ef86e90078dd80412b38715291e29e244bebe0",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_candidate_code_audit_v1/candidate_compressed_existing_waterdrop.tex",
+      "destination": "evidence/candidate_compressed_existing_waterdrop.tex",
+      "bytes": 826,
+      "expected_sha256": "bee907ef5bb8292667ec00c679dc86397d5f9f17478736faeb38debf509fcfc5",
+      "role": "reviewed presentation and exact scalar mappings"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_interpretation_review_saved_array_v1.md",
+      "destination": "reviews/waterdrop110k_interpretation_review_saved_array_v1.md",
+      "bytes": 31680,
+      "expected_sha256": "f6ba19330baac245f8da81e16ed27200929d4273f46625c99ef4910264f846fe",
+      "role": "independent source/text/scalar review"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_integration_review_saved_array_v1.md",
+      "destination": "reviews/waterdrop110k_integration_review_saved_array_v1.md",
+      "bytes": 9797,
+      "expected_sha256": "4389c5ee4ad06d5190706ec2a56a34bd9350121acb9b62f69d8f956838b6f921",
+      "role": "independent source/text/scalar review"
+    },
+    {
+      "source": "outputs/revised_manuscript.tex",
+      "destination": "presentation/revised_manuscript.tex",
+      "bytes": 657129,
+      "expected_sha256": "4cd942d9ba1f054b513d57e652eade88f13df63fdb760d81d1dfb25a91daee98",
+      "role": "current integrated source snapshot"
+    },
+    {
+      "source": "work/manuscript_body.tex",
+      "destination": "presentation/manuscript_body.tex",
+      "bytes": 578692,
+      "expected_sha256": "17201631acea97246d6ef37dc168f45bb835201dcd980452a4db79540ada0b0e",
+      "role": "current integrated source snapshot"
+    },
+    {
+      "source": "work/conference_experiments_main.tex",
+      "destination": "presentation/conference_experiments_main.tex",
+      "bytes": 7990,
+      "expected_sha256": "05cc45b758c27627c9e2adc651c1cea4fd327758d852f09f7a55d0e246919fb4",
+      "role": "current integrated source snapshot"
+    },
+    {
+      "source": "work/build_manuscript.py",
+      "destination": "presentation/build_manuscript.py",
+      "bytes": 2884,
+      "expected_sha256": "aa023359da96c95bfebc41ef638e1b76bd7f7c49ae3ff280d581c76cda658134",
+      "role": "current integrated source snapshot"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/applied_source_v1.json",
+      "destination": "presentation/integration/applied_source_v1.json",
+      "bytes": 1062,
+      "expected_sha256": "62fcf819978b24405d3e1079581a61e696acea6cbaef1a469af6fd5a31eb9066",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/applied_structural_check_v1.json",
+      "destination": "presentation/integration/applied_structural_check_v1.json",
+      "bytes": 384,
+      "expected_sha256": "11b5e9d3adb8e96dd907d9ce6fda435b474e68cb6e596d85366d49463f51991b",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/build_manuscript.py.before",
+      "destination": "presentation/integration/build_manuscript.py.before",
+      "bytes": 2884,
+      "expected_sha256": "aa023359da96c95bfebc41ef638e1b76bd7f7c49ae3ff280d581c76cda658134",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/conference_experiments_main.tex.before",
+      "destination": "presentation/integration/conference_experiments_main.tex.before",
+      "bytes": 7207,
+      "expected_sha256": "830aa19f3307c42ef8a892f7c66936d03638685351c736690f6367b8053a09a5",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/manuscript_body.tex.before",
+      "destination": "presentation/integration/manuscript_body.tex.before",
+      "bytes": 570939,
+      "expected_sha256": "2d98e7ef62d57cf17b8a7c62ef30d041396d300296640929a37c21566097ae9b",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/native_compile_v1.json",
+      "destination": "presentation/integration/native_compile_v1.json",
+      "bytes": 538,
+      "expected_sha256": "56695402e760079fda8be912352efe629e96da31899a32a0312501651b979545",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "work/conference_presentation_20261006/waterdrop110k_integration_20261006/revised_manuscript.tex.before",
+      "destination": "presentation/integration/revised_manuscript.tex.before",
+      "bytes": 648593,
+      "expected_sha256": "5c5518c6cc7fa927f9b056002332853c66da0fcfbab71f2acb985f5cd9d1b93e",
+      "role": "pre-integration snapshot or applied/native-compile receipt"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/calibration.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/calibration.py",
+      "bytes": 1387,
+      "expected_sha256": "903442ad79617e8c86d793f76181fd4331ae45109f71292f362321d769cd6999",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/data_loader.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/data_loader.py",
+      "bytes": 16683,
+      "expected_sha256": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/device_utils.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/device_utils.py",
+      "bytes": 3178,
+      "expected_sha256": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/distribute.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/distribute.py",
+      "bytes": 1901,
+      "expected_sha256": "2650673b32440eb4184a697a42ce0eafa73b662b91545e6585f8571d7b11ff19",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/graph_network.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/graph_network.py",
+      "bytes": 17276,
+      "expected_sha256": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py",
+      "bytes": 32300,
+      "expected_sha256": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/losses.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/losses.py",
+      "bytes": 2117,
+      "expected_sha256": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/metadata.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/metadata.py",
+      "bytes": 47,
+      "expected_sha256": "d417678025f4ef0e3b897861e9ce495723f4275c259d6ebe217204392b3ea1c2",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/model_io.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/model_io.py",
+      "bytes": 6308,
+      "expected_sha256": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/noise_utils.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/noise_utils.py",
+      "bytes": 1557,
+      "expected_sha256": "355a99529f10a280f724b04183575e8b8fd3e0f2b462e48b04f44364d7413bc9",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/reading_utils.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/reading_utils.py",
+      "bytes": 940,
+      "expected_sha256": "197e2eb0eb72d646becfb085e371f7e9b51fab8549a88ffb3d17b0d9f3dd85da",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/render_rollout.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/render_rollout.py",
+      "bytes": 10649,
+      "expected_sha256": "6ce2204d80b8d96c75e5126fbf0828e0fa24e48223728d3b53bb7294bd4563d7",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/train.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/train.py",
+      "bytes": 27715,
+      "expected_sha256": "7702e58bd74c44256393a53fee34f0409f5bc5fa639b0b9ecf239ab4c012a6c9",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/train_multinode.py",
+      "destination": "source/workspace/outputs/AdaptGNS/adaptive-gns/gns/train_multinode.py",
+      "bytes": 25767,
+      "expected_sha256": "56387ad7d4d4c0f30e308f17bb4a3273ee6a3ea3abd537d4b73d7ef989ce7413",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/budget_graph.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/budget_graph.py",
+      "bytes": 2304,
+      "expected_sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/continuation_evaluation.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/continuation_evaluation.py",
+      "bytes": 38711,
+      "expected_sha256": "ec2ee1ba6e2a0cb78c55bd2720031af5d4fb8535d17c679aa6d319b74378a528",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/faithful_graph_support.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/faithful_graph_support.py",
+      "bytes": 27583,
+      "expected_sha256": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/full_rollout.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/full_rollout.py",
+      "bytes": 36701,
+      "expected_sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/full_same_state.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/full_same_state.py",
+      "bytes": 35249,
+      "expected_sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/full_training.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/full_training.py",
+      "bytes": 29638,
+      "expected_sha256": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/graph_convention_bridge.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/graph_convention_bridge.py",
+      "bytes": 36931,
+      "expected_sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/native_graph_rollout.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/native_graph_rollout.py",
+      "bytes": 25591,
+      "expected_sha256": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/continuation_evaluation_20261005.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/continuation_evaluation_20261005.md",
+      "bytes": 11947,
+      "expected_sha256": "ce0ae3028155775c39c56cf51860cda07a54bd912f24af60e5b44110f826e7b4",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/continuation_summary_20261006.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/continuation_summary_20261006.md",
+      "bytes": 11365,
+      "expected_sha256": "ea582e278a9bcfcd8a6eeb98f994e450dc2036352debfeb74a3c512602338454",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/faithful_graph_support_10k_20261005.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/faithful_graph_support_10k_20261005.md",
+      "bytes": 9163,
+      "expected_sha256": "90f896adefedf6e63503835db2479ac7e4f357043c01918b3334a846a8ffbba3",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/full_waterdrop_100k.md",
+      "bytes": 5796,
+      "expected_sha256": "5566a586f93014f1c25a488f748f3ee1d1da61773f4865a03a12d8a7ed208926",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/graph_convention_bridge_20261005.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/graph_convention_bridge_20261005.md",
+      "bytes": 12848,
+      "expected_sha256": "12994ff13d16841890398e9ed11f40dfed844ff6238073adbd3e2e63913c9e45",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/protocols/native_graph_rollout_20261005.md",
+      "destination": "source/workspace/outputs/AdaptGNS/research/protocols/native_graph_rollout_20261005.md",
+      "bytes": 10336,
+      "expected_sha256": "7a28da92d9f7b133da8cea7a018400c424f553f9ff4d5f41c515142a078ff1ce",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/summarize_continuation_evaluation.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/summarize_continuation_evaluation.py",
+      "bytes": 61035,
+      "expected_sha256": "f15bf6796d11b9a95713bd92603307041af80d7b3f2a2624e537862e723887dd",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/summarize_full_rollouts.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/summarize_full_rollouts.py",
+      "bytes": 33681,
+      "expected_sha256": "fee246c0abe0a289374dcc7b383be8827579fdeb711f966ae9d2a3480048070b",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/summarize_graph_convention_bridge.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/summarize_graph_convention_bridge.py",
+      "bytes": 32881,
+      "expected_sha256": "67558f70cc3774eca5134b8d900f7312b2f2091b01e1870ab9954915b56855c9",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/summarize_native_graph_rollouts.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/summarize_native_graph_rollouts.py",
+      "bytes": 35517,
+      "expected_sha256": "c7999ae9062e19ab10033537749d725145768aa08f7a548f092bcb1d5697c815",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/tests/test_continuation_summary.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/tests/test_continuation_summary.py",
+      "bytes": 26305,
+      "expected_sha256": "8fb42e753e40240282abf7204dc6b0519e0882c34515fff598279abcd39bbf52",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "outputs/AdaptGNS/research/tests/test_continuation_summary_review.py",
+      "destination": "source/workspace/outputs/AdaptGNS/research/tests/test_continuation_summary_review.py",
+      "bytes": 12167,
+      "expected_sha256": "81fdf068bcc7f61fa3f66d4193de4078e576661f6de42adc91c53bb0f30e1ae0",
+      "role": "frozen source/protocol or test from exact summary input closure"
+    },
+    {
+      "source": "work/deadline_research_20261005/audit_continuation_summary_independent.py",
+      "destination": "source/audit_continuation_summary_independent.py",
+      "bytes": 43632,
+      "expected_sha256": "8c7aef67a1ae43226eccd53ed5c8c2cc7e0d942ab0655c0fec395fa1f4b4d731",
+      "role": "frozen independent audit source"
+    },
+    {
+      "source": "work/deadline_research_20261005/build_waterdrop110k_integration_candidate_code_audit_v1.py",
+      "destination": "source/build_waterdrop110k_integration_candidate_code_audit_v1.py",
+      "bytes": 33462,
+      "expected_sha256": "66953fdbf30b7f7b8c17da04485d3826a48ef047fd48bd789b2feb8be8915b6d",
+      "role": "workspace-specific candidate extraction source"
+    },
+    {
+      "source": "work/deadline_research_20261005/waterdrop110k_applied_text_review_saved_array_v1.md",
+      "destination": "reviews/waterdrop110k_applied_text_review_saved_array_v1.md",
+      "bytes": 9879,
+      "expected_sha256": "3de496858ab5135ea798519c52fd3e23c1e5bcd5666a491f1d162cd248a3e56a",
+      "role": "independent applied-text/diff/native-compile-binding review"
+    }
+  ],
+  "fixed_copy_count": 153,
+  "fixed_copy_bytes": 19583426,
+  "original_audited_archive_bytes": 368626721,
+  "generated_metadata": [
+    "README.md",
+    "manifest.json",
+    "copy_provenance.json",
+    "omissions.json",
+    "external_artifacts.json",
+    "publication_verification.json",
+    "operational_failure_history.json"
+  ],
+  "limitations": "No raw datasets, model checkpoints, per-job raw arrays, credentials/SSH settings or native process inventories. Combined derived audited-record archive remains unchanged at its original local path and is explicitly external. Original scalar result retains unchanged scientific input identities and references. Package is not a standalone raw reproduction bundle; all91metric details and every cohort/policy/seed/failure statistic remain present. Metadata-only copy verification does not rerun scientific stages.",
+  "supersedes": {
+    "path": "work/deadline_research_20261005/waterdrop110k_publication_copy_plan_code_audit_v1.json",
+    "sha256": "bde73c684a608ab7c5c2cb6baa7947d9e9fc81813fb1be427a59c6171b7f217a",
+    "reason": "Root superseded initial full-archive Git copy request. One combined derived record blob is retained unchanged locally, uniformly omitted from Git package with exact external-artifact metadata. No LFS/upload/chunks."
+  },
+  "external_artifact": {
+    "source": "work/continuation-summary-20261006-v1/audited_records.json.gz",
+    "bytes": 368626721,
+    "compressed_sha256": "8acc8933e0b4a6ef98fc98f16b81739895968fcbd0df3cf796118c982fcea539",
+    "uncompressed_json_sha256": "8f9bb7ec9b0483529d9d5c44f7a66c583044a44a61927f38e47408bd06df90da",
+    "required_local_retention": true,
+    "scope": "Uniform omission of combined derived audited-record payload for all cohorts/policies/seeds. All91per-metric detail archives and complete result/status/independent audit remain packaged. This is not selective outcome omission. No standalone raw reproduction claim."
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "waterdrop110k_external_artifacts_v1",
+  "artifacts": [
+    {
+      "source": "work/continuation-summary-20261006-v1/audited_records.json.gz",
+      "bytes": 368626721,
+      "compressed_sha256": "8acc8933e0b4a6ef98fc98f16b81739895968fcbd0df3cf796118c982fcea539",
+      "uncompressed_json_sha256": "8f9bb7ec9b0483529d9d5c44f7a66c583044a44a61927f38e47408bd06df90da",
+      "required_local_retention": true,
+      "scope": "Uniform omission of combined derived audited-record payload for all cohorts/policies/seeds. All91per-metric detail archives and complete result/status/independent audit remain packaged. This is not selective outcome omission. No standalone raw reproduction claim.",
+      "missing_package_reference": "summary/audited_records.json.gz",
+      "reference_owner": "summary/result.json::audited_records",
+      "compressed_hash_reverified_at_curation": true,
+      "uncompressed_hash_scope": "Recorded hash from the completed strict summary; curation does not decompress or regenerate this archive.",
+      "input_scope": "Combined derived records over every planned observed and autonomous endpoint/policy/unit. Underlying checkpoint, dataset, raw observed arrays and autonomous trace sources remain external, with exact original identities in summary/result.json::input_files_sha256.",
+      "reconstruction_scope": "Restoring the exact existing local archive at its recorded relative location satisfies the unchanged summary reference. Reconstructing from raw sources additionally requires all frozen scientific source, protocol, checkpoint/data and evaluation inputs bound by the original summary; the Git package alone is insufficient. Curation performs no reconstruction or rerun."
+    }
+  ],
+  "uniform_omission": "One combined record payload is omitted for all cohorts and policies. No seed, outcome, failure, metric family or contrast is selectively removed."
+}
