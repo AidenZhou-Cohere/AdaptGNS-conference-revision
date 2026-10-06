@@ -1,0 +1,30 @@
+{
+  "schema": "goop_saved_array_audit_source_diagnosis_v1",
+  "scope": "Source-only semantic diagnosis. No actual result values read; no scientific module import; no audit retry or remote process action.",
+  "reported_failure": "base/seed0/clean_validation/(4,105): paired saved state/target/random identity valid/target_position/(4,105)",
+  "reviewed_sources": {
+    "audit_goop_saved_arrays_v1.py": "cca2b10c69a4c6c00abe5321784f1885e1699ef30de32fc3457923687bc2a382",
+    "audit_goop_paired_arrays_v1.py": "1ac80789f8137acdb02c5dadc3fb8e3cf39a5a54202d3b3b6e6fd45ddeb9c75f",
+    "goop_saved_diagnostic_audit_v1.py": "615ce93877e8612f8e70a557d87d324b05e15b2b1fe659bc8c63034011007110",
+    "evaluate_goop_graph_support_final.py": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+    "goop_evaluation_contract.py": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090"
+  },
+  "findings": [
+    {
+      "severity": "auditor false rejection",
+      "location": "audit_goop_saved_arrays_v1.py:431",
+      "description": "Raw-byte target_position hashes use the same split/source/frame namespace for same-state and clean-validation. Frozen same-state evaluator line355 deliberately stores float64 while clean-validation line432 stores float32; equal numeric nonempty arrays therefore have different byte streams. Helper explicitly enforces these differing dtypes.",
+      "attribution": "Auditor comparison contract defect; this diagnosis alone neither establishes nor refutes actual target equality."
+    }
+  ],
+  "proposed_repair_requirements": [
+    "Namespace raw target_position identity by diagnostic mode so byte comparisons remain exact within each mode.",
+    "Retain canonical truth_float32 identity shared by split/source/frame across same-state, clean-validation, and available rollout truth.",
+    "Before canonical float32 hashing, enforce expected shape/dtype, finite saved source targets, and exact lossless float64-to-float32-to-float64 representability; never permit toleranced or lossy conversion.",
+    "Retain existing per-array descriptors, original representation arithmetic, original failed receipts, frozen scientific sources and test cohorts.",
+    "Increment main and paired receipt revision together and require current exact source bindings.",
+    "Add synthetic end-to-end cross-mode overlap regression, real numeric target mismatch rejection, lossy-cast rejection, and same-mode raw identity corruption rejection."
+  ],
+  "secondary_review": "saved_array_contract_review independently confirmed differing evaluator representations and namespace collision.",
+  "candidate_status": "No repaired candidate reviewed yet."
+}

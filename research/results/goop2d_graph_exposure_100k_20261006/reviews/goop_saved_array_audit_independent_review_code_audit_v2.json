@@ -1,0 +1,38 @@
+{
+  "schema": "adaptgns_independent_saved_array_auditor_source_review_v2",
+  "reviewer": "code_audit",
+  "status": "approved_within_documented_supported_scope",
+  "supersedes_for_execution": "goop_saved_array_audit_independent_review_code_audit_v1.json",
+  "preserved_v1_snapshot_and_findings": true,
+  "snapshot": "goop_saved_array_audit_review_v2",
+  "source_sha256": {
+    "audit_goop_saved_arrays_v1.py": "cca2b10c69a4c6c00abe5321784f1885e1699ef30de32fc3457923687bc2a382",
+    "audit_goop_paired_arrays_v1.py": "1ac80789f8137acdb02c5dadc3fb8e3cf39a5a54202d3b3b6e6fd45ddeb9c75f",
+    "goop_saved_diagnostic_audit_v1.py": "615ce93877e8612f8e70a557d87d324b05e15b2b1fe659bc8c63034011007110"
+  },
+  "findings": [],
+  "repairs_verified": [
+    "Exact cell/row failure equality, including complete-cell absence.",
+    "Per-model rollout coverage and failure-category comparison; original corruption now rejected.",
+    "Exact failed-prefix listing with identities, accepted-step counts, failure records and independently aggregated prefix boundary scalars.",
+    "Boundary-series fraction/range/max invariants match frozen scalar contract.",
+    "Nonzero rollout and observed-state interaction signs and corrupted-prefix/count/category tests.",
+    "Both audit outputs declare revision2 and paired gate requires revision2/current source hashes."
+  ],
+  "verification": {
+    "v1_seal_preserved": true,
+    "v2_seal_and_parent_sources_match": true,
+    "helper_unchanged": true,
+    "synthetic_tests_passed": 82,
+    "synthetic_subtests_passed": 78,
+    "synthetic_elapsed_seconds": 0.83,
+    "secondary_paired_reviewer": "saved_array_contract_review",
+    "secondary_findings": []
+  },
+  "limits": [
+    "No actual results, scientific arrays, checkpoint/model payloads or remote calls used in review.",
+    "Approval covers source and synthetic behavior, not successful audit of real outputs.",
+    "Use exact sealed scripts, fresh output, sequential A/B runs and documented memory limits. Preserve OOM/timeout/failure receipts.",
+    "Unsaved trajectory errors and source/checkpoint normalization truth remain outside supported independent evidence; timing remains operational."
+  ]
+}

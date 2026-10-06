@@ -1,0 +1,21 @@
+{
+  "command": [
+    "work/venv/bin/python",
+    "-m",
+    "pytest",
+    "-q",
+    "work/deadline_research_20261005/cuda_preparation/test_audit_goop_saved_arrays_v1.py",
+    "work/deadline_research_20261005/cuda_preparation/test_goop_saved_diagnostic_audit_v1.py"
+  ],
+  "returncode": 0,
+  "stdout": "......................................... [ 54%]\n.............................. [ 94%]\n....                                                                [100%]\n75 passed, 78 subtests passed in 0.80s\n",
+  "stderr": "",
+  "source_sha256": {
+    "audit_goop_saved_arrays_v1.py": "1555633b79a85e5b7474ba6a571c5700acf27a42998fd020e0612060add8c16c",
+    "audit_goop_paired_arrays_v1.py": "74c9caf6e149fbe97922fb7c8910bddd4eefaedd72ba77fef34c5b635ba45943",
+    "goop_saved_diagnostic_audit_v1.py": "615ce93877e8612f8e70a557d87d324b05e15b2b1fe659bc8c63034011007110",
+    "test_audit_goop_saved_arrays_v1.py": "d944db80b5cb31f7446ab3e03558ec46d39a863a5a1ffb530bf3daf9da88b5ac",
+    "test_goop_saved_diagnostic_audit_v1.py": "5ea7b3cf5b9a14d0e95e1c7f32a4726a059272270a91692465e021a4cf734a1b"
+  },
+  "real_results_or_model_execution": false
+}

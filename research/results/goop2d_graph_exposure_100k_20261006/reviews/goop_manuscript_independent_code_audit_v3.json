@@ -1,0 +1,58 @@
+{
+  "check_count": 23,
+  "checks": {
+    "all3_relocations_still_exact": true,
+    "all3_runtime_seeds_base": true,
+    "all3_runtime_seeds_mix": true,
+    "all4_failed_geometry_nulls_base": true,
+    "all4_failed_geometry_nulls_dense": true,
+    "all4_failed_geometry_nulls_laggedrisk25": true,
+    "caption_excludes_noncase_cost_and_causal_claim": true,
+    "exact12_geometry_and_cost_rows_base_base": true,
+    "exact12_geometry_and_cost_rows_base_dense": true,
+    "exact12_geometry_and_cost_rows_base_laggedrisk25": true,
+    "exact12_geometry_and_cost_rows_base_random25": true,
+    "exact12_geometry_and_cost_rows_base_relative-velocity-RMS25": true,
+    "exact12_geometry_and_cost_rows_base_speed25": true,
+    "exact12_geometry_and_cost_rows_mix_base": true,
+    "exact12_geometry_and_cost_rows_mix_dense": true,
+    "exact12_geometry_and_cost_rows_mix_laggedrisk25": true,
+    "exact12_geometry_and_cost_rows_mix_random25": true,
+    "exact12_geometry_and_cost_rows_mix_relative-velocity-RMS25": true,
+    "exact12_geometry_and_cost_rows_mix_speed25": true,
+    "exact_new_appendix": true,
+    "exact_new_main": true,
+    "original_overbroad_boundary_claim_removed": true,
+    "updated_labels_unique_and_all_refs_resolve": true
+  },
+  "findings": [],
+  "label_simulation": {
+    "duplicate_labels": [],
+    "labels": 65,
+    "undefined_references": []
+  },
+  "method_wording_notes": [
+    "Use independent probability1/2 per example and floor(.25|C|), as root plans.",
+    "Receiver cap128 applies only to native base prefix; optional appended orientations are not recapped and final incoming degree can exceed128.",
+    "Keep ideal uncapped symmetric reference count distinct from actual |E_native|+2B.",
+    "For an expression covering every training example, actual directed count is |E_native|+2 I B with expansion coin I; equivalently define B as the actual number of retained optional pairs."
+  ],
+  "no_manuscript_edits_compilation_tabs_or_launches": true,
+  "passed": true,
+  "preserved_review_check_failure": {
+    "description": "An unnecessary exact label-count expectation of66 failed; actual65 labels are unique and every reference resolves. The content/units/cost checks all passed. V2 is preserved and superseded by this corrected review.",
+    "path": "goop_manuscript_independent_code_audit_v2.json"
+  },
+  "previous72_checks_retained": true,
+  "previous_review": "goop_manuscript_independent_code_audit_v1.json",
+  "resolved_finding": "All12policy/arm boundary and descriptive committed-case cost rows now added, preserving failed full-H nulls and specifying timing limitations. Main claim narrowed to these diagnostics.",
+  "schema": "goop_manuscript_independent_code_audit_v3",
+  "scope": "Read-only comparison to exact completed scalar summary; runtime arithmetic checked against recorded scalars, not hardware remeasurement.",
+  "snapshot_sha256": {
+    "outputs/revised_manuscript.tex": "82237364f31f26072cd35bf011523ad455037a442912276569dcf6004d4fc530",
+    "work/conference_presentation_20261006/goop_integration_candidate_v1/appendix_goop_AUDIT_PENDING.tex": "3178c9f215f1436b51a58386442e09e0061b795207d95e8f19a20d30de0259ae",
+    "work/conference_presentation_20261006/goop_integration_candidate_v1/appendix_relocations_UNCHANGED.tex": "1fb9bb6f1023a57d1cf6a4f64c2e6bfff5ca68a498ef17988d7a5735bd9e0ae2",
+    "work/conference_presentation_20261006/goop_integration_candidate_v1/experiments_replacement_AUDIT_PENDING.tex": "114e20542f99e4866a49ed42f21dc69597958a42210265bb43074f0ba876886d"
+  },
+  "status": "approved_source_claims_ready_for_root_integration"
+}

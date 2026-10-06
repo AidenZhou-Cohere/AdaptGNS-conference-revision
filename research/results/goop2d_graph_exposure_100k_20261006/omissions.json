@@ -1,0 +1,16 @@
+{
+  "collections": {
+    "A": {
+      "bytes": 1362002800,
+      "sha256": "41ce909f2caab840857d42a4ff4a19557bd855abd3dd3c06c9035ae6a7337072",
+      "workspace_path": "goop_scalar_collection_A_1141_v1.json"
+    },
+    "B": {
+      "bytes": 680927748,
+      "sha256": "bbdd333a101107f2a41b441684bff799b85ef4ea20e2179a5f0a4c8b171ca3fa",
+      "workspace_path": "goop_scalar_collection_B_1148_v1.json"
+    }
+  },
+  "models_and_dataset": "Unchanged original checkpoints and official data are referenced by the complete scalar summary; they are not duplicated here.",
+  "raw_arrays": "Remain in original stopped A/B queues. Exact read-array/file hashes are retained in the array audit receipts."
+}

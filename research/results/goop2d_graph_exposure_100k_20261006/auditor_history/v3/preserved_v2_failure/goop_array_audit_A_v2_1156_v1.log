@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/independent_array_audit_v2/audit_goop_saved_arrays_v1.py", line 510, in <module>
+    if __name__=="__main__":raise SystemExit(main())
+                                             ^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/independent_array_audit_v2/audit_goop_saved_arrays_v1.py", line 495, in main
+    result=audit_collection(args.collection,args.collection_sha256,args.queue_root)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/independent_array_audit_v2/audit_goop_saved_arrays_v1.py", line 451, in audit_collection
+    if key in shared: checks.equal(shared[key],value,"paired saved state/target/random identity "+key)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/independent_array_audit_v2/audit_goop_saved_arrays_v1.py", line 59, in equal
+    def equal(self, actual, expected, label): self.require(actual==expected,label)
+                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/independent_array_audit_v2/audit_goop_saved_arrays_v1.py", line 58, in require
+    if not condition: raise ValueError(self.context+": "+label)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: base/seed0/clean_validation/(4, 105): paired saved state/target/random identity valid/target_position/(4, 105)
