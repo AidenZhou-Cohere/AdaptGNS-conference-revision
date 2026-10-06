@@ -1,0 +1,45 @@
+{
+  "schema": "goop3d_first_record_capacity_preparation_v1",
+  "status": "ready_for_root_owned_bounded_execution",
+  "created_utc": "2026-10-06T04:44:17.694317+00:00",
+  "sha256": {
+    "goop3d_graph_support.py": "7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f",
+    "benchmark_goop3d_first_record.py": "ece79713bb3f029daad415039f633d412ca3093122e343fd9b31629f81917c55",
+    "test_benchmark_goop3d_first_record.py": "86727ccbd4a4c9c5f21c33595ab8a26775c2f63b9aebf8eba266309631869f80",
+    "goop3d_first_record_benchmark_protocol_v1.md": "13dd8cc14ea7277acf39dd1b6ecf35dc5ff57a1c388ced3b3978c2d2c7100afa",
+    "goop3d_first_record_benchmark_synthetic_tests_attempt1.log": "f0f7cc198034532d4b6c89c91db8d8e1e1205b5ab873ce1be35efb889a23460a",
+    "goop3d_first_record_benchmark_independent_review_code_audit.json": "91fde3c5f667761a1f87f7f44b2c39a3483653ad6a40ad7c1f2694fdd5db541c"
+  },
+  "synthetic_cpu_tests": {
+    "passed": 14,
+    "official_arrays_opened": false,
+    "cuda_executed": false,
+    "tiny_cpu_model_executed": true,
+    "warnings_retained": true
+  },
+  "independent_review_status": "passed_bounded_source_and_synthetic_review",
+  "execution_by_preparer": false,
+  "first_record_sha256": "c003d147b93eb0eb2cebafe7c9a79ac4179d7224fd41d139e1719f5ceefedd78",
+  "scope": "fixed first training record target6 duplicated asbatch2; firstrecordN9271/T301/D3;8freshAdamupdates; noefficacy/fullcohortclaim",
+  "scientific_training_admitted": false,
+  "frozen_sources_changed": false,
+  "source_adaptation": {
+    "model_core_and_loss": "unchanged pinned5sourcefiles; alreadyD3generic",
+    "graph_support": "separate3D strict graph/nativeprefix adapter derivedfrom2Dsource, no globalpatch",
+    "feature_dimensions": {
+      "node": 37,
+      "edge": 4,
+      "acceleration": 3
+    },
+    "radius": 0.025,
+    "likelihood_log_coefficient": 1.5,
+    "vector_risk": "3q"
+  },
+  "nonblocking_limitations": [
+    "Inherited ordered_edges docstring says exactlyone selfedge; actual/testednative behavior inserts selfcandidate before cap and coincident ties can exclude it. Reviewedsourcehash preserved for imminentrun.",
+    "An empty first-state annulus doesnot establish expandedgraph throughput; reportallactualpaircounts.",
+    "2Mperexamplecandidate and5Mbatchdirectededgeguards are a separate3Dcapacityregime from frozen2D100kguard.",
+    "RootGNUtimeout600s/killafter30s required for whole-invocation bound.",
+    "No checkpointpublished and no3Dtrainingschedule fixed by thisbenchmark."
+  ]
+}

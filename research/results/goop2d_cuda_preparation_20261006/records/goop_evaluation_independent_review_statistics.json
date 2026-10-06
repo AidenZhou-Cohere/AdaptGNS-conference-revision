@@ -1,0 +1,45 @@
+{
+  "schema": "goop_evaluation_independent_source_review_statistics_v1",
+  "reviewer": "conference_critique_statistics",
+  "checked_utc": "2026-10-06T02:56:12.936157+00:00",
+  "status": "no_blocking_source_finding_in_reviewed_scope",
+  "execution_admission": false,
+  "source_sha256": {
+    "goop_evaluation_contract.py": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+    "benchmark_goop_graph_support_rollout.py": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+    "evaluate_goop_graph_support_final.py": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+    "test_goop_evaluation_contract.py": "853ea315e74e9e468881d8c21eea485de86688cd5bf1f998063a2d2723c2793e",
+    "test_benchmark_goop_graph_support_rollout.py": "388d9e46936d2ed43ae726adf1a5cadbb7e570885221f91243694ee7a9bb146d",
+    "test_evaluate_goop_graph_support_final.py": "fe08b613a41b1f7df7473204fec3eaa860ec56f8aab87f321ddb44a0aac89429"
+  },
+  "scope": "Source/scalar review and tiny synthetic CPU tests only; no real checkpoint, trajectory, training, GPU, download or remote execution.",
+  "independent_tests": {
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_benchmark_goop_graph_support_rollout.py work/deadline_research_20261005/cuda_preparation/test_evaluate_goop_graph_support_final.py work/deadline_research_20261005/cuda_preparation/test_goop_evaluation_contract.py",
+    "passed": 38,
+    "failed": 0,
+    "seconds": 2.88,
+    "warnings": [
+      "Existing TorchScript functional-optimizer deprecation warning"
+    ],
+    "source_hashes_rechecked_after_tests": true
+  },
+  "checks": [
+    "Pure contract preserves exact known official train/valid pins; no invented future-test checksum. Exact generation/CRC32C/size and source EOF offsets, payload hashes, complete counts, T401 and type7 required.",
+    "Context source semantics/files pinned. Preserved context NPY bytes are individually rehashed and actual float32 bits checked: 400 positive zeros then one NaN, no infinities, required bit patterns00000000 and7fc00000. A differing test pattern stops for source review; it is not silently treated as an arbitrary placeholder.",
+    "Final test access needs separate root received-source/converter review and complete train/valid/test integrity audit with no exact duplicates.",
+    "Benchmark CLI accepts infrastructure512 only and no test access; shared physical-policy, new final-helper and contract hashes pinned.",
+    "Final cohort gate occurs before evaluation-manifest reads and requires all six exact100000-update endpoints, optimizer/graph history audits and three paired-seed audits; selected checkpoint bytes and payload checked.",
+    "Model construction uses actual Goop metadata and source; stored simulator config verified byteexact on the same CUDA route.",
+    "Numerical functions preserve Sand arithmetic except dataset text/type7 contracts; no frozen Sand source changed.",
+    "H395 and targets7,105,203,301,400 correct. Six models by six policies by30 sources give1080 final outcomes.1800common-state frames*68forward calls +2304cleanforward calls gives124704diagnostic calls.",
+    "Common-state selection/inference/timing occurs before target access; measured scorer cost charged, full warmup/parity/repeated-order structure retained.",
+    "Full rollout/core policy arithmetic unchanged. Missing or failed required observations make complete aggregate metrics null; adverse rows and source artifacts retained.",
+    "Synthetic fixtures privately adjust only their synthetic manifest pin and use tiny context arrays; official data not loaded. Test helper reads pinned context source files only."
+  ],
+  "limitations": [
+    "This does not admit timing, final test access, training, actual CUDA numerical behavior or whole-study cost. Root review/releases still required.",
+    "Separate paired-seed aggregation remains root-owned and is not implemented/admitted by this adapter review.",
+    "Root-only release-file ownership is operational: JSON status/hash predicates do not cryptographically authenticate the issuer.",
+    "The prospective timing protocol and completecost must be frozen separately. Sand v1 guarded512 prefixes cannot be reused as complete Goop forecasts."
+  ]
+}

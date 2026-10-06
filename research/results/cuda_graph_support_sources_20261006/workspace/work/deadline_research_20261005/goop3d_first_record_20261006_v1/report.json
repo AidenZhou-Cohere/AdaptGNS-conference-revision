@@ -1,0 +1,85 @@
+{
+  "schema": "goop3d_first_training_record_inspection_v1",
+  "status": "first_training_record_verified",
+  "scope": "First training record by source order only; not a full dataset, representative sample, model admission or timing benchmark",
+  "test_accessed": false,
+  "whole_object_checksum_verified": false,
+  "scientific_training_admitted": false,
+  "source_url": "https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/Goop-3D/train.tfrecord",
+  "generation": "1599159646798459",
+  "object_bytes": 27448425232,
+  "requests": [
+    {
+      "range": [
+        0,
+        11
+      ],
+      "received_bytes": 12,
+      "file": "record0_header.bin",
+      "sha256": "c4c8f06bcb470b84266edf6de7d6867c01826047432802e54668afd6796b2885"
+    },
+    {
+      "range": [
+        12,
+        33567751
+      ],
+      "received_bytes": 33567740,
+      "file": "record0_payload_and_crc.bin",
+      "sha256": "9a70af1fa8c08608576ec7a838700cfed70477f91ebaab60f33be7645f497c14"
+    }
+  ],
+  "source_sha256": "c84a97ff186a9b8fc2a3c5428af5277088fc724c400b944bd7eaa675d0e5a5a4",
+  "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+  "input_inventory_sha256": "32c94925f1306580a5a2e63487da7274e1c44ff480d28819e44a07eabdee67a3",
+  "max_record_bytes": 67108864,
+  "started_utc": "2026-10-06T04:31:37.203265+00:00",
+  "record": {
+    "id": "train:000000",
+    "source_index": 0,
+    "source_key": [
+      0
+    ],
+    "source_offset_bytes": 0,
+    "record_payload_bytes": 33567736,
+    "record_payload_sha256": "0aaec6d934283bb5a4b54ce42ecfc8f4ea0094eacabefb0614b3e90f898d0587",
+    "positions": {
+      "path": "train/position_000000.npy",
+      "shape": [
+        301,
+        9271,
+        3
+      ],
+      "dtype": "<f4",
+      "sha256": "afc643f410b2a4d1739fceb36de9f209aa096ecf5a92a8eb60b57b8892417324",
+      "size_bytes": 33486980
+    },
+    "particle_types": {
+      "path": "train/type_000000.npy",
+      "shape": [
+        9271
+      ],
+      "dtype": "<i8",
+      "sha256": "44de10f5fb4010a71a670cd98c45bf018d37d223ec6b86b63b9b6f2dd57405f3",
+      "size_bytes": 74296
+    },
+    "trajectory_content_sha256": "61844e06324e2f9f27ff3bfb16c2f65ea4b933cdfd25a561f0eb0b126302f3c0",
+    "step_context": {
+      "path": "train/step_context_000000.npy",
+      "shape": [
+        301,
+        1
+      ],
+      "dtype": "<f4",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332,
+      "use": "preserved auxiliary data; NaN placeholders allowed; not a simulator input"
+    }
+  },
+  "length_crc_verified": true,
+  "payload_crc_verified": true,
+  "stored_frames": 301,
+  "particles": 9271,
+  "dimension": 3,
+  "declared_full_stored_horizon": 295,
+  "elapsed_seconds": 1.3144895829900634
+}

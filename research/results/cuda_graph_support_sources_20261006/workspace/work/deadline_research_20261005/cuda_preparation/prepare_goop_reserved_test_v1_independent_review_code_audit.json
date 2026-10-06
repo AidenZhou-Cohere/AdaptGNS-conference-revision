@@ -1,0 +1,35 @@
+{
+  "schema": "adaptgns_reserved_test_preparation_independent_review_v1",
+  "reviewer": "code_audit",
+  "reviewed_utc": "2026-10-06T05:00:41.328150+00:00",
+  "status": "no_blocking_source_finding_for_separate_root_gated_preparation",
+  "test_accessed": false,
+  "scientific_evaluation_admitted": false,
+  "files_sha256": {
+    "prepare_goop_reserved_test_v1.py": "4b72fc5f4aff5dc1abe6ec6be55e961b88dc557cc3a43ad394c7c679294fd539",
+    "test_prepare_goop_reserved_test_v1.py": "4089161ae1f2363a07219ed1598c42a9978980a54070c8b922a1d2d104f20940",
+    "goop_reserved_test_execution.NOTES.md": "bccb31e26c05a6691e0d2b5dee8ddd05c35c3c0053666b297c495fa9fb7d096f"
+  },
+  "tests": {
+    "passed": 17,
+    "failed": 0,
+    "seconds": 7.9,
+    "scope": "generated TFRecords, mocked HEAD/GET, synthetic1000/30/30 numeric records, frozen final split contract; no actual test request, checksum, payload, model or GPU"
+  },
+  "checks": [
+    "CLI description is inert and complete six100k cohort/paired audit/root release gate precedes test metadata reads, HTTP imports/requests or numeric arrays. Exact source/protocol/train-admission/cohort/audit and sourceURL bindings required.",
+    "HEAD metadata is obtained only after freeze; root pins actual generation,length,CRC before a single generation-qualified GET; identity encoding and no redirects; no invented SHA before acquired bytes.",
+    "Acquisition checks full length/CRC32C and computes SHA256, fsyncs publication, retains exact partial bytes/hash on failures; source generation mismatch cannot publish complete data.",
+    "Separate converter pins unchanged prepare_goop_official.convert_one and original reader; verifies full object/record CRC, EOF/hash, offsets, complete record coverage, exact decoded element bytes and source stability. All30/T401/type7/key/context expectations checked after preservation; no subset or repair.",
+    "Census verifies all1000/30/30 numeric file hashes and actual dtype/shape/C-element bytes; identity ignores source IDs and NPY headers; within/across-split duplicates are recorded and prevent candidate admission.",
+    "Every test context array receives bit-level census; canonicalNaN/zero expectations are frozen evaluator compatibility checks, not grounds for discarding or altering source values. Context omission follows pinned official parser/model semantics.",
+    "Outputs prepared_requires_root_review admission candidate only; in-memory structural check is explicit and cannot launch evaluation. Final preflight uses exact frozen split/evidence functions with current hash-bound root admission.",
+    "Failed/interrupted acquisition/conversion/census outputs retained; no model/checkpoint deserialization, inference, tuning, automatic retry or changes to frozen sources."
+  ],
+  "limits": [
+    "The gate trusts root-bound complete-cohort audit and checkpoint identities; it does not itself reread six checkpoint tensor payloads.",
+    "Synthetic compatibility is not actual test acquisition/admission. Root must inspect actual publisher metadata and complete conversion/census receipts before evaluation.",
+    "Cutoff is checked at entry; root must enforce a bounded process lifetime and outer cutoff for long acquisition/census work.",
+    "Exact stored byte duplicate identity does not detect transformed or approximately duplicate physical trajectories."
+  ]
+}

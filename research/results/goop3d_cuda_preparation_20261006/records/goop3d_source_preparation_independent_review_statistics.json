@@ -1,0 +1,40 @@
+{
+  "schema": "goop3d_source_preparation_independent_review_statistics_v1",
+  "reviewer": "conference_critique_statistics",
+  "checked_utc": "2026-10-06T04:37:13.541895+00:00",
+  "status": "no_blocking_source_finding_in_reviewed_scope",
+  "acquisition_or_scientific_execution_admitted": false,
+  "source_sha256": {
+    "acquire_goop3d_train_valid.py": "f6f2aa1792de45c99536e185482caee9550b648a0eed2d3b21ec9a24bff9ddb5",
+    "prepare_goop3d_official.py": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+    "test_acquire_goop3d_train_valid.py": "e50dcbfbab7c6c4baeb990cce03ecf6e025dbc1bb758592d8055f74d3e650c8d",
+    "test_prepare_goop3d_official.py": "3cf8ebd3e961384a5bca886d5beca954b1a133aaeec2228c6827a83653be1195"
+  },
+  "metadata_inventory_sha256": "32c94925f1306580a5a2e63487da7274e1c44ff480d28819e44a07eabdee67a3",
+  "scope": "Source/pin/receipt/dimensional review and tiny mock HTTP/synthetic CPU tests only. No network, official bulk/test payload or model/GPU execution.",
+  "tests": {
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_acquire_goop3d_train_valid.py work/deadline_research_20261005/cuda_preparation/test_prepare_goop3d_official.py",
+    "passed": 23,
+    "subtests_passed": 16,
+    "failed": 0,
+    "seconds": 0.93
+  },
+  "checks": [
+    "All three resource lengths/generations/server CRC32Cs and metadataSHA independently matched existing saved official Goop-3D inventory. No invented received whole-file TFRecord SHA.",
+    "Description-only defaults; acquisition explicitly requests only metadata/train/valid with generation parameters,identity encoding,no redirects. Whole-body length/CRC and receivedSHA tracked,known metadataSHA enforced; final publication only after complete check.",
+    "Fresh directory/partial preservation and caught SIGINT/SIGTERM receipt/response evidence verified in mocked tests; no automatic resume/retry. Root owns process/walltime supervision.",
+    "Converter requires distinct fresh output and matching complete3D receipt. Preserves original rawsource and failed staging; whole-source EOF SHA/length/CRC and individual TFRecord length/payloadCRC checked through unchanged byte-pinned reader.",
+    "Dimension argument and exact byte-shape checks both use3; two-coordinate payload is rejected. Every position/type/context element byte is compared to original protobuf, including nonfiniteauxiliary bytes; unknownfields follow unchangedreader rejection.",
+    "Metadata exactly matches dim3/sequence_length300/radius.025; actual frames,types,N,recordcounts andauxiliaries are reported rather than assuming1000/30/type7. SortedN,min/max andeligiblehistories reflect actualcomplete conversion.",
+    "No silent301frame rewrite or2D-to3D zero-padding. Frame301/H295 expectation is reported against actualsource,not treated as established population fact until conversion.",
+    "Exact position/type duplicate identity is retained,auxiliaries preserved separately andexcluded fromduplicatekey; conversion source/receipt/reader hashes rechecked beforepublication.",
+    "All science/training admissions remain false; no test CLIchoice. Frozen2Dconversion/acquisition source unchanged."
+  ],
+  "limits": [
+    "A firstrecordN9271 does not establish populationmax,splitcount ortime/memoryfit. Those require complete source census and separate3Dimplementation/capacity review.",
+    "Per-record resource ceiling remains128MiB. A larger record will fail with source/stagingretained; no automatic cap relaxation.",
+    "Complete_structural_only can report a differingactualframecount/auxiliarycontract; it is not trainingadmission. Root must inspect actualcensus before any model.",
+    "Partial acquisition bytes remain with receivedcount andheaders; partial-fileSHA is not guaranteed on an interruption. Preserve/hash those bytes before any latermanualrecovery; completedfiles have fullSHA/CRC.",
+    "Root controls downloads,walltime/resource bounds andlaunch/recovery. This review supplies no3Dscientificmodel,convergence ordeadlinefit evidence."
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "adaptgns_independent_source_review_v1",
+  "reviewer": "code_audit",
+  "status": "passed_for_separate_root_released_goop_capacity_only",
+  "scientific_training_admitted": false,
+  "source_sha256": "7b75518697fe9f496dc1ea8e6a64406fffdb3b7022471b36548038c1202c2d03",
+  "tests_sha256": "c0737e1299ee12bb90a90a9d909f864d33bca540e886a512522b3536963f4542",
+  "protocol_sha256": "176ab2d865c3a88f05812f07ed58f01ebd2446a177f6f509bffca75b0de6a10b",
+  "tests": {
+    "passed": 16,
+    "subtests_passed": 2,
+    "elapsed_seconds": 0.42,
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_measure_goop_graph_support_capacity.py"
+  },
+  "scope": "Source/diff and scalar/synthetic/mock tests only; no actual arrays, model, checkpoint deserialization, CUDA or remote/process launch.",
+  "reviewed": [
+    "Pinned Goop trainer, data admission, structural source, acquisition/context/census and four official source snapshots remain distinct from Sand.",
+    "Fresh faithful base/mix seeds0/1/2 at planned512 stop with requested100k, hostA4/hostB2 schedule and extra Goop evidence arguments; no resume/retry.",
+    "Pinned originalv2 process lifecycle imported privately; child registration, identity, wait4 reaping, owned cleanup, observations and no foreignGPUwork retained.",
+    "Complete scalar/graph ledger, Goop frame6..400 and395000-history/type7/context provenance, exact status/stdout/checkpoint pointers and all512 timings verified.",
+    "Saved paired LR remains exact; local formula portability permits only1float64ULP and retains discrepancies.",
+    "Whole worker completion and cross-host input/runtime/UUID identity required; clock-shrunk steady intervals must overlap before six-concurrent capacity is accepted.",
+    "Root numerical timing gate pins Goop validator and requires implementation_passed plus actual report/saved-batch hashes; root attestation remains responsible for evidence content.",
+    "Measuredq6/r6 training forecast unchanged; absent full-cost evidence leaves overall fit undefined and does not grant scientific admission."
+  ],
+  "remaining_blocking_findings": [],
+  "limits": [
+    "No numerical or scientific admission is implied; root owns fresh process/clock checks and execution.",
+    "Release GPU UUID string representation must match nvidia-smi inventory exactly for inherited observation checks; per-checkpoint runtimeUUID comparison is canonicalized.",
+    "This inherited timing verifier checks checkpoint bytes/pointers rather than deserializing initial/final tensors; root scientific cohort audit remains separate.",
+    "The old v1complete-rollout forecast contract is preserved; any quota-based admission needs a separate prospectivev2source/cost basis."
+  ]
+}

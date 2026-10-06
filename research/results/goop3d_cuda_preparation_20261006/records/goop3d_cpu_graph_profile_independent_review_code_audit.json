@@ -1,0 +1,31 @@
+{
+  "schema": "goop3d_cpu_graph_profile_independent_review_code_audit_v1",
+  "reviewer": "code_audit",
+  "checked_utc": "2026-10-06T04:53:58.193224+00:00",
+  "status": "no_blocking_source_finding",
+  "execution_admitted": false,
+  "files_sha256": {
+    "profile_goop3d_first_record_cpu_graph.py": "43a35689e7639166be0da55ce96a12920833ad8f0a99d57a1a6841c906bd74fb",
+    "test_profile_goop3d_first_record_cpu_graph.py": "f1989c1a0cd33b0bfdfd5a12c9e1d3101b698bd8b8040fec1957608c172e987b"
+  },
+  "tests": {
+    "passed": 6,
+    "failed": 0,
+    "seconds": 0.82,
+    "scope": "tiny synthetic CPU arrays/tensors only; no official arrays/GNS/model/CUDA"
+  },
+  "checks": [
+    "Default description only; pinned correctedv2input helper used without calling its model loader.",
+    "Only named CPU/pure graph function AST definitions from reviewed3Dsource loaded; numerical function bodies unchanged.",
+    "Native query_ball_point/float32 strict-distance/nearest-source-ID ordering/128receiver cap loop matches frozen native connectivity for add_self_edges=True.",
+    "CPU-only tensor assertions, private CPU RNG and no-GNS/no-CUDA-init synthetic checks pass.",
+    "Fresh output and pinned completev2reference report required. History/target/noise hashes and everyper-examplegraphledgerfield must match reference before successful timings.",
+    "One warmup+three repeatedgraphstages per base/forcedexpanded25case; candidateprecheck/nativeconnectivity/optionalgraph-and-ledger measured separately.",
+    "Source/input/reference hashes rechecked on completion; failures retained and no scientificmodel oroptimizer result claimed."
+  ],
+  "limits": [
+    "CPUedge packaging uses NumPy array plus torch.from_numpy and excludes actualCUDAtransfer; hostload/hardware maydiffer, so timings cannot be subtracted as a proven speedup.",
+    "One fixed trainingstate, not full populationcapacity. Root owns actual bounded CPUexecution and its impact on sharedhostload.",
+    "This independentreview did not read actualofficial arrays or run profiling."
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "files": {
+    "goop3d_benchmark_prelaunch_inventory_v1.txt": {
+      "bytes": 233,
+      "reason": "private operational process inventory; scientific benchmark report retained",
+      "sha256": "d7eee025c20798732af50f7e183107a72deef6368d2358d6eb94a8a10abc5432"
+    },
+    "goop3d_capacity_and_acquisition_status_v1.txt": {
+      "bytes": 2722,
+      "reason": "private operational process inventory; scientific benchmark report retained",
+      "sha256": "03768eeecdb48381326cedd57042db19e114eff1aa6a7c9e9801561d6d3b6beb"
+    },
+    "goop3d_capacity_v2_status.txt": {
+      "bytes": 12166,
+      "reason": "private operational process inventory; scientific benchmark report retained",
+      "sha256": "9850909cd1c61e3a012e35c9318f0be722eeef69d275daf603c536c54342a81c"
+    },
+    "goop3d_graph_support_vectorized_v1_tests.log": {
+      "bytes": 1348,
+      "reason": "private operational process inventory; scientific benchmark report retained",
+      "sha256": "b0da9f15943c969d5a66421ae984a2de876157a5fbfed5c66dc23064834292ea"
+    },
+    "goop3d_graph_vectorized_cpu_independent_review_code_audit.json": {
+      "bytes": 3484,
+      "reason": "private operational process inventory; scientific benchmark report retained",
+      "sha256": "22621ffc45aca3ee75e297bc4465d7a040f9f16f1e77353090876a2360628cc5"
+    },
+    "goop3d_structural_metadata_v1/metadata.tar": {
+      "bytes": 2140160,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "4c58d0a808ccf12d5479af9f67122d0bdda4452bf171c1a6cfe11b9d1a85275e"
+    }
+  },
+  "scope": "locally available omitted files; original remote numeric artifacts additionally bound by included descriptor/manifests/reports"
+}

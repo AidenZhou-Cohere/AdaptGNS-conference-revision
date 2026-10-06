@@ -1,0 +1,676 @@
+{
+  "schema": "goop3d_first_record_cpu_graph_stage_profile_v1",
+  "status": "complete_cpu_graph_stage_profile_only",
+  "source_sha256": "43a35689e7639166be0da55ce96a12920833ad8f0a99d57a1a6841c906bd74fb",
+  "cuda_calls": false,
+  "model_or_optimizer": false,
+  "scientific_training_admitted": false,
+  "test_accessed": false,
+  "cases": [
+    {
+      "case": "base",
+      "repetitions": [
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.0234565706923604,
+            "native_connectivity_cpu": 0.21912554930895567,
+            "optional_graph_and_ledger_cpu": 1.028686249628663
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_directed_edges": 289770,
+          "summed_graph_stage_seconds": 1.2712683696299791,
+          "repetition": 0,
+          "warmup": true,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023277265019714832,
+            "native_connectivity_cpu": 0.2322398191317916,
+            "optional_graph_and_ledger_cpu": 0.9570372262969613
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_directed_edges": 289770,
+          "summed_graph_stage_seconds": 1.2125543104484677,
+          "repetition": 1,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023265105672180653,
+            "native_connectivity_cpu": 0.23106055054813623,
+            "optional_graph_and_ledger_cpu": 0.9591045947745442
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_directed_edges": 289770,
+          "summed_graph_stage_seconds": 1.2134302509948611,
+          "repetition": 2,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023217584937810898,
+            "native_connectivity_cpu": 0.23096150998026133,
+            "optional_graph_and_ledger_cpu": 0.9591453624889255
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": false,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 0,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "1b213cbe6d558b6a735290520af3d5709b273c322d6d2bd92eaa58741904c2d7",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_directed_edges": 289770,
+          "summed_graph_stage_seconds": 1.2133244574069977,
+          "repetition": 3,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        }
+      ],
+      "mean_measured_stage_seconds": {
+        "candidate_precheck": 0.023253318543235462,
+        "native_connectivity_cpu": 0.23142062655339637,
+        "optional_graph_and_ledger_cpu": 0.9584290611868104
+      },
+      "mean_measured_graph_seconds": 1.2131030062834423
+    },
+    {
+      "case": "expanded25",
+      "repetitions": [
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.02324113715440035,
+            "native_connectivity_cpu": 0.22834038082510233,
+            "optional_graph_and_ledger_cpu": 1.006814937107265
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 17677,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "a40e9e402f0e8a128ab7a3097f59d23ebe91810e2d386801dc00dab4d8d854b7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 17499,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "864ea4436377cf4764b5804f6122ff2276aae59dcd0015ddaa046e92261f94d0",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "b93b7e39bb256d706041d469bc36789b887a4efbb3312b5f4abc4e010b802a0f",
+          "final_directed_edges": 360122,
+          "summed_graph_stage_seconds": 1.2583964550867677,
+          "repetition": 0,
+          "warmup": true,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023331728763878345,
+            "native_connectivity_cpu": 0.23089930228888988,
+            "optional_graph_and_ledger_cpu": 0.9863384822383523
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 17677,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "a40e9e402f0e8a128ab7a3097f59d23ebe91810e2d386801dc00dab4d8d854b7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 17499,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "864ea4436377cf4764b5804f6122ff2276aae59dcd0015ddaa046e92261f94d0",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "b93b7e39bb256d706041d469bc36789b887a4efbb3312b5f4abc4e010b802a0f",
+          "final_directed_edges": 360122,
+          "summed_graph_stage_seconds": 1.2405695132911205,
+          "repetition": 1,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023257968947291374,
+            "native_connectivity_cpu": 0.2333883661776781,
+            "optional_graph_and_ledger_cpu": 1.0097411880269647
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 17677,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "a40e9e402f0e8a128ab7a3097f59d23ebe91810e2d386801dc00dab4d8d854b7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 17499,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "864ea4436377cf4764b5804f6122ff2276aae59dcd0015ddaa046e92261f94d0",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "b93b7e39bb256d706041d469bc36789b887a4efbb3312b5f4abc4e010b802a0f",
+          "final_directed_edges": 360122,
+          "summed_graph_stage_seconds": 1.2663875231519341,
+          "repetition": 2,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        },
+        {
+          "stage_seconds": {
+            "candidate_precheck": 0.023378160782158375,
+            "native_connectivity_cpu": 0.2317836256697774,
+            "optional_graph_and_ledger_cpu": 0.9969277987256646
+          },
+          "graph_ledger": [
+            {
+              "example_slot": 0,
+              "n_particles": 9271,
+              "exposure_coin": true,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                0,
+                5501
+              ],
+              "native_directed_edges": 144667,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 70711,
+              "optional_budget_if_exposed": 17677,
+              "selected_optional_pairs": 17677,
+              "native_edge_sha256": "f87cfee5c43b2efc4e5b56179a5f89e4aca39a22e35925a4f3b99d1069aed7d2",
+              "optional_pair_sha256": "a40e9e402f0e8a128ab7a3097f59d23ebe91810e2d386801dc00dab4d8d854b7",
+              "noisy_current_sha256": "859fd97ebfeb0efcc9a5e0cf92368dd66d911c2a6a7e3e5d3620707600de82ce"
+            },
+            {
+              "example_slot": 1,
+              "n_particles": 9271,
+              "exposure_coin": false,
+              "expanded": true,
+              "coin_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                4409
+              ],
+              "pair_seed_material": [
+                20261005,
+                0,
+                0,
+                1,
+                5501
+              ],
+              "native_directed_edges": 145103,
+              "native_self_edges": 9271,
+              "receivers_above_native_cap": 0,
+              "annulus_pairs": 69997,
+              "optional_budget_if_exposed": 17499,
+              "selected_optional_pairs": 17499,
+              "native_edge_sha256": "9dd3a8e3ba364e9dedf33e1e1be5ae22f8bc505333df835b011f503b97afe10f",
+              "optional_pair_sha256": "864ea4436377cf4764b5804f6122ff2276aae59dcd0015ddaa046e92261f94d0",
+              "noisy_current_sha256": "314702adce1a1876dc2d262a9e8d66ffa171377e57604fa95cec645d86b75ffe"
+            }
+          ],
+          "native_batch_edge_sha256": "82525b177e603437af70b129ceb8c41ea88a85499aecf5daa9e9067f1042acbd",
+          "final_batch_edge_sha256": "b93b7e39bb256d706041d469bc36789b887a4efbb3312b5f4abc4e010b802a0f",
+          "final_directed_edges": 360122,
+          "summed_graph_stage_seconds": 1.2520895851776004,
+          "repetition": 3,
+          "warmup": false,
+          "exact_reference_graph_ledger": true
+        }
+      ],
+      "mean_measured_stage_seconds": {
+        "candidate_precheck": 0.02332261949777603,
+        "native_connectivity_cpu": 0.23202376471211514,
+        "optional_graph_and_ledger_cpu": 0.9976691563303272
+      },
+      "mean_measured_graph_seconds": 1.2530155405402184
+    }
+  ],
+  "input": {
+    "trajectory": "train:000000",
+    "target_frames": [
+      6,
+      6
+    ],
+    "batch_particles": [
+      9271,
+      9271
+    ],
+    "observed_type_ids": [
+      7
+    ],
+    "history_sha256": "e9cfc92dcb2e4bf12ea76584f91944d1b1e0455e60f6d01ce61b6068701e0c9f",
+    "labels_sha256": "996c0db696c1fd02e754d18e39b783bcfc6b67a169d59f4736d4fa38080c3c25",
+    "noise_sha256": "7460e8de9cd21b95c329069b745a1c28069b6a6cc8693d923a5a565a72bd9b6a",
+    "auxiliary": {
+      "shape": [
+        301,
+        1
+      ],
+      "nan_count": 1,
+      "inf_count": 0,
+      "finite_count": 300,
+      "handling": "preserved/excluded: official parser returns no context when context_mean is absent"
+    },
+    "whole_dataset_admission": false,
+    "whole_source_checksum_claim": false
+  },
+  "input_files_sha256": {
+    "goop3d_first_record_20261006_v1/report.json": "c003d147b93eb0eb2cebafe7c9a79ac4179d7224fd41d139e1719f5ceefedd78",
+    "goop3d_source_train_valid_20261006_v1/metadata.json": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+    "cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+    "goop3d_first_record_20261006_v1/numeric/position_000000.npy": "afc643f410b2a4d1739fceb36de9f209aa096ecf5a92a8eb60b57b8892417324",
+    "goop3d_first_record_20261006_v1/numeric/type_000000.npy": "44de10f5fb4010a71a670cd98c45bf018d37d223ec6b86b63b9b6f2dd57405f3",
+    "goop3d_first_record_20261006_v1/numeric/step_context_000000.npy": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405"
+  },
+  "reference_report_sha256": "500a333a397f706f1e0ff9d482cb7389279d0ab5fdb6bdca0c8f612d14e26367",
+  "runtime": {
+    "python": "3.12.3",
+    "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+    "torch": "2.13.0+cu129",
+    "numpy": "2.5.3",
+    "cpu_threads": 2
+  },
+  "limitations": [
+    "CPU host/load can differ from original CUDA benchmark; do not directly subtract timings as a proven speedup.",
+    "No GPU graph-transfer, GNN, backward or optimizer timing here; no numerical optimizer/model result.",
+    "One fixed training state, no population capacity or efficacy claim."
+  ],
+  "elapsed_seconds": 10.113230504095554
+}

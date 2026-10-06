@@ -1,0 +1,45 @@
+{
+  "schema": "goop3d_first_record_capacity_v1_failure_review",
+  "reviewed_utc": "2026-10-06T04:46:51.850911+00:00",
+  "failure": "benchmarkv1 resolved manifest-style train/path instead of the boundedinspector numeric/basename staging layout",
+  "failure_phase": "load_inputs before CUDA configuration/model forward/optimizer work",
+  "preserved_v1_source_sha256": "ece79713bb3f029daad415039f633d412ca3093122e343fd9b31629f81917c55",
+  "preserved_stderr_sha256": "3b17155144cae1edaf7bbfbd68a79d1b9f64bfd90dd121475f4ed17d4742fb0e",
+  "inspection_report_sha256": "c003d147b93eb0eb2cebafe7c9a79ac4179d7224fd41d139e1719f5ceefedd78",
+  "arrays_verified": {
+    "positions": {
+      "actual_path": "work/deadline_research_20261005/goop3d_first_record_20261006_v1/numeric/position_000000.npy",
+      "sha256": "afc643f410b2a4d1739fceb36de9f209aa096ecf5a92a8eb60b57b8892417324",
+      "expected_sha256": "afc643f410b2a4d1739fceb36de9f209aa096ecf5a92a8eb60b57b8892417324"
+    },
+    "particle_types": {
+      "actual_path": "work/deadline_research_20261005/goop3d_first_record_20261006_v1/numeric/type_000000.npy",
+      "sha256": "44de10f5fb4010a71a670cd98c45bf018d37d223ec6b86b63b9b6f2dd57405f3",
+      "expected_sha256": "44de10f5fb4010a71a670cd98c45bf018d37d223ec6b86b63b9b6f2dd57405f3"
+    },
+    "step_context": {
+      "actual_path": "work/deadline_research_20261005/goop3d_first_record_20261006_v1/numeric/step_context_000000.npy",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "expected_sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405"
+    }
+  },
+  "repair": "separate benchmark_goop3d_first_record_v2.py, only schema lineage and array path mapping changed",
+  "replacement_source_sha256": "8cfaa4fcf16afaa459b805445b0a6c25282919dd23776872fe353daa06043722",
+  "graph_source_unchanged_sha256": "7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f",
+  "unchanged": [
+    "record0/target6",
+    "two-copybatch2",
+    "fixedseed0/noise",
+    "base/forcedexpanded25",
+    "8optimizerupdates",
+    "radius/loss/architecture/guards",
+    "600s outer timeout"
+  ],
+  "tests": {
+    "passed": 15,
+    "new_regression": "real immutable inspectionJSONdescriptor with syntheticvalues/sparsefiles atnumeric/basename; noofficialarrayvaluesopened",
+    "log_sha256": "fe2b71de72820daef22523f76e29e7fc5b6637a153ba0ee5252057297677b37a"
+  },
+  "next_output": "goop3d_first_record_capacity_20261006_v2",
+  "v1_output_requires_preservation": true
+}

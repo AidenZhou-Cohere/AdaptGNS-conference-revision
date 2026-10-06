@@ -1,0 +1,43 @@
+{
+  "schema": "goop3d_train_valid_preparation_v1",
+  "status": "prepared_pending_independent_review_and_root_execution",
+  "created_utc": "2026-10-06T04:35:56.496518+00:00",
+  "actual_acquisition_executed_by_preparer": false,
+  "official_payloads_opened_by_preparer": false,
+  "test_source_accessed": false,
+  "model_or_gpu_executed": false,
+  "scientific_training_admitted": false,
+  "file_sha256": {
+    "acquire_goop3d_train_valid.py": "f6f2aa1792de45c99536e185482caee9550b648a0eed2d3b21ec9a24bff9ddb5",
+    "prepare_goop3d_official.py": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+    "test_acquire_goop3d_train_valid.py": "e50dcbfbab7c6c4baeb990cce03ecf6e025dbc1bb758592d8055f74d3e650c8d",
+    "test_prepare_goop3d_official.py": "3cf8ebd3e961384a5bca886d5beca954b1a133aaeec2228c6827a83653be1195",
+    "goop3d_source_preparation_synthetic_tests_v1.log": "9e312a23659473f8fee4584df350eef77325c33ea17df0c9188b48d97f3b547e"
+  },
+  "source_inventory_sha256": "32c94925f1306580a5a2e63487da7274e1c44ff480d28819e44a07eabdee67a3",
+  "pin_comparison": "Acquisition and converter AST constants exactly match preserved Goop-3D inventory URL, bytes, generation, CRC and metadataSHA",
+  "converter_synthetic_tests": {
+    "count": 16,
+    "returncode": 0,
+    "elapsed_report_in_log": true
+  },
+  "acquisition_mock_tests": {
+    "count": 7,
+    "returncode": 0,
+    "run_tool_chunk": "658534",
+    "duration_seconds": 0.024,
+    "real_requests": 0
+  },
+  "derived_from": {
+    "acquire_goop_train_valid.py": "1d4cc377d8b7f1c7c396836a552b42ffb8e1da5184327e9233bfa50d6200ed97",
+    "prepare_goop_official.py": "fa4b7d883d7c360500fc3c603c9cd14538c916f1ddd7435aedfc8ec2420f2985",
+    "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33"
+  },
+  "limitations": [
+    "Only tiny synthetic arrays/mocked HTTP were executed by preparer.",
+    "No actual complete record count, maximumN, type distribution or model-runtime claim.",
+    "Converter payload guard remains128MiB; exceeding it is a preserved failure requiring review.",
+    "SIGKILL or host loss can leave a last-progress receipt or temporary receipt alongside retained partial bytes.",
+    "Native decoder carries a historical auxiliary placeholder label; wrapper overwrites it to explicitly unreviewed semantics."
+  ]
+}

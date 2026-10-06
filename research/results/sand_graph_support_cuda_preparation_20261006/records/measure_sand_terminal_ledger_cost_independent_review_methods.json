@@ -1,0 +1,31 @@
+{
+  "schema": "independent_bounded_source_review_v1",
+  "reviewer": "conference_critique_methods",
+  "status": "passed_for_root_released_infrastructure_io_only",
+  "source_sha256": "6c50ff8b6aba68e54cc44f1582ca1872b75eadbf95618813f1a13c2aae9cbc5d",
+  "tests_sha256": "75cfca355ddc8deb6ee379e640fdf019dbc426bfa313123c3be3bebfc8ee2db2",
+  "trainer_sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+  "tests": {
+    "command": "work/venv/bin/python -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation -p test_measure_sand_terminal_ledger_cost.py -v",
+    "passed": 7,
+    "elapsed_seconds": 0.031
+  },
+  "findings_resolved": [
+    "Initial publication timing excluded the binary SHA cost present in frozen trainer; final source measures SHA plus synthetic pointer and two status fsyncs.",
+    "Final report distinguishes synthetic publication cost from complete scientific checkpoint bound and lists omitted live model/Adam/RNG/payload work."
+  ],
+  "checked": [
+    "No scientific model construction, trajectories, forward/backward or optimizer updates.",
+    "Root release pins probe/source/protocol/Python/GPU identity and fresh process check; default is description only.",
+    "Fixed512 model/optimizer/RNG tensor bytes preserved through copy inventory, including signed zero.",
+    "Synthetic100k ledger has valid count/RNG/budget metadata and unique digest strings, not scientific updates.",
+    "Envelope lacks training lineage, endpoint and top-level model fields; trainer restore rejects it.",
+    "Output creation is fresh and separate; failed and partial outputs retained."
+  ],
+  "remaining_root_obligations": [
+    "Verify intended concurrent4+2 host/GPU/storage overlap and reserves.",
+    "Reserve omitted live finite/Adam predicates, RNG capture and exact payload construction; factor1.35 alone establishes no bound.",
+    "Treat measured maximum as planning data, not a statistical upper bound or admission for training."
+  ],
+  "real_data_or_gpu_used": false
+}

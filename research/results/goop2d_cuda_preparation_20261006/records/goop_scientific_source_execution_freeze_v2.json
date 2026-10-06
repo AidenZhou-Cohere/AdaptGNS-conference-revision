@@ -1,0 +1,59 @@
+{
+  "schema": "goop_scientific_source_execution_freeze_v2",
+  "status": "six_scientific_jobs_running",
+  "recorded_utc": "2026-10-06T04:51:40.013124+00:00",
+  "launch_utc": "2026-10-06T04:50:00+00:00",
+  "endpoint_updates": 100000,
+  "arms": [
+    "base",
+    "mix"
+  ],
+  "paired_seeds": [
+    0,
+    1,
+    2
+  ],
+  "fixed_planned_policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ],
+  "unified_exec_sessions": {
+    "A": 56376,
+    "B": 21757
+  },
+  "native_children_at_firstcheck": {
+    "A": [
+      401133,
+      401134,
+      401135,
+      401136
+    ],
+    "B": [
+      12687,
+      12688
+    ]
+  },
+  "paths": {
+    "A": "/root/repos/AdaptGNS-cuda-20261006/goop_graph_support_science_A_20261006_v2",
+    "B": "/root/repos/AdaptGNS-cuda-20261006/goop_graph_support_science_B_20261006_v2"
+  },
+  "files": {
+    "train_goop_graph_support_cuda.py": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+    "supervise_graph_support_science_quota_v2.py": "60b76b2cd6d658b02d9dc7ab957b4afa4a3db151a12cd852a74c806cdae0dc71",
+    "supervise_graph_support_evaluation_quota_v2.py": "0bd714b0bece0c349a9b18eae14221f6602ffc61ea736bad4fa3b5dc087157d9",
+    "supervise_sand_graph_support_science.py": "a22a59c46231c328e4939a0f021b3bb2fab9e2f93c0848bb1abd39aad2d5d305",
+    "measure_goop_graph_support_capacity.py": "7b75518697fe9f496dc1ea8e6a64406fffdb3b7022471b36548038c1202c2d03",
+    "goop_graph_support_100k_protocol_v2.md": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851",
+    "goop_graph_capacity_v1_summary.json": "423c105cc240b11ae0b6125653d68b79d47b7f5337c307b21253cb6b625d4adf",
+    "goop_graph_capacity_v1_initial_pairing.json": "cce12c76871dd073c235ee2ca88fedf9a1b66a06a730c3f0fe3e2fba9692d281",
+    "goop_graph_support_execution_allocation_v2.json": "cf704a20e6c35774cd9f362e57d26465c6f5dfae4c7f4178818245c50e139213",
+    "goop_science_A_release_v2.json": "05039083ac129c868cb79f90444fc8a91004e0a1bd418c944decb889bcfa4c69",
+    "goop_science_B_release_v2.json": "de80cdbb172be6dabf3631aef7973297fd15db7431be0381f5fc9d8c3ef1b548"
+  },
+  "scope": "Fresh100kmodels; probecheckpointsunused; preservealloutcomes. Wholehostexclusivity: nootherGPUworkoneitherhostwhileactive. LocalnativeWaterDropPID56376 isdistinctfromunifiedexecsession56376.",
+  "third_vm": "Requested offered extra4GB200workspace for3D; URLpending; notprovisionedautomatically."
+}

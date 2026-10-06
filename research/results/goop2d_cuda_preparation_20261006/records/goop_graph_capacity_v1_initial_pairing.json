@@ -1,0 +1,48 @@
+{
+  "schema": "goop_graph_capacity_initial_pairing_audit_v1",
+  "status": "passed",
+  "checks": [
+    {
+      "seed": 0,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "checkpoint_sha256": [
+        "d6603e01b56748cf0b1882bd96f659dd6a42a3ee6d3f83ea4bf50ed279a41edd",
+        "65ab6e74c82f7b6b19ef759ea0ff396a9c3c13a2c7c86ef0d06cf67ec2dbc3ef"
+      ]
+    },
+    {
+      "seed": 1,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "checkpoint_sha256": [
+        "b1d385474c79897e3e322c5f7dd3821b1085f1a5b7a6ffeb698ab364ee7d0f93",
+        "21f74b1061e8c26bc64cf8aba2e3a0cefe54ab608dc54a56e6de74cc236ef2dc"
+      ]
+    },
+    {
+      "seed": 2,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "checkpoint_sha256": [
+        "e1fb4b7bc96a2eb7c62bc6f365f54c2722ecd5523d6adcb1ad43b7f18d1928df",
+        "50a38ca768304e96bc123fc1e601c51cd881f72059eebe42c2f64dba7eca67f3"
+      ]
+    }
+  ],
+  "summary_sha256": "423c105cc240b11ae0b6125653d68b79d47b7f5337c307b21253cb6b625d4adf",
+  "scientific_training_admitted": false,
+  "scope": "Allthreepairedinitialtensor/RNG/emptyAdam/configidentities, auditedafterinfrastructurecompletion; nopreupdatebarrierclaim."
+}

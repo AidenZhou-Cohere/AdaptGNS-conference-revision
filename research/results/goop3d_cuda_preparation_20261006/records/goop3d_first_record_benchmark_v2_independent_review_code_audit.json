@@ -1,0 +1,32 @@
+{
+  "schema": "goop3d_first_record_benchmark_v2_independent_review_code_audit_v1",
+  "reviewer": "code_audit",
+  "checked_utc": "2026-10-06T04:46:58.855971+00:00",
+  "status": "no_blocking_source_finding_after_numeric_staging_path_fix",
+  "execution_admitted": false,
+  "source_sha256": {
+    "benchmark_goop3d_first_record_v2.py": "8cfaa4fcf16afaa459b805445b0a6c25282919dd23776872fe353daa06043722",
+    "test_benchmark_goop3d_first_record_v2.py": "a2b33b8852b8e5ab372e705b447ffe071fc1d68e611da93ab0d4e7de8e1ab482",
+    "goop3d_graph_support.py": "7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f"
+  },
+  "scope": "Narrow diff against reviewed v1 plus independent synthetic CPU tests; no actual official arrays or CUDA execution by reviewer.",
+  "fix_verified": "The inspector creates OUT/numeric and passes it to decode_record with split=train. The immutable descriptor train/basename is manifest-style. v2 verifies the descriptor but resolves actual inputs through inspection_dir/numeric/basename.",
+  "changes": [
+    "Capacity schema v1 to v2",
+    "Three numeric input path resolutions plus explanatory comment; every numerical/timing/model/source/array-integrity predicate unchanged"
+  ],
+  "tests": {
+    "passed": 15,
+    "subtests_passed": 4,
+    "failed": 0,
+    "seconds": 1.81,
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider test_benchmark_goop3d_first_record_v2.py"
+  },
+  "preserved_limits": [
+    "v1 failed attempt and source remain immutable.",
+    "Root owns600-second outer timeout and30-secondkillcleanup.",
+    "First-recordfixedstatecapacity only; no full-dataset/source/training/effectiveness admission.",
+    "Zero optionalpairs cannot support expandedgraphthroughput claims.",
+    "Native capping may exclude self under coincidentties; selfcandidate convention retained."
+  ]
+}

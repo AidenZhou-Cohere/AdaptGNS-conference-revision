@@ -1,0 +1,28 @@
+{
+  "schema": "official_goop_numeric_preparation_independent_review_v1",
+  "reviewer": "conference_critique_statistics",
+  "status": "passed_bounded_source_and_synthetic_review",
+  "scientific_training_admitted": false,
+  "actual_payloads_or_models_executed": false,
+  "files_sha256": {
+    "prepare_goop_official.py": "fa4b7d883d7c360500fc3c603c9cd14538c916f1ddd7435aedfc8ec2420f2985",
+    "test_prepare_goop_official.py": "c66c4e08182ab3a5ff1f2c31ad64995bb1dec82e8d4007799c55da8bca7d593e"
+  },
+  "test_command": "work/venv/bin/python -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation -p test_prepare_goop_official.py -v",
+  "tests_passed": 15,
+  "test_elapsed_seconds_reported": 0.188,
+  "findings": [
+    "Exact pinned metadata, official URL/generation/size/CRC and received-SHA receipt binding verified by source inspection; whole-object CRC hashing is independently exercised across multiple chunks.",
+    "Invokes only unchanged pinned VerifiedTFRecords/decode_record directly, avoiding WaterDrop orchestration default trajectory counts and test-inspection annotations.",
+    "Unexpected fields and nonfinite positions fail with retained staging/source; actual frame count uses expected_frames=None, preserving observed T and reporting metadata agreement separately.",
+    "Saved float32 position/int64 type bytes and auxiliary float32 bytes are compared against original protobuf byte strings, including auxiliary NaN payload bits in synthetic tests.",
+    "Exact stored position/type duplicate identity is explicit; auxiliaries are preserved but excluded from duplicate identity.",
+    "All selected split conversions complete before any manifest publication. A later publication failure leaves failed global status and preserved artifacts; no scientific admission follows.",
+    "CLI forbids test split and acquires nothing; complete status is structural_only and scientific_training_admission remains false."
+  ],
+  "limitations": [
+    "No real Goop trajectory or object payload was opened by the reviewer. Actual T/count/types/features/duplicate outcomes remain unknown until root-controlled conversion.",
+    "Acquisition receipts and original source objects must remain preserved; model eligibility and scientific launch are separate reviews.",
+    "This review does not certify a final Goop training/evaluation protocol or deadline feasibility."
+  ]
+}

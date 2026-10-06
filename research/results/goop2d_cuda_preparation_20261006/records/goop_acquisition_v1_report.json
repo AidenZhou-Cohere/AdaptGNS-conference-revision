@@ -1,0 +1,73 @@
+{
+  "schema": "official_goop_train_valid_acquisition_v1",
+  "status": "complete",
+  "dataset": "Goop",
+  "source_family": "official_gns_tfrecord",
+  "files": [
+    {
+      "name": "metadata.json",
+      "saved_name": "metadata.json",
+      "url": "https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/Goop/metadata.json",
+      "status": "complete",
+      "received_bytes": 362,
+      "response_status": 200,
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Thu, 03 Sep 2020 17:22:43 GMT",
+        "ETag": "\"555aa941d90a85a8cdb9f42f5d39209b\"",
+        "x-goog-generation": "1599153763201175",
+        "x-goog-hash": "crc32c=9pwq+g==, md5=VVqpQdkKhajNufQvXTkgmw==",
+        "Content-Length": "362"
+      },
+      "generation": "1599153763201175",
+      "sha256": "565d6e13be91be6a6b0fbc31a9aa19ed70a5505228411d0928288fcf874ca3dd",
+      "crc32c_base64": "9pwq+g==",
+      "crc32c_verified": true
+    },
+    {
+      "name": "train.tfrecord",
+      "saved_name": "train.tfrecord",
+      "url": "https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/Goop/train.tfrecord",
+      "status": "complete",
+      "received_bytes": 3358535518,
+      "response_status": 200,
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Thu, 03 Sep 2020 17:33:23 GMT",
+        "ETag": "\"f1e35f0f370bbbccc193a96a593f49f0\"",
+        "x-goog-generation": "1599154403717337",
+        "x-goog-hash": "crc32c=OrpMIQ==, md5=8eNfDzcLu8zBk6lqWT9J8A==",
+        "Content-Length": "3358535518"
+      },
+      "generation": "1599154403717337",
+      "sha256": "8a0b0cfe3ef56f533abf14d963d5cf632235aa3570cf61a4b42ab655a15cae59",
+      "crc32c_base64": "OrpMIQ==",
+      "crc32c_verified": true
+    },
+    {
+      "name": "valid.tfrecord",
+      "saved_name": "valid.tfrecord",
+      "url": "https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/Goop/valid.tfrecord",
+      "status": "complete",
+      "received_bytes": 93682221,
+      "response_status": 200,
+      "response_headers": {
+        "Content-Type": "application/octet-stream",
+        "Last-Modified": "Thu, 03 Sep 2020 17:23:04 GMT",
+        "ETag": "\"904e55bb07fc80e1fa1ebb0434b24320\"",
+        "x-goog-generation": "1599153784596039",
+        "x-goog-hash": "crc32c=EqHuFw==, md5=kE5Vuwf8gOH6HrsENLJDIA==",
+        "Content-Length": "93682221"
+      },
+      "generation": "1599153784596039",
+      "sha256": "0e7b261d9ce59491ed79756a1d60bb57324c597a042e257f21b53b52b3c4f79c",
+      "crc32c_base64": "EqHuFw==",
+      "crc32c_verified": true
+    }
+  ],
+  "source_sha256": "1d4cc377d8b7f1c7c396836a552b42ffb8e1da5184327e9233bfa50d6200ed97",
+  "started_utc": "2026-10-06T02:35:17.826508+00:00",
+  "scientific_training_admission": false,
+  "elapsed_seconds": 31.91648157592863,
+  "ended_utc": "2026-10-06T02:35:49.742619+00:00"
+}

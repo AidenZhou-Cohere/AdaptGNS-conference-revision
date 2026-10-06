@@ -1,0 +1,232 @@
+{
+  "schema": "adaptgns_cuda_preparation_packaging_verification_v1",
+  "status": "passed",
+  "verified_utc": "2026-10-06T05:05:15.683209+00:00",
+  "families": [
+    {
+      "family": "cuda_graph_support_sources_20261006",
+      "published_files_verified": 116,
+      "archive_members_verified": 0
+    },
+    {
+      "family": "goop2d_cuda_preparation_20261006",
+      "published_files_verified": 76,
+      "archive_members_verified": 177
+    },
+    {
+      "family": "goop3d_cuda_preparation_20261006",
+      "published_files_verified": 43,
+      "archive_members_verified": 43
+    },
+    {
+      "family": "sand_graph_support_cuda_preparation_20261006",
+      "published_files_verified": 69,
+      "archive_members_verified": 664
+    }
+  ],
+  "python_sources_parsed": 98,
+  "separate_cpu_test_files": 38,
+  "passed": 691,
+  "subtests_passed": 166,
+  "failed": 0,
+  "execution_scope": "separate processes preserve import-isolation assertions; copied source, tiny synthetic tensors, generated records, mock HTTP/receipts; no real dataset/checkpoint/CUDA/remote work",
+  "test_files": [
+    {
+      "name": "test_acquire_goop3d_train_valid.py",
+      "returncode": 0,
+      "summary": "7 passed, 4 subtests passed in 0.18s"
+    },
+    {
+      "name": "test_audit_goop3d_auxiliary.py",
+      "returncode": 0,
+      "summary": "7 passed, 3 subtests passed in 0.16s"
+    },
+    {
+      "name": "test_benchmark_goop3d_first_record.py",
+      "returncode": 0,
+      "summary": "14 passed, 169 warnings, 4 subtests passed in 2.80s"
+    },
+    {
+      "name": "test_benchmark_goop3d_first_record_v2.py",
+      "returncode": 0,
+      "summary": "15 passed, 169 warnings, 4 subtests passed in 2.23s"
+    },
+    {
+      "name": "test_benchmark_goop_graph_support_rollout.py",
+      "returncode": 0,
+      "summary": "8 passed in 0.43s"
+    },
+    {
+      "name": "test_benchmark_sand_cuda_rollout.py",
+      "returncode": 0,
+      "summary": "22 passed, 29 subtests passed in 0.21s"
+    },
+    {
+      "name": "test_benchmark_sand_cuda_rollout_deterministic.py",
+      "returncode": 0,
+      "summary": "26 passed, 36 subtests passed in 0.29s"
+    },
+    {
+      "name": "test_benchmark_sand_graph_support_rollout.py",
+      "returncode": 0,
+      "summary": "8 passed in 1.11s"
+    },
+    {
+      "name": "test_diagnose_sand_relu_kinks.py",
+      "returncode": 0,
+      "summary": "10 passed in 1.96s"
+    },
+    {
+      "name": "test_evaluate_goop_graph_support_final.py",
+      "returncode": 0,
+      "summary": "21 passed, 5 warnings in 3.16s"
+    },
+    {
+      "name": "test_evaluate_sand_final_diagnostics.py",
+      "returncode": 0,
+      "summary": "19 passed, 5 warnings in 2.94s"
+    },
+    {
+      "name": "test_evaluate_sand_graph_support_final.py",
+      "returncode": 0,
+      "summary": "21 passed, 5 warnings in 2.95s"
+    },
+    {
+      "name": "test_goop_evaluation_contract.py",
+      "returncode": 0,
+      "summary": "9 passed in 0.50s"
+    },
+    {
+      "name": "test_measure_goop_graph_support_capacity.py",
+      "returncode": 0,
+      "summary": "16 passed, 2 subtests passed in 0.65s"
+    },
+    {
+      "name": "test_measure_sand_cuda_capacity.py",
+      "returncode": 0,
+      "summary": "16 passed, 7 subtests passed in 0.11s"
+    },
+    {
+      "name": "test_measure_sand_cuda_capacity_v2.py",
+      "returncode": 0,
+      "summary": "17 passed, 15 subtests passed in 0.11s"
+    },
+    {
+      "name": "test_measure_sand_graph_support_capacity.py",
+      "returncode": 0,
+      "summary": "13 passed, 2 subtests passed in 0.58s"
+    },
+    {
+      "name": "test_measure_sand_terminal_ledger_cost.py",
+      "returncode": 0,
+      "summary": "7 passed in 0.88s"
+    },
+    {
+      "name": "test_prepare_goop3d_official.py",
+      "returncode": 0,
+      "summary": "16 passed, 12 subtests passed in 1.30s"
+    },
+    {
+      "name": "test_prepare_goop_final_cohort_quota_v2.py",
+      "returncode": 0,
+      "summary": "15 passed in 1.64s"
+    },
+    {
+      "name": "test_prepare_goop_official.py",
+      "returncode": 0,
+      "summary": "15 passed, 12 subtests passed in 1.36s"
+    },
+    {
+      "name": "test_prepare_goop_reserved_test_v1.py",
+      "returncode": 0,
+      "summary": "17 passed in 8.04s"
+    },
+    {
+      "name": "test_profile_goop3d_first_record_cpu_graph.py",
+      "returncode": 0,
+      "summary": "6 passed in 1.18s"
+    },
+    {
+      "name": "test_repackage_designsafe_sand.py",
+      "returncode": 0,
+      "summary": "27 passed, 36 subtests passed in 0.35s"
+    },
+    {
+      "name": "test_sand_graph_support_policy.py",
+      "returncode": 0,
+      "summary": "8 passed, 5 warnings in 3.24s"
+    },
+    {
+      "name": "test_summarize_goop_graph_support_quota_v2.py",
+      "returncode": 0,
+      "summary": "21 passed in 6.55s"
+    },
+    {
+      "name": "test_supervise_graph_support_evaluation_quota_v2.py",
+      "returncode": 0,
+      "summary": "27 passed in 0.43s"
+    },
+    {
+      "name": "test_supervise_graph_support_science_quota_v2.py",
+      "returncode": 0,
+      "summary": "56 passed in 2.46s"
+    },
+    {
+      "name": "test_supervise_sand_graph_support_science.py",
+      "returncode": 0,
+      "summary": "30 passed in 1.30s"
+    },
+    {
+      "name": "test_train_goop3d_graph_support_cuda_v1.py",
+      "returncode": 0,
+      "summary": "51 passed, 65 warnings in 2.60s"
+    },
+    {
+      "name": "test_train_goop_graph_support_cuda.py",
+      "returncode": 0,
+      "summary": "21 passed, 65 warnings in 3.11s"
+    },
+    {
+      "name": "test_train_sand_cuda.py",
+      "returncode": 0,
+      "summary": "45 passed in 1.68s"
+    },
+    {
+      "name": "test_train_sand_cuda_deterministic.py",
+      "returncode": 0,
+      "summary": "7 passed in 0.09s"
+    },
+    {
+      "name": "test_train_sand_graph_support_cuda.py",
+      "returncode": 0,
+      "summary": "16 passed, 65 warnings in 3.09s"
+    },
+    {
+      "name": "test_validate_cuda_execution.py",
+      "returncode": 0,
+      "summary": "10 passed in 0.05s"
+    },
+    {
+      "name": "test_validate_goop_graph_support_cuda.py",
+      "returncode": 0,
+      "summary": "9 passed, 5 warnings in 2.72s"
+    },
+    {
+      "name": "test_validate_sand_cuda.py",
+      "returncode": 0,
+      "summary": "18 passed in 1.92s"
+    },
+    {
+      "name": "test_validate_sand_graph_support_cuda.py",
+      "returncode": 0,
+      "summary": "20 passed, 93 warnings in 2.99s"
+    }
+  ],
+  "raw_verification_log": "verification_history/packaged_verification_raw.json",
+  "raw_verification_sha256": "25e450669b6b322b1cb298265c4ef774968cac3b78e9b1f11bc272e3cd2bbb03",
+  "limitations": [
+    "Synthetic CPU replay does not rerun real CUDA measurements, inspect omitted checkpoint tensors, or recompute actual numeric source artifacts.",
+    "No mutable scientific training metrics, unreviewed optimization, numeric datasets/checkpoints or credentials included.",
+    "Earlier preparation/test packaging failures remain documented and exact available logs retained."
+  ]
+}

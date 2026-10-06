@@ -1,0 +1,90 @@
+{
+  "schema": "adaptgns_goop_graph_support_capacity_release_v1",
+  "status": "admitted_for_timing",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "files_sha256": {
+    "trainer": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+    "lifecycle_source": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "train_manifest": "5ef43daf9bac961a69bd460a539891624b79c8a13f80ca851e85802197982256",
+    "admission": "c2a12ef0c55b47f4c9493027450f8b51f52dbbd6043915bb09c1648b6cb9edeb",
+    "structural_report": "6d68af35c5685b4d248c523b8dd05884ee569e100bce06b12b8eee4d1c0a1cdd",
+    "acquisition_report": "9e4b106324b1e7c5add4404565eca888eaa0ebd3c233622308c113e88c5e6a8d",
+    "context_semantics": "c81ae2f1565e61542bcc406c4a9d71b67135620857ad62292eaef0e29b407de9",
+    "auxiliary_report": "3278055e119c482c5620ff66b2c4e4e6c09361240155cc77a7ad98dbaa13d8d1",
+    "protocol": "176ab2d865c3a88f05812f07ed58f01ebd2446a177f6f509bffca75b0de6a10b",
+    "python": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "supervisor": "7b75518697fe9f496dc1ea8e6a64406fffdb3b7022471b36548038c1202c2d03",
+    "numerical_gate": "21ae0d1c21600d56b6a98ef9a8be747cab97e464d9bcf2eac4c44d25782c5646",
+    "context_source_README_md": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+    "context_source_reading_utils_py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+    "context_source_train_py": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+    "context_source_learned_simulator_py": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9"
+  },
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "B",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "B",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "host_role": "B",
+  "cohort_id": "goop_graph_capacity_20261006_v1",
+  "review_rationale": "Independent capacity source review passed; all Goop same-CUDA numerical checks passed; exact source/data/context pins verified. Six fresh512update probes on fixedA4/B2 schedule; no checkpointpromotion. Goop3D acquisition may share B CPU/storage and is recorded as infrastructure contention, never efficacy. Numerical/admission/wholecohort limits preserved.",
+  "gpu_uuids": [
+    "GPU-37c3dfdb-9027-e3cb-c899-b0a12f130b52",
+    "GPU-3b22d55b-8f80-cc77-5a6f-f9181f3286c4",
+    "GPU-89b83aa8-f20b-dd13-811c-5f54165eb865",
+    "GPU-28475341-1f76-1575-5aaf-bb8616bc1052"
+  ],
+  "clock_error_bound_seconds": 2.230087995529175,
+  "process_identity_checked_utc": "2026-10-06T04:38:37.101295+00:00",
+  "root_inventory_sha256": "cf6f830ce657e41146097305d5291ce25fe559b9f85e103348fb7bddf67227b5"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "goop3d_train_valid_acquisition_root_release_v1",
+  "issued_utc": "2026-10-06T04:37:43.822540+00:00",
+  "dataset": "Goop-3D",
+  "host": "aquamarine-toad-75.coder",
+  "source_sha256": "f6f2aa1792de45c99536e185482caee9550b648a0eed2d3b21ec9a24bff9ddb5",
+  "converter_sha256": "49dece28bf4494591379b8a667e5366b5bdf1609c4dc0757ceb31664c28f9b74",
+  "independent_review_sha256": "fbb090e880b79d3055032ae8cfd668d064cbb17217fd799de7752dccba28850b",
+  "free_disk_observed": "988GiB available onroot at04:37UTC",
+  "scope": "Only pinned train/valid/metadata acquisition; then separate structuralconversion after completedreceiptverification. No test orscientifictraining. Originalfirstrecordremainsseparate."
+}

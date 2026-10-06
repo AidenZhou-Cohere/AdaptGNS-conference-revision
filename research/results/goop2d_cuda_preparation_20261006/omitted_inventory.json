@@ -1,0 +1,183 @@
+{
+  "files": {
+    "goop_A_postcopy_inventory_v1.json": {
+      "bytes": 2787,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "9a9341027034fe7eee1444e46cdac0912cab37b161e8ca34cd05354eeee690f9"
+    },
+    "goop_batch_completed_and_cuda_inventory_v1.txt": {
+      "bytes": 0,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "goop_capacity_A_live_snapshot_v1.json": {
+      "bytes": 5910,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "0a60e13768d4df46da8bdfe362d0e73cf328828e8c8c4fa684a8b6ae74bea722"
+    },
+    "goop_capacity_A_prelaunch_inventory_v1.json": {
+      "bytes": 2892,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "6dae4202227932c5126c9ab7ec3966b172e270101f49a271addcfc39adf29cbf"
+    },
+    "goop_capacity_B_live_snapshot_v1.json": {
+      "bytes": 4048,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "0b8c77a92f9a7bb1891b20d8e4a79ad8f5868bd0a4e77c83d4e8eecc48de01f3"
+    },
+    "goop_capacity_B_prelaunch_inventory_v1.json": {
+      "bytes": 3077,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "cf6f830ce657e41146097305d5291ce25fe559b9f85e103348fb7bddf67227b5"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/base_seed0/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "d6603e01b56748cf0b1882bd96f659dd6a42a3ee6d3f83ea4bf50ed279a41edd"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/base_seed0/checkpoint-000000512.pt": {
+      "bytes": 20271563,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "3762ceede26cae5fc4d7b371a9e4daa0e52b122686bff64efd2bef654cfb1afb"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/base_seed1/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "b1d385474c79897e3e322c5f7dd3821b1085f1a5b7a6ffeb698ab364ee7d0f93"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/base_seed1/checkpoint-000000512.pt": {
+      "bytes": 20271563,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "a7bf487f800e144489ce8576bab4b0e36e215c5217fb57becf5d3d5089a7c3cb"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/mix_seed0/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "65ab6e74c82f7b6b19ef759ea0ff396a9c3c13a2c7c86ef0d06cf67ec2dbc3ef"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/mix_seed0/checkpoint-000000512.pt": {
+      "bytes": 20271947,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "29ab5284709d81e001ce9839202cd50914c9303e013d8283c59433e7f19c04d9"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/mix_seed1/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "21f74b1061e8c26bc64cf8aba2e3a0cefe54ab608dc54a56e6de74cc236ef2dc"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_A_20261006_v1/jobs/mix_seed1/checkpoint-000000512.pt": {
+      "bytes": 20272011,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "454cfa39cc39f38ca12034392afd29876dac01fa649b429db1af8e385589a6fb"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_B_20261006_v1/jobs/base_seed2/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "e1fb4b7bc96a2eb7c62bc6f365f54c2722ecd5523d6adcb1ad43b7f18d1928df"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_B_20261006_v1/jobs/base_seed2/checkpoint-000000512.pt": {
+      "bytes": 20271563,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "d58608a03475a68f762f0c0e5cc2667479adb1c023623fcc2c568d7cb9eeeb09"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_B_20261006_v1/jobs/mix_seed2/checkpoint-000000000.pt": {
+      "bytes": 6600441,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "50a38ca768304e96bc123fc1e601c51cd881f72059eebe42c2f64dba7eca67f3"
+    },
+    "goop_capacity_raw_v1/goop_graph_capacity_B_20261006_v1/jobs/mix_seed2/checkpoint-000000512.pt": {
+      "bytes": 20272011,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "3fad39fd4ff0d85fb8a8b014ca4b7751d74da87a5827cd4fe920fc107692f7f6"
+    },
+    "goop_capacity_raw_v1/host_A.tar": {
+      "bytes": 122234880,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "16ff624cd14d47898269f05693d6521f1af929587bdbfb6d142fc19ab1de6c50"
+    },
+    "goop_capacity_raw_v1/host_B.tar": {
+      "bytes": 62453760,
+      "reason": "numeric checkpoint/dataset or transport archive omitted; hash/size retained",
+      "sha256": "afcfb7386c234cbc67aee20ad7e479132d29b13663ceb058a4555a52df3a7ceb"
+    },
+    "goop_cuda_prevalidation_inventory_v1.txt": {
+      "bytes": 205,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "6e2c80f374a626c4bb68add5f3d06feeadc01df010385a208922832e1f2039be"
+    },
+    "goop_numeric_B_to_A_v1.stderr.log": {
+      "bytes": 0,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "goop_numeric_B_to_A_v1.stdout.log": {
+      "bytes": 0,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "goop_resume_execution_commands_v1.md": {
+      "bytes": 8083,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "00874292710e1000f0ee71198ee8a3ed662ee0852614dcdb5eb421b92cfc2bf3"
+    },
+    "goop_runtime_stage_v1.tar.gz": {
+      "bytes": 152971,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "727ed0e4bd8f6a684480daac7acc351a2387acc82cd863dc0d719b2564a30332"
+    },
+    "goop_runtime_stage_v1_manifest.json": {
+      "bytes": 3494,
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published",
+      "sha256": "db9b485f0ce4210b289bd3b27d39d3729eb40ae82d846506721b08a5ead5a113"
+    },
+    "goop_science_A_clock_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_live_0456_attempt2_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_live_0456_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_live_snapshot_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_prelaunch_inventory_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_process_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_v2.stderr.log": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_A_v2.stdout.log": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_clock_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_live_0456_attempt2_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_live_0456_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_live_snapshot_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_prelaunch_inventory_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_process_v2.json": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_v2.stderr.log": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    },
+    "goop_science_B_v2.stdout.log": {
+      "reason": "operational transport/private process inventory or mutable scientific progress; no final scientific metrics published"
+    }
+  },
+  "scope": "locally available omitted files; original remote numeric artifacts additionally bound by included descriptor/manifests/reports"
+}

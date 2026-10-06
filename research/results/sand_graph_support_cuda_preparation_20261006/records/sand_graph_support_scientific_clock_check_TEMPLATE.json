@@ -1,0 +1,9 @@
+{
+  "schema": "adaptgns_sand_scientific_clock_check_v1",
+  "template_only": true,
+  "issued_by": null,
+  "checked_utc": null,
+  "host": null,
+  "root_host_samples_reviewed": false,
+  "clock_error_bound_seconds": null
+}

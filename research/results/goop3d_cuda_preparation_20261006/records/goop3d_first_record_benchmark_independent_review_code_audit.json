@@ -1,0 +1,45 @@
+{
+  "schema": "goop3d_first_record_benchmark_independent_review_code_audit_v1",
+  "reviewer": "code_audit",
+  "checked_utc": "2026-10-06T04:43:55.839154+00:00",
+  "status": "no_blocking_source_finding_for_fixed_state_capacity_scope",
+  "execution_admitted": false,
+  "source_sha256": {
+    "goop3d_graph_support.py": "7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f",
+    "benchmark_goop3d_first_record.py": "ece79713bb3f029daad415039f633d412ca3093122e343fd9b31629f81917c55",
+    "test_benchmark_goop3d_first_record.py": "86727ccbd4a4c9c5f21c33595ab8a26775c2f63b9aebf8eba266309631869f80"
+  },
+  "tests": {
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider test_benchmark_goop3d_first_record.py",
+    "passed": 14,
+    "subtests_passed": 4,
+    "failed": 0,
+    "seconds": 1.9,
+    "scope": "Synthetic CPU points/tensors and a 16-particle synthetic model test only; no official arrays, checkpoint deserialization, CUDA or remote process launch by reviewer."
+  },
+  "checks": [
+    "Pinned unchanged five-file native core and separate graph-adapter bytes checked before importing the model helpers.",
+    "Default benchmark invocation describes only; actual execution requires explicit root-selected inputs, GPU UUID and fresh output. Root must supply the documented600-second outer process timeout and cleanup.",
+    "The pinned inspection report binds one first training record, N9271/T301/D3, metadata and official parser; arrays are byte/shape/dtype checked and rehashed at completion. No whole-source or whole-dataset checksum admission is claimed.",
+    "D3 radius.025, node37/edge4 feature dimensions, three-dimensional normalization and six-frame target6 construction follow the unchanged native builder.",
+    "Native directed capped graph/order is a mandatory prefix. Optional annulus pairs are canonical, sampled with independent NumPy RNG, appended symmetrically with exact floor(.25*annulus_count) budget when forcedexpanded25, and cannot cross batch examples.",
+    "The2Mexpanded-radius candidate-pair check precedes native neighbor materialization.5Mbatch directed-edge guard precedes encoder/processor execution on supplied graph.",
+    "Noise uses CPU-private twice-integrated velocity increments and kinematic type3 masking; the fixed batch/noise are reused in both cases and all updates.",
+    "D3 Gaussian NLL uses squared vector residual/(2q)+1.5logq; vector risk is3q. Faithful mean gradient equals MSE gradient with detached variance inputs. Analytical tests and native-forward parity pass.",
+    "Two fresh models receive the same hashed initialization and empty Adam. Each case has one warmup and three measured updates, eight total. Timing includes transfer/graph/forward/backward/Adam/checks/diagnostics/synchronization and excludes initialization/report IO as explicitly stated.",
+    "Finite forward, loss, gradient and parameter checks guard the benchmark update. Peak CUDA memory and per-update graph evidence are retained; no checkpoint is written or promoted."
+  ],
+  "nonblocking_findings": [
+    {
+      "kind": "documentation",
+      "location": "goop3d_graph_support.py:ordered_edges docstring",
+      "detail": "Exactly one self edge wording is too strong after native capping: source-ID tie ordering can exclude self for coincident particles with degree>128. Actual implementation and130-coincident-particle test correctly preserve native cap/order. Interpret it as one self candidate before capping; no change to numeric behavior requested."
+    }
+  ],
+  "limits": [
+    "This is one fixed first-record state duplicated into a batch, with fixed noise and only three measured updates per case; it cannot estimate full-cohort runtime or scientific efficacy.",
+    "Forcedexpanded25 is not the probabilistic mix training distribution. If the recorded optional budget is zero, timing is not evidence of expanded-graph throughput.",
+    "No GPU execution, actual first-record array validation, memory feasibility or600-second completion guarantee is established by this source review.",
+    "The benchmark checks finite parameters after Adam but is not the full scientific endpoint/optimizer audit. No scientific model or dataset admission follows automatically."
+  ]
+}

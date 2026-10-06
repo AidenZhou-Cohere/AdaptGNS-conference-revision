@@ -1,0 +1,92 @@
+{
+  "conclusion": "Stored Goop step_context is unused by the released Goop parser/model input contract because the exact official metadata lacks context_mean. This justification is independent of NaN or constancy observations. Preserve auxiliary bytes and hashes, and explicitly declare their omission under this source contract.",
+  "evidence": [
+    {
+      "fact": "Only context_mean in metadata selects a feature description containing step_context; absent context_mean selects position only, even if the serialized record stores an auxiliary.",
+      "file": "reading_utils.py",
+      "lines": [
+        22,
+        29,
+        72,
+        79,
+        95,
+        99
+      ]
+    },
+    {
+      "fact": "Training and rollout propagate step_context only if the parser returned it; features.get yields None otherwise. Context normalization is created only if metadata supplies context_mean.",
+      "file": "train.py",
+      "lines": [
+        121,
+        126,
+        142,
+        143,
+        223,
+        236,
+        288,
+        291,
+        334,
+        340
+      ]
+    },
+    {
+      "fact": "Context is normalized and attached to GraphsTuple.globals only when global_context is not None.",
+      "file": "learned_simulator.py",
+      "lines": [
+        170,
+        181
+      ]
+    }
+  ],
+  "metadata": {
+    "context_mean_present": false,
+    "context_std_present": false,
+    "keys": [
+      "acc_mean",
+      "acc_std",
+      "bounds",
+      "default_connectivity_radius",
+      "dim",
+      "dt",
+      "sequence_length",
+      "vel_mean",
+      "vel_std"
+    ],
+    "path": "work/deadline_research_20261005/extension_feasibility_20261006/Goop_metadata_json.json",
+    "sha256": "565d6e13be91be6a6b0fbc31a9aa19ed70a5505228411d0928288fcf874ca3dd"
+  },
+  "not_claimed": [
+    "No located source prose labels the stored Goop NaN values a placeholder.",
+    "This review does not certify full auxiliary values/hash census, real numerical admission, backend parity, compute fit or scientific results."
+  ],
+  "official_commit": "f5de0ede8430809180254ee957abf36ed62579ef",
+  "official_repository": "https://github.com/google-deepmind/deepmind-research",
+  "reviewed_utc": "2026-10-06T02:40:06.871174+00:00",
+  "reviewer": "conference_critique_methods",
+  "rollout_scope_note": "The released TensorFlow prepare_rollout_inputs removes the final frame from its position input and rollout uses sequence_length minus six (394 predictions for Goop). The proposed current study explicitly uses all 401 stored frames: six observed plus395 forecasts. Describe this as the declared complete stored-trajectory horizon, not exact reproduction of the released TF evaluation horizon.",
+  "root_admission_required": true,
+  "schema": "goop_official_context_semantics_review_v1",
+  "sources": {
+    "README.md": {
+      "path": "work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/README.md",
+      "sha256": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+      "url": "https://raw.githubusercontent.com/google-deepmind/deepmind-research/f5de0ede8430809180254ee957abf36ed62579ef/learning_to_simulate/README.md"
+    },
+    "learned_simulator.py": {
+      "path": "work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/learned_simulator.py",
+      "sha256": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+      "url": "https://raw.githubusercontent.com/google-deepmind/deepmind-research/f5de0ede8430809180254ee957abf36ed62579ef/learning_to_simulate/learned_simulator.py"
+    },
+    "reading_utils.py": {
+      "path": "work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/reading_utils.py",
+      "sha256": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+      "url": "https://raw.githubusercontent.com/google-deepmind/deepmind-research/f5de0ede8430809180254ee957abf36ed62579ef/learning_to_simulate/reading_utils.py"
+    },
+    "train.py": {
+      "path": "work/deadline_research_20261005/cuda_preparation/goop_context_semantics_sources/train.py",
+      "sha256": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+      "url": "https://raw.githubusercontent.com/google-deepmind/deepmind-research/f5de0ede8430809180254ee957abf36ed62579ef/learning_to_simulate/train.py"
+    }
+  },
+  "status": "source_supported_omission_pending_root_auxiliary_census"
+}

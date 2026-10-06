@@ -1,0 +1,83 @@
+{
+  "schema": "adaptgns_sand_graph_support_capacity_release_v1",
+  "status": "admitted_for_timing",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "cohort_id": "sand_graph_support_capacity_20261006_v1",
+  "host_role": "A",
+  "files_sha256": {
+    "trainer": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "lifecycle_source": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "train_manifest": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+    "admission": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "structural_report": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+    "protocol": "7feb7a60d2b63cd29191bd1ad7e95fb12ccc6dd1d8d3229d186c28384971b23b",
+    "numerical_gate": "10dbde21d81d166d9135713aef47e2e5f2e16ab046f69a12326e106b899588a2",
+    "python": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "supervisor": "ca9b5ed45455b575179464d35c42d0d03e87edb7508f4deea2451f9f3fb50878"
+  },
+  "gpu_uuids": [
+    "GPU-73031588-bcc6-e0d0-3875-53e263032823",
+    "GPU-fc3e1a56-b41d-29df-8051-04b23e5920a1",
+    "GPU-fe932609-0f73-00b8-a487-d4d4479a368b",
+    "GPU-3841ca1a-09eb-214f-e73a-4f9e2c0391d7"
+  ],
+  "clock_error_bound_seconds": 2.1,
+  "process_identity_checked_utc": "2026-10-06T02:39:23.644928+00:00",
+  "review_rationale": "Root-reviewed exact new trainer and same-CUDA gate; all native GPU devices idle, no relevant process; second host all4 tiny smokes, all58 package versions and2060 Sand array hashes verified. Six concurrent512-update probes only; no checkpoint promotion. Old CPU/CUDA failures retained.",
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "B",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "B",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "inventory_sha256": "d1db65d65bcf3b5ffb3f722b0e5ba6c101646d19f0a76851bcec5a4929e8ee90"
+}

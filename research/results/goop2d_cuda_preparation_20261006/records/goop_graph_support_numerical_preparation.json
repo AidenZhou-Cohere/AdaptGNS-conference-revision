@@ -1,0 +1,18 @@
+{
+  "schema": "goop_graph_support_numerical_preparation_v1",
+  "status": "prepared_pending_independent_review_and_root_release",
+  "scientific_training_admitted": false,
+  "actual_data_models_gpus_used": false,
+  "tests": {
+    "passed": 9,
+    "seconds": 2.04,
+    "scope": "CPU/synthetic/scalar/mock only"
+  },
+  "artifacts": {
+    "validate_goop_graph_support_cuda.py": "e5776a656df4932a55afcfb5fe0e5b93d0b8ee6f62a62e116452f1990f1940c9",
+    "test_validate_goop_graph_support_cuda.py": "9d11d330a342e937104453003d334f9bafe0402478d2df4c9fecce68ca04db85",
+    "goop_graph_support_numerical_protocol_v1.md": "5991f4062cd66452c3eafc3696da1f4c0b6750d590462cd8b8bfb4738816e92c",
+    "goop_training_batch_selection_release.template.json": "fb4889119b027e6706a06ce261ff765c4a96a356b23db3e4056ed6f58b6b8fd3",
+    "goop_graph_support_numerical_release.template.json": "85481fb22f1a80843a748a5faf4c82ccc2e6bb257fa404cbefeb651cd61e103f"
+  }
+}

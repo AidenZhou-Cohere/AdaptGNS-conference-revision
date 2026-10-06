@@ -1,0 +1,20 @@
+{
+  "schema": "adaptgns_sand_graph_support_cuda_validation_preparation_review_v1",
+  "status": "ready_for_root_bounded_cuda_execution",
+  "scientific_training_admitted": false,
+  "actual_model_or_data_or_cuda_executed_during_preparation": false,
+  "source_sha256": "365265ed25d60e1ebe50da89ec191b1a75a4773d2c75037952a756db3ec40e84",
+  "tests_sha256": "7eb5a4716f85df4ae7c55ee51aba89e825ea807069d8846991d239d24002deb8",
+  "notes_sha256": "5923e0fae20563f48ce69b01e180c444930a362e6618c393f64ef039b9a92ffa",
+  "trainer_sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+  "independent_review_file": "validate_sand_graph_support_cuda_independent_review_statistics.json",
+  "independent_review_sha256": "be5c7a3af4e18f18cb5ead11b97c1c96823febad6f4d8d87d56e9ee2c99cd888",
+  "author_tests": {"passed": 20, "elapsed_seconds": 2.37},
+  "independent_tests": {"passed": 20, "elapsed_seconds": 2.16},
+  "seed": 0,
+  "objective": "faithful",
+  "max_optimizer_updates": 15,
+  "comparison_tolerance": "exact",
+  "prior_cpu_cuda_validation_status": "validation_failed",
+  "root_next_action": "Copy pinned adjacent helpers, retain existing three saved Sand batch bytes, execute on one deterministic CUDA device, inspect report and raw artifacts before any distinct timing admission."
+}

@@ -1,0 +1,49 @@
+{
+  "schema": "graph_support_science_quota_v2_independent_review_statistics",
+  "reviewer": "conference_critique_statistics",
+  "checked_utc": "2026-10-06T04:42:29.922743+00:00",
+  "status": "no_blocking_source_finding_in_reviewed_scope",
+  "scientific_execution_admitted": false,
+  "source_sha256": {
+    "supervise_graph_support_science_quota_v2.py": "60b76b2cd6d658b02d9dc7ab957b4afa4a3db151a12cd852a74c806cdae0dc71",
+    "test_supervise_graph_support_science_quota_v2.py": "affdeea9c2a84aa39f8c0cda0ba1a9157b0c1f65717b49aa8b04e73ade7eae5b"
+  },
+  "evaluation_quota_source_sha256": "0bd714b0bece0c349a9b18eae14221f6602ffc61ea736bad4fa3b5dc087157d9",
+  "scientific_protocol": {
+    "file": "goop_graph_support_100k_protocol_v2.md",
+    "sha256": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851"
+  },
+  "tests": {
+    "command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_supervise_graph_support_science_quota_v2.py",
+    "passed": 56,
+    "failed": 0,
+    "seconds": 1.04,
+    "scope": "Scalar/mock source and release checks plus tiny synthetic CPU tensors; no actual model, source arrays, GPU or process launch."
+  },
+  "checks": [
+    "Description-only default imports no scientific libraries and dispatches no helper/model/process. Explicit Linux execution required.",
+    "Both dataset modes bind exact frozen capacity and trainer source plus original scientific v1 and owned-process lifecycle hashes; no frozen source file changed. Private original run_host and initialization pairing bodies remain in use with dataset-correct C/B/T and verify_job/fixed_command callbacks.",
+    "Goop routes to Goop manifest, acquisition, context semantics, auxiliary census, four context source files and payload/config fields. Frame histories allow6..400; T401/type7/395000 eligible histories and official source/metadata/readers are checked. Sand paths/schema are not accepted as Goop.",
+    "Fixed fresh100000 training, base/mix by three seeds, A4/B2 mapping, batch2/threads2, checkpoint0+10k cadence and scalar log1/every100. No resume, capacity parent, stop-after or seed/policy reduction enters commands.",
+    "Training history checks all100k graph/schedule rows and exact sample/particle fields; logged LR recomputation allows one float64 ULP while paired saved schedules remain exact.",
+    "Checkpoint validator preserves exact architecture, finite float32 model/Adam values, nonnegative second moments, all optimizer100k steps, initial empty Adam and CPU/CUDA RNG bytes. Initial/final simulator configuration remains exact, without recomputing CUDA normalizers on CPU.",
+    "Six-job capacity q6/r6 remains actual Goop/Sand measured input as appropriate. Separate allocation adds11760s evaluation+cleanup,2700s cohort and3600s analysis plus justified ledger reserve. Original v1 forecast object remains unchanged and can retain null complete-fit fields.",
+    "Allocation requires fixed_execution_allocation_not_empirical_full_horizon_forecast, explicit no-completion-promise/no-v1-reinterpretation, and exact reviewed evaluation_quota_supervisor_sha256. Wrong evaluator quota hash fails in both datasets.",
+    "Root source/data/protocol/forecast/allocation/process/clock/Python hashes, same-host idle process/GPU evidence, clock error<=5 and freshness<=300s checked before launch and again after setup; copied/live source identities reverified before/after original loop.",
+    "Latest start and training stop preserve full planned remaining allocation and bounded owned cleanup. Original no-retry/exclusive-GPU loop, cheap reaping then heavy endpoint checks and post-child pairing audit retained.",
+    "Final worker success remains host-only; complete six-model cohort and reserved test release still require root cross-host review. All failed/partial attempts remain in owned fresh output."
+  ],
+  "review_adjustment": "Added exact reviewed evaluation quota wrapper hash to the allocation contract, satisfying the science protocol binding without another execution gate.",
+  "reserve_accounting": "2700s cohort/preflight is charged once. Evaluation queue outer reserve covers still-needed outside work; normally3600s analysis after cohort/preflight is complete, plus any unfinished outside work. Do not double-reserve already-spent cohort work or omit work still pending.",
+  "ledger_1800_seconds_assessment": {
+    "status": "no_structural_objection_to_root_proposed_engineering_allowance",
+    "basis": "Same 2D128-wide10-block model/Adam shapes,11publications,100k two-example graph records and A4/B2 filesystems as measured synthetic path. Goop context/provenance is configuration-level and frame-ID width remains comparable.1800/(1.35*11)=121.21s perpublication versus6.8s measured synthetic path plus earlier60s live-predicate allowance.",
+    "limitations": "Transferred allowance, not measured Goop100k publication runtime, probabilistic guarantee or worst-case bound. Final source/context checks must remain explicitly charged and actual overruns retained."
+  },
+  "limits": [
+    "This source review does not review/issue an actual scientific release or substitute for complete actual Goop numerical/capacity/initial-pairing evidence.",
+    "Raw capacity/checkpoint hashes and host overlap must be independently verified by root; source status predicates alone do not manufacture that evidence.",
+    "Quota allocation guarantees neither model convergence nor complete evaluation; missing/failed required outcomes leave complete-sample scientific contrasts null.",
+    "The root must execute the reviewed evaluation queue, perform binary/array/final paired audits and preserve all adverse results; no conference-readiness claim follows."
+  ]
+}

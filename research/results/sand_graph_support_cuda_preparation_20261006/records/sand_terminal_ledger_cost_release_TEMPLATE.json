@@ -1,0 +1,28 @@
+{
+  "schema": "adaptgns_sand_terminal_cost_release_v1",
+  "status": "NOT_ADMITTED_TEMPLATE",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "cohort_id": "ROOT_SHARED_COHORT_ID",
+  "expected_host_workers": "ROOT_SET_4_OR_2",
+  "cuda_index": "ROOT_ASSIGNED_CUDA_INDEX",
+  "gpu_uuid": "ROOT_EXACT_ASSIGNED_GPU_UUID",
+  "repetitions": 3,
+  "synthetic_records": 100000,
+  "process_identity_checked_utc": "ROOT_FRESH_CHECK_UTC",
+  "files_sha256": {
+    "probe_protocol": "ROOT_FILL_SHA256",
+    "probe_status": "ROOT_FILL_SHA256",
+    "probe_history": "ROOT_FILL_SHA256",
+    "probe_latest": "ROOT_FILL_SHA256",
+    "checkpoint": "ROOT_FILL_SHA256",
+    "trainer": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "protocol": "ROOT_FILL_SHA256",
+    "supervisor": "ROOT_FILL_SHA256",
+    "python": "ROOT_FILL_SHA256"
+  },
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  }
+}

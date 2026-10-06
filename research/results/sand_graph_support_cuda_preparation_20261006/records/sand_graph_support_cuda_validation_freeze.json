@@ -1,0 +1,24 @@
+{
+  "schema": "sand_graph_support_cuda_validation_freeze_v1",
+  "frozen_utc": "2026-10-06T02:28:20.757991+00:00",
+  "files_sha256": {
+    "validate_sand_graph_support_cuda.py": "365265ed25d60e1ebe50da89ec191b1a75a4773d2c75037952a756db3ec40e84",
+    "train_sand_graph_support_cuda.py": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "train_sand_cuda_deterministic.py": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+    "validate_sand_cuda.py": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c",
+    "validate_cuda_execution.py": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68",
+    "diagnose_sand_relu_kinks.py": "dc1748b3e3f9ea32e28d16a8906c1cd0eaa4fff3a872741153e2244595f8555e",
+    "validate_sand_graph_support_cuda_independent_review_statistics.json": "be5c7a3af4e18f18cb5ead11b97c1c96823febad6f4d8d87d56e9ee2c99cd888",
+    "sand_actual_data_validation_v2_report.json": "1d46bd0044859a7f6f969275cdfaf91c57f4935d786453074fcecd2ec6e73245"
+  },
+  "scientific_training_admitted": false,
+  "seed": 0,
+  "cases": [
+    "small",
+    "median",
+    "large"
+  ],
+  "scope": "Same deterministic CUDA old-native/new-base bytewise semantics, ordinary mixed-graph semantics, both-arm bounded checkpoint/Adam/RNG replay; at most15optimizer updates; no cross-backend threshold change.",
+  "prior_cpu_cuda_validation_status": "validation_failed",
+  "review": "Root source review and independent20CPU/mock tests; code/trainer/files preserved separately."
+}

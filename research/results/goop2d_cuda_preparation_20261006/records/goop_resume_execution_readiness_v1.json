@@ -1,0 +1,246 @@
+{
+  "schema": "goop_resume_execution_readiness_v1",
+  "status": "all_local_source_review_and_contract_hashes_verified",
+  "scientific_training_admitted": false,
+  "actual_data_arrays_or_gpu_execution_performed": false,
+  "current_remote_process_state_verified_by_this_agent": false,
+  "checks": {
+    "train_goop_graph_support_cuda.py": {
+      "expected": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+      "actual": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+      "matches": true
+    },
+    "train_sand_graph_support_cuda.py": {
+      "expected": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+      "actual": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+      "matches": true
+    },
+    "validate_sand_graph_support_cuda.py": {
+      "expected": "365265ed25d60e1ebe50da89ec191b1a75a4773d2c75037952a756db3ec40e84",
+      "actual": "365265ed25d60e1ebe50da89ec191b1a75a4773d2c75037952a756db3ec40e84",
+      "matches": true
+    },
+    "validate_cuda_execution.py": {
+      "expected": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68",
+      "actual": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68",
+      "matches": true
+    },
+    "validate_sand_cuda.py": {
+      "expected": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c",
+      "actual": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c",
+      "matches": true
+    },
+    "goop_training_admission_v1.json": {
+      "expected": "c2a12ef0c55b47f4c9493027450f8b51f52dbbd6043915bb09c1648b6cb9edeb",
+      "actual": "c2a12ef0c55b47f4c9493027450f8b51f52dbbd6043915bb09c1648b6cb9edeb",
+      "matches": true
+    },
+    "goop_train_v1.json": {
+      "expected": "5ef43daf9bac961a69bd460a539891624b79c8a13f80ca851e85802197982256",
+      "actual": "5ef43daf9bac961a69bd460a539891624b79c8a13f80ca851e85802197982256",
+      "matches": true
+    },
+    "goop_structural_v1_report.json": {
+      "expected": "6d68af35c5685b4d248c523b8dd05884ee569e100bce06b12b8eee4d1c0a1cdd",
+      "actual": "6d68af35c5685b4d248c523b8dd05884ee569e100bce06b12b8eee4d1c0a1cdd",
+      "matches": true
+    },
+    "goop_acquisition_v1_report.json": {
+      "expected": "9e4b106324b1e7c5add4404565eca888eaa0ebd3c233622308c113e88c5e6a8d",
+      "actual": "9e4b106324b1e7c5add4404565eca888eaa0ebd3c233622308c113e88c5e6a8d",
+      "matches": true
+    },
+    "goop_auxiliary_v1_report.json": {
+      "expected": "3278055e119c482c5620ff66b2c4e4e6c09361240155cc77a7ad98dbaa13d8d1",
+      "actual": "3278055e119c482c5620ff66b2c4e4e6c09361240155cc77a7ad98dbaa13d8d1",
+      "matches": true
+    },
+    "goop_context_semantics_review.json": {
+      "expected": "c81ae2f1565e61542bcc406c4a9d71b67135620857ad62292eaef0e29b407de9",
+      "actual": "c81ae2f1565e61542bcc406c4a9d71b67135620857ad62292eaef0e29b407de9",
+      "matches": true
+    },
+    "goop_graph_support_numerical_protocol_v1.md": {
+      "expected": "5991f4062cd66452c3eafc3696da1f4c0b6750d590462cd8b8bfb4738816e92c",
+      "actual": "5991f4062cd66452c3eafc3696da1f4c0b6750d590462cd8b8bfb4738816e92c",
+      "matches": true
+    },
+    "validate_goop_graph_support_cuda.py": {
+      "expected": "e5776a656df4932a55afcfb5fe0e5b93d0b8ee6f62a62e116452f1990f1940c9",
+      "actual": "e5776a656df4932a55afcfb5fe0e5b93d0b8ee6f62a62e116452f1990f1940c9",
+      "matches": true
+    },
+    "validate_goop_graph_support_cuda_independent_review_statistics.json": {
+      "expected": "e4e253eade479881c3b7bc3d0ee386d11e475bc331824839146ccd7ee2c422f8",
+      "actual": "e4e253eade479881c3b7bc3d0ee386d11e475bc331824839146ccd7ee2c422f8",
+      "matches": true
+    },
+    "measure_goop_graph_support_capacity_independent_review_code_audit.json": {
+      "expected": "26c607b2f6d987cb7fc623cf6290ccf59742ef280d5cb66fba881462f0b01294",
+      "actual": "26c607b2f6d987cb7fc623cf6290ccf59742ef280d5cb66fba881462f0b01294",
+      "matches": true
+    },
+    "goop_context_semantics_sources/README.md": {
+      "expected": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+      "actual": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+      "matches": true
+    },
+    "goop_context_semantics_sources/reading_utils.py": {
+      "expected": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+      "actual": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+      "matches": true
+    },
+    "goop_context_semantics_sources/train.py": {
+      "expected": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+      "actual": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+      "matches": true
+    },
+    "goop_context_semantics_sources/learned_simulator.py": {
+      "expected": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+      "actual": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+      "matches": true
+    },
+    "repo/research/faithful_graph_support.py": {
+      "expected": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa",
+      "actual": "71c2b3740aab635665d28b37addbd0b89360cccb3136d275e54b864d3b2a7eaa",
+      "matches": true
+    },
+    "repo/research/graph_convention_bridge.py": {
+      "expected": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "actual": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "matches": true
+    },
+    "repo/research/full_rollout.py": {
+      "expected": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "actual": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "matches": true
+    },
+    "repo/research/full_same_state.py": {
+      "expected": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "actual": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "matches": true
+    },
+    "repo/research/budget_graph.py": {
+      "expected": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "actual": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "matches": true
+    },
+    "repo/research/full_training.py": {
+      "expected": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "actual": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/data_loader.py": {
+      "expected": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "actual": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/device_utils.py": {
+      "expected": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "actual": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/graph_network.py": {
+      "expected": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "actual": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/learned_simulator.py": {
+      "expected": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "actual": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/losses.py": {
+      "expected": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "actual": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "matches": true
+    },
+    "repo/adaptive-gns/gns/model_io.py": {
+      "expected": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "actual": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "matches": true
+    }
+  },
+  "schedule": [
+    {
+      "case": "small",
+      "trajectory_indices": [
+        238,
+        859
+      ],
+      "target_frames": [
+        6,
+        200
+      ],
+      "trajectory_ids": [
+        "train:000238",
+        "train:000859"
+      ],
+      "particle_counts": [
+        111,
+        114
+      ],
+      "dataset_indices": [
+        94010,
+        339499
+      ]
+    },
+    {
+      "case": "median",
+      "trajectory_indices": [
+        312,
+        261
+      ],
+      "target_frames": [
+        6,
+        200
+      ],
+      "trajectory_ids": [
+        "train:000312",
+        "train:000261"
+      ],
+      "particle_counts": [
+        1030,
+        1031
+      ],
+      "dataset_indices": [
+        123240,
+        103289
+      ]
+    },
+    {
+      "case": "large",
+      "trajectory_indices": [
+        957,
+        988
+      ],
+      "target_frames": [
+        6,
+        200
+      ],
+      "trajectory_ids": [
+        "train:000957",
+        "train:000988"
+      ],
+      "particle_counts": [
+        1964,
+        1970
+      ],
+      "dataset_indices": [
+        378015,
+        390454
+      ]
+    }
+  ],
+  "draft_selection_release": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_batch_selection_release_resume_v1.draft.json",
+    "sha256": "089468bbf196908e11bd988c9617585f23cb126d9232453a4e8d599313301a6c",
+    "status": "not_admitted"
+  },
+  "root_next": [
+    "Verify current second-VM identities/process state and target-directory absence.",
+    "Copy only missing pinned files; verify hashes on destination.",
+    "Issue concrete batch-selection release and execute prepare-batches.",
+    "Review completed three-batch report, obtain fresh GPU/process identity and issue bounded CUDA release."
+  ]
+}

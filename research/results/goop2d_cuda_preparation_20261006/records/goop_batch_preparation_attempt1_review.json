@@ -1,0 +1,10 @@
+{
+  "schema": "goop_batch_preparation_failed_attempt_v1",
+  "reviewed_utc": "2026-10-06T04:33:43.218444+00:00",
+  "status": "failed_before_output_or_data_access",
+  "exception": "FileNotFoundError: validate_sand_graph_support_cuda.py was not deployed on second VM",
+  "scientific_or_optimizer_updates": 0,
+  "correction": "Copy byte-identical pinned helper dependencies; preserve first stdout/stderr; use attempt2 logs and verify no output directory before execution",
+  "source_changed": false,
+  "selected_batches_changed": false
+}

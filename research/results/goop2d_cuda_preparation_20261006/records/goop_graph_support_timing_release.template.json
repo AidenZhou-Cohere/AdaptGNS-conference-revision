@@ -1,0 +1,25 @@
+{
+  "schema": "adaptgns_goop_graph_support_timing_release_v1",
+  "status": "NOT_ADMITTED_TEMPLATE",
+  "issued_by": null,
+  "scientific_training_admission": false,
+  "arm": null,
+  "seed": null,
+  "checkpoint_updates": 512,
+  "checkpoint_sha256": null,
+  "trainer_sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+  "evaluation_source_sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+  "data_contract_sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+  "protocol_sha256": null,
+  "training_protocol_sha256": null,
+  "training_admission_sha256": null,
+  "policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ],
+  "diagnostic_mode": null
+}

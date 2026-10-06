@@ -1,0 +1,174 @@
+{
+  "audit_goop3d_auxiliary_synthetic_tests.log": {
+    "bytes": 2321,
+    "sha256": "32c74c75bfdbd8be822dcaeccf497cd08aa2485a88b01a2f5a31d10bec010bee"
+  },
+  "audit_goop3d_auxiliary_synthetic_tests_attempt2.log": {
+    "bytes": 1112,
+    "sha256": "5268e7dd34e025a06866b8245c9cbdb6675523797b61a7a344254bb119b259dd"
+  },
+  "goop3d_acquisition_root_release_v1.json": {
+    "bytes": 714,
+    "sha256": "a7973b21c9622e6ffd74de02872166013c7adc70e2e7a920c611344eb9939089"
+  },
+  "goop3d_acquisition_v1.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_acquisition_v1.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_acquisition_v1_report.json": {
+    "bytes": 4936,
+    "sha256": "e1d651d3987e479f6927c3ab202b14ed6b84ccf4d8b5a5348960143e5bc5ba8d"
+  },
+  "goop3d_auxiliary_census_independent_review_code_audit.json": {
+    "bytes": 1944,
+    "sha256": "036bd02733a0b092559e26109887f051e61e086b5aa7935474dee9caeffe7399"
+  },
+  "goop3d_auxiliary_v1.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_auxiliary_v1.stdout.log": {
+    "bytes": 138,
+    "sha256": "6e15ab6e1233d03e298608acf09300375ce943e5e73e1cd9f524cc4fe11b8d54"
+  },
+  "goop3d_auxiliary_v1_report.json": {
+    "bytes": 972424,
+    "sha256": "9117a9efa6516ce037a53d277972229e89b52a62849c3921f98536e436e2f174"
+  },
+  "goop3d_context_semantics_review.json": {
+    "bytes": 4482,
+    "sha256": "5eb6818ae2699c57e62e80f63724248e8573e4536195eb471df0c647122fb1a5"
+  },
+  "goop3d_conversion_v1.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_conversion_v1.stdout.log": {
+    "bytes": 79,
+    "sha256": "19ba61980b0ee56a57ae1185dd2ff38b3c60c47120596e0c7f07a1bd648567cc"
+  },
+  "goop3d_cpu_graph_profile_independent_review_code_audit.json": {
+    "bytes": 2043,
+    "sha256": "e5b2f51d6dee9eab72cc4abc6769c37bfd2a35556c67506bb6bb7e73e64f3ca2"
+  },
+  "goop3d_cpu_graph_v1.stderr.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_cpu_graph_v1.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_cpu_graph_v1_report.json": {
+    "bytes": 25967,
+    "sha256": "e1ee532ce7d31a9a851736475a22c78a5801bbc1873140cd9880278aeee35bf5"
+  },
+  "goop3d_data_compatibility_root_review_v1.json": {
+    "bytes": 2390,
+    "sha256": "040630e9464e6ade3aab57ef33a28e8ba02e721ba04a5b8630d3d2e834545334"
+  },
+  "goop3d_first_record_benchmark_independent_review_code_audit.json": {
+    "bytes": 4244,
+    "sha256": "91fde3c5f667761a1f87f7f44b2c39a3483653ad6a40ad7c1f2694fdd5db541c"
+  },
+  "goop3d_first_record_benchmark_protocol_v1.md": {
+    "bytes": 6567,
+    "sha256": "13dd8cc14ea7277acf39dd1b6ecf35dc5ff57a1c388ced3b3978c2d2c7100afa"
+  },
+  "goop3d_first_record_benchmark_synthetic_tests_attempt1.log": {
+    "bytes": 12756,
+    "sha256": "f0f7cc198034532d4b6c89c91db8d8e1e1205b5ab873ce1be35efb889a23460a"
+  },
+  "goop3d_first_record_benchmark_v2_amendment.md": {
+    "bytes": 1514,
+    "sha256": "ab2dcf9a0327fb8c940486bf20716902318623b1a6a17b9aeab0cd49bb4d4bd6"
+  },
+  "goop3d_first_record_benchmark_v2_independent_review_code_audit.json": {
+    "bytes": 1845,
+    "sha256": "11201dd85e119a646bb81e47a6f6129d9bbbdaa08e1ed7f3e3b1226694e51abd"
+  },
+  "goop3d_first_record_benchmark_v2_synthetic_tests.log": {
+    "bytes": 13051,
+    "sha256": "fe2b71de72820daef22523f76e29e7fc5b6637a153ba0ee5252057297677b37a"
+  },
+  "goop3d_first_record_capacity_preparation_v1.json": {
+    "bytes": 2516,
+    "sha256": "46fa45c893c340a420b4965f4516f0425c267917cdd28932b4ed5583a5466eb1"
+  },
+  "goop3d_first_record_capacity_v1.stderr.log": {
+    "bytes": 1662,
+    "sha256": "3b17155144cae1edaf7bbfbd68a79d1b9f64bfd90dd121475f4ed17d4742fb0e"
+  },
+  "goop3d_first_record_capacity_v1.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_first_record_capacity_v1_failure_review.json": {
+    "bytes": 2513,
+    "sha256": "5fc4a361a4bf9c5df0a70b6e56e75ab8357356e3757bfe1b05a65ac6ce844158"
+  },
+  "goop3d_first_record_capacity_v2.stderr.log": {
+    "bytes": 5710,
+    "sha256": "4fef360a12de2900be6cec0cf8334a25c1c22378b2e6ab14e35022ca760e7be4"
+  },
+  "goop3d_first_record_capacity_v2.stdout.log": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "goop3d_first_record_capacity_v2_report.json": {
+    "bytes": 29768,
+    "sha256": "500a333a397f706f1e0ff9d482cb7389279d0ab5fdb6bdca0c8f612d14e26367"
+  },
+  "goop3d_prospective_source_index_grid_v1.json": {
+    "bytes": 5196,
+    "sha256": "2449dcc5be94ec3452686a59b30d6addf1356e24582415a1220c61b52e52bc3c"
+  },
+  "goop3d_source_preparation_independent_review_statistics.json": {
+    "bytes": 4104,
+    "sha256": "fbb090e880b79d3055032ae8cfd668d064cbb17217fd799de7752dccba28850b"
+  },
+  "goop3d_source_preparation_synthetic_tests_v1.log": {
+    "bytes": 3212,
+    "sha256": "9e312a23659473f8fee4584df350eef77325c33ea17df0c9188b48d97f3b547e"
+  },
+  "goop3d_source_preparation_v1.json": {
+    "bytes": 2320,
+    "sha256": "0168457788bd0960640db1e9520c149e36f9b7664b16513a347182db3478021c"
+  },
+  "goop3d_structural_metadata_v1/metadata.json": {
+    "bytes": 471,
+    "sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55"
+  },
+  "goop3d_structural_metadata_v1/structural_report.json": {
+    "bytes": 673427,
+    "sha256": "282a7ffdf55c2f09a92719bff5e02ac5df17be35bd45f0ff59a0fb51b5c646bf"
+  },
+  "goop3d_structural_metadata_v1/train.json": {
+    "bytes": 1320524,
+    "sha256": "0f0ce1802e202b9faaf86f0a6ce059c286ed454ceb53273cb926980614b0f864"
+  },
+  "goop3d_structural_metadata_v1/valid.json": {
+    "bytes": 133173,
+    "sha256": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef"
+  },
+  "goop3d_train_valid_acquisition_plan_v1.md": {
+    "bytes": 7495,
+    "sha256": "1551a3fefc78344f99732d9e3d49761f1089987245dbc738b0b5dd427077d35c"
+  },
+  "profile_goop3d_first_record_cpu_graph_synthetic_tests.log": {
+    "bytes": 1168,
+    "sha256": "3f92423ab7de073c6fe4ca7f0fa19df0e9518fb632a4b93a24c410330a916276"
+  },
+  "train_goop3d_graph_support_cuda_v1_independent_review_methods.json": {
+    "bytes": 5453,
+    "sha256": "ae7c5daef9c028fb5e965c032eaa609da49458251eb595284289c3cda7c68110"
+  },
+  "train_goop3d_graph_support_cuda_v1_methods_review_tests.log": {
+    "bytes": 1350,
+    "sha256": "e27749febe4306a90a9171feafc768d14131a3ed434e70ddc910804634a14d80"
+  }
+}

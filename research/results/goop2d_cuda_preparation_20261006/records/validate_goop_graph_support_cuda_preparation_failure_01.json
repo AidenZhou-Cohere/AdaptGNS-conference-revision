@@ -1,0 +1,7 @@
+{
+  "status": "synthetic_test_collection_error",
+  "source_sha256": "315dad170e25200851f3186a8cce975185ebcad036b877be695c4a8452c2ddd7",
+  "error": "SyntaxError at line170: missing closing parenthesis in saved-batch shape tuple",
+  "real_data_or_gpu_accessed": false,
+  "tests_executed": 0
+}

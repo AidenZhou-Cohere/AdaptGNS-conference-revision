@@ -1,0 +1,48 @@
+{
+  "schema": "sand_graph_capacity_initial_pairing_audit_v1",
+  "status": "passed",
+  "checks": [
+    {
+      "seed": 0,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "initial_checkpoint_sha256": [
+        "13cd226d299c7c7c03e86cf3a12c22d476d87deec3c9713c198aa3de69be3d9a",
+        "cd443034b1f117075ddcebe3bc142c6ce5e952a52f37f199918c4719ba4b8e7a"
+      ]
+    },
+    {
+      "seed": 1,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "initial_checkpoint_sha256": [
+        "926a75843ec5bc5046bc683be9c4d1896be71a54b007c7853c32fb72412f33f0",
+        "1f546a75828951fbe411b82123cc52fb7a2152ab65c133900a46428c1859e9f2"
+      ]
+    },
+    {
+      "seed": 2,
+      "checks": {
+        "state_dict": true,
+        "rng_states": true,
+        "optimizer_state": true,
+        "simulator_config": true
+      },
+      "initial_checkpoint_sha256": [
+        "9cdc155f66aca56b88c3a2a605a887181fefa0d42365ebd7fecf1e1c45329f0c",
+        "1a29a29c8054aae1d9de9a52918069a99c0723131b5bc6769dd2a44e2fb755d6"
+      ]
+    }
+  ],
+  "summary_sha256": "007b49294559a55e85af22273984b8279bfea43c770cc3d5bea8fdd16fc8e459",
+  "scope": "All three saved paired initial checkpoint tensor/RNG/empty-Adam/config identities; audited after infrastructure completed, not a pre-update barrier.",
+  "scientific_training_admitted": false
+}

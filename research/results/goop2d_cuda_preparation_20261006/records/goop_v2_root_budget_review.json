@@ -1,0 +1,12 @@
+{
+  "schema": "goop_v2_root_budget_review",
+  "origin_utc": "2026-10-06T04:44:27.559419+00:00",
+  "source_capacity_sha256": "423c105cc240b11ae0b6125653d68b79d47b7f5337c307b21253cb6b625d4adf",
+  "allocation_sha256": "cf704a20e6c35774cd9f362e57d26465c6f5dfae4c7f4178818245c50e139213",
+  "training_seconds": 26364.98923215862,
+  "remaining_evaluation_and_analysis_seconds": 18060,
+  "total_allocation_seconds": 44424.98923215862,
+  "projected_allocation_end_utc": "2026-10-06T17:04:52.548651+00:00",
+  "deadline_utc": "2026-10-07T01:00:00+00:00",
+  "scope": "Planning allocation including fixed evaluation quotas, not empirical complete-rollout forecast or promised completeness"
+}

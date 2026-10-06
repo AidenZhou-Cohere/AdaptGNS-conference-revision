@@ -1,0 +1,28 @@
+{
+  "schema": "adaptgns_sand_graph_support_cuda_validation_independent_review_v1",
+  "reviewer": "conference_critique_statistics",
+  "status": "passed_bounded_source_and_synthetic_review",
+  "scientific_training_admitted": false,
+  "actual_cuda_or_saved_training_batches_executed": false,
+  "source_sha256": "365265ed25d60e1ebe50da89ec191b1a75a4773d2c75037952a756db3ec40e84",
+  "tests_sha256": "7eb5a4716f85df4ae7c55ee51aba89e825ea807069d8846991d239d24002deb8",
+  "trainer_sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+  "test_command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_validate_sand_graph_support_cuda.py",
+  "tests_passed": 20,
+  "test_elapsed_seconds": 2.16,
+  "warnings": "Existing TorchJIT deprecation plus parsed-source invalid-escape SyntaxWarnings; no failed checks.",
+  "findings": [
+    "Exact pinned previous FAILED report/metadata/three saved batch identities are required; no acquisition or full trajectory/test loading.",
+    "The six shared trainer numerical/runtime/RNG functions are AST-identical; old-native and new-base use one initialized state/seed0, empty matching Adam, identical saved batch/noise and same deterministic CUDA device.",
+    "Bytewise comparison includes prediction/target/head/loss, node/edge/features, all gradients, state/Adam/update/RNG tensors and full optimizer metadata; comparator treats signed zero distinctly.",
+    "Mix independently reconstructs native cap/self/prefix, strict geometric annulus, per-example Bernoulli and permutation seeds, exact budget/suffix and ledger, then verifies Torch RNG remains unchanged.",
+    "Case graph schedule index0/1/2 is explicitly distinct from each semantics branch first-Adam step0; replay uses actual graph/optimizer steps0then1.",
+    "New-schema base/mix checkpoint snapshots are deep-copied before the next step, saved/loaded with weights_only, and checked for bytewise state/Adam/CPU+CUDA RNG/history restoration plus random-probe and second-update/final-payload replay.",
+    "Completion requires every declared branch/case/replay and at least one nonzero mix optional pair; all pinned source/input bytes are reverified. Guarded-update exceptions now preserve raw graph/prediction/gradient/model/optimizer failure evidence."
+  ],
+  "limitations": [
+    "This review executes only width8/one-block synthetic CPU networks and mocked CUDA RNG, never actual saved Sand arrays or a real CUDA model.",
+    "Root must execute and inspect the distinct same-CUDA report before timing admission. Neither preparation nor a bounded replay pass admits scientific training or guarantees100k trajectory identity.",
+    "Prior CPU/CUDA gradient and Adam discrepancies remain unchanged and are not tested away."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "schema": "local_scalar_audit_preparation_failures_v1",
+  "attempts": [
+    {
+      "at_utc": "2026-10-06T04:32:47.521296+00:00",
+      "source_sha256": "d54eb213b279d8c81ebd64113320a84acee3a217feb3221eb7e19bd1cbf7b183",
+      "phase": "Python parsing before data read",
+      "error": "SyntaxError line26: conditional expression used else15 without separating whitespace",
+      "scientific_data_or_source_modified": false
+    }
+  ]
+}

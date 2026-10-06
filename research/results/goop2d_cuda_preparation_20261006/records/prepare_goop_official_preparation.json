@@ -1,0 +1,29 @@
+{
+  "schema": "official_goop_wrapper_preparation_v1",
+  "prepared_utc": "2026-10-06T02:19:05.983313+00:00",
+  "status": "synthetic_tests_and_independent_source_review_pass",
+  "dataset": "Goop",
+  "source_family": "official_gns_tfrecord",
+  "scientific_training_admission": false,
+  "real_tfrecord_payload_opened_by_methods_agent": false,
+  "data_acquisition_by_methods_agent": false,
+  "tests": {
+    "count": 15,
+    "duration_seconds": 0.188,
+    "result": "OK",
+    "scope": "tiny synthetic protobuf/TFRecord and multichunk byte checksum fixtures only"
+  },
+  "files_sha256": {
+    "prepare_goop_official.py": "fa4b7d883d7c360500fc3c603c9cd14538c916f1ddd7435aedfc8ec2420f2985",
+    "test_prepare_goop_official.py": "c66c4e08182ab3a5ff1f2c31ad64995bb1dec82e8d4007799c55da8bca7d593e",
+    "prepare_goop_official_synthetic_test.log": "456c70d16ef161b7c693871ebb68d9e928e4de6f6c0f2a62345e0209fe62fc50",
+    "goop_train_valid_acquisition_plan.md": "6c14fd65009e48a7485ab289c0ff59e0e592dc59e84607a3ac135414f52f4916"
+  },
+  "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+  "scientific_next_gate": "root-owned exact train/valid acquisition, complete checksum receipt, actual-data structural review and separately frozen Goop protocol/trainer; no test access here",
+  "independent_review": {
+    "file": "prepare_goop_official_independent_review_statistics.json",
+    "sha256": "8e73d268433543a0a4bd353e75d9f9a6dc7f6ad823365532b3e047c9668c1cda",
+    "result": "no source-integrity/publication blocker; 15 synthetic tests pass"
+  }
+}

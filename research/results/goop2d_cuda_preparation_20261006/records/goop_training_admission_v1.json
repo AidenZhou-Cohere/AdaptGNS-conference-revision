@@ -1,0 +1,31 @@
+{
+  "schema": "adaptgns_goop_training_admission_v1",
+  "status": "admitted",
+  "issued_by": "root",
+  "dataset": "Goop",
+  "manifest_sha256": "5ef43daf9bac961a69bd460a539891624b79c8a13f80ca851e85802197982256",
+  "metadata_sha256": "565d6e13be91be6a6b0fbc31a9aa19ed70a5505228411d0928288fcf874ca3dd",
+  "converter_sha256": "fa4b7d883d7c360500fc3c603c9cd14538c916f1ddd7435aedfc8ec2420f2985",
+  "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+  "acquisition_report_sha256": "9e4b106324b1e7c5add4404565eca888eaa0ebd3c233622308c113e88c5e6a8d",
+  "context_semantics_sha256": "c81ae2f1565e61542bcc406c4a9d71b67135620857ad62292eaef0e29b407de9",
+  "structural_report_sha256": "6d68af35c5685b4d248c523b8dd05884ee569e100bce06b12b8eee4d1c0a1cdd",
+  "auxiliary_report_sha256": "3278055e119c482c5620ff66b2c4e4e6c09361240155cc77a7ad98dbaa13d8d1",
+  "frames_per_trajectory": 401,
+  "record_count": 1000,
+  "particle_type_ids": [
+    7
+  ],
+  "position_dtype": "<f4",
+  "particle_type_dtype": "<i8",
+  "auxiliary_policy": {
+    "name": "step_context",
+    "handling": "preserved_and_excluded_from_model_inputs",
+    "reason": "unused_by_released_goop_parser_model_contract_without_context_mean",
+    "official_commit": "f5de0ede8430809180254ee957abf36ed62579ef"
+  },
+  "scope": "Data/context admission only. Actual numerical/backend admission, timing and scientific run releases remain separate root decisions.",
+  "issued_utc": "2026-10-06T02:49:37.074682+00:00",
+  "scientific_training_admitted": false,
+  "root_review": "Exact official source receipt/record CRC and converted representation reviewed. All1030 context-array bytes audited; official pinned parser/model excludes context when metadata lacks context_mean. Root verified official source file hashes and inspected relevant parser/model rules. Trainer/model runtime and study launches require separate admissions; no test source access."
+}

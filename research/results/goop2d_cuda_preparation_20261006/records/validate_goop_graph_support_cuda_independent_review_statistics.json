@@ -1,0 +1,32 @@
+{
+  "schema": "adaptgns_independent_source_review_v1",
+  "reviewer": "conference_critique_statistics",
+  "status": "passed_for_root_released_batch_preparation_and_bounded_same_cuda_validation",
+  "scientific_training_admitted": false,
+  "source_sha256": "e5776a656df4932a55afcfb5fe0e5b93d0b8ee6f62a62e116452f1990f1940c9",
+  "test_sha256": "9d11d330a342e937104453003d334f9bafe0402478d2df4c9fecce68ca04db85",
+  "test_command": "work/venv/bin/python -B -m pytest -q -p no:cacheprovider work/deadline_research_20261005/cuda_preparation/test_validate_goop_graph_support_cuda.py",
+  "tests": {"passed": 9, "seconds": 2.12, "warnings": "One existing torch.jit.script FutureWarning"},
+  "scope": "Local source, scalar dictionaries, tiny synthetic CPU arrays/tensors and mocked arguments only. No actual Goop data/checkpoint/model, CUDA, remote process or release executed.",
+  "verified": [
+    "Description-only default; explicit separate root batch-selection and numerical execution releases.",
+    "Pinned Goop trainer/data/context admission and private unchanged numerical helpers; numerical/run-loop AST correspondence checked.",
+    "Prospective complete1000-source structural rank selection0/1,500/501,998/999, targets6/200, seed0 and case-index noise; no outcome or test selection.",
+    "Saved batches require exact byte hashes, paths, fields, type7 vectors, float32 finite input/target/noise arrays, positive two-example counts and exact host-noise bytes.",
+    "Same-device old-native/base/mix first updates on all three cases, target isolation, graph-prefix/budget/feature audits, and two-arm checkpoint/Adam/RNG replay reuse reviewed paths.",
+    "Maximum15 optimizer updates: nine first-branch updates plus three update calls for each of two replay arms. Completion requires all cases/branches, old-native/base exact comparison, mix target equality, at least one expanded mix example and both replay gates.",
+    "No CPU/CUDA equivalence, trained endpoint or scientific cohort is claimed; artifacts retain explicit infrastructure lineage.",
+    "Preparation rechecks own/private/core source pins; validation includes saved selection_release.json in final input rehashes. Both preserve unsuccessful artifacts."
+  ],
+  "resolved_findings": [
+    "Added omitted saved selection-release file to final execution input verification.",
+    "Added own/private/core source rechecks to batch-preparation completion."
+  ],
+  "limits": [
+    "15 updates is an operation bound; root must supervise wall-clock/process lifetime because this worker has no internal elapsed-time alarm or cutoff.",
+    "Seed0 graph step1 is unexpanded, so inherited mix replay does not directly test an actively expanded post-resume update.",
+    "Actual Goop numerical behavior and expanded graph coverage still require the separately released execution and complete result review.",
+    "Fresh root process/GPU checks and scheduling around active Sand supervision remain root responsibilities."
+  ],
+  "remaining_blocking_findings": []
+}

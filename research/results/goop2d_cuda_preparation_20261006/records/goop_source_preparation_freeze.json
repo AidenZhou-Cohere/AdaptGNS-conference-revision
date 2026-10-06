@@ -1,0 +1,17 @@
+{
+  "schema": "goop_train_valid_source_preparation_freeze_v1",
+  "frozen_utc": "2026-10-06T02:25:12.398842+00:00",
+  "status": "source_acquisition_and_structural_conversion_only",
+  "files_sha256": {
+    "acquire_goop_train_valid.py": "1d4cc377d8b7f1c7c396836a552b42ffb8e1da5184327e9233bfa50d6200ed97",
+    "prepare_goop_official.py": "fa4b7d883d7c360500fc3c603c9cd14538c916f1ddd7435aedfc8ec2420f2985",
+    "goop_train_valid_acquisition_plan.md": "6c14fd65009e48a7485ab289c0ff59e0e592dc59e84607a3ac135414f52f4916",
+    "prepare_goop_official_preparation.json": "2fa78476aaa3f6306187665339305a6fc82ada60fa1fc7fb1edb7eb992cf2dfd",
+    "prepare_goop_official_independent_review_statistics.json": "8e73d268433543a0a4bd353e75d9f9a6dc7f6ad823365532b3e047c9668c1cda"
+  },
+  "reader_sha256": "ab077f11240a7296a2a15679ae8a57032c91280fdc94c23b63155e86793d2f33",
+  "review": "statistics reviewed downloader constants/receipt/checks against independently reviewed converter; root replaced CRC assert with explicit failure before freeze",
+  "test_payload_access": false,
+  "scientific_training_admitted": false,
+  "preservation": "Fresh source and output directories; failed partial bytes/records preserved; actual types/horizon/auxiliary fields reviewed before model admission."
+}

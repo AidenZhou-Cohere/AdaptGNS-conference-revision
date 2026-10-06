@@ -1,0 +1,93 @@
+{
+  "schema": "sand_graph_support_evaluation_declared_source_delta_v1",
+  "created_utc": "2026-10-06T02:29:06.282420+00:00",
+  "scope": "source-only AST comparison and synthetic/mock tests; no real data/model/CUDA execution or source freeze",
+  "physical_rollout": {
+    "original_source_sha256": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5",
+    "new_source_sha256": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+    "loop_body_ast_identical_after_three_binding_statements": true,
+    "binding_statements": [
+      "read pinned native np/bridge/full",
+      "resolve default trace_steps",
+      "bind local graph callback for physical policy"
+    ],
+    "signature_change": "native argument; trace_steps=None; no decorator because adapter enters original torch.no_grad context",
+    "core_five_behavior": "direct call to pinned original rollout; no module global mutation",
+    "physical_graph_change": "same strict graph/native-prefix/audit body with deterministic incoming-support float64 RMS scores passed to original max-endpoint selector"
+  },
+  "comparisons": [
+    {
+      "old_file": "benchmark_sand_cuda_rollout_deterministic.py",
+      "old_sha256": "2522f9e92f74aaaaaa0953e49e250f935ccf8f14b546c5b0b647fe48ff974912",
+      "new_file": "benchmark_sand_graph_support_rollout.py",
+      "new_sha256": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+      "ast_identical_functions": [
+        "atomic_json",
+        "canonical_hash",
+        "configure_cuda",
+        "deadline_alarm",
+        "digest",
+        "integer",
+        "require",
+        "select_cases",
+        "sha",
+        "summarize_cases",
+        "tree_equal",
+        "utc_now",
+        "validate_contract"
+      ],
+      "changed_functions": [
+        "check_checkpoint_contract",
+        "load_helpers",
+        "main",
+        "parse_args",
+        "prepare_model",
+        "run_cases"
+      ],
+      "new_functions": [
+        "check_timing_release",
+        "diagnostic_cases",
+        "run_timing_diagnostics"
+      ]
+    },
+    {
+      "old_file": "evaluate_sand_final_diagnostics.py",
+      "old_sha256": "1718982c40f210c3ec64be2aa6882d8879dce6ebedd3bd913cff3f95eb4c02f6",
+      "new_file": "evaluate_sand_graph_support_final.py",
+      "new_sha256": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+      "ast_identical_functions": [
+        "aggregate",
+        "check_split",
+        "clean_validation",
+        "digest",
+        "natural_base_edges",
+        "require",
+        "schedules",
+        "sha",
+        "summarize",
+        "timing_order"
+      ],
+      "changed_functions": [
+        "check_cohort",
+        "description",
+        "main",
+        "parse_args",
+        "run_policy",
+        "same_state"
+      ],
+      "new_functions": []
+    }
+  ],
+  "declared_scope_changes": [
+    "faithful base/mix schema and exact512/final100k endpoints; oldschema refusal",
+    "root timing-only release and optional fixed diagnostic timing modes",
+    "root complete endpoint/optimizer/pairing audit pin before any evaluation manifest; selectedbytes/payload validation once",
+    "sixth physical policy; seven common-state timing rotations with unchanged risk score semantics",
+    "all30 fullH314 final rollouts with null complete-sample metrics on failure and explicit arm/seed identity"
+  ],
+  "synthetic_test_log": {
+    "path": "sand_graph_support_evaluation_synthetic_tests.log",
+    "sha256": "ac1d852fc4bee7a405df2cba2c4101778da25daf322c5b202bfb974e5014b041",
+    "result": "37 passed, 1 existing torch.jit deprecation warning in2.94s"
+  }
+}
