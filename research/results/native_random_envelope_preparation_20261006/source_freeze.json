@@ -1,0 +1,30 @@
+{
+  "scope": "Post-inspection original100k native random-envelope scientific sources frozen before real inference",
+  "recorded_utc": "2026-10-06T00:40:19.367081+00:00",
+  "base_commit": "d1cd877ad8b6d309a7f2244a21f8bea2ed37c05c",
+  "source_files_sha256": {
+    "research/native_random_envelope.py": "de21482db45e22a70130ae7ea8f806bb9b3fb33afed8263ca1aa8f5d2c9289ae",
+    "research/summarize_native_random_envelope.py": "39e265adc289f94b0f785c0de7e58f503e993eb4378f1de01b7ba93fc57d7085",
+    "research/protocols/native_random_envelope_20261006.md": "538bfab763b304ee011adfde15916845f7c5bec79c37eb9be236cef1a267483e",
+    "research/tests/test_native_random_envelope.py": "f245f05beafc5a7c760e717c79971131f702cce7eda9ef76fc47f85bf6e11a27",
+    "research/tests/test_native_random_envelope_review.py": "860aa9a6f6f1b97e82d30225aa77ecf31e9234db6bf08007cec888e79f0e439c",
+    "research/tests/test_summarize_native_random_envelope.py": "a02981cf1cc104ade18e376b87500c5c1785d4c4b3efa25063e5c7b75f051cd4",
+    "research/tests/test_summarize_native_random_envelope_review.py": "fcdc3866ec3979dc70ee25f212c0747b8865d457e244b682116bc9018494ec6c"
+  },
+  "independent_review_sha256": "e820093f8ce78396b44c99de1114c55cd2ce887023e4066bd56b68738a94f4fa",
+  "tests": {
+    "root_passed": 103,
+    "root_seconds": 7.01,
+    "independent_passed": 103,
+    "independent_seconds": 3.38,
+    "independent_adversarial_checks": 65
+  },
+  "population": {
+    "models": 6,
+    "histories_per_model": 425,
+    "random_draws": 8,
+    "case_slots": 33150,
+    "random_slots": 20400
+  },
+  "execution_gate": "Root native-process check, complete native810 summary and scalar audit, final operational/source/input freeze, fresh root release and time reserve. No inference or real summary has run; independent complementary audit must be reviewed before real study."
+}
