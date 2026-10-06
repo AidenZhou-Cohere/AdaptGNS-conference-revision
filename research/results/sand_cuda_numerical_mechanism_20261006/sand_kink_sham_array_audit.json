@@ -1,0 +1,85 @@
+{
+  "schema": "adaptgns_sand_kink_sham_array_audit_v1",
+  "status": "pass",
+  "report_sha256": "d3b9c0a1c6953dc26ba3a00f5a2425231cf5c131984a1b404364d73b7bb9bbe3",
+  "source_sha256": "1c2b26289f67b53685c0977853be71dea1971e9445dc6de19288c403c5309a50",
+  "rows": [
+    {
+      "case": "small",
+      "objective": "faithful",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8127236
+    },
+    {
+      "case": "small",
+      "objective": "nll",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8127236
+    },
+    {
+      "case": "median",
+      "objective": "faithful",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8150156
+    },
+    {
+      "case": "median",
+      "objective": "nll",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8150156
+    },
+    {
+      "case": "large",
+      "objective": "faithful",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8164596
+    },
+    {
+      "case": "large",
+      "objective": "nll",
+      "all_sham_artifact_arrays_bitwise_equal": true,
+      "array_count": 1142,
+      "element_count": 8164596
+    }
+  ],
+  "all_30_artifact_hashes": {
+    "small_faithful_cpu_original.npz": "88748c495e17c6e1866f63a534cfdc8a48c9017282af3246c71e0722d90ce3b4",
+    "small_faithful_cuda_original.npz": "b88f2476caa45acbf555e3e3b08ee38f6546de5ae3e384800e0e4ad6817d8863",
+    "small_faithful_cuda_native_mask_sham.npz": "b88f2476caa45acbf555e3e3b08ee38f6546de5ae3e384800e0e4ad6817d8863",
+    "small_faithful_cuda_cpu_mask_control.npz": "b88f2476caa45acbf555e3e3b08ee38f6546de5ae3e384800e0e4ad6817d8863",
+    "small_faithful_relu_disagreements.npz": "c34aae654ff810246800a7941e0a5aef24ca564f2b4682bc905d3df6f75e21e1",
+    "small_nll_cpu_original.npz": "895ad2386e6d53903de06cd17f82c63b76e6d18f903a916f785fc2f7f9bfefa8",
+    "small_nll_cuda_original.npz": "6da7851cde5a9efead8b33035fd5cd3f4c022bdae07a350268bc605dbe3b1aa4",
+    "small_nll_cuda_native_mask_sham.npz": "6da7851cde5a9efead8b33035fd5cd3f4c022bdae07a350268bc605dbe3b1aa4",
+    "small_nll_cuda_cpu_mask_control.npz": "6da7851cde5a9efead8b33035fd5cd3f4c022bdae07a350268bc605dbe3b1aa4",
+    "small_nll_relu_disagreements.npz": "c34aae654ff810246800a7941e0a5aef24ca564f2b4682bc905d3df6f75e21e1",
+    "median_faithful_cpu_original.npz": "b6e4a613d9c2fe3ac92808abd293b2ca4e570b6dc9fd6db16d115697b9195ce5",
+    "median_faithful_cuda_original.npz": "2a0a4fd2053ac0c37180b50707ba4dcf25e82c2dc0a0095ff84f9fc32a44de7c",
+    "median_faithful_cuda_native_mask_sham.npz": "2a0a4fd2053ac0c37180b50707ba4dcf25e82c2dc0a0095ff84f9fc32a44de7c",
+    "median_faithful_cuda_cpu_mask_control.npz": "52ce8ee1e5612dd832b2a911ec4bb899fb71f0bca1134cabc13c3ca41aa780ac",
+    "median_faithful_relu_disagreements.npz": "adc299a0e368e368ddc3ec8a953228324ed6c8ff429f2fe7f2d987629036d50f",
+    "median_nll_cpu_original.npz": "2946d42678de93e8e658dd806a086d7124a0954248a5049e624947860e5f75ad",
+    "median_nll_cuda_original.npz": "080d96b0e41a2b72cfc122d05f24c72743bd4925a9bb87479cf7322581802db2",
+    "median_nll_cuda_native_mask_sham.npz": "080d96b0e41a2b72cfc122d05f24c72743bd4925a9bb87479cf7322581802db2",
+    "median_nll_cuda_cpu_mask_control.npz": "ffce6c9925d50457b786a983bbf8a96f8fa1afb8a8c2d4de6ff8a6451d75f703",
+    "median_nll_relu_disagreements.npz": "adc299a0e368e368ddc3ec8a953228324ed6c8ff429f2fe7f2d987629036d50f",
+    "large_faithful_cpu_original.npz": "d3c4d9246799dfdb61dedad2eddd32b43a5ccab4851249a718057e2291cbdd1f",
+    "large_faithful_cuda_original.npz": "a397cc470e87f5f04e2d3121cf901adb92e22ab47a425da8124542830ba060f1",
+    "large_faithful_cuda_native_mask_sham.npz": "a397cc470e87f5f04e2d3121cf901adb92e22ab47a425da8124542830ba060f1",
+    "large_faithful_cuda_cpu_mask_control.npz": "46053a0216e8138576a09e71b20116cdc5f315f579681a427053374f2ffb2a21",
+    "large_faithful_relu_disagreements.npz": "1058d0e74f1fe7f4ca69440123c0b1214554bb206e4728f69ae4c0b8635a931e",
+    "large_nll_cpu_original.npz": "1062cfce72321d55ed087d316ef00f16488997bc3b903381cd59fe4dba3de564",
+    "large_nll_cuda_original.npz": "078ee5f2ed1431edf3180aca4a8c92c78d2bfccd045ab9fccaa3c73717ec9f06",
+    "large_nll_cuda_native_mask_sham.npz": "078ee5f2ed1431edf3180aca4a8c92c78d2bfccd045ab9fccaa3c73717ec9f06",
+    "large_nll_cuda_cpu_mask_control.npz": "fd03db83262596794ee4912eaee7a5329de4c3629c1658e375300a81ecc0951e",
+    "large_nll_relu_disagreements.npz": "1058d0e74f1fe7f4ca69440123c0b1214554bb206e4728f69ae4c0b8635a931e"
+  },
+  "scope": "exact native CUDA sham equivalence for saved outputs/gradients/parameters/updates/Adam tensors; all diagnostic artifact hashes",
+  "no_model_or_cuda_execution": true,
+  "elapsed_seconds": 2.5010965391993523
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "packaging verification, no scientific inference",
+  "status": "2_failed_8_passed",
+  "cause": "validate_cuda_execution.py dependency omitted from initial curated directory",
+  "failed_tests": [
+    "test_gradient_sign_counts_do_not_underflow",
+    "test_tiny_network_own_mask_reproduces_first_adam_and_postupdate_outputs"
+  ],
+  "exception": "FileNotFoundError: validate_cuda_execution.py",
+  "repair": "Copied exact unchanged pinned dependency and the other independent audit dependencies; no diagnostic/training/test source changed."
+}

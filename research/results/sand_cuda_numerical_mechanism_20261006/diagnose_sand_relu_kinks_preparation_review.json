@@ -1,0 +1,14 @@
+{
+  "schema": "adaptgns_sand_relu_kink_preparation_review_v1",
+  "checked_utc": "2026-10-06T02:00:33.457368+00:00",
+  "files_sha256": {
+    "diagnose_sand_relu_kinks.py": "dc1748b3e3f9ea32e28d16a8906c1cd0eaa4fff3a872741153e2244595f8555e",
+    "test_diagnose_sand_relu_kinks.py": "85fd6002f4800e3a216382d0fdff06beadfb632d1fc29fb859dee50d7c45b1ba",
+    "diagnose_sand_relu_kinks.NOTES.md": "770fb5d0ab34cccfa9fea75b22f016ad3a3d5e8dfdd76c9710c2a65fbddacbc2"
+  },
+  "tests": "10 passed in 1.27s",
+  "scope": "tiny CPU networks and pure helper tests; no repository model/source batch/CUDA/remote/network execution",
+  "independent_design_review": "statistics agent agreed with backward-only control plus native-mask sham; root reviewed source and requested final self-hash/completeness guards, both added",
+  "prior_strict_validation_status": "failed",
+  "training_admitted": false
+}

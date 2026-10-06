@@ -1,0 +1,111 @@
+{
+  "schema": "adaptgns_artifact_manifest_v1",
+  "family": "sand_cuda_numerical_mechanism_20261006",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2568,
+      "sha256": "98a01e74b11896e657857d9334ab2b99a4550bf9947a9de634fb60d3d476a155"
+    },
+    {
+      "path": "audit_sand_kink_sham.py",
+      "bytes": 3195,
+      "sha256": "1c2b26289f67b53685c0977853be71dea1971e9445dc6de19288c403c5309a50"
+    },
+    {
+      "path": "audit_sand_relu_kink_report.py",
+      "bytes": 7519,
+      "sha256": "1f9884e6d54f3f166218097854a246217fcb55f33ffdbf8e3ac149edea03a171"
+    },
+    {
+      "path": "diagnose_sand_relu_kinks.NOTES.md",
+      "bytes": 3432,
+      "sha256": "770fb5d0ab34cccfa9fea75b22f016ad3a3d5e8dfdd76c9710c2a65fbddacbc2"
+    },
+    {
+      "path": "diagnose_sand_relu_kinks.py",
+      "bytes": 22041,
+      "sha256": "dc1748b3e3f9ea32e28d16a8906c1cd0eaa4fff3a872741153e2244595f8555e"
+    },
+    {
+      "path": "diagnose_sand_relu_kinks_preparation_review.json",
+      "bytes": 879,
+      "sha256": "0ead2d8843c8cf6311b1c347ed8f4da74723825ad97b820f06b1c51f0b708b88"
+    },
+    {
+      "path": "initial_packaging_test_failure.json",
+      "bytes": 552,
+      "sha256": "c9d6374a9350852d86d9b5318ac168196de27d9104e3b1de8170fb38fb8b98a1"
+    },
+    {
+      "path": "sand_actual_data_validation_v2_report.json",
+      "bytes": 2922039,
+      "sha256": "1d46bd0044859a7f6f969275cdfaf91c57f4935d786453074fcecd2ec6e73245"
+    },
+    {
+      "path": "sand_cuda_admission_scalar_review.json",
+      "bytes": 4650,
+      "sha256": "e61c10ceb67828d3c2fa64ce6fcf78bff5acec6059659e3ad843d320825d75c9"
+    },
+    {
+      "path": "sand_kink_sham_array_audit.json",
+      "bytes": 4877,
+      "sha256": "f4d9e3fc67e7c3b2d7d437c9e2748eb51ab973c87e06ba5ad308cdb3a54231e9"
+    },
+    {
+      "path": "sand_native_cuda_admission_methodology.md",
+      "bytes": 6154,
+      "sha256": "e84eb409e757c7262d50c9583de09beb60e8249a48d99113b72b485e59952620"
+    },
+    {
+      "path": "sand_native_cuda_numerical_assessment.json",
+      "bytes": 4021,
+      "sha256": "1256a920efaa415322760122ad4b24b3946a5a36d327838082dc0bf2ed558d34"
+    },
+    {
+      "path": "sand_relu_kink_diagnostic_freeze.json",
+      "bytes": 1562,
+      "sha256": "8d984d771d5c96c7eba3eadf198b7a0c509b2af1ce042cbc976e5ab150073c1a"
+    },
+    {
+      "path": "sand_relu_kink_independent_code_review.json",
+      "bytes": 18746,
+      "sha256": "a56a9ba9645755788c67b4d6d6b599e99780b5c1ca9d8122fc785cf9c203dded"
+    },
+    {
+      "path": "sand_relu_kink_v1_report.json",
+      "bytes": 25838100,
+      "sha256": "d3b9c0a1c6953dc26ba3a00f5a2425231cf5c131984a1b404364d73b7bb9bbe3"
+    },
+    {
+      "path": "sand_relu_timing_release_review.json",
+      "bytes": 20144,
+      "sha256": "2457a0492a621f66344e20a72123d941080d97397f13c57c420877e32dccd2c3"
+    },
+    {
+      "path": "sand_relu_timing_release_review.md",
+      "bytes": 3168,
+      "sha256": "5d77455d298eeaed114b23e578ca3f99a1daf2eddd6dc1c188bb1685e7e39181"
+    },
+    {
+      "path": "test_diagnose_sand_relu_kinks.py",
+      "bytes": 8368,
+      "sha256": "85fd6002f4800e3a216382d0fdff06beadfb632d1fc29fb859dee50d7c45b1ba"
+    },
+    {
+      "path": "train_sand_cuda_deterministic.py",
+      "bytes": 33456,
+      "sha256": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b"
+    },
+    {
+      "path": "validate_cuda_execution.py",
+      "bytes": 30307,
+      "sha256": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68"
+    },
+    {
+      "path": "validate_sand_cuda.py",
+      "bytes": 15424,
+      "sha256": "60083ba485bf0e99e9fef34b9c76d81a0ad109d517974d5ef25657203fb1081c"
+    }
+  ]
+}

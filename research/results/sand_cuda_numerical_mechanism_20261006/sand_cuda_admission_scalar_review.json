@@ -1,0 +1,162 @@
+{
+  "schema": "sand_cuda_admission_scalar_review_v1",
+  "recorded_utc": "2026-10-06T01:58:08.428097+00:00",
+  "source": "sand_actual_data_validation_v2_report.json",
+  "source_sha256": "1d46bd0044859a7f6f969275cdfaf91c57f4935d786453074fcecd2ec6e73245",
+  "source_status_preserved": "validation_failed",
+  "tolerances_unchanged": {
+    "forward": {
+      "atol": 2e-05,
+      "rtol": 0.0002
+    },
+    "loss": {
+      "atol": 1e-05,
+      "rtol": 0.0002
+    },
+    "gradient": {
+      "atol": 5e-05,
+      "rtol": 0.0005
+    },
+    "replay": {
+      "atol": 5e-06,
+      "rtol": 5e-05
+    },
+    "exact": {
+      "atol": 0.0,
+      "rtol": 0.0
+    }
+  },
+  "failed_leaf_comparisons": [
+    {
+      "json_path": [
+        "cases",
+        1,
+        "objectives",
+        "faithful",
+        "parity",
+        "per_parameter_gradients",
+        "tensors",
+        "_encode_process_decode._processor.gnn_stacks.4.edge_fn.0.NN-1.weight"
+      ],
+      "case": "median",
+      "objective": "faithful",
+      "parameter": "_encode_process_decode._processor.gnn_stacks.4.edge_fn.0.NN-1.weight",
+      "check": {
+        "tolerance": "gradient",
+        "atol": 5e-05,
+        "rtol": 0.0005,
+        "passed": false,
+        "reference_shape": [
+          128,
+          128
+        ],
+        "candidate_shape": [
+          128,
+          128
+        ],
+        "bitwise_equal": false,
+        "finite": true,
+        "max_absolute_error": 5.7948287576436996e-05,
+        "max_relative_error_floor1e-12": 1.3195173642535043,
+        "relative_l2_error_floor1e-12": 9.620261795438823e-05,
+        "maximum_tolerance_ratio": 1.1292619065711178,
+        "outside_tolerance_elements": 1
+      }
+    },
+    {
+      "json_path": [
+        "cases",
+        2,
+        "objectives",
+        "faithful",
+        "parity",
+        "per_parameter_gradients",
+        "tensors",
+        "_encode_process_decode._processor.gnn_stacks.0.node_fn.0.NN-0.weight"
+      ],
+      "case": "large",
+      "objective": "faithful",
+      "parameter": "_encode_process_decode._processor.gnn_stacks.0.node_fn.0.NN-0.weight",
+      "check": {
+        "tolerance": "gradient",
+        "atol": 5e-05,
+        "rtol": 0.0005,
+        "passed": false,
+        "reference_shape": [
+          128,
+          256
+        ],
+        "candidate_shape": [
+          128,
+          256
+        ],
+        "bitwise_equal": false,
+        "finite": true,
+        "max_absolute_error": 0.00011637993156909943,
+        "max_relative_error_floor1e-12": 2.0149523028937004,
+        "relative_l2_error_floor1e-12": 7.233652122324086e-05,
+        "maximum_tolerance_ratio": 1.7991015842822728,
+        "outside_tolerance_elements": 12
+      }
+    }
+  ],
+  "case_summaries": [
+    {
+      "case": "small",
+      "objective": "faithful",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 6.170339423540878e-07,
+      "prediction_max_absolute_error": 9.5367431640625e-07,
+      "loss_max_absolute_error": 0.0
+    },
+    {
+      "case": "small",
+      "objective": "nll",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 6.170339423540878e-07,
+      "prediction_max_absolute_error": 9.5367431640625e-07,
+      "loss_max_absolute_error": 0.0
+    },
+    {
+      "case": "median",
+      "objective": "faithful",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 7.008342912104377e-07,
+      "prediction_max_absolute_error": 1.1920928955078125e-06,
+      "loss_max_absolute_error": 0.0
+    },
+    {
+      "case": "median",
+      "objective": "nll",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 7.008342912104377e-07,
+      "prediction_max_absolute_error": 1.1920928955078125e-06,
+      "loss_max_absolute_error": 0.0
+    },
+    {
+      "case": "large",
+      "objective": "faithful",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 6.072256117911457e-07,
+      "prediction_max_absolute_error": 1.0728836059570312e-06,
+      "loss_max_absolute_error": 2.384185791015625e-07
+    },
+    {
+      "case": "large",
+      "objective": "nll",
+      "parameter_tensors": 189,
+      "gradient_entries": 1624979,
+      "prediction_relative_l2": 6.072256117911457e-07,
+      "prediction_max_absolute_error": 1.0728836059570312e-06,
+      "loss_max_absolute_error": 0.0
+    }
+  ],
+  "scope": "JSON scalar extraction only; gradient entries/cases are not independent scientific replications",
+  "arrays_or_models_opened": false,
+  "scientific_admission_decision": null
+}
