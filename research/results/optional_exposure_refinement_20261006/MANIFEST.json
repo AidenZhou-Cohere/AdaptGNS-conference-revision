@@ -1,0 +1,22 @@
+{
+  "scope": "v4 writing-only reporting refinement; prior v3 preserved separately",
+  "files_sha256": {
+    "README.md": "af4e6b587305cabcc7f9d9f2b1737f2062fda987a6afbb97803090c559870ba5",
+    "audit_narrative_refinement.py": "49e7ebed67b95332439ab3c08aeb752347787e40c5b2ecafe125e069b729e9f1",
+    "audit_optional_exposure_renderer.py": "699498b7b09fa82844088f1c9d16c0e47904e5f7da3f6fab14b4a72c3d819048",
+    "conference_argument_map.md": "6e38ce02a9a3a7d2bb87510e4376045d3dbb84614466cdc94fecb842a9104351",
+    "document_verification.json": "bf4c45e99fd78ce7658cace797958bc0ab0aa3b5c89a76a23c54648c65b0bda0",
+    "mechanism_findings.json": "2d7c5eaa5646f312a2c9fc76931fe0f9d723178f5cd9edc1da77e94c30a84bd7",
+    "narrative_refinement_review.json": "c73fdd2ca1a9373d4bc3ae2280599b7c45f16754c32fa7ce6095ae30bfd50cbe",
+    "optional_exposure_appendix.tex": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6",
+    "optional_exposure_decomposition.pdf": "5dcf4f3f7d8b3c1a597fcd90644f33ad628b8fa22806cbfff99528c2465f9323",
+    "optional_exposure_decomposition.png": "d27c336c74ed06ab82f994fb324567dec7f91f35a83605589379a704210d0b98",
+    "optional_exposure_main.tex": "0bd0167986fc8a0e34c6c8ba090b9a3f060b272412940e6a5f37b9587b62663e",
+    "plot_coordinates.json": "d97adcdbb0430f576685af4316efac11a7a4e1102a525555147be4a35255305b",
+    "render_manifest.json": "5dc72168fe3728474fbf505d4c67eabffd6f7524a4f1be58fb5e86ea74aaac73",
+    "renderer_review_v4.json": "e57c81e55c18548fcdbf165ebe3dd77f803bd8b32d6b9bd3e6a8e47d1173c07b",
+    "renderer_source.py": "a19312acd0052e0bc18cf6adb9b47221c48fc74cdbe312cf704a49ed70f30d32",
+    "renderer_tests.py": "cbc8f44dfddc197c1c43b935bd3d6eae3df789ff5828131bbead99813f527feb",
+    "scientific_narrative_review.md": "1f9ff6020bb4c9ca3af1a4ac341081d0f6221e07aef5f951312fae48499a361e"
+  }
+}
