@@ -1,0 +1,194 @@
+{
+  "acquisition_limits": {
+    "acquisition_zip_headers_only": true,
+    "conversion_full_ZIP_CRC_verified": true,
+    "publisher_npz_checksum_available": false
+  },
+  "cohort": {
+    "A_training_lineage": "original0-50000 plus audited50000-100000 runtime recovery",
+    "B_training_lineage": "original uninterrupted100000 updates",
+    "audit_sha256": "0786ee20abc2333c3bc2b1536f42f5b2f949617a331e70bb7897e9f4ee0e7d37",
+    "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+    "models": [
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/base_seed1/checkpoint-000100000.pt",
+        "checkpoint_sha256": "68cec3c0e02281c630c5033d51d80450c2ed50e6ec5fbbbc5e17117bbee5d7ec",
+        "completed_steps": 100000,
+        "config_sha256": "43d98d24af446896bcda3e649c1a734e18cf170f1da48e1a7f0e92cab14cbbc1",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 1
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/mix_seed1/checkpoint-000100000.pt",
+        "checkpoint_sha256": "9b237f5297fd47ff5e214b7ff26dc69a708f023644b2dd94797b69b4c765c6cf",
+        "completed_steps": 100000,
+        "config_sha256": "6ffce60503ec142f83bd21836283d305d7eb4406527f2d139ebec24e67120380",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 1
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/mix_seed2/checkpoint-000100000.pt",
+        "checkpoint_sha256": "15b29c13596d3398f0935703f42d018a520d769dd634581046a1098013865679",
+        "completed_steps": 100000,
+        "config_sha256": "a74a3cb52707065d9ce4840caaeff8e06d687804f67d2b55d44f958e912c0df3",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 2
+      },
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v2/training/base_seed2/checkpoint-000100000.pt",
+        "checkpoint_sha256": "84cded9870d2eb51d1ebe0df89c3155d1c88de7cd56ccece95acdd6702bd16a7",
+        "completed_steps": 100000,
+        "config_sha256": "8745137c049782995bceff4c9b2b649ae250f88a813ab68e181a66f710b30cff",
+        "host_role": "A",
+        "objective": "faithful",
+        "seed": 2
+      },
+      {
+        "arm": "mix",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_scoped_science_B_20261006_v1/jobs/mix_seed0/checkpoint-000100000.pt",
+        "checkpoint_sha256": "f7abcf804bacf7d4b21f7557a4823a15c85effd013188548f0b98a0f306beccb",
+        "completed_steps": 100000,
+        "config_sha256": "506189a12993e57544840aecbd64e6dd27071ed8e7fceb5da73df7a4b740a92b",
+        "host_role": "B",
+        "objective": "faithful",
+        "seed": 0
+      },
+      {
+        "arm": "base",
+        "checkpoint_path": "/root/repos/AdaptGNS-cuda-20261006/sand_scoped_science_B_20261006_v1/jobs/base_seed0/checkpoint-000100000.pt",
+        "checkpoint_sha256": "f4cbea33853233228e569cc7363851d2f0b396d87fc20f9c80825a7023d8d829",
+        "completed_steps": 100000,
+        "config_sha256": "2d25aacb99b5f683565c47fad0b8e09bc4440c969931c1a552eb3bcf82815904",
+        "host_role": "B",
+        "objective": "faithful",
+        "seed": 0
+      }
+    ],
+    "paired_training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "updates": 100000
+  },
+  "created_utc": "2026-10-06T18:50:51.500837+00:00",
+  "curation_scope": "Only closed scalar/byte inventories and tested sources copied; no original audits, numericaloperations, training/evaluation or mutable result reads rerun.",
+  "new_B_followup": "prospective_UNADMITTED_template_only_not_completed_evidence",
+  "original_B_preflights": {
+    "test": "never_issued_or_executed_in_original_phase",
+    "valid": "never_issued_or_executed_in_original_phase"
+  },
+  "original_final_evaluation_stages": {
+    "horizon": 314,
+    "policies": 6,
+    "required": 24,
+    "status_at_original_source_disposition": "unadmitted_and_unexecuted",
+    "test_trajectories": 30
+  },
+  "original_source_operations": [
+    {
+      "external_exit": "original_exits/acquire.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_acquire.collection.json",
+      "operation": "acquire",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/acquired/download_report.json",
+        "completed_products/acquired/metadata.json",
+        "completed_products/acquired/root_preparation_receipt.json"
+      ],
+      "review": "reviews/sand_completed_source_acquire_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/convert.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_convert.collection.json",
+      "operation": "convert",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/numeric/metadata.json",
+        "completed_products/numeric/structural_report.json",
+        "completed_products/numeric/test.json"
+      ],
+      "review": "reviews/sand_completed_source_convert_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/census.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_census.collection.json",
+      "operation": "census",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/census/all_split_census.json"
+      ],
+      "review": "reviews/sand_completed_source_census_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/candidate_valid.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_candidate_valid.collection.json",
+      "operation": "candidate_valid",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/candidate_valid/split_admission_candidate.json"
+      ],
+      "review": "reviews/sand_completed_source_candidate_valid_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/candidate_test.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_candidate_test.collection.json",
+      "operation": "candidate_test",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/candidate_test/split_admission_candidate.json"
+      ],
+      "review": "reviews/sand_completed_source_candidate_test_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/preflight_valid.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_preflight_valid.collection.json",
+      "operation": "preflight_valid",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/preflight_valid/split_preflight.json"
+      ],
+      "review": "reviews/sand_completed_source_preflight_valid_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    },
+    {
+      "external_exit": "original_exits/preflight_test.external.json",
+      "host_role": "A",
+      "inventory": "inventories/source_preflight_test.collection.json",
+      "operation": "preflight_test",
+      "original_stop_utc": "2026-10-06T18:35:33.342462+00:00",
+      "products": [
+        "completed_products/preflight_test/split_preflight.json"
+      ],
+      "review": "reviews/sand_completed_source_preflight_test_independent_review_code_audit_v1.json",
+      "status": "completed_original_operation_and_independent_review"
+    }
+  ],
+  "original_source_phase_status": "expired_incomplete",
+  "schema": "sand_completed_cohort_source_public_candidate_v1",
+  "status": "candidate_not_published_no_commit_or_push",
+  "transfer_timing": {
+    "controller_product_helper_terminal_utc": "2026-10-06T18:35:10.785822+00:00",
+    "independent_product_helper_review_utc": "2026-10-06T18:35:17.889856+00:00",
+    "original_controller_exit_observed_utc": "2026-10-06T18:35:55.561287+00:00",
+    "original_source_stop_utc": "2026-10-06T18:35:33.342462+00:00"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "actual_clock_issued": false,
+  "actual_execution": false,
+  "actual_human_approval": false,
+  "frozen_worker_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+  "opaque_numeric_fixture_files": 2120,
+  "original_source_owner_sha256": "d7880125e43ea6eeb047e7b3170a06b2ff1b189b9051978234adcf4d2b297955",
+  "qualified_lifecycle_AST_identical_definitions": 16,
+  "scientific_outputs_read": false,
+  "status": "passed_local_synthetic_checks_only",
+  "test_source_sha256": "d1bd49aa87a0b5fc342a617cf69e4d73a22ecfdecc4b9dc0a823c7bf3f671cce",
+  "tests": 24
+}

@@ -1,0 +1,693 @@
+[
+  {
+    "bytes": 4507,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/cohort.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json",
+    "sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/cohort.json"
+  },
+  {
+    "bytes": 5378548,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/cohort_audit.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort_audit.json",
+    "sha256": "0786ee20abc2333c3bc2b1536f42f5b2f949617a331e70bb7897e9f4ee0e7d37",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/cohort_audit.json"
+  },
+  {
+    "bytes": 1677,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/root_release.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/root_release.json",
+    "sha256": "68ff9d0aafa40f8681cf0018a8ad7541439c4ade67f4af2b4a6a171d297ad69e",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_cohort_completed_1804_root_v1/files/sand_post_training_A_20261006_v1/cohort/root_release.json"
+  },
+  {
+    "bytes": 16764,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_cohort_independent_review_code_audit_v1.json",
+    "sha256": "2901d4e8a559ab40c6631eb1df7112e49aa491d599e0bb9176f92ee05940da3a",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_cohort_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 23753,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_inventories_independent_review_code_audit_v1.json",
+    "sha256": "3b452629f037c0943158da065ac5723efcf7e9f5430c3c9c18192f5bce6949be",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_inventories_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 3850,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_review_code_audit_v1.json",
+    "sha256": "af7a6217cc0220ab4c0f7c7a389614cf46f13cb1160da3e9c1204d9542579011",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 4384,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_source_cpu_source_independent_review_code_audit_v1.json",
+    "sha256": "c5132b42127730090c8c2a83ccdde4b010c7bae156f28644a1067f7333ce1196",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_source_cpu_source_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 17142,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_original_source_window_disposition_independent_review_code_audit_v1.json",
+    "sha256": "d3c7493bc8a5995eb312fef061d8522a722007d6d4a5178eedb49c23928fe5a3",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_original_source_window_disposition_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 1096,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_actual_admissions_transfer_release_independent_review_code_audit_v1.json",
+    "sha256": "7b0f3a35edd4e189ef87a98fd2da51370f569395389f576e03c45a1826cd30b5",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_actual_admissions_transfer_release_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 7668,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_transfer_independent_review_code_audit_v1.json",
+    "sha256": "fbbb549456d289cf8d533f6e1a078c915ac0f1728c5e3314b92192cbdf4395c8",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_transfer_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 5409,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_AB_transfer_independent_review_code_audit_v1.json",
+    "sha256": "54ffc2a037f8281d77926ebc28502001eb03b78543fbe2c6e970c68a1d212b40",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_AB_transfer_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 16716,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_original_source_phase_incomplete_root_v1.json",
+    "sha256": "5b07542ec04a11f8fef58f563d693ccb20514dbcac603b17a5736f45b97a1120",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_original_source_phase_incomplete_root_v1.json"
+  },
+  {
+    "bytes": 1036,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/source_phase.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_original_reserved_source_phase_20261006_v1.json",
+    "sha256": "895e25aa38490f42bb2f24a4129ccde8c1e91f8f01a8cf960eda15d0ee15e7ed",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/source_phase.json"
+  },
+  {
+    "bytes": 1151,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/cohort_build_external_closure.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/cohort_build_external_closure.json",
+    "sha256": "391816259ddc2153247558090880208ff0e0abb1f2999e098ba536edde04fc27",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/cohort_build_external_closure.json"
+  },
+  {
+    "bytes": 1330,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/valid.root_admission.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/valid.root_admission.json",
+    "sha256": "dd6cd2590b6c732256c222129ac1e3b1677bfa00601c56fa897fb68ef510a5db",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/valid.root_admission.json"
+  },
+  {
+    "bytes": 1329,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/test.root_admission.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/test.root_admission.json",
+    "sha256": "6d6881cfa45d1de9876622862034be63329c33e341f85aba30902f56c4105153",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/test.root_admission.json"
+  },
+  {
+    "bytes": 8612,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_acquire_independent_review_code_audit_v1.json",
+    "sha256": "8cb359aa3acfacd41aab623b87029208e7066c1943fb9dfe33a3e2e748e61524",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_acquire_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 7617,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/acquire.collection.json",
+    "sha256": "517fd7fd8c8cda04ea03068c3a2e5581996237f37266da351a3a463a6249e7f5",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/acquire.collection.json"
+  },
+  {
+    "bytes": 352,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/acquire.external.json",
+    "sha256": "8a089c6f5e07ff38ba0b93cf672345a16779b519c275e02862a8d5dd7c75ea6d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/acquire.external.json"
+  },
+  {
+    "bytes": 21870,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/download_report.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/download_report.json",
+    "sha256": "93b3acdd893a8dfbf1371c49d835b14762d70f9f429a75c657d4024a2e9919ff",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/download_report.json"
+  },
+  {
+    "bytes": 363,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/metadata.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/metadata.json",
+    "sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/metadata.json"
+  },
+  {
+    "bytes": 473,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/root_preparation_receipt.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/root_preparation_receipt.json",
+    "sha256": "32883d72dee52e35b607cc3b7a10e111ed056caeab4f7209de05a79a57361fb8",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/acquired/root_preparation_receipt.json"
+  },
+  {
+    "bytes": 41073,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_convert_independent_review_code_audit_v1.json",
+    "sha256": "9a0bf38b99b71b69c606a7f7ccb76011d5d000312250c0bda42cb6fd374750f5",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_convert_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 32821,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/convert.collection.json",
+    "sha256": "f05f21a2e3a35365320588d1f8a89720b6b1b35cce932a767091981d076114b3",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/convert.collection.json"
+  },
+  {
+    "bytes": 352,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/convert.external.json",
+    "sha256": "bbc74d81ccb6e4534ca5e7fcacbccc29cc66ff278e59cd7fe695e0b64f3231d4",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/convert.external.json"
+  },
+  {
+    "bytes": 363,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/metadata.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/metadata.json",
+    "sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/metadata.json"
+  },
+  {
+    "bytes": 70917,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/structural_report.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/structural_report.json",
+    "sha256": "ec33156cc4fb126a42330248a70098a6f9c04dfcfdc795799472b703ec788d2d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/structural_report.json"
+  },
+  {
+    "bytes": 27237,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/test.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/numeric/test.json",
+    "sha256": "53bed919f0f65a6308ff25388d0a43c864ded00f28b73cbfe1291e6b1c989e1c",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/numeric/test.json"
+  },
+  {
+    "bytes": 7437,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_census_independent_review_code_audit_v1.json",
+    "sha256": "36a1ae0d7a53bb5d48161d581cfe5fd886fa2dcb3df90bd203ce03b2666cb788",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_census_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 369863,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/census.collection.json",
+    "sha256": "a2adbbba582d107a26caef6df63356dc9a26ed5fe90815225eaca794d62955be",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/census.collection.json"
+  },
+  {
+    "bytes": 353,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/census.external.json",
+    "sha256": "cd29c19dcc659dd6af2dd6f3cc72172a0324245793f981fa9f8c445270aa93fe",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/census.external.json"
+  },
+  {
+    "bytes": 536487,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/census/all_split_census.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/census/all_split_census.json",
+    "sha256": "d5de93fdd581d0cba192c4db45a9b5dbde48fe8d64e4fa674ed0c3de7e47c002",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/census/all_split_census.json"
+  },
+  {
+    "bytes": 7781,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_candidate_valid_independent_review_code_audit_v1.json",
+    "sha256": "9bce50dc4cd5d16713a208df88243c2fe52220f7448d87ce13d8a8065848254f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_candidate_valid_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 370300,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_valid.collection.json",
+    "sha256": "27269b1adb12bdfcd9927d5a911379cca8ca56c02e6c5441711738028a07fd7f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_valid.collection.json"
+  },
+  {
+    "bytes": 352,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_valid.external.json",
+    "sha256": "e0b44a60601ed94ce877dab683f9720a5ef1bf783baa8e3f2e753794e98f0dfe",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_valid.external.json"
+  },
+  {
+    "bytes": 1355,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/candidate_valid/split_admission_candidate.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/candidate_valid/split_admission_candidate.json",
+    "sha256": "e8100a60f5458a1250728a380bb380a72f7610b67034fff8c00da352168b59c1",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/candidate_valid/split_admission_candidate.json"
+  },
+  {
+    "bytes": 7775,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_candidate_test_independent_review_code_audit_v1.json",
+    "sha256": "b8c3b45a78a826a58e6a6640c68d3a09bd027a9a6b169d135fb782ea5da73871",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_candidate_test_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 370307,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_test.collection.json",
+    "sha256": "c5edf58af73655066465622ee475ecd6ff6ab02b00321827d7bee03fe023107b",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_test.collection.json"
+  },
+  {
+    "bytes": 353,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_test.external.json",
+    "sha256": "fb8b1fbb23b1233c38b86c0ea221bf98f43c4dd1aa476877a13e6ab7a63e228d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/candidate_test.external.json"
+  },
+  {
+    "bytes": 1354,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/candidate_test/split_admission_candidate.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/candidate_test/split_admission_candidate.json",
+    "sha256": "a517f40f82e53c06eebee699ccb96512ee57343ecdde92747f7e4ae4391eadd2",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/candidate_test/split_admission_candidate.json"
+  },
+  {
+    "bytes": 7959,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_preflight_valid_independent_review_code_audit_v1.json",
+    "sha256": "4a38f5bfda7b5894543d557baff01617b0c79e446eccdac039b17574719c5cd0",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_preflight_valid_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 370462,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_valid.collection.json",
+    "sha256": "299086c4874c8d4e8844519beda34391b2264d5c0f64b73b2e4cc9f47b4bae7e",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_valid.collection.json"
+  },
+  {
+    "bytes": 353,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_valid.external.json",
+    "sha256": "bff997faa40f7529a1582a785e95e8f2706de55854a307fc02bf168ec4c25019",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_valid.external.json"
+  },
+  {
+    "bytes": 993,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/preflight_valid/split_preflight.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_valid/split_preflight.json",
+    "sha256": "4d17f418d40f47823bcb6318556839104dfa5638a12519094a7ae66816b5e89e",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/preflight_valid/split_preflight.json"
+  },
+  {
+    "bytes": 7952,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_completed_source_preflight_test_independent_review_code_audit_v1.json",
+    "sha256": "b8acf9d47f4a92266735acd652a1a0a5e909628c94e9521fdecd53964e6c36db",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_completed_source_preflight_test_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 370468,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_test.collection.json",
+    "sha256": "ad22fde9d18ed802dfa5108a63bfb5dcd7f0d6f6d45b7ad2200c9ba2bb4761f4",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_test.collection.json"
+  },
+  {
+    "bytes": 353,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_test.external.json",
+    "sha256": "e830387e477f5a7507345a22f153ab967dc7fba9fbc0a10dd6e970f7888c7dd7",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/preflight_test.external.json"
+  },
+  {
+    "bytes": 992,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/preflight_test/split_preflight.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/preflight_test/split_preflight.json",
+    "sha256": "54d66b4823ced1ec03a8f06082268997794345c1d35151b73dde9f9709988f07",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/collected/sand_reserved_preparation_20261006_v1/preflight_test/split_preflight.json"
+  },
+  {
+    "bytes": 17740,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/terminal.json",
+    "sha256": "36a8440bc8df7483846e30b42aba8edc41382afe518a5883dd0724e01832705c",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/terminal.json"
+  },
+  {
+    "bytes": 17454,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_source.json",
+    "sha256": "e9ace7c8c3ff69daa6eb714f1cf096e85a7ee4df4b162cb69d83d048a6f9be01",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_source.json"
+  },
+  {
+    "bytes": 17454,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_postcheck.json",
+    "sha256": "8cd3802a36ee0d9e638ffff934b263de48e4438f9fd914fccbc10317f1b698aa",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_postcheck.json"
+  },
+  {
+    "bytes": 16509,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_prepare.json",
+    "sha256": "581767e76bc60e6207d1615c4906c462433b518e2d7269a5a709c124b91e0363",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_prepare.json"
+  },
+  {
+    "bytes": 28089,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_publish.json",
+    "sha256": "77bc2bc1ad6d9efddf5594402f4f85249e06853e8461cf85f9ad6889dbcb1e4f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_publish.json"
+  },
+  {
+    "bytes": 284,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_closure.json",
+    "sha256": "54d3d66763abe20399af6b6a58bbf6f9bc9d1230b69c0c5db7ce8bba6f6abda4",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/source_closure.json"
+  },
+  {
+    "bytes": 289,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_closure.json",
+    "sha256": "175cfd5aa00a7cf5194599fa8d8650824bc5947f327759e32e1ad928caaf3318",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/target_closure.json"
+  },
+  {
+    "bytes": 251,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/root_original_external_exit.json",
+    "sha256": "b89c1844e4cae32b191da7c0e2300c7351833b704e68fa8cd7313760fa847f3f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_transfer_AB_20261006_root_v1/root_original_external_exit.json"
+  },
+  {
+    "bytes": 2198418,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_inventory_completed_A_1759_root_v1/files/sand_post_training_A_20261006_v1/inventory_A.json",
+    "purpose": "Original closed complete byte inventory; full scalar source remains preserved outside compact package",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/inventory_A.json",
+    "sha256": "8312c979418d01f433bef73f8add68cbf175c9d849fbaa9b79afc78ccd3a34ab",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_inventory_completed_A_1759_root_v1/files/sand_post_training_A_20261006_v1/inventory_A.json"
+  },
+  {
+    "bytes": 2747798,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_inventory_completed_B_1759_root_v1/files/sand_post_training_B_20261006_v1/inventory_B.json",
+    "purpose": "Original closed complete byte inventory; full scalar source remains preserved outside compact package",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_B_20261006_v1/inventory_B.json",
+    "sha256": "cc884308ee7e6b70cea56fac07e61d3a7f44460514b427b881787817186b5ffd",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_inventory_completed_B_1759_root_v1/files/sand_post_training_B_20261006_v1/inventory_B.json"
+  },
+  {
+    "bytes": 26408,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py",
+    "sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py"
+  },
+  {
+    "bytes": 45780,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/benchmark_sand_graph_support_rollout.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/benchmark_sand_graph_support_rollout.py",
+    "sha256": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/benchmark_sand_graph_support_rollout.py"
+  },
+  {
+    "bytes": 17938,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/download_sand_public_v2.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/download_sand_public_v2.py",
+    "sha256": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/download_sand_public_v2.py"
+  },
+  {
+    "bytes": 49814,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/evaluate_sand_graph_support_final.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_sand_graph_support_final.py",
+    "sha256": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/evaluate_sand_graph_support_final.py"
+  },
+  {
+    "bytes": 2246,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/launch_sand_reserved_source_cpu_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/launch_sand_reserved_source_cpu_v1.py",
+    "sha256": "8b3cc0cb47edc7d019cb55c733a481ab916e3b4a8e59567122119ca023b34ed0",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/launch_sand_reserved_source_cpu_v1.py"
+  },
+  {
+    "bytes": 24233,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+    "sha256": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py"
+  },
+  {
+    "bytes": 31908,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_recovered_final_cohort_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_recovered_final_cohort_v1.py",
+    "sha256": "41bef815edf151fddd9ef9d667a339b5cb0f46ae405d8e4ed6bf00df69e75ced",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_recovered_final_cohort_v1.py"
+  },
+  {
+    "bytes": 25473,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_recovered_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_reserved_test_recovered_v1.py",
+    "sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_recovered_v1.py"
+  },
+  {
+    "bytes": 25467,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+    "sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_scoped_v1.py"
+  },
+  {
+    "bytes": 20511,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/repackage_designsafe_sand.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/repackage_designsafe_sand.py",
+    "sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/repackage_designsafe_sand.py"
+  },
+  {
+    "bytes": 26201,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+    "sha256": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md"
+  },
+  {
+    "bytes": 2389002,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_numeric_structural_report.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_numeric_structural_report.json",
+    "sha256": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_numeric_structural_report.json"
+  },
+  {
+    "bytes": 1036,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/source_phase.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_original_reserved_source_phase_20261006_v1.json",
+    "sha256": "895e25aa38490f42bb2f24a4129ccde8c1e91f8f01a8cf960eda15d0ee15e7ed",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_reserved_released_1808_root_v1/source_phase.json"
+  },
+  {
+    "bytes": 756,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_post_training_verification_phase_20261006_v1.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_post_training_verification_phase_20261006_v1.json",
+    "sha256": "61df824a2bb23d5270f07682ba01ba3028d5019997a9cf6ba47c82ed54241914",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_post_training_verification_phase_20261006_v1.json"
+  },
+  {
+    "bytes": 5024,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+    "sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_scoped_operational_amendment_v1.md"
+  },
+  {
+    "bytes": 10169,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+    "sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json"
+  },
+  {
+    "bytes": 796,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_train_admission.json",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_train_admission.json",
+    "sha256": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_train_admission.json"
+  },
+  {
+    "bytes": 42395,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_reserved_source_cpu_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_reserved_source_cpu_v1.py",
+    "sha256": "d7880125e43ea6eeb047e7b3170a06b2ff1b189b9051978234adcf4d2b297955",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/supervise_sand_reserved_source_cpu_v1.py"
+  },
+  {
+    "bytes": 36611,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py",
+    "sha256": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py"
+  },
+  {
+    "bytes": 18139,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_sand_recovered_cohort_bridge_independent_code_audit_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/test_sand_recovered_cohort_bridge_independent_code_audit_v1.py",
+    "sha256": "a66307b2e24eb41bd1b4acd6526151b8f0f1c42f0ec50a039fe395a9590fe04a",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_recovered_cohort_bridge_independent_code_audit_v1.py"
+  },
+  {
+    "bytes": 11219,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_sand_reserved_source_cpu_transition_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/test_sand_reserved_source_cpu_transition_v1.py",
+    "sha256": "c4735bea813d02bcafa7637119597bf68b363522197b62d6d6a972c95a32546e",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_reserved_source_cpu_transition_v1.py"
+  },
+  {
+    "bytes": 10516,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_sand_reserved_transfer_transition_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/test_sand_reserved_transfer_transition_v1.py",
+    "sha256": "6753b6537e76657b493fd476f2af85487cb00167e3071772a2032dfc1b51c4d8",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_reserved_transfer_transition_v1.py"
+  },
+  {
+    "bytes": 40940,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_sand_graph_support_cuda.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_sand_graph_support_cuda.py",
+    "sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/train_sand_graph_support_cuda.py"
+  },
+  {
+    "bytes": 24349,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_sand_runtime_migration_recovery_v1.py",
+    "sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py"
+  },
+  {
+    "bytes": 13620,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/transfer_sand_reserved_A_to_B_v1.py",
+    "remote_path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/transfer_sand_reserved_A_to_B_v1.py",
+    "sha256": "863a5f71214e1dba19513a5467332a9cdcdb0cc152d3881029e8cefc011cee7b",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/transfer_sand_reserved_A_to_B_v1.py"
+  },
+  {
+    "bytes": 3156,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/PROPOSAL.md",
+    "sha256": "5a501b7e8c932061863acd172e51d8c68ebc6e5ce7698812ca414e0384c63e35",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/PROPOSAL.md"
+  },
+  {
+    "bytes": 2989,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/amendment_phase.candidate.json",
+    "sha256": "d034dd3aa291b1bee0b9744b8e2d2d52e44408154ad9ae4a0742c842411ddb62",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/amendment_phase.candidate.json"
+  },
+  {
+    "bytes": 582,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/author_validation.json",
+    "sha256": "0ce991ca6ee9dea18c994b364496a0c39334138471569767676ab0dc1554366b",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/author_validation.json"
+  },
+  {
+    "bytes": 6159,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/commands.json",
+    "sha256": "c1fecdc75bfc054c7f1b33e3ff90439171bebc442c3ef8bb54fdec859396cbd3",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/commands.json"
+  },
+  {
+    "bytes": 1220,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/human_approval.candidate.json",
+    "sha256": "f75c190a4167e590b3509fb9e35f2bd23f7c3babc40f25c5b31d1a545a6a6053",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/human_approval.candidate.json"
+  },
+  {
+    "bytes": 17700,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/immutable_original_transfer_bindings.json",
+    "sha256": "4bdd611e55f8011406db93cdef14804183fe09b8a99dc51493cf3a10a5c18089",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/immutable_original_transfer_bindings.json"
+  },
+  {
+    "bytes": 2253,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/launch_sand_B_preflight_amendment_cpu_v1.py",
+    "sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/launch_sand_B_preflight_amendment_cpu_v1.py"
+  },
+  {
+    "bytes": 10597,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_test.cpu_release.candidate.json",
+    "sha256": "650fe336541aa3c5d840ecb640ad023e5c0e38a7d969d00702adfb5ccd06fb28",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_test.cpu_release.candidate.json"
+  },
+  {
+    "bytes": 3863,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_test.mode_release.candidate.json",
+    "sha256": "a812fffad9077821b433e202c9f6832bcb75ef2ead1117c1437fe1b7d6376d52",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_test.mode_release.candidate.json"
+  },
+  {
+    "bytes": 10561,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_valid.cpu_release.candidate.json",
+    "sha256": "a3b7fb36943acd9d900fb9c283e927e885dfda5f6d8e3a2a93b29ec740d644ad",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_valid.cpu_release.candidate.json"
+  },
+  {
+    "bytes": 3849,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_valid.mode_release.candidate.json",
+    "sha256": "97ba93a1f9cfe388cb28266a6ed555f1b94c8f6aee3e461d98512f6ea1177f4d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/preflight_valid.mode_release.candidate.json"
+  },
+  {
+    "bytes": 68654,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/supervise_sand_B_preflight_amendment_cpu_v1.py",
+    "sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/supervise_sand_B_preflight_amendment_cpu_v1.py"
+  },
+  {
+    "bytes": 20073,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/test_sand_B_preflight_amendment_cpu_v1.py",
+    "sha256": "d1bd49aa87a0b5fc342a617cf69e4d73a22ecfdecc4b9dc0a823c7bf3f671cce",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/test_sand_B_preflight_amendment_cpu_v1.py"
+  },
+  {
+    "bytes": 2589,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/manifest.json",
+    "sha256": "72cfe26b2d8c13ea50d24b8d85e450ef228a4bf9ef681fb18a2de525f8640e6d",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/manifest.json"
+  },
+  {
+    "bytes": 17538,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_independent_owner_review_v1.json",
+    "sha256": "78f5632f778cd43eceeb736fb40f473682132ed1d10993ed6b65e160a9dcb744",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_independent_owner_review_v1.json"
+  },
+  {
+    "bytes": 6886,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_operator_independent_owner_review_v1.json",
+    "sha256": "f470adb1bb57f3e0f1d561a62faef4c660cd98ea82564c50e808d32269071450",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_operator_independent_owner_review_v1.json"
+  },
+  {
+    "bytes": 1205,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_operator_supplement_code_audit_v1.json",
+    "sha256": "c04431796ba3d0fb1f388440b3c4cad874b96ae1f0d3dda98a7061b142bc5c32",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_operator_supplement_code_audit_v1.json"
+  },
+  {
+    "bytes": 922,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt1.log",
+    "purpose": "Preserved synthetic test attempt; raw log payload excluded uniformly",
+    "sha256": "9d57ad4391a18783a2f907a6a877e881dc895baa0b77529b970c578069936d05",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt1.log"
+  },
+  {
+    "bytes": 1154,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt2.log",
+    "purpose": "Preserved synthetic test attempt; raw log payload excluded uniformly",
+    "sha256": "86ec9996cdc2a6d7d0814838bf575d1920e3fdd8fa4651583ad7ddc460c741fe",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt2.log"
+  },
+  {
+    "bytes": 251,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/root_original_external_exit.json",
+    "sha256": "b89c1844e4cae32b191da7c0e2300c7351833b704e68fa8cd7313760fa847f3f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/root_original_external_exit.json"
+  },
+  {
+    "bytes": 7668,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_completed_transfer_independent_review_code_audit_v1.json",
+    "sha256": "fbbb549456d289cf8d533f6e1a078c915ac0f1728c5e3314b92192cbdf4395c8",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_completed_transfer_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 16716,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_original_source_phase_incomplete_root_v1.json",
+    "sha256": "5b07542ec04a11f8fef58f563d693ccb20514dbcac603b17a5736f45b97a1120",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_original_source_phase_incomplete_root_v1.json"
+  },
+  {
+    "bytes": 17142,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_original_source_window_disposition_independent_review_code_audit_v1.json",
+    "sha256": "d3c7493bc8a5995eb312fef061d8522a722007d6d4a5178eedb49c23928fe5a3",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/sand_original_source_window_disposition_independent_review_code_audit_v1.json"
+  },
+  {
+    "bytes": 28089,
+    "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/target_publish.json",
+    "sha256": "77bc2bc1ad6d9efddf5594402f4f85249e06853e8461cf85f9ad6889dbcb1e4f",
+    "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_UNADMITTED_transition_v1/history/target_publish.json"
+  }
+]

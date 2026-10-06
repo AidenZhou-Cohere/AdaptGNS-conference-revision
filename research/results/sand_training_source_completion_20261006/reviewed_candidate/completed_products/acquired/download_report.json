@@ -1,0 +1,738 @@
+{
+  "schema": "sand_public_acquisition_v2",
+  "status": "complete_with_object_dtypes",
+  "doi": "10.17603/ds2-0phb-dg64",
+  "project_id": "PRJ-3702",
+  "version": 1,
+  "dataset": "Sand",
+  "published_directory": "/published-data/PRJ-3702/Project--graph-network-simulator-datasets/data/Sand/dataset/",
+  "started_utc": "2026-10-06T18:21:43.318546+00:00",
+  "downloader_sha256": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+  "limits": {
+    "max_seconds": 825,
+    "socket_timeout_seconds": 30,
+    "redirects_per_opener": 3,
+    "max_npy_header_bytes": 65536,
+    "max_zip_members": 4096,
+    "max_uncompressed_bytes": 34359738368
+  },
+  "metadata_reference_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+  "requested_files": [
+    "metadata.json",
+    "test.npz"
+  ],
+  "publisher_npz_sha256_available": false,
+  "arrays_decoded": false,
+  "pickle_used": false,
+  "conversion_performed": false,
+  "metrics_computed": false,
+  "files": [
+    {
+      "name": "metadata.json",
+      "expected_bytes": 363,
+      "status": "downloaded_and_inspected",
+      "stage": "complete",
+      "download_host": "designsafe-download01.tacc.utexas.edu",
+      "response_headers": {
+        "Content-Length": "363",
+        "Content-Type": "application/json",
+        "ETag": "4ba15bc507e7e53935596f0029115a5f",
+        "Last-Modified": "Wed, 28 Sep 2022 16:39:25 GMT"
+      },
+      "final_download_host": "designsafe-download01.tacc.utexas.edu",
+      "received_bytes": 363,
+      "received_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+      "metadata_matches_verified_bytes": true,
+      "saved_name": "metadata.json"
+    },
+    {
+      "name": "test.npz",
+      "expected_bytes": 85825802,
+      "status": "downloaded_and_inspected",
+      "stage": "complete",
+      "download_host": "designsafe-download01.tacc.utexas.edu",
+      "response_headers": {
+        "Content-Length": "85825802",
+        "Content-Type": "text/plain; charset=utf-8",
+        "ETag": "a14a28f205f943874f1a21d8685676cc",
+        "Last-Modified": "Wed, 28 Sep 2022 16:38:07 GMT"
+      },
+      "final_download_host": "designsafe-download01.tacc.utexas.edu",
+      "received_bytes": 85825802,
+      "received_sha256": "40beddf2cbf8dd4da89af01b03c2b2d75d08bba8a3e7d9378e084a436efab964",
+      "zip": {
+        "member_count": 30,
+        "uncompressed_bytes": 97864718,
+        "members": [
+          {
+            "source_member_index": 0,
+            "name": "simulation_trajectory_0.npy",
+            "compressed_bytes": 3907318,
+            "uncompressed_bytes": 4443095,
+            "listed_crc32": "49e599f6",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4442967,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 1,
+            "name": "simulation_trajectory_1.npy",
+            "compressed_bytes": 3331580,
+            "uncompressed_bytes": 3777983,
+            "listed_crc32": "22f239c4",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3777855,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 2,
+            "name": "simulation_trajectory_2.npy",
+            "compressed_bytes": 2980688,
+            "uncompressed_bytes": 3374807,
+            "listed_crc32": "328340c7",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3374679,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 3,
+            "name": "simulation_trajectory_3.npy",
+            "compressed_bytes": 3434118,
+            "uncompressed_bytes": 3896111,
+            "listed_crc32": "7c8d8143",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3895983,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 4,
+            "name": "simulation_trajectory_4.npy",
+            "compressed_bytes": 1613446,
+            "uncompressed_bytes": 1854551,
+            "listed_crc32": "6940032d",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 1854423,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 5,
+            "name": "simulation_trajectory_5.npy",
+            "compressed_bytes": 4253643,
+            "uncompressed_bytes": 4833431,
+            "listed_crc32": "49e39f87",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4833303,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 6,
+            "name": "simulation_trajectory_6.npy",
+            "compressed_bytes": 1419902,
+            "uncompressed_bytes": 1659383,
+            "listed_crc32": "eb9e7685",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 1659255,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 7,
+            "name": "simulation_trajectory_7.npy",
+            "compressed_bytes": 4323293,
+            "uncompressed_bytes": 4905335,
+            "listed_crc32": "02063272",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4905207,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 8,
+            "name": "simulation_trajectory_8.npy",
+            "compressed_bytes": 4196070,
+            "uncompressed_bytes": 4756391,
+            "listed_crc32": "c601fa67",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4756263,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 9,
+            "name": "simulation_trajectory_9.npy",
+            "compressed_bytes": 3723533,
+            "uncompressed_bytes": 4237655,
+            "listed_crc32": "45079bbc",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4237527,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 10,
+            "name": "simulation_trajectory_10.npy",
+            "compressed_bytes": 2795140,
+            "uncompressed_bytes": 3187343,
+            "listed_crc32": "ec4f1e5e",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3187215,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 11,
+            "name": "simulation_trajectory_11.npy",
+            "compressed_bytes": 3907388,
+            "uncompressed_bytes": 4427687,
+            "listed_crc32": "317ff5ad",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4427559,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 12,
+            "name": "simulation_trajectory_12.npy",
+            "compressed_bytes": 3499673,
+            "uncompressed_bytes": 3983423,
+            "listed_crc32": "fce3acca",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3983295,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 13,
+            "name": "simulation_trajectory_13.npy",
+            "compressed_bytes": 2329532,
+            "uncompressed_bytes": 2660903,
+            "listed_crc32": "e0d1602f",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2660775,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 14,
+            "name": "simulation_trajectory_14.npy",
+            "compressed_bytes": 3879093,
+            "uncompressed_bytes": 4425119,
+            "listed_crc32": "007cf694",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4424991,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 15,
+            "name": "simulation_trajectory_15.npy",
+            "compressed_bytes": 3284748,
+            "uncompressed_bytes": 3739463,
+            "listed_crc32": "54719055",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3739335,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 16,
+            "name": "simulation_trajectory_16.npy",
+            "compressed_bytes": 2470137,
+            "uncompressed_bytes": 2856071,
+            "listed_crc32": "b6269913",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2855943,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 17,
+            "name": "simulation_trajectory_17.npy",
+            "compressed_bytes": 2593450,
+            "uncompressed_bytes": 2948519,
+            "listed_crc32": "e627cd9a",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2948391,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 18,
+            "name": "simulation_trajectory_18.npy",
+            "compressed_bytes": 1305245,
+            "uncompressed_bytes": 1495031,
+            "listed_crc32": "ee6d3849",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 1494903,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 19,
+            "name": "simulation_trajectory_19.npy",
+            "compressed_bytes": 518590,
+            "uncompressed_bytes": 616773,
+            "listed_crc32": "b38101a3",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 616645,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 20,
+            "name": "simulation_trajectory_20.npy",
+            "compressed_bytes": 472231,
+            "uncompressed_bytes": 544869,
+            "listed_crc32": "c2fbeb24",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 544741,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 21,
+            "name": "simulation_trajectory_21.npy",
+            "compressed_bytes": 1947311,
+            "uncompressed_bytes": 2262863,
+            "listed_crc32": "b41f42c2",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2262735,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 22,
+            "name": "simulation_trajectory_22.npy",
+            "compressed_bytes": 3880489,
+            "uncompressed_bytes": 4394303,
+            "listed_crc32": "2c03425b",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4394175,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 23,
+            "name": "simulation_trajectory_23.npy",
+            "compressed_bytes": 2978297,
+            "uncompressed_bytes": 3392783,
+            "listed_crc32": "93b8ff76",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3392655,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 24,
+            "name": "simulation_trajectory_24.npy",
+            "compressed_bytes": 2447226,
+            "uncompressed_bytes": 2784167,
+            "listed_crc32": "d258f344",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2784039,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 25,
+            "name": "simulation_trajectory_25.npy",
+            "compressed_bytes": 4093845,
+            "uncompressed_bytes": 4666511,
+            "listed_crc32": "960e7e85",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 4666383,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 26,
+            "name": "simulation_trajectory_26.npy",
+            "compressed_bytes": 2870616,
+            "uncompressed_bytes": 3274655,
+            "listed_crc32": "80781cf5",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 3274527,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 27,
+            "name": "simulation_trajectory_27.npy",
+            "compressed_bytes": 856707,
+            "uncompressed_bytes": 1037927,
+            "listed_crc32": "5fce2bc7",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 1037799,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 28,
+            "name": "simulation_trajectory_28.npy",
+            "compressed_bytes": 4449645,
+            "uncompressed_bytes": 5061983,
+            "listed_crc32": "bb2e178a",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 5061855,
+              "payload_decoded": false
+            }
+          },
+          {
+            "source_member_index": 29,
+            "name": "simulation_trajectory_29.npy",
+            "compressed_bytes": 2058286,
+            "uncompressed_bytes": 2365583,
+            "listed_crc32": "02336697",
+            "npy": {
+              "version": [
+                1,
+                0
+              ],
+              "shape": [
+                2
+              ],
+              "descr": "|O",
+              "fortran_order": false,
+              "has_object_dtype": true,
+              "header_bytes": 128,
+              "payload_bytes": 2365455,
+              "payload_decoded": false
+            }
+          }
+        ],
+        "full_member_crc_verified": false,
+        "inspection": "ZIP inventory and NPY headers only; no array payload decoding",
+        "object_dtypes_detected": true
+      },
+      "saved_name": "test.npz"
+    }
+  ],
+  "object_dtypes_detected": true,
+  "numeric_payload_validity_verified": false,
+  "elapsed_seconds": 2.527197790099308
+}

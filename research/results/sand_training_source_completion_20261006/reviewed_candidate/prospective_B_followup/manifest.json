@@ -1,0 +1,30 @@
+{
+  "bootstrap_sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+  "clock_issued": false,
+  "execution_authority": false,
+  "files_sha256": {
+    "PROPOSAL.md": "5a501b7e8c932061863acd172e51d8c68ebc6e5ce7698812ca414e0384c63e35",
+    "amendment_phase.candidate.json": "d034dd3aa291b1bee0b9744b8e2d2d52e44408154ad9ae4a0742c842411ddb62",
+    "author_validation.json": "0ce991ca6ee9dea18c994b364496a0c39334138471569767676ab0dc1554366b",
+    "commands.json": "c1fecdc75bfc054c7f1b33e3ff90439171bebc442c3ef8bb54fdec859396cbd3",
+    "history/root_original_external_exit.json": "b89c1844e4cae32b191da7c0e2300c7351833b704e68fa8cd7313760fa847f3f",
+    "history/sand_completed_transfer_independent_review_code_audit_v1.json": "fbbb549456d289cf8d533f6e1a078c915ac0f1728c5e3314b92192cbdf4395c8",
+    "history/sand_original_source_phase_incomplete_root_v1.json": "5b07542ec04a11f8fef58f563d693ccb20514dbcac603b17a5736f45b97a1120",
+    "history/sand_original_source_window_disposition_independent_review_code_audit_v1.json": "d3c7493bc8a5995eb312fef061d8522a722007d6d4a5178eedb49c23928fe5a3",
+    "history/target_publish.json": "77bc2bc1ad6d9efddf5594402f4f85249e06853e8461cf85f9ad6889dbcb1e4f",
+    "human_approval.candidate.json": "f75c190a4167e590b3509fb9e35f2bd23f7c3babc40f25c5b31d1a545a6a6053",
+    "immutable_original_transfer_bindings.json": "4bdd611e55f8011406db93cdef14804183fe09b8a99dc51493cf3a10a5c18089",
+    "launch_sand_B_preflight_amendment_cpu_v1.py": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+    "preflight_test.cpu_release.candidate.json": "650fe336541aa3c5d840ecb640ad023e5c0e38a7d969d00702adfb5ccd06fb28",
+    "preflight_test.mode_release.candidate.json": "a812fffad9077821b433e202c9f6832bcb75ef2ead1117c1437fe1b7d6376d52",
+    "preflight_valid.cpu_release.candidate.json": "a3b7fb36943acd9d900fb9c283e927e885dfda5f6d8e3a2a93b29ec740d644ad",
+    "preflight_valid.mode_release.candidate.json": "97ba93a1f9cfe388cb28266a6ed555f1b94c8f6aee3e461d98512f6ea1177f4d",
+    "supervise_sand_B_preflight_amendment_cpu_v1.py": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+    "test_sand_B_preflight_amendment_cpu_v1.py": "d1bd49aa87a0b5fc342a617cf69e4d73a22ecfdecc4b9dc0a823c7bf3f671cce"
+  },
+  "frozen_worker_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+  "human_approval_received": false,
+  "schema": "sand_B_preflight_amendment_unadmitted_package_v1",
+  "source_owner_sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+  "status": "template_not_admitted"
+}

@@ -1,0 +1,12 @@
+{
+  "applies_uniformly_to_all_original_recovered_failed_superseded_and_prospective_runs": true,
+  "metadata_retained": "Exact byte counts, SHA256, original local/remote paths and closure/admission status may refer to excluded artifacts; references never imply payload inclusion or new verification.",
+  "no_payloads_deleted_from_source_workspace": true,
+  "payloads_excluded": [
+    "All raw trajectory and saved numeric arrays (.npy/.npz/.h5/.hdf5/TFRecord/etc).",
+    "All model/checkpoint/optimizer/RNG tensor payloads (.pt/.pth/.ckpt/.safetensors/.pkl/etc).",
+    "Raw stdout/stderr/training logs, caches, bytecode, temporaryfiles and environment installs.",
+    "SSHconfiguration/privatekeys/knownhosts, credentials,tokens and secret-bearing environment files."
+  ],
+  "public_distribution_status": "Candidate only. Root retains release authority; this curation commits/pushes/uploads nothing."
+}

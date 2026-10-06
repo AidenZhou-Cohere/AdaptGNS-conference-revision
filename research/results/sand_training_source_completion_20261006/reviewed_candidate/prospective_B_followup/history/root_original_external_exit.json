@@ -1,0 +1,7 @@
+{
+  "original_session": 84335,
+  "original_tool_exit_code": 0,
+  "observed_by": "root",
+  "observed_utc": "2026-10-06T18:35:55.561287+00:00",
+  "scope": "Original controller exit, not observer exit; terminal/helper/native and data review separate."
+}

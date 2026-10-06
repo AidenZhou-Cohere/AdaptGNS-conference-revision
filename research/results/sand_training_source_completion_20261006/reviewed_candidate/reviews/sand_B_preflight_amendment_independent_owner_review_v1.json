@@ -1,0 +1,704 @@
+{
+  "additional_original_scalar_AST_identical": [
+    "cohort_gate",
+    "numeric_bindings"
+  ],
+  "bootstrap_source_sha256": "fe002dda0143b0736037d900ef69760cc898c1a17fda177cf710642124f6e89b",
+  "checks": [
+    {
+      "check": "frozen_manifest_sha",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:PROPOSAL.md",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:amendment_phase.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:author_validation.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:commands.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:history/root_original_external_exit.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:history/sand_completed_transfer_independent_review_code_audit_v1.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:history/sand_original_source_phase_incomplete_root_v1.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:history/sand_original_source_window_disposition_independent_review_code_audit_v1.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:history/target_publish.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:human_approval.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:immutable_original_transfer_bindings.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:launch_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:preflight_test.cpu_release.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:preflight_test.mode_release.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:preflight_valid.cpu_release.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:preflight_valid.mode_release.candidate.json",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:supervise_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "manifest_payload:test_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "source_identity:supervise_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "source_identity:launch_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "source_identity:test_sand_B_preflight_amendment_cpu_v1.py",
+      "passed": true
+    },
+    {
+      "check": "package_authority_false:clock_issued",
+      "passed": true
+    },
+    {
+      "check": "package_authority_false:execution_authority",
+      "passed": true
+    },
+    {
+      "check": "package_authority_false:human_approval_received",
+      "passed": true
+    },
+    {
+      "check": "package_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "qualified_source_sha",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:SigEvent",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:TimeSpec",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:ITimerSpec",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:arm_absolute_guard",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:native",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:stable",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:parent_death_hook",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:Runtime",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:public",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:register",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:capture",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:send",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:cleanup",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:publish",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:sha",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:read_json",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:cohort_gate",
+      "passed": true
+    },
+    {
+      "check": "qualified_AST_identical:numeric_bindings",
+      "passed": true
+    },
+    {
+      "check": "exact_two_operations",
+      "passed": true
+    },
+    {
+      "check": "exact98_original_transfer_map",
+      "passed": true
+    },
+    {
+      "check": "all2120_numeric_requirement",
+      "passed": true
+    },
+    {
+      "check": "fixed_history:original_source_disposition",
+      "passed": true
+    },
+    {
+      "check": "fixed_history:independent_source_disposition",
+      "passed": true
+    },
+    {
+      "check": "fixed_history:transfer_products_review",
+      "passed": true
+    },
+    {
+      "check": "fixed_history:transfer_target_publication",
+      "passed": true
+    },
+    {
+      "check": "fixed_history:transfer_original_external_exit",
+      "passed": true
+    },
+    {
+      "check": "phase_history",
+      "passed": true
+    },
+    {
+      "check": "phase_null:issued_by",
+      "passed": true
+    },
+    {
+      "check": "phase_null:issued_utc",
+      "passed": true
+    },
+    {
+      "check": "phase_null:amendment_started_utc",
+      "passed": true
+    },
+    {
+      "check": "phase_null:amendment_stop_utc",
+      "passed": true
+    },
+    {
+      "check": "phase_null:reviewed_candidate_manifest_sha256",
+      "passed": true
+    },
+    {
+      "check": "approval_null:authorization_source",
+      "passed": true
+    },
+    {
+      "check": "approval_null:human_approval_observed_utc",
+      "passed": true
+    },
+    {
+      "check": "approval_null:human_message_reference",
+      "passed": true
+    },
+    {
+      "check": "approval_null:human_message_text",
+      "passed": true
+    },
+    {
+      "check": "approval_null:recorded_by",
+      "passed": true
+    },
+    {
+      "check": "approval_null:recorded_utc",
+      "passed": true
+    },
+    {
+      "check": "approval_null:reviewed_candidate_manifest_sha256",
+      "passed": true
+    },
+    {
+      "check": "phase_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "phase_operations_and_host",
+      "passed": true
+    },
+    {
+      "check": "phase_downstream",
+      "passed": true
+    },
+    {
+      "check": "phase_global_deadline",
+      "passed": true
+    },
+    {
+      "check": "phase_no_retry",
+      "passed": true
+    },
+    {
+      "check": "approval_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "approval_operations_and_host",
+      "passed": true
+    },
+    {
+      "check": "approval_downstream",
+      "passed": true
+    },
+    {
+      "check": "approval_global_deadline",
+      "passed": true
+    },
+    {
+      "check": "approval_no_retry",
+      "passed": true
+    },
+    {
+      "check": "phase_exact600",
+      "passed": true
+    },
+    {
+      "check": "all24_retained",
+      "passed": true
+    },
+    {
+      "check": "original_clock_never_restarted",
+      "passed": true
+    },
+    {
+      "check": "approval_source_pins",
+      "passed": true
+    },
+    {
+      "check": "commands_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "parallel_one_shared_phase",
+      "passed": true
+    },
+    {
+      "check": "closure_within_phase",
+      "passed": true
+    },
+    {
+      "check": "two_commands",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_original_minimal_mode_pin_keys",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_original_nonnull_pins_preserved",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_old_null_pins_bound_to_original_transfer",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_pins_in_transfer",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_same_input_paths",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_fresh_outputs",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_fresh_controls",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_input_pins",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_source_pins",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_history",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_new_shared_phase_binding",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_original_phase_pin",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_commands",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_bootstrap",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:issued_by",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:issued_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:invocation_origin_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:work_stop_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:cleanup_deadline_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:publication_deadline_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:hard_deadline_monotonic_ns",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:remaining_shared_amendment_seconds",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_cpu_null:reviewed_candidate_manifest_sha256",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_null:issued_by",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_null:issued_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_null:preparation_started_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_null:preparation_stop_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_mode_null:amendment_phase_sha256",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_clock_null:host_boot_id",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_clock_null:host_monotonic_seconds",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_clock_null:host_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_clock_null:root_reference_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_templates_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "preflight_valid_no_retries",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_original_minimal_mode_pin_keys",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_original_nonnull_pins_preserved",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_old_null_pins_bound_to_original_transfer",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_pins_in_transfer",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_same_input_paths",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_fresh_outputs",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_fresh_controls",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_input_pins",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_source_pins",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_history",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_new_shared_phase_binding",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_original_phase_pin",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_commands",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_bootstrap",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:issued_by",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:issued_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:invocation_origin_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:work_stop_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:cleanup_deadline_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:publication_deadline_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:hard_deadline_monotonic_ns",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:remaining_shared_amendment_seconds",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_cpu_null:reviewed_candidate_manifest_sha256",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_null:issued_by",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_null:issued_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_null:preparation_started_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_null:preparation_stop_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_mode_null:amendment_phase_sha256",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_clock_null:host_boot_id",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_clock_null:host_monotonic_seconds",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_clock_null:host_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_clock_null:root_reference_utc",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_templates_unadmitted",
+      "passed": true
+    },
+    {
+      "check": "preflight_test_no_retries",
+      "passed": true
+    },
+    {
+      "check": "gate:original_external_exit_before_anchor",
+      "passed": true
+    },
+    {
+      "check": "gate:exact600_duration",
+      "passed": true
+    },
+    {
+      "check": "gate:downstream_reserve",
+      "passed": true
+    },
+    {
+      "check": "gate:direct_human_authority",
+      "passed": true
+    },
+    {
+      "check": "gate:approval_before_anchor",
+      "passed": true
+    },
+    {
+      "check": "gate:return_original_phase_for_cohort_closure",
+      "passed": true
+    },
+    {
+      "check": "nonoptimized_owner",
+      "passed": true
+    },
+    {
+      "check": "owner_no_scientific_imports",
+      "passed": true
+    },
+    {
+      "check": "independent24_plus38_subtests",
+      "passed": true
+    },
+    {
+      "check": "latest_start_232355",
+      "passed": true
+    }
+  ],
+  "clock_issued": false,
+  "execution_authority": false,
+  "findings": [],
+  "human_approval_received": false,
+  "independent_synthetic_tests": {
+    "exit_code": 0,
+    "log": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_B_preflight_amendment_independent_owner_tests_v1.log",
+    "log_sha256": "d64c1eceee145cf3595836b8274a5f74c59f178d14866427cbf93e2fdd5043d8",
+    "passed": 24,
+    "subtests_passed": 38
+  },
+  "limits": "The 16 preserved native definitions do not establish actual B execution or closure. Both B operations share one600-second amendment; all downstream600/11760/3600 allocations remain required before04:00UTC. Original24-stage evaluation controls remain unissued.",
+  "native_host_qualification_performed": false,
+  "original_source_phase_remains_incomplete": true,
+  "owner_source_sha256": "9929adad54f351a81fc497f3246027625a3e519975874a1f99a953b431af1a16",
+  "package_manifest_sha256": "72cfe26b2d8c13ea50d24b8d85e450ef228a4bf9ef681fb18a2de525f8640e6d",
+  "qualified_native_lifecycle_AST_identical": [
+    "SigEvent",
+    "TimeSpec",
+    "ITimerSpec",
+    "arm_absolute_guard",
+    "native",
+    "stable",
+    "parent_death_hook",
+    "Runtime",
+    "public",
+    "register",
+    "capture",
+    "send",
+    "cleanup",
+    "publish",
+    "sha",
+    "read_json"
+  ],
+  "qualified_original_source_sha256": "d7880125e43ea6eeb047e7b3170a06b2ff1b189b9051978234adcf4d2b297955",
+  "required_before_any_execution": "Direct human approval of this concrete amendment; root-issued shared600-second phase and releases bound to the reviewed candidate; fresh actual host/root clocks and original external exit/native closure checks.",
+  "review_harness_correction": {
+    "description": "Initial harness wrongly required old unadmitted null pins to remain null. Confirmed identical input key sets, unchanged nonnull pins, and former null pins now bound exactly to the98-file original transfer publication. This was a harness expectation correction; reviewed package unchanged.",
+    "initial_harness_sha256": "35d03c995e87c26836dd225474ab99913c7cbe02f9e7f29dcc121cee56133e2f",
+    "initial_receipt_sha256": "1af8baccd4ed10fe857ff42b805eadb681447e9aff1f6959f6338860de5624dd"
+  },
+  "review_harness_sha256": "e563c4111abf546ac77fd7f5e2ce43fe0fd8dacfe7cef5e718e16b4859b66112",
+  "reviewer": "/root/code_audit/transition_review/owner_receipt_review",
+  "schema": "sand_B_preflight_amendment_independent_owner_review_v1",
+  "scope": "Frozen source and control review plus new opaque synthetic fixtures only. No remote access, native probes, original scientific execution, original numeric arrays, model checkpoints, or live results opened.",
+  "static_check_count": 162,
+  "status": "passed_static_and_synthetic_review_unadmitted"
+}

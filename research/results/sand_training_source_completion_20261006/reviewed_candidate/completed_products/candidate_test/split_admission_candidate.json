@@ -1,0 +1,24 @@
+{
+  "census_sha256": "d5de93fdd581d0cba192c4db45a9b5dbde48fe8d64e4fa674ed0c3de7e47c002",
+  "cohort_manifest_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "converter_sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+  "dataset": "Sand",
+  "frames_per_trajectory": 320,
+  "issued_by": "preparation_wrapper_not_root",
+  "manifest_sha256": "53bed919f0f65a6308ff25388d0a43c864ded00f28b73cbfe1291e6b1c989e1c",
+  "metadata_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+  "particle_type_ids": [
+    6
+  ],
+  "position_dtype": "<f4",
+  "preparation_source_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+  "protocol_sha256": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+  "record_count": 30,
+  "root_preparation_release_sha256": "13f6ec6cb1bf2cb2ca44cbd92090214f162078b49e3684d978af7b96c8bc364c",
+  "schema": "adaptgns_sand_graph_support_final_evaluation_admission_v1",
+  "source_sha256": "40beddf2cbf8dd4da89af01b03c2b2d75d08bba8a3e7d9378e084a436efab964",
+  "split": "test",
+  "status": "candidate_requires_root_review",
+  "structural_report_sha256": "ec33156cc4fb126a42330248a70098a6f9c04dfcfdc795799472b703ec788d2d",
+  "training_admission_sha256": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73"
+}

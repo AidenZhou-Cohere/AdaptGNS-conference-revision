@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_sand_training_admission_v1",
+  "status": "admitted",
+  "dataset": "Sand",
+  "split": "train",
+  "manifest_sha256": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+  "metadata_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+  "converter_sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+  "structural_report_sha256": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+  "record_count": 1000,
+  "frames_per_trajectory": 320,
+  "particle_type_ids": [
+    6
+  ],
+  "position_dtype": "<f4",
+  "issued_utc": "2026-10-06T01:45:55.155580+00:00",
+  "scope": "data compatibility only; runtime and scientific launch remain separately gated",
+  "source_family": "designsafe_published_npz"
+}

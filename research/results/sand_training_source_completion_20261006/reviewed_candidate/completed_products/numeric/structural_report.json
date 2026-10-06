@@ -1,0 +1,2319 @@
+{
+  "acquisition_report_sha256": "93b3acdd893a8dfbf1371c49d835b14762d70f9f429a75c657d4024a2e9919ff",
+  "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "converter_sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+  "dataset": "Sand",
+  "duplicate_scope": "test only; full cross-split census still required",
+  "duplicate_trajectories_within_and_across_selected_splits": false,
+  "metadata_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+  "root_release_sha256": "b97851f9e04d7b19cde8092687c3d103c28c6cf3dbf34f5e3c819e525b6f4a88",
+  "schema": "designsafe_sand_numeric_repackage_v1",
+  "source_family": "designsafe_published_npz",
+  "splits": {
+    "test": {
+      "ZIP_CRC_verified": true,
+      "all_numeric_values_preserved_exact": true,
+      "frame_lengths": [
+        320
+      ],
+      "kinematic_type3_particles": 0,
+      "manifest_sha256": "53bed919f0f65a6308ff25388d0a43c864ded00f28b73cbfe1291e6b1c989e1c",
+      "outside_boundary_particle_frames": 6160,
+      "particle_type_dtypes": [
+        "<i8"
+      ],
+      "particle_type_ids": [
+        6
+      ],
+      "position_dtypes": [
+        "<f4"
+      ],
+      "record_count": 30,
+      "records": [
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "49e599f6",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "29fe13fd611b8e153421e55b6ada4d779f77e85975aee06b26bf8813b3607399",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 5,
+          "particle_type_counts": {
+            "6": 1730
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1730
+          ],
+          "particles": 1730,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8992907404899597,
+            0.8943944573402405
+          ],
+          "position_min": [
+            0.10642008483409882,
+            0.09938619285821915
+          ],
+          "source_index": 0,
+          "source_member": "simulation_trajectory_0.npy",
+          "source_position_value_sha256": "5131e9eae797687145be1092dd4c3c37b6d3613b2726a3aeedcab48fbda66416",
+          "source_type_value_sha256": "a116cf7f303ed5fccc7e5ae9dc779df1028d7a20a28708aad801a100bbf2d13f"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "22f239c4",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "0dac0c4584bc1a7c58ec48e60831dd75daf5748f51f2af1abb86bc1b73c0e6a3",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 277,
+          "particle_type_counts": {
+            "6": 1471
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1471
+          ],
+          "particles": 1471,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8997888565063477,
+            0.8987178802490234
+          ],
+          "position_min": [
+            0.1009770929813385,
+            0.09781746566295624
+          ],
+          "source_index": 1,
+          "source_member": "simulation_trajectory_1.npy",
+          "source_position_value_sha256": "2bfffd8bf6358f8ff13c93693786c9fc4533f7fa47590658b0c0e17086b3ec30",
+          "source_type_value_sha256": "b86e2cef2c141b79f8f608d491da0d5e0e594175783fd880492296eaf8dd4e81"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "328340c7",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "18f8028ab59330adf012501a665149cb4e1559b71baa8f5d2d05dc987e69da3c",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 450,
+          "particle_type_counts": {
+            "6": 1314
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1314
+          ],
+          "particles": 1314,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.899998128414154,
+            0.8999982476234436
+          ],
+          "position_min": [
+            0.09898124635219574,
+            0.09986133128404617
+          ],
+          "source_index": 2,
+          "source_member": "simulation_trajectory_2.npy",
+          "source_position_value_sha256": "20b7ed262b5f2a9c406ebf3160e818d1be255f101b4496a4ea105b67c8bb2696",
+          "source_type_value_sha256": "5e9ee6e1bbf89704a86877682937210b066304c3a8ab7298e35fe6814a2ab0ee"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "7c8d8143",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "99cfe04f86ee7a2b76c839b8c9f72fdbd3093ee415a7358f25f98f2c6b760f61",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 18,
+          "particle_type_counts": {
+            "6": 1517
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1517
+          ],
+          "particles": 1517,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.9005253314971924,
+            0.8990102410316467
+          ],
+          "position_min": [
+            0.10036524385213852,
+            0.10043386369943619
+          ],
+          "source_index": 3,
+          "source_member": "simulation_trajectory_3.npy",
+          "source_position_value_sha256": "7c37f034deb2efdb12f201fc6aea505a5c7a9e198c00246ed178294d0191d539",
+          "source_type_value_sha256": "252c7640b815af1f04c7cb96b4a1f2734f455f723eb4ca632e03d4811f674cb0"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "6940032d",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "0da8db62a134c74a13dbe2101e971dce7d18e5a4856a349a45c97277429cde58",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 722
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            722
+          ],
+          "particles": 722,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8990060091018677,
+            0.8669149875640869
+          ],
+          "position_min": [
+            0.10250048339366913,
+            0.10105539858341217
+          ],
+          "source_index": 4,
+          "source_member": "simulation_trajectory_4.npy",
+          "source_position_value_sha256": "d8c925f4282c880e3accdbbceedd331887d5b0c8ba902d552c5e4ac2c4027b68",
+          "source_type_value_sha256": "7cdb46400980454ea206a57bbc632ca9e7e66ce37b3fca7755bb54e54b298158"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "49e39f87",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "7db564f0239259094ea895c276723260b05e5d787822a67fb115f287e914d428",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 84,
+          "particle_type_counts": {
+            "6": 1882
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1882
+          ],
+          "particles": 1882,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8960321545600891,
+            0.8953293561935425
+          ],
+          "position_min": [
+            0.10283226519823074,
+            0.09974277019500732
+          ],
+          "source_index": 5,
+          "source_member": "simulation_trajectory_5.npy",
+          "source_position_value_sha256": "929a9580f0efec663c37d02d3a49b27f87784eb49cc5bdf3d7f797eb32e7b15d",
+          "source_type_value_sha256": "eed9055964f574ceaba6fc8038bcfd136d29e4fcbed894fdf16e8e8bc1880c01"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "eb9e7685",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "386e2de45a0c0da6cceeba7b05654abd4b03d659e58c8fbcfb7401c0428d17bd",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 177,
+          "particle_type_counts": {
+            "6": 646
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            646
+          ],
+          "particles": 646,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8984962105751038,
+            0.6376136541366577
+          ],
+          "position_min": [
+            0.10232824832201004,
+            0.09938012063503265
+          ],
+          "source_index": 6,
+          "source_member": "simulation_trajectory_6.npy",
+          "source_position_value_sha256": "6571ec1e7b74a66f5dd0815ca1d2f525914c1329205ca093744dea14207df6d9",
+          "source_type_value_sha256": "cac97ec251631447fb269d8bc3bd8c298b86d20fa8830da672849bd2931a25a9"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "02063272",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "4ca4ccd7a00a019874288c05a5c5e1935b203dfc80b09aca375a6bbb88858a50",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 95,
+          "particle_type_counts": {
+            "6": 1910
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1910
+          ],
+          "particles": 1910,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8983626961708069,
+            0.8922170996665955
+          ],
+          "position_min": [
+            0.10029200464487076,
+            0.09949991106987
+          ],
+          "source_index": 7,
+          "source_member": "simulation_trajectory_7.npy",
+          "source_position_value_sha256": "9401c03bc53b3d7adcf026797861a0294fa624044d76d8e44c87a2d8f16c7234",
+          "source_type_value_sha256": "7ba48f0c50c1342847cc87ae876205dbc4a69cdef5e9fa815f38cf0452cd616d"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "c601fa67",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "97861d31af58aa426744d6112aa9b4b77896b5b5642942501573290ea59edb89",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 1852
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1852
+          ],
+          "particles": 1852,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8997215032577515,
+            0.8996901512145996
+          ],
+          "position_min": [
+            0.10005991905927658,
+            0.10099796205759048
+          ],
+          "source_index": 8,
+          "source_member": "simulation_trajectory_8.npy",
+          "source_position_value_sha256": "ecc28d3550ac21f1576783f411a58269b40246fe3f752c98f91b8fd39bef47ff",
+          "source_type_value_sha256": "7943a2411f2d2e3720ff761e0dba8a0aa146b0eee22da4ee9e14992718ccbf8e"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "45079bbc",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "2f4051d75582ed4f5e23574a9e48e3b96234201ed621aad0d54cc0c566149e5b",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 181,
+          "particle_type_counts": {
+            "6": 1650
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1650
+          ],
+          "particles": 1650,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8976247906684875,
+            0.8968921303749084
+          ],
+          "position_min": [
+            0.10063233971595764,
+            0.09977270662784576
+          ],
+          "source_index": 9,
+          "source_member": "simulation_trajectory_9.npy",
+          "source_position_value_sha256": "10b66c95c94343576a7cd0268e0308d7ee264bbab09515ec118313690d2b3a86",
+          "source_type_value_sha256": "102c46efe0432e088781a521b2cb098138527fccd342e6f08550f4b81ed74ed8"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "ec4f1e5e",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "564938279412ce134f76a1b22e212c3b260fb09fc913eb6e312298a828464ebc",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 1143,
+          "particle_type_counts": {
+            "6": 1241
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1241
+          ],
+          "particles": 1241,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.89921635389328,
+            0.8988054394721985
+          ],
+          "position_min": [
+            0.09984741359949112,
+            0.09745330363512039
+          ],
+          "source_index": 10,
+          "source_member": "simulation_trajectory_10.npy",
+          "source_position_value_sha256": "d998497d52d9fb764a6e18ef14fe169334b738d36289b059f9ba27fba65f437e",
+          "source_type_value_sha256": "26255956f27d639dfb417d2a17e6ac495ed54c7dfa551fdce43ae1e6ba5b69e5"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "317ff5ad",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "a7ba8c33d8a008a26d769e99d8f74ad81ffe35e0be6b708a237caa74e88c364f",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 630,
+          "particle_type_counts": {
+            "6": 1724
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1724
+          ],
+          "particles": 1724,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8998186588287354,
+            0.8989976048469543
+          ],
+          "position_min": [
+            0.10062704980373383,
+            0.09905737638473511
+          ],
+          "source_index": 11,
+          "source_member": "simulation_trajectory_11.npy",
+          "source_position_value_sha256": "66b04584b6e0b960ec73d627dd5d638f3d07a67e6b6c490290afc9e819297351",
+          "source_type_value_sha256": "d7678f9b85b28e110ae1ca5d633d02e8ba928bd0b83dc040cf81d9d6c0893325"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "fce3acca",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "cd7befa7a993a84741ffa66c707a2ec3c9ea30678fca1d187afcc6c6625211e8",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 56,
+          "particle_type_counts": {
+            "6": 1551
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1551
+          ],
+          "particles": 1551,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8977130055427551,
+            0.7506049871444702
+          ],
+          "position_min": [
+            0.10094739496707916,
+            0.09990194439888
+          ],
+          "source_index": 12,
+          "source_member": "simulation_trajectory_12.npy",
+          "source_position_value_sha256": "c1062ab4e9069b150d53336c20c1a98d7655fadbd979e91f8602f3dd019989cc",
+          "source_type_value_sha256": "18f8438088f0897eb28f87f2de06011036e4b144f8141d9fcfe5163a08a21257"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "e0d1602f",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "d2da4d70e323499978649774ae59bf76eb02395fb0d87a097c95accb95adb564",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 1036
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1036
+          ],
+          "particles": 1036,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8988792896270752,
+            0.8917959928512573
+          ],
+          "position_min": [
+            0.10561671108007431,
+            0.10028906911611557
+          ],
+          "source_index": 13,
+          "source_member": "simulation_trajectory_13.npy",
+          "source_position_value_sha256": "52e4d12937d546e6d40ced9a68f052f29a34f31319611b3877c8d640424832cb",
+          "source_type_value_sha256": "a8fed2ab0de33908bc573c102bf95000fe2ced16ebc47c39e0035ca0d429f518"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "007cf694",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "4641fac23a1cd299ee6c8bf1d3f858251481d35d5a48a785db0c944e54c7be3e",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 247,
+          "particle_type_counts": {
+            "6": 1723
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1723
+          ],
+          "particles": 1723,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8988043665885925,
+            0.8774753212928772
+          ],
+          "position_min": [
+            0.10083308815956116,
+            0.09981337934732437
+          ],
+          "source_index": 14,
+          "source_member": "simulation_trajectory_14.npy",
+          "source_position_value_sha256": "8644e27727c9cff0d202d0b560bc99f87349402562f6ac5a029966e23cc931ec",
+          "source_type_value_sha256": "0264cb11e7921c42f5dbb76172e82bd20d495e57df0b6361a70950a0720312d4"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "54719055",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "bc88ec08d70c9f7303f6693d1c925330b32eb39edf88e7fc72bbd6fe69f0418b",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 11,
+          "particle_type_counts": {
+            "6": 1456
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1456
+          ],
+          "particles": 1456,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8997769951820374,
+            0.9001586437225342
+          ],
+          "position_min": [
+            0.10282470285892487,
+            0.10007172077894211
+          ],
+          "source_index": 15,
+          "source_member": "simulation_trajectory_15.npy",
+          "source_position_value_sha256": "f42d389fe3effdfdf7ddd8cecfe15ff48c4bb98be1d42392263ee2fa287b5afc",
+          "source_type_value_sha256": "5710474fff72b3cff06be1f4a68acb213fce25ae86184d1cda79e3956b73136d"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "b6269913",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "ff0c65c085879c31d51f8ff2957f94edb1c3480025e47ebcfb5bb7701182f9b3",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 1112
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1112
+          ],
+          "particles": 1112,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8923004865646362,
+            0.8981610536575317
+          ],
+          "position_min": [
+            0.10013094544410706,
+            0.10070495307445526
+          ],
+          "source_index": 16,
+          "source_member": "simulation_trajectory_16.npy",
+          "source_position_value_sha256": "d30aead29ae5791cec79e9842a3194c8cdd6b4044f7f244d06481820f388b637",
+          "source_type_value_sha256": "79693a983a6ee005215bceea647414d3e44885c6f107972595af2edf3111ce25"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "e627cd9a",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "c0e00beaf5f8d5b94c04f72b11d8eff463e89ddc70305a642ade1aaf6e9cc852",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 10,
+          "particle_type_counts": {
+            "6": 1148
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1148
+          ],
+          "particles": 1148,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8979591727256775,
+            0.8944860100746155
+          ],
+          "position_min": [
+            0.10419271886348724,
+            0.09934135526418686
+          ],
+          "source_index": 17,
+          "source_member": "simulation_trajectory_17.npy",
+          "source_position_value_sha256": "62acba48100a01a6a34ce8ae6b011c655c8dee0091a429d7b29185a3a5918861",
+          "source_type_value_sha256": "bca963283a372495fd6562ad57402734769d552168b2d904ae82164da44c46eb"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "ee6d3849",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "6c61812b3c7463ab50aa6b397b13c01af3db777200e2e49d2e457b661574f92e",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 20,
+          "particle_type_counts": {
+            "6": 582
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            582
+          ],
+          "particles": 582,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8996496200561523,
+            0.5729895234107971
+          ],
+          "position_min": [
+            0.10220641642808914,
+            0.09999653697013855
+          ],
+          "source_index": 18,
+          "source_member": "simulation_trajectory_18.npy",
+          "source_position_value_sha256": "ea80bef142ad82885acff2f1620571807a7f8dc416ec6dfcdeece9cd8000bd03",
+          "source_type_value_sha256": "77398aaa5d93d3883358d4389e93796bfa14eb60bb95fdca264feecd1ea2315d"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "b38101a3",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "4f0c38c9d622797cfa3fd8494b7b3e9a5b8a07823a5291bc54d6fc3087ed4b14",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 343,
+          "particle_type_counts": {
+            "6": 240
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            240
+          ],
+          "particles": 240,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 16,
+              "BININT2": 1,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8994816541671753,
+            0.8974133133888245
+          ],
+          "position_min": [
+            0.1002434492111206,
+            0.0996401384472847
+          ],
+          "source_index": 19,
+          "source_member": "simulation_trajectory_19.npy",
+          "source_position_value_sha256": "ba8395e22f306ac7e10cebad7d46ca07db9801ffa1b7b26ca603826617dd90ed",
+          "source_type_value_sha256": "db1bfe7b44779d98147ede7cdd71086f5199dc458da96e413bb056861ad0b9ba"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "c2fbeb24",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "bfed3058bfbb8cf4041a2d62c64f127c6b712546e1ef4cfbbadf82b38fa9ade1",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 212
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            212
+          ],
+          "particles": 212,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 16,
+              "BININT2": 1,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.899206817150116,
+            0.6098361611366272
+          ],
+          "position_min": [
+            0.12374929338693619,
+            0.10029411315917969
+          ],
+          "source_index": 20,
+          "source_member": "simulation_trajectory_20.npy",
+          "source_position_value_sha256": "444dabdf212b4a733ed74361f0d2ad2dab3837400c8328134c8bd1af972d8717",
+          "source_type_value_sha256": "8574281ad2deba2f79c8662ff44622c986a9be9894eeba64ccaebdaf698fb626"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "b41f42c2",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "5f7e8dca595a4bad8883ff8baf75cf03813a1adf720eb1108620df41a6e5dcad",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 101,
+          "particle_type_counts": {
+            "6": 881
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            881
+          ],
+          "particles": 881,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8978034257888794,
+            0.8927692174911499
+          ],
+          "position_min": [
+            0.10035011172294617,
+            0.0997907891869545
+          ],
+          "source_index": 21,
+          "source_member": "simulation_trajectory_21.npy",
+          "source_position_value_sha256": "14acbdd7d74232c92362b9ce7ffe0ad48768781c395554b6c43525d8effdb43e",
+          "source_type_value_sha256": "00051791de115eae585fc4b1bf44320cc71b2f4e491aa654d7532e328ef7078d"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "2c03425b",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "41aacd2e948909a0abfd9015a75e095b09bbb995d870cc429610956f44a366b1",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 484,
+          "particle_type_counts": {
+            "6": 1711
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1711
+          ],
+          "particles": 1711,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8999978303909302,
+            0.8998025059700012
+          ],
+          "position_min": [
+            0.1001528650522232,
+            0.09932006895542145
+          ],
+          "source_index": 22,
+          "source_member": "simulation_trajectory_22.npy",
+          "source_position_value_sha256": "d15993249189ae1a773e2e46194f9aa0ba6d4c6d5bdd374e98c25784558d9fce",
+          "source_type_value_sha256": "f2a370b5b1274fb2d25064fd386b2635ca5e1957110763c2ed8d98f5455a14db"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "93b8ff76",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "0c24d2e28a272a1776cc8c24dcb846405e398d1753e8d131a1d38f5a97db3df1",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 1321
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1321
+          ],
+          "particles": 1321,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8999975323677063,
+            0.6394186019897461
+          ],
+          "position_min": [
+            0.10774920880794525,
+            0.10046236962080002
+          ],
+          "source_index": 23,
+          "source_member": "simulation_trajectory_23.npy",
+          "source_position_value_sha256": "d5e5557b9fb7f6bb515c87201bc3381702cabc24c173fbdd220fc6fb3d19d0b5",
+          "source_type_value_sha256": "a775b7ab132747073b27df54493166e100607086b837ead4898658950615dd4b"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "d258f344",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "772d7791849de4818ddeff8304590a86fc9f99b1976b6d4de0ca81d3f44a7e85",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 765,
+          "particle_type_counts": {
+            "6": 1084
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1084
+          ],
+          "particles": 1084,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.89833003282547,
+            0.8970637321472168
+          ],
+          "position_min": [
+            0.10019933432340622,
+            0.09665622562170029
+          ],
+          "source_index": 24,
+          "source_member": "simulation_trajectory_24.npy",
+          "source_position_value_sha256": "1023120856a291067444f103d6f0efa023c78313115ff20fd0e4f577e5ef635b",
+          "source_type_value_sha256": "041be335db490382a4940a9ca1b72b96636e437617d45ada5cfc81c1bc9b9948"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "960e7e85",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "77004c3a9b3735853e4049a2a457871909588d3180eb3e30c45fde3c482aac48",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 230,
+          "particle_type_counts": {
+            "6": 1817
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1817
+          ],
+          "particles": 1817,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8994401097297668,
+            0.8911264538764954
+          ],
+          "position_min": [
+            0.101674385368824,
+            0.09714870899915695
+          ],
+          "source_index": 25,
+          "source_member": "simulation_trajectory_25.npy",
+          "source_position_value_sha256": "a17fca8e31804f67236ffa956246e1510c7e4170fdd93fbc3939048d497c3181",
+          "source_type_value_sha256": "f77a590a85c9fd7b3415b373f62e3c3e09421e7c4d096f4abe281adc94415870"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "80781cf5",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "fb80a2603ee0c5cadac3badb204b2af064838d56e9666a807a0ec42550125bb8",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 593,
+          "particle_type_counts": {
+            "6": 1275
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1275
+          ],
+          "particles": 1275,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8997108936309814,
+            0.8954253792762756
+          ],
+          "position_min": [
+            0.09975328296422958,
+            0.09508992731571198
+          ],
+          "source_index": 26,
+          "source_member": "simulation_trajectory_26.npy",
+          "source_position_value_sha256": "1fc87e285d97bf12ece02b87158797a2db59cec8e25a26be179417f506f2843b",
+          "source_type_value_sha256": "4fcdfaeebe3e972af230f23a63e1e7dc0c0e8fc3e9d69c31892e8834e0e525ee"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "5fce2bc7",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "4b89603ea4868f73a3e9f2d15a5f3acc0abf8340b6d8c274d3bdebeb9e3381b3",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 0,
+          "particle_type_counts": {
+            "6": 404
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            404
+          ],
+          "particles": 404,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8880202174186707,
+            0.4593295454978943
+          ],
+          "position_min": [
+            0.10818754136562347,
+            0.10009821504354477
+          ],
+          "source_index": 27,
+          "source_member": "simulation_trajectory_27.npy",
+          "source_position_value_sha256": "31fb835db471b706354ac9e984208f08945e177e91985c90a89e52307fbc9404",
+          "source_type_value_sha256": "0c3181c9b20a1d24d3b6190cba1b96615a8071ff257b271ef6f15099c5681f29"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "bb2e178a",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "0e8bce76da1efc7c8dff06c616659c97ff8611b3b8ec065e111f929841f29297",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 144,
+          "particle_type_counts": {
+            "6": 1971
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            1971
+          ],
+          "particles": 1971,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.8986501097679138,
+            0.8973790407180786
+          ],
+          "position_min": [
+            0.10093513131141663,
+            0.09907694905996323
+          ],
+          "source_index": 28,
+          "source_member": "simulation_trajectory_28.npy",
+          "source_position_value_sha256": "ddde0211940921528fc7e5cb14e4f2cca1cf7cb1bc55bafb769e5fd9a404b3a5",
+          "source_type_value_sha256": "6aacc79c73c41c91c3d57e221ed0000316f83b768026426a5a90bf567e8b0b8e"
+        },
+        {
+          "boundary_policy": "reported, never clipped or rejected for excursion alone",
+          "frames": 320,
+          "full_member_crc32": "02336697",
+          "kinematic_type3_particles": 0,
+          "member_sha256": "4ea0293e85237e4063d4d630f8187cd1ec0cadc6bad9392364bec92f72c95955",
+          "numeric_dtype_shape_values_verified_exact": true,
+          "outside_boundary_particle_frames": 96,
+          "particle_type_counts": {
+            "6": 921
+          },
+          "particle_type_dtype": "<i8",
+          "particle_type_shape": [
+            921
+          ],
+          "particles": 921,
+          "pickle": {
+            "globals": [
+              [
+                "numpy",
+                "dtype"
+              ],
+              [
+                "numpy",
+                "ndarray"
+              ],
+              [
+                "numpy.core.multiarray",
+                "_reconstruct"
+              ]
+            ],
+            "opcode_counts": {
+              "APPENDS": 1,
+              "BINBYTES": 2,
+              "BINGET": 9,
+              "BININT": 6,
+              "BININT1": 14,
+              "BININT2": 3,
+              "BINPUT": 36,
+              "BINUNICODE": 5,
+              "BUILD": 6,
+              "EMPTY_LIST": 1,
+              "GLOBAL": 3,
+              "MARK": 7,
+              "NEWFALSE": 6,
+              "NEWTRUE": 3,
+              "NONE": 9,
+              "PROTO": 1,
+              "REDUCE": 6,
+              "SHORT_BINBYTES": 1,
+              "STOP": 1,
+              "TUPLE": 6,
+              "TUPLE1": 5,
+              "TUPLE3": 7
+            },
+            "protocol": 3,
+            "serialized_dtypes": [
+              "|O",
+              "<f4",
+              "<i8"
+            ]
+          },
+          "position_dtype": "<f4",
+          "position_max": [
+            0.9000441431999207,
+            0.6793819069862366
+          ],
+          "position_min": [
+            0.1010228618979454,
+            0.10124172270298004
+          ],
+          "source_index": 29,
+          "source_member": "simulation_trajectory_29.npy",
+          "source_position_value_sha256": "d4bbb77922ee45e9fae455b1e0f75f4c0dc579f2a3cfb1179154422019b5f2f0",
+          "source_type_value_sha256": "bf593ff64478dc8a5be9325fde92d58525e7a6c7cdfa09a747708a26561adff7"
+        }
+      ],
+      "source_eof_and_hash_verified": true
+    }
+  },
+  "status": "complete_structural_only",
+  "test_preparation_adapter_sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8"
+}

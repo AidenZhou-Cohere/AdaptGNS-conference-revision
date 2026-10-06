@@ -1,0 +1,21 @@
+{
+  "all_published_input_output_hashes_verified": true,
+  "audit_scope": "Complete original published scalar/input/provenance bytes and stopped native closure; inherits original payload/pairing audits without fresh tensor deserialization.",
+  "checked_utc": "2026-10-06T18:10:16.009721+00:00",
+  "cohort_audit_sha256": "0786ee20abc2333c3bc2b1536f42f5b2f949617a331e70bb7897e9f4ee0e7d37",
+  "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "independent_review_sha256": "2901d4e8a559ab40c6631eb1df7112e49aa491d599e0bb9176f92ee05940da3a",
+  "issued_by": "root",
+  "native_absent": {
+    "16625": true,
+    "16626": true,
+    "16627": true
+  },
+  "native_evidence_sha256": "d9c3af920285d764dbe08974d4ff583ab17670be7529330f107512a351861dec",
+  "original_tool_exit_code": 0,
+  "original_tool_return_evidence_sha256": "493dd2bfe7f811a6c9584c457f14bed89252cd2ab04167f8fa34b5f6deb6648a",
+  "original_tool_session": 63543,
+  "owner_terminal_sha256": "f67832538654039b1d52f600cf44c5b6a4676fede7f173484ffcadabd86dab37",
+  "owner_terminal_status": "complete",
+  "status": "complete_cohort_inputs_and_native_closure_verified"
+}

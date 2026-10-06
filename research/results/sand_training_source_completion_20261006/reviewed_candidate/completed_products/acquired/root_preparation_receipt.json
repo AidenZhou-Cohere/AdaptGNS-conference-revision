@@ -1,0 +1,10 @@
+{
+  "arrays_decoded": false,
+  "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "download_report_sha256": "93b3acdd893a8dfbf1371c49d835b14762d70f9f429a75c657d4024a2e9919ff",
+  "mode": "acquire",
+  "publisher_test_sha256_available": false,
+  "root_release_sha256": "c7b03131aaf0b2479afcdcbd80854757ce9a7200f8d26933c13acd57500f4b69",
+  "schema": "adaptgns_sand_reserved_test_preparation_scoped_v1",
+  "test_evaluation_executed": false
+}

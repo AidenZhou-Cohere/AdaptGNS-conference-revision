@@ -1,0 +1,93 @@
+{
+  "checked_utc": "2026-10-06T18:22:11.434003+00:00",
+  "files": [
+    {
+      "bytes": 0,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/owners/acquire/child.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 128,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/owners/acquire/child.stdout",
+      "sha256": "fbe92a3794db6a9f01e8ea62a488c550eaf703a30f99c08355eb5c4a472da01f"
+    },
+    {
+      "bytes": 2689,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/owners/acquire/child_registered.json",
+      "sha256": "c57876254840cd6d76f0273dccd5f1614d815cbd06c64bcdbf3f7b729fd6ab47"
+    },
+    {
+      "bytes": 3041,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/owners/acquire/owner_started.json",
+      "sha256": "8945af5e348dc55ab5b967849581088c9cb07a106543f1895c6e41db80d61322"
+    },
+    {
+      "bytes": 12304,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/owners/acquire/owner_terminal.json",
+      "sha256": "0bca921cb1efb2fc38e1da6160f559fc19e9de19d21c0373562629db220f3d50"
+    },
+    {
+      "bytes": 21870,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/download_report.json",
+      "sha256": "93b3acdd893a8dfbf1371c49d835b14762d70f9f429a75c657d4024a2e9919ff"
+    },
+    {
+      "bytes": 363,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/metadata.json",
+      "sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0"
+    },
+    {
+      "bytes": 473,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/root_preparation_receipt.json",
+      "sha256": "32883d72dee52e35b607cc3b7a10e111ed056caeab4f7209de05a79a57361fb8"
+    },
+    {
+      "bytes": 85825802,
+      "path": "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/test.npz",
+      "sha256": "40beddf2cbf8dd4da89af01b03c2b2d75d08bba8a3e7d9378e084a436efab964"
+    }
+  ],
+  "gpu_apps": "",
+  "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+  "input_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/pyvenv.cfg": "b7d360e62970717794ce0ab4f1e1398a49a8a73a138d34ca920b1eb251fe2f3b",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/benchmark_sand_graph_support_rollout.py": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/download_sand_public_v2.py": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/launch_sand_reserved_source_cpu_v1.py": "8b3cc0cb47edc7d019cb55c733a481ab916e3b4a8e59567122119ca023b34ed0",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_recovered_final_cohort_v1.py": "41bef815edf151fddd9ef9d667a339b5cb0f46ae405d8e4ed6bf00df69e75ced",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/prepare_sand_reserved_test_recovered_v1.py": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/repackage_designsafe_sand.py": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_graph_support_100k_protocol_v1.md": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_original_reserved_source_phase_20261006_v1.json": "895e25aa38490f42bb2f24a4129ccde8c1e91f8f01a8cf960eda15d0ee15e7ed",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_post_training_verification_phase_20261006_v1.json": "61df824a2bb23d5270f07682ba01ba3028d5019997a9cf6ba47c82ed54241914",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_train_admission.json": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_reserved_source_cpu_v1.py": "d7880125e43ea6eeb047e7b3170a06b2ff1b189b9051978234adcf4d2b297955",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_sand_graph_support_cuda.py": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_sand_runtime_migration_recovery_v1.py": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort_audit.json": "0786ee20abc2333c3bc2b1536f42f5b2f949617a331e70bb7897e9f4ee0e7d37",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/acquire.cpu_release.json": "56d5dcf7934d6f6c325d7393071b79061b17d34c78ddd3818c6bf62f3f810304",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/acquire.mode_release.json": "c7b03131aaf0b2479afcdcbd80854757ce9a7200f8d26933c13acd57500f4b69",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/controls/cohort_build_external_closure.json": "391816259ddc2153247558090880208ff0e0abb1f2999e098ba536edde04fc27",
+    "/usr/bin/python3.12": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "/usr/bin/timeout": "2db30bc57746c940a0643581cd5e2671e505442bea16164143f0ea8ff4e36453"
+  },
+  "native_absent": {
+    "17698": true,
+    "17699": true,
+    "17700": true
+  },
+  "output_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/download_report.json": "93b3acdd893a8dfbf1371c49d835b14762d70f9f429a75c657d4024a2e9919ff",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/metadata.json": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/root_preparation_receipt.json": "32883d72dee52e35b607cc3b7a10e111ed056caeab4f7209de05a79a57361fb8",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_reserved_preparation_20261006_v1/acquired/test.npz": "40beddf2cbf8dd4da89af01b03c2b2d75d08bba8a3e7d9378e084a436efab964"
+  }
+}
