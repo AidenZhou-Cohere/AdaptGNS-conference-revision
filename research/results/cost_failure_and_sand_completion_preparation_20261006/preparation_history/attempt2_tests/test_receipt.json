@@ -1,0 +1,36 @@
+{
+  "archive_verification": {
+    "archives": 3,
+    "original_text_bytes": 10681005,
+    "raw_numerical_payloads": 0,
+    "status": "all_archive_bytes_verified",
+    "text_files": 342
+  },
+  "exit_code": 0,
+  "failure_evidence_replay": {
+    "full_study_declined": true,
+    "numerical_arrays_loaded": false,
+    "original_text_files_checked": 75,
+    "owner_verified_states": 0,
+    "performance_statistics_computed": false,
+    "published_diagnostic_scalar_states": 45,
+    "scientific_result_admitted": false,
+    "status": "failure_accounting_replayed"
+  },
+  "git_mutation": false,
+  "numerical_arrays_loaded": false,
+  "remote_calls": false,
+  "status": "passed",
+  "test_modules": [
+    "test_goop2d_validation_cost_v1",
+    "test_goop2d_validation_cost_v2",
+    "test_goop2d_validation_cost_v3",
+    "test_goop2d_cost_independent_code_audit_v1",
+    "test_goop2d_cost_independent_code_audit_v2",
+    "test_goop2d_validation_cost_summary_v1",
+    "test_goop2d_cost_summary_independent_code_audit_v1",
+    "test_goop2d_cost_reporting_integration_code_audit_v1",
+    "test_goop2d_cost_reporting_integration_code_audit_v3",
+    "test_sand_recovered_cohort_bridge_independent_code_audit_v1"
+  ]
+}

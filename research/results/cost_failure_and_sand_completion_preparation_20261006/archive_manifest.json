@@ -1,0 +1,1796 @@
+{
+  "archives": {
+    "goop2d_candidates_and_failures": {
+      "file": "goop2d_candidates_and_failures.tar.gz",
+      "member_count": 167,
+      "members": [
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/children.json",
+          "sha256": "008ffe2baf170737f353e6c30ea8922dc062f53baefbf926c2ce716cfb00c2ef",
+          "size_bytes": 12762
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/collection.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/collection_inventory.json",
+          "sha256": "2a925a27af08d6fa24b7cc8900b4837158a1f6104b56d2152efe10c51f91c8a8",
+          "size_bytes": 2231
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/owner_receipt.json",
+          "sha256": "58c10ec8cb8f541a8cc824f6fc603352160b7a8048159001ea99d8dab2299000",
+          "size_bytes": 16265
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/owner_receipt_candidate.json",
+          "sha256": "58c10ec8cb8f541a8cc824f6fc603352160b7a8048159001ea99d8dab2299000",
+          "size_bytes": 16265
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/owner_started.json",
+          "sha256": "c758b226601c51fc9598ebd3b1509bc15bdaa94c342461549b4dc975a38cbfc5",
+          "size_bytes": 929
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed0_base/failed_attempt.json",
+          "sha256": "9aaf85c538da2a7a595cbf051baa547e19ac6212e977beedfe660b4e3eab13a6",
+          "size_bytes": 225
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed0_base/protocol.json",
+          "sha256": "389a3968742b16385d274c63694d1a05fc13f974de2e98bc03cb05eef076be4b",
+          "size_bytes": 26525
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed0_base.log",
+          "sha256": "a4b5c719a70de2d7c2feaf54a2695f1adbd193756af770a42e91d0f854cb1ece",
+          "size_bytes": 5068
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed1_mix/failed_attempt.json",
+          "sha256": "d96c154270ca7b7950fd62ce259a5f62399e06d4c6ce61e961970bed998e4cce",
+          "size_bytes": 225
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed1_mix/protocol.json",
+          "sha256": "0decae9a410dffdd9f02bd21fb77dd5bb6a7a3da291b2149febf2d46fe28a04d",
+          "size_bytes": 26508
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed1_mix.log",
+          "sha256": "a4b5c719a70de2d7c2feaf54a2695f1adbd193756af770a42e91d0f854cb1ece",
+          "size_bytes": 5068
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed2_base/failed_attempt.json",
+          "sha256": "d68597fb4fe7482a0dc3931cd8b047d9b819aa281601020a7bd571ebdd05cd16",
+          "size_bytes": 225
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed2_base/protocol.json",
+          "sha256": "a7ccd4a537ff35c5a1568b4d03c4d58774e9197c821cf5aab47071230d919a63",
+          "size_bytes": 26575
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v2/seed2_base.log",
+          "sha256": "a4b5c719a70de2d7c2feaf54a2695f1adbd193756af770a42e91d0f854cb1ece",
+          "size_bytes": 5068
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/children.json",
+          "sha256": "86fa58c85b89791a8037128f0944973ebed6e938a22629ad411bd268f9ead56d",
+          "size_bytes": 12763
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/collection.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/collection_inventory.json",
+          "sha256": "982f375c453ad52ad9f0e2163730919aeb3efb54fcd517734823f26df9238e47",
+          "size_bytes": 16527
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/numeric_archive_receipt.json",
+          "sha256": "d1b6fcb93d17ad61c2487eff9a31dff1bacab2c562a961277a87c9a97805404b",
+          "size_bytes": 695
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/numeric_archive_transport.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/owner_receipt.json",
+          "sha256": "905376adb37dd21728420ae3980c49672b6c4213bdc7212684388ed238f3fccc",
+          "size_bytes": 16666
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/owner_receipt_candidate.json",
+          "sha256": "905376adb37dd21728420ae3980c49672b6c4213bdc7212684388ed238f3fccc",
+          "size_bytes": 16666
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/owner_started.json",
+          "sha256": "9e4d066810c4c2d1f4ed68bd7c89bb98087a32504eb2008222aa1bf86ece5c96",
+          "size_bytes": 929
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/pinned_valid_manifest.json",
+          "sha256": "3227e03c4c7fcee9f99c4104010774cabc74c34bfda667d76c5894590dcfc415",
+          "size_bytes": 40673
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/progress.json",
+          "sha256": "7b8318a2c2fe9b1d5699c97abe5058637abfd59bb2868e54a75a0688c1e15e56",
+          "size_bytes": 2468
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/protocol.json",
+          "sha256": "fc7f413e12433604c8263339c57379c46ffa5aaf8a756551873fa9840ac1e1c5",
+          "size_bytes": 26885
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/receipt.json",
+          "sha256": "292602aa301cdd7c90e8bb854b9d8da58c8926d87ad0121ab7468e19e516364c",
+          "size_bytes": 6182
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_060.json",
+          "sha256": "5fe0175bca979b021a6a312d05d5cda51d53a98361878a9970b0a421f8aafb8d",
+          "size_bytes": 130039
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_061.json",
+          "sha256": "29d63ba823c06ac271b47b87eefc9c628d107e0f69b2720013bfe0ebfea24824",
+          "size_bytes": 130039
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_062.json",
+          "sha256": "91ca2596580a2b0818d195680d68a79bced89d4d428faefef6bc480c8b2da3e9",
+          "size_bytes": 130037
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_063.json",
+          "sha256": "619f63f0f2239fb7dfb36873edb22c0da7e9b9768d8261169c88bc88845ff2a2",
+          "size_bytes": 130038
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_064.json",
+          "sha256": "e5349676b57d862bb7fec5ae0249f73d6e84a379fd799890277893b5985c58e4",
+          "size_bytes": 130048
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_115.json",
+          "sha256": "5e518ef63bfecd4195f8530923821b707b8b583dfa138645a886c9cd9aafaef3",
+          "size_bytes": 129770
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_116.json",
+          "sha256": "df55bc9be7a224f07a9710183c387b18b644cdcbb0a303ce81cad46d5766b81a",
+          "size_bytes": 129777
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_117.json",
+          "sha256": "4c64fd141e78653a98c43717e99e86e92f1b8962ccfafa37a2d941cd306a22fc",
+          "size_bytes": 129750
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_118.json",
+          "sha256": "5e7d43c5b398a07c4073ffd36d728aa94790e8da734a9efd47c9bdaa1b52bddd",
+          "size_bytes": 129775
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_119.json",
+          "sha256": "cb834b309d31c688faf750fbd008aee143e2fa010df78b003b6ceae6220e4442",
+          "size_bytes": 129763
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_140.json",
+          "sha256": "a64feae9e73e75b484ff6b30e9fcf6049c9f26089e05daa192619b98b70e7c06",
+          "size_bytes": 129643
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_141.json",
+          "sha256": "dc0a9d3da8bef8268c89fd75a40fd5d07609c980828c47da96c04319b9e4ff66",
+          "size_bytes": 129519
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_142.json",
+          "sha256": "b8ffb32fd2cabc9e0473f92c09506b35ac26b8e6678c450206dd50571f0158ab",
+          "size_bytes": 129533
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_143.json",
+          "sha256": "bb8d1f318ca3e60dbd378a13c35bcf4622132167c4b58f1bbcafe1537588123d",
+          "size_bytes": 129539
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base/state_144.json",
+          "sha256": "fb629d3402d5c32a888476a3d53651da547dc65079ad2d15222165a827974f2a",
+          "size_bytes": 129545
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed0_base.log",
+          "sha256": "6d78cc727e266e6fe4da9073812d8e1dae43278c3f545361028ff5273c86d5d4",
+          "size_bytes": 3943
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/progress.json",
+          "sha256": "039660bdcd4047ddce7db7d218ede3ea43b01a702f15679743753032cc188848",
+          "size_bytes": 2468
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/protocol.json",
+          "sha256": "568e48aeaee3d5a5572aa368b957512b64b64c47ce5f9ddd2b4a435006f37d18",
+          "size_bytes": 26868
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/receipt.json",
+          "sha256": "dc89f118eb6d1be3cab935b46ec138142f93c3635c0e9b723f5e0fc9b787e30e",
+          "size_bytes": 6177
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_060.json",
+          "sha256": "76646fcbd48c5e7f449827fa51e440be87b9897a7ca6bde16ea6f66955249992",
+          "size_bytes": 130025
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_061.json",
+          "sha256": "d184bc6ac5e261a25f86edcbdd5223c3c313ae3ad0554faa1635fc7ef56a55e0",
+          "size_bytes": 130046
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_062.json",
+          "sha256": "154dc2b508ee9c14ba5cb11890689804d428df5f5a41219cfcc5e810a2d8f7ad",
+          "size_bytes": 130060
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_063.json",
+          "sha256": "31724b8f90c5e68634fdb641b1bb0f83a1e012ac41f5bc92f48fb768b14da40a",
+          "size_bytes": 130052
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_064.json",
+          "sha256": "d12dc84e287b24ed397894f35d0728c50405ee71164e3211039cb408136ea3a2",
+          "size_bytes": 130049
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_115.json",
+          "sha256": "1d154a48745dbe9b3f8875e5d647d46bd38014938404f9af0317baaeee47d24f",
+          "size_bytes": 129762
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_116.json",
+          "sha256": "afa713bad08554565cb2219f5b275c388852c41b08abc084408d735e881a5cbd",
+          "size_bytes": 129770
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_117.json",
+          "sha256": "c6cdae8adda9f2fb24f4d62358c1eb13a75841608600bca7eb74703e3797a7d0",
+          "size_bytes": 129768
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_118.json",
+          "sha256": "c49f8c36e8a032e9a83b2a7c941cf9e368970a09e3fa36144788b103f34cbf00",
+          "size_bytes": 129790
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_119.json",
+          "sha256": "3a516dac3654fa560221431c5427c5a06a8df826457ac89bef81ca129f15636e",
+          "size_bytes": 129752
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_140.json",
+          "sha256": "c84a70172c90d3fc3f4ffa584df8c3b2b7bd3ca395193d28df2f08b9e5ea86d7",
+          "size_bytes": 129615
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_141.json",
+          "sha256": "57a483957f3d662b3a64aafb7911560c88d81f2e98d11a1dabb2820e0f5765f4",
+          "size_bytes": 129537
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_142.json",
+          "sha256": "14e9c4d26c89b429b14efcd4869aa843055d51e93bacd2e840ab80b3f6e4e20f",
+          "size_bytes": 129516
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_143.json",
+          "sha256": "a721f3dcbf183154b00b313dc70fa03e775315f9e7e5cdc9903875d562e2a7f7",
+          "size_bytes": 129537
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix/state_144.json",
+          "sha256": "92ec3caa2eb6081c6fd151a56cf99fe02394353f18c2b32f281c9ee3e05dc017",
+          "size_bytes": 129519
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed1_mix.log",
+          "sha256": "6d78cc727e266e6fe4da9073812d8e1dae43278c3f545361028ff5273c86d5d4",
+          "size_bytes": 3943
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/progress.json",
+          "sha256": "971fc122d89ae4a5eec8dd17633ff08f39b0d9f16ff13b5418c207b77b593b98",
+          "size_bytes": 2468
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/protocol.json",
+          "sha256": "737586d06cdd41f8f420a196e56d2ae584d2812d7cd50a7ce1f5b14260d58b41",
+          "size_bytes": 26935
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/receipt.json",
+          "sha256": "dce3d38d111b4da8601607d9804c6ba95249243f3c1f110e00035c645db076a2",
+          "size_bytes": 6211
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_060.json",
+          "sha256": "5e366f2839f98d76e0ffe6bf39b5aa802fb4e0fa6f3702c6e2758cd300de904c",
+          "size_bytes": 130055
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_061.json",
+          "sha256": "21834f444d206294a07f01cce5255e62faaaebd46ccfdc4eaace8cdc2d45cabd",
+          "size_bytes": 130044
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_062.json",
+          "sha256": "cefcb4da423635287975f5a2f1f1861cd1ce25ec81f74a9b28136c4e69d80ded",
+          "size_bytes": 130039
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_063.json",
+          "sha256": "9084c334f17242a34445a0268a30fa949feae1daf6739a1bfecc128834d56ff0",
+          "size_bytes": 130045
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_064.json",
+          "sha256": "47faef813409cba28c90c4cb43b9302c76aaac40fdd99b5505d1c8b0c89b960d",
+          "size_bytes": 130046
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_115.json",
+          "sha256": "ac7c0a91d1fc31e2d13798be7c007d56f429bf334ff0389afd9844bb28c8b331",
+          "size_bytes": 129760
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_116.json",
+          "sha256": "3286ffa974f8b15ca8ccf0edf59911f9e596877e7952dfbeebb4a67a3ee06bb1",
+          "size_bytes": 129759
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_117.json",
+          "sha256": "6a8b7fc5619f836ebe2557763a4f1ea3570c9324b27b76481fd42c4b1064cdc6",
+          "size_bytes": 129756
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_118.json",
+          "sha256": "7e41dc38c652d6fdcf425a154980d9d776587150fbbbf354957ecb12a6c5ce11",
+          "size_bytes": 129786
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_119.json",
+          "sha256": "ad31a186e58af1592431245f8d0c74f275d71b62d1efba2051710af6a0dcf21a",
+          "size_bytes": 129759
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_140.json",
+          "sha256": "3094c8726619c369087a6dd559df50af7508e41f773db1695f23c3657336774c",
+          "size_bytes": 129615
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_141.json",
+          "sha256": "bd44c8399d8096ce7e8f7992fdf5023f252fbe2a5757131085297341cf28d56e",
+          "size_bytes": 129533
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_142.json",
+          "sha256": "eef2aa37b6fe8bb1c534e90c24351f95db4f6c2e4da97be619a36d51b88d9fe4",
+          "size_bytes": 129532
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_143.json",
+          "sha256": "8b4563ec65f0534a36489e8f0eaa5bacd408f88ebb9cb6d198ab9b1890a0302f",
+          "size_bytes": 129518
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base/state_144.json",
+          "sha256": "ea260b46119b607a529559059f3f23222bcec5db60b997771806be385937e68b",
+          "size_bytes": 129522
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/seed2_base.log",
+          "sha256": "6d78cc727e266e6fe4da9073812d8e1dae43278c3f545361028ff5273c86d5d4",
+          "size_bytes": 3943
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/README.md",
+          "sha256": "9bba3d2d624817b369549ecd7857b8493547cac93b29584fb5e8032cb2af640d",
+          "size_bytes": 1027
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/complete_input_map.json",
+          "sha256": "68a371149934ed8bb9ec981124912b02aae1207bb9e107fcee6805264fb7999d",
+          "size_bytes": 22957
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/construction.json",
+          "sha256": "f47620ab072909abb80b2736e15d8cfa2144cee5a4f4aca6f8aab01d5db0bce2",
+          "size_bytes": 3064
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/copy_mapping.json",
+          "sha256": "79bb72d1faa1c1317d0ba05f096761db9fd81ebf6c13761318b00c523380aa84",
+          "size_bytes": 10530
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/external_closure_candidate.json",
+          "sha256": "6131d590588a2022b173faa9019b44f5a2dc754b6374d4ac06850fb718b3f7d4",
+          "size_bytes": 427
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/full_candidate.json",
+          "sha256": "565d244ebc9b285c4e98bded87c0d77c6ca7f58716464150b6ef28b2575b65e2",
+          "size_bytes": 11676
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/host_candidate.json",
+          "sha256": "8ce183f7758c1de7382f8476a782595b19b0c9aff53a7db451be26282ea9ba56",
+          "size_bytes": 1665
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/pilot_candidate.json",
+          "sha256": "47f4f77ca2c2f17d961946ab9f579bbcd4395321f310cd8c0a230392d9c1bf53",
+          "size_bytes": 11312
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v1/provenance_bindings.json",
+          "sha256": "c436fced8d3aa34e25fe2a07c706139551738a858f4273019a89c0ad07903b0b",
+          "size_bytes": 88694
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/complete_input_map.json",
+          "sha256": "3a5dd7de25a55056a2b73bcc4f07022cf54451109ed27546a1b19156d0ad5fd2",
+          "size_bytes": 23553
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/construction.json",
+          "sha256": "1d8382c127597f855531860a3ff58eed5f7cdd66e1d43b11487160ffa1e73989",
+          "size_bytes": 2283
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/copy_mapping.json",
+          "sha256": "79bb72d1faa1c1317d0ba05f096761db9fd81ebf6c13761318b00c523380aa84",
+          "size_bytes": 10530
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/external_closure_candidate.json",
+          "sha256": "71783f89ea1242055a7a31033fa680b6d85622c397c98a85b0647ee3e4c7975c",
+          "size_bytes": 427
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/full_candidate.json",
+          "sha256": "fb35ce6c985fa5f45f71f08b4edacf809fcb398e2cc1d6d9311e625e4ad5655a",
+          "size_bytes": 12889
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/host_candidate.json",
+          "sha256": "1b02323c1ad01d0510d8fa60d4d7ab8a344438249c3b3c118c6d73011464bf2b",
+          "size_bytes": 2259
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/pilot_candidate.json",
+          "sha256": "f0b4e466558698a70a882782cebe2d9d1895f69b826036d5dc6ddba1a183c139",
+          "size_bytes": 12525
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2/provenance_bindings.json",
+          "sha256": "e5be6bdb546a180cc1e66514bf8535b973b2fe2430d44708c39f27be24526557",
+          "size_bytes": 90346
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/complete_input_map.json",
+          "sha256": "3a5dd7de25a55056a2b73bcc4f07022cf54451109ed27546a1b19156d0ad5fd2",
+          "size_bytes": 23553
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/construction.json",
+          "sha256": "f30e0ad378aa0322b36cf02fa666c270b5b605c4f74033e21fe9c17cc2070480",
+          "size_bytes": 2283
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/copy_mapping.json",
+          "sha256": "79bb72d1faa1c1317d0ba05f096761db9fd81ebf6c13761318b00c523380aa84",
+          "size_bytes": 10530
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/external_closure_candidate.json",
+          "sha256": "71783f89ea1242055a7a31033fa680b6d85622c397c98a85b0647ee3e4c7975c",
+          "size_bytes": 427
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/full_candidate.json",
+          "sha256": "2ca6c18e213ef39c0aa013f4c1c9e571679a45d651d7f4583a0d31e189d41423",
+          "size_bytes": 12883
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/host_candidate.json",
+          "sha256": "0c1da5a64a98b77fb9b51f5fe69ee01a40a7e0a478f9c3fd0b86d7cb83eff532",
+          "size_bytes": 2259
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/pilot_candidate.json",
+          "sha256": "596bd0ae5aea89f54f8902f10ddebec77240739df6012b5a72cf72c72fe26467",
+          "size_bytes": 12519
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v2r2/provenance_bindings.json",
+          "sha256": "e5be6bdb546a180cc1e66514bf8535b973b2fe2430d44708c39f27be24526557",
+          "size_bytes": 90346
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/complete_input_map.json",
+          "sha256": "2bb821b1ac24a286ffc19492155c71ec78982f3f68dca95d05286451aeea12b6",
+          "size_bytes": 23957
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/construction.json",
+          "sha256": "2b173f1f6dc6bf02b60b21477a49bd93590d1ea8a6aa6b5c09ee8d7c53e618a9",
+          "size_bytes": 2774
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/copy_mapping.json",
+          "sha256": "6781ab0a6de3411d7565f603906707606e682f23c69e187df17b05bfac59547f",
+          "size_bytes": 12176
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/external_closure_candidate.json",
+          "sha256": "a9d3512cbac155ddaecf228b3d8016d1d0034a6b787db9818d6cdc59ae2ae12f",
+          "size_bytes": 427
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/full_candidate.json",
+          "sha256": "f50614ce667caa90568c7446fd1a0ec16814756b1e6e6a15183a9ad3cc924204",
+          "size_bytes": 13698
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/host_candidate.json",
+          "sha256": "2d70e16ae39bfce1332de837962d41fdaf161cdfc7785ade4a8e0ef40b55697f",
+          "size_bytes": 2804
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/pilot_candidate.json",
+          "sha256": "05dc8c2e2f59bba4a910a140cb63441f99f3b474f4d125003dcf04a9946ffc52",
+          "size_bytes": 13334
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_UNADMITTED_owner_v3/provenance_bindings.json",
+          "sha256": "2f7568351382c148f0c0d30700cade9fdc066eb730c3bb3ced6466359690c26c",
+          "size_bytes": 92617
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/full_input_hashes.external.json",
+          "sha256": "460a67cdfaeee913e2ea166a721de73347f07238f278e8764ea46e83e133a7d9",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/full_input_hashes.json",
+          "sha256": "aef7244f6bf7fba138fbb8d56acaac0d8103d80d883f504f396480ed46260156",
+          "size_bytes": 30162
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/full_input_hashes.stderr",
+          "sha256": "919e2d582a95993cbffa759077dca3fab0ce8a123e067b2e08a842ff208e815c",
+          "size_bytes": 59
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/full_input_hashes.stdout",
+          "sha256": "c2b308f474f0b361a3f87dea27c1a5c9e52123ffed9d5b1fda61f5ec9df56c52",
+          "size_bytes": 27120
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/initial_clock_native.external.json",
+          "sha256": "e750eb02ee36572020a4f6977e8de699161cd63d527aff1fa552972e8f4dfc9e",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/initial_clock_native.json",
+          "sha256": "334e3b0b913ba8455c7d0e76c874d2359d8a06da8dbb9a2941dc78aaf350a184",
+          "size_bytes": 1645
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/initial_clock_native.stderr",
+          "sha256": "b1339314239c89c00be08d4269996838eaf669d09bbc03f8ea62db52ef3e4ac4",
+          "size_bytes": 269
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/initial_clock_native.stdout",
+          "sha256": "d9f4177227c21e77ba19d394ea05093afb980d762ff91e1233fad439f6cbb9ca",
+          "size_bytes": 1555
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/launch_pilot.py",
+          "sha256": "75eea93eedaf27b1c54da0d8499bf91ddffe3036e92ec7f867bbe6a14aa906fb",
+          "size_bytes": 2401
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/local_monotonic_origin.json",
+          "sha256": "7dea22fb1825e90f5e5755b7d416cd20304dfb1fb277bc88ec674288c71ac6f5",
+          "size_bytes": 148
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/pilot_external_exit.json",
+          "sha256": "1c25a940faf67ac1c034eaf166352648b254a3ac179b0b4e28e1379dcb64cced",
+          "size_bytes": 293
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/pilot_launcher.log",
+          "sha256": "766abd74b6764e9f78eb88c210040f2e91ba556e771e08fdc8650e660f6e4404",
+          "size_bytes": 461
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/pilot_release.json",
+          "sha256": "9208335e2a0c71049707fa1163b92eaef06f900c889c7283305fa0bf42c5c27f",
+          "size_bytes": 12633
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/pilot_remote_launch_source.py",
+          "sha256": "719e3ec66f049e7945658ab09b8c989d51bb272b23ffb46927160915a9aebc03",
+          "size_bytes": 1069
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/resolved_pilot_UNADMITTED.json",
+          "sha256": "abab4338f5621800869f7c394ab4df4fd817f25b53b2d07c879cc01c66d5dc15",
+          "size_bytes": 12653
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/root_original_stage_exit.json",
+          "sha256": "31031d4ebe1876256702c0963f1355990bd2c0543c6d3957f575d127fe6b1ca1",
+          "size_bytes": 140
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/source_staging.external.json",
+          "sha256": "02d6fb1a5170eb3cb249ada1304319bfe55c7eaa42bf84c5476673bf82082a7e",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/source_staging.json",
+          "sha256": "de7fd7c776253973adb0a77ac0bd3e9849c2dde95d0a0188778f6bb219a0578d",
+          "size_bytes": 1082
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/source_staging.stderr",
+          "sha256": "598c48dee4aa7cde75c21adaeeb19f2fb82556a2e568825847ec406eaf148d1f",
+          "size_bytes": 58
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/source_staging.stdout",
+          "sha256": "57529f9e5ff2b9e42786d45c9a2a5991efc4f62600d5b5ca3400c5e42327aa98",
+          "size_bytes": 1048
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/staging_native_closure.json",
+          "sha256": "b15d1c742036fcce5953f09383cb8e9545bb7fe45e3fef5ec35c9e56c146dd12",
+          "size_bytes": 375
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/staging_native_closure.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/staging_native_closure.stdout",
+          "sha256": "671c3fa2cd0582fec47f4a26c8d1f1e48d6be9c965571b423d345f87b0ff99cf",
+          "size_bytes": 341
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/staging_receipt.json",
+          "sha256": "08bc0037cf2e15c427eebc34796f4f932688ae617fb525cc0630ca096d10a566",
+          "size_bytes": 411
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed0.json",
+          "sha256": "fe112cbd4f396ca0c6bf30c2a1b75619ad2c48c9a7c236dbb7f58f698e04f58a",
+          "size_bytes": 354
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed0.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed0.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed1.json",
+          "sha256": "b67fc9105cf83156ea30fc3316e228e285292b53fd0bf1c60b6dd9f1508aecca",
+          "size_bytes": 354
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed1.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v2/transfer_base_seed1.stdout",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/complete_input_hashes.external.json",
+          "sha256": "ee3539a52b6894beb7e554f5d6b115b41688c195a36a4ec2b67b334003e9ee6c",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/complete_input_hashes.json",
+          "sha256": "f4cb6bf2a5acbde4678430c781c8cb03bf602b5e7831572e1c88d0042c0e7b6c",
+          "size_bytes": 30622
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/complete_input_hashes.stderr",
+          "sha256": "4f783a5a19b915f2f3ad8e66b8f2cf24627465f86573e90f850318550ac38953",
+          "size_bytes": 59
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/complete_input_hashes.stdout",
+          "sha256": "111e5ee47f81c6786f78392d1e21bff0e965541f96b71fc93193e8502807ea8d",
+          "size_bytes": 27536
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/fresh_native_same_clock.external.json",
+          "sha256": "cbe387e1d437561fdaef97ee72fce8099b8c79efaa53ef5d6a75ac7816cf0b50",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/fresh_native_same_clock.json",
+          "sha256": "18218944b9d4631d2c82fca06061be9d3b1c77a7cc904e842a813598e8afc469",
+          "size_bytes": 1581
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/fresh_native_same_clock.stderr",
+          "sha256": "4b4bf6f534fb5dd607cc0c37eada9e9c73f7e25a91d387ef761d741084a24682",
+          "size_bytes": 451
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/fresh_native_same_clock.stdout",
+          "sha256": "b87bc6276d542ec336c5e1638d3a509dba2d682526840a582d26f7d0ba8506b8",
+          "size_bytes": 1477
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/launch_pilot.py",
+          "sha256": "46464d1945b9e27045ecde414b4ac1a0c78dcc2eb97e7c03e2dee1d258585796",
+          "size_bytes": 2429
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/new_source_staging.external.json",
+          "sha256": "d140a4063d87bb80dc29347844419a1349b402095736d3a6150b8e22aa771c0c",
+          "size_bytes": 136
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/new_source_staging.json",
+          "sha256": "9bdab765f18dbc3d6b9ce0e329250ada27848d3893eb8fb8b6787c7aa62e5a5d",
+          "size_bytes": 755
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/new_source_staging.stderr",
+          "sha256": "2a9538b348ecd8c73050837740c3533067628db4445e4bda9d28d02df0eb184b",
+          "size_bytes": 58
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/new_source_staging.stdout",
+          "sha256": "720aa9ba5172aecc2b702f75f0f542a24891425dedee061dce2e9fd5b64a1035",
+          "size_bytes": 729
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/pilot_external_exit.json",
+          "sha256": "dc99e419b4f1bed2e21ddcd00f609fb029c342a1712d4156b7a6c0d29e683f9a",
+          "size_bytes": 293
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/pilot_launcher.log",
+          "sha256": "11947c4a19ab0527e6ed841ba125fac6e43981c2262d2adb4b0c09064288d386",
+          "size_bytes": 461
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/pilot_release_issued_pending_stage_review.json",
+          "sha256": "d85139adec98446bbf78adf8ac069194b8c476f564cad9a8779662a0a761803a",
+          "size_bytes": 13314
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/pilot_remote_launch_source.py",
+          "sha256": "83cc281a56a220c19173a2d3a783396276a6c1f5eb51da17c5c5c1214274dc7f",
+          "size_bytes": 1069
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/resolved_pilot_UNADMITTED.json",
+          "sha256": "05dc8c2e2f59bba4a910a140cb63441f99f3b474f4d125003dcf04a9946ffc52",
+          "size_bytes": 13334
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/root_original_stage_exit.json",
+          "sha256": "9c69b29eb8c01da7720a033c28819d7ddbb29fb49fa8641f95ec707f5ddb0d39",
+          "size_bytes": 140
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/staging_native_closure.json",
+          "sha256": "9fb56a840fc717fd82315f3123d422d3dc4d2806524017d69dc3a2b37d9b502b",
+          "size_bytes": 376
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/staging_native_closure.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/staging_native_closure.stdout",
+          "sha256": "6521a14276b8a5023e54dffdf238db1e830c681ae7ba7f6038fdb27cca160ba2",
+          "size_bytes": 342
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_staged_root_v3/staging_receipt.json",
+          "sha256": "875131689ea076b532f1fd5ba1f3c1d783f552e855f0a85c95ec7ffd9fe58150",
+          "size_bytes": 446
+        }
+      ],
+      "sha256": "07d9cce3f11a3a84348b88bac26c0f608c34bb41fb3dc22889f6d718fddf706a",
+      "size_bytes": 542908,
+      "uncompressed_member_bytes": 7021401
+    },
+    "goop2d_sources_and_reviews": {
+      "file": "goop2d_sources_and_reviews.tar.gz",
+      "member_count": 142,
+      "members": [
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/aquamarine_idle_locality_1522_root_v1.json",
+          "sha256": "a81eb3106a518d40a099965f7bc0ff8068b971fde70cda05c67e85569cb34c91",
+          "size_bytes": 1617
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/audit_goop2d_cost_candidate_metadata_code_audit_v1.py",
+          "sha256": "61a46ff8136fb537bfa0fb534820679ce6f6be0f2ad502e2d8c75485c401dbad",
+          "size_bytes": 9732
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/audit_goop2d_cost_candidate_metadata_code_audit_v2.py",
+          "sha256": "77611e025c5349b2d1fd8f09205ae9fd12113f94d83962d8e4ca2e7d0220a2dd",
+          "size_bytes": 12984
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/audit_goop2d_cost_resolved_staging_code_audit_v2.py",
+          "sha256": "affe3105794a5bfe3227dc458e4f677f205a0d14d01570b9ee7e0a2cea0347d1",
+          "size_bytes": 7565
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/audit_goop2d_v3_pilot_lifecycle_transition_v1.py",
+          "sha256": "b6b1dce81cd27ed9c35a6aae7cffff3b3cc7a172f219d73daf5c44405a0dbf5a",
+          "size_bytes": 20660
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/benchmark_goop_graph_support_rollout.py",
+          "sha256": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+          "size_bytes": 40923
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/collect_goop2d_validation_cost_scalars_v1.py",
+          "sha256": "9a7d4c92a687b3ff095fb1af76390205e919d57009eddf607e73e8cb9020f21e",
+          "size_bytes": 6549
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/evaluate_goop_graph_support_final.py",
+          "sha256": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+          "size_bytes": 44814
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_conditional_cost_benchmark_design_UNADMITTED_v1.md",
+          "sha256": "359e16ab6074259fa5b7585b1a9127d8dd7831f1ea332589181296fc5b4a474b",
+          "size_bytes": 7352
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_author_tests_independent_rerun_code_audit_final_v1.log",
+          "sha256": "c2901f36f230a978f40726a9618269862c0789e225d67c5e76484603cb7bb0f6",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_author_tests_independent_rerun_code_audit_v1.log",
+          "sha256": "ade05cc2f6c0dcfd410f11e4f3426abc34f9771dee6eda150a61e39de133122b",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_author_tests_independent_rerun_code_audit_v2.log",
+          "sha256": "1b96c00d9e72741380e60cabb5b8ab0bfe40c529dc237c84a0dbb7e85688d446",
+          "size_bytes": 3567
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_author_tests_independent_rerun_code_audit_v3.log",
+          "sha256": "2647f49203cb9b56c9972e0ab4f8ca138d4d98daaaea40b9b3a815fb8052f454",
+          "size_bytes": 4221
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_candidate_metadata_independent_review_code_audit_v1.json",
+          "sha256": "927f7d66909dbfb516855c4786e4cd4f192fe42c8c56d7f91184e2dbe5735b06",
+          "size_bytes": 1423
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_candidate_metadata_independent_review_code_audit_v2.json",
+          "sha256": "65934918cf4469382250adb84ea5b25de96b1fd504f64e9a922612127fdff365",
+          "size_bytes": 1495
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_independent_regressions_code_audit_attempt1.log",
+          "sha256": "893a5b37a94f2711bb6afd599be864c6f748331ea166f6697868a6c31162642a",
+          "size_bytes": 2718
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_independent_regressions_code_audit_attempt2.log",
+          "sha256": "54ba154e2788b21123912aa84348d29bbc4544d865ab0ce56b5168413c57b887",
+          "size_bytes": 1447
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_independent_regressions_code_audit_final_v1.log",
+          "sha256": "d033761f6d5297082605e130f4bd3874bb044aab7ffe3a22e851f642ead75333",
+          "size_bytes": 1652
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_independent_regressions_code_audit_v2.log",
+          "sha256": "f27382b8496c4ef6eea7fb9d22c98608a7628137b5805b7dd64fc2c72555b981",
+          "size_bytes": 1380
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_independent_test_history/dbe74d328db93df1d0f4400606adc053301a4a6606cddb5e67734b2fd25ab41f.py",
+          "sha256": "dbe74d328db93df1d0f4400606adc053301a4a6606cddb5e67734b2fd25ab41f",
+          "size_bytes": 4042
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_launch_review_code_audit_v2.json",
+          "sha256": "12b298f67eea4f16e3b43f6fbdb06e8b33e3294e8911bf037414e7c8a34cb313",
+          "size_bytes": 1694
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_154553_root_v2.json",
+          "sha256": "e535d5be998205cd13833c79312772efc934a863a7563dd0679b23a486b9cf1b",
+          "size_bytes": 37635
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_154553_root_v2.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_154553_root_v2.stdout",
+          "sha256": "54e126324233dbbdd1236ff0524693695a8a3e59b97d6f40f88b4dcf2b95b277",
+          "size_bytes": 24275
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_155841_root_v3.json",
+          "sha256": "3c00c3655f194706dcbb86864db37433635ce6fe626b72b4769f5517af9a359f",
+          "size_bytes": 46200
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_155841_root_v3.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_native_155841_root_v3.stdout",
+          "sha256": "34eb5232efbb4d175670362949c12ef913567906b4109a8892c0ca7a791c1df5",
+          "size_bytes": 29878
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_prerelease_metadata_synthetic_tests_code_audit_v1.log",
+          "sha256": "2a017242d6e21032acb27e887bd417e439a6c9f18a5e2602d2bf47472cb87b47",
+          "size_bytes": 632
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_reporting_integration_code_audit_attempt1.log",
+          "sha256": "ac0ef9f18a9dd65f0034f6623a40cb12126eb3de46b6cc9bdd2dfd65999e9f7f",
+          "size_bytes": 964
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_reporting_integration_code_audit_attempt2.log",
+          "sha256": "1bbffaaf149b2ba6388543205e38fba7a39d5c267d85e69dea871b13482314f2",
+          "size_bytes": 1145
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_reporting_integration_code_audit_final_v1.log",
+          "sha256": "49766b0c4b1a0f34804a8426cc80c5162b765d21c86acb4b686ea295fa81843c",
+          "size_bytes": 1145
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_reporting_integration_code_audit_v3.log",
+          "sha256": "2f2b37441e10d11b5e66e13c42b2721d1dc98fb822868e59836d567add928a92",
+          "size_bytes": 1145
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_resolved_staging_review_code_audit_v2.json",
+          "sha256": "2bfd0004980ae2d910e0435d643d8b71029c7ae1c55820480357f9a0497e25b7",
+          "size_bytes": 2558
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_staging_closure_review_code_audit_v2.json",
+          "sha256": "6e1bc5aa432136c04aa855f5e77cddbd302773ad5c8f13c83c64f2fe3c1eb388",
+          "size_bytes": 1723
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_summary_independent_code_audit_attempt1.log",
+          "sha256": "cba81b138091b9ad0cf6a5c1d10205a4d61539f0e6278f98642e7a2fce3e4457",
+          "size_bytes": 932
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_summary_independent_code_audit_final_v1.log",
+          "sha256": "576f45246a7be26692d75e895dd79c9a4de8296e0196aecce4153d81c25a8924",
+          "size_bytes": 932
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_summary_root_tests_independent_rerun_code_audit_v1.log",
+          "sha256": "3cd02e884955c8b49b809ce57755ae46aacba4d9ef1382b84e081568bb3f04a5",
+          "size_bytes": 105
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_cost_volatile_graph_timing_synthetic_diagnostic_code_audit_v1.json",
+          "sha256": "03fe6113d813fbde9b6eb1f8e838067e9eb8f64c4cb488d456dd094ee547b9f4",
+          "size_bytes": 1122
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_accounting_documentation_transition_v1/cuda_12_9_device_properties.html",
+          "sha256": "103f955a47f9999e8d8ac94dd00e6125087281893c502e5d44ab4886932c151b",
+          "size_bytes": 131308
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_accounting_documentation_transition_v1/cuda_12_9_mem_get_info.html",
+          "sha256": "2d9896a7d20336af0f45be8b88cef0dc3c16fb1c9414142d81718aef11b53706",
+          "size_bytes": 812769
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_accounting_documentation_transition_v1/nvml_device_memory.html",
+          "sha256": "8039ca413e8c8ab5b00b7344c39cf75e13f2bea9add4db95e2e7b54d3620e521",
+          "size_bytes": 931879
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_accounting_documentation_transition_v1/original_probe_source_readonly_snapshot.py",
+          "sha256": "cf084d076b51215f887744ee8f2bf0fdaff3c963adb82d87e66d7fa35c4131b2",
+          "size_bytes": 2123
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_accounting_documentation_transition_v1/review.json",
+          "sha256": "060c91b92be1fc1a621705f2249c7ad7448bda5f4a948e46e940912bce058d2e",
+          "size_bytes": 4850
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_context_interface_153302_root_v1.json",
+          "sha256": "17c30900e3b7742fa9d1bfd215a7dbd6a35a2b40c61304bab11e76756f909653",
+          "size_bytes": 2739
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_context_interface_153302_root_v1.py",
+          "sha256": "da93ad446cc68772ee8075e6fb3d02bdd7d957dcb8e80f604cbe6e1d11054d11",
+          "size_bytes": 1441
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_context_interface_153302_root_v1.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_context_interface_153302_root_v1.stdout",
+          "sha256": "6d32b49e7682bf0cbb533c03470a9603c5e43dc7a82d5468f24404f8a6052524",
+          "size_bytes": 2431
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_context_qualification_independent_transition_v1.json",
+          "sha256": "770386ec54c01ae7adc85aa34caf95192b4fb66311e672d842f83ba4ee540abd",
+          "size_bytes": 4077
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_interface_152915_root_v1.json",
+          "sha256": "629ea54b2d8242afcb5a16b46c33de50adad17ad27a8769bc976a3f1891114aa",
+          "size_bytes": 1704
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_interface_152915_root_v1.stderr",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "size_bytes": 0
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_memory_interface_152915_root_v1.stdout",
+          "sha256": "1f4c1a3206aec5913939f1c077a39a27522f22a3fcd16debddc1e5a801453732",
+          "size_bytes": 1446
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_prerelease_metadata_inspector_owner_source_review_v1.json",
+          "sha256": "cd3e90523eb1a0cf3eebe3987034ea1db74b09a675740d108aa6f7a91aacd36f",
+          "size_bytes": 1417
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_root_stager_source_review_transition_v1.json",
+          "sha256": "8f2e16c03453a538afd399c2127dd462f1bae462834f3984493e54fe79615475",
+          "size_bytes": 7359
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v2_failed_pilot_lifecycle_review_transition_v1.json",
+          "sha256": "4521b7100f014043818680d0d92a8e4ca157eb8d2faf3b34e2b9b7f6291d95b1",
+          "size_bytes": 7541
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v2_failed_pilot_mechanism_review_code_audit_v1.json",
+          "sha256": "f4ac89cdeeb713b85c2631d17a8b7078d48d97d8e94f050ca214297c169b0a10",
+          "size_bytes": 3071
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_actual_staging_review_code_audit_v1.json",
+          "sha256": "0c26d6099a8b7352b12a47d0d598e64161cdd1cba1ff69453874b2f084c6de15",
+          "size_bytes": 2646
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_candidate_metadata_review_code_audit_v1.json",
+          "sha256": "af6e635d50cde971f15aa96b7fc7ada1020202c4303b9441e1dba34f36add556",
+          "size_bytes": 1018
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_clock_lifecycle_source_review_transition_v1.json",
+          "sha256": "228ea416324767aa9c74082f9170c18a338e2e73bf657bf86c7f5c9e10cd118b",
+          "size_bytes": 6076
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_failed_pilot_lifecycle_review_transition_v1.json",
+          "sha256": "0964e424c92d04851678b8a5bf0571e92c7d9c2b954a13da916889e166277237",
+          "size_bytes": 37798
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_failed_pilot_scientific_review_code_audit_v1.json",
+          "sha256": "0b72d836e74357e339793a5cbe7ef179aab68d2fd2a54d84e6245bf1a17ec453",
+          "size_bytes": 2415
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_incremental_stager_source_review_transition_v1.json",
+          "sha256": "43429ef2041f4f74a3e764f913ee8751b48c2c0ed99afeb81ba2476765d4b17b",
+          "size_bytes": 6789
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_lifecycle_actual_checker_output_transition_v1.json",
+          "sha256": "2cf8dc8a32b6ce3507f64813b713f071d732b26a2c24b521075f693ca21b3bb5",
+          "size_bytes": 8323
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_lifecycle_actual_checker_output_transition_v2.json",
+          "sha256": "0459d08e6cd0678b6118b4073762447ce5c57800365b66ae6fc8633ff0b504fd",
+          "size_bytes": 29785
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_lifecycle_actual_inputs_transition_v1.json",
+          "sha256": "df9a755149dd21eaa34fe5c32646ee788716c054fcdb855ec4c34bb83246d5af",
+          "size_bytes": 1343
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_lifecycle_checker_tests_transition_v1.log",
+          "sha256": "f91daaa564b262f7880167a6365c17dfeb8f4fc1e182456679bb981c56ba5b81",
+          "size_bytes": 1976
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_pilot_launch_review_code_audit_v1.json",
+          "sha256": "08c045b8ca937aaa49a032f7dd5fa603975bba783858e8554eac77487bcd4b19",
+          "size_bytes": 1113
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_v3_source_reporting_review_code_audit_v1.json",
+          "sha256": "8e40056d46a77d9f3f25f88ec23b3a9ffd870fe1c55f89e01d0f82c4e6443466",
+          "size_bytes": 3675
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_owner_build_v1.log",
+          "sha256": "2f8e319a0ee3115879fd55eb28bc2a0223c5f1452b0cf7fa0f5f4a6b75ae8454",
+          "size_bytes": 704
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_owner_build_v2.log",
+          "sha256": "8c91fec1242bd2bba12f7769187f637ce07a38a094240eca62df378f4fcbea49",
+          "size_bytes": 783
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_owner_build_v2_attempt2.log",
+          "sha256": "72e779acac5a7df9bf9703c061077af01d34e941ae4f6c2a1d8bcfd3452e8988",
+          "size_bytes": 785
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_owner_scalar_verification_v1.json",
+          "sha256": "3d429be945315f3b1f07138a2116bf07a2275469346b57992fd266fc685de3da",
+          "size_bytes": 217
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_candidate_owner_scalar_verification_v2r2.json",
+          "sha256": "f388506bd93477e946eddb1e6f2776016ef4e9c50875985cfc81a28287c87b9f",
+          "size_bytes": 331
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_contract_v1.py",
+          "sha256": "119a18dcffe1e9730d5f248fa4a4cbe27fcdda5649a99e73bc117ea5e2eb1be6",
+          "size_bytes": 23378
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_contract_v2.py",
+          "sha256": "42488d713fca7aebc1ee6bb2e6f22271c2323d14ffa0bb7a1341a0afd16e5ad0",
+          "size_bytes": 26321
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_contract_v3.py",
+          "sha256": "f657f36e9e50e9d90ed45c99e1e1fee58ce87286a100503edc798acbf8785dde",
+          "size_bytes": 28728
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_external_closure_UNADMITTED_v1.json",
+          "sha256": "bd758c50ab196531be6784ad10030d438a2fe4c6b4c39b1431d974d5dbd2c447",
+          "size_bytes": 437
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_full_release_UNADMITTED_v1.json",
+          "sha256": "6d9fa32ea2b6685637eeabcfab6f750482a6e08b5803d063a399b725dd694050",
+          "size_bytes": 11527
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_hardware_amendment_UNADMITTED_v2.md",
+          "sha256": "1ade071e7e4aa1df61c04768d0c4020e08b793cf19267f4e530cf368d5c84811",
+          "size_bytes": 4105
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_independent_review_code_audit_v1.json",
+          "sha256": "b032fdeeccab2b71be7a799b9254f7df784df6b775e3e93141ed2d3820add88f",
+          "size_bytes": 5340
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_instrumentation_amendment_UNADMITTED_v3.json",
+          "sha256": "00c7ee9e902ee26403fda0a033f932688b6406b189aa8670620d37914e935181",
+          "size_bytes": 3907
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_lifecycle_source_review_transition_v1.json",
+          "sha256": "4050362b9714ed75d59655d6a428a483f5454d230e88052b1f76453c023e8ee8",
+          "size_bytes": 8587
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_operations_UNADMITTED_v1.md",
+          "sha256": "536a3c111f26760ac2934ed6e8b699c8a72b8e467c454cd9789fe51fe641ea7e",
+          "size_bytes": 10222
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_pilot_release_UNADMITTED_v1.json",
+          "sha256": "6c97a35f21293a2978d70cd2841b542c5197b1e2433fb0b0b2f5b5212480576c",
+          "size_bytes": 11163
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_post_full_reporting_UNADMITTED_v2.md",
+          "sha256": "db5c09d4b11fef367768389d9b5b29ae3c5f5229c2b8f7ae1754cd8c6dd4cf56",
+          "size_bytes": 4064
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_source_preparation_UNADMITTED_v1.json",
+          "sha256": "12d114b52d1ac6593340741998ea0dcbd7e9401139dd28a624d4dc9d19ce7c59",
+          "size_bytes": 3174
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_source_preparation_UNADMITTED_v2.json",
+          "sha256": "1620ec27089edd3e47c6a820b719649ea27debc755a930e08d7d2a77c02dbce2",
+          "size_bytes": 2862
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_source_preparation_UNADMITTED_v3.json",
+          "sha256": "60eceb0dd863d949a5f7642747f7dcbe47134ca47044c906d2d651ea9914519f",
+          "size_bytes": 3361
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt1.log",
+          "sha256": "dc7156057c8cda106978edd773acc0a3d50845b547a1e0554cb8a248d4fd56ac",
+          "size_bytes": 2479
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt2.log",
+          "sha256": "7d7a2c1292c52060f0758d2d4a6d500a3f3173ba455a0d030a45cce89e72c328",
+          "size_bytes": 2821
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt3.log",
+          "sha256": "bb7626bd7406b63144764c3c0527085e6e9cafb4848b854a9d6e214d032853b0",
+          "size_bytes": 2070
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt4.log",
+          "sha256": "e8c58e3c800bb5221bd21607ceb75c3c5fd477383e1524770abbcfbe23030b27",
+          "size_bytes": 4014
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt5.log",
+          "sha256": "1a8f8cb6b7a89743703a2a1241b0a4e0b664677265038bdb955c7fe3340cd87d",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt6.log",
+          "sha256": "f0b3344185f881089879f91cb70c7ceb003e2640eb87c3a0370788d8120ef195",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt7.log",
+          "sha256": "026d734714988c73e52f9679eb73a079480660c5a20832a44e1cab7b76793c16",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_attempt8.log",
+          "sha256": "1a8f8cb6b7a89743703a2a1241b0a4e0b664677265038bdb955c7fe3340cd87d",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_synthetic_final_v1.log",
+          "sha256": "7910149c41bda9e662f783873b140a5d442d80edd5a2586394e6346b30ec3938",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_core_diff_review_transition_v1.json",
+          "sha256": "640adb442ca5429083922b8ce84e5c1a05b0d28e48f2211325f8ff865bb56c72",
+          "size_bytes": 7309
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_from_v1.diff",
+          "sha256": "fccfee66854145d2a9d7527056004c723f8e16a6786052393efa931d63982c33",
+          "size_bytes": 17293
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_independent_review_code_audit_v1.json",
+          "sha256": "e5c2501e9bdcb4e0adde924a48ed608d798cb503696d04672a52fd2c7769e804",
+          "size_bytes": 6531
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_root_source_decision_v1.json",
+          "sha256": "b5a991b1e0e6005739ac00abc6428ba616037e721aede793dbd4763026b85b15",
+          "size_bytes": 1958
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_synthetic_attempt1.log",
+          "sha256": "74879ee2fcfd5639c52d6bfecdb3ff5b7e785a96c81fa61c76f9af62c9287a38",
+          "size_bytes": 3299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_synthetic_attempt2.log",
+          "sha256": "b14c3982e62f56302a975a0a832a9f8ec5a44578405cdcadfb7497c5b8b3079b",
+          "size_bytes": 5050
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v2_synthetic_final_v1.log",
+          "sha256": "91e7735a452415fbb19ac9ba439900b5ad35623b6ad5dd7528155259a9389d5b",
+          "size_bytes": 4139
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v3_from_v2.diff",
+          "sha256": "429560e888bde29a42439ae17e14a66e4a5cd854015db1eb8a2bff27a5f5f453",
+          "size_bytes": 12583
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v3_instrumentation_amendment_root_v1.md",
+          "sha256": "5e5d478bb5c8981359daf1b4666731d7a2b68c41875a40f8338ed90c54cf2bf5",
+          "size_bytes": 3916
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v3_root_decline_v1.json",
+          "sha256": "f7ec1d546b80df23c418bbaa588c5047c9120ee9d6afacf23da625163a8cd67f",
+          "size_bytes": 3198
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_validation_cost_v3_synthetic_attempt1.log",
+          "sha256": "0341b22d01aadfd23c920818c897ed98cbef22109212fcb10546fcda4bf4a729",
+          "size_bytes": 4221
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop_evaluation_contract.py",
+          "sha256": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+          "size_bytes": 16007
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop_evaluation_release_A_0947_v1.json",
+          "sha256": "fff53f74ac22e980fe6e9bfdddb6c32014d34d8150b5c6f3733a291843f1d6eb",
+          "size_bytes": 86541
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop_evaluation_release_B_0949_v1.json",
+          "sha256": "0eb041ffe34391dbfb7e40ee5d3ab7338663c99847be548a57452b184468d825",
+          "size_bytes": 69128
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop_gate_train_labels_seed0_release_1155_v1.json",
+          "sha256": "d01fa527e8203e9457e60cd91189413a0e11a21db1f44dced51d05ff052160a3",
+          "size_bytes": 528310
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop_gate_train_labels_seed1_release_1155_v1.json",
+          "sha256": "bef4eee46013819b25c45625f0ba989d2ab1b249704588bda04fca9f96f77309",
+          "size_bytes": 528310
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/inspect_goop2d_cost_prerelease_metadata_code_audit_v1.py",
+          "sha256": "b4e9f24fae062025246473796cc2d02d72d9d1c3d789db261e3b3b7cd185fcaa",
+          "size_bytes": 7637
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/measure_goop2d_validation_cost_v1.py",
+          "sha256": "69a9f87234e671821263ddff961f0f89b37abff43eb0e0a72e15f655df25a2b3",
+          "size_bytes": 18174
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/measure_goop2d_validation_cost_v2.py",
+          "sha256": "73c1225635e80d296a2e6158dd6610df458669509cde96f4ebf46fc907139652",
+          "size_bytes": 18514
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/measure_goop2d_validation_cost_v3.py",
+          "sha256": "fb83f7bbd73d65c9ee68a8bd83d8c8c0dc1cfa65001cd0b1b8d4ec34726a01ed",
+          "size_bytes": 18634
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_goop2d_validation_cost_candidate_owner_v1.py",
+          "sha256": "0443091d60231d29c21e2842ba621a0c1c10e750baa655306de815b7e32e4e0d",
+          "size_bytes": 16291
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_goop2d_validation_cost_candidate_owner_v2.py",
+          "sha256": "ce564a6ec0606e3beda34d3594e7bf37fb621b1100e2efbf0b85e474290754b0",
+          "size_bytes": 9863
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_goop2d_validation_cost_candidate_owner_v2_attempt1.py",
+          "sha256": "737a14c0c73e155614e4b89a11a4d773e8132e5a6aefe60ac7c9044a514793c4",
+          "size_bytes": 9580
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_goop2d_validation_cost_candidate_owner_v3.py",
+          "sha256": "a322f86fa55ffe72c939973962026300f2ee4f6c22a7c2ef857bcef334b960a3",
+          "size_bytes": 8788
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_graph_support_policy.py",
+          "sha256": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+          "size_bytes": 18219
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/stage_goop2d_validation_cost_root_v2.py",
+          "sha256": "f6db2dd834752ecc60f11260b78c21e84274ce1ebffded9b8c2c14801d3f5911",
+          "size_bytes": 13018
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/stage_goop2d_validation_cost_root_v2_reviewed_draft1.py",
+          "sha256": "1feab7a4a4b6a041d3c5c8a210272b1aead41005467065480ef44a26fcb17ac1",
+          "size_bytes": 8949
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/stage_goop2d_validation_cost_root_v2_reviewed_draft2.py",
+          "sha256": "5d24d8b09cc8c23768ccc993eb8dd728796bf4a51c54a1a243b5c7612f4516f7",
+          "size_bytes": 12494
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/stage_goop2d_validation_cost_root_v3.py",
+          "sha256": "202007e5e8a9105cc4166e0b678226521cc137fbf36116e848d9adcb859cd30b",
+          "size_bytes": 8710
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/stage_goop2d_validation_cost_root_v3_reviewed_draft1.py",
+          "sha256": "0c1bc7e87a9f998ab1b3e6becfa61be9fdfd96707f41f473d5770b97ceb39a85",
+          "size_bytes": 7905
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/summarize_goop2d_validation_cost_v1.py",
+          "sha256": "d3e85888f947f969ae6181b5628bba51de5a0c94187af57d2d15a1bc181bbab6",
+          "size_bytes": 16539
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/supervise_goop2d_validation_cost_v1.py",
+          "sha256": "58facf99bf4b9b3c7ec60e4b5b4fb597ef5768fcae9f5653346f2cf7d721d03f",
+          "size_bytes": 26734
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/supervise_goop2d_validation_cost_v2.py",
+          "sha256": "f72022e92003c5f24451a678dbd18c460a0566a5e6759d489fd0ca732e678f79",
+          "size_bytes": 27198
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/supervise_goop2d_validation_cost_v3.py",
+          "sha256": "1a74fcc03a5c7d8ae02f96e01c72495df9b77c07e9a3abd66cb60d96697941db",
+          "size_bytes": 27373
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_independent_code_audit_v1.py",
+          "sha256": "3e26cf8000c44ae8d52e3032077f201241c71480fd5d62d62089163a27e96e95",
+          "size_bytes": 5013
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_independent_code_audit_v2.py",
+          "sha256": "10256f5fff14d7f51df804ca1cbdaa610819323dce057a2881259db385273d32",
+          "size_bytes": 5301
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_prerelease_metadata_code_audit_v1.py",
+          "sha256": "6815b88b992f25024db1f89f24d51e221f37022179285ca5b6138c682267de9a",
+          "size_bytes": 2344
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_reporting_integration_code_audit_v1.py",
+          "sha256": "1db5d8a1c238ff1ddbf5baea24c798288f38a67d5032bafb337f2085607be893",
+          "size_bytes": 12293
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_reporting_integration_code_audit_v3.py",
+          "sha256": "d972993cd549035e8e460ae24b63392e7c3218fa1f42cef5882386a9d1e0150f",
+          "size_bytes": 12299
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_cost_summary_independent_code_audit_v1.py",
+          "sha256": "1a1ce14a13fba80885ab78bc2477b3a206fbd592462f0e2f05bf195658014464",
+          "size_bytes": 4414
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_v3_pilot_lifecycle_transition_v1.py",
+          "sha256": "dc83b3e05b1ce577fe8c5233a9ddfa55a7e48e1e5e6b7f703d7487ae4cc406e8",
+          "size_bytes": 4596
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_validation_cost_summary_v1.py",
+          "sha256": "8e8954095967a61a9f54f84476e642e32f42f0e27267a0fa265100aafdcdefa3",
+          "size_bytes": 3453
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_validation_cost_v1.py",
+          "sha256": "a86faaaee2f08511518280a25e61d9eddfc97323a6f88a9487216c7de1a4a0a4",
+          "size_bytes": 22527
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_validation_cost_v2.py",
+          "sha256": "f35e6ec78e6eea61f9bead999dfeeffa95dbfc56c0f5ce7acc7eab35fa1b6382",
+          "size_bytes": 27998
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_goop2d_validation_cost_v3.py",
+          "sha256": "e5c5c46d346a79650ba5ae2f3fec6f9e7a723754def1cc4b244bce4ed9d0fce9",
+          "size_bytes": 35498
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/train_goop_graph_support_cuda.py",
+          "sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+          "size_bytes": 49091
+        }
+      ],
+      "sha256": "706d1d0c9c19c7690a0f52371622b4d221dd9df14ee06d715af3b6a8b61d0d89",
+      "size_bytes": 581530,
+      "uncompressed_member_bytes": 4287051
+    },
+    "sand_completion_bridge_preparation": {
+      "file": "sand_completion_bridge_preparation.tar.gz",
+      "member_count": 38,
+      "members": [
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py",
+          "sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+          "size_bytes": 26408
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/benchmark_sand_graph_support_rollout.py",
+          "sha256": "8586025552ee632f4dd28419f52e1f6bfeab79cc043068ef14abffa597a70e13",
+          "size_bytes": 45780
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/download_sand_public_v2.py",
+          "sha256": "864d9c974deabceb19b5f3b8e88ced1ea7281595a0d3a526e8d39f382aa4605a",
+          "size_bytes": 17938
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/evaluate_sand_graph_support_final.py",
+          "sha256": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+          "size_bytes": 49814
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/goop2d_completion_sand_handoff_operator_code_audit_v1.md",
+          "sha256": "cc8408d448ca14c7ffc70eed2a3299e2d6f1beeff26f9991b6e821165c6c6a31",
+          "size_bytes": 25481
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_final_cohort_scoped_v1.py",
+          "sha256": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+          "size_bytes": 24233
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_recovered_final_cohort_v1.py",
+          "sha256": "41bef815edf151fddd9ef9d667a339b5cb0f46ae405d8e4ed6bf00df69e75ced",
+          "size_bytes": 31908
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_recovered_handoff_candidates_transition_v1.py",
+          "sha256": "6fad871b63ad58912d9c079d373170080537789cd7a731eaf3f7322b6dfd9c2b",
+          "size_bytes": 12677
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_recovered_v1.py",
+          "sha256": "6a40fe9196157c0666ffe556eb0e92781e9fc3b84f0c45b5ff67e09be0fce1b8",
+          "size_bytes": 25473
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/prepare_sand_reserved_test_scoped_v1.py",
+          "sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+          "size_bytes": 25467
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/repackage_designsafe_sand.py",
+          "sha256": "37c135a9eaa484a5fdbed2176780913b71cd3be4df602983fcd3b644c1a57ff9",
+          "size_bytes": 20511
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_completed_host_process_check.template.json",
+          "sha256": "752b923217c9508144d9919a9f38134e0daf838c6a5eb246c3c9f26e26001929",
+          "size_bytes": 297
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_final_cohort_scoped_release.template.json",
+          "sha256": "4edb4b34500ec0974b6aebe1cafa1143d0ca37aad9eceecd29782b90e84376b2",
+          "size_bytes": 797
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_final_evaluation_scoped_release.template.json",
+          "sha256": "d9943edbb011a63d94168ab8f385fef69e58b4c5ce5ecaa275b394bd9017ac97",
+          "size_bytes": 1407
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md",
+          "sha256": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+          "size_bytes": 26201
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_review_code_audit_v1.json",
+          "sha256": "af7a6217cc0220ab4c0f7c7a389614cf46f13cb1160da3e9c1204d9542579011",
+          "size_bytes": 3850
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt1.log",
+          "sha256": "9d57ad4391a18783a2f907a6a877e881dc895baa0b77529b970c578069936d05",
+          "size_bytes": 922
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_independent_tests_code_audit_attempt2.log",
+          "sha256": "86ec9996cdc2a6d7d0814838bf575d1920e3fdd8fa4651583ad7ddc460c741fe",
+          "size_bytes": 1154
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_cohort_bridge_source_history/892f061960445aa2c59b8dd898334b0e220b540d65b2f51eeee97006014b0a1d.py",
+          "sha256": "892f061960445aa2c59b8dd898334b0e220b540d65b2f51eeee97006014b0a1d",
+          "size_bytes": 28221
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/bridge_release.template.json",
+          "sha256": "63a86ceaf0a98e2bfc987d4904418db29d50e7984dbf03b6e9ad09195f60ef55",
+          "size_bytes": 1043
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/candidate_manifest.json",
+          "sha256": "277f999a3bdbe42cf7a7e7cbf9f2025ef7e0c19435576b32752efa7e40967bc0",
+          "size_bytes": 998
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/construction_record.json",
+          "sha256": "be981696a2a4cf5d99901f129d80167bb32bb7249f7f83069ff5ff2763fa539e",
+          "size_bytes": 1846
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/evaluation_A.template.json",
+          "sha256": "e83854509cc1dd19e9bbce2546d4c04b49d7d485d94dbdcba40d8c037465bb5e",
+          "size_bytes": 35731
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/evaluation_B.template.json",
+          "sha256": "ed766bea06e9ed033f8d03f18dc343de1034f498aa2ff932bbfd1a261eb4e200",
+          "size_bytes": 20474
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/handoff_commands_UNADMITTED.json",
+          "sha256": "b062864d5d2c3ce56681f96e2d4f08302ee2d77bcb5cae7ea8173b5023a37a5b",
+          "size_bytes": 2048
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/process_check_A.template.json",
+          "sha256": "d64f10ccdf62e6f75b55ad05c1f8076711cb555c13d9407d39dbc2bdef4c3568",
+          "size_bytes": 1009
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/process_check_B.template.json",
+          "sha256": "96654b92e7818fe9ccab06f9a172575235d63084e212a61bf4df09ffec4d02a8",
+          "size_bytes": 336
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/reserved_preparation.template.json",
+          "sha256": "7fe9cfbe405796efea4e8c589dd8c8be12ec2282ff70100dfe5a64284d75d147",
+          "size_bytes": 2350
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_candidates_UNADMITTED_transition_v1/six_model_lineage_UNADMITTED.json",
+          "sha256": "ab5630963688aa6dc74ea368a01215e34ad645592a2e878cb17d03356f88acfe",
+          "size_bytes": 5351
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_completion_handoff_UNADMITTED_transition_v1.md",
+          "sha256": "7f927aa22b4d7051ec10e2eadce34be1964c600f3aa2bcd260d2f440c1204ccf",
+          "size_bytes": 7390
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_handoff_authoring_record_transition_v1.json",
+          "sha256": "16f440c10c0e3b4eb70e7efaf2c740cd7bc721cd887a40aa2cf1004d13bdafc0",
+          "size_bytes": 2880
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_recovered_handoff_candidate_review_code_audit_v1.json",
+          "sha256": "5c8badd9e3b3d197eca65edacb3e2340dadcb00a2e7673e12e24ce40a89f6c45",
+          "size_bytes": 1232
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+          "sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+          "size_bytes": 5024
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/sand_scoped_schedule_fixed_spec_v2.json",
+          "sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+          "size_bytes": 10169
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py",
+          "sha256": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe",
+          "size_bytes": 36611
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/test_sand_recovered_cohort_bridge_independent_code_audit_v1.py",
+          "sha256": "a66307b2e24eb41bd1b4acd6526151b8f0f1c42f0ec50a039fe395a9590fe04a",
+          "size_bytes": 18139
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/train_sand_graph_support_cuda.py",
+          "sha256": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+          "size_bytes": 40940
+        },
+        {
+          "path": "work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py",
+          "sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+          "size_bytes": 24349
+        }
+      ],
+      "sha256": "8f126765da18501e88a0b7ceb73e8ce8a7ef8369c708f743407c5ba7b4ef8405",
+      "size_bytes": 148302,
+      "uncompressed_member_bytes": 586459
+    }
+  },
+  "git_mutation": false,
+  "numerical_payload_policy": "All raw model, trajectory, and numeric reference arrays omitted uniformly; original scalar JSON/logs remain exact.",
+  "omitted_unexecuted_preparation": {
+    "audit_goop2d_v3_actual_scalars_code_audit_v1.py": "Unexecuted preparatory success-only scalar checker; actual pilot failed and the complete-phase checker was never used."
+  },
+  "operational_authority": false,
+  "remote_calls": false,
+  "schema": "adaptgns_cost_failure_and_sand_bridge_publication_package_v1",
+  "scientific_scope": {
+    "goop2d_cost_result_admitted": false,
+    "goop2d_full_declined": true,
+    "partial_scalar_files_preserved": 45,
+    "performance_aggregation": false,
+    "sand_scope": "Reviewed completion bridge and unresolved handoff preparation only; no completed cohort or evaluation claimed.",
+    "subset_cost_statistics": false
+  },
+  "status": "local_publication_candidate_no_git_changes",
+  "v3_original_numeric_archive_receipt": {
+    "archive_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop2d_cost_pilot_failure_20261006_root_v3/original_numeric_artifacts.tar",
+    "archive_sha256": "7a171591e4ee81722281ce69ef3e2a9fd481391f3c41ddd1c69573c67102119d",
+    "archive_size_bytes": 43888640,
+    "checked_utc": "2026-10-06T16:01:50.898263+00:00",
+    "inventory_sha256": "982f375c453ad52ad9f0e2163730919aeb3efb54fcd517734823f26df9238e47",
+    "numerical_arrays_deserialized": false,
+    "original_file_bytes": 43800152,
+    "original_files": 45,
+    "original_ssh_exit": 0,
+    "science_rerun": false,
+    "status": "all_original_numeric_artifacts_copied_opaque_and_verified"
+  }
+}

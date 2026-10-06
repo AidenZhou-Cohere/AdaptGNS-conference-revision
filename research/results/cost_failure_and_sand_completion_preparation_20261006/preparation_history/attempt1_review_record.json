@@ -1,0 +1,13 @@
+{
+  "status": "superseded_before_test_or_publication",
+  "findings": [
+    "Nested Sand original source and Goop test/history documentation omitted from initial archive selection",
+    "Failure evidence assertion checks needed a fail-closed guard under Python optimization"
+  ],
+  "resolutions": [
+    "Exact source-history and documentation trees added to final archive selection",
+    "Failure evidence replay immediately rejects optimized Python; test subprocess removes PYTHONOPTIMIZE"
+  ],
+  "original_candidate_preserved": "work/deadline_research_20261005/cuda_preparation/cost_failure_sand_bridge_publication_candidate_code_audit_v1",
+  "git_changes": false
+}

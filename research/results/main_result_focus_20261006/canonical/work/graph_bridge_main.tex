@@ -1,0 +1,17 @@
+\subsection{Does the graph convention explain the deficit?}
+The fixed study removed self-loops used during training. We therefore froze a
+separate post-inspection bridge on all six checkpoints and 425 observed
+histories per model (128 validation, 297 test), crossing self-loops and the
+128-neighbor cap for base/dense, with both loop settings for all selectors.
+All 2,550 frames completed. Restoring self-loops lowers base test MSE by
+$17.85\pm0.75$\% / $17.21\pm3.01$\%
+(faithful/NLL; paired within-seed changes).
+Yet previous-observed risk remains worse than random, and dense worse than base,
+in every seed on both splits. Current-base risk also fails to beat random.
+The cap is inactive on all observed histories, and native/supplied
+base-graph feature and prediction checks pass. The expanded graphs remain
+controlled interventions. Thus restoring self-messages changes absolute
+accuracy without removing the observed risk--random deficit. These controls
+do not resolve the lack of expanded-graph training or autonomous feedback;
+Appendix~\ref{sec:graph-bridge} gives all policies and the paired loop
+interactions.

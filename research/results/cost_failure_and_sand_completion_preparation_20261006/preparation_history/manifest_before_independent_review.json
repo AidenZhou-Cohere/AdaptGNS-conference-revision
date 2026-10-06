@@ -1,0 +1,134 @@
+{
+  "archive_text_member_count": 347,
+  "file_count": 24,
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "fa056d42a11f9fffb8b6aa6d2a21948e6dc2ae5cb872b62641971e460c79b062",
+      "size_bytes": 6355
+    },
+    {
+      "path": "archive_manifest.json",
+      "sha256": "f139603d80c30c49e5d750c61ff4061a67e4f258aeae5c80def98becbd7bb174",
+      "size_bytes": 96201
+    },
+    {
+      "path": "build_package_original_workspace.py",
+      "sha256": "98ec28b90ab974dc1a9d9383b8929c4c28e5f020ee77fbdf86e9b3e15bcd12c3",
+      "size_bytes": 6989
+    },
+    {
+      "path": "goop2d_candidates_and_failures.tar.gz",
+      "sha256": "07d9cce3f11a3a84348b88bac26c0f608c34bb41fb3dc22889f6d718fddf706a",
+      "size_bytes": 542908
+    },
+    {
+      "path": "goop2d_sources_and_reviews.tar.gz",
+      "sha256": "706d1d0c9c19c7690a0f52371622b4d221dd9df14ee06d715af3b6a8b61d0d89",
+      "size_bytes": 581530
+    },
+    {
+      "path": "preparation_history/attempt1_archive_manifest.json",
+      "sha256": "5006e70b1aa7f6de91940fca02fa9e7c8bfede0943517180ae27fca71fa094f1",
+      "size_bytes": 92849
+    },
+    {
+      "path": "preparation_history/attempt1_build_package_original_workspace.py",
+      "sha256": "2528cfb5c7b7402a3ab03df613c91a8f3c3386304d0fc96d406ccc29191a6ae2",
+      "size_bytes": 6432
+    },
+    {
+      "path": "preparation_history/attempt1_replay_failure_evidence.py",
+      "sha256": "d6c439eb7f45331657055560e56541d46b6dc570fbc7b1d01743e06ae7df788f",
+      "size_bytes": 4201
+    },
+    {
+      "path": "preparation_history/attempt1_review_record.json",
+      "sha256": "a62b6de9832fe237a141b1eaeb3631de11e857783f775d3a5d09c43e358390c8",
+      "size_bytes": 667
+    },
+    {
+      "path": "preparation_history/attempt1_run_source_tests.py",
+      "sha256": "51f5ac8edb99b4f1865496df13435d196e46a87322d8740ca820247bf3b80887",
+      "size_bytes": 2711
+    },
+    {
+      "path": "preparation_history/attempt1_verify_package.py",
+      "sha256": "02ca9df105afdd7fdee7cc99359babbe329cb362536be075477c2920294106c2",
+      "size_bytes": 2769
+    },
+    {
+      "path": "preparation_history/attempt2_archive_manifest.json",
+      "sha256": "4f39f20b4b769a33e8879d154a51a2fcef2a6fbeb3e94194be47eec06ab5da89",
+      "size_bytes": 94934
+    },
+    {
+      "path": "preparation_history/attempt2_build_package_original_workspace.py",
+      "sha256": "4170ad06786923a1b45af9abc58a79d9cc56561b81e444b1441cb4c359dea8b0",
+      "size_bytes": 6662
+    },
+    {
+      "path": "preparation_history/attempt2_review_record.json",
+      "sha256": "33133ab4e3cbb6d8032486dbd8ef8077af28d0e22fb416c256ea28107dd8bee3",
+      "size_bytes": 451
+    },
+    {
+      "path": "preparation_history/attempt2_run_source_tests.py",
+      "sha256": "8d980f883750ee7af23c9bb8da8ae94eace2fc4fd744695881ea1890196c8126",
+      "size_bytes": 2751
+    },
+    {
+      "path": "preparation_history/attempt2_tests/source_tests.log",
+      "sha256": "db5a04d4a5da14c617ec4f1aab773f0796edad0c2ccbe005fb7c0ba298922526",
+      "size_bytes": 21002
+    },
+    {
+      "path": "preparation_history/attempt2_tests/test_receipt.json",
+      "sha256": "fe7e73a7ed936cccf7a40a24f096e36d853a51bb069203eae1d61d572161d07a",
+      "size_bytes": 1201
+    },
+    {
+      "path": "replay_failure_evidence.py",
+      "sha256": "e1b635bdfed8c15dc571e8dcf187ac815056bb8c031b5eb65c3d66dedc6d6d30",
+      "size_bytes": 4331
+    },
+    {
+      "path": "run_source_tests.py",
+      "sha256": "bc6661b57c675a2ec5cd9f4ba9e786e8db313899174c98a790c3ada2e1a2b627",
+      "size_bytes": 2803
+    },
+    {
+      "path": "sand_completion_bridge_preparation.tar.gz",
+      "sha256": "8f126765da18501e88a0b7ceb73e8ce8a7ef8369c708f743407c5ba7b4ef8405",
+      "size_bytes": 148302
+    },
+    {
+      "path": "verification/package_test_execution.json",
+      "sha256": "85f258d760114bb12f144ac0dd9852e6d993a3d8a650b72c06e2d30e2875d26a",
+      "size_bytes": 529
+    },
+    {
+      "path": "verification/source_tests.log",
+      "sha256": "58e4da461427109d542b6680358f9d6ad7c6583803a532cf3d122061b4177287",
+      "size_bytes": 22879
+    },
+    {
+      "path": "verification/test_receipt.json",
+      "sha256": "0e2a6a25cd51ec491c21df03701c8d092177e29aad94937b23463c7722721b52",
+      "size_bytes": 1253
+    },
+    {
+      "path": "verify_package.py",
+      "sha256": "02ca9df105afdd7fdee7cc99359babbe329cb362536be075477c2920294106c2",
+      "size_bytes": 2769
+    }
+  ],
+  "git_mutation": false,
+  "remote_calls": false,
+  "root_owns_publication": true,
+  "schema": "adaptgns_cost_failure_sand_bridge_package_file_manifest_v1",
+  "source_experiments_rerun": false,
+  "status": "complete_tested_local_candidate_pending_independent_package_review",
+  "tests": 136,
+  "total_bytes": 1653479
+}

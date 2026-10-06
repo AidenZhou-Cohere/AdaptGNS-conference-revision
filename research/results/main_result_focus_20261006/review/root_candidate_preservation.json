@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "builder_reproduces_original": true,
+  "original_title_abstract_exact": true,
+  "old_labels_preserved": 70,
+  "other_tables_exact": 35,
+  "figure_and_theory_moved_exactly": true,
+  "unresolved_references": [],
+  "candidate_sha256": "0f765dc1b86a80a7b12bb63ef72018916df24b64af0e4417275ef9cee5c0590f",
+  "scope": "Structural checks only; independent claim/table review and native compilation are pending."
+}
