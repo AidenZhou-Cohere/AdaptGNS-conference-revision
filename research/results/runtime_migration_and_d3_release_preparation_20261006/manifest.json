@@ -1,0 +1,175 @@
+{
+  "cpu_tests_passed": 78,
+  "created_utc": "2026-10-06T15:17:56.619220+00:00",
+  "files": {
+    "README.md": {
+      "bytes": 2803,
+      "sha256": "f4a5dd575984c8140bac8d5f1752ac24d3bf16c6bf6901e135b3fb2c6862551f"
+    },
+    "dependency_paths.json": {
+      "bytes": 87127,
+      "sha256": "a878585a169fcd934a2ab390c30516321cfbc216629bf13a04a4d11ed4677e17"
+    },
+    "packaging_history/curate_initial_missing_overlay_v1.py": {
+      "bytes": 4688,
+      "sha256": "1967e6ef9c054be6f4f2e61d8f1890484ecbc1d2235f8733b089bd3ab15974d4"
+    },
+    "packaging_history/dependency_paths_missing_overlay_v1.json": {
+      "bytes": 73589,
+      "sha256": "4541d1b5200156e2df4b2cecfe6870a2238c8e026ea630b8ef2bb32be95af629"
+    },
+    "packaging_history/first_attempt_cpu_tests.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "packaging_history/first_attempt_cpu_tests.stdout": {
+      "bytes": 5935,
+      "sha256": "f2cec3a1f93ccf8d5dae0c88c6239f2bd99347d9228e0667db102c704c95a6a6"
+    },
+    "packaging_history/review.json": {
+      "bytes": 4108,
+      "sha256": "0bd0f0ce160f5c46b812a516433583cb3889b30a88beb0354e0e427436460b37"
+    },
+    "source_inventory.json": {
+      "bytes": 17514,
+      "sha256": "9e2a10935abed1bbca35f4fb331a024071e80d1de9683bfe5741c1d2bbff0b7e"
+    },
+    "verification/cpu_tests.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "verification/cpu_tests.stdout": {
+      "bytes": 156,
+      "sha256": "35c99482f17c8715cbb0fb65d00ecf986e1794f7ff31a2e5a09a7b4a026b9bbe"
+    },
+    "verification/verification.json": {
+      "bytes": 3207,
+      "sha256": "1b7ef608df627521b7bb7f646e40714f5b5d83e53dc8a74981321444169061b7"
+    },
+    "verify_package.py": {
+      "bytes": 3107,
+      "sha256": "eac377e2dd172c12cad00660b0685101662afe38a2305cafc03865757039d171"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py": {
+      "bytes": 26408,
+      "sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/goop3d_final_actual_issuance_review_code_audit_v1.json": {
+      "bytes": 1790,
+      "sha256": "2a6970b244746db373dfc7815ea34d2b0542f710d4f189c8ca6698bec9d1b458"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/goop3d_final_outer_launcher_and_staging_review_code_audit_v1.json": {
+      "bytes": 2323,
+      "sha256": "41abc16d232a132b97e25941f1bfe6153f00aa9ddcd6b1b7f034cec5eb9714f2"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/goop3d_final_startup_review_code_audit_v1.json": {
+      "bytes": 2599,
+      "sha256": "ac13e90dab310f0e9fe42ffd39712f95d4acafc696563eaadec8caa5453b9d76"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/goop3d_final_v4_parent_transition_review_v1.json": {
+      "bytes": 1661,
+      "sha256": "7f24d96db8feb9e4ce60f3ecda54a2cab928c077c13572d3893f32dcf5ddad7d"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/goop3d_final_v4_thirty_child_independent_scalar_review_v1.json": {
+      "bytes": 11315,
+      "sha256": "fa78559b61986feaa3fe0c251b0e3816fff20e3f29909baf8c321d2e3f070e51"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_actual_scientific_replay_review_code_audit_v1.json": {
+      "bytes": 4273,
+      "sha256": "7ed47aa995ddefb109ac053db8c05ea703096f2470a66c5935c9602a1852d27e"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_adapter_contract_tests_v1.json": {
+      "bytes": 1235,
+      "sha256": "594b32b0e3cd7e97aefec6baa797c7340b6a727b2b2a4d4c4747b9b6f85c9d92"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_cross_source_review_code_audit_v1.json": {
+      "bytes": 1912,
+      "sha256": "fa0a393a20318be9cbf964336b7f1233594e0375bc339bb21068d9020f022fb7"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_replay_owner_operational_review_v1.json": {
+      "bytes": 32690,
+      "sha256": "b5a23eb082bc1f0b2ae4d38efb0636a723807e5e7257bd2b09b14570a62a41fd"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_training_failure_review_code_audit_v1.json": {
+      "bytes": 2832,
+      "sha256": "bd71ec1cd2500867be5410dfc2e10fbaed3fc1d20afb2786c7b62036d42bcf1e"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_migration_training_v2_actual_release_review_code_audit_v1.json": {
+      "bytes": 952,
+      "sha256": "788f467ffa545ae8d8356d65fb8454a614e6be7c851f8192b92fb6d594c5328b"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_recovery_owner_v2_transition_source_review_v1.json": {
+      "bytes": 2424,
+      "sha256": "668f83df2f2e163657ea0714a25c6bdcae04a0dc442b8a4e2c5b7ebc95597f05"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_endpoint_auditor_review_transition_v1.json": {
+      "bytes": 3993,
+      "sha256": "9ccf1a67dc87de588c44a65da82f1a56d770fed4a334476fae8f4c74d8e72a96"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_authoring_review_v1.json": {
+      "bytes": 4376,
+      "sha256": "97815e14bfe32ab025ff77706f4ca4f3245849ae4370fd43089853079b8c054f"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_authoring_review_v2.json": {
+      "bytes": 4670,
+      "sha256": "99929007accff040e09b1113445ce45e1b3e6e5fc20f73094deffd1cadd64c64"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_independent_source_review_transition_v1.json": {
+      "bytes": 3204,
+      "sha256": "bac253cd565763af4b488f63c5697c5381b06906206825b2e76088da8f724552"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_query_serialization_amendment_v2.md": {
+      "bytes": 1963,
+      "sha256": "6d2b608d88ebc164b1b400cba0dfb2278514fdbcdb529ec79476369382cc45b7"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_v2_independent_operational_review_v1.json": {
+      "bytes": 5252,
+      "sha256": "c72c0ef0bfe02c208272a043536d5f2291446f722f754a881738c9f512872856"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_recovery_protocol_v1.md": {
+      "bytes": 6543,
+      "sha256": "d9b64c07caceb8216f39f134b677531c24b7e445a190bceed348fdde0e1a5113"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v1.py": {
+      "bytes": 35750,
+      "sha256": "714851ab1855b60384bcbdba7484ef7c786731d988a13edf080dcbf150d11066"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py": {
+      "bytes": 36611,
+      "sha256": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/test_sand_recovery_v2_process_scan_order.py": {
+      "bytes": 6661,
+      "sha256": "2e93ea73a4563fc2cfcef67f0f1f8412bdb443e5a60bc6b2a1a0f729d9dade68"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_adapter_v1.py": {
+      "bytes": 6087,
+      "sha256": "26bd1b4a1e177c338745f29c4399f2d508738e65971c3049cf493d9261b79def"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_endpoint_audit_v1.py": {
+      "bytes": 16545,
+      "sha256": "8243855f3ed969333850021ea6d8708259fa8ba9392d33c9e0e127b861232735"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/test_supervise_sand_runtime_migration_recovery_v1.py": {
+      "bytes": 20923,
+      "sha256": "928c11fb993e9f853f60f0b44e4b9770f691019488b82f6bfe627958f049ce35"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/test_supervise_sand_runtime_migration_recovery_v2.py": {
+      "bytes": 20923,
+      "sha256": "5c286a440f98ceef531df392ccffad92664051e774ea37e94125af0658368714"
+    },
+    "workspace/work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py": {
+      "bytes": 24349,
+      "sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6"
+    }
+  },
+  "inert_defaults_passed": 4,
+  "payload_file_count": 40,
+  "raw_models_data_credentials_included": false,
+  "reconstructed_dependencies": 220,
+  "schema": "adaptgns_source_review_package_v1",
+  "source_inventory_sha256": "9e2a10935abed1bbca35f4fb331a024071e80d1de9683bfe5741c1d2bbff0b7e",
+  "status": "tested_source_preparation_no_final_scientific_results",
+  "subtests_passed": 43,
+  "verification_sha256": "1b7ef608df627521b7bb7f646e40714f5b5d83e53dc8a74981321444169061b7"
+}

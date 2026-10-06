@@ -1,0 +1,22 @@
+{
+  "all30_actual_byte_hashes_match_reviewed_prospective_hashes": true,
+  "all30argv_models_mapping_protocol_coverage_and_fullallocation_unchanged": true,
+  "all30children_only_status_issuer_changes": true,
+  "all31local_release_file_hashes_verified": true,
+  "all353_prior_source_data_preflight_interpreter_bindings_unchanged": true,
+  "candidate_construction_sha256": "aaaa615067af5c1ee633e9f2275c470d7a29bffaea958f5d9383d9af58c1b4b4",
+  "clock_age_seconds": 144.912455,
+  "clock_expires_utc": "2026-10-06T15:13:30.980186+00:00",
+  "created_utc": "2026-10-06T15:10:55.892641+00:00",
+  "exact_parent_bindings_count": 383,
+  "fresh_native_all_nonclock_fields_unchanged": true,
+  "fresh_native_clock_sha256": "37fab37b247e897ffd1669cb1a328d559efea55b99230a53848bc0dd46667150",
+  "issuance_receipt_sha256": "73ef6c91290a0483b0ee18beb81d0c6cbd89c07c22a34ef7c38c3cef0ca1f846",
+  "parent_changes_only_status_issuer_admission_issued_utc_clock_checked_utc_and30childhashes": true,
+  "parent_release_sha256": "4ecf5617b903f7ae0fa662152c8730fdd68b64ffb717e265d6b4a5ca5809b145",
+  "remaining": "Root stages exact exclusive31controls then launches exactparentargv under separately owned whole-supervisor deadline; outputs remain fresh and native checks remain required.",
+  "retained_review_note": "Initial interactive review omitted the expected all_six_models_and_both_splits_independently_admitted authority flag from its allowlist and stopped. The frozen operator readiness and actual split reviews require root False-to-True admission; corrected reviewer allowlist only. Issued artifacts unchanged.",
+  "schema": "adaptgns_goop3d_final_actual_issuance_review_code_audit_v1",
+  "stage_or_launch_performed": false,
+  "status": "passed_exact_30child_parent_authority_hash_and_renewed_clock_delta"
+}

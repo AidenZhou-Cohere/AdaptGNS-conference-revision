@@ -1,0 +1,52 @@
+{
+  "all35_transferred_text_hashes_and_sizes_verified": true,
+  "all_four_registered_children_signalled_and_reaped": true,
+  "cause": "Source-supported hypothesis only: own asynchronous nvidia-smi fork/exec window overlaps strict scan of inherited owner argv. The rejected original row was not saved, so actual offender is unproven.",
+  "checks": [
+    {
+      "copied_original50k_sha256": "ce66fcdc3c2fdf43b4aac5318ded83f38f3bad8c7fa8915b13f6411ce118456c",
+      "interrupted_at_frozen_trainer_torch_load_line": 559,
+      "job": "base_seed1",
+      "new_scientific_checkpoint_written": false,
+      "optimizer_updates_executed": 0,
+      "traceback_sha256": "4bef16168e833b90b7f82789c0cd6b918cfba82d04dd8d80851ea1421db90fbf"
+    },
+    {
+      "copied_original50k_sha256": "7743e15e3b024d890dbda45c096581bc761891441aa6f89619e570e7f5a7b2f0",
+      "interrupted_at_frozen_trainer_torch_load_line": 559,
+      "job": "mix_seed1",
+      "new_scientific_checkpoint_written": false,
+      "optimizer_updates_executed": 0,
+      "traceback_sha256": "e3cc998092453cf63b4a6a51180889a43a53f8dbb17b37c3b6b63a8e41a0421c"
+    },
+    {
+      "copied_original50k_sha256": "d8babdaff9329169b174a6968f35282f452a3154a212f86cef375a6dbf1d562c",
+      "interrupted_at_frozen_trainer_torch_load_line": 559,
+      "job": "base_seed2",
+      "new_scientific_checkpoint_written": false,
+      "optimizer_updates_executed": 0,
+      "traceback_sha256": "c49cbb81a7cbcbb887fbdf58020a83f9ea5af4807a3f7cb8544fb8aacd54927d"
+    },
+    {
+      "copied_original50k_sha256": "60831fac90f07482fcf07a4355155a47f27054079f2dca783bfc5b6dae9781cc",
+      "interrupted_at_frozen_trainer_torch_load_line": 559,
+      "job": "mix_seed2",
+      "new_scientific_checkpoint_written": false,
+      "optimizer_updates_executed": 0,
+      "traceback_sha256": "1f2f9367dd287a28e17632376d1c2190d091b746fef3c4f1ce4d12859988cf38"
+    }
+  ],
+  "created_utc": "2026-10-06T15:00:00.719077+00:00",
+  "failed_release_sha256": "42b132adc9b53aa090e9cae118992952f211b0ba1f79c64dcc950d86cafa91d9",
+  "four_copied_checkpoint_hashes_exact_original50k": true,
+  "native_closure_utc": "2026-10-06T14:58:47.020948+00:00",
+  "no_gpu_apps": true,
+  "no_retry_execution_by_reviewer": true,
+  "owner_error": "ValueError: Foreign, duplicate or old scientific owner/worker exists on recovery host",
+  "root_external_exit_code": 1,
+  "root_external_session": 51146,
+  "schema": "adaptgns_sand_migration_failed_training_review_code_audit_v1",
+  "status": "failed_attempt_preserved_no_optimizer_updates",
+  "transport_native_closure_sha256": "22a1466b7367659206666af526a2be9670cc674e024387c84bf19d574122eb2c",
+  "v2_scope": "FutureNone scan gate before next async query; strict identity checks retained; rejected row and full inventory durably recorded. No numerical, adapter, replay or quota changes."
+}

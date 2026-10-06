@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "reviewed_utc": "2026-10-06T15:12:31.645973+00:00",
+  "reviewer": "code_audit",
+  "scope": "Read-only local source, metadata, arithmetic and actual staging receipt; no remote query, launch, source change or numerical payload access",
+  "checks": [
+    "Exact reviewed parent argv with pinned environment and timeout prefix",
+    "Shell round trip preserves complete argv",
+    "21600 includes all stages, per-stage cleanup and 600-second audit; separate emergency 15 seconds",
+    "Latest outer start plus lifetime and 5-second clock bound is absolute stop; launcher adds conservative additional 5-second check",
+    "Exclusive launcher log prevents casual duplicate invocation and SSH exit status retained unchanged",
+    "Staging source creates only 31 exclusive control files after absent-root and absent-queue checks",
+    "Actual stage receipt equals all 31 issued remote byte hashes and confirms queue absent",
+    "Native closure explicitly remains required after timeout; no automatic retry"
+  ],
+  "files_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_final_evaluation_released_1509_root_v1/outer_invocation_contract.json": "59db4c87cf0c9d7004860c3d15e111dbb42cb6bc26f22a2a35562b5740f926b0",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_final_evaluation_released_1509_root_v1/launch_once.py": "a22632e03bd251fc3ea11691058efa726032b84add63ab89fa143cfdceeca967",
+    "/private/tmp/stage_goop3d_final_1509.py": "1dbb610bfb2486c5f88ff1985f4ba877996d7573127df4d9dc3553acdd0f4e7e",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_final_evaluation_released_1509_root_v1/stage.stdout": "58db7d563bbbb00abb7b66b43e65fa6fd36872a35ec4e89fafab0a6cd7c07112",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_final_evaluation_released_1509_root_v1/issuance_receipt.json": "73ef6c91290a0483b0ee18beb81d0c6cbd89c07c22a34ef7c38c3cef0ca1f846"
+  },
+  "limitation": "GNU timeout alone does not demonstrate closure of children that start new sessions; parent cleanup and root native closure check remain required."
+}

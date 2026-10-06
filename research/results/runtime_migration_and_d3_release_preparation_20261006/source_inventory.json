@@ -1,0 +1,341 @@
+{
+  "schema": "adaptgns_recovery_d3_future_package_inventory_v1",
+  "created_utc": "2026-10-06T15:15:42.536273+00:00",
+  "status": "inventory_only_not_a_package_or_execution_release",
+  "files": [
+    {
+      "group": "sand_recovery_sources",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py",
+      "bytes": 24349,
+      "sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_sources",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py",
+      "bytes": 26408,
+      "sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_sources",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v1.py",
+      "bytes": 35750,
+      "sha256": "714851ab1855b60384bcbdba7484ef7c786731d988a13edf080dcbf150d11066",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_sources",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/supervise_sand_runtime_migration_recovery_v2.py",
+      "bytes": 36611,
+      "sha256": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_cpu_tests",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_adapter_v1.py",
+      "bytes": 6087,
+      "sha256": "26bd1b4a1e177c338745f29c4399f2d508738e65971c3049cf493d9261b79def",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_cpu_tests",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_endpoint_audit_v1.py",
+      "bytes": 16545,
+      "sha256": "8243855f3ed969333850021ea6d8708259fa8ba9392d33c9e0e127b861232735",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_cpu_tests",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_supervise_sand_runtime_migration_recovery_v1.py",
+      "bytes": 20923,
+      "sha256": "928c11fb993e9f853f60f0b44e4b9770f691019488b82f6bfe627958f049ce35",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_cpu_tests",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_supervise_sand_runtime_migration_recovery_v2.py",
+      "bytes": 20923,
+      "sha256": "5c286a440f98ceef531df392ccffad92664051e774ea37e94125af0658368714",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_cpu_tests",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/test_sand_recovery_v2_process_scan_order.py",
+      "bytes": 6661,
+      "sha256": "2e93ea73a4563fc2cfcef67f0f1f8412bdb443e5a60bc6b2a1a0f729d9dade68",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_protocols",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_recovery_protocol_v1.md",
+      "bytes": 6543,
+      "sha256": "d9b64c07caceb8216f39f134b677531c24b7e445a190bceed348fdde0e1a5113",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_protocols",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_query_serialization_amendment_v2.md",
+      "bytes": 1963,
+      "sha256": "6d2b608d88ebc164b1b400cba0dfb2278514fdbcdb529ec79476369382cc45b7",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_cross_source_review_code_audit_v1.json",
+      "bytes": 1912,
+      "sha256": "fa0a393a20318be9cbf964336b7f1233594e0375bc339bb21068d9020f022fb7",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_adapter_contract_tests_v1.json",
+      "bytes": 1235,
+      "sha256": "594b32b0e3cd7e97aefec6baa797c7340b6a727b2b2a4d4c4747b9b6f85c9d92",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_endpoint_auditor_review_transition_v1.json",
+      "bytes": 3993,
+      "sha256": "9ccf1a67dc87de588c44a65da82f1a56d770fed4a334476fae8f4c74d8e72a96",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_authoring_review_v1.json",
+      "bytes": 4376,
+      "sha256": "97815e14bfe32ab025ff77706f4ca4f3245849ae4370fd43089853079b8c054f",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_authoring_review_v2.json",
+      "bytes": 4670,
+      "sha256": "99929007accff040e09b1113445ce45e1b3e6e5fc20f73094deffd1cadd64c64",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_independent_source_review_transition_v1.json",
+      "bytes": 3204,
+      "sha256": "bac253cd565763af4b488f63c5697c5381b06906206825b2e76088da8f724552",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_actual_scientific_replay_review_code_audit_v1.json",
+      "bytes": 4273,
+      "sha256": "7ed47aa995ddefb109ac053db8c05ea703096f2470a66c5935c9602a1852d27e",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_replay_owner_operational_review_v1.json",
+      "bytes": 32690,
+      "sha256": "b5a23eb082bc1f0b2ae4d38efb0636a723807e5e7257bd2b09b14570a62a41fd",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_training_failure_review_code_audit_v1.json",
+      "bytes": 2832,
+      "sha256": "bd71ec1cd2500867be5410dfc2e10fbaed3fc1d20afb2786c7b62036d42bcf1e",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_recovery_owner_v2_transition_source_review_v1.json",
+      "bytes": 2424,
+      "sha256": "668f83df2f2e163657ea0714a25c6bdcae04a0dc442b8a4e2c5b7ebc95597f05",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_owner_v2_independent_operational_review_v1.json",
+      "bytes": 5252,
+      "sha256": "c72c0ef0bfe02c208272a043536d5f2291446f722f754a881738c9f512872856",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "sand_recovery_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/sand_migration_training_v2_actual_release_review_code_audit_v1.json",
+      "bytes": 952,
+      "sha256": "788f467ffa545ae8d8356d65fb8454a614e6be7c851f8192b92fb6d594c5328b",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_frozen_final_sources_reference",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_goop3d_final_cohort_v1.py",
+      "bytes": 21069,
+      "sha256": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a",
+      "already_published_identical_paths": [
+        "research/results/scoped_execution_completion_preparation_20261006/workspace/work/deadline_research_20261005/cuda_preparation/prepare_goop3d_final_cohort_v1.py"
+      ],
+      "copy_recommendation": "reuse_existing_dependency",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_frozen_final_sources_reference",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/prepare_goop3d_reserved_test_v1.py",
+      "bytes": 38134,
+      "sha256": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a",
+      "already_published_identical_paths": [
+        "research/results/scoped_execution_completion_preparation_20261006/workspace/work/deadline_research_20261005/cuda_preparation/prepare_goop3d_reserved_test_v1.py"
+      ],
+      "copy_recommendation": "reuse_existing_dependency",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_frozen_final_sources_reference",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/supervise_goop3d_final_evaluation_v1.py",
+      "bytes": 45954,
+      "sha256": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+      "already_published_identical_paths": [
+        "research/results/scoped_execution_completion_preparation_20261006/workspace/work/deadline_research_20261005/cuda_preparation/supervise_goop3d_final_evaluation_v1.py"
+      ],
+      "copy_recommendation": "reuse_existing_dependency",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_frozen_final_sources_reference",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+      "bytes": 57671,
+      "sha256": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+      "already_published_identical_paths": [
+        "research/results/scoped_execution_completion_preparation_20261006/workspace/work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py"
+      ],
+      "copy_recommendation": "reuse_existing_dependency",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_preparation_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/goop3d_final_v4_parent_transition_review_v1.json",
+      "bytes": 1661,
+      "sha256": "7f24d96db8feb9e4ce60f3ecda54a2cab928c077c13572d3893f32dcf5ddad7d",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_preparation_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/goop3d_final_v4_thirty_child_independent_scalar_review_v1.json",
+      "bytes": 11315,
+      "sha256": "fa78559b61986feaa3fe0c251b0e3816fff20e3f29909baf8c321d2e3f070e51",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_preparation_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/goop3d_final_actual_issuance_review_code_audit_v1.json",
+      "bytes": 1790,
+      "sha256": "2a6970b244746db373dfc7815ea34d2b0542f710d4f189c8ca6698bec9d1b458",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_preparation_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/goop3d_final_outer_launcher_and_staging_review_code_audit_v1.json",
+      "bytes": 2323,
+      "sha256": "41abc16d232a132b97e25941f1bfe6153f00aa9ddcd6b1b7f034cec5eb9714f2",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    },
+    {
+      "group": "d3_preparation_reviews",
+      "workspace_relative_path": "work/deadline_research_20261005/cuda_preparation/goop3d_final_startup_review_code_audit_v1.json",
+      "bytes": 2599,
+      "sha256": "ac13e90dab310f0e9fe42ffd39712f95d4acafc696563eaadec8caa5453b9d76",
+      "already_published_identical_paths": [],
+      "copy_recommendation": "candidate_copy",
+      "credential_signature_screen_passed": true
+    }
+  ],
+  "file_count": 32,
+  "total_candidate_bytes": 453092,
+  "candidate_copy_count": 28,
+  "candidate_copy_bytes": 290264,
+  "existing_dependency_registry": "outputs/AdaptGNS/research/results/scoped_execution_completion_preparation_20261006/dependency_paths.json",
+  "already_published_dependency_registry_sha256": "54e8ddd5e22f241a36e965c78455b0132b749e36df0e443c75bb10c13dc0cac6",
+  "new_source_requires_dependency_closure_before_packaging": true,
+  "pending_excluded_sources": [
+    "prepare_sand_recovered_final_cohort_v1.py and its unfinished tests/templates/review",
+    "prospective Goop2D cost/memory adapter and tests"
+  ],
+  "explicit_exclusions": [
+    "SSH configuration, authentication files, credentials, executable runtimes and environments",
+    "All raw stdout/stderr logs, binary artifacts, model/checkpoint and dataset/array payloads",
+    "Raw process inventories, actual staging payloads, live launch scripts and actual admitted execution releases",
+    "Scientific completion/result claims for currently running Sand recovery and Goop3D evaluation"
+  ],
+  "verification_performed": [
+    "Explicit allowlist of small UTF-8 source/doc/JSON files",
+    "Current SHA-256 and sizes",
+    "Comparison against existing published dependency registry",
+    "Private-key/access-token signature screening of selected file bytes",
+    "Current published family files hashed to resolve overlay duplicates"
+  ],
+  "verification_not_performed": [
+    "No file copying into fork, no repository edit, no Git mutation",
+    "No numerical payload reads or remote action",
+    "No additional CPU tests run for inventory; existing test evidence retained in selected structured reviews",
+    "No scientific result admission or promise of completeness"
+  ],
+  "future_package_checks": [
+    "Preserve original source bytes and historical v1 failure plus v2 serialization fix",
+    "Resolve Sand recovery source dependency closure against previous published workspace packages",
+    "Run relevant CPU synthetic tests from the restored isolated package; retain test logs only after content screening",
+    "Verify inert defaults for new entry points and clear no-execution status",
+    "Add final Sand bridge only after its independent review; add D3/Sand completion outcomes only after independent final audits"
+  ],
+  "supersedes": "inventory.json, which searched predecessor dependencies only and missed current-family overlay duplicates"
+}

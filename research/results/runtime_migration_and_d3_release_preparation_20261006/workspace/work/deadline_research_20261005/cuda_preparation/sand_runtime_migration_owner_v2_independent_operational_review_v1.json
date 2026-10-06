@@ -1,0 +1,88 @@
+{
+  "authority_granted": false,
+  "changed_functions": [
+    "runtime_type",
+    "check_processes",
+    "run_owned"
+  ],
+  "failure_evidence": {
+    "actual_failed_release_sha256": "42b132adc9b53aa090e9cae118992952f211b0ba1f79c64dcc950d86cafa91d9",
+    "conclusion": "The original failing inventory was lost because check_processes raised before its assignment to latest_processes. Root RunLock hypothesis is not supported: RunLock has no process creation. Concurrent own GPU-query subprocess pre-exec owner-argv inheritance is a source-supported operational hypothesis, not proof of the actual offending process.",
+    "exact_rejected_identity_available": false,
+    "first_cleanup_signal_utc": "2026-10-06T14:56:34.422500+00:00",
+    "retained_previous_successful_snapshot_utc": "2026-10-06T14:56:04.377931+00:00"
+  },
+  "findings": [],
+  "input_sha256": {
+    "audit_sand_runtime_migration_endpoints_v1.py": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+    "sand_migration_training_live_1457_root_v1.json": "1e7fc2c49d92daaec1b408e74ff36a82cab057534cbc6f8e323cd73c5d39f19c",
+    "sand_runtime_migration_owner_v2_independent_regressions_v1.log": "9b418106e67a32d1a36b14314891ed01d1c57702785ac5289551935e9dea73d2",
+    "supervise_sand_runtime_migration_recovery_v1.py": "714851ab1855b60384bcbdba7484ef7c786731d988a13edf080dcbf150d11066",
+    "supervise_sand_runtime_migration_recovery_v2.py": "58625b827484b46b9c3d852bc4d71d16e48766b1c416050cc8c3dc5640bd21fe",
+    "test_sand_recovery_v2_process_scan_order.py": "2e93ea73a4563fc2cfcef67f0f1f8412bdb443e5a60bc6b2a1a0f729d9dade68",
+    "train_sand_graph_support_cuda.py": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "train_sand_runtime_migration_recovery_v1.py": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6"
+  },
+  "regressions": {
+    "all_cleanup_signals_target_only_registered_four_fake_children": true,
+    "cases": [
+      "65 virtual seconds with3 two-second pending GPU-query fork/exec windows; scans never overlap and owner-argv clone is never misclassified",
+      "Explicit direct scan guard rejects pending query before process_inventory is called",
+      "Foreign scientific peer rejected; exact row and six-row full inventory retained",
+      "Unregistered direct duplicate worker rejected; exact row and six-row full inventory retained",
+      "Scientific descendant rejected; exact row and six-row full inventory retained"
+    ],
+    "failed": 0,
+    "file": "test_sand_recovery_v2_process_scan_order.py",
+    "log": "sand_runtime_migration_owner_v2_independent_regressions_v1.log",
+    "no_kernel_child_GPU_array_model_or_replay_execution": true,
+    "passed": 5
+  },
+  "remaining_root_requirements": [
+    "Preserve original failed attempt and closure evidence; separately reviewed explicit new root release/fresh output paths required for any subsequent attempt.",
+    "Original15:05 latest launch,22:44 stop, full27404.671591931674-second training allocation and scientific admission gates remain mandatory.",
+    "This source review does not prove the actual historical rejected process identity or authorize any retry."
+  ],
+  "reviewed_utc": "2026-10-06T15:00:02.618185+00:00",
+  "reviewer": "owner_receipt_review",
+  "schema": "adaptgns_sand_runtime_migration_owner_v2_independent_operational_review_v1",
+  "scope": "Independent review of separately versioned owner v2 only. Frozen owner v1, adapter v1, replay evidence, frozen trainer, numerical code, study specification and allocations remain unchanged.",
+  "source_review": {
+    "all_other_top_level_constants_and_imports_identical": true,
+    "guard_directly_rejects_any_process_scan_with_unconsumed_future": true,
+    "mechanism": "Frozen scoped Runtime.gpu_result sets future=None only after future.result returns; its callable ultimately uses frozen lifecycle subprocess.run(nvidia-smi, timeout=10), which completes/reaps before returning. Main-thread process scans now require future=None and precede any new submit. No other thread submits GPU queries. Prelaunch scans occur before first query; final scan follows runtime close/result consumption and synchronous gpu_now return.",
+    "no_blocking_wait_added": true,
+    "old_and_new_owner_names_remain_in_process_inventory": true,
+    "rejected_diagnostics_persist_before_raise": [
+      "checked_utc",
+      "rejected_row",
+      "full_inventory",
+      "reason"
+    ],
+    "retained_clock_and_reaping_loop": "Every loop still runs work_check and reaps registered children while a query is pending. Existing10-second GPU query timeout and owned15-second cleanup are not weakened.",
+    "strict_foreign_duplicate_and_descendant_rejection_preserved": true,
+    "unchanged_functions": [
+      "require",
+      "sha",
+      "encode",
+      "read",
+      "stamp",
+      "utc",
+      "digest",
+      "canonical",
+      "snapshot",
+      "private_import",
+      "same_runtime_except_uuid",
+      "validate_contract",
+      "fixed_command",
+      "output_paths",
+      "operational_bindings",
+      "record_reaped_only",
+      "verify_replay_receipt",
+      "main",
+      "execute",
+      "execute_validated"
+    ]
+  },
+  "status": "passed_narrow_operational_source_and_five_independent_regressions"
+}

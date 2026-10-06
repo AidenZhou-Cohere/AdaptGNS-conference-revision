@@ -1,0 +1,42 @@
+{
+  "status": "independent_static_review_passed_no_execution_authority",
+  "adapter_sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+  "owner_sha256": "714851ab1855b60384bcbdba7484ef7c786731d988a13edf080dcbf150d11066",
+  "auditor_sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db",
+  "migration_protocol_sha256": "d9b64c07caceb8216f39f134b677531c24b7e445a190bceed348fdde0e1a5113",
+  "reviewed_owner_features": [
+    "fixed600s from entry including setup/hashing/publication",
+    "15s protected bounded cleanup",
+    "replayabsolute15:02,latest14:51:55,180s handoff",
+    "entireoriginalscientifictreesprotected",
+    "oldhostPIDsnevercontrolled",
+    "scopedidentityverifiednewchildrenonly",
+    "exactnativeLD_LIBRARY_PATHandCUBLAS",
+    "all4replay100x2andlegacy50100criterion",
+    "fulloriginal27404.671591931674s trainingallocation"
+  ],
+  "adapter_synthetic_tests": 6,
+  "owner_synthetic_tests": 13,
+  "auditor_synthetic_tests": 39,
+  "actual_model_or_array_or_CUDA_execution": false,
+  "stage_script": "work/deadline_research_20261005/cuda_preparation/stage_sand_migration_sources_code_audit_v1.py",
+  "stage_script_sha256": "c04aa07c9b3f21900ec63b89eda1fb5e5e5d17ca0bda5c93e536e24835242076",
+  "stage_tool_argv": [
+    "python3",
+    "-"
+  ],
+  "stage_tool_stdin_file": "work/deadline_research_20261005/cuda_preparation/stage_sand_migration_sources_code_audit_v1.py",
+  "owner_argv_template": [
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+    "-B",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_runtime_migration_recovery_v1.py",
+    "--execute",
+    "--mode",
+    "replay",
+    "--release",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_runtime_migration_A_20261006_v1/controls/replay_release.json",
+    "--release-sha256",
+    null
+  ],
+  "requires_root_issued_release_and_fresh_clock_native_review": true
+}

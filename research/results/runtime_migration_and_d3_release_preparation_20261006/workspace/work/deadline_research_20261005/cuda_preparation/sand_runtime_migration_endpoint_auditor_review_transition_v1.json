@@ -1,0 +1,68 @@
+{
+  "schema": "adaptgns_sand_migration_endpoint_auditor_local_review_v1",
+  "status": "passed_local_synthetic_and_source_review_not_execution_admission",
+  "reviewer": "transition_review",
+  "reviewed_utc": "2026-10-06T14:46:25.560568+00:00",
+  "auditor": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_sand_runtime_migration_endpoints_v1.py",
+    "sha256": "7fc6a6000ecb00168beeb00c695c7eb8feb25db28c6436afd7a3aceb563ea7db"
+  },
+  "test_source": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_endpoint_audit_v1.py",
+    "sha256": "8243855f3ed969333850021ea6d8708259fa8ba9392d33c9e0e127b861232735"
+  },
+  "test_run": {
+    "command": [
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python",
+      "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_sand_runtime_migration_endpoint_audit_v1.py"
+    ],
+    "exit_code": 0,
+    "tests_run": 39,
+    "failures": 0,
+    "errors": 0,
+    "output_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_runtime_migration_endpoint_audit_synthetic_test_output_transition_v1.txt",
+    "output_sha256": "0c1d2d165379988adc4a94537a1eaa81e0ca6db0dcc67a8717669c51292da378"
+  },
+  "adapter_review": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_sand_runtime_migration_recovery_v1.py",
+    "sha256": "0faf1bb8ff25ac1487506781dba9722361682c725eeb7915874c90f3b66499e6",
+    "result": "no_blocking_source_issue_found",
+    "replay_steps_per_repeat": 100,
+    "repeats": 2,
+    "exact_original50100_scalar_fields": [
+      "completed_steps",
+      "loss",
+      "lr",
+      "frame_ids",
+      "particles"
+    ],
+    "checks": [
+      "original frozen restore verifies model Adam and CPU/CUDA RNG identity",
+      "only optimizer input deepcopy protects repeat parent from CPU-step aliasing",
+      "absolute steps50000..50099 map to completed50100",
+      "full repeated state Adam RNG and graph/noise/schedule/loss ledger must match exactly",
+      "unchanged frozen run_training resumes original50k with historicalruntime parameter",
+      "actualruntime is separately checked for UUID-only change",
+      "old50100model/optimizer/RNG unavailable and not claimed compared",
+      "newoutput copies protocol pointer checkpoint50k bytes only; original lock and older checkpoints stay at origin"
+    ]
+  },
+  "endpoint_predicates": [
+    "exact root source/control/origin pins before and after audit",
+    "all original0..50k retained checkpoints and newcopied50k/60..100k inventory",
+    "unchanged frozen100k check_history and original0/parent50k/final100k check_payload",
+    "full original50k graph/scalar history prefix preserved",
+    "newstdout exactly500 resumed logged rows plus status consistency",
+    "training50100 scalar exactly matches original/replay50100 scalar",
+    "initial/parent/final simulator and normalization equality",
+    "all4A jobs and bothseed paired initial model Adam RNG and full100k frame noise nativegraph evidence",
+    "reaped owned process exact command logs times and scopedGPUclosure",
+    "all training numeric file and metadata hashes before and after inspection"
+  ],
+  "limits": [
+    "No real Sand checkpoint, training array, CUDA model, or live process inspected by this local test run.",
+    "Synthetic helper tests mock wall clock and manifest-contract dispatch only where explicitly described; original frozen payload predicates execute on synthetic CPU tensors.",
+    "No real execution release issued. No GPU replay/training performed. Root retains execution authority.",
+    "Historical runtime/config stays original; no cross-physical-device full-trajectory bitwise equivalence claim."
+  ]
+}

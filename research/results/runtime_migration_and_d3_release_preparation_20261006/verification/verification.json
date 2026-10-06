@@ -1,0 +1,119 @@
+{
+  "status": "passed",
+  "reconstructed_file_count": 220,
+  "all_input_bytes_unchanged": true,
+  "cpu_test_stdout_sha256": "35c99482f17c8715cbb0fb65d00ecf986e1794f7ff31a2e5a09a7b4a026b9bbe",
+  "inert_cli_defaults": {
+    "train_sand_runtime_migration_recovery_v1.py": {
+      "exit_code": 0,
+      "stdout": {
+        "status": "description_only",
+        "schema": "adaptgns_sand_runtime_migration_recovery_release_v1",
+        "root_release_required": true,
+        "origin_steps": 50000,
+        "endpoint_steps": 100000,
+        "no_numerical_source_changes": true
+      },
+      "stderr": ""
+    },
+    "audit_sand_runtime_migration_endpoints_v1.py": {
+      "exit_code": 0,
+      "stdout": {
+        "schema": "adaptgns_sand_runtime_migration_endpoint_audit_v1",
+        "status": "description_only",
+        "read_only_cpu_audit": true,
+        "callable": [
+          "audit_recovery_job(release, job, *, external)",
+          "audit_recovery_pairing(verified_jobs)"
+        ],
+        "requires_all_owned_children_reaped_and_scoped_gpu_closure": true,
+        "original_frozen_numerical_predicates": [
+          "check_history",
+          "check_payload"
+        ],
+        "origin_steps": 50000,
+        "endpoint_steps": 100000
+      },
+      "stderr": ""
+    },
+    "supervise_sand_runtime_migration_recovery_v1.py": {
+      "exit_code": 0,
+      "stdout": {
+        "schema": "adaptgns_sand_runtime_migration_recovery_owner_v1",
+        "status": "description_only",
+        "launches": 0,
+        "original_A_jobs": [
+          [
+            "base_seed1",
+            "base",
+            1,
+            0
+          ],
+          [
+            "mix_seed1",
+            "mix",
+            1,
+            1
+          ],
+          [
+            "base_seed2",
+            "base",
+            2,
+            2
+          ],
+          [
+            "mix_seed2",
+            "mix",
+            2,
+            3
+          ]
+        ],
+        "training_allocation_seconds": 27404.671591931674,
+        "latest_start_utc": "2026-10-06T15:05:00+00:00",
+        "training_stop_utc": "2026-10-06T22:44:00+00:00",
+        "compute_analysis_deadline_utc": "2026-10-07T04:00:00+00:00"
+      },
+      "stderr": ""
+    },
+    "supervise_sand_runtime_migration_recovery_v2.py": {
+      "exit_code": 0,
+      "stdout": {
+        "schema": "adaptgns_sand_runtime_migration_recovery_owner_v1",
+        "status": "description_only",
+        "launches": 0,
+        "original_A_jobs": [
+          [
+            "base_seed1",
+            "base",
+            1,
+            0
+          ],
+          [
+            "mix_seed1",
+            "mix",
+            1,
+            1
+          ],
+          [
+            "base_seed2",
+            "base",
+            2,
+            2
+          ],
+          [
+            "mix_seed2",
+            "mix",
+            2,
+            3
+          ]
+        ],
+        "training_allocation_seconds": 27404.671591931674,
+        "latest_start_utc": "2026-10-06T15:05:00+00:00",
+        "training_stop_utc": "2026-10-06T22:44:00+00:00",
+        "compute_analysis_deadline_utc": "2026-10-07T04:00:00+00:00"
+      },
+      "stderr": ""
+    }
+  },
+  "models_data_cuda_remote_access": false
+}
