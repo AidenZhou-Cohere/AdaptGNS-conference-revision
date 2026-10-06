@@ -1,5 +1,12 @@
 # Adaptive Interaction Graphs: correctness and controlled experiments
 
+
+Current conference revision (October 6): the [manuscript](research/results/endpoint_organization_20261006/standalone.tex) studies how training exposure to additional interactions differs from placing those interactions using residual risk. The complete [Goop2D100k](research/results/goop2d_graph_exposure_100k_20261006/README.md) and [paired WaterDrop110k](research/results/waterdrop_continuation_110k_20261006/README.md) comparisons improve fixed-random autonomous error in every paired seed. Risk placement remains dataset- and evaluation-dependent; all failures, physical drift and descriptive cost increases are retained. These findings do not establish a general efficiency advantage.
+
+The current paper separates observed-history placement from autonomous feedback and compiles within its eight-page main-text assertion. Title/abstract comparison and exported-PDF inspection remain outstanding. [Sand's full evaluation launch](research/results/sand_final24_launch_20261006/PUBLICATION.md) is preserved; current remote progress requires verification after internal Coder access is restored. Goop3D evaluation and scalar collection closed, but its analysis window ended incomplete during a local sleep interruption. Neither pending study supplies final accuracy claims here.
+
+## Earlier milestones (historical)
+
 The [DesignSafe Sand arrays](research/results/sand_data_admission_20261006/README.md) are now admitted for data compatibility:1,000training/30validation trajectories,T320,type6,with lossless numeric repackaging and full source/member checks. No test data was fetched. The [two actual-data CUDA comparisons](research/results/sand_cuda_validation_20261006/README.md) retain their **failed strict gradient-parity outcomes**; deterministic execution fixes repeated-CUDA gradient discrepancies but a localized CPU/CUDA difference still needs mechanism review. No scientific Sand model or timing benchmark has launched. These preparation records remain separate from all completed experiments.
 
 ## October 5: exploratory graph-convention follow-up
