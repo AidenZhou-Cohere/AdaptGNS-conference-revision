@@ -1,0 +1,247 @@
+{
+  "bounds": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "caption": "Synthetic fixture only. Goop3D qualitative rollout at 25,000 training updates, training seed 0. The fixed source is the lower median of all test sources sorted by initial particle count and original source index, selected without policy errors. All particles are displayed at forecasts 1, 200 and H, on common metadata bounds (x=[0, 1], y=[0, 1], z=[0, 1]). Out-of-box particles are counted and marked by crosses clamped to the box. The orthographic view uses elevation 25 and azimuth -55 degrees with equal physical scaling. Missing and failed frames retain their recorded state and accepted prefix; unreturned prefixes remain unknown. Ground truth uses agreeing saved targets. Cached risk is the mix/laggedrisk25 rollout policy, distinct from the previous-observed same-state diagnostic. This single example does not estimate population performance or isolate dimensionality as a cause.",
+  "compilation_verified": false,
+  "exporter_sha256": "7a4d186e7a7ea53092a3ccb1bbdab9c6add9845b1cafbda9d1eebeac26fe5ab2",
+  "external_image_dependencies": false,
+  "figure_size_points": [
+    480,
+    427
+  ],
+  "fragment_bytes": 23612,
+  "fragment_sha256": "ca3d4775772311cad288bbfd8f0cdc216353bef639282ae817c9aa9194ea7576",
+  "horizon": 295,
+  "input_files_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_protocol.json": "c05703bbae48eeeda5fab6a13c1630672c3f3e0dd76fdfd63285dc843ef4f97a",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_row.json": "9bc612c09a2994431bbf9723d89876add3a143f3ff9105987fb6d37616f55399",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/base_base_trace.npz": "e3ca85deaf5ad04403ce3ddb3e9acf303d4dd9b21aae3c6eca95a58d76d67cfe",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_row.json": "9678fa1248c7ec70b4b1fd14ad45a8590443c16699363172ed555123975776c9",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_laggedrisk25_trace.npz": "2e28c37cf167541890796380b42ba80cdfe7cdfe967175252e06a69878c6fc72",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_protocol.json": "743a3e08a980809896684395714a91aef9cc56aebe5643255dc54540e0e82698",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_row.json": "005a308fa4a945dd48cc470c9ec9e67727ded0989be49236045f4cba648edba8",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/mix_random25_trace.npz": "2492320303b98efb9bbfef5637a825edf7ed3019cf9e285b141594c54dc2f5f7",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/request.json": "f99c07aac0f4678e37a3b2ba7ebf87acc2773c046ed48d7a30747692d2eaccad",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop3D/synthetic_manifest.json": "b69063824d8562deb49e9deb6ce0eadcfd165b02c297f2d74158fcf869a0d919"
+  },
+  "panels": [
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 6,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "random25",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 6,
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 205,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "random25",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 205,
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 300,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "base",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "outside_box": 2,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 300,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 295,
+      "arm": "mix",
+      "details": [
+        "Complete: 295 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 295,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "random25",
+      "source_frame": 300,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 0,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 0",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 295,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 300,
+      "state": "FAILED BEFORE FRAME"
+    }
+  ],
+  "parse_and_export_seconds": 0.007909834006568417,
+  "particle_subsampling": false,
+  "particles": 33,
+  "projection_description": "Physical coordinates centered on metadata box, orthographically projected at elevation25/azimuth-55 for3D; equal physical scale. Same projection for every panel; no perspective or occlusion culling.",
+  "projection_matrix": [
+    [
+      0.8191520442889918,
+      0.573576436351046,
+      0.0
+    ],
+    [
+      -0.242403876506104,
+      0.34618861305875415,
+      0.9063077870366499
+    ]
+  ],
+  "renderer_sha256": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb",
+  "schema": "qualitative_inline_picture_receipt_v1",
+  "seed": 0,
+  "source_index": 1,
+  "study": "Goop3D",
+  "synthetic": true,
+  "total_particle_glyphs": 297,
+  "training_updates": 25000
+}

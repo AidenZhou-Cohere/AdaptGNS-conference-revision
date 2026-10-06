@@ -1,0 +1,13 @@
+{
+  "exact_fragment_reconstruction": {
+    "Goop2D": true,
+    "Goop3D": true
+  },
+  "invariant_checks": "passed",
+  "manuscript_changed": false,
+  "native_compilation_verified": false,
+  "scientific_inference": false,
+  "separate_copy_and_fresh_synthetic_inputs": true,
+  "utc": "2026-10-06T08:50:03.625817+00:00",
+  "visual_layout_verified": false
+}

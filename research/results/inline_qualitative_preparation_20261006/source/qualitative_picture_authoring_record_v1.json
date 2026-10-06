@@ -1,0 +1,22 @@
+{
+  "compilation_verified": false,
+  "files_sha256": {
+    "check_qualitative_picture_v1.py": "7b2d1217e3b82eaea72f7c49f73002967a841b060e4b01213b9d28b5363ecd49",
+    "export_qualitative_picture_v1.py": "7a4d186e7a7ea53092a3ccb1bbdab9c6add9845b1cafbda9d1eebeac26fe5ab2",
+    "qualitative_inline_synthetic_v2/goop2d.json": "33efb7994ba9ce16ca58caa4034afce0742f2b4716d7df3221a0c93396f12ae1",
+    "qualitative_inline_synthetic_v2/goop2d.tex": "668b93e05c965a8aef7031e9bb6042949efd84c847d93daee27e6fae196a06bd",
+    "qualitative_inline_synthetic_v2/goop3d.json": "d4b1763a709a5190e473493d44df0618abc6faa661496b765732a03f9c6bd8a1",
+    "qualitative_inline_synthetic_v2/goop3d.tex": "ca3d4775772311cad288bbfd8f0cdc216353bef639282ae817c9aa9194ea7576",
+    "qualitative_picture_checks_v1.json": "065c8b84096775045422f305a785ced61ac718361c856374bae96014f768a147",
+    "qualitative_picture_exporter_v1.md": "e77bac6334a5822b1a39cc374c790fe0fd28f1723b528c4a1462ddfec504de6c"
+  },
+  "independent_review": {
+    "reviewer": "/root/conference_critique_statistics/qualitative_schema_check",
+    "status": "no actionable findings; orthonormal projection, all231/297 particle glyphs,2 outside crosses perfixture, preserved missing/failure states and standalone fragment structure checked"
+  },
+  "next_step": "Root paste final fragment into same manuscript and compile/inspect; no external image or package dependency.",
+  "schema": "qualitative_picture_authoring_record_v1",
+  "scope": "synthetic/source-only inline presentation preparation; no outcomes, data arrays, models, inference, manuscript edits or compiler calls",
+  "sealed_renderer_sha256": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb",
+  "visual_layout_verified": false
+}

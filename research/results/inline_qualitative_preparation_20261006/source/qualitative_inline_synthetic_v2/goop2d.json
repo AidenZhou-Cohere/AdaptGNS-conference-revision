@@ -1,0 +1,238 @@
+{
+  "bounds": [
+    [
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "caption": "Synthetic fixture only. Goop2D qualitative rollout at 100,000 training updates, training seed 0. The fixed source is the lower median of all test sources sorted by initial particle count and original source index, selected without policy errors. All particles are displayed at forecasts 1, 200 and H, on common metadata bounds (x=[0, 1], y=[0, 1]). Out-of-box particles are counted and marked by crosses clamped to the box. Missing and failed frames retain their recorded state and accepted prefix; unreturned prefixes remain unknown. Ground truth uses agreeing saved targets. Cached risk is the mix/laggedrisk25 rollout policy, distinct from the previous-observed same-state diagnostic. This single example does not estimate population performance or isolate dimensionality as a cause.",
+  "compilation_verified": false,
+  "exporter_sha256": "7a4d186e7a7ea53092a3ccb1bbdab9c6add9845b1cafbda9d1eebeac26fe5ab2",
+  "external_image_dependencies": false,
+  "figure_size_points": [
+    480,
+    427
+  ],
+  "fragment_bytes": 14306,
+  "fragment_sha256": "668b93e05c965a8aef7031e9bb6042949efd84c847d93daee27e6fae196a06bd",
+  "horizon": 395,
+  "input_files_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/base_base_protocol.json": "9dd04140a301101ea59d618d4f7b9b94d005c68a141a0850693f635af1ded700",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/base_base_row.json": "ce430c67f18cb1cc2f51fdd2b6445fe2d0312c8ce784578dbc9004e1aa1c21c1",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/base_base_trace.npz": "02ca18574a04e1b2c46e818d31ebce8d0c74c05d45574034822d8d5a353fac15",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/mix_random25_protocol.json": "46233c8fe6fb621e64a8be88f7d1a746f7e4b544186d1448b80013cc8e53e3e0",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/mix_random25_row.json": "8fdc365ba58861e2d2b00cd113c321e2937b7dc0897ea9a42269dc20929f2414",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/mix_random25_trace.npz": "985ed5554cdcf466f7b539cd4c166a55e0892a07483f5cb2384d048e193ce476",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/request.json": "1b8d32ee99c6afbf5c4b90ba29f9226a6b0fff270edd0325433c4f6322457fb8",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_synthetic_v3/Goop2D/synthetic_manifest.json": "aa9a51f37397a03d41c4d571931a153f8bf49c99d87fa0e08ff544d7ff201e66"
+  },
+  "panels": [
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 6,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Run failed; accepted 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "random25",
+      "source_frame": 6,
+      "state": "SAVED PREFIX"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 1,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 6,
+      "state": "MISSING"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 205,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "random25",
+      "source_frame": 205,
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 200,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 205,
+      "state": "MISSING"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 0,
+      "particle_glyphs": 33,
+      "policy": "truth",
+      "source_frame": 400,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 2,
+      "particle_glyphs": 33,
+      "policy": "base",
+      "source_frame": 400,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 173,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: 173",
+        "synthetic_numerical_guard",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "random25",
+      "source_frame": 400,
+      "state": "FAILED BEFORE FRAME"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": "mix",
+      "details": [
+        "Accepted prefix: unknown",
+        "timed_out_current",
+        "Synthetic invocation ended without a committed row"
+      ],
+      "forecast_step": 395,
+      "outside_box": null,
+      "particle_glyphs": 0,
+      "policy": "laggedrisk25",
+      "source_frame": 400,
+      "state": "MISSING"
+    }
+  ],
+  "parse_and_export_seconds": 0.006477959002950229,
+  "particle_subsampling": false,
+  "particles": 33,
+  "projection_description": "Physical coordinates centered on metadata box, orthographically projected at elevation25/azimuth-55 for3D; equal physical scale. Same projection for every panel; no perspective or occlusion culling.",
+  "projection_matrix": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "renderer_sha256": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb",
+  "schema": "qualitative_inline_picture_receipt_v1",
+  "seed": 0,
+  "source_index": 1,
+  "study": "Goop2D",
+  "synthetic": true,
+  "total_particle_glyphs": 231,
+  "training_updates": 100000
+}
