@@ -1,0 +1,19 @@
+{
+  "recorded_utc": "2026-10-06T00:56:09.237377+00:00",
+  "passed": true,
+  "manuscript_sha256": "89634efe9f898d9ed77df20c5988af6cc1a7cbdfa939439122b5ca87686cd688",
+  "previous_tables_preserved_byte_for_byte": 23,
+  "labeled_figures_preserved_byte_for_byte": 1,
+  "displayed_equations_preserved_verbatim": 29,
+  "title_and_abstract_unchanged": true,
+  "selected_normalization_paragraph_unchanged": true,
+  "labels": 50,
+  "references": 30,
+  "unresolved_references": [],
+  "native_latex": "success with eight-page main-text assertion",
+  "scope": "Presentation/narrative checks only; no new numerical result or software test",
+  "older_intermediate_check": "root_preservation.json",
+  "builder_reproduces_current_source": true,
+  "independent_method_review_sha256": "1f44c7a259cd561ad716e30b64aee27f68772bc92cd50007d35df64978e0c7da",
+  "statistics_review": "Five minor refinements applied; independent source narrative review found no substantive claim error"
+}

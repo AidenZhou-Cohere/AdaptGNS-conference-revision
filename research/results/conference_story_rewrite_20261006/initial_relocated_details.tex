@@ -1,0 +1,14 @@
+\section{Objective and normalization details}
+\label{sec:implementation-details}
+The repaired full-model format-v2 checkpoints store all normalization parameters; evaluation uses them without injecting training noise. Compact pilot checkpoints instead depend on a separate, hashed copy of the official metadata, included with the results.
+
+The pilot uses the additive floor shown in Equation~\ref{eq:nll}; the repaired original trainer instead clamps its positive head output from below.
+
+Our original-code implementation also supports its conventional $R_i$ mean-loss scale; the pilot uses Equation~\ref{eq:faithful} consistently.
+
+Separate clipping of mean-path and risk-head gradients preserves faithful separation; shared clipping can otherwise reintroduce coupling.
+
+The beta-NLL pilot uses
+$\operatorname{sg}(q_i^{1/2})\ell_{\mathrm{NLL},i}$.
+Its mean-output derivative is $q_i^{-1/2}e_i$. More generally beta $=1$ restores the mean-output squared-error derivative but does not prevent variance gradients from updating shared features \citep{stirn2023}.
+

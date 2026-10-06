@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "recorded_scope": "Presentation-only preservation check; no software tests or inference",
+  "previous_tables_unchanged": 22,
+  "new_table": "tab:historical-main",
+  "title_abstract_unchanged": true,
+  "selected_normalization_paragraph_unchanged": true,
+  "labels": 49,
+  "references_resolve": 27,
+  "builder_reproduces_source": true,
+  "manuscript_sha256": "2eb54277adf10f21f3c5b9d56234dd172ed499be1ee48334f4f4fd5752e08263",
+  "native_latex": "success; finalcurrent source compiled natively with eight-page main-text assertion",
+  "exported_manuscript_pdf_visual_inspection": "author pending"
+}

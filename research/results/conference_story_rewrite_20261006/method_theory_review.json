@@ -1,0 +1,166 @@
+{
+  "schema": 1,
+  "reviewer": "conference_critique_mechanism",
+  "result": "pass",
+  "scope": "Bounded method/theory logic and source-preservation review of conference-story rewrite; no manuscript edits, software tests, inference or PDF inspection",
+  "before": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/conference_story_rewrite_20261006/before_revised_manuscript.tex",
+    "sha256": "2eb54277adf10f21f3c5b9d56234dd172ed499be1ee48334f4f4fd5752e08263"
+  },
+  "after": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+    "sha256": "89634efe9f898d9ed77df20c5988af6cc1a7cbdfa939439122b5ca87686cd688"
+  },
+  "preservation": {
+    "all_23_table_environments_byte_identical_by_label": true,
+    "all_29_displayed_math_environments_byte_identical_as_multiset": true,
+    "both_figure_picture_blocks_byte_identical": true,
+    "title_and_abstract_byte_identical": true,
+    "all_prior_labels_preserved": true,
+    "duplicate_labels": [],
+    "unresolved_references": [],
+    "new_labels": [
+      "sec:implementation-details"
+    ],
+    "key_numerical_prose_strings_retained": {
+      "0.327\\%": {
+        "old": true,
+        "new": true
+      },
+      "3.86\\%": {
+        "old": true,
+        "new": true
+      },
+      "$.357\\pm.060$": {
+        "old": true,
+        "new": true
+      },
+      "$.411\\pm.023$": {
+        "old": true,
+        "new": true
+      },
+      "$-.022\\pm.045$": {
+        "old": true,
+        "new": true
+      },
+      "$-.048\\pm.012$": {
+        "old": true,
+        "new": true
+      },
+      "$-0.021\\pm0.049$": {
+        "old": true,
+        "new": true
+      },
+      "$-0.052\\pm0.013$": {
+        "old": true,
+        "new": true
+      },
+      "$30.2\\pm0.6$": {
+        "old": true,
+        "new": true
+      },
+      "$31.3\\pm0.5$": {
+        "old": true,
+        "new": true
+      },
+      "$35.9\\pm12.0$": {
+        "old": true,
+        "new": true
+      },
+      "$35.8\\pm6.3$": {
+        "old": true,
+        "new": true
+      },
+      "$17.85\\pm0.75$": {
+        "old": true,
+        "new": true
+      },
+      "$17.21\\pm3.01$": {
+        "old": true,
+        "new": true
+      },
+      "$0.486\\pm0.111$": {
+        "old": true,
+        "new": true
+      },
+      "$0.860\\pm0.102$": {
+        "old": true,
+        "new": true
+      },
+      "$0.00301\\pm0.00315$": {
+        "old": true,
+        "new": true
+      },
+      "$0.00155\\pm0.00263$": {
+        "old": true,
+        "new": true
+      },
+      "$0.00083\\pm0.00225$": {
+        "old": true,
+        "new": true
+      },
+      "$13.11\\pm6.10\\%$": {
+        "old": true,
+        "new": true
+      },
+      "$2.68\\%$": {
+        "old": true,
+        "new": true
+      },
+      "$.302$": {
+        "old": true,
+        "new": true
+      },
+      "$.239$": {
+        "old": true,
+        "new": true
+      },
+      "$.00782$": {
+        "old": true,
+        "new": true
+      },
+      "10.74/10.50": {
+        "old": true,
+        "new": true
+      },
+      "11.80/11.55": {
+        "old": true,
+        "new": true
+      },
+      "22.38/21.88": {
+        "old": true,
+        "new": true
+      }
+    }
+  },
+  "method_theory_review": [
+    "Controller-first order is logically sound: state/history and positive per-coordinate score precede pair priority, budget and cached updates; learning objective then defines how the signal is trained",
+    "Original node-percentile policy remains distinct from exact optional-pair control; unordered versus directed accounting, mandatory graph growth, cache initialization and observed versus autonomous scores remain explicit",
+    "Faithful objective still detaches shared features and residual target; raw mean-gradient claim is restricted to matched inputs/graphs, with clipping, scale and floor details retained in appendix",
+    "Residual optimum and risk-versus-intervention definitions remain mathematically intact; no theorem is promoted to an unconditional improvement claim",
+    "Lag/estimation/graph-input-transfer/mismatch and nonlinear set-benefit conditions, exactly-B comparator, lack of abstention/rollout guarantee and nonvacuity qualification remain intact",
+    "Main experiment narrative retains prior test inspection, exploratory follow-up scope, graph-convention differences, failed-group nulls, per-seed adverse results and limits of cost comparisons",
+    "New appendix sec:implementation-details retains checkpoint/normalization storage, additive-versus-clamped variance floors, conventional mean-loss scaling, clipping coupling and beta-NLL derivative qualifications",
+    "Final reread confirms full-model initial scoring loop remains explicit in main; selection complexity, ties and pilot initialization remain verbatim in new appendix; caching claim now states avoidance of an extra scoring pass without asserting measured speedup"
+  ],
+  "findings": [],
+  "limits": [
+    "Native compilation success is root-reported and was not rerun in this bounded review",
+    "This source comparison does not certify exported PDF layout or author/registered-abstract suitability"
+  ],
+  "resolved_precision_points": [
+    {
+      "issue": "Initialization moved to appendix but common-state count sentence still referred to initialization below",
+      "resolution": "Common-state counts now qualified by initialized score cache"
+    },
+    {
+      "issue": "Main referred observed-history selector definitions to implementation appendix, which only gives initialization and evaluation separation",
+      "resolution": "Main points to selectors below and only compact initialization to implementation appendix"
+    }
+  ],
+  "previous_candidate_review": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/conference_story_rewrite_20261006/method_theory_preservation_review.initial.json",
+    "sha256": "b0272e27c0a24b6e866acc7486447c1024e3e44976b09bd2f7bdb1b24ce9aaaf"
+  },
+  "final_source_stable_during_review": true
+}

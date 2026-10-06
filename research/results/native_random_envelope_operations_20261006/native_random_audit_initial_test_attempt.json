@@ -1,0 +1,7 @@
+{
+  "scope": "Synthetic test development, no real outcome execution",
+  "initial_result": "1 failed,16 passed",
+  "finding": "Exact equality asserted for algebraically equal Monte Carlo SE forms; independent float64 order differed by1ulp (0.8660254037844385 vs0.8660254037844386).",
+  "resolution": "Test uses absolute2e-16 arithmetic tolerance for this hand-derived SE; production audit calculation unchanged.",
+  "next_result": "17 passed in0.10s"
+}

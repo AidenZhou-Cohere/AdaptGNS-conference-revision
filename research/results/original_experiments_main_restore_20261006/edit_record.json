@@ -1,0 +1,13 @@
+{
+  "recorded_utc": "2026-10-06T00:45:35.183772+00:00",
+  "reason": "Author questioned disappearance of original experiments from main text; restore balanced Sand/WaterDrop presentation",
+  "scope": "Presentation only. Original full historical table, all prior tables and outcomes, title/abstract and selected normalization paragraph preserved. New compact main table copies four existing historical differences and two existing horizons; no numerical analysis or inference.",
+  "before_sha256": {
+    "manuscript_body.tex": "15f9604d1073e6fb186064fded09a8c03189cdaace702195b7f833ddb725940d",
+    "revised_manuscript.tex": "db43cf941099f4a51ffba232f65cc5797a87730a01e638a51c1c8cf829b99f08"
+  },
+  "after_sha256": {
+    "manuscript_body.tex": "dfeb94224f26ad2d33db00d63c285af05b4c668d2fab092289795157dcb3e641",
+    "revised_manuscript.tex": "bac9059f1943c18ac0f2b71b207841db33b37e53c4b27e3de8fce64ed0f375ca"
+  }
+}

@@ -1,0 +1,3 @@
+# Original experiments restored to the main text
+
+The author requested greater visibility for the original experiments. This dated presentation snapshot restores a concise Sand/WaterDrop comparison and a two-row table in the main text while retaining the full historical table and qualifications in the appendix. All22 prior tables, title/abstract and selected normalization paragraph remain unchanged;145 independent checks and native compilation pass. Four historical differences and the314/995 horizons are copied from existing evidence. No inference or new numerical analysis occurred. Subsequent narrative refinement may supersede this manuscript-body snapshot; the dated verification remains preserved.

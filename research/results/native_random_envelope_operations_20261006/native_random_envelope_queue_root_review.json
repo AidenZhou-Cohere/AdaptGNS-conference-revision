@@ -1,0 +1,14 @@
+{
+  "recorded_utc": "2026-10-06T00:47:01.825583+00:00",
+  "passed": true,
+  "source_sha256": "1d26d8d25f9e78bb5f1e4a8b735a3e859a7749a43a20dd4340a0d4b059f7b313",
+  "tests": {
+    "passed": 77,
+    "seconds": 6.43,
+    "command": "work/venv/bin/python -m pytest -q work/deadline_research_20261005/test_run_native_random_envelope_queue.py work/deadline_research_20261005/test_run_native_random_envelope_queue_review.py",
+    "session": 41976
+  },
+  "independent_review_sha256": "80a0dfdfc45913c070f26478dba63a9a12e97f87855a5e4306df9780a9b69220",
+  "no_real_check_or_launch": true,
+  "root_native_release_exists": false
+}

@@ -1,0 +1,644 @@
+\begin{document}
+\twocolumn[
+\aistatstitle{Adaptive Interaction Graphs for Particle Simulation}
+\aistatsauthor{Anonymous research revision}
+\aistatsaddress{Research draft}]
+\fancyhead[CE,CO]{\small\bfseries Adaptive Interaction Graphs for Particle Simulation}
+\begin{abstract}
+Particle graph-network simulators reconstruct local interaction graphs from a fixed geometric rule, even when prediction difficulty varies across a scene. We study a lightweight controller that uses the preceding step's predicted residual scale to allocate extra local edges. A reproducibility audit shows why three quantities must be distinguished: predicted residual risk, the benefit of additional interactions, and the geometry-dependent cost of a free rollout. In particular, an expansion policy cannot reduce edges on identical positions, and accurate residual prediction does not guarantee useful allocation. We formulate an exact incremental pair budget, apply established faithful heteroscedastic regression to preserve the mean predictor's squared-error gradients, and derive a conditional allocation-regret bound separating estimation error, temporal lag, and risk--benefit mismatch. Reanalysis of released rollouts does not resolve the previously reported WaterDrop accuracy advantage at step 200 and reverses its sign over the full saved horizon. New controlled CPU experiments evaluate alternative objectives and matched-budget policies on a small public WaterDrop subset. The resulting evidence supports a reproducible study of adaptive computation, while leaving full-scale accuracy--runtime superiority unestablished.
+\end{abstract}
+
+\section{Introduction}
+A learned particle simulator must decide which particles exchange information at every step \citep{sanchez2020}. A fixed interaction radius makes this decision geometrically: nearby particles communicate whether they lie in a quiet region or near an impact, splash, or free surface. This is a useful inductive bias, but it leaves a natural question. Can the simulator spend additional computation where its current prediction is least reliable?
+
+ADAPTGNS explores a simple answer. Alongside acceleration, a graph network predicts a residual scale for each particle. A controller uses the preceding step's scores to expand selected neighborhoods, allowing the simulator to update its state and its score in the same forward pass. The motivation is spatial heterogeneity: if difficult predictions arise from missing local interactions, directing extra messages toward those particles could improve accuracy without expanding the graph everywhere. Caching avoids an extra scoring pass at each subsequent forecast.
+
+The crucial assumption is that a difficult prediction is also one that more neighbors can improve. A residual head can instead respond to ambiguity, model bias, or errors that added messages do not correct. Moreover, graph changes affect subsequent particle positions, so a rollout with fewer edges may simply have evolved toward a sparser geometry. These two issues connect the scientific and computational questions: we need to measure the effect of the selected interactions, then determine whether that effect survives autonomous feedback at an acceptable cost.
+
+We investigate this connection through the original Sand and WaterDrop experiments and a new controlled WaterDrop study. The original results motivate the question with contrasting accuracy--edge tradeoffs across granular and fluid dynamics. Six full-architecture models then let us compare training objectives, hold prediction histories fixed, and allocate exactly the same optional-pair budget to residual risk, speed, or random selection. Successive controls test whether the observed ordering comes from the action being measured or the graph convention used at evaluation. Full rollouts finally test the consequences for error accumulation, failures, and measured cost.
+
+The resulting contribution is an empirical account of the gap between residual prediction and useful graph allocation. Residual scores rank prediction error more strongly than the benefit of their own sparse actions, and restoring trained self-messages does not remove the observed risk--random deficit. Autonomous comparisons are mixed and retain failures. We also give an exact budget formulation and a conditional analysis that identifies the score--gain and interaction assumptions an allocation guarantee would require. Together these results refine the original adaptive-computation hypothesis: learning where a simulator errs does not, by itself, determine where additional interactions help.
+
+\section{Related work}
+Graph networks model learned interactions \citep{battaglia2016}; GNS combines geometric particle graphs, message passing, and noise-augmented training \citep{sanchez2020}. Our implementation builds on the released particle GNS software \citep{kumar2023}. Architectural approaches such as Neural SPH incorporate physical structure into fluid prediction \citep{toshev2024}; our policy comparisons freeze each simulator and vary its interaction graph.
+
+Adaptive simulation also changes the discretization itself. MeshGraphNets predicts a sizing field for adaptive remeshing \citep{pfaff2021}, while LAMP learns refinement and coarsening under an error--computation tradeoff \citep{wu2023}. We retain the particle set and allocate local pairs. NRI and dNRI infer relational structure \citep{kipf2018,graber2020}; curvature-based rewiring studies communication bottlenecks \citep{topping2022}, and AdaMeshNet changes connectivity within message-passing layers using structural, distance, and velocity information \citep{seo2025}. Our question is whether cached residual scores help choose additional interactions; dynamic graphs and adaptive computation are established ideas.
+
+The training objective must be controlled when testing that question. Heteroscedastic NLL couples mean fitting to predicted variance; beta-NLL modifies this weighting \citep{seitzer2022}. Faithful regression preserves squared-error mean gradients while preventing variance learning from changing shared features \citep{stirn2023}. We adopt these established methods as objective controls. Their guarantees concern mean optimization under matched inputs and graphs, not the benefit of subsequently changing those graphs.
+
+\section{Adaptive interaction graphs}
+\subsection{State and predictions}
+For particle $i$, let $x_i^t\in\mathbb R^d$ denote position and let $H_t$ contain six consecutive frames, particle attributes, and boundary information. A graph network produces normalized acceleration $\mu_i^t$ and scalar per-coordinate variance $q_i^t>0$. The discrete acceleration target is the position second difference, standardized with training statistics. The decoder reverses this normalization before updating positions.
+
+\subsection{A cached controller with an explicit budget}
+We define simple undirected pairs before emitting their two directed orientations. For $R\ge r$,
+\begin{align}
+ E_r(x)&=\{\{i,j\}:i<j,\ \|x_i-x_j\|\le r\},\nonumber\\
+ C_R(x)&=E_R(x)\setminus E_r(x).
+\end{align}
+The original node-percentile controller includes every optional pair incident to at least one selected particle. A percentile controls the number of selected particles, not the number of retained pairs: dense selected regions can have much higher cost.
+
+Our reference allocator preserves $E_r$ and ranks optional pairs by
+\begin{equation}
+ s_{t,\{i,j\}}=\max(q_i^{t-1},q_j^{t-1}).
+\end{equation}
+For an integer $B_t\ge0$, let $S_t$ contain the $\min(B_t,|C_R(x_t)|)$ highest-scoring optional pairs and set $E_t=E_r(x_t)\cup S_t$. Thus
+\begin{equation}
+ |E_t|=|E_r(x_t)|+\min(B_t,|C_R(x_t)|).
+ \label{eq:budget}
+\end{equation}
+Here $|E_t|$ counts unordered pairs; the reference network receives $2|E_t|$ directed edges without self-loops. Budgeted selectors use $B_t=\lfloor0.25|C_R(x_t)|\rfloor$, retaining identical counts on a common forecast state once the score cache is initialized. The mandatory graph can still grow as particles cluster. Selection cost and tie handling are specified in Appendix~\ref{sec:implementation-details}.
+
+The full-model controller initializes the cache with a base-graph scoring pass on the initial six observed frames, then applies the budget from forecast 1. Each later forecast selects current candidates using cached scores, runs one simulator pass, integrates the predicted acceleration, and stores the new scores. No labels or future positions enter this rule. A current-score reference requires another pass. Observed-history selectors are evaluated separately below; the compact pilot's initialization is specified in Appendix~\ref{sec:implementation-details}.
+
+\subsection{Learning the residual signal}
+Suppressing time indices, let $h_i$ be the shared hidden representation, $y_i$ the normalized target, and $\operatorname{sg}$ the stop-gradient operation. Write $e_i=\mu_i-y_i$ and $R_i=\|e_i\|_2^2$ for the realized vector squared residual; $dq_i$ predicts its conditional mean. The residual head is trained using an isotropic Gaussian likelihood. Its negative log-likelihood (NLL), omitting the constant, is
+\begin{align}
+ \ell_{\mathrm{NLL},i}=\frac{R_i}{2q_i}+\frac d2\log q_i,\nonumber\\
+ q_i=\operatorname{softplus}(g_\phi(h_i))+q_{\min}.
+ \label{eq:nll}
+\end{align}
+The scalar is a residual-scale prediction in normalized acceleration coordinates. It is not an isolated measure of physical stochasticity or epistemic uncertainty.
+
+For the faithful variant, the risk head consumes detached shared features and its residual target is also detached:
+\begin{align}
+ q_i&=\operatorname{softplus}(g_\phi(\operatorname{sg}(h_i)))+q_{\min},\nonumber\\
+ \ell_{\mathrm F,i}&=\tfrac12R_i+
+ \frac{\operatorname{sg}(R_i)}{2q_i}+\frac d2\log q_i.
+ \label{eq:faithful}
+\end{align}
+Only the first term updates the mean network. This objective control lets us ask whether an allocation result depends on the coupling between mean and variance fitting: its raw mean gradient agrees with squared-error training on the same inputs and graphs. Separate clipping of mean-path and risk-head gradients preserves this separation. Changing the graph during evaluation can still change both predictions and subsequent states.
+
+Implementation details and the compact beta-NLL variant are specified in Appendix~\ref{sec:implementation-details}.
+
+\section{From residual prediction to useful interactions}
+\subsection{The quantity an allocator needs}
+\begin{proposition}[Residual second moment]
+Fix a representation $h$ and a mean predictor. Assume $0<m(h)=\mathbb E[\|Y-\mu(h)\|^2\mid h]<\infty$ and $q_{\min}>0$. The minimizer of expected Equation~\ref{eq:nll} over $q>0$ is $q^*(h)=m(h)/d$. Over $q\ge q_{\min}$ it is $\max(q_{\min},m(h)/d)$. An additive softplus parameterization approaches the boundary only as a limiting infimum when $m(h)/d\le q_{\min}$.
+\end{proposition}
+Differentiating gives $(dq-m)/(2q^2)$, which changes sign only at $m/d$. Moreover,
+\begin{equation}
+ m(h)=\operatorname{tr}\operatorname{Cov}(Y\mid h)
+       +\|\mu(h)-\mathbb E[Y\mid h]\|^2.
+\end{equation}
+Thus the risk head can absorb representation ambiguity and mean-model bias. Finite-data training and rollout distribution shift need not attain this optimum.
+
+Fix model parameters and history $H_t$, with current positions $x_t$. Using the same target $Y$ and loss $\mathcal E$ for both predictions, define
+\begin{align}
+ G_{H_t}(S)=\mathbb E[&\mathcal E(f(H_t,E_r(x_t)),Y)\nonumber\\
+              &-\mathcal E(f(H_t,E_r(x_t)\cup S),Y)\mid H_t].
+\end{align}
+Then $G_{H_t}(\varnothing)=0$; positive benefit means lower expected error on the same input. Perfect residual calibration does not order this benefit. One region can have risk $10$ from unobserved forcing and zero expansion gain, while another has risk $2$ from an omitted neighbor and gains $1$. Risk-greedy allocation chooses the former and gains nothing. Hence we measure signed intervention benefit as well as residual correlation.
+
+\subsection{What an edge saving measures}
+For the ideal uncapped expansion rule, $E_r(x)\subseteq E_{\mathrm A}(x)\subseteq E_R(x)$. The released implementation instead uses directed edges, self-loops, and a 128-neighbor cap. Its union preserves the actual base graph, although capped radius searches need not be nested. Comparing independently predicted geometries gives the following exact decomposition, with each graph interpreted consistently:
+\begin{align}
+ |E_{\mathrm A}(x_t^{\mathrm A})|-|E_r(x_t^{\mathrm B})|
+ ={}&[|E_{\mathrm A}(x_t^{\mathrm A})|-|E_r(x_t^{\mathrm A})|]\nonumber\\
+ &+[|E_r(x_t^{\mathrm A})|-|E_r(x_t^{\mathrm B})|].
+ \label{eq:decomposition}
+\end{align}
+The first term is nonnegative. Lower realized rollout edge counts require the geometry term to outweigh the direct expansion cost. This can be a useful systems outcome, but is not an equal-input saving attributable to edge placement. We therefore separate common-state graph measurements from autonomous-rollout costs.
+
+\subsection{When residual scores would be sufficient}
+\begin{proposition}[Top-budget score perturbation]
+On the current candidate set, let $B\le |C_R|$ and suppose an additive surrogate assigns gain $g_e$ to each pair. Let $S^*$ contain its best $B$ pairs and $\widehat S$ the best $B$ estimated scores. If $\max_e|g_e-\widehat g_e|\le\delta$, then
+\begin{equation}
+ \sum_{e\in S^*}g_e-\sum_{e\in\widehat S}g_e\le2B\delta.
+ \label{eq:regret}
+\end{equation}
+\end{proposition}
+Adding and subtracting the estimated sums proves the bound: the estimated difference is nonpositive and each estimation term is at most $B\delta$.
+
+Let $\rho_t$ be per-coordinate residual risk under a fixed graph convention, with cached estimate $\widehat\rho_{t-1}=q^{t-1}$ for the same particle indices. The cache is produced on the preceding selected graph. If $\rho_t$ refers to a reference graph, the estimation error below must also cover that change of graph input; ordinary calibration or rank correlation does not bound this transfer. Assume
+\begin{equation}
+ \|\widehat\rho_{t-1}-\rho_{t-1}\|_\infty\le\epsilon,
+ \quad \|\rho_t-\rho_{t-1}\|_\infty\le D_t.
+\end{equation}
+Suppose the current additive pair gain satisfies
+$g_{t,ij}=a\max(\rho_{t,i},\rho_{t,j})+b_t+\xi_{t,ij}$,
+where $a\ge0$, $b_t$ is pair-independent, and $|\xi_{t,ij}|\le\zeta$. Define $\widehat g_{t,ij}=a\max(\widehat\rho_{t-1,i},\widehat\rho_{t-1,j})+b_t$. The controller maximizes these estimated gains (all sets tie when $a=0$). Maximum is 1-Lipschitz in the sup norm, so $\max_{ij}|g_{t,ij}-\widehat g_{t,ij}|\le a(\epsilon+D_t)+\zeta$, giving
+\begin{equation}
+ \operatorname{regret}_t\le 2B\{a(\epsilon+D_t)+\zeta\}.
+\end{equation}
+The terms quantify estimation error, temporal drift, and risk--benefit mismatch for an additive surrogate. Nonlinear message-passing gains need not be additive. The comparator selects exactly $B$ pairs even when gains are negative, rather than abstaining. Neither score suitability nor rollout stability follows.
+If actual set benefit differs uniformly from the additive surrogate by at most $\varepsilon_B$ on exactly-$B$ sets, the corresponding actual-benefit regret is at most $2B\delta+2\varepsilon_B$. This additional assumption is unverified; even perfect singleton scores can miss complementary edges (Appendix~\ref{sec:nonadditive-allocation}).
+On a finite candidate set, a sufficiently large mismatch bound always exists. The result is informative only when score mismatch and set-interaction error are small on the scale of the policy gains being compared; residual calibration alone does not establish this condition.
+
+% CONFERENCE_EXPERIMENTS_MAIN_INSERT
+
+\section{Limitations}
+The allocation bound requires unverified control of score error, drift, and interactions between added pairs. Hard radius thresholds and top-budget selection can make the closed-loop map discontinuous near contacts or ties. A variance head does not characterize temporal error covariance, integration bias, or amplification by feedback. Additional edges may increase sensitivity even when they reduce one-step error.
+
+The compact pilot uses few trajectories, no training noise, and no 3D regime. Its rollout, benefit-head, and physical-control follow-ups reuse inspected data and remain exploratory. Kinematic associations do not identify material-specific mechanisms or establish which graph action helps. The full WaterDrop experiment uses only three seeds and 100,000 updates, below the historical training budget. Its graph-convention bridge restores trained self-messages but does not address the absence of expanded graphs during training. Full corrected Sand and 3D evaluations, conservation diagnostics, peak memory, and optimized runtime comparisons remain unmeasured.
+
+\section{Conclusion}
+ADAPTGNS asks whether a simulator can use its own residual predictions to direct additional local interactions. Caching those predictions yields a simple controller, and an exact optional-pair budget makes its allocation choices comparable. The original Sand and WaterDrop experiments show why the idea deserves study, but their horizon-dependent accuracy and geometry-dependent edge counts do not establish a general efficiency gain.
+
+The controlled WaterDrop experiments identify the missing link. Residual scores track difficult predictions more strongly than the benefit of the selected graph changes. Measuring the actual sparse action and restoring trained self-messages leave that gap in place, while full rollouts reveal mixed policy effects, failures and substantial boundary excursions. The practical lesson is to evaluate the signed effect of the chosen interactions alongside residual prediction, with inexpensive alternatives and autonomous cost as controls. Learning an allocation signal that reliably closes this gap remains an open problem.
+
+\clearpage
+\typeout{REVISION-MAIN-PAGES: \the\numexpr\value{page}-1\relax}
+% After flushing the main text, the next page must be at most page 9.
+% Fail compilation rather than silently exceed the eight-page main-text cap.
+\ifnum\value{page}>9
+  \PackageError{research-revision}{Main text exceeds the eight-page limit}{Shorten the main text before submission.}
+\fi
+\section*{AI Use Statement}
+This working revision was developed with substantial assistance from OpenAI Codex, including literature retrieval, implementation auditing, proposed mathematical claims and proofs, experiment design and execution, statistical analysis, and drafting. Automated checks and independent agent reviews were used during development. These are not a substitute for human verification. The author has not yet confirmed line-by-line verification of this draft, all proofs, code, citations, or generated results. Before submission, this statement must be finalized to accurately describe the human verification performed and the author's responsibility for the final content.
+
+\begin{thebibliography}{20}
+\bibitem[Battaglia et~al.(2016)]{battaglia2016} P.~Battaglia et~al. Interaction networks for learning about objects, relations and physics. \emph{NeurIPS}, 2016.
+\bibitem[Sanchez-Gonzalez et~al.(2020)]{sanchez2020} A.~Sanchez-Gonzalez et~al. Learning to simulate complex physics with graph networks. \emph{ICML}, 2020.
+\bibitem[Kumar and Vantassel(2023)]{kumar2023} K.~Kumar and J.~Vantassel. GNS: A generalizable graph neural network-based simulator for particulate and fluid modeling. \emph{JOSS}, 8(88):5025, 2023. doi:10.21105/joss.05025.
+\bibitem[Pfaff et~al.(2021)]{pfaff2021} T.~Pfaff et~al. Learning mesh-based simulation with graph networks. \emph{ICLR}, 2021.
+\bibitem[Wu et~al.(2023)]{wu2023} Tailin Wu et~al. Learning controllable adaptive simulation for multi-resolution physics. \emph{ICLR}, 2023.
+\bibitem[Kipf et~al.(2018)]{kipf2018} T.~Kipf et~al. Neural relational inference for interacting systems. \emph{ICML}, 2018.
+\bibitem[Graber and Schwing(2020)]{graber2020} C.~Graber and A.~Schwing. Dynamic neural relational inference. \emph{CVPR}, 2020.
+\bibitem[Topping et~al.(2022)]{topping2022} J.~Topping et~al. Understanding over-squashing and bottlenecks on graphs via curvature. \emph{ICLR}, 2022.
+\bibitem[Seo et~al.(2025)]{seo2025} S.~Seo et~al. Adaptive graph rewiring to mitigate over-squashing in mesh-based GNNs for fluid dynamics simulations. arXiv:2511.12709, 2025.
+\bibitem[Seitzer et~al.(2022)]{seitzer2022} M.~Seitzer, A.~Tavakoli, D.~Antic, and G.~Martius. On the pitfalls of heteroscedastic uncertainty estimation with probabilistic neural networks. \emph{ICLR}, 2022.
+\bibitem[Stirn et~al.(2023)]{stirn2023} A.~Stirn et~al. Faithful heteroscedastic regression with neural networks. \emph{AISTATS}, PMLR 206:5593--5613, 2023.
+\bibitem[Toshev et~al.(2024)]{toshev2024} A.~Toshev et~al. Neural SPH: Improved neural modeling of Lagrangian fluid dynamics. \emph{ICML}, PMLR 235:48428--48452, 2024.
+\end{thebibliography}
+
+% Official AISTATS 2027 checklist questions retained verbatim.
+% Answers describe the current working revision and must be updated only when evidence changes.
+\section*{Checklist}
+
+\begin{enumerate}
+
+  \item For all models and algorithms presented, check if you include:
+  \begin{enumerate}
+    \item A clear description of the mathematical setting, assumptions, algorithm, and/or model. [Yes] The method, residual-risk interpretation, graph conventions, and assumptions of the conditional allocation bound are specified.
+    \item An analysis of the properties and complexity (time, space, sample size) of any algorithm. [No] The revision gives graph-cardinality and cost decompositions and limited timing measurements, but not a complete time/space complexity analysis for every evaluated implementation.
+    \item (Optional) Anonymized source code, with specification of all dependencies, including external libraries. [No] Tested source, dependency specifications and compact result records cover the new studies. A complete anonymized submission package and its accessible release have not yet been verified.
+  \end{enumerate}
+
+  \item For any theoretical claim, check if you include:
+  \begin{enumerate}
+    \item Statements of the full set of assumptions of all theoretical results. [Yes] The stated propositions explicitly condition on their moment, feasibility, and additive-surrogate assumptions; no unconditional stability claim is made.
+    \item Complete proofs of all theoretical results. [Yes] Proofs are supplied for the propositions and additional derivations. This describes their inclusion, not certification of independent human verification.
+    \item Clear explanations of any assumptions. [Yes] The text explains the limits of isotropic residual risk, lag assumptions, and the distinction between additive surrogate gain and nonlinear simulator benefit.
+  \end{enumerate}
+
+  \item For all figures and tables that present empirical results, check if you include:
+  \begin{enumerate}
+    \item The code, data, and instructions needed to reproduce the main experimental results (either in the supplemental material or as a URL). [No] Scripts, fixed protocols and measurement artifacts cover the historical-array reanalysis, compact pilot, fixed full-model study and completed exploratory controls. A complete anonymized reproduction package has not yet been verified; the original historical checkpoints and complete historical training/evaluation provenance remain unavailable.
+    \item All the training details (e.g., data splits, hyperparameters, how they were chosen). [No] The compact-pilot, benefit-head and fixed full-model protocols specify their data splits, architectures, objectives, noise, hyperparameters and checkpoint-selection rules. The exploratory controls have explicit input and evaluation protocols. Exact historical training and validation-selection details remain unverified.
+    \item A clear definition of the specific measure or statistics and error bars (e.g., with respect to the random seed after running experiments multiple times). [Yes] Metrics distinguish normalized acceleration from position error, trajectory-conditioned bootstrap intervals from training-seed standard deviations, and failed from completed rollouts.
+    \item A description of the computing infrastructure used. (e.g., type of GPUs, internal cluster, or cloud provider). [Yes] The local CPU/Metal setup, thread counts, relevant versions, timing scope, and device-parity limitations are recorded with the experiment artifacts.
+  \end{enumerate}
+
+  \item If you are using existing assets (e.g., code, data, models) or curating/releasing new assets, check if you include:
+  \begin{enumerate}
+    \item Citations of the creator If your work uses existing assets. [Yes] The original simulator software, public simulation data, and adopted regression and adaptive-simulation methods are cited.
+    \item The license information of the assets, if applicable. [No] Software license notices are retained in the code package, but complete asset-license information has not yet been consolidated into the submission.
+    \item New assets either in the supplemental material or as a URL, if applicable. [No] New source, fitted coefficients and compact measurement records are preserved alongside local checkpoints and numeric archives. A complete anonymized submission archive or accessible release has not yet been verified.
+    \item Information about consent from data providers/curators. [Not Applicable] The experiments use existing publicly distributed synthetic particle-simulation data; no new human data were collected.
+    \item Discussion of sensible content if applicable, e.g., personally identifiable information or offensive content. [Not Applicable] The studied inputs are synthetic particle states, not personal or offensive content.
+  \end{enumerate}
+
+  \item If you used crowdsourcing or conducted research with human subjects, check if you include:
+  \begin{enumerate}
+    \item The full text of instructions given to participants and screenshots. [Not Applicable] No crowdsourcing or human-subject experiment was conducted.
+    \item Descriptions of potential participant risks, with links to Institutional Review Board (IRB) approvals if applicable. [Not Applicable] No crowdsourcing or human-subject experiment was conducted.
+    \item The estimated hourly wage paid to participants and the total amount spent on participant compensation. [Not Applicable] No participant compensation was involved.
+  \end{enumerate}
+
+\end{enumerate}
+
+\clearpage
+\appendix
+\thispagestyle{empty}
+\onecolumn
+\aistatstitle{Adaptive Interaction Graphs for Particle Simulation:\\ Supplementary Materials}
+\section{Historical results and implementation audit}
+\label{sec:historical-audit}
+\subsection{Historical arrays: scope and statistics}
+We reanalyze 20 released NPZ artifacts rather than rerun their checkpoints. Each selected comparison has 30 trajectories and one saved trained model per method. The arrays omit training seeds, checkpoint hashes, and trajectory IDs. The original loader's deterministic ordering supports, but does not verify, row pairing. We report exploratory paired percentile bootstrap intervals from 100,000 whole-trajectory resamples; sensitivity to unpaired resampling is included in the accompanying audit. Particles and time steps are not treated as independent replicates. These intervals do not quantify training-seed variability and are not adjusted for historical selection or multiple comparisons.
+
+There are 314 predicted steps for Sand and 995 for WaterDrop after the input history. We use the arithmetic mean of MSE over all saved predicted steps as a full-rollout summary. MSE at 1000 future steps cannot be recovered from these arrays. Table~\ref{tab:legacy} shows the selected adaptive controller against the sparse MSE baseline, with unrounded values used in all calculations.
+
+\begin{table*}[t]
+\centering\small
+\caption{Historical saved-array reanalysis, not corrected retraining. Negative differences favor adaptation. The 95\% intervals condition on the saved models and assume aligned trajectory rows.}
+\label{tab:legacy}
+\begin{tabular}{llrrrr}
+\toprule
+Dataset & Metric & Adaptive & Sparse MSE & Difference & Paired 95\% interval\\
+\midrule
+WaterDrop & MSE@200 & .0412172 & .0413525 & -.0001353 & [$-.0008463$,$+.0005286$]\\
+WaterDrop & MSE@500 & .0411959 & .0395592 & +.0016367 & [$+.0000473$,$+.0031618$]\\
+WaterDrop & MSE@995 & .0381742 & .0362490 & +.0019252 & [$+.0000003$,$+.0038427$]\\
+WaterDrop & Full-rollout mean MSE & .0359455 & .0346098 & +.0013357 & [$+.0002413$,$+.0024355$]\\
+WaterDrop & Mean directed edges & 7821.17 & 9741.01 & -1919.84 & [$-2716.54$,$-1225.33$]\\
+Sand & MSE@200 & .0381637 & .0434148 & -.0052511 & [$-.0156124$,$+.0056432$]\\
+Sand & Full-rollout mean MSE & .0267371 & .0282388 & -.0015016 & [$-.0080941$,$+.0059264$]\\
+Sand & Mean directed edges & 22958.15 & 18681.69 & +4276.46 & [$+2077.18$,$+7137.38$]\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+WaterDrop's MSE@200 improvement is 0.327\%, with an interval crossing zero. The sign reverses at later horizons and the full-rollout mean is 3.86\% worse. These observations do not support the original strict Pareto or general long-horizon-advantage claim. The comparison against the fixed legacy risk-trained checkpoint remains favorable in error, but its WaterDrop edge difference is only $-0.678\%$ and has an interval spanning zero. On Sand, adaptation improves the legacy checkpoint's MSE@200 by 8.50\%, while the denser MSE baseline remains substantially more accurate. These are exploratory conditional findings, not new multi-seed benchmark results.
+
+\subsection{Implementation discrepancies and corrections}
+The released trainer computed $q=(\operatorname{softplus}g(h))^2+10^{-6}$ and $R/(2q)+\tfrac12\log q$, despite $d=2$. This differs from Equation~\ref{eq:nll}: at a fixed mean its optimum is $\mathbb E[R\mid h]$, not $\mathbb E[R\mid h]/2$. Its calibration script nevertheless compared $R$ with $2q$. Historical checkpoints lack the training/evaluator revision needed to certify which implementation generated each run. We therefore label them historical, unverified results associated with the released legacy implementation. Fixing this source discrepancy cannot retroactively certify or correct them.
+
+Evaluation also constructed normalization using zero noise variance, whereas released training defaulted to adding $(6.7\times10^{-4})^2$ to coordinate variances. Without stored normalization, old checkpoint behavior is ambiguous. The repaired code stores architecture, normalization, risk semantics, and training configuration; legacy loading explicitly records its reconstruction assumptions. New tests cover likelihood dimensionality, head semantics, checkpoint round trips, batched selection, and compatibility with mean-only baselines. Consistent normalization does not itself make noisy-training residual risk calibrated on clean histories: the augmentation also changes the target (Appendix~\ref{sec:noise-augmentation}).
+
+Additional discrepancies limit reproduction. The released adaptive evaluator hardcoded the test split and the supplied sweep has no independent validation-selection record. This does not prove no validation run existed, but the claimed selection provenance is unverified. WaterDrop's dense baseline uses a 400,000-step checkpoint while the other saved runs use 500,000 steps. The Sand intermediate-radius MSE artifact is missing. Finally, the released risk head has 33,153 parameters, rather than fewer than 20,000. These findings motivate regenerated tables and immutable run manifests.
+
+
+\section{Additional derivations}
+\subsection{Why time-local risk does not determine trajectory error}
+For semi-implicit integration with step size $h$,
+$v_{t+1}=v_t+ha_t$ and $x_{t+1}=x_t+hv_{t+1}$.
+Two trajectories with equal initial state satisfy
+\begin{equation}
+ \Delta x_T=h^2\sum_{t=0}^{T-1}(T-t)\Delta a_t.
+\end{equation}
+Here $\Delta a_t$ is the total acceleration difference along their respective states, including feedback effects. Squaring gives
+\begin{align}
+ \mathbb E\|\Delta x_T\|^2
+ ={}&h^4\sum_t(T-t)^2\mathbb E\|\Delta a_t\|^2\nonumber\\
+ &+2h^4\sum_{s<t}(T-s)(T-t)
+       \mathbb E\langle\Delta a_s,\Delta a_t\rangle.
+\end{align}
+The second term is absent from a per-step scalar variance. Independent, zero-mean acceleration errors with common second moment $v$ give $h^4vT(T+1)(2T+1)/6$. A coherent constant bias $b$ gives $h^4\|b\|^2[T(T+1)/2]^2$. These are conditional illustrations, not a stochastic model fitted to the datasets.
+
+For an augmented state $z$ that includes history and controller memory, suppose the complete update $\widehat F_t$ is $L_t$-Lipschitz on a relevant neighborhood and its reference-state discrepancy is at most $\eta_t$. Adding and subtracting $\widehat F_t(z_t^*)$ gives
+\begin{equation}
+ e_T\le\Big(\prod_{j=0}^{T-1}L_j\Big)e_0+
+ \sum_{t=0}^{T-1}\eta_t\prod_{j=t+1}^{T-1}L_j.
+\end{equation}
+Adaptive edges can affect both $\eta_t$ and $L_t$. A hard selection policy need not satisfy a global Lipschitz assumption, so the inequality cannot be invoked without a local margin or other regularity argument.
+
+\subsection{Risk calibration and units}
+For bins $B_b$ formed by predicted variance, the binned vector-risk gap is
+\begin{equation}
+ \sum_b\frac{|B_b|}{n}\left|
+ \frac{1}{|B_b|}\sum_{i\in B_b}R_i
+ -\frac{d}{|B_b|}\sum_{i\in B_b}q_i\right|.
+\end{equation}
+This is a second-moment diagnostic in normalized acceleration units, not classification ECE or a full distributional calibration test. Coordinate normalization with diagonal second-difference scale $D$ maps isotropic normalized covariance $qI$ to $qD^2$ in position-second-difference units. With physical sampling interval $\Delta t$, acceleration is the second difference divided by $\Delta t^2$, giving predicted physical squared-acceleration error $q\operatorname{tr}(D^2)/(\Delta t)^4$. This is not generally $dq$.
+
+A positive multiplicative scale $cq$ preserves percentile rankings. The Gaussian-NLL-optimal validation scale is $c=(nd)^{-1}\sum_iR_i/q_i$; moment matching instead gives $c=\sum_iR_i/(d\sum_iq_i)$. These differ because a mean of ratios is not a ratio of means. Better absolute calibration alone cannot improve a strictly rank-based controller.
+
+\subsection{Percentiles do not fix edge cost}
+With independent Bernoulli node selection probability $\rho$, an optional pair is included when either endpoint is selected, with probability $2\rho-\rho^2$. At $\rho=.3$, this is $.51$, not $.3$. For exactly $K$ uniformly selected nodes among $N$, the probability is $1-(N-K)(N-K-1)/(N(N-1))$. Real score-based selection correlates with local geometry, so these formulas are illustrations rather than cost estimates. Equation~\ref{eq:budget} directly controls retained optional pairs without a homogeneity assumption.
+% NOISE_AUGMENTATION_INSERT
+
+% TIE_SYMMETRY_INSERT
+
+% NONADDITIVE_ALLOCATION_INSERT
+
+\section{Compact WaterDrop study and exploratory follow-ups}
+\label{sec:compact-study}
+\subsection{Controlled WaterDrop pilot}
+The new pilot uses the first eight complete training trajectories, three validation trajectories, and three test trajectories from the official public WaterDrop splits. It verifies TFRecord checksums and cross-split record hashes. We preselect 24 frames per training trajectory and 12 per validation/test trajectory, giving 192 training and 36 validation/test states. This convenience subset is small and is not a replacement for the benchmark split.
+
+A compact network uses a six-frame history, normalized velocity and wall-distance inputs, width 48, three message-passing blocks, and an additive variance floor of $10^{-5}$. It omits training noise and uses the official normalization statistics consistently. For each of five paired random seeds, corrected NLL, beta-NLL ($\beta=.5$), and faithful regression train for a fixed 3,000 updates with Adam at $10^{-3}$. Graph augmentation uniformly samples extra-pair fractions from $\{0,.25,.5,1\}$. All objectives share initialization and frame/graph schedules. Selection uses the final update, rather than test performance.
+
+At each observed evaluation state we compare base, dense, random, speed, current-risk, and previous-base-risk selectors. The last four retain exactly one quarter of the optional annulus pairs, rounded down. The previous-base-risk diagnostic obtains its score from the previous observed state's base graph; it is not a cached score from a free adaptive rollout. Current-risk scoring requires an extra pass. MSE is normalized one-step acceleration MSE, not position rollout MSE. Means and standard deviations across five seeds remain conditional on only three test trajectories. Policy sampling and training variation are both present in the random control.
+
+% PILOT_RESULTS_INSERT
+
+Corrected NLL gives the lowest mean one-step error in this pilot; the faithful objective does not improve the mean predictor here. Within faithful regression, current-risk allocation is modestly better than random allocation, but it incurs an extra scoring pass. Previous-base risk is worse than random under corrected NLL and beta-NLL. As a post-hoc descriptive reference, predicting zero normalized acceleration (the training-metadata mean second difference) gives test MSE 3.80036 on these same frames. This further limits any interpretation of the compact faithful model as an improved simulator.
+
+\subsection{Does risk predict the benefit of more edges?}
+We additionally freeze every pilot model and compare base and fully expanded predictions on the same preselected states. For each particle, the signed benefit is base vector squared residual minus dense vector squared residual. We compute rank correlations within each frame, then average frames within trajectory and trajectories within seed. This is an exploratory dense-intervention diagnostic, not a marginal single-edge utility label.
+
+On the three test trajectories, risk--error Spearman correlations are $.265\pm.152$, $.419\pm.074$, and $.336\pm.052$ for faithful, NLL, and beta-NLL respectively. Risk--benefit correlations are $.024\pm.195$, $-.041\pm.042$, and $-.022\pm.055$. The uncertainties are sample standard deviations of five seed means. The gap between these two diagnostics supports treating residual prediction and useful allocation as distinct tasks. It does not prove every uncertainty-guided policy fails. Signed improvements and harmful interventions are both retained in the released measurements.
+
+\paragraph{Kinematics and inexpensive controls.}
+On the same inspected pilot test frames, exploratory strain--risk correlations remain positive after ranked neighbor-count, speed, and wall-clearance adjustment: $.167\pm.025$, $.283\pm.059$, and $.196\pm.014$ for faithful, NLL, and beta-NLL. Adjusted vorticity associations are weaker (Appendix~\ref{sec:physical-rank}). These kinematic associations do not establish allocation value. At the same pair budget, local velocity RMS changes NLL test error by $-.309\pm.181\%$ versus random and $-.659\pm.219\%$ versus previous-base risk. These are means and sample SDs of within-seed percentage changes. Faithful test means favor risk policies; beta-NLL's velocity-RMS comparison with random changes sign across splits. Appendix~\ref{sec:physical-allocation} retains both cheap controls and all outcomes. This is exploratory one-step evidence; rollout and speed advantages remain untested.
+
+\subsection{Exploratory benefit prediction}
+For a base residual $r_i=y_i-\mu_{r,i}$ and dense prediction change $\Delta_i=\mu_{R,i}-\mu_{r,i}$, signed benefit equals
+\begin{equation}
+ \|r_i\|^2-\|r_i-\Delta_i\|^2
+ =2r_i^\top\Delta_i-\|\Delta_i\|^2.
+\end{equation}
+This identity makes the missing directional information explicit. As an exploratory extension after inspecting the pilot, we fit a ridge regressor to this signed label using detached base-graph node embeddings from each frozen model. Only the 192 training frames enter fitting; features are standardized on training data, the intercept is unpenalized, and the ridge coefficient is fixed to $10^{-3}$. No validation or test labels enter the fit. The max-endpoint pair selector uses the same 25\% optional budget and requires a base scoring pass.
+
+Test MSE for this selector is $4.0529\pm.2169$, $3.6319\pm.0187$, and $3.7053\pm.1365$ for faithful, NLL, and beta-NLL. Its paired differences from random allocation are $+.0102\pm.0293$, $-.0095\pm.0072$, and $-.0088\pm.0108$. NLL and beta-NLL improve on random in all five seeds, but dense has lower mean error than the benefit-head policy for each objective. Predicted-benefit--label rank correlations are only $.060\pm.075$, $.005\pm.032$, and $.023\pm.044$. Thus the candidate does not establish reliable benefit prediction, general superiority, or a speed advantage. Dense labels also differ from marginal single-edge utility. Reusing the already inspected test subset limits this result to hypothesis generation.
+
+% ROLLOUT_RESULTS_INSERT
+
+
+
+\section{Objective and normalization details}
+\label{sec:implementation-details}
+The repaired full-model format-v2 checkpoints store all normalization parameters; evaluation uses them without injecting training noise. Compact pilot checkpoints instead depend on a separate, hashed copy of the official metadata, included with the results.
+
+The pilot uses the additive floor shown in Equation~\ref{eq:nll}; the repaired original trainer instead clamps its positive head output from below.
+
+Our original-code implementation also supports its conventional $R_i$ mean-loss scale; the pilot uses Equation~\ref{eq:faithful} consistently.
+
+Separate clipping of mean-path and risk-head gradients preserves faithful separation; shared clipping can otherwise reintroduce coupling.
+
+The beta-NLL pilot uses
+$\operatorname{sg}(q_i^{1/2})\ell_{\mathrm{NLL},i}$.
+Its mean-output derivative is $q_i^{-1/2}e_i$. More generally beta $=1$ restores the mean-output squared-error derivative but does not prevent variance gradients from updating shared features \citep{stirn2023}.
+
+The reference sorts $K=|C_R|$ scores in $O(K\log K)$ time with $O(K)$ score/index storage, in addition to candidate construction and graph storage. The budget bounds neither total memory nor runtime. ID-lexicographic tie-breaking is deterministic but not permutation equivariant at ties; symmetric pairs alone imply no conservation law.
+
+The compact pilot's cached-risk controller makes its first forecast on the base graph to obtain its initial score. The locked full-model evaluator charges a separate base scoring pass and applies the budget from forecast 1. Later forecasts select current candidates with cached scores, run one simulator pass, integrate, and update the cache. No labels or future positions enter this rule. A current-score reference requires another pass. Observed-history selectors are evaluated separately.
+
+\section{Fixed original-architecture extension}
+\label{sec:full-protocol}
+This prospective extension was fixed on October 4, 2026 after the compact pilot
+and before its own full-model outcomes. It is not a preregistration of the
+overall research process. All 1,000 official training and 30 validation
+trajectories have checksum-verified numeric manifests. Each objective at seeds
+0, 1, and 2 uses batch size two and Adam with learning rate decaying from
+$10^{-4}$ to $10^{-5}$ over 100,000 updates. Initialization and frame/noise
+schedules are paired across objectives. Validation uses 128 fixed clean
+histories every 5,000 updates, with stored noise-adjusted training normalization.
+Neither validation nor test error selects the final checkpoint. Interrupted,
+failed, and incomplete runs are retained as such; shorter checkpoints do not
+replace the specified final models.
+
+Recovery restores hashed model, optimizer, and random-generator states under
+the same configuration. Native Metal replay after an interruption produced
+different logged losses despite matching sampled frames and learning rates;
+state restoration therefore does not imply bitwise-identical optimization.
+Interrupted-attempt logs and replayed work are retained separately for timing.
+The six retained trainer counters sum to $82{,}441.655$ seconds; current
+job timestamp intervals sum to $75{,}750.066$ seconds. These scopes differ:
+faithful seed 0 starts after recovery but retains earlier elapsed time.
+NLL seed 2 spans $15{,}085.684$ timestamp seconds versus $13{,}306.718$
+counter seconds; the $1{,}778.965$-second difference has no verified cause.
+Neither quantity measures GPU busy time or a fair objective-speed comparison.
+
+The training graph uses the original capped radius rule and self loops.
+Evaluation supplies uncapped symmetric pairs without self loops under every
+policy, so this is not an exact reproduction of the historical graph pipeline.
+Base, radius-$1.267r$ dense, random-25\%, speed-25\%, and cached-risk-25\%
+policies are fixed. The latter three retain
+$\lfloor.25|C_R(x)|\rfloor$ optional pairs. Cached risk pays for one explicit
+base-graph scoring pass on the initial six observed frames and uses the exact
+budget from its first forecast; later scores come from its own selected graph.
+Only the initial six positions are observed during the 995-step rollout.
+
+The reserved evaluation uses official test source indices 3--29. The first
+three trajectories and historical aggregate benchmark results have already
+been inspected, so these results cannot be described as pristine independent
+confirmation. Failures before 995 steps and mean full-horizon position MSE
+are primary outcomes. Resource guards reject nonfinite predictions or risks,
+absolute coordinates above 10, or more than 100,000 candidate unordered pairs.
+A required failed or missing trajectory makes its group's all-sample
+full-horizon error undefined. Boundary excursions with truth references are
+reported separately: computational completion does not certify physical
+validity. Aggregation gives equal-trajectory means within each training seed,
+then all three seed values and their sample standard deviation. Same-state
+placement, signed dense-intervention benefit, and synchronized timing are
+separate diagnostics. The 100,000-update budget is shorter than the historical
+500,000-update training; no superiority or convergence claim follows from
+implementing this protocol.
+
+
+\paragraph{Six completed models; paired validation.}
+At the October 5, 2026, 16:03 UTC snapshot, faithful and corrected-NLL
+seeds 0--2 have each completed the specified 100,000 updates.
+All six final checkpoint file hashes and all 126 scheduled
+clean-validation records are verified and retained. Across the three faithful seeds, final coordinate MSE is
+$0.00864272\pm0.00047951$, binned vector-risk gap is
+$0.01056813\pm0.00203824$, and constant-free Gaussian NLL is
+$-4.269077\pm0.042800$ (mean and sample standard deviation).
+These are clean normalized-acceleration validation diagnostics.
+At seed 0, coordinate MSE is $0.00811862$ for faithful and $0.00945431$
+for NLL ($16.45\%$ higher); binned vector-risk gaps are $0.01228642$ and
+$0.00663060$ ($46.03\%$ lower for NLL), while constant-free Gaussian NLL
+is $-4.28672$ and $-4.48935$. At seed 1, coordinate MSE is $0.00905942$
+and $0.01003003$ ($10.71\%$ higher for NLL); gaps are $0.00831614$ and
+$0.00484836$ ($41.70\%$ lower for NLL), and Gaussian NLL is $-4.30024$
+and $-4.43652$. At seed 2, NLL coordinate MSE is $0.00897528$,
+gap $0.00754457$, and Gaussian NLL $-4.546913$: MSE is $2.57\%$
+higher and gap $32.04\%$ lower than faithful. All three pairs
+exhibit higher MSE and smaller binned gaps for NLL. Its three-seed
+mean and sample standard deviation are $0.00948654\pm0.00052811$
+for MSE, $0.00634118\pm0.00137120$ for gap, and
+$-4.490928\pm0.055212$ for Gaussian NLL. Paired NLL-minus-faithful
+differences are $0.00084382\pm0.00056601$,
+$-0.00422696\pm0.00123824$, and $-0.221851\pm0.096620$, respectively.
+Averaging the three within-seed percentage differences gives $9.91\pm6.97\%$ higher
+MSE and $39.92\pm7.16\%$ smaller gap, rather than ratios of group means.
+Three seeds support descriptive comparison, not a strong significance claim.
+Adverse outcomes remain recorded. Both seed-0 final gaps worsen from
+95,000 updates ($0.00712952$ faithful; $0.00590052$ NLL); the NLL
+likelihood score worsens from $-4.49766$ despite coordinate MSE changing
+by less than $0.01\%$. Its earlier 5,000-update MSE was $0.03379660$
+versus initialization $0.02112561$. At seed 1, final MSE worsens by
+$2.74\%$ for faithful and $6.62\%$ for NLL versus 95,000 updates,
+despite smaller gaps and better likelihood; their gaps had increased
+$77.69\%$ and $45.51\%$, respectively, at 95,000 updates.
+Faithful seed 2 ends at MSE $0.00875011$, gap $0.01110184$ and NLL
+$-4.220276$; its final gap worsens $16.21\%$ from 95,000 updates despite
+improving MSE and likelihood. Its earlier 90,000- and 95,000-update MSE
+and likelihood reversals are also retained. NLL seed 2 has a
+$124.14\%$ gap increase at 90,000 updates, a $2.22\%$ MSE increase
+and $0.069203$ likelihood worsening at 95,000, and a $16.27\%$ gap
+increase at the final checkpoint despite lower MSE and better likelihood.
+All earlier adverse intervals remain in the 126-point record.
+All scheduled updates now have three-seed summaries for both objectives.
+At 16:05 UTC, after verifying model completion and inactivity, the
+official test source passed checksum and conversion checks and the locked
+evaluation began on indices 3--29 and completed at 20:22 UTC.
+Appendix~\ref{sec:full-results} reports all policy, failure, boundary,
+same-state and runtime results. These observations
+do not establish convergence, conditional calibration, useful allocation
+or a runtime advantage.
+
+% FULL_EVALUATION_APPENDIX_INSERT
+
+% FULL_ACTION_APPENDIX_INSERT
+
+% OPTIONAL_EXPOSURE_APPENDIX_INSERT
+
+% GRAPH_BRIDGE_APPENDIX_INSERT
+
+\section{Exploratory risk--kinematics diagnostic}
+\label{sec:physical-rank}
+We additionally postprocess the saved compact-pilot scores on all 36 validation
+and 36 previously inspected test frames for each of the 15 models. This
+exploratory analysis was specified after the pilot outcomes were inspected;
+it does not provide independent confirmation or change the fixed full-model
+experiment. It requires no new model inference.
+
+For target index $t$, let $z_i=x_i^{t-1}$ and
+$u_i=x_i^{t-1}-x_i^{t-2}$. For strict radius-$0.015$ neighbors without self
+pairs, estimate a local velocity gradient by
+\begin{equation}
+ \widehat L_i=\operatorname*{arg\,min}_{L\in\mathbb R^{2\times2}}
+       \sum_{j\in\mathcal N_i}\|(u_j-u_i)-L(z_j-z_i)\|^2.
+\end{equation}
+We require at least three neighbors, spatial rank two and Gram-matrix
+condition number at most $10^6$, with no regularization or imputation.
+Primary descriptors are strain norm
+$\|({\widehat L_i+\widehat L_i^\top})/2\|_F$ and absolute vorticity
+$|\widehat L_{i,21}-\widehat L_{i,12}|$. These are observed kinematic
+quantities per stored frame, not a definition of physical complexity or
+model uncertainty. No target position is used to form them.
+
+We correlate each descriptor with the saved positive base-graph risk using
+within-frame average-rank Spearman correlation. For the adjusted variant,
+regress both rank vectors on an intercept and ranks of neighbor count,
+speed and minimum signed box-plane clearance, then correlate their residuals.
+The fixed SVD tolerance is $10^{-12}$; fewer than three residual degrees of
+freedom or residual norm at most $10^{-10}$ times the centered-rank norm
+makes the coefficient undefined. This is a descriptive adjustment, not a
+causal or conditional-independence test.
+
+Geometry-valid masks are shared across every objective and seed. They retain
+15,908 of 16,572 validation and 17,506 of 18,096 test particle--frame pairs
+(95.99\% and 96.74\%); test-frame coverage ranges from 88.05\% to 99.66\%.
+All 36 frame coefficients for every reported metric and model are defined.
+We average equally over 12 frames per trajectory, three trajectories per
+split and five training seeds; uncertainty below is sample seed SD, not a
+confidence interval over the trajectory population. No particle-level
+$p$-values are reported. The implementation retains undefined outcomes,
+coverage and risk distributions for excluded particles.
+
+\begin{table}[ht]
+\centering\small
+\caption{Exploratory compact-pilot correlations with observed kinematics.
+``Adjusted'' denotes the rank-residual calculation above. Both splits were
+previously inspected; these are averages of within-frame coefficients.}
+\label{tab:physical-rank}
+\begin{tabular}{llrrrr}
+\toprule
+Objective & Split & Strain & Adjusted strain & Vorticity & Adjusted vorticity\\
+\midrule
+Faithful & valid & $0.312\pm0.041$ & $0.160\pm0.027$ & $0.181\pm0.032$ & $0.084\pm0.026$\\
+Faithful & test & $0.236\pm0.021$ & $0.167\pm0.025$ & $0.098\pm0.009$ & $0.041\pm0.019$\\
+NLL & valid & $0.442\pm0.037$ & $0.311\pm0.033$ & $0.212\pm0.036$ & $0.077\pm0.024$\\
+NLL & test & $0.397\pm0.057$ & $0.283\pm0.059$ & $0.213\pm0.052$ & $0.061\pm0.053$\\
+$\beta$-NLL & valid & $0.371\pm0.020$ & $0.232\pm0.028$ & $0.191\pm0.022$ & $0.067\pm0.020$\\
+$\beta$-NLL & test & $0.310\pm0.011$ & $0.196\pm0.014$ & $0.157\pm0.015$ & $0.026\pm0.016$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Strain retains a positive spatial association after adjustment, whereas
+adjusted vorticity associations are smaller. These observations do not
+establish useful edge allocation. On the identical test fit masks,
+risk--error correlations are $.254\pm.150$, $.411\pm.075$ and $.327\pm.052$
+for faithful, NLL and beta-NLL, while risk--dense-benefit correlations are
+$.025\pm.193$, $-.051\pm.045$ and $-.042\pm.058$.
+Whole-dense benefit is neither necessary nor sufficient for a useful
+selected subset and shares base error algebraically. Actual budgeted-policy
+accuracy, failures and runtime remain the relevant allocation tests.
+
+The scalar artifact retains all seeds, frames and secondary correlations
+with absolute divergence, neighbor-velocity RMS difference, neighbor count,
+speed, signed wall clearance and observed acceleration magnitude. It also
+retains unconditional and explicitly conditional aggregation, with no
+omission of entire trajectories or seeds. Input-summary, data, raw-array,
+source and protocol hashes are recorded. The CPU postprocess took 2.943
+seconds; this is not policy inference time. The 122 focused synthetic tests
+cover analytic flows, rank calculations, missingness and provenance joins.
+
+
+\section{Exploratory cheap physical allocation controls}
+\label{sec:physical-allocation}
+The preceding correlations motivate a more direct selected-edge comparison.
+After inspecting those correlations, we specified two elementary controls and
+reused all 15 fixed compact checkpoints and the identical 36 validation and
+36 inspected test frames per model. This is a separate exploratory follow-up,
+not independent confirmation or a change to the fixed full-model policies.
+Neither score is fitted to prediction errors.
+
+Let $d_i$ be particle $i$'s mandatory-base degree and let
+$u_i=x_i^{t-1}-x_i^{t-2}$ use only observed positions, converted to float64
+before subtraction. The inverse-count score is $-d_i$; the velocity-RMS score is
+\begin{equation}
+ s_i=\left(d_i^{-1}\sum_{j\in\mathcal N_i}\|u_j-u_i\|^2\right)^{1/2}
+ \quad(d_i>0),\qquad s_i=0\quad(d_i=0).
+\end{equation}
+The zero value for isolated particles is an explicit empty-neighborhood
+convention. All particles participate; no strain-fit eligibility mask is used.
+Both controls rank annulus pairs by maximum endpoint score and retain exactly
+$\lfloor .25|C_R(x)|\rfloor$ pairs, with the original mandatory graph and ID
+tie rule. These scores use the original pilot base pairs, including its float32
+radius comparison; they are not silently substituted for the earlier
+strict-float64 physical-correlation neighborhoods.
+
+All six original policies were replayed under the same checkpoint, frame
+identities and random-selector schedule before accepting a comparison.
+All 6,480 frame-policy checks passed identical edge counts and the fixed
+MSE tolerance (relative $2\times10^{-5}$, absolute $10^{-7}$), with maximum
+absolute MSE difference $1.12\times10^{-5}$. The previous-risk control uses
+the previous observed base graph, not an autonomous cached-own-graph state.
+Table~\ref{tab:physical-allocation-mse} gives equal-trajectory one-step
+coordinate MSE, averaged over five seeds with sample seed SD.
+
+\begin{table}[ht]
+\centering\small
+\caption{New physical controls on the fixed compact pilot. Both splits were
+previously inspected. The original control measurements and all paired
+comparisons are retained in the scalar results.}
+\label{tab:physical-allocation-mse}
+\begin{tabular}{llrr}
+\toprule
+Objective & Split & Inverse-count MSE & Velocity-RMS MSE\\
+\midrule
+Faithful & valid & $0.2147\pm0.0161$ & $0.2143\pm0.0162$\\
+Faithful & test & $4.0604\pm0.2193$ & $4.0425\pm0.2163$\\
+NLL & valid & $0.2710\pm0.0081$ & $0.2708\pm0.0080$\\
+NLL & test & $3.6413\pm0.0178$ & $3.6301\pm0.0171$\\
+$\beta$-NLL & valid & $0.2306\pm0.0147$ & $0.2332\pm0.0156$\\
+$\beta$-NLL & test & $3.7206\pm0.1299$ & $3.6980\pm0.1311$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering\small
+\caption{Paired test percentage MSE differences: physical control minus the
+specified comparator, divided by comparator MSE separately within each seed.
+Entries are five-seed means and sample SD, in percent; negative favors the
+physical control. These are not confidence intervals or percentages of group means.}
+\label{tab:physical-allocation-paired}
+\begin{tabular}{llrrr}
+\toprule
+Objective & Physical control & vs. random & vs. current risk & vs. previous risk\\
+\midrule
+Faithful & Inverse count & $0.429\pm0.463$ & $1.154\pm1.167$ & $0.740\pm0.839$\\
+Faithful & Velocity RMS & $-0.011\pm0.238$ & $0.710\pm0.987$ & $0.299\pm0.713$\\
+NLL & Inverse count & $-0.002\pm0.060$ & $-0.001\pm0.180$ & $-0.353\pm0.041$\\
+NLL & Velocity RMS & $-0.309\pm0.181$ & $-0.309\pm0.177$ & $-0.659\pm0.219$\\
+$\beta$-NLL & Inverse count & $0.176\pm0.170$ & $0.380\pm0.557$ & $-0.325\pm0.295$\\
+$\beta$-NLL & Velocity RMS & $-0.432\pm0.506$ & $-0.231\pm0.201$ & $-0.928\pm0.929$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Velocity RMS improves NLL test error relative to random, speed, current risk
+and previous risk in all five seeds, but dense NLL remains more accurate.
+Faithful test means favor both risk policies over the new controls. For
+beta-NLL velocity RMS, mean within-seed percentage differences from random
+are $-0.432\%$ on test and $+0.883\%$ on validation; the split disagreement
+is retained. Inverse count also gives mixed results. The experiment therefore
+supports including cheap physical controls, not a general superiority claim
+for either new heuristic or a test-driven policy selection.
+
+Cutoff ties split the inverse-count budget in 35/36 validation and 36/36 test
+frames, and the velocity-RMS budget in 27/36 and 21/36 respectively. Equal
+pair priorities can arise from a shared maximum-score endpoint, even without
+tied node scores. These frequencies quantify reliance on the ID tie rule;
+they do not measure the prediction effect of relabeling particles. The 37
+validation and 53 test isolated particle--frame pairs are retained.
+
+All 1,080 frame/model evaluations and both new policies completed. The
+single-thread CPU attempt took 37.737 seconds during full-model training.
+Shared graph preparation, reused base predictions and concurrent work prevent
+interpreting this operational time as a fair deployment-speed comparison.
+Per-frame errors, selected pairs, score/tie diagnostics and hashes are
+preserved, with immutable raw archives and explicit failed-frame handling.
+The 54 synthetic checks passed before inference. These compact observed-state
+results establish neither autonomous-rollout stability nor full-architecture
+accuracy or cost advantages.
+
+\end{document}
