@@ -1,0 +1,41 @@
+{
+  "schema": "adaptgns_sand_final_evaluation_scoped_independent_review_code_audit_v1",
+  "status": "passed",
+  "source_sha256": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+  "tests_sha256": "f2cffb0aea23df744d2b9713faeaaa46924d2874e94717c5c98a15618725e0f6",
+  "independent_tests": {
+    "passed": 9,
+    "seconds": 0.78,
+    "log": "sand_final_evaluation_scoped_independent_code_audit_attempt1.log",
+    "sha256": "61ec84121d1b1f436e4d7dfe6c8b9453d1009e5eadfa736f23a6adafac5de0a3"
+  },
+  "engine": {
+    "source_sha256": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+    "function_code_objects_identical": [
+      "execute_queue",
+      "observe_gpu_scope",
+      "account_stage",
+      "expected_cells",
+      "load_lifecycle",
+      "flags",
+      "recheck_files"
+    ],
+    "only_private_operational_overrides": [
+      "SCHEMA",
+      "DEADLINE"
+    ],
+    "source_bytes_unchanged": true
+  },
+  "admission_review": [
+    "Exact Sand six100k cohort metadata and all selected checkpoint bytes/source checked via frozen E.check_cohort before any split preflight/manifest is read",
+    "Both valid/test source contracts checked using unchanged E.check_split, with bound checksum/conversion/duplicate-census preflight receipts",
+    "A seeds1/2GPU0..3; Bseed0GPU2/3; pinned lexical Python/target/config and original numerical source closure; exact direct evaluator argv",
+    "Four original quotas7200/1800/1800/900 plus15s cleanup each;11760s stream, explicit3600s analysis reserve before04:00UTC",
+    "Acquisition/cohort phases must already be separately accounted; no automatic testacquisition, retry, endpointpromotion or scientificadmission by this wrapper",
+    "Root release raw bytes checked before and after engine; full releasedsource/input bytes rechecked before running, at end, and fresh launch-clock checks retain reserve"
+  ],
+  "inherited_lifecycle_scope": "Previously reviewed a13ca1bc engine functions unchanged, registered owned children only, native identity-aware signals and scoped full GPU inventory retained. No repeated broad lifecycle testing.",
+  "scientific_limits": "Opaque synthetic checkpoints/cohort/preflight fixtures and scalar-only source review; no actual checkpoint deserialization, data arrays, GPU, remote query, inference or training. Dedicated root scientific and actual-process admission remain required.",
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

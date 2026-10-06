@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_sand_reserved_test_publication_code_audit_v1.py", line 105, in <module>
+    main()
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_sand_reserved_test_publication_code_audit_v1.py", line 28, in main
+    assert hashlib.sha256(raw).hexdigest() == args.expected_sha
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

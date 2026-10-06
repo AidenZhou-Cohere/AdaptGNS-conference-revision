@@ -1,0 +1,1779 @@
+F............FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF.....FFF.FFF....        [100%]
+=================================== FAILURES ===================================
+___ test_scoped_collection_preserves_unassigned_activity_and_all_stage_cells ___
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_scoped_colle...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_scoped_collection_preserv0/collection_release.json'))
+
+    def test_scoped_collection_preserves_unassigned_activity_and_all_stage_cells(queue):
+>       result=M.collect(*queue)
+               ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_______________ test_rejected_raw_inventory_preserved_as_pending _______________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_rejected_raw...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_rejected_raw_inventory_pr0/collection_release.json'))
+
+    def test_rejected_raw_inventory_preserved_as_pending(queue):
+        root=queue[0];path=root/'gpu_observations.json';r=M.json_snapshot(path)[0]
+        r['observations'].append({'utc':'synthetic-rejected','validation':'pending','raw_gpu_processes':[{'pid':888,'gpu_uuid':UUIDS[2]}]})
+>       put(path,r);refresh(*queue);result=M.collect(*queue)
+                                           ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:205: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+___________ test_guarded_prefix_partial_and_stale_aggregate_retained ___________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_guarded_prefix_partial_an0')
+
+    def test_guarded_prefix_partial_and_stale_aggregate_retained(tmp_path):
+        queue=make_queue(tmp_path,completed=200);root=queue[0];directory=root/'jobs/base_seed0/full_rollout_test'
+        path=directory/'result.json';r=M.json_snapshot(path)[0];r['rows']=[];put(path,r)
+        (directory/'unfinished.npz.tmp').write_bytes(b'unfinished evidence')
+        refresh(*queue)
+>       result=M.collect(*queue);stage=result['stages'][0]
+               ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:215: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+________ test_collection_mutation_blocks_publication[row-during_parse] _________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block0/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108898e60>
+when = 'during_parse', target = 'row'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block0/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_____ test_collection_mutation_blocks_publication[row-during_aggregation] ______
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block1/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108a6f830>
+when = 'during_aggregation', target = 'row'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block1/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+____ test_collection_mutation_blocks_publication[row-during_serialization] _____
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block2/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108950d40>
+when = 'during_serialization', target = 'row'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block2/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+______ test_collection_mutation_blocks_publication[new_file-during_parse] ______
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block3/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108a7d340>
+when = 'during_parse', target = 'new_file'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block3/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+___ test_collection_mutation_blocks_publication[new_file-during_aggregation] ___
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block4/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block4')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10878fcb0>
+when = 'during_aggregation', target = 'new_file'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block4/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+__ test_collection_mutation_blocks_publication[new_file-during_serialization] __
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block5/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block5')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10880d8e0>
+when = 'during_serialization', target = 'new_file'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block5/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+___ test_collection_mutation_blocks_publication[new_directory-during_parse] ____
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block6/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block6')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1089d1ee0>
+when = 'during_parse', target = 'new_directory'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block6/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[new_directory-during_aggregation] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block7/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block7')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108898440>
+when = 'during_aggregation', target = 'new_directory'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block7/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[new_directory-during_serialization] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block8/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block8')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108a6cbf0>
+when = 'during_serialization', target = 'new_directory'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block8/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_____ test_collection_mutation_blocks_publication[amendment-during_parse] ______
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block9/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block9')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108919ca0>
+when = 'during_parse', target = 'amendment'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block9/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+__ test_collection_mutation_blocks_publication[amendment-during_aggregation] ___
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block10/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block10')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108812990>
+when = 'during_aggregation', target = 'amendment'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block10/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[amendment-during_serialization] __
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block11/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block11')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1089f54c0>
+when = 'during_serialization', target = 'amendment'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block11/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+____ test_collection_mutation_blocks_publication[root_release-during_parse] ____
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block12/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block12')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1089cbd40>
+when = 'during_parse', target = 'root_release'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block12/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[root_release-during_aggregation] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block13/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block13')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10876d880>
+when = 'during_aggregation', target = 'root_release'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block13/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[root_release-during_serialization] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block14/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block14')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108b2b980>
+when = 'during_serialization', target = 'root_release'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block14/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_____ test_collection_mutation_blocks_publication[own_source-during_parse] _____
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block15/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block15')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1088979b0>
+when = 'during_parse', target = 'own_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block15/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+__ test_collection_mutation_blocks_publication[own_source-during_aggregation] __
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block16/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block16')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108951eb0>
+when = 'during_aggregation', target = 'own_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block16/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[own_source-during_serialization] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block17/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block17')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108914770>
+when = 'during_serialization', target = 'own_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block17/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+___ test_collection_mutation_blocks_publication[frozen_source-during_parse] ____
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block18/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block18')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1089d39b0>
+when = 'during_parse', target = 'frozen_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block18/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[frozen_source-during_aggregation] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block19/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block19')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1088137a0>
+when = 'during_aggregation', target = 'frozen_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block19/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_ test_collection_mutation_blocks_publication[frozen_source-during_serialization] _
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_m...9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block20/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block20')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108a7f650>
+when = 'during_serialization', target = 'frozen_source'
+
+    @pytest.mark.parametrize('when',['during_parse','during_aggregation','during_serialization'])
+    @pytest.mark.parametrize('target',['row','new_file','new_directory','amendment','root_release','own_source','frozen_source'])
+    def test_collection_mutation_blocks_publication(queue,tmp_path,monkeypatch,when,target):
+        # Source-race tests inject hash changes; never touch frozen source bytes.
+        root,cohort,amendment,release=queue;output=tmp_path/'published.json';changed=False
+        original_sha=M.sha
+        def mutate():
+            nonlocal changed
+            if changed:return
+            changed=True
+            if target=='row':
+                p=root/'jobs/base_seed0/full_rollout_test/trajectory_000000_base.json';p.write_bytes(p.read_bytes()+b' ')
+            if target=='new_file':(root/'late.txt').write_text('late')
+            if target=='new_directory':(root/'late_empty').mkdir()
+            if target=='amendment':amendment.write_text('mutated')
+            if target=='root_release':release.write_bytes(release.read_bytes()+b' ')
+            if target in ('own_source','frozen_source'):
+                name=Path(M.__file__) if target=='own_source' else M.HERE/'summarize_goop_graph_support_quota_v2.py'
+                monkeypatch.setattr(M,'sha',lambda p:'0'*64 if Path(p)==name else original_sha(p))
+        if when=='during_parse':
+            original=M.json_snapshot
+            def intercept(path,expected=None):
+                value=original(path,expected)
+                if str(path).endswith('trajectory_000000_base.json'):mutate()
+                return value
+            monkeypatch.setattr(M,'json_snapshot',intercept)
+        if when=='during_aggregation':
+            original=M.validate_rollout
+            def intercept(*a):
+                result=original(*a);mutate();return result
+            monkeypatch.setattr(M,'validate_rollout',intercept)
+        if when=='during_serialization':
+            original=M.encode
+            def intercept(value):
+                raw=original(value);mutate();return raw
+            monkeypatch.setattr(M,'encode',intercept)
+        with pytest.raises(ValueError):M.publish(output,M.collect(*queue))
+>       assert not output.exists() and changed
+E       AssertionError: assert (not False and False)
+E        +  where False = exists()
+E        +    where exists = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_mutation_block20/published.json').exists
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:260: AssertionError
+_______________ test_all24_and_scientific_golden_equal_frozen_v2 _______________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_all24_and_scientific_gold0')
+
+    def test_all24_and_scientific_golden_equal_frozen_v2(tmp_path):
+>       collections,release,receipts=make_analysis(tmp_path);result=M.summarize(collections,release)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:274: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_____ test_complete_and_adverse_pure_scientific_functions_identical[False] _____
+
+adverse = False
+
+    @pytest.mark.parametrize('adverse',[False,True])
+    def test_complete_and_adverse_pure_scientific_functions_identical(adverse):
+        stages=complete_stages()
+        if adverse:
+            stages[0]['rows'][0]=rollout_row('base',0,0,'base',completed=201)
+            stages[0]['cells'][0].update(state='recorded_failed_outcome',failure={'category':'coordinate_guard'})
+>       assert as_goop_names(M.full_summary(stages))==F.M.full_summary(as_goop_stages(stages))
+                             ^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:139: in full_summary
+    metrics, prefix = validate_rollout(row, arm, seed); rows[key] = metrics
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+row = {'arm': 'base', 'training_seed': 0, 'objective': 'faithful', 'source_index': 0, ...}
+arm = 'base', seed = 0
+
+    def validate_rollout(row, arm, seed):
+        require(row.get('arm') == arm and row.get('training_seed') == seed and type(row.get('training_seed')) is int
+                and row.get('objective') == 'faithful' and row.get('horizon') == 314
+                and row.get('policy') in POLICIES and type(row.get('source_index')) is int and 0 <= row['source_index'] < 30,
+                'Rollout identity/horizon differs')
+        completed = row.get('completed_steps')
+        require(type(completed) is int and 0 <= completed <= 314 and row.get('status') in ('complete', 'failed'), 'Invalid rollout endpoint/status')
+        mse = row.get('mse_per_step')
+        require(isinstance(mse, list) and len(mse) == completed and all(finite(v, True) for v in mse), 'Invalid accepted MSE prefix')
+        complete = row['status'] == 'complete'
+        require(complete == (completed == 314) and (row.get('failure') is None if complete else isinstance(row.get('failure'), dict)),
+                'Complete/failed outcome inconsistent')
+        if complete:
+            require(close(row.get('mean_rollout_mse'), statistics.fmean(mse)) and close(row.get('mse_at_final_horizon'), mse[-1]), 'Saved full-horizon MSE arithmetic differs')
+        else:
+            require(row.get('mean_rollout_mse') is None and row.get('mse_at_final_horizon') is None
+                    and isinstance(row['failure'].get('category'), str), 'Failed full-horizon MSE must remain null')
+        for step in (1, 10, 50, 200, 314):
+            v = row.get('mse_at_declared_trace_steps', {}).get(str(step))
+            require(close(v, mse[step - 1]) if completed >= step else v is None, 'Declared trace MSE differs from pointwise forecast')
+        require(finite(row.get('synchronized_call_seconds'), True) and finite(row.get('trace_publication_seconds'), True), 'Invalid measured duration')
+        metrics = {'mean_rollout_mse': statistics.fmean(mse) if complete else None,
+>                  'mse_forecast200': mse[199] if completed >= 200 else None, 'mse_forecast314': mse[394] if complete else None}
+                                                                                                 ^^^^^^^^
+E       IndexError: list index out of range
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:122: IndexError
+_____ test_complete_and_adverse_pure_scientific_functions_identical[True] ______
+
+adverse = True
+
+    @pytest.mark.parametrize('adverse',[False,True])
+    def test_complete_and_adverse_pure_scientific_functions_identical(adverse):
+        stages=complete_stages()
+        if adverse:
+            stages[0]['rows'][0]=rollout_row('base',0,0,'base',completed=201)
+            stages[0]['cells'][0].update(state='recorded_failed_outcome',failure={'category':'coordinate_guard'})
+>       assert as_goop_names(M.full_summary(stages))==F.M.full_summary(as_goop_stages(stages))
+                             ^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:289: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:139: in full_summary
+    metrics, prefix = validate_rollout(row, arm, seed); rows[key] = metrics
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+row = {'arm': 'base', 'training_seed': 0, 'objective': 'faithful', 'source_index': 0, ...}
+arm = 'base', seed = 0
+
+    def validate_rollout(row, arm, seed):
+        require(row.get('arm') == arm and row.get('training_seed') == seed and type(row.get('training_seed')) is int
+                and row.get('objective') == 'faithful' and row.get('horizon') == 314
+                and row.get('policy') in POLICIES and type(row.get('source_index')) is int and 0 <= row['source_index'] < 30,
+                'Rollout identity/horizon differs')
+        completed = row.get('completed_steps')
+        require(type(completed) is int and 0 <= completed <= 314 and row.get('status') in ('complete', 'failed'), 'Invalid rollout endpoint/status')
+        mse = row.get('mse_per_step')
+        require(isinstance(mse, list) and len(mse) == completed and all(finite(v, True) for v in mse), 'Invalid accepted MSE prefix')
+        complete = row['status'] == 'complete'
+        require(complete == (completed == 314) and (row.get('failure') is None if complete else isinstance(row.get('failure'), dict)),
+                'Complete/failed outcome inconsistent')
+        if complete:
+            require(close(row.get('mean_rollout_mse'), statistics.fmean(mse)) and close(row.get('mse_at_final_horizon'), mse[-1]), 'Saved full-horizon MSE arithmetic differs')
+        else:
+            require(row.get('mean_rollout_mse') is None and row.get('mse_at_final_horizon') is None
+                    and isinstance(row['failure'].get('category'), str), 'Failed full-horizon MSE must remain null')
+        for step in (1, 10, 50, 200, 314):
+            v = row.get('mse_at_declared_trace_steps', {}).get(str(step))
+            require(close(v, mse[step - 1]) if completed >= step else v is None, 'Declared trace MSE differs from pointwise forecast')
+        require(finite(row.get('synchronized_call_seconds'), True) and finite(row.get('trace_publication_seconds'), True), 'Invalid measured duration')
+        metrics = {'mean_rollout_mse': statistics.fmean(mse) if complete else None,
+>                  'mse_forecast200': mse[199] if completed >= 200 else None, 'mse_forecast314': mse[394] if complete else None}
+                                                                                                 ^^^^^^^^
+E       IndexError: list index out of range
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:122: IndexError
+______ test_analysis_mutation_blocks_publication[collection-aggregation] _______
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1089c98e0>
+when = 'aggregation', target = 'collection'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_____ test_analysis_mutation_blocks_publication[collection-serialization] ______
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108948080>
+when = 'serialization', target = 'collection'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+________ test_analysis_mutation_blocks_publication[release-aggregation] ________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_2')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1087918e0>
+when = 'aggregation', target = 'release'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_______ test_analysis_mutation_blocks_publication[release-serialization] _______
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_3')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108917470>
+when = 'serialization', target = 'release'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+________ test_analysis_mutation_blocks_publication[source-aggregation] _________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_4')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1088047d0>
+when = 'aggregation', target = 'source'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_______ test_analysis_mutation_blocks_publication[source-serialization] ________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_analysis_mutation_blocks_5')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x108807fe0>
+when = 'serialization', target = 'source'
+
+    @pytest.mark.parametrize('when',['aggregation','serialization'])
+    @pytest.mark.parametrize('target',['collection','release','source'])
+    def test_analysis_mutation_blocks_publication(tmp_path,monkeypatch,when,target):
+>       collections,release,_=make_analysis(tmp_path);changed=False
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:295: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+____________________ test_unverified_inputs_block_analysis _____________________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_unverified_inputs_block_a0')
+
+    def test_unverified_inputs_block_analysis(tmp_path):
+>       collections,release,_=make_analysis(tmp_path)
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:318: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+__________ test_native_identity_scope_receipts[matched_current-True] ___________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_ident...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_identity_scope_rec0/collection_release.json'))
+case = 'matched_current', accepted = True
+
+    @pytest.mark.parametrize('case,accepted',[
+        ('matched_current',True),('exited_since_inventory',True),('reused_unassigned',True),
+        ('reused_assigned',False),('wrong_native_identity',False),('matched_wrong_unassigned',False),
+        ('exited_with_identity',False),('forged_different_identity',False)])
+    def test_native_identity_scope_receipts(queue,case,accepted):
+        root=queue[0];path=root/'gpu_observations.json';value=M.json_snapshot(path)[0]
+        observation=value['observations'][0];raw=observation['raw_gpu_processes'][0];row=observation['all_gpu_processes'][0]
+        if case=='exited_since_inventory':row.update(identity_check='exited_since_inventory',current_identity=None)
+        if case in ('reused_unassigned','reused_assigned','forged_different_identity'):
+            row['identity_check']='different_process_identity'
+            if case!='forged_different_identity':row['current_identity']['start_ticks']+=1
+            if case!='reused_assigned':
+                raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='wrong_native_identity':row['current_identity']['argv']=['/fake/foreign']
+        if case=='matched_wrong_unassigned':
+            raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='exited_with_identity':row['identity_check']='exited_since_inventory'
+        put(path,value);refresh(*queue)
+        if accepted:
+>           result=M.collect(*queue);assert result['gpu_observations']==value
+                   ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_______ test_native_identity_scope_receipts[exited_since_inventory-True] _______
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_ident...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_identity_scope_rec1/collection_release.json'))
+case = 'exited_since_inventory', accepted = True
+
+    @pytest.mark.parametrize('case,accepted',[
+        ('matched_current',True),('exited_since_inventory',True),('reused_unassigned',True),
+        ('reused_assigned',False),('wrong_native_identity',False),('matched_wrong_unassigned',False),
+        ('exited_with_identity',False),('forged_different_identity',False)])
+    def test_native_identity_scope_receipts(queue,case,accepted):
+        root=queue[0];path=root/'gpu_observations.json';value=M.json_snapshot(path)[0]
+        observation=value['observations'][0];raw=observation['raw_gpu_processes'][0];row=observation['all_gpu_processes'][0]
+        if case=='exited_since_inventory':row.update(identity_check='exited_since_inventory',current_identity=None)
+        if case in ('reused_unassigned','reused_assigned','forged_different_identity'):
+            row['identity_check']='different_process_identity'
+            if case!='forged_different_identity':row['current_identity']['start_ticks']+=1
+            if case!='reused_assigned':
+                raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='wrong_native_identity':row['current_identity']['argv']=['/fake/foreign']
+        if case=='matched_wrong_unassigned':
+            raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='exited_with_identity':row['identity_check']='exited_since_inventory'
+        put(path,value);refresh(*queue)
+        if accepted:
+>           result=M.collect(*queue);assert result['gpu_observations']==value
+                   ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_________ test_native_identity_scope_receipts[reused_unassigned-True] __________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_ident...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_native_identity_scope_rec2/collection_release.json'))
+case = 'reused_unassigned', accepted = True
+
+    @pytest.mark.parametrize('case,accepted',[
+        ('matched_current',True),('exited_since_inventory',True),('reused_unassigned',True),
+        ('reused_assigned',False),('wrong_native_identity',False),('matched_wrong_unassigned',False),
+        ('exited_with_identity',False),('forged_different_identity',False)])
+    def test_native_identity_scope_receipts(queue,case,accepted):
+        root=queue[0];path=root/'gpu_observations.json';value=M.json_snapshot(path)[0]
+        observation=value['observations'][0];raw=observation['raw_gpu_processes'][0];row=observation['all_gpu_processes'][0]
+        if case=='exited_since_inventory':row.update(identity_check='exited_since_inventory',current_identity=None)
+        if case in ('reused_unassigned','reused_assigned','forged_different_identity'):
+            row['identity_check']='different_process_identity'
+            if case!='forged_different_identity':row['current_identity']['start_ticks']+=1
+            if case!='reused_assigned':
+                raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='wrong_native_identity':row['current_identity']['argv']=['/fake/foreign']
+        if case=='matched_wrong_unassigned':
+            raw['gpu_uuid']=UUIDS[1];row.update(gpu_uuid=UUIDS[1],physical_index=1,scope='observed_unassigned_device')
+        if case=='exited_with_identity':row['identity_check']='exited_since_inventory'
+        put(path,value);refresh(*queue)
+        if accepted:
+>           result=M.collect(*queue);assert result['gpu_observations']==value
+                   ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:342: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+_______________ test_snapshot_coverage_matches_final_supervisor ________________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_snapshot_cov...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_snapshot_coverage_matches0/collection_release.json'))
+
+    def test_snapshot_coverage_matches_final_supervisor(queue):
+>       root=queue[0];result=M.collect(*queue)
+                             ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:348: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+___________ test_collection_publication_exclusive_and_source_stable ____________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_p...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_publication_ex0/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_collection_publication_ex0')
+
+    def test_collection_publication_exclusive_and_source_stable(queue,tmp_path):
+        pins={name:M.sha(M.HERE/name) for name in M.SOURCE_PINS}
+>       result=M.collect(*queue);output=tmp_path/'published.json';M.publish(output,result);original=output.read_bytes()
+               ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:357: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+________ test_prechild_gpu_query_failure_has_explicit_absent_inventory _________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_prechild_gpu...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_prechild_gpu_query_failur0/collection_release.json'))
+
+    def test_prechild_gpu_query_failure_has_explicit_absent_inventory(queue):
+        import shutil
+        root=queue[0];shutil.rmtree(root/'jobs');(root/'gpu_observations.json').unlink()
+        path=root/'process_outcomes.json';process=M.json_snapshot(path)[0]
+        process.update(all_children=[],gpu_observations_sha256=None,abort_reason='synthetic initial GPU query failure')
+        for stream in process['streams']:stream['outcomes']=[]
+        put(path,process)
+        path=root/'coverage_ledger.json';ledger=M.json_snapshot(path)[0]
+        for entry in ledger['stages']:
+            outcome={'stage':entry['stage'],'state':'never_started'}
+            entry.update(outcome=outcome,**Q.account_stage('Sand',entry['stage'],root/'jobs'/entry['stream']/entry['stage'],outcome))
+        put(path,ledger)
+        path=root/'queue_status.json';status=M.json_snapshot(path)[0];status['state']='stopped_requires_review';status['coverage_ledger_sha256']=M.sha(root/'coverage_ledger.json');put(path,status)
+        receipt=M.json_snapshot(queue[3])[0];receipt['local_queue_inventory_sha256']=M.inventory_sha256(M.tree_snapshot(root));put(queue[3],receipt)
+>       result=M.collect(*queue)
+               ^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:376: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+____________ test_omitted_analysis_binding_rejected[cohort_sha256] _____________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_omitted_analysis_binding_0')
+field = 'cohort_sha256'
+
+    @pytest.mark.parametrize('field',['cohort_sha256','collection_sha256'])
+    def test_omitted_analysis_binding_rejected(tmp_path,field):
+>       collections,release,_=make_analysis(tmp_path);r=M.json_snapshot(release)[0];r.pop(field);put(release,r)
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:390: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+__________ test_omitted_analysis_binding_rejected[collection_sha256] ___________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_omitted_analysis_binding_1')
+field = 'collection_sha256'
+
+    @pytest.mark.parametrize('field',['cohort_sha256','collection_sha256'])
+    def test_omitted_analysis_binding_rejected(tmp_path,field):
+>       collections,release,_=make_analysis(tmp_path);r=M.json_snapshot(release)[0];r.pop(field);put(release,r)
+                              ^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:390: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:266: in make_analysis
+    queue=make_queue(tmp_path/role,role);c=M.collect(*queue);receipts.append(c)
+                                           ^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+____________ test_relocated_copy_preserves_original_paths_and_bytes ____________
+
+queue = (PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_relocated_co...r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_relocated_copy_preserves_0/collection_release.json'))
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-313/test_relocated_copy_preserves_0')
+
+    def test_relocated_copy_preserves_original_paths_and_bytes(queue,tmp_path):
+        import shutil
+        original,cohort,amendment,release=queue
+        copy_root=tmp_path/'relocated';shutil.copytree(original,copy_root)
+        original_snapshot=M.tree_snapshot(original);copy_snapshot=M.tree_snapshot(copy_root)
+        assert original_snapshot==copy_snapshot
+>       collected=M.collect(copy_root,cohort,amendment,release)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:400: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:329: in collect
+    require(release.get('schema') == Q_RELEASE_SCHEMA and release.get('issued_by') == 'root'
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+ok = False, message = 'Root scoped Sand queue release required'
+
+    def require(ok, message):
+>       if not ok: raise ValueError(message)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Root scoped Sand queue release required
+
+work/deadline_research_20261005/cuda_preparation/summarize_sand_graph_support_scoped_v1.py:37: ValueError
+=========================== short test summary info ============================
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_scoped_collection_preserves_unassigned_activity_and_all_stage_cells
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_rejected_raw_inventory_preserved_as_pending
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_guarded_prefix_partial_and_stale_aggregate_retained
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[row-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[row-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[row-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_file-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_file-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_file-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_directory-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_directory-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[new_directory-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[amendment-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[amendment-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[amendment-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[root_release-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[root_release-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[root_release-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[own_source-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[own_source-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[own_source-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[frozen_source-during_parse]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[frozen_source-during_aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_mutation_blocks_publication[frozen_source-during_serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_all24_and_scientific_golden_equal_frozen_v2
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_complete_and_adverse_pure_scientific_functions_identical[False]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_complete_and_adverse_pure_scientific_functions_identical[True]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[collection-aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[collection-serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[release-aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[release-serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[source-aggregation]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_analysis_mutation_blocks_publication[source-serialization]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_unverified_inputs_block_analysis
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_native_identity_scope_receipts[matched_current-True]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_native_identity_scope_receipts[exited_since_inventory-True]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_native_identity_scope_receipts[reused_unassigned-True]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_snapshot_coverage_matches_final_supervisor
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_collection_publication_exclusive_and_source_stable
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_prechild_gpu_query_failure_has_explicit_absent_inventory
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_omitted_analysis_binding_rejected[cohort_sha256]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_omitted_analysis_binding_rejected[collection_sha256]
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_relocated_copy_preserves_original_paths_and_bytes
+43 failed, 22 passed in 3.15s

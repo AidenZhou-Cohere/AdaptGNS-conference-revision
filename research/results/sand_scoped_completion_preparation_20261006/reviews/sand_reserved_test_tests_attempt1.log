@@ -1,0 +1,38 @@
+..........F......                                                        [100%]
+=================================== FAILURES ===================================
+_____ test_reuses_restricted_converter_and_preserves_failed_staging[True] ______
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-323/test_reuses_restricted_convert1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x109f34230>
+duplicate = True
+
+    @pytest.mark.parametrize('duplicate',[False,True])
+    def test_reuses_restricted_converter_and_preserves_failed_staging(tmp_path,monkeypatch,duplicate):
+        source=tmp_path/'source';row,report,values=synthetic_archive(source,duplicate=duplicate)
+        a=manual_args(tmp_path,monkeypatch,input_dir=source,acquisition_report=report);bind(a,report,source/'metadata.json',source/'test.npz')
+        monkeypatch.setattr(M,'checked_acquisition',lambda *args:row)
+        if duplicate:
+>           with pytest.raises(C.AdmissionError,match='Duplicate'):M.convert(a)
+                                                                   ^^^^^^^^^^^^
+
+test_prepare_sand_reserved_test_scoped_v1.py:113: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+prepare_sand_reserved_test_scoped_v1.py:173: in convert
+    records,details=C.repackage_split(np,args.input_dir/'test.npz','test',row,args.output_dir/'.test.staging',metadata,set(),COUNTS['test'])
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+repackage_designsafe_sand.py:203: in repackage_split
+    require(logical not in seen, "Duplicate trajectory values within/across selected splits")
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+condition = False
+message = 'Duplicate trajectory values within/across selected splits'
+
+    def require(condition, message):
+        if not condition:
+>           raise AdmissionError(message)
+E           _sand_reserved_numeric.AdmissionError: Duplicate trajectory values within/across selected splits
+
+repackage_designsafe_sand.py:43: AdmissionError
+=========================== short test summary info ============================
+FAILED test_prepare_sand_reserved_test_scoped_v1.py::test_reuses_restricted_converter_and_preserves_failed_staging[True]
+1 failed, 16 passed in 20.91s

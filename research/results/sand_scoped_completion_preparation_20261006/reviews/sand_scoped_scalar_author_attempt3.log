@@ -1,0 +1,22 @@
+....................................F............................        [100%]
+=================================== FAILURES ===================================
+_______________ test_all24_and_scientific_golden_equal_frozen_v2 _______________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-314/test_all24_and_scientific_gold0')
+
+    def test_all24_and_scientific_golden_equal_frozen_v2(tmp_path):
+        collections,release,receipts=make_analysis(tmp_path);result=M.summarize(collections,release)
+        stages=[s for c in receipts for s in c['stages']]
+        assert len(stages)==24 and result['full_rollout']['required_outcomes']==1080
+>       assert as_goop_names(result['full_rollout'])==F.M.full_summary(as_goop_stages([s for s in stages if s['stage']=='full_rollout_test']))
+E       AssertionError: assert {'required_ou...': False, ...} == {'required_ou...': False, ...}
+E         
+E         Omitting 13 identical items, use -vv to show
+E         Differing items:
+E         {'runtime': [{'arm': 'base', 'seed': 1, 'whole_invocation': {'stage': 'full_rollout_test', 'state': 'quota_expired', '...': 0, 'whole_invocation': {'stage': 'full_rollout_test', 'state': 'never_started'}, 'committed_call_seconds': 0, ...}]} != {'runtime': [{'arm': 'base', 'seed': 1, 'whole_invocation': {'stage': 'full_rollout_test', 'state': 'quota_expired', '...': 0, 'whole_invocation': {'stage': 'full_rollout_test', 'state': 'never_started'}, 'committed_call_seconds': 0, ...}]}
+E         Use -v to get more diff
+
+work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py:277: AssertionError
+=========================== short test summary info ============================
+FAILED work/deadline_research_20261005/cuda_preparation/test_summarize_sand_graph_support_scoped_v1.py::test_all24_and_scientific_golden_equal_frozen_v2
+1 failed, 64 passed in 11.81s

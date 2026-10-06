@@ -1,0 +1,71 @@
+{
+  "schema": "adaptgns_sand_reserved_test_independent_probes_code_audit_v2",
+  "source_sha256": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+  "source_is_still_current": true,
+  "synthetic_only": true,
+  "python_executable": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/bin/python",
+  "numeric_manifest_file_count": 2120,
+  "probes": [
+    {
+      "case": "complete_candidate",
+      "success_output_exists": true,
+      "error": null,
+      "mutation_fired": [],
+      "passed": true
+    },
+    {
+      "case": "missing_numeric_map",
+      "success_output_exists": false,
+      "error": "Complete exact numeric census file bindings required",
+      "mutation_fired": [],
+      "passed": true
+    },
+    {
+      "case": "one_opaque_file_map",
+      "success_output_exists": false,
+      "error": "Complete exact numeric census file bindings required",
+      "mutation_fired": [],
+      "passed": true
+    },
+    {
+      "case": "missing_train_manifest",
+      "success_output_exists": false,
+      "error": "Full root-bound numeric census required",
+      "mutation_fired": [],
+      "passed": true
+    },
+    {
+      "case": "source_during_serialization",
+      "success_output_exists": false,
+      "error": "Preparation window or immutable binding changed",
+      "mutation_fired": [
+        "census"
+      ],
+      "passed": true
+    },
+    {
+      "case": "train_numeric_during_serialization",
+      "success_output_exists": false,
+      "error": "Numeric/output binding or preparation deadline changed before ready publication",
+      "mutation_fired": [
+        "train numeric"
+      ],
+      "passed": true
+    },
+    {
+      "case": "clock_during_serialization",
+      "success_output_exists": false,
+      "error": "Preparation window or immutable binding changed",
+      "mutation_fired": [
+        "clock"
+      ],
+      "passed": true
+    },
+    {
+      "case": "empty_particles_scalar_type6",
+      "passed": true,
+      "error": "Complete finite T320/D2/type6 source required"
+    }
+  ],
+  "all_passed": true
+}

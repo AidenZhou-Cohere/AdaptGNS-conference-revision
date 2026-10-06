@@ -1,0 +1,194 @@
+.FFFF.                                                                   [100%]
+=================================== FAILURES ===================================
+_______ test_candidate_root_sign_preflight_uses_frozen_evaluator[valid] ________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-344/test_candidate_root_sign_prefl0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1073f5af0>
+split = 'valid'
+
+    @pytest.mark.parametrize('split',['valid','test'])
+    def test_candidate_root_sign_preflight_uses_frozen_evaluator(tmp_path,monkeypatch,split):
+        a=manual_args(tmp_path,monkeypatch,split=split,protocol=HERE/'sand_graph_support_100k_protocol_v1.md',train_admission=HERE/'sand_train_admission.json')
+        sources={s:split_fixture(s,tmp_path/'splits',a._cohort_sha) for s in ('valid','test')}
+        train=put(tmp_path/'splits/train.json',{'dataset':'Sand','split':'train','metadata_sha256':M.METADATA_SHA,'record_count':1000,
+            'records':[{'id':f'train:{i:06d}','source_index':i,**{k:{'path':f'train/{k}{i}.npy'} for k in ('positions','particle_types')}} for i in range(1000)]})
+        paths={'train':train,**{s:v[0] for s,v in sources.items()}};files={}
+        for name,path in paths.items():
+            manifest=M.read(path)
+            for i,record in enumerate(manifest['records']):
+                for key in ('positions','particle_types'):
+                    numeric=path.parent/record[key]['path'];numeric.parent.mkdir(exist_ok=True)
+                    numeric.write_bytes(f'opaque {name} {key} {i}'.encode());record[key]['sha256']=M.sha(numeric);files[str(numeric)]=M.sha(numeric)
+                if name!='train':record['trajectory_content_sha256']=h(record['positions']['sha256']+':'+record['particle_types']['sha256'])
+            put(path,manifest)
+            if name!='train':
+                structural=M.read(sources[name][1]);structural['splits'][name]['manifest_sha256']=M.sha(path);put(sources[name][1],structural)
+        a.train_manifest=train;a.valid_manifest=paths['valid'];a.test_manifest=paths['test'];a.structural_report=sources[split][1]
+        monkeypatch.setattr(M,'TRAIN_MANIFEST_SHA',M.sha(train));numeric=Path(next(iter(files)))
+        a.census_report=put(tmp_path/'census.json',{'schema':'adaptgns_sand_complete_numeric_census_v1','status':'complete_no_duplicates',
+            'cohort_sha256':a._cohort_sha,'counts':M.COUNTS,'all_split_numeric_duplicates_checked':True,
+            'preparation_source_sha256':M.sha(M.__file__),'manifests_sha256':{s:M.sha(p) for s,p in paths.items()},'numeric_files_sha256':files})
+>       bind(a,*paths.values(),a.structural_report,a.census_report,a.protocol,a.train_admission)
+
+test_prepare_sand_reserved_test_scoped_v1.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_prepare_sand_reserved_test_scoped_v1.py:48: in bind
+    def bind(a,*paths):a._bindings.update({str(p):M.sha(p) for p in paths})
+                                                  ^^^^^^^^
+prepare_sand_reserved_test_scoped_v1.py:45: in sha
+    with Path(path).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+________ test_candidate_root_sign_preflight_uses_frozen_evaluator[test] ________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-344/test_candidate_root_sign_prefl1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106f082c0>
+split = 'test'
+
+    @pytest.mark.parametrize('split',['valid','test'])
+    def test_candidate_root_sign_preflight_uses_frozen_evaluator(tmp_path,monkeypatch,split):
+        a=manual_args(tmp_path,monkeypatch,split=split,protocol=HERE/'sand_graph_support_100k_protocol_v1.md',train_admission=HERE/'sand_train_admission.json')
+        sources={s:split_fixture(s,tmp_path/'splits',a._cohort_sha) for s in ('valid','test')}
+        train=put(tmp_path/'splits/train.json',{'dataset':'Sand','split':'train','metadata_sha256':M.METADATA_SHA,'record_count':1000,
+            'records':[{'id':f'train:{i:06d}','source_index':i,**{k:{'path':f'train/{k}{i}.npy'} for k in ('positions','particle_types')}} for i in range(1000)]})
+        paths={'train':train,**{s:v[0] for s,v in sources.items()}};files={}
+        for name,path in paths.items():
+            manifest=M.read(path)
+            for i,record in enumerate(manifest['records']):
+                for key in ('positions','particle_types'):
+                    numeric=path.parent/record[key]['path'];numeric.parent.mkdir(exist_ok=True)
+                    numeric.write_bytes(f'opaque {name} {key} {i}'.encode());record[key]['sha256']=M.sha(numeric);files[str(numeric)]=M.sha(numeric)
+                if name!='train':record['trajectory_content_sha256']=h(record['positions']['sha256']+':'+record['particle_types']['sha256'])
+            put(path,manifest)
+            if name!='train':
+                structural=M.read(sources[name][1]);structural['splits'][name]['manifest_sha256']=M.sha(path);put(sources[name][1],structural)
+        a.train_manifest=train;a.valid_manifest=paths['valid'];a.test_manifest=paths['test'];a.structural_report=sources[split][1]
+        monkeypatch.setattr(M,'TRAIN_MANIFEST_SHA',M.sha(train));numeric=Path(next(iter(files)))
+        a.census_report=put(tmp_path/'census.json',{'schema':'adaptgns_sand_complete_numeric_census_v1','status':'complete_no_duplicates',
+            'cohort_sha256':a._cohort_sha,'counts':M.COUNTS,'all_split_numeric_duplicates_checked':True,
+            'preparation_source_sha256':M.sha(M.__file__),'manifests_sha256':{s:M.sha(p) for s,p in paths.items()},'numeric_files_sha256':files})
+>       bind(a,*paths.values(),a.structural_report,a.census_report,a.protocol,a.train_admission)
+
+test_prepare_sand_reserved_test_scoped_v1.py:170: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_prepare_sand_reserved_test_scoped_v1.py:48: in bind
+    def bind(a,*paths):a._bindings.update({str(p):M.sha(p) for p in paths})
+                                                  ^^^^^^^^
+prepare_sand_reserved_test_scoped_v1.py:45: in sha
+    with Path(path).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_____________ test_frozen_sand_cohort_split_and_scope_contracts[A] _____________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-344/test_frozen_sand_cohort_split_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10748c200>
+role = 'A'
+
+    @pytest.mark.parametrize('role',['A','B'])
+    def test_frozen_sand_cohort_split_and_scope_contracts(tmp_path,monkeypatch,role):
+>       a,r,mods=fixture(tmp_path,monkeypatch,role)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_supervise_sand_final_evaluation_scoped_v1.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_supervise_sand_final_evaluation_scoped_v1.py:92: in fixture
+    r['files_sha256']={str(p):M.sha(p) for p in files}
+                              ^^^^^^^^
+supervise_sand_final_evaluation_scoped_v1.py:41: in sha
+    with Path(path).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+_____________ test_frozen_sand_cohort_split_and_scope_contracts[B] _____________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-344/test_frozen_sand_cohort_split_1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10748f980>
+role = 'B'
+
+    @pytest.mark.parametrize('role',['A','B'])
+    def test_frozen_sand_cohort_split_and_scope_contracts(tmp_path,monkeypatch,role):
+>       a,r,mods=fixture(tmp_path,monkeypatch,role)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_supervise_sand_final_evaluation_scoped_v1.py:115: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_supervise_sand_final_evaluation_scoped_v1.py:92: in fixture
+    r['files_sha256']={str(p):M.sha(p) for p in files}
+                              ^^^^^^^^
+supervise_sand_final_evaluation_scoped_v1.py:41: in sha
+    with Path(path).open('rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md')
+mode = 'rb', buffering = -1, encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed to by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/sand-source-overlay-x0gbrrgw/work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md'
+
+/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py:1013: FileNotFoundError
+=========================== short test summary info ============================
+FAILED test_prepare_sand_reserved_test_scoped_v1.py::test_candidate_root_sign_preflight_uses_frozen_evaluator[valid]
+FAILED test_prepare_sand_reserved_test_scoped_v1.py::test_candidate_root_sign_preflight_uses_frozen_evaluator[test]
+FAILED test_supervise_sand_final_evaluation_scoped_v1.py::test_frozen_sand_cohort_split_and_scope_contracts[A]
+FAILED test_supervise_sand_final_evaluation_scoped_v1.py::test_frozen_sand_cohort_split_and_scope_contracts[B]
+4 failed, 2 passed in 1.66s

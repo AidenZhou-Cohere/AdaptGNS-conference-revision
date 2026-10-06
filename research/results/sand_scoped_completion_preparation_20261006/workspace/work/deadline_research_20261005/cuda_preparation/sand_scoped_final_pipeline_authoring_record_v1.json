@@ -1,0 +1,43 @@
+{
+  "schema": "adaptgns_sand_scoped_final_pipeline_authoring_v1",
+  "status": "all_three_adapters_independently_reviewed_passed_not_execution_admission",
+  "sources_sha256": {
+    "prepare_sand_final_cohort_scoped_v1.py": "ebad4e30edbdb9f444ed07dabf50b31540ecf7f85b134ee059c150d1ff68ca5f",
+    "prepare_sand_reserved_test_scoped_v1.py": "98b41509fa253a86630cf44ebc86bd3f0b969e875713b736867727bdc392b0bd",
+    "supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829"
+  },
+  "tests_sha256": {
+    "test_prepare_sand_final_cohort_scoped_v1.py": "8dd1c9807f057358f0c7e4236682fd31f96e5d7d3fffc19f5f068b5c31a785b4",
+    "test_prepare_sand_reserved_test_scoped_v1.py": "b758e6de70b969c8020aa15c05403c154c49de6ee530e6c5d0e0e5bfc9c67881",
+    "test_supervise_sand_final_evaluation_scoped_v1.py": "f2cffb0aea23df744d2b9713faeaaa46924d2874e94717c5c98a15618725e0f6"
+  },
+  "templates_notes_sha256": {
+    "sand_completed_host_process_check.template.json": "752b923217c9508144d9919a9f38134e0daf838c6a5eb246c3c9f26e26001929",
+    "sand_final_cohort_scoped_release.template.json": "4edb4b34500ec0974b6aebe1cafa1143d0ca37aad9eceecd29782b90e84376b2",
+    "sand_reserved_test_scoped_release.template.json": "e2f4e4fa1a50aa9d648ee5074172bf5c988eb8794b172318548b1fe10cceaed2",
+    "sand_final_evaluation_scoped_release.template.json": "d9943edbb011a63d94168ab8f385fef69e58b4c5ce5ecaa275b394bd9017ac97",
+    "sand_scoped_final_pipeline_operations_v1.md": "ddbaa4664ffad77fd9bbbfc655c723d83c7f917a8c8c1c9b4efffbea7d8f4f45"
+  },
+  "independent_reviews_sha256": {
+    "sand_final_cohort_scoped_independent_review_code_audit_v1.json": "419b81fb44e18bd08512e3bb83629f2f7971e4e0abf995e24693df0d681a4ebb",
+    "sand_final_evaluation_scoped_independent_review_code_audit_v1.json": "b3553d1fc8058373e04834856bf1cad174cce3231f4371328cbb08eb554432d5",
+    "sand_reserved_test_scoped_independent_review_code_audit_v1.json": "f3293aa2b5f8b3b2798aecb708daf020261a0b76214beb25be43c9694726195a"
+  },
+  "author_tests": {
+    "cohort": "15 passed; final copied-root publication repair independently exercised in two interface tests and all five mutation probes",
+    "evaluation": "9 passed0.78s; independent9passed0.78s and unchanged engine functions confirmed",
+    "reserved_preparation": "Initial16passed1failed20.91s; failed fixture exception-class match fixed. Two full1060-source tiny numeric census cases passed. After publication repair23 targetedpassed1.02s; no redundant full census rerun. Final census completeness repair:2candidate/root-sign/preflight cases with omitted map/manifest and postcensus numeric mutation checks passed3.63s."
+  },
+  "unsuccessful_outcomes_preserved": [
+    "sand_final_cohort_tests_attempt1.log",
+    "sand_final_cohort_publication_probes_code_audit_v1.json",
+    "sand_reserved_test_tests_attempt1.log"
+  ],
+  "same_frozen_numerical_sources": true,
+  "training_data_or_checkpoint_payloads_read": false,
+  "reserved_test_accessed": false,
+  "network_requests": false,
+  "actual_research_processes_started": false,
+  "execution_admitted": false,
+  "independent_reserved_preparation": "23 focused tests passed5.02s;8 independent complete2120-file map, terminal serialization mutation and zero-particle refusal probes passed. Earlier two complete1060-trajectory numeric census cases inherited."
+}
