@@ -1,0 +1,316 @@
+{
+  "schema": "adaptgns_sand_capacity_public_curation_v1",
+  "scope": "Original native-base graph faithful/NLL 4+2-wave infrastructure capacity only",
+  "scientific_training_admitted": false,
+  "source_files": [
+    {
+      "public_file": "measure_sand_cuda_capacity.py",
+      "source_file": "measure_sand_cuda_capacity.py",
+      "source_sha256": "9c5ae69bc3296f996f4c201c5443c85d16543b03ca23173d9aa98d286d226331",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "measure_sand_cuda_capacity_v2.py",
+      "source_file": "measure_sand_cuda_capacity_v2.py",
+      "source_sha256": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "test_measure_sand_cuda_capacity.py",
+      "source_file": "test_measure_sand_cuda_capacity.py",
+      "source_sha256": "d0a229b9c22c6a5196d3161d052075e03f27108b242177285a5a4a943fd9062b",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "test_measure_sand_cuda_capacity_v2.py",
+      "source_file": "test_measure_sand_cuda_capacity_v2.py",
+      "source_sha256": "6b5c134f10f061b150c54f26f37c115e595ea8a4443d092c42d5439c6f849207",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "train_sand_cuda_deterministic.py",
+      "source_file": "train_sand_cuda_deterministic.py",
+      "source_sha256": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "test_train_sand_cuda_deterministic.py",
+      "source_file": "test_train_sand_cuda_deterministic.py",
+      "source_sha256": "62fff3483b894857eb1936b09213a0c4c57543a5063e36bdd44179ba2ac34b6e",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "train_sand_cuda.py",
+      "source_file": "train_sand_cuda.py",
+      "source_sha256": "7a9dec9ac2ae1b49856655441ab52fa881c5bb93d8850108dc52939fdfe6ef3a",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_deterministic_variant_changes.json",
+      "source_file": "sand_deterministic_variant_changes.json",
+      "source_sha256": "c2c7ecf7b2b3c149c5aa08eeba5ce4bb0450a65cd73fd8756c2823f28d6d648b",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_deterministic_variant_review.json",
+      "source_file": "sand_deterministic_variant_review.json",
+      "source_sha256": "677c8d63cf2cc9ba820f9e6b9993680c14938df3b3c3d3651de2e43b09f2d951",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "torch_cuda_determinism_documentation.txt",
+      "source_file": "torch_cuda_determinism_documentation.txt",
+      "source_sha256": "e61f7081ea419c36f5eb27b3f199ff0b77c5cf2c73eff666bc04522f522767a7",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_feasibility_schedule.md",
+      "source_file": "sand_cuda_feasibility_schedule.md",
+      "source_sha256": "c8ee62473faf7679d2f9feadeabacb3dd3a0d25de45d4ce3e5c94b212f29ab7a",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_protocol_v1.md",
+      "source_file": "sand_cuda_capacity_protocol_v1.md",
+      "source_sha256": "d75b66bedabfdfbdfb0e770ab1e56ef70343bf811af92641768ed16d26c07ec9",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_protocol_v2.md",
+      "source_file": "sand_cuda_capacity_protocol_v2.md",
+      "source_sha256": "150f0d1b504c4bd732107c7796d0141a9a54e4fb40bef6f81ba64a206c770e38",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_release_TEMPLATE.json",
+      "source_file": "sand_cuda_capacity_release_TEMPLATE.json",
+      "source_sha256": "c477c8d8376d159edca29cd49c37618db580ff3f4b69b90900cebb20a36f9a05",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_release_v2_TEMPLATE.json",
+      "source_file": "sand_cuda_capacity_release_v2_TEMPLATE.json",
+      "source_sha256": "26c613d19918a5508c5e1f823c444a3e8f56b6ace82a15836184e61ed7a9d03a",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_release_20261006_v1.json",
+      "source_file": "sand_cuda_capacity_release_20261006_v1.json",
+      "source_sha256": "8f01fc574e236d72d11a3811bcc61b43ca60a908f318790d29458d408019194f",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_cuda_capacity_release_20261006_v2.json",
+      "source_file": "sand_cuda_capacity_release_20261006_v2.json",
+      "source_sha256": "bf88f60bf0ae30718294df1f4b8ba440724bcc28c150019925f3d3a6100f73ae",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "check_capacity_processes.py",
+      "source_file": "check_capacity_processes.py",
+      "source_sha256": "faa556750398a413c4e5a95765f6cd72ee9f25b91cd72b3dd62cc843fdce9013",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "check_capacity_processes_v2.py",
+      "source_file": "check_capacity_processes_v2.py",
+      "source_sha256": "8c5af2f9c116707dfbf869e6b914d4feee0ef6518c6e0d1020437f0628708dbb",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "capacity_native_preflight_20261006_v1.json",
+      "source_file": "capacity_native_preflight_20261006_v1.json",
+      "source_sha256": "f413cde7f2a2402eef245cd5638480508dabe788b6d26fcd0ff4b8f0f97a7a2c",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "capacity_native_preflight_20261006_v2.json",
+      "source_file": "capacity_native_preflight_20261006_v2.json",
+      "source_sha256": "dba635df16c3725704c2d5c642f27b5696c07602b94db77c62a1600600bd7cab",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_timing_contract_independent_review.json",
+      "source_file": "sand_capacity_timing_contract_independent_review.json",
+      "source_sha256": "2748df23c46134d362849753f8c21d5f3d3f4a61e7d352d5fbfa55154bf79b9e",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "measure_sand_cuda_capacity_independent_review.json",
+      "source_file": "measure_sand_cuda_capacity_independent_review.json",
+      "source_sha256": "51c9089ccd74b17396eed4780dc3bde235378f09ee2a3be2c8773325035e55be",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "measure_sand_cuda_capacity_v2_independent_review.json",
+      "source_file": "measure_sand_cuda_capacity_v2_independent_review.json",
+      "source_sha256": "f30de0ffedd5244477724412c7bedeb89c8633726997ae37766656a8825a8f83",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1_failure_review.json",
+      "source_file": "sand_capacity_v1_failure_review.json",
+      "source_sha256": "e5044561830f8b231e1251fb107a24f005c530521e4f1edcc9161a557722af1c",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1_wave_A.json",
+      "source_file": "sand_capacity_v1_wave_A.json",
+      "source_sha256": "73787c8517c42cdc10f670d49bb3651d6e11739aa16e21a58d1f752d84eed1f5",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1.stderr.log",
+      "source_file": "sand_capacity_v1.stderr.log",
+      "source_sha256": "434bf1168af5226403fc88cb213b5f22ecad9fecf348c080a7a49b8af5b23fe5",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1.stdout.log",
+      "source_file": "sand_capacity_v1.stdout.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1_postfailure_process_check.txt",
+      "source_file": "sand_capacity_v1_postfailure_process_check.txt",
+      "source_sha256": "11e6099734c7dfb18c4c5d7cdcd9e5b78c11f2c1cd583af157c9e5109f1f9437",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "post_capacity_v2_process_check.txt",
+      "source_file": "post_capacity_v2_process_check.txt",
+      "source_sha256": "5cffd74e9e531a6795127f79c6a2f2259a365926474316dbb40258b790b8cdf3",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v2_summary.json",
+      "source_file": "sand_capacity_v2_summary.json",
+      "source_sha256": "de5ca0bc4d08c7e5d789ed2e542ce03314d19a3144bdf3460933c225bbccc8fa",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v2.stderr.log",
+      "source_file": "sand_capacity_v2.stderr.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v2.stdout.log",
+      "source_file": "sand_capacity_v2.stdout.log",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "audit_sand_base_capacity_scalars_first_attempt.py",
+      "source_file": "audit_sand_base_capacity_scalars_first_attempt.py",
+      "source_sha256": "aac33e26418b0a91aeb55aeee80d7cd38120c6a6e9e28dd8fe04a38f17379d8a",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "audit_sand_base_capacity_scalars.py",
+      "source_file": "audit_sand_base_capacity_scalars.py",
+      "source_sha256": "18892fa3b888ea1d36fcb8286df378131ceffc65a8a561581bd679912d5028c7",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v2_local_recomputation_review.json",
+      "source_file": "sand_capacity_v2_local_recomputation_review.json",
+      "source_sha256": "c7cdafa47eb88bba5fa5ea973db3b20c6be9877db67c543d5532453465332c53",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v2_independent_scalar_audit.json",
+      "source_file": "sand_capacity_v2_independent_scalar_audit.json",
+      "source_sha256": "da53456466e98b4baea08584c452e5027bf2fdbbd315cfff94b43e521e290703",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_native_cuda_numerical_assessment.json",
+      "source_file": "sand_native_cuda_numerical_assessment.json",
+      "source_sha256": "1256a920efaa415322760122ad4b24b3946a5a36d327838082dc0bf2ed558d34",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_train_admission.json",
+      "source_file": "sand_train_admission.json",
+      "source_sha256": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "train.json",
+      "source_file": "train.json",
+      "source_sha256": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_numeric_structural_report.json",
+      "source_file": "sand_numeric_structural_report.json",
+      "source_sha256": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+      "transformation": "exact byte copy"
+    },
+    {
+      "public_file": "sand_capacity_v1_runtime_failure.public.json",
+      "source_file": "sand_capacity_v1_runtime_failure.json",
+      "source_sha256": "1cec7a40dabee14036f9beb01c5138e7432919d5ac45410168f34204fb8c5523",
+      "transformation": "Removed private execution-host labels and ephemeral run-lock tokens only; all other decoded JSON values unchanged",
+      "removed_json_paths": [
+        "/faithful_seed0/status/process/host",
+        "/faithful_seed0/status/process/token",
+        "/faithful_seed1/status/process/host",
+        "/faithful_seed1/status/process/token",
+        "/nll_seed0/status/process/host",
+        "/nll_seed0/status/process/token",
+        "/nll_seed1/status/process/host",
+        "/nll_seed1/status/process/token"
+      ]
+    },
+    {
+      "public_file": "sand_capacity_v1_progress.public.json",
+      "source_file": "sand_capacity_v1_progress.json",
+      "source_sha256": "1d3974cc6e43a7ca7565104b7013ceb62b2b021df44ca89cf1e4e13233b73319",
+      "transformation": "Removed private execution-host labels and ephemeral run-lock tokens only; all other decoded JSON values unchanged",
+      "removed_json_paths": [
+        "/launch/hostname"
+      ]
+    }
+  ],
+  "public_projections": [
+    {
+      "public_file": "sand_capacity_v1_runtime_failure.public.json",
+      "source_file": "sand_capacity_v1_runtime_failure.json",
+      "source_sha256": "1cec7a40dabee14036f9beb01c5138e7432919d5ac45410168f34204fb8c5523",
+      "transformation": "Removed private execution-host labels and ephemeral run-lock tokens only; all other decoded JSON values unchanged",
+      "removed_json_paths": [
+        "/faithful_seed0/status/process/host",
+        "/faithful_seed0/status/process/token",
+        "/faithful_seed1/status/process/host",
+        "/faithful_seed1/status/process/token",
+        "/nll_seed0/status/process/host",
+        "/nll_seed0/status/process/token",
+        "/nll_seed1/status/process/host",
+        "/nll_seed1/status/process/token"
+      ]
+    },
+    {
+      "public_file": "sand_capacity_v1_progress.public.json",
+      "source_file": "sand_capacity_v1_progress.json",
+      "source_sha256": "1d3974cc6e43a7ca7565104b7013ceb62b2b021df44ca89cf1e4e13233b73319",
+      "transformation": "Removed private execution-host labels and ephemeral run-lock tokens only; all other decoded JSON values unchanged",
+      "removed_json_paths": [
+        "/launch/hostname"
+      ]
+    }
+  ],
+  "omitted_private_local_reports": [
+    {
+      "source_file": "sand_capacity_v1_failure_raw.txt",
+      "bytes": 118631,
+      "sha256": "d3d39cf502df2d752bb9e1a7971e0b45583b0f5ee5c79caa5f96cf893abc94cb",
+      "reason": "Contains private Coder control-process output; public wave record, stderr, failure review and redacted runtime/progress projections retain the relevant failure evidence."
+    }
+  ],
+  "private_connection_or_authentication_files_included": false,
+  "existing_families_or_numerical_sources_modified": false,
+  "new_remote_access_or_model_execution": false
+}

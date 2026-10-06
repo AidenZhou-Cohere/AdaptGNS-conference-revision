@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "tests_stdout": "........................................           [100%]\n40 passed, 22 subtests passed in 0.15s\n",
+  "tests_stderr": "",
+  "strict_first_audit_returncode": 1,
+  "strict_first_audit_reason": "Learning-rate schedule recomputation",
+  "revised_scalar_checks": 20056,
+  "paired_rows": 1536,
+  "local_lr_recomputation_discrepancies": 12,
+  "reproduced_audit_matches_archived_json": true,
+  "public_archived_audit_unchanged": true,
+  "real_model_data_checkpoint_cuda_or_network_execution": false
+}

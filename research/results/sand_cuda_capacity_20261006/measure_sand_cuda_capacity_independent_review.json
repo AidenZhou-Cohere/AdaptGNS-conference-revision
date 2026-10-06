@@ -1,0 +1,42 @@
+{
+  "schema": "sand_cuda_capacity_independent_code_review_v1",
+  "status": "pass_for_root_timing_freeze",
+  "reviewed_utc": "2026-10-06T02:13:39.632265+00:00",
+  "source_sha256": {
+    "measure_sand_cuda_capacity.py": "9c5ae69bc3296f996f4c201c5443c85d16543b03ca23173d9aa98d286d226331",
+    "test_measure_sand_cuda_capacity.py": "d0a229b9c22c6a5196d3161d052075e03f27108b242177285a5a4a943fd9062b",
+    "sand_cuda_capacity_protocol_v1.md": "d75b66bedabfdfbdfb0e770ab1e56ef70343bf811af92641768ed16d26c07ec9",
+    "sand_native_cuda_numerical_assessment.json": "1256a920efaa415322760122ad4b24b3946a5a36d327838082dc0bf2ed558d34"
+  },
+  "independent_test_execution": {
+    "tests": 16,
+    "subtests": 7,
+    "result": "passed",
+    "seconds": 0.08,
+    "scope": "synthetic standard-library mocks; no trainer/model/data/CUDA/network execution",
+    "additional_coverage": "Immediate child registration on launch-identity failure; copied input/release integrity and tamper refusal."
+  },
+  "resolved_findings": [
+    "Exited/missing/zombie children no longer abort cleanup of other owned children; immediate registration preserves child identity even if launch validation fails.",
+    "Failure cleanup is bounded15seconds and records owned INT/TERM/KILL attempts, reaped outcomes and unreaped PIDs; waveB cannot follow failedA.",
+    "Initial checkpoint pointer is persisted on observation; copied inputs/release, exact wave jobs, process records, overlapping GPU observations and checkpoint hashes are revalidated during summary.",
+    "A full forecast remains null until900full-H314outcome and97704diagnostic-forward execution cost estimates both exist;3600seconds is an additional verification allowance."
+  ],
+  "checked_contract": [
+    "Fixed faithful/NLL seeds0/1/2,4+2waves,512updates with full100kdecay, two threads, strict deterministic CUDA mode.",
+    "All512finite ordered rows, nativeframe membership/particle counts/lr, source/config/runtime identity and paired frame schedules checked.",
+    "External whole-process timers and Linux RSS preserve observer overhead; q uses wall65..512 and r retains full512guard residual.",
+    "Exact formula1.35*(100000*(q4+q2)+12*(r4+r2)); planning contingency only.",
+    "Root-issued fresh timing release and UUID/source/protocol binding; infrastructure checkpoints cannot be promoted by this runner."
+  ],
+  "remaining_limitations": [
+    "At least one full steady overlap observation proves nominalwaveoverlap, not full concurrency at every step; protocol now states this explicitly.",
+    "No6/8GPU scaling estimate or scientific admission is inferred.",
+    "Checkpoint numerical tensors are not reopened by supervisor; existing trainer-side numerical guards and separate root audits own those checks."
+  ],
+  "real_model_executed": false,
+  "real_data_opened": false,
+  "cuda_executed": false,
+  "scientific_training_admitted": false,
+  "strict_cpu_cuda_validation_passed": false
+}

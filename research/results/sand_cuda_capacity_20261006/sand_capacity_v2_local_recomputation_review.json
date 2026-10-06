@@ -1,0 +1,18 @@
+{
+  "schema": "adaptgns_sand_capacity_local_recomputation_review_v1",
+  "status": "first_local_scalar_audit_failed",
+  "preserved_audit_sha256": "aac33e26418b0a91aeb55aeee80d7cd38120c6a6e9e28dd8fe04a38f17379d8a",
+  "summary_sha256": "de5ca0bc4d08c7e5d789ed2e542ce03314d19a3144bdf3460933c225bbccc8fa",
+  "failure": "exact saved LR versus local Mac pow recomputation at step16",
+  "saved_value": 9.996546684228188e-05,
+  "local_value": 9.996546684228187e-05,
+  "absolute_difference": 1.3552527156068805e-20,
+  "float64_ulps": 1,
+  "all_discrepant_steps_per_job": [
+    16,
+    274
+  ],
+  "discrepant_rows_across_six_jobs": 12,
+  "all_paired_saved_LR_values_equal": true,
+  "interpretation": "Cross-platform scalar recomputation discrepancy; original ARM/Linux frozen supervisor verification passed. No training or experiment source/results changed. Exact arithmetic equality on another platform is not a source schedule violation. Revised scalar audit will permit only1float64ULP for expected-LR recomputation and retain exact paired saved-LR comparison."
+}

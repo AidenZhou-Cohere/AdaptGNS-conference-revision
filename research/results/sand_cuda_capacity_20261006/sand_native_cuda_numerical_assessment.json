@@ -1,0 +1,44 @@
+{
+  "schema": "adaptgns_sand_native_cuda_numerical_assessment_v1",
+  "issued_by": "root",
+  "issued_utc": "2026-10-06T02:08:49.460387+00:00",
+  "status": "admitted_for_timing_only",
+  "strict_cpu_cuda_reproduction_passed": false,
+  "scientific_training_admitted": false,
+  "sources_sha256": {
+    "sand_actual_data_validation_v1_report.json": "6a632fd6c6ec5ef3c3b943636e8232338a2b0e33eaa5547926d81b2ea92d9a4c",
+    "sand_actual_data_validation_v2_report.json": "1d46bd0044859a7f6f969275cdfaf91c57f4935d786453074fcecd2ec6e73245",
+    "sand_relu_kink_v1_report.json": "d3b9c0a1c6953dc26ba3a00f5a2425231cf5c131984a1b404364d73b7bb9bbe3",
+    "sand_kink_sham_array_audit.json": "f4d9e3fc67e7c3b2d7d437c9e2748eb51ab973c87e06ba5ad308cdb3a54231e9",
+    "sand_relu_kink_independent_code_review.json": "a56a9ba9645755788c67b4d6d6b599e99780b5c1ca9d8122fc785cf9c203dded",
+    "sand_relu_timing_release_review.json": "2457a0492a621f66344e20a72123d941080d97397f13c57c420877e32dccd2c3",
+    "sand_native_cuda_admission_methodology.md": "e84eb409e757c7262d50c9583de09beb60e8249a48d99113b72b485e59952620",
+    "train_sand_cuda_deterministic.py": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+    "diagnose_sand_relu_kinks.py": "dc1748b3e3f9ea32e28d16a8906c1cd0eaa4fff3a872741153e2244595f8555e",
+    "audit_sand_kink_sham.py": "1c2b26289f67b53685c0977853be71dea1971e9445dc6de19288c403c5309a50"
+  },
+  "findings": [
+    "Both original strict gradient validation failures remain unchanged.",
+    "Same-input backward-mask control eliminates the 13 original deterministic CPU/CUDA gradient threshold failures; 19 median and 17 large ReLU sign crossings occur within 1.673e-6 of zero.",
+    "All saved CUDA own-mask sham arrays, including gradients, parameters, Adam state, updates and post-update outputs, are byte-identical to natural CUDA in six cases; all 30 saved NPZ hashes are verified.",
+    "Natural first-Adam updates fail prior tolerance in 5/6 cases, post-update predictions in 3/6; maximum update discrepancy 1.989007e-4.",
+    "The small NLL case retains two Adam update tolerance failures without any ReLU sign crossing, maximum 6.1132014e-6; the mask mechanism does not explain every update difference.",
+    "Within-CUDA faithful/MSE gradient semantics and bounded optimizer/RNG restoration and replay pass. No source, graph, loss or detachment defect was found by independent source/scalar review."
+  ],
+  "rationale": "The localized finite-precision differences at nondifferentiable activations, and Adam sensitivity near zero gradients, do not establish equivalent training trajectories. They permit measuring ordinary deterministic native-CUDA execution as a separately declared backend, conditional on existing within-backend semantics and replay checks. This authorizes infrastructure feasibility only; no claim of CPU/Metal reproduction or material-only transfer is made.",
+  "permitted_next_work": [
+    "Fresh infrastructure-only faithful/NLL seeds 0,1,2, 512-update 4+2-wave capacity measurements after exact runner/protocol/release freeze and fresh native process/GPU UUID check.",
+    "Separately frozen all-five-policy full-H314 validation-rollout timing using fixed infrastructure checkpoints; no test payload and no endpoint selection."
+  ],
+  "prohibited": [
+    "No masks or diagnostic gradients in training.",
+    "Do not relax or relabel earlier strict checks.",
+    "No infrastructure checkpoint promoted or resumed into scientific training.",
+    "No scientific cohort until conservative complete-cohort/rollout/diagnostic deadline forecast and new native scientific protocol/source/configuration freeze."
+  ],
+  "required_environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "controls": "All method/policy/objective comparisons in a future study must share the declared deterministic CUDA backend. Preserve unsuccessful outcomes and original WaterDrop sources/results."
+}

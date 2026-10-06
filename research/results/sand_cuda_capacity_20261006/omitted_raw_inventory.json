@@ -1,0 +1,409 @@
+{
+  "schema": "adaptgns_sand_capacity_omitted_raw_inventory_v1",
+  "scope": "Local compact scalar/source publication; no new remote retrieval",
+  "raw_checkpoint_bytes_included": false,
+  "raw_trajectory_arrays_included": false,
+  "checkpoint_references": [
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "3f3a7e1eb60b9d8c846b294f8e94c4ab0cb5c6430f05cf90e4b2d18c88e771db",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "13f7681409f6bc30039288999640652d1d3bde64ca53dcee1e7321835423606f",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "37bb1aeb6ec2ef65f123e532755d6458e1dc94979203cba9acc054ed8932aea3",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "4010f7de1b3f31d08e13c6ec111f489090caeb1542864401129c3169fe4871dc",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "3f6d29ef49cf9cf52add37185f15ed161e0d635df0acdedc417d9247b3f5f9bf",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "fc249abc66514e1e51d76876cdb94b0e84b8688cdb98007385fa2c46ead5a9d0",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "137b91bbbcec1ba21ae8ec9ad466458d2aaa0773c3ab16c38fc0b856e2dc387a",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "6bea7c42ac7fce80ac18f29543c165a07d2c59a79a1f9a10012c5f8a549d5df3",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "824f3073ff765d69ae1e3038844bbfa78543d039eacd09f7ec74997984b2e7b6",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "3bdb6c5cbd65ec971855417e28871d070f5459ee1165d06617bd0ffa28c03f12",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "af47271883c3a47e2eb7f9b188de3ef8cf66ec1a9fba2c4f4cc6559cf29e7779",
+      "source": "sand_capacity_v2_summary.json:initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "6a57afaa671a46b1ab2b9f60ee9e4c1fe3f9155ea8049e1c6d22c89fff15817f",
+      "source": "sand_capacity_v2_summary.json:final_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V1",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "6dc0e8498e53abad001d58d37603ec4f496d5724b3561d57fada1a74681ba65a",
+      "source": "sand_capacity_v1_wave_A.json:external.initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V1",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "7df0ec3f80a24e01a479c457bec52891b8fde708c2c8796ab3bb05f596e3e42f",
+      "source": "sand_capacity_v1_wave_A.json:external.initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V1",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "0a42aa1765b44d5b0014db7b66192551908898dc653d916f2be7287d3681940c",
+      "source": "sand_capacity_v1_wave_A.json:external.initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V1",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/checkpoint-000000000.pt",
+      "completed_steps": 0,
+      "sha256": "da3f2e1053947c858893ec1d62fb877fb0483fa06b30a3e6c3ab84521d970dd4",
+      "source": "sand_capacity_v1_wave_A.json:external.initial_pointer",
+      "bytes_in_public_family": false
+    },
+    {
+      "attempt": "V1",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/checkpoint-000000512.pt",
+      "completed_steps": 512,
+      "sha256": "85f2da1584f53655f58fb4f0d91127a4efb52de6acce106bcf73d3bd4f62d4a1",
+      "source": "sand_capacity_v1_runtime_failure.public.json:status.latest_checkpoint",
+      "bytes_in_public_family": false
+    }
+  ],
+  "v2_per_job_raw_file_hashes": [
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/protocol.json",
+      "sha256": "9cc3fd1cda020a4f93be6e85f565471417000880d8a218534def674bf031b156",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/status.json",
+      "sha256": "58a58c22c4fd835eab0778e0b208755f84545f37c8c151d4aa3e31e8510da05e",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/history.json",
+      "sha256": "ee45364ac2f4e3cb67f0ea8ff9be885df7d16b1f034eae48f56eceaa5037ae78",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed0",
+      "relative_path": "jobs/nll_seed0/latest.json",
+      "sha256": "c35fa9651a30a73298cdec93e28244aa5234a4cddd0f36e2fdee3a087e01a5b2",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/protocol.json",
+      "sha256": "d0166d5f0c970e9428f21e864ede9832e66bb9483becbfd455110cc05c424ad1",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/status.json",
+      "sha256": "37ab72b33856b71b2ebd2c294ad18549af5be39c7352fdd86e0c6c93eb8cf9b0",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/history.json",
+      "sha256": "011a234b15c29563a702aaf68e8cf04ed9fbb6b519b6090911f2160e2a9d45f0",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed1",
+      "relative_path": "jobs/nll_seed1/latest.json",
+      "sha256": "46a08b917c8c729f90256330bbde9d2a6a1039dca3946dbbdb974aedcdf88b3f",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/protocol.json",
+      "sha256": "527169732f8e4e18c7651debbea201afe00cf298e433a7d7038b3a811d27a6eb",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/status.json",
+      "sha256": "f0b89027778a9ddc7b09670d1483e15c41ce44b80d1f8a0d85bcb4d913b85c62",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/history.json",
+      "sha256": "09e514f60eefcf91cc42001c72faa3843f9b911e4c3a1552e9799e95b2468f48",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed0",
+      "relative_path": "jobs/faithful_seed0/latest.json",
+      "sha256": "398606b20b8ab395965a87ed1a6a8d933530dea16053d628f339c4dce55d5a51",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/protocol.json",
+      "sha256": "2fd51f36d03c29a38baaf382fbe8ed010d693d4016252624738c43fbd49f9c25",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/status.json",
+      "sha256": "8b32b4efaa031205869981a3b34fc1a4022e62ad67a673da96dcff3ae30001f8",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/history.json",
+      "sha256": "3be892011f0e6b63c0786a38e3bbdec26106efcca4b5411b4b01469278d49d3f",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed1",
+      "relative_path": "jobs/faithful_seed1/latest.json",
+      "sha256": "b23c4fa3b7eba4acf87ae680a25ebf86ac699c32f93232054f875b8d1fff7380",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/protocol.json",
+      "sha256": "15b1cc856d31f19de9908e9e59e39515adb3ae4b8f723043dcf2124739d561f9",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/status.json",
+      "sha256": "de0bcdbcf69f789f106476fd6662491786bd3abba0030f687700f74d7bf777fc",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/history.json",
+      "sha256": "606799967662606039cc31b6a66fc7d06cd237d426504c29873137ddf8d3d683",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "nll_seed2",
+      "relative_path": "jobs/nll_seed2/latest.json",
+      "sha256": "36adc0eab5ae71362106b60928852abd26e38e87c02cc64440a49b499e130dcc",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/protocol.json",
+      "sha256": "a4f436fc225dcd52a306ccca919d25ef49201ad6ebc91e6177fc0121d6d7d591",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/status.json",
+      "sha256": "aa77e29a08b14a4917b04969a42a3517bc2562542f8463dea6d70662485d32ff",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/history.json",
+      "sha256": "094b03e02567a7d51d6f9995d88dec441d7d872192d41eea2a4266436ff7f85e",
+      "raw_file_copied": false
+    },
+    {
+      "attempt": "V2",
+      "job": "faithful_seed2",
+      "relative_path": "jobs/faithful_seed2/latest.json",
+      "sha256": "28fd0c72dde927851afde0482cb8c43b405e48984e496e5216c5f24c4af10b1d",
+      "raw_file_copied": false
+    }
+  ],
+  "training_data": {
+    "published_manifest": "train.json",
+    "manifest_sha256": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+    "source_archive": {
+      "ZIP_CRC_verified": true,
+      "acquisition_report_sha256": "56ff6c0184600b13a657ffe0d4f2979e5970e60b5ee1ae16929b51ba3692aa8f",
+      "dataset": "Sand",
+      "family": "designsafe_published_npz",
+      "file": "train.npz",
+      "member_count": 1000,
+      "sha256": "e0b7f68b50702f1af3edfa828b6097e3b28158ddb57631491e60a29658318f7d",
+      "size_bytes": 2676940383
+    },
+    "records": 1000,
+    "numeric_array_references": 2000,
+    "per_array_hash_inventory": "All positions and particle_types file paths/shapes/dtypes/bytes/SHA256 are retained in train.json; none of their arrays are included",
+    "metadata_sha256": "cef268faed1e0c3265f92395c364bddaff523bc8c117beae050de122f88059a0",
+    "metadata_values": "Embedded in train.json; separate metadata.json bytes not copied here"
+  },
+  "missing_local_raw_proof": [
+    {
+      "attempt": "V2",
+      "files": [
+        "launch.json",
+        "status.json",
+        "wave_A.json",
+        "wave_B.json"
+      ],
+      "known_sha256": null,
+      "reason": "No local copies were present in cuda_preparation. Summary asserts remote supervisor verification but omits full wave process/GPU observations and original root status/launch bytes."
+    },
+    {
+      "attempt": "V2",
+      "files": [
+        "logs/<job>.stdout.jsonl",
+        "logs/<job>.stderr.txt",
+        "logs/<job>.launch.json",
+        "logs/<job>.outcome.json",
+        "logs/<job>.initial_pointer.json"
+      ],
+      "known_sha256": null,
+      "reason": "Complete local byte copies/hashes unavailable. Parsed training rows, external process identity, command, timings and checkpoint pointers are retained in the summary."
+    },
+    {
+      "attempt": "V2",
+      "files": [
+        "jobs/<job>/protocol.json",
+        "jobs/<job>/status.json",
+        "jobs/<job>/history.json",
+        "jobs/<job>/latest.json"
+      ],
+      "known_sha256": "See v2_per_job_raw_file_hashes",
+      "reason": "24 hashes available; no local raw copies were present. Public scalar audit does not rehash these remote files."
+    },
+    {
+      "attempt": "V1",
+      "files": [
+        "logs/<interrupted-job>.stdout.jsonl",
+        "logs/<interrupted-job>.stderr.txt",
+        "jobs/<interrupted-job>/protocol.json",
+        "jobs/<interrupted-job>/status.json",
+        "jobs/<interrupted-job>/latest.json"
+      ],
+      "known_sha256": null,
+      "reason": "Full interrupted per-step stdout and original per-job file bytes were not copied locally. This original trainer writes history.json only on normal completion, so an interrupted history file is not asserted to exist. Final interruption counts, last printed rows, committed pointers, process signals and wave outcomes are retained in the public reports; uncommitted model/Adam states are not recoverable from the published initial checkpoints."
+    }
+  ],
+  "evidence_that_is_local": [
+    "V1 complete failed wave_A.json including 101 observations, four outcomes and cleanup signals",
+    "V1 runtime/progress public projections with explicit privacy redactions",
+    "V2 all 3072 scalar rows and 1536 paired frame/particle/LR comparisons",
+    "Original supervisor, trainer, root releases, preflight hashes and independent reviews"
+  ],
+  "limits": [
+    "Checkpoint tensors and CPU/CUDA RNG state identity are not independently verified by this compact scalar publication.",
+    "No raw dataset or checkpoint was fetched or executed during curation.",
+    "The original base-graph 4+2-wave result cannot admit or forecast the separate graph-support six-concurrent study."
+  ]
+}

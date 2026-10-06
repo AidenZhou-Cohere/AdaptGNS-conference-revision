@@ -1,0 +1,29 @@
+{
+  "schema": "sand_cuda_capacity_v2_independent_delta_review_v1",
+  "status": "pass_for_root_timing_freeze",
+  "reviewed_utc": "2026-10-06T02:18:21.262259+00:00",
+  "source_sha256": {
+    "measure_sand_cuda_capacity.py": "9c5ae69bc3296f996f4c201c5443c85d16543b03ca23173d9aa98d286d226331",
+    "measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "test_measure_sand_cuda_capacity_v2.py": "6b5c134f10f061b150c54f26f37c115e595ea8a4443d092c42d5439c6f849207",
+    "sand_cuda_capacity_protocol_v2.md": "150f0d1b504c4bd732107c7796d0141a9a54e4fb40bef6f81ba64a206c770e38",
+    "sand_capacity_v1_runtime_failure.json": "1cec7a40dabee14036f9beb01c5138e7432919d5ac45410168f34204fb8c5523"
+  },
+  "delta": "Only verify_job/validate_release function bodies change, plus canonical_gpu_uuid, re import and new capacity/release schema identities. Prior source/protocol/results remain unchanged.",
+  "independent_tests": {
+    "tests": 17,
+    "subtests": 15,
+    "status": "passed",
+    "seconds": 0.08,
+    "scope": "synthetic/mocked; no real model/data/CUDA/network execution"
+  },
+  "checks": [
+    "Strict canonical UUID8-4-4-4-12hex permits only literaloptionalGPU-prefix and normalizescase; no truncation/MIG/ambiguousidentity admitted.",
+    "Actual saved Torch runtime uses bare UUIDs, consistent with the declaredNVIDIAprefix comparison failure; deterministic/model/runtime predicates remain unchanged.",
+    "Release rejects duplicate physical UUIDs across alternate spellings; raw UUID evidence preserved.",
+    "No scientific/training/numeric tolerance change. Fresh root release/output required, no v1checkpoint resume or retroactive success."
+  ],
+  "prior_failure_status": "retained incomplete capacity attempt; three owned interruptions and one512completed probe are not a complete cohort",
+  "scientific_training_admitted": false,
+  "strict_cpu_cuda_validation_passed": false
+}

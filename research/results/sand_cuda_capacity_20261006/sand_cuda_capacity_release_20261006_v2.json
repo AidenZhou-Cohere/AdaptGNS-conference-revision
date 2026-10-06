@@ -1,0 +1,76 @@
+{
+  "schema": "adaptgns_sand_cuda_capacity_release_v2",
+  "status": "admitted_for_timing",
+  "issued_by": "root",
+  "scientific_training_admitted": false,
+  "files_sha256": {
+    "trainer": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+    "train_manifest": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+    "admission": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "structural_report": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+    "protocol": "150f0d1b504c4bd732107c7796d0141a9a54e4fb40bef6f81ba64a206c770e38",
+    "mechanism_review": "1256a920efaa415322760122ad4b24b3946a5a36d327838082dc0bf2ed558d34",
+    "python": "6242e0e8650d7dbdebbc25e08bf4c9359ddaf65f54fcae0e57fa99395fa5357a",
+    "supervisor": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd"
+  },
+  "gpu_uuids": [
+    "GPU-73031588-bcc6-e0d0-3875-53e263032823",
+    "GPU-fc3e1a56-b41d-29df-8051-04b23e5920a1",
+    "GPU-fe932609-0f73-00b8-a487-d4d4479a368b",
+    "GPU-3841ca1a-09eb-214f-e73a-4f9e2c0391d7"
+  ],
+  "process_identity_checked_utc": "2026-10-06T02:18:30.247449+00:00",
+  "review_rationale": "Root and independent review admit only fresh infrastructure timing using the strict full-UUID spelling correction. Original v1 failure, completed NLL0 probe and all three owned-cleanup interruptions are preserved; all processes have exited. Trainer/core/numerical thresholds and timing formula are unchanged. Both strict CPU/CUDA gradient checks remain failed. No scientific checkpoint promotion or automatic scientific admission. New base/mix study requires its own timing and protocol.",
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "schedule": [
+    {
+      "id": "faithful_seed0",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "seed": 0
+    },
+    {
+      "id": "nll_seed0",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "nll",
+      "seed": 0
+    },
+    {
+      "id": "faithful_seed1",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "seed": 1
+    },
+    {
+      "id": "nll_seed1",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "nll",
+      "seed": 1
+    },
+    {
+      "id": "faithful_seed2",
+      "wave": "B",
+      "gpu": 0,
+      "objective": "faithful",
+      "seed": 2
+    },
+    {
+      "id": "nll_seed2",
+      "wave": "B",
+      "gpu": 1,
+      "objective": "nll",
+      "seed": 2
+    }
+  ],
+  "issued_utc": "2026-10-06T02:18:51.006673+00:00",
+  "preflight_sha256": "dba635df16c3725704c2d5c642f27b5696c07602b94db77c62a1600600bd7cab",
+  "independent_review_sha256": "f30de0ffedd5244477724412c7bedeb89c8633726997ae37766656a8825a8f83",
+  "failure_review_sha256": "e5044561830f8b231e1251fb107a24f005c530521e4f1edcc9161a557722af1c"
+}

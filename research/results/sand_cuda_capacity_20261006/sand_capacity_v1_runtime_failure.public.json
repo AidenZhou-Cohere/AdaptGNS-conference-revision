@@ -1,0 +1,246 @@
+{
+  "faithful_seed0": {
+    "runtime": {
+      "torch": "2.13.0+cu129",
+      "cuda": "12.9",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+      "device": "cuda:0",
+      "name": "NVIDIA GB200",
+      "uuid": "73031588-bcc6-e0d0-3875-53e263032823",
+      "capability": [
+        10,
+        0
+      ],
+      "threads": 2,
+      "tf32": false,
+      "amp": false,
+      "compile": false,
+      "ddp": false,
+      "float32_matmul_precision": "highest",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "status": {
+      "schema": "adaptgns_sand_cuda_training_deterministic_v2",
+      "state": "interrupted",
+      "completed_steps": 500,
+      "committed_steps": 0,
+      "requested_steps": 100000,
+      "objective": "faithful",
+      "seed": 0,
+      "run_config_sha256": "cf11bb1ef153f9c09c77fc23e61f688b06166295e70e7d2ceb396ab3ebf31047",
+      "process": {
+        "pid": 386918,
+        "started_utc": "2026-10-06T02:14:53.275060+00:00"
+      },
+      "updated_utc": "2026-10-06T02:16:26.222261+00:00",
+      "elapsed_seconds": 73.04789963457733,
+      "latest_checkpoint": {
+        "path": "checkpoint-000000000.pt",
+        "sha256": "0a42aa1765b44d5b0014db7b66192551908898dc653d916f2be7287d3681940c",
+        "completed_steps": 0,
+        "run_config_sha256": "cf11bb1ef153f9c09c77fc23e61f688b06166295e70e7d2ceb396ab3ebf31047"
+      },
+      "last_training": {
+        "completed_steps": 500,
+        "loss": -0.8561107516288757,
+        "lr": 9.885757436076922e-05,
+        "frame_ids": [
+          "train:000022:256",
+          "train:000515:212"
+        ],
+        "particles": 1823,
+        "guarded_update_seconds": 0.12734917551279068,
+        "elapsed_seconds": 73.0357854673639
+      },
+      "error": "KeyboardInterrupt: "
+    }
+  },
+  "faithful_seed1": {
+    "runtime": {
+      "torch": "2.13.0+cu129",
+      "cuda": "12.9",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+      "device": "cuda:2",
+      "name": "NVIDIA GB200",
+      "uuid": "fe932609-0f73-00b8-a487-d4d4479a368b",
+      "capability": [
+        10,
+        0
+      ],
+      "threads": 2,
+      "tf32": false,
+      "amp": false,
+      "compile": false,
+      "ddp": false,
+      "float32_matmul_precision": "highest",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "status": {
+      "schema": "adaptgns_sand_cuda_training_deterministic_v2",
+      "state": "interrupted",
+      "completed_steps": 482,
+      "committed_steps": 0,
+      "requested_steps": 100000,
+      "objective": "faithful",
+      "seed": 1,
+      "run_config_sha256": "c832d3be506c3591a157abea35d2c5b1dadce4f7029290af6e4e6ac1a701e42b",
+      "process": {
+        "pid": 386920,
+        "started_utc": "2026-10-06T02:14:53.269352+00:00"
+      },
+      "updated_utc": "2026-10-06T02:16:26.219391+00:00",
+      "elapsed_seconds": 73.04835336469114,
+      "latest_checkpoint": {
+        "path": "checkpoint-000000000.pt",
+        "sha256": "7df0ec3f80a24e01a479c457bec52891b8fde708c2c8796ab3bb05f596e3e42f",
+        "completed_steps": 0,
+        "run_config_sha256": "c832d3be506c3591a157abea35d2c5b1dadce4f7029290af6e4e6ac1a701e42b"
+      },
+      "last_training": {
+        "completed_steps": 482,
+        "loss": -0.28423288464546204,
+        "lr": 9.889855629866736e-05,
+        "frame_ids": [
+          "train:000496:42",
+          "train:000989:242"
+        ],
+        "particles": 2103,
+        "guarded_update_seconds": 0.12962906435132027,
+        "elapsed_seconds": 72.90931843966246
+      },
+      "error": "KeyboardInterrupt: "
+    }
+  },
+  "nll_seed0": {
+    "runtime": {
+      "torch": "2.13.0+cu129",
+      "cuda": "12.9",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+      "device": "cuda:1",
+      "name": "NVIDIA GB200",
+      "uuid": "fc3e1a56-b41d-29df-8051-04b23e5920a1",
+      "capability": [
+        10,
+        0
+      ],
+      "threads": 2,
+      "tf32": false,
+      "amp": false,
+      "compile": false,
+      "ddp": false,
+      "float32_matmul_precision": "highest",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "status": {
+      "schema": "adaptgns_sand_cuda_training_deterministic_v2",
+      "state": "planned_stop_incomplete",
+      "completed_steps": 512,
+      "committed_steps": 512,
+      "requested_steps": 100000,
+      "objective": "nll",
+      "seed": 0,
+      "run_config_sha256": "bea18da10c22ae9b3b87f7e8a8ad0d85d260a8f04b0f1cb926ae3334556c2dee",
+      "process": {
+        "pid": 386919,
+        "started_utc": "2026-10-06T02:14:53.298260+00:00"
+      },
+      "updated_utc": "2026-10-06T02:16:25.352991+00:00",
+      "elapsed_seconds": 72.18961976654828,
+      "latest_checkpoint": {
+        "path": "checkpoint-000000512.pt",
+        "sha256": "85f2da1584f53655f58fb4f0d91127a4efb52de6acce106bcf73d3bd4f62d4a1",
+        "completed_steps": 512,
+        "run_config_sha256": "bea18da10c22ae9b3b87f7e8a8ad0d85d260a8f04b0f1cb926ae3334556c2dee"
+      },
+      "last_training": {
+        "completed_steps": 512,
+        "loss": -0.7411357760429382,
+        "lr": 9.883026250385058e-05,
+        "frame_ids": [
+          "train:000355:196",
+          "train:000339:38"
+        ],
+        "particles": 1553,
+        "guarded_update_seconds": 0.12141210958361626,
+        "elapsed_seconds": 71.90891815442592
+      },
+      "error": null
+    }
+  },
+  "nll_seed1": {
+    "runtime": {
+      "torch": "2.13.0+cu129",
+      "cuda": "12.9",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "python": "3.12.3",
+      "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+      "device": "cuda:3",
+      "name": "NVIDIA GB200",
+      "uuid": "3841ca1a-09eb-214f-e73a-4f9e2c0391d7",
+      "capability": [
+        10,
+        0
+      ],
+      "threads": 2,
+      "tf32": false,
+      "amp": false,
+      "compile": false,
+      "ddp": false,
+      "float32_matmul_precision": "highest",
+      "deterministic_algorithms": true,
+      "deterministic_warn_only": false,
+      "cublas_workspace_config": ":4096:8"
+    },
+    "status": {
+      "schema": "adaptgns_sand_cuda_training_deterministic_v2",
+      "state": "interrupted",
+      "completed_steps": 477,
+      "committed_steps": 0,
+      "requested_steps": 100000,
+      "objective": "nll",
+      "seed": 1,
+      "run_config_sha256": "7735bd208c9b1460ef3379637f32f1d7b55c2cc3516e8947a9fb989d7936d3da",
+      "process": {
+        "pid": 386984,
+        "started_utc": "2026-10-06T02:14:53.276517+00:00"
+      },
+      "updated_utc": "2026-10-06T02:16:26.219533+00:00",
+      "elapsed_seconds": 73.05250017810613,
+      "latest_checkpoint": {
+        "path": "checkpoint-000000000.pt",
+        "sha256": "da3f2e1053947c858893ec1d62fb877fb0483fa06b30a3e6c3ab84521d970dd4",
+        "completed_steps": 0,
+        "run_config_sha256": "7735bd208c9b1460ef3379637f32f1d7b55c2cc3516e8947a9fb989d7936d3da"
+      },
+      "last_training": {
+        "completed_steps": 477,
+        "loss": -1.343249797821045,
+        "lr": 9.89099431850781e-05,
+        "frame_ids": [
+          "train:000383:74",
+          "train:000187:234"
+        ],
+        "particles": 962,
+        "guarded_update_seconds": 0.11296689603477716,
+        "elapsed_seconds": 72.9048836864531
+      },
+      "error": "KeyboardInterrupt: "
+    }
+  }
+}

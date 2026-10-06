@@ -1,0 +1,15 @@
+{
+  "schema": "sand_deterministic_variant_independent_review_v1",
+  "checked_utc": "2026-10-06T01:51:24.939478+00:00",
+  "status": "no_material_finding_runtime_mocks_passed",
+  "files_sha256": {
+    "train_sand_cuda_deterministic.py": "9dd376f6d4b6881290b134c8f410b89933bcdb026c9b52de601ba0ec7bb05a9b",
+    "test_train_sand_cuda_deterministic.py": "62fff3483b894857eb1936b09213a0c4c57543a5063e36bdd44179ba2ac34b6e",
+    "sand_deterministic_variant_changes.json": "c2c7ecf7b2b3c149c5aa08eeba5ce4bb0450a65cd73fd8756c2823f28d6d648b",
+    "torch_cuda_determinism_documentation.txt": "e61f7081ea419c36f5eb27b3f199ff0b77c5cf2c73eff666bc04522f522767a7"
+  },
+  "test_result": "7 passed in 0.09s",
+  "scope": "Exact source-inventory review and pure runtime mocks only; no Torch model/source arrays/CUDA/network/remote execution",
+  "launch_requirement": "CUBLAS_WORKSPACE_CONFIG=:4096:8 exported before the fresh process starts; strict deterministic algorithms enabled with warn_only=False",
+  "limits": "Determinism does not imply CPU/CUDA equivalence; unchanged validator/tolerances and real rerun remain root-owned."
+}
