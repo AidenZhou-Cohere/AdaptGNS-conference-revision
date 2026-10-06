@@ -1,0 +1,10 @@
+{
+  "scope": "Pre-outcome source/audit snapshot",
+  "files": {
+    "README.md": "c8bf3f1879289ff60f4c1fe262aa3fe94616dd63651dfc49e1abc329ae79b3dd",
+    "audit_continuation_summary_independent.py": "8c7aef67a1ae43226eccd53ed5c8c2cc7e0d942ab0655c0fec395fa1f4b4d731",
+    "continuation_scalar_audit_freeze.json": "64e81b9ee0283589ea2280ad3ede48695c210cca8a9402c22d029032df36be57",
+    "continuation_scalar_audit_root_review.json": "60fc3ee7fc63d0fb1472460f14223baa802b63b69fe4bea42d425d410cd932f9",
+    "test_audit_continuation_summary_independent.py": "57dd27600a65f7f1a0d461033472ed1a39e00ebb0f417c8516ab394fad1f5287"
+  }
+}

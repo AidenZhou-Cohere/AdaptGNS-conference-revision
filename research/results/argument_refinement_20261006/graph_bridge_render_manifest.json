@@ -1,0 +1,11 @@
+{
+  "summary_uncompressed_sha256": "1623cab0517dd4a20ceb668e322aa98ff064a6dc4e54b62b63d46d7c05ff27d5",
+  "renderer_sha256": "dda7c9ffdbd4bf952e62be157e88c92c965150734dcd02a0b3b9971a4539ba9a",
+  "scope": "Post-inspection exploratory descriptive graph-convention bridge",
+  "outputs": {
+    "graph_bridge_appendix.tex": "8e867e3d4dce84d7048b8fcf59725e83ea7a087a6450caae7f7c726c124d89fe",
+    "graph_bridge_main.tex": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf",
+    "graph_convention_bridge.pdf": "6dfd5535c18d3b07f12fe00f297a75281d6faa7b306198a8b979fcab4204c6a5",
+    "graph_convention_bridge.png": "88176d8dd483e6813e073b5557bb98a53c40c15577e8972b33061183e63e8ba9"
+  }
+}

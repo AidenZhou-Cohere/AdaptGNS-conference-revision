@@ -1,0 +1,34 @@
+\section{Compact WaterDrop study and exploratory follow-ups}
+\label{sec:compact-study}
+\subsection{Controlled WaterDrop pilot}
+The new pilot uses the first eight complete training trajectories, three validation trajectories, and three test trajectories from the official public WaterDrop splits. It verifies TFRecord checksums and cross-split record hashes. We preselect 24 frames per training trajectory and 12 per validation/test trajectory, giving 192 training and 36 validation/test states. This convenience subset is small and is not a replacement for the benchmark split.
+
+A compact network uses a six-frame history, normalized velocity and wall-distance inputs, width 48, three message-passing blocks, and an additive variance floor of $10^{-5}$. It omits training noise and uses the official normalization statistics consistently. For each of five paired random seeds, corrected NLL, beta-NLL ($\beta=.5$), and faithful regression train for a fixed 3,000 updates with Adam at $10^{-3}$. Graph augmentation uniformly samples extra-pair fractions from $\{0,.25,.5,1\}$. All objectives share initialization and frame/graph schedules. Selection uses the final update, rather than test performance.
+
+At each observed evaluation state we compare base, dense, random, speed, current-risk, and previous-base-risk selectors. The last four retain exactly one quarter of the optional annulus pairs, rounded down. The previous-base-risk diagnostic obtains its score from the previous observed state's base graph; it is not a cached score from a free adaptive rollout. Current-risk scoring requires an extra pass. MSE is normalized one-step acceleration MSE, not position rollout MSE. Means and standard deviations across five seeds remain conditional on only three test trajectories. Policy sampling and training variation are both present in the random control.
+
+% PILOT_RESULTS_INSERT
+
+Corrected NLL gives the lowest mean one-step error in this pilot; the faithful objective does not improve the mean predictor here. Within faithful regression, current-risk allocation is modestly better than random allocation, but it incurs an extra scoring pass. Previous-base risk is worse than random under corrected NLL and beta-NLL. As a post-hoc descriptive reference, predicting zero normalized acceleration (the training-metadata mean second difference) gives test MSE 3.80036 on these same frames. This further limits any interpretation of the compact faithful model as an improved simulator.
+
+\subsection{Does risk predict the benefit of more edges?}
+We additionally freeze every pilot model and compare base and fully expanded predictions on the same preselected states. For each particle, the signed benefit is base vector squared residual minus dense vector squared residual. We compute rank correlations within each frame, then average frames within trajectory and trajectories within seed. This is an exploratory dense-intervention diagnostic, not a marginal single-edge utility label.
+
+On the three test trajectories, risk--error Spearman correlations are $.265\pm.152$, $.419\pm.074$, and $.336\pm.052$ for faithful, NLL, and beta-NLL respectively. Risk--benefit correlations are $.024\pm.195$, $-.041\pm.042$, and $-.022\pm.055$. The uncertainties are sample standard deviations of five seed means. The gap between these two diagnostics supports treating residual prediction and useful allocation as distinct tasks. It does not prove every uncertainty-guided policy fails. Signed improvements and harmful interventions are both retained in the released measurements.
+
+\paragraph{Kinematics and inexpensive controls.}
+On the same inspected pilot test frames, exploratory strain--risk correlations remain positive after ranked neighbor-count, speed, and wall-clearance adjustment: $.167\pm.025$, $.283\pm.059$, and $.196\pm.014$ for faithful, NLL, and beta-NLL. Adjusted vorticity associations are weaker (Appendix~\ref{sec:physical-rank}). These kinematic associations do not establish allocation value. At the same pair budget, local velocity RMS changes NLL test error by $-.309\pm.181\%$ versus random and $-.659\pm.219\%$ versus previous-base risk. These are means and sample SDs of within-seed percentage changes. Faithful test means favor risk policies; beta-NLL's velocity-RMS comparison with random changes sign across splits. Appendix~\ref{sec:physical-allocation} retains both cheap controls and all outcomes. This is exploratory one-step evidence; rollout and speed advantages remain untested.
+
+\subsection{Exploratory benefit prediction}
+For a base residual $r_i=y_i-\mu_{r,i}$ and dense prediction change $\Delta_i=\mu_{R,i}-\mu_{r,i}$, signed benefit equals
+\begin{equation}
+ \|r_i\|^2-\|r_i-\Delta_i\|^2
+ =2r_i^\top\Delta_i-\|\Delta_i\|^2.
+\end{equation}
+This identity makes the missing directional information explicit. As an exploratory extension after inspecting the pilot, we fit a ridge regressor to this signed label using detached base-graph node embeddings from each frozen model. Only the 192 training frames enter fitting; features are standardized on training data, the intercept is unpenalized, and the ridge coefficient is fixed to $10^{-3}$. No validation or test labels enter the fit. The max-endpoint pair selector uses the same 25\% optional budget and requires a base scoring pass.
+
+Test MSE for this selector is $4.0529\pm.2169$, $3.6319\pm.0187$, and $3.7053\pm.1365$ for faithful, NLL, and beta-NLL. Its paired differences from random allocation are $+.0102\pm.0293$, $-.0095\pm.0072$, and $-.0088\pm.0108$. NLL and beta-NLL improve on random in all five seeds, but dense has lower mean error than the benefit-head policy for each objective. Predicted-benefit--label rank correlations are only $.060\pm.075$, $.005\pm.032$, and $.023\pm.044$. Thus the candidate does not establish reliable benefit prediction, general superiority, or a speed advantage. Dense labels also differ from marginal single-edge utility. Reusing the already inspected test subset limits this result to hypothesis generation.
+
+% ROLLOUT_RESULTS_INSERT
+
+

@@ -1,0 +1,168 @@
+{
+  "claims": {
+    "no_new_scientific_outcomes": true,
+    "old_labels": 47,
+    "preserved_display_equations": 29,
+    "preserved_official_checklist_pairs": 18,
+    "preserved_tables": 22,
+    "relocated_compact_bytes": 5977,
+    "resolved_references": 26,
+    "root_native_compilation": "success; eight-page assertion; exported PDF not inspected",
+    "root_renderer_tests": 11,
+    "total_labels": 48
+  },
+  "created_utc": "2026-10-06T00:32:51.063713+00:00",
+  "exact_local_source_copies": {
+    "argument_review.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/adversarial_argument_review_20261006.json",
+      "sha256": "4abe6a6e96dbb6d58f2ace9949806eece391c476a4050d5658f9fa5bda015c21"
+    },
+    "argument_review.md": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/adversarial_argument_review_20261006.md",
+      "sha256": "bb2f8389af13153eabe0eeb99ea5ca737310297abf5c5dfd3714fde70f4babdd"
+    },
+    "compact_study_relocation.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/compact_study_relocation_candidate.tex",
+      "sha256": "02b16ac25a9e2317d3d431b77b921de584329ebf5b9f2c7c8f759e3dbb189b52"
+    },
+    "compact_study_synopsis.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/compact_study_synopsis_candidate.tex",
+      "sha256": "c549e5ec25311382b3e36c8e0d2d7932e8b7666756a93cd2d9e9329b3b4ea78a"
+    },
+    "document_verification.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/argument_refinement_root_verification.json",
+      "sha256": "3559242f80384dd142c1815dc23e366db111629e20a7011afab9ba0dae46ba6e"
+    },
+    "graph_bridge_appendix.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/graph_bridge_appendix.tex",
+      "sha256": "8e867e3d4dce84d7048b8fcf59725e83ea7a087a6450caae7f7c726c124d89fe"
+    },
+    "graph_bridge_main.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/graph_bridge_main.tex",
+      "sha256": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf"
+    },
+    "graph_bridge_render_manifest.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/bridge_render_v3/render_manifest.json",
+      "sha256": "b61f4fb94f4e698ce4f6e03857a6a4b0b5902e899e1ea277fed603f17b205f1c"
+    },
+    "graph_bridge_renderer_source.py": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/render_graph_bridge_findings.py",
+      "sha256": "dda7c9ffdbd4bf952e62be157e88c92c965150734dcd02a0b3b9971a4539ba9a"
+    },
+    "independent_preservation_review.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/argument_refinement_independent_preservation_review.json",
+      "sha256": "c1c01e5ae621e2de6dd4c7e5a38cf0af40b147d0d6f19286b05719ae1e544b9a"
+    },
+    "manuscript_body.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/manuscript_body.tex",
+      "sha256": "15f9604d1073e6fb186064fded09a8c03189cdaace702195b7f833ddb725940d"
+    },
+    "optional_exposure_appendix.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/optional_exposure_appendix.tex",
+      "sha256": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6"
+    },
+    "optional_exposure_main.tex": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/optional_exposure_main.tex",
+      "sha256": "0c3d81b407d29ba3283b79b593aa47d9b417334977dd733907258d813686ffa8"
+    },
+    "optional_exposure_render_manifest.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_render_v5/render_manifest.json",
+      "sha256": "036a593e84bec73d4a2f41a3df31082a931a1373746e3f34dd93c205831aa417"
+    },
+    "optional_exposure_renderer_source.py": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/render_optional_exposure_findings.py",
+      "sha256": "06b075fe6b6abe469c8e3148662a53f6e2ad3c452db76a87e02702e258a7f936"
+    },
+    "space_and_checklist_plan.json": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/space_and_checklist_plan_20261006.json",
+      "sha256": "9e1fcc8b55d6c0c060b5a140c4036141163f3560e6ff1fc7bdb546071269b5d1"
+    },
+    "space_and_checklist_plan.md": {
+      "local_source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/space_and_checklist_plan_20261006.md",
+      "sha256": "b007bbb7d9d901d26afe35b458d7c059af7fd48aa8eb7b0dbc12a892b08c0ac3"
+    }
+  },
+  "exact_manifest_files": 18,
+  "manifest_sha256": "4ed0e26cef079d74ad77b848d0323551dc2e963d8cf0b13137be8c7d12ea11c3",
+  "manuscript_body_correctly_described_as_nonstandalone": true,
+  "package": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/argument_refinement_20261006",
+  "package_input_sha256": {
+    "README.md": "fc21d530dec39258dd1eaa10eb681fa4079b2e48f1b894fcbff8d57348166c54",
+    "argument_review.json": "4abe6a6e96dbb6d58f2ace9949806eece391c476a4050d5658f9fa5bda015c21",
+    "argument_review.md": "bb2f8389af13153eabe0eeb99ea5ca737310297abf5c5dfd3714fde70f4babdd",
+    "compact_study_relocation.tex": "02b16ac25a9e2317d3d431b77b921de584329ebf5b9f2c7c8f759e3dbb189b52",
+    "compact_study_synopsis.tex": "c549e5ec25311382b3e36c8e0d2d7932e8b7666756a93cd2d9e9329b3b4ea78a",
+    "document_verification.json": "3559242f80384dd142c1815dc23e366db111629e20a7011afab9ba0dae46ba6e",
+    "graph_bridge_appendix.tex": "8e867e3d4dce84d7048b8fcf59725e83ea7a087a6450caae7f7c726c124d89fe",
+    "graph_bridge_main.tex": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf",
+    "graph_bridge_render_manifest.json": "b61f4fb94f4e698ce4f6e03857a6a4b0b5902e899e1ea277fed603f17b205f1c",
+    "graph_bridge_renderer_source.py": "dda7c9ffdbd4bf952e62be157e88c92c965150734dcd02a0b3b9971a4539ba9a",
+    "independent_preservation_review.json": "c1c01e5ae621e2de6dd4c7e5a38cf0af40b147d0d6f19286b05719ae1e544b9a",
+    "manuscript_body.tex": "15f9604d1073e6fb186064fded09a8c03189cdaace702195b7f833ddb725940d",
+    "optional_exposure_appendix.tex": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6",
+    "optional_exposure_main.tex": "0c3d81b407d29ba3283b79b593aa47d9b417334977dd733907258d813686ffa8",
+    "optional_exposure_render_manifest.json": "036a593e84bec73d4a2f41a3df31082a931a1373746e3f34dd93c205831aa417",
+    "optional_exposure_renderer_source.py": "06b075fe6b6abe469c8e3148662a53f6e2ad3c452db76a87e02702e258a7f936",
+    "space_and_checklist_plan.json": "9e1fcc8b55d6c0c060b5a140c4036141163f3560e6ff1fc7bdb546071269b5d1",
+    "space_and_checklist_plan.md": "b007bbb7d9d901d26afe35b458d7c059af7fd48aa8eb7b0dbc12a892b08c0ac3"
+  },
+  "preservation_review_sha256": "c1c01e5ae621e2de6dd4c7e5a38cf0af40b147d0d6f19286b05719ae1e544b9a",
+  "public_input_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/graph_convention_bridge_20261005/graph_bridge_aggregate_audit.json": "283fca2d9a529f1c3a62702999ad4da582e28fccf9ba12051886cf71b037a24c",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/graph_convention_bridge_20261005/graph_convention_bridge.json.gz": "97b64ce8835c7734132200d292383f071610e6faa6b8f026760a7562563ebea5",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/optional_exposure_decomposition_20261006/independent_audit.json": "a5cce72ec067a1331871afad2138015260096cac57a4fa1082a5cd3466133607",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/results/optional_exposure_decomposition_20261006/results.json.gz": "3d7ab9c67d4ab31b092e3e82092932d3362d1352a6121fd3b1608934c42958c4"
+  },
+  "readme_claims_match": true,
+  "render_replays": {
+    "graph": {
+      "exit_code": 0,
+      "identical_non_pdf_outputs": {
+        "graph_bridge_appendix.tex": "8e867e3d4dce84d7048b8fcf59725e83ea7a087a6450caae7f7c726c124d89fe",
+        "graph_bridge_main.tex": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf",
+        "graph_convention_bridge.png": "88176d8dd483e6813e073b5557bb98a53c40c15577e8972b33061183e63e8ba9"
+      },
+      "output_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/argument_publication_replay_graph",
+      "pdf_metadata": {
+        "graph_convention_bridge.pdf": {
+          "note": "PDF byte identity not claimed; creation timestamp differs. Numeric/PNG/TeX artifacts byte-identical.",
+          "original_dates": [
+            "/CreationDate (D:20261005202925-04'00')"
+          ],
+          "original_sha256": "6dfd5535c18d3b07f12fe00f297a75281d6faa7b306198a8b979fcab4204c6a5",
+          "replay_dates": [
+            "/CreationDate (D:20261005203223-04'00')"
+          ],
+          "replay_sha256": "0679042dc76416e2fe27afd1cdea852b8e66bfc6c59a4a15bbd8eea6d5cda71d"
+        }
+      }
+    },
+    "optional": {
+      "exit_code": 0,
+      "identical_non_pdf_outputs": {
+        "mechanism_findings.json": "2d7c5eaa5646f312a2c9fc76931fe0f9d723178f5cd9edc1da77e94c30a84bd7",
+        "optional_exposure_appendix.tex": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6",
+        "optional_exposure_decomposition.png": "d27c336c74ed06ab82f994fb324567dec7f91f35a83605589379a704210d0b98",
+        "optional_exposure_main.tex": "0c3d81b407d29ba3283b79b593aa47d9b417334977dd733907258d813686ffa8",
+        "plot_coordinates.json": "d97adcdbb0430f576685af4316efac11a7a4e1102a525555147be4a35255305b"
+      },
+      "output_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/argument_publication_replay_optional",
+      "pdf_metadata": {
+        "optional_exposure_decomposition.pdf": {
+          "note": "PDF byte identity not claimed; creation timestamp differs. Numeric/PNG/TeX artifacts byte-identical.",
+          "original_dates": [
+            "/CreationDate (D:20261005202925-04'00')"
+          ],
+          "original_sha256": "dc826a55d06de464a38506b628bb98ec19ee959a40fe619d4b9f13e6567541b8",
+          "replay_dates": [
+            "/CreationDate (D:20261005203223-04'00')"
+          ],
+          "replay_sha256": "edafeb0e3f9c19d3c051bc072ccad59d88b67f591d8c6e160199015fe8801239"
+        }
+      }
+    }
+  },
+  "root_verification_sha256": "3559242f80384dd142c1815dc23e366db111629e20a7011afab9ba0dae46ba6e",
+  "scope": "Independent publication identity and archival-render replay check only; no new inference or scientific outcomes; native compilation and11tests verified against root record, not rerun.",
+  "state": "passed"
+}

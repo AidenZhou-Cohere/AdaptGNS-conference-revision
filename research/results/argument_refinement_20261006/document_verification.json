@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "all_prior_tables_preserved_by_label": 22,
+  "displayed_math_environments_preserved": 29,
+  "labels": 48,
+  "references": 26,
+  "abstract_and_titles_unchanged": true,
+  "pilot_tables_and_raw_text_relocated": "5977 raw bytes verbatim",
+  "unchanged_generated_assets": {
+    "graph_convention_bridge.png": "byte-identical",
+    "optional_exposure_decomposition.png": "byte-identical",
+    "plot_coordinates.json": "byte-identical",
+    "mechanism_findings.json": "byte-identical",
+    "optional_exposure_appendix.tex": "byte-identical"
+  },
+  "manuscript_sha256": "db43cf941099f4a51ffba232f65cc5797a87730a01e638a51c1c8cf829b99f08",
+  "native_compilation": {
+    "status": "success",
+    "compiler": "desktop native standalone compiler",
+    "eight_page_assertion_retained": true,
+    "exported_pdf_inspected": false
+  },
+  "no_scientific_source_or_outcome_changed": true,
+  "recorded_utc": "2026-10-06T00:31:22.757029+00:00",
+  "renderer_tests": {
+    "passed": 11,
+    "wall_seconds": 10.0
+  },
+  "independent_review_sha256": "c1c01e5ae621e2de6dd4c7e5a38cf0af40b147d0d6f19286b05719ae1e544b9a",
+  "report_sha256": "3560902ff1cbe75b5e3c2c896d9e4a7b80011eadc40f45b7c404188db2fa96f5",
+  "report_unchanged": true
+}

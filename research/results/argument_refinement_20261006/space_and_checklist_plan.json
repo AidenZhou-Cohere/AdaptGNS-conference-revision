@@ -1,0 +1,21 @@
+{
+  "block_bytes": 5977,
+  "block_sha256": "16b6e51d2d427ea0618e45c2f17ab65bc7cf1850d8414a30657a3d3d825cf00d",
+  "body_sha256": "ab7d9787b951a802af27a88230882e688e260b2d3e6ad8c03392296583e74965",
+  "expanded_block_bytes": 10093,
+  "files_sha256": {
+    "compact_study_relocation_candidate.tex": "02b16ac25a9e2317d3d431b77b921de584329ebf5b9f2c7c8f759e3dbb189b52",
+    "compact_study_synopsis_candidate.tex": "c549e5ec25311382b3e36c8e0d2d7932e8b7666756a93cd2d9e9329b3b4ea78a",
+    "pilot_results.tex": "5c7cfffa406194c1f03d4ba05e22b27ba9bbed3060275342eb082b01d504bf92",
+    "rollout_results.tex": "b52c6297d2b7ed79d87948f6fddfc7f1081cadf9722c38bd6d179bf0261801fe",
+    "space_and_checklist_plan_20261006.md": "b007bbb7d9d901d26afe35b458d7c059af7fd48aa8eb7b0dbc12a892b08c0ac3"
+  },
+  "labels_retained": [
+    "tab:pilot",
+    "tab:rollout"
+  ],
+  "main_synopsis_bytes": 930,
+  "relocated_full_width_tables": 2,
+  "relocated_subsections": 4,
+  "scope": "proposal only; existing manuscript unchanged"
+}
