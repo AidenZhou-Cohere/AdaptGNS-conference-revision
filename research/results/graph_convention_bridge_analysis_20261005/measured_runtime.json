@@ -1,0 +1,39 @@
+{
+  "scope": "Operational wall time of six sequential graph-bridge processes; not policy latency or speedup",
+  "sum_model_process_wall_seconds": 693.1560390399682,
+  "first_start_utc": "2026-10-05T23:19:27.368056+00:00",
+  "last_complete_utc": "2026-10-05T23:31:00.545376+00:00",
+  "queue_timestamp_envelope_seconds": 693.17732,
+  "per_model": [
+    {
+      "name": "faithful_seed0",
+      "wall_seconds": 115.23809149999579
+    },
+    {
+      "name": "faithful_seed1",
+      "wall_seconds": 116.85403149999911
+    },
+    {
+      "name": "faithful_seed2",
+      "wall_seconds": 114.40198508299363
+    },
+    {
+      "name": "nll_seed0",
+      "wall_seconds": 115.14913204099867
+    },
+    {
+      "name": "nll_seed1",
+      "wall_seconds": 116.03981983299309
+    },
+    {
+      "name": "nll_seed2",
+      "wall_seconds": 115.47297908298788
+    }
+  ],
+  "source_launch_sha256": "9d84ef5affa50d9fcef9f84dafd0cd5c6ec1661cdd068e9be3ebc51cdb79c1dd",
+  "limits": [
+    "Includes model-process startup, data/model reads, observed-state inference, diagnostic checks and result writing.",
+    "Excludes source development, strict summary/independent audits, report generation and manuscript work.",
+    "Shared host; cases share candidate/score work and have fixed order; no policy performance benchmark."
+  ]
+}

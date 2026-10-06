@@ -1,12 +1,13 @@
 {
   "files_sha256": {
-    "README.md": "984c4cf9b006fa7d838fdd1a934b5caf9ef5d47a4b790ecdfdcf61548be2bcaa",
+    "README.md": "617483f4026f5636cc129e933480cf54676bb38c63b1d25a942501c036c23482",
     "document_verification.json": "dae850d986ae98c45bb2f877a160b8700962503a33217d686c9cacc49feb0151",
     "graph_bridge_appendix.tex": "fdac5be0ecfc7ffed5109f14730fde15f83dee277eeb8fc5c03a9eacf55d11e4",
     "graph_bridge_main.tex": "24c5c3967576042678d2f714a7bc8115042be89c433c26ffd553feb13549c5d0",
     "graph_bridge_render_independent_review.json": "c9a6b48ea80f2f582b140390d6599d830710cd0fc3c0059449545d407f2e6476",
     "graph_convention_bridge.pdf": "174a97246328e582f0b86d0fed88b97dccb8140b2271e428b4b8d21885237f1d",
     "graph_convention_bridge.png": "88176d8dd483e6813e073b5557bb98a53c40c15577e8972b33061183e63e8ba9",
+    "measured_runtime.json": "b0224a75c3e17f5e9a211f9c32c9a929c0d33742adf0abfae7d8b1110e5f5276",
     "publication_independent_review.json": "2121e18ded09fb64dddb275a82f90e09d9c1a21fe559db57ce941819221d4aa9",
     "render_manifest.json": "c0f57693f3ab736c507099cc807cdd47ecfb3ee820999a490263fcd2428d74f6"
   },

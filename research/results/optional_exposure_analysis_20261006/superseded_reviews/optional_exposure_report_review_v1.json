@@ -1,0 +1,238 @@
+{
+  "passed": true,
+  "pdf": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revision_report.pdf",
+  "pdf_sha256": "e21db095733f50b13b2dbe9e6d71edcb81c5ba1aa761132b7c09361c62b495fb",
+  "page_number": 16,
+  "results_sha256": "71c8924bd17f1cd85a69736611e66ea442bc265f12cb920ebcfb7ab1fd508c65",
+  "mean_sd_cells": 14,
+  "claims_by_seed": [
+    {
+      "run": "faithful_seed0",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    },
+    {
+      "run": "faithful_seed1",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    },
+    {
+      "run": "faithful_seed2",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    },
+    {
+      "run": "nll_seed0",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    },
+    {
+      "run": "nll_seed1",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    },
+    {
+      "run": "nll_seed2",
+      "both_largest_positive": true,
+      "risk_only_expected_sign": true,
+      "speed_random_both_positive": true,
+      "cost_exceeds_positive_alignment": true
+    }
+  ],
+  "numeric_cells": [
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/whole/error_difference",
+      "seed_values": [
+        0.0005942635688778391,
+        0.00037193517179202494,
+        0.0004919475124563216
+      ],
+      "expected_display": [
+        "0.486",
+        "0.111"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/whole/error_difference",
+      "seed_values": [
+        0.0007452174324782389,
+        0.0009395880229162404,
+        0.0008953462526637563
+      ],
+      "expected_display": [
+        "0.860",
+        "0.102"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/neither/error_contribution",
+      "seed_values": [
+        8.98347141502798e-05,
+        0.0001219578150115609,
+        0.00010295396703647476
+      ],
+      "expected_display": [
+        "0.105",
+        "0.016"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/neither/error_contribution",
+      "seed_values": [
+        9.678447004700365e-05,
+        0.00017425262069509643,
+        0.00017339449705631654
+      ],
+      "expected_display": [
+        "0.148",
+        "0.044"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/left_only/error_contribution",
+      "seed_values": [
+        -2.4547323118980476e-05,
+        -9.876505341074938e-05,
+        -0.00010916322029336798
+      ],
+      "expected_display": [
+        "-0.077",
+        "0.046"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/left_only/error_contribution",
+      "seed_values": [
+        7.252124487700705e-05,
+        0.0001629928073863787,
+        1.7767240291938133e-05
+      ],
+      "expected_display": [
+        "0.084",
+        "0.073"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/right_only/error_contribution",
+      "seed_values": [
+        0.00010617993089104428,
+        9.580750571014857e-05,
+        7.876303470222391e-05
+      ],
+      "expected_display": [
+        "0.094",
+        "0.014"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/right_only/error_contribution",
+      "seed_values": [
+        7.037872890214663e-05,
+        0.00011302732364940942,
+        0.0001749286466567811
+      ],
+      "expected_display": [
+        "0.119",
+        "0.053"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/both/error_contribution",
+      "seed_values": [
+        0.0004227962469554956,
+        0.0002529349044810649,
+        0.00041939373101099094
+      ],
+      "expected_display": [
+        "0.365",
+        "0.097"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/both/error_contribution",
+      "seed_values": [
+        0.0005055329886520817,
+        0.0004893152711853558,
+        0.0005292558686587205
+      ],
+      "expected_display": [
+        "0.508",
+        "0.020"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/whole/cost_difference",
+      "seed_values": [
+        0.0031181097364080933,
+        0.004049809531316397,
+        0.003919619206101541
+      ],
+      "expected_display": [
+        "3.696",
+        "0.505"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/whole/cost_difference",
+      "seed_values": [
+        0.0036084631248745106,
+        0.00387887772835052,
+        0.0039053504179768824
+      ],
+      "expected_display": [
+        "3.798",
+        "0.164"
+      ]
+    },
+    {
+      "objective": "faithful",
+      "metric": "risk_minus_random/whole/alignment_difference",
+      "seed_values": [
+        0.0025238461675302546,
+        0.0036778743595243723,
+        0.0034276716936452183
+      ],
+      "expected_display": [
+        "3.210",
+        "0.607"
+      ]
+    },
+    {
+      "objective": "nll",
+      "metric": "risk_minus_random/whole/alignment_difference",
+      "seed_values": [
+        0.0028632456923962713,
+        0.002939289705434279,
+        0.003010004165313125
+      ],
+      "expected_display": [
+        "2.938",
+        "0.073"
+      ]
+    }
+  ],
+  "review_source_sha256": "96389144cd9944a6976172dc1fb7953ed757f978cb6021568938ef0264b0b66a",
+  "scope": "Read-only extraction and numeric/sign review. Means/sample SD independently recomputed from audited seed aggregates. No inference, training, production renderer imports or source modification."
+}

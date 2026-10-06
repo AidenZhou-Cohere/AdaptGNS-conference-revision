@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "scope": "Original byte identities, stable raw inventory and all-frame archive correspondence; standalone verifier validates package. Separate independent audit owns particle arithmetic.",
+  "manifest_sha256": "ffa1bf8434bcc542a2cd974e204eb49b1790153d7970616d0a21a36ce1d74233",
+  "raw_files_checked_before_and_after": 3569,
+  "raw_bytes_checked_before_and_after": 304551831,
+  "frame_records": 1782,
+  "frame_null_metrics_preserved": 136,
+  "omitted_counts": {
+    "derived_particle_arrays": 1782
+  }
+}

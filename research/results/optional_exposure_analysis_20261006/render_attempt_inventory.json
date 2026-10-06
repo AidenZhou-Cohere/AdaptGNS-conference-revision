@@ -1,0 +1,110 @@
+{
+  "scope": "All three preserved renderer output attempts; only v3 is final",
+  "attempts": {
+    "optional_exposure_render": {
+      "source_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_render",
+      "state": "superseded_layout_or_wording",
+      "files": {
+        "mechanism_findings.json": {
+          "sha256": "2d7c5eaa5646f312a2c9fc76931fe0f9d723178f5cd9edc1da77e94c30a84bd7",
+          "size_bytes": 2964
+        },
+        "optional_exposure_appendix.tex": {
+          "sha256": "5ea7d2e987fcd357d9a4f244a76f3406bc3cff78c1a33821210d17b75c3c955a",
+          "size_bytes": 6889
+        },
+        "optional_exposure_decomposition.pdf": {
+          "sha256": "839f4470a5e478ae2cad103f1366a31474b72512e150939e84aeea5c23b73983",
+          "size_bytes": 33101
+        },
+        "optional_exposure_decomposition.png": {
+          "sha256": "3b69db35514855139fab300b55c871eefe17b0506597c7f6baf4fa7dff56f590",
+          "size_bytes": 115007
+        },
+        "optional_exposure_main.tex": {
+          "sha256": "9e17b14d4a6a609bfa67547424996fdab4cbf4c6081133b97c4d3d6b491083c1",
+          "size_bytes": 1035
+        },
+        "plot_coordinates.json": {
+          "sha256": "d97adcdbb0430f576685af4316efac11a7a4e1102a525555147be4a35255305b",
+          "size_bytes": 17418
+        },
+        "render_manifest.json": {
+          "sha256": "0c331a09844dee1628b595eef9ff85b857b4bc7a950ff2395c2e33f738326053",
+          "size_bytes": 1128
+        }
+      },
+      "publication": "Retained unchanged locally; identities inventoried here"
+    },
+    "optional_exposure_render_v2": {
+      "source_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_render_v2",
+      "state": "superseded_layout_or_wording",
+      "files": {
+        "mechanism_findings.json": {
+          "sha256": "2d7c5eaa5646f312a2c9fc76931fe0f9d723178f5cd9edc1da77e94c30a84bd7",
+          "size_bytes": 2964
+        },
+        "optional_exposure_appendix.tex": {
+          "sha256": "5ea7d2e987fcd357d9a4f244a76f3406bc3cff78c1a33821210d17b75c3c955a",
+          "size_bytes": 6889
+        },
+        "optional_exposure_decomposition.pdf": {
+          "sha256": "e9a944edb3586dfec3996d95a999d97e7f8e7c4c4a18371ed975dab5c11adb86",
+          "size_bytes": 34313
+        },
+        "optional_exposure_decomposition.png": {
+          "sha256": "d27c336c74ed06ab82f994fb324567dec7f91f35a83605589379a704210d0b98",
+          "size_bytes": 122240
+        },
+        "optional_exposure_main.tex": {
+          "sha256": "9e17b14d4a6a609bfa67547424996fdab4cbf4c6081133b97c4d3d6b491083c1",
+          "size_bytes": 1035
+        },
+        "plot_coordinates.json": {
+          "sha256": "d97adcdbb0430f576685af4316efac11a7a4e1102a525555147be4a35255305b",
+          "size_bytes": 17418
+        },
+        "render_manifest.json": {
+          "sha256": "6a0e86dccdaeca8b9b615404879669f19938a9af4d7733ffd7377df565160103",
+          "size_bytes": 1128
+        }
+      },
+      "publication": "Retained unchanged locally; identities inventoried here"
+    },
+    "optional_exposure_render_v3": {
+      "source_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_render_v3",
+      "state": "final",
+      "files": {
+        "mechanism_findings.json": {
+          "sha256": "2d7c5eaa5646f312a2c9fc76931fe0f9d723178f5cd9edc1da77e94c30a84bd7",
+          "size_bytes": 2964
+        },
+        "optional_exposure_appendix.tex": {
+          "sha256": "fdd94fa42e10e1fb9e4abad70a8461aa26f4f755f927a1e932f44c6827e52f3c",
+          "size_bytes": 6889
+        },
+        "optional_exposure_decomposition.pdf": {
+          "sha256": "840dae3b1ea8bbbcb5ceb7afa56fba257c1138d10df7d856728af270f629b304",
+          "size_bytes": 34313
+        },
+        "optional_exposure_decomposition.png": {
+          "sha256": "d27c336c74ed06ab82f994fb324567dec7f91f35a83605589379a704210d0b98",
+          "size_bytes": 122240
+        },
+        "optional_exposure_main.tex": {
+          "sha256": "9e17b14d4a6a609bfa67547424996fdab4cbf4c6081133b97c4d3d6b491083c1",
+          "size_bytes": 1035
+        },
+        "plot_coordinates.json": {
+          "sha256": "d97adcdbb0430f576685af4316efac11a7a4e1102a525555147be4a35255305b",
+          "size_bytes": 17418
+        },
+        "render_manifest.json": {
+          "sha256": "9515730c519cb9da5c8e86d2fb5f2d54c3352bc4824391e2ab6b35a0b07c9fff",
+          "size_bytes": 1128
+        }
+      },
+      "publication": "root package files"
+    }
+  }
+}

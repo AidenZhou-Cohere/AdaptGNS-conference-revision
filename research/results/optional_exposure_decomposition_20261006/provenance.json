@@ -1,0 +1,64 @@
+{
+  "scope": "Compact publication of independently audited post-inspection saved-array decomposition; no inference or scientific recomputation",
+  "raw_root": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/optional-exposure-decomposition-20261006",
+  "result_sha256": "71c8924bd17f1cd85a69736611e66ea442bc265f12cb920ebcfb7ab1fd508c65",
+  "source_freeze_commit": "0f3589f",
+  "analysis_source_sha256": "c7a915d008f237551cc7d4efdcd63bc86bef4e555c9f53d6d25b51b1b1cf7e80",
+  "analysis_protocol_sha256": "050393b2270c0d69ae94dd3644b46e336496e30d556aa6aa1e7025225dc2fe83",
+  "independent_audit_result_hash_field": "results_sha256",
+  "independent_audit_source_sha256": "5b29b7d795f3ad398b6865c3ca91f022a417cc3b202aa8631acb245ce44edf4d",
+  "independent_audit_sha256": "a5cce72ec067a1331871afad2138015260096cac57a4fa1082a5cd3466133607",
+  "pre_execution_review_sha256": "f8490b36990b295ef40407f579b67455678eaaa52ae066f9c3a707c4e32cdd06",
+  "operational_timing": {
+    "cpu_saved_array_analysis_wall_seconds": 42.01555399999779,
+    "independent_audit_wall_seconds": 34.10732320799434,
+    "interpretation": "Postprocessing/audit operational times; not inference latency or speedup"
+  },
+  "source_or_audit_artifacts_rechecked": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_decomposition_independent_review.json": {
+      "sha256": "f8490b36990b295ef40407f579b67455678eaaa52ae066f9c3a707c4e32cdd06",
+      "size_bytes": 9574
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_claim_checks.json": {
+      "sha256": "b5a5e4c7ca6e1e8a3dd5deeeda352d5e1215567cb2dd6db09c2e2a8624c51654",
+      "size_bytes": 6119
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/verify_optional_exposure_publication.py": {
+      "sha256": "7626c7c3463f11e559d0bcfbe0bf3ab90abb16937f7b4055ff5c99c419e22c42",
+      "size_bytes": 12218
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/audit_optional_exposure_decomposition.py": {
+      "sha256": "5b29b7d795f3ad398b6865c3ca91f022a417cc3b202aa8631acb245ce44edf4d",
+      "size_bytes": 30705
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/optional_exposure_audit/attempt_20261005T235452_b267f8e19bcb45bdaa0b62bb340a90af.json": {
+      "sha256": "a5cce72ec067a1331871afad2138015260096cac57a4fa1082a5cd3466133607",
+      "size_bytes": 908
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/protocols/optional_exposure_decomposition_20261006.md": {
+      "sha256": "050393b2270c0d69ae94dd3644b46e336496e30d556aa6aa1e7025225dc2fe83",
+      "size_bytes": 9783
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/analyze_optional_exposure_decomposition.py": {
+      "sha256": "c7a915d008f237551cc7d4efdcd63bc86bef4e555c9f53d6d25b51b1b1cf7e80",
+      "size_bytes": 30995
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/test_optional_exposure_publication.py": {
+      "sha256": "1fcf1ff0c732991d8163eb9e247ce52d2cc934310b881903e68de7944db44433",
+      "size_bytes": 8031
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/AdaptGNS/research/tests/test_optional_exposure_decomposition.py": {
+      "sha256": "45f2c663830afe91ffa5c5901e75c4871b9de3f64746cabeec5b858f8ff3ad9e",
+      "size_bytes": 19455
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/test_audit_optional_exposure_decomposition.py": {
+      "sha256": "98e1a4f90360606cf373905026310130cbd3cb4dc732bc15417d0f438d0a36c1",
+      "size_bytes": 3868
+    },
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/curate_optional_exposure_publication.py": {
+      "sha256": "43f88ca8255ad6859f64878b8b41a326bbc9c3ff41b2f05250b778a2f7d6ce78",
+      "size_bytes": 21756
+    }
+  },
+  "asset_scope": "Original checkpoints/datasets are identified by unchanged input provenance, not embedded or rehashed by curation"
+}
