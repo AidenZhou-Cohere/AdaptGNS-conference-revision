@@ -1,0 +1,12 @@
+{
+  "status": "passed_exact_two_prose_changes_only",
+  "source_sha256": "0a5e83103a7d5c9f9ce9969d6f603099c7486f2e668656b263017d6a72295f42",
+  "title_abstract_tables_figures_numbers_and_appendix_unchanged": true,
+  "canonical_builder_unchanged": true,
+  "native_compilation": {
+    "status": "success",
+    "tool": "mcp__codex_app__compile_latex_document",
+    "eight_page_assertion_preserved": true
+  },
+  "exported_pdf_inspected": false
+}
