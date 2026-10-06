@@ -1,0 +1,16 @@
+{
+  "launch": {
+    "chunk_id": "36d75a",
+    "wall_time_seconds": 1.001750625,
+    "session_id": 47492,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "87f6aa",
+    "wall_time_seconds": 0.000013625,
+    "exit_code": 0,
+    "original_token_count": 0,
+    "output": ""
+  }
+}

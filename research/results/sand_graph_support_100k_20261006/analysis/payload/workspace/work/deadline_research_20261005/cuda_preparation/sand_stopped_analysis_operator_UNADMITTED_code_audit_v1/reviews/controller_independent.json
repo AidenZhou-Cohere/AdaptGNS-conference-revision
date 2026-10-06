@@ -1,0 +1,81 @@
+{
+  "final_source_sha256": {
+    "remote_probe.py": "d420d740bcec4fefce4189cddb15722effce46c2cc82902f1fc8b1c125b0a415",
+    "review_products.py": "f96741333ae17eb018a39fe6b69144a2976c13c288e23b95f0d92cd157a6592f",
+    "root_operator.py": "cc6b22b41a11d6bcb5481bbd3b420267f3f776f9e0b5bef83da6ca94a7763795",
+    "test_operator.py": "06cd2306421d68b971a56223b8ed25da3d374f49567fb35d97afdb2864f12ca8",
+    "test_review_products.py": "f6ae3f1ebf5f9496b7a18771fc6c1de0f7ffc1501a86b73d9917f5b6999431cb"
+  },
+  "limits": [
+    "No actual Sand scientific artifact, array, checkpoint, remote host, native probe, launch or actual phase clock was accessed or issued.",
+    "Completed original tool evidence is root-attested and byte-bound; root must preserve and independently verify the real original response/session before operational use.",
+    "This is candidate source/integration review, not a package manifest, release, execution authority, actual product acceptance, scientific admission or success claim."
+  ],
+  "package_control_sha256": {
+    "HANDOFF.md": "2363f84bd8bd1fdda61e7ff3d25f92e7bfe4b6cbdba4370b4782d216e774845e",
+    "bindings.json": "b81994119786ade27d438129e225881a8edd086f0e96b7cb33f9b41a15dfb25f",
+    "operations.json": "7e5e09e6025916c7309b103cf715db3fe9cfbb56be5df5eda7c372a8c6cf8b9b"
+  },
+  "package_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_operator_UNADMITTED_code_audit_v1",
+  "remaining_findings": [],
+  "resolved_findings": [
+    {
+      "finding": "Host publication was compared to root transport-observed time with zero permitted clock skew despite the frozen 5-second error bound.",
+      "fixed_root_sha256": "cc6b22b41a11d6bcb5481bbd3b420267f3f776f9e0b5bef83da6ca94a7763795",
+      "original_root_sha256": "01903d8adf81c51e151aa68cae535177077e87cb14b30a40455c773121275915",
+      "resolution": "publication_order requires literal integer5 error bound, preserves strict same-host origin/deadline interval, and admits host publication no later than root observation plus5 seconds. Seven synthetic clock-boundary cases pass.",
+      "severity": "blocking_before_correction"
+    }
+  ],
+  "review_files_sha256": {
+    "check_sources.py": "33013519ba0be5166dad7637e38fbc2c4ca60c4da1b9920a7faa040c7ffa2c93",
+    "integration_tests.log": "132c2e34d920d7c115221e2be019022a2155a7fef169942c29adc516efab129d",
+    "operator_tests.log": "5ddffcf1f5f7f709ec51e779e456429adb7440b7ca5ac2ab7702f819e9f98c4b",
+    "source_checks.json": "58166b5da94d0233dc07e45b7ef9d572763d54691c454d2dacad773b44e3b190",
+    "test_integration.py": "b63b7d3a156d8a48d5bc7b9517e936f67b8535d0545355e4a5ffdff95afed6ea"
+  },
+  "reviewed_contract_checks": [
+    "Entire controller and remote helper source reviewed, including fixed original session and full native child accounting before the one full 3600-second phase.",
+    "Original evaluation exits may be nonzero; their bounded original transport must be reaped and byte-bound to root evidence before native closure. Operation products require original exit zero and transport zero without timeout, failure or signals.",
+    "Phase uses immutable original A/B session and closure bindings, UTC/monotonic anchor agreement, global 04:00 UTC stop, and no replacement clock.",
+    "Prior qualification reuse matches exact same hosts, boots, interpreter/venv/timeout pins and all 24 shared top-level AST definitions; fresh runtime/source/native/GPU checks remain mandatory.",
+    "Complete frozen source allowlist, six CPU candidates, three phase/closure candidates, three scalar-core candidates, entire ten-operation map and two actual original evaluation release copies are unchanged.",
+    "Staging is exclusive for new controls/products, requires canonical fresh output leaves and empty owner parent, and admits identical existing files only for exact frozen sources.",
+    "Collection performs two identical full stopped-tree inventories; saved audit must retain the same collection tree and original native-closure metadata hashes.",
+    "All six operation dependency sets and frozen argv input-hash resolution are exact. Both accepted B scalar products must be transferred to A within the same phase before summary or paired work.",
+    "close_product demands complete owner_started/child_registered/stdout/stderr/terminal/product set, exact native identities and guard, exact full owner input/evidence/output hashes, and byte-bound original exit.",
+    "Remote capture derives current timeout/owner/worker PIDs from original terminal, unions all historical same-role identities, requires native absence and assigned-GPU emptiness, and rehashes all inputs/tree/evidence/output before publication.",
+    "Collection transported() rehashes every delivered raw metadata/protocol document and size against snapshot and CPU release before product validation; duplicate documents are refused.",
+    "Final review rechecks original phase budget and product bytes. Complete requires every accepted operation within the same original phase."
+  ],
+  "reviewer": "owner_receipt_review",
+  "schema": "sand_stopped_operator_independent_owner_review_v1",
+  "separate_product_validator_review": {
+    "independence_note": "This reviewer authored the product validator earlier; its separate independent transition review provides product-validator independence. This receipt independently reviews the controller/helper and their integration only.",
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_product_validator_independent_transition_v1.json",
+    "sha256": "9af90d8654895bab50842bf89624559eda1badefda2713a8b3e51603ee2667d5"
+  },
+  "source_checks": {
+    "passed": 95,
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_operator_independent_owner_review_v1/source_checks.json",
+    "sha256": "58166b5da94d0233dc07e45b7ef9d572763d54691c454d2dacad773b44e3b190"
+  },
+  "status": "passed_independent_controller_helper_source_and_synthetic_integration_review",
+  "synthetic_tests": [
+    {
+      "log": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_operator_independent_owner_review_v1/operator_tests.log",
+      "log_sha256": "5ddffcf1f5f7f709ec51e779e456429adb7440b7ca5ac2ab7702f819e9f98c4b",
+      "passed": 60,
+      "suite": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_operator_UNADMITTED_code_audit_v1/test_operator.py",
+      "suite_sha256": "06cd2306421d68b971a56223b8ed25da3d374f49567fb35d97afdb2864f12ca8"
+    },
+    {
+      "log": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_operator_independent_owner_review_v1/integration_tests.log",
+      "log_sha256": "132c2e34d920d7c115221e2be019022a2155a7fef169942c29adc516efab129d",
+      "passed": 25,
+      "scope": "All six close_product integration paths, raw-document bytes/size/duplicate guards, complete owner evidence/pins/identity/guard, final product/budget guards, exact dependencies/B-transfer/native history. Product semantic functions and remote probes are mocked; actual original-exit handling is covered separately by operator tests.",
+      "suite": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_operator_independent_owner_review_v1/test_integration.py",
+      "suite_sha256": "b63b7d3a156d8a48d5bc7b9517e936f67b8535d0545355e4a5ffdff95afed6ea"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "blocking_source_findings": [],
+  "failure_binding_count": 8,
+  "files_sha256": {
+    "HANDOFF.md": "63b009d595d80df745ede3e714e844dc82f482feebf47acc223d696dbc5bf34a",
+    "failure_bindings.json": "a8aa006b50eb29de413074b8ca72e2de84381300e9cd107b98db7ca0c08a3e25",
+    "recover_summary.py": "8fa47a44d3de6f26e7e04dc32ce30c8f0d67c1063ee584c0dea75870af3c744d",
+    "test_summary_recovery.py": "f095b8743a54bccc218439fbca562bbcd1a63efb7909a294dc77fe78e4289db0"
+  },
+  "limitations": [
+    "Source/synthetic review only; actual recovery tool exit and full frozen product/native admission remain for root.",
+    "Network invocation requires root tool network permissions already within standing authorization; this source review neither invokes network nor changes sandbox permissions.",
+    "No summary retry, new phase, clock extension, proxy startup/replacement, or numerical result admission is granted."
+  ],
+  "live_tools_or_clocks_called": false,
+  "manual_source_check_count": 15,
+  "manual_source_checks": [
+    "Four exact source/package payload hashes verified; no unpinned import cache.",
+    "Import and description paths invoke no process or clock.",
+    "Exact reviewed base recovery manifest71c50f55 and reviewe8e4085f are rehashed before base code import.",
+    "All original failed capture, summary exit and added completed local native-before evidence paths are required by byte pins.",
+    "Original capture must retain genuine transport255, reaped local leader, no timeout/signals, empty stdout and exact recorded local proxy-connect sandbox error.",
+    "Frozen original_exit must confirm exact original sand_summarize tool19303exit0 in the unchanged original phase.",
+    "Previously decoded summary directory and original summary review must both be absent.",
+    "Only unchanged frozen close_product(state,sand_summarize) is called; the original worker is never rerun.",
+    "Only roleA/actioncapture/originalsummary tag may be remapped to fresh sand_summarize.capture_recovery1; stop and monotonic arguments pass unchanged.",
+    "Invocation and recovery receipts use exclusive creation; a second attempt cannot overwrite the original or new failed attempt.",
+    "Frozen validation failure cannot publish a successful recovery receipt.",
+    "Actual original frozen review and new capture SHA values bind the distinct recovery receipt.",
+    "CLI permits no operation/state/action/worker/command override.",
+    "Existing reviewed successor route validation is reused unchanged; no route replacement, phase action or arbitrary clock parameter exists.",
+    "Original Sand phaseSHA0ac7a368 and stop2026-10-06T23:33:01.226132+00:00 remain authoritative through original budget checks."
+  ],
+  "new_or_restarted_clock_granted": false,
+  "post_test_metadata_only_changes": "Final failure bindings and handoff additionally bind root completed native-before observationf30e3fe275788c40128b420be8bad2cff42c9146377d8ebbd8079fbcaf7e3046; runtime and test bytes unchanged.",
+  "reviewer": "/root/code_audit/transition_review",
+  "schema": "sand_summary_capture_recovery_independent_review_v1",
+  "scientific_data_read_or_program_run": false,
+  "source_manifest_sha256": "2b8b0b9a8a0a025533d6291f401f1e99fa6be9cb70b8e7b0bb27029f00fc429c",
+  "source_package": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_summary_capture_recovery_UNADMITTED_code_audit_v1",
+  "status": "passed_source_and_synthetic_review",
+  "synthetic_verification": {
+    "command": "work/venv/bin/python -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation/sand_summary_capture_recovery_UNADMITTED_code_audit_v1 -p test_summary_recovery.py -v",
+    "original_tool_chunk_id": "a12ec1",
+    "original_tool_exit_code": 0,
+    "scope": "Temporary synthetic failure/review/output metadata and mocked frozen operator only; no actual outputs, clocks, network or science read/run.",
+    "test_file_sha256": "f095b8743a54bccc218439fbca562bbcd1a63efb7909a294dc77fe78e4289db0",
+    "tests_failed": 0,
+    "tests_passed": 11,
+    "unittest_reported_seconds": 0.038
+  }
+}

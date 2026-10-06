@@ -1,0 +1,9 @@
+{
+  "evidence_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_paired_original_tool_exit_root_v1.json",
+  "evidence_sha256": "ae63761d99006f49f2444331be8b793d158f0bf138af11720aefaad73302ab5b",
+  "observed_utc": "2026-10-06T23:14:13.245858+00:00",
+  "original_tool_exit_code": 0,
+  "original_tool_session": 92386,
+  "original_transport_sha256": "436a0e8f793c4cd85b96a0cd54bd0feb584c1d40779beec112d2ff9a68b6a5d3",
+  "recorded_by": "root"
+}

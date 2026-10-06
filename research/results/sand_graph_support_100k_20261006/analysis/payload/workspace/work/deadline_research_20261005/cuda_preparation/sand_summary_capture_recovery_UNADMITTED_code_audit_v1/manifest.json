@@ -1,0 +1,15 @@
+{
+  "files_sha256": {
+    "HANDOFF.md": "63b009d595d80df745ede3e714e844dc82f482feebf47acc223d696dbc5bf34a",
+    "failure_bindings.json": "a8aa006b50eb29de413074b8ca72e2de84381300e9cd107b98db7ca0c08a3e25",
+    "recover_summary.py": "8fa47a44d3de6f26e7e04dc32ce30c8f0d67c1063ee584c0dea75870af3c744d",
+    "test_summary_recovery.py": "f095b8743a54bccc218439fbca562bbcd1a63efb7909a294dc77fe78e4289db0"
+  },
+  "new_or_restarted_clock_granted": false,
+  "original_phase_sha256": "0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c",
+  "original_stop_utc": "2026-10-06T23:33:01.226132+00:00",
+  "original_summary_worker_session": 19303,
+  "original_worker_rerun": false,
+  "schema": "sand_original_summary_capture_recovery_source_candidate_v1",
+  "status": "source_synthetic_verified_pending_independent_receipt"
+}

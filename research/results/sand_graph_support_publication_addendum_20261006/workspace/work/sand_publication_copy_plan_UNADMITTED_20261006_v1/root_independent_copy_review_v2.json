@@ -1,0 +1,25 @@
+{
+  "schema": "sand_publication_copy_root_review_v2",
+  "status": "passed_after_copy_before_publication",
+  "copy_plan_sha256": "5ce6e03de3ff246d5ba7edb6af37c203748fab0daa8cf7d64f4b06d2b3fa8518",
+  "copier_sha256": "5c5b8619398893d04ef2d8e2d1c684b0f06590294b135dd0fc072c2eb3f43cb4",
+  "proposal_manifest_sha256": "0dc3c9a3ffa87e1bae99cf89549f8769bba6c5d65d23975b203b4973f5f74633",
+  "exact_source_and_installed_files": 239,
+  "total_bytes": 28903205,
+  "credential_signature_scan_findings": [],
+  "manual_source_review": [
+    "Full copier source/HANDOFF read before copy.",
+    "Copier bounded to fresh repository results child with exclusive writes, exact original source hashes, aliases and exact installed file set.",
+    "No numerical code execution, models, overwrite or deletion."
+  ],
+  "preserved_prior_review_failure": {
+    "error": "FileNotFoundError",
+    "requested": "manifest.json",
+    "actual": "plan_manifest.json",
+    "failed_before_source_scan": true,
+    "subsequent_copy_executed": true,
+    "copy_helper_own_preflight_and_installed_verification_passed": true,
+    "no_commit_or_push_at_failure": true
+  },
+  "scientific_reexecution": false
+}

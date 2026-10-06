@@ -1,0 +1,422 @@
+{
+  "operations": {
+    "d3_collect": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+        "--execute",
+        "--mode",
+        "collect",
+        "--ledger",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1/final_evaluation_ledger.json",
+        "--cohort",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort.json",
+        "--cohort-audit",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort_audit.json",
+        "--valid-manifest",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid.json",
+        "--test-manifest",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test.json",
+        "--protocol",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_scientific_protocol_v1.md",
+        "--root-release",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/controls/collection_release.json",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json"
+      ],
+      "dataset": "Goop3D",
+      "host_role": "D3",
+      "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_graph_support_vectorized_v1.py": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_scientific_protocol_v1.md": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort.json": "645343fc2a1c6ef0a82e212e351b03b1a4d081702d3c8e2187b244a62c6b9bef",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort_audit.json": "796d50adf33b20eb040200c829d31650ff5bc97927440220ea3c9489db7d840d",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test.json": "08edf3282267c05a427fc264a1a3aa547e062bc9b5ccb8ab7f982cfb3a9fb7cb",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/controls/collection_release.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1/final_evaluation_ledger.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed0__clean_validation.release.json": "23824101bb8cc5da145c5769b0740c050a9f0e56bd08f727a1dfea03157c2164",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed0__full_rollout_test.release.json": "0476a602a24ed17442ed11c61f568d1d9d5ba5bad05ba2a5fada4a34fd55dcc7",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed0__full_rollout_valid.release.json": "dd805acdbe741395d2ed10bb9cebb0f000a23b7ed6a22afcfce56aeac4de2399",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed0__same_state_test.release.json": "603d87b230d973a117e61e1fd78323ac35810ab03da335eee820f7e22ca20216",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed0__same_state_valid.release.json": "e26fbdc526155cddc04b1febaf578f889fc3f418383f1f406793571b74036bc0",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed1__clean_validation.release.json": "6a84e6ff13845c82e75fb4adbb06e8e1ca96d3828b9a8d57fa36ab1fd3a4f4a3",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed1__full_rollout_test.release.json": "b57e9e1787f517d313383562c5e00b9220a49ad2cf68af62527ec4dbf73c0aaa",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed1__full_rollout_valid.release.json": "16e745b0c63eb0c5dca9f70ec77a9a128e74a4e5fdde632d1a92e3bd4285cdb6",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed1__same_state_test.release.json": "0a404f467be4cb2cd72ac960809883945977ef8d67e6e6dcb8c6e6d9f0f7b36e",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed1__same_state_valid.release.json": "797c2d4c742c0cbc16089d02a29f890267eabbd5b1f77e053a1968693f26441f",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed2__clean_validation.release.json": "60a17dc4e7a1d0c8ce8d417f7a7e52a4ac3f0d7f20a096b1d27d4fa6b8e18b9f",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed2__full_rollout_test.release.json": "79ded1ff2dc00078bcc624bbef853ba0493ad551fbd325f6fae86d2e1cde377a",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed2__full_rollout_valid.release.json": "2a4ce2381207c9d385e89671f7a0081f0cc64da31d3048146cdd8e25d02cd7c8",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed2__same_state_test.release.json": "2c59afb5385e44274d6a4d1087ddc695357c7f0f15ddeabfe43e245ce1548e62",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/base_seed2__same_state_valid.release.json": "8a260c19bce79212db91ac9ae369fbb971507566f867a27cd5cc4daa3dd60580",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed0__clean_validation.release.json": "c22344627a7e6b02daacc8899d72b81df152c420dd96aa2041a28cd8b656d72e",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed0__full_rollout_test.release.json": "5be748bd868561527bcb69b1c99e40fe5d6cf47f2d5025ffd4c819009d7f4ec5",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed0__full_rollout_valid.release.json": "6fb75f51b52c7a49a6191a6acb54308954c2914c7a0820daca90192e6af84f29",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed0__same_state_test.release.json": "7f77a7e41b817324bddb18a5bc00edb8daa91b703f1721e9d0813d8280ebd814",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed0__same_state_valid.release.json": "2d9855595df1ad3fd5a6a37e35d54bc1169c30a7f9aec2d865e1ae6ff47f3bfd",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed1__clean_validation.release.json": "e2775eeaad7581c17c58bbae57b383955fd5f85461bd16f28e065da41f3ac379",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed1__full_rollout_test.release.json": "ccecd2547f51b71755505eaad3f767738d6275f09d2738f0fd4580e4b7c5c6cc",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed1__full_rollout_valid.release.json": "dd86755796a5fe8755c814ec8b6572435a0e36b32c24150a3599a00b78b59cb4",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed1__same_state_test.release.json": "ce37cb9c68588723b8bd1d57e2dc63cf38a3f7b7d287c883b2d52b9099a37c11",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed1__same_state_valid.release.json": "d4d2f6cf17d40e9138740672c71dc416e1a9a52abea590a284b52fd4310f5f1f",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed2__clean_validation.release.json": "a3287e81ff36487070d6a27d8534218a7c947e09ffd6e7f7be43be74c6c0d14d",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed2__full_rollout_test.release.json": "bb9bc31ea202a0b2f3c7ade423ebb4586f00b6abae56b0451cdcf0507e73e843",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed2__full_rollout_valid.release.json": "80c090b7661bd17a06a727317d04ac5559e183bcdbcf21dbcd4dc69e8a6faacd",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed2__same_state_test.release.json": "4a3b97b6fc68605277a88b509a0d07431ff41d0bee5adfbb3f1999f3090d867e",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_controls_20261006_v1/mix_seed2__same_state_valid.release.json": "f9e4b4e6c613b41a7d6e86912760c99943304dc956cc6f5b72068a61ce4a2382",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid.json": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef"
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1"
+      ]
+    },
+    "d3_paired_array_audit": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_paired_arrays_v1.py",
+        "--execute",
+        "--audit",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/saved_array_audit.json",
+        "--audit-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/saved_array_audit.json"
+        },
+        "--summary",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_summary.json",
+        "--summary-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_summary.json"
+        },
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_array_audit.json"
+      ],
+      "dataset": "Goop3D",
+      "host_role": "D3",
+      "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_paired_arrays_v1.py": "a520fdf0766038b99ad075b27cbc227721745bce9c5cd5e0cb1416535f6897f9",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_saved_arrays_v1.py": "633d7034d687acdc4e743e78c67fb5bcf1c81352ed524829d5ba01b163158491",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_saved_diagnostic_audit_v1.py": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_summary.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/saved_array_audit.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_array_audit.json"
+      ],
+      "protected_tree_roots": []
+    },
+    "d3_saved_array_audit": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_saved_arrays_v1.py",
+        "--execute",
+        "--collection",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json",
+        "--collection-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json"
+        },
+        "--queue-root",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/saved_array_audit.json"
+      ],
+      "dataset": "Goop3D",
+      "host_role": "D3",
+      "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_saved_arrays_v1.py": "633d7034d687acdc4e743e78c67fb5bcf1c81352ed524829d5ba01b163158491",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_graph_support_vectorized_v1.py": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_saved_diagnostic_audit_v1.py": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/saved_array_audit.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1"
+      ]
+    },
+    "d3_summarize": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+        "--execute",
+        "--mode",
+        "summarize",
+        "--collection",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json",
+        "--root-release",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/controls/analysis_release.json",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_summary.json"
+      ],
+      "dataset": "Goop3D",
+      "host_role": "D3",
+      "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop3d_graph_support_v1.py": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_diagnostic_metrics_v1.py": "5ef3de96e470eea495dd56c1f60396bbd166b9ea5c5bc340864715cb9e2c173b",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_graph_support_vectorized_v1.py": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_native_evaluation_v1.py": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/controls/analysis_release.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/stopped_collection.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/paired_summary.json"
+      ],
+      "protected_tree_roots": []
+    },
+    "sand_collect_A": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "--execute",
+        "--mode",
+        "collect",
+        "--queue-root",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1",
+        "--cohort",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json",
+        "--operational-amendment",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "--root-release",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/A.collection_release.json",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "A",
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/A.collection_release.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba"
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1"
+      ]
+    },
+    "sand_collect_B": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "--execute",
+        "--mode",
+        "collect",
+        "--queue-root",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1",
+        "--cohort",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json",
+        "--operational-amendment",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md",
+        "--root-release",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/B.collection_release.json",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "B",
+      "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/B.collection_release.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_post_training_A_20261006_v1/cohort/cohort.json": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba"
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1"
+      ]
+    },
+    "sand_paired": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_paired_arrays_v1.py",
+        "--execute",
+        "--audit-a",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json",
+        "--audit-a-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json"
+        },
+        "--audit-b",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.saved_array_audit.json",
+        "--audit-b-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.saved_array_audit.json"
+        },
+        "--summary",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_scalar_summary.json",
+        "--summary-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_scalar_summary.json"
+        },
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_saved_array_audit.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "A",
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_paired_arrays_v1.py": "541bdc67a99e44ccb263b1bbe439fa37132ef95ab597e1dd440742c0bb4a7a2d",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py": "a7e47c8e4740cc8c1767dc778ef4fa5291453f4142a0753cc62a0bf82bea7740",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/sand_saved_diagnostic_audit_v1.py": "700695b69691b9da45e31ce7a9821900a12ff882be5b4a09927ff8b6dd0f8cdd",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.saved_array_audit.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_scalar_summary.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_saved_array_audit.json"
+      ],
+      "protected_tree_roots": []
+    },
+    "sand_saved_A": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py",
+        "--execute",
+        "--collection",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json",
+        "--collection-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json"
+        },
+        "--queue-root",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "A",
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_paired_arrays_v1.py": "541bdc67a99e44ccb263b1bbe439fa37132ef95ab597e1dd440742c0bb4a7a2d",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py": "a7e47c8e4740cc8c1767dc778ef4fa5291453f4142a0753cc62a0bf82bea7740",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/sand_saved_diagnostic_audit_v1.py": "700695b69691b9da45e31ce7a9821900a12ff882be5b4a09927ff8b6dd0f8cdd",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1"
+      ]
+    },
+    "sand_saved_B": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py",
+        "--execute",
+        "--collection",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json",
+        "--collection-sha256",
+        {
+          "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json"
+        },
+        "--queue-root",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.saved_array_audit.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "B",
+      "hostname": "aidenzhou-aquamarine-toad-75-6d8b45c98d-mgjlq",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_paired_arrays_v1.py": "541bdc67a99e44ccb263b1bbe439fa37132ef95ab597e1dd440742c0bb4a7a2d",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py": "a7e47c8e4740cc8c1767dc778ef4fa5291453f4142a0753cc62a0bf82bea7740",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/sand_saved_diagnostic_audit_v1.py": "700695b69691b9da45e31ce7a9821900a12ff882be5b4a09927ff8b6dd0f8cdd",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.saved_array_audit.json"
+      ],
+      "protected_tree_roots": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1"
+      ]
+    },
+    "sand_summarize": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-B",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py",
+        "--execute",
+        "--mode",
+        "summarize",
+        "--collection-a",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json",
+        "--collection-b",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json",
+        "--root-release",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/summary_release.json",
+        "--output",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_scalar_summary.json"
+      ],
+      "dataset": "Sand",
+      "host_role": "A",
+      "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+      "inputs_sha256": {
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_sand_graph_support_scoped_v1.py": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+        "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829",
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/B.stopped_collection.json": null,
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/summary_release.json": null
+      },
+      "outputs": [
+        "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/paired_scalar_summary.json"
+      ],
+      "protected_tree_roots": []
+    }
+  },
+  "schema": "adaptgns_stopped_analysis_exact_operations_v1",
+  "source_packages_sha256": {
+    "Goop3D": "83431cbbb468ca5fbcbd36a024c7e8735f503dd51dbea23283397fd25c98724c",
+    "Sand": "91c95bbb30779b8ec1f988c3125ea9d74af691a8df340ccbc1971ef2f6c3fcba"
+  },
+  "status": "inert_reviewed_exact_worker_map_no_execution_authority"
+}

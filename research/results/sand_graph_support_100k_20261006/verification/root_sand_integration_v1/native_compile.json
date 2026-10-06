@@ -1,0 +1,11 @@
+{
+  "source_sha256": "d4ed535ce1ec78803d85ba37449c5fe6eec7d32c9e55303e7fff2cdec71c76fe",
+  "native_compiler_result": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler."
+  },
+  "unchanged_eight_page_main_assertion": true,
+  "pdf_exported": false,
+  "final_export_visual_inspection_pending": true
+}

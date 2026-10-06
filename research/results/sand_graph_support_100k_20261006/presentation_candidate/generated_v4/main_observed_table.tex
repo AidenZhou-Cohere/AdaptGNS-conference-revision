@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering\scriptsize
+\caption{Observed-test position-coordinate MSE contrasts. Each column uses its stated coordinate-squared scale. Entries are means $\pm$ sample SDs of three paired seeds. Negative contrasts favor the first term; the last row changes the risk-minus-random gap. Goop and Sand train from initialization to 100k; WaterDrop continues inspected 100k parents to 110k. Materials are not pooled.}
+\label{tab:goop-exposure-placement}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lccc}
+\toprule
+Contrast & \shortstack{Goop\\$\times10^{-10}$} & \shortstack{WaterDrop\\$\times10^{-10}$} & \shortstack{Sand\\$\times10^{-9}$}\\
+\midrule
+Mix $-$ base (base) & $-3.04\pm5.12$ & $+0.70\pm0.40$ & $-0.84\pm2.91$\\
+Mix $-$ base (random) & $-5.51\pm4.28$ & $+0.28\pm0.92$ & $-3.85\pm3.66$\\
+Risk $-$ random (base) & $+6.39\pm1.45$ & $+1.62\pm1.07$ & $+4.76\pm3.80$\\
+Risk $-$ random (mix) & $+2.84\pm3.62$ & $-0.99\pm0.67$ & $+1.87\pm1.04$\\
+Training interaction & $-3.55\pm2.18$ & $-2.61\pm0.74$ & $-2.89\pm2.81$\\
+\bottomrule
+\end{tabular}
+\end{table}

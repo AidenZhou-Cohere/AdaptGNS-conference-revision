@@ -1,0 +1,8 @@
+{
+  "original_tool_chunk_id": "2aec41",
+  "original_tool_exit_code": 1,
+  "error": "Reviewer incorrectly expected boolean retrieval_proxy_cleanup_pending instead of exact original session/PID/stop object.",
+  "original_reviewer_source": "work/review_sand_curation_root_v1.py",
+  "candidate_manifest_unchanged": "16b9f66a04230fbb83b410cc007b1bce14b9bbc05ce93ef9b98b8780fd749029",
+  "scientific_program_rerun": false
+}

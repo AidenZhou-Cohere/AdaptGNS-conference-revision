@@ -1,0 +1,56 @@
+{
+  "schema": "cross_material_presentation_plan_before_sand_admission_v1",
+  "frozen_utc": "2026-10-06T22:36:52.731161+00:00",
+  "author": "/root/conference_critique_statistics",
+  "status": "fixed_before_sand_numeric_admission",
+  "sand_scientific_products_read": false,
+  "manuscript_edited": false,
+  "new_experiments_or_analysis_allocation": false,
+  "source_reference_sha256": {
+    "outputs/revised_manuscript.tex": "9240888d8c1a632e68065d7a64c0fe84cb89e3a4280d74e34ca6077196d5a3be",
+    "work/conference_experiments_main.tex": "9a8a2e46f2afede6b8b919f8e97cf5a76f4d22fc0ddcc291e728f2b9d69fa02a",
+    "work/build_manuscript.py": "aa023359da96c95bfebc41ef638e1b76bd7f7c49ae3ff280d581c76cda658134",
+    "work/manuscript_body.tex": "6bba12be929292ae998d485f5c0493a1dff01e7936d4d9436ee5eb403f333db3",
+    "work/deadline_research_20261005/cuda_preparation/sand_graph_support_100k_protocol_v1.md": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+    "work/deadline_research_20261005/cuda_preparation/evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58"
+  },
+  "material_order": [
+    "Goop",
+    "WaterDrop",
+    "Sand"
+  ],
+  "observed_contrasts": [
+    "mix_minus_base_at_base",
+    "mix_minus_base_at_random25",
+    "risk_minus_random_base_training",
+    "risk_minus_random_mixed_training",
+    "risk_minus_random_training_interaction"
+  ],
+  "full_horizon_training_effect_policy_order": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ],
+  "waterdrop_rms25": "not_predeclared_no_new_run",
+  "seed_order": [
+    0,
+    1,
+    2
+  ],
+  "horizons": {
+    "Goop": 395,
+    "WaterDrop": 995,
+    "Sand": 314
+  },
+  "retain_all_failures_uncompleted_outcomes_and_nulls": true,
+  "survivor_only_aggregation": false,
+  "new_cross_material_figure": false,
+  "retain_existing_goop_figure": true,
+  "plan": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/cross_material_presentation_plan_before_sand_admission_statistics_v1.md",
+    "sha256": "b89a3e5341f4db983a55c20645b127636f508261409ccfbd5ad372db6b4056f8"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "cohort_sha256": "0e73e272a4ff386ca1e89bd010c476a82f993ced8f32176144f53b779f32d8ba",
+  "collector_sha256": "1e70f1689a75c6f68eb970048aab7837153c19f70caf30ec19143cf66ab5d272",
+  "issued_by": null,
+  "local_queue_inventory_sha256": null,
+  "operational_amendment_sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+  "original_queue_root": "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_B_20261006_v1",
+  "queue_release_sha256": null,
+  "schema": "adaptgns_sand_scalar_collection_release_scoped_v1",
+  "source_sha256": {
+    "evaluate_sand_graph_support_final.py": "952c65d6d5d41be1383dc85ad499d68e8ee1846bf05b739066f8d11b17626d58",
+    "summarize_goop_graph_support_quota_v2.py": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c",
+    "supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+    "supervise_sand_final_evaluation_scoped_v1.py": "efebe762ea60b1b711925fb9bb3bc91461a16b1440491b2fa554c99171773829"
+  },
+  "status": "not_admitted"
+}

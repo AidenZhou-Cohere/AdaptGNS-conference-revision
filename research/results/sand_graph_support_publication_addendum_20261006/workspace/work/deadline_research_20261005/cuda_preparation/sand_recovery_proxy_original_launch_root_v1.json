@@ -1,0 +1,7 @@
+{
+  "chunk_id": "8b6737",
+  "wall_time_seconds": 1.002153167,
+  "session_id": 62558,
+  "original_token_count": 314,
+  "output": "{\"schema\": \"coder_sand_original_phase_recovery_route_proxy_v1\", \"analysis_phase_path\": \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/analysis_phase.json\", \"analysis_phase_sha256\": \"0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c\", \"local_phase_anchor_sha256\": \"06cee5e7a2372fb5799678cfa9493f91a0e88fc3ba45ebc1a70bc15944295fd1\", \"original_analysis_started_utc\": \"2026-10-06T22:33:01.226132+00:00\", \"original_analysis_stop_utc\": \"2026-10-06T23:33:01.226132+00:00\", \"original_monotonic_stop\": 176597.315591708, \"new_or_restarted_clock_granted\": false, \"started_utc\": \"2026-10-06T22:57:00.579843+00:00\", \"lifetime_seconds\": 2160.628163791989, \"url\": \"http://127.0.0.1:56069\", \"authority\": \"coder.internal.cohere.com:443\", \"upstream\": [\"100.106.33.61\", 443], \"opaque_tls\": true, \"no_settings_changed\": true, \"closure_admission_sha256\": \"126be46bcfaa0b6471871ed8cb59f1740f0f92908929cd75c9246ed84b93d25b\", \"original_route_package_sha256\": \"292cc31d54e822d6eb1a843da3ce55427f9f89201c1fb9a2dd7293d0660dfd80\", \"connection_cap\": 2048, \"concurrency_cap\": 8, \"per_direction_buffer_bytes\": 262144, \"payload_backpressure\": \"nonblocking_partial_send\"}\n"
+}

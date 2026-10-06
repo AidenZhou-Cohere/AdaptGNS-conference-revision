@@ -1,0 +1,9 @@
+{
+  "reason": "Generated development bytecode retained outside the sealed source package; no runtime/scientific outputs deleted",
+  "retained_sha256": {
+    "__pycache__/recover.cpython-312.pyc": "bf3a0887c910897572ad1746519b5319bc71281a9cff01319239fbb2e48f4010",
+    "__pycache__/remote_fate.cpython-312.pyc": "4e1657d6f67d9e11258220382e2f9cdbb9aa359bafaa878f7efa9d2c9e49885c",
+    "__pycache__/remote_transfer.cpython-312.pyc": "74dc18194949d463882b21aad62279d5bdbf6ff8d4344efec2d51b236220082d"
+  },
+  "source_manifest_sha256": "71c50f558082d127757cc84dff97f7451c7c5e73ff4b5ef48ff41be1af851a79"
+}

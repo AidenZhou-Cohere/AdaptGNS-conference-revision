@@ -1,0 +1,15 @@
+{
+  "all_original_failures_and_unexecuted_denominators_preserved": true,
+  "analysis_phase_sha256": "0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c",
+  "completed_utc": "2026-10-06T23:16:02.496386+00:00",
+  "operation_review_sha256": {
+    "sand_collect_A": "8638a839266c6e6e874b87e609e13d7429b1a519c0b9d154c7d2724e466b7897",
+    "sand_collect_B": "a18a6f50a6d704820741155b66d87266dba2be4e71bd3162a4dfc1fbe7119be9",
+    "sand_paired": "1e9308d8510c17487975d547de861b225dc82f7e2b2c834b6b9d296ef6244655",
+    "sand_saved_A": "6d07b58342747b6c716ebebeb2407d7ec72bd6100ffb547e8c4af06e80786d42",
+    "sand_saved_B": "6edcfcf7fd1db5e00c77d48cb5037240db5aefc3b53e4bbbdde8ce2340f62e9a",
+    "sand_summarize": "9acac8293702fb26974bb1a286f01eb6beb7451867d5b4e0e07acc024bacef36"
+  },
+  "scientific_success_or_speedup_not_implied": true,
+  "status": "all_six_original_stopped_analysis_operations_reviewed"
+}

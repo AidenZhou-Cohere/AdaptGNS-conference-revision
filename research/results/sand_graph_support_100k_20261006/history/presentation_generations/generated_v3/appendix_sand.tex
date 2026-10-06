@@ -1,0 +1,149 @@
+\section{Sand: graph exposure and placement}
+\label{sec:sand-graph-exposure}
+The fixed Sand study trains faithful base-only and mixed-graph models from initialization for 100,000 updates at paired seeds 0--2. The DesignSafe PRJ-3702 version-1 source (DOI 10.17603/ds2-0phb-dg64) has 1,000 training trajectories, 320 frames per trajectory and two-dimensional particle positions. Evaluation uses all 30 declared test sources through all 314 forecasts. Each endpoint also has 150 observed validation histories, 150 observed test histories and 128 clean-validation frames. The fixed observed targets are frames 7, 85, 163, 241 and 319 of each source. This exploratory extension follows inspected historical Sand and WaterDrop evidence; it does not establish pristine independent confirmation or a controlled material-only effect.
+
+The model uses width 128, ten message-passing blocks, batch size two, six-frame histories, noise scale $6.7\times10^{-4}$ and faithful regression with variance floor $10^{-6}$. Adam's learning rate decays from $10^{-4}$ to $10^{-5}$. Paired arms share initialization, sampled frames, noise and optimization schedules. A mixed-arm example independently expands with probability $1/2$, appending a uniformly selected, floor-rounded quarter of the optional annulus. The native radius is $.015$, the radius ratio is $1.267$, and the directed native prefix, self-messages and receiver cap of 128 are preserved. Short-range pairs omitted by the native cap are not restored as annulus pairs. All six evaluation policies and both observed and autonomous risk conventions match the fixed study definition in the main text.
+
+Sand uses a distinct deterministic native-CUDA lineage. Earlier strict CPU/CUDA gradient checks failed, and no altered backward mask or gradient rule enters these models. Same-device replay checks do not establish matching CPU/CUDA optimization trajectories or cross-device bitwise identity. Source, data, configuration, checkpoint and schedule hashes, failed predecessors and operational recovery records remain in the reproducible package.
+
+The tables below must retain every policy and ordered seed, all required failed or absent outcomes, and null full-horizon statistics. Means and sample standard deviations describe three paired training seeds. Truth-matched metadata-box excursions are geometric diagnostics, not conservation tests or certificates of physical validity. Runtime is descriptive: fixed policy order, shared hosts and evolving graph geometries prevent causal speedup claims.
+
+All 24 model-stage families complete: 1,080 autonomous outcomes, 900 observed validation histories, 900 observed test histories and 768 clean-validation frames, totaling 3,648 mixed-stage cells. These cell types are not interchangeable rollout denominators. No required scientific outcome failed or remained uncompleted. Earlier transport/capture failures were retained and recovered operationally without rerunning scientific workers.
+
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Sand full-H314 position MSE for every training arm, policy and seed. Each row includes all 90 required outcomes; failed and not-completed counts are zero. No shortened endpoint replaces the full horizon.}
+\label{tab:sand-all-rollouts}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Training & Policy & Mean $\pm$ SD & Seed 0 & Seed 1 & Seed 2\\
+\midrule
+base & Base & $0.06785\pm0.06378$ & 0.02604 & 0.14126 & 0.03626\\
+base & Dense & $0.12934\pm0.14479$ & 0.04109 & 0.29644 & 0.05049\\
+base & Random25 & $0.08298\pm0.08643$ & 0.02838 & 0.18263 & 0.03794\\
+base & Speed25 & $0.08085\pm0.07898$ & 0.03132 & 0.17194 & 0.03930\\
+base & Cached risk25 & $0.09714\pm0.10755$ & 0.03135 & 0.22125 & 0.03883\\
+base & RMS25 & $0.08782\pm0.09293$ & 0.03290 & 0.19511 & 0.03544\\
+mix & Base & $0.06781\pm0.06218$ & 0.02512 & 0.13915 & 0.03918\\
+mix & Dense & $0.12602\pm0.14751$ & 0.03727 & 0.29630 & 0.04449\\
+mix & Random25 & $0.07240\pm0.06802$ & 0.02714 & 0.15062 & 0.03945\\
+mix & Speed25 & $0.09071\pm0.09794$ & 0.02824 & 0.20359 & 0.04030\\
+mix & Cached risk25 & $0.10631\pm0.11951$ & 0.03428 & 0.24426 & 0.04039\\
+mix & RMS25 & $0.08507\pm0.08888$ & 0.02976 & 0.18759 & 0.03785\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Sand position-coordinate MSE on observed histories ($\times10^{-8}$). Every model has 150 validation and 150 test histories. Risk uses the preceding observed base history. All test seed means are retained; validation seed values and normalized-coordinate metrics are in the complete scalar companion.}
+\label{tab:sand-all-observed}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrrr}
+\toprule
+Training & Policy & Validation & Test & Test seed 0 & Test seed 1 & Test seed 2\\
+\midrule
+base & Base & $5.099\pm0.216$ & $3.398\pm0.581$ & 3.016 & 3.112 & 4.067\\
+base & Dense & $7.545\pm0.865$ & $5.800\pm1.139$ & 5.118 & 5.167 & 7.116\\
+base & Random25 & $5.472\pm0.362$ & $3.735\pm0.754$ & 3.245 & 3.357 & 4.603\\
+base & Speed25 & $5.802\pm0.457$ & $4.340\pm1.069$ & 3.803 & 3.645 & 5.571\\
+base & Previous risk25 & $6.581\pm0.575$ & $4.211\pm1.133$ & 3.503 & 3.612 & 5.518\\
+base & RMS25 & $6.728\pm0.457$ & $4.433\pm0.963$ & 3.804 & 3.952 & 5.541\\
+mix & Base & $4.806\pm0.118$ & $3.314\pm0.291$ & 3.139 & 3.153 & 3.650\\
+mix & Dense & $6.215\pm0.637$ & $4.334\pm0.383$ & 3.997 & 4.256 & 4.750\\
+mix & Random25 & $4.961\pm0.258$ & $3.349\pm0.389$ & 3.069 & 3.185 & 3.794\\
+mix & Speed25 & $5.161\pm0.276$ & $3.786\pm0.509$ & 3.585 & 3.408 & 4.365\\
+mix & Previous risk25 & $5.662\pm0.324$ & $3.536\pm0.493$ & 3.173 & 3.339 & 4.097\\
+mix & RMS25 & $5.855\pm0.396$ & $3.698\pm0.442$ & 3.339 & 3.562 & 4.192\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Every Sand policy training effect, mixed minus base. The observed-test column uses position-coordinate MSE $\times10^{-9}$; autonomous columns use full-H314 position MSE. In the observed column, the risk row uses previous-observed-base scores; autonomous risk uses its own cached selected-graph scores. Negative values favor mixed training.}
+\label{tab:sand-all-training-effects}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lrrrrr}
+\toprule
+Policy & Observed test & H314 & H314 seed 0 & H314 seed 1 & H314 seed 2\\
+\midrule
+Base & $-0.844\pm2.913$ & $-0.00004\pm0.00263$ & -0.00092 & -0.00211 & 0.00292\\
+Dense & $-14.658\pm7.862$ & $-0.00332\pm0.00296$ & -0.00382 & -0.00014 & -0.00600\\
+Random25 & $-3.854\pm3.664$ & $-0.01058\pm0.01861$ & -0.00124 & -0.03201 & 0.00151\\
+Speed25 & $-5.539\pm5.646$ & $+0.00986\pm0.01898$ & -0.00308 & 0.03165 & 0.00100\\
+Cached risk25 & $-6.745\pm6.467$ & $+0.00917\pm0.01201$ & 0.00294 & 0.02301 & 0.00155\\
+RMS25 & $-7.351\pm5.334$ & $-0.00275\pm0.00498$ & -0.00313 & -0.00752 & 0.00241\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Sand risk minus random within each training arm, and the mixed-minus-base change in that gap. Observed validation and test use coordinate-squared units $\times10^{-9}$; autonomous rows use full-H314 position MSE. All three ordered seeds are retained. A negative interaction does not imply that either absolute risk-minus-random gap is negative.}
+\label{tab:sand-all-placement}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Endpoint (scale) & Training/contrast & Mean $\pm$ SD & Seed 0 & Seed 1 & Seed 2\\
+\midrule
+Validation ($10^{-9}$) & base & $+11.087\pm2.125$ & 11.142 & 8.935 & 13.184\\
+Validation ($10^{-9}$) & mix & $+7.014\pm0.667$ & 7.642 & 6.314 & 7.087\\
+Validation ($10^{-9}$) & interaction & $-4.073\pm1.807$ & -3.500 & -2.622 & -6.097\\
+Test ($10^{-9}$) & base & $+4.759\pm3.804$ & 2.578 & 2.548 & 9.152\\
+Test ($10^{-9}$) & mix & $+1.868\pm1.038$ & 1.038 & 1.535 & 3.032\\
+Test ($10^{-9}$) & interaction & $-2.891\pm2.809$ & -1.540 & -1.013 & -6.120\\
+H314 & base & $+0.01416\pm0.02121$ & 0.00297 & 0.03862 & 0.00089\\
+H314 & mix & $+0.03391\pm0.05182$ & 0.00715 & 0.09364 & 0.00093\\
+H314 & interaction & $+0.01975\pm0.03062$ & 0.00418 & 0.05502 & 0.00004\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Sand full-H314 geometry and descriptive committed-call time, as three-seed means $\pm$ sample SDs. Outside counts particles beyond the metadata box by more than $10^{-6}$. Excursion is the trajectory-maximum coordinate excursion, then averaged over trajectories. Matching truth is $0.061825\%$ outside and $0.00079537$ excursion for every row (zero across-seed SD). Calls include native parity; setup, publication and operational recovery are separate. Fixed policy order, shared hosts and different geometries prevent a causal speedup claim.}
+\label{tab:sand-all-cost}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside (\%) & Excursion & s/case\\
+\midrule
+base & Base & $12.72\pm14.41$ & $0.2291\pm0.3080$ & $14.589\pm0.827$\\
+base & Dense & $18.59\pm24.68$ & $0.3956\pm0.5581$ & $12.242\pm1.032$\\
+base & Random25 & $14.78\pm18.32$ & $0.2808\pm0.3951$ & $14.063\pm0.900$\\
+base & Speed25 & $14.58\pm16.88$ & $0.2983\pm0.4152$ & $14.203\pm1.442$\\
+base & Cached risk25 & $16.34\pm20.62$ & $0.3472\pm0.4915$ & $12.919\pm0.890$\\
+base & RMS25 & $15.58\pm19.49$ & $0.3153\pm0.4414$ & $13.269\pm1.214$\\
+mix & Base & $10.13\pm11.11$ & $0.2734\pm0.3668$ & $15.402\pm1.469$\\
+mix & Dense & $12.72\pm12.60$ & $0.5365\pm0.7616$ & $12.812\pm1.496$\\
+mix & Random25 & $10.47\pm10.94$ & $0.3244\pm0.4453$ & $14.701\pm1.665$\\
+mix & Speed25 & $11.19\pm11.75$ & $0.4666\pm0.6812$ & $14.952\pm1.715$\\
+mix & Cached risk25 & $12.04\pm12.60$ & $0.4914\pm0.7048$ & $14.142\pm2.035$\\
+mix & RMS25 & $10.54\pm10.31$ & $0.3752\pm0.5251$ & $14.263\pm1.807$\\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\centering\scriptsize
+\caption{Sand clean validation under the base graph: all 128 declared frames per model, aggregated equally within trajectory and then across trajectories. All three seeds are shown. These residual-scale diagnostics do not establish action-value calibration or autonomous stability.}
+\label{tab:sand-clean}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{llrrrr}
+\toprule
+Training & Metric & Mean $\pm$ SD & Seed 0 & Seed 1 & Seed 2\\
+\midrule
+base & Normalized coordinate MSE & $0.0512\pm0.0081$ & 0.0472 & 0.0459 & 0.0606\\
+base & Constant-free NLL & $-3.1279\pm0.3904$ & -3.3649 & -3.3415 & -2.6774\\
+base & Predicted vector squared error & $0.1091\pm0.0129$ & 0.1070 & 0.0973 & 0.1229\\
+base & Realized vector squared error & $0.1025\pm0.0163$ & 0.0945 & 0.0917 & 0.1212\\
+mix & Normalized coordinate MSE & $0.0493\pm0.0034$ & 0.0492 & 0.0460 & 0.0527\\
+mix & Constant-free NLL & $-3.2625\pm0.1037$ & -3.2237 & -3.3799 & -3.1838\\
+mix & Predicted vector squared error & $0.1072\pm0.0080$ & 0.1083 & 0.0987 & 0.1146\\
+mix & Realized vector squared error & $0.0986\pm0.0067$ & 0.0984 & 0.0920 & 0.1054\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Exposure lowers observed-test error under all five expanded policies in every seed, while base-policy error worsens in seeds 0 and 1. Previous-observed risk remains worse than random in every validation and test seed of both arms, despite a negative interaction in every seed. On test, its mean frame Spearman correlation with base error is $.251\pm.086$ for base training and $.272\pm.026$ for mixed training; correlation with its own sparse-action benefit is $-.119\pm.044$ and $-.062\pm.036$, respectively. All six of these per-model benefit correlations are negative. Clean-validation mean MSE decreases only in seed 2; NLL decreases in seeds 1 and 2. Aggregate residual fit therefore does not resolve the placement problem.
+
+Autonomous behavior differs. Random25 improves under exposure in seeds 0 and 1 but worsens in seed 2; cached risk worsens in all three. The risk-minus-random interaction is positive in every seed. Native base outperforms random25 in every seed of both arms: mixed random's mean $.07240$ exceeds mixed native base's $.06781$, while their base-training means are $.08298$ and $.06785$. Dense exposure improves every seed, yet dense remains worse than both native base and random in every seed of both arms. Speed exposure worsens two seeds; RMS exposure worsens one. RMS beats native base only in seed 2 in each arm. None of these comparisons establishes a generally beneficial expansion policy.
+
+Mixed training lowers mean outside-box fractions for every policy, yet increases trajectory-maximum excursion in every policy and every paired seed. Mean committed time also increases for every policy, with mixed seed signs. The complete policy families still show substantial physical mismatch. The complete scalar companion retains every fixed absolute metric, policy contrast, seed, null, physical reference, runtime record and accounting category; these tables do not discard inconvenient outcomes or substitute forecast 200 for H314.

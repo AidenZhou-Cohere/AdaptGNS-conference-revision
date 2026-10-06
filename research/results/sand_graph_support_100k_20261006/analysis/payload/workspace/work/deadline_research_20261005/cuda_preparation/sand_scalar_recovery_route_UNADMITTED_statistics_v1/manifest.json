@@ -1,0 +1,17 @@
+{
+  "files_sha256": {
+    "HANDOFF.md": "21a0190f7a16b5880cfdaf6023d127f7b2edf04cfe3126534dff14d6b3fc3a76",
+    "bounded_relay.py": "a75d25d3036544bf7e4c1199c84c5b11adb80be025c1be724857255754a22376",
+    "closure_evidence_review.json": "53748c49a6c5bd624331885060f036c240e29f6eedae8b33fc6767c4df845208",
+    "phase_binding.py": "f2f41f1c2718741d4e2d0ded3c7a865276be464bd2c9ac94cd4d844dd6e77ed0",
+    "phase_proxy.py": "59198421615047be04c80c58545080cf85d8cb9e0daf52d42f4034f50a908e4f",
+    "test_receipt.json": "97ec4f54477f4de18cc728acc30a779ab3e083c6a6385d4f3aadb4942663dcc2",
+    "test_relay.py": "06970df89df31646f8ab74a72ea6f64ef4291d58b43cefdb29b550e6e0bfe8ba"
+  },
+  "live_actions_performed": false,
+  "new_or_restarted_clock_granted": false,
+  "original_phase_binding_byte_identical": true,
+  "original_route_package_sha256": "292cc31d54e822d6eb1a843da3ce55427f9f89201c1fb9a2dd7293d0660dfd80",
+  "schema": "sand_original_phase_scalar_recovery_route_candidate_v1",
+  "status": "source_and_synthetic_tests_ready_pending_independent_review"
+}

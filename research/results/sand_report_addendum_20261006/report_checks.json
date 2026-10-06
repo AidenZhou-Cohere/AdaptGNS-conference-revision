@@ -1,0 +1,303 @@
+{
+  "status": "scalar_binding_and_pdf_structure_passed_pending_visual_review",
+  "inputs": {
+    "schema": "sand_report_addendum_inputs_v1",
+    "summary": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.collected/sand_final_analysis_20261006_v1/paired_scalar_summary.json",
+      "sha256": "39557ebc16d21c5446d1a7d44a994954f1064741630695ed8acf8f594c2a9429"
+    },
+    "paired_audit": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_paired.collected/sand_final_analysis_20261006_v1/paired_saved_array_audit.json",
+      "sha256": "e2e7d4e9d438e310b921851b5ea82d6347905e9588983e8fb6965d379b2ba60f"
+    },
+    "admission": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_complete_cohort_interpretation_admission_root_v2.json",
+      "sha256": "bab36c91925e8368417206f258b8829f0cda78ec9e423b551b769d48332eca64"
+    },
+    "runtime": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/cross_material_candidate_statistics_v1/generated_v4/descriptive_runtime.json",
+      "sha256": "a7c73688b65e2f8ea097fcb460c248a3f148fbd82bd3b339dc8c6a4cba6c92e5"
+    },
+    "original_report": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revision_report.pdf",
+      "sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731",
+      "pages": 20
+    },
+    "existing_builder_convention": {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/graph-exposure-report-update-20261006_v1/build_addendum.py",
+      "sha256": "774e55bb4867fc09b985f7755ee6e27ce66b25c6c2c35e9ef60c5f13fcacd7cc"
+    }
+  },
+  "original_pages": 20,
+  "addendum_pages": 1,
+  "candidate_pages": 21,
+  "checks": [
+    "input manifest bytes",
+    "bound input: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.collected/sand_final_analysis_20261006_v1/paired_scalar_summary.json",
+    "bound input: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_paired.collected/sand_final_analysis_20261006_v1/paired_saved_array_audit.json",
+    "bound input: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_complete_cohort_interpretation_admission_root_v2.json",
+    "bound input: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/cross_material_candidate_statistics_v1/generated_v4/descriptive_runtime.json",
+    "admitted interpretation",
+    "paired scalar audit bound and passed",
+    "1080 complete autonomous outcomes",
+    "3648 complete mixed-stage cells",
+    "all declared policies",
+    "canonical report unchanged before authoring",
+    "20 original pages",
+    "ASCII report prose",
+    "ASCII report prose",
+    "ASCII report prose",
+    "H314/base/base: all three declared seeds",
+    "H314/base/base: complete statistic",
+    "H314/mix/base: all three declared seeds",
+    "H314/mix/base: complete statistic",
+    "H314/mix_minus_base/base: all three declared seeds",
+    "H314/mix_minus_base/base: complete statistic",
+    "H314/base/dense: all three declared seeds",
+    "H314/base/dense: complete statistic",
+    "H314/mix/dense: all three declared seeds",
+    "H314/mix/dense: complete statistic",
+    "H314/mix_minus_base/dense: all three declared seeds",
+    "H314/mix_minus_base/dense: complete statistic",
+    "H314/base/random25: all three declared seeds",
+    "H314/base/random25: complete statistic",
+    "H314/mix/random25: all three declared seeds",
+    "H314/mix/random25: complete statistic",
+    "H314/mix_minus_base/random25: all three declared seeds",
+    "H314/mix_minus_base/random25: complete statistic",
+    "H314/base/speed25: all three declared seeds",
+    "H314/base/speed25: complete statistic",
+    "H314/mix/speed25: all three declared seeds",
+    "H314/mix/speed25: complete statistic",
+    "H314/mix_minus_base/speed25: all three declared seeds",
+    "H314/mix_minus_base/speed25: complete statistic",
+    "H314/base/laggedrisk25: all three declared seeds",
+    "H314/base/laggedrisk25: complete statistic",
+    "H314/mix/laggedrisk25: all three declared seeds",
+    "H314/mix/laggedrisk25: complete statistic",
+    "H314/mix_minus_base/laggedrisk25: all three declared seeds",
+    "H314/mix_minus_base/laggedrisk25: complete statistic",
+    "H314/base/relative-velocity-RMS25: all three declared seeds",
+    "H314/base/relative-velocity-RMS25: complete statistic",
+    "H314/mix/relative-velocity-RMS25: all three declared seeds",
+    "H314/mix/relative-velocity-RMS25: complete statistic",
+    "H314/mix_minus_base/relative-velocity-RMS25: all three declared seeds",
+    "H314/mix_minus_base/relative-velocity-RMS25: complete statistic",
+    "ASCII report prose",
+    "observed_test/mix_minus_base/dense: all three declared seeds",
+    "observed_test/mix_minus_base/dense: complete statistic",
+    "dense: observed error improves in every seed",
+    "observed_test/mix_minus_base/random25: all three declared seeds",
+    "observed_test/mix_minus_base/random25: complete statistic",
+    "random25: observed error improves in every seed",
+    "observed_test/mix_minus_base/speed25: all three declared seeds",
+    "observed_test/mix_minus_base/speed25: complete statistic",
+    "speed25: observed error improves in every seed",
+    "observed_test/mix_minus_base/laggedrisk25: all three declared seeds",
+    "observed_test/mix_minus_base/laggedrisk25: complete statistic",
+    "laggedrisk25: observed error improves in every seed",
+    "observed_test/mix_minus_base/relative-velocity-RMS25: all three declared seeds",
+    "observed_test/mix_minus_base/relative-velocity-RMS25: complete statistic",
+    "relative-velocity-RMS25: observed error improves in every seed",
+    "dense full-rollout exposure improves every seed",
+    "H314/base/random25_minus_base: all three declared seeds",
+    "H314/base/random25_minus_base: complete statistic",
+    "base/random25: native base better every seed",
+    "H314/base/dense_minus_base: all three declared seeds",
+    "H314/base/dense_minus_base: complete statistic",
+    "base/dense: native base better every seed",
+    "H314/mix/random25_minus_base: all three declared seeds",
+    "H314/mix/random25_minus_base: complete statistic",
+    "mix/random25: native base better every seed",
+    "H314/mix/dense_minus_base: all three declared seeds",
+    "H314/mix/dense_minus_base: complete statistic",
+    "mix/dense: native base better every seed",
+    "ASCII report prose",
+    "ASCII report prose",
+    "observed_test/risk_minus_random/base: all three declared seeds",
+    "observed_test/risk_minus_random/base: complete statistic",
+    "observed_test/risk_minus_random/mix: all three declared seeds",
+    "observed_test/risk_minus_random/mix: complete statistic",
+    "observed risk loses every seed: base",
+    "observed risk loses every seed: mix",
+    "H314/risk_interaction: all three declared seeds",
+    "H314/risk_interaction: complete statistic",
+    "autonomous interaction adverse every seed",
+    "cached risk exposure adverse every seed",
+    "ASCII report prose",
+    "ASCII report prose",
+    "boundary/mix/random25/outside: all three declared seeds",
+    "boundary/mix/random25/outside: complete statistic",
+    "boundary/truth/outside: all three declared seeds",
+    "boundary/truth/outside: complete statistic",
+    "boundary/mix/random25/excursion: all three declared seeds",
+    "boundary/mix/random25/excursion: complete statistic",
+    "boundary/truth/excursion: all three declared seeds",
+    "boundary/truth/excursion: complete statistic",
+    "base: lower mean outside fraction",
+    "base: higher excursion every seed",
+    "base: higher mean committed time",
+    "dense: lower mean outside fraction",
+    "dense: higher excursion every seed",
+    "dense: higher mean committed time",
+    "random25: lower mean outside fraction",
+    "random25: higher excursion every seed",
+    "random25: higher mean committed time",
+    "speed25: lower mean outside fraction",
+    "speed25: higher excursion every seed",
+    "speed25: higher mean committed time",
+    "laggedrisk25: lower mean outside fraction",
+    "laggedrisk25: higher excursion every seed",
+    "laggedrisk25: higher mean committed time",
+    "relative-velocity-RMS25: lower mean outside fraction",
+    "relative-velocity-RMS25: higher excursion every seed",
+    "relative-velocity-RMS25: higher mean committed time",
+    "ASCII report prose",
+    "committed_seconds_per_case/base/random25: all three declared seeds",
+    "committed_seconds_per_case/base/random25: complete statistic",
+    "committed_seconds_per_case/mix/random25: all three declared seeds",
+    "committed_seconds_per_case/mix/random25: complete statistic",
+    "ASCII report prose",
+    "ASCII report prose",
+    "ASCII report prose",
+    "ASCII report prose",
+    "fresh addendum path",
+    "one-page addendum",
+    "21-page combined candidate",
+    "original page 1: content-stream bytes preserved",
+    "original page 1: extracted text preserved",
+    "original page 2: content-stream bytes preserved",
+    "original page 2: extracted text preserved",
+    "original page 3: content-stream bytes preserved",
+    "original page 3: extracted text preserved",
+    "original page 4: content-stream bytes preserved",
+    "original page 4: extracted text preserved",
+    "original page 5: content-stream bytes preserved",
+    "original page 5: extracted text preserved",
+    "original page 6: content-stream bytes preserved",
+    "original page 6: extracted text preserved",
+    "original page 7: content-stream bytes preserved",
+    "original page 7: extracted text preserved",
+    "original page 8: content-stream bytes preserved",
+    "original page 8: extracted text preserved",
+    "original page 9: content-stream bytes preserved",
+    "original page 9: extracted text preserved",
+    "original page 10: content-stream bytes preserved",
+    "original page 10: extracted text preserved",
+    "original page 11: content-stream bytes preserved",
+    "original page 11: extracted text preserved",
+    "original page 12: content-stream bytes preserved",
+    "original page 12: extracted text preserved",
+    "original page 13: content-stream bytes preserved",
+    "original page 13: extracted text preserved",
+    "original page 14: content-stream bytes preserved",
+    "original page 14: extracted text preserved",
+    "original page 15: content-stream bytes preserved",
+    "original page 15: extracted text preserved",
+    "original page 16: content-stream bytes preserved",
+    "original page 16: extracted text preserved",
+    "original page 17: content-stream bytes preserved",
+    "original page 17: extracted text preserved",
+    "original page 18: content-stream bytes preserved",
+    "original page 18: extracted text preserved",
+    "original page 19: content-stream bytes preserved",
+    "original page 19: extracted text preserved",
+    "original page 20: content-stream bytes preserved",
+    "original page 20: extracted text preserved",
+    "canonical report unchanged after authoring",
+    "scientific scalar source unchanged: summary",
+    "scientific scalar source unchanged: paired_audit",
+    "scientific scalar source unchanged: admission",
+    "scientific scalar source unchanged: runtime"
+  ],
+  "statistic_objects_recorded": 36,
+  "original_content_preservation": [
+    {
+      "page": 1,
+      "decoded_content_sha256": "c650eb8aad16dfe9b2e780211759505f73e9db3a3608a5e36ac5f0f72b3e4f7f"
+    },
+    {
+      "page": 2,
+      "decoded_content_sha256": "0264dc50f8fc108e7049f8b6714b97cd9fc8af17ddda24c9f48ff28a6936367a"
+    },
+    {
+      "page": 3,
+      "decoded_content_sha256": "cc4ddbfb78e861aafc349650d79c90e682d6289a8e0d32f89483e8e337071f6a"
+    },
+    {
+      "page": 4,
+      "decoded_content_sha256": "b75c07ea84d461b73f48ec590f61494499a62d75ed6af56d537a0f08f22b8922"
+    },
+    {
+      "page": 5,
+      "decoded_content_sha256": "cd55867d2d046c67409d1b739dc4adba5bda1ca31954d53e119dd56496d4bccc"
+    },
+    {
+      "page": 6,
+      "decoded_content_sha256": "2e9164d250ea06bf0367f57a4a6cba05963eae110924cec2b308af204ffbf74f"
+    },
+    {
+      "page": 7,
+      "decoded_content_sha256": "bf54e888472acef7d5366958e0475df0de24ab9248386d2939943a77d79f63d8"
+    },
+    {
+      "page": 8,
+      "decoded_content_sha256": "16729ea08abc80bba09ff890cb181fd70a49fe8d72dafad6ac6525043c0186f3"
+    },
+    {
+      "page": 9,
+      "decoded_content_sha256": "ed1c7cb9643ee671ace6eb9dbad162c7b8b6f4a65eff1396e0a02201a08e5a8d"
+    },
+    {
+      "page": 10,
+      "decoded_content_sha256": "b6a842c9b44b39f97d718933750854f257daf0ac85f3c1416f72f9718595dd02"
+    },
+    {
+      "page": 11,
+      "decoded_content_sha256": "9ab8dffdf1b8ff4300e2d7d8272da10a64b02e6ae3c24d8c44a8d9da7d8000b3"
+    },
+    {
+      "page": 12,
+      "decoded_content_sha256": "52af3fbfe389356460e8c08cfe2c6af9d2bbf6e447a3f66a908794bdce0e8fb8"
+    },
+    {
+      "page": 13,
+      "decoded_content_sha256": "87affc7f646adc10ede84cab27c763fd237c61bf552a3080c5f3eeb826d94255"
+    },
+    {
+      "page": 14,
+      "decoded_content_sha256": "e17c36bf684720557eb6b6d0e0fbd1c2c86b1fa010ffe0167036c96e8daf5ff2"
+    },
+    {
+      "page": 15,
+      "decoded_content_sha256": "d8f5be5d72cf0f6f6cc2fca9ce8782ca40dadfd06aa578ea0b9163f8cae58233"
+    },
+    {
+      "page": 16,
+      "decoded_content_sha256": "51ddc77b7c96275c1a717799769cd243eab9ee5f76ff023e6cda566dca8d1b56"
+    },
+    {
+      "page": 17,
+      "decoded_content_sha256": "fd4b55ca36d33f8ef882f5948742158472ebb0a1209b2dae0a85c815ec50de51"
+    },
+    {
+      "page": 18,
+      "decoded_content_sha256": "838a72c27a0f83fd20bd1873c03d87594d2dd679769f5e9c24a6b6217069ccf4"
+    },
+    {
+      "page": 19,
+      "decoded_content_sha256": "cd1802e80490977e2f193c9798ad3bf8906de39a0976e68aec1d863d3aaab6f9"
+    },
+    {
+      "page": 20,
+      "decoded_content_sha256": "4ea74634d5f1abd4929d77b68d4cb5d46a49c46fdd1ba21ca55cc896d1a9568e"
+    }
+  ],
+  "original_pdf_sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731",
+  "candidate_pdf_sha256": "bb76664ad0aea0989438af9ad7474f1fd0d109aa6482816e255ef9a741149cbb",
+  "addendum_pdf_sha256": "26d0026fb02222b817fe4ba41f571f00925003a01acae8e9e96a933f34abbea4",
+  "source_sha256": "218a41790f20f2bc9d91a4c5ca17df6356294d5fbf19a02838a5c71c00231237",
+  "scientific_reruns_or_raw_array_model_reads": false,
+  "d3_numeric_product_reads": false,
+  "canonical_report_written": false
+}

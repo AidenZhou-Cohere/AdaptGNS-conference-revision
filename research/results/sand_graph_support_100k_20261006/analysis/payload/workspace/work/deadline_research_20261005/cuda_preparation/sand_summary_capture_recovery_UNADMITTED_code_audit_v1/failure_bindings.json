@@ -1,0 +1,18 @@
+{
+  "files_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.capture.command.json": "dd377beaaf740a8eca0a367ab9530f92cc314fe3b3aee040bcfcc7b25663b023",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.capture.external.json": "55548464302fc3a9ae42290fdd62c3cb5b3448577d79ef96b091b5e25dc996e1",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.capture.stderr": "97922dc629cb74a4d693ac77b616f8cf64291374da84a8cdf54dc52ae8805541",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.capture.stdout": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.root_original_external_exit.json": "f4202cdeefbbc332fa43588b1e6de4ce7faecce9a395f183107539fdb85847a3",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_summarize_close_failure_original_tool_root_v1.json": "104c14ee4273c3ee079c0ddc9b476048e90779df1296802cc5806c301eaa6188",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_summarize_original_tool_exit_root_v1.json": "1b58ca47040e4f754f5ca70a39f1058a336852fe4ee1b4147b712169b11606ef",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_summary_capture_recovery_native_before_root_v1.json": "f30e3fe275788c40128b420be8bad2cff42c9146377d8ebbd8079fbcaf7e3046"
+  },
+  "local_preconnection_sandbox_refusal": true,
+  "original_capture_transport_exit_code": 255,
+  "original_summary_worker_session": 19303,
+  "original_worker_exit_code": 0,
+  "recorded_absent_failed_local_capture_pid_and_group": 49548,
+  "recorded_live_successor_pid": 48605
+}

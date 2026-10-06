@@ -1,0 +1,29 @@
+{
+  "files_sha256": {
+    "HANDOFF.md": "3b75a11cf262520835b3a225edff3d23d28f5744ff519f01a7b01d364be228d8",
+    "history/root_operator_with_proxy_before_bytecode_flag.py": "dce593d4438e5e1fb6b542ee99b8a08cb6997c584003aacf57fdbbaaa09d7a03",
+    "history/test_phase_binding_before_bytecode_flag.py": "3aaf7d89dbe52a26c7f0973bdd7cfecfd2989a95e8cdcd198cd863087a78aa8d",
+    "independent_review_code_audit_v1.json": "2aa904c23e3dac08ee17ef3a6d1981d82a02007a11a2aa5b4aeea0d938fadb9a",
+    "phase_binding.py": "f2f41f1c2718741d4e2d0ded3c7a865276be464bd2c9ac94cd4d844dd6e77ed0",
+    "phase_boundaries_v1.log": "e60d5390deffc5d20a4231aea44dc1d3f501b96f28a3b5a24aaa9dca2a67ffbc",
+    "phase_boundaries_v2.log": "e60d5390deffc5d20a4231aea44dc1d3f501b96f28a3b5a24aaa9dca2a67ffbc",
+    "phase_proxy.py": "aaeabccfde9908f6184a60c60be59a3c568d34e9a7b255264ea5b39bab3fe685",
+    "root_operator_with_proxy.py": "fa59a6e7f4f8a86fe5a5211d25ff2195392f4b08c178ae885ecd31fd76909d3a",
+    "route_fixtures_v1.json": "4d5a34ed8e26c4a21a2975eef14040771473bcba55f3c5921fcdcc9925571b8d",
+    "route_fixtures_v1.log": "0f6d9dbe61551d56d554fd54919079751923bcb8980b2e2398b15011e46272cf",
+    "route_fixtures_v2.json": "aaaa2ed916158866491b48e04e845e210a3484b25102a9c178a17c0cbd0150b2",
+    "route_fixtures_v2.log": "7df5e14408c20b5df67ec5be1e069bb57d4ac9794556091c456a8da1dd4b0acc",
+    "source_provenance.json": "01805dc6944a9b56a581c76051b42f6b28f335b37d69358d206c1ce32d981f45",
+    "test_phase_binding.py": "32ce18b9f3b01a6d3283bb06136c87a406275db33d3a3efdd976dade970c6867",
+    "test_receipt.json": "b7c8532d1c3336f4e1d2049c25d42bf19a589040c56b7eff4d381403e661a192",
+    "test_reused_route_fixtures.py": "14961134ec952187c2f2fa2a1704c810cce9d1f51d46d245fee75498fc0137cc",
+    "test_reused_route_fixtures_before_canonical_temp_fix.py": "0762e1503e55e2d27a818dc52c75844e7f3a96f3e5436e67c76972b1ac19a7c8"
+  },
+  "independent_review_sha256": "2aa904c23e3dac08ee17ef3a6d1981d82a02007a11a2aa5b4aeea0d938fadb9a",
+  "live_actions_performed": false,
+  "new_or_restarted_clock_granted": false,
+  "only_existing_original_phase": true,
+  "schema": "sand_original_phase_route_package_v1",
+  "source_review_passed": true,
+  "status": "independently_reviewed_unadmitted_unlaunched"
+}

@@ -1,0 +1,11 @@
+{
+  "all_copied_originals_unchanged": true,
+  "candidate_bytes_excluding_verification": 2370454,
+  "candidate_files_including_manifest_and_verification": 126,
+  "candidate_manifest_sha256": "d547f432548872555b4b4ebbff68bd4539f03ee8939139bd5dd6dd8d33f1e8a8",
+  "independent_final_curation_review_pending": true,
+  "scientific_numeric_products_read": false,
+  "source_and_provenance_original_copies": 112,
+  "status": "passed_source_and_provenance_byte_preservation_only",
+  "tests_or_scientific_workers_rerun": false
+}

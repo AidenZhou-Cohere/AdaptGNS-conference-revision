@@ -1,0 +1,13 @@
+# Preferred Sand integration candidate
+
+Use `generated_v4`. The exact two fixed main tables are `main_observed_table.tex` and `main_full_horizon_table.tex`. The complete main-experiments replacement is `conference_experiments_main_candidate.tex`; it includes those table replacements and seven exact prose replacements, recorded in `experiments_prose_substitutions.json`. The sole existing Goop figure remains byte-identical. Experiment prose changes by -3 words excluding floats.
+
+Apply the four exact introduction/limitations/conclusion replacements in `canonical_body_substitutions.json` to the pinned `work/manuscript_body.tex`; they add 11 words to the main body. Append `appendix_sand.tex` through root's existing build process. It contains the complete methods and six appendix tables, preserving all arms/policies and every primary endpoint seed mean. Do not use the old source-only appendix directly. No title, abstract or canonical manuscript was edited.
+
+`interpretation.md` records the full adverse and conditional reading. `claim_source_map.json` binds prose signs to exact admitted Sand scalar keys. `complete_companion.json.gz` contains all 4,216 statistic objects from Goop (1,107), WaterDrop (2,002) and Sand (1,107), plus complete Sand accounting and original/descriptive runtime records. `companion_manifest.json`, `integration_receipt.json` and `static_review_receipt.json` pin inputs and outputs and record verification scope.
+
+Generation `2eff57` exited 0. Static verification `25dd50` exited 0: all three-seed arithmetic/nulls, exact prose replacement matches, table/figure counts, LaTeX environment and brace balance, control-character checks, physical truth references, per-seed timing signs and canonical/output hashes passed. Native compilation and visual layout remain root's responsibility; these checks do not certify the eight-page main limit. The wider two main tables may need spacing review, but their scientific rows, failure cells and material order must stay fixed.
+
+Prior outputs remain preserved. `generated_v2/finish_attempt_failure.json` records the presentation-only paragraph-lookup failure (the first prose line follows a section command); it changed no scientific or canonical source. `generated_v3` is a successful earlier display draft. `generated_v4` fixes editorial wording and report spacing and adds explicit canonical hash checks. The scientific tables and complete scalar companion are unchanged from v3.
+
+The separate D3 display plan is frozen in `../goop3d_observed_only_presentation_plan_before_numeric_admission_statistics_v1.md`. No D3 numeric product was read here. It does not authorize a worker launch or interpretation before root's numerical admission.

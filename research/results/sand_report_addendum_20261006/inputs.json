@@ -1,0 +1,28 @@
+{
+  "schema": "sand_report_addendum_inputs_v1",
+  "summary": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_summarize.collected/sand_final_analysis_20261006_v1/paired_scalar_summary.json",
+    "sha256": "39557ebc16d21c5446d1a7d44a994954f1064741630695ed8acf8f594c2a9429"
+  },
+  "paired_audit": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_released_root_v1/sand_paired.collected/sand_final_analysis_20261006_v1/paired_saved_array_audit.json",
+    "sha256": "e2e7d4e9d438e310b921851b5ea82d6347905e9588983e8fb6965d379b2ba60f"
+  },
+  "admission": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_complete_cohort_interpretation_admission_root_v2.json",
+    "sha256": "bab36c91925e8368417206f258b8829f0cda78ec9e423b551b769d48332eca64"
+  },
+  "runtime": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/cross_material_candidate_statistics_v1/generated_v4/descriptive_runtime.json",
+    "sha256": "a7c73688b65e2f8ea097fcb460c248a3f148fbd82bd3b339dc8c6a4cba6c92e5"
+  },
+  "original_report": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revision_report.pdf",
+    "sha256": "5719700597cd1106bcfd8e841d8b50ea95b980921e248762f6c39770e68de731",
+    "pages": 20
+  },
+  "existing_builder_convention": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/graph-exposure-report-update-20261006_v1/build_addendum.py",
+    "sha256": "774e55bb4867fc09b985f7755ee6e27ce66b25c6c2c35e9ef60c5f13fcacd7cc"
+  }
+}

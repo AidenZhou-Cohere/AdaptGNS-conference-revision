@@ -1,0 +1,40 @@
+{
+  "schema": "sand_original_phase_route_source_provenance_v1",
+  "original_metadata_proxy": {
+    "path": "work/deadline_research_20261005/cuda_preparation/coder_exact_route_proxy_root_v1.py",
+    "sha256": "e6bfabe7c2dcf668db83d59480c311cde75d03a3824ff3ec2610ff858d55d57e",
+    "max_seconds": 60,
+    "connection_cap": 32,
+    "unchanged": true
+  },
+  "original_operator": {
+    "path": "work/deadline_research_20261005/cuda_preparation/sand_stopped_analysis_operator_UNADMITTED_code_audit_v1/root_operator.py",
+    "sha256": "cc6b22b41a11d6bcb5481bbd3b420267f3f776f9e0b5bef83da6ca94a7763795",
+    "package_sha256": "914e6e2df11836079f721a675bdbfcd9673b6bada3074fe766c52d085a37640b",
+    "unchanged": true
+  },
+  "original_fake_fixtures": {
+    "path": "work/deadline_research_20261005/cuda_preparation/test_coder_exact_route_proxy_statistics_v1.py",
+    "sha256": "fca709e66e2799d19bd2a152331683d24ab7ff3e696db52fcdaf9bfae69d2a2c"
+  },
+  "successor_operational_deltas": [
+    "Lifetime comes exclusively from actual existing original Sand phase plus original monotonic anchor; no --seconds accepted",
+    "No bind without exact original phase/anchor rawSHA, live original remaining time, schema and sessions",
+    "Accepted CONNECT cap128 instead of32; eight concurrent handlers and backlog4 unchanged",
+    "Separate fixed-state post-begin wrapper execs unchanged operator with -B and HTTPS_PROXY scoped to that process environment"
+  ],
+  "cap128_reason": "Fixed six-operation workflow already requires approximately32 SSH transports, and Coder may use multiple CONNECTs per transport. This is not permission for retry or phase extension.",
+  "preserved_unsuccessful_outcomes": [
+    {
+      "path": "route_fixtures_v1.log",
+      "reason": "Twelve fixture errors: macOS noncanonical temporary directory alias failed new canonical output guard; production source retained; fixture corrected to resolve temp path."
+    },
+    {
+      "path": "history/root_operator_with_proxy_before_bytecode_flag.py",
+      "reason": "Independent review found wrapper reexec dropped caller -B; fixed explicit -B before operator path. No live wrapper executed."
+    }
+  ],
+  "actual_phase_or_anchor_read_during_preparation": false,
+  "live_proxy_network_or_worker_action": false,
+  "frozen_source_edits": false
+}

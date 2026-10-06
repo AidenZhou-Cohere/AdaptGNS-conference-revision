@@ -1,0 +1,64 @@
+{
+  "actual_phase_read_or_clock_granted_or_network_or_scientific_action": false,
+  "author": "conference_critique_statistics",
+  "check_count": 26,
+  "checks": [
+    "Original metadata-only proxy e6bfabe7 is unchanged; frozen scientific operator package914e6e is unchanged.",
+    "Exact CONNECT parser AST, original authority and fixed upstream are retained; no TLS termination, authentication or DNS/hosts/SSH settings changes.",
+    "Only exact fixed original local Sand phase and anchor paths may be loaded; raw SHA pins are caller-required.",
+    "Pinned input reads require canonical non-symlink regular bounded files, stable metadata and exact raw bytes.",
+    "Strict duplicate-key/nonfinite JSON parsing protects phase and anchor interpretation.",
+    "Actual root-issued Sand phase schema/status/dataset are required; unadmitted candidate and absent phase fail.",
+    "Full original3600seconds, exact global04UTC stop and original A51595/B12559 sessions are required.",
+    "Both exact original remote evaluation closure paths and digest pins remain phase bindings.",
+    "Original UTC and monotonic anchor link to the exact phase raw hash; bool/nonfinite anchor values fail.",
+    "Every remaining-time check rejects future origin, original stop exhaustion, more than3600remaining or clock disagreement above5seconds.",
+    "Original absolute UTC stop and original anchor+3600 remain immutable in memory; successor has no --seconds or begin action.",
+    "Proxy checks original phase expiry and stricter2second elapsed-clock disagreement at request, connect, select, receive and send boundaries.",
+    "Fresh canonical output, loopback-only bind, bounded header, backlog4 and at most8concurrent handlers are retained.",
+    "Only operational accepted-CONNECT cap increases32to128, supporting fixed workflow and connection multiplicity within the same original hour.",
+    "Opaque relay payloads are never included in output metadata; ready/terminal bind original phase and anchor hashes/stops.",
+    "Socket and worker cleanup is retained on normal expiry, failure and interruption; terminal records remaining worker count.",
+    "Wrapper requires explicit root-execute, exact source and operator manifest pins, and a pinned ready record for the same phase.",
+    "Wrapper permits only fixed post-begin actions and fixes original state/package/root flag; begin/prepare/closure overrides fail.",
+    "Corrected exec prefix explicitly preserves -B and excludes -O/-OO, avoiding generated caches in the frozen package.",
+    "Proxy environment mutation affects only the exec child; original process environment/global configuration remain unchanged.",
+    "Wrapper starts neither proxy nor phase, replaces itself with unchanged operator, and adds no retry or worker scheduler.",
+    "Actual original tools, native owner guards, failure preservation and product/exit gates remain in frozen operator.",
+    "HANDOFF explicitly distinguishes ready metadata from liveness and cooperative proxy expiry from hard native scientific ownership.",
+    "Nine fake socket/thread/clock relay tests independently passed including128cap and expiry during I/O; no real connections.",
+    "Seven synthetic phase/wrapper boundary tests independently passed on final-B-fixed source; no actual phase loaded.",
+    "No actual network service, scientific program, model/array/result, clock issue or original transport signal was performed by reviewer."
+  ],
+  "independent_phase_wrapper_boundary_tests": 7,
+  "independent_relay_test_receipt": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_phase_route_relay_independent_code_audit_v1.json",
+    "sha256": "aaaa2ed916158866491b48e04e845e210a3484b25102a9c178a17c0cbd0150b2"
+  },
+  "independent_relay_tests": 9,
+  "limits": [
+    "Proxy I/O deadline is cooperative with bounded socket calls; frozen native owner remains scientific hard-deadline authority.",
+    "Root must use only after genuine original evaluator transport exits, native closures and local frozen begin; no phase yet inspected or granted by review.",
+    "Root must preserve original proxy process/exit/cleanup evidence and verify liveness; ready/terminal alone does not prove closure."
+  ],
+  "remaining_findings": [],
+  "resolved_finding": {
+    "fixed_wrapper_sha256": "fa59a6e7f4f8a86fe5a5211d25ff2195392f4b08c178ae885ecd31fd76909d3a",
+    "issue": "execve argument vector omitted -B and could create Python caches in frozen package",
+    "original_wrapper_sha256": "dce593d4438e5e1fb6b542ee99b8a08cb6997c584003aacf57fdbbaaa09d7a03",
+    "resolution": "Explicit python -B prefix and boundary assertion; no frozen operator edit."
+  },
+  "reviewer": "code_audit",
+  "schema": "sand_original_phase_route_independent_code_audit_v1",
+  "source_files_sha256": {
+    "HANDOFF.md": "3b75a11cf262520835b3a225edff3d23d28f5744ff519f01a7b01d364be228d8",
+    "phase_binding.py": "f2f41f1c2718741d4e2d0ded3c7a865276be464bd2c9ac94cd4d844dd6e77ed0",
+    "phase_proxy.py": "aaeabccfde9908f6184a60c60be59a3c568d34e9a7b255264ea5b39bab3fe685",
+    "root_operator_with_proxy.py": "fa59a6e7f4f8a86fe5a5211d25ff2195392f4b08c178ae885ecd31fd76909d3a",
+    "source_provenance.json": "01805dc6944a9b56a581c76051b42f6b28f335b37d69358d206c1ce32d981f45",
+    "test_phase_binding.py": "32ce18b9f3b01a6d3283bb06136c87a406275db33d3a3efdd976dade970c6867",
+    "test_receipt.json": "b7c8532d1c3336f4e1d2049c25d42bf19a589040c56b7eff4d381403e661a192",
+    "test_reused_route_fixtures.py": "14961134ec952187c2f2fa2a1704c810cce9d1f51d46d245fee75498fc0137cc"
+  },
+  "status": "passed_source_and_synthetic_review_after_explicit_B_fix"
+}

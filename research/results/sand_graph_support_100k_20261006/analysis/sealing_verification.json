@@ -1,0 +1,16 @@
+{
+  "all_copied_originals_unchanged": true,
+  "candidate_bytes_excluding_verification": 13355555,
+  "candidate_files_including_manifest_and_verification": 164,
+  "candidate_manifest_sha256": "16b9f66a04230fbb83b410cc007b1bce14b9bbc05ce93ef9b98b8780fd749029",
+  "compact_scientific_products_read_only_after_root_admission": true,
+  "copied_source_provenance_and_compact_product_originals": 133,
+  "independent_final_curation_review_pending": true,
+  "predecessor_directory_and_manifest_unchanged": true,
+  "predecessor_manifest_sha256": "d547f432548872555b4b4ebbff68bd4539f03ee8939139bd5dd6dd8d33f1e8a8",
+  "referenced_originals": 433,
+  "separate_proxy_cleanup_addendum_pending": true,
+  "statistics_recomputed": false,
+  "status": "passed_compact_exact_copy_and_predecessor_preservation_checks",
+  "tests_or_scientific_workers_rerun": false
+}

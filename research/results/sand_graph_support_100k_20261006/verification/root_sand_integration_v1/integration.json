@@ -1,0 +1,20 @@
+{
+  "body_substitutions_sha256": "15e64b3858478c24b8c17d88812fb4517ae760d8e09b0eb2da0c75b903cf641b",
+  "candidate_appendix_sha256": "3acac6070743d62f24391ca448938526fcd68b141f14075af5f8ca5eb8428a60",
+  "candidate_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/cross_material_candidate_statistics_v1/generated_v4",
+  "candidate_main_sha256": "04ba420acf2ec5b571d36aced6cfe7c3ba8e78e5a1697727078dbe977e32c34a",
+  "canonical_body_sha256": "b1e5ca3cf74833b23938307d09f5c7e67fa951673532219da6612aded203ae07",
+  "canonical_experiments_sha256": "04ba420acf2ec5b571d36aced6cfe7c3ba8e78e5a1697727078dbe977e32c34a",
+  "existing_goop_figure_byte_preserved": true,
+  "main_table_count": 2,
+  "original_title_abstract_and_preamble_preserved": true,
+  "root_editorial_variation": {
+    "new": "Training on varied graphs can improve use of a fixed expansion policy, but residual ranking alone does not provide a reliable rule for useful expansion.",
+    "old": "These findings support explicit budget and failure accounting, not a general allocation or efficiency advantage.",
+    "reason": "Keep the conclusion focused on constructive graph exposure while retaining all preceding adverse evidence and efficiency limitations."
+  },
+  "schema": "sand_manuscript_root_integration_v1",
+  "scientific_program_rerun": false,
+  "status": "canonical_integrated_native_compile_pending",
+  "utc": "2026-10-06T23:27:35.291455+00:00"
+}

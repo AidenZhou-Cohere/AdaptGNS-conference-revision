@@ -1,0 +1,110 @@
+{
+  "blocking_source_findings": [],
+  "development_test_history": [
+    {
+      "chunk_id": "4ea2b2",
+      "exit_code": 0,
+      "passed": 22
+    },
+    {
+      "cause": "Positive route fixture lacked newly added route-limit fields; fixture updated before final verification, with no runtime failure implied.",
+      "chunk_id": "549c45",
+      "errors": 3,
+      "exit_code": 1,
+      "tests": 25
+    },
+    {
+      "chunk_id": "78acfb",
+      "exit_code": 0,
+      "passed": 25
+    },
+    {
+      "chunk_id": "4d6a68",
+      "exit_code": 0,
+      "passed": 30
+    },
+    {
+      "chunk_id": "b005f8",
+      "exit_code": 0,
+      "passed": 34
+    },
+    {
+      "chunk_id": "6be090",
+      "exit_code": 0,
+      "passed": 35
+    }
+  ],
+  "files_sha256": {
+    "HANDOFF.md": "576463c96c107f976a8456a9065fd3242570dca2ee6d66313240d7beff22bf1a",
+    "continue_original.py": "1ac19b1a351c3a3b83977c1e16ae56993e523aa37df0175f39f61e63b74fce1c",
+    "failure_bindings.json": "a4d14328b69d6551fca8ddb98a69385382ccbb4a122d6eb526f50f1e37234c9a",
+    "recover.py": "13e604a562ae4a155e591e5a965105c26407956210f6f88e38cdc9bd5bc0e5ac",
+    "remote_fate.py": "37eafb9e1530aebf73b4191f0c9c90cc4f3e887318371eb8cac2ab971428d08c",
+    "remote_transfer.py": "0bc970e67b9d7139131612c170cfe70cacf08a5814588d89a7c6265b7a5a489b",
+    "test_recovery_source.py": "d6fc68606b8145499ca913d33e566b3c916701ceab3583e586fb9cc65f9d5bf1"
+  },
+  "limitations": [
+    "Source and synthetic review only; no actual recovery output, current host/process/GPU state or scientific result is admitted here.",
+    "One GPU mapping query plus one compute-app query is not a repeated GPU observation claim.",
+    "Fate is retained metadata/hash evidence; full original saved_A acceptance still requires unchanged frozen close_product validation.",
+    "Root must preserve actual tool exits, local process-group/proxy closure and separately required remote closure; transport exit alone does not prove closure.",
+    "No new or restarted analysis clock, scientific retry, release, route startup or live execution is granted by this receipt."
+  ],
+  "live_tools_or_clocks_called": false,
+  "manual_source_check_count": 27,
+  "manual_source_checks": [
+    "Package has seven byte-pinned payloads and no unpinned import cache.",
+    "All four runtime/preparation imports are inert: no live clock or subprocess call.",
+    "Original phase SHA and local monotonic anchor are fixed; frozen operator budget enforces original 3600-second phase.",
+    "Original stop is 2026-10-06T23:33:01.226132+00:00; no phase restart or new allowance is available.",
+    "Original operator manifest and every manifest payload are checked before actions.",
+    "Fifteen original failed transport, original exit, proxy and native closure paths are required by fixed byte bindings.",
+    "Original saved_A session 66211 must have genuine exit 0 and unchanged frozen original-exit validation.",
+    "Route requires exact original phase/anchor/path and original route package; fixed 2048/8/262144 nonblocking partial-send limits.",
+    "Proxy environment is restricted to an uncredentialed loopback HTTP proxy with the reviewed exact upstream; NO_PROXY bypass is removed.",
+    "B target paths, hashes and sizes derive from unchanged frozen accepted original collection/audit receipts.",
+    "Remote fate validates original host/boot, saved_A release/terminal/identity chain and product hash.",
+    "Remote fate checks original historical and saved_A outer/owner/worker PID absence before and after hashing.",
+    "Remote fate scans native command arguments before and after file hashing for the exact frozen probe source and both preserved failed whole remote shell commands.",
+    "Old probe, timeout ancestor or delayed remote shell presence rejects fate admission, including appearance after first sample.",
+    "Fate inspects exactly the two fixed B target paths, classifying absent/exact/conflicting bytes without replacing content.",
+    "Remote fate performs one exact GPU mapping query and one empty compute-app query, and rechecks terminal bytes and boot.",
+    "Actual independent fate review is byte-pinned; all subsequent actions require observation membership in the unchanged original hour.",
+    "Saved_A recovery remaps only frozen capture tag to fresh capture_recovery1; full original frozen close_product identity/evidence/semantic validation remains unchanged.",
+    "Missing B bytes stream from binary file stdin, have exact length/SHA checks, retain exclusive partials, and publish through a no-replacement hard link.",
+    "Existing final bytes are reused only when observed and currently exact; conflicting or disappeared/appeared targets reject.",
+    "Stream transport uses original local UTC/monotonic bound and scoped TERM/KILL on only its own new local process group; failed outputs and partials are retained.",
+    "Remote readers/writers have outer native timeout inside original hour; EOF arrives from exact regular-file stdin.",
+    "Complete-transfer requires both successful transport receipts and another exact B-fate observation before exclusive original-compatible receipt publication.",
+    "Continuation accepts only original never-run summarize/paired run, genuine original-exit record, frozen close-product, and complete.",
+    "Continuation rejects arbitrary state/command/dataset/worker arguments and any run with existing operation-prefixed attempt artifact.",
+    "Continuation execs unchanged frozen operator with explicit -B and preserves genuine nonzero original exit values.",
+    "No recovery code launches saved-array audit, model, evaluator, or retry, and no original failure tag is relabeled as successful."
+  ],
+  "new_or_restarted_clock_granted": false,
+  "original_phase_sha256": "0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c",
+  "original_stop_utc": "2026-10-06T23:33:01.226132+00:00",
+  "preserved_original_manifest_sha256": {
+    "operator": "914e6e2df11836079f721a675bdbfcd9673b6bada3074fe766c52d085a37640b",
+    "route": "292cc31d54e822d6eb1a843da3ce55427f9f89201c1fb9a2dd7293d0660dfd80"
+  },
+  "resolved_review_findings": [
+    "Old failed remote probe/timeout and delayed remote shell could outlive failed local transport; exact original source/whole-command scans added before and after fate hashes and verified synthetically."
+  ],
+  "reviewer": "/root/code_audit/transition_review",
+  "schema": "sand_scalar_recovery_independent_review_v1",
+  "scientific_data_read_or_program_run": false,
+  "source_manifest_sha256": "71c50f558082d127757cc84dff97f7451c7c5e73ff4b5ef48ff41be1af851a79",
+  "source_package": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_scalar_recovery_UNADMITTED_code_audit_v1",
+  "status": "passed_source_and_synthetic_review",
+  "synthetic_verification": {
+    "command": "work/venv/bin/python -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation/sand_scalar_recovery_UNADMITTED_code_audit_v1 -p test_recovery_source.py -v",
+    "fixtures": "Temporary local synthetic filesystem, synthetic process metadata, fixed UTC/monotonic values and mocked transport/GPU subprocesses; original frozen probe source is read as inert bytes only.",
+    "original_tool_chunk_id": "6be090",
+    "original_tool_exit_code": 0,
+    "test_file_sha256": "d6fc68606b8145499ca913d33e566b3c916701ceab3583e586fb9cc65f9d5bf1",
+    "tests_failed": 0,
+    "tests_passed": 35,
+    "unittest_reported_seconds": 0.139
+  }
+}

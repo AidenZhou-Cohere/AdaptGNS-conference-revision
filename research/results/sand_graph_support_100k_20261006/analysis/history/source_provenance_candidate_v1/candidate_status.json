@@ -1,0 +1,18 @@
+{
+  "large_products_copied_or_compressed": false,
+  "numeric_summary_read": false,
+  "original_sources_changed": false,
+  "pending_root_supplied_items": [
+    "accepted numeric summary and its completed independent review",
+    "accepted final paired audit and review",
+    "final full-cohort admission",
+    "final successor route exit and cleanup evidence"
+  ],
+  "preserved_original_analysis_stop_utc": "2026-10-06T23:33:01.226132+00:00",
+  "publication_admission": false,
+  "remote_probes_or_clocks_used": false,
+  "scientific_accuracy_admission": false,
+  "scientific_workers_or_tests_rerun": false,
+  "statistics_derived": false,
+  "status": "UNADMITTED_SOURCE_PROVENANCE_AND_FAILURE_CANDIDATE"
+}

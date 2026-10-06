@@ -1,0 +1,76 @@
+{
+  "analysis_phase": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/controls/analysis_phase.json",
+    "sha256": null
+  },
+  "automatic_retry": false,
+  "bootstrap_allowance_seconds": 5,
+  "bootstrap_source": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/launch_stopped_analysis_cpu_v1.py",
+    "sha256": "294cfaebb8da60e5364b76fa2f1f889a2f06fdb07dc1ff3253f7bb44d8a2c492"
+  },
+  "cleanup_and_publication_seconds": 15,
+  "cleanup_deadline_utc": null,
+  "clock_sample": {
+    "error_bound_seconds": 5,
+    "host_boot_id": null,
+    "host_monotonic_seconds": null,
+    "host_utc": null,
+    "root_reference_utc": null,
+    "source": "root_fresh_tool_and_host_clock_evidence"
+  },
+  "command": [
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+    "-B",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py",
+    "--execute",
+    "--collection",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json",
+    "--collection-sha256",
+    {
+      "sha256_of_input": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json"
+    },
+    "--queue-root",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1",
+    "--output",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.saved_array_audit.json"
+  ],
+  "dataset": "Sand",
+  "hard_deadline_monotonic_ns": null,
+  "host_role": "A",
+  "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+  "inputs_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_paired_arrays_v1.py": "541bdc67a99e44ccb263b1bbe439fa37132ef95ab597e1dd440742c0bb4a7a2d",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/audit_sand_saved_arrays_v1.py": "a7e47c8e4740cc8c1767dc778ef4fa5291453f4142a0753cc62a0bf82bea7740",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_saved_array_audit_v2/sand_saved_diagnostic_audit_v1.py": "700695b69691b9da45e31ce7a9821900a12ff882be5b4a09927ff8b6dd0f8cdd",
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/A.stopped_collection.json": null
+  },
+  "invocation_origin_utc": null,
+  "issued_by": null,
+  "issued_utc": null,
+  "new_or_restarted_clock_granted": false,
+  "operation": "sand_saved_A",
+  "operation_spec": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/stopped_analysis_operations_v1.json",
+    "sha256": "7e5e09e6025916c7309b103cf715db3fe9cfbb56be5df5eda7c372a8c6cf8b9b"
+  },
+  "outer_timeout": {
+    "duration_rule": "floor((original_hard_deadline_ns-actual_bootstrap_monotonic_ns)/1e9)-15-5",
+    "path": "/usr/bin/timeout",
+    "sha256": null,
+    "version": null
+  },
+  "owner_output_dir": "/root/repos/AdaptGNS-cuda-20261006/sand_final_analysis_20261006_v1/owners/sand_saved_A",
+  "owner_source": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/supervise_stopped_analysis_cpu_v1.py",
+    "sha256": "18b5f6cff4f212c7152810f8ff26e9159416ae322aabd666c37e8a60117d594e"
+  },
+  "protected_tree_entries": {
+    "/root/repos/AdaptGNS-cuda-20261006/sand_final_evaluation_A_20261006_v1": null
+  },
+  "publication_deadline_utc": null,
+  "schema": "adaptgns_stopped_analysis_cpu_operational_release_v1",
+  "status": "template_not_admitted",
+  "whole_invocation_seconds": null,
+  "work_stop_utc": null
+}

@@ -1,0 +1,11 @@
+{
+  "accepted_root_review_sha256": "9acac8293702fb26974bb1a286f01eb6beb7451867d5b4e0e07acc024bacef36",
+  "actual_capture_tag": "sand_summarize.capture_recovery1",
+  "capture_sha256": "462b163ff6196ac9d078862f5a3a85d6f221454ab3fcb0f249d5407fd65dbc05",
+  "new_clock_granted": false,
+  "original_failed_capture_preserved": true,
+  "original_worker_session": 19303,
+  "phase_sha256": "0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c",
+  "source_manifest_sha256": "2b8b0b9a8a0a025533d6291f401f1e99fa6be9cb70b8e7b0bb27029f00fc429c",
+  "source_review_sha256": "6858dc1d3ea1fbc7871cb9f02a761411029506aabf7f653ba0a90bc65935e27a"
+}
