@@ -1,0 +1,10 @@
+{
+  "unlocated_candidate_sources": [
+    {
+      "name": "summarize_goop_action_gate_v1.py",
+      "reference": "reviews/goop_action_gate_stopped_collection_independent_review_code_audit_v1.json",
+      "scope": "This intermediate hash is preserved in the review; no matching source snapshot was found in the bounded historical source selection. Current final approved source is included.",
+      "sha256": "d55aca8943625c6a4afd99d86412ddbce99e1e2ad73a0562dbf2df46e3c0adb1"
+    }
+  ]
+}

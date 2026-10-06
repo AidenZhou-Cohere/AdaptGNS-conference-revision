@@ -1,0 +1,20 @@
+--- manuscript_body.tex.before
++++ manuscript_body.tex
+@@ -17,7 +17,7 @@
+ 
+ We investigate this connection through the original Sand and WaterDrop experiments and a new controlled WaterDrop study. The original results motivate the question with contrasting accuracy--edge tradeoffs across granular and fluid dynamics. Six full-architecture models then let us compare training objectives, hold prediction histories fixed, and allocate exactly the same optional-pair budget to residual risk, speed, or random selection. Successive controls test whether the observed ordering comes from the action being measured or the graph convention used at evaluation. Full rollouts finally test the consequences for error accumulation, failures, and measured cost.
+ 
+-The resulting contribution is an empirical account of the gap between residual prediction and useful graph allocation. Residual scores rank prediction error more strongly than the benefit of their own sparse actions, and restoring trained self-messages does not remove the observed risk--random deficit. Autonomous comparisons are mixed and retain failures. We also give an exact budget formulation and a conditional analysis that identifies the score--gain and interaction assumptions an allocation guarantee would require. Together these results refine the original adaptive-computation hypothesis: learning where a simulator errs does not, by itself, determine where additional interactions help.
++On observed WaterDrop histories, residual scores rank prediction error more strongly than the benefit of their own sparse actions. The risk--random deficit persists when trained self-messages are restored. Autonomous comparisons are mixed and retain failures. We also give an exact budget formulation and a conditional analysis that identifies the score--gain and interaction assumptions an allocation guarantee would require. Together these results refine the original adaptive-computation hypothesis: learning where a simulator errs does not, by itself, determine where additional interactions help.
+ 
+ \section{Related work}
+ Graph networks model learned interactions \citep{battaglia2016}; GNS combines geometric particle graphs, message passing, and noise-augmented training \citep{sanchez2020}. Our implementation builds on the released particle GNS software \citep{kumar2023}. Architectural approaches such as Neural SPH incorporate physical structure into fluid prediction \citep{toshev2024}; our policy comparisons freeze each simulator and vary its interaction graph.
+@@ -454,7 +454,7 @@
+ counter seconds; the $1{,}778.965$-second difference has no verified cause.
+ Neither quantity measures GPU busy time or a fair objective-speed comparison.
+ 
+-The training graph uses the original capped radius rule and self loops.
++The training graph uses the original radius rule, adding self-edge candidates before applying the per-receiver cap of 128.
+ Evaluation supplies uncapped symmetric pairs without self loops under every
+ policy, so this is not an exact reproduction of the historical graph pipeline.
+ Base, radius-$1.267r$ dense, random-25\%, speed-25\%, and cached-risk-25\%

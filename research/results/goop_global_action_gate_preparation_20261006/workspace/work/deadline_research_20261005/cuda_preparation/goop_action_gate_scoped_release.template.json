@@ -1,0 +1,51 @@
+{
+  "schema": "adaptgns_goop_action_gate_scoped_release_v1",
+  "status": "template_not_admitted",
+  "issued_by": null,
+  "hostname": null,
+  "host_role": "B",
+  "mode": null,
+  "output_dir": null,
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "no_retry_or_resume": true,
+  "does_not_displace_original_studies": false,
+  "all_six_original_goop_models_frozen": false,
+  "python_environment": null,
+  "process_clock_checked_utc": null,
+  "clock_error_bound_seconds": null,
+  "remaining_outer_work_reserve_seconds": null,
+  "absolute_stop_utc": null,
+  "latest_start_utc": null,
+  "gpu_uuids": [],
+  "gpu_scope": {
+    "owned_indices": [
+      0,
+      1
+    ],
+    "unassigned_devices": "observe_without_control",
+    "live_handoff": false
+  },
+  "closed_goop_processes": [],
+  "files_sha256": {},
+  "jobs": [
+    {
+      "seed": 0,
+      "gpu": 0,
+      "command": []
+    },
+    {
+      "seed": 1,
+      "gpu": 1,
+      "command": []
+    },
+    {
+      "seed": 2,
+      "gpu": 0,
+      "command": []
+    }
+  ],
+  "complete_capacity_report": null
+}

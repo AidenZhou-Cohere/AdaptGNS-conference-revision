@@ -1,0 +1,22 @@
+{
+  "edits": [
+    {
+      "path": "outputs/revised_manuscript.tex",
+      "before_sha256": "0fe1858a3b3a2b08e4f87cea3f630b2444be236736a9eecf1c4d57837f8df7c4",
+      "after_sha256": "82237364f31f26072cd35bf011523ad455037a442912276569dcf6004d4fc530"
+    },
+    {
+      "path": "work/manuscript_body.tex",
+      "before_sha256": "cd82fddeb54f58422e2f4829b1a340bf69b566359d15db8f6d491683d2dd2ead",
+      "after_sha256": "e334f12e2b1be05a1a845c8cd1a72fa10ddb844448f3b513e548af394b6cf5cc"
+    },
+    {
+      "path": "work/conference_experiments_main.tex",
+      "before_sha256": "c177f3dc53af1bd86da927e10646c7df9902e457747ceb81a8cbc546744a22ca",
+      "after_sha256": "633d731b7aafb91e2da1dc5a170fca263eb04009bc33dd6402f1fb8e9a6845a6"
+    }
+  ],
+  "empirical_values_changed": false,
+  "title_abstract_changed": false,
+  "new_scientific_analysis": false
+}

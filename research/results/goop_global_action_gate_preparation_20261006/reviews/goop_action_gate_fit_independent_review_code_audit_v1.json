@@ -1,0 +1,61 @@
+{
+  "schema": "adaptgns_goop_action_gate_fit_independent_review_code_audit_v1",
+  "status": "passed",
+  "source": {
+    "path": "fit_goop_action_gate_v1.py",
+    "sha256": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3"
+  },
+  "tests_sha256": "31f813d23110be63a9c83c3df02bdd7311e56bbf30f72e45c2c3be768db52e61",
+  "protocol_sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+  "core_sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+  "operations_sha256": "af5d35274daa580ad98203699812afb766f80bd7340918e1f30c3d24d0918a34",
+  "release_template_sha256": "394a7397cb439fe1a52bccf01229bb489863e1d0971bb4ea2193c59258fd1c0c",
+  "independent_tests": {
+    "passed": 10,
+    "seconds": 0.118,
+    "log": "goop_action_gate_fit_independent_code_audit_attempt1.log",
+    "scope": "Committed tiny numeric NPZ/row correspondence, exact feature/label recomputation, failed/missing/reordered refusal, native prefix/orientations, tree/input tampering, released model closure and single serialization"
+  },
+  "independent_orchestration_probes": {
+    "path": "goop_action_gate_fit_independent_probes_code_audit_v1.json",
+    "sha256": "89596cd168e050560109a640c591f09e5a460eb414aad7d1a7cdf0a1a8c296c7",
+    "passed": 9,
+    "scope": "Synthetic scalar collection reader boundary with unchanged full8000/150 numerical core for all three seeds; actual root release and terminal publication functions",
+    "cases": [
+      "Complete release produces thirteen hash-matching candidate/selection/head files and one final serialization; canonical checkpoint key agrees and test_admitted=false",
+      "Missing actual driver byte binding refuses before output creation",
+      "Missing required collection input refuses before fitting",
+      "Differing validation source manifest for one seed refuses",
+      "Root mix checkpoint differing from original six-model cohort refuses",
+      "Input mutation during result serialization refuses success",
+      "Label-tree mutation during result serialization refuses success",
+      "Selected-head mutation during result serialization refuses success",
+      "Clock expiry during result serialization refuses success"
+    ]
+  },
+  "reviewed_contract": [
+    "Description-only default; executing path requires exact wrapper/core/gate-protocol bytes and explicit root release",
+    "Six distinct train/validation collection paths covering three strict integer seeds; exact full ordered row schedules and complete coverage required by real reader",
+    "Root source/cohort/audit/admission/metadata/split-manifest paths are bound to actual input bytes; three distinct frozen mix100k checkpoints match original complete six-model cohort",
+    "Train/validation model and canonical run-configuration identities agree per seed; all seeds use common root-bound source manifest for each split and common lineage",
+    "Committed JSON and numeric NPZ hashes, array names/shapes/dtypes/value hashes, numerical guards, feature and signed benefit recomputation checked without simulator imports",
+    "Native base prefix and canonical optional orientations are checked; source graph membership and sampling remain reviewed numerical-driver responsibilities",
+    "All nine ridge candidates and three selected heads are saved with the single common-lambda diagnostics; head provenance uses canonical *_sha256 keys consumed by driver",
+    "Final result serialized once, then original inputs, committed label trees, generated heads and allocation clock rechecked before exact-byte exclusive fsynced publication",
+    "CPU two-thread environment is set before production core/NumPy import; partial outputs and failure receipts are preserved; test_admitted remains false"
+  ],
+  "resolved_findings": [
+    "Removed second final serialization after terminal checks",
+    "Required actual root-bound driver/model/cohort/source bytes rather than digest claims alone",
+    "Required exact per-split manifest identity shared across all three seeds",
+    "Aligned selected-head checkpoint provenance key with numerical driver"
+  ],
+  "limitations": [
+    "No official arrays, model deserialization, inference, GPU, network or remote process access in this review",
+    "Independent orchestration probe stubs only the already separately tested collection-reader boundary; it is not evidence of a completed real label ledger",
+    "Run configuration is a canonical checkpoint metadata digest, not necessarily a standalone file; root binds it after reviewed driver checkpoint admission",
+    "Complete numerical driver, capacity and deadline admission remain separate requirements; this receipt does not authorize execution or test access"
+  ],
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

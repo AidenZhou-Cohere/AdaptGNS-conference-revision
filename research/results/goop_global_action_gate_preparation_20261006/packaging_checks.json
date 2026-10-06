@@ -1,0 +1,29 @@
+{
+  "all_restored_source_files_unchanged": true,
+  "all_selected_original_sources_rehashed_unchanged": true,
+  "copied_source_bytes": 1066452,
+  "copied_source_files": 137,
+  "effective_predecessor_workspace_files": 212,
+  "inert_description_clis_passed": 6,
+  "limits": [
+    "Scientific source/data/model admission is not granted.",
+    "Intermediate collector d55aca89 source bytes are not included; its hash and final review inheritance record are preserved.",
+    "Full original scientific assets and environment are external dependencies."
+  ],
+  "passed": true,
+  "portability_evidence": "verification/portability_attempt1/checks.json",
+  "portability_evidence_sha256": "9cfaddfda5c7f3da7a06095819afa4a82a3f716a3387df83f80a7ef5eaba8e4a",
+  "pure_scalar_module_import_passed": 1,
+  "real_process_or_remote_operations": false,
+  "restored_source_files": 249,
+  "schema": "adaptgns_goop_gate_packaging_checks_v1",
+  "scientific_assets_read": false,
+  "scope": "Only frozen-source reconstruction, inert CLI/module imports, and four selected synthetic interface checks; prior scientific/software reviews were not broadly repeated.",
+  "targeted_interfaces": [
+    "driver row to frozen fitter",
+    "three-child scalar admission to scoped parent",
+    "original protocol closure without loading models",
+    "learned-gate driver row to scalar collector/core"
+  ],
+  "targeted_synthetic_interface_cases_passed": 4
+}

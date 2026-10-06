@@ -1,0 +1,70 @@
+{
+  "directories": [
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_cost_independent_fixtures_b4b7a18d"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [
+        "goop_action_gate_driver_independent_publication_fixtures_v2/reviewed_source.py"
+      ],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_driver_independent_publication_fixtures_v2"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [
+        "goop_action_gate_driver_row_snapshot_probe_v1/reviewed_source.py"
+      ],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_driver_row_snapshot_probe_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_fit_independent_fixtures_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [
+        "goop_action_gate_scalar_collector_draft_probes_code_audit_v1/summarize_goop_action_gate_v1.py",
+        "goop_action_gate_scalar_collector_draft_probes_code_audit_v1/goop_action_gate_scalar_core_v1.py"
+      ],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_collector_draft_probes_code_audit_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_fullgrid_fixture_code_audit_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_supervisor_retired_pid_final_fixture_code_audit_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [
+        "goop_action_gate_supervisor_reused_pid_draft_fixture_v1/reviewed_source.py"
+      ],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_supervisor_reused_pid_draft_fixture_v1"
+    },
+    {
+      "fixture_payloads_read_for_curation": false,
+      "reason": "Detailed synthetic fixture tree not copied; compact review/probe records and their source are retained.",
+      "selected_source_snapshots": [
+        "goop_action_gate_supervisor_selection_draft_fixture_v1/reviewed_source.py"
+      ],
+      "source": "work/deadline_research_20261005/cuda_preparation/goop_action_gate_supervisor_selection_draft_fixture_v1"
+    }
+  ],
+  "scope": "Detailed fixture payloads were not recursively read or copied. Only explicitly listed historical source snapshots were read; packaged primary pytest fixtures generate fresh synthetic inputs."
+}

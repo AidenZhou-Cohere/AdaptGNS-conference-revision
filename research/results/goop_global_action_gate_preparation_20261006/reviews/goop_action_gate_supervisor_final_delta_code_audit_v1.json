@@ -1,0 +1,20 @@
+{
+  "schema": "adaptgns_goop_action_gate_supervisor_final_delta_code_audit_v1",
+  "draft_source_sha256": "c7a3f407f20e21789edab8c5edf4632c10e1a710fe1143f2cf5e989c265ee223",
+  "final_source_sha256": "4cda31a408c097944e5f15b3502d05bcfab0d3db5b8ee25dcc5fdc1968fd61df",
+  "tests_sha256": "801e4f86160a46111b75fcb51d0f65bdf7d7ed408b6e747d9deba1d9be33ae87",
+  "changed_definitions": [
+    "execute_queue"
+  ],
+  "added_definitions": [
+    "scoped_gpu_observation"
+  ],
+  "removed_definitions": [],
+  "execute_queue_unchanged_outside_observe": true,
+  "frozen_dependencies": {
+    "supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+    "supervise_sand_scoped_science_v1.py": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+    "measure_sand_cuda_capacity_v2.py": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "run_goop_action_gate_v1.py": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079"
+  }
+}

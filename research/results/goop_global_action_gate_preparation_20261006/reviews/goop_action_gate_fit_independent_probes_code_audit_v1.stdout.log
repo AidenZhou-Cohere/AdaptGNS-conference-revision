@@ -1,0 +1,87 @@
+{
+  "schema": "adaptgns_goop_action_gate_fit_independent_probes_code_audit_v1",
+  "source_sha256": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3",
+  "source_is_still_current": true,
+  "python_executable": "/Users/aiden.zhou/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+  "scope": "Synthetic orchestration with stubbed artifact-reader boundary; unchanged full-size numerical core",
+  "no_scientific_data_or_models": true,
+  "probes": [
+    {
+      "case": "complete",
+      "passed": true,
+      "error": null,
+      "success_output_exists": true,
+      "final_serialization_count": 1,
+      "failure_receipt_exists": false,
+      "output_files": 13,
+      "canonical_checkpoint_key_matches": true,
+      "all_outputs_hash_match": true,
+      "test_admitted": false
+    },
+    {
+      "case": "missing_driver_binding",
+      "passed": true,
+      "error": "Required lineage path is not byte-bound: driver_sha256",
+      "success_output_exists": false,
+      "final_serialization_count": 0,
+      "failure_receipt_exists": false
+    },
+    {
+      "case": "missing_collection_input",
+      "passed": true,
+      "error": "Collection omits a required original input binding",
+      "success_output_exists": false,
+      "final_serialization_count": 0,
+      "failure_receipt_exists": true
+    },
+    {
+      "case": "different_seed_manifest",
+      "passed": true,
+      "error": "Collection differs from actual released lineage inputs",
+      "success_output_exists": false,
+      "final_serialization_count": 0,
+      "failure_receipt_exists": true
+    },
+    {
+      "case": "wrong_cohort_checkpoint",
+      "passed": true,
+      "error": "Released checkpoint differs from original mix member",
+      "success_output_exists": false,
+      "final_serialization_count": 0,
+      "failure_receipt_exists": false
+    },
+    {
+      "case": "mutate_input_on_serialization",
+      "passed": true,
+      "error": "Original input changed: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_fit_independent_fixtures_v1/mutate_input_on_serialization/metadata_sha256.json",
+      "success_output_exists": false,
+      "final_serialization_count": 1,
+      "failure_receipt_exists": true
+    },
+    {
+      "case": "mutate_label_tree_on_serialization",
+      "passed": true,
+      "error": "Label tree changed during fitting",
+      "success_output_exists": false,
+      "final_serialization_count": 1,
+      "failure_receipt_exists": true
+    },
+    {
+      "case": "mutate_head_on_serialization",
+      "passed": true,
+      "error": "Fitted outputs changed before publication",
+      "success_output_exists": false,
+      "final_serialization_count": 1,
+      "failure_receipt_exists": true
+    },
+    {
+      "case": "expire_on_serialization",
+      "passed": true,
+      "error": "Fitting allocation exhausted",
+      "success_output_exists": false,
+      "final_serialization_count": 1,
+      "failure_receipt_exists": true
+    }
+  ],
+  "all_passed": true
+}

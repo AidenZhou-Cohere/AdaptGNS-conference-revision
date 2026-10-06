@@ -1,0 +1,9 @@
+{
+  "source_sha256": "082fe7affa6231919adf4c65a5f1328d119bec8f42217c3ac0c7532d3317afcb",
+  "synthetic_only": true,
+  "execute_exit_code": 0,
+  "collection_status": "complete",
+  "aggregate_first_feature": 2.6094379124341005,
+  "committed_first_feature": 1.6094379124341003,
+  "collection_published_with_mismatching_row": true
+}

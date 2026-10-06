@@ -1,0 +1,83 @@
+{
+  "artifacts": [
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_v1.py",
+      "sha256": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/test_goop_action_gate_scalar_core_v1.py",
+      "sha256": "8bea3d1d8acec93eb76f981037faa2c1e1320c7475896c7d32ad61bbf3ad5f03"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_interface_v1.md",
+      "sha256": "08aa09073bd5885bd603e2bd850f344a0daa67e7310a7175a4c7f9be009fa6df"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_independent_review_code_audit_v1.json",
+      "sha256": "243cf27f2ab345104588cedf44ff54523653958fb975e2900064249e07cd4f6a"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_fullgrid_independent_code_audit_v1.json",
+      "sha256": "c30fbb89c970cbb192e1b450ffa1162364da8b3adbfad03ee2014e4e435fc0c2"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_collector_draft_probes_code_audit_v1.json",
+      "sha256": "3cbbfbd0d6797c36f339fbc2aa7af73428a10fccceab6f93d29728054f04832b"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_global_action_gate_core_v1.py",
+      "sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop_graph_support_quota_v2.py",
+      "sha256": "da85058ea2ce0fc0f1b67e6cad442369835dfe1e8926d8f26c595d143f1ec33c"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/run_goop_action_gate_v1.py",
+      "sha256": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_tests_attempt1.log",
+      "sha256": "6ecbceb8d50851d5b8c99fe7ce80ed184a60b8338c706c912d1916a65e1aaa12"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_tests_attempt2.log",
+      "sha256": "c3d30205c633e110d6145c9ee6f0b8812aba1d746cafaae8fff6de895cd01e48"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_tests_attempt3.log",
+      "sha256": "271d3a2ec4b1a20bb31383b18b20f5d58dde5adda4920d86597187b7b8c355ff"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_tests_attempt4.log",
+      "sha256": "608566d1fbaa36d53c5512f64701160f0ce69b89eff8214d43299b68743b16dc"
+    }
+  ],
+  "author_tests": {
+    "failed": 0,
+    "final_log": "goop_action_gate_scalar_core_tests_attempt4.log",
+    "passed": 62
+  },
+  "created_utc": "2026-10-06T07:41:08.273132+00:00",
+  "frozen_protocol_training_or_driver_changed": false,
+  "history_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_action_gate_scalar_core_review_history",
+  "independent_review": {
+    "baseline_tests": 50,
+    "final_targeted_tests": 12,
+    "fraction_oracle_comparisons": 35,
+    "full_bytegrid": "120 synthetic published rows,47400 inert forecasts; four scientific-admission variants",
+    "other_null_cost_collapse_probes": 4,
+    "sha256": "243cf27f2ab345104588cedf44ff54523653958fb975e2900064249e07cd4f6a"
+  },
+  "repairs_before_freeze": [
+    "True end-to-end case timing comes from exact collection.case_timings; partial row timers remain explicitly distinct.",
+    "Native cap128 source-ID ties can remove some added self loops; actual retained trace counts are checked without assumingN.",
+    "Failure phase/index/parity/call counts match accepted prefixes, with legitimate asynchronous timer boundaries retained.",
+    "Explicit per-stage final model/input scientific verification gates every admitted seed mean/effect/H200/cost comparison; raw numerical rows and consumed costs remain diagnostic."
+  ],
+  "research_execution_admitted_by_record": false,
+  "schema": "adaptgns_goop_action_gate_scalar_core_authoring_record_v1",
+  "scope": "Pure numeric-array/scalar validation and fixed360-cell aggregation. Synthetic CPU source/unit/integration review only; no actual research checkpoint, source trajectory, label/capacity or test outcome opened, no new model inference executed.",
+  "status": "independently_reviewed_ready_for_root_stopped_collection_release",
+  "wrapper_ownership": "conference_critique_methods owns summarize_goop_action_gate_v1.py and its root/stopped-process/byte-closure release requirements."
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "adaptgns_goop_action_gate_numerical_body_independent_methods_review_v1",
+  "status": "pass",
+  "source_sha256": "082fe7affa6231919adf4c65a5f1328d119bec8f42217c3ac0c7532d3317afcb",
+  "source_unchanged_during_probes": true,
+  "protocol_sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+  "core_sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+  "tests_sha256": "62ee042e4b5d46bac0adf5e070e6c77de539b51619355ab21d59fe9fa38712eb",
+  "log_sha256": "f99ebebc084c88b058ca5992a95d3d5379e1d1bc59bd065abbb435915b564266",
+  "checks": [
+    "Both labels use identical history and read truth only after both supplied forwards; direct float64 MSE difference matches",
+    "Independent SeedSequence material verifies label action RNG and per-step test pairs/gate draws",
+    "All four policies execute395 deployed forwards plus2 separately counted parity calls",
+    "Next history uses predictions; sentinel truth never enters current state or gate",
+    "Strictlypositive benefit threshold; zero/negative prediction requests base",
+    "Guard atforecast201 preserves H200pointwise, leaves395fullmean null and does not read that future truth",
+    "Static immutable native_graph reuse preserves nativebase prefix/cap/self and exact optional budget; graph membership source is inherited, not newly validated by inert probes"
+  ],
+  "resolved_finding": "Author repaired initial_graph phase and zero deployed-forecast index for initial/parity failures; preserved previous source and added own narrow regressions",
+  "numerical_models_or_official_arrays_loaded": false,
+  "network_or_gpu_used": false,
+  "execution_admitted": false,
+  "scope_exclusions": [
+    "root source/receipt admission and final publication independently reviewed by code_audit",
+    "real GPU/model numerical parity and measured capacity remain required"
+  ]
+}

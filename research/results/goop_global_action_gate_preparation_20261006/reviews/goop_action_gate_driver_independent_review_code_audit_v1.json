@@ -1,0 +1,81 @@
+{
+  "schema": "adaptgns_goop_action_gate_driver_independent_review_code_audit_v1",
+  "status": "passed",
+  "source": {
+    "path": "run_goop_action_gate_v1.py",
+    "sha256": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079"
+  },
+  "tests_sha256": "e68853e140f933cdb20f012291e70ef985f6a1e4bb9ff41b183cf30fd9f05540",
+  "interface_sha256": "ff1c4d135393c979d2f9c377ea53892224422de6e8b5d18f15badcb6d123d5af",
+  "independent_tests": {
+    "publication_repaired_source_sha256": "cbbb2d18ffd08aa6721b53e95d3adb2f7ab39ef1900e737266c70bd3147d6869",
+    "passed": 61,
+    "seconds": 2.25,
+    "log": "goop_action_gate_driver_independent_code_audit_attempt1.log",
+    "includes": "Complete150-state synthetic validation collection accepted by unchanged fitter read_collection with full schedule"
+  },
+  "final_clock_delta_tests": {
+    "passed": 30,
+    "main_log": "goop_action_gate_driver_independent_code_audit_attempt2.log",
+    "main_passed": 29,
+    "main_seconds": 0.38,
+    "cutoff_log": "goop_action_gate_driver_independent_clock_cutoff_code_audit_v1.log",
+    "cutoff_passed": 1,
+    "cutoff_seconds": 0.21,
+    "scope": "Exact root inputs, capacity seed/checkpoint/quota/mapping/cleanup identities, first/second-wave admission and own absolute cutoff"
+  },
+  "independent_publication_probes": {
+    "path": "goop_action_gate_driver_independent_publication_code_audit_v2.json",
+    "sha256": "ce569a7176fb472f9205399aaf13d610e5798f45a29a19a2f4bd12c670687238",
+    "passed": 6,
+    "cases": [
+      "Complete synthetic execution has exactly matching committed and aggregate rows",
+      "Scalar row mutation before encoding refuses completion",
+      "Scalar row mutation after encoding refuses completion",
+      "Aggregate mutation after row commit refuses collection publication",
+      "Scalar collection mutation after encoding refuses publication",
+      "Original checkpoint mutation after row commit refuses publication"
+    ]
+  },
+  "independent_numerical_body_review": {
+    "path": "goop_action_gate_numerical_body_independent_methods_review_v1.json",
+    "sha256": "db514517a3ddd71d7a85f23fe4b523d03658780a212fb14b3066a80a67033d49",
+    "passed": 7,
+    "seconds": 0.18,
+    "scope": "Separate methods reviewer checked target ordering, float64 labels, independent SeedSequence keys, all four395-forward autonomous policies with separate parity, strictpositive threshold and guard201 preservingH200/nullH395"
+  },
+  "inheritance_evidence": {
+    "publication_probe_proves": "Numerical functions and execute/release/schedules exact AST equal from082fe7af numerical review to cbbb2d18",
+    "final_delta_path": "goop_action_gate_driver_final_clock_delta_code_audit_v1.json",
+    "final_delta_sha256": "626ca8b364d7572be8b3c8525ace5b12c4fa7ce61a7fd8eccdc793b6ef0272ae",
+    "final_delta": "Only validate_release changes from cbbb2d18 to af51bbe0; every other function exact AST equal"
+  },
+  "reviewed_contract": [
+    "Explicit root source/control/checkpoint/head/capacity releases, fixed complete original six-model Goop cohort and unchanged train or final split contracts precede numeric source/model loading",
+    "Original source evidence and preserved auxiliaries use exact frozen data helper; loaded position/type arrays match full split shape/precision/material identities and join final input bindings",
+    "Fixed mix100k mean/variance model uses exact frozen checkpoint/configuration/source admission, actual GB200 CUDA UUID and deterministic stack; unchanged model state checked at completion",
+    "Both label forwards precede target access; feature and label math use exact core; any missing/failed train or validation label stops without survivor fitting",
+    "Each autonomous policy has one deployed forward per forecast, target read after prediction, predicted-only history update, per-step independent pair/gate RNG and separate initial native parity accounting",
+    "All395 forecasts and pointwiseH200 semantics retained; test scientific guards preserve full cell grid while runtime/budget/parity failures stop; missing work and partial arrays remain explicit",
+    "Numeric NPZ snapshots are read back and matched to original value descriptors; committed row JSON and final aggregate remain exact; terminal source/control/output snapshots prevent silent mutation adoption",
+    "Test capacity binds actual final driver/cohort/selection and all three distinct checkpoints with positive integer exact quotas; first wave uses global latest, seed2 uses global latest plus seed0 allocation and15seconds cleanup; each own invocation must fit its absolute stop"
+  ],
+  "resolved_findings": [
+    "Original committed row/artifact/protocol/parity bytes cannot be silently adopted into a new final inventory",
+    "Scalar row and aggregate snapshots now match exact serialized bytes; reproduced false-complete mismatch repaired",
+    "Initial graph/parity failures use their actual phase and forecast0 before deployed forecasting",
+    "Second-wave child no longer incorrectly uses first-wave latest start; fixed measured quota and model identity checked"
+  ],
+  "preserved_draft_failure": {
+    "path": "goop_action_gate_driver_row_snapshot_draft_probe_code_audit_v1.json",
+    "sha256": "b88e91a2dfc176449c2c0788f1dd9790c6cf193c138583ddfaf2fec79886d771"
+  },
+  "limitations": [
+    "Source, scalar and synthetic numeric review only; no official source arrays, checkpoints, actual model inference, GPU, network or remote process inspection",
+    "Real native parity and complete measured capacity remain execution prerequisites under the separate root release",
+    "Scoped parent must enforce first-wave global admission, seed0 reaping before seed2, physical ownership, whole-invocation quotas including finalization and retained analysis reserve",
+    "Fitter and root collector independently validate final numerical artifacts; this receipt does not admit test execution or establish scientific results"
+  ],
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

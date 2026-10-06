@@ -1,0 +1,10 @@
+{
+  "source_sha256": "82237364f31f26072cd35bf011523ad455037a442912276569dcf6004d4fc530",
+  "native_compilation": "success reported by desktop compiler after edits",
+  "main_page_cap": "existing eight-page assertion passed",
+  "tables_preserved": 27,
+  "figures_preserved": 2,
+  "title_abstract_exactly_preserved": true,
+  "builder_reproduces_current_source": true,
+  "exported_pdf_or_visual_inspection": false
+}

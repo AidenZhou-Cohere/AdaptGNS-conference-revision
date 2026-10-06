@@ -1,0 +1,20 @@
+{
+  "added_import": "copy",
+  "changed_functions": [
+    "publish_collection",
+    "publish_row"
+  ],
+  "current_source_sha256": "cbbb2d18ffd08aa6721b53e95d3adb2f7ab39ef1900e737266c70bd3147d6869",
+  "interpretation": "Methods082fe7 numerical-body probes still target identical AST for scientific computation; code_audit publication review must separately accept new source.",
+  "prior_source_sha256": "082fe7affa6231919adf4c65a5f1328d119bec8f42217c3ac0c7532d3317afcb",
+  "schema": "adaptgns_goop_action_gate_numeric_delta_author_check_v1",
+  "status": "numerical_body_unchanged",
+  "unchanged_numerical_functions": [
+    "capacity_sources",
+    "expected_schedule",
+    "pair_actions",
+    "label_row",
+    "choose_action",
+    "rollout_row"
+  ]
+}

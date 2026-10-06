@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_goop_action_gate_stopped_collection_release_v1",
+  "issued_by": null,
+  "status": "template_not_admitted",
+  "hostname": null,
+  "queue_root": null,
+  "output": null,
+  "collector_sha256": null,
+  "source_sha256": {},
+  "files_sha256": {},
+  "queue_release_sha256": null,
+  "process_outcomes_sha256": null,
+  "phase_ledger_sha256": null,
+  "queue_inventory_sha256": null,
+  "process_closure": {
+    "path": null,
+    "sha256": null
+  }
+}

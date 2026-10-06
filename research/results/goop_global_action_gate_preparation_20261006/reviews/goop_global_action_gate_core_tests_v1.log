@@ -1,0 +1,14 @@
+test_capacity_schedule_is_fixed_and_covers_extremes (test_goop_global_action_gate_core_v1.GateCoreTests.test_capacity_schedule_is_fixed_and_covers_extremes) ... ok
+test_exact_ties_select_larger_penalty_and_zero_means_stay (test_goop_global_action_gate_core_v1.GateCoreTests.test_exact_ties_select_larger_penalty_and_zero_means_stay) ... ok
+test_features_have_hand_calculated_units_and_quantiles (test_goop_global_action_gate_core_v1.GateCoreTests.test_features_have_hand_calculated_units_and_quantiles) ... ok
+test_features_reject_nonfinite_shape_and_guard_breach (test_goop_global_action_gate_core_v1.GateCoreTests.test_features_reject_nonfinite_shape_and_guard_breach) ... ok
+test_fit_refuses_incomplete_or_duplicate_scheduled_labels (test_goop_global_action_gate_core_v1.GateCoreTests.test_fit_refuses_incomplete_or_duplicate_scheduled_labels) ... ok
+test_ridge_matches_closed_form_and_preserves_constant_columns (test_goop_global_action_gate_core_v1.GateCoreTests.test_ridge_matches_closed_form_and_preserves_constant_columns) ... ok
+test_rng_is_per_step_independent_of_skipped_actions_and_policy (test_goop_global_action_gate_core_v1.GateCoreTests.test_rng_is_per_step_independent_of_skipped_actions_and_policy) ... ok
+test_shared_lambda_uses_all_seeds_and_actual_decision_loss (test_goop_global_action_gate_core_v1.GateCoreTests.test_shared_lambda_uses_all_seeds_and_actual_decision_loss) ... ok
+test_signed_label_uses_coordinate_mse_and_whole_actions (test_goop_global_action_gate_core_v1.GateCoreTests.test_signed_label_uses_coordinate_mse_and_whole_actions) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.160s
+
+OK

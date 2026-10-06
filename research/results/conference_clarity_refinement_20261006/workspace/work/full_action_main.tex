@@ -1,0 +1,78 @@
+\subsection{Exploratory actual-action benefit}
+After inspecting the fixed study, we reanalyzed all saved predictions to measure
+the signed benefit of each actual sparse graph, rather than only full expansion.
+Previous-risk correlation with its own 25\% action's normalized vector benefit is
+$-0.021\pm0.049$ for faithful and $-0.052\pm0.013$ for NLL.
+The corresponding dense and actual-risk benefit signs disagree for
+$30.2\pm0.6$\% and
+$31.3\pm0.5$\% of particles, respectively.
+Thus dense benefit is an imperfect label for the sparse action, but replacing
+it with actual action benefit does not recover strong risk ranking here.
+Weak average rank association does not exclude nonmonotone structure: the highest
+risk quartile has positive mean risk-action benefit for each objective, although
+one NLL seed is negative and random allocation yields larger benefit in that
+quartile in all six models.
+
+A hindsight whole-frame choice among base, random25, speed25 and risk25 selects
+base as the strictly best action on $35.9\pm12.0$\% / $35.8\pm6.3$\% of frames (faithful/NLL).
+This target-using diagnostic motivates studying when to add edges; it is not a
+deployable selector or a free-rollout result. All values retain equal-trajectory
+weighting and sample SD across three seeds. These post-inspection findings remain
+conditional on the original evaluation graph convention.
+
+\begin{figure}[t]
+\centering\setlength{\unitlength}{1pt}
+\begin{picture}(225,167)
+\put(12,155){\makebox(0,0)[l]{\scriptsize Previous-risk Spearman correlation}}
+\put(30,31){\line(1,0){181}}
+\put(30,31){\line(0,1){114}}
+\put(27,31.00){\makebox(0,0)[r]{\tiny -0.1}}
+\put(29,31.00){\line(1,0){3}}
+\put(27,49.00){\makebox(0,0)[r]{\tiny 0.0}}
+\put(29,49.00){\line(1,0){3}}
+\put(27,67.00){\makebox(0,0)[r]{\tiny 0.1}}
+\put(29,67.00){\line(1,0){3}}
+\put(27,85.00){\makebox(0,0)[r]{\tiny 0.2}}
+\put(29,85.00){\line(1,0){3}}
+\put(27,103.00){\makebox(0,0)[r]{\tiny 0.3}}
+\put(29,103.00){\line(1,0){3}}
+\put(27,121.00){\makebox(0,0)[r]{\tiny 0.4}}
+\put(29,121.00){\line(1,0){3}}
+\put(27,139.00){\makebox(0,0)[r]{\tiny 0.5}}
+\put(29,139.00){\line(1,0){3}}
+\multiput(32,49)(4,0){45}{\line(1,0){1}}
+\put(50.00,101.43){\circle*{3.5}}
+\put(52.00,122.47){\circle*{3.5}}
+\put(54.00,115.92){\circle*{3.5}}
+\put(48.00,113.27){\line(1,0){8}}
+\put(111.00,45.20){\circle*{3.5}}
+\put(113.00,53.06){\circle*{3.5}}
+\put(115.00,36.93){\circle*{3.5}}
+\put(109.00,45.06){\line(1,0){8}}
+\put(172.00,47.70){\circle*{3.5}}
+\put(174.00,52.41){\circle*{3.5}}
+\put(176.00,35.43){\circle*{3.5}}
+\put(170.00,45.18){\line(1,0){8}}
+\put(64.00,120.05){\makebox(0,0){\tiny$\triangle$}}
+\put(66.00,127.68){\makebox(0,0){\tiny$\triangle$}}
+\put(68.00,121.38){\makebox(0,0){\tiny$\triangle$}}
+\put(62.00,123.04){\line(1,0){8}}
+\put(125.00,42.54){\makebox(0,0){\tiny$\triangle$}}
+\put(127.00,38.39){\makebox(0,0){\tiny$\triangle$}}
+\put(129.00,40.05){\makebox(0,0){\tiny$\triangle$}}
+\put(123.00,40.33){\line(1,0){8}}
+\put(186.00,42.11){\makebox(0,0){\tiny$\triangle$}}
+\put(188.00,39.52){\makebox(0,0){\tiny$\triangle$}}
+\put(190.00,37.41){\makebox(0,0){\tiny$\triangle$}}
+\put(184.00,39.68){\line(1,0){8}}
+\put(59,21){\makebox(0,0){\tiny Base residual}}
+\put(120,21){\makebox(0,0){\tiny Dense benefit}}
+\put(181,21){\makebox(0,0){\tiny Actual risk25}}
+\put(68,7){\circle*{3.5}}
+\put(74,7){\makebox(0,0)[l]{\tiny Faithful}}
+\put(136,7){\makebox(0,0){\tiny$\triangle$}}
+\put(143,7){\makebox(0,0)[l]{\tiny NLL}}
+\end{picture}
+\caption{Residual ranking and actual action value on the saved observed histories. Each symbol is one seed mean; horizontal marks are three-seed means. Actual risk25 benefit uses the whole selected graph. This exploratory comparison retains the original no-self-loop evaluation convention.}
+\label{fig:actual-action-risk}
+\end{figure}

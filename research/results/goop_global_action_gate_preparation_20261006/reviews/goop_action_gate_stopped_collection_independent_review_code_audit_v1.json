@@ -1,0 +1,104 @@
+{
+  "review_author": "/root/code_audit",
+  "status": "passed",
+  "preserved_draft_probes": {
+    "path": "goop_action_gate_scalar_collector_draft_probes_code_audit_v1.json",
+    "sha256": "3cbbfbd0d6797c36f339fbc2aa7af73428a10fccceab6f93d29728054f04832b"
+  },
+  "inheritance_evidence": {
+    "path": "goop_action_gate_scalar_collector_final_delta_code_audit_v1.json",
+    "sha256": "3389acede9aac6f62811107aaf0df7db5df1a0fe207a52e80ff7b8c0f094d389"
+  },
+  "full120_numeric_integration": {
+    "receipt": {
+      "path": "goop_action_gate_scalar_fullgrid_independent_code_audit_v1.json",
+      "sha256": "c30fbb89c970cbb192e1b450ffa1162364da8b3adbfad03ee2014e4e435fc0c2"
+    },
+    "probe_source": {
+      "path": "review_goop_action_gate_scalar_fullgrid_code_audit_v1.py",
+      "sha256": "fd83062ffbeff6fb6a6750766478bfa662b8ae7b2e5b0f20d284fd7db4adb949"
+    },
+    "rows": 120,
+    "accepted_forecasts": 47400,
+    "policies": 4,
+    "admission_variants_passed": 4,
+    "numeric_validation_stubbed": false,
+    "original_protocol_validator_stubbed_only_for_synthetic_inputs": true
+  },
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false,
+  "scientific_results_established_by_this_review": false,
+  "schema": "adaptgns_goop_action_gate_stopped_collection_independent_review_code_audit_v1",
+  "source": {
+    "path": "summarize_goop_action_gate_v1.py",
+    "sha256": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f"
+  },
+  "tests": {
+    "path": "test_summarize_goop_action_gate_v1.py",
+    "sha256": "fdbbcc7fdb9473eee7fb57fe1f582d782dd374a0b135cd014a969ed783a1031e"
+  },
+  "core_review": {
+    "path": "goop_action_gate_scalar_core_independent_review_code_audit_v1.json",
+    "sha256": "243cf27f2ab345104588cedf44ff54523653958fb975e2900064249e07cd4f6a"
+  },
+  "operational_notes": {
+    "path": "goop_action_gate_stopped_collection_operations_v1.md",
+    "sha256": "49baec8d43a812630ee735587afb230615286052a0aac833282ce24d7aea4b97"
+  },
+  "independent_baseline_tests": {
+    "source_sha256": "b53bd70f482dc58eea6529835082dd3fc51970d776d97874c376ad1b71aed288",
+    "passed": 77,
+    "seconds": 1.95,
+    "log": {
+      "path": "summarize_goop_action_gate_v1_independent_code_audit_attempt1.log",
+      "sha256": "578cd2c159248a1c1b67908e1377611c833ec9e8a23ebf018868dee52a383933"
+    }
+  },
+  "independent_final_delta_tests": {
+    "passed": 24,
+    "seconds": 1.41,
+    "deselected": 61,
+    "log": {
+      "path": "summarize_goop_action_gate_v1_independent_delta_code_audit_v1.log",
+      "sha256": "377eb9f0d8e6770e2a287a6f7b8164d8d18c31728b253387a4d403602ea7b24d"
+    }
+  },
+  "independent_driver_context_composition": {
+    "passed": 11,
+    "seconds": 0.28,
+    "tested_source_sha256": "d55aca8943625c6a4afd99d86412ddbce99e1e2ad73a0562dbf2df46e3c0adb1",
+    "source": {
+      "path": "test_goop_action_gate_collector_context_code_audit_v1.py",
+      "sha256": "ceb2aa4caf632735fcfa43be66680b72cd6b49ae446e8c2dad9439ce960e3b15"
+    },
+    "log": {
+      "path": "goop_action_gate_collector_context_independent_code_audit_v1.log",
+      "sha256": "3099ae9e7a795f828c85665c7c857af4fcb2bbd9342bc7946180a9327b0d0b76"
+    },
+    "real_paths": "Unchanged actual driver_context and driver.validate_release, exact synthetic file bytes, head/selection/capacity/protocol checks",
+    "stubbed_paths": "Previously frozen cohort/split/context helper bodies replaced with recording sentinels; source-reviewed original calls and arguments; no model or data-array loading",
+    "inheritance": "driver_context exact AST unchanged from baseline through final candidate"
+  },
+  "reviewed_contract": [
+    "Exact root release and byte-bound independent parent/child closure precede queue hashing or array reads; missing ledger permitted only with complete independently reaped owned registry; reused PIDs observed without signals and live original/gate identities rejected",
+    "Root queue inventory covers every retained file/directory including partial artifacts; original lexical venv, physical scope, fixed120-cell stream commands and all3common cohort/test/selection inputs are enforced",
+    "Original actual scalar driver admission is revalidated at original phase timestamp without invoking execution admission or model loading; frozen cohort/split/context contracts compose with full original source/checkpoint/head/evidence bindings",
+    "Protocol binds exact original model/source/head/selection/schedule/features/policies and original input closure; run_config_sha256 now equals selected cohort config_sha256",
+    "Committed row JSON, actual NPZ bytes and every numeric descriptor are checked with pickle disabled; original provided source array byte/shape/type identities are verified before pure core validation; invalid/partial records remain explicit without fabricated metrics",
+    "Every original supervisor complete_collection path/hash/status/count commitment remains authoritative; a new root inventory cannot replace it; collection/status/coverage/counts/exit and frozen-model/input reverification must agree",
+    "Complete successful collections require original supervisor proof and zero exit; valid unsuccessful partial collections can retain verified H200 prefixes when their model and inputs were explicitly reverified; otherwise rows remain diagnostics only",
+    "Case wall times require exact one-to-one ordered collection-to-committed-row matching; invalid collection commitments cannot supply timings; whole-invocation and partial row component costs remain distinct",
+    "Final scalar result is deep-snapshotted and serialized before original bindings, entire queue tree and fresh stopped-process checks; exclusive output is outside original queue; no signals, fitting, simulator imports or execution"
+  ],
+  "resolved_findings": [
+    "Original supervisor collection commitment is now verified before accepting replacement inventory/timing/status",
+    "Final model/input checks gate scientific completion, while all numerically valid rows and consumed costs remain available diagnostically",
+    "Committed model configuration digest must match the original selected cohort model rather than merely having digest syntax"
+  ],
+  "limitations": [
+    "No actual scientific execution, official source arrays/checkpoints or real process/GPU inspection; every execution probe used synthetic files and inert fixtures",
+    "Checkpoint bytes are opaque; frozen root cohort audit supplies payload/model identity assurance, and original simulator inference/native parity is not rerun",
+    "Full120 integration exercised real numeric validation and row/NPZ publication but stubbed original protocol admission for synthetic inputs; real protocol and driver_context paths were independently tested separately",
+    "Completing a stopped collection is distinct from all360 scientifically verified outcomes, constructive improvement or conference readiness"
+  ]
+}

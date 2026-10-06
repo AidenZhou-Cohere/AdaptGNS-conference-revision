@@ -1,0 +1,32 @@
+{
+  "actual_model_or_official_array_access": false,
+  "author_tests": {
+    "fixture_scope": "Synthetic arrays, opaque bytes and fake process identities only. Actual driver/core numerical composition on full and prefix rows; publication scaffold mocks original admissions; three120-cell scalar-gate tests mock numeric validation.",
+    "log": "goop_action_gate_collector_tests_verification_delta2.log",
+    "passed": 85,
+    "seconds": 3.27
+  },
+  "files_sha256": {
+    "goop_action_gate_collector_tests_verification_delta2.log": "acbd8a268f4a883db2ddc7318f7da2859f17df8997af03fb1ab4a9358c682d4c",
+    "goop_action_gate_process_closure.template.json": "7dbc4955669f22d94204a3f008db84d120e2d10a4f0239f592c2be30cfd1f5d4",
+    "goop_action_gate_scalar_collector_draft_probes_code_audit_v1.json": "3cbbfbd0d6797c36f339fbc2aa7af73428a10fccceab6f93d29728054f04832b",
+    "goop_action_gate_scalar_core_interface_v1.md": "08aa09073bd5885bd603e2bd850f344a0daa67e7310a7175a4c7f9be009fa6df",
+    "goop_action_gate_scalar_core_v1.py": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1",
+    "goop_action_gate_stopped_collection_operations_v1.md": "49baec8d43a812630ee735587afb230615286052a0aac833282ce24d7aea4b97",
+    "goop_action_gate_stopped_collection_release.template.json": "362984767ffd807b8df97976302cf9bd1c0196f1f031f978fa80418d6310ada2",
+    "summarize_goop_action_gate_v1.py": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f",
+    "test_summarize_goop_action_gate_v1.py": "fdbbcc7fdb9473eee7fb57fe1f582d782dd374a0b135cd014a969ed783a1031e"
+  },
+  "frozen_experiment_source_or_protocol_changed": false,
+  "gpu_or_remote_operations": false,
+  "independent_review": null,
+  "issued_by": "methods_author",
+  "reviewed_draft_defects_repaired": [
+    "original_supervisor_collection_commitment_preserved",
+    "explicit_stage_model_and_input_verification_gates_scientific_means",
+    "original_cohort_configuration_hash_required"
+  ],
+  "root_execution_admission": false,
+  "schema": "adaptgns_goop_action_gate_stopped_collector_authoring_v1",
+  "status": "candidate_pending_independent_final_review"
+}

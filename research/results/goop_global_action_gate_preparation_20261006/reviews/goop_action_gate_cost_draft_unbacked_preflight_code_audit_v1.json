@@ -1,0 +1,16 @@
+{
+  "source_sha256": "5c21db7a5c584c676ce41904bc1d1230e46edb5701902381062959eab6755c20",
+  "synthetic_only": true,
+  "unbacked_preflight_accepted": true,
+  "remaining_reserves_seconds": {
+    "scalar_array_collection": 2700,
+    "independent_analysis_manuscript": 3600
+  },
+  "unbacked_claim": {
+    "input_preflight": {
+      "receipt_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "actual_elapsed_seconds": 0,
+      "completed_utc": "2026-10-06T12:00:00+00:00"
+    }
+  }
+}

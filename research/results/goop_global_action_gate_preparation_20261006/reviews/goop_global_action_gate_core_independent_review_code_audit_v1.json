@@ -1,0 +1,55 @@
+{
+  "schema": "adaptgns_global_action_gate_core_independent_review_code_audit_v1",
+  "status": "passed",
+  "source": {
+    "path": "goop_global_action_gate_core_v1.py",
+    "sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca"
+  },
+  "protocol_sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+  "tests": {
+    "path": "test_goop_global_action_gate_core_v1.py",
+    "sha256": "0c8c12a0f4141a77814c00624f4f2012d0368a6c7e10a1c0a01c7cf2f6475f52",
+    "passed": 10,
+    "seconds": 0.056,
+    "log": "goop_global_gate_core_independent_code_audit_attempt2.log",
+    "log_sha256": "8eaa8e31036ab23d12b4671ed51596a1cfc8e0acdf3dddc29f3cd4032bd131ff"
+  },
+  "independent_math_probes": {
+    "path": "goop_global_gate_core_independent_math_probes_code_audit_v1.json",
+    "sha256": "afee8d3a7255410ac563c5add00dd32152af15f6b337bdd725cca10a6e13352c",
+    "cases": "All3ridge solves compared against augmented least-squares with correlated and constant columns; exact JSON prediction roundtrips; both repair probes rejected"
+  },
+  "mathematical_review": [
+    "Eleven history-only features match fixed order and linear quantiles; wall-distance min across four signed walls, outsidefraction and maximumexcursion correct; frozen bridge MAX_ABS10 agrees",
+    "Speed and acceleration-difference features have position units per stored-step difference, with no dt division; error/benefit in position-coordinate MSE units",
+    "Label sign is mean(base-target)^2 minus mean(random-target)^2 over all particle coordinates",
+    "Training centering uses n8000 population standard deviations and max(std,1e-12); all11columns retained",
+    "For objective ||Zw-t||\u00b2/n+lambda||w||\u00b2, derivative is2Z\u1d40(Zw-t)/n+2lambda*w, yielding the implemented11x11normal system. Restored prediction m+label_scale*z*w returns original squared-position units",
+    "Full ordered8000train/150valid source-frame schedules reject missing/duplicate/reordered/bool identities; seed grid strictly integer0,1,2",
+    "Validation chooses expansion strictly prediction>0, averages fiveframes/source then30sources/seed then3seeds equally; common lambda selected by exact(loss,-lambda) lexicographic key",
+    "Requested validation expansion fraction includes all150states, so zero-budget request semantics remain intact at driver layer",
+    "Keyed SeedSequence lists match all four domains and pair/gate suffixes; each call instantiates independent RNG, avoiding skip-dependent stream shifts",
+    "Serialized heads contain raw normalizers, coefficients, lambda, feature/label units, input hashes and protocol schema; finite predictions/diagnostics required"
+  ],
+  "resolved_findings": [
+    {
+      "draft_sha256": "dc059d9aae7523d89a6f03e4a9a3939be63a7f6846e505475ffaa1b1954f2cf8",
+      "issue": "Boolean seedkeys/headID alias integer0",
+      "fix": "Strict type checks before seedgrid and headmapping"
+    },
+    {
+      "draft_sha256": "dc059d9aae7523d89a6f03e4a9a3939be63a7f6846e505475ffaa1b1954f2cf8",
+      "issue": "Finite selectionloss could accompany infinite signed-benefit calibration diagnostic",
+      "fix": "Overflow raises and all diagnostics finite-checked"
+    }
+  ],
+  "driver_obligations": [
+    "Verify every scheduled paired-action label is committed/finite and bind exact model/history/graph/prediction/source hashes and measured costs",
+    "Check immutable simulator bytes before/after fit and freeze heads/selection/completeledgers before testaccess",
+    "Produce both action predictions before target scoring; feature interface alone cannot prove caller information flow",
+    "Enforce original scientific guards, full cohort/data admissions, complete capacity/costgate and strict finite JSON publication"
+  ],
+  "scope": "Pure source/math/syntheticarray review only; no model, actual train/validation/test data, real inference or scientific execution admission",
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

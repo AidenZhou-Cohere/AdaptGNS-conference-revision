@@ -1,0 +1,25 @@
+{
+  "current_primary_python_entries": [
+    "goop_global_action_gate_core_v1.py",
+    "run_goop_action_gate_v1.py",
+    "fit_goop_action_gate_v1.py",
+    "goop_action_gate_cost_plan_v1.py",
+    "supervise_goop_action_gate_scoped_v1.py",
+    "goop_action_gate_scalar_core_v1.py",
+    "summarize_goop_action_gate_v1.py"
+  ],
+  "excluded": [
+    "actual data",
+    "model/checkpoint payloads",
+    "live output trees",
+    "private process inventories",
+    "SSH configuration",
+    "credentials",
+    "detailed synthetic fixture payload trees",
+    "oversized raw logs"
+  ],
+  "frozen_sources_changed": false,
+  "historical_approval_rule": "Only current_approved_pins.json names the approved pipeline. Earlier author/review notes and candidate snapshots remain historical, including then-pending work.",
+  "kind": "reviewed_source_preparation_not_scientific_outcomes",
+  "science_execution_or_test_admission_granted": false
+}

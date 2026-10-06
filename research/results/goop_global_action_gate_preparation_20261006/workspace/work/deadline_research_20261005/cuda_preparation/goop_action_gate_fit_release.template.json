@@ -1,0 +1,82 @@
+{
+  "schema": "adaptgns_goop_global_action_gate_fit_release_v1",
+  "status": "template_not_admitted",
+  "issued_by": null,
+  "output_dir": null,
+  "core_sha256": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+  "gate_protocol_sha256": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+  "fit_source_sha256": null,
+  "driver_sha256": null,
+  "max_seconds": null,
+  "cpu_threads": 2,
+  "absolute_stop_utc": null,
+  "files_sha256": {},
+  "collections": [
+    {
+      "seed": 0,
+      "split": "train",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "seed": 0,
+      "split": "valid",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "seed": 1,
+      "split": "train",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "seed": 1,
+      "split": "valid",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "seed": 2,
+      "split": "train",
+      "path": null,
+      "sha256": null
+    },
+    {
+      "seed": 2,
+      "split": "valid",
+      "path": null,
+      "sha256": null
+    }
+  ],
+  "lineage_paths": {
+    "original_training_protocol_sha256": null,
+    "driver_sha256": null,
+    "cohort_sha256": null,
+    "cohort_audit_sha256": null,
+    "training_admission_sha256": null,
+    "metadata_sha256": null,
+    "train_manifest_sha256": null,
+    "valid_manifest_sha256": null
+  },
+  "models": [
+    {
+      "seed": 0,
+      "checkpoint_path": null,
+      "checkpoint_sha256": null,
+      "run_config_sha256": null
+    },
+    {
+      "seed": 1,
+      "checkpoint_path": null,
+      "checkpoint_sha256": null,
+      "run_config_sha256": null
+    },
+    {
+      "seed": 2,
+      "checkpoint_path": null,
+      "checkpoint_sha256": null,
+      "run_config_sha256": null
+    }
+  ]
+}

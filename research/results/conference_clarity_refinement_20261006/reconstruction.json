@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "scope": "Build standalone source in isolated copied workspace; exact bytes match saved compiled source",
+  "latex_compilation": "native editor success recorded in verification.json",
+  "scientific_execution": false
+}

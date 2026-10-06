@@ -1,0 +1,35 @@
+{
+  "schema": "adaptgns_goop_action_gate_scalar_collector_final_delta_code_audit_v1",
+  "definitions": [
+    {
+      "path": "goop_action_gate_scalar_core_v1.py",
+      "draft_sha256": "75b4a8be4117f8f28846a58f67bf451bc6fc44a51c99c596c5b44a7769a3a835",
+      "final_sha256": "a0c0098e72c073b3468a2cc9a0d7a23c723250148f1dc1a550f35e02425081b1",
+      "changed": [
+        "validate_row",
+        "summarize"
+      ],
+      "added": [
+        "failure_contract"
+      ],
+      "removed": []
+    },
+    {
+      "path": "summarize_goop_action_gate_v1.py",
+      "draft_sha256": "b53bd70f482dc58eea6529835082dd3fc51970d776d97874c376ad1b71aed288",
+      "final_sha256": "2f1f5fa7085be29d573aadd098eedb764259d06dde79308526052127966eb85f",
+      "changed": [
+        "validate_protocol",
+        "collect_stage",
+        "collect"
+      ],
+      "added": [],
+      "removed": []
+    }
+  ],
+  "fixed_numerical_sources": {
+    "run_goop_action_gate_v1.py": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079",
+    "goop_global_action_gate_core_v1.py": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+    "supervise_goop_action_gate_scoped_v1.py": "4cda31a408c097944e5f15b3502d05bcfab0d3db5b8ee25dcc5fdc1968fd61df"
+  }
+}

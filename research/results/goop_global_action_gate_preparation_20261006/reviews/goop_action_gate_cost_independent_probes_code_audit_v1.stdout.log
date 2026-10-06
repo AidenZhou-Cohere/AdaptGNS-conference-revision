@@ -1,0 +1,146 @@
+{
+  "schema": "adaptgns_goop_action_gate_cost_independent_probes_code_audit_v1",
+  "source_sha256": "b4b7a18da848b7222521eecddf4f612e0a0615dd4d990ea65c35741cf1c8a28b",
+  "source_is_still_current": true,
+  "synthetic_scalar_only": true,
+  "decimal_cases": 24,
+  "probes": [
+    {
+      "case": "train-label-capacity_decimal_pattern_0",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_1",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_2",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_3",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_4",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_5",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_6",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_7",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_8",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_9",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_10",
+      "passed": true
+    },
+    {
+      "case": "train-label-capacity_decimal_pattern_11",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_0",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_1",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_2",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_3",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_4",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_5",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_6",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_7",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_8",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_9",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_10",
+      "passed": true
+    },
+    {
+      "case": "train-rollout-capacity_decimal_pattern_11",
+      "passed": true
+    },
+    {
+      "case": "unbacked_preflight_credit",
+      "passed": true,
+      "error": "Actual completed-stage receipt bytes must be loaded before reducing reserves"
+    },
+    {
+      "case": "complete_cli_candidate",
+      "passed": true,
+      "error": null,
+      "mutations": [],
+      "output_exists": true,
+      "remaining_reserve_seconds": 7200
+    },
+    {
+      "case": "complete_bound_preflight_credit",
+      "passed": true,
+      "error": null,
+      "mutations": [],
+      "output_exists": true,
+      "remaining_reserve_seconds": 6300,
+      "receipt_is_bound": true
+    },
+    {
+      "case": "input_mutation_during_serialization",
+      "passed": true,
+      "error": "Capacity evidence changed before candidate publication",
+      "mutations": [
+        "collection0"
+      ],
+      "output_exists": false
+    },
+    {
+      "case": "receipt_mutation_during_serialization",
+      "passed": true,
+      "error": "Capacity evidence changed before candidate publication",
+      "mutations": [
+        "completed receipt"
+      ],
+      "output_exists": false
+    }
+  ],
+  "all_passed": true
+}

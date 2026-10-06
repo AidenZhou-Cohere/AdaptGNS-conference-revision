@@ -1,0 +1,32 @@
+{
+  "authorization": "none; root execution release and independent review are still required",
+  "created_utc": "2026-10-06T07:12:01.865689+00:00",
+  "files_sha256": {
+    "fit_goop_action_gate_v1.py": "85411dd07972fd555da86210c8bf1825d31801c6d0b168e9f8106f2492ea1ee3",
+    "goop_action_gate_driver_interface_v1.md": "a283756cde2ea7790067b4422f56e2525512e8a038e889a048a092aedcd2cf52",
+    "goop_action_gate_driver_tests_attempt1.log": "0c7329ead0e66b7ce782fb27a2021eaa82a794771fc12305bad3ac68d5dcdb7a",
+    "goop_action_gate_driver_tests_attempt2.log": "42ce3a430ba0d830dcd4f6e0fc62d62bdaf319a162de6032e5136fbf54994191",
+    "goop_action_gate_driver_tests_attempt3.log": "c90afbc3b2b566e2d3c0b66d69212308aaa2c26dacf41fcdeb8e324905dd540c",
+    "goop_action_gate_driver_tests_attempt4.log": "d6c5718707fd9bddc0eb340a958ca73d2fd8f8a2462ff75b66e3b74d50820aa0",
+    "goop_global_action_gate_core_v1.py": "d3986c2ac3786e9fc0d36d76339bfeded5448497f7dad9b0559efaaaa53a43ca",
+    "goop_global_action_gate_protocol_v1.md": "bc9235fae89d32ede8d1e7f846bff07bdcdd85f4671d5922d688a9535f7fe024",
+    "run_goop_action_gate_v1.py": "a834512efc65f0d4e6f5d75a2fcb3a7a760bce464abc416bd30376ba56adf505",
+    "test_run_goop_action_gate_v1.py": "d2f8020cb879f871d1152b564e9d41d6e795d77cc56928ac56f500d26e2812e3"
+  },
+  "fixes_before_freeze": [
+    "TimeoutError classified execution_budget and current accepted prefix preserved; no later work starts.",
+    "Head validation inside setup failure handling; failed parity raw arrays committed.",
+    "Numeric NPZ arrays independently reloaded from serialized bytes and descriptors compared before row JSON commit.",
+    "Final collection compares row/artifact/protocol/parity originally committed pins and repeats source/output snapshot after serialization."
+  ],
+  "preserved_history": "goop_action_gate_driver_review_history",
+  "schema": "adaptgns_goop_global_action_gate_driver_authoring_record_v1",
+  "scope": "Numerical driver source preparation and synthetic CPU contracts only; no real checkpoint, source trajectory, capacity label or test execution by this author.",
+  "status": "synthetic_author_checks_passed_independent_review_pending",
+  "tests": {
+    "failed": 0,
+    "final_attempt": 4,
+    "full_schedule_integration": "all150 synthetic validation labels serialized by driver and read by unchanged fitter.read_collection",
+    "passed": 55
+  }
+}

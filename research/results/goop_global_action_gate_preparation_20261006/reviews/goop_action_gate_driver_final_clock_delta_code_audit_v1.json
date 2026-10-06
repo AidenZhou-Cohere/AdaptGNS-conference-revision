@@ -1,0 +1,9 @@
+{
+  "old_source_sha256": "cbbb2d18ffd08aa6721b53e95d3adb2f7ab39ef1900e737266c70bd3147d6869",
+  "final_source_sha256": "af51bbe073e52a22d4394918dbce4bc9c34a99645dc7f302b0cd5c48ebba5079",
+  "changed_functions": [
+    "validate_release"
+  ],
+  "all_other_functions_exact_AST_equal": true,
+  "review_scope": "Two-wave per-invocation clock and measured quota/checkpoint/source identity only"
+}
