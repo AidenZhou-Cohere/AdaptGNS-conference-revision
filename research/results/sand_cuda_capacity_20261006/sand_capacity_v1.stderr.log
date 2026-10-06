@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 617, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 597, in main
+    jobs = run_waves(lambda wave: run_wave(args, wave, launch, manifest))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 433, in run_waves
+    jobs, record = run_one(wave)
+                   ^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 597, in <lambda>
+    jobs = run_waves(lambda wave: run_wave(args, wave, launch, manifest))
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 394, in run_wave
+    require(failure is None, failure or "job failed")
+  File "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/measure_sand_cuda_capacity.py", line 62, in require
+    raise ValueError(message)
+ValueError: nll_seed0: CUDA runtime/GPU mapping differs
