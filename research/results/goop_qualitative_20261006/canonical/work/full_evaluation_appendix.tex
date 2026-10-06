@@ -1,0 +1,276 @@
+\section{Full-architecture evaluation and measured cost}
+
+\label{sec:full-results}
+
+\begin{table*}[t]
+\centering\small
+\caption{Full-architecture position MSE over 995 forecasts, mean $\pm$ sample SD of three equal-trajectory seed means. Failures are counts out of 81 outcomes per objective/policy, shown faithful / NLL. A failed trajectory makes the full-horizon group mean undefined.}
+\label{tab:full-rollouts}
+\begin{tabular}{lrrr}
+\toprule
+Policy & Faithful & NLL & Failures\\
+\midrule
+Base & $0.0266\pm0.0202$ & --- & 0 / 1\\
+Dense & $0.0382\pm0.0188$ & --- & 0 / 2\\
+Random25 & $0.0274\pm0.0201$ & --- & 0 / 4\\
+Speed25 & $0.0252\pm0.0148$ & $0.0321\pm0.0141$ & 0 / 0\\
+Cached risk25 & $0.0282\pm0.0179$ & --- & 0 / 1\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The queue completed on October 5, 2026 at 20:22 UTC. All six autonomous and six
+same-state jobs completed; scientific guard failures remain outcomes rather
+than retry candidates. Every table uses exactly three training seeds. Within
+an autonomous seed, trajectories are weighted equally; same-state measurements
+average 11 targets within each trajectory, then 27 trajectories. The targets
+are fixed at 7, 106, 205, 304, 403, 502, 601, 700, 799, 898, 1000. No particle or time-step independence is assumed. A missing or failed required outcome
+makes its all-sample full-horizon summary undefined; accepted failure prefixes
+are stored separately. Position MSE averages coordinates and particles.
+
+
+\begin{table}[t]
+\centering\small
+\caption{All locked autonomous endpoints. Secondary MSE at forecast 200 is defined for all outcomes because every failure occurred later. Undefined entries retain failures, rather than averaging survivors.}
+\label{tab:full-endpoints}
+\begin{tabular}{llrrrr}
+\toprule
+Objective & Policy & Mean MSE & MSE@200 & MSE@995 & Failed\\
+\midrule
+faithful & Base & $0.02665\pm0.02015$ & $0.01289\pm0.00858$ & $0.03823\pm0.02559$ & 0/81\\
+faithful & Dense & $0.03823\pm0.01880$ & $0.02234\pm0.02031$ & $0.05677\pm0.01889$ & 0/81\\
+faithful & Random25 & $0.02737\pm0.02010$ & $0.01459\pm0.01243$ & $0.03911\pm0.02474$ & 0/81\\
+faithful & Speed25 & $0.02519\pm0.01477$ & $0.01278\pm0.00777$ & $0.03652\pm0.01877$ & 0/81\\
+faithful & Cached risk25 & $0.02820\pm0.01786$ & $0.01402\pm0.01094$ & $0.04136\pm0.02294$ & 0/81\\
+nll & Base & --- & $0.02770\pm0.02460$ & --- & 1/81\\
+nll & Dense & --- & $0.02712\pm0.02222$ & --- & 2/81\\
+nll & Random25 & --- & $0.02663\pm0.02360$ & --- & 4/81\\
+nll & Speed25 & $0.03210\pm0.01408$ & $0.02726\pm0.02314$ & $0.04269\pm0.01529$ & 0/81\\
+nll & Cached risk25 & --- & $0.02528\pm0.02419$ & --- & 1/81\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering\small
+\caption{All eight scientific failures. The forward attempt exceeded the declared absolute-coordinate guard of 10; each completed-prefix count excludes that rejected attempt. No failed outcome was rerun.}
+\label{tab:full-failures}
+\begin{tabular}{lrllrl}
+\toprule
+Objective & Seed & Index & Policy & Accepted steps & Reason\\
+\midrule
+nll & 2 & 17 & Base & 918 & coordinate\_resource\_guard\\
+nll & 2 & 16 & Dense & 901 & coordinate\_resource\_guard\\
+nll & 2 & 17 & Dense & 912 & coordinate\_resource\_guard\\
+nll & 2 & 6 & Random25 & 898 & coordinate\_resource\_guard\\
+nll & 2 & 20 & Random25 & 918 & coordinate\_resource\_guard\\
+nll & 2 & 26 & Random25 & 876 & coordinate\_resource\_guard\\
+nll & 2 & 29 & Random25 & 893 & coordinate\_resource\_guard\\
+nll & 2 & 29 & Cached risk25 & 891 & coordinate\_resource\_guard\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+These coordinate thresholds are computational guards, not water-container
+boundaries. They therefore do not replace geometric diagnostics. The earliest
+failure accepted 876 forecasts and the latest accepted 918. No model or
+checkpoint was selected from these outcomes.
+
+
+\begin{table}[t]
+\centering\small
+\caption{Full-horizon position MSE for every seed, with failed-trajectory counts out of 27 in parentheses. An undefined seed is not replaced by a survivor mean.}
+\label{tab:full-seeds}
+\begin{tabular}{llrrr}
+\toprule
+Objective & Policy & Seed 0 & Seed 1 & Seed 2\\
+\midrule
+faithful & Base & 0.018734 (0) & 0.011649 (0) & 0.049555 (0)\\
+faithful & Dense & 0.027677 (0) & 0.027085 (0) & 0.059933 (0)\\
+faithful & Random25 & 0.020693 (0) & 0.011467 (0) & 0.049963 (0)\\
+faithful & Speed25 & 0.021131 (0) & 0.012875 (0) & 0.041572 (0)\\
+faithful & Cached risk25 & 0.022524 (0) & 0.013867 (0) & 0.048212 (0)\\
+nll & Base & 0.036773 (0) & 0.015502 (0) & --- (1)\\
+nll & Dense & 0.051510 (0) & 0.015199 (0) & --- (2)\\
+nll & Random25 & 0.040764 (0) & 0.012895 (0) & --- (4)\\
+nll & Speed25 & 0.043667 (0) & 0.016416 (0) & 0.036212 (0)\\
+nll & Cached risk25 & 0.046788 (0) & 0.011698 (0) & --- (1)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering\small
+\caption{Paired cached-risk differences, negative favoring cached risk. Differences first pair identical trajectory IDs within each seed. Failure fractions remain defined even when full-horizon error does not. Three seeds warrant descriptive, not strong significance, conclusions.}
+\label{tab:full-paired}
+\begin{tabular}{llrrr}
+\toprule
+Objective & Comparison & Mean MSE & MSE@200 & Failure fraction\\
+\midrule
+faithful & Cached risk minus Base & $0.00155\pm0.00263$ & $0.00113\pm0.00240$ & $0.00000\pm0.00000$\\
+faithful & Cached risk minus Dense & $-0.01003\pm0.00429$ & $-0.00832\pm0.00938$ & $0.00000\pm0.00000$\\
+faithful & Cached risk minus Random25 & $0.00083\pm0.00225$ & $-0.00057\pm0.00151$ & $0.00000\pm0.00000$\\
+faithful & Cached risk minus Speed25 & $0.00301\pm0.00315$ & $0.00124\pm0.00318$ & $0.00000\pm0.00000$\\
+nll & Cached risk minus Base & --- & $-0.00242\pm0.00423$ & $0.00000\pm0.00000$\\
+nll & Cached risk minus Dense & --- & $-0.00185\pm0.01051$ & $-0.01235\pm0.02138$\\
+nll & Cached risk minus Random25 & --- & $-0.00135\pm0.00060$ & $-0.03704\pm0.06415$\\
+nll & Cached risk minus Speed25 & --- & $-0.00198\pm0.00387$ & $0.01235\pm0.02138$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering\small
+\caption{Predicted boundary diagnostics. Outside fraction (percent) averages particles then forecast steps. The last column averages each trajectory's worst excursion; it is not the single worst particle across the study. Failed groups are undefined.}
+\label{tab:full-boundaries}
+\begin{tabular}{llrrr}
+\toprule
+Objective & Policy & Outside (\%) & Mean step max & Mean trajectory max\\
+\midrule
+faithful & Base & $13.46\pm6.00$ & $0.1418\pm0.0959$ & $0.2393\pm0.1082$\\
+faithful & Dense & $14.88\pm5.29$ & $0.2576\pm0.0851$ & $0.3868\pm0.0807$\\
+faithful & Random25 & $13.61\pm6.25$ & $0.1633\pm0.0969$ & $0.2681\pm0.0964$\\
+faithful & Speed25 & $13.22\pm6.00$ & $0.1656\pm0.0840$ & $0.2728\pm0.0852$\\
+faithful & Cached risk25 & $13.11\pm6.10$ & $0.1925\pm0.1063$ & $0.3016\pm0.1120$\\
+nll & Base & --- & --- & ---\\
+nll & Dense & --- & --- & ---\\
+nll & Random25 & --- & --- & ---\\
+nll & Speed25 & $11.74\pm7.77$ & $0.3630\pm0.2731$ & $0.5650\pm0.3674$\\
+nll & Cached risk25 & --- & --- & ---\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+For every complete group, the corresponding truth references are $2.6777\%$
+outside, $0.005671$ mean step-maximum excursion, and $0.007820$ mean
+trajectory-maximum excursion. The truth outside fraction is nonzero, so
+metadata-bound violations alone are not an exact physical-failure classifier.
+Nevertheless predicted excursions greatly exceed these references. Truth
+references for failed groups are also undefined under the same full-sample
+rule. Saved accepted-prefix diagnostics exclude the rejected attempted state.
+
+
+\begin{table}[t]
+\centering\small
+\caption{Same observed histories: normalized acceleration coordinate MSE and measured end-to-end milliseconds. Previous observed risk includes its extra scoring pass; these timings are not amortized autonomous cached-risk costs.}
+\label{tab:full-same-state}
+\begin{tabular}{lrrrr}
+\toprule
+Policy & Faithful MSE & NLL MSE & Faithful ms & NLL ms\\
+\midrule
+Base & $0.00959\pm0.00014$ & $0.01061\pm0.00051$ & $10.74\pm0.14$ & $10.50\pm0.03$\\
+Dense & $0.01192\pm0.00085$ & $0.01237\pm0.00019$ & $13.86\pm0.16$ & $13.59\pm0.03$\\
+Random25 & $0.00899\pm0.00026$ & $0.00984\pm0.00014$ & $11.80\pm0.11$ & $11.55\pm0.01$\\
+Speed25 & $0.00943\pm0.00014$ & $0.01058\pm0.00020$ & $11.78\pm0.15$ & $11.52\pm0.02$\\
+Previous observed risk25 & $0.00947\pm0.00026$ & $0.01070\pm0.00007$ & $22.38\pm0.25$ & $21.88\pm0.06$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+There are 1,782 complete observed-frame outcomes (six models times 297),
+with no failed frames and no undefined values among 7,128 correlation
+coefficients. Every budgeted action preserves the same base pairs and
+retains exactly $\lfloor.25|C_R|\rfloor$ optional pairs. Candidate pairs,
+selected sets, overlaps and cutoff ties are recorded. The previous-risk score
+is evaluated on the preceding observed base history; it is not the cache
+from an autonomous trajectory. Dense benefit is the signed per-particle
+base-minus-dense vector squared residual, not marginal single-edge value.
+
+
+\begin{table}[t]
+\centering\small
+\caption{Same-state residual ranking and signed dense interventions. Spearman correlations are computed within each frame; undefined correlations are retained, not silently omitted. Benefit signs refer to normalized vector error, whose coordinate scaling can differ from position-space signs.}
+\label{tab:full-benefit}
+\begin{tabular}{lrr}
+\toprule
+Diagnostic & Faithful & NLL\\
+\midrule
+Previous risk / base error & $0.3571\pm0.0598$ & $0.4113\pm0.0226$\\
+Previous risk / dense benefit & $-0.0219\pm0.0448$ & $-0.0482\pm0.0116$\\
+Current risk / base error & $0.3572\pm0.0592$ & $0.4123\pm0.0241$\\
+Current risk / dense benefit & $-0.0222\pm0.0447$ & $-0.0474\pm0.0113$\\
+Mean signed normalized vector benefit & $-0.0046\pm0.0019$ & $-0.0035\pm0.0006$\\
+Positive-benefit fraction & $0.3910\pm0.0166$ & $0.3801\pm0.0124$\\
+Negative-benefit fraction & $0.6032\pm0.0166$ & $0.6141\pm0.0124$\\
+Zero-benefit fraction & $0.005838\pm0.000011$ & $0.005840\pm0.000014$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\begin{table}[t]
+\centering\small
+\caption{Timing controls, milliseconds: natural base searches radius $r$; the shared-superset control imposes the expanded candidate search while retaining the base graph. Score cost is the separate previous-history graph and network pass.}
+\label{tab:full-cost-controls}
+\begin{tabular}{lrrr}
+\toprule
+Objective & Natural base & Shared superset base & Previous-risk scoring\\
+\midrule
+faithful & $10.740\pm0.135$ & $11.067\pm0.147$ & $10.596\pm0.119$\\
+nll & $10.496\pm0.027$ & $10.815\pm0.032$ & $10.347\pm0.018$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+One warmup per case precedes six rotated timing rounds on identical observed
+histories, using synchronized native Metal and two PyTorch threads on the
+shared local host. Timings include graph construction, selection, features,
+transfers, network execution and decoding; residual analysis and file writing
+are excluded. The risk head runs for every policy, including base; an optimized
+mean-only baseline and peak memory are unmeasured. Different floating-point
+radius classifications are also retained: same-state uses float64 distances,
+whereas autonomous base classification uses float32 squared distances.
+All 297 observed geometries produced identical pair sets under these two
+radius classifiers in the saved audit; this does not guarantee equality on
+other states. One retained repeated-call variation occurred for NLL seed 2,
+source index 6, target 106: previous-observed-base risk produced two pair hashes
+across six timed calls, with maximum recorded prediction difference
+$2.45\times10^{-5}$. All other policy repeat differences were at most
+$5.96\times10^{-8}$. Exact counts remained unchanged; no repeat was discarded
+or rerun to improve the result. The reported accuracy uses the saved diagnostic
+prediction, while timings retain every repeated call.
+
+
+\begin{table}[t]
+\centering\small
+\caption{Autonomous elapsed seconds per trajectory and directed edges per accepted forecast, aggregated over three seed means. Wall time retains failed attempts and cached-risk warmup. Full-horizon edge means are undefined for failed groups.}
+\label{tab:full-autonomous-cost}
+\begin{tabular}{llrr}
+\toprule
+Objective & Policy & Seconds & Directed edges\\
+\midrule
+faithful & Base & $12.474\pm0.486$ & $4781.4\pm621.7$\\
+faithful & Dense & $12.399\pm0.397$ & $4821.7\pm500.9$\\
+faithful & Random25 & $12.335\pm0.442$ & $4615.3\pm550.3$\\
+faithful & Speed25 & $12.573\pm0.314$ & $4890.2\pm601.6$\\
+faithful & Cached risk25 & $12.390\pm0.393$ & $4595.9\pm518.9$\\
+nll & Base & $12.752\pm0.517$ & ---\\
+nll & Dense & $12.470\pm0.457$ & ---\\
+nll & Random25 & $12.600\pm0.421$ & ---\\
+nll & Speed25 & $12.702\pm0.209$ & $5214.7\pm380.6$\\
+nll & Cached risk25 & $12.472\pm0.250$ & ---\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+Autonomous policies run in fixed order and generate different states, so these
+durations cannot isolate placement cost or certify a speedup. Failed outcomes
+also have shorter horizons. Cached risk uses 996 network passes for a completed
+trajectory (one warmup plus 995 forecasts); other policies use 995. Lower edge
+counts on separate rollout geometries do not contradict base preservation on
+identical positions. The largest recorded candidate set has 14,815 pairs; the largest retained
+graph has 10,297 unordered pairs (20,594 directed edges). Accepted prefixes
+and rejected attempts have distinct worst excursions of 9.09846 and 9.11111.
+These are whole-study extrema, unlike the equal-trajectory means above.
+All statuses, source/configuration/checkpoint/data hashes,
+trajectory outcomes, boundary prefixes and timings are preserved with the
+reproduction scripts. These results do not establish a general accuracy--cost
+advantage, physical validity, convergence, or exact historical reproduction.

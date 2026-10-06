@@ -1,0 +1,85 @@
+{
+  "schema": "goop_fixed_qualitative_readonly_fetch_v1",
+  "status": "PREPARED_ONLY_NO_REMOTE_ACTION",
+  "source_audit": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop_array_audit_A_1208_v3.json",
+    "sha256": "7963c4daaa8c9f735cb3288502c47c718862589349c1250b03dcd3ebdc35ad26"
+  },
+  "files": [
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/base_seed0/full_rollout_test/protocol.json",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/protocol.json",
+      "sha256": "2e17581eb8d2b8d8bd226127a471a0ef06d1a22cec1ed965054db9080fc00007",
+      "kind": "protocol",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/base_seed0/full_rollout_test/trajectory_000012_base.json",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/trajectory_000012_base.json",
+      "sha256": "2dd89e9fe696108517290d77fd30ec92cb1e09b25e22a66cf714197b072b5635",
+      "kind": "row",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/base_seed0/full_rollout_test/trajectory_000012_base.npz",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/trajectory_000012_base.npz",
+      "sha256": "a37dfedc84e4aa643949e535a8b0a577c5d8e0a25aef5bd51ed13dacb268218e",
+      "kind": "trace",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/mix_seed0/full_rollout_test/protocol.json",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/protocol.json",
+      "sha256": "79453c75f33112bf7252d39bf511c3d5abbc18c6c0ff7b6e2cee8b96bcb150f1",
+      "kind": "protocol",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.json",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.json",
+      "sha256": "f9f705b399f40a9d01152cec35580aa4846ba6a08f54e56c67480c6d45f8facd",
+      "kind": "row",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.npz",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.npz",
+      "sha256": "f9be630f9d3888674d2a9afa88ee384e9932e26e69001143d2b91f9a9895083c",
+      "kind": "trace",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.json",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.json",
+      "sha256": "3e1afd3afe59e5eaeb578c24f8cb8df292550f3482b6b55f38827e5178e92dad",
+      "kind": "row",
+      "fresh_destination_required": true
+    },
+    {
+      "source_host_role": "A",
+      "source_host_label": "yellow",
+      "source_path": "/root/repos/AdaptGNS-cuda-20261006/goop_scoped_evaluation_A_20261006_v3/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.npz",
+      "local_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.npz",
+      "sha256": "7b02fbea39f5c4644add127e9573b69658650b1960c87b16b04a101b600e941f",
+      "kind": "trace",
+      "fresh_destination_required": true
+    }
+  ],
+  "file_count": 8,
+  "data_scope": "Only existing selected row/protocol/sparse trace bytes; no model/data source/inference or alternate outcomes.",
+  "root_fetch_required": true
+}

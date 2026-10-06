@@ -1,0 +1,359 @@
+{
+  "clean_validation_noise": 0.0,
+  "input_files_sha256": {
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/data_loader.py": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+    "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/benchmark_goop_graph_support_rollout.py": "2e0ef0b84635c8430102cd797648d24cec14b457e1df900eb784d5e167966f8f",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop_graph_support_final.py": "cd970e04012930d896b31944271ccaf7da2b0881f22fe2f903533a8d5911dc6d",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_context_semantics_review.json": "c81ae2f1565e61542bcc406c4a9d71b67135620857ad62292eaef0e29b407de9",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_context_semantics_sources/README.md": "9db737244fccd3ea37d525ba244b7ea2bddd300f420a346bbfdd2893c419a69a",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_context_semantics_sources/learned_simulator.py": "bda3d60fcaf8a7a1a963fe6e87790e38955c38602da1eeee5d214ef2f4518da9",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_context_semantics_sources/reading_utils.py": "5868022f76eaf15b2626125bdaa3c973ccaf2dfc0b0ec50d9e05d0c3d973e149",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_context_semantics_sources/train.py": "44b0d7759b3af37cb9c0dc442c13440302823413091e0f1b572bc7f4b95f6d60",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_evaluation_contract.py": "4ee1e33dbe666804d1827b88565620a435d04836a170671914a71acb818be090",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_graph_support_100k_protocol_v2.md": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop_training_admission_v1.json": "c2a12ef0c55b47f4c9493027450f8b51f52dbbd6043915bb09c1648b6cb9edeb",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/sand_graph_support_policy.py": "4a1db45f742043ba261c06273c1538fa0195dfb7f203423510b9a353c5ddb03a",
+    "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop_graph_support_cuda.py": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/cohort/cohort.json": "0f9613ef05da0f53a9020584516a3774b62c77cd23504dfef4de195fbc9b688d",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/cohort/cohort_audit.json": "7dce3e2352592cacd52816cce3a22ac09fdef772b59d863a94aad60b62e976bc",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/final_test_admission.json": "2701af1092f10f94efef87a693efaabcc0f404cb6f18fe32cccace5abc0694fa",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_evidence/auxiliary_report.json": "9912eb0641686bbdf7e8b65a23c426c416729e834197d44cce013e898cb1daa5",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_evidence/cross_split_audit.json": "abea9347b4af74c15314d8e6be55490ad2c2091b520bcd9ed413d250b9cc3159",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/metadata.json": "565d6e13be91be6a6b0fbc31a9aa19ed70a5505228411d0928288fcf874ca3dd",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/structural_report.json": "e475d19767d1a86cac89aa8c9377e53fd52e49c861fdc6dea1aa5248673988e8",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test.json": "adf7e6e4391bb6da481e15f132cd6828dc03730cdfe09fb8612bf744f5ae0186",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000000.npy": "7c02686f933ec4a2fe34e73f8cb298134eaf1af8b7c0d1da64eb570c779b415f",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000001.npy": "78d648c29e987991c21628f942c42752edef712daf5580be1d55d100a1861ab9",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000002.npy": "bfd68869ccc1b0d9c29a6c35378d962efcd5c6e8dead62186f8ad5678c658b43",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000003.npy": "1bbf26cf9998c0bf15b0287d8145cc1ec2a289da8c5f664fb5ea232a45d4e2b5",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000004.npy": "a5f3f26ccf4373751ed1e0d10c8118a3273857f47391fc5635ef255db4dab0ec",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000005.npy": "f24a40b833590214c0fa53aa80d5b36052e6f4a6ce02f14113e0d4ffac3cea1c",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000006.npy": "9dbeddde1ce3b83212b73706c87dafa11e48b921e98d72e37510cbdd53dd1994",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000007.npy": "93542b745c6b4394e805d7335c2df1f2d31e743dcf8f97604ee41fdf74edbac1",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000008.npy": "5f3ab2b39735a7b3c7d3c288f89e5b12ac7cf79e39740773e7bc5178693babe6",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000009.npy": "9a8b5627c8b013b57047d162975cb468d1dcbe8df9d607abecf1a9b5dd51fd4f",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000010.npy": "527ceb0abcb63c23b760d4f2f8a3343292d130e5f88589234eec468c05d71844",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000011.npy": "aedf5ab5ea23184ca52b08e327c749238602c147b2fdc0c2cc6597fee33fa769",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000012.npy": "ac65da919bf0e00997c2529ef279943fd8c492b6f48123db68aedcf3927e91e3",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000013.npy": "2bd62d2bb1a2b27831344b7937a27152ded1df6ad67d7072712eeaa177fab026",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000014.npy": "96e425d98fc49cf73bf4b985e170859f858dee8da73ce17e39f139de57dcf273",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000015.npy": "f70564a1b534c4b50bc70b9a08c97240985b25725924ee4b7b8f0121732c665d",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000016.npy": "470cb0535a935b2ca37b60a0cbb9c692308d01a0eab88b83a8bcd774e4c5bfc9",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000017.npy": "5e13dc1164e2e80b8f8fd4a3695998179ce8f2bd1ca57aa5e6f899dc0f843804",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000018.npy": "f3eb1f242d525e8b10196c1a65f1e33a700e11e83ac7db384515c3d7de90c771",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000019.npy": "132b581f7dffaf1e8ddb7ba279db24ef113dfae82c3ad1c8dabf873f78195f47",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000020.npy": "92eeed6e3b3c7825190ef8757c8463b1d975f2c2777b229684b1c8bf2b3a1c6a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000021.npy": "9532f19e9b1bbd7207cc4648466464aee058ae6d6bf81c6922c70bee7ab96710",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000022.npy": "919dc6320a0d824e2c3efce3ba3e46c48ffe1e19f15f17b0471bdbec024d58ef",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000023.npy": "15275a051b49efbe476de8c4e412182315e797caa22e1865c8256a13a33e0bbc",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000024.npy": "2c728ba67f2dc14c1a2b1de53286198d59c46debe4526d43590a0c38f74d93fc",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000025.npy": "63242241e3118cc57e63f164446787494b1164af4b92fe7c7a21b8758e611699",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000026.npy": "65073cbc1dc68c7f41b15416c5899017a36d5df8605f37e4495d3a4dd512e22a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000027.npy": "ceb547f5dab7c2aa4075d306972a8d1f88b2133090ee711ee96a2b15cb3758f4",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000028.npy": "0f9de6b24327054fc2c3059be17ca0675b72ef870eb54d63458ea39a912fb2e0",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/position_000029.npy": "2f9bbbe06a0db7bf30de20977c204d62d5687028529d761fca48a6ab2c314642",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000000.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000001.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000002.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000003.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000004.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000005.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000006.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000007.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000008.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000009.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000010.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000011.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000012.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000013.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000014.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000015.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000016.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000017.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000018.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000019.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000020.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000021.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000022.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000023.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000024.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000025.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000026.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000027.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000028.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/step_context_000029.npy": "3eb7e57e5bace3af4b195b5744ec51870b7ea48778fff52471621ee3e0fb7956",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000000.npy": "329d8bed8f3f1bb70ed5310ca18efae61c15e73d0d0041c4fccf6819f93b54e8",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000001.npy": "57a48a5ad79aacc94d330b3246c77eeccd903151f210dc713635737728560921",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000002.npy": "9b00a388591a6b697c736eb2eb94a1782ab6c5613134f820c64b72bcc9c0d515",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000003.npy": "c02c363297d51d091a256a83cafa5c8076ba97580f724a438bdbfdf169c5e6b1",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000004.npy": "fe147c9f7258684070c30701bf9011d42b677a7d4447c146b5249f4df6dfffe6",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000005.npy": "e51f69f27c7b22159b84c3b8f81b0b0f597328ac1f531e8bb5aee70dc308e033",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000006.npy": "ea6bbc5b84dbc2455102530ec0473f6aac4c90f2048651ed0923ca627b0d9f90",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000007.npy": "aad44a50a6850b6f78fe3ab4093173c24185751a1c6def55b43defb014dfe1c7",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000008.npy": "4c7ee8ae8eed707a33de17c93333f8547bc27bed81841ab0e803b5bdee59a2fb",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000009.npy": "43e18d4bf27d343e4fcca26f7a2fdbf799725687ecba2b5c97db6d00a5d1278a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000010.npy": "2ebcdadc293ec22c37c60c05920fefe1730a50e3fcef4c8ff5bdb69888a3eb67",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000011.npy": "d4e242cb35f783a16906544ba2316df59e0a87b230f2b4ac4c4c80afcfef5ff6",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000012.npy": "b05659c73b2c98bae4a63cb8efac2015c3ac506e8a072523c656306f3336758c",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000013.npy": "17e67048e3a3cc2bac54844bee77d2a59791ee3488d3a0cf1d7be8e01a1a2449",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000014.npy": "7c6746658df4bd34a94f28fff3c8c325755e8e851ee12e569a79c4a54b8d8d81",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000015.npy": "97939ef505b001ecb9bf3206f6367be83c5f52d9017152e69908e3732fdb67bf",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000016.npy": "b4f4509deb83a7afd6b7211803037dd04bcdbd84f04ad9c52207169c95ada1a8",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000017.npy": "fbe3e7945f0ceb9fd95b9673be627ba928c642a0a28cb5a83b050f03f111240b",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000018.npy": "7c368608cf8bd58e5a119f894d34c7011b3d217aa57c3bfe3afdb936295ba2f9",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000019.npy": "866ea74030b14032650c07d79f6ad08834d176a08b665a348205df2f6194885a",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000020.npy": "379828f78b564350fbdb23354f9aaa130818117f0c636b1128a8ea808f7e3ab3",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000021.npy": "701bdca1e6ef32857688fd5afce79b5ba4d0f0633ee894efb067d6d9e13d1139",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000022.npy": "d4e242cb35f783a16906544ba2316df59e0a87b230f2b4ac4c4c80afcfef5ff6",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000023.npy": "3852d3461a584f991a2428598867d725f33cc9bee95eb9a6228fea263f915b76",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000024.npy": "c1e158b6fe9f70fbaf217799ed1b5bfb2e03752d9a491fbd95b98bad1a935070",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000025.npy": "739ecf8e6ec39a26de0d3221c6722e72de6ceba049c0b2a3872792a90b4c6827",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000026.npy": "2ebcdadc293ec22c37c60c05920fefe1730a50e3fcef4c8ff5bdb69888a3eb67",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000027.npy": "6883d1e9e2437358090c640884c965eccb9787341775dfde18112b0a0787236c",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000028.npy": "bf4fcd170c2177deb3a69a89b0a7a8a90838c65e2f3457811a5715d868ad705e",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_numeric/test/type_000029.npy": "9c579e2802bdfc614efba8f7eeb403e6e4ad1ac4872d2b49eca4f0fe79d166bc",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_completion_20261006_v1/test_source/acquisition_report.json": "ea959b381644d8c1705d7edc22a3db8354f3f379af534a50686d88bbdd180736",
+    "/root/repos/AdaptGNS-cuda-20261006/goop_graph_support_science_A_20261006_v2/jobs/mix_seed0/checkpoint-000100000.pt": "f9bf7e17639d5f95229002c83eab3594f1fbbbb6fcb9a9b0f9e4466173da3504",
+    "/root/repos/AdaptGNS-cuda-20261006/research/budget_graph.py": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+    "/root/repos/AdaptGNS-cuda-20261006/research/full_rollout.py": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+    "/root/repos/AdaptGNS-cuda-20261006/research/full_same_state.py": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+    "/root/repos/AdaptGNS-cuda-20261006/research/full_training.py": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+    "/root/repos/AdaptGNS-cuda-20261006/research/graph_convention_bridge.py": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+    "/root/repos/AdaptGNS-cuda-20261006/research/native_graph_rollout.py": "b4bbca6660dc449c81958010e30fda8be2bc0aaf58f677e0946d26e600e6daf5"
+  },
+  "mode": "full-rollout",
+  "model": {
+    "arm": "mix",
+    "checkpoint_sha256": "f9bf7e17639d5f95229002c83eab3594f1fbbbb6fcb9a9b0f9e4466173da3504",
+    "completed_updates": 100000,
+    "kind": "preselected_checkpoint",
+    "objective": "faithful",
+    "run_config_sha256": "263d08c6c741666905cae10d475409723b0fa31df3f6cdb732323e2ea0649195",
+    "seed": 0,
+    "training_source_sha256": "dd9ef01a16116f04a578bbfe9ed01774e66fdc08d60b913072a33ad211b319c1"
+  },
+  "policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ],
+  "prediction_parity_atol": 2e-07,
+  "risk_parity_atol": 1e-06,
+  "risk_parity_rtol": 1e-05,
+  "runtime": {
+    "amp": false,
+    "compile": false,
+    "cublas_workspace_config": ":4096:8",
+    "cuda": "12.9",
+    "ddp": false,
+    "deterministic_algorithms": true,
+    "deterministic_warn_only": false,
+    "device": "cuda:1",
+    "name": "NVIDIA GB200",
+    "numpy": "2.5.3",
+    "platform": "Linux-6.8.0-1029-nvidia-64k-aarch64-with-glibc2.39",
+    "python": "3.12.3",
+    "scipy": "1.18.1",
+    "tf32": false,
+    "threads": 2,
+    "torch": "2.13.0+cu129",
+    "uuid": "fc3e1a56-b41d-29df-8051-04b23e5920a1"
+  },
+  "schedule": [
+    {
+      "particles": 799,
+      "size_group": "complete_final_split",
+      "source_index": 0,
+      "trajectory_id": "test:000000"
+    },
+    {
+      "particles": 1760,
+      "size_group": "complete_final_split",
+      "source_index": 1,
+      "trajectory_id": "test:000001"
+    },
+    {
+      "particles": 1411,
+      "size_group": "complete_final_split",
+      "source_index": 2,
+      "trajectory_id": "test:000002"
+    },
+    {
+      "particles": 1121,
+      "size_group": "complete_final_split",
+      "source_index": 3,
+      "trajectory_id": "test:000003"
+    },
+    {
+      "particles": 511,
+      "size_group": "complete_final_split",
+      "source_index": 4,
+      "trajectory_id": "test:000004"
+    },
+    {
+      "particles": 1943,
+      "size_group": "complete_final_split",
+      "source_index": 5,
+      "trajectory_id": "test:000005"
+    },
+    {
+      "particles": 1428,
+      "size_group": "complete_final_split",
+      "source_index": 6,
+      "trajectory_id": "test:000006"
+    },
+    {
+      "particles": 887,
+      "size_group": "complete_final_split",
+      "source_index": 7,
+      "trajectory_id": "test:000007"
+    },
+    {
+      "particles": 958,
+      "size_group": "complete_final_split",
+      "source_index": 8,
+      "trajectory_id": "test:000008"
+    },
+    {
+      "particles": 948,
+      "size_group": "complete_final_split",
+      "source_index": 9,
+      "trajectory_id": "test:000009"
+    },
+    {
+      "particles": 478,
+      "size_group": "complete_final_split",
+      "source_index": 10,
+      "trajectory_id": "test:000010"
+    },
+    {
+      "particles": 1706,
+      "size_group": "complete_final_split",
+      "source_index": 11,
+      "trajectory_id": "test:000011"
+    },
+    {
+      "particles": 1083,
+      "size_group": "complete_final_split",
+      "source_index": 12,
+      "trajectory_id": "test:000012"
+    },
+    {
+      "particles": 1250,
+      "size_group": "complete_final_split",
+      "source_index": 13,
+      "trajectory_id": "test:000013"
+    },
+    {
+      "particles": 491,
+      "size_group": "complete_final_split",
+      "source_index": 14,
+      "trajectory_id": "test:000014"
+    },
+    {
+      "particles": 1481,
+      "size_group": "complete_final_split",
+      "source_index": 15,
+      "trajectory_id": "test:000015"
+    },
+    {
+      "particles": 1509,
+      "size_group": "complete_final_split",
+      "source_index": 16,
+      "trajectory_id": "test:000016"
+    },
+    {
+      "particles": 1271,
+      "size_group": "complete_final_split",
+      "source_index": 17,
+      "trajectory_id": "test:000017"
+    },
+    {
+      "particles": 232,
+      "size_group": "complete_final_split",
+      "source_index": 18,
+      "trajectory_id": "test:000018"
+    },
+    {
+      "particles": 892,
+      "size_group": "complete_final_split",
+      "source_index": 19,
+      "trajectory_id": "test:000019"
+    },
+    {
+      "particles": 269,
+      "size_group": "complete_final_split",
+      "source_index": 20,
+      "trajectory_id": "test:000020"
+    },
+    {
+      "particles": 651,
+      "size_group": "complete_final_split",
+      "source_index": 21,
+      "trajectory_id": "test:000021"
+    },
+    {
+      "particles": 1706,
+      "size_group": "complete_final_split",
+      "source_index": 22,
+      "trajectory_id": "test:000022"
+    },
+    {
+      "particles": 1311,
+      "size_group": "complete_final_split",
+      "source_index": 23,
+      "trajectory_id": "test:000023"
+    },
+    {
+      "particles": 1362,
+      "size_group": "complete_final_split",
+      "source_index": 24,
+      "trajectory_id": "test:000024"
+    },
+    {
+      "particles": 1480,
+      "size_group": "complete_final_split",
+      "source_index": 25,
+      "trajectory_id": "test:000025"
+    },
+    {
+      "particles": 478,
+      "size_group": "complete_final_split",
+      "source_index": 26,
+      "trajectory_id": "test:000026"
+    },
+    {
+      "particles": 1212,
+      "size_group": "complete_final_split",
+      "source_index": 27,
+      "trajectory_id": "test:000027"
+    },
+    {
+      "particles": 286,
+      "size_group": "complete_final_split",
+      "source_index": 28,
+      "trajectory_id": "test:000028"
+    },
+    {
+      "particles": 663,
+      "size_group": "complete_final_split",
+      "source_index": 29,
+      "trajectory_id": "test:000029"
+    }
+  ],
+  "schema": "adaptgns_goop_graph_support_final_evaluation_v1",
+  "setup_seconds": 25.839854785241187,
+  "source_frame_count": 401,
+  "split": "test",
+  "timed_repetitions": 7,
+  "timing_order": "seven cyclic rotations; one untimed warmup round; standalone previous-base score pass charged",
+  "timing_reference": "natural_base_reference"
+}

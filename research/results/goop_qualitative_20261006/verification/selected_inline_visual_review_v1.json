@@ -1,0 +1,27 @@
+{
+  "schema": "selected_goop_inline_visual_review_v1",
+  "reviewed_at_utc": "2026-10-06T12:35:49.200047+00:00",
+  "reviewer": "conference_critique_statistics",
+  "input_sha256": {
+    "goop_fixed_source12_inline_v1.tex": "2a5b34584dda3196f3070c5ba4eb072140e1999943edfc10ae611bd8a03ba6b4",
+    "goop_fixed_source12_inline_v1.json": "28954caf0eda97fd76656cfce792b015e839f46a53cdab3bab513273a8bed9cb",
+    "selected_inline_verification_v1.json": "3e9fb7ecf76efa3507588e4d95a8e06729c9f43ba6633f06eb794345247fcc10",
+    "goop_fixed_source12_inline_direct_preview_v1.png": "7d49af42634a6bbf2408507ea0b316eeae0101c9dcab2e21d946f048d2c1c517",
+    "integration_note_v1.tex": "70dc3dbd034d2433f78eb5033337c2ce18088a561d40764e2c68dfed13ee0251",
+    "INTEGRATION_README_v1.md": "938254d7ae4adb019e260a3303935732fe13c4211ff93bd157050acf1f73516c",
+    "verify_and_preview_selected_inline_v1.py": "856c5e7e419830298fb41dbb6afcc10b38f366a5bcb9f062e9a71171f12082b4"
+  },
+  "visual_review": "PASS for direct-PNG legibility; native integrated compilation and inspection reserved for root",
+  "findings": [
+    "All twelve panels, common boxes, labels, forecast frames and outside counts are readable without clipping in the direct preview.",
+    "Ground truth settles near the lower boundary, while both mixed forecasts retain elevated groups at forecast 395. Preserve this visible mismatch.",
+    "The base column has many crosses at upper and left boundaries; these clamped symbols do not encode excursion magnitude.",
+    "The adjacent prose distinguishes any strict box crossing in this figure from the quantitative greater-than-1e-6 threshold and keeps exposure inference with same-random25 paired statistics."
+  ],
+  "renderer_or_selection_modified": false,
+  "manuscript_modified": false,
+  "native_compilation_attempted": false,
+  "tab_opened": false,
+  "pdf_created": false,
+  "new_inference_performed": false
+}

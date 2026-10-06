@@ -1,0 +1,240 @@
+{
+  "bounds": [
+    [
+      0.1,
+      0.9
+    ],
+    [
+      0.1,
+      0.9
+    ]
+  ],
+  "caption": "Goop2D qualitative rollout at 100,000 training updates, training seed 0. The fixed source is the lower median of all test sources sorted by initial particle count and original source index, selected without policy errors. All particles are displayed at forecasts 1, 200 and H, on common metadata bounds (x=[0.1, 0.9], y=[0.1, 0.9]). Out-of-box particles are counted and marked by crosses clamped to the box. Missing and failed frames retain their recorded state and accepted prefix; unreturned prefixes remain unknown. Ground truth uses agreeing saved targets. Cached risk is the mix/laggedrisk25 rollout policy, distinct from the previous-observed same-state diagnostic. This single example does not estimate population performance or isolate dimensionality as a cause.",
+  "compilation_verified": false,
+  "exporter_sha256": "7a4d186e7a7ea53092a3ccb1bbdab9c6add9845b1cafbda9d1eebeac26fe5ab2",
+  "external_image_dependencies": false,
+  "figure_size_points": [
+    480,
+    427
+  ],
+  "fragment_bytes": 491675,
+  "fragment_sha256": "2a5b34584dda3196f3070c5ba4eb072140e1999943edfc10ae611bd8a03ba6b4",
+  "horizon": 395,
+  "input_files_sha256": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/protocol.json": "2e17581eb8d2b8d8bd226127a471a0ef06d1a22cec1ed965054db9080fc00007",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/trajectory_000012_base.json": "2dd89e9fe696108517290d77fd30ec92cb1e09b25e22a66cf714197b072b5635",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/base_seed0/full_rollout_test/trajectory_000012_base.npz": "a37dfedc84e4aa643949e535a8b0a577c5d8e0a25aef5bd51ed13dacb268218e",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/protocol.json": "79453c75f33112bf7252d39bf511c3d5abbc18c6c0ff7b6e2cee8b96bcb150f1",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.json": "3e1afd3afe59e5eaeb578c24f8cb8df292550f3482b6b55f38827e5178e92dad",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_laggedrisk25.npz": "7b02fbea39f5c4644add127e9573b69658650b1960c87b16b04a101b600e941f",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.json": "f9f705b399f40a9d01152cec35580aa4846ba6a08f54e56c67480c6d45f8facd",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/jobs/mix_seed0/full_rollout_test/trajectory_000012_random25.npz": "f9be630f9d3888674d2a9afa88ee384e9932e26e69001143d2b91f9a9895083c",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/inputs/test_manifest.json": "adf7e6e4391bb6da481e15f132cd6828dc03730cdfe09fb8612bf744f5ae0186",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/render_request_v1.json": "1fc00b5103bfc2f8273041e4c200a602cd83a5de18564204ae33f0ea66ebdef3",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/qualitative_selection_plan_v2.md": "d7bd549f011aab8436f66e61e11f28d092a8a72191f2abad62ece98f459e2d4f"
+  },
+  "panels": [
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "truth",
+      "source_frame": 6,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "base",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "random25",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 1,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "laggedrisk25",
+      "source_frame": 6,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "truth",
+      "source_frame": 205,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 553,
+      "particle_glyphs": 1083,
+      "policy": "base",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "random25",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 200,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "laggedrisk25",
+      "source_frame": 205,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": null,
+      "arm": null,
+      "details": [
+        "",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 0,
+      "particle_glyphs": 1083,
+      "policy": "truth",
+      "source_frame": 400,
+      "state": "SAVED TRUTH"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "base",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 465,
+      "particle_glyphs": 1083,
+      "policy": "base",
+      "source_frame": 400,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 11,
+      "particle_glyphs": 1083,
+      "policy": "random25",
+      "source_frame": 400,
+      "state": "SAVED"
+    },
+    {
+      "accepted_prefix": 395,
+      "arm": "mix",
+      "details": [
+        "Complete: 395 forecasts",
+        "",
+        ""
+      ],
+      "forecast_step": 395,
+      "outside_box": 14,
+      "particle_glyphs": 1083,
+      "policy": "laggedrisk25",
+      "source_frame": 400,
+      "state": "SAVED"
+    }
+  ],
+  "parse_and_export_seconds": 0.02413191698724404,
+  "particle_subsampling": false,
+  "particles": 1083,
+  "projection_description": "Physical coordinates centered on metadata box, orthographically projected at elevation25/azimuth-55 for3D; equal physical scale. Same projection for every panel; no perspective or occlusion culling.",
+  "projection_matrix": [
+    [
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0
+    ]
+  ],
+  "renderer_sha256": "38937abd2474a212d0fecf515e00a00d778d56c4f477eb5e3d0a5a4f11d103eb",
+  "schema": "qualitative_inline_picture_receipt_v1",
+  "seed": 0,
+  "source_index": 12,
+  "study": "Goop2D",
+  "synthetic": false,
+  "total_particle_glyphs": 12996,
+  "training_updates": 100000
+}
