@@ -1,0 +1,32 @@
+test_archive_hash_difference_refused (__main__.RepackageTests.test_archive_hash_difference_refused) ... ok
+test_duplicate_across_splits_rejected (__main__.RepackageTests.test_duplicate_across_splits_rejected) ... ok
+test_duplicate_definition_is_representation_sensitive (__main__.RepackageTests.test_duplicate_definition_is_representation_sensitive) ... ok
+test_duplicate_inside_split_preserves_first_output_and_failure (__main__.RepackageTests.test_duplicate_inside_split_preserves_first_output_and_failure) ... ok
+test_float32_roundtrip_and_manifest_contract (__main__.RepackageTests.test_float32_roundtrip_and_manifest_contract) ... ok
+test_forbidden_global_never_executes (__main__.RepackageTests.test_forbidden_global_never_executes) ... ok
+test_fresh_staging_required (__main__.RepackageTests.test_fresh_staging_required) ... ok
+test_full_crc_failure_retained (__main__.RepackageTests.test_full_crc_failure_retained) ... ok
+test_invalid_arrays_fail_without_cast_or_temporal_rebuild (__main__.RepackageTests.test_invalid_arrays_fail_without_cast_or_temporal_rebuild) ... ok
+test_invalid_or_auxiliary_outer_envelope_refused (__main__.RepackageTests.test_invalid_or_auxiliary_outer_envelope_refused) ... ok
+test_inventory_name_count_crc_and_order_mismatch_refused (__main__.RepackageTests.test_inventory_name_count_crc_and_order_mismatch_refused) ... ok
+test_main_existing_output_refused_without_overwriting (__main__.RepackageTests.test_main_existing_output_refused_without_overwriting) ... ok
+test_main_failure_keeps_staging_and_publishes_no_manifest (__main__.RepackageTests.test_main_failure_keeps_staging_and_publishes_no_manifest) ... ok
+test_main_publishes_exact_schema_after_both_splits_pass (__main__.RepackageTests.test_main_publishes_exact_schema_after_both_splits_pass) ... ok
+test_nondefault_frame_length_float64_and_fortran_positions (__main__.RepackageTests.test_nondefault_frame_length_float64_and_fortran_positions) ... ok
+test_nonnative_serialized_dtype_refused_before_false_lossless_claim (__main__.RepackageTests.test_nonnative_serialized_dtype_refused_before_false_lossless_claim) ... ok
+test_preserves_archive_order_not_lexical_names (__main__.RepackageTests.test_preserves_archive_order_not_lexical_names) ... ok
+test_protocol2_protocol4_and_trailing_pickle_bytes_refused (__main__.RepackageTests.test_protocol2_protocol4_and_trailing_pickle_bytes_refused) ... ok
+test_receipt_family_identity_and_completion_enforced (__main__.RepackageTests.test_receipt_family_identity_and_completion_enforced) ... ok
+test_roundtrip_verification_detects_changed_saved_values (__main__.RepackageTests.test_roundtrip_verification_detects_changed_saved_values) ... ok
+test_scalar_validation_and_numeric_save_preserve_shape_and_dtype (__main__.RepackageTests.test_scalar_validation_and_numeric_save_preserve_shape_and_dtype) ... ok
+test_symlink_archive_refused (__main__.RepackageTests.test_symlink_archive_refused) ... ok
+test_test_cli_and_duplicate_split_refused (__main__.RepackageTests.test_test_cli_and_duplicate_split_refused) ... ok
+test_trailing_zip_bytes_refused (__main__.RepackageTests.test_trailing_zip_bytes_refused) ... ok
+test_type3_and_boundary_excursions_are_reported_without_clipping (__main__.RepackageTests.test_type3_and_boundary_excursions_are_reported_without_clipping) ... ok
+test_unobserved_scalar_pickle_opcode_is_not_silently_admitted (__main__.RepackageTests.test_unobserved_scalar_pickle_opcode_is_not_silently_admitted) ... ok
+test_unreviewed_global_alias_and_opcode_refused (__main__.RepackageTests.test_unreviewed_global_alias_and_opcode_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 0.179s
+
+OK
