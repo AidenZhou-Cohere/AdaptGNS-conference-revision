@@ -1,0 +1,21 @@
+{
+  "source_sha256": "a3f8bbdcb55d5a3123897ab18ebe18e298e8be010284a9d46d9c67bd04926f5f",
+  "fixture_sha256": "cd95e12ae21bc6152e4d098618fb40fd9d234f9b049fedff899270f9b08256fe",
+  "scope": "local synthetic scalar only",
+  "probes": [
+    {
+      "probe": "negative_correlation_particle_count",
+      "accepted": true
+    },
+    {
+      "probe": "python_inline_code_before_evaluator",
+      "accepted": true,
+      "changed_prefix": [
+        "/synthetic/python",
+        "-c",
+        "pass",
+        "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/evaluate_goop3d_graph_support_v1.py"
+      ]
+    }
+  ]
+}

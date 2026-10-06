@@ -1,0 +1,53 @@
+{
+  "source_sha256": "2bcb4236a1378bddb8220a62c3d6fa11321ba8c38529d27cc0713d016e6214bc",
+  "fixture_sha256": "8f1c865f30de258b793bf1c4f31b80237ca7f716c26baa5804ac3c2d223c2913",
+  "scope": "local synthetic scalar/source only",
+  "lineage_probes": [
+    {
+      "probe": "original_graph",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Complete pinned D3 data-support/original-graph lineage required"
+    },
+    {
+      "probe": "structural_report",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Complete pinned D3 data-support/original-graph lineage required"
+    },
+    {
+      "probe": "acquisition_report",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Complete pinned D3 data-support/original-graph lineage required"
+    },
+    {
+      "probe": "context_semantics",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Complete pinned D3 data-support/original-graph lineage required"
+    },
+    {
+      "probe": "auxiliary_report",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Complete pinned D3 data-support/original-graph lineage required"
+    },
+    {
+      "probe": "cohort_id",
+      "accepted": false,
+      "error_type": "ValueError",
+      "error": "Candidate/supervisor model-pairing/cohort correspondence differs"
+    }
+  ],
+  "identity_probes": [
+    {
+      "probe": "job_seed",
+      "accepted": true
+    },
+    {
+      "probe": "pair_seed",
+      "accepted": true
+    }
+  ]
+}

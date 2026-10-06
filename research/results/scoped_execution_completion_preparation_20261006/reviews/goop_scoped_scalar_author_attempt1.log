@@ -1,0 +1,16 @@
+
+==================================== ERRORS ====================================
+_ ERROR collecting work/deadline_research_20261005/cuda_preparation/test_summarize_goop_graph_support_scoped_v3.py _
+work/deadline_research_20261005/cuda_preparation/test_summarize_goop_graph_support_scoped_v3.py:16: in <module>
+    Q = M.import_pinned('supervise_goop_evaluation_gpu_scoped_v3.py', '_scoped_fixture_quota')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+work/deadline_research_20261005/cuda_preparation/summarize_goop_graph_support_scoped_v3.py:66: in import_pinned
+    require(sha(path) == SOURCE_PINS[filename], 'Frozen scalar/operational source differs: ' + filename)
+work/deadline_research_20261005/cuda_preparation/summarize_goop_graph_support_scoped_v3.py:34: in require
+    if not ok: raise ValueError(message)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+E   ValueError: Frozen scalar/operational source differs: supervise_goop_evaluation_gpu_scoped_v3.py
+=========================== short test summary info ============================
+ERROR work/deadline_research_20261005/cuda_preparation/test_summarize_goop_graph_support_scoped_v3.py
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+1 error in 0.12s

@@ -1,0 +1,58 @@
+{
+  "schema": "adaptgns_sand_scoped_scientific_supervisor_v1",
+  "status": "description_only",
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "B",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "B",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "updates": 100000,
+  "training_stop_utc": "2026-10-06T22:44:00+00:00",
+  "compute_analysis_deadline_utc": "2026-10-07T04:00:00+00:00",
+  "live_handoff_retry_resume_test_access": false
+}

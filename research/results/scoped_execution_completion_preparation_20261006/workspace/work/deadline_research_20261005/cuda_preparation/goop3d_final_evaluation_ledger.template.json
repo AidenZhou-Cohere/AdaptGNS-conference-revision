@@ -1,0 +1,15 @@
+{
+  "schema": "adaptgns_goop3d_final_evaluation_ledger_v1",
+  "producer": "inert_template_not_supervisor",
+  "dataset": "Goop-3D",
+  "state": "not_executed",
+  "unreaped_owned_children": null,
+  "all_pinned_inputs_reverified": false,
+  "cohort_sha256": null,
+  "cohort_audit_sha256": null,
+  "protocol_sha256": null,
+  "source_manifest_sha256": {"valid": null, "test": null},
+  "endpoint_updates": null,
+  "stages": [],
+  "instructions": "Inert interface template only. A separately reviewed future supervisor must populate all30 stages from exact complete source schedules and retain all stopped/missing outcomes. No launch or endpoint is admitted."
+}

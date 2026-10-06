@@ -1,0 +1,81 @@
+{
+  "actual_collection_executed": false,
+  "all_preserved_author_logs_sha256": {
+    "goop3d_scalar_producer_integration_attempt1.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_producer_integration_attempt1.stdout.log": "9c0b07769914a9021c50266eda2ce7f94fe0219203d60a791d139379f214f832",
+    "goop3d_scalar_summary_synthetic_attempt1.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt1.stdout.log": "b4c2adb26a1be8544b024508c5931a815672b75c13b20bbf70ab9d3b18ff1b84",
+    "goop3d_scalar_summary_synthetic_attempt2.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt2.stdout.log": "8694881163c665acf88cbeb752d077c5f956b85b2a4ee8e5104364998d8ac96b",
+    "goop3d_scalar_summary_synthetic_attempt3.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt3.stdout.log": "eb44f15691af51f4ee410d23e48a5548a18cdcd4dd7c0b2f21b8f5ec8eef3ce2",
+    "goop3d_scalar_summary_synthetic_attempt4.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt4.stdout.log": "8945d61bd74251bd8156d3c4b69de3d9f36e6b2eed4309b5cd83ecc270fdc952",
+    "goop3d_scalar_summary_synthetic_attempt5.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt5.stdout.log": "33f66bf266ce1b0b2449b621b12902e5a1c6752d80fc867ab5f3923d04e2db5f",
+    "goop3d_scalar_summary_synthetic_attempt6.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_summary_synthetic_attempt6.stdout.log": "c7f22310dd6d0d21a2d7f92142dc2401a33c7df6691bedcae3ce5a7d991dba6a"
+  },
+  "created_utc": "2026-10-06T06:09:45.829520+00:00",
+  "files_sha256": {
+    "goop3d_final_evaluation_ledger.template.json": "bc3f094daece85a0520f4569d47d0104c581e3aea03ea5e2b2b9a16385e04068",
+    "goop3d_scalar_analysis_release.template.json": "0730de39e798e9015e12225ee04c1290c0045e6badadcf52d26c74fa16ec2c52",
+    "goop3d_scalar_collection_release.template.json": "84f4eda9ad7c5080148eb0c4a8bc09caf5de7c1f922c0cfb5bfc10b52d91d68b",
+    "goop3d_scalar_final_ledger_interface_v1.md": "4b012b1c6eb8a7a1d5c184f63d8593ed9aa639ca3210434f4c9381c9e232cec0",
+    "summarize_goop3d_graph_support_v1.py": "a3f8bbdcb55d5a3123897ab18ebe18e298e8be010284a9d46d9c67bd04926f5f",
+    "test_goop3d_scalar_producer_integration_v1.py": "b845b277df75a1733c3ca3b7ceb9269c250b85e5428952f50b9737ee548d3898",
+    "test_summarize_goop3d_graph_support_v1.py": "cd95e12ae21bc6152e4d098618fb40fd9d234f9b049fedff899270f9b08256fe"
+  },
+  "independent_review_requested_from": "code_audit",
+  "latest_validation": {
+    "combined_tests": 105,
+    "exit_code": 0,
+    "frozen_producer_tiny_cpu_integration_tests": 5,
+    "scalar_tests": 100,
+    "seconds": 7.13,
+    "stderr": "goop3d_scalar_summary_synthetic_attempt6.stderr.log",
+    "stdout": "goop3d_scalar_summary_synthetic_attempt6.stdout.log",
+    "warnings": 25,
+    "warnings_scope": "TorchScript deprecation and unchanged original graph docstring invalid escapes"
+  },
+  "limits": [
+    "Opaque NPZ hashing and saved scalar arithmetic do not independently verify tensors.",
+    "Scalar analysis requires established complete valid/test manifests and the root-frozen six-model cohort.",
+    "All required missing/failed values remain accounted for; no survivor full-cohort means.",
+    "Graph counts and boundary geometry do not establish measured speedup or conservation."
+  ],
+  "owner": "conference_critique_statistics",
+  "preserved_independent_draft_probes_sha256": {
+    "goop3d_scalar_adapter_code_audit_draft_races_v1.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "goop3d_scalar_adapter_code_audit_draft_races_v1.py": "155e11a685c0c7cae7a621da778e5aedc4973f3bfefc5102e1689ff82aa855d6",
+    "goop3d_scalar_adapter_code_audit_draft_races_v1.stderr.log": "e7299074cb2ca5767eecad45eaca74023cbdaf997b2afc4616e4c29980ed1176",
+    "goop3d_scalar_adapter_code_audit_draft_races_v2.json": "78f284507c476fd2e931dd2b212fb57e1f7f102e75dc5338fdf95f5b1cfefb67",
+    "goop3d_scalar_adapter_code_audit_draft_races_v2.py": "72c6b479e91904cc5be12a88eaad2b5603a76e123c7d043dd36b42ca7cf79c28",
+    "goop3d_scalar_adapter_code_audit_draft_races_v2.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "repair_regressions": [
+    "JSON read/hash snapshots",
+    "whole stage tree initial and terminal inventories",
+    "original input and executed evaluator alias checks",
+    "collection source and root release checks after serialization",
+    "failed policy absent/null metrics graph boundary",
+    "failed clean null metrics",
+    "complete benefit correlation truth grids",
+    "dense sign fraction range/subset checks",
+    "exact integer seeds",
+    "exclusive publication"
+  ],
+  "schema": "adaptgns_goop3d_scalar_adapter_authoring_record_v1",
+  "scientific_endpoint_admitted": false,
+  "scientific_results_observed": false,
+  "scope": "New standard-library scalar collector/analysis only. No real trajectory/model deserialization, official test acquisition, remote/GPU access or research process launch. No frozen trainer/evaluator/diagnostic/D2 source changes.",
+  "status": "candidate_synthetic_checks_passed_independent_final_review_pending",
+  "superseded_candidate_defects": [
+    "Parsed collection could differ from later-reported hash after aggregation-time mutation.",
+    "Row inventory could hash changed bytes after validating older row.",
+    "Initial known-file checks did not reject newly added stage files/directories.",
+    "Own source/root release bytes were not bound through output publication.",
+    "Failed clean metrics and failed policy graph/boundary could supply stale aggregation values.",
+    "Complete same-state scalar grid and policy graph first-successful-call bindings were incomplete."
+  ]
+}

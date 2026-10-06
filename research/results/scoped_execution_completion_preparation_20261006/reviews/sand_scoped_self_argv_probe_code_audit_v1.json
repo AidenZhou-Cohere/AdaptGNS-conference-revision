@@ -1,0 +1,22 @@
+{
+  "source_sha256": "a58adfcd7631ddd3234653736b72905260b145ff08cded0dbac56ead932667e4",
+  "source_snapshot": "scoped_supervisor_review_history_code_audit_v1/a58adfcd_supervise_sand_scoped_science_v1.py",
+  "probe": "Own scoped supervisor argv contains mandatory old verifier/trainer paths as input options",
+  "synthetic_argv": [
+    "/synthetic/python",
+    "-u",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_scoped_science_v1.py",
+    "--execute",
+    "--verifier-source",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/supervise_sand_graph_support_science.py",
+    "--trainer",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/train_sand_graph_support_cuda.py"
+  ],
+  "basename_matches": [
+    "supervise_sand_graph_support_science.py",
+    "train_sand_graph_support_cuda.py"
+  ],
+  "outcome": "incorrectly_refuses_own_supervisor_argv",
+  "error": "Old whole-host monitor remains active; no live handoff allowed",
+  "scope": "Synthetic argv and process receipt; no native process scan/control or GPU use"
+}

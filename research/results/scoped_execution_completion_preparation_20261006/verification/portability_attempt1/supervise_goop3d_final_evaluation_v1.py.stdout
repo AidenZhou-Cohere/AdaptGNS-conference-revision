@@ -1,0 +1,10 @@
+{
+  "schema": "adaptgns_goop3d_final_evaluation_supervisor_v1",
+  "status": "description_only",
+  "training_or_test_access": false,
+  "stage_count": 30,
+  "stage_order_and_quotas": "root must prospectively declare identical allocations for all six models",
+  "evaluation_activity_quota_seconds": 21600,
+  "analysis_reserve_seconds": 3600,
+  "automatic_retry_or_resume": false
+}

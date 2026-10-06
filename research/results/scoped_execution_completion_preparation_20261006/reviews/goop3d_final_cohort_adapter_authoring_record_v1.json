@@ -1,0 +1,32 @@
+{
+  "schema": "adaptgns_goop3d_final_cohort_adapter_authoring_record_v1",
+  "status": "source_authored_requires_independent_review",
+  "author": "conference_critique_methods",
+  "files_sha256": {
+    "prepare_goop3d_final_cohort_v1.py": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a",
+    "test_prepare_goop3d_final_cohort_v1.py": "3d0be4e2d4125c6964cb9586fe72745bef35fa55f5a7f4b9eda3451023d4a97d",
+    "goop3d_final_cohort_freeze_notes_v1.md": "d25ca8462ef93637a6ad4fe03d164cafc717ecac1b5d3907d61a46146cbce466",
+    "goop3d_final_cohort_freeze_release.template.json": "8ec0bca229cf9bc7e9bf1faab7623656932edf9d72d168f337b92db65845afc5",
+    "goop3d_scientific_stopped_receipt.template.json": "eb456688f840627c599386e5514dbd15f330acd4825e181426d3c85e5b3e7c29",
+    "goop3d_final_cohort_tests_attempt1.log": "a7d9674cc49fd5c32f9ab5ffbb12bc9c4187ff2cbaca82af3b323445237a4f6c",
+    "goop3d_final_cohort_tests_attempt2.log": "6250948fae3e03b33e2785f444df1b642efe53d7faf1ba7c237d1d5d9a97fef5",
+    "goop3d_final_cohort_tests_attempt3.log": "a1cb4e74e4f35774944b6583d25283a1631541971cd6fd3f3a83a88447df153c",
+    "goop3d_final_cohort_tests_attempt4.log": "5ea2c86256e9e7081ca857935a97c4665883d4ac3a5a2dd5a201d1b85d80b6ab",
+    "goop3d_final_cohort_tests_attempt5.log": "743b8da528853a469446f0eecffe28803bbefe463c00f97544e7750fd05eb2c2",
+    "goop3d_final_cohort_tests_attempt6.log": "b2ab67f2f2a39c52a49a8afbaea431d55f2aa3578df8f8bf2a98c68c893002b6",
+    "goop3d_final_cohort_tests_attempt7.log": "e8458190008575c0f74927021cd7f8f9c2d8f19f069ae2654141f52569eea5aa"
+  },
+  "synthetic_cpu_tests": {
+    "final": "32 passed in 14.49s",
+    "unsuccessful_attempts_retained": true
+  },
+  "actual_test_data_accessed": false,
+  "actual_model_payload_deserialized": false,
+  "remote_or_gpu_access": false,
+  "frozen_source_changes": false,
+  "independent_review_findings_addressed": [
+    "known data-support and original graph pins",
+    "cohort ID correspondence",
+    "exact integer seeds; no bool/integer aliasing"
+  ]
+}

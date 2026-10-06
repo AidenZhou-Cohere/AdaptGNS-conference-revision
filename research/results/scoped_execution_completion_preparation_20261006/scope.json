@@ -1,0 +1,28 @@
+{
+  "current_lexical_review": "reviews/supervisor_lexical_python_final_independent_review_code_audit_v1.json",
+  "current_primary_python_entries": [
+    "prepare_goop3d_final_cohort_v1.py",
+    "prepare_goop3d_reserved_test_v1.py",
+    "summarize_goop3d_graph_support_v1.py",
+    "supervise_goop3d_final_evaluation_v1.py",
+    "supervise_goop_evaluation_gpu_scoped_v3.py",
+    "summarize_goop_graph_support_scoped_v3.py",
+    "supervise_sand_scoped_science_v1.py"
+  ],
+  "historical_approvals_superseded": {
+    "supervise_goop3d_final_evaluation_v1.py": "fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62",
+    "supervise_sand_scoped_science_v1.py": "8775048fd9ee741b479f8bdd361861a493241cf158d1dc64b3b01b60475478a0"
+  },
+  "kind": "reviewed_operation_preparation_not_scientific_results",
+  "not_included": [
+    "live outputs",
+    "datasets",
+    "checkpoints",
+    "SSH configuration",
+    "credentials",
+    "unrelated process inventories",
+    "unfinished Sand evaluation adapter",
+    "stopped D3 timing payloads and decision archive"
+  ],
+  "science_execution_or_test_admission_granted": false
+}

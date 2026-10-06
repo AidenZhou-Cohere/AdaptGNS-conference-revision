@@ -1,0 +1,113 @@
+{
+  "files": {
+    "README.md": {
+      "sha256": "eaf004cbc60c0a250b28fa01034679250bfd1116c9329095b4559272df0030aa",
+      "bytes": 1775
+    },
+    "canonical_build_difference_v1.diff": {
+      "sha256": "c828c5c73bc6f1a950d48fbd70250be6114fd136a5260349fe787aa511d36dac",
+      "bytes": 10838
+    },
+    "canonical_build_difference_v2.diff": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "interaction_graph_schematic.tex": {
+      "sha256": "f5f10fa450e906277629ede4eb6fae94871d4964362204c5da29879f9109043a",
+      "bytes": 2656
+    },
+    "interaction_graph_schematic_definition.json": {
+      "sha256": "3afe015a2fd9e2275de0bc3cd785650d40ed28faa9b1d4152c8ca964fc3ab6d2",
+      "bytes": 949
+    },
+    "method_schematic_edit_receipt_v1.json": {
+      "sha256": "13cc550d79cc8d9e189076883d08b59f90c08fba5f3cf7f481ebc632317f2cf8",
+      "bytes": 664
+    },
+    "method_schematic_validation_v1.json": {
+      "sha256": "22641faa6917085e1a1592602fd1c3f8975782eedd6b73f73357a23bdddab0ce",
+      "bytes": 767
+    },
+    "source_inventory.json": {
+      "sha256": "09037de84517641c087e77ec743ce85a199b729e3528ae61e64ece8086951770",
+      "bytes": 4084
+    },
+    "workspace/outputs/revised_manuscript.tex": {
+      "sha256": "0fe1858a3b3a2b08e4f87cea3f630b2444be236736a9eecf1c4d57837f8df7c4",
+      "bytes": 146162
+    },
+    "workspace/work/build_manuscript.py": {
+      "sha256": "aa023359da96c95bfebc41ef638e1b76bd7f7c49ae3ff280d581c76cda658134",
+      "bytes": 2884
+    },
+    "workspace/work/conference_experiments_main.tex": {
+      "sha256": "c177f3dc53af1bd86da927e10646c7df9902e457747ceb81a8cbc546744a22ca",
+      "bytes": 15792
+    },
+    "workspace/work/full_action_appendix.tex": {
+      "sha256": "f4cba30017f3efe9005115f543c5ece3b3f6d768c92b07ae506a4c356c196628",
+      "bytes": 2854
+    },
+    "workspace/work/full_action_main.tex": {
+      "sha256": "43c1ec405d9b9003a9d606823a4615f0770d6b6aeab17e5ac1ca933961d4eda8",
+      "bytes": 3790
+    },
+    "workspace/work/full_evaluation_appendix.tex": {
+      "sha256": "daba11cfb914a41028f598317042266a8cfe29ab30c843c18525238f226f323b",
+      "bytes": 13275
+    },
+    "workspace/work/full_evaluation_main.tex": {
+      "sha256": "b425693db0b7920cacff060965f2f9d8f6746d70e53e07b2230764fafa70db00",
+      "bytes": 3432
+    },
+    "workspace/work/graph_bridge_appendix.tex": {
+      "sha256": "990e2e0a90faefd5a93093b7580601b66c6c6b00a0dd7e4dd71915eaeb5099bf",
+      "bytes": 6123
+    },
+    "workspace/work/graph_bridge_main.tex": {
+      "sha256": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf",
+      "bytes": 1120
+    },
+    "workspace/work/manuscript_body.tex": {
+      "sha256": "cd82fddeb54f58422e2f4829b1a340bf69b566359d15db8f6d491683d2dd2ead",
+      "bytes": 63021
+    },
+    "workspace/work/native_followup_appendix.tex": {
+      "sha256": "d22a5d8ef11c7bc577f7b9786cffb48ea7da028ceaf9faa01bb23c02b6e21bd8",
+      "bytes": 4443
+    },
+    "workspace/work/noise_augmentation_appendix.tex": {
+      "sha256": "7492bcf8431b83d45d684e63d3efa7068a70b249d2fd492abd0fcfea898bac1c",
+      "bytes": 2944
+    },
+    "workspace/work/nonadditive_allocation_appendix.tex": {
+      "sha256": "10fff4e53855a72a63c85189e35bc05bb7c3935671d28ff8467c291155a5eb73",
+      "bytes": 4798
+    },
+    "workspace/work/optional_exposure_appendix.tex": {
+      "sha256": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6",
+      "bytes": 7206
+    },
+    "workspace/work/optional_exposure_main.tex": {
+      "sha256": "0c3d81b407d29ba3283b79b593aa47d9b417334977dd733907258d813686ffa8",
+      "bytes": 1435
+    },
+    "workspace/work/pilot_results.tex": {
+      "sha256": "5c7cfffa406194c1f03d4ba05e22b27ba9bbed3060275342eb082b01d504bf92",
+      "bytes": 1281
+    },
+    "workspace/work/rollout_results.tex": {
+      "sha256": "b52c6297d2b7ed79d87948f6fddfc7f1081cadf9722c38bd6d179bf0261801fe",
+      "bytes": 2881
+    },
+    "workspace/work/sources/aistats2027.sty": {
+      "sha256": "33ab38f8aac4b2f1df9fe67e354928598200584e9568385f32deb889e1b81d42",
+      "bytes": 19561
+    },
+    "workspace/work/tie_symmetry_appendix.tex": {
+      "sha256": "cf02d169f06409a2b2f6ea2c290ffe9d00f52465848400ddc632b66b7dfe9b81",
+      "bytes": 2583
+    }
+  },
+  "kind": "presentation_no_new_scientific_results"
+}

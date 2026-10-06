@@ -1,0 +1,143 @@
+{
+  "schema": "adaptgns_goop_scoped_v3_independent_code_audit_probes_v1",
+  "status": "passed",
+  "source_pins": {
+    "supervise_graph_support_evaluation_quota_v2.py": "0bd714b0bece0c349a9b18eae14221f6602ffc61ea736bad4fa3b5dc087157d9",
+    "supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+    "test_supervise_goop_evaluation_gpu_scoped_v3.py": "6cf19a8157215a88da3e932282127d30512d6adb1e1dda982aa76fdb9061540f"
+  },
+  "unchanged_ast_functions": [
+    "require",
+    "sha",
+    "read",
+    "utc",
+    "finite",
+    "load_lifecycle",
+    "flags",
+    "recheck_files",
+    "expected_cells",
+    "account_stage"
+  ],
+  "unchanged_ast_constants": [
+    "COST_BASIS",
+    "DEADLINE",
+    "LIFECYCLE_SHA",
+    "EVALUATORS",
+    "STAGES",
+    "CLEANUP",
+    "STREAM_SECONDS",
+    "ENVIRONMENT",
+    "SCHEDULE",
+    "POLICIES"
+  ],
+  "ownership_cases": [
+    {
+      "name": "historical PID reused on assigned device",
+      "result": "rejected_as_required",
+      "error": "Reused historical PID on an assigned evaluation device",
+      "identity_lookups": [
+        111
+      ]
+    },
+    {
+      "name": "historical PID reused on unassigned device remains foreign",
+      "result": "accepted_as_required",
+      "observation": {
+        "pid": 111,
+        "gpu_uuid": "g2",
+        "physical_index": 2,
+        "scope": "observed_unassigned_device",
+        "identity_check": "different_process_identity",
+        "current_identity": {
+          "pid": 111,
+          "ppid": 555,
+          "start_ticks": 777,
+          "argv": [
+            "python",
+            "unrelated.py"
+          ],
+          "executable": "/python"
+        }
+      },
+      "identity_lookups": [
+        111
+      ]
+    },
+    {
+      "name": "known current successor on correct device",
+      "result": "accepted_as_required",
+      "observation": {
+        "pid": 222,
+        "gpu_uuid": "g1",
+        "physical_index": 1,
+        "scope": "owned_device",
+        "identity_check": "matched_owned_child",
+        "current_identity": {
+          "pid": 222,
+          "ppid": 42,
+          "start_ticks": 456,
+          "argv": [
+            "python",
+            "successor.py"
+          ],
+          "executable": "/python"
+        }
+      },
+      "identity_lookups": [
+        222
+      ]
+    },
+    {
+      "name": "known current successor on unassigned wrong device",
+      "result": "rejected_as_required",
+      "error": "Owned evaluator changed physical GPU assignment",
+      "identity_lookups": [
+        222
+      ]
+    },
+    {
+      "name": "absent known historical PID on original device",
+      "result": "accepted_as_required",
+      "observation": {
+        "pid": 111,
+        "gpu_uuid": "g0",
+        "physical_index": 0,
+        "scope": "owned_device",
+        "identity_check": "exited_since_inventory",
+        "current_identity": null
+      },
+      "identity_lookups": [
+        111
+      ]
+    },
+    {
+      "name": "absent known historical PID on wrong device",
+      "result": "rejected_as_required",
+      "error": "Exited child snapshot has an unexpected GPU assignment",
+      "identity_lookups": [
+        111
+      ]
+    },
+    {
+      "name": "unknown process on assigned device",
+      "result": "rejected_as_required",
+      "error": "Foreign GPU work on an assigned evaluation device",
+      "identity_lookups": []
+    },
+    {
+      "name": "unknown process on unassigned device not inspected",
+      "result": "accepted_as_required",
+      "observation": {
+        "pid": 333,
+        "gpu_uuid": "g3",
+        "physical_index": 3,
+        "scope": "observed_unassigned_device",
+        "identity_check": "not_owned",
+        "current_identity": null
+      },
+      "identity_lookups": []
+    }
+  ],
+  "all_inputs_stable": true,
+  "scope": "Local AST and synthetic dictionaries only; no GPU/process/model/data use or execution admission"
+}

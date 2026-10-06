@@ -1,0 +1,75 @@
+{
+  "schema": "adaptgns_goop3d_final_supervisor_ledger_statistics_draft_review_v1",
+  "status": "passed_six_synthetic_representation_checks_source_draft_only",
+  "created_utc": "2026-10-06T06:28:32.500291+00:00",
+  "source_sha256": {
+    "supervise_goop3d_final_evaluation_v1.py": "c7ce12548f4e4001e7d66200ef3864f6457cc16eb843dbaa5fdbf3a7d074a206",
+    "summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+    "test_summarize_goop3d_graph_support_v1.py": "08ff05e6f3863d576955a623fc30b011c20932ec63f8fee92ddfa7788e8fae0d",
+    "goop3d_scalar_final_ledger_interface_v1.md": "0b27bb725a7616f057047ad1fc104cfdc0144c6c12cbcfe4fbe79b08bbc1f078"
+  },
+  "terminal_sources_stable": {
+    "supervise_goop3d_final_evaluation_v1.py": true,
+    "summarize_goop3d_graph_support_v1.py": true,
+    "test_summarize_goop3d_graph_support_v1.py": true,
+    "goop3d_scalar_final_ledger_interface_v1.md": true
+  },
+  "checks": [
+    {
+      "scenario": "all_never_started",
+      "passed": true,
+      "stages": 30,
+      "first_stage_states": {
+        "never_started": 6
+      }
+    },
+    {
+      "scenario": "complete_scalar_row",
+      "passed": true,
+      "stages": 30,
+      "first_stage_states": {
+        "completed_required_outcome": 1,
+        "not_completed_before_invocation_end": 5
+      }
+    },
+    {
+      "scenario": "failed_prefix_row",
+      "passed": true,
+      "stages": 30,
+      "first_stage_states": {
+        "recorded_failed_outcome": 1,
+        "not_completed_before_invocation_end": 5
+      }
+    },
+    {
+      "scenario": "quota_current_and_partial_artifact",
+      "passed": true,
+      "stages": 30,
+      "first_stage_states": {
+        "completed_required_outcome": 1,
+        "timed_out_current": 1,
+        "not_completed_before_invocation_end": 4
+      }
+    },
+    {
+      "scenario": "started_before_protocol",
+      "passed": true,
+      "stages": 30,
+      "first_stage_states": {
+        "not_completed_before_invocation_end": 6
+      }
+    },
+    {
+      "scenario": "scalar_defect_requires_collector",
+      "passed": true,
+      "scope": "Supervisor identity/byte ledger is accepted as candidate; scalar defect correctly blocks released collection."
+    }
+  ],
+  "actual_data_or_models_accessed": false,
+  "child_processes_launched": false,
+  "limits": [
+    "account_stage/publish_ledger compatibility only; not full release/admission or lifecycle review.",
+    "Supervisor remains a changing draft until owner freezes final pins and independent reviews finish.",
+    "Synthetic protocol/source binding substitution is confined to in-memory unit fixtures; no production admission."
+  ]
+}

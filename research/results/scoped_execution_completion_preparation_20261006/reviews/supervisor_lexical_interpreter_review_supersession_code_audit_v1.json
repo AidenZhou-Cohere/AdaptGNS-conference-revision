@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_supervisor_lexical_interpreter_review_supersession_v1",
+  "status": "prior_local_approvals_superseded_pending_targeted_fix",
+  "basis": "Root independently confirmed lexical .venv/bin/python on B and third host imports torch, while resolved /usr/bin/python3.12 uses /usr prefix and cannot import torch. No active training change/restart.",
+  "affected": [
+    {
+      "source": "supervise_goop3d_final_evaluation_v1.py",
+      "sha256": "fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62",
+      "review": "goop3d_final_supervisor_independent_review_code_audit_v1.json"
+    },
+    {
+      "source": "supervise_sand_scoped_science_v1.py",
+      "sha256": "8775048fd9ee741b479f8bdd361861a493241cf158d1dc64b3b01b60475478a0",
+      "review": "sand_scoped_science_independent_review_code_audit_v1.json"
+    }
+  ],
+  "unaffected": "Goop scoped v3 a13ca1bc preserves release command strings and hashes symlink target bytes without rewriting argv. Upstream release generation must preserve lexical absolute venv interpreter path.",
+  "required_repair": "Keep lexical absolute interpreter argv path; bind target bytes. Review symlink fixture and path delta only; preserve prior tests and review evidence."
+}

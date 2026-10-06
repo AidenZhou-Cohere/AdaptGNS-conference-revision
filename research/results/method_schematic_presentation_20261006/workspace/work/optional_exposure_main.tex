@@ -1,0 +1,20 @@
+\subsection{Where does the sparse-policy error gap appear?}
+Using the original no-self-loop saved predictions, we partition the recorded
+risk-minus-random error gap by whether particles
+receive optional messages under neither, only the left, only the right, or
+both actions. The whole gap is $0.486\pm0.111$ / $0.860\pm0.102$
+in normalized coordinate MSE $\times10^3$ (faithful/NLL; three seed means
+and sample SDs). Positive values favor random.
+The both-covered group gives the largest positive unconditional contribution
+in every seed; its particle fraction is reported alongside the contribution.
+Relative to random, risk increases both alignment with the base residual
+and the squared normalized prediction change. Here $\Delta E$, $\Delta C$
+and $\Delta A$ denote risk-minus-random differences in normalized coordinate
+error, squared prediction change, and residual alignment, respectively. The identity
+$\Delta E=\Delta C-\Delta A$ makes $\Delta C>\Delta A$ equivalent to the
+positive gap; the additional observation is $\Delta A>0$ in every seed.
+Here $C$ is squared prediction change, not computational cost.
+The four unconditional contributions sum to this gap; Appendix~\ref{sec:optional-exposure} reports
+all groups and the two speed controls. Exposure is defined by the policy,
+so the partition is descriptive. With ten message-passing blocks, particles
+in the neither group can still be affected through their neighbors.

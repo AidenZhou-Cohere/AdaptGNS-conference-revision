@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_sand_scoped_science_authoring_v1",
+  "status": "author_tests_passed_final_independent_review_pending",
+  "source_sha256": "4e46982de856536078d8cbd2c28f1736746a00a5b55bfb276e2273bb45778b8e",
+  "test_sha256": "1c8e3c8555246cf5288a2539cea15ab5e7c69b539b0882b7e09978339e06dcb1",
+  "amendment_sha256": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+  "schedule_plan_sha256": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+  "tests": {
+    "passed": 18,
+    "seconds": 0.29,
+    "log": "sand_scoped_science_tests_entrypoint_fix.log",
+    "sha256": "ac87e1d114bc5da7dd44f223cf00c22a045e85083baebcbc249b1b2718004f94"
+  },
+  "source_delta": "New operation-only adapter. Reuses unchanged frozen trainer command, lifecycle and full endpoint/history/Adam/pairing checks. Scoped ownership, exact new host schedule and time allocations; no numerical change.",
+  "review_fix": "Reject known owned PID on wrong physical GPU before treating unowned-device rows as observations.",
+  "scope": "Synthetic scalar fixtures and fake processes. No remote work, actual children, checkpoint deserialization, official arrays or test acquisition.",
+  "root_retained_gate": "Entire original Goop training supervisor exits including CPU endpoint audit; no live post-loop handoff.",
+  "additional_review_fix": "Identify executed direct Python entrypoint, not arbitrary argv option values; own --verifier-source/--trainer paths must not trigger duplicate/broad-monitor refusal."
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "adaptgns_goop3d_scientific_stopped_receipt_v1",
+  "issued_by": "root",
+  "status": "template_not_admitted",
+  "science_dir": "REPLACE_ABSOLUTE_STOPPED_SCIENCE_DIR",
+  "summary_sha256": null,
+  "hostname": null,
+  "matching_owned_processes": null,
+  "gpu_processes": null,
+  "all_owned_processes_reaped_or_independently_verified_absent": false,
+  "known_owned_pids": [],
+  "checked_utc": null
+}

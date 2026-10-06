@@ -1,0 +1,10 @@
+{
+  "schema": "adaptgns_goop3d_scalar_analysis_release_v1",
+  "issued_by": "root_required",
+  "status": "not_admitted",
+  "summarizer_sha256": null,
+  "collection_sha256": null,
+  "cohort_sha256": null,
+  "endpoint_updates": null,
+  "instructions": "Inert root analysis template. The already prospectively chosen endpoint must match the separately verified final cohort and complete scalar collection; this file selects no endpoint."
+}

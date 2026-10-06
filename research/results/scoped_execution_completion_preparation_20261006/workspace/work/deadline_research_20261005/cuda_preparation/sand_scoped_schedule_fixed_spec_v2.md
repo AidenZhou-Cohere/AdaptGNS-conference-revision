@@ -1,0 +1,15 @@
+# Prospective Sand schedule selected by root, version2
+
+This is a separate operational proposal/spec, not execution admission. It preserves all six faithful base/mix models, seeds0–2, 100000updates/model, all six policies and H314. No capacity checkpoint is promoted, and no new test outcome selected this plan. The original source and failed timing records remain unchanged.
+
+Start base0/mix0 on aquamarine GPUs2/3 only after root verifies that existing GoopB trainers are reaped and their broad GPU-monitor loop has ended. There is no live supervisory handoff.09:45UTC October6 is a planning example, not an observed launch. Later launch base1/mix1/base2/mix2 on yellow GPUs0/1/2/3 after its Goop-owned GPU work finishes. Target14:00UTC; latest actual launch15:05UTC. All active Goop work retains ownership until these gates pass.
+
+The measured original six-job rate is q6=.19001664200914092s/update, residual r6=46.94376225024462s. Applying the preserved1.35margin and991.935972s terminal reserve gives27404.671592s (7h36m45s) per concurrent training group. New co-resident GPU2/3 throughput has not been measured. The main estimate retains35%margin;1.25/1.5multipliers on the entire buffered allowance are sensitivities only.
+
+The common training stop is October6 22:44UTC. Cleanup starts the reviewed clock bound plus15seconds earlier. After complete cohort freeze, reserve900seconds for test acquisition/conversion/contracts,2700seconds for cohort/source checks,11760seconds for concurrent full-rollout/same-state/clean evaluation streams including cleanup, and3600seconds for analysis/audit. Compute and analysis end October7 04:00UTC, preserving04:00–08:00 for final writing/review and the11:59submission deadline. These are enforced spending allocations, not guaranteed numerical completeness. At09:45/14:00starts the main allocation ends02:52:45UTC, with1h07m15s slack. The nominal latest group start is15:07:15; root selected15:05to leave room for clock/cleanup margins.
+
+The supplied aquamarine inventory has144logicalCPUs and805GiBfree RAM out of955GiB, with no CPU cgroup quota. Four configured2-thread trainers total8threads. These observations show no CPU-core or RAM-capacity blocker; they do not prove zero interference from scheduling, NUMA/bandwidth, I/O or drivers. Record actual timing and exact co-residents. A1.5×seed0training sensitivity still completes analysis by02:52:45because yellow dominates;2×does not fit04:00.
+
+A sole-two-GPU three-wave fallback is excluded: complete training, sequential evaluation waves and reserves consume approximately34h38m, ending October7 about20:23from09:45. Do not reduce seeds, updates, policies or horizon to call that a complete study. If yellow availability or measured runtime breaks the prospective fit, root must reassess scheduling while preserving every incomplete or failed outcome.
+
+New scoped orchestration, amendment and root releases require review before launch. This spec neither starts a process nor grants test acquisition. Full1080rollout outcomes and124704diagnostic forwards remain required; missing/failed required values leave affected complete means null.

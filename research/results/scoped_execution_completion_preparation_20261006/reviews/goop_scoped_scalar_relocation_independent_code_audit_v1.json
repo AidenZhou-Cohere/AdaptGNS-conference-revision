@@ -1,0 +1,16 @@
+{
+  "schema": "adaptgns_goop_scoped_relocation_independent_code_audit_v1",
+  "status": "passed",
+  "source_pins": {
+    "summarize_goop_graph_support_scoped_v3.py": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+    "test_summarize_goop_graph_support_scoped_v3.py": "3862eca3b9d79ad95e537f76f4754ca227354d93808580d49b0e760c8f6448e2"
+  },
+  "evidence_directory": "/private/tmp/goop_scoped_relocation_yf2b4pp7",
+  "original_path_unavailable_during_collection": true,
+  "original_remote_paths_preserved": true,
+  "complete_local_relative_inventory_bound": true,
+  "scientific_function_objects_are_frozen_aliases": true,
+  "collection_sha256": "5d104544c575ac7c1208012cf91a1e7114cf59f7e241a39bea63e3f48d3a781c",
+  "sources_unchanged": true,
+  "scope": "Synthetic scalar fixtures and opaque NPZ bytes only; no original host, research arrays, model or GPU"
+}

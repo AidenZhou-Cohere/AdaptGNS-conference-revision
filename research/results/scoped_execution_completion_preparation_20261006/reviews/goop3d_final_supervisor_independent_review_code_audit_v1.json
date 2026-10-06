@@ -1,0 +1,64 @@
+{
+  "schema": "adaptgns_goop3d_final_supervisor_independent_code_audit_v1",
+  "status": "passed_targeted_independent_review",
+  "review_scope": "Local source review and synthetic fake-process/scalar verification only. No actual model/data/GPU/remote process access or execution admission.",
+  "source": {
+    "path": "supervise_goop3d_final_evaluation_v1.py",
+    "sha256": "fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62"
+  },
+  "tests": {
+    "path": "test_supervise_goop3d_final_evaluation_v1.py",
+    "sha256": "7b643450ca62b8186d655261678c46ac3bd96abc2916ed629831a140b911dff2",
+    "passed": 12,
+    "deselected": 11,
+    "seconds": 15.93,
+    "log": "goop3d_final_supervisor_independent_targeted_code_audit_attempt2.log",
+    "log_sha256": "31051ec2021c48e6d6333c1988178a4aab0a8519d6986c7d0eb28106cc35cf5a"
+  },
+  "pin_stability": "Source and test hashes matched author freeze both before and after targeted run.",
+  "reviewed_contract": {
+    "waves": "A base0/mix0/base1/mix1, then B base2/mix2 on dedicated four-GPU host",
+    "stages": 5,
+    "streams": 6,
+    "root_child_releases": 30,
+    "quotas": "Root prospectively identical stage ordering and per-stage integer quota 1..7200 s",
+    "activity_seconds": 21600,
+    "analysis_reserve_seconds": 3600,
+    "cleanup_seconds_per_stage": 15,
+    "source_guards": "Pinned evaluator/collector/interface/cohort/test preparation/plan; root admissions remain separate",
+    "publication": "All owned children reaped, final GPU inventory empty, complete trees and parent snapshots checked, strict candidate serialized before final checks and published last",
+    "scientific_limits": "No model selection, retry, mean computation, scalar admission or guarantee of complete outcomes."
+  },
+  "targeted_checks": [
+    "All 30 expected stage receipts plus strict scalar-collector acceptance",
+    "Infrastructure failure reaps peers and retains never-started cells",
+    "Whole-invocation timeout escalates without retry",
+    "Unreaped identity refusal blocks final ledger and following work",
+    "Reaped GPU PID reuse is not accepted as owned",
+    "Late clock after metadata check prevents launch",
+    "Full hashes never block active-child deadline polling",
+    "Parent log mutation prevents final publication",
+    "Publication preserves root absolute stop and analysis reserve",
+    "Cleanup continues after one child outcome-accounting error",
+    "Delayed GPU query accepts identity-verified successor after stage transition"
+  ],
+  "resolved_findings": [
+    "Full hashes moved outside active scheduling; metadata checks followed by fresh launch clock",
+    "Publication checks absolute root stop plus clock margin",
+    "Shape-safe failure parsing and error-tolerant peer cleanup",
+    "Current identity verification prevents historical PID adoption",
+    "Parent logs/release snapshots/wave records bound",
+    "Elapsed receipt explicitly named elapsed_before_publication_seconds",
+    "GPU observations merge query-start and current ownership after legitimate stage transitions"
+  ],
+  "supporting_statistics_final_review": {
+    "path": "goop3d_final_supervisor_ledger_statistics_final_review_v2.json",
+    "sha256": "7a2a8f1e6d1ff34fc9c0ba52042e5fb516fa6542aa55b69003607b1e37d256e6",
+    "scope": "Separate statistics agent final-hash six ledger compatibility roundtrips; not counted as this agent tests"
+  },
+  "preserved_attempts": {
+    "goop3d_final_supervisor_independent_targeted_code_audit_attempt1.log": "Launch failed with exit127 from incorrect relative interpreter path; no tests or research process ran"
+  },
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

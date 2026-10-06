@@ -1,0 +1,61 @@
+{
+  "schema": "adaptgns_goop_gpu_scoped_v3_independent_review_code_audit_v1",
+  "status": "passed",
+  "scope": "Source/diff/AST review and local synthetic scalar/process fixtures only; no GPU, actual process, model/data access, execution or admission.",
+  "source": {
+    "path": "supervise_goop_evaluation_gpu_scoped_v3.py",
+    "sha256": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21"
+  },
+  "predecessor": {
+    "path": "supervise_graph_support_evaluation_quota_v2.py",
+    "sha256": "0bd714b0bece0c349a9b18eae14221f6602ffc61ea736bad4fa3b5dc087157d9",
+    "unchanged": true
+  },
+  "amendment": {
+    "path": "goop_gpu_scoped_evaluation_amendment_v3.md",
+    "sha256": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4"
+  },
+  "independent_test_run": {
+    "tests_sha256": "6cf19a8157215a88da3e932282127d30512d6adb1e1dda982aa76fdb9061540f",
+    "passed": 41,
+    "seconds": 0.17,
+    "log": "goop_gpu_scoped_v3_independent_tests_code_audit_attempt2.log",
+    "log_sha256": "b95d3a8cb6632c61789e89311fdd3bd0ca22acbe4a48ede2654f67d333dd3b69"
+  },
+  "independent_probes": {
+    "path": "goop_gpu_scoped_v3_independent_probes_code_audit_v1.json",
+    "sha256": "adaf54f6ba18364d9f20da58181f145ed8c194fa547613265bcdb16b1a101d0e",
+    "synthetic_ownership_cases": 8,
+    "unchanged_ast_functions": 10,
+    "unchanged_ast_constants": 10
+  },
+  "reviewed_diff": [
+    "Distinct Goop-only schema/release; explicit exact released GPU scope and pinned prospective amendment",
+    "New complete raw GPU inventory persisted before scope validation; process receipt binds inventory hash",
+    "Observed owned/historical PID receives native pid,parent,start,argv,executable identity comparison",
+    "Foreign work on assigned devices rejected; matched owned process on wrong physical GPU rejected",
+    "Reused foreign identity on unassigned device observed without adoption/control; absent historical samples accepted only on original device",
+    "Current successor lookup retained through stage transitions",
+    "Evaluator/lifecycle pins, four fixed stage quotas, model/arm/seed mapping, output paths, accounting, cleanup and 01:00UTC deadline preserved"
+  ],
+  "cleanup_review": "All signal paths retain pinned lifecycle stop_owned and only registered child dictionaries; native helper checks child parent/start/argv before killpg. Unassigned observations are never appended to owned children.",
+  "scientific_limits": [
+    "Same six100k Goop models, six policies, H395 and original diagnostic schedules; incomplete required cases stay missing",
+    "No mean computation or test/model admission by this wrapper",
+    "Timing is explicitly shared-host operational measurement; fixed quotas are not completion forecasts",
+    "GPU observations are sampled, not a continuous activity trace; final scientific output audit remains root responsibility"
+  ],
+  "resolved_finding": {
+    "draft_source_sha256": "aa95e76e52e17458f37b5354730a22c0575a6efa43e767e08eb63592b9d90481",
+    "issue": "Historical PID could be reused by foreign process on assigned GPU without current identity inspection",
+    "evidence": "goop_gpu_scoped_v3_historical_pid_probe_code_audit_v1.json",
+    "resolution": "Native full identity checked; repaired eight independent cases pass"
+  },
+  "preserved_initial_tests": {
+    "log": "goop_gpu_scoped_v3_independent_tests_code_audit_attempt1.log",
+    "passed": 37,
+    "seconds": 0.42
+  },
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

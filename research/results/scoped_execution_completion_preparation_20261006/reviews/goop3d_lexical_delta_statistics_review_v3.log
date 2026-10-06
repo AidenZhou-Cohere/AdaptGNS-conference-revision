@@ -1,0 +1,42 @@
+{
+  "schema": "adaptgns_goop3d_lexical_delta_statistics_review_v3",
+  "status": "passed_narrow_interface_delta",
+  "created_utc": "2026-10-06T06:45:58.962157+00:00",
+  "old_source_sha256": "fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62",
+  "current_source_sha256": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+  "changed_functions": [
+    "merge",
+    "validate_release"
+  ],
+  "added_functions": [
+    "python_environment",
+    "python_files"
+  ],
+  "removed_functions": [],
+  "unchanged_ledger_lifecycle_and_grammar": [
+    "account_stage",
+    "queue_snapshot",
+    "publish_ledger",
+    "child_namespace",
+    "entry_key",
+    "never_started",
+    "encode",
+    "execute_queue",
+    "drive_wave",
+    "verify_files",
+    "verify_control_metadata"
+  ],
+  "top_level_schemas_protocol_pins_schedule_and_constants_identical": true,
+  "previous_six_roundtrip_report": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_final_supervisor_ledger_statistics_final_review_v2.json",
+    "sha256": "7a2a8f1e6d1ff34fc9c0ba52042e5fb516fa6542aa55b69003607b1e37d256e6"
+  },
+  "interpretation": "Only release/interpreter binding changed; exact ledger/coverage/command functions and frozen scalar collector remain unchanged. Earlier six synthetic ledger-to-collector roundtrips retain interface relevance; no redundant rerun performed.",
+  "delta_review": "Lexical absolute current sys.executable is now bound with resolved binary digest, sys.prefix/base_prefix and optional pyvenv.cfg bytes. Root-approved command argv must use that lexical spelling. Input-map merging admits only current interpreter lexical symlink exception. Existing terminal full bindings and file-identity checks remain unchanged.",
+  "actual_models_arrays_sources_accessed": false,
+  "research_processes_launched": false,
+  "limits": [
+    "Narrow source/interface compatibility review; independent launcher admission/native symlink tests belong to methods and code_audit.",
+    "No real data, final cohort, or evaluation receipt was consumed."
+  ]
+}

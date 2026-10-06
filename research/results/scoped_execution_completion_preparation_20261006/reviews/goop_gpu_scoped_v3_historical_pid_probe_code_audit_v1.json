@@ -1,0 +1,24 @@
+{
+  "candidate_sha256": "aa95e76e52e17458f37b5354730a22c0575a6efa43e767e08eb63592b9d90481",
+  "probe": "reaped evaluator PID reused by foreign process on assigned device",
+  "result": "incorrectly_accepted",
+  "current_process_identity_lookups": [],
+  "observation": {
+    "utc": "2026-10-06T06:37:52.468628+00:00",
+    "gpu_scope": {
+      "owned_indices": [
+        0,
+        1
+      ]
+    },
+    "all_gpu_processes": [
+      {
+        "pid": 111,
+        "gpu_uuid": "g0",
+        "physical_index": 0,
+        "scope": "owned_device"
+      }
+    ]
+  },
+  "scope": "Synthetic dictionaries only; no actual process or GPU query."
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "adaptgns_goop3d_reserved_test_wrapper_authoring_record_v1",
+  "status": "source_authored_requires_independent_review",
+  "author": "conference_critique_methods",
+  "files_sha256": {
+    "prepare_goop3d_reserved_test_v1.py": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a",
+    "test_prepare_goop3d_reserved_test_v1.py": "4505c651a0642eed06b8c576fd7bcd729c848eabba12d237fbe5f18f480848f7",
+    "goop3d_reserved_test_preparation_notes_v1.md": "239b8c357c7f68e3c49054046dfc2e498dd0559fbb9bedd007855e8822c0cf60",
+    "goop3d_reserved_test_preparation_release.template.json": "7df5639dd6fb36b777acf93387eba569f3840e3d40a1f0e2a2202453f15cc01b",
+    "goop3d_reserved_test_tests_attempt1.log": "5bcd21b859e16ac34d87a77bebb3ddc8c0e6929d8e0e461c5c21e2427d21fa67",
+    "goop3d_reserved_test_tests_attempt2.log": "791fae46f03e52a4eba4e52c89ae5c8ea5840d3add5e44dd120b8152a1d3bb45",
+    "goop3d_reserved_test_tests_attempt3.log": "1f87e9ca0c3aa07793c9ffb4c60543f69dd95ab18ca6dbde4e60a45b8fe557ea",
+    "goop3d_reserved_test_tests_attempt4.log": "0c32a640470fe0d6237e105956e58fd7ef0dc717ae5fa343163147620e760b3a",
+    "goop3d_reserved_test_tests_attempt5.log": "d4ac4b490eaabf7639ae52b4ff33b4bdbcaaa4dd7fbe183f2922825e5fd5d04a",
+    "goop3d_reserved_test_tests_attempt6.log": "254c27dbeda9560a0b582d7635ce78de4930b077c4486716a7c6b77722620269",
+    "goop3d_reserved_test_tests_attempt7.log": "9e95d1f3355625e2f9acba919dcfe72bf484caac3754883888b4dfd2dc22bc60",
+    "goop3d_reserved_test_tests_attempt8.log": "78d88a6bf0300827d37842de352b6f8809b7ae3e3722eea49d3cca9cb4ccb8e9"
+  },
+  "synthetic_cpu_tests": {
+    "final": "39passed15.40s",
+    "unsuccessful_attempts_retained": true,
+    "actual_official_data_arrays_read": false,
+    "frozen_source_modified": false
+  },
+  "actual_reserved_headers_or_payload_accessed": false,
+  "actual_model_payload_deserialized": false,
+  "remote_or_gpu_access": false,
+  "separate_wrapper_and_root_admissions_required": true,
+  "independent_review_findings_addressed": [
+    "strict seed identity types",
+    "serialization/intermediate writes precede terminal byte checks",
+    "candidate/manifest published last",
+    "matched positive numeric particle counts"
+  ]
+}

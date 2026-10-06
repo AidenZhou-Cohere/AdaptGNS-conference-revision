@@ -1,0 +1,31 @@
+{
+  "schema": "adaptgns_sand_scoped_process_check_v1",
+  "issued_by": null,
+  "host": null,
+  "host_role": null,
+  "gpu_uuids": [],
+  "checked_utc": null,
+  "matching_sand_training_processes": null,
+  "active_old_whole_host_monitors": null,
+  "all_prior_goop_trainers_reaped": false,
+  "all_prior_whole_host_goop_monitors_exited": false,
+  "all_prior_goop_gpu_work_reaped": false,
+  "closed_goop_processes": [
+    {
+      "pid": null,
+      "start_ticks": null,
+      "argv": [],
+      "role": "trainer",
+      "stopped_and_reaped_or_exited": false
+    },
+    {
+      "pid": null,
+      "start_ticks": null,
+      "argv": [],
+      "role": "whole_host_monitor",
+      "stopped_and_reaped_or_exited": false
+    }
+  ],
+  "gpu_processes": null,
+  "template_note": "Retain complete raw inventory and native closed identities. whole_host_monitor must include entire original Goop training-supervisor process after CPU endpoint audit, not only ended monitor loop."
+}

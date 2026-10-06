@@ -1,0 +1,19 @@
+{
+  "schema": "adaptgns_goop3d_reserved_test_preparation_release_v1",
+  "status": "template_not_admitted",
+  "mode": null,
+  "issued_by": "root",
+  "issued_utc": null,
+  "cohort_sha256": null,
+  "cohort_audit_sha256": null,
+  "endpoint_updates": null,
+  "preparation_source_sha256": "4dbdd6c37e15bbda1f40ad0741182c9bcd67f49f8b73927f1822699797aa8af0",
+  "source_url": "https://storage.googleapis.com/learning-to-simulate-complex-physics/Datasets/Goop-3D/test.tfrecord",
+  "all_six_checkpoint_hashes_verified": false,
+  "test_converter_independently_reviewed": false,
+  "whole_invocation_outer_timeout_required": true,
+  "review_rationale": null,
+  "output_path": null,
+  "files_sha256": {},
+  "source_metadata_sha256": null
+}

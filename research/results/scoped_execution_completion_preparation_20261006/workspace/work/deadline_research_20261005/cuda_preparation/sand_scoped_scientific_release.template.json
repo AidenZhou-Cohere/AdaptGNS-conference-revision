@@ -1,0 +1,107 @@
+{
+  "schema": "adaptgns_sand_scoped_scientific_release_v1",
+  "status": "template_not_admitted",
+  "issued_by": null,
+  "dataset": "Sand",
+  "host": null,
+  "host_role": null,
+  "output_dir": null,
+  "cohort_id": null,
+  "schedule": [
+    {
+      "id": "base_seed0",
+      "wave": "B",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 0
+    },
+    {
+      "id": "mix_seed0",
+      "wave": "B",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 0
+    },
+    {
+      "id": "base_seed1",
+      "wave": "A",
+      "gpu": 0,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 1
+    },
+    {
+      "id": "mix_seed1",
+      "wave": "A",
+      "gpu": 1,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 1
+    },
+    {
+      "id": "base_seed2",
+      "wave": "A",
+      "gpu": 2,
+      "objective": "faithful",
+      "arm": "base",
+      "seed": 2
+    },
+    {
+      "id": "mix_seed2",
+      "wave": "A",
+      "gpu": 3,
+      "objective": "faithful",
+      "arm": "mix",
+      "seed": 2
+    }
+  ],
+  "gpu_uuids": [],
+  "owned_gpu_indices": [],
+  "gpu_policy": "exclusive_owned_devices_observe_all_others_without_control",
+  "environment": {
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64"
+  },
+  "files_sha256": {
+    "trainer": "fb3053c892a7b5006178586f35617518aa3ca0df814a9f4247d647b83e8dc124",
+    "capacity_source": "ca9b5ed45455b575179464d35c42d0d03e87edb7508f4deea2451f9f3fb50878",
+    "lifecycle_source": "c5ef3fd3d1df547f5b860c0e01304a48f796058676518a0681735d8936f117cd",
+    "verifier_source": "a22a59c46231c328e4939a0f021b3bb2fab9e2f93c0848bb1abd39aad2d5d305",
+    "train_manifest": "f133a629a0d94b67875267245ad7bda67464731caf83e2411743a5a85a71bb1f",
+    "admission": "fbc8ddd94d90adea6e8f4b07caa73931dfcea41e86c8f2f830e3f01f6a177b73",
+    "structural_report": "bc63fabfc07a663ab866f454c07e984dd57b8d4b32aa06a760838c4f84da72e6",
+    "protocol": "e003abe1673018bbfa6eaffcf151ca3e46f1f7a4da8ca47ce887b71ec01c6e0d",
+    "schedule_plan": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+    "amendment": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+    "process_check": null,
+    "clock_check": null,
+    "python": null,
+    "supervisor": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+    "python_target": null,
+    "python_venv_config": null
+  },
+  "scientific_training_admitted": false,
+  "automatic_retry_resume_or_promotion": false,
+  "live_supervisor_handoff": false,
+  "six_model_freeze_before_test": true,
+  "co_resident_runtime_bound_measured": false,
+  "training_allocation_seconds": 27404.671591931674,
+  "post_training_allocation_seconds": 18960,
+  "training_stop_utc": "2026-10-06T22:44:00+00:00",
+  "latest_start_utc": "2026-10-06T15:05:00+00:00",
+  "compute_analysis_deadline_utc": "2026-10-07T04:00:00+00:00",
+  "clock_error_bound_seconds": null,
+  "clock_checked_utc": null,
+  "process_checked_utc": null,
+  "python_environment": {
+    "lexical_path": null,
+    "resolved_binary_path": null,
+    "binary_sha256": null,
+    "sys_prefix": null,
+    "sys_base_prefix": null,
+    "pyvenv_config_path": null,
+    "pyvenv_config_sha256": null
+  }
+}

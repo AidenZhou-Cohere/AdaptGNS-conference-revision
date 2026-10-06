@@ -1,0 +1,16 @@
+{
+  "schema": "adaptgns_goop_evaluation_gpu_scoped_v3",
+  "status": "description_only",
+  "cost_basis": "fixed_execution_allocation_not_empirical_full_horizon_forecast",
+  "stage_quotas_seconds": {
+    "full_rollout_test": 7200,
+    "same_state_valid": 1800,
+    "same_state_test": 1800,
+    "clean_validation": 900
+  },
+  "cleanup_seconds_per_stage": 15,
+  "maximum_stream_allocation_seconds": 11760,
+  "all_required_outcomes_promised": false,
+  "dataset": "Goop",
+  "gpu_policy": "Released devices exclusive; all other devices observed without control"
+}

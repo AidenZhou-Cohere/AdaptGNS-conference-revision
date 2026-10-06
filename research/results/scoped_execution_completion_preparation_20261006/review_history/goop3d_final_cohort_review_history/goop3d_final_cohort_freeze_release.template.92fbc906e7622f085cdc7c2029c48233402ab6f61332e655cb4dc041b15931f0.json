@@ -1,0 +1,14 @@
+{
+  "schema": "adaptgns_goop3d_final_cohort_freeze_release_v1",
+  "status": "template_not_admitted",
+  "issued_by": "root",
+  "source_sha256": "cd55bba5b82a32f8b63c8fc76e7b3caa6db01161536d5e689135842e6821776a",
+  "science_dir": "REPLACE_ABSOLUTE_STOPPED_SCIENCE_DIR",
+  "output_dir": "REPLACE_FRESH_ABSOLUTE_COHORT_DIR",
+  "inventory_sha256": null,
+  "stopped_receipt_sha256": null,
+  "supervisor_sha256": "7bf35efb06aa92bf84d3e30730412297aae9be62114a692f12e6ee80b55d107e",
+  "evaluator_sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+  "independent_completed_cohort_review": false,
+  "endpoint_updates": null
+}

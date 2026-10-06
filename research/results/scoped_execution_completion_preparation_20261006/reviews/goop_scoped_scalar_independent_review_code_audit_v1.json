@@ -1,0 +1,54 @@
+{
+  "schema": "adaptgns_goop_scoped_scalar_independent_review_code_audit_v1",
+  "status": "passed",
+  "source": {
+    "path": "summarize_goop_graph_support_scoped_v3.py",
+    "sha256": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b"
+  },
+  "interface": {
+    "path": "goop_scoped_scalar_release_interface_v3.md",
+    "sha256": "2bc6f9ae4c8a9cc09ab0f56c352850e44c43678a7b07365a07f4f86e6613bb2c"
+  },
+  "final_independent_tests": {
+    "path": "test_summarize_goop_graph_support_scoped_v3.py",
+    "sha256": "3862eca3b9d79ad95e537f76f4754ca227354d93808580d49b0e760c8f6448e2",
+    "passed": 41,
+    "deselected": 24,
+    "seconds": 10.73,
+    "log": "goop_scoped_scalar_independent_tests_code_audit_attempt2.log",
+    "log_sha256": "04d846b6afcc968d0a1d4b95159b9114a110a76297af59b3753bdfd61dac6241",
+    "selection": "Relocation/origin/inventory, snapshot coverage, all24 stage grid, complete/adverse golden scientific cases, exclusive publication and collection/analysis mutation checks"
+  },
+  "prior_independent_tests": {
+    "source_sha256": "372a2ce18a6d5028a0561b38e58cebab31f73aff105484ce79cecfcb27321804",
+    "tests_sha256": "c5c72055a15f3252cbaf82dd1d05f81aa173624d98a856b15c9e5f08d3b19fa7",
+    "passed": 60,
+    "seconds": 11.65,
+    "log": "goop_scoped_scalar_independent_tests_code_audit_attempt1.log",
+    "scope": "Initial original-path candidate; final relocation delta reviewed separately, no claim that all60 replayed on finalpin"
+  },
+  "independent_relocation_probe": {
+    "path": "goop_scoped_scalar_relocation_independent_code_audit_v1.json",
+    "sha256": "0df5fd0a86a9051079923657197bfe85f7cb0c10e3b830cde1db4842a95249bd",
+    "result": "Copied queue collected and published with original queue path actually unavailable, original raw paths retained, exact relative local inventory bound, scientific functions verified as identical imported function objects"
+  },
+  "reviewed_contract": [
+    "Exact Goop scoped supervisora13ca1bc and operational amendment0ecb8d3c lineage, distinct v3 schemas and separate root collect/analyze release files",
+    "Frozen quota-v2 pure science source da85058e imported by exact hash; full_summary/diagnostic_summary and scalar validators remain aliases. All original24 stage receipts,1080 full cells and paired estimands retained",
+    "Actual-N here fixed original30 Goop trajectories; fullH395 and acceptedH200 prefix remain separate; missing/guarded/timeout/never-started outcomes distinct; incomplete whole-population means stay null",
+    "Complete raw GPU observations and native identity annotations retained, including pending/rejected inventory; initial query failure permits explicit absent inventory only before any child",
+    "Stopped/reaped queues required; snapshot-based JSON parsing, fresh row coverage against ledger, opaque NPZ byte hashes, artifact basename enforcement, all partial files/directories preserved",
+    "Root release binds original_queue_root and digest of complete local relative tree; remote commands/cell paths validated against origin without rewriting raw receipts; local copies are complete or collector runs on original stopped host",
+    "All source/cohort/amendment/root-release/input/queue-tree checks finish after serialization and before exclusive publication; fixed analysis binds both collection byte hashes and rechecks original source/root-release bytes",
+    "No native processes, model execution, array deserialization, reserved-source acquisition, retries, outcome replacement or numerical recomputation of old results"
+  ],
+  "scope_limits": [
+    "Tests and independent replay use synthetic scalar receipts and opaque placeholders; actual array/source recomputation remains root scientific audit",
+    "Transferred collection JSON may enter approved scalar analysis without reopening remote arrays; this covers collection bytes, not fresh remote output integrity after publication",
+    "There is no receipt-only bypass for referenced binary verification during collection",
+    "Shared-host durations do not establish isolated or causal speedups; preserved observational scope is exploratory"
+  ],
+  "pin_stability": "Final source, tests and interface match author final pins after focused replay and independent relocation.",
+  "remaining_findings": [],
+  "execution_authorized_by_this_review": false
+}

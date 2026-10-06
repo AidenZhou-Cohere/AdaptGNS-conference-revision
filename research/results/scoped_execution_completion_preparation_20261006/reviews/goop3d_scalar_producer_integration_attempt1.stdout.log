@@ -1,0 +1,40 @@
+.....                                                                    [100%]
+=============================== warnings summary ===============================
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+  /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[laggedrisk25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[relative-velocity-RMS25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[same-state]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[clean-validation]
+  <unknown>:50: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[laggedrisk25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[relative-velocity-RMS25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[same-state]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[clean-validation]
+  <unknown>:237: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[laggedrisk25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[relative-velocity-RMS25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[same-state]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[clean-validation]
+  <unknown>:308: SyntaxWarning: invalid escape sequence '\m'
+
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[base]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[laggedrisk25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_rollout_complete_or_guarded_row_accepted[relative-velocity-RMS25]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[same-state]
+work/deadline_research_20261005/cuda_preparation/test_goop3d_scalar_producer_integration_v1.py::test_frozen_diagnostic_rows_match_scalar_contract[clean-validation]
+  <unknown>:320: SyntaxWarning: invalid escape sequence '\d'
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+5 passed, 25 warnings in 2.53s

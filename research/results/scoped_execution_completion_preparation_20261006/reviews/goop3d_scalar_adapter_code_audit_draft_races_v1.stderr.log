@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_scalar_adapter_code_audit_draft_races_v1.py", line 16, in <module>
+    result=M.collect(*paths,root)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py", line 336, in collect
+    require(root_release.get('schema') == 'adaptgns_goop3d_scalar_collection_release_v1'
+  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py", line 58, in require
+    raise ValueError(message)
+ValueError: Exact root stopped-collection release required

@@ -1,0 +1,54 @@
+{
+  "schema": "adaptgns_sand_scoped_independent_probes_code_audit_v1",
+  "status": "passed",
+  "source_pins": {
+    "supervise_sand_scoped_science_v1.py": "8775048fd9ee741b479f8bdd361861a493241cf158d1dc64b3b01b60475478a0",
+    "test_supervise_sand_scoped_science_v1.py": "1c8e3c8555246cf5288a2539cea15ab5e7c69b539b0882b7e09978339e06dcb1"
+  },
+  "ownership_probes": [
+    {
+      "case": "own supervisor option values are not executed entrypoints",
+      "outcome": "accepted_as_required"
+    },
+    {
+      "case": "genuine old broad supervisor remains forbidden",
+      "outcome": "rejected_as_required",
+      "error": "Old whole-host monitor remains active; no live handoff allowed"
+    },
+    {
+      "case": "genuine unowned Sand trainer remains forbidden",
+      "outcome": "rejected_as_required",
+      "error": "Duplicate/unowned Sand trainer exists"
+    },
+    {
+      "case": "actual prior identity still present",
+      "outcome": "rejected_as_required",
+      "error": "Prior Goop trainer/monitor identity still exists"
+    },
+    {
+      "case": "owned child on unassigned wrong GPU",
+      "outcome": "rejected_as_required",
+      "error": "Owned GPU assignment changed"
+    },
+    {
+      "case": "foreign unassigned device remains observation only",
+      "outcome": "accepted_as_required",
+      "observation": [
+        {
+          "pid": 999,
+          "gpu_uuid": "g0",
+          "classification": "unowned_device_observed_without_control"
+        }
+      ]
+    },
+    {
+      "case": "release replaced after JSON admission",
+      "outcome": "rejected_before_any_child",
+      "original_release_sha256": "52977cb42ad7c8f283f217e08f146a87e9cdf093b77193c4300041fc4f83806c",
+      "evidence_directory": "/private/tmp/sand_scoped_release_binding_qonfx4iv"
+    }
+  ],
+  "fixed_mapping_and_posttraining_arithmetic": "passed",
+  "all_inputs_stable": true,
+  "scope": "Synthetic dictionaries/argv/constants and injected scalar-only main release race; no native process, CUDA, actual arrays or checkpoint deserialization"
+}

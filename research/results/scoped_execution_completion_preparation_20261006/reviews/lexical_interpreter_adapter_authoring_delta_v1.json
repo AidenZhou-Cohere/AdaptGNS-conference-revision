@@ -1,0 +1,37 @@
+{
+  "schema": "adaptgns_lexical_interpreter_adapter_delta_v1",
+  "status": "targeted_author_tests_passed_independent_review_pending",
+  "problem": "Root verified host .venv/bin/python symlink resolves to /usr/bin/python3.12, where torch is absent. Resolved subprocess argv loses the virtualenv despite identical binary bytes.",
+  "change": "Preserve exact normalized absolute lexical sys.executable for child argv; root receipt records lexical and resolved binary paths, binary hash, sys.prefix/base_prefix and pyvenv.cfg path/hash. Check lexical,target,cfg bytes/metadata. Original scientific trainers/evaluators/protocols remain unchanged.",
+  "sources": {
+    "supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+    "supervise_sand_scoped_science_v1.py": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13",
+    "test_supervise_goop3d_final_evaluation_v1.py": "3f69c5aeda9a35107e08abd0976f663abd38ca6785eb7da7a86cedb07aea6e45",
+    "test_supervise_sand_scoped_science_v1.py": "cfd24a0f2c3eb6c9f570eb504c6b00af00372e06146a59d387749d2312c46ab4"
+  },
+  "targeted_author_tests": {
+    "d3": {
+      "passed": 3,
+      "seconds": 1.75,
+      "log": "goop3d_final_supervisor_lexical_interpreter_tests_canonical.log"
+    },
+    "sand": {
+      "passed": 4,
+      "seconds": 0.43,
+      "log": "sand_scoped_science_lexical_interpreter_tests_canonical.log"
+    }
+  },
+  "preserved_relative_interpreter_failures": [
+    "goop3d_final_supervisor_lexical_interpreter_tests.log",
+    "sand_scoped_science_lexical_interpreter_tests.log"
+  ],
+  "failure_reason": "Author initial pytest invocation itself used absolute sys.executable containing /../; explicit new contract requires an absolute lexical path without dot-dot. Canonical lexical venv invocation passes; no real child launch occurred.",
+  "unaffected_preparation_wrappers": [
+    "prepare_goop3d_final_cohort_v1.py",
+    "prepare_goop3d_reserved_test_v1.py"
+  ],
+  "unaffected_reason": "No subprocess launch or Python executable option. Their in-process operations remain in invoking venv.",
+  "actual_research_processes_started": false,
+  "test_or_checkpoint_accessed": false,
+  "execution_admitted": false
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "adaptgns_goop3d_prospective_endpoint_plan_v1",
+  "status": "prospectively_selected",
+  "issued_by": "root",
+  "endpoint_updates": 25000,
+  "checkpoint_every": 2500,
+  "log_every": 100,
+  "selection_basis": "prospective_compute_budget_no_validation_or_test_selection",
+  "selection_used_validation_or_test_accuracy": false,
+  "rationale": "The largest predefined candidate fitting two conservative training/audit windows plus a fixed six-hour evaluation quota and at least one hour for transfer, review and analysis before October 7 01:00 UTC. The complete timing attempt retained 15 coordinate-guard failures out of 36 full rollouts, so no full-study runtime is forecast. Selection uses capacity time, clocks and fixed reserves only; no validation/test accuracy or favorable probe loss. All six fresh base/mix seed pairs and the full predeclared evaluation grid remain required, with missing and failed cells retained. This 25k fresh 3D study is separate from Goop2D100k and WaterDrop continuation.",
+  "cost_basis": "fixed_operational_quota_after_failed_full_horizon_timing",
+  "runtime_multiplier": 1.35,
+  "evaluation_and_analysis_reserve_seconds": 25200,
+  "wave_audit_reserve_seconds": {
+    "A": 600,
+    "B": 600
+  },
+  "all_required_evaluation_outcomes_promised": false,
+  "full_study_measured_runtime_claim": false,
+  "complete_full_horizon_timing_attempt_failed": true,
+  "preserved_failed_timing_sha256": [
+    "1dfc411e27796543f3c18ac093a775fbbf8f5a8d38b992457fa82f89a290add3",
+    "28f2bc1a2cc9397b1004850ff13b48ad2142576f66d3a8e14eeecdbe69afee41",
+    "96f7c1b05b87e225df8877be4fb80a3dcc8ca60d2e28a2433ede915fde2e3276"
+  ],
+  "decision_utc": "2026-10-06T05:59:58.221764+00:00",
+  "candidate_quota_arithmetic": [
+    {
+      "updates": 10000,
+      "training_and_audit_seconds": {
+        "A": 9127.686269076183,
+        "B": 8787.645612964989
+      },
+      "end_including_two_clock_cleanup_allowances_and_evaluation_analysis_quota": "2026-10-06T18:01:13.553646+00:00",
+      "slack_seconds": 25126.446354,
+      "fits": true
+    },
+    {
+      "updates": 25000,
+      "training_and_audit_seconds": {
+        "A": 21749.978488295656,
+        "B": 20930.859114729858
+      },
+      "end_including_two_clock_cleanup_allowances_and_evaluation_analysis_quota": "2026-10-07T00:53:59.059367+00:00",
+      "slack_seconds": 360.940633,
+      "fits": true
+    },
+    {
+      "updates": 50000,
+      "training_and_audit_seconds": {
+        "A": 42787.13218699478,
+        "B": 41169.54828433797
+      },
+      "end_including_two_clock_cleanup_allowances_and_evaluation_analysis_quota": "2026-10-07T12:21:54.902235+00:00",
+      "slack_seconds": -40914.902235,
+      "fits": false
+    },
+    {
+      "updates": 100000,
+      "training_and_audit_seconds": {
+        "A": 84861.43958439301,
+        "B": 81646.9266235542
+      },
+      "end_including_two_clock_cleanup_allowances_and_evaluation_analysis_quota": "2026-10-08T11:17:46.587972+00:00",
+      "slack_seconds": -123466.587972,
+      "fits": false
+    }
+  ],
+  "evaluation_activity_quota_seconds": 21600,
+  "transfer_review_analysis_reserve_seconds": 3600
+}

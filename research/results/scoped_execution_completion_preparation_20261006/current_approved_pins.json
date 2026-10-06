@@ -1,0 +1,14 @@
+{
+  "goop3d_scientific_protocol_v1.md": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+  "goop3d_stopped_timing_and_decision_v1/cuda_preparation/goop3d_scientific_endpoint_plan_root_v1.json": "f38131f2851afdcbf774af506ebe8e02c8eca1be5e143430f68abedb95304c6d",
+  "goop_gpu_scoped_evaluation_amendment_v3.md": "0ecb8d3c6b5dd74150d6253cc84be2548827b235490eb35da50afcc0df6e28f4",
+  "prepare_goop3d_final_cohort_v1.py": "add53ea8c41ef44a1b3248eaacd4df38b49d396b8ecd374d9f928ba751bc631a",
+  "prepare_goop3d_reserved_test_v1.py": "cdd17f625e0129926f69e81cfe5961c05e31aed7ca875d2550f40e642434523a",
+  "sand_scoped_operational_amendment_v1.md": "411547c3355859906f59792b3b493841030b0afd2e105e17e466114df6743738",
+  "sand_scoped_schedule_fixed_spec_v2.json": "403a96c1304341ea1899c994e0ab7474280add44ea5986ec41570e08d16c337b",
+  "summarize_goop3d_graph_support_v1.py": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+  "summarize_goop_graph_support_scoped_v3.py": "0772f5615a69f513beed721414247ba08ede80b8f3ad6ab7201336655d996c5b",
+  "supervise_goop3d_final_evaluation_v1.py": "070d1d5e47cb4ac8650586f72ef434756c47b9b94da9d15016f7a287e945e989",
+  "supervise_goop_evaluation_gpu_scoped_v3.py": "a13ca1bc30161f89cf79b6c0b632c65a272913302ef0cc37dcfd7ed762c6aa21",
+  "supervise_sand_scoped_science_v1.py": "2970922593f41f74713aff9208e4c6964bb1b3f351fee906724bbf52f11d4d13"
+}

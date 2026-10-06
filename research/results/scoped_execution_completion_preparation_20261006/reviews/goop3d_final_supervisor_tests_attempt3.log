@@ -1,0 +1,26 @@
+.....................F                                                   [100%]
+=================================== FAILURES ===================================
+__________ test_cleanup_continues_after_one_outcome_accounting_error ___________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-279/test_cleanup_continues_after_o0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x106ea6f60>
+
+    def test_cleanup_continues_after_one_outcome_accounting_error(tmp_path,monkeypatch):
+        a,c=fixture(tmp_path,monkeypatch);rt=FakeRuntime(c,'error');original=M.observe_reaped
+        def fault(child,*args):
+            if child['process'].pid==1001:raise ValueError('synthetic scalar observation fault')
+            return original(child,*args)
+        monkeypatch.setattr(M,'observe_reaped',fault)
+        assert M.execute_queue(a,c,rt)==1
+        assert len(rt.created)==4 and all(x['process'].returncode is not None for x in rt.created)
+        report=M.read(a.output_dir/'process_outcomes.json')
+>       assert report['unreaped_owned_children']==[] and any(c['cleanup_errors'] for c in report['all_children'])
+E       assert ([] == []
+E         
+E         Use -v to get more diff and False)
+E        +  where False = any(<generator object test_cleanup_continues_after_one_outcome_accounting_error.<locals>.<genexpr> at 0x106c1f6b0>)
+
+test_supervise_goop3d_final_evaluation_v1.py:266: AssertionError
+=========================== short test summary info ============================
+FAILED test_supervise_goop3d_final_evaluation_v1.py::test_cleanup_continues_after_one_outcome_accounting_error
+1 failed, 21 passed in 28.06s

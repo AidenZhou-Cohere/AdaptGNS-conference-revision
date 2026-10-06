@@ -1,0 +1,92 @@
+FFF.                                                                     [100%]
+=================================== FAILURES ===================================
+_____________ test_fixed_scope_and_fresh100k_commands[A-4-seeds0] ______________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-302/test_fixed_scope_and_fresh100k0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x1094eb470>
+role = 'A', count = 4, seeds = {1, 2}
+
+    @pytest.mark.parametrize('role,count,seeds',[('A',4,{1,2}),('B',2,{0})])
+    def test_fixed_scope_and_fresh100k_commands(tmp_path,monkeypatch,role,count,seeds):
+>       a,c,l,now=fixture(tmp_path,monkeypatch,role)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_supervise_sand_scoped_science_v1.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_supervise_sand_scoped_science_v1.py:38: in fixture
+    'host_role':role,'dataset':'Sand','schedule':M.SCHEDULE,'environment':M.ENVIRONMENT,'python_environment':M.python_environment(args.python),'files_sha256':hashes,'output_dir':str(args.output_dir),
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+supervise_sand_scoped_science_v1.py:79: in python_environment
+    require(p.is_absolute() and str(p)==os.path.abspath(p) and str(p)==sys.executable,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+v = False
+message = 'Preserve the current interpreter lexical absolute path, including its venv symlink'
+
+    def require(v,message):
+>       if not v:raise ValueError(message)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Preserve the current interpreter lexical absolute path, including its venv symlink
+
+supervise_sand_scoped_science_v1.py:53: ValueError
+_____________ test_fixed_scope_and_fresh100k_commands[B-2-seeds1] ______________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-302/test_fixed_scope_and_fresh100k1')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x109557bf0>
+role = 'B', count = 2, seeds = {0}
+
+    @pytest.mark.parametrize('role,count,seeds',[('A',4,{1,2}),('B',2,{0})])
+    def test_fixed_scope_and_fresh100k_commands(tmp_path,monkeypatch,role,count,seeds):
+>       a,c,l,now=fixture(tmp_path,monkeypatch,role)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_supervise_sand_scoped_science_v1.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_supervise_sand_scoped_science_v1.py:38: in fixture
+    'host_role':role,'dataset':'Sand','schedule':M.SCHEDULE,'environment':M.ENVIRONMENT,'python_environment':M.python_environment(args.python),'files_sha256':hashes,'output_dir':str(args.output_dir),
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+supervise_sand_scoped_science_v1.py:79: in python_environment
+    require(p.is_absolute() and str(p)==os.path.abspath(p) and str(p)==sys.executable,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+v = False
+message = 'Preserve the current interpreter lexical absolute path, including its venv symlink'
+
+    def require(v,message):
+>       if not v:raise ValueError(message)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Preserve the current interpreter lexical absolute path, including its venv symlink
+
+supervise_sand_scoped_science_v1.py:53: ValueError
+__________ test_own_supervisor_option_values_are_not_executed_sources __________
+
+tmp_path = PosixPath('/private/var/folders/b6/8nb2r9dn3cdc1_4r9xhqdzlc0000gp/T/pytest-of-aiden.zhou/pytest-302/test_own_supervisor_option_val0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x10955fbf0>
+
+    def test_own_supervisor_option_values_are_not_executed_sources(tmp_path,monkeypatch):
+>       a,c,l,now=fixture(tmp_path,monkeypatch);rt=FakeRuntime(c,now)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_supervise_sand_scoped_science_v1.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+test_supervise_sand_scoped_science_v1.py:38: in fixture
+    'host_role':role,'dataset':'Sand','schedule':M.SCHEDULE,'environment':M.ENVIRONMENT,'python_environment':M.python_environment(args.python),'files_sha256':hashes,'output_dir':str(args.output_dir),
+                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+supervise_sand_scoped_science_v1.py:79: in python_environment
+    require(p.is_absolute() and str(p)==os.path.abspath(p) and str(p)==sys.executable,
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+v = False
+message = 'Preserve the current interpreter lexical absolute path, including its venv symlink'
+
+    def require(v,message):
+>       if not v:raise ValueError(message)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+E       ValueError: Preserve the current interpreter lexical absolute path, including its venv symlink
+
+supervise_sand_scoped_science_v1.py:53: ValueError
+=========================== short test summary info ============================
+FAILED test_supervise_sand_scoped_science_v1.py::test_fixed_scope_and_fresh100k_commands[A-4-seeds0]
+FAILED test_supervise_sand_scoped_science_v1.py::test_fixed_scope_and_fresh100k_commands[B-2-seeds1]
+FAILED test_supervise_sand_scoped_science_v1.py::test_own_supervisor_option_values_are_not_executed_sources
+3 failed, 1 passed, 15 deselected in 0.18s
