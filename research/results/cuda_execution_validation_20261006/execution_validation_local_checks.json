@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-10-06T01:24:59.168788+00:00",
+  "core_reference_sha256_reverified": {
+    "device_utils.py": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+    "graph_network.py": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+    "learned_simulator.py": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+    "losses.py": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+    "model_io.py": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e"
+  },
+  "cpu_mock_tests": {
+    "command": "python3 -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation -p test_validate_cuda_execution.py -v",
+    "elapsed_seconds": 0.006,
+    "passed": 10
+  },
+  "execution_scope": "Only standard-library module load, source-byte verification, syntax and mocked controls; no torch/core import or tensors.",
+  "independent_review": {
+    "code_audit": "Final read-only review complete: no remaining material finding; Adam coverage/exact scalar counters and bytewise equality fixes confirmed. Reviewer performed no execution.",
+    "resolved_findings": [
+      "Require complete nonempty Adam parameter-state coverage, exact scalar counters, moment shape/dtype/device and a real first parameter change.",
+      "Compare actual element bytes for bitwise equality, including signed zeros.",
+      "Retain completed objective/replay cases and timing rows after later exceptions.",
+      "Reject fractional and multi-element Adam step counters without integer truncation."
+    ],
+    "statistics": "Read-only source review; no blocking issue, replay type3 noise-mask precision issue addressed."
+  },
+  "not_performed": [
+    "real model validation",
+    "real CUDA smoke",
+    "scientific training",
+    "real data or external checkpoint loading",
+    "remote access",
+    "network",
+    "installation",
+    "frozen-source changes",
+    "freeze or push"
+  ],
+  "notes": "Default --describe is not a validation pass. Proposed numeric tolerances remain unchanged throughout review.",
+  "prepared_files_sha256": {
+    "execution_validation_note.md": "7c933db073c1c842fbd69baa370c339fa40e0b110d48dbbfabe5312405a3091a",
+    "test_validate_cuda_execution.py": "47a412b2287dcd25aad25ef6695064176cd73b8fbe4f8d28f1ebd0f84bb6aedd",
+    "validate_cuda_execution.py": "21b2555e84a2c6221b0651c5bcc592b67a61ae5b7e3dd02da031054dd79e2a68"
+  },
+  "python_version": "3.14.6",
+  "schema": "cuda_execution_validation_local_review_v1",
+  "scientific_readiness": false,
+  "syntax_and_whitespace": "passed"
+}

@@ -1,0 +1,184 @@
+{
+  "cuda": {
+    "available": true,
+    "built_with_cuda": true,
+    "compiled_architectures": [
+      "sm_80",
+      "sm_90",
+      "sm_100",
+      "sm_120"
+    ],
+    "devices": [
+      {
+        "compute_capability": [
+          10,
+          0
+        ],
+        "multiprocessor_count": 152,
+        "name": "NVIDIA GB200",
+        "total_memory_bytes": 197897617408,
+        "visible_index": 0
+      }
+    ],
+    "pytorch_cuda_build_version": "12.9",
+    "pytorch_version": "2.13.0+cu129",
+    "status": "queried",
+    "version_scope": "PyTorch build CUDA version; does not query installed toolkit or driver version",
+    "visible_device_count": 1
+  },
+  "dependencies": [
+    {
+      "module": "numpy",
+      "python_import_diagnostics_suppressed": false,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "2.5.3"
+    },
+    {
+      "module": "scipy",
+      "python_import_diagnostics_suppressed": false,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "1.18.1"
+    },
+    {
+      "module": "scipy.spatial",
+      "python_import_diagnostics_suppressed": false,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [
+        "cKDTree"
+      ],
+      "version": "1.18.1"
+    },
+    {
+      "module": "torch",
+      "python_import_diagnostics_suppressed": false,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "2.13.0+cu129"
+    },
+    {
+      "module": "torch_geometric",
+      "python_import_diagnostics_suppressed": true,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "2.8.0.post1"
+    },
+    {
+      "module": "torch_geometric.nn",
+      "python_import_diagnostics_suppressed": false,
+      "role": "core",
+      "status": "imported",
+      "symbols_importable": [
+        "MessagePassing",
+        "radius_graph"
+      ],
+      "version": "2.8.0.post1"
+    },
+    {
+      "error_type": "ModuleNotFoundError",
+      "module": "torch_cluster",
+      "python_import_diagnostics_suppressed": false,
+      "role": "optional_pyg_radius_backend",
+      "status": "unavailable"
+    },
+    {
+      "error_type": "ModuleNotFoundError",
+      "module": "torch_scatter",
+      "python_import_diagnostics_suppressed": false,
+      "role": "optional_pyg_extension",
+      "status": "unavailable"
+    },
+    {
+      "error_type": "ModuleNotFoundError",
+      "module": "torch_sparse",
+      "python_import_diagnostics_suppressed": false,
+      "role": "optional_pyg_extension",
+      "status": "unavailable"
+    },
+    {
+      "module": "absl.flags",
+      "python_import_diagnostics_suppressed": false,
+      "role": "legacy_cli",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "2.5.0"
+    },
+    {
+      "module": "tqdm",
+      "python_import_diagnostics_suppressed": false,
+      "role": "legacy_cli",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "4.70.1"
+    },
+    {
+      "module": "tfrecord",
+      "python_import_diagnostics_suppressed": false,
+      "role": "data_conversion",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "1.14.6"
+    },
+    {
+      "module": "google.protobuf",
+      "python_import_diagnostics_suppressed": false,
+      "role": "data_conversion",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "7.36.2"
+    },
+    {
+      "module": "crc32c",
+      "python_import_diagnostics_suppressed": false,
+      "role": "data_conversion",
+      "status": "imported",
+      "symbols_importable": [],
+      "version": "2.9.post0"
+    }
+  ],
+  "host": {
+    "architecture": "aarch64",
+    "cpu_affinity_count": 144,
+    "cpu_description": "aarch64",
+    "disk": {
+      "free_bytes": 532868497408,
+      "scope": "current working directory filesystem",
+      "total_bytes": 549755813888,
+      "used_bytes": 16887316480
+    },
+    "logical_cpu_count": 144,
+    "os": "Linux",
+    "os_release": "6.8.0-1029-nvidia-64k",
+    "python_implementation": "CPython",
+    "python_version": "3.12.3",
+    "ram_available_pages_bytes": 658172739584,
+    "ram_physical_bytes": 1026127626240,
+    "ram_scope": "OS page counters; not a cgroup or scheduler allocation guarantee"
+  },
+  "missing_core_imports": [],
+  "mode": "synthetic-smoke",
+  "schema": "adaptgns_cuda_environment_probe_v1",
+  "scope": "Environment triage only; not simulator, graph-kernel, checkpoint, resume, performance or scientific validation",
+  "synthetic_smoke": {
+    "cpu_rng_restored": true,
+    "cuda_rng_replay_equal": true,
+    "cuda_rng_restored": true,
+    "dtype": "float32",
+    "finite_nonzero_gradients": true,
+    "finite_output_and_loss": true,
+    "matrix_shape": [
+      32,
+      32
+    ],
+    "optimizer_updates": 0,
+    "status": "passed",
+    "synthetic_loss": 0.0013880752958357334,
+    "visible_device_index": 0
+  }
+}

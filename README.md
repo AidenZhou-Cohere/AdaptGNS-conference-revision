@@ -52,7 +52,7 @@ export PYTHONPATH="$PWD:$PWD/adaptive-gns"
 python -m pytest tests research/tests -q
 ```
 
-CUDA use needs a matching Torch build and the appropriate PyG radius backend (`torch_cluster`/supported compiled dependencies). Native Metal uses the explicit `scipy_host` backend for CPU neighbor search and edge transfer; unsupported-kernel fallback must stay disabled. CUDA, distributed training, and the inherited full upstream test suite were not validated in this local revision. Do not assume the macOS lock file is a portable CUDA installation recipe.
+CUDA needs a matching Torch build and an explicitly chosen graph backend. The `scipy_host` backend performs CPU neighbor search and transfers edges on both Metal and CUDA; it does not require a compiled PyG radius operator. A separate [GB200 execution validation](research/results/cuda_execution_validation_20261006/README.md) now passes bounded full-model CPU/CUDA graph, loss, gradient and optimizer/RNG checks, with all four GPUs passing tiny environment smokes. It records its own ARM64/CUDA package lock and an image driver-library correction. CUDA replay is numerically close rather than bitwise exact; real-data CUDA training and autonomous evaluation remain to be validated. Distributed training and the inherited full upstream test suite were not validated by these checks. Do not treat the macOS lock file as a portable CUDA installation recipe.
 
 ## Corrected full model
 
