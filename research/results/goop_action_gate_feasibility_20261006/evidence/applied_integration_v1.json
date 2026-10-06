@@ -1,0 +1,12 @@
+{
+  "scope": "exact appendix-only method/scope fragment; all earlier manuscript bytes unchanged",
+  "old_paper_sha256": "81aa5098e9ddca1bb435e7980aa76bcad444ebd5424ff7f66190be7705df0a8d",
+  "new_paper_sha256": "5c5518c6cc7fa927f9b056002332853c66da0fcfbab71f2acb985f5cd9d1b93e",
+  "old_canonical_body_sha256": "622126e39bf8cfe3cad73a53cd30975a2d0a8ccf788cc7651da4d4d5c0c97788",
+  "new_canonical_body_sha256": "2d98e7ef62d57cf17b8a7c62ef30d041396d300296640929a37c21566097ae9b",
+  "fragment_sha256": "2ce8f82ada6fd8fd1f8004217d06a966d534e72906bd08155b8dc546577ad8bd",
+  "canonical_builder_unchanged_sha256": "aa023359da96c95bfebc41ef638e1b76bd7f7c49ae3ff280d581c76cda658134",
+  "exact_suffix_insertion_matches_canonical_build": true,
+  "main_title_abstract_prior_results_unchanged": true,
+  "native_compilation": "pending"
+}
