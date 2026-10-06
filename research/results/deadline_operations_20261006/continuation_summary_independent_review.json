@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "passed": true,
+  "reviewer": "conference_critique_methods",
+  "created_utc": "2026-10-06T00:19:29.533706+00:00",
+  "source_files": {
+    "source": "research/summarize_continuation_evaluation.py",
+    "protocol": "research/protocols/continuation_summary_20261006.md",
+    "implementation_tests": "research/tests/test_continuation_summary.py",
+    "independent_tests": "research/tests/test_continuation_summary_review.py",
+    "frozen_evaluator": "research/continuation_evaluation.py",
+    "frozen_native_summary": "research/summarize_native_graph_rollouts.py"
+  },
+  "sha256": {
+    "source": "f15bf6796d11b9a95713bd92603307041af80d7b3f2a2624e537862e723887dd",
+    "protocol": "ea582e278a9bcfcd8a6eeb98f994e450dc2036352debfeb74a3c512602338454",
+    "implementation_tests": "8fb42e753e40240282abf7204dc6b0519e0882c34515fff598279abcd39bbf52",
+    "independent_tests": "81fdf068bcc7f61fa3f66d4193de4078e576661f6de42adc91c53bb0f30e1ae0",
+    "frozen_evaluator": "ec2ee1ba6e2a0cb78c55bd2720031af5d4fb8535d17c679aa6d319b74378a528",
+    "frozen_native_summary": "c7999ae9062e19ab10033537749d725145768aa08f7a548f092bcb1d5697c815"
+  },
+  "scope": "Independent source/schema/protocol review plus isolated synthetic tests. No real checkpoint/data/outcome inspection, trained-model inference, real preflight or launch. Frozen production sources/protocols were not edited.",
+  "tests": {
+    "command": "../../work/venv/bin/python -m pytest -q research/tests/test_continuation_summary.py research/tests/test_continuation_summary_review.py research/tests/test_continuation_evaluation.py research/tests/test_summarize_native_graph_rollouts.py",
+    "cwd": "outputs/AdaptGNS",
+    "passed": 133,
+    "elapsed_seconds": 9.5,
+    "breakdown": {
+      "new_implementation": 54,
+      "independent_hierarchy_admission": 31,
+      "frozen_evaluator": 25,
+      "frozen_native_summary": 23
+    },
+    "warnings": "389 existing torch.jit deprecation/invalid-escape SyntaxWarnings in synthetic fixture/source imports; no failing test."
+  },
+  "verified": [
+    "Separate complete faithful base/mix110k cohort; six fixed endpoints and twelve observed/autonomous jobs admitted using frozen lineage gate.",
+    "425 observed histories per endpoint (128 validation plus297 test),2550 frame records/12750policy slots, and810full native trajectory-policy outcomes required.",
+    "No110k endpoint relabeled as100k; unchanged native scalar validator receives only structural trajectory/seed/guard view.",
+    "Exact endpoint/parent/config/protocol/status/hash/array/trace and autonomous lineage identity checks; full source/data union reverified.",
+    "Observed raw prediction/risk conversion, geometry/selection/budget/native parity, residuals/gain/harm/rank correlations, boundary and failure phases audited without model execution.",
+    "Native trace/failure/cost checks reused unchanged; early horizons remain defined after later failure, full-horizon means null, failure elapsed times retained.",
+    "All12required policy/arm/interaction contrasts at matched unit before equal-trajectory/three-seed aggregation, all unit values and null reasons retained.",
+    "Independent hand-derived unequal-frame fixture verifies absolute and paired seed values and four-term interaction; unknown/missing/duplicate/boolean/nonfinite identities fail closed.",
+    "Fixed-state geometry/random-mask equality checked across arms; risk selections may differ; autonomous geometry is not assumed matched after initialization.",
+    "Fresh output required; input/endpoint overlap refused before directory creation; failed/partial artifact families never become eligible complete-population averages.",
+    "Separate exploratory populations and descriptive three-seed inference; no speedup, independent-confirmation, conservation, NLL or fresh-training claim."
+  ],
+  "resolved_findings": [
+    "Move metadata-only endpoint path separation check before mkdir; regression confirms no checkpoint deserialization or directory/status creation for a forbidden destination.",
+    "Independent committed observed fixture updated to include the frozen evaluator-required committed_frames=425; semantic expectations not weakened."
+  ],
+  "intermediate_checks": [
+    {
+      "scope": "Initial independent pure API tests",
+      "passed": 31
+    },
+    {
+      "scope": "Pre-output-isolation combined candidate",
+      "passed": 132,
+      "elapsed_seconds": 9.47
+    }
+  ],
+  "limits": [
+    "Real complete-cohort saved-array analysis has not yet run; operational gate and scientific outcomes still require their own execution/audit.",
+    "Frozen native validators reconstruct saved traces and per-step metadata but cannot independently regenerate unstored intermediate neural outputs without inference.",
+    "CPU checkpoint deserialization in future admitted analysis validates tensors/Adam lineage only; this review used fabricated fixture assets."
+  ]
+}

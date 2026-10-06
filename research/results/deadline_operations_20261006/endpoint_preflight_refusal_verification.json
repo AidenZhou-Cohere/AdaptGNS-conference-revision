@@ -1,0 +1,9 @@
+{
+  "state": "expected_refusal",
+  "reason": "Another heavy evaluator/trainer/supervisor is live",
+  "output_tree_created": false,
+  "training_tree_exists": false,
+  "scope": "Reviewed --check stopped before cohort loading; no training/evaluation launched",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "483a843ac2ed5d6be4d2a88dd55db365dda833aa162598ff04d41da866cfb233"
+}

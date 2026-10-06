@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "passed": true,
+  "reviewer": "conference_critique_methods",
+  "created_utc": "2026-10-06T00:17:10.489127+00:00",
+  "source_sha256": "34426941d893d4683c69e405446e64231bad8344260a1b5ca07b74c2123f9c7c",
+  "tests_sha256": "527463f483b737c798ae96a54bcfc55a1de714e15e1a42cb90bc131b7b228021",
+  "tests": {
+    "command": "work/venv/bin/python -m pytest -q work/deadline_research_20261005/test_run_continuation_evaluation_queue.py",
+    "passed": 50,
+    "elapsed_seconds": 5.76,
+    "warnings": "Existing torch.jit deprecation and invalid-escape SyntaxWarnings in imported synthetic fixture/source text; no scientific execution."
+  },
+  "scope": "Static source/schema and isolated synthetic operational review. No real preflight, training, evaluation or process action. One synthetic test exercises the frozen CPU lineage loader on six fabricated endpoints/three fabricated parents; no real checkpoints are loaded.",
+  "verified": [
+    "Explicit check/launch and fresh-output-only admission; no automatic resume or clearing locks.",
+    "Exactly six fixed extra10000 endpoints and matching three original100k parents; frozen loader checks Adam/config/frame/noise lineage.",
+    "Exact frozen file inventory and checkpoint/data/source byte checks before and after work.",
+    "Live Python module/script and between-job supervisor detection, regular paths, no conflicting locks/temp files.",
+    "Six observed jobs then six autonomous jobs; seed0base/mix, seed1base/mix, seed2base/mix in each phase.",
+    "Observed425 and autonomous135 postjob records per endpoint, exact lineage/protocol/input pins, checksummed recovery and saved scientific failures.",
+    "Initial launch before October6 15:00UTC; remaining-work forecast must fit before October7 01:00UTC with300s observed/5700s autonomous allowances that only increase.",
+    "Nonzero return, invalid publication, immutable change or forecast failure stops new children and preserves unfinished scope.",
+    "Lock-acquisition failure preserves other owner files; interrupted supervisor retains childPID/logs without explicit termination or retry."
+  ],
+  "resolved_findings": [
+    "Replaced initiation-only reserve claim with remaining-work forecast.",
+    "Added successful-lock-ownership guard before exception publication.",
+    "Rejected duplicate JSON keys and nonfinite tokens."
+  ],
+  "limits": [
+    "Forecasts are conditional, not guarantees.",
+    "No real complete endpoint cohort or real launch has been exercised by this review.",
+    "Scientific array/trace arithmetic remains the separate strict summarizer responsibility."
+  ]
+}

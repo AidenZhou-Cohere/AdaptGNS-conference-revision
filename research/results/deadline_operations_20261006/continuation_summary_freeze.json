@@ -1,0 +1,17 @@
+{
+  "scope": "Strict paired110k summary frozen before continuation outcomes or training launch",
+  "recorded_utc": "2026-10-06T00:21:18.702775+00:00",
+  "source_files_sha256": {
+    "research/summarize_continuation_evaluation.py": "f15bf6796d11b9a95713bd92603307041af80d7b3f2a2624e537862e723887dd",
+    "research/protocols/continuation_summary_20261006.md": "ea582e278a9bcfcd8a6eeb98f994e450dc2036352debfeb74a3c512602338454",
+    "research/tests/test_continuation_summary.py": "8fb42e753e40240282abf7204dc6b0519e0882c34515fff598279abcd39bbf52",
+    "research/tests/test_continuation_summary_review.py": "81fdf068bcc7f61fa3f66d4193de4078e576661f6de42adc91c53bb0f30e1ae0"
+  },
+  "independent_review_sha256": "45cf0d7adb6c18d65a708f97b04892a78580e58708108e63827b560295d0db56",
+  "tests": {
+    "root_new_summary_and_independent": 85,
+    "root_seconds": 3.89,
+    "independent_combined": 133
+  },
+  "outcome_execution_gate": "All six fixed110k endpoints, six observed425-frame jobs and six autonomous135-outcome jobs complete, every source/data/model/lineage hash verified; no inference or checkpoint selection in summary."
+}
