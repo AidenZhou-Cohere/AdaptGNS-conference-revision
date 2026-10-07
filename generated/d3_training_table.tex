@@ -1,0 +1,18 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop3D 25k observed training effects, mixed minus base-only, for every policy ($10^{-9}$ position-coordinate MSE). Negative favors mixed training. Brackets preserve the signs of seeds 0/1/2; mean $\pm$ sample SD describes all three seeds.}
+\label{tab:goop3d25k-observed-position-training}
+\begin{tabular}{lrr}
+\toprule
+Policy & Validation & Test\\
+\midrule
+Base & $-0.047\pm1.717$ [-/+/+] & $+0.156\pm1.748$ [-/+/+]\\
+Dense & $-0.693\pm1.741$ [-/-/+] & $-0.570\pm1.311$ [-/-/+]\\
+Random25 & $-0.292\pm1.715$ [-/-/+] & $-0.100\pm1.572$ [-/+/+]\\
+Speed25 & $-0.451\pm1.544$ [-/-/+] & $-0.185\pm1.569$ [-/+/+]\\
+Risk25 & $-0.327\pm1.586$ [-/-/+] & $-0.347\pm1.438$ [-/-/+]\\
+RMS25 & $-0.482\pm1.717$ [-/-/+] & $-0.200\pm1.577$ [-/-/+]\\
+\bottomrule
+\end{tabular}
+\end{table}

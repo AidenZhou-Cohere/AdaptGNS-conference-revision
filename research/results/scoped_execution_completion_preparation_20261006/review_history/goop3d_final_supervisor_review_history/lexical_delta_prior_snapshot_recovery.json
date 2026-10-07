@@ -1,6 +1,0 @@
-{
-  "status": "byte_identical_prior_source_recovered",
-  "sha256": "fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62",
-  "path": "goop3d_final_supervisor_review_history/fbe7a03135a1f1ba3482200fd8b2375389c656d2cd81c22c35df848e9b052f62_supervise_goop3d_final_evaluation_v1.py",
-  "method": "Reverse only the exact lexical-interpreter patch; require SHA256 equals previously recorded independently reviewed fbe7a031 source before preserving."
-}

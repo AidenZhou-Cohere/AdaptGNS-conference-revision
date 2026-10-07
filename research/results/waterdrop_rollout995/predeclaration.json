@@ -1,6 +1,0 @@
-{
-  "decision": "Evaluate all15fixedcheckpoints across5policies and3testtrajectories for995forecasts",
-  "status_at_predeclaration": "200-step run in progress; full-horizon outcomes not inspected",
-  "failure_guards": "Identical to original200-step preregistered resource/nonfinite guards",
-  "scope": "exploratory extension of compact pilot; no benchmark claim"
-}

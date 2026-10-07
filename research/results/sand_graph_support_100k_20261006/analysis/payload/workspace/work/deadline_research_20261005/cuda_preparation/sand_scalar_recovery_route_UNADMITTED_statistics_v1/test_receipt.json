@@ -1,9 +1,0 @@
-{
-  "command": "python3 -B -m unittest -v test_relay.py",
-  "exit_code": 0,
-  "no_network_real_phase_clock_or_process": true,
-  "schema": "sand_recovery_route_synthetic_test_receipt_v1",
-  "synthetic_sockets_and_readiness_only": true,
-  "tests_passed": 8,
-  "tool_chunk": "014af3"
-}

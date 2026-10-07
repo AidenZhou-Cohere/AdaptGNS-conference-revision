@@ -1,9 +1,0 @@
-{
-  "native_compilation": "success for open manuscript fa7f0f0835b5ac81fab39c6a6c5a56b76552fe8535cef76a24ad33561feb2b55; eight-page main assertion passed",
-  "table_regeneration": "main.tex and appendix.tex byte-identical from compressed public scalars",
-  "independent_table_claim_checks": 113,
-  "independent_integration_checks": 38,
-  "old_tables_preserved": 23,
-  "new_tables": 3,
-  "title_and_abstract_unchanged": true
-}

@@ -1,3 +1,0 @@
-\paragraph{Attempted Goop3D extension.}
-An exploratory Goop3D extension completed six 25,000-update training endpoints, with base-only and mixed-graph arms at three paired seeds. The full autonomous comparison remained incomplete, and the original analysis window expired. A distinct observed-history audit attempt returned a nonzero exit; its required collection and final validation were not run. No audited Goop3D accuracy result is reported. Incomplete outcomes and unsuccessful analysis attempts are retained in the reproducibility material.
-

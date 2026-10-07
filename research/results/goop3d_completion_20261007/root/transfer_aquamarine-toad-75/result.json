@@ -1,8 +1,0 @@
-{
-  "host": "aquamarine-toad-75",
-  "source_exit": 0,
-  "destination_exit": 0,
-  "seconds": 81.39031076431274,
-  "manifest_sha256": "993d163899006c2689ce0b12544659609e88c7363648a857a96d753517bb5383",
-  "remote_runtime": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/runtime_v1"
-}

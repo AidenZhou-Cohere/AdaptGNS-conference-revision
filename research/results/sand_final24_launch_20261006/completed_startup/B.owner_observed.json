@@ -1,9 +1,0 @@
-{
-  "checked_utc": "2026-10-06T20:13:32.050427+00:00",
-  "control_phase_sha256": "f3573270536485b42baee73c3ec3f2fa2fa251bb6af2bd4f79e738a70b625497",
-  "native_capture_sha256": "98eca5d7a9b58c840b46953863c5ebe0aca6606011f004244d0b0399c327c186",
-  "original_tool_session": 12559,
-  "release_sha256": "8fa068d3ea1768da53bf62297c0bfe2220c8aefc44b7c334acfc5f0c9e64a466",
-  "scientific_completion": false,
-  "status": "observed_original_final24_owner"
-}

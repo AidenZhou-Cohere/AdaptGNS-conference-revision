@@ -1,7 +1,0 @@
-{
-  "chunk_id": "1fa626",
-  "wall_time_seconds": 0.29762525,
-  "exit_code": 0,
-  "original_token_count": 55,
-  "output": "{\"status\": \"copied_exact_complementary_closure_status_tree\", \"files\": 72, \"manifest_sha256\": \"9a2ecde7f1362a69eb76f3c3726c11bf7feb0a27512a3ae174e2c2e1d1da479b\", \"tracked_file_overwrite_staging_commit_or_push\": false}\n"
-}

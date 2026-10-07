@@ -1,0 +1,49 @@
+{
+  "scope": "Portable orchestration derivative, no scientific execution",
+  "datasets": {
+    "goop": {
+      "original_basename": "train_goop_graph_support_cuda.py",
+      "original_sha256": "d761313c8d8cb560de47904a98046dbd21e0c31901127dce279f0a700db91dfd",
+      "portable_loop_basename": "goop_training_loop.py",
+      "portable_loop_sha256": "a70599475aacd462d546e7f925fa91c7f359307d1b48f51d0484c50c21b19007",
+      "unchanged_helper_ast_sha256": {
+        "graph_exposure_config": "fc5439381d869b4462d3e77667fd679b99827b426ea55d634ab8114cc5889146",
+        "validate_graph_history": "1b887e3f4b8bbd83ac40a5b83088d7b176c5a2cc20a8a31c6cdbe98ca2736119",
+        "capture_rng": "ff1a667938d040ad356472d2655cab62615d1026db144afcebd189384cfb5574",
+        "restore_rng": "d64d75d81deb0d9de6822b95eb30a2a009d24617794691402daba4980fdfd7e2",
+        "assert_adam": "40f2b6f642583418049af77f807d99c0791e5783d21f1b365de31ca9e8403c2e",
+        "guarded_update": "3b3c02de5ebb7491baf94b833d041099c6206459f1042a6b6ef9d58f776999ad",
+        "checkpoint_payload": "5fafb5f0f64e0894f3734a316d8f7466234ab400ae74743c7abdfa3915e6b87e",
+        "restore_payload": "024949f905902746377999daa637fddf33d076267b47129ed641f0b2eb91577f",
+        "read_pointer": "8ae103571bf28fb9dfb403b4f86098ebcbbeb9dc545deadbec0ced8e881e7926",
+        "configure_cuda": "8fc95f732c3b8f05890f0b5a2a33553b2be3c10f9f59211d003e237c8bf0378d"
+      }
+    },
+    "sand": {
+      "original_basename": "train_sand_graph_support_cuda.py",
+      "original_sha256": "8a43893be22eb59964caebdebe5b864868e2ae8e6ee55fe42ddac5d4b8ab3d15",
+      "portable_loop_basename": "sand_training_loop.py",
+      "portable_loop_sha256": "26ae79cfbda0e344b6160cf686418ca5249a593fd0a1b016e998466ffea0b731",
+      "unchanged_helper_ast_sha256": {
+        "graph_exposure_config": "fc5439381d869b4462d3e77667fd679b99827b426ea55d634ab8114cc5889146",
+        "validate_graph_history": "1b887e3f4b8bbd83ac40a5b83088d7b176c5a2cc20a8a31c6cdbe98ca2736119",
+        "capture_rng": "ff1a667938d040ad356472d2655cab62615d1026db144afcebd189384cfb5574",
+        "restore_rng": "d64d75d81deb0d9de6822b95eb30a2a009d24617794691402daba4980fdfd7e2",
+        "assert_adam": "40f2b6f642583418049af77f807d99c0791e5783d21f1b365de31ca9e8403c2e",
+        "guarded_update": "3b3c02de5ebb7491baf94b833d041099c6206459f1042a6b6ef9d58f776999ad",
+        "checkpoint_payload": "59fb9bf86879ecbcc3c5be831939fcf287b390275cab360b1df19daeedb8a4e4",
+        "restore_payload": "41d497851f67252362e34d26a38d69314582e726e629b57b33cc38d4ed5fcda4",
+        "read_pointer": "8ae103571bf28fb9dfb403b4f86098ebcbbeb9dc545deadbec0ced8e881e7926",
+        "configure_cuda": "8fc95f732c3b8f05890f0b5a2a33553b2be3c10f9f59211d003e237c8bf0378d"
+      }
+    }
+  },
+  "numerical_core": "Entire original while loop and model/Adam/RNG/checkpoint helpers unchanged",
+  "substitutions": [
+    "Data loader: public numeric manifest replaces root admission/evidence files",
+    "Add explicit portable-reproduction identity to run configuration",
+    "Final input rehash: manifest/metadata/protocol replace administrative receipts",
+    "Final numeric arrays/context/adapter rehash replaces historical evidence recheck",
+    "New portable schema; original historical cohort validators must not admit these as old runs"
+  ]
+}

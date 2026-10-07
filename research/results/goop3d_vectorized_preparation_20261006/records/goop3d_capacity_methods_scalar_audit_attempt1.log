@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_capacity_report_methods_v1.py", line 134, in <module>
-    check(finite(row['guarded_update_seconds'],True) and finite(row['elapsed_seconds'],True) and row['elapsed_seconds']>previous
-  File "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/audit_goop3d_vectorized_capacity_report_methods_v1.py", line 18, in check
-    if not v:raise AssertionError(label)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: Finite monotone timing/loss/exact LR

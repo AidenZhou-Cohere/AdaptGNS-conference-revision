@@ -1,6 +1,0 @@
-{
-  "python": "3.12.14",
-  "numpy": "2.5.3",
-  "matplotlib": "3.11.2",
-  "scope": "Local numerical check and direct-PNG preview environment; not experiment timing."
-}

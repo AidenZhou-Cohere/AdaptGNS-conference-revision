@@ -1,7 +1,0 @@
-{
-  "chunk_id": "62e2af",
-  "wall_time_seconds": 0.040830125,
-  "exit_code": 0,
-  "original_token_count": 56,
-  "output": "{\"path\": \"work/goop3d_completion_20261007/review_v1/observed_editorial_v4_review.json\", \"sha256\": \"38bfd09d86f1806d435ab2766c386cef82ac3d2b87884bac7448dbf676770102\", \"checks\": 34, \"status\": \"passed_narrow_v4_scope_review\"}\n"
-}

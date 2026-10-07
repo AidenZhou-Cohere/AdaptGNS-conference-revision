@@ -1,8 +1,0 @@
-{
-  "schema": "adaptgns_goop3d_scalar_collection_release_v1",
-  "issued_by": "root_required",
-  "status": "not_admitted",
-  "collector_sha256": null,
-  "files_sha256": null,
-  "instructions": "Root must bind the exact reviewed scalar module and six original absolute input paths after stopped-process and final cohort/split review. This template admits no action."
-}

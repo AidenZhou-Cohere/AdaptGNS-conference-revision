@@ -1,9 +1,0 @@
-{
-  "change": "Add portable handoff entry and delimit Mac-path local copies. No scientific/source change.",
-  "old_readme_sha256": "9e027571bdbc68462e7b0d09795ffffea2336f18aaecda29e093b7c4c3ad2671",
-  "new_readme_sha256": "7965d1dd616f948b54ec4ee8303d1bf4d7ca773aa0af84e0557d3f8d3a5a54e2",
-  "payload_files": 64,
-  "payload_bytes": 3199489,
-  "source_sha256": "656c3498bb7407c9c4bb312ae3bc319457cdd54ab248b45650b6a8d022d02549",
-  "earlier_editor_attempt": "First insertion expected a draft section heading; assertion stopped before any source/package edit. Original files preserved."
-}

@@ -1,8 +1,0 @@
-{
-  "schema": "adaptgns_sand_scoped_clock_check_v1",
-  "issued_by": null,
-  "host": null,
-  "checked_utc": null,
-  "root_host_samples_reviewed": false,
-  "clock_error_bound_seconds": null
-}

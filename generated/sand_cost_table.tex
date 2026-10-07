@@ -1,0 +1,24 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Sand full-horizon physical diagnostics and descriptive cost. For complete groups, matching truth is $0.061825\%$ outside; $0.00079537$ excursion. Time is committed-call time per trajectory, including native parity.}
+\label{tab:sand-all-cost}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside ($\%$) & Excursion & Seconds/case\\
+\midrule
+Base-only & Base & $12.72\pm14.41$ & $0.2291\pm0.3080$ & $14.589\pm0.827$\\
+Base-only & Dense & $18.59\pm24.68$ & $0.3956\pm0.5581$ & $12.242\pm1.032$\\
+Base-only & Random25 & $14.78\pm18.32$ & $0.2808\pm0.3951$ & $14.063\pm0.900$\\
+Base-only & Speed25 & $14.58\pm16.88$ & $0.2983\pm0.4152$ & $14.203\pm1.442$\\
+Base-only & Risk25 & $16.34\pm20.62$ & $0.3472\pm0.4915$ & $12.919\pm0.890$\\
+Base-only & RMS25 & $15.58\pm19.49$ & $0.3153\pm0.4414$ & $13.269\pm1.214$\\
+Mixed & Base & $10.13\pm11.11$ & $0.2734\pm0.3668$ & $15.402\pm1.469$\\
+Mixed & Dense & $12.72\pm12.60$ & $0.5365\pm0.7616$ & $12.812\pm1.496$\\
+Mixed & Random25 & $10.47\pm10.94$ & $0.3244\pm0.4453$ & $14.701\pm1.665$\\
+Mixed & Speed25 & $11.19\pm11.75$ & $0.4666\pm0.6812$ & $14.952\pm1.715$\\
+Mixed & Risk25 & $12.04\pm12.60$ & $0.4914\pm0.7048$ & $14.142\pm2.035$\\
+Mixed & RMS25 & $10.54\pm10.31$ & $0.3752\pm0.5251$ & $14.263\pm1.807$\\
+\bottomrule
+\end{tabular}
+\end{table}

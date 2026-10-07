@@ -1,12 +1,12 @@
 MIT License
 
-Copyright (c) 2026 Aiden Zhou
+Copyright (c) 2026 Anonymous authors
 Copyright (c) 2021 Geoelements GNS Authors
 
-Portions of this software (the contents of `adaptive-gns/`) are derived
+Portions of this software (the contents of `code/adaptive-gns/`) are derived
 from the Geoelements GNS project (https://github.com/geoelements/gns),
 which is distributed under the MIT License. The original notice is
-preserved at `adaptive-gns/license.md` and `adaptive-gns/AUTHORS.md`.
+preserved at `code/adaptive-gns/license.md` and `code/adaptive-gns/AUTHORS.md`.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

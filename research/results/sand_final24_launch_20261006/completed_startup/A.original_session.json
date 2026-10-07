@@ -1,8 +1,0 @@
-{
-  "evidence_file": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/sand_final24_released_root_v1/A.original_launch_tool_response.json",
-  "evidence_sha256": "f044f88d7e11e9a1a6674b13508e78e8bdccd35f735c6d2469f08d003251b526",
-  "launch_sha256": "6c3f5bd27140f7a5b8065d3128ba384f46d9e89e423ded6af1e7369d15f8fd5d",
-  "observed_utc": "2026-10-06T20:13:19.248451+00:00",
-  "original_tool_session": 51595,
-  "recorded_by": "root"
-}

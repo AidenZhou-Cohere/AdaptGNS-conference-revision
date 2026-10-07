@@ -1,0 +1,68 @@
+{
+  "aggregation": "All required trajectories contribute; a failed or missing full-horizon outcome makes its complete-population seed mean and three-seed mean null. Prefixes never replace full-horizon values.",
+  "goop2d": {
+    "candidate_pair_limit": 100000,
+    "failed_cases": [
+      {
+        "accepted_steps": 205,
+        "arm": "mix",
+        "candidate_pairs": 100451,
+        "failed_forecast": 206,
+        "policy": "dense",
+        "seed": 2,
+        "source_index": 11
+      },
+      {
+        "accepted_steps": 262,
+        "arm": "mix",
+        "candidate_pairs": 100563,
+        "failed_forecast": 263,
+        "policy": "laggedrisk25",
+        "seed": 2,
+        "source_index": 11
+      },
+      {
+        "accepted_steps": 313,
+        "arm": "mix",
+        "candidate_pairs": 100415,
+        "failed_forecast": 314,
+        "policy": "base",
+        "seed": 2,
+        "source_index": 15
+      }
+    ],
+    "horizon": 395,
+    "required_trajectories_per_arm_policy": 90
+  },
+  "goop3d_observed": {
+    "autonomous_scope": "Separate H295 comparison; not implied by observed results.",
+    "observed_complete": true,
+    "required_models": 6,
+    "required_observed_cells": 2568,
+    "updates": 25000
+  },
+  "sand": {
+    "failures": 0,
+    "horizon": 314,
+    "required_trajectories_per_arm_policy": 90
+  },
+  "waterdrop_exposure": {
+    "failures": 0,
+    "horizon": 995,
+    "required_trajectories_per_arm_policy": 81
+  },
+  "waterdrop_objective_control": {
+    "coordinate_guard_absolute_limit": 10,
+    "faithful_failures": 0,
+    "horizon": 995,
+    "individual_records": "controls/waterdrop_objective_rollouts.json",
+    "nll_seed2_failed_counts": {
+      "base": 1,
+      "dense": 2,
+      "laggedrisk25": 1,
+      "random25": 4,
+      "speed25": 0
+    },
+    "required_trajectories_per_objective_policy": 81
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "status": "passed",
-  "all_scalar_files": 74,
-  "omitted_checkpoints": 12,
-  "archive_sha256": "0886efa92a4cd08f427ff45ba369bbc52eef1d0bfd206421f0640ae6897162b8",
-  "artifact_inventory_sha256": "df741af7c0e69d6050d2de7d3fc1c82a1628d1f0b6efa4cb8ed07b298416f248"
-}

@@ -1,9 +1,0 @@
-{
-  "schema": "adaptgns_sand_scientific_process_check_v1",
-  "template_only": true,
-  "checked_utc": null,
-  "host": null,
-  "gpu_uuids": [],
-  "matching_training_processes": null,
-  "gpu_processes": null
-}

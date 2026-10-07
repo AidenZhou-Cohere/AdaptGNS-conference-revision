@@ -1,1 +1,0 @@
-{"schema": "adaptgns_goop_action_gate_scoped_supervisor_v1", "status": "description_only", "driver_reviewed": true, "mapping": {"0": [0, 2], "1": [1]}, "owns_only_B_GPUs": [0, 1]}

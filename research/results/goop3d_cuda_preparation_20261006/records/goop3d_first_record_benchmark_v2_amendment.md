@@ -1,7 +1,0 @@
-# First-record benchmark v2: input-layout repair only
-
-Version1 failed in load_inputs before CUDA configuration, model forward or optimizer updates: the bounded inspector stores numeric/{basename}, while its manifest-style record descriptor names train/{basename}. All three actual local array hashes/sizes match the original frozen inspection report. Preserve the v1 source, report, stdout/stderr and protocol unchanged. Failure review: goop3d_first_record_capacity_v1_failure_review.json.
-
-Use separate benchmark_goop3d_first_record_v2.py, SHA8cfaa4fcf16afaa459b805445b0a6c25282919dd23776872fe353daa06043722. Only the schema name and resolution to inspection_dir/numeric/basename changed. The graph adapter remains SHA7d43fe7d06ac450b6b9031181902cfc6d3d9754af3a26e17e96fd46c4a1bf64f. Fifteen CPU tests pass, including the real immutable JSON layout with synthetic arrays; the original14checks still pass. No official array values or CUDA were used for the regression.
-
-The original protocol SHA13dd8cc14ea7277acf39dd1b6ecf35dc5ff57a1c388ced3b3978c2d2c7100afa otherwise remains the experiment: same record, target, seed/noise, two cases, architecture, radius/loss,8updates and resource guards. Root may use its exact command with only script filename benchmark_goop3d_first_record_v2.py and fresh output goop3d_first_record_capacity_20261006_v2. Keep the600sGNUtimeout plus30sKILL and current GPU identity/process checks. No scientific model admission or test access follows from a passing fixed-state benchmark.

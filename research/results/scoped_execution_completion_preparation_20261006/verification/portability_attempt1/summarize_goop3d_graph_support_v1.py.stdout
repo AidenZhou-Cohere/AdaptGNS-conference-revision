@@ -1,1 +1,0 @@
-{"schema": "adaptgns_goop3d_paired_scalar_summary_v1", "status": "description_only", "horizon": 295, "dimension": 3, "required_models": 6, "required_model_stages": 30, "source_grid": "allN<=30 otherwise floor(j*(N-1)/29)", "numeric_arrays_deserialized": false, "scientific_endpoint_selected": false}

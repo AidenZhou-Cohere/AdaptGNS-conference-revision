@@ -1,0 +1,25 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Sand absolute position-coordinate errors. Observed validation/test columns use $10^{-8}$ units; H314 averages every autonomous forecast in coordinate-squared units. Every rollout row contains all 90 required trajectories with no failures. Means and sample SDs retain all three seeds. The risk score uses the preceding observed base graph for observed histories and its own selected-graph cache for rollouts.}
+\label{tab:sand-all-observed}
+\label{tab:sand-all-rollouts}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Obs. validation ($10^{-8}$) & Obs. test ($10^{-8}$) & H314\\
+\midrule
+Base-only & Base & $5.099\pm0.216$ & $3.398\pm0.581$ & $0.06785\pm0.06378$\\
+Base-only & Dense & $7.545\pm0.865$ & $5.800\pm1.139$ & $0.12934\pm0.14479$\\
+Base-only & Random25 & $5.472\pm0.362$ & $3.735\pm0.754$ & $0.08298\pm0.08643$\\
+Base-only & Speed25 & $5.802\pm0.457$ & $4.340\pm1.069$ & $0.08085\pm0.07898$\\
+Base-only & Risk25 & $6.581\pm0.575$ & $4.211\pm1.133$ & $0.09714\pm0.10755$\\
+Base-only & RMS25 & $6.728\pm0.457$ & $4.433\pm0.963$ & $0.08782\pm0.09293$\\
+Mixed & Base & $4.806\pm0.118$ & $3.314\pm0.291$ & $0.06781\pm0.06218$\\
+Mixed & Dense & $6.215\pm0.637$ & $4.334\pm0.383$ & $0.12602\pm0.14751$\\
+Mixed & Random25 & $4.961\pm0.258$ & $3.349\pm0.389$ & $0.07240\pm0.06802$\\
+Mixed & Speed25 & $5.161\pm0.276$ & $3.786\pm0.509$ & $0.09071\pm0.09794$\\
+Mixed & Risk25 & $5.662\pm0.324$ & $3.536\pm0.493$ & $0.10631\pm0.11951$\\
+Mixed & RMS25 & $5.855\pm0.396$ & $3.698\pm0.442$ & $0.08507\pm0.08888$\\
+\bottomrule
+\end{tabular}
+\end{table}

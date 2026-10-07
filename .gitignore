@@ -1,55 +1,11 @@
-# macOS
-.DS_Store
-
-# Python
 __pycache__/
 *.py[cod]
-*.pyo
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.ipynb_checkpoints/
-
-# Virtual environments
-venv/
+.DS_Store
 .venv/
-env/
-.env
-
-# LaTeX build artefacts
-*.aux
-*.bbl
-*.blg
-*.fdb_latexmk
-*.fls
-*.log
-*.out
-*.synctex.gz
-*.toc
-
-# Tectonic local install
-tectonic
-
-# Editor / IDE
-.idea/
-.vscode/
-
-# Datasets (download via instructions in README.md)
-**/dataset/*.npz
-**/dataset/*.tfrecord
-!**/dataset/metadata.json
-
-# Trained model checkpoints (too large for git; use Zenodo / release artefacts)
+venv/
 *.pt
 *.pth
-*.ckpt
-
-# Stray rollout outputs from accidental --output_path=. invocations
-**/..json
-**/..npz
-
-# Atomic model writes and active long-running local experiment state
-*.pt.tmp
-research/results/**/run.lock*
-research/results/**/queue.lock*
-research/results/full_waterdrop_100k/
+*.npz
+*.npy
+matplotlib_cache/

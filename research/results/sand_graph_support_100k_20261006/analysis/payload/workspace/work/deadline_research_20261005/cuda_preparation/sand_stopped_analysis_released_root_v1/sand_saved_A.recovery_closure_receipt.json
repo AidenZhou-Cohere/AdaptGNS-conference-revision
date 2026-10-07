@@ -1,9 +1,0 @@
-{
-  "accepted_root_review_sha256": "6d07b58342747b6c716ebebeb2407d7ec72bd6100ffb547e8c4af06e80786d42",
-  "actual_capture_tag": "sand_saved_A.capture_recovery1",
-  "capture_sha256": "1cd96a3e3537bb45dd2c1a58ed4b875d8f3cebf94f7110a0e5f759ff06d8a5f1",
-  "new_clock_granted": false,
-  "original_failed_capture_preserved": true,
-  "original_worker_session": 66211,
-  "phase_sha256": "0ac7a368dd8afa921c8b973c5a8a760af7f10eb9f3413bceb592fff0c0ad7a5c"
-}

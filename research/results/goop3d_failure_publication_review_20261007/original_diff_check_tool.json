@@ -1,7 +1,0 @@
-{
-  "chunk_id": "5bf384",
-  "wall_time_seconds": 0.111938292,
-  "exit_code": 2,
-  "original_token_count": 141,
-  "output": "research/results/goop3d_observed_history_failure_closure_20261007/addendum/payload/workspace/work/d3_attempted_study_status_candidate_statistics_v1/candidate.patch:6: trailing whitespace.\n+ \nresearch/results/goop3d_observed_history_failure_closure_20261007/addendum/payload/workspace/work/d3_attempted_study_status_candidate_statistics_v1/paragraph_candidate.txt:3: new blank line at EOF.\nresearch/results/goop3d_observed_history_failure_closure_20261007/addendum/payload/workspace/work/d3_attempted_study_status_root_v1/paragraph.tex:3: new blank line at EOF.\n"
-}

@@ -1,0 +1,197 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop absolute errors for all policies and both training arms. Observed-test position-coordinate MSE uses $10^{-8}$ units; H395 averages all forecasts in coordinate-squared units. Each observed row has 150 histories per model, and each rollout row requires 90 trajectories. A guard failure leaves its full-horizon three-seed mean undefined. Risk25 uses preceding-observed-base scores in the observed column and its own cached selected-graph scores in rollouts.}
+\label{tab:goop-all-observed}
+\label{tab:goop-all-rollouts}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Observed test ($10^{-8}$) & H395 & Failed/90\\
+\midrule
+Base-only & Base & $1.2703\pm0.0562$ & $0.2468\pm0.1493$ & 0/90\\
+Base-only & Dense & $1.4625\pm0.0634$ & $0.4958\pm0.2370$ & 0/90\\
+Base-only & Random25 & $1.2631\pm0.0582$ & $0.3011\pm0.1695$ & 0/90\\
+Base-only & Speed25 & $1.3027\pm0.0607$ & $0.2722\pm0.1347$ & 0/90\\
+Base-only & Risk25 & $1.3270\pm0.0491$ & $0.3102\pm0.1573$ & 0/90\\
+Base-only & RMS25 & $1.3691\pm0.0580$ & $0.3329\pm0.2087$ & 0/90\\
+Mixed & Base & $1.2399\pm0.0936$ & --- & 1/90\\
+Mixed & Dense & $1.2741\pm0.0948$ & --- & 1/90\\
+Mixed & Random25 & $1.2081\pm0.0905$ & $0.1287\pm0.0312$ & 0/90\\
+Mixed & Speed25 & $1.2295\pm0.0847$ & $0.1124\pm0.0267$ & 0/90\\
+Mixed & Risk25 & $1.2364\pm0.0797$ & --- & 1/90\\
+Mixed & RMS25 & $1.2714\pm0.0882$ & $0.1251\pm0.0315$ & 0/90\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{WaterDrop continuation absolute position-coordinate errors. Observed validation/test columns use $10^{-9}$ units; H995 averages every autonomous forecast in coordinate-squared units. Every rollout row contains all 81 required trajectories with no failures. Means and sample SDs retain all three seeds. The risk score uses the preceding observed base graph for observed histories and its own selected-graph cache for rollouts. RMS25 was not a declared WaterDrop policy.}
+\label{tab:waterdrop110k-observed}
+\label{tab:waterdrop110k-rollout}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Obs. validation ($10^{-9}$) & Obs. test ($10^{-9}$) & H995\\
+\midrule
+Base-only & Base & $4.422\pm0.278$ & $4.034\pm0.265$ & $0.044\pm0.038$\\
+Base-only & Dense & $4.855\pm0.358$ & $4.301\pm0.242$ & $0.055\pm0.036$\\
+Base-only & Random25 & $4.070\pm0.233$ & $3.631\pm0.239$ & $0.049\pm0.042$\\
+Base-only & Speed25 & $4.510\pm0.222$ & $3.882\pm0.186$ & $0.040\pm0.030$\\
+Base-only & Risk25 & $4.357\pm0.210$ & $3.792\pm0.163$ & $0.042\pm0.030$\\
+Mixed & Base & $4.443\pm0.233$ & $4.104\pm0.234$ & $0.039\pm0.030$\\
+Mixed & Dense & $4.287\pm0.183$ & $3.791\pm0.192$ & $0.043\pm0.033$\\
+Mixed & Random25 & $4.055\pm0.242$ & $3.658\pm0.266$ & $0.043\pm0.037$\\
+Mixed & Speed25 & $4.377\pm0.249$ & $3.751\pm0.265$ & $0.035\pm0.025$\\
+Mixed & Risk25 & $4.076\pm0.195$ & $3.559\pm0.237$ & $0.039\pm0.029$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Sand absolute position-coordinate errors. Observed validation/test columns use $10^{-8}$ units; H314 averages every autonomous forecast in coordinate-squared units. Every rollout row contains all 90 required trajectories with no failures. Means and sample SDs retain all three seeds. The risk score uses the preceding observed base graph for observed histories and its own selected-graph cache for rollouts.}
+\label{tab:sand-all-observed}
+\label{tab:sand-all-rollouts}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Obs. validation ($10^{-8}$) & Obs. test ($10^{-8}$) & H314\\
+\midrule
+Base-only & Base & $5.099\pm0.216$ & $3.398\pm0.581$ & $0.06785\pm0.06378$\\
+Base-only & Dense & $7.545\pm0.865$ & $5.800\pm1.139$ & $0.12934\pm0.14479$\\
+Base-only & Random25 & $5.472\pm0.362$ & $3.735\pm0.754$ & $0.08298\pm0.08643$\\
+Base-only & Speed25 & $5.802\pm0.457$ & $4.340\pm1.069$ & $0.08085\pm0.07898$\\
+Base-only & Risk25 & $6.581\pm0.575$ & $4.211\pm1.133$ & $0.09714\pm0.10755$\\
+Base-only & RMS25 & $6.728\pm0.457$ & $4.433\pm0.963$ & $0.08782\pm0.09293$\\
+Mixed & Base & $4.806\pm0.118$ & $3.314\pm0.291$ & $0.06781\pm0.06218$\\
+Mixed & Dense & $6.215\pm0.637$ & $4.334\pm0.383$ & $0.12602\pm0.14751$\\
+Mixed & Random25 & $4.961\pm0.258$ & $3.349\pm0.389$ & $0.07240\pm0.06802$\\
+Mixed & Speed25 & $5.161\pm0.276$ & $3.786\pm0.509$ & $0.09071\pm0.09794$\\
+Mixed & Risk25 & $5.662\pm0.324$ & $3.536\pm0.493$ & $0.10631\pm0.11951$\\
+Mixed & RMS25 & $5.855\pm0.396$ & $3.698\pm0.442$ & $0.08507\pm0.08888$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop full-horizon physical diagnostics and descriptive cost. For complete groups, matching truth is $0.0632\%$ outside; $0.000722$ excursion. Time pools committed cases, including guard attempts and failed prefixes; no across-seed SD was recorded for this pooled quantity. Full-horizon geometry remains undefined for failed groups.}
+\label{tab:goop-all-cost}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside ($\%$) & Excursion & Seconds/case\\
+\midrule
+Base-only & Base & $33.00\pm12.69$ & $1.310\pm0.746$ & 22.091\\
+Base-only & Dense & $53.19\pm4.70$ & $1.689\pm0.740$ & 22.103\\
+Base-only & Random25 & $37.12\pm8.13$ & $1.455\pm0.853$ & 21.656\\
+Base-only & Speed25 & $35.59\pm9.46$ & $1.384\pm0.777$ & 22.371\\
+Base-only & Risk25 & $38.55\pm9.85$ & $1.393\pm0.646$ & 21.901\\
+Base-only & RMS25 & $38.82\pm12.10$ & $1.480\pm0.760$ & 21.999\\
+Mixed & Base & --- & --- & 24.320\\
+Mixed & Dense & --- & --- & 24.738\\
+Mixed & Random25 & $22.16\pm4.55$ & $0.401\pm0.244$ & 25.354\\
+Mixed & Speed25 & $19.55\pm4.79$ & $0.417\pm0.306$ & 24.464\\
+Mixed & Risk25 & --- & --- & 24.540\\
+Mixed & RMS25 & $20.53\pm5.46$ & $0.426\pm0.334$ & 24.348\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{WaterDrop full-horizon physical diagnostics and descriptive cost. For complete groups, matching truth is $2.678\%$ outside; $0.00782$ excursion. Time is recorded policy wall time per trajectory, before the separately measured parity overhead.}
+\label{tab:waterdrop110k-cost}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside ($\%$) & Excursion & Seconds/case\\
+\midrule
+Base-only & Base & $17.37\pm10.44$ & $0.372\pm0.381$ & $20.60\pm1.66$\\
+Base-only & Dense & $18.98\pm9.68$ & $0.503\pm0.275$ & $17.71\pm1.03$\\
+Base-only & Random25 & $18.17\pm10.48$ & $0.439\pm0.416$ & $19.26\pm1.41$\\
+Base-only & Speed25 & $17.37\pm10.60$ & $0.417\pm0.336$ & $19.86\pm1.52$\\
+Base-only & Risk25 & $17.07\pm10.23$ & $0.413\pm0.309$ & $19.11\pm1.33$\\
+Mixed & Base & $16.40\pm10.39$ & $0.350\pm0.402$ & $21.56\pm1.59$\\
+Mixed & Dense & $19.73\pm10.52$ & $0.446\pm0.368$ & $20.94\pm1.42$\\
+Mixed & Random25 & $17.46\pm10.59$ & $0.398\pm0.432$ & $21.13\pm1.53$\\
+Mixed & Speed25 & $16.71\pm10.46$ & $0.335\pm0.318$ & $21.86\pm1.84$\\
+Mixed & Risk25 & $17.21\pm10.39$ & $0.393\pm0.392$ & $20.75\pm1.53$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Sand full-horizon physical diagnostics and descriptive cost. For complete groups, matching truth is $0.061825\%$ outside; $0.00079537$ excursion. Time is committed-call time per trajectory, including native parity.}
+\label{tab:sand-all-cost}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside ($\%$) & Excursion & Seconds/case\\
+\midrule
+Base-only & Base & $12.72\pm14.41$ & $0.2291\pm0.3080$ & $14.589\pm0.827$\\
+Base-only & Dense & $18.59\pm24.68$ & $0.3956\pm0.5581$ & $12.242\pm1.032$\\
+Base-only & Random25 & $14.78\pm18.32$ & $0.2808\pm0.3951$ & $14.063\pm0.900$\\
+Base-only & Speed25 & $14.58\pm16.88$ & $0.2983\pm0.4152$ & $14.203\pm1.442$\\
+Base-only & Risk25 & $16.34\pm20.62$ & $0.3472\pm0.4915$ & $12.919\pm0.890$\\
+Base-only & RMS25 & $15.58\pm19.49$ & $0.3153\pm0.4414$ & $13.269\pm1.214$\\
+Mixed & Base & $10.13\pm11.11$ & $0.2734\pm0.3668$ & $15.402\pm1.469$\\
+Mixed & Dense & $12.72\pm12.60$ & $0.5365\pm0.7616$ & $12.812\pm1.496$\\
+Mixed & Random25 & $10.47\pm10.94$ & $0.3244\pm0.4453$ & $14.701\pm1.665$\\
+Mixed & Speed25 & $11.19\pm11.75$ & $0.4666\pm0.6812$ & $14.952\pm1.715$\\
+Mixed & Risk25 & $12.04\pm12.60$ & $0.4914\pm0.7048$ & $14.142\pm2.035$\\
+Mixed & RMS25 & $10.54\pm10.31$ & $0.3752\pm0.5251$ & $14.263\pm1.807$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]\centering\small
+\caption{All three Goop guard failures, each in mixed-training seed 2. The candidate-pair limit is 100,000. Accepted prefixes exclude the rejected forecast and do not replace full-H395 statistics.}
+\label{tab:goop-all-failures}
+\begin{tabular}{lrrrr}
+\toprule
+Policy & Source & Accepted & Fails at & Pairs\\
+\midrule
+Dense & 11 & 205 & 206 & 100451\\
+Cached risk25 & 11 & 262 & 263 & 100563\\
+Base & 15 & 313 & 314 & 100415\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop3D 25k observed training effects, mixed minus base-only, for every policy ($10^{-9}$ position-coordinate MSE). Negative favors mixed training. Brackets preserve the signs of seeds 0/1/2; mean $\pm$ sample SD describes all three seeds.}
+\label{tab:goop3d25k-observed-position-training}
+\begin{tabular}{lrr}
+\toprule
+Policy & Validation & Test\\
+\midrule
+Base & $-0.047\pm1.717$ [-/+/+] & $+0.156\pm1.748$ [-/+/+]\\
+Dense & $-0.693\pm1.741$ [-/-/+] & $-0.570\pm1.311$ [-/-/+]\\
+Random25 & $-0.292\pm1.715$ [-/-/+] & $-0.100\pm1.572$ [-/+/+]\\
+Speed25 & $-0.451\pm1.544$ [-/-/+] & $-0.185\pm1.569$ [-/+/+]\\
+Risk25 & $-0.327\pm1.586$ [-/-/+] & $-0.347\pm1.438$ [-/-/+]\\
+RMS25 & $-0.482\pm1.717$ [-/-/+] & $-0.200\pm1.577$ [-/-/+]\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop3D 25k observed risk-minus-random gaps ($10^{-9}$ position-coordinate MSE). Negative within-arm gaps favor risk. Change in gap is mixed minus base-only; it need not imply a negative within-arm gap.}
+\label{tab:goop3d25k-observed-position-contrasts}
+\begin{tabular}{lrr}
+\toprule
+Training/contrast & Validation & Test\\
+\midrule
+Base-only & $-0.159\pm0.468$ & $+0.327\pm0.148$\\
+Mixed & $-0.193\pm0.408$ & $+0.080\pm0.120$\\
+Change in gap & $-0.034\pm0.130$ & $-0.247\pm0.135$\\
+\bottomrule
+\end{tabular}
+\end{table}

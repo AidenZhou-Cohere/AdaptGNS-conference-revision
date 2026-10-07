@@ -1,0 +1,25 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{Goop absolute errors for all policies and both training arms. Observed-test position-coordinate MSE uses $10^{-8}$ units; H395 averages all forecasts in coordinate-squared units. Each observed row has 150 histories per model, and each rollout row requires 90 trajectories. A guard failure leaves its full-horizon three-seed mean undefined. Risk25 uses preceding-observed-base scores in the observed column and its own cached selected-graph scores in rollouts.}
+\label{tab:goop-all-observed}
+\label{tab:goop-all-rollouts}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Observed test ($10^{-8}$) & H395 & Failed/90\\
+\midrule
+Base-only & Base & $1.2703\pm0.0562$ & $0.2468\pm0.1493$ & 0/90\\
+Base-only & Dense & $1.4625\pm0.0634$ & $0.4958\pm0.2370$ & 0/90\\
+Base-only & Random25 & $1.2631\pm0.0582$ & $0.3011\pm0.1695$ & 0/90\\
+Base-only & Speed25 & $1.3027\pm0.0607$ & $0.2722\pm0.1347$ & 0/90\\
+Base-only & Risk25 & $1.3270\pm0.0491$ & $0.3102\pm0.1573$ & 0/90\\
+Base-only & RMS25 & $1.3691\pm0.0580$ & $0.3329\pm0.2087$ & 0/90\\
+Mixed & Base & $1.2399\pm0.0936$ & --- & 1/90\\
+Mixed & Dense & $1.2741\pm0.0948$ & --- & 1/90\\
+Mixed & Random25 & $1.2081\pm0.0905$ & $0.1287\pm0.0312$ & 0/90\\
+Mixed & Speed25 & $1.2295\pm0.0847$ & $0.1124\pm0.0267$ & 0/90\\
+Mixed & Risk25 & $1.2364\pm0.0797$ & --- & 1/90\\
+Mixed & RMS25 & $1.2714\pm0.0882$ & $0.1251\pm0.0315$ & 0/90\\
+\bottomrule
+\end{tabular}
+\end{table}

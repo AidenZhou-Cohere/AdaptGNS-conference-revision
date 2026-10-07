@@ -1,7 +1,0 @@
-{
-  "status": "preserved_curation_preparation_failure",
-  "error": "AssertionError: README.md",
-  "cause": "The first selection builder incorrectly rejected the intentionally replaced package README as a duplicate.",
-  "effects": "Only the manuscript input-closure JSON was written. No plan, package copy, scientific execution or fork mutation occurred.",
-  "resolution": "Exclude the explicitly replaced destination before checking newly added entry uniqueness; preserve the already written exact closure."
-}

@@ -1,9 +1,0 @@
-{
-  "source_summary_sha256": "23ecdbba1c906043530519c9ae74bcc167fda074ad4c01470838271fc2984e1f",
-  "independent_audit_sha256": "de17d9016d76575534dabaabf27885f079c3117d756698bd4443a968fcc005fc",
-  "generator_sha256": "41ebc77da044a16b4815378f5091cf3f74ebbf2544d9c15fb75a567d23a261aa",
-  "main_sha256": "d3499e2a91da39d436397ffce23efc96ee225b2add4d781822b432b583c2bf18",
-  "appendix_sha256": "ac33184cbce0487f6e84c2d620a5cb50e62c993e7d88d132db079069772855cc",
-  "all_seeds_and_policies_retained": true,
-  "runtime_qualification": "All NLLseed2 clocks are preserved as possibly interrupted; no uninterrupted three-seed NLL timing claim."
-}

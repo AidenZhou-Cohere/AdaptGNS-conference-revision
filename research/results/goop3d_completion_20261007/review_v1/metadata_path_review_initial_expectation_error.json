@@ -1,6 +1,0 @@
-{
-  "status": "reviewer_expectation_error",
-  "actual_tool": "ee5fa4",
-  "exit_code": 1,
-  "reason": "Initial reviewer expected only path text substitution. HANDOFF also explains why original teal path is used; diff27be66 confirms this was the only additional change. No production source or scientific failure."
-}

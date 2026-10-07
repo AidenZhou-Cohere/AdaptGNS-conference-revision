@@ -1,8 +1,0 @@
-{
-  "source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/paper_story_20261007/report_v2/revision_report_candidate.pdf",
-  "destination": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revision_report.pdf",
-  "sha256": "10dcfb78f2ed510a47c04d66ba8aff03a9aa71d6efeb90787930756d4c69b06e",
-  "pages": 23,
-  "prior21_pages_preserved": true,
-  "review": "report_v2/independent_new_pages_reader_review.json"
-}

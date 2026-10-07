@@ -1,0 +1,8 @@
+numpy==2.5.3
+scipy==1.18.1
+torch-geometric==2.8.0.post1
+tfrecord==1.14.6
+crc32c==2.9.post0
+protobuf==7.36.2
+pytest==9.1.1
+# Install PyTorch for your device separately. Reported CUDA:2.13.0+cu129; local MPS:2.14.1.

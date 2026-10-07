@@ -1,0 +1,22 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{WaterDrop full-horizon physical diagnostics and descriptive cost. For complete groups, matching truth is $2.678\%$ outside; $0.00782$ excursion. Time is recorded policy wall time per trajectory, before the separately measured parity overhead.}
+\label{tab:waterdrop110k-cost}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Outside ($\%$) & Excursion & Seconds/case\\
+\midrule
+Base-only & Base & $17.37\pm10.44$ & $0.372\pm0.381$ & $20.60\pm1.66$\\
+Base-only & Dense & $18.98\pm9.68$ & $0.503\pm0.275$ & $17.71\pm1.03$\\
+Base-only & Random25 & $18.17\pm10.48$ & $0.439\pm0.416$ & $19.26\pm1.41$\\
+Base-only & Speed25 & $17.37\pm10.60$ & $0.417\pm0.336$ & $19.86\pm1.52$\\
+Base-only & Risk25 & $17.07\pm10.23$ & $0.413\pm0.309$ & $19.11\pm1.33$\\
+Mixed & Base & $16.40\pm10.39$ & $0.350\pm0.402$ & $21.56\pm1.59$\\
+Mixed & Dense & $19.73\pm10.52$ & $0.446\pm0.368$ & $20.94\pm1.42$\\
+Mixed & Random25 & $17.46\pm10.59$ & $0.398\pm0.432$ & $21.13\pm1.53$\\
+Mixed & Speed25 & $16.71\pm10.46$ & $0.335\pm0.318$ & $21.86\pm1.84$\\
+Mixed & Risk25 & $17.21\pm10.39$ & $0.393\pm0.392$ & $20.75\pm1.53$\\
+\bottomrule
+\end{tabular}
+\end{table}

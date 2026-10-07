@@ -1,4 +1,0 @@
-Tue Oct  6 02:17:49 UTC 2026
-pid, gpu_uuid, process_name
- 387747      42 Tue Oct  6 02:17:48 2026       00:00 /bin/bash -c date -u; nvidia-smi --query-compute-apps=pid,gpu_uuid,process_name --format=csv; ps -eo pid,ppid,lstart,etime,args | grep -E "386916|386919|train_sand|measure_sand|diagnose_sand|benchmark_sand"
- 387751  387747 Tue Oct  6 02:17:48 2026       00:00 grep -E 386916|386919|train_sand|measure_sand|diagnose_sand|benchmark_sand

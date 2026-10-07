@@ -1,0 +1,23 @@
+\begin{table}[!ht]
+\centering\small
+\setlength{\tabcolsep}{5pt}\renewcommand{\arraystretch}{1.12}
+\caption{WaterDrop continuation absolute position-coordinate errors. Observed validation/test columns use $10^{-9}$ units; H995 averages every autonomous forecast in coordinate-squared units. Every rollout row contains all 81 required trajectories with no failures. Means and sample SDs retain all three seeds. The risk score uses the preceding observed base graph for observed histories and its own selected-graph cache for rollouts. RMS25 was not a declared WaterDrop policy.}
+\label{tab:waterdrop110k-observed}
+\label{tab:waterdrop110k-rollout}
+\begin{tabular}{llrrr}
+\toprule
+Training & Policy & Obs. validation ($10^{-9}$) & Obs. test ($10^{-9}$) & H995\\
+\midrule
+Base-only & Base & $4.422\pm0.278$ & $4.034\pm0.265$ & $0.044\pm0.038$\\
+Base-only & Dense & $4.855\pm0.358$ & $4.301\pm0.242$ & $0.055\pm0.036$\\
+Base-only & Random25 & $4.070\pm0.233$ & $3.631\pm0.239$ & $0.049\pm0.042$\\
+Base-only & Speed25 & $4.510\pm0.222$ & $3.882\pm0.186$ & $0.040\pm0.030$\\
+Base-only & Risk25 & $4.357\pm0.210$ & $3.792\pm0.163$ & $0.042\pm0.030$\\
+Mixed & Base & $4.443\pm0.233$ & $4.104\pm0.234$ & $0.039\pm0.030$\\
+Mixed & Dense & $4.287\pm0.183$ & $3.791\pm0.192$ & $0.043\pm0.033$\\
+Mixed & Random25 & $4.055\pm0.242$ & $3.658\pm0.266$ & $0.043\pm0.037$\\
+Mixed & Speed25 & $4.377\pm0.249$ & $3.751\pm0.265$ & $0.035\pm0.025$\\
+Mixed & Risk25 & $4.076\pm0.195$ & $3.559\pm0.237$ & $0.039\pm0.029$\\
+\bottomrule
+\end{tabular}
+\end{table}

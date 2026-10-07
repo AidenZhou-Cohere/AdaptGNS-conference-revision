@@ -1,6 +1,0 @@
-{
-  "status": "failed_before_pdf_authoring",
-  "interpreter": "bundled document Python",
-  "error": "ModuleNotFoundError: No module named matplotlib",
-  "repair": "Use bundled Python with the existing work/venv Python3.12 site-packages on PYTHONPATH for plotting; no installation or source change."
-}

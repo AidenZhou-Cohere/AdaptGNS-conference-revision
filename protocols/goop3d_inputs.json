@@ -1,0 +1,2659 @@
+{
+  "endpoint_updates": 25000,
+  "frames": 301,
+  "horizon": 295,
+  "models": [
+    {
+      "arm": "base",
+      "checkpoint_sha256": "1ee0043cdeba64b752ba4459c524c2d81e6a407d3dcfabd4eca5f0b2cf7df2f5",
+      "config_sha256": "f4e5da26c5e9e282e9c097751c555b37fbbe02177ff600323c904270bcfe746d",
+      "seed": 0
+    },
+    {
+      "arm": "base",
+      "checkpoint_sha256": "2c758fbc5da76ce5b8458edec82ec617bdead52ee14bd40c3ffeaced94dc3791",
+      "config_sha256": "6e79cde6f76ff673470a5a1a183b3c67cf5c32abbb4a6434f9fdc41a5fb306b7",
+      "seed": 1
+    },
+    {
+      "arm": "mix",
+      "checkpoint_sha256": "ce1c4647c3dbdbf8f1ff21ec0e523b666eb5cedd4b8959efd1e801ba04d0bfee",
+      "config_sha256": "371a2657ba230ded589738dbfb328ba985e05f6b585c2523d43237511f779eb1",
+      "seed": 0
+    },
+    {
+      "arm": "mix",
+      "checkpoint_sha256": "17fa66e27e348e1e93e967e694b96d42e82b0e17a0deb3b0935b83f890230297",
+      "config_sha256": "20266fa8e4601087731b69241217451b8bc95e850ad0a49af12c16b78f63ccb3",
+      "seed": 1
+    },
+    {
+      "arm": "base",
+      "checkpoint_sha256": "fe1697aac142474db83d10dc1b75e7b478628d6e95d9859da9d2cbfd79df8f56",
+      "config_sha256": "3fa706940636b9491bff733564eb7fbdc151c82e8a09e906fab60ee1076437fe",
+      "seed": 2
+    },
+    {
+      "arm": "mix",
+      "checkpoint_sha256": "39c57d1576433d602155451c38d9a5b8a1510d9b4060b33aec95225a7b10ef4a",
+      "config_sha256": "e5b8bbac77cb5ef35e74bf2b57706902b458acf35d41336a88cc8417d0c3c894",
+      "seed": 2
+    }
+  ],
+  "policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ],
+  "rng_seed_expression": "93000+1000*seed+source_index",
+  "splits": {
+    "test": {
+      "manifest_sha256": "08edf3282267c05a427fc264a1a3aa547e062bc9b5ccb8ab7f982cfb3a9fb7cb",
+      "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+      "record_count": 100,
+      "records": [
+        {
+          "id": "test:000000",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000000.npy",
+            "sha256": "8d6b672fd301af84b187bfbe4b921d9d74bd03e779b1bc814c7e2f31767c7e6a",
+            "shape": [
+              7936
+            ],
+            "size_bytes": 63616
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000000.npy",
+            "sha256": "f70a8486c05fe8fba97d6a42816692ba556cbb439e730810e02225d3351b5d83",
+            "shape": [
+              301,
+              7936,
+              3
+            ],
+            "size_bytes": 28664960
+          },
+          "record_payload_bytes": 28735036,
+          "record_payload_sha256": "52ef412a09305ff1fe38b7e25a85f4783c8539396f3791ed9d82ba1388c74e1f",
+          "source_index": 0,
+          "source_key": [
+            0
+          ],
+          "source_offset_bytes": 0,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000000.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "5c3033df01389b21b0102932c200e5a45f87f750c7c78e1ed7c2e25203a14c53"
+        },
+        {
+          "id": "test:000003",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000003.npy",
+            "sha256": "1f939a4d1bad2779e47e7c8316cf63257fe490d041c3d076cf75c1c4a52f18da",
+            "shape": [
+              12703
+            ],
+            "size_bytes": 101752
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000003.npy",
+            "sha256": "f12ef5f433f6565292cb1def75c9b48f5e33b80b9bac6904c579df551858d37f",
+            "shape": [
+              301,
+              12703,
+              3
+            ],
+            "size_bytes": 45883364
+          },
+          "record_payload_bytes": 45991576,
+          "record_payload_sha256": "837bbc105b9c4f09aec161a99fd0bd2aeb3dce8199f380a16616d6299bd5406d",
+          "source_index": 3,
+          "source_key": [
+            3
+          ],
+          "source_offset_bytes": 70715176,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000003.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "aa8d1049e9d4470303620569038d4dfb826d990b242ce9607c6146aaa03da986"
+        },
+        {
+          "id": "test:000006",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000006.npy",
+            "sha256": "0bac1ee9040936eeb81498a10284aa32a97cbf797281ed2c65cb473b300e6f75",
+            "shape": [
+              9534
+            ],
+            "size_bytes": 76400
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000006.npy",
+            "sha256": "180c36facfd925ac51259dced999ade9432b9872ca6be8287c555288f0ecf430",
+            "shape": [
+              301,
+              9534,
+              3
+            ],
+            "size_bytes": 34436936
+          },
+          "record_payload_bytes": 34519796,
+          "record_payload_sha256": "fd65a5d3163040ece3f492ad153f83b3f567c0b6dc1cd9b8717e648128306d4d",
+          "source_index": 6,
+          "source_key": [
+            6
+          ],
+          "source_offset_bytes": 163396512,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000006.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "6d49967252ac6df294e73318326141cd78901454034a39bea95e1af0d88bd05a"
+        },
+        {
+          "id": "test:000010",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000010.npy",
+            "sha256": "e7fe7ecc1b63d796018a7d4d6c285bcab0af73735c268b718eebde2fd87e8cd3",
+            "shape": [
+              4053
+            ],
+            "size_bytes": 32552
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000010.npy",
+            "sha256": "1f2a1cfefc2ce09e9a5840d2d6c2aa8aec876780faaa80ee4b9b5530bbf897ce",
+            "shape": [
+              301,
+              4053,
+              3
+            ],
+            "size_bytes": 14639564
+          },
+          "record_payload_bytes": 14678576,
+          "record_payload_sha256": "9a01d4261a6062c43c58f79c2fc8b354cb9f4a07e8d769994e3d031b13448775",
+          "source_index": 10,
+          "source_key": [
+            10
+          ],
+          "source_offset_bytes": 254394040,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000010.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "bb534c98f83b99dc8c27d513ec0c709de4aff825a55616e01825881c5889c528"
+        },
+        {
+          "id": "test:000013",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000013.npy",
+            "sha256": "94d41c11ca659179e821e47df17e6054775cb4ed126ddabd48e24cf20fb1e06e",
+            "shape": [
+              14322
+            ],
+            "size_bytes": 114704
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000013.npy",
+            "sha256": "44a470c7b6b395f0d01cb1033b04ef54377c7967a9506a8c3c8de67e934ca7b9",
+            "shape": [
+              301,
+              14322,
+              3
+            ],
+            "size_bytes": 51731192
+          },
+          "record_payload_bytes": 51852356,
+          "record_payload_sha256": "5a5f473c548fcc60c147cad2bcfc9b08e788f31c343d2c0fcf6f44a9a7fda08c",
+          "source_index": 13,
+          "source_key": [
+            13
+          ],
+          "source_offset_bytes": 323121836,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000013.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "798d908a3cb1ea52fe9e43bccdea42650eb6a952b64fa52d50776f6416f795bc"
+        },
+        {
+          "id": "test:000017",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000017.npy",
+            "sha256": "b28b2b85fc3d5a1a8a89fdb8b0c634d2a2cbb87c091cff1738fbcd4d8b467f30",
+            "shape": [
+              6837
+            ],
+            "size_bytes": 54824
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000017.npy",
+            "sha256": "b6d5dd7730bc1757e4246329a92736eb351354fbafc0ee973818fffcb019198e",
+            "shape": [
+              301,
+              6837,
+              3
+            ],
+            "size_bytes": 24695372
+          },
+          "record_payload_bytes": 24756656,
+          "record_payload_sha256": "0cba7d4291f6cab18ae3888b0368ef8c477a55a06be756b4171c4ac07754399d",
+          "source_index": 17,
+          "source_key": [
+            17
+          ],
+          "source_offset_bytes": 450837024,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000017.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "c643db52a750f114cda6082fb37f4149c70e0106c0098ba960c32c8bd0d0917a"
+        },
+        {
+          "id": "test:000020",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000020.npy",
+            "sha256": "b23767e18f6dc8d3432baaa2788cc49f1e94d483660a70f2886f05dfab61d47e",
+            "shape": [
+              4633
+            ],
+            "size_bytes": 37192
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000020.npy",
+            "sha256": "060f8f477fb7af37508f4149f802a2ad3034535156861d59a4ae94645c531406",
+            "shape": [
+              301,
+              4633,
+              3
+            ],
+            "size_bytes": 16734524
+          },
+          "record_payload_bytes": 16778176,
+          "record_payload_sha256": "9d24c78bd404e88dcebd93792711ac5e7d1c3797f31d0bf2e1e24b63c8493da4",
+          "source_index": 20,
+          "source_key": [
+            20
+          ],
+          "source_offset_bytes": 530689080,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000020.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "ea435e90128d9951e6a6378564393ace1018747d944ff6edc0b998b36dcca084"
+        },
+        {
+          "id": "test:000023",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000023.npy",
+            "sha256": "e800c01e216b99faff087a335b54523427b49a645bb2828822a58e6892bff598",
+            "shape": [
+              3536
+            ],
+            "size_bytes": 28416
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000023.npy",
+            "sha256": "8e9c5e4ff4e0c49bd05ab4996ea9ab501e607766fffc4352c2c94bf58af020ed",
+            "shape": [
+              301,
+              3536,
+              3
+            ],
+            "size_bytes": 12772160
+          },
+          "record_payload_bytes": 12807036,
+          "record_payload_sha256": "e983d0d49f8cb6970fa0ed5acd431a1262e565c8d89b92124bcf14df67c9a163",
+          "source_index": 23,
+          "source_key": [
+            23
+          ],
+          "source_offset_bytes": 586254556,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000023.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "f5a6cdc3c8c9be57d1a47e2ebc524aa2d10ee1829952cd0e17144d7b92f55905"
+        },
+        {
+          "id": "test:000027",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000027.npy",
+            "sha256": "1c88f792d23c2ea63d269a04115523eac667ad6ad0fbcb901c80b4c3c0542797",
+            "shape": [
+              4263
+            ],
+            "size_bytes": 34232
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000027.npy",
+            "sha256": "f8dd114e44a4139607fe2abe5a47f3c66ac9861a9b5dbd37cbfa77c5025f1248",
+            "shape": [
+              301,
+              4263,
+              3
+            ],
+            "size_bytes": 15398084
+          },
+          "record_payload_bytes": 15438776,
+          "record_payload_sha256": "9a10fa3c1d627d5a562cbe73e16c25bc717886eef137ce884adf0f00dbed4512",
+          "source_index": 27,
+          "source_key": [
+            27
+          ],
+          "source_offset_bytes": 697600104,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000027.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "4aa0193c377861e7ba51e6bcc0807862b6dffa6333acd083b5699fde1f174572"
+        },
+        {
+          "id": "test:000030",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000030.npy",
+            "sha256": "e62cc3cdc503c09a247a1dd13ccf7cb0c2355b6f20069c2f5f5f178c8690d04f",
+            "shape": [
+              8228
+            ],
+            "size_bytes": 65952
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000030.npy",
+            "sha256": "1e3ddb12849a9c48dba32fca7144d9921318de3ffe6421fa5fe7a3773553baaf",
+            "shape": [
+              301,
+              8228,
+              3
+            ],
+            "size_bytes": 29719664
+          },
+          "record_payload_bytes": 29792076,
+          "record_payload_sha256": "c44233cf0708788ac24561475ad76874ebcc17371967a8b131b287fa5d44b514",
+          "source_index": 30,
+          "source_key": [
+            30
+          ],
+          "source_offset_bytes": 767848300,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000030.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "5cec6f7a1b1b02e7b4aa51f3d1b551807af2d01718ad15539eaea8ef60569ac8"
+        },
+        {
+          "id": "test:000034",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000034.npy",
+            "sha256": "bc644cf07e7a12fb92a230abefb17e8d97fc9fad289e891dff046b60493f3603",
+            "shape": [
+              6149
+            ],
+            "size_bytes": 49320
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000034.npy",
+            "sha256": "8e9d7c6daefa196a701685de2e09f33037d23fe44ce7e4971dd216639d1c53fe",
+            "shape": [
+              301,
+              6149,
+              3
+            ],
+            "size_bytes": 22210316
+          },
+          "record_payload_bytes": 22266096,
+          "record_payload_sha256": "1e55f3a685e304fbbe05e94c4588bc1363f8b2147a73ab8e9846c137443ae3d4",
+          "source_index": 34,
+          "source_key": [
+            34
+          ],
+          "source_offset_bytes": 910416348,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000034.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "a18a77373ffa8025e2d1a5fcad23aa6dd4a577cd9669a61d38cb888bac135e26"
+        },
+        {
+          "id": "test:000037",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000037.npy",
+            "sha256": "9fc56dd3e472f330143b7a09bb26bc2b17be145d4fe67fd566fea946a8f6b863",
+            "shape": [
+              5296
+            ],
+            "size_bytes": 42496
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000037.npy",
+            "sha256": "03d7342b403daf502b18d677adc985326f6d2bb9824cb324c9305ee88064ba76",
+            "shape": [
+              301,
+              5296,
+              3
+            ],
+            "size_bytes": 19129280
+          },
+          "record_payload_bytes": 19178236,
+          "record_payload_sha256": "62f46fb4c7cb9255da07469ed20107480ecf87701c16ff45b9cce780316fb719",
+          "source_index": 37,
+          "source_key": [
+            37
+          ],
+          "source_offset_bytes": 971701424,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000037.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "39827286a44433960aad0a354369e17e5e8d209917ca387844ca65582a8852e9"
+        },
+        {
+          "id": "test:000040",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000040.npy",
+            "sha256": "5f4df80341db3e18f400244a4bec5a85cd622974979ed1bb472a4d3078f3ec30",
+            "shape": [
+              7967
+            ],
+            "size_bytes": 63864
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000040.npy",
+            "sha256": "827b619e7184670d1b92bd46edb1511f0f0dae27f38f80f477bb971dfce87a25",
+            "shape": [
+              301,
+              7967,
+              3
+            ],
+            "size_bytes": 28776932
+          },
+          "record_payload_bytes": 28847256,
+          "record_payload_sha256": "e7091c0a9357afdfc37bca860b54fe31b7c1941de5a84ae5d76ba3fde367458a",
+          "source_index": 40,
+          "source_key": [
+            40
+          ],
+          "source_offset_bytes": 1020305640,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000040.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "c17865ea7fcd840002b46103a3909a91ff3f5242df01e4a956489c7d80452e57"
+        },
+        {
+          "id": "test:000044",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000044.npy",
+            "sha256": "d4cbf4012611faf9ebf28933f4d36fbcff312c64f3c65ff47cd9069ebfd6beec",
+            "shape": [
+              3471
+            ],
+            "size_bytes": 27896
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000044.npy",
+            "sha256": "a8f7e4696616651de2a8e01a4b7527759ec7b147c99dc745b18cb70efbb5feb6",
+            "shape": [
+              301,
+              3471,
+              3
+            ],
+            "size_bytes": 12537380
+          },
+          "record_payload_bytes": 12571736,
+          "record_payload_sha256": "e134282da01a91531d7d39817baab24246f6e4b67f7e09dec80965237285ee30",
+          "source_index": 44,
+          "source_key": [
+            44
+          ],
+          "source_offset_bytes": 1111093208,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000044.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "40fe1b13ff606e690a3fe12c44fd0160307af612776f7e977508a8ad5c22505b"
+        },
+        {
+          "id": "test:000047",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000047.npy",
+            "sha256": "856beb3a475f0c7cc604ba9c8425ca9ce6b636a2b6e2c7e6fe814581d9229d5c",
+            "shape": [
+              8333
+            ],
+            "size_bytes": 66792
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000047.npy",
+            "sha256": "c2979991f4684c78e32ece347e3fac41bf934d94cf336e1df8f56556ea01ccbe",
+            "shape": [
+              301,
+              8333,
+              3
+            ],
+            "size_bytes": 30098924
+          },
+          "record_payload_bytes": 30172176,
+          "record_payload_sha256": "82bb48a8b5c1a5c861121d979ff05956eae4beda222ded90832674d2448d08b6",
+          "source_index": 47,
+          "source_key": [
+            47
+          ],
+          "source_offset_bytes": 1172657024,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000047.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "148fd049739c127809680478e1eac1e3ba5be5e66ece66028c61dfd1640bba76"
+        },
+        {
+          "id": "test:000051",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000051.npy",
+            "sha256": "0489aa2855b703d55e739bfdf30d6bb285665380eea4bac698dab3a9bceababb",
+            "shape": [
+              6827
+            ],
+            "size_bytes": 54744
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000051.npy",
+            "sha256": "4949f56dbff4c69c39058cb84eb9c151b9cf704a683a9fe2109709e9abec51fc",
+            "shape": [
+              301,
+              6827,
+              3
+            ],
+            "size_bytes": 24659252
+          },
+          "record_payload_bytes": 24720456,
+          "record_payload_sha256": "2a0bf144b7ac7cde785ae9c93966c45b9e2f35b8c5876ab3b3d5daf95fb1ba83",
+          "source_index": 51,
+          "source_key": [
+            51
+          ],
+          "source_offset_bytes": 1250137472,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000051.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "a5391ab8599529c74ca9c2688b8e3afd5e59f514d73e6d9007b7c4ecde393346"
+        },
+        {
+          "id": "test:000054",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000054.npy",
+            "sha256": "ecd9fef81f7fc99e54b98d050fcf5bfb54ba48518dc4aaa105a498837f0127f7",
+            "shape": [
+              5351
+            ],
+            "size_bytes": 42936
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000054.npy",
+            "sha256": "17f9cda73e694a2c127f562cd632639f3b9c03ae6c22d3c135058ddcbfe6f37b",
+            "shape": [
+              301,
+              5351,
+              3
+            ],
+            "size_bytes": 19327940
+          },
+          "record_payload_bytes": 19377336,
+          "record_payload_sha256": "5430fb4451dfb236cf1c9a52fb8ae179106891a375212acac4bbd3cc37649525",
+          "source_index": 54,
+          "source_key": [
+            54
+          ],
+          "source_offset_bytes": 1332592308,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000054.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "f71d717ec38061500a3bc66741e115865983beb5387f2bddc7f0a47388bf6f2b"
+        },
+        {
+          "id": "test:000058",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000058.npy",
+            "sha256": "78f0ef4b611ae46e9684b13991193a991bc0fa557b128a8fc3235a220e242052",
+            "shape": [
+              12352
+            ],
+            "size_bytes": 98944
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000058.npy",
+            "sha256": "886b3e1eb145f5bcd579ec98a0fb3ef249fa6e3dea1d5545394b88e4565e88a2",
+            "shape": [
+              301,
+              12352,
+              3
+            ],
+            "size_bytes": 44615552
+          },
+          "record_payload_bytes": 44720956,
+          "record_payload_sha256": "b2f4dd99d088e6429bb654dd5ca1f2eeba0604d53d0d2ae4e0dc4b1f4685494a",
+          "source_index": 58,
+          "source_key": [
+            58
+          ],
+          "source_offset_bytes": 1457111036,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000058.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "2f71667c430de963c2d8950a53259db33efaf5d38a3607a3738e70e1af7b547a"
+        },
+        {
+          "id": "test:000061",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000061.npy",
+            "sha256": "18681afd78b9041bea27469daf88ae6714e3ba5fbf07a1ae2ba921ed3f35d1c5",
+            "shape": [
+              10330
+            ],
+            "size_bytes": 82768
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000061.npy",
+            "sha256": "f4e4e0dbd38ba5a50f015d24b20192edb3a51ad5fc14e1dadc2e9af2d4758b23",
+            "shape": [
+              301,
+              10330,
+              3
+            ],
+            "size_bytes": 37312088
+          },
+          "record_payload_bytes": 37401316,
+          "record_payload_sha256": "dc3aa3c1e2badeeaed709f0281d39458e85d2952eea0932a7f07d11c746c144e",
+          "source_index": 61,
+          "source_key": [
+            61
+          ],
+          "source_offset_bytes": 1527446112,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000061.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "c7d10492929712b98459efab8a9b4859a9eb4adddb8669325476a54a72d12478"
+        },
+        {
+          "id": "test:000064",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000064.npy",
+            "sha256": "6768f978b38386400643cb11751c5ac86c696864b55e7dbedd484d2a3c12e4a0",
+            "shape": [
+              10254
+            ],
+            "size_bytes": 82160
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000064.npy",
+            "sha256": "5c83a95cb29f3b436ed6fa4642061279b79b3a810b0336a5da4ddd19ec749b61",
+            "shape": [
+              301,
+              10254,
+              3
+            ],
+            "size_bytes": 37037576
+          },
+          "record_payload_bytes": 37126196,
+          "record_payload_sha256": "c9a120a6c245f9780a5bab2c0c7d7b575652c7d8e692e2647bcf60bee358b7ea",
+          "source_index": 64,
+          "source_key": [
+            64
+          ],
+          "source_offset_bytes": 1644099088,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000064.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "046e8c6b899469f520c2ce0173708cd924ee492d0c33359419811dedabb5ec6a"
+        },
+        {
+          "id": "test:000068",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000068.npy",
+            "sha256": "7714965763a88a0e1de3994f1232a5145d960881770a3d5d168a459d1ffa2bf9",
+            "shape": [
+              10990
+            ],
+            "size_bytes": 88048
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000068.npy",
+            "sha256": "79c6cbd6cefe3875552226f24ac45be38bf5b7d34825076544739ad7d9fd806d",
+            "shape": [
+              301,
+              10990,
+              3
+            ],
+            "size_bytes": 39696008
+          },
+          "record_payload_bytes": 39790516,
+          "record_payload_sha256": "3a1378cee8068e3df5d97fa7fa1ac0019801196fb76608cc0f786ed1b8835191",
+          "source_index": 68,
+          "source_key": [
+            68
+          ],
+          "source_offset_bytes": 1793610296,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000068.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "8d278b2b81dac2ec0f8cdeb438b0a94c3e861774a2bf9dfdc3b80630bbabd5a6"
+        },
+        {
+          "id": "test:000071",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000071.npy",
+            "sha256": "45e068e05aecc85a6cf559988f450424d3dae86c29bc2241a438d511e2841f60",
+            "shape": [
+              11883
+            ],
+            "size_bytes": 95192
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000071.npy",
+            "sha256": "7d2a7f13853e99bb49327be9e8d227bd1ab139a3f0e4e3705a5a579f77f54233",
+            "shape": [
+              301,
+              11883,
+              3
+            ],
+            "size_bytes": 42921524
+          },
+          "record_payload_bytes": 43023176,
+          "record_payload_sha256": "c94c9c7fa1943333da8e25e89a2758d21a0defd29e9ef1a784efe098944709c6",
+          "source_index": 71,
+          "source_key": [
+            71
+          ],
+          "source_offset_bytes": 1864781592,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000071.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "28739f9f7499a36e549d573a9ac44320ffb3f65de2fb05e0ad747fe9d310fac1"
+        },
+        {
+          "id": "test:000075",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000075.npy",
+            "sha256": "facaad7d756ab9e1b897ecad80461f4192fd60287bcfea73e8df3d8ddad57a49",
+            "shape": [
+              4634
+            ],
+            "size_bytes": 37200
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000075.npy",
+            "sha256": "1d652b14476498cb1ae6b84753493ee8d5c6b178992d52ad5bebe163da3b5488",
+            "shape": [
+              301,
+              4634,
+              3
+            ],
+            "size_bytes": 16738136
+          },
+          "record_payload_bytes": 16781796,
+          "record_payload_sha256": "4694aa471ca5e28ac03e4596fcc3e88836bcaada4aa61ed5b6ba3f91a45975fe",
+          "source_index": 75,
+          "source_key": [
+            75
+          ],
+          "source_offset_bytes": 1977578760,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000075.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "2534753e1aa3f702d3e39399e788415cd40ccdea0aaa172d8c6ca758feb429f4"
+        },
+        {
+          "id": "test:000078",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000078.npy",
+            "sha256": "fc36bdf71256bca91ccb91a4f79ed48245a94e16baec3fc559924544115d3632",
+            "shape": [
+              12462
+            ],
+            "size_bytes": 99824
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000078.npy",
+            "sha256": "bcec0e81cdfde5df843cd27e6ca2e597446840804ad653d9e8c3e4c066d95540",
+            "shape": [
+              301,
+              12462,
+              3
+            ],
+            "size_bytes": 45012872
+          },
+          "record_payload_bytes": 45119156,
+          "record_payload_sha256": "d2fa2a5fcc6735af9e4f4a2cefadf9d6844d168520f948a36a9be6ef37a69d09",
+          "source_index": 78,
+          "source_key": [
+            78
+          ],
+          "source_offset_bytes": 2080674836,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000078.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "816bbfbf639c9ebade19f36a05d1ebd1688ac20c69c8fcb1678d905bd53262d0"
+        },
+        {
+          "id": "test:000081",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000081.npy",
+            "sha256": "d76c374bff3f5e94b0758576394da593333edf57e113fe1875c6ee4bc0db2f9a",
+            "shape": [
+              11014
+            ],
+            "size_bytes": 88240
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000081.npy",
+            "sha256": "02604fbb740ecc9b88e73d6d7da6598c513b7882cf3e4a69a737d6a3086ca164",
+            "shape": [
+              301,
+              11014,
+              3
+            ],
+            "size_bytes": 39782696
+          },
+          "record_payload_bytes": 39877396,
+          "record_payload_sha256": "084eb1be20320dce8d4ee31df31d8024528c92ba724f1df7c4d9d8160661fc72",
+          "source_index": 81,
+          "source_key": [
+            81
+          ],
+          "source_offset_bytes": 2202627492,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000081.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "868a6aacd26caf3df27d8dde2a85c940670cbc8ec431fa0abd0b841a9c188bec"
+        },
+        {
+          "id": "test:000085",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000085.npy",
+            "sha256": "38fb348acbd5587a74db243cabd9df26a17c5354d8609bf9897baf530551ac19",
+            "shape": [
+              4553
+            ],
+            "size_bytes": 36552
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000085.npy",
+            "sha256": "632797d02a6095b21609074093fa6accb15fed70fa587624bd4ad9e2780483d6",
+            "shape": [
+              301,
+              4553,
+              3
+            ],
+            "size_bytes": 16445564
+          },
+          "record_payload_bytes": 16488576,
+          "record_payload_sha256": "ef2f313e487a7a37d5170620cc4b4feb58207a67a1c0fd1bd2ff28f6140892b8",
+          "source_index": 85,
+          "source_key": [
+            85
+          ],
+          "source_offset_bytes": 2334911120,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000085.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "f49558929522d72e85df04da0064815ecf0c0aea8061406a13a86bcaa0da5c36"
+        },
+        {
+          "id": "test:000088",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000088.npy",
+            "sha256": "0dd651bce9ea910e82e5e9c15d0d398e4337a74be009d05f8eae7af4c50f8ebf",
+            "shape": [
+              5111
+            ],
+            "size_bytes": 41016
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000088.npy",
+            "sha256": "d10927ef63a55e0727712ed510d7df1c38821ff549eef72489a280ac8b445933",
+            "shape": [
+              301,
+              5111,
+              3
+            ],
+            "size_bytes": 18461060
+          },
+          "record_payload_bytes": 18508536,
+          "record_payload_sha256": "8624c9ee34cfa0a8f36ea02db1317693ebfa6371b80e17f8a469d59e29a16d0b",
+          "source_index": 88,
+          "source_key": [
+            88
+          ],
+          "source_offset_bytes": 2413358616,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000088.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "686c8de7bf5a6bd91c3e5b5a377fe7adcfcd0dd4e961fb947809db24b361d022"
+        },
+        {
+          "id": "test:000092",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000092.npy",
+            "sha256": "1cd3ad9e368d59e6039ee2eadeecb9e0beade30fddc1661420374116496c41ef",
+            "shape": [
+              3088
+            ],
+            "size_bytes": 24832
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000092.npy",
+            "sha256": "9465f221a70482ddfa4e89351c87868945bcc89e850fd9c9a443cf5a3bef0239",
+            "shape": [
+              301,
+              3088,
+              3
+            ],
+            "size_bytes": 11153984
+          },
+          "record_payload_bytes": 11185276,
+          "record_payload_sha256": "e5381c1b8818ba94c47b0a0cc96f7a0464fbf098bb1114d3bab6688ac88d0201",
+          "source_index": 92,
+          "source_key": [
+            92
+          ],
+          "source_offset_bytes": 2559260684,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000092.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "f622b5cdab2d499ab0aa90e752838fca4dba3167135e8ee438e938406932604d"
+        },
+        {
+          "id": "test:000095",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000095.npy",
+            "sha256": "48b6ac9a528ddfe5925ab2d19d5a6085e84fb88b20542672bae18db6aa4a16ae",
+            "shape": [
+              3709
+            ],
+            "size_bytes": 29800
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000095.npy",
+            "sha256": "a9ecc08d780ecb1ca74f9230f7ed49d221b4cf66d630650a06d0104f959780f8",
+            "shape": [
+              301,
+              3709,
+              3
+            ],
+            "size_bytes": 13397036
+          },
+          "record_payload_bytes": 13433296,
+          "record_payload_sha256": "b63a393edc1cad207b64894dfbaf1fb344736209dfa440cd47d88a9481c81529",
+          "source_index": 95,
+          "source_key": [
+            95
+          ],
+          "source_offset_bytes": 2645465840,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000095.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "d6e066549069bbb8d1eec5624b7e34fdf9d604b58336186803102f45143b17e4"
+        },
+        {
+          "id": "test:000099",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "test/type_000099.npy",
+            "sha256": "c22b04583492821f1c01a30174b6112e545bcb2ae64a6dcdb8bd97a82ae934a6",
+            "shape": [
+              4532
+            ],
+            "size_bytes": 36384
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "test/position_000099.npy",
+            "sha256": "c0ff7c6f69e1561ba4d852eba4d883db90d052a23b59e9a277404887d0b69812",
+            "shape": [
+              301,
+              4532,
+              3
+            ],
+            "size_bytes": 16369712
+          },
+          "record_payload_bytes": 16412556,
+          "record_payload_sha256": "429da8aea01d21d2d5d9e27c9540c2296018db2224cb77a6f8aec0ef7c51e41a",
+          "source_index": 99,
+          "source_key": [
+            99
+          ],
+          "source_offset_bytes": 2748959608,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "test/step_context_000099.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "a2db1afe2dcd46fa1d574dc69517d85df1a5fda512348a0fb1913e56cd9ca3f1"
+        }
+      ],
+      "source_index_grid": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        17,
+        20,
+        23,
+        27,
+        30,
+        34,
+        37,
+        40,
+        44,
+        47,
+        51,
+        54,
+        58,
+        61,
+        64,
+        68,
+        71,
+        75,
+        78,
+        81,
+        85,
+        88,
+        92,
+        95,
+        99
+      ]
+    },
+    "valid": {
+      "manifest_sha256": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+      "metadata_sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+      "record_count": 100,
+      "records": [
+        {
+          "id": "valid:000000",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000000.npy",
+            "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+            "shape": [
+              8540
+            ],
+            "size_bytes": 68448
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000000.npy",
+            "sha256": "7d5bfb70a2b3fa39fcb1ca63d27b1576f789b0f407a585954a22d87a3747aaea",
+            "shape": [
+              301,
+              8540,
+              3
+            ],
+            "size_bytes": 30846608
+          },
+          "record_payload_bytes": 30921516,
+          "record_payload_sha256": "33670f7a3a00e08071a5948e71f6002cbe91a844fbec2ce84e73d8eda8582196",
+          "source_index": 0,
+          "source_key": [
+            0
+          ],
+          "source_offset_bytes": 0,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000000.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "68ad5e93c7bd4824fb8e5662a18308ef16e86ca8700196cc02fb51b1ad44f1e0"
+        },
+        {
+          "id": "valid:000003",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000003.npy",
+            "sha256": "1919e070001a3c26a752d7e1e3166b180f115e14c9392eaaf5f70c32bb28f226",
+            "shape": [
+              6941
+            ],
+            "size_bytes": 55656
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000003.npy",
+            "sha256": "d514fc10dc1db3fb6672599fd547b3a67a62a3041536369feb601ed130bcedc7",
+            "shape": [
+              301,
+              6941,
+              3
+            ],
+            "size_bytes": 25071020
+          },
+          "record_payload_bytes": 25133136,
+          "record_payload_sha256": "c0096756751cab46fb9c36375d766e9ee896721679034c6efb07d55b25502d6b",
+          "source_index": 3,
+          "source_key": [
+            3
+          ],
+          "source_offset_bytes": 62758416,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000003.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "70153eb30d8b5adc54e4304925cbe84adfbea69bae83a7ecde5cb602e484b60a"
+        },
+        {
+          "id": "valid:000006",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000006.npy",
+            "sha256": "8969cfb43803b1e4dd845690b864b3afef46975fc83debb99a2d1fb78120fab7",
+            "shape": [
+              7810
+            ],
+            "size_bytes": 62608
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000006.npy",
+            "sha256": "0371e5bc7fe15412ae673d442c937d3f68c576a7add217081644c1f22693b194",
+            "shape": [
+              301,
+              7810,
+              3
+            ],
+            "size_bytes": 28209848
+          },
+          "record_payload_bytes": 28278916,
+          "record_payload_sha256": "d160814b14907ded1bc337161c7fb8bee046249224bdf8a411d9f45350b81e40",
+          "source_index": 6,
+          "source_key": [
+            6
+          ],
+          "source_offset_bytes": 137625732,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000006.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "3d0b5674a6fd5372d7a53e694f54ced522929a6f9df564c7b95edde20ab7b537"
+        },
+        {
+          "id": "valid:000010",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000010.npy",
+            "sha256": "fae8f4a957ada2ce0dc7557ce0aa2ea39c647457a99204d882ccd28d3f84dcf1",
+            "shape": [
+              10456
+            ],
+            "size_bytes": 83776
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000010.npy",
+            "sha256": "544b2b5597009258de75d3730a8eabf4512af2ccba9661903808a3196ddc00db",
+            "shape": [
+              301,
+              10456,
+              3
+            ],
+            "size_bytes": 37767200
+          },
+          "record_payload_bytes": 37857436,
+          "record_payload_sha256": "75208656cd202f965bf1587028b5fae739becd30364bd4ea47e86616b215977e",
+          "source_index": 10,
+          "source_key": [
+            10
+          ],
+          "source_offset_bytes": 237854260,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000010.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "07d86fccf983a79749b379d0a5bbcc4e51b5e9b685766914b299bc410bd1e8b6"
+        },
+        {
+          "id": "valid:000013",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000013.npy",
+            "sha256": "a58a78526f8a041948649714c5fdd62bac1f25a479b5121c097b15d4d9b772a2",
+            "shape": [
+              4847
+            ],
+            "size_bytes": 38904
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000013.npy",
+            "sha256": "b059db7f9046e21d9f37cdf6f43f4c023ccfc9bb3a2ebbfb62e5bab78137489b",
+            "shape": [
+              301,
+              4847,
+              3
+            ],
+            "size_bytes": 17507492
+          },
+          "record_payload_bytes": 17552856,
+          "record_payload_sha256": "8df14fb9ef7974a26c5831164ad1146db21f3a69a095d2d56156a686be9ffce7",
+          "source_index": 13,
+          "source_key": [
+            13
+          ],
+          "source_offset_bytes": 319259296,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000013.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "77b2c5dfa402f77e74ef824b055e01ae6bb860484dcb2576f6e3e755435209ed"
+        },
+        {
+          "id": "valid:000017",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000017.npy",
+            "sha256": "1d18cc1748b2bf63984b257690f98c3f2e09c95b156e2a53fc088a52166ab349",
+            "shape": [
+              10463
+            ],
+            "size_bytes": 83832
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000017.npy",
+            "sha256": "5d4f317cdefa9406b388c8e053f0c90a4848f0c96fbf17d16b97f97af9372bc7",
+            "shape": [
+              301,
+              10463,
+              3
+            ],
+            "size_bytes": 37792484
+          },
+          "record_payload_bytes": 37882776,
+          "record_payload_sha256": "3a642df6ca327aabfd3acf3fbc604ae60f9fdc75703b3f26f27387efa69c6887",
+          "source_index": 17,
+          "source_key": [
+            17
+          ],
+          "source_offset_bytes": 431882704,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000017.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "75540267d7503df327f870fdf648970d5853eda478ef9099fd78ff261d17764d"
+        },
+        {
+          "id": "valid:000020",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000020.npy",
+            "sha256": "8176e96be81f551f688a259b2a13e9d8c5a40e872d83290487968664e70adf7b",
+            "shape": [
+              10900
+            ],
+            "size_bytes": 87328
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000020.npy",
+            "sha256": "1084289db888d007566be424aef6ce43279267b9e0e41b271cb5f59808278259",
+            "shape": [
+              301,
+              10900,
+              3
+            ],
+            "size_bytes": 39370928
+          },
+          "record_payload_bytes": 39464716,
+          "record_payload_sha256": "eee2ff2dbc1423560363b06cf8d4cb53c0dee86c934ee529639e2f1f3c24eaf6",
+          "source_index": 20,
+          "source_key": [
+            20
+          ],
+          "source_offset_bytes": 528415720,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000020.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "49ad4251933605d8b54db62fa4e33adfd106d668e2434f66b0b4b4769e0cfa8a"
+        },
+        {
+          "id": "valid:000023",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000023.npy",
+            "sha256": "e9ab34abb3e1b27bf2eb956b635ddb5a2584bd2ca3ba2cfe699f5077631f8db2",
+            "shape": [
+              3259
+            ],
+            "size_bytes": 26200
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000023.npy",
+            "sha256": "ca0f60f48ab5b3e60b0a13b2405d704cb8189bd8db3073b0c9336c91c84092b6",
+            "shape": [
+              301,
+              3259,
+              3
+            ],
+            "size_bytes": 11771636
+          },
+          "record_payload_bytes": 11804296,
+          "record_payload_sha256": "3155a9d41b2f501dedbf315956554bfe807fc26edc69563e65847f29f69c203f",
+          "source_index": 23,
+          "source_key": [
+            23
+          ],
+          "source_offset_bytes": 645778216,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000023.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "7466f4a22e17746da25e7d4b03e589944ae2f3fdb8515f56d6b58210644f45f3"
+        },
+        {
+          "id": "valid:000027",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000027.npy",
+            "sha256": "a4195a03a59fc6a5d0e546fe29b5faf029d7fb9140adcd159fd2785caf367487",
+            "shape": [
+              7523
+            ],
+            "size_bytes": 60312
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000027.npy",
+            "sha256": "18c1aa9b1cb26d9cd7b1160785d9809436d43313f5bcb2b89a6f4ac531eaac74",
+            "shape": [
+              301,
+              7523,
+              3
+            ],
+            "size_bytes": 27173204
+          },
+          "record_payload_bytes": 27239976,
+          "record_payload_sha256": "a9ec5e98fdabea4ce6151b2a959f21a0b9854643f39326f3fb14f5688bf23409",
+          "source_index": 27,
+          "source_key": [
+            27
+          ],
+          "source_offset_bytes": 756323744,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000027.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "595d2128b83a0f62db4d722a9b0d3193f412b6c92f68ebe2fc9eb5e59c92655a"
+        },
+        {
+          "id": "valid:000030",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000030.npy",
+            "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+            "shape": [
+              8540
+            ],
+            "size_bytes": 68448
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000030.npy",
+            "sha256": "9147376b15c74fae3fce5c488e8239f23708c3a1877221831b68d5dbc963d50e",
+            "shape": [
+              301,
+              8540,
+              3
+            ],
+            "size_bytes": 30846608
+          },
+          "record_payload_bytes": 30921516,
+          "record_payload_sha256": "e2f70e2e0d40b403879c3eb275cc65c4c899aa5249e8988145f510dceaeab0dc",
+          "source_index": 30,
+          "source_key": [
+            30
+          ],
+          "source_offset_bytes": 839538780,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000030.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "5dcb932d13f65c1c34845f673ee73068c95e5b5740e4da9762c774f45dce5ca3"
+        },
+        {
+          "id": "valid:000034",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000034.npy",
+            "sha256": "9d77c1ba121c64b9ac6ee6f1244914290b655cba754f69d0f5a7c8f410ce0e36",
+            "shape": [
+              5354
+            ],
+            "size_bytes": 42960
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000034.npy",
+            "sha256": "d2b62402f1292e14eaeace58779db026d1c2cb44166f70b791c192221c8d42a7",
+            "shape": [
+              301,
+              5354,
+              3
+            ],
+            "size_bytes": 19338776
+          },
+          "record_payload_bytes": 19388196,
+          "record_payload_sha256": "dec082318a0dd97f2633014bc7be67018c9b2190561bce688ccbe1a10b41e00e",
+          "source_index": 34,
+          "source_key": [
+            34
+          ],
+          "source_offset_bytes": 934416948,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000034.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "044c0abcfe35d27bdc722a881a35f2928fdab20ab6375512f18cd6cdc56e2e4e"
+        },
+        {
+          "id": "valid:000037",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000037.npy",
+            "sha256": "b0ecc13156284618b34c3e844bf7f6f8d358530ae7ccdf5c26a6b6ac62fb1ae3",
+            "shape": [
+              2588
+            ],
+            "size_bytes": 20832
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000037.npy",
+            "sha256": "c4c8243ce027de692996d5bc7b957ee9066487933a94bde3d12317d6692de434",
+            "shape": [
+              301,
+              2588,
+              3
+            ],
+            "size_bytes": 9347984
+          },
+          "record_payload_bytes": 9375276,
+          "record_payload_sha256": "e5ccc0b8f5cd86616fec35ae9e43720fff9699b41128f099f9514763654a6a3d",
+          "source_index": 37,
+          "source_key": [
+            37
+          ],
+          "source_offset_bytes": 1022218524,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000037.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "1f65293f9d636301d5c96449ff933879be46bffbacaa9f2f9ef78f1428cfabac"
+        },
+        {
+          "id": "valid:000040",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000040.npy",
+            "sha256": "411b042385a712d6b522babe4ea55821c23ba0204bfd3c59a2c5bc7eb29afffa",
+            "shape": [
+              3515
+            ],
+            "size_bytes": 28248
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000040.npy",
+            "sha256": "e07f83040cf0eea432d7a74fbce3aa9b51185ae9abbb3cf5b6430099cc88b4e4",
+            "shape": [
+              301,
+              3515,
+              3
+            ],
+            "size_bytes": 12696308
+          },
+          "record_payload_bytes": 12731016,
+          "record_payload_sha256": "9e0804451a1f397383d2da29158bbcac59141bd32aebe94d93f3c001d01f3bce",
+          "source_index": 40,
+          "source_key": [
+            40
+          ],
+          "source_offset_bytes": 1084846620,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000040.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "0dc5577f02abc6595c3bcb450dc16994b7445b7aa4de3f0bcda81e96ea6c62e7"
+        },
+        {
+          "id": "valid:000044",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000044.npy",
+            "sha256": "844db1a90c997615f166fe7faffd6be2b2967b8a35b622765ebaa90e22cbee7c",
+            "shape": [
+              4986
+            ],
+            "size_bytes": 40016
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000044.npy",
+            "sha256": "c1fffd3c3a36f0cc7c133e8c82739575466148fcc8e07739bdec3f90e5d983e3",
+            "shape": [
+              301,
+              4986,
+              3
+            ],
+            "size_bytes": 18009560
+          },
+          "record_payload_bytes": 18056036,
+          "record_payload_sha256": "89d2f82c6244a259fabb507fc6bb8e6e0f9ecaf22b464c0a1ff3f2f6864cd475",
+          "source_index": 44,
+          "source_key": [
+            44
+          ],
+          "source_offset_bytes": 1204688308,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000044.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "c2236455349109d5b52a00c4d510d7e94a4ee030e7762472741d794f8f0a4dcd"
+        },
+        {
+          "id": "valid:000047",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000047.npy",
+            "sha256": "cdf3a82a7af3fb97f96c524b8b6f7baebf97576ecb201a5da4e71753be060850",
+            "shape": [
+              5032
+            ],
+            "size_bytes": 40384
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000047.npy",
+            "sha256": "4937d926b06bd020de2814b9c8c7b52a4981e9f31319879842771c50382133e3",
+            "shape": [
+              301,
+              5032,
+              3
+            ],
+            "size_bytes": 18175712
+          },
+          "record_payload_bytes": 18222556,
+          "record_payload_sha256": "99bfc0790b6a4d7bbeef98c6392c517a45d28a75cd4bcb7704e5de80ea33fc4f",
+          "source_index": 47,
+          "source_key": [
+            47
+          ],
+          "source_offset_bytes": 1305330024,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000047.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "6258d422546dc14d210da0258c8ec588f3fac3be21422cb73806172dba1584d2"
+        },
+        {
+          "id": "valid:000051",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000051.npy",
+            "sha256": "a66b5c9a10f3fda2c3cab91cc184797ef1395de88c77379d1175a7a29e2836ab",
+            "shape": [
+              12699
+            ],
+            "size_bytes": 101720
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000051.npy",
+            "sha256": "1f87d6e816bf481d51e724d00382973ea550cb955dacf05f1f767223035001c5",
+            "shape": [
+              301,
+              12699,
+              3
+            ],
+            "size_bytes": 45868916
+          },
+          "record_payload_bytes": 45977096,
+          "record_payload_sha256": "40a60525860d793a32b3e49ada8383488c3cf7a76db07ed3029e1b592c5c0df4",
+          "source_index": 51,
+          "source_key": [
+            51
+          ],
+          "source_offset_bytes": 1422471192,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000051.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "21afb9a7fbeb6528bdd2a095596ec0ee478b7ae311b16928c2f79b00f5aee2c4"
+        },
+        {
+          "id": "valid:000054",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000054.npy",
+            "sha256": "5e8e7f11ec80b42e6d6ca312b0292e1467a8dfd2e981f3115ceb4fed9fbbde5a",
+            "shape": [
+              3675
+            ],
+            "size_bytes": 29528
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000054.npy",
+            "sha256": "98a52ea97e7fe50cd01be65a457d8b74f10a7d6dc48ffc9cd49fcdb56d5208de",
+            "shape": [
+              301,
+              3675,
+              3
+            ],
+            "size_bytes": 13274228
+          },
+          "record_payload_bytes": 13310216,
+          "record_payload_sha256": "1d00db61ca76609552be96b186c32aaac0e4eda5245ec9304b757fed88b6cfbe",
+          "source_index": 54,
+          "source_key": [
+            54
+          ],
+          "source_offset_bytes": 1544597608,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000054.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "724390f0b29363e0649b0ef3f07a80fbb6fa428a20e04b5376deda1b0850cc05"
+        },
+        {
+          "id": "valid:000058",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000058.npy",
+            "sha256": "93cc8a21bd739df34cff0b3bec8158eaecc1e750578c37aacf78a3af9b9fe017",
+            "shape": [
+              4223
+            ],
+            "size_bytes": 33912
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000058.npy",
+            "sha256": "137f18434b8bc733bc7ee1a1a545511b2a003bbef3c7007920d2c107052272c4",
+            "shape": [
+              301,
+              4223,
+              3
+            ],
+            "size_bytes": 15253604
+          },
+          "record_payload_bytes": 15293976,
+          "record_payload_sha256": "1c766d34d8e7958c7cbdd35ac3537a1e404df6788a37f98780104cac6c63e559",
+          "source_index": 58,
+          "source_key": [
+            58
+          ],
+          "source_offset_bytes": 1629053796,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000058.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "b838094beefdd42a7a1f68e5bd540df20ccbc6751e1bca355557d108d725406e"
+        },
+        {
+          "id": "valid:000061",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000061.npy",
+            "sha256": "9b3832c473fb07c18b0df96c8bc1266105fc6ef82f6123d6515a632e6c7028f3",
+            "shape": [
+              3140
+            ],
+            "size_bytes": 25248
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000061.npy",
+            "sha256": "a561f046ab27065d8f365e799846bd2e3f1b10b0a6221b88f620cf5c83ce45d8",
+            "shape": [
+              301,
+              3140,
+              3
+            ],
+            "size_bytes": 11341808
+          },
+          "record_payload_bytes": 11373516,
+          "record_payload_sha256": "c98e789e9bd3ebb53660a0e401924645b2665b576e173dd5bd7ac38217aa972d",
+          "source_index": 61,
+          "source_key": [
+            61
+          ],
+          "source_offset_bytes": 1693719952,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000061.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "49e68e0c57ce49e561e909e767f0abafed391104ef6c0cffb1f78ac5504b2a5f"
+        },
+        {
+          "id": "valid:000064",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000064.npy",
+            "sha256": "54d2418383cf13468ca7ed6c57c3092e5b40e0848d7a61d0b34af4f00540ed91",
+            "shape": [
+              7004
+            ],
+            "size_bytes": 56160
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000064.npy",
+            "sha256": "b5e63015195eaaa2361e8e0d2cdafb461d67cd03c34d09d91f7fb755c2d47e32",
+            "shape": [
+              301,
+              7004,
+              3
+            ],
+            "size_bytes": 25298576
+          },
+          "record_payload_bytes": 25361196,
+          "record_payload_sha256": "565d83754229605dc245b7da333920f0e8882f289f6211b97905484e5467c7a8",
+          "source_index": 64,
+          "source_key": [
+            64
+          ],
+          "source_offset_bytes": 1753850248,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000064.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "4283cf970afa7dcfd8632167b4d2187549688449c41751bd3794f6832f032a0c"
+        },
+        {
+          "id": "valid:000068",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000068.npy",
+            "sha256": "f1f2caae729b90fb4e2ff578e3c9d07a59d49c159201d958e4ab9e5ea6fa26bd",
+            "shape": [
+              11135
+            ],
+            "size_bytes": 89208
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000068.npy",
+            "sha256": "be8704c2217c697efaff9e635a497866e1ce524181556df97ac6c0c148e97711",
+            "shape": [
+              301,
+              11135,
+              3
+            ],
+            "size_bytes": 40219748
+          },
+          "record_payload_bytes": 40315416,
+          "record_payload_sha256": "9ed8788d1205dea9fcb69f053e987fde83035f87d1e5773f60c609ecd7149ba9",
+          "source_index": 68,
+          "source_key": [
+            68
+          ],
+          "source_offset_bytes": 1828539676,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000068.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "1df56d2f2a2bc93d0b30fb77338028b209d39d2ea1135c3a2b3cefb290127ebb"
+        },
+        {
+          "id": "valid:000071",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000071.npy",
+            "sha256": "c6591ee0e459e1f6749a2e4cbb0342d1ee752c7ff6ea489591eda9818ae6753b",
+            "shape": [
+              4296
+            ],
+            "size_bytes": 34496
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000071.npy",
+            "sha256": "b72f8995fcac9b2c0f982c0f3b4b242492659816a3a884708c107f7bf0ed0749",
+            "shape": [
+              301,
+              4296,
+              3
+            ],
+            "size_bytes": 15517280
+          },
+          "record_payload_bytes": 15558236,
+          "record_payload_sha256": "baeddb4bacafdc708a2044a805019fea734a4194c53f7237ca824d819391bf13",
+          "source_index": 71,
+          "source_key": [
+            71
+          ],
+          "source_offset_bytes": 1927150572,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000071.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "9b27b95e3dc8a390a21ec9a0baafd7c1e58199846fa7f08cf2ca879a83d1fcf0"
+        },
+        {
+          "id": "valid:000075",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000075.npy",
+            "sha256": "dfb4bde7484691091f4fb52bbc19a152b66dd63917829c9182559c2c94942ca5",
+            "shape": [
+              12297
+            ],
+            "size_bytes": 98504
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000075.npy",
+            "sha256": "8f1ec8123fbc1be2efccb298f2658546c311f2ac6f3a962517319fc078955c44",
+            "shape": [
+              301,
+              12297,
+              3
+            ],
+            "size_bytes": 44416892
+          },
+          "record_payload_bytes": 44521856,
+          "record_payload_sha256": "19649527fc785774869f110b2ae0657ad746ff3b66a568186ef3b5c86881940d",
+          "source_index": 75,
+          "source_key": [
+            75
+          ],
+          "source_offset_bytes": 2021431440,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000075.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "493745545b113084f8fb48064e32df9bc47a97662846a248f8cb8cb24bc87d7a"
+        },
+        {
+          "id": "valid:000078",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000078.npy",
+            "sha256": "fcef9744bf4504fb67ee8d71b88ab378ee00bb9983da694ec8031c2389959d0c",
+            "shape": [
+              8094
+            ],
+            "size_bytes": 64880
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000078.npy",
+            "sha256": "b827134eaaaa305d1b1edd64747e519c133afd0a58e7684d2859d3b7a9ce355b",
+            "shape": [
+              301,
+              8094,
+              3
+            ],
+            "size_bytes": 29235656
+          },
+          "record_payload_bytes": 29306996,
+          "record_payload_sha256": "fe88134cda6315d067dfdca53f38de176652b07fff046fe2543782e9d9076391",
+          "source_index": 78,
+          "source_key": [
+            78
+          ],
+          "source_offset_bytes": 2125168256,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000078.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "3ec2af6f7cb55256835cde7a0228b2b66ad02971322913c140e96d13834950f8"
+        },
+        {
+          "id": "valid:000081",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000081.npy",
+            "sha256": "326f3657137e1d772a2e5e72a35fdfbedfcfed9d1e3ac2327d36c0c0dfe36b93",
+            "shape": [
+              5864
+            ],
+            "size_bytes": 47040
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000081.npy",
+            "sha256": "7e519ad611795ea9ffeda3bdebc30210759525aa46f9e3a9ca8a30f193f4ca21",
+            "shape": [
+              301,
+              5864,
+              3
+            ],
+            "size_bytes": 21180896
+          },
+          "record_payload_bytes": 21234396,
+          "record_payload_sha256": "c5d20924fe2547b849ad02ea6adeda664421aaab31bf23249058d211738016d8",
+          "source_index": 81,
+          "source_key": [
+            81
+          ],
+          "source_offset_bytes": 2227373812,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000081.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "bf1eca69203459e8ac4151939ebddf00a9b4591bce49cc8643dd47356f87b6b7"
+        },
+        {
+          "id": "valid:000085",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000085.npy",
+            "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+            "shape": [
+              11533
+            ],
+            "size_bytes": 92392
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000085.npy",
+            "sha256": "0624713a0cccc03c4c515a6ffc4591b5376f9ef0c7b278dd0219bc8f134f5516",
+            "shape": [
+              301,
+              11533,
+              3
+            ],
+            "size_bytes": 41657324
+          },
+          "record_payload_bytes": 41756176,
+          "record_payload_sha256": "bc8ed1ba6a0b91d5c0a72450b49f5b6efe4c08511fa7ab9d7ee1699881621886",
+          "source_index": 85,
+          "source_key": [
+            85
+          ],
+          "source_offset_bytes": 2325499120,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000085.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "14c49e8b9d8115e0a073982b5bf3ed021ad36c10c56504d69308fc63cedcb8b2"
+        },
+        {
+          "id": "valid:000088",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000088.npy",
+            "sha256": "6d604746702826c8dd73fceb6c558ae4434f35db1f48b6630b94f82ff6329f94",
+            "shape": [
+              2841
+            ],
+            "size_bytes": 22856
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000088.npy",
+            "sha256": "2b2b150e29477e03ca9abaa5de85aa2764b973cc6fc17a4fd7c3f7ff2e205637",
+            "shape": [
+              301,
+              2841,
+              3
+            ],
+            "size_bytes": 10261820
+          },
+          "record_payload_bytes": 10291136,
+          "record_payload_sha256": "4472363bb9fa979388396604811ac618146da2cb983be8d71206a080494e2e53",
+          "source_index": 88,
+          "source_key": [
+            88
+          ],
+          "source_offset_bytes": 2445084296,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000088.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "b21c7a937f4d2eba104174ec5c3af52d0f65dfe26ecfc2bed181611ceb09dd18"
+        },
+        {
+          "id": "valid:000092",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000092.npy",
+            "sha256": "b1a824eb3114ba7daef5d73266357bd35ef9218e57add252f537e311711031d5",
+            "shape": [
+              11767
+            ],
+            "size_bytes": 94264
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000092.npy",
+            "sha256": "fedeaa4d4bc1c6e8accee54e44d7cc3a67ea9dc4484814f5e932522bbedc42a0",
+            "shape": [
+              301,
+              11767,
+              3
+            ],
+            "size_bytes": 42502532
+          },
+          "record_payload_bytes": 42603256,
+          "record_payload_sha256": "5180bdacfd74b00d547e7c727d4ec64cc199276654fa944be89a9b2a30f51c76",
+          "source_index": 92,
+          "source_key": [
+            92
+          ],
+          "source_offset_bytes": 2575916304,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000092.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "cbea515e1fdcea2221c406c26cf79c5e53b0ad8231829a58ed060d4fca98d8f4"
+        },
+        {
+          "id": "valid:000095",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000095.npy",
+            "sha256": "a32520e9f80c2e38f01bf3c0ec964e0045e6c49c762bdba590cc8b7f96c5b70b",
+            "shape": [
+              10438
+            ],
+            "size_bytes": 83632
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000095.npy",
+            "sha256": "3341058620392a9011cce8609d66cf25100f38787774dc7a6bf4e85033783f77",
+            "shape": [
+              301,
+              10438,
+              3
+            ],
+            "size_bytes": 37702184
+          },
+          "record_payload_bytes": 37792276,
+          "record_payload_sha256": "45f5c9d85f7e9f07a1a0bb424dd6e4a635917310ba13f2551fc6c1487f947d50",
+          "source_index": 95,
+          "source_key": [
+            95
+          ],
+          "source_offset_bytes": 2697829140,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000095.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "b511215bccf7146aed70f8b630cb4cb22f33e62bdccb899a7bc53c922ec54963"
+        },
+        {
+          "id": "valid:000099",
+          "particle_types": {
+            "dtype": "<i8",
+            "path": "valid/type_000099.npy",
+            "sha256": "77c4b54f6abbfc5e9fb9798efe9794390e8b430de459d9f4b3fdc9372482c667",
+            "shape": [
+              8544
+            ],
+            "size_bytes": 68480
+          },
+          "positions": {
+            "dtype": "<f4",
+            "path": "valid/position_000099.npy",
+            "sha256": "ea04331b23f05ea24ff701f11c61644c95979fcf6b4c4cb5cc92eab27a24157c",
+            "shape": [
+              301,
+              8544,
+              3
+            ],
+            "size_bytes": 30861056
+          },
+          "record_payload_bytes": 30935996,
+          "record_payload_sha256": "7c2c9dca9c1338a0a4b6bfde9393b1e97c7134f08bec8ca65ffd5bf14c096a1e",
+          "source_index": 99,
+          "source_key": [
+            99
+          ],
+          "source_offset_bytes": 2826449328,
+          "step_context": {
+            "dtype": "<f4",
+            "path": "valid/step_context_000099.npy",
+            "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+            "shape": [
+              301,
+              1
+            ],
+            "size_bytes": 1332,
+            "use": "Preserved auxiliary context; excluded from model input after value checks"
+          },
+          "trajectory_content_sha256": "c2203ec157bdd8404035950a4fe35cf55bb98ecf4c5f7c8fd431ed4e2d18088a"
+        }
+      ],
+      "source_index_grid": [
+        0,
+        3,
+        6,
+        10,
+        13,
+        17,
+        20,
+        23,
+        27,
+        30,
+        34,
+        37,
+        40,
+        44,
+        47,
+        51,
+        54,
+        58,
+        61,
+        64,
+        68,
+        71,
+        75,
+        78,
+        81,
+        85,
+        88,
+        92,
+        95,
+        99
+      ]
+    }
+  },
+  "trace_steps": [
+    1,
+    10,
+    50,
+    200,
+    295
+  ]
+}

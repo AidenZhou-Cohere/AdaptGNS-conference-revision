@@ -1,7 +1,0 @@
-{
-  "status": "failed_packaging_only",
-  "passed": 2,
-  "failed": 4,
-  "cause": "Sand protocol and scalar training-admission dependency absent from predecessor overlay; original scientific sources are unchanged.",
-  "repair": "Include the two exact pinned scalar/source dependencies explicitly."
-}

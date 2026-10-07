@@ -1,7 +1,0 @@
-{
-  "status": "rejected_before_output_creation",
-  "reason": "Raw scalar author test log exceeded the compact package limit of250000bytes",
-  "source_sha256": "605725d99bb6116208f952ab96e7ff8afef4fc2a5f324bdd66849b5b70c40752",
-  "raw_log_retained": "work/deadline_research_20261005/cuda_preparation/sand_scoped_scalar_author_attempt1.log",
-  "next_action": "Explicitly inventory oversized raw logs by byte hash; keep original logs locally and publish their compact final reviews"
-}

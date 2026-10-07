@@ -1,7 +1,0 @@
-{
-  "preliminary_build": "stopped while JSON credential-field scanner tried to decode an intentionally empty/unfinished JSON output; raw bytes preserved; scanner now retains non-JSON unsuccessful outputs",
-  "attempt1_tests": "3 failures after10passed+7subtests; missing copied Goop3D metadata fixture; tool output retained in conversation, no original log file",
-  "attempt2": "1failed+2errors,124passed+80subtests; missing scalar inspection fixture and pinned native_graph_rollout dependency",
-  "attempt3": "690passed+166subtests,1failed; no-GNS-import assertion observed imports from earlier tests in same process",
-  "resolution": "Added exact byte copies of missing dependencies; per-file process isolation used. No scientific source or test edits."
-}
