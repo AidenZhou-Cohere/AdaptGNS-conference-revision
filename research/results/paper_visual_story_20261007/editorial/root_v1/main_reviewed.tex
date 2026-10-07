@@ -1,0 +1,129 @@
+% Source-only editorial draft for root. No canonical manuscript edit.
+% Figure assets and the three FIGURE markers are integrated by root.
+% Preserve the actual title: Adaptive Interaction Graphs for Particle Simulation.
+% Move existing faithful/NLL derivations, conditional theory and cost identity intact to appendix.
+
+\begin{abstract}
+More messages do not automatically make a better particle simulator. They change the computation of a model trained on a particular interaction graph. We construct adaptive graphs that preserve native edges and append an exact budget of nearby pairs, then study how the simulator learns to use these messages and where a controller should place them. Mixed-graph training exposes the model to random expansions; cached residual scores allocate pairs with one simulator pass per forecast after initialization. Three-seed studies on Goop, WaterDrop and Sand, with paired continuations for WaterDrop, reveal different answers to these two questions. Exposure improves fixed-random rollout error in every Goop and WaterDrop seed, reducing Goop mean MSE from 0.301 to 0.129. Residual-guided placement is less reliable. On Sand, exposure lowers observed-history error under risk-guided allocation while worsening cached-risk rollout error in every seed. Prediction difficulty therefore differs from the benefit of an added interaction, and a favorable comparison on observed states need not survive autonomous feedback. These distinctions provide a practical basis for constructing and evaluating adaptive particle graphs.
+\end{abstract}
+
+\section{Introduction}
+A graph-based particle simulator decides which particles exchange messages before predicting their motion\citep{sanchez2020}. Enlarging a neighborhood seems an obvious way to supply more information near difficult interactions. Yet additional messages can also perturb a prediction that was already accurate. The model has learned a computation on one distribution of graphs; changing its connectivity at prediction time changes that computation. Before asking where to add interactions, we must ask whether the simulator has learned to use them.
+
+Residual prediction offers an appealing allocation rule: spend more computation where the model expects a large error. Its weakness is equally intuitive. A simulator may be wrong because it lacks information from another particle, because the state leaves some forcing unobserved, or because the model cannot express the required dynamics. Extra messages can address some of these errors and leave others untouched. A good prediction of difficulty need not identify a useful intervention.
+
+We investigate this gap with constructive adaptive graphs. We retain the simulator's native graph and append a specified number of optional local pairs. Graph-exposure training lets the model encounter such expansions before evaluation. A cached residual controller then chooses pairs using scores from its preceding prediction. Figure~\ref{fig:constructive-overview} shows the graph operation and the three comparisons it enables: change training at a fixed policy, compare placement on common histories, and follow placement through autonomous feedback.
+
+The resulting evidence contains a clear tension. Under the same random expansion policy, graph exposure improves every paired Goop and WaterDrop seed. But Goop residual allocation still loses to random on observed test histories. Sand makes the consequence visible: exposure narrows its observed risk deficit while worsening cached-risk rollouts in every seed. Our contribution is the constructive intervention and the paired study of this separation. The central question is whether a graph change improves the model's prediction, rather than whether its endpoints are difficult to predict.
+
+% FIGURE 1: root inserts concept graph + Learn/Place/Roll out argument flow.
+% Required label: fig:constructive-overview.
+% Learn already uses fixed-Random25 full rollouts; Roll out tests autonomous risk placement.
+
+\section{Constructive adaptive graphs}
+\subsection{Changing messages without replacing the native graph}
+The simulator receives six consecutive frames $H_t$, particle attributes and boundary information. It predicts normalized acceleration and a positive residual score for each particle; acceleration is transformed back to physical coordinates before integration. Let $E_0(x_t)$ be its native directed graph, including self-messages and the receiver cap of 128. We preserve this graph and collect optional unordered pairs in a surrounding annulus. If $P_\rho(x_t)$ contains the unordered geometric pairs inside radius $\rho$, then
+\[
+ C_R(x_t)=P_R(x_t)\setminus P_r(x_t),\qquad R>r.
+\]
+The geometric boundary convention is specified in Appendix~\ref{sec:implementation-details}.
+For an integer budget $B_t\ge0$, choose $S_t\subseteq C_R(x_t)$ with $|S_t|=\min(B_t,|C_R(x_t)|)$. Each selected pair adds both orientations, $D(S_t)=\{(i,j),(j,i):\{i,j\}\in S_t\}$, so
+\begin{equation}
+ E_t=E_0(x_t)\cup D(S_t),\qquad |E_t|=|E_0(x_t)|+2|S_t|.
+ \label{eq:budget}
+\end{equation}
+Our budgeted policies use $B_t=\lfloor0.25|C_R(x_t)|\rfloor$. They therefore add exactly the same number of messages when evaluated on common positions. Short-range pairs omitted by the native cap are not restored by the annulus, and additions are not recapped; final receiver degrees may exceed 128. The budget controls the intervention, not the simulator's total computational cost.
+
+The policy determines placement within this common action space. Random25 samples uniformly; Speed25 scores displacement magnitude; Risk25 uses predicted residual scores. RMS25 uses relative velocity over native neighbors. Native base and dense expansion provide the no-addition and all-annulus controls. All six policies are used for Goop and Sand; RMS25 was not predeclared for WaterDrop. The radius ratio is 1.267. Appendix~\ref{sec:implementation-details} specifies pair ranking, tie handling and graph conventions.
+
+\subsection{Learning to use additional messages}
+Base-only training always uses the native graph. In the paired mixed-graph arm, each training example independently receives a uniformly sampled quarter-annulus expansion with probability $1/2$. The two arms share initialization or continuation parent, sampled frames, noise, architecture and optimization schedule. Thus changing the training graph is the intervention; the objective does not reward an allocation policy directly.
+
+We use established faithful regression\citep{stirn2023} to learn residual scores without reweighting the mean predictor's squared-error gradient on matched inputs and graphs. The score $q_i$ estimates per-coordinate squared residual in normalized acceleration units, so $dq_i$ corresponds to vector squared error. It is neither an isolated epistemic-uncertainty estimate nor an estimate of the benefit of expansion. The adopted loss, stop-gradient construction, gradient handling and normalization are given in Appendix~\ref{sec:implementation-details}.
+
+\subsection{Allocating with a cache}
+The autonomous residual controller ranks each optional pair by its larger cached endpoint score. One native-base pass on the initial six observed frames initializes the cache. Each forecast then selects pairs, runs the simulator once, advances positions and caches the new scores. The budget applies from forecast 1; later forecasts require no additional scoring pass and use no future positions or labels.
+
+The cache reuses information the simulator has already produced rather than requesting a new prediction solely for allocation. Current positions determine which pairs are eligible, while preceding scores determine their rank. This creates a temporal lag: the controller can respond to the latest available residual signal, but that signal may be stale when motion changes rapidly.
+
+The source of the score matters. During autonomous motion it comes from the controller's own preceding selected graph. For an observed-history comparison, each policy receives the same current history and risk is instead scored on the preceding observed base history. This second setting removes differences in predicted positions and permits a direct comparison of placement. It does not reproduce the feedback encountered by the autonomous controller.
+
+\section{Experiments}
+The first surprise appears before we learn an allocation rule: changing the training graphs can improve a fixed random policy. We then examine what residual-guided placement adds, and what happens when that policy predicts its own inputs.
+
+\begin{table}[t]
+\centering\small
+\caption{Three paired seeds per study, with two training arms. Histories are common observed-test histories per model. Rollouts show test sources $\times$forecasts. WaterDrop continues inspected 100k parents for 10k further updates.}
+\label{tab:study-overview}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc}
+\toprule
+Study & Updates & Histories & Rollouts\\
+\midrule
+Goop &100k&150&$30\times395$\\
+WaterDrop &100k$\to$110k&297&$27\times995$\\
+Sand &100k&150&$30\times314$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Goop and Sand train from initialization, while WaterDrop estimates continuation effects conditional on its inspected parents. These are exploratory follow-ups informed by earlier evidence. We compare all declared policies. Frames average within trajectories, trajectories within seeds, and means and sample standard deviations use all three paired seeds. Figure~\ref{fig:cross-material-evidence} retains both training and policy contrasts, including undefined full-horizon effects.
+
+\subsection{Can exposure make extra messages useful?}
+Goop improves before the allocator learns a ranking. With Random25 fixed at evaluation, mixed training reduces full-rollout MSE from $0.301\pm0.169$ to $0.129\pm0.031$, improving every seed. WaterDrop likewise improves under random, dense, speed and cached-risk evaluation in every seed. These comparisons show that the response to additional messages depends on training support.
+
+Sand is less consistent. Random25 improves in two seeds, but native base beats random in every seed under both training arms. Dense exposure improves every seed, yet dense remains worse than native base and random. An exposure gain at a fixed policy therefore does not establish that expansion is preferable to the native graph. Figure~\ref{fig:cross-material-evidence} shows both effects.
+
+\subsection{Does residual risk place the budget well?}
+Random allocation is essential to this comparison. Beating the native graph could reflect a benefit from extra messages alone; beating a random graph with the same additions requires the score to improve their placement. The equal-budget control therefore asks whether residual ranking adds value beyond supplying more local context.
+
+Observed histories let us change placement while keeping the model and current input fixed. Goop risk remains worse than random in every mixed-arm seed, even though exposure narrows the deficit. The residual score correlates with base error at $.214\pm.088$, but with the benefit of its chosen sparse action at only $.001\pm.048$. It identifies difficult predictions more clearly than predictions that its own intervention improves.
+
+WaterDrop reverses the risk-minus-random test ordering in every seed. That reversal does not extend to validation, where mixed risk remains worse than random on average. Sand presents another outcome: exposure narrows the test risk deficit in every seed, but risk still loses under both training arms. We call the mixed-minus-base change in the risk-minus-random gap the training interaction. A negative value moves this comparison toward risk; it need not make risk better than random.
+
+The separate Goop3D 25k observed-history extension also narrows the test risk gap in every seed, while fixed-random exposure improves only one of three test seeds (Appendix~\ref{sec:goop3d-25k-exposure}). This extends the observed comparison without establishing a general material or dimensionality effect. Its autonomous conclusion is separate from the evidence reported here.
+
+% FIGURE 2: root inserts full evidence atlas replacing both previous main result tables.
+% Required label: fig:cross-material-evidence.
+% Keep all29 existing mean/SD values, three Goop undefined/guard cells, WaterDrop RMS NP,
+% full horizons/denominators, and distinct observed-versus-autonomous scales.
+
+\subsection{Do the placement findings survive feedback?}
+A policy changes more than the messages in a single prediction. It changes positions, which change future neighborhoods; cached risk also changes the graph that produces its next scores. Sand is the decisive counterexample to transferring an observed placement finding into this setting. Despite a smaller observed deficit, exposure worsens cached-risk rollout error in every seed ($+.00917\pm.01201$) and widens its gap to random ($+.01975\pm.03062$). All 1,080 Sand outcomes complete.
+
+WaterDrop completes all 810 outcomes, but its autonomous risk-minus-random training interaction is $+.00284\pm.00466$, with mixed seed signs. The observed-test reversal therefore does not yield a consistent autonomous allocation gain. 
+
+Goop completes 1,077 of 1,080 outcomes. Three candidate-pair guards occur in mixed seed 2, one each for base, dense and cached risk. Affected mixed-arm full-horizon means and the cached-risk training interaction remain undefined. The two defined risk-versus-random seed comparisons have opposite signs. Among complete mixed-arm policies, speed and RMS beat random in every seed, with MSE $.112\pm.027$ and $.125\pm.032$. Figure~\ref{fig:cross-material-evidence} preserves the failed cells alongside the complete comparisons.
+
+\subsection{What does lower rollout error leave unresolved?}
+Position error is not the whole story. In Figure~\ref{fig:qualitative-goop2d}, the true particles settle along the floor, while the forecasts leave suspended groups or send particles outside the box. This fixed example illustrates the mismatch; it is not a controlled training comparison. Across Goop's mixed random, speed and RMS rollouts, 19.55--22.16\% of particles lie more than $10^{-6}$ outside the metadata box, versus $0.0632\%$ for truth. Even lower-error rollouts can remain physically implausible. These geometric diagnostics do not test conservation.
+
+% FIGURE 3: root inserts existing fixed source12 qualitative strip.
+% Required label: fig:qualitative-goop2d.
+% Initial truth plus H395 truth/native-base/mixed-random/mixed-risk; root binds exact panels.
+% Retain every particle, common bounds and visible out-of-box markers; no new sample selection.
+
+\section{From residual risk to interaction benefit}
+The experiments suggest a different target for an allocator. Residual risk estimates error under the current model and graph. For a fixed model, history $H_t$ and target $Y$, the realized benefit of adding pairs $S$ is instead
+\begin{align}
+ \Delta(S;H_t,Y)={}&\mathcal E(f(H_t,E_0(x_t)),Y)\nonumber\\
+ &-\mathcal E(f(H_t,E_0(x_t)\cup D(S)),Y).
+ \label{eq:intervention-benefit}
+\end{align}
+Both predictions use the same loss and target; positive benefit means expansion helped. A large residual could indicate missing interaction information, but it could also reflect ambiguity or model bias that the added pairs cannot correct. Accurate residual prediction supplies no ordering of these benefits.
+
+Benefit belongs to the selected set, not necessarily to each edge independently. Message passing can combine or oppose information from several additions. A per-particle error score lacks both a direction for changing a prediction and an explicit measure of these interactions. The budget fixes the action size; it is the response to that action that the experiments assess.
+
+Earlier WaterDrop controls show the same mismatch under faithful and conventional heteroscedastic objectives. Risk correlates with base error but weakly with its own sparse-action benefit, and random has lower one-step error in every seed. Restoring the trained self-messages lowers error without reversing that ordering. The exact loss-change analysis separates alignment with the target from the squared prediction change (Appendix~\ref{sec:actual-action-benefit}). Conditional score-perturbation bounds require the residual score to approximate useful action values; that assumption is not supplied by residual calibration (Appendix~\ref{sec:allocation-score-conditions}).
+
+Computation also requires a common-state comparison. Adding pairs increases the number of directed messages on that state. A smaller graph later in a rollout can result from a different predicted geometry rather than cheaper placement. Caching removes a separate subsequent scoring pass, while construction, selection and extra messages still cost work. Different geometries and shared-host execution prevent an isolated-speedup conclusion; Appendix~\ref{sec:physical-cost} gives the decomposition and measured costs.
+
+\section{Related work}
+Graph networks learn interactions\citep{battaglia2016}; GNS combines geometric particle graphs with message passing and noise-augmented training\citep{sanchez2020}. We build on released particle GNS software\citep{kumar2023}. Neural SPH incorporates physical structure into fluid prediction\citep{toshev2024}. Our intervention changes communication while retaining each trained simulator for a policy comparison.
+
+MeshGraphNets predicts a sizing field for remeshing\citep{pfaff2021}, while LAMP learns refinement and coarsening under an error--computation tradeoff\citep{wu2023}. We retain the particle set and add local pairs. NRI and dNRI infer relational structure\citep{kipf2018,graber2020}; curvature-based rewiring addresses communication bottlenecks\citep{topping2022}; AdaMeshNet changes connectivity within message-passing layers\citep{seo2025}. These approaches motivate adaptation without equating prediction difficulty with the value of an additional edge. Faithful regression\citep{stirn2023} addresses the mean--variance optimization problem studied by \citet{seitzer2022}; we adopt its mean-gradient separation as a control.
+
+\section{Limitations and conclusion}
+The evidence comes from three-seed exploratory comparisons and includes continuations from inspected parents. Different data, horizons and backends do not isolate material effects; Sand's native-CUDA lineage does not establish optimization equivalence. Radius thresholds and top-budget selection can be discontinuous, and extra edges can amplify error. Neither the conditional theory nor lower MSE establishes stable physical simulation. Conservation, peak memory and optimized runtime remain unmeasured.
+
+Constructive graphs make additional messages a controllable intervention. Exposure can teach a simulator to use those messages, but residual ranking does not consistently identify where they help. The contrast between Goop/WaterDrop exposure gains and Sand's adverse cached-risk feedback makes that distinction consequential. Adaptive graph methods should be judged by the benefit of their interventions and the trajectories they create, with complete policy comparisons alongside their computational cost.

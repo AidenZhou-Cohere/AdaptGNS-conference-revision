@@ -1,0 +1,17 @@
+{
+  "source_sha256": "da3d098d228b51f83056364fccdf12083729141e4d4c748a71c3fd4684100f0b",
+  "title_unchanged": true,
+  "main_figures": 3,
+  "main_tables": 1,
+  "appendix_tables": 10,
+  "previous_appendix_tables": 52,
+  "main_readable_word_tokens_old": 3480,
+  "main_readable_word_tokens_new": 2765,
+  "appendix_readable_word_tokens_old": 13665,
+  "appendix_readable_word_tokens_new": 3414,
+  "word_counter_scope": "Approximate English token count with picture primitives, comments and command names removed; includes captions/table labels.",
+  "references_resolve": true,
+  "duplicate_labels": [],
+  "science_reruns": false,
+  "prior_inspection_failure": "Unanchored begin-document count also matched two official-style comments; corrected to actual line-start document commands. Native compilation itself succeeded."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "qualitative_figure_and_physical_prose_approved_abstract_phrase_correction_requested",
+  "scope": "Actual regenerated PNG visual check and corrected TeX/source-caption only. Prior selected-glyph fidelity review df85ebf1 stands; no saved arrays/models rerun. Native integrated manuscript pages not exported or inspected.",
+  "inputs": {
+    "work/paper_visual_story_20261007/root_v1/main_reviewed.tex": "cf6f3caa7f0fe21c11dd13883ce9665659b678f9ec745e3594b0040ac3a6ca1f",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip_picture.tex": "e4837e79c2b28da0be451551e5efeee001f13339fe12daba4e5ca295340da249",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip_figure.tex": "957f982bcf4132db85bfc0e64a163ac36928be521b1b8b043fc5e185e378e668",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip.png": "6a8ac58a11211c4c124a001e92666fcd94dcd6e88fbd6cb01f19d05b9bf06c41",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/reformat_record.json": "a6f91ede5e1c1fe0445811873fddaf2660487892b34bc48ed7905cc6bb5b9aec"
+  },
+  "checks": {
+    "text_braces_balanced": true,
+    "neutral_headline_fits_png": true,
+    "all5415_particle_glyphs_retained": true,
+    "five_equal_scale_panels_no_clipping": true,
+    "training_policy_labels_readable": true,
+    "strict_outside_counts_and_clamped_cross_caption": true,
+    "single_fixed_example_not_training_effect": true,
+    "physical_main_prose_supported_by_display": true,
+    "aggregate_outside_1e6_threshold_distinct_from_strict_figure_count": true,
+    "conservation_not_claimed": true
+  },
+  "requested_abstract_correction": "Replace improves observed-history risk predictions with lowers observed-history error under risk-guided allocation, or narrows risk observed-history deficit to random; avoid implying better residual-head calibration.",
+  "metadata_note": "reformat_record still includes its own stale hash under outputs. Remove self-entry and hash the completed record externally.",
+  "next": "Await actual integrated main/appendix for structural omissions and native compile; no repeat of successful scientific/glyph audits."
+}

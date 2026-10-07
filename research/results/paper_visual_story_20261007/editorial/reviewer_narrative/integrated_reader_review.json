@@ -1,0 +1,65 @@
+{
+  "reviewer": "final_reader_check",
+  "created_utc": "2026-10-07T05:18:46.834208+00:00",
+  "scope": "Integrated reader clarity, essential support and study-scope review; no scientific/table/figure re-audit",
+  "outcome": "approved_subject_to_one_scope_table_correction",
+  "input_sha256": {
+    "work/manuscript_body.tex": "a4409fb586f37a23956c3c0ad946e89f2dd1a68d2365b9cb20690d8f7eca787c",
+    "work/conference_experiments_main.tex": "67fdbfc98e990c88019cbbc1c49ef71b9509394987ccb62c91626021e1cb5108",
+    "work/curated_appendix.tex": "0f831d7c76f5b8aa86c56b538518456cbfe83157db9c013c2f0e6caa6a8d794b",
+    "outputs/revised_manuscript.tex": "da3d098d228b51f83056364fccdf12083729141e4d4c748a71c3fd4684100f0b",
+    "work/visual_overview_figure.tex": "eda69ba989e1d071bb0ccceed96d14518d7f243e221774809b094d0a4fc3388b",
+    "work/visual_evidence_figure.tex": "d0628a9766c91e13089008b1c0e7535d95c9634416f66c68a4d0fd9aba850cf9",
+    "work/visual_particle_figure.tex": "957f982bcf4132db85bfc0e64a163ac36928be521b1b8b043fc5e185e378e668"
+  },
+  "critical_findings": [
+    {
+      "file": "work/curated_appendix.tex",
+      "location": "tab:experiment-scope, Goop observed validation/test cell",
+      "actual": "--- / 150 histories",
+      "required": "150 / 150 histories",
+      "basis": "work/deadline_research_20261005/cuda_preparation/goop_graph_support_100k_protocol_v2.md",
+      "basis_sha256": "c8690d0da209c66557e3dbb0cbccd55d660b4cc270683913f74d381516591851",
+      "support": "Five fixed targets on each of all30 validation and30 test sources separately; same-state valid is an original stage.",
+      "notified": [
+        "/root",
+        "/root/completion_curation"
+      ]
+    }
+  ],
+  "other_critical_support_loss": false,
+  "preserved": [
+    "constructive intervention and exact pair budget",
+    "separate training, observed placement and autonomous feedback questions",
+    "WaterDrop inspected-parent continuation qualifier",
+    "all Goop guards and undefined full-horizon means",
+    "Sand native-base advantage and adverse autonomous risk findings",
+    "WaterDrop test/validation disagreement and mixed autonomous interaction",
+    "full-policy absolute and physical/cost comparisons",
+    "conditional rather than unconditional theoretical claims",
+    "separate historical objective/self-message controls",
+    "sample SD rather than confidence intervals",
+    "no general stability, conservation or speedup claim"
+  ],
+  "performed": [
+    "Main/appendix/caption reader inspection",
+    "Narrow frozen-protocol and existing-runtime-source support lookup",
+    "Earlier static unresolved-reference/duplicate-label/insertion-marker pass"
+  ],
+  "not_performed": [
+    "scientific execution",
+    "array audit",
+    "table numerical re-audit",
+    "figure numerical or glyph re-audit",
+    "canonical edits",
+    "compilation",
+    "exported-PDF visual inspection"
+  ],
+  "remaining": [
+    "Apply Goop scope-table cell correction",
+    "Final exported-manuscript inspection",
+    "Separate later Goop3D autonomous integration review when admitted"
+  ],
+  "non_scientific_search_failure": "One zsh unmatched-glob lookup failed before search; narrow path lookup succeeded later.",
+  "review_md_sha256": "84652e66a6d055f063fc1af16e1c15a7c33acc75f5b74572fabb855f593359bd"
+}

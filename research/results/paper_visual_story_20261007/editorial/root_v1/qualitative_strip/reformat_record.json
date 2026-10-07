@@ -1,0 +1,30 @@
+{
+  "source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_qualitative_request_v1/goop_fixed_source12_inline_v1.tex",
+  "source_sha256": "2a5b34584dda3196f3070c5ba4eb072140e1999943edfc10ae611bd8a03ba6b4",
+  "selected_existing_panels": [
+    0,
+    8,
+    9,
+    10,
+    11
+  ],
+  "particles_each": 1083,
+  "all_particle_glyphs_preserved": true,
+  "same_bounds": [
+    [
+      0.1,
+      0.9
+    ],
+    [
+      0.1,
+      0.9
+    ]
+  ],
+  "scope": "Pure vector re-layout of previously verified glyphs; no array/model reads. Forecast 1 truth plus all four final panels. Original twelve-panel figure remains in published prior package.",
+  "outputs": {
+    "qualitative_strip_figure.tex": "957f982bcf4132db85bfc0e64a163ac36928be521b1b8b043fc5e185e378e668",
+    "qualitative_strip.svg": "cabd6a5509729c4e37643bd8b45e64a51cb8569bd82e7666dbbf20f3f2f8df06",
+    "qualitative_strip_picture.tex": "e4837e79c2b28da0be451551e5efeee001f13339fe12daba4e5ca295340da249",
+    "qualitative_strip.png": "6a8ac58a11211c4c124a001e92666fcd94dcd6e88fbd6cb01f19d05b9bf06c41"
+  }
+}

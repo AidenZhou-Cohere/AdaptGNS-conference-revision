@@ -1,0 +1,41 @@
+{
+  "scope": "Existing source/runtime records only; no new inference or hardware query. Training-device line does not imply CPU/CUDA optimization identity or comparable runtime.",
+  "sources": [
+    {
+      "claim": "Goop training: GB200, Torch 2.13.0+cu129, CUDA 12.9",
+      "path": "work/deadline_research_20261005/cuda_preparation/aquamarine_goop_completion_inspection_0937_v1.json",
+      "sha256": "bd1e75dc33ab689fea824510a9ea56508c18e05ef1328948f2b1d08520739159",
+      "support": "wave-B verified scientific100k endpoint runtime includes torch/cuda/name/device/threads; same frozen cohort environment"
+    },
+    {
+      "claim": "Sand training: GB200, Torch 2.13.0+cu129, CUDA 12.9",
+      "path": "work/deadline_research_20261005/cuda_preparation/sand_completed_A_1742_root_v1/files/sand_runtime_migration_A_20261006_v2/training/mix_seed1/protocol.json",
+      "sha256": "aa6732eaab5515ab3f26bad26de5903394778d0c765c0741d6c9d7fb96f03208",
+      "support": "runtime at lines1093 onward; optimizer gradient_clipping:null"
+    },
+    {
+      "claim": "Sand migration remains GB200/CUDA12.9",
+      "path": "work/deadline_research_20261005/cuda_preparation/sand_completed_A_1742_root_v1/files/sand_runtime_migration_A_20261006_v2/training/mix_seed1/runtime_migration.json",
+      "sha256": "6e2a104f3429f8a8f8e6c2cd6a029f1ce465138f7af0f39dbc85dd671ababb7f",
+      "support": "original and resumed runtime name/device/torch/cuda retained"
+    },
+    {
+      "claim": "WaterDrop parent and continuation runtime: local MPS, arm64, SciPy host graphs, two threads, fallback disabled",
+      "path": "work/faithful-graph-support-10k-20261006/base_seed0/protocol.json",
+      "sha256": "b53b1d7539d535f25fcd7d2660280e6cb27d77f55675409d0551fe0decc883af",
+      "support": "parent stored runtime and continuation protocol; gradient_clipping:null"
+    },
+    {
+      "claim": "WaterDrop evaluation runtime: local MPS, SciPy host graphs, two threads, fallback disabled",
+      "path": "work/continuation-evaluation-20261006/observed/base_seed0/protocol.json",
+      "sha256": "df6154b2d7890fcaf9ac8f53257202e6b4d9f0453586aed89bc938a46ac57919",
+      "support": "evaluation protocol includes model/parent runtime provenance and current runtime"
+    },
+    {
+      "claim": "WaterDrop continuation and evaluation required runtime conventions",
+      "path": "outputs/AdaptGNS/research/results/waterdrop_continuation_110k_20261006/source/workspace/outputs/AdaptGNS/research/protocols/continuation_evaluation_20261005.md",
+      "sha256": "ce0ae3028155775c39c56cf51860cda07a54bd912f24af60e5b44110f826e7b4",
+      "support": "line51: real runs require local MPS, two threads, SciPy host graphs, explicit fallback=0"
+    }
+  ]
+}

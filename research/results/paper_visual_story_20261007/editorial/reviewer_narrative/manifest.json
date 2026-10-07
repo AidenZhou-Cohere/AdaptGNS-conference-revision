@@ -1,0 +1,43 @@
+{
+  "status": "source_only_skeptical_reader_proposal",
+  "canonical_edit": false,
+  "scientific_recomputation": false,
+  "inputs": {
+    "work/manuscript_body.tex": "d51a03faa6b06194718b942a43f73a4b1ad1e9aafc9cd3d05229a28c322fa267",
+    "work/conference_experiments_main.tex": "0a1d7c308f65c0fb0cf3f01020b6e8afae8034e0baa97b940b0a971075aab89e",
+    "outputs/revised_manuscript.tex": "25ff4acafc8dd2fd8879162e322193a130a3749293167697ce4157a7e1e91e05"
+  },
+  "files": {
+    "fragments.tex": {
+      "sha256": "cf9eec1d1f9853f57b447272a2e40b591f3a3e92eed584a625cc7aac79f2c5b5",
+      "bytes": 11027
+    },
+    "reviewer.md": {
+      "sha256": "853cde42d4b8c0e43733eda1d1ab13d273d648df2d5eb0c1e1fd03d5edd15ef9",
+      "bytes": 5064
+    },
+    "cuts_and_moves.md": {
+      "sha256": "ff4176729c5940a6f02936620779b95de4bb854f731e2e8c771ad4917fc880be",
+      "bytes": 4654
+    },
+    "full_main_draft.tex": {
+      "sha256": "930322e89bcbd54139d6cce6e7d3a79e123f3f6771c1d2d6dda7a84c2e978d0f",
+      "bytes": 19846
+    },
+    "argument_flow.md": {
+      "sha256": "ccc7ad2ca197dc667d9403da636bf2cf5a615b96a9d3d654e89da51eb279c17e",
+      "bytes": 3859
+    }
+  },
+  "root_integration_notes": [
+    "fragments.tex is optional replacement prose, not a complete standalone source. Replace STORY_PLACEHOLDER with actual approved flowchart label.",
+    "Preserve original NLL/faithful equations, formal G and graph-cost decomposition intact in the appendix when removing their main versions.",
+    "Keep unchanged complete main result tables and all guard/null/NP semantics; exact prose magnitudes already present in those tables need not be repeated.",
+    "The proposed brief interpretation drops duplicate correlation magnitudes only from main prose; all original detailed tables/appendix values remain.",
+    "Goop3D autonomous evidence remains unadmitted; integrate separately only when complete.",
+    "These prose fragments intentionally contain no newly computed statistics or selected examples."
+  ],
+  "full_main_draft_words": 2405,
+  "full_main_abstract_words": 172,
+  "full_main_graph_boundary": "C_R=P_R minus P_r; exact geometric boundary convention delegated to appendix per root correction."
+}

@@ -1,0 +1,55 @@
+\section{Experiments}
+The first surprise appears before we learn an allocation rule: changing the training graphs can improve a fixed random policy. We then examine what residual-guided placement adds, and what happens when that policy predicts its own inputs.
+
+\begin{table}[t]
+\centering\small
+\caption{Three paired seeds per study, with two training arms. Histories are common observed-test histories per model. Rollouts show test sources $\times$forecasts. WaterDrop continues inspected 100k parents for 10k further updates.}
+\label{tab:study-overview}
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{lccc}
+\toprule
+Study & Updates & Histories & Rollouts\\
+\midrule
+Goop &100k&150&$30\times395$\\
+WaterDrop &100k$\to$110k&297&$27\times995$\\
+Sand &100k&150&$30\times314$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Goop and Sand train from initialization, while WaterDrop estimates continuation effects conditional on its inspected parents. These are exploratory follow-ups informed by earlier evidence. We compare all declared policies. Frames average within trajectories, trajectories within seeds, and means and sample standard deviations use all three paired seeds. Figure~\ref{fig:cross-material-evidence} retains both training and policy contrasts, including undefined full-horizon effects.
+
+\subsection{Can exposure make extra messages useful?}
+Goop improves before the allocator learns a ranking. With Random25 fixed at evaluation, mixed training reduces full-rollout MSE from $0.301\pm0.169$ to $0.129\pm0.031$, improving every seed. WaterDrop likewise improves under random, dense, speed and cached-risk evaluation in every seed. These comparisons show that the response to additional messages depends on training support.
+
+Sand is less consistent. Random25 improves in two seeds, but native base beats random in every seed under both training arms. Dense exposure improves every seed, yet dense remains worse than native base and random. An exposure gain at a fixed policy therefore does not establish that expansion is preferable to the native graph. Figure~\ref{fig:cross-material-evidence} shows both effects.
+
+\subsection{Does residual risk place the budget well?}
+Random allocation is essential to this comparison. Beating the native graph could reflect a benefit from extra messages alone; beating a random graph with the same additions requires the score to improve their placement. The equal-budget control therefore asks whether residual ranking adds value beyond supplying more local context.
+
+Observed histories let us change placement while keeping the model and current input fixed. Goop risk remains worse than random in every mixed-arm seed, even though exposure narrows the deficit. The residual score correlates with base error at $.214\pm.088$, but with the benefit of its chosen sparse action at only $.001\pm.048$. It identifies difficult predictions more clearly than predictions that its own intervention improves.
+
+WaterDrop reverses the risk-minus-random test ordering in every seed. That reversal does not extend to validation, where mixed risk remains worse than random on average. Sand presents another outcome: exposure narrows the test risk deficit in every seed, but risk still loses under both training arms. We call the mixed-minus-base change in the risk-minus-random gap the training interaction. A negative value moves this comparison toward risk; it need not make risk better than random.
+
+The separate Goop3D 25k observed-history extension also narrows the test risk gap in every seed, while fixed-random exposure improves only one of three test seeds (Appendix~\ref{sec:goop3d-25k-exposure}). This extends the observed comparison without establishing a general material or dimensionality effect. Its autonomous conclusion is separate from the evidence reported here.
+
+% VISUAL_EVIDENCE_INSERT
+% Required label: fig:cross-material-evidence.
+% Keep all29 existing mean/SD values, three Goop undefined/guard cells, WaterDrop RMS NP,
+% full horizons/denominators, and distinct observed-versus-autonomous scales.
+
+\subsection{Do the placement findings survive feedback?}
+A policy changes more than the messages in a single prediction. It changes positions, which change future neighborhoods; cached risk also changes the graph that produces its next scores. Sand is the decisive counterexample to transferring an observed placement finding into this setting. Despite a smaller observed deficit, exposure worsens cached-risk rollout error in every seed ($+.00917\pm.01201$) and widens its gap to random ($+.01975\pm.03062$). All 1,080 Sand outcomes complete.
+
+WaterDrop completes all 810 outcomes, but its autonomous risk-minus-random training interaction is $+.00284\pm.00466$, with mixed seed signs. The observed-test reversal therefore does not yield a consistent autonomous allocation gain. 
+
+Goop completes 1,077 of 1,080 outcomes. Three candidate-pair guards occur in mixed seed 2, one each for base, dense and cached risk. Affected mixed-arm full-horizon means and the cached-risk training interaction remain undefined. The two defined risk-versus-random seed comparisons have opposite signs. Among complete mixed-arm policies, speed and RMS beat random in every seed, with MSE $.112\pm.027$ and $.125\pm.032$. Figure~\ref{fig:cross-material-evidence} preserves the failed cells alongside the complete comparisons.
+
+\subsection{What does lower rollout error leave unresolved?}
+Position error is not the whole story. In Figure~\ref{fig:qualitative-goop2d}, the true particles settle along the floor, while the forecasts leave suspended groups or send particles outside the box. This fixed example illustrates the mismatch; it is not a controlled training comparison. Across Goop's mixed random, speed and RMS rollouts, 19.55--22.16\% of particles lie more than $10^{-6}$ outside the metadata box, versus $0.0632\%$ for truth. Even lower-error rollouts can remain physically implausible. These geometric diagnostics do not test conservation.
+
+% VISUAL_PARTICLE_INSERT
+% Required label: fig:qualitative-goop2d.
+% Initial truth plus H395 truth/native-base/mixed-random/mixed-risk; root binds exact panels.
+% Retain every particle, common bounds and visible out-of-box markers; no new sample selection.
+

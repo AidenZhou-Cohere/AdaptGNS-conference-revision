@@ -1,0 +1,21 @@
+{
+  "all_nontype_primitives_exactly_unchanged": true,
+  "all_seed_records_and_axis_coordinates_exactly_unchanged": true,
+  "canonical_source_edited": false,
+  "changes": [
+    "Overview card explicitly says Same observed test histories.",
+    "Evidence upper band says Observed test; caption specifies observed-test placement.",
+    "Removed malformed Train quotation.",
+    "Shortened captions; kept SD, scales, undefined guard, NP, and score-source distinction; opening marks graph schematic with self-messages omitted."
+  ],
+  "new_fidelity_sha256": "371edf239449e7c77548a1d9a59c153dc28f5bd064216338eea95b25e0e1aaa7",
+  "new_result_review_or_experiment": false,
+  "old_fidelity_sha256": "9c1f8d6a4aba1e51c0c8bca777ff50be94d8d20a3a95a008409d394b9719fc11",
+  "products_sha256": {
+    "constructive_overview.png": "1c3c7cc7272702c0ee5a8af9dc5452a0ee73873b6716960434ff6d5afac5e542",
+    "constructive_overview.tex": "eda69ba989e1d071bb0ccceed96d14518d7f243e221774809b094d0a4fc3388b",
+    "cross_material_evidence.png": "282e3050af8501e5d7979d5f1840063475cac4562b3fbd1d2163733bbd40f131",
+    "cross_material_evidence.tex": "d0628a9766c91e13089008b1c0e7535d95c9634416f66c68a4d0fd9aba850cf9"
+  },
+  "schema": "main_visual_story_test_label_caption_delta_v1"
+}

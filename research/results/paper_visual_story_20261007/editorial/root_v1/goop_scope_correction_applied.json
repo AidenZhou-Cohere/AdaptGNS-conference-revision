@@ -1,0 +1,7 @@
+{
+  "before_sha256": "da3d098d228b51f83056364fccdf12083729141e4d4c748a71c3fd4684100f0b",
+  "after_sha256": "656c3498bb7407c9c4bb312ae3bc319457cdd54ab248b45650b6a8d022d02549",
+  "change": "Correct Goop observed validation / test scope from --- / 150 to 150 / 150 histories, as the frozen protocol specifies.",
+  "exact_single_replacement": true,
+  "diff": "--- \n+++ \n@@ -7844,7 +7844,7 @@\n \\toprule\n Material & Training & Observed validation/test & Test sources & Forecasts\\\\\n \\midrule\n-Goop & Fresh 100k & --- / 150 histories & 30 & 395\\\\\n+Goop & Fresh 100k & 150 / 150 histories & 30 & 395\\\\\n WaterDrop & 100k parent $+$ 10k & 128 / 297 histories & 27 (indices 3--29) & 995\\\\\n Sand & Fresh 100k & 150 / 150 histories & 30 & 314\\\\\n \\bottomrule\n"
+}

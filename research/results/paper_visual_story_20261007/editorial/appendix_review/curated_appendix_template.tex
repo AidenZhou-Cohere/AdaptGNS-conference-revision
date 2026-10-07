@@ -1,0 +1,188 @@
+\appendix
+\onecolumn
+
+\section{Experimental setup and implementation}
+\label{sec:implementation-details}
+The complete comparisons use faithful regression with paired base-only and mixed-graph training at seeds 0--2. In the mixed arm, each example independently receives a uniformly sampled, floor-rounded quarter of its optional annulus with probability $1/2$. The arms share initialization and frame, noise and optimization schedules. Table~\ref{tab:experiment-scope} distinguishes fresh training from continuation; their outcomes are not pooled. These studies follow inspected historical and exploratory evidence and are not pristine independent confirmation.
+
+\begin{table}[!ht]
+\centering\small
+\caption{Scope of the three complete graph-exposure comparisons. Counts are per endpoint. Observed validation and test use fixed ground-truth histories; autonomous evaluation observes only its initial six frames.}
+\label{tab:experiment-scope}
+\begin{tabular}{lllll}
+\toprule
+Material & Training & Observed validation/test & Test sources & Forecasts\\
+\midrule
+Goop & Fresh 100k & 150 / 150 histories & 30 & 395\\
+WaterDrop & 100k parent $+$ 10k & 128 / 297 histories & 27 (indices 3--29) & 995\\
+Sand & Fresh 100k & 150 / 150 histories & 30 & 314\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The model has six-frame histories, width 128, ten message-passing blocks and batch size two. Fresh Goop and Sand training uses Adam with learning rate decaying from $10^{-4}$ to $10^{-5}$ and noise scale $6.7\times10^{-4}$. WaterDrop continues each inspected faithful 100k parent for 10k updates at fixed learning rate $10^{-5}$, inheriting optimizer moments and counters. Its paired comparison is therefore conditional on those parents. Endpoints are fixed by update count, with no checkpoint selection by test error. Sand uses a distinct native-CUDA training lineage; deterministic replay on one device does not establish CPU/CUDA optimization equivalence. Source, data, configuration, schedule and checkpoint hashes and unsuccessful predecessors are retained with the code and results.
+
+Goop and Sand training runs use NVIDIA GB200 GPUs with PyTorch 2.13.0+cu129 and CUDA 12.9. WaterDrop training and evaluation use local Apple-arm64 MPS with SciPy host graphs, two threads and CPU fallback disabled. Per-study runtime manifests retain the software, device and backend identities; timings across these environments are not pooled.
+
+\subsection{Learning the residual signal}
+We use faithful heteroscedastic regression \citep{stirn2023}. Let $h_i$ be the shared representation, $y_i$ the normalized target, $R_i=\|\mu_i-y_i\|_2^2$, and $\operatorname{sg}$ denote stop-gradient. Ordinary isotropic Gaussian negative log-likelihood, omitting its constant, is
+\begin{align}
+ \ell_{\mathrm{NLL},i}&=\frac{R_i}{2q_i}+\frac d2\log q_i,\nonumber\\
+ q_i&=\operatorname{softplus}(g_\phi(h_i))+q_{\min}.
+ \label{eq:nll}
+\end{align}
+The faithful variant detaches both the shared features seen by the variance head and its residual target:
+\begin{align}
+ q_i&=\operatorname{softplus}(g_\phi(\operatorname{sg}(h_i)))+q_{\min},\nonumber\\
+ \ell_{\mathrm F,i}&=\tfrac12R_i+
+ \frac{\operatorname{sg}(R_i)}{2q_i}+\frac d2\log q_i.
+ \label{eq:faithful}
+\end{align}
+Only the first term updates the mean network, giving the squared-error mean gradient on matched inputs and graphs. If gradient clipping is used, separating mean-path and risk-head clipping preserves that separation; shared clipping can reintroduce coupling. The equations display an additive floor and the conventional $\tfrac12R_i$ scale; the repaired original trainer clamps its positive head output below and also supports its original $R_i$ scale. The saved configurations retain this distinction and whether clipping is used. The scalar $q_i$ predicts per-coordinate residual variance in normalized acceleration units, so $dq_i$ predicts vector squared error. It is not an isolated estimate of epistemic uncertainty or physical stochasticity.
+
+\subsection{Native graphs and budgeted controls}
+The directed native base graph retains self-edge candidates and the 128-edge receiver cap. Pair construction queries both radii and applies the strict float32-distance filters $d<r$ and $d<1.267r$, with $r=.015$. The optional annulus is the expanded geometric pair set minus the geometric base pair set. Native incoming edges are ordered by receiver, distance and source ID before capping. Dense appends both directions of every annulus pair; sparse policies append both directions of their selected pairs after the native prefix. Neither operation restores short-range pairs omitted by the cap or recaps the final graph.
+
+For a six-frame history $z_i^0,\ldots,z_i^5$, Speed25 ranks particles by $s_i=\|z_i^5-z_i^4\|_2$, computed in float32 without normalization or timestep division. Goop and Sand also use RMS25, which converts positions to float64 and computes
+\begin{equation}
+ v_i=(z_i^5-z_i^4)/\Delta t,\qquad
+ s_i=\left(\frac{1}{|\mathcal N_i|}\sum_{j\in\mathcal N_i}\|v_j-v_i\|_2^2\right)^{1/2},
+ \quad \Delta t=.0025.
+\end{equation}
+Here $\mathcal N_i$ contains incoming nonself neighbors remaining after the native cap; an empty neighborhood has score zero. Self-edge candidates participate in the cap but not in the RMS sum. Both controls use max-endpoint pair scores. Histories are shared observed inputs in the one-step comparison and each policy's own predicted inputs in rollouts.
+
+\paragraph{Selection and ties.}\label{sec:tie-symmetry}
+All sparse policies retain $\lfloor .25|C_R|\rfloor$ optional pairs. Score ties use lexicographic particle IDs. This is deterministic but not permutation equivariant at ties; symmetric edge orientations do not imply a conservation law. Sorting $K=|C_R|$ scores costs $O(K\log K)$ time and $O(K)$ score/index storage in addition to candidate and graph storage. The pair budget does not bound total memory or runtime.
+
+\paragraph{Observed and cached risk.}
+Observed Risk25 scores the preceding observed base history separately. Autonomous Risk25 pays for one initial base scoring pass and applies its budget from forecast 1; subsequent forecasts select current candidates with the preceding selected-graph score, run one simulator pass, integrate and update the cache. Thus an H-step cached rollout requires H$+1$ passes. Future positions and targets never enter selection. The two risk conventions test different feedback regimes and are labeled separately in the evidence.
+
+\subsection{Normalization and aggregation}
+\label{sec:noise-augmentation}
+Full-model checkpoints store their normalization parameters; evaluation uses them without injecting training noise. If training perturbs position $x_k$ by $\xi_k$ and adjusts the next-position target to $x_{t+1}+\xi_t$, the acceleration target is
+\begin{equation}
+ Y_t=A_t-(\xi_t-\xi_{t-1}),\qquad A_t=x_{t+1}-2x_t+x_{t-1}.
+ \label{eq:noise-target-identity}
+\end{equation}
+Both the predictor input and target depend on this noise. Calibration for the augmented regression task therefore does not establish clean-evaluation residual calibration. If $D$ is the diagonal normalization scale for position second differences, isotropic normalized covariance $qI$ becomes $qD^2$ in those units, and predicted physical squared-acceleration error is $q\operatorname{tr}(D^2)/(\Delta t)^4$. It is generally not $dq$. A positive multiplicative recalibration of $q$ preserves all strict score rankings.
+
+Within each seed, frames average equally within trajectory and trajectories equally; paired differences are computed on matching units before aggregation. Reported mean $\pm$ SD uses all three seed means and the sample SD, not a confidence interval. A failed or missing required outcome makes its full-horizon aggregate undefined rather than creating a survivor-only mean. Accepted prefixes and secondary endpoints cannot substitute for that aggregate. Validation and test remain separate.
+
+\section{Complete policy comparisons}
+The tables retain every declared policy, both training arms, and the full autonomous horizon. Observed columns report position-coordinate MSE on common histories. Risk25 in these columns uses the preceding observed base history; rollout Risk25 uses its own selected-graph cache. The main figure presents paired effects; these absolute results show the baselines from which those effects arise. All ordered seed values and additional metrics remain in the machine-readable results.
+
+\subsection{Goop}
+\label{sec:goop-graph-exposure}
+% TABLE_GOOP
+% TABLE_FAILURES
+Mixed training improves fixed-random H395 error in every paired seed, but three required Goop outcomes hit the 100,000-candidate-pair guard (Table~\ref{tab:goop-all-failures}). All occur in mixed seed 2 and after forecast 200. Consequently mixed base, dense and cached-risk full-H395 means, and the full-horizon cached-risk training interaction, remain undefined. The defined secondary forecast-200 errors do not repair those nulls. Base and dense also fail, so this evidence does not isolate a risk-specific instability. Clean-validation MSE and NLL improve only at seed 0, precluding a uniform calibration claim.
+
+\subsection{WaterDrop continuation}
+\label{sec:waterdrop-110k-exposure}
+% TABLE_WATERDROP
+Every required autonomous outcome completes. Expanded-policy H995 errors improve in every paired seed under mixed training, yet dense remains worse than base in every seed and arm. Speed has the lowest mean error in each arm. On observed test histories, risk-minus-random reverses sign in all three seeds, from $(+1.616\pm1.070)\times10^{-10}$ to $(-.993\pm.666)\times10^{-10}$. Validation also narrows the gap in every seed, but mixed risk-minus-random remains $(+.210\pm1.362)\times10^{-10}$ with mixed signs. The autonomous interaction is $+.00284\pm.00466$, with seed effects $-.00161,+.00769,+.00246$. Thus the observed-test placement improvement does not persist consistently under autonomous feedback.
+
+\subsection{Sand}
+\label{sec:sand-graph-exposure}
+% TABLE_SAND
+Every required autonomous outcome completes. Exposure lowers observed-test error under all five expanded policies in every seed, but previous-observed risk remains worse than random in every validation and test seed of both arms. Autonomous cached risk instead worsens under exposure in all three seeds, and its risk-minus-random interaction is positive in every seed. Random25 improves in two seeds and worsens in one. Native base beats random25 in every seed of both arms; dense remains worse than both. Speed exposure worsens two seeds and RMS exposure worsens one. These comparisons support neither a universally beneficial expansion policy nor a transfer from observed placement gains to autonomous gains.
+
+\section{Physical mismatch and measured cost}
+\label{sec:physical-cost}
+An outside-box fraction counts forecast particles crossing the metadata box by more than $10^{-6}$. Excursion is the maximum coordinate excursion over a trajectory, then averaged over trajectories. Matching truth provides the geometric reference. These are boundary diagnostics, not conservation tests or certificates of physical validity. Failed full-horizon groups retain undefined geometry.
+
+% TABLE_GOOP_COST
+% TABLE_WATERDROP_COST
+% TABLE_SAND_COST
+
+The fixed Goop example in the main text shows why a lower excursion count is insufficient: forecasts can retain elevated particle groups while the truth settles. Substantial excursions persist in the complete WaterDrop comparisons. In Sand, mixed training lowers mean outside fractions for every policy while increasing maximum excursion in every policy and paired seed. The two diagnostics therefore describe different aspects of physical mismatch.
+
+Times are descriptive measurements with the scopes stated in each caption. In WaterDrop, recorded duration and edge counts increase under mix for all five policies; in Sand, mean committed-call time increases for every policy. The observed-risk diagnostic requires a separate scoring pass for each evaluated history, and overlapping verification/preprocessing prevents reconstruction of its standalone latency by summing stored components. Fixed policy order, shared hosts and different evolving geometries prevent causal speedup claims. No peak-memory or optimized-runtime advantage is established.
+
+\subsection{Separating placement cost from changed geometry}
+Let $E_{\mathrm A}(x)$ be the augmented directed graph at positions $x$. The exact edge-count identity is
+\begin{align}
+ |E_{\mathrm A}(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm B})|
+ ={}&[|E_{\mathrm A}(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm A})|]\nonumber\\
+ &+[|E_0(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm B})|].
+ \label{eq:decomposition}
+\end{align}
+The first term counts extra directed messages on a common state and is nonnegative. The second measures how the changed trajectory alters the native graph. Fewer edges along a rollout can arise from different geometry even when augmentation adds messages on every common input. Caching saves a separate recurring scoring pass; it does not remove candidate construction, selection or message-passing cost.
+
+\section{Residual prediction and interaction benefit}
+\label{sec:benefit-derivations}
+Fix a model, history $H_t$, target $Y$ and loss $\mathcal E$. Let $E_0(x_t)$ be the directed native graph, $S$ an unordered set of optional pairs, and $D(S)$ both directed orientations of those pairs. The conditional benefit of the graph action is
+\begin{align}
+ G_{H_t}(S)=\mathbb E[&\mathcal E(f(H_t,E_0(x_t)),Y)\nonumber\\
+              &-\mathcal E(f(H_t,E_0(x_t)\cup D(S)),Y)\mid H_t].
+ \label{eq:conditional-benefit}
+\end{align}
+Both predictions use the same history and target; positive benefit means the added interactions reduce error. This quantity concerns a complete graph action, not automatically an additive sum of edge values.
+
+\subsection{What a residual head estimates}
+\label{sec:residual-moment}
+Fix a representation $h$ and mean predictor with $0<m(h)=\mathbb E[\|Y-\mu(h)\|^2\mid h]<\infty$. Expected Equation~\ref{eq:nll} is minimized over $q>0$ at $q^*(h)=m(h)/d$, or at $\max(q_{\min},m(h)/d)$ over $q\ge q_{\min}$. Differentiation gives $(dq-m)/(2q^2)$, which changes sign only at $m/d$. An additive softplus parameterization reaches the floor only as a limiting infimum when $m(h)/d\le q_{\min}$. Moreover,
+\begin{equation}
+ m(h)=\operatorname{tr}\operatorname{Cov}(Y\mid h)+\|\mu(h)-\mathbb E[Y\mid h]\|^2.
+\end{equation}
+Residual risk can therefore include representation ambiguity and mean-model bias that additional interactions do not correct. Finite-data fitting and distribution shift need not attain this optimum.
+
+\subsection{Conditions under which cached risk would suffice}
+\label{sec:allocation-score-conditions}
+For the current candidate set $C_R$ and budget $B\le|C_R|$, let $g_e$ be additive pair gains, $S^*$ their best $B$ pairs and $\widehat S$ the best $B$ estimated scores. If $\max_e|\widehat g_e-g_e|\le\delta$, then
+\begin{equation}
+ \sum_{e\in S^*}g_e-\sum_{e\in\widehat S}g_e\le2B\delta.
+ \label{eq:regret}
+\end{equation}
+To prove this, add and subtract estimated sums at both sets. Their difference is nonpositive by the optimality of $\widehat S$, and each estimation term is bounded by $B\delta$.
+
+To apply the result to cached residuals, let $\rho_t$ denote per-coordinate residual risk under a fixed graph convention and assume
+\begin{equation}
+ \|\widehat\rho_{t-1}-\rho_{t-1}\|_\infty\le\epsilon,
+ \qquad \|\rho_t-\rho_{t-1}\|_\infty\le D_t.
+\end{equation}
+The cache comes from the preceding selected graph, so $\epsilon$ must also cover transfer to the reference graph if that differs. Suppose further that
+$g_{t,ij}=a\max(\rho_{t,i},\rho_{t,j})+b_t+\xi_{t,ij}$,
+where $a\ge0$, $b_t$ is pair-independent and $|\xi_{t,ij}|\le\zeta$.
+The controller maximizes $\widehat g_{t,ij}=a\max(\widehat\rho_{t-1,i},\widehat\rho_{t-1,j})+b_t$. The maximum is 1-Lipschitz in the sup norm, giving
+\begin{equation}
+ \operatorname{regret}_t\le2B\{a(\epsilon+D_t)+\zeta\}.
+\end{equation}
+The terms are estimation error, temporal drift and risk--benefit mismatch. Their required uniform bounds do not follow from residual calibration or rank correlation. A finite but large mismatch bound is uninformative compared with small policy gains. The comparator also selects exactly $B$ pairs even if all gains are negative; the argument does not establish a benefit over the base graph or rollout stability.
+
+\paragraph{Nonadditive graph actions.}\label{sec:nonadditive-allocation}
+Let $F(S)=G_{H_t}(S)$ and $A(S)=\sum_{e\in S}g_e$. If
+$\sup_{|S|=B}|F(S)-A(S)|\le\varepsilon_B$, then for a maximizer $S_F$ of actual benefit,
+\begin{equation}
+ F(S_F)-F(\widehat S)\le2B\delta+2\varepsilon_B.
+ \label{eq:nonadditive-regret}
+\end{equation}
+Insert $A$ at both selected sets: the two approximation errors contribute at most $2\varepsilon_B$, and Equation~\ref{eq:regret} bounds the additive difference. Even exact singleton scores can miss complementary pairs, so this extension needs control of nonadditivity; the displayed condition remains unverified in the particle models.
+
+\subsection{Observed mechanism controls}
+\label{sec:actual-action-benefit}
+For a saved base residual $r_i=y_i-p_{i,0}$ and complete-action prediction change $\Delta_{i,a}=p_{i,a}-p_{i,0}$, signed benefit is exactly
+\begin{equation}
+ b_{i,a}=\|r_i\|^2-\|r_i-\Delta_{i,a}\|^2
+        =2r_i^\top\Delta_{i,a}-\|\Delta_{i,a}\|^2.
+\end{equation}
+The earlier WaterDrop full-model comparison uses 1,782 saved observed-history cases under its original no-self-loop evaluation convention. Faithful and NLL risk correlate with base error ($.357\pm.060$ and $.411\pm.023$), but weakly with their own sparse-action benefit ($-.021\pm.049$ and $-.052\pm.013$). Random has lower one-step error in every seed. For risk allocation, greater target alignment is outweighed by the squared prediction change in every seed. These whole-action associations share the base residual algebraically and do not identify marginal edge values or a causal role for the risk score.
+
+\paragraph{Restoring trained self-messages.}\label{sec:graph-bridge}
+A separate paired WaterDrop graph-convention screen restores self-messages, varies the receiver cap, and retains current- and preceding-observed-base risk controls. Native self-messages lower error, while no current- or previous-risk selector beats random in any seed on validation or test. The native cap does not bind on the 425 inspected geometries. Thus the original risk--random ordering is not explained solely by the omitted self-messages. The screen changes graph inputs at fixed observed histories and does not establish autonomous stability. Its factorial tables, predictions, graph diagnostics and unsuccessful outcomes remain in the released evidence.
+
+The earlier 100k faithful-versus-NLL WaterDrop rollout comparison also retains all eight NLL coordinate-resource-guard failures, all in seed 2: one base, two dense, four Random25 and one cached-risk outcome. Each policy required 81 trajectories, and a failure leaves its full-H995 mean undefined. Faithful had no failed outcomes. Those guards reject absolute coordinates above 10; they are distinct from metadata-box diagnostics and from the Goop candidate-pair guards. No failed outcome was rerun, and the full earlier objective comparison remains in the repository rather than being pooled with the paired exposure studies.
+
+\section{Goop3D: observed-history extension}
+\label{sec:goop3d-25k-exposure}
+This separate exploratory comparison uses six faithful 25,000-update endpoints, with paired base-only and mixed training at seeds 0--2. Each endpoint has 150 observed validation histories, 150 observed test histories and 128 clean-validation frames; all 2,568 required observed cells are retained. Previous Risk25 scores the preceding observed base history. These shorter three-dimensional endpoints are distinct from the complete studies above and are not pooled with them.
+
+% TABLE_D3_TRAINING
+% TABLE_D3_GAP
+
+At fixed Random25 evaluation, exposure improves observed-history position MSE in two of three validation seeds and one of three test seeds. On test, the risk-minus-random gap narrows in all three seeds; mixed risk still loses to random in two seeds and has a positive mean gap. Validation has negative and positive interaction signs. Neither the narrowing nor the mixed-training mean establishes general superiority of risk allocation. Observed histories alone do not establish autonomous accuracy, stability or speedup; any H295 cached-own-graph comparison is a separate result.
+
+% GOOP3D_AUTONOMOUS_H295_SEPARATE_INSERT
+
+\paragraph{Scope of supplementary evidence.}
+The repository preserves historical arrays, the compact pilot, earlier objective and kinematic controls, unsuccessful runs and operational records as distinct evidence. They do not enlarge the sample size of the comparisons above. An exploratory whole-graph learned gate did not reach held-out evaluation, so no held-out gate-performance claim is made. The reported three-seed comparisons and inspected follow-ups support the distinction between residual prediction and useful interaction allocation, with the adverse outcomes and physical mismatch retained.

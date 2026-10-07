@@ -1,0 +1,4 @@
+{
+  "issue": "Matplotlib default line z-order hid mean diamond outlines behind their earlier white knockout circles. Native draw order was correct.",
+  "resolution": "Use sequential primitive z-order for the shared preview; render powers of ten as superscripts."
+}

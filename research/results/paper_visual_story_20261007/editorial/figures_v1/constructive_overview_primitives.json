@@ -1,0 +1,1439 @@
+{
+  "caption_latex": "\\textbf{Adding messages, placing them, and sustaining their benefit are different problems.} Native edges are retained while a fixed budget is added from the local annulus (schematic; self-messages omitted). The cards separate training, placement on matched observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for each named contrast; negative means lower error or a smaller risk-minus-random gap. The cross retains Goop's undefined full-horizon interaction.",
+  "dimensions_pt": [
+    470,
+    238
+  ],
+  "label": "fig:constructive-overview",
+  "preview_text_bounds": [
+    {
+      "bbox": [
+        26.666666666666668,
+        725.6617838541666,
+        1225.0,
+        42.009765625
+      ],
+      "text": "One controlled graph change. Three different tests."
+    },
+    {
+      "bbox": [
+        22.25,
+        659.1666666666666,
+        355.5,
+        28.333333333333258
+      ],
+      "text": "Keep native messages"
+    },
+    {
+      "bbox": [
+        106.0,
+        416.29687499999994,
+        188.0,
+        27.40625
+      ],
+      "text": "4 native pairs"
+    },
+    {
+      "bbox": [
+        571.0,
+        659.1666666666666,
+        338.0,
+        28.333333333333258
+      ],
+      "text": "Find local candidates"
+    },
+    {
+      "bbox": [
+        633.0,
+        416.29687499999994,
+        214.0,
+        27.40625
+      ],
+      "text": "6 optional pairs"
+    },
+    {
+      "bbox": [
+        1080.5,
+        659.1666666666666,
+        399.0,
+        28.333333333333258
+      ],
+      "text": "Append the same budget"
+    },
+    {
+      "bbox": [
+        1148.0,
+        416.29687499999994,
+        264.0,
+        27.40625
+      ],
+      "text": "B = 1 selected pair"
+    },
+    {
+      "bbox": [
+        384.1666666666667,
+        574.1637369791666,
+        165.00000000000006,
+        25.005859375
+      ],
+      "text": "local annulus"
+    },
+    {
+      "bbox": [
+        913.6666666666667,
+        574.1637369791666,
+        186.0,
+        25.005859375
+      ],
+      "text": "rank or sample"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        305.8333333333333,
+        246.99999999999997,
+        35.0
+      ],
+      "text": "Learn to use"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        263.99999999999994,
+        383.0,
+        25.33333333333337
+      ],
+      "text": "Change training; fix random25"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        224.20377604166666,
+        378.140625,
+        24.92578125
+      ],
+      "text": "Random rollout: mixed \u2212 base"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        173.33333333333331,
+        72.0,
+        26.666666666666686
+      ],
+      "text": "Goop"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        126.66666666666667,
+        146.703125,
+        26.66666666666667
+      ],
+      "text": "WaterDrop"
+    },
+    {
+      "bbox": [
+        53.333333333333336,
+        79.63020833333333,
+        68.0,
+        27.40625
+      ],
+      "text": "Sand"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        305.6292317708333,
+        278.0,
+        35.408203125
+      ],
+      "text": "Choose where"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        263.99999999999994,
+        363.0,
+        25.33333333333337
+      ],
+      "text": "Same observed test histories"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        224.20377604166666,
+        352.234375,
+        24.92578125
+      ],
+      "text": "Mixed model: risk \u2212 random"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        173.33333333333331,
+        72.0,
+        26.666666666666686
+      ],
+      "text": "Goop"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        126.66666666666667,
+        146.703125,
+        26.66666666666667
+      ],
+      "text": "WaterDrop"
+    },
+    {
+      "bbox": [
+        573.3333333333334,
+        79.63020833333333,
+        68.0,
+        27.40625
+      ],
+      "text": "Sand"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        305.6292317708333,
+        342.0,
+        35.408203125
+      ],
+      "text": "Survive feedback"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        263.99999999999994,
+        333.875,
+        25.33333333333337
+      ],
+      "text": "Predict \u2192 rebuild \u2192 predict"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        224.20377604166666,
+        381.125,
+        24.92578125
+      ],
+      "text": "Rollout risk gap: mixed \u2212 base"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        173.33333333333331,
+        72.0,
+        26.666666666666686
+      ],
+      "text": "Goop"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        126.66666666666667,
+        146.703125,
+        26.66666666666667
+      ],
+      "text": "WaterDrop"
+    },
+    {
+      "bbox": [
+        1093.3333333333335,
+        79.63020833333333,
+        68.0,
+        27.40625
+      ],
+      "text": "Sand"
+    },
+    {
+      "bbox": [
+        260.0,
+        10.830403645833332,
+        109.0,
+        25.005859374999996
+      ],
+      "text": "negative"
+    },
+    {
+      "bbox": [
+        510.0,
+        10.830403645833332,
+        98.0,
+        25.005859374999996
+      ],
+      "text": "positive"
+    },
+    {
+      "bbox": [
+        746.6666666666667,
+        10.830403645833332,
+        126.0,
+        25.005859374999996
+      ],
+      "text": "undefined"
+    },
+    {
+      "bbox": [
+        1066.6666666666667,
+        10.830403645833332,
+        320.0,
+        25.005859374999996
+      ],
+      "text": "Each triplet: seeds 0, 1, 2"
+    }
+  ],
+  "primitives": [
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "One controlled graph change. Three different tests.",
+      "size": 12.5,
+      "tex": "One controlled graph change. Three different tests.",
+      "x": 8,
+      "y": 224
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Keep native messages",
+      "size": 8.5,
+      "tex": "Keep native messages",
+      "x": 60,
+      "y": 202
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 35,
+      "x2": 42,
+      "y1": 143.75,
+      "y2": 158.95
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 58,
+      "x2": 62,
+      "y1": 139.0,
+      "y2": 155.15
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 62,
+      "x2": 77,
+      "y1": 155.15,
+      "y2": 165.6
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 77,
+      "x2": 84,
+      "y1": 165.6,
+      "y2": 148.5
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 35,
+      "y": 143.75
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 42,
+      "y": 158.95
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 58,
+      "y": 139.0
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 62,
+      "y": 155.15
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 77,
+      "y": 165.6
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 84,
+      "y": 148.5
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 46,
+      "y": 179.85
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 68,
+      "y": 182.7
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "4 native pairs",
+      "size": 8,
+      "tex": "4 native pairs",
+      "x": 60,
+      "y": 129
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Find local candidates",
+      "size": 8.5,
+      "tex": "Find local candidates",
+      "x": 222,
+      "y": 202
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 197,
+      "x2": 204,
+      "y1": 143.75,
+      "y2": 158.95
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 220,
+      "x2": 224,
+      "y1": 139.0,
+      "y2": 155.15
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 224,
+      "x2": 239,
+      "y1": 155.15,
+      "y2": 165.6
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 239,
+      "x2": 246,
+      "y1": 165.6,
+      "y2": 148.5
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 197,
+      "x2": 220,
+      "y1": 143.75,
+      "y2": 139.0
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 204,
+      "x2": 224,
+      "y1": 158.95,
+      "y2": 155.15
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 204,
+      "x2": 208,
+      "y1": 158.95,
+      "y2": 179.85
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 224,
+      "x2": 246,
+      "y1": 155.15,
+      "y2": 148.5
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 239,
+      "x2": 230,
+      "y1": 165.6,
+      "y2": 182.7
+    },
+    {
+      "color": "blue",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 208,
+      "x2": 230,
+      "y1": 179.85,
+      "y2": 182.7
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 197,
+      "y": 143.75
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 204,
+      "y": 158.95
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 220,
+      "y": 139.0
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 224,
+      "y": 155.15
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 239,
+      "y": 165.6
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 246,
+      "y": 148.5
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 208,
+      "y": 179.85
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 230,
+      "y": 182.7
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "6 optional pairs",
+      "size": 8,
+      "tex": "6 optional pairs",
+      "x": 222,
+      "y": 129
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Append the same budget",
+      "size": 8.5,
+      "tex": "Append the same budget",
+      "x": 384,
+      "y": 202
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 359,
+      "x2": 366,
+      "y1": 143.75,
+      "y2": 158.95
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 382,
+      "x2": 386,
+      "y1": 139.0,
+      "y2": 155.15
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 386,
+      "x2": 401,
+      "y1": 155.15,
+      "y2": 165.6
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 401,
+      "x2": 408,
+      "y1": 165.6,
+      "y2": 148.5
+    },
+    {
+      "color": "teal",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 359,
+      "x2": 382,
+      "y1": 143.75,
+      "y2": 139.0
+    },
+    {
+      "color": "teal",
+      "filled": false,
+      "kind": "circle",
+      "r": 4.3,
+      "width": 1,
+      "x": 382,
+      "y": 139.0
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 359,
+      "y": 143.75
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 366,
+      "y": 158.95
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 382,
+      "y": 139.0
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 386,
+      "y": 155.15
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 401,
+      "y": 165.6
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 408,
+      "y": 148.5
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 370,
+      "y": 179.85
+    },
+    {
+      "color": "ink",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.1,
+      "width": 0.8,
+      "x": 392,
+      "y": 182.7
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "B = 1 selected pair",
+      "size": 8,
+      "tex": "$B=1$ selected pair",
+      "x": 384,
+      "y": 129
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 103,
+      "x2": 177,
+      "y1": 162,
+      "y2": 162
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 172.4977644882366,
+      "x2": 177,
+      "y1": 164.17482767055614,
+      "y2": 162
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 172.4977644882366,
+      "x2": 177,
+      "y1": 159.82517232944386,
+      "y2": 162
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 265,
+      "x2": 339,
+      "y1": 162,
+      "y2": 162
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 334.4977644882366,
+      "x2": 339,
+      "y1": 164.17482767055614,
+      "y2": 162
+    },
+    {
+      "color": "zero",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.1,
+      "x1": 334.4977644882366,
+      "x2": 339,
+      "y1": 159.82517232944386,
+      "y2": 162
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "local annulus",
+      "size": 7.5,
+      "tex": "local annulus",
+      "x": 140,
+      "y": 176
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "rank or sample",
+      "size": 7.5,
+      "tex": "rank or sample",
+      "x": 302,
+      "y": 176
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.7,
+      "x1": 8,
+      "x2": 462,
+      "y1": 117,
+      "y2": 117
+    },
+    {
+      "color": "wash",
+      "h": 89,
+      "kind": "rect",
+      "w": 142,
+      "x": 8,
+      "y": 18
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Learn to use",
+      "size": 10.5,
+      "tex": "Learn to use",
+      "x": 16,
+      "y": 97
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Change training; fix random25",
+      "size": 7.6,
+      "tex": "Change training; fix random25",
+      "x": 16,
+      "y": 83
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Random rollout: mixed \u2212 base",
+      "size": 7.4,
+      "tex": "Random rollout: mixed $-$ base",
+      "x": 16,
+      "y": 71
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Goop",
+      "size": 8,
+      "tex": "Goop",
+      "x": 16,
+      "y": 56
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 106,
+      "y": 56
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 118,
+      "y": 56
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 130,
+      "y": 56
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "WaterDrop",
+      "size": 8,
+      "tex": "WaterDrop",
+      "x": 16,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 106,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 118,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 130,
+      "y": 42
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Sand",
+      "size": 8,
+      "tex": "Sand",
+      "x": 16,
+      "y": 28
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 106,
+      "y": 28
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 118,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 130,
+      "y": 28
+    },
+    {
+      "color": "wash",
+      "h": 89,
+      "kind": "rect",
+      "w": 142,
+      "x": 164,
+      "y": 18
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Choose where",
+      "size": 10.5,
+      "tex": "Choose where",
+      "x": 172,
+      "y": 97
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Same observed test histories",
+      "size": 7.6,
+      "tex": "Same observed test histories",
+      "x": 172,
+      "y": 83
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Mixed model: risk \u2212 random",
+      "size": 7.4,
+      "tex": "Mixed model: risk $-$ random",
+      "x": 172,
+      "y": 71
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Goop",
+      "size": 8,
+      "tex": "Goop",
+      "x": 172,
+      "y": 56
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 262,
+      "y": 56
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 274,
+      "y": 56
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 286,
+      "y": 56
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "WaterDrop",
+      "size": 8,
+      "tex": "WaterDrop",
+      "x": 172,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 262,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 274,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 286,
+      "y": 42
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Sand",
+      "size": 8,
+      "tex": "Sand",
+      "x": 172,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 262,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 274,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 286,
+      "y": 28
+    },
+    {
+      "color": "wash",
+      "h": 89,
+      "kind": "rect",
+      "w": 142,
+      "x": 320,
+      "y": 18
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Survive feedback",
+      "size": 10.5,
+      "tex": "Survive feedback",
+      "x": 328,
+      "y": 97
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Predict \u2192 rebuild \u2192 predict",
+      "size": 7.6,
+      "tex": "Predict $\\to$ rebuild $\\to$ predict",
+      "x": 328,
+      "y": 83
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Rollout risk gap: mixed \u2212 base",
+      "size": 7.4,
+      "tex": "Rollout risk gap: mixed $-$ base",
+      "x": 328,
+      "y": 71
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Goop",
+      "size": 8,
+      "tex": "Goop",
+      "x": 328,
+      "y": 56
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 418,
+      "y": 56
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 430,
+      "y": 56
+    },
+    {
+      "color": "muted",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.9,
+      "x1": 439.5,
+      "x2": 444.5,
+      "y1": 53.5,
+      "y2": 58.5
+    },
+    {
+      "color": "muted",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.9,
+      "x1": 439.5,
+      "x2": 444.5,
+      "y1": 58.5,
+      "y2": 53.5
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "WaterDrop",
+      "size": 8,
+      "tex": "WaterDrop",
+      "x": 328,
+      "y": 42
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 418,
+      "y": 42
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 430,
+      "y": 42
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 442,
+      "y": 42
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Sand",
+      "size": 8,
+      "tex": "Sand",
+      "x": 328,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 418,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 430,
+      "y": 28
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.8,
+      "width": 0.8,
+      "x": 442,
+      "y": 28
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.5,
+      "width": 0.8,
+      "x": 70,
+      "y": 7
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "negative",
+      "size": 7.5,
+      "tex": "negative",
+      "x": 78,
+      "y": 7
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.5,
+      "width": 0.8,
+      "x": 145,
+      "y": 7
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "positive",
+      "size": 7.5,
+      "tex": "positive",
+      "x": 153,
+      "y": 7
+    },
+    {
+      "color": "muted",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.9,
+      "x1": 213.7,
+      "x2": 218.3,
+      "y1": 4.7,
+      "y2": 9.3
+    },
+    {
+      "color": "muted",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.9,
+      "x1": 213.7,
+      "x2": 218.3,
+      "y1": 9.3,
+      "y2": 4.7
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "undefined",
+      "size": 7.5,
+      "tex": "undefined",
+      "x": 224,
+      "y": 7
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Each triplet: seeds 0, 1, 2",
+      "size": 7.5,
+      "tex": "Each triplet: seeds 0, 1, 2",
+      "x": 320,
+      "y": 7
+    }
+  ],
+  "sha256": {
+    "constructive_overview.png": "1c3c7cc7272702c0ee5a8af9dc5452a0ee73873b6716960434ff6d5afac5e542",
+    "constructive_overview.svg": "a2b585758e3cfc021e3b5acfd71f18052e8f3380ed3d6bcbfedcd1f3e613a045",
+    "constructive_overview.tex": "eda69ba989e1d071bb0ccceed96d14518d7f243e221774809b094d0a4fc3388b",
+    "constructive_overview_picture.tex": "a2546abdd500129ae20cdf2070b0cdde1c3e0ce18e80ce4671ac30cd82f6fc1c"
+  }
+}

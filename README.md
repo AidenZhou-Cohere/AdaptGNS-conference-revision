@@ -1,9 +1,10 @@
 # Adaptive Interaction Graphs for Particle Simulation
 
-The [current manuscript](research/results/paper_story_20261007/manuscript/outputs/revised_manuscript.tex) presents the paired studies as a sequence: learning to use extra messages, selecting useful messages, and testing autonomous feedback. The author requested the new abstract, opening Goop figure and narrative revision; native compilation passes the eight-page main-text limit. The [23-page companion](research/results/paper_story_20261007/report/revision_report.pdf) adds a current visual synthesis and the complete Goop3D observed findings, preserving its earlier 21 pages. See [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md) for remaining final PDF and author actions.
+The [current manuscript](research/results/paper_visual_story_20261007/manuscript/outputs/revised_manuscript.tex) follows three questions: can a simulator learn to use extra messages, can it place them usefully, and does their benefit survive feedback? Three main figures show the construction, the full cross-material contrasts and a fixed particle example. The appendix now contains ten tables rather than 52, retaining primary comparisons and adverse outcomes while moving development history out of the reading path. Native compilation passes the eight-page main-text guard.
 
-The existing Goop3D autonomous cohort is the final experiment. Its complete analysis is pending; no new experiments follow it. All other completed results and historical attempts remain preserved. Earlier milestones below retain their dated status and do not override this summary.
+Read the [argument flowchart](research/results/paper_visual_story_20261007/manuscript/outputs/paper_argument_flowchart.md), [editorial disposition](research/results/paper_visual_story_20261007/editorial_disposition.md), and [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md). The [23-page research companion](research/results/paper_story_20261007/report/revision_report.pdf) remains a dated record of the preceding revision and complete Goop3D observed results. It is not the current paper layout or an anonymous supplement.
 
+The existing Goop3D autonomous cohort is the final experiment. Its complete analysis is pending; no new experiments follow it. Final exported-paper inspection and author checks remain. Earlier milestones below retain their dated status and do not override this summary.
 
 ## Earlier observed-integration snapshot (October 7, 02:51 UTC)
 

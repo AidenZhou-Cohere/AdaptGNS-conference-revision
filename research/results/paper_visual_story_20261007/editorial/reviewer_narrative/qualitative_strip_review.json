@@ -1,0 +1,103 @@
+{
+  "status": "vector_fidelity_and_png_readability_pass_tex_label_braces_need_correction",
+  "scope": "Previously verified vector glyphs and actual PNG only. No saved-array/model reads, trajectory rerun, outcome recalculation or new example selection. Native manuscript rendering not inspected.",
+  "inputs": {
+    "work/conference_presentation_20261006/goop_qualitative_request_v1/goop_fixed_source12_inline_v1.tex": "2a5b34584dda3196f3070c5ba4eb072140e1999943edfc10ae611bd8a03ba6b4",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip_picture.tex": "e4837e79c2b28da0be451551e5efeee001f13339fe12daba4e5ca295340da249",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip_figure.tex": "957f982bcf4132db85bfc0e64a163ac36928be521b1b8b043fc5e185e378e668",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/qualitative_strip.png": "6a8ac58a11211c4c124a001e92666fcd94dcd6e88fbd6cb01f19d05b9bf06c41",
+    "work/paper_visual_story_20261007/root_v1/qualitative_strip/reformat_record.json": "a6f91ede5e1c1fe0445811873fddaf2660487892b34bc48ed7905cc6bb5b9aec"
+  },
+  "panels": [
+    {
+      "original_panel": 0,
+      "new_column": 0,
+      "glyphs": 1083,
+      "strict_outside_crosses": 0,
+      "left": 7.0,
+      "right": 89.0,
+      "bottom": 44,
+      "top": 126,
+      "maximum_coordinate_reformat_rounding": 4.939759321587189e-07
+    },
+    {
+      "original_panel": 8,
+      "new_column": 1,
+      "glyphs": 1083,
+      "strict_outside_crosses": 0,
+      "left": 100.5,
+      "right": 182.5,
+      "bottom": 44,
+      "top": 126,
+      "maximum_coordinate_reformat_rounding": 4.939759108424369e-07
+    },
+    {
+      "original_panel": 9,
+      "new_column": 2,
+      "glyphs": 1083,
+      "strict_outside_crosses": 465,
+      "left": 194.0,
+      "right": 276.0,
+      "bottom": 44,
+      "top": 126,
+      "maximum_coordinate_reformat_rounding": 4.939759321587189e-07
+    },
+    {
+      "original_panel": 10,
+      "new_column": 3,
+      "glyphs": 1083,
+      "strict_outside_crosses": 11,
+      "left": 287.5,
+      "right": 369.5,
+      "bottom": 44,
+      "top": 126,
+      "maximum_coordinate_reformat_rounding": 4.939759605804284e-07
+    },
+    {
+      "original_panel": 11,
+      "new_column": 4,
+      "glyphs": 1083,
+      "strict_outside_crosses": 14,
+      "left": 381.0,
+      "right": 463.0,
+      "bottom": 44,
+      "top": 126,
+      "maximum_coordinate_reformat_rounding": 4.939759605804284e-07
+    }
+  ],
+  "total_glyphs": 5415,
+  "visual_readability": "PNG visibly clear: labels identify training and policy separately; all five equally scaled square panels fit, largest right coordinate463 inside470; outside counts readable, red crosses distinct from particle dots. Crowded/clamped particles can overlap and caption explicitly says clamped positions do not encode excursion magnitude.",
+  "caption_checks": {
+    "fixed_source12_seed0_metadata_selection": true,
+    "common_bounds_and_all_particles": true,
+    "training_and_policy_confound_explicit": true,
+    "single_example_not_training_effect_estimate": true,
+    "strict_crossing_distinct_from_excursion_magnitude": true,
+    "target_floor_and_suspended_predictions_supported_by_display": true
+  },
+  "corrections": [
+    {
+      "severity": "required_source",
+      "issue": "18 text label lines have one extra closing brace each; whole figure brace balance is-18. Cross glyph lines are balanced.",
+      "action": "Fix label helper/endings so each text put line ends with two closing braces, then regenerate picture/figure and actual native compile."
+    },
+    {
+      "severity": "recommended_claim_precision",
+      "issue": "PNG headline Lower error does not ensure the right motion implies a lower-error comparison for this individual example, but no individual error is displayed.",
+      "action": "Use the caption headline Full-horizon forecasts can remain visibly wrong, or explicitly tie lower-error statement to aggregate main results."
+    },
+    {
+      "severity": "metadata",
+      "issue": "reformat_record outputs includes its own stale hash; self-referential hash cannot match current file.",
+      "action": "Exclude reformat_record.json from its own outputs mapping; separately hash the completed record in parent receipt."
+    }
+  ],
+  "output_hash_checks": {
+    "qualitative_strip_figure.tex": true,
+    "qualitative_strip.svg": true,
+    "qualitative_strip_picture.tex": true,
+    "qualitative_strip.png": true,
+    "reformat_record.json": false
+  },
+  "next": "After root corrects text braces/headline/record, source-only delta confirmation suffices; vector/array audits must not repeat."
+}
