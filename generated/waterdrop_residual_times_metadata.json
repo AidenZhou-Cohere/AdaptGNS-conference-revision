@@ -1,30 +1,33 @@
 {
+  "asinh_transition": 0.001,
+  "clipped_values": 0,
   "color_quantization": "256 colors interpolated across fixed sequential anchors",
+  "color_transform": "asinh(value / 0.001) / asinh(1 / 0.001)",
   "dimensions_pt": [
     470,
     390
   ],
   "display_data_sha256": "e71ff9fd861b3eb8df3f39aac7b0479c4a0e8fe5a1da32da07ba3e51a5967a8f",
   "figure_sha256": {
-    "waterdrop_residual_times.png": "74631cf459d99149c476627081a4d4345d888d1c9b624dd0dc95fa592410bd26",
-    "waterdrop_residual_times.svg": "99f0b119b903d54c2469bd3ed4a8fd4a1ef1d30cfe315c88b2cb7477bce65284",
-    "waterdrop_residual_times.tex": "c6f97ee47c5fcbdb765ca96146b7bf9023abdf2452b15288d422c18e6844ac48",
-    "waterdrop_residual_times_picture.tex": "12c8edb05d6e1005d67771d93dcee7e1f570ab8ee728714106eebe049062a57a"
+    "waterdrop_residual_times.png": "1f190ea9b47dce7b443397a149293d6d75915c7467296f190d434be17dacd3a7",
+    "waterdrop_residual_times.svg": "8b40a353dd18ce685b3f65643266e52583bc69feca5e1319320d3c2ed5a7332f",
+    "waterdrop_residual_times.tex": "42515ed0da8422e5985800a8abca9e9d6316d64f76fcd136dccb0e7f629f8c13",
+    "waterdrop_residual_times_picture.tex": "7d55ce9d201bd6edf6ba470ed35374d6997608ed82cc555dbe13f1c3ab16673f"
   },
-  "log10_color_limits": [
-    -7,
-    0
-  ],
   "particle_glyphs": 5982,
   "shared_spatial_limits": [
     0.07831729849129915,
     0.9137351090714335
   ],
+  "value_color_limits": [
+    0.0,
+    1.0
+  ],
   "value_transforms": [
-    "One shared log10 color mapping; 256 sequential colors",
+    "One shared unclipped asinh color mapping; 256 sequential colors; transition 0.001 and limits [0,1]",
     "Same isotropic spatial mapping across panels; no coordinate clipping",
     "All particles retained in their original order"
   ],
-  "zero_color": "#BFC4CA",
+  "zero_color": "#440154",
   "zero_values": 0
 }

@@ -994,7 +994,7 @@ L 218.3 233.3
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #607281; stroke-width: 0.9"/>
    </g>
    <g id="text_30">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="224" y="232.948535" transform="rotate(-0 224 232.948535)">undefined</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="224" y="232.948535" transform="rotate(-0 224 232.948535)">graph limit</text>
    </g>
    <g id="text_31">
     <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="320" y="232.948535" transform="rotate(-0 320 232.948535)">Each triplet: seeds 0, 1, 2</text>

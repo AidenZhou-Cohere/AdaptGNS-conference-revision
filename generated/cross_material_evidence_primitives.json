@@ -1,5 +1,5 @@
 {
-  "caption_latex": "\\textbf{Observed-test placement gains need not survive autonomous feedback.} Train rows and lower policy rows are mixed-minus-base effects; risk gaps are risk-minus-random, and their change is the mixed-minus-base interaction. Dots show paired seeds; diamonds and bars show mean $\\pm$ sample seed SD, not confidence intervals. Scales differ. $\\dagger$: a mixed Goop seed-2 guard leaves the three-seed mean undefined; defined seeds remain visible. NP: WaterDrop RMS was not predeclared. Observed risk scores the preceding observed base graph; autonomous risk caches its own preceding graph.",
+  "caption_latex": "\\textbf{Observed-test placement gains need not survive autonomous feedback.} Training effects subtract base-only error from mixed-training error under the same policy; all lower policy rows show this effect. Risk gaps subtract random-placement error from risk-placement error; their change compares the training arms. Dots show paired seeds; diamonds and bars show mean $\\pm$ sample seed SD, not confidence intervals. Each panel has its own scale. In Goop, one mixed-training seed-2 trajectory hit the candidate-pair limit under each of native, dense and cached-risk evaluation. These training effects and the change in risk gap have no three-seed mean; the completed seed-0 and seed-1 points remain visible. WaterDrop RMS was not evaluated because it was not included in that study. Observed risk scores the preceding observed base graph; autonomous risk caches its own preceding graph.",
   "dimensions_pt": [
     470,
     330
@@ -82,19 +82,19 @@
       "bbox": [
         16.666666666666668,
         863.5000000000001,
-        226.140625,
+        241.14062500000003,
         26.333333333333258
       ],
-      "text": "Train: base policy"
+      "text": "Train effect: native"
     },
     {
       "bbox": [
         16.666666666666668,
         806.8333333333334,
-        214.140625,
+        262.140625,
         26.333333333333258
       ],
-      "text": "Train: random25"
+      "text": "Train effect: random"
     },
     {
       "bbox": [
@@ -260,39 +260,39 @@
     },
     {
       "bbox": [
-        721.6666666666667,
-        458.33333333333337,
-        15.0,
-        30.0
+        468.0,
+        462.19075520833337,
+        204.0,
+        22.28515625
       ],
-      "text": "\u2020"
+      "text": "seed 2 incomplete"
     },
     {
       "bbox": [
-        721.6666666666667,
-        401.6666666666667,
-        15.0,
-        30.0
+        468.0,
+        405.5240885416667,
+        204.0,
+        22.28515625
       ],
-      "text": "\u2020"
+      "text": "seed 2 incomplete"
     },
     {
       "bbox": [
-        721.6666666666667,
-        231.66666666666669,
-        15.0,
-        30.0
+        468.0,
+        235.52408854166669,
+        204.0,
+        22.28515625
       ],
-      "text": "\u2020"
+      "text": "seed 2 incomplete"
     },
     {
       "bbox": [
-        721.6666666666667,
-        118.33333333333334,
-        15.0,
-        30.0
+        468.0,
+        122.19075520833334,
+        204.0,
+        22.28515625
       ],
-      "text": "\u2020"
+      "text": "seed 2 incomplete"
     },
     {
       "bbox": [
@@ -377,12 +377,12 @@
     },
     {
       "bbox": [
-        942.0,
-        166.66666666666666,
-        36.0,
-        26.666666666666686
+        879.0,
+        168.66666666666666,
+        162.0,
+        22.666666666666686
       ],
-      "text": "NP"
+      "text": "Not evaluated"
     },
     {
       "bbox": [
@@ -486,11 +486,11 @@
     {
       "bbox": [
         1026.6666666666667,
-        4.666666666666668,
-        486.9375,
-        24.0
+        5.484049479166668,
+        411.515625,
+        22.365234375
       ],
-      "text": "\u2020 undefined mean     NP not predeclared"
+      "text": "Goop: seed 2 reached the graph limit"
     }
   ],
   "primitives": [
@@ -603,9 +603,9 @@
       "bold": false,
       "color": "ink",
       "kind": "text",
-      "plain": "Train: base policy",
+      "plain": "Train effect: native",
       "size": 7.9,
-      "tex": "Train: base policy",
+      "tex": "Train effect: native",
       "x": 5,
       "y": 263
     },
@@ -614,9 +614,9 @@
       "bold": false,
       "color": "ink",
       "kind": "text",
-      "plain": "Train: random25",
+      "plain": "Train effect: random",
       "size": 7.9,
-      "tex": "Train: random25",
+      "tex": "Train effect: random",
       "x": 5,
       "y": 246
     },
@@ -1409,14 +1409,14 @@
       "y": 193.9
     },
     {
-      "align": "right",
+      "align": "center",
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "\u2020",
-      "size": 9,
-      "tex": "$\\dagger$",
-      "x": 221,
+      "plain": "seed 2 incomplete",
+      "size": 6.6,
+      "tex": "seed 2 incomplete",
+      "x": 171.0,
       "y": 142
     },
     {
@@ -1438,14 +1438,14 @@
       "y": 136.0
     },
     {
-      "align": "right",
+      "align": "center",
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "\u2020",
-      "size": 9,
-      "tex": "$\\dagger$",
-      "x": 221,
+      "plain": "seed 2 incomplete",
+      "size": 6.6,
+      "tex": "seed 2 incomplete",
+      "x": 171.0,
       "y": 125
     },
     {
@@ -1679,14 +1679,14 @@
       "y": 86.9
     },
     {
-      "align": "right",
+      "align": "center",
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "\u2020",
-      "size": 9,
-      "tex": "$\\dagger$",
-      "x": 221,
+      "plain": "seed 2 incomplete",
+      "size": 6.6,
+      "tex": "seed 2 incomplete",
+      "x": 171.0,
       "y": 74
     },
     {
@@ -1814,14 +1814,14 @@
       "y": 52.9
     },
     {
-      "align": "right",
+      "align": "center",
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "\u2020",
-      "size": 9,
-      "tex": "$\\dagger$",
-      "x": 221,
+      "plain": "seed 2 incomplete",
+      "size": 6.6,
+      "tex": "seed 2 incomplete",
+      "x": 171.0,
       "y": 40
     },
     {
@@ -3076,9 +3076,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "NP",
-      "size": 8,
-      "tex": "NP",
+      "plain": "Not evaluated",
+      "size": 6.8,
+      "tex": "Not evaluated",
       "x": 288.0,
       "y": 54
     },
@@ -4723,17 +4723,17 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "\u2020 undefined mean     NP not predeclared",
-      "size": 7.2,
-      "tex": "$\\dagger$ undefined mean\\quad NP not predeclared",
+      "plain": "Goop: seed 2 reached the graph limit",
+      "size": 6.7,
+      "tex": "Goop: seed 2 reached the graph limit",
       "x": 308,
       "y": 5
     }
   ],
   "sha256": {
-    "cross_material_evidence.png": "282e3050af8501e5d7979d5f1840063475cac4562b3fbd1d2163733bbd40f131",
-    "cross_material_evidence.svg": "29cb5707462050c65fa9483235b02f53269591d7f65066a321131d505328977d",
-    "cross_material_evidence.tex": "d0628a9766c91e13089008b1c0e7535d95c9634416f66c68a4d0fd9aba850cf9",
-    "cross_material_evidence_picture.tex": "02c4623c976179ffa953df1bd6e0debe1431ab434ebf964ce872be57f7f3e4b9"
+    "cross_material_evidence.png": "9604ae717e6b80722663cd8c4dfcdbfe2a229093cd18c3c0e227708ac88afe99",
+    "cross_material_evidence.svg": "34d4672a3ef2389782b9141aacfa7173defead9ee7c7ad0d40fb9c5bea385657",
+    "cross_material_evidence.tex": "fa5b1074919074a154ca7743d7b57204dcc24a9b8eb0540866a74e5c0135881e",
+    "cross_material_evidence_picture.tex": "e232131470f1e045b2ac42049a93adba932102e49a4cc82699476e4f384cf33a"
   }
 }

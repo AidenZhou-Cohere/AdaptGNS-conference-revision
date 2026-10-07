@@ -69,10 +69,10 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #f1f5f6"/>
    </g>
    <g id="text_9">
-    <text style="font-size: 7.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="5" y="69.052457" transform="rotate(-0 5 69.052457)">Train: base policy</text>
+    <text style="font-size: 7.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="5" y="69.052457" transform="rotate(-0 5 69.052457)">Train effect: native</text>
    </g>
    <g id="text_10">
-    <text style="font-size: 7.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="5" y="86.052457" transform="rotate(-0 5 86.052457)">Train: random25</text>
+    <text style="font-size: 7.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="5" y="86.052457" transform="rotate(-0 5 86.052457)">Train effect: random</text>
    </g>
    <g id="text_11">
     <text style="font-size: 7.9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="5" y="103.052457" transform="rotate(-0 5 103.052457)">Risk gap: base</text>
@@ -594,7 +594,7 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #197f79"/>
    </g>
    <g id="text_29">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #607281" x="221" y="190.337891" transform="rotate(-0 221 190.337891)">†</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="171" y="189.714711" transform="rotate(-0 171 189.714711)">seed 2 incomplete</text>
    </g>
    <g id="patch_24">
     <path d="M 183.934162 197.6 
@@ -623,7 +623,7 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #197f79"/>
    </g>
    <g id="text_30">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #607281" x="221" y="207.337891" transform="rotate(-0 221 207.337891)">†</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="171" y="206.714711" transform="rotate(-0 171 206.714711)">seed 2 incomplete</text>
    </g>
    <g id="patch_26">
     <path d="M 156.797247 214.6 
@@ -826,7 +826,7 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #197f79"/>
    </g>
    <g id="text_31">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #607281" x="221" y="258.337891" transform="rotate(-0 221 258.337891)">†</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="171" y="257.714711" transform="rotate(-0 171 257.714711)">seed 2 incomplete</text>
    </g>
    <g id="patch_36">
     <path d="M 174.675419 265.6 
@@ -942,7 +942,7 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #197f79"/>
    </g>
    <g id="text_32">
-    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: end; fill: #607281" x="221" y="292.337891" transform="rotate(-0 221 292.337891)">†</text>
+    <text style="font-size: 6.6px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="171" y="291.714711" transform="rotate(-0 171 291.714711)">seed 2 incomplete</text>
    </g>
    <g id="patch_42">
     <path d="M 194.601455 299.6 
@@ -1903,7 +1903,7 @@ z
 " clip-path="url(#p82882ff9ff)" style="fill: #197f79"/>
    </g>
    <g id="text_42">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="288" y="278.078125" transform="rotate(-0 288 278.078125)">NP</text>
+    <text style="font-size: 6.8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="288" y="277.766672" transform="rotate(-0 288 277.766672)">Not evaluated</text>
    </g>
    <g id="line2d_140">
     <path d="M 298.815201 290 
@@ -3164,7 +3164,7 @@ L 163.3 325
     <text style="font-size: 7.4px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="182" y="326.922555" transform="rotate(-0 182 326.922555)">mean ± seed SD</text>
    </g>
    <g id="text_54">
-    <text style="font-size: 7.2px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="308" y="326.870594" transform="rotate(-0 308 326.870594)">† undefined mean     NP not predeclared</text>
+    <text style="font-size: 6.7px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="308" y="326.740691" transform="rotate(-0 308 326.740691)">Goop: seed 2 reached the graph limit</text>
    </g>
   </g>
  </g>

@@ -63,7 +63,7 @@ An allocation changes positions and future neighborhoods. Cached risk also chang
 
 WaterDrop completes all 810 outcomes. Within the mixed arm, cached risk beats dense H995 error in every seed (mean $.03868$ versus $.04324$), using 7,317 versus 8,333 mean directed messages along its own predicted trajectories. This is a descriptive rollout comparison: geometry differs, and speed achieves a lower mean error ($.03511$). The autonomous risk-minus-random training interaction is $+.00284\pm.00466$, with mixed seed signs. The observed-test reversal therefore does not yield a consistent autonomous allocation gain.
 
-Goop completes 1,077 of 1,080 outcomes. Three candidate-pair guards occur in mixed seed 2, one each for base, dense and cached risk. Affected mixed-arm full-horizon means and the cached-risk training interaction remain undefined. The two defined risk-versus-random seed comparisons have opposite signs. Among complete mixed-arm policies, speed and RMS beat random in every seed, with MSE $.112\pm.027$ and $.125\pm.032$.
+Goop completes 1,077 of 1,080 outcomes. In seed 2 of mixed training, one trajectory under each of native base, dense and cached risk exceeded the 100,000-candidate limit and stopped early. Those three policies therefore have no complete three-seed rollout average, and neither does the change in the cached-risk-versus-random gap. The two defined risk-versus-random seed comparisons have opposite signs. Among complete mixed-arm policies, speed and RMS beat random in every seed, with MSE $.112\pm.027$ and $.125\pm.032$.
 
 \takeaway{Takeaway 2}{%
 \textbf{A useful edge budget needs more than a map of difficulty.}

@@ -1,5 +1,5 @@
 {
-  "caption_latex": "\\textbf{The goal is accurate forecasts with fewer additional interactions.} The quarter-budget graph retains every native edge and only a quarter of the optional additions shown in the dense graph (schematic; self-messages omitted). The cards separate training, placement on matched observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for each named contrast; negative means lower error or a smaller risk-minus-random gap. The cross retains Goop's undefined full-horizon interaction.",
+  "caption_latex": "\\textbf{The goal is accurate forecasts with fewer additional interactions.} The quarter-budget graph retains every native edge and only a quarter of the optional additions shown in the dense graph (schematic; self-messages omitted). The cards separate training, placement on matched observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for each named contrast; negative means lower error or a smaller risk-minus-random gap. The Goop cross marks a missing complete-seed comparison: a seed-2 cached-risk rollout hit the candidate-pair limit.",
   "dimensions_pt": [
     470,
     238
@@ -271,10 +271,10 @@
       "bbox": [
         746.6666666666667,
         10.830403645833332,
-        126.0,
+        136.0,
         25.005859374999996
       ],
-      "text": "undefined"
+      "text": "graph limit"
     },
     {
       "bbox": [
@@ -1442,9 +1442,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "undefined",
+      "plain": "graph limit",
       "size": 7.5,
-      "tex": "undefined",
+      "tex": "graph limit",
       "x": 224,
       "y": 7
     },
@@ -1461,9 +1461,9 @@
     }
   ],
   "sha256": {
-    "constructive_overview.png": "e499bc53e5e39b7b3e5c5d46e5ac542ac15312444cbea612f5e4f7d6f40a4edf",
-    "constructive_overview.svg": "923c354ed0e56f063b5e6fa51fa643ba04d07ac1f8644ab93cd408ae16dad755",
-    "constructive_overview.tex": "fc50e5e4472eddbc91a99fba077a3cb6b308a9fbd98e888e16e9580efaa3e4ec",
-    "constructive_overview_picture.tex": "5860ac0e0ad3c550449b8808877a4578e7039385e57133ff1fc7108ca573d3af"
+    "constructive_overview.png": "d0719add06393dc1a73b2eba51631ed70ad53e8c0ca309063e8aab337b800a63",
+    "constructive_overview.svg": "820a7d71677f1dee9925d2ead42dcbc8090a1637b514d41e4ddbb9cbf25eb89e",
+    "constructive_overview.tex": "fbd08dc4722cb481c36bfdce8a78e610111872dda07605efe1d3a6478aaa59bc",
+    "constructive_overview_picture.tex": "f24bb6980b4ab535dac9c75717d4c656f9ff084d2ea3c546b9632d1d51663165"
   }
 }

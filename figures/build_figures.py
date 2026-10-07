@@ -12,7 +12,7 @@ OLD=ROOT/'results/cross_material'
 PINS={'printed_statistic_map.json':'76fe8163513e82166d4f5e4eda0e400c7f74fed68949162f8202287043cf041f',
       'all_scalar_statistic_map.json':'6b51a4de77719f5036e32ae79bddd280876deed0d648084b198b48f3e15a00b5'}
 MATERIALS=('Goop','WaterDrop','Sand')
-OBS=(('mix_minus_base_at_base','Train: base policy'),('mix_minus_base_at_random25','Train: random25'),
+OBS=(('mix_minus_base_at_base','Train effect: native'),('mix_minus_base_at_random25','Train effect: random'),
      ('risk_minus_random_base_training','Risk gap: base'),('risk_minus_random_mixed_training','Risk gap: mixed'),
      ('risk_minus_random_training_interaction','Change in risk gap'))
 POLICIES=(('base','Base'),('dense','Dense'),('random25','Random25'),('speed25','Speed25'),
@@ -83,14 +83,14 @@ def overview(data,feedback):
                 signs.append({'test':j,'material':m,'seed':seed,'value':v,'sign':None if v is None else (-1 if v<0 else 1)})
     p.circle(70,7,r=2.5,color='teal');p.text(78,7,'negative',size=7.5,color='muted')
     p.circle(145,7,r=2.5,color='rust');p.text(153,7,'positive',size=7.5,color='muted')
-    p.cross(216,7,r=2.3);p.text(224,7,'undefined',size=7.5,color='muted')
+    p.cross(216,7,r=2.3);p.text(224,7,'graph limit',size=7.5,color='muted')
     p.text(320,7,'Each triplet: seeds 0, 1, 2',size=7.5,color='muted')
     caption=(r'\textbf{The goal is accurate forecasts with fewer additional interactions.} '
              r'The quarter-budget graph retains every native edge and only a quarter of the optional additions shown in the dense graph '
              r'(schematic; self-messages omitted). The cards separate training, placement on matched '
              r'observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for '
              r'each named contrast; negative means lower error or a smaller risk-minus-random gap. '
-             r"The cross retains Goop's undefined full-horizon interaction.")
+             r"The Goop cross marks a missing complete-seed comparison: a seed-2 cached-risk rollout hit the candidate-pair limit.")
     product=p.save(HERE,'constructive_overview',caption,'fig:constructive-overview')
     return {'product':product,'seed_signs':signs,'concept_graph':{'native_pairs':native,'optional_pairs':optional,'selected_pairs':[(0,2),(4,7)],'nodes':coords}}
 
@@ -120,7 +120,7 @@ def atlas(data,feedback):
             assert low<=z<=high,(material,section,key,z,low,high)
             return left+(z-low)/(high-low)*width
         if state=='not_predeclared':
-            p.text(left+width/2,row_y,'NP',size=8,align='center',color='muted')
+            p.text(left+width/2,row_y,'Not evaluated',size=6.8,align='center',color='muted')
             records.append({'material':material,'section':section,'key':key,'state':state,'record':None});return
         vals=values(record);assert len(vals)==3
         item={'material':material,'section':section,'key':key,'state':state,'record':record,'scale':scale,'points':[]}
@@ -134,7 +134,7 @@ def atlas(data,feedback):
             item['mean_geometry']={'x':x(mean),'y':row_y+3,'sd_left':x(mean-sd),'sd_right':x(mean+sd)}
         else:
             assert sd is None and any(v is None for v in vals)
-            p.text(left+width-1,row_y+3,'†',r'$\dagger$',size=9,align='right',color='muted')
+            p.text(left+width/2,row_y+3,'seed 2 incomplete',size=6.6,align='center',color='muted')
         for seed,v in enumerate(vals):
             if v is None:continue
             yy=row_y-3+(seed-1)*1.9
@@ -162,16 +162,28 @@ def atlas(data,feedback):
     p.circle(12,5,r=1.7,color='teal');p.text(18,5,'seed effect < 0',r'seed effect $<0$',size=7.4,color='muted')
     p.circle(110,5,r=1.7,color='rust');p.text(116,5,'> 0',r'$>0$',size=7.4,color='muted')
     p.line(156,5,175,5,color='muted');p.diamond(165.5,5,r=2.2);p.text(182,5,'mean ± seed SD',r'mean $\pm$ seed SD',size=7.4,color='muted')
-    p.text(308,5,'† undefined mean     NP not predeclared',r'$\dagger$ undefined mean\quad NP not predeclared',size=7.2,color='muted')
+    p.text(308,5,'Goop: seed 2 reached the graph limit',size=6.7,color='muted')
     caption=(r'\textbf{Observed-test placement gains need not survive autonomous feedback.} '
-             r'Train rows and lower policy rows are mixed-minus-base effects; risk gaps are '
-             r'risk-minus-random, and their change is the mixed-minus-base interaction. '
+             r'Training effects subtract base-only error from mixed-training error under the same policy; all lower policy rows show this effect. '
+             r'Risk gaps subtract random-placement error from risk-placement error; their change compares the training arms. '
              r'Dots show paired seeds; diamonds and bars show mean $\pm$ sample seed SD, '
-             r'not confidence intervals. Scales differ. $\dagger$: a mixed Goop seed-2 guard '
-             r'leaves the three-seed mean undefined; defined seeds remain visible. '
-             r'NP: WaterDrop RMS was not predeclared. Observed risk scores the preceding observed '
+             r'not confidence intervals. Each panel has its own scale. In Goop, one mixed-training seed-2 trajectory '
+             r'hit the candidate-pair limit under each of native, dense and cached-risk evaluation. These training effects and the change in risk gap '
+             r'have no three-seed mean; the completed seed-0 and seed-1 points remain visible. '
+             r'WaterDrop RMS was not evaluated because it was not included in that study. Observed risk scores the preceding observed '
              r'base graph; autonomous risk caches its own preceding graph.')
     product=p.save(HERE,'cross_material_evidence',caption,'fig:cross-material-evidence')
+    # Appendix uses one column. Isolate the fixed-width native picture in an
+    # explicit centered box; this hardens layout without changing coordinates.
+    native=(HERE/'cross_material_evidence_picture.tex').read_text()
+    wrapped='\n'.join([r'\begin{figure}[!htbp]', r'\centering',
+        r'\noindent\makebox[\linewidth][c]{%',
+        r'\begin{minipage}{470pt}', r'\noindent', native,
+        r'\end{minipage}%', r'}', r'\caption{'+caption+'}',
+        r'\label{fig:cross-material-evidence}', r'\end{figure}', ''])
+    (HERE/'cross_material_evidence.tex').write_text(wrapped)
+    product['sha256']['cross_material_evidence.tex']=hashlib.sha256(wrapped.encode()).hexdigest()
+    (HERE/'cross_material_evidence_primitives.json').write_text(json.dumps(product,sort_keys=True,indent=2)+'\n')
     return {'product':product,'records':records,'axis_configs':configs}
 
 
