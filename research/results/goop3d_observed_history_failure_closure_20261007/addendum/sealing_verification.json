@@ -1,0 +1,10 @@
+{
+  "bytes_excluding_manifest_and_verification": 3373431,
+  "exact_copies": 55,
+  "files_including_manifest_and_verification": 64,
+  "manifest_sha256": "7d8436e9f8d2550dcf0ba420a423d613a421c1c242900cf06f2562597e038db7",
+  "predecessors_modified": false,
+  "schema": "d3_final_closure_local_seal_verification_v1",
+  "scientific_tests_compiler_clock_live_probes_or_repository_writes": false,
+  "status": "passed_exact_copy_and_selected_metadata_checks"
+}

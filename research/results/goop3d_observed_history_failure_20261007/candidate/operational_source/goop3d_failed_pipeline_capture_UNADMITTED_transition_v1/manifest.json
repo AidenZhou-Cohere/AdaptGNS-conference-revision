@@ -1,0 +1,31 @@
+{
+  "existing_phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+  "existing_release_sha256": "5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004",
+  "files_sha256": {
+    "HANDOFF.md": "eb8c386c6839871d93bb64f661c2dcdcd6004c3d026d51fb622cbb4c53839ceb",
+    "contract.json": "ff39419cb02633200b077ac0a20f443032d32ed873daa884a6468ef129ec52b6",
+    "independent_review.json": "b317da99d66970c53775bd8252a5791ecd2bc02bdc65930ec477154cb77a54d4",
+    "observe_failure.py": "3bfd21b033e51051d39d2f8aee4fa60e396f073e6d76626ba31ab607415c1648",
+    "root_capture.py": "1f76c4ba9aa8fb347e93ac2809f44038908e223472edc9d78e76541c94e164f7",
+    "source_provenance.json": "dfdd77865dda2b0954628faff186f8f1b3d31f0611e0fedd37055c8e8e781018",
+    "synthetic_receipt.json": "b5ea4fdbeba5288f4eb2ee7a9a56ea227e8e07cf2551b7e30271377cba5ca5cd",
+    "synthetic_tests.log": "2e0884e800e4940029fe82607e91601da51901fc6b185955cb3f5be3005f23b2",
+    "test_failure_capture.py": "8f1562228d2ca161fe5241d0e2815d64014b7ea08f2abb698498e7d0d9b7f399"
+  },
+  "historical_pid_count": 42,
+  "local_whole_capture_seconds": 35,
+  "maximum_actual_pipeline_pid_count": 3,
+  "new_analysis_clock_or_release": false,
+  "numerical_product_parsing": false,
+  "original_collection_or_arrays_opened": false,
+  "original_pipeline_exit_code": 1,
+  "original_pipeline_session": 33822,
+  "remote_execution": false,
+  "remote_internal_read_seconds": 12,
+  "remote_outer_timeout_seconds": 20,
+  "remote_source_runtime_bindings": 16,
+  "schema": "goop3d_failed_pipeline_capture_manifest_v1",
+  "scientific_admission": false,
+  "status": "sealed_source_only_root_review_required",
+  "synthetic_tests_passed": 33
+}

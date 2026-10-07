@@ -1,0 +1,496 @@
+{
+  "excluded_fields": [
+    "failure_logs_raw",
+    "original_new_owner_identities",
+    "registry_metadata",
+    "unverified_terminal_claims"
+  ],
+  "excluded_fields_remain_in_original_capture": true,
+  "metadata": {
+    "all42_plus_actual_new_owner_pids_absent_twice": true,
+    "boot_id": "4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6",
+    "collector_absence_basis": "root-bound failed original pipeline and local absence of original product_collection intent; no collector identity invented",
+    "final_boot_id": "4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6",
+    "finished": {
+      "monotonic_seconds": 8319173.497721767,
+      "utc": "2026-10-07T00:22:56.459098+00:00"
+    },
+    "host": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+    "native_first": {
+      "42898": {
+        "pid": 42898,
+        "status": "absent"
+      },
+      "42899": {
+        "pid": 42899,
+        "status": "absent"
+      },
+      "42911": {
+        "pid": 42911,
+        "status": "absent"
+      },
+      "42912": {
+        "pid": 42912,
+        "status": "absent"
+      },
+      "42913": {
+        "pid": 42913,
+        "status": "absent"
+      },
+      "42914": {
+        "pid": 42914,
+        "status": "absent"
+      },
+      "43568": {
+        "pid": 43568,
+        "status": "absent"
+      },
+      "43632": {
+        "pid": 43632,
+        "status": "absent"
+      },
+      "43633": {
+        "pid": 43633,
+        "status": "absent"
+      },
+      "43760": {
+        "pid": 43760,
+        "status": "absent"
+      },
+      "46156": {
+        "pid": 46156,
+        "status": "absent"
+      },
+      "46220": {
+        "pid": 46220,
+        "status": "absent"
+      },
+      "46221": {
+        "pid": 46221,
+        "status": "absent"
+      },
+      "46351": {
+        "pid": 46351,
+        "status": "absent"
+      },
+      "48776": {
+        "pid": 48776,
+        "status": "absent"
+      },
+      "48851": {
+        "pid": 48851,
+        "status": "absent"
+      },
+      "48979": {
+        "pid": 48979,
+        "status": "absent"
+      },
+      "49043": {
+        "pid": 49043,
+        "status": "absent"
+      },
+      "51739": {
+        "pid": 51739,
+        "status": "absent"
+      },
+      "51807": {
+        "pid": 51807,
+        "status": "absent"
+      },
+      "51946": {
+        "pid": 51946,
+        "status": "absent"
+      },
+      "52010": {
+        "pid": 52010,
+        "status": "absent"
+      },
+      "54713": {
+        "pid": 54713,
+        "status": "absent"
+      },
+      "54714": {
+        "pid": 54714,
+        "status": "absent"
+      },
+      "55094": {
+        "pid": 55094,
+        "status": "absent"
+      },
+      "55158": {
+        "pid": 55158,
+        "status": "absent"
+      },
+      "57372": {
+        "pid": 57372,
+        "status": "absent"
+      },
+      "57438": {
+        "pid": 57438,
+        "status": "absent"
+      },
+      "59710": {
+        "pid": 59710,
+        "status": "absent"
+      },
+      "59776": {
+        "pid": 59776,
+        "status": "absent"
+      },
+      "62415": {
+        "pid": 62415,
+        "status": "absent"
+      },
+      "62481": {
+        "pid": 62481,
+        "status": "absent"
+      },
+      "65470": {
+        "pid": 65470,
+        "status": "absent"
+      },
+      "65471": {
+        "pid": 65471,
+        "status": "absent"
+      },
+      "65472": {
+        "pid": 65472,
+        "status": "absent"
+      },
+      "65473": {
+        "pid": 65473,
+        "status": "absent"
+      },
+      "65892": {
+        "pid": 65892,
+        "status": "absent"
+      },
+      "65893": {
+        "pid": 65893,
+        "status": "absent"
+      },
+      "65928": {
+        "pid": 65928,
+        "status": "absent"
+      },
+      "66518": {
+        "pid": 66518,
+        "status": "absent"
+      },
+      "66519": {
+        "pid": 66519,
+        "status": "absent"
+      },
+      "66558": {
+        "pid": 66558,
+        "status": "absent"
+      },
+      "76489": {
+        "pid": 76489,
+        "status": "absent"
+      },
+      "76490": {
+        "pid": 76490,
+        "status": "absent"
+      },
+      "76491": {
+        "pid": 76491,
+        "status": "absent"
+      }
+    },
+    "native_second": {
+      "42898": {
+        "pid": 42898,
+        "status": "absent"
+      },
+      "42899": {
+        "pid": 42899,
+        "status": "absent"
+      },
+      "42911": {
+        "pid": 42911,
+        "status": "absent"
+      },
+      "42912": {
+        "pid": 42912,
+        "status": "absent"
+      },
+      "42913": {
+        "pid": 42913,
+        "status": "absent"
+      },
+      "42914": {
+        "pid": 42914,
+        "status": "absent"
+      },
+      "43568": {
+        "pid": 43568,
+        "status": "absent"
+      },
+      "43632": {
+        "pid": 43632,
+        "status": "absent"
+      },
+      "43633": {
+        "pid": 43633,
+        "status": "absent"
+      },
+      "43760": {
+        "pid": 43760,
+        "status": "absent"
+      },
+      "46156": {
+        "pid": 46156,
+        "status": "absent"
+      },
+      "46220": {
+        "pid": 46220,
+        "status": "absent"
+      },
+      "46221": {
+        "pid": 46221,
+        "status": "absent"
+      },
+      "46351": {
+        "pid": 46351,
+        "status": "absent"
+      },
+      "48776": {
+        "pid": 48776,
+        "status": "absent"
+      },
+      "48851": {
+        "pid": 48851,
+        "status": "absent"
+      },
+      "48979": {
+        "pid": 48979,
+        "status": "absent"
+      },
+      "49043": {
+        "pid": 49043,
+        "status": "absent"
+      },
+      "51739": {
+        "pid": 51739,
+        "status": "absent"
+      },
+      "51807": {
+        "pid": 51807,
+        "status": "absent"
+      },
+      "51946": {
+        "pid": 51946,
+        "status": "absent"
+      },
+      "52010": {
+        "pid": 52010,
+        "status": "absent"
+      },
+      "54713": {
+        "pid": 54713,
+        "status": "absent"
+      },
+      "54714": {
+        "pid": 54714,
+        "status": "absent"
+      },
+      "55094": {
+        "pid": 55094,
+        "status": "absent"
+      },
+      "55158": {
+        "pid": 55158,
+        "status": "absent"
+      },
+      "57372": {
+        "pid": 57372,
+        "status": "absent"
+      },
+      "57438": {
+        "pid": 57438,
+        "status": "absent"
+      },
+      "59710": {
+        "pid": 59710,
+        "status": "absent"
+      },
+      "59776": {
+        "pid": 59776,
+        "status": "absent"
+      },
+      "62415": {
+        "pid": 62415,
+        "status": "absent"
+      },
+      "62481": {
+        "pid": 62481,
+        "status": "absent"
+      },
+      "65470": {
+        "pid": 65470,
+        "status": "absent"
+      },
+      "65471": {
+        "pid": 65471,
+        "status": "absent"
+      },
+      "65472": {
+        "pid": 65472,
+        "status": "absent"
+      },
+      "65473": {
+        "pid": 65473,
+        "status": "absent"
+      },
+      "65892": {
+        "pid": 65892,
+        "status": "absent"
+      },
+      "65893": {
+        "pid": 65893,
+        "status": "absent"
+      },
+      "65928": {
+        "pid": 65928,
+        "status": "absent"
+      },
+      "66518": {
+        "pid": 66518,
+        "status": "absent"
+      },
+      "66519": {
+        "pid": 66519,
+        "status": "absent"
+      },
+      "66558": {
+        "pid": 66558,
+        "status": "absent"
+      },
+      "76489": {
+        "pid": 76489,
+        "status": "absent"
+      },
+      "76490": {
+        "pid": 76490,
+        "status": "absent"
+      },
+      "76491": {
+        "pid": 76491,
+        "status": "absent"
+      }
+    },
+    "new_analysis_clock_or_release": false,
+    "new_observer_identity": {
+      "argv": [
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "-c",
+        "\"\"\"Bounded failure/native metadata only; no numerical products parsed or processes signaled.\"\"\"\nimport base64\nimport datetime as D\nimport hashlib\nimport json\nimport os\nimport socket\nimport stat\nimport sys\nimport time\n\nHOST='aidenzhou-teal-rat-80-5c78ffbffc-g8djt'\nBOOT='4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6'\nBASE='/root/repos/AdaptGNS-cuda-20261006'\nROOT=BASE+'/goop3d_observed_history_analysis_20261006_v1'\nOWNER=ROOT+'/owners/d3_observed_history_pipeline'\nNAMES=('owner_started.json','child_registered.json','owner_terminal.json')\nHISTORICAL=(42898,42899,42911,42912,42913,42914,43568,43632,43633,43760,46156,46220,46221,46351,48776,48851,48979,49043,51739,51807,51946,52010,54713,54714,55094,55158,57372,57438,59710,59776,62415,62481,65470,65471,65472,65473,65892,65893,65928,66518,66519,66558)\nPRODUCTS=tuple(ROOT+'/'+n for n in ('audit.json','summary.json','arithmetic_check.json','pipeline_receipt.json'))\nLOGS=tuple(OWNER+'/'+n for n in ('child.stdout','child.stderr','publication_failed.json'))+tuple(ROOT+'/'+n for n in ('pipeline.failure.json','audit.failure.json','audit.progress.jsonl'))\ndef need(ok, message):\n    if not ok: raise ValueError(message)\n\ndef strict(raw):\n    def pairs(items):\n        result = {}\n        for key, value in items:\n            need(key not in result, 'duplicate JSON key'); result[key] = value\n        return result\n    def reject(value): raise ValueError('nonfinite JSON')\n    return json.loads(raw, object_pairs_hook=pairs, parse_constant=reject)\n\ndef exact(a, b):\n    return json.dumps(a, sort_keys=True, allow_nan=False) == json.dumps(b, sort_keys=True, allow_nan=False)\n\ndef sha(raw): return hashlib.sha256(raw).hexdigest()\n\ndef identity(row):\n    need(type(row) is dict, 'native identity missing')\n    need(all(type(row.get(k)) is int and 0 < row[k] < 2**31 for k in ('pid','ppid','pgid','sid')), 'invalid native IDs')\n    need(type(row.get('start_id')) is str and row['start_id'].isascii() and row['start_id'].isdigit() and 0 < int(row['start_id']) < 2**64, 'invalid start ID')\n    need(str(int(row['start_id'])) == row['start_id'], 'noncanonical start ID')\n    need(type(row.get('argv')) is list and row['argv'] and all(type(x) is str for x in row['argv']), 'invalid argv')\n    return {k:row[k] for k in ('pid','ppid','pgid','sid','start_id','argv')}\n\ndef parse_stat(raw, expected_pid):\n    text = raw.decode('ascii'); at = text.rfind(') ')\n    need(at > 0 and text[:text.index(' (')].isdigit() and int(text[:text.index(' (')]) == expected_pid, 'malformed proc PID')\n    fields = text[at+2:].split(); need(len(fields) >= 20, 'short proc stat')\n    need(fields[0] in ('R','S','D','Z','T','t','X','x','K','W','P','I') and all(x.isascii() and x.isdigit() for x in (fields[1],fields[2],fields[3],fields[19])), 'malformed native state or integer')\n    need(all(0 <= int(x) < 2**31 for x in fields[1:4]) and 0 < int(fields[19]) < 2**64, 'invalid native numeric range')\n    need(str(int(fields[19])) == fields[19], 'noncanonical native start ID')\n    return {'pid':expected_pid,'state':fields[0],'ppid':int(fields[1]),'pgid':int(fields[2]),'sid':int(fields[3]),'start_id':fields[19]}\n\ndef sample_native(rt, expected):\n    pid = expected['pid']\n    try: first = parse_stat(rt.proc(pid,'stat'),pid)\n    except FileNotFoundError: return {'pid':pid,'status':'absent'}\n    except Exception as exc: return {'pid':pid,'status':'cannot_observe','error':type(exc).__name__+': '+str(exc)}\n    try:\n        if first['start_id'] != expected['start_id']:\n            second = parse_stat(rt.proc(pid,'stat'),pid)\n            need(second['start_id'] == first['start_id'], 'PID changed during reuse observation')\n            return {'pid':pid,'status':'pid_reused','expected_start_id':expected['start_id'],'observed_start_id':second['start_id'],'unrelated_argv_not_read':True}\n        raw = rt.proc(pid,'cmdline'); second = parse_stat(rt.proc(pid,'stat'),pid)\n        need(second['start_id'] == first['start_id'] and all(second[k] == first[k] for k in ('ppid','pgid','sid')), 'native identity changed during read')\n        argv = [x.decode('utf-8',errors='surrogateescape') for x in raw.rstrip(b'\\0').split(b'\\0')] if raw else []\n        second['argv'] = argv\n        mismatches = [k for k in ('ppid','pgid','sid','argv') if k in expected and not exact(second[k],expected[k])]\n        return {'pid':pid,'status':'present','identity':second,'recorded_field_mismatches':mismatches,'zombie':second['state'] == 'Z'}\n    except FileNotFoundError: return {'pid':pid,'status':'changed_during_observation'}\n    except Exception as exc: return {'pid':pid,'status':'cannot_observe','error':type(exc).__name__+': '+str(exc)}\n\ndef registry_identities(records, c):\n    \"\"\"Only projected registry identity fields are used; no product semantics.\"\"\"\n    roles = {}; claims = {}; errors = []\n    def add(role, row):\n        row = identity(row)\n        need(role not in roles or exact(roles[role], row), 'conflicting '+role+' identity')\n        roles[role] = row\n    try:\n        for name, d in records.items():\n            need(type(d) is dict, 'registry root must be an object')\n            if name in ('owner_started.json','owner_terminal.json'):\n                need(d.get('release_sha256') == c['release_sha256'], 'original release differs')\n                guard = d['native_hard_guard']; timing = d['native_outer_timing']\n                need(guard['absolute_deadline_ns'] == c['hard_deadline_monotonic_ns'] and guard['clock'] == 'CLOCK_MONOTONIC' and guard['signal'] == 'SIGKILL', 'original guard differs')\n                hard = c['hard_deadline_monotonic_ns']; computed = timing['computed_monotonic_ns']; seconds = timing['term_seconds']\n                need(type(computed) is int and type(seconds) is int and seconds > 0 and seconds == (hard-computed)//10**9-20, 'original timeout arithmetic differs')\n                argv = ['/usr/bin/timeout','--signal=TERM','--kill-after=15s',str(seconds)+'s',BASE+'/.venv/bin/python','-I','-S','-B',c['owner_source']['path'],'--execute','--hard-deadline-monotonic-ns',str(hard),'--outer-term-seconds',str(seconds),'--outer-computed-monotonic-ns',str(computed),'--release',ROOT+'/controls/pipeline.cpu_release.json','--release-sha256',c['release_sha256']]\n                need(exact(d['outer_timeout_identity']['argv'],argv) and exact(d['owner_identity']['argv'],argv[4:]), 'original native owner argv differs')\n                add('outer',d['outer_timeout_identity']); add('owner',d['owner_identity'])\n                if name == 'owner_started.json': need(exact(d['original_clock_sample'],c['clock_sample']), 'original clock sample differs')\n                else:\n                    child = d.get('child')\n                    claims = {k:d.get(k) for k in ('status','failure','child_native_absent','publication_utc','publication_monotonic')}\n                    claims['unverified_worker_exit_code'] = child.get('exit_code') if type(child) is dict else None\n                    if child is not None:\n                        need(type(child) is dict and child['registered'] is True and type(child['pid']) is int and exact(child['owner_identity'],d['owner_identity']) and exact(child['command'],c['worker_argv']) and child['pid'] == child['identity']['pid'], 'terminal original child differs')\n                        add('worker',child['identity'])\n            else:\n                need(name == 'child_registered.json' and d['registered'] is True and type(d['pid']) is int and d['pid'] == d['identity']['pid'] and exact(d['command'],c['worker_argv']), 'original registration differs')\n                add('owner',d['owner_identity']); add('worker',d['identity'])\n        if 'worker' in roles: need(exact(roles['worker']['argv'],c['worker_argv']), 'original worker argv differs')\n        if set(roles) == {'outer','owner','worker'}:\n            a,b,d = (roles[x] for x in ('outer','owner','worker'))\n            need(len({a['pid'],b['pid'],d['pid']}) == 3 and not ({a['pid'],b['pid'],d['pid']} & set(HISTORICAL)), 'original roles overlap')\n            need(b['ppid'] == a['pid'] and d['ppid'] == b['pid'] and a['pgid'] == b['pgid'] == d['pgid'] and a['sid'] == b['sid'] == d['sid'], 'original recorded ancestry differs')\n    except (KeyError,TypeError,ValueError,OverflowError) as exc:\n        errors.append(type(exc).__name__+': '+str(exc))\n    return roles, claims, errors\n\nclass Runtime:\n    def __init__(self,c):\n        self.start=time.monotonic();self.start_utc=D.datetime.now(D.timezone.utc);self.c=c\n        self.allowed_pids=set(HISTORICAL)|{os.getpid(),os.getppid()}\n        self.allowed=set(c['remote_source_runtime_bindings'])|{ROOT+'/controls/analysis_phase.json',ROOT+'/controls/pipeline.cpu_release.json','/proc/sys/kernel/random/boot_id'}|set(PRODUCTS)|set(LOGS)|{OWNER+'/'+n for n in NAMES}\n    def check(self):\n        elapsed=time.monotonic()-self.start;wall=(D.datetime.now(D.timezone.utc)-self.start_utc).total_seconds()\n        phase_wall=(D.datetime.now(D.timezone.utc)-D.datetime.fromisoformat(self.c['phase_started_utc'])).total_seconds();phase_mono=time.monotonic()-self.c['phase_host_monotonic']\n        need(0<=elapsed<12 and 0<=wall<12 and abs(elapsed-wall)<=5 and 0<=phase_wall<3540 and 0<=phase_mono<3540 and abs(phase_wall-phase_mono)<=5,'existing phase or12second metadata budget expired')\n    def clocks(self):self.check();return {'utc':D.datetime.now(D.timezone.utc).isoformat(),'monotonic_seconds':time.monotonic()}\n    def open(self,path):\n        self.check();need(path in self.allowed or any(path=='/proc/'+str(p)+'/'+n for p in self.allowed_pids for n in ('stat','cmdline')),'exact metadata/hash allowlist only')\n        directory=os.open('/',os.O_RDONLY|os.O_DIRECTORY)\n        try:\n            bits=path.strip('/').split('/')\n            for bit in bits[:-1]:\n                nxt=os.open(bit,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=directory);os.close(directory);directory=nxt\n            fd=os.open(bits[-1],os.O_RDONLY|os.O_NOFOLLOW|os.O_NONBLOCK,dir_fd=directory)\n        finally:os.close(directory)\n        return fd\n    def read(self,path,cap,retain=True):\n        fd=self.open(path)\n        try:\n            before=os.fstat(fd);need(stat.S_ISREG(before.st_mode) and before.st_size<=cap,'bounded regular metadata or opaque product')\n            parts=[];hasher=hashlib.sha256();size=0\n            while True:\n                self.check();block=os.read(fd,min(65536,cap+1-size));self.check()\n                if not block:break\n                size+=len(block);need(size<=cap,'read size cap');hasher.update(block)\n                if retain:parts.append(block)\n            after=os.fstat(fd);keys=lambda s:(s.st_dev,s.st_ino,s.st_mode,s.st_size,s.st_mtime_ns,s.st_ctime_ns)\n            need(keys(before)==keys(after),'file changed during observation')\n            return b''.join(parts) if retain else {'status':'opaque_hash_only','bytes':size,'sha256':hasher.hexdigest(),'numeric_content_parsed':False}\n        finally:os.close(fd)\n    def proc(self,pid,name):return self.read('/proc/'+str(pid)+'/'+name,65536)\n    def metadata(self,path,cap,opaque=False):\n        try:\n            if opaque:return self.read(path,cap,False)\n            raw=self.read(path,cap);return {'status':'read','bytes':len(raw),'sha256':sha(raw),'raw_base64':base64.b64encode(raw).decode()}\n        except FileNotFoundError:return {'status':'missing'}\n        except Exception as e:return {'status':'cannot_observe','error':type(e).__name__+': '+str(e)}\n\ndef validate_contract(c):\n    need(c['schema']=='goop3d_failed_pipeline_metadata_contract_v1' and c['original_pipeline_session']==33822 and c['original_pipeline_exit_code']==1,'actual failed original pipeline contract')\n    need(c['phase_sha256']=='fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2' and c['release_sha256']=='5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004','unchanged original phase/release')\n    need(tuple(x['pid'] for x in c['historical'])==HISTORICAL and c['host']==HOST and c['boot_id']==BOOT,'exact42historical contract and host')\n    need(c['no_original_success_collector_dispatched'] is True and c['scientific_admission'] is False and c['new_analysis_clock_or_release'] is False,'failure observation only')\n\ndef observe(c,rt):\n    validate_contract(c);started=rt.clocks();need(socket.gethostname()==HOST and rt.read('/proc/sys/kernel/random/boot_id',128).decode().strip()==BOOT,'exact original host/boot')\n    for path,pin in c['remote_source_runtime_bindings'].items():need(rt.read(path,16<<20,False)['sha256']==pin,'exact source/runtime binding '+path)\n    phase=rt.read(ROOT+'/controls/analysis_phase.json',1<<20);release=rt.read(ROOT+'/controls/pipeline.cpu_release.json',1<<20)\n    need(sha(phase)==c['phase_sha256'] and sha(release)==c['release_sha256'],'exact original issued control bytes')\n    pid,parent=os.getpid(),os.getppid();selfstat=parse_stat(rt.proc(pid,'stat'),pid);parentstat=parse_stat(rt.proc(parent,'stat'),parent)\n    argv=lambda p:[v.decode('utf-8',errors='surrogateescape') for v in rt.proc(p,'cmdline').rstrip(b'\\0').split(b'\\0')]\n    ownargv,parentargv=argv(pid),argv(parent)\n    need(os.readlink('/proc/'+str(pid)+'/exe')=='/usr/bin/python3.12' and os.readlink('/proc/'+str(parent)+'/exe')=='/usr/bin/timeout' and os.path.realpath(BASE+'/.venv/bin/python')=='/usr/bin/python3.12','original verified runtime and own timeout executable')\n    need(selfstat['ppid']==parent and selfstat['pgid']==parentstat['pgid'] and selfstat['sid']==parentstat['sid'],'own new observer timeout ancestry')\n    need(parentargv[:3]==['/usr/bin/timeout','--signal=KILL','20s'] and parentargv[3:]==ownargv and ownargv[:5]==[BASE+'/.venv/bin/python','-I','-S','-B','-c'] and sha(ownargv[5].encode())==c['observer_source_sha256'] and ownargv[6:]==['--observe','--contract-sha256',sha(json.dumps(c,indent=2,sort_keys=True).encode()+b'\\n')],'exact own observer/timeout argv and contract')\n    records={};metadata={}\n    for n in NAMES:\n        item=rt.metadata(OWNER+'/'+n,256<<10);metadata[n]=item\n        if item['status']=='read':\n            try:records[n]=strict(base64.b64decode(item['raw_base64']))\n            except Exception as e:item['status']='invalid_json';item['parse_error']=type(e).__name__+': '+str(e)\n    roles,claims,errors=registry_identities(records,c);complete=set(roles)=={'outer','owner','worker'} and not errors and all(item['status'] in ('read','missing') for item in metadata.values())\n    expected=c['historical']+(list(roles.values()) if complete else []);rt.allowed_pids.update(x['pid'] for x in expected)\n    first={str(x['pid']):sample_native(rt,x) for x in expected}\n    logs={path:rt.metadata(path,256<<10) for path in LOGS}\n    products={path:rt.metadata(path,256<<20,True) for path in PRODUCTS}\n    second={str(x['pid']):sample_native(rt,x) for x in expected}\n    stable=True\n    for n,item in metadata.items():\n        again=rt.metadata(OWNER+'/'+n,256<<10)\n        stable=stable and again==item\n    boot=rt.read('/proc/sys/kernel/random/boot_id',128).decode().strip();finished=rt.clocks()\n    closure=complete and stable and boot==BOOT and all(first[k]['status']==second[k]['status']=='absent' for k in first)\n    result={'schema':'goop3d_failed_pipeline_metadata_observation_v1','phase_sha256':c['phase_sha256'],'release_sha256':c['release_sha256'],'original_pipeline_session':33822,'original_pipeline_exit_code':1,'started':started,'finished':finished,'host':HOST,'boot_id':BOOT,'final_boot_id':boot,'registry_metadata':metadata,'unverified_terminal_claims':claims,'registry_errors':errors,'registry_identity_coverage_complete':complete,'registry_bytes_unchanged':stable,'original_new_owner_identities':roles if complete else {},'native_first':first,'native_second':second,'observed_pid_count':len(expected),'all42_plus_actual_new_owner_pids_absent_twice':closure,'failure_logs_raw':logs,'product_sizes_opaque_hashes_only':products,'new_observer_identity':{**selfstat,'argv':ownargv},'new_observer_timeout_identity':{**parentstat,'argv':parentargv},'original_success_collector_dispatched':False,'collector_absence_basis':'root-bound failed original pipeline and local absence of original product_collection intent; no collector identity invented','termination_cause_established':False,'scientific_admission':False,'successful_product_numeric_content_parsed':False,'original_collection_or_arrays_opened':False,'new_analysis_clock_or_release':False,'target_processes_signaled':False,'remote_files_written':False}\n    return result\n\ndef main():\n    need(sys.argv[1:2]==['--observe'] and len(sys.argv)==4 and sys.argv[2]=='--contract-sha256','explicit observer and contract')\n    need(sys.platform.startswith('linux') and sys.flags.isolated and sys.flags.no_site and sys.flags.dont_write_bytecode and not sys.flags.optimize,'isolated original Python flags')\n    raw=sys.stdin.buffer.read(512*1024+1);need(len(raw)<=512*1024 and sha(raw)==sys.argv[3],'bounded original contract bytes');c=strict(raw);rt=Runtime(c)\n    result=observe(c,rt);encoded=json.dumps(result,sort_keys=True,allow_nan=False).encode();need(len(encoded)<=(8<<20),'bounded metadata output');rt.check();sys.stdout.buffer.write(encoded+b'\\n');sys.stdout.buffer.flush()\n\nif __name__=='__main__':main()\n",
+        "--observe",
+        "--contract-sha256",
+        "ff39419cb02633200b077ac0a20f443032d32ed873daa884a6468ef129ec52b6"
+      ],
+      "pgid": 79394,
+      "pid": 79395,
+      "ppid": 79394,
+      "sid": 79394,
+      "start_id": "831917341",
+      "state": "R"
+    },
+    "new_observer_timeout_identity": {
+      "argv": [
+        "/usr/bin/timeout",
+        "--signal=KILL",
+        "20s",
+        "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "-c",
+        "\"\"\"Bounded failure/native metadata only; no numerical products parsed or processes signaled.\"\"\"\nimport base64\nimport datetime as D\nimport hashlib\nimport json\nimport os\nimport socket\nimport stat\nimport sys\nimport time\n\nHOST='aidenzhou-teal-rat-80-5c78ffbffc-g8djt'\nBOOT='4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6'\nBASE='/root/repos/AdaptGNS-cuda-20261006'\nROOT=BASE+'/goop3d_observed_history_analysis_20261006_v1'\nOWNER=ROOT+'/owners/d3_observed_history_pipeline'\nNAMES=('owner_started.json','child_registered.json','owner_terminal.json')\nHISTORICAL=(42898,42899,42911,42912,42913,42914,43568,43632,43633,43760,46156,46220,46221,46351,48776,48851,48979,49043,51739,51807,51946,52010,54713,54714,55094,55158,57372,57438,59710,59776,62415,62481,65470,65471,65472,65473,65892,65893,65928,66518,66519,66558)\nPRODUCTS=tuple(ROOT+'/'+n for n in ('audit.json','summary.json','arithmetic_check.json','pipeline_receipt.json'))\nLOGS=tuple(OWNER+'/'+n for n in ('child.stdout','child.stderr','publication_failed.json'))+tuple(ROOT+'/'+n for n in ('pipeline.failure.json','audit.failure.json','audit.progress.jsonl'))\ndef need(ok, message):\n    if not ok: raise ValueError(message)\n\ndef strict(raw):\n    def pairs(items):\n        result = {}\n        for key, value in items:\n            need(key not in result, 'duplicate JSON key'); result[key] = value\n        return result\n    def reject(value): raise ValueError('nonfinite JSON')\n    return json.loads(raw, object_pairs_hook=pairs, parse_constant=reject)\n\ndef exact(a, b):\n    return json.dumps(a, sort_keys=True, allow_nan=False) == json.dumps(b, sort_keys=True, allow_nan=False)\n\ndef sha(raw): return hashlib.sha256(raw).hexdigest()\n\ndef identity(row):\n    need(type(row) is dict, 'native identity missing')\n    need(all(type(row.get(k)) is int and 0 < row[k] < 2**31 for k in ('pid','ppid','pgid','sid')), 'invalid native IDs')\n    need(type(row.get('start_id')) is str and row['start_id'].isascii() and row['start_id'].isdigit() and 0 < int(row['start_id']) < 2**64, 'invalid start ID')\n    need(str(int(row['start_id'])) == row['start_id'], 'noncanonical start ID')\n    need(type(row.get('argv')) is list and row['argv'] and all(type(x) is str for x in row['argv']), 'invalid argv')\n    return {k:row[k] for k in ('pid','ppid','pgid','sid','start_id','argv')}\n\ndef parse_stat(raw, expected_pid):\n    text = raw.decode('ascii'); at = text.rfind(') ')\n    need(at > 0 and text[:text.index(' (')].isdigit() and int(text[:text.index(' (')]) == expected_pid, 'malformed proc PID')\n    fields = text[at+2:].split(); need(len(fields) >= 20, 'short proc stat')\n    need(fields[0] in ('R','S','D','Z','T','t','X','x','K','W','P','I') and all(x.isascii() and x.isdigit() for x in (fields[1],fields[2],fields[3],fields[19])), 'malformed native state or integer')\n    need(all(0 <= int(x) < 2**31 for x in fields[1:4]) and 0 < int(fields[19]) < 2**64, 'invalid native numeric range')\n    need(str(int(fields[19])) == fields[19], 'noncanonical native start ID')\n    return {'pid':expected_pid,'state':fields[0],'ppid':int(fields[1]),'pgid':int(fields[2]),'sid':int(fields[3]),'start_id':fields[19]}\n\ndef sample_native(rt, expected):\n    pid = expected['pid']\n    try: first = parse_stat(rt.proc(pid,'stat'),pid)\n    except FileNotFoundError: return {'pid':pid,'status':'absent'}\n    except Exception as exc: return {'pid':pid,'status':'cannot_observe','error':type(exc).__name__+': '+str(exc)}\n    try:\n        if first['start_id'] != expected['start_id']:\n            second = parse_stat(rt.proc(pid,'stat'),pid)\n            need(second['start_id'] == first['start_id'], 'PID changed during reuse observation')\n            return {'pid':pid,'status':'pid_reused','expected_start_id':expected['start_id'],'observed_start_id':second['start_id'],'unrelated_argv_not_read':True}\n        raw = rt.proc(pid,'cmdline'); second = parse_stat(rt.proc(pid,'stat'),pid)\n        need(second['start_id'] == first['start_id'] and all(second[k] == first[k] for k in ('ppid','pgid','sid')), 'native identity changed during read')\n        argv = [x.decode('utf-8',errors='surrogateescape') for x in raw.rstrip(b'\\0').split(b'\\0')] if raw else []\n        second['argv'] = argv\n        mismatches = [k for k in ('ppid','pgid','sid','argv') if k in expected and not exact(second[k],expected[k])]\n        return {'pid':pid,'status':'present','identity':second,'recorded_field_mismatches':mismatches,'zombie':second['state'] == 'Z'}\n    except FileNotFoundError: return {'pid':pid,'status':'changed_during_observation'}\n    except Exception as exc: return {'pid':pid,'status':'cannot_observe','error':type(exc).__name__+': '+str(exc)}\n\ndef registry_identities(records, c):\n    \"\"\"Only projected registry identity fields are used; no product semantics.\"\"\"\n    roles = {}; claims = {}; errors = []\n    def add(role, row):\n        row = identity(row)\n        need(role not in roles or exact(roles[role], row), 'conflicting '+role+' identity')\n        roles[role] = row\n    try:\n        for name, d in records.items():\n            need(type(d) is dict, 'registry root must be an object')\n            if name in ('owner_started.json','owner_terminal.json'):\n                need(d.get('release_sha256') == c['release_sha256'], 'original release differs')\n                guard = d['native_hard_guard']; timing = d['native_outer_timing']\n                need(guard['absolute_deadline_ns'] == c['hard_deadline_monotonic_ns'] and guard['clock'] == 'CLOCK_MONOTONIC' and guard['signal'] == 'SIGKILL', 'original guard differs')\n                hard = c['hard_deadline_monotonic_ns']; computed = timing['computed_monotonic_ns']; seconds = timing['term_seconds']\n                need(type(computed) is int and type(seconds) is int and seconds > 0 and seconds == (hard-computed)//10**9-20, 'original timeout arithmetic differs')\n                argv = ['/usr/bin/timeout','--signal=TERM','--kill-after=15s',str(seconds)+'s',BASE+'/.venv/bin/python','-I','-S','-B',c['owner_source']['path'],'--execute','--hard-deadline-monotonic-ns',str(hard),'--outer-term-seconds',str(seconds),'--outer-computed-monotonic-ns',str(computed),'--release',ROOT+'/controls/pipeline.cpu_release.json','--release-sha256',c['release_sha256']]\n                need(exact(d['outer_timeout_identity']['argv'],argv) and exact(d['owner_identity']['argv'],argv[4:]), 'original native owner argv differs')\n                add('outer',d['outer_timeout_identity']); add('owner',d['owner_identity'])\n                if name == 'owner_started.json': need(exact(d['original_clock_sample'],c['clock_sample']), 'original clock sample differs')\n                else:\n                    child = d.get('child')\n                    claims = {k:d.get(k) for k in ('status','failure','child_native_absent','publication_utc','publication_monotonic')}\n                    claims['unverified_worker_exit_code'] = child.get('exit_code') if type(child) is dict else None\n                    if child is not None:\n                        need(type(child) is dict and child['registered'] is True and type(child['pid']) is int and exact(child['owner_identity'],d['owner_identity']) and exact(child['command'],c['worker_argv']) and child['pid'] == child['identity']['pid'], 'terminal original child differs')\n                        add('worker',child['identity'])\n            else:\n                need(name == 'child_registered.json' and d['registered'] is True and type(d['pid']) is int and d['pid'] == d['identity']['pid'] and exact(d['command'],c['worker_argv']), 'original registration differs')\n                add('owner',d['owner_identity']); add('worker',d['identity'])\n        if 'worker' in roles: need(exact(roles['worker']['argv'],c['worker_argv']), 'original worker argv differs')\n        if set(roles) == {'outer','owner','worker'}:\n            a,b,d = (roles[x] for x in ('outer','owner','worker'))\n            need(len({a['pid'],b['pid'],d['pid']}) == 3 and not ({a['pid'],b['pid'],d['pid']} & set(HISTORICAL)), 'original roles overlap')\n            need(b['ppid'] == a['pid'] and d['ppid'] == b['pid'] and a['pgid'] == b['pgid'] == d['pgid'] and a['sid'] == b['sid'] == d['sid'], 'original recorded ancestry differs')\n    except (KeyError,TypeError,ValueError,OverflowError) as exc:\n        errors.append(type(exc).__name__+': '+str(exc))\n    return roles, claims, errors\n\nclass Runtime:\n    def __init__(self,c):\n        self.start=time.monotonic();self.start_utc=D.datetime.now(D.timezone.utc);self.c=c\n        self.allowed_pids=set(HISTORICAL)|{os.getpid(),os.getppid()}\n        self.allowed=set(c['remote_source_runtime_bindings'])|{ROOT+'/controls/analysis_phase.json',ROOT+'/controls/pipeline.cpu_release.json','/proc/sys/kernel/random/boot_id'}|set(PRODUCTS)|set(LOGS)|{OWNER+'/'+n for n in NAMES}\n    def check(self):\n        elapsed=time.monotonic()-self.start;wall=(D.datetime.now(D.timezone.utc)-self.start_utc).total_seconds()\n        phase_wall=(D.datetime.now(D.timezone.utc)-D.datetime.fromisoformat(self.c['phase_started_utc'])).total_seconds();phase_mono=time.monotonic()-self.c['phase_host_monotonic']\n        need(0<=elapsed<12 and 0<=wall<12 and abs(elapsed-wall)<=5 and 0<=phase_wall<3540 and 0<=phase_mono<3540 and abs(phase_wall-phase_mono)<=5,'existing phase or12second metadata budget expired')\n    def clocks(self):self.check();return {'utc':D.datetime.now(D.timezone.utc).isoformat(),'monotonic_seconds':time.monotonic()}\n    def open(self,path):\n        self.check();need(path in self.allowed or any(path=='/proc/'+str(p)+'/'+n for p in self.allowed_pids for n in ('stat','cmdline')),'exact metadata/hash allowlist only')\n        directory=os.open('/',os.O_RDONLY|os.O_DIRECTORY)\n        try:\n            bits=path.strip('/').split('/')\n            for bit in bits[:-1]:\n                nxt=os.open(bit,os.O_RDONLY|os.O_DIRECTORY|os.O_NOFOLLOW,dir_fd=directory);os.close(directory);directory=nxt\n            fd=os.open(bits[-1],os.O_RDONLY|os.O_NOFOLLOW|os.O_NONBLOCK,dir_fd=directory)\n        finally:os.close(directory)\n        return fd\n    def read(self,path,cap,retain=True):\n        fd=self.open(path)\n        try:\n            before=os.fstat(fd);need(stat.S_ISREG(before.st_mode) and before.st_size<=cap,'bounded regular metadata or opaque product')\n            parts=[];hasher=hashlib.sha256();size=0\n            while True:\n                self.check();block=os.read(fd,min(65536,cap+1-size));self.check()\n                if not block:break\n                size+=len(block);need(size<=cap,'read size cap');hasher.update(block)\n                if retain:parts.append(block)\n            after=os.fstat(fd);keys=lambda s:(s.st_dev,s.st_ino,s.st_mode,s.st_size,s.st_mtime_ns,s.st_ctime_ns)\n            need(keys(before)==keys(after),'file changed during observation')\n            return b''.join(parts) if retain else {'status':'opaque_hash_only','bytes':size,'sha256':hasher.hexdigest(),'numeric_content_parsed':False}\n        finally:os.close(fd)\n    def proc(self,pid,name):return self.read('/proc/'+str(pid)+'/'+name,65536)\n    def metadata(self,path,cap,opaque=False):\n        try:\n            if opaque:return self.read(path,cap,False)\n            raw=self.read(path,cap);return {'status':'read','bytes':len(raw),'sha256':sha(raw),'raw_base64':base64.b64encode(raw).decode()}\n        except FileNotFoundError:return {'status':'missing'}\n        except Exception as e:return {'status':'cannot_observe','error':type(e).__name__+': '+str(e)}\n\ndef validate_contract(c):\n    need(c['schema']=='goop3d_failed_pipeline_metadata_contract_v1' and c['original_pipeline_session']==33822 and c['original_pipeline_exit_code']==1,'actual failed original pipeline contract')\n    need(c['phase_sha256']=='fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2' and c['release_sha256']=='5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004','unchanged original phase/release')\n    need(tuple(x['pid'] for x in c['historical'])==HISTORICAL and c['host']==HOST and c['boot_id']==BOOT,'exact42historical contract and host')\n    need(c['no_original_success_collector_dispatched'] is True and c['scientific_admission'] is False and c['new_analysis_clock_or_release'] is False,'failure observation only')\n\ndef observe(c,rt):\n    validate_contract(c);started=rt.clocks();need(socket.gethostname()==HOST and rt.read('/proc/sys/kernel/random/boot_id',128).decode().strip()==BOOT,'exact original host/boot')\n    for path,pin in c['remote_source_runtime_bindings'].items():need(rt.read(path,16<<20,False)['sha256']==pin,'exact source/runtime binding '+path)\n    phase=rt.read(ROOT+'/controls/analysis_phase.json',1<<20);release=rt.read(ROOT+'/controls/pipeline.cpu_release.json',1<<20)\n    need(sha(phase)==c['phase_sha256'] and sha(release)==c['release_sha256'],'exact original issued control bytes')\n    pid,parent=os.getpid(),os.getppid();selfstat=parse_stat(rt.proc(pid,'stat'),pid);parentstat=parse_stat(rt.proc(parent,'stat'),parent)\n    argv=lambda p:[v.decode('utf-8',errors='surrogateescape') for v in rt.proc(p,'cmdline').rstrip(b'\\0').split(b'\\0')]\n    ownargv,parentargv=argv(pid),argv(parent)\n    need(os.readlink('/proc/'+str(pid)+'/exe')=='/usr/bin/python3.12' and os.readlink('/proc/'+str(parent)+'/exe')=='/usr/bin/timeout' and os.path.realpath(BASE+'/.venv/bin/python')=='/usr/bin/python3.12','original verified runtime and own timeout executable')\n    need(selfstat['ppid']==parent and selfstat['pgid']==parentstat['pgid'] and selfstat['sid']==parentstat['sid'],'own new observer timeout ancestry')\n    need(parentargv[:3]==['/usr/bin/timeout','--signal=KILL','20s'] and parentargv[3:]==ownargv and ownargv[:5]==[BASE+'/.venv/bin/python','-I','-S','-B','-c'] and sha(ownargv[5].encode())==c['observer_source_sha256'] and ownargv[6:]==['--observe','--contract-sha256',sha(json.dumps(c,indent=2,sort_keys=True).encode()+b'\\n')],'exact own observer/timeout argv and contract')\n    records={};metadata={}\n    for n in NAMES:\n        item=rt.metadata(OWNER+'/'+n,256<<10);metadata[n]=item\n        if item['status']=='read':\n            try:records[n]=strict(base64.b64decode(item['raw_base64']))\n            except Exception as e:item['status']='invalid_json';item['parse_error']=type(e).__name__+': '+str(e)\n    roles,claims,errors=registry_identities(records,c);complete=set(roles)=={'outer','owner','worker'} and not errors and all(item['status'] in ('read','missing') for item in metadata.values())\n    expected=c['historical']+(list(roles.values()) if complete else []);rt.allowed_pids.update(x['pid'] for x in expected)\n    first={str(x['pid']):sample_native(rt,x) for x in expected}\n    logs={path:rt.metadata(path,256<<10) for path in LOGS}\n    products={path:rt.metadata(path,256<<20,True) for path in PRODUCTS}\n    second={str(x['pid']):sample_native(rt,x) for x in expected}\n    stable=True\n    for n,item in metadata.items():\n        again=rt.metadata(OWNER+'/'+n,256<<10)\n        stable=stable and again==item\n    boot=rt.read('/proc/sys/kernel/random/boot_id',128).decode().strip();finished=rt.clocks()\n    closure=complete and stable and boot==BOOT and all(first[k]['status']==second[k]['status']=='absent' for k in first)\n    result={'schema':'goop3d_failed_pipeline_metadata_observation_v1','phase_sha256':c['phase_sha256'],'release_sha256':c['release_sha256'],'original_pipeline_session':33822,'original_pipeline_exit_code':1,'started':started,'finished':finished,'host':HOST,'boot_id':BOOT,'final_boot_id':boot,'registry_metadata':metadata,'unverified_terminal_claims':claims,'registry_errors':errors,'registry_identity_coverage_complete':complete,'registry_bytes_unchanged':stable,'original_new_owner_identities':roles if complete else {},'native_first':first,'native_second':second,'observed_pid_count':len(expected),'all42_plus_actual_new_owner_pids_absent_twice':closure,'failure_logs_raw':logs,'product_sizes_opaque_hashes_only':products,'new_observer_identity':{**selfstat,'argv':ownargv},'new_observer_timeout_identity':{**parentstat,'argv':parentargv},'original_success_collector_dispatched':False,'collector_absence_basis':'root-bound failed original pipeline and local absence of original product_collection intent; no collector identity invented','termination_cause_established':False,'scientific_admission':False,'successful_product_numeric_content_parsed':False,'original_collection_or_arrays_opened':False,'new_analysis_clock_or_release':False,'target_processes_signaled':False,'remote_files_written':False}\n    return result\n\ndef main():\n    need(sys.argv[1:2]==['--observe'] and len(sys.argv)==4 and sys.argv[2]=='--contract-sha256','explicit observer and contract')\n    need(sys.platform.startswith('linux') and sys.flags.isolated and sys.flags.no_site and sys.flags.dont_write_bytecode and not sys.flags.optimize,'isolated original Python flags')\n    raw=sys.stdin.buffer.read(512*1024+1);need(len(raw)<=512*1024 and sha(raw)==sys.argv[3],'bounded original contract bytes');c=strict(raw);rt=Runtime(c)\n    result=observe(c,rt);encoded=json.dumps(result,sort_keys=True,allow_nan=False).encode();need(len(encoded)<=(8<<20),'bounded metadata output');rt.check();sys.stdout.buffer.write(encoded+b'\\n');sys.stdout.buffer.flush()\n\nif __name__=='__main__':main()\n",
+        "--observe",
+        "--contract-sha256",
+        "ff39419cb02633200b077ac0a20f443032d32ed873daa884a6468ef129ec52b6"
+      ],
+      "pgid": 79394,
+      "pid": 79394,
+      "ppid": 39,
+      "sid": 79394,
+      "start_id": "831917341",
+      "state": "S"
+    },
+    "observed_pid_count": 45,
+    "original_collection_or_arrays_opened": false,
+    "original_pipeline_exit_code": 1,
+    "original_pipeline_session": 33822,
+    "original_success_collector_dispatched": false,
+    "phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+    "product_sizes_opaque_hashes_only": {
+      "/root/repos/AdaptGNS-cuda-20261006/goop3d_observed_history_analysis_20261006_v1/arithmetic_check.json": {
+        "status": "missing"
+      },
+      "/root/repos/AdaptGNS-cuda-20261006/goop3d_observed_history_analysis_20261006_v1/audit.json": {
+        "status": "missing"
+      },
+      "/root/repos/AdaptGNS-cuda-20261006/goop3d_observed_history_analysis_20261006_v1/pipeline_receipt.json": {
+        "status": "missing"
+      },
+      "/root/repos/AdaptGNS-cuda-20261006/goop3d_observed_history_analysis_20261006_v1/summary.json": {
+        "status": "missing"
+      }
+    },
+    "registry_bytes_unchanged": true,
+    "registry_errors": [],
+    "registry_identity_coverage_complete": true,
+    "release_sha256": "5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004",
+    "remote_files_written": false,
+    "schema": "goop3d_failed_pipeline_metadata_observation_v1",
+    "scientific_admission": false,
+    "started": {
+      "monotonic_seconds": 8319173.439457457,
+      "utc": "2026-10-07T00:22:56.400835+00:00"
+    },
+    "successful_product_numeric_content_parsed": false,
+    "target_processes_signaled": false,
+    "termination_cause_established": false
+  },
+  "numeric_product_or_array_content_read": false,
+  "schema": "d3_failed_observation_exact_metadata_field_projection_v1",
+  "selected_keys": [
+    "schema",
+    "host",
+    "boot_id",
+    "final_boot_id",
+    "started",
+    "finished",
+    "original_pipeline_session",
+    "original_pipeline_exit_code",
+    "phase_sha256",
+    "release_sha256",
+    "all42_plus_actual_new_owner_pids_absent_twice",
+    "observed_pid_count",
+    "native_first",
+    "native_second",
+    "new_observer_identity",
+    "new_observer_timeout_identity",
+    "product_sizes_opaque_hashes_only",
+    "original_success_collector_dispatched",
+    "collector_absence_basis",
+    "registry_identity_coverage_complete",
+    "registry_bytes_unchanged",
+    "registry_errors",
+    "new_analysis_clock_or_release",
+    "original_collection_or_arrays_opened",
+    "remote_files_written",
+    "scientific_admission",
+    "successful_product_numeric_content_parsed",
+    "target_processes_signaled",
+    "termination_cause_established"
+  ],
+  "source": "work/deadline_research_20261005/cuda_preparation/goop3d_failed_pipeline_metadata_root_v1/stdout",
+  "source_sha256": "8966386267205706f972d0007d5a56b9ddb664d91afa4eacfca68e1682964e22",
+  "transformation": "Exact listed top-level metadata fields selected; all field values unchanged."
+}

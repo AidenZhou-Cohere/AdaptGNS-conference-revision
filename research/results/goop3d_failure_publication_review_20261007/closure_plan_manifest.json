@@ -1,0 +1,38 @@
+{
+  "copy_helper_executed": false,
+  "excludes": [
+    "plan_manifest.json"
+  ],
+  "files": {
+    "HANDOFF.md": {
+      "bytes": 2106,
+      "sha256": "37430ed7416bcafbdff31e7407d3fdf9ba9308488ed274f3110ec3cd7d055901"
+    },
+    "PACKAGE_README.md": {
+      "bytes": 1972,
+      "sha256": "4271a58a807a46a84c9b5475286f64ee42d55b3141f62f2e37c1a144d0769f61"
+    },
+    "assembly_receipt.json": {
+      "bytes": 573,
+      "sha256": "1808ea7f55e4de86b732a6dd65929f6b8c5d0b013313007e6b5d2341d6978c79"
+    },
+    "build_plan.py": {
+      "bytes": 4843,
+      "sha256": "6188e102f98eb9f51a1021f8d0800b1b2ac22f8b8368b8eeb11c14c7c1e8e522"
+    },
+    "copy_verify.py": {
+      "bytes": 6256,
+      "sha256": "d0c7bf74bc9ea9021a6455c473f979cfb3dd9e576e7d4683c261d1a0d7300dab"
+    },
+    "publication_plan.json": {
+      "bytes": 29617,
+      "sha256": "27e03e7a5857f484eb03bb1f2c67f4645e926d16e25d8cc90c925d0d46134a75"
+    },
+    "static_packaging_checks.json": {
+      "bytes": 748,
+      "sha256": "fdc0b1bd9bef30e28bb93c1d9045443ee91f9cfc6607f2ea1817570dd46187b3"
+    }
+  },
+  "root_owned_publication": true,
+  "schema": "d3_final_closure_inert_publication_plan_bundle_manifest_v1"
+}

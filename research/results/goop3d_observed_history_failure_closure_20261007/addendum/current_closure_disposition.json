@@ -1,0 +1,41 @@
+{
+  "all45_original_remote_identities_absent_twice_at_capture": true,
+  "all_four_numerical_products_missing_at_original_capture": true,
+  "closure_resolves_only_exact_named_pending_identities": true,
+  "current_body_sha256": "311c7120730c47a86aee08d8f528697b919ad84c96fc887795bb6c4b8266f0e8",
+  "current_manuscript_sha256": "a31587aeaf19f79893aaf297f00f4759516de34d2086f57f2966b3edee08be9e",
+  "current_status_change": "one_appendix_status_paragraph; title_abstract_main_and_old_results_unchanged",
+  "distinct_observed_history_cell_scope": 2568,
+  "exported_manuscript_PDF_inspection_and_author_verification_pending": true,
+  "failure_capture_79394_and79395_absent_twice_by_original_query93447": true,
+  "historical_stage_payload_eb0d983f_not_located": true,
+  "later_source_suggestions_did_not_modify_or_rerun_original_helper": true,
+  "local_groups51576_55854_56202_and_exact_proxy_absent": true,
+  "native_compilation_success_saved_receipt": true,
+  "numerical_model_failure_OOM_or_clock_skew_established": false,
+  "original4728_cell_accounting": {
+    "completed": 2899,
+    "not_completed": 1817,
+    "stages": 30,
+    "timed_current": 12
+  },
+  "original_closure_and_postpublication_receipts": {
+    "goop3d_failed_proxy_closure_postpublication_root_v1.json": "c578d58b66d691a3c3dbb0260abde9ef7025bfde1086a84b1d988f493fd8987d",
+    "goop3d_failed_study_final_proxy_closure_root_v1.json": "5d68cfded1826b00de5564f9401fd9c03b966f70bf6ba3c58808f7fb14e1bdd5"
+  },
+  "original_pipeline": {
+    "exit_code": 1,
+    "session": 33822
+  },
+  "original_proxy78014_exit_code": 0,
+  "original_success_collector47PIDobserver_finalvalidator": "unexecuted_and_prohibited_after_failed_prerequisite",
+  "precise_failed_guard_condition_established": false,
+  "predecessor_candidate_manifest_sha256": "f781011ebc4806a42bacf3f2abf60a951aca0bdf9bec3990ace2d0b105b355ba",
+  "predecessor_pending_fields_are_preserved_historical_state": true,
+  "publication_admission": false,
+  "recorded_audit_error": "scoped work deadline or clock disagreement",
+  "schema": "d3_failed_observed_history_final_closure_disposition_v1",
+  "scientific_result_admission": false,
+  "scientific_retry_or_phase_reset": false,
+  "status": "failed_study_closed_without_numerical_admission"
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "goop3d_observed_prerequisite_freshness_decline_root_v1",
+  "status": "successful_metadata_retained_clock_pair_not_admitted",
+  "utc": "2026-10-06T23:26:06.810390+00:00",
+  "observer_session": 76617,
+  "observer_exit": 0,
+  "metadata_proxy_session": 94805,
+  "metadata_proxy_exit": 0,
+  "host_observation_finished_utc": "2026-10-06T23:24:52.247114+00:00",
+  "actual_root_clock": {
+    "current_time": "2026-10-06 23:25:02 UTC"
+  },
+  "root_clock_minus_host_sample_seconds": 9.752886,
+  "required_abs_clock_pair_seconds": 5,
+  "cause": "Root clock sampled after model/tool-boundary delay; not evidence of actual host clock skew.",
+  "local_native_closure": {
+    "ps_exit_code": 0,
+    "parser_self_verified": true,
+    "observed_group": 50983,
+    "matching_rows": [],
+    "proxy_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_fresh_route_root_v1"
+  },
+  "new_phase_issued": false,
+  "remote_staging_or_scientific_worker_started": false,
+  "old_expired_phase_changed": false,
+  "original_metadata_products_preserved": true
+}

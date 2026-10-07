@@ -1,0 +1,37 @@
+{
+  "command": "work/venv/bin/python -B -m unittest discover -s work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1 -p 'test_*.py' -q",
+  "independent_final_operational_review_required": true,
+  "live_clocks_queried": false,
+  "native_timers_or_real_proxies_executed": false,
+  "original_tool_chunk_id": "9f701a",
+  "original_tool_exit_code": 0,
+  "route_provenance_sha256": "8731665f1b1af9a749af776bb6531fd54b20d3f581a1aec0e9f52131d96a6d4a",
+  "schema": "goop3d_observed_history_final_synthetic_verification_v1",
+  "scientific_data_read": false,
+  "source_binding_verification": {
+    "all_python_syntax_valid": true,
+    "all_remote_worker_operation_owner_pins_consistent": true,
+    "exit_code": 0,
+    "no_import_cache_in_package": true,
+    "original_tool_chunk_id": "6394ab",
+    "remote_source_count": 13
+  },
+  "source_provenance_sha256": "48bb7e77b245ed7f3f1b89ad1c364afe2b0125587ca2300290e3986de7a5c238",
+  "source_staging_or_phase_issuance_performed": false,
+  "status": "all46_focused_synthetic_tests_passed",
+  "test_files_sha256": {
+    "test_d3_relay.py": "0e5b4ef858aa61dfee117268baeb94b015a5ac21fe5f36b30ae6bd53ecaf4c67",
+    "test_observed_scope.py": "f8e75a3900f08632978ae893a498cd33230a344edb527509544ea7971efe026a",
+    "test_operational_evidence.py": "188fa1460bc4e4044d0b483d72a56a79cf06b3510632f477d0aa163755411230",
+    "test_staging_and_start.py": "39941c1a9e058eec091d0d78b57dcf8960b7f41b13ac269dac05f5ab5925f35f"
+  },
+  "test_groups": {
+    "bounded_nonblocking_fake_duplex": 7,
+    "combined_staging_freshness_and_start_plan": 9,
+    "observed_scientific_scope_and_phase": 20,
+    "owner_exact_maps_and_native_tool_closure": 10
+  },
+  "tests_failed": 0,
+  "tests_passed": 46,
+  "unittest_reported_seconds": 0.169
+}

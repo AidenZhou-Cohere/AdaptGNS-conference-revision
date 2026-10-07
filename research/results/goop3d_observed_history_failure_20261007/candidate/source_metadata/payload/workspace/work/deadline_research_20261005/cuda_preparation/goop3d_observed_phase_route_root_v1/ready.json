@@ -1,0 +1,25 @@
+{
+  "schema": "coder_goop3d_observed_phase_route_proxy_v1",
+  "analysis_phase_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/analysis_phase.json",
+  "analysis_phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+  "local_phase_anchor_sha256": "3d48900be99d5e062e9c9ec7cb37fcafd2e80fd505740b3beb5075818b983cea",
+  "observed_analysis_started_utc": "2026-10-06T23:31:18.235220+00:00",
+  "observed_analysis_stop_utc": "2026-10-07T00:31:18.235220+00:00",
+  "route_stop_utc": "2026-10-07T00:30:18.235220+00:00",
+  "route_monotonic_stop": 180034.329051458,
+  "original_phase_modified": false,
+  "started_utc": "2026-10-06T23:31:52.424735+00:00",
+  "lifetime_seconds": 3505.8106389045715,
+  "url": "http://127.0.0.1:58078",
+  "authority": "coder.internal.cohere.com:443",
+  "upstream": [
+    "100.106.33.61",
+    443
+  ],
+  "opaque_tls": true,
+  "no_settings_changed": true,
+  "connection_cap": 2048,
+  "concurrency_cap": 8,
+  "per_direction_buffer_bytes": 262144,
+  "payload_backpressure": "nonblocking_partial_send"
+}

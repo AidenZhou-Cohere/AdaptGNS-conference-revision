@@ -1,0 +1,7 @@
+{
+  "baseline_sha256": "aaeabccfde9908f6184a60c60be59a3c568d34e9a7b255264ea5b39bab3fe685",
+  "network_started": false,
+  "new_phase_binding_separately_reviewed": false,
+  "schema": "goop3d_observed_route_source_provenance_v1",
+  "serve_AST_delta": "ready schema literal only"
+}

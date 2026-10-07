@@ -1,0 +1,29 @@
+{
+  "editorial_timestamp_correction": "Current status headings corrected from future minute00:33 to actual00:32 before curation sealing; no scientific clock or source changed.",
+  "files": {
+    "outputs/AdaptGNS/README.md": {
+      "after_sha256": "a0b369dfcb4d2397b2439ff9e2c7ccff185579d9c7ea5507d29dac6e3a42143e",
+      "before_sha256": "101681f85e23906972763b55489ae3b688f673d340e34cd3d89a20584bed4ee4",
+      "repository_file_not_written": true
+    },
+    "outputs/README.md": {
+      "after_sha256": "447da0e8aede4344a6e58fda859b10bb6600019a68bd4cfce760da037655a62e",
+      "before_sha256": "d4e20001f3760b0c3299a9dd707a26cecc0f65f23c2de5db24a61c726f7bb963",
+      "repository_file_not_written": false
+    },
+    "outputs/research_findings.md": {
+      "after_sha256": "175c732c7f06611c016f625a57a1dd29bf4d7bb18bd79934d7f62fa5ba418e6c",
+      "before_sha256": "a92a8fa9fd00d22287da3a90b83021c8a60191ec72d6743791f5990a57d55015",
+      "repository_file_not_written": false
+    },
+    "outputs/submission_checklist.md": {
+      "after_sha256": "5d18f3e3a89f74923983aaff06d921e7a21d9e1fc2019250149244206d37fb23",
+      "before_sha256": "bbaaacae478e2f7b954f59e126af4ab5f24fc19e0d240c690cebe623cefe6a98",
+      "repository_file_not_written": false
+    }
+  },
+  "publication_commit_not_yet_created": true,
+  "report_pdf_unchanged": true,
+  "schema": "d3_closed_status_documents_root_v1",
+  "scientific_program_run": false
+}

@@ -1,0 +1,11 @@
+{
+  "corrected_proposed_cap_bytes": 1073741824,
+  "finding": "512 MiB collection cap was smaller than root-reported already accepted 659091312-byte collection",
+  "old_cap_bytes": 536870912,
+  "preserved_proposal_sha256": "dbfb29d3adcafce323b06d180d979256dbdae27cee3f95aeee92b34144fdd382",
+  "preserved_provenance_sha256": "257c12d9a8cabca40c1ab17a3ec42b55f845c19718b791f0dfe05b2c2faecbee",
+  "prior_numeric_attempt": false,
+  "prior_phase_or_allowance": false,
+  "root_reported_accepted_collection_bytes": 659091312,
+  "status": "unlaunched_source_only_proposal_error"
+}

@@ -1,0 +1,6 @@
+{
+  "original_failure_evidence_or_predecessor_changed": false,
+  "prior_manifest_sha256": "7fe5dfb56cd10b85355e21b255993dc818a99bbb5841007cd568a2e63f2f66c4",
+  "reason": "Prior source-candidate manifest was read and copied. Other lineage files remain references; no scientific products were read.",
+  "status": "metadata_wording_clarified_before_independent_review"
+}

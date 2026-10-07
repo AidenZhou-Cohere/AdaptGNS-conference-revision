@@ -1,0 +1,27 @@
+{
+  "baseline_package_sha256": "d580a222cae4f1844861c38b47212e27e77c198fc8466e65dc05c528d54ca92b",
+  "baseline_proxy_sha256": "59198421615047be04c80c58545080cf85d8cb9e0daf52d42f4034f50a908e4f",
+  "baseline_relay_sha256": "a75d25d3036544bf7e4c1199c84c5b11adb80be025c1be724857255754a22376",
+  "fixed_limits": {
+    "concurrent_handlers": 8,
+    "connections": 2048,
+    "pending_bytes_per_direction": 262144
+  },
+  "main_changes": [
+    "Remove Sand prior-closure CLI/gate.",
+    "Retain explicit root-serve, D3 phase/anchor and fresh-output requirements."
+  ],
+  "network_started": false,
+  "new_clock_granted": false,
+  "new_proxy_sha256": "33bde5ed837a029465beaa37b6f8ce006cf4433135362c40180d49d49e3803f6",
+  "relay_bytes_identical": true,
+  "schema": "goop3d_observed_route_source_provenance_v2",
+  "serve_changes": [
+    "Remove Sand prior-closure argument and fields.",
+    "Use D3 schema and existing D3 phase binding endingT0+3540."
+  ],
+  "unchanged_declarations_ast": [
+    "parse_request",
+    "now"
+  ]
+}

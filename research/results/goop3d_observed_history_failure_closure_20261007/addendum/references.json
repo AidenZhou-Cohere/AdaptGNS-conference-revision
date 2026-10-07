@@ -1,0 +1,24 @@
+{
+  "old_scientific_collections_or_results_reopened": false,
+  "references": [
+    {
+      "bytes": 1487,
+      "path": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_phase_proxy_original_tools_root_v1.json",
+      "reason_not_copied": "Original launch includes route configuration; publish explicitly selected metadata only.",
+      "sha256": "f1891549b0089da2cd2842c153bb094c367bbc8cc4e280411c9fb9274c503195"
+    },
+    {
+      "bytes": 2583,
+      "path": "work/deadline_research_20261005/cuda_preparation/goop3d_failed_metadata_observer_closure_root_v1/transport.json",
+      "reason_not_copied": "Raw local transport envelope remains a local reference; exact observer stdout and independent closure review are copied.",
+      "sha256": "c5afb8f4da8dd808464a8e27126b8627bcee8bfc40700e268e1dc14ba54c23dd"
+    },
+    {
+      "bytes": 1004240,
+      "path": "outputs/revision_report.pdf",
+      "reason_not_copied": "Unchanged previously published 21-page report, root confirmed reference-only. Not reopened by this assembler.",
+      "sha256": "bb76664ad0aea0989438af9ad7474f1fd0d109aa6482816e255ef9a741149cbb"
+    }
+  ],
+  "schema": "d3_final_closure_reference_inventory_v1"
+}

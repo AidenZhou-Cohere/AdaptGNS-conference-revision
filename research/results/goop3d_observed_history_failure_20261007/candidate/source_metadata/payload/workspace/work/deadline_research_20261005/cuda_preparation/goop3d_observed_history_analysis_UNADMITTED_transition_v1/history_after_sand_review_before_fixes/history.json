@@ -1,0 +1,23 @@
+{
+  "files_sha256": {
+    "HANDOFF.md": "514ca951099bfdbb7eff76a1eb2fe4d629532fba589a5984d51234523562d24b",
+    "collect_observed_products.py": "53c815356c85ae20555d21987339bf65566623a6dd1df5079f0b3bfff2fbeec1",
+    "observed_operations.json": "5ddec6093a5b83a4ba0a0f319766dede0d9741fa29e27f438cd1953e7354a37a",
+    "phase_binding.py": "35e25256fa80b624e7548506ff8358951416557b151414184d7c3538c8f32845",
+    "phase_proxy.py": "a5465d558bd4e585096784b957a9bddaac1bb4fbf92157102001e252e304239c",
+    "remote_source_bindings.json": "9ed2a936c4fe737ad84ffce4ac84d8330889cbe73780eb16a3983faa7efa16e7",
+    "root_collect.py": "bfc2a67f3e678271b9c21c5b860ebe554ca421a132c065b5c6a9b5118e2e1eb3",
+    "root_run.py": "57685f63d6c6c1b9d6356647ff34ecd75695b94870b020339c94ea8e0e83c51d",
+    "root_validate_products.py": "31f15d03a16a35675a0831ccae12c4611cc9118cc3700dc04f1554f3c16a2608",
+    "stage_payload.py": "623b17a2d132efc94fbdcecb2d4c5f54bd8ced54f4e38e033cc7e130f80e1274",
+    "supervise_observed_history_cpu_v1.py": "a9bad84b1a99e6baab104e6c9d65fc3082112aae4e45291075a15f3a2b5ffb80",
+    "worker_source_bindings.json": "1e900cfe1fae562d5e8afa7ceb37b34ce88d1ba54ef65fe8f038a581660f5cad"
+  },
+  "live_execution_performed": false,
+  "reasons": [
+    "Replace original blocking/128-cap route with separately reviewed nonblocking bounded relay.",
+    "Collect full owner evidence and verify full exact input/evidence maps.",
+    "Observe collector and timeout native disappearance after actual collection tool exit, for47 total original processes."
+  ],
+  "status": "unlaunched_unadmitted_source_history"
+}

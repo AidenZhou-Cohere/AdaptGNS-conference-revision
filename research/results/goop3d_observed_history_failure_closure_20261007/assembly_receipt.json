@@ -1,0 +1,12 @@
+{
+  "tool": "exec_command",
+  "command": "python3 work/d3_observed_failure_closure_addendum_UNADMITTED_20261007_v1/curate_addendum.py",
+  "original_result": {
+    "chunk_id": "0f110b",
+    "wall_time_seconds": 0.145550084,
+    "exit_code": 0,
+    "original_token_count": 52,
+    "output": "{\"status\": \"sealed_local_complementary_closure_addendum\", \"manifest_sha256\": \"7d8436e9f8d2550dcf0ba420a423d613a421c1c242900cf06f2562597e038db7\", \"files\": 64, \"exact_copies\": 55, \"repository_written\": false}\n"
+  },
+  "scientific_execution_or_repository_write": false
+}

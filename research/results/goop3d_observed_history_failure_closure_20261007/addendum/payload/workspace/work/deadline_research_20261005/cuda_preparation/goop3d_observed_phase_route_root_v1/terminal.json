@@ -1,0 +1,31 @@
+{
+  "analysis_phase_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/analysis_phase.json",
+  "analysis_phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+  "local_phase_anchor_sha256": "3d48900be99d5e062e9c9ec7cb37fcafd2e80fd505740b3beb5075818b983cea",
+  "observed_analysis_started_utc": "2026-10-06T23:31:18.235220+00:00",
+  "observed_analysis_stop_utc": "2026-10-07T00:31:18.235220+00:00",
+  "route_stop_utc": "2026-10-07T00:30:18.235220+00:00",
+  "route_monotonic_stop": 180034.329051458,
+  "original_phase_modified": false,
+  "started_utc": "2026-10-06T23:31:52.424735+00:00",
+  "ended_utc": "2026-10-07T00:30:18.152442+00:00",
+  "lifetime_seconds": 3505.8106389045715,
+  "counts": {
+    "accepted": 65,
+    "routed": 65,
+    "cap_rejected": 0,
+    "concurrency_rejected": 0,
+    "nonloopback_rejected": 0,
+    "handler_errors": 0,
+    "drained": 65,
+    "expired": 0
+  },
+  "remaining_worker_threads": 0,
+  "wall_elapsed_seconds": 3505.7276208400726,
+  "monotonic_elapsed_seconds": 3505.8158451670024,
+  "payloads_logged": false,
+  "remote_processes_signaled": false,
+  "connection_cap": 2048,
+  "concurrency_cap": 8,
+  "per_direction_buffer_bytes": 262144
+}

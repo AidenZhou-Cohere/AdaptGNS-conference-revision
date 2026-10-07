@@ -1,0 +1,20 @@
+{
+  "actual_preassembly_or_proxy_completion_created": false,
+  "actual_validator_run": false,
+  "deadlines_changed": false,
+  "files_sha256": {
+    "HANDOFF.md": "004a627817ff2b8e41b5077600c573cf6c2ce725362c31bcaa2068788409f1cf",
+    "final_entry.py": "e4ab45129b8a36c47165f04ace2ffd649b107ee7145b0322a2353d4f0353a6e8",
+    "final_window_source_review.json": "ff805feca64e2925241fc6e1aa65ac41c984ba0608a3e69581a0856dcb3d3a07",
+    "source_provenance.json": "8464c0edb09ac0915f71e7c43ffa98fc5c7731247c932f795ccd3385105a9118",
+    "synthetic_verification.json": "b3fc909566048901ed45dec71d40c06059f769d884bf68386d43348e5daaf609",
+    "test_final_entry.py": "ae945bd9d03516e0377b6b84ea4f6b2069540bdf73438071b2047bc15d43af30"
+  },
+  "final_validator_changed": false,
+  "plan_sha256": "564b898c97a0e3efb00e49ca112530ff37548ad4bd61c6c66e15cf43002720e6",
+  "schema": "goop3d_original_final_entry_manifest_transition_v1",
+  "scientific_products_read": false,
+  "scope": "inert_local_actual_metadata_preassembly_and_original_validator_exec_only",
+  "source_manifest_sha256": "1dee2ec7c67639fab665e9fe88ce2cd6fb5862ac9eb9289fafb29446c9165e62",
+  "status": "source_synthetic_verified_pending_independent_root_review"
+}

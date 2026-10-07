@@ -1,0 +1,16 @@
+{
+  "schema": "d3_failed_outcome_publication_plan_preflight_receipt_v1",
+  "status": "passed_inert_publication_preflight",
+  "publication_copy_executed": false,
+  "repository_changed": false,
+  "scientific_programs_or_live_probes_run": false,
+  "publication_plan_sha256": "3c96b82f8abcab42a4bb5fda7ac1a1ecf83f9995250eaa6ed0dcc2466c3f7fc7",
+  "copy_helper_sha256": "d5e1174334fae30cfa2feba0945e7ced1e4e30b4700dff902feeb640abe0c3bc",
+  "original_tool_result": {
+    "chunk_id": "9444e2",
+    "wall_time_seconds": 0.208534375,
+    "exit_code": 0,
+    "original_token_count": 28,
+    "output": "{\"status\": \"passed_inert_publication_preflight\", \"files\": 211, \"bytes\": 2503073, \"repository_changed\": false}\n"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "actual_failure_envelope_capture": null,
+  "actual_local_transport_descendant_closure": null,
+  "actual_metadata_only_failure_capture_tools": null,
+  "actual_phase_proxy78014_exit": null,
+  "actual_phase_proxy78014_native_closure": null,
+  "actual_remote_native_closure": null,
+  "arithmetic_check": null,
+  "final_independent_failure_capture_review": null,
+  "no_new_numeric_product_paths_opened_or_checked": true,
+  "numeric_audit": null,
+  "numeric_summary": null,
+  "pipeline_receipt": null,
+  "publication_admission": false,
+  "schema": "d3_observed_pending_failure_capture_and_closure_v1",
+  "scientific_result_admission": false
+}

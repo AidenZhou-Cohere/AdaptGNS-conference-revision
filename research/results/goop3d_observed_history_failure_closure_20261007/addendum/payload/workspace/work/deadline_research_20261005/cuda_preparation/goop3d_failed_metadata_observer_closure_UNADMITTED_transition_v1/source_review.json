@@ -1,0 +1,34 @@
+{
+  "actual_capture_transport_sha256": "c202135c685f2fbda594bc843e47cab1ad8594c53db9070ba5eebceff87b16bc",
+  "exact_complete_previous_identities_preserved": true,
+  "identical_pure_functions": {
+    "exact": "960ef65078664c900352ffaad1215e4913231525d163165c37a4a506886b5ced",
+    "need": "d6c2373db2ac56647f29918acaea67b9c002f53e57b9e1fa3acade14fa8b8449",
+    "parse_stat": "dbfeab517c9000c02fbc44a3c01e0c3585650321be2bb186d21d48be85ba55d1",
+    "sample_native": "775cd2fb9cbf48e49a3e34c837d5c7af7e2c18b7452d3de2a5f8f2e3c7883b4b",
+    "sha": "231f395d789c3b23427dcad4e24a828bcb6652d993c7c14f94e1b4f0f0dd476c",
+    "strict": "33ccc8821657b5d4749981cfe16b45d6894c3555f9a153a18a75d5e9657ab203"
+  },
+  "independent_reviewer_note": "Reactivation hit team thread limit; root must inspect source before execution.",
+  "live_runtime_or_clock_instantiated_by_tests": false,
+  "local_wrapper_changes": "Same reviewed nonblocking35-second/remote20-second transport; original phase/route helper unchanged; binds actual capture51372 exit0; drops success-collector path existence check; uses closure schema/source with5-second internal budget.",
+  "logs_products_or_arrays_opened": false,
+  "prior_package_manifest_sha256": "a5fdfa247fa66263125ffb52578328daad4b641b79f768408ee27c4de0eb0201",
+  "prior_wrapper_sha256": "1f76c4ba9aa8fb347e93ac2809f44038908e223472edc9d78e76541c94e164f7",
+  "remote_actions": false,
+  "remote_allowlist": "Only original boot_id and exact79394/79395 stat/cmdline paths; stable PID reuse avoids unrelated cmdline read.",
+  "schema": "goop3d_failed_metadata_observer_closure_source_review_v1",
+  "scoped_pids": [
+    79394,
+    79395
+  ],
+  "start_ids": [
+    "831917341",
+    "831917341"
+  ],
+  "status": "local_source_and_synthetic_checks_complete_root_independent_review_required",
+  "synthetic_exit_code": 0,
+  "synthetic_log_sha256": "a6754b9e071baf5877d0bc2f6d784d6a1e7d89e283d2b4763d7c8b64348aa89b",
+  "synthetic_tests_passed": 7,
+  "synthetic_tool_chunk": "b0b4a5"
+}

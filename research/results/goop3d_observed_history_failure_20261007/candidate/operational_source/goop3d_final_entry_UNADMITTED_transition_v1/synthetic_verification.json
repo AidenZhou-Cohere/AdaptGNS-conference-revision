@@ -1,0 +1,14 @@
+{
+  "actual_tool_chunk": "849229",
+  "actual_tool_exit_code": 0,
+  "actual_tools_or_validator_executed": false,
+  "all_passed": true,
+  "helper_source_sha256": "e4ab45129b8a36c47165f04ace2ffd649b107ee7145b0322a2353d4f0353a6e8",
+  "live_clocks_native_network_actions": false,
+  "schema": "goop3d_final_entry_synthetic_verification_transition_v1",
+  "scientific_products_read": false,
+  "synthetic_only": true,
+  "test_count": 14,
+  "test_source_sha256": "ae945bd9d03516e0377b6b84ea4f6b2069540bdf73438071b2047bc15d43af30",
+  "unittest_seconds": 0.075
+}

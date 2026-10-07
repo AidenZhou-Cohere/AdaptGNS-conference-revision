@@ -1,0 +1,12 @@
+test_absent (test_closure.Tests.test_absent) ... ok
+test_disappeared_during_read (test_closure.Tests.test_disappeared_during_read) ... ok
+test_exact_present (test_closure.Tests.test_exact_present) ... ok
+test_inert_wrapper (test_closure.Tests.test_inert_wrapper) ... ok
+test_no_remote_signals_or_subprocesses (test_closure.Tests.test_no_remote_signals_or_subprocesses) ... ok
+test_permission_unknown (test_closure.Tests.test_permission_unknown) ... ok
+test_reuse_no_cmdline (test_closure.Tests.test_reuse_no_cmdline) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.002s
+
+OK

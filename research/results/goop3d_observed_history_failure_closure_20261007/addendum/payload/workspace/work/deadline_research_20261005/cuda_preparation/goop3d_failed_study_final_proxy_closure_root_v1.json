@@ -1,0 +1,62 @@
+{
+  "actual_proxy_exit_code": 0,
+  "local_native_closure": {
+    "matching_rows": [],
+    "no_signals": true,
+    "observed_pgids": [
+      51576,
+      55854,
+      56202
+    ],
+    "parser_self_verified": true,
+    "proxy_directory": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_phase_route_root_v1",
+    "proxy_program": "phase_proxy.py",
+    "ps_exit_code": 0
+  },
+  "new_phase_or_scientific_retry": false,
+  "observed_utc": "2026-10-07T00:30:25.668973+00:00",
+  "original45_remote_closure_review_sha256": "3d4c8b75e117f741c146022673c48db0d76f6feb28768ae3626804e98f1f934e",
+  "original_proxy_session": 78014,
+  "original_success_collector_or_validator_executed": false,
+  "phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+  "prior_metadata_closure_session": 93447,
+  "prior_metadata_closure_tools_sha256": "8dad78a34e124447ec44e96df4d4479e6501e355d09893d065dd70e8d39182c5",
+  "prior_metadata_closure_transport_sha256": "c5afb8f4da8dd808464a8e27126b8627bcee8bfc40700e268e1dc14ba54c23dd",
+  "prior_metadata_two_PIDs_absent_twice": true,
+  "proxy_terminal_sha256": "93cf0eacfb8036054a96b43292b80ecf3e8dd8d9b917916e5e2ee65dca2e047d",
+  "proxy_tools_sha256": "f1891549b0089da2cd2842c153bb094c367bbc8cc4e280411c9fb9274c503195",
+  "schema": "goop3d_failed_study_original_proxy_closure_root_v1",
+  "scientific_admission": false,
+  "status": "failed_study_preserved_original_proxy_and_local_transports_closed",
+  "terminal": {
+    "analysis_phase_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/analysis_phase.json",
+    "analysis_phase_sha256": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+    "concurrency_cap": 8,
+    "connection_cap": 2048,
+    "counts": {
+      "accepted": 65,
+      "cap_rejected": 0,
+      "concurrency_rejected": 0,
+      "drained": 65,
+      "expired": 0,
+      "handler_errors": 0,
+      "nonloopback_rejected": 0,
+      "routed": 65
+    },
+    "ended_utc": "2026-10-07T00:30:18.152442+00:00",
+    "lifetime_seconds": 3505.8106389045715,
+    "local_phase_anchor_sha256": "3d48900be99d5e062e9c9ec7cb37fcafd2e80fd505740b3beb5075818b983cea",
+    "monotonic_elapsed_seconds": 3505.8158451670024,
+    "observed_analysis_started_utc": "2026-10-06T23:31:18.235220+00:00",
+    "observed_analysis_stop_utc": "2026-10-07T00:31:18.235220+00:00",
+    "original_phase_modified": false,
+    "payloads_logged": false,
+    "per_direction_buffer_bytes": 262144,
+    "remaining_worker_threads": 0,
+    "remote_processes_signaled": false,
+    "route_monotonic_stop": 180034.329051458,
+    "route_stop_utc": "2026-10-07T00:30:18.235220+00:00",
+    "started_utc": "2026-10-06T23:31:52.424735+00:00",
+    "wall_elapsed_seconds": 3505.7276208400726
+  }
+}

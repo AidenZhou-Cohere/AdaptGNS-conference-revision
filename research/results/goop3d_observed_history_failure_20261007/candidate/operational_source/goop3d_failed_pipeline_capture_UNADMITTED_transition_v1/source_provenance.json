@@ -1,0 +1,55 @@
+{
+  "ancestor_observer": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_post_expiry_metadata_observer_UNADMITTED_transition_v1/observe_metadata.py",
+    "sha256": "639ae7f45699019a29d7060132c0ee26cce9134b0427b20ae4f9bdc538b16e9d"
+  },
+  "ancestor_transport": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_post_expiry_metadata_observer_UNADMITTED_transition_v1/root_observe.py",
+    "sha256": "9098454b6b1ed4843c633a2d70478514257508a427d19b1efb209d9aada1693b"
+  },
+  "contract_sha256": "ff39419cb02633200b077ac0a20f443032d32ed873daa884a6468ef129ec52b6",
+  "local_evidence_bindings_verified": {
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/analysis_phase.json": "fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/pipeline.cpu_release.json": "5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_released_root_v1/pipeline.transport/transport.json": "a9020af53ccbddfdb1c79a7b871c0a0c4acdd1e0df70a742e788edaba979b0bf",
+    "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_pipeline_original_tools_root_v1.json": "e55170d5341c4242c90499d1c8f6e9d0c48646759c61c84e6b05baf2d18f4dd1"
+  },
+  "new_analysis_clock_or_release": false,
+  "numerical_product_parsing": false,
+  "preserved_pure_helpers": {
+    "exact": {
+      "declaration_sha256": "960ef65078664c900352ffaad1215e4913231525d163165c37a4a506886b5ced",
+      "identical": true
+    },
+    "identity": {
+      "declaration_sha256": "da61ba2b767be7fd564d7df032751f3c0c3f6f16933dac5acc42edabcbd56e4a",
+      "identical": true
+    },
+    "need": {
+      "declaration_sha256": "d6c2373db2ac56647f29918acaea67b9c002f53e57b9e1fa3acade14fa8b8449",
+      "identical": true
+    },
+    "parse_stat": {
+      "declaration_sha256": "dbfeab517c9000c02fbc44a3c01e0c3585650321be2bb186d21d48be85ba55d1",
+      "identical": true
+    },
+    "sample_native": {
+      "declaration_sha256": "775cd2fb9cbf48e49a3e34c837d5c7af7e2c18b7452d3de2a5f8f2e3c7883b4b",
+      "identical": true
+    },
+    "sha": {
+      "declaration_sha256": "231f395d789c3b23427dcad4e24a828bcb6652d993c7c14f94e1b4f0f0dd476c",
+      "identical": true
+    },
+    "strict": {
+      "declaration_sha256": "33ccc8821657b5d4749981cfe16b45d6894c3555f9a153a18a75d5e9657ab203",
+      "identical": true
+    }
+  },
+  "registry_identity_parser_only_declaration_change": "fixed release path changed from previous audit to exact original observed-history pipeline release",
+  "remote_execution": false,
+  "remote_source_runtime_binding_count": 16,
+  "schema": "goop3d_failure_capture_source_provenance_v1",
+  "source_sha256": "3bfd21b033e51051d39d2f8aee4fa60e396f073e6d76626ba31ab607415c1648",
+  "transport_sha256": "1f76c4ba9aa8fb347e93ac2809f44038908e223472edc9d78e76541c94e164f7"
+}

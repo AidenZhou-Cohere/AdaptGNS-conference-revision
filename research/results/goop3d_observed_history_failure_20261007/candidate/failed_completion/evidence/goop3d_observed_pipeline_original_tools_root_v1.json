@@ -1,0 +1,16 @@
+{
+  "launch": {
+    "chunk_id": "987130",
+    "wall_time_seconds": 1.002199416,
+    "session_id": 33822,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "completion": {
+    "chunk_id": "4ef297",
+    "wall_time_seconds": 59.892534584,
+    "exit_code": 1,
+    "original_token_count": 455,
+    "output": "{\"schema\": \"goop3d_observed_history_local_transport_v1\", \"started_utc\": \"2026-10-06T23:32:07.202917+00:00\", \"finished_utc\": \"2026-10-07T00:16:01.591961+00:00\", \"exit_code\": 1, \"local_transport_pid\": 51576, \"failure\": null, \"signals_to_new_local_group_only\": [], \"local_transport_descendant_closure_established\": false, \"remote_native_closure_established\": false, \"scientific_admission\": false, \"phase_sha256\": \"fb5e6c098f83ebf344ce00a9bb7e31a8b135788d9850ad6d713a9283a83358f2\", \"release_sha256\": \"5c40c1d082a500883c16f0fa4922d4c0ed6578db87583031d1bae4c5af5c4004\", \"launch_intent_sha256\": \"613c4ab59a87afe42da1265c60cb5acddacc4c8d27e52f755ea201849f03ceee\"}\nTraceback (most recent call last):\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/root_run.py\", line 68, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/root_run.py\", line 66, in main\n    print(json.dumps(result));need(failure is None and result['exit_code']==0 and not signals,'original observed transport failed or interrupted')\n                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/observed_common.py\", line 35, in need\n    if not ok:raise ValueError(message)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: original observed transport failed or interrupted\n"
+  }
+}

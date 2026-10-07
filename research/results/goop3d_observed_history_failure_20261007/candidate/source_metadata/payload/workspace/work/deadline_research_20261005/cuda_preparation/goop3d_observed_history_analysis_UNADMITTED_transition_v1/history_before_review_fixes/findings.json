@@ -1,0 +1,14 @@
+{
+  "findings": [
+    "Root: distinguish <=60s observation age from <=5s root/host clock agreement; preserve observed T0.",
+    "Statistics: whole collection parsed for accounting; only autonomous queue-file/array opens and numeric aggregation are excluded.",
+    "Statistics: staging has external20s timeout, no internal12s deadline."
+  ],
+  "source_sha256": {
+    "audit_goop3d_observed_histories_v1.py": "181e2a270751c6b5b4587e0c17e710163aaa78e42ad386bf23c75b26c2957e79",
+    "root_prepare.py": "c3e15bd4553426b5652beb73cd6d5dc0be61a8f9020b2c7945da1a3ff9784b27",
+    "root_stage.py": "3bce8f2c5ac7fa8f565da816eb83ea0c3539e99ecd99d07a30f84057d5c4bbcb"
+  },
+  "status": "unlaunched_preparation_findings",
+  "worker_or_phase_attempt": false
+}

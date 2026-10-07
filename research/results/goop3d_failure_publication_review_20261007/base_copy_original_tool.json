@@ -1,0 +1,7 @@
+{
+  "chunk_id": "b85ae6",
+  "wall_time_seconds": 0.298936666,
+  "exit_code": 0,
+  "original_token_count": 50,
+  "output": "{\"status\": \"copied_verified_failed_outcome_source_snapshot\", \"files\": 213, \"manifest_sha256\": \"30d8b469aad2310c6abf0e9091d942b3dd9ad422aa24060c33a0d4a800fc4885\", \"commit_or_push_performed\": false}\n"
+}

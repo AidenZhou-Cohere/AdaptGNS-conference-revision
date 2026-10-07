@@ -1,0 +1,117 @@
+{
+  "schema": "d3_attempted_study_status_independent_textual_review_statistics_v1",
+  "status": "passed_exact_insertion_scope_and_saved_compile_binding",
+  "reviewer": "/root/conference_critique_statistics",
+  "files": [
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+      "before_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/d3_attempted_study_status_root_v1/before/outputs/revised_manuscript.tex",
+      "before_sha256": "ed7b930ac6221847d2906fb272f28b436539358ae96d30a096806da720ab541e",
+      "after_sha256": "a31587aeaf19f79893aaf297f00f4759516de34d2086f57f2966b3edee08be9e"
+    },
+    {
+      "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/manuscript_body.tex",
+      "before_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/d3_attempted_study_status_root_v1/before/work/manuscript_body.tex",
+      "before_sha256": "308da866801a05560a6a57abbf52aa640ddef7c40e2dd6660db65b5d0dbf288b",
+      "after_sha256": "311c7120730c47a86aee08d8f528697b919ad84c96fc887795bb6c4b8266f0e8"
+    }
+  ],
+  "paragraph_sha256": "5b20f3213a0e5d3eb5058b5c2462535f2fadc22462fd48575644fcf6f0e00d30",
+  "integration_receipt_sha256": "50699436ee01d852af38cd5630dcddc7a35205603564d9ee3e354388fe68f951",
+  "native_compile_receipt_sha256": "ca869a43a7cdd7e1881cb96a657cbf68489f33f5a4b2cea6ff8315094b1ed58e",
+  "native_original_tool_sha256": "eb40f80976d84468a0d28e9f8b5f5db1470fed20ee7d71d30c68fa4d57bc1984",
+  "root_metadata_review_sha256": "3d4c8b75e117f741c146022673c48db0d76f6feb28768ae3626804e98f1f934e",
+  "independent_metadata_review_sha256": "4dfa42b603f7404d862cdff5ff7cab1e580d1b470076201b4efab4e53382f56f",
+  "checks": [
+    "final paragraph exact pin",
+    "outputs/revised_manuscript.tex: before snapshot exact binding",
+    "outputs/revised_manuscript.tex: current source exact binding",
+    "outputs/revised_manuscript.tex: paragraph occurs once only after insertion",
+    "outputs/revised_manuscript.tex: exact one insertion before WaterDrop",
+    "outputs/revised_manuscript.tex: removing inserted paragraph restores every old byte",
+    "work/manuscript_body.tex: before snapshot exact binding",
+    "work/manuscript_body.tex: current source exact binding",
+    "work/manuscript_body.tex: paragraph occurs once only after insertion",
+    "work/manuscript_body.tex: exact one insertion before WaterDrop",
+    "work/manuscript_body.tex: removing inserted paragraph restores every old byte",
+    "entire assembled main text exact bytes unchanged",
+    "introduction/experiments source remains unchanged",
+    "title: ordered exact bytes unchanged",
+    "abstract: ordered exact bytes unchanged",
+    "figures: ordered exact bytes unchanged",
+    "tabulars: ordered exact bytes unchanged",
+    "display_math: ordered exact bytes unchanged",
+    "labels: ordered exact bytes unchanged",
+    "citations: ordered exact bytes unchanged",
+    "main_page_assertion: ordered exact bytes unchanged",
+    "old numerical/scientific prose byte-preserved",
+    "new paragraph has no equations tables figures labels or performance metrics",
+    "separate author-only abstract candidate preserved",
+    "native compile original result bound",
+    "native compile original result not error",
+    "native tool reports success for exact canonical source path",
+    "compile source binding equals reviewed current source",
+    "compile receipt records success and unchanged assertion",
+    "compile receipt does not claim exported PDF review",
+    "exact root metadata review binding",
+    "exact independent182 metadata review binding",
+    "metadata supports incomplete observed audit and no numerical admission",
+    "independent metadata supports missing products and no successful collector/validator",
+    "metadata does not resolve specific composite-guard cause",
+    "paragraph does not attribute a cause or assert process closure",
+    "original proxy final closure remains outside paragraph and review",
+    "current bytes stable at review end: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+    "current bytes stable at review end: /Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/manuscript_body.tex"
+  ],
+  "check_count": 39,
+  "invariants": {
+    "title": {
+      "count": 2,
+      "sha256": "447e9c3e41f4892d5dd5de5ecf62cbf24f529c838aa31f6b98092aa46143ffcb"
+    },
+    "abstract": {
+      "count": 1,
+      "sha256": "ef578bdd4a4b5cbe22092fc5c0015ad16928f71363730936d62aecd25b003193"
+    },
+    "figures": {
+      "count": 4,
+      "sha256": "243f9043c50a8bfb9d341c4e08c01a1f5b28e32134a957609cb29b8245002812"
+    },
+    "tabulars": {
+      "count": 54,
+      "sha256": "c8c603073a670ad6e6c1f6be689b32a5229b653c858e03dc4df752dd206c5922"
+    },
+    "display_math": {
+      "count": 29,
+      "sha256": "a7cc00c18753b14af9467433841392db07c12a8fdf62f47e7bbfe42b54257543"
+    },
+    "labels": {
+      "count": 78,
+      "sha256": "1e0dae72b572d08d693b4d5c5d2d0406f8016a31af9ba347fe1b35e2aacc85ae"
+    },
+    "citations": {
+      "count": 13,
+      "sha256": "f43a49df806d757d7fde81777ac7d80fdc49377a04e8b0c7236cea1985d79093"
+    },
+    "main_page_assertion": {
+      "count": 1,
+      "sha256": "73482c86cd3db8cf0a69c96deefce9f8edd944ba995f796de6c03c75711d990c"
+    }
+  },
+  "meaning_review": "The concise paragraph transparently separates completed six25k training endpoints from incomplete autonomous comparison and unsuccessful observed-history auditing. It reports no D3 accuracy and makes no causal, process-closure, convergence or physical-performance claim. It is appropriate after the existing exploratory gate account in the Goop appendix. No concern found.",
+  "scope_qualifications": [
+    "Training completion and original incomplete-autonomous facts use the explicitly supplied verified root status; no checkpoint, original array or scientific collection was reopened.",
+    "The two completed metadata reviews were read; this reviewer did not repeat their live captures or182 metadata checks.",
+    "The initial integration receipt retains native_compile_pending:true as historical pre-compilation state; the separate later compile receipt and original success result resolve that status for the exact current SHA.",
+    "Native compilation is supported by the saved original tool success and root source-hash receipt. No compiler was rerun and no exported PDF or visual manuscript review is established.",
+    "Proxy78014 natural closure remains outside this editorial review."
+  ],
+  "actions": {
+    "canonical_files_edited": false,
+    "science_or_numerical_products_read": false,
+    "scientific_aggregation_or_programs_run": false,
+    "live_probes": false,
+    "builder_or_compiler_rerun": false
+  },
+  "registered_title_abstract_comparison_still_required": true
+}

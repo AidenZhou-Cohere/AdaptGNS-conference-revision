@@ -1,0 +1,20 @@
+{
+  "dataset": "Goop3D",
+  "global_analysis_deadline_utc": "2026-10-07T01:00:00+00:00",
+  "issued_by": "root",
+  "new_or_restarted_clock_granted": false,
+  "original_analysis_seconds": 3600,
+  "original_analysis_started_utc": "2026-10-06T20:18:58.570367+00:00",
+  "original_analysis_stop_utc": "2026-10-06T21:18:58.570367+00:00",
+  "original_evaluation_closures": {
+    "D3": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_analysis_20261006_v1/controls/D3.evaluation_closure.json",
+      "sha256": "21aca414bf11f3d8d249ba38e2ebe05d529106078436e3bf8f14736b3468ec3a"
+    }
+  },
+  "original_evaluation_sessions": {
+    "D3": 85581
+  },
+  "schema": "adaptgns_goop3d_original_analysis_phase_v1",
+  "status": "approved_original_analysis_phase"
+}

@@ -1,0 +1,12 @@
+{
+  "actual_original_closure_tool_exit": 0,
+  "actual_original_publication_and_tool_exit_verified_before_unchanged_phase_stop": true,
+  "original_closure_receipt_sha256": "5d68cfded1826b00de5564f9401fd9c03b966f70bf6ba3c58808f7fb14e1bdd5",
+  "original_closure_tool_sha256": "9e9e82b02c20c9cee0cf9e005c4b1dde9d210a3e6ca16f9c6b525dcb52f8615d",
+  "original_helper_unmodified": true,
+  "schema": "goop3d_failed_proxy_closure_postpublication_binding_root_v1",
+  "scientific_admission": false,
+  "source_review_timing_note": "Additional terminal lifetime/start and postpublication-bound suggestions arrived after the original wait-and-close cell was queued. They are verified here against actual completed evidence within the same original hour; no original closure or remote operation is rerun.",
+  "terminal_end_precedes_current_clock": true,
+  "terminal_start_and_lifetime_exactly_match_ready": true
+}

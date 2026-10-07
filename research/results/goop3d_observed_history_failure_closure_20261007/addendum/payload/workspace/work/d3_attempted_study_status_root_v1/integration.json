@@ -1,0 +1,22 @@
+{
+  "changes": {
+    "outputs/revised_manuscript.tex": {
+      "after_sha256": "a31587aeaf19f79893aaf297f00f4759516de34d2086f57f2966b3edee08be9e",
+      "before_sha256": "ed7b930ac6221847d2906fb272f28b436539358ae96d30a096806da720ab541e",
+      "exact_single_appendix_insertion": true
+    },
+    "work/manuscript_body.tex": {
+      "after_sha256": "311c7120730c47a86aee08d8f528697b919ad84c96fc887795bb6c4b8266f0e8",
+      "before_sha256": "308da866801a05560a6a57abbf52aa640ddef7c40e2dd6660db65b5d0dbf288b",
+      "exact_single_appendix_insertion": true
+    }
+  },
+  "final_paragraph_sha256": "5b20f3213a0e5d3eb5058b5c2462535f2fadc22462fd48575644fcf6f0e00d30",
+  "main_text_title_abstract_old_results_unchanged": true,
+  "metadata_fate_review_sha256": "3d4c8b75e117f741c146022673c48db0d76f6feb28768ae3626804e98f1f934e",
+  "native_compile_pending": true,
+  "original_candidate_sha256": "5049e0237f4a9b7888016c09c39233a94a5260d811431e0092eebf3a2d9ed2bd",
+  "root_revision_reason": "Keep operational chronology in reproducibility material; retain complete training, incomplete autonomous comparison, unsuccessful observed audit and no accuracy claim.",
+  "schema": "d3_attempted_study_status_root_integration_v1",
+  "scientific_program_run": false
+}

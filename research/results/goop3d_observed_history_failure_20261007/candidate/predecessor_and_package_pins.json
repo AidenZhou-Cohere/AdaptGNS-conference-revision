@@ -1,0 +1,20 @@
+{
+  "no_prior_failed_source_or_result_removed": true,
+  "operational_source_packages": {
+    "goop3d_failed_pipeline_capture_UNADMITTED_transition_v1": "a5fdfa247fa66263125ffb52578328daad4b641b79f768408ee27c4de0eb0201",
+    "goop3d_final_entry_UNADMITTED_transition_v1": "fae54495108550246540e0b693bd584e58b65f370cad0cf7fa9368b0426224aa"
+  },
+  "predecessors": {
+    "failed_completion": [
+      "work/d3_observed_failed_completion_addendum_UNADMITTED_20261007_v1",
+      "addendum_manifest.json",
+      "d5ff08879c5ee91c53d68e16a2bd800f76040c5989077ea23f0f295a48490ead"
+    ],
+    "source_metadata": [
+      "work/d3_observed_history_source_publication_candidate_UNADMITTED_20261006_v1",
+      "candidate_manifest.json",
+      "bf053c343c81609eac2f3f36b70b2226e3b983ae8225d42b2a3f513ed609bd7d"
+    ]
+  },
+  "predecessors_modified": false
+}
