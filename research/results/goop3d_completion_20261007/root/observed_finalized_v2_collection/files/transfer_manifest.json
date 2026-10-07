@@ -1,0 +1,70 @@
+{
+  "actual_status": {
+    "child": {
+      "pgid": 87032,
+      "pid": 87033,
+      "start_ticks": 832705413
+    },
+    "finished_utc_seconds": 1791340522.5070531,
+    "owner": {
+      "pgid": 87032,
+      "pid": 87032,
+      "start_ticks": 832705409
+    },
+    "returncode": 0,
+    "spec_sha256": "2bdc7cf41caeb305d9cedd5685bd5cb371911b547db9932ea65c291f0dc02d7d",
+    "started_utc_seconds": 1791340457.0848303,
+    "status": "exited"
+  },
+  "boot_id": "4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6",
+  "collection_utc_seconds": 1791340536.8295317,
+  "files": {
+    "jobs/observed_cache_finalize_v2_attempt1/owner.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "jobs/observed_cache_finalize_v2_attempt1/owner.stdout": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "jobs/observed_cache_finalize_v2_attempt1/spec.json": {
+      "bytes": 1414,
+      "sha256": "2bdc7cf41caeb305d9cedd5685bd5cb371911b547db9932ea65c291f0dc02d7d"
+    },
+    "jobs/observed_cache_finalize_v2_attempt1/status.json": {
+      "bytes": 388,
+      "sha256": "3d0c4c942be0c84fb63ccecf6ae55e58f18ae9049e9f35a359e2fec52a2a9e92"
+    },
+    "jobs/observed_cache_finalize_v2_attempt1/worker.stderr": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "jobs/observed_cache_finalize_v2_attempt1/worker.stdout": {
+      "bytes": 805,
+      "sha256": "84d838a764e7118d084b90f29f9fd0bea591c8316846873bd6dc8ffe51e1111c"
+    },
+    "observed_finalized_v2/arithmetic_check.json": {
+      "bytes": 1724,
+      "sha256": "0fad18183f7f580780dc7e3e8157dad97da22b7ea69d75da465c8c988c484011"
+    },
+    "observed_finalized_v2/audit.json": {
+      "bytes": 31655957,
+      "sha256": "83ea04367ceb9549387b89a50f7a8e48a74f2cf00d06b5da577af6349842d5cd"
+    },
+    "observed_finalized_v2/completion.json": {
+      "bytes": 518659,
+      "sha256": "148c81a072f33458a8a3f69862c33ef033ebee96027cd7e9c8198b4b282429a5"
+    },
+    "observed_finalized_v2/retained_original_failure.json": {
+      "bytes": 2221,
+      "sha256": "1ee80845881059ead8a3b8702db353200b49ae4e0c11817530f54351fbd2a993"
+    },
+    "observed_finalized_v2/summary.json": {
+      "bytes": 1897868,
+      "sha256": "2130ccb1c0c116766a6f2ec6e724102fed48edbd692a279026aaf1dcdaa09109"
+    }
+  },
+  "host": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "job": "observed_cache_finalize_v2_attempt1",
+  "remaining_group_members": []
+}

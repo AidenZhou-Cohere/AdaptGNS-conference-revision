@@ -1,0 +1,30 @@
+# Goop3D completion package, 7 October 2026
+
+This package records the completed, independently reviewed observed-history comparison for six existing Goop3D models (base/mix, seeds 0, 1 and 2, 25,000 updates). It also preserves the frozen sources, reviewed continuation machinery and historical process evidence for autonomous completion. **Autonomous completion is not admitted by this package.** It is a separate 2,160-cell evaluation; the continuation plan preserves 331 original outcomes and fills 1,829 originally missing cells. No training was repeated.
+
+The observed scope contains 2,568 audited rows: 768 clean-validation cells and 900 same-state cells for each of validation and test. The full original accounting grid retains 4,728 states. All six policies, both model arms and all three paired seeds remain in the results. Sample SD is over the three training seeds. Previous-observed-base-risk placement uses observed histories; these results do not establish autonomous feedback quality. Saved source/normalization provenance is inherited, and prior inspection is not presented as pristine independent confirmation. The separate WaterDrop experiments, compact pilot and historical arrays are not merged into this extension.
+
+## Included evidence
+
+- `observed_products/`: exact audit, summary, arithmetic check, completion record and retained original failed-checker outcome. The actual observed finisher exited 0, and its original process group was empty at collection. `review_v1/observed_final_products_v2_review.json` independently binds all products, 2,568 row caches, 2,436 model/metric aggregates and 1,382 statistic objects. `root/observed_numerical_admission.json` admits only this scope.
+- `observed_v1/`, `observed_diagnosis_v1/`, `observed_finalize_v2/`: original resumable auditor, all tests/failures, the 36-case SD diagnosis and the separately versioned cache-only correction. The original 2,568 row audits and original-byte rehash passed before the first final scalar checker failed. All 36 discrepancies were graph-count SDs for bit-identical seed means; no accuracy mean or contrast mismatch was found. The new checker uses exact pairwise unbiased variance, leaving counts, means, contrasts, nulls, denominators and tolerances unchanged. The finisher performed zero new row-array audits and no model execution.
+- `autonomous_v1/`, `autonomous_analysis_v1/`: frozen plan, explicit resume/source/lock protections, original versions, failed synthetic attempts and reviewed final tests. Analysis-source history preserves the corrected teal metadata path. These sources do not certify the result of work still running.
+- `frozen/runtime/`: byte-identical scientific source closures and original protocols in their runtime-relative layout. The original failed observed scalar checker remains present. Source review, synthetic tests and actual-product review are distinct evidence stages.
+- `root/`: dated launch, native identity, transfer and completion evidence. These files are immutable historical snapshots, not live status. Owner/child start ticks and boot identity distinguish actual process completion from a launch receipt. Earlier closed-status documents under `root/status_before_resumption/` remain history.
+- `presentation_observed_v1/`: immutable renderer/tests, v1 candidate history and independently reviewed v2 generated fragments, all 13 tables and 224 rendered statistic claims. v2 receipt/review bind the exact admitted summary. Native manuscript compilation and page-layout checks remain separate integration work; these fragments are not a final manuscript.
+
+## External inputs and large artifacts
+
+`external_references.json` identifies official selected inputs, frozen checkpoints, original scalar collection/ledger, original observed row cache, autonomous snapshot and transport archives with scope and exact pins. Included transfer manifests retain each collected file's hash and byte count. Large raw arrays, checkpoints, per-row caches and archives are not duplicated here. The compressed presentation companion and duplicate summary files are referenced; the complete admitted summary is included once at `observed_products/summary.json`. Original checkpoint sizes missing from the source manifest remain null.
+
+`../goop3d_observed_history_failure_20261007/`, `../goop3d_observed_history_failure_closure_20261007/` and `../goop3d_failure_publication_review_20261007/` preserve earlier published failure evidence. This package does not replace or erase those outcomes.
+
+## Reproduction and verification
+
+`curation_plan.json` records each original workspace-relative source path, destination, size, SHA-256 and role. `publication_manifest.json` is created only after the explicit copier verifies and copies every selected byte. The copy tool defaults to verification, requires the reviewed plan's exact SHA-256 and refuses an existing destination. It performs no Git/network operations or scientific execution. To verify original workspace inputs, run `publication_tools/copy_verified.py --workspace <original-workspace> --plan <reviewed-plan.json> --plan-sha256 <reviewed-sha256>`; the execution owner may add `--copy --destination <fork>/research/results/goop3d_completion_20261007` after review. Paths are provenance and must be mapped explicitly for a different machine; they are not download URLs.
+
+Running tests of the copier uses only temporary synthetic files: `python3 -m unittest discover -s publication_tools -p test_copy_verified.py -v`. Scientific reproduction requires the pinned external artifacts and the exact source/environment/argument manifests; curation does not rerun completed scientific cells. No aggregate is recalculated by this package operation.
+
+## Outstanding work at this publication snapshot
+
+Autonomous workers and their subsequent complete-array/paired audit remain separately owned and unadmitted here. Manuscript prose integration, native LaTeX compilation, final page inspection and author verification remain outside this snapshot. Descriptive shared-host timing does not establish end-to-end speedup. This package does not claim conference readiness or submission.

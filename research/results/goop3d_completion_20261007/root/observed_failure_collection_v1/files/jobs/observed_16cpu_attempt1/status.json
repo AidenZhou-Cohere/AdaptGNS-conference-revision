@@ -1,0 +1,17 @@
+{
+  "status": "exited",
+  "owner": {
+    "pid": 85845,
+    "start_ticks": 832594569,
+    "pgid": 85845
+  },
+  "spec_sha256": "ba89e82240c82acb0d24ab6c9cd3cf36bfbcc111033330b06efa4204c1bcd40d",
+  "started_utc_seconds": 1791339348.679903,
+  "child": {
+    "pid": 85846,
+    "start_ticks": 832594572,
+    "pgid": 85845
+  },
+  "returncode": 1,
+  "finished_utc_seconds": 1791339966.632114
+}

@@ -1,0 +1,12 @@
+{
+  "status": "reviewer_expectation_error",
+  "message": "Initial test expected laggedrisk25 after relative-velocity-RMS25, but original ledger and native/evaluator constants place laggedrisk25 first. The plan preserves original order; no plan defect or scientific execution.",
+  "actual_policies": [
+    "base",
+    "dense",
+    "random25",
+    "speed25",
+    "laggedrisk25",
+    "relative-velocity-RMS25"
+  ]
+}

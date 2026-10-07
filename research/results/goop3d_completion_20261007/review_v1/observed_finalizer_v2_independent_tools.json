@@ -1,0 +1,23 @@
+{
+  "author_tests": {
+    "chunk_id": "7bea15",
+    "wall_time_seconds": 0.205779083,
+    "exit_code": 0,
+    "original_token_count": 197,
+    "output": "test_corruption_and_incomplete_or_failed_cache_refused (__main__.CacheReaderTests.test_corruption_and_incomplete_or_failed_cache_refused) ... ok\ntest_read_exact_cache_without_mutation (__main__.CacheReaderTests.test_read_exact_cache_without_mutation) ... ok\ntest_full_checker_regression_without_accuracy_or_tolerance_change (__main__.ExactCheckerTests.test_full_checker_regression_without_accuracy_or_tolerance_change) ... ok\ntest_old_false_sd_and_new_exact_variance (__main__.ExactCheckerTests.test_old_false_sd_and_new_exact_variance) ... ok\ntest_original_verify_body_only_adds_revision_metadata (__main__.ExactCheckerTests.test_original_verify_body_only_adds_revision_metadata) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.094s\n\nOK\n"
+  },
+  "source_review": {
+    "chunk_id": "1c23ea",
+    "wall_time_seconds": 0.038019917,
+    "exit_code": 0,
+    "original_token_count": 79,
+    "output": "{\"review\": \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/goop3d_completion_20261007/review_v1/observed_finalizer_v2_source_review.json\", \"sha256\": \"7dcf2d63d074a6e532daa60a951ee6579bc56564e5ef3d5e8081c5497c49acc4\", \"source_checks\": 143, \"status\": \"passed_independent_source_and_synthetic_review\"}\n"
+  },
+  "initial_interpreter_failure": {
+    "chunk_id": "b53592",
+    "wall_time_seconds": 0.095539917,
+    "exit_code": 1,
+    "original_token_count": 140,
+    "output": "Traceback (most recent call last):\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/goop3d_completion_20261007/observed_finalize_v2/test_finish.py\", line 22, in <module>\n    import goop3d_observed_history_arithmetic_v1 as arithmetic\n  File \"/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/goop3d_observed_history_arithmetic_v1.py\", line 6, in <module>\n    import numpy as np\nModuleNotFoundError: No module named 'numpy'\n"
+  }
+}

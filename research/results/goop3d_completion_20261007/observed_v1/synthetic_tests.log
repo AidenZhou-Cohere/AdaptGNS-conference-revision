@@ -1,0 +1,17 @@
+test_clean_row_frozen_hand_oracle (test_resumable.FrozenRowTests.test_clean_row_frozen_hand_oracle) ... ok
+test_semantic_numeric_corruption_rejected_after_repinning (test_resumable.FrozenRowTests.test_semantic_numeric_corruption_rejected_after_repinning) ... ok
+test_spawn_workers_match_serial_frozen_results (test_resumable.FrozenRowTests.test_spawn_workers_match_serial_frozen_results) ... ok
+test_conflicting_cross_row_identity_rejected (test_resumable.MergeTests.test_conflicting_cross_row_identity_rejected) ... ok
+test_fixed_order_merging_matches_complete_summary (test_resumable.MergeTests.test_fixed_order_merging_matches_complete_summary) ... ok
+test_missing_cell_retains_denominator_and_null_family (test_resumable.MergeTests.test_missing_cell_retains_denominator_and_null_family) ... ok
+test_completed_run_does_not_reaudit (test_resumable.ResumeTests.test_completed_run_does_not_reaudit) ... ok
+test_conflicting_orphan_preserved (test_resumable.ResumeTests.test_conflicting_orphan_preserved) ... ok
+test_corrupt_checkpoint_rejected (test_resumable.ResumeTests.test_corrupt_checkpoint_rejected) ... ok
+test_durable_restart_and_identity_checks (test_resumable.ResumeTests.test_durable_restart_and_identity_checks) ... ok
+test_failed_row_history_survives_explicit_success (test_resumable.ResumeTests.test_failed_row_history_survives_explicit_success) ... ok
+test_index_commit_failure_leaves_recoverable_orphan (test_resumable.ResumeTests.test_index_commit_failure_leaves_recoverable_orphan) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.384s
+
+OK

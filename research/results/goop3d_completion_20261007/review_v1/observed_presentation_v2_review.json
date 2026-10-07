@@ -1,0 +1,25 @@
+{
+  "status": "passed_observed_presentation_source_and_actual_byte_review",
+  "checks": 885,
+  "renderer_sha256": "88eb4d966c0a2915cca598e8df091d70fb2c1a1249b233cf1bb8756f9e30914a",
+  "candidate_receipt_sha256": "1ff7fbfb6f5e3aa5fecf1df4b13ef59e061d5971c9b051a1c1488f64d0dcd7df",
+  "candidate_inputs_sha256": "1405bb396c9096bd05d896ba0df867f13e93ceb925f76e8fd21a144dba356343",
+  "actual_product_review_sha256": "107e11a40f174f069bf73016e21f8dfdffae2c88e2d74212c99e806421fb3fd5",
+  "complete_statistic_objects": 1382,
+  "rendered_statistic_claims": 224,
+  "latex_tables": 13,
+  "formatted_numeric_fields_checked": 784,
+  "independent_synthetic_tests": 8,
+  "independent_test_tool": "0f60a5",
+  "independent_test_exit": 0,
+  "all_six_policies_both_splits_all_seeds_retained": true,
+  "summary_bytes_unchanged": true,
+  "original_arrays_models_or_science_executed": false,
+  "manuscript_edited": false,
+  "editorial_notes": [
+    "Add punctuation between the short accuracy caption title and its following sentence during manuscript integration.",
+    "Keep detailed checker-operation history in companion/supporting provenance; the manuscript should lead with scientific findings.",
+    "Native compilation and visual PDF inspection remain separate integration checks; formatting review does not certify page layout."
+  ],
+  "scientific_interpretation": "Observed test risk-minus-random remains positive on mean under both arms, though graph exposure narrows that gap in all three seeds. Fixed-random exposure improves observed-test mean but only one of three seeds. Validation signs differ. No autonomous claim follows."
+}

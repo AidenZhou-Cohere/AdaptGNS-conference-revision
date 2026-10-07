@@ -1,0 +1,35 @@
+{
+  "host_alias": "yellow-worm-77",
+  "hostname": "aidenzhou-yellow-worm-77-78fff65d5-62zgv",
+  "boot_id": "cbe68c69-6a30-47f9-a9f8-b42a80785a1f",
+  "job_id": "autonomous_worker07_attempt1",
+  "argv": [
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+    "-B",
+    "-u",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/autonomous_v1/run_worker.py",
+    "--execute",
+    "--plan",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/autonomous_v1/plan.json",
+    "--runtime-root",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/runtime_v1",
+    "--output-root",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/autonomous_results_v1",
+    "--worker-index",
+    "7",
+    "--cuda-index",
+    "3",
+    "--gpu-uuid",
+    "GPU-8e9d199c-b92d-57f0-57af-ffea9caeace7"
+  ],
+  "cwd": "/root/repos/AdaptGNS-cuda-20261006",
+  "environment": {
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

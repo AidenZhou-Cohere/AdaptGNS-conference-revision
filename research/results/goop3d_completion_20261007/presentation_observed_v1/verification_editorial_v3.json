@@ -1,0 +1,11 @@
+{
+  "status": "all13tabular_blocks_byte_identical_editorial_v3",
+  "renderer_sha256": "5e697b824d241f260c9ea7cb838bebc2b77cdac59ce7900f86282b23013422b4",
+  "receipt_sha256": "69d6046f000ae25f7253f23a10eb8b13eb5f4f40505283703fd2fff570db303c",
+  "claim_map_sha256": "5af416f47c9fde262cfa2e9fe4580f7811b719e0fd6b88919ea71f1243e5f522",
+  "all_table_values_unchanged": true,
+  "original_224_table_claims_unchanged": true,
+  "added_prose_claims": 8,
+  "source_summary_and_companion_unchanged": true,
+  "canonical_manuscript_edited": false
+}

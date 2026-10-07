@@ -1,0 +1,31 @@
+{
+  "host_alias": "teal-rat-80",
+  "hostname": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "boot_id": "4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6",
+  "job_id": "observed_16cpu_attempt1",
+  "argv": [
+    "/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python",
+    "-B",
+    "-u",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/observed_v1/run_observed_resumable.py",
+    "--execute",
+    "--workers",
+    "16",
+    "--output",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/observed_results_v1",
+    "--source-pins-sha256",
+    "365c8071abe5016a9092813d57177705386f6568efe03ce1893b640d4b8e7c92",
+    "--protocol-sha256",
+    "d2c2815cfee9b1f0eb4aff854eb4acb6c00b0ec0b6f232e308bde9487078f167"
+  ],
+  "cwd": "/root/repos/AdaptGNS-cuda-20261006",
+  "environment": {
+    "LD_LIBRARY_PATH": "/usr/lib/aarch64-linux-gnu:/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+    "CUBLAS_WORKSPACE_CONFIG": ":4096:8",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  }
+}

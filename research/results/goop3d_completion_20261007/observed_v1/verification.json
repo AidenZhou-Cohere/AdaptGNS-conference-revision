@@ -1,0 +1,25 @@
+{
+  "frozen_originals_modified": false,
+  "independent_review_path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/goop3d_completion_20261007/review_v1/observed_source_review.json",
+  "independent_review_sha256": "f8c99c3bd0c28cfb2b6b565651e9a7a4136db6980518733db9585cbd64ccb6ef",
+  "independent_test_exit_code": 0,
+  "independent_test_tool_chunk": "53100d",
+  "old_progress_metadata": {
+    "completed_row_labels": 1112,
+    "labels_reused_as_numerical_results": false,
+    "required_observed_cells": 2568,
+    "selected_bytes": 45775548716,
+    "selected_files": 5154
+  },
+  "preparation_real_numeric_products_read": false,
+  "preparation_remote_execution": false,
+  "protocol_sha256": "d2c2815cfee9b1f0eb4aff854eb4acb6c00b0ec0b6f232e308bde9487078f167",
+  "runner_sha256": "8bcdb32f7d36a9a4c6f3bcfdb96eecbe36c5b419a855b35473448627e7e7f76b",
+  "schema": "goop3d_resumable_observed_prelaunch_verification_v1",
+  "source_pins_sha256": "365c8071abe5016a9092813d57177705386f6568efe03ce1893b640d4b8e7c92",
+  "status": "source_and_synthetic_review_passed_root_launch_owned",
+  "synthetic_exit_code": 0,
+  "synthetic_log_sha256": "d4af83ce6adc24797e9e3f2b33c36f556b41b50fe9d9370885c45c123b58c938",
+  "synthetic_test_tool_chunk": "e20366",
+  "synthetic_tests": 12
+}

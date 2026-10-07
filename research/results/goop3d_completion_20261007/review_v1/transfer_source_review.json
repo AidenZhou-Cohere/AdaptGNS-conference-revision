@@ -1,0 +1,25 @@
+{
+  "actual_test_exit": 0,
+  "actual_test_tool": "4513b9",
+  "checked_properties": [
+    "Exact source/destination host+boot checked on each remote action; yellow4..7 and aqua8..11 only.",
+    "Source inventory admits only immutable worker/protocol and once-published attempt metadata, plus cells with final commit markers; metrics/status do not select transfers.",
+    "Destination inventory hashes existing row/NPZ bytes; exact marker/file matches skipped and conflicting bytes rejected.",
+    "Manifest binds source/destination/worker ranges/helper; source streaming and receiver independently verify exact SHA and size.",
+    "No-clobber hardlink publication retains attempt staging; row/NPZ precede marker and destination metadata/references are verified before marker.",
+    "Safe relative-path/regular-file checks, symlink and traversal rejection, ordered tar entries and extra-member refusal protect exact destination layout.",
+    "SSH source manifest is actually written/closed to source stdin; pipe links source output to receiver, with original exits and local evidence retained.",
+    "Cleanup targets only helper-owned local SSH children; no remote scientific owner signaling.",
+    "Concurrent same-source receiver uses separate flock; disjoint source workers may transfer concurrently."
+  ],
+  "helper_sha256": "7cbd0816b221b7745c8bfe4541b579d260b28e7646f7c84d4b2a166f897fb6f1",
+  "independent_synthetic_tests_passed": 12,
+  "limitations": [
+    "Snapshot transport completion is not scientific owner closure or result admission.",
+    "Transfer layer handles opaque outputs; stricter fixed source/model/input association remains independently enforced by approved analyzer."
+  ],
+  "scope": "Transfer source and synthetic behavior only; root owns real network execution and final receipts. No model, arrays or live process metadata inspected by reviewer.",
+  "status": "source_and_synthetic_transfer_review_passed",
+  "test_source_sha256": "d652776b62a7b410585c26d7915fa96da99b4f6e532d4b2e85016bfd570329fe",
+  "test_tool_sha256": "ba01c65abc92195f6d7577c02c9c1b7f9e8801fdbe6dfb04af8bf0de850b5dac"
+}

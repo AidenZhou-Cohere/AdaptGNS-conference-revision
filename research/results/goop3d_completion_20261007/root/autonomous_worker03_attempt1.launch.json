@@ -1,0 +1,10 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"launched\": true, \"job\": \"/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/jobs/autonomous_worker03_attempt1\", \"owner_pid\": 86020, \"spec_sha256\": \"ead586659f3c5f3c1bebe69877066d18ec762fde2925aabfd9a8a9d2e702660f\", \"hostname\": \"aidenzhou-teal-rat-80-5c78ffbffc-g8djt\", \"boot_id\": \"4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6\", \"owner_start_ticks\": 832607856, \"owner_pgid\": 86020}\n",
+  "stderr": "",
+  "sources": {
+    "execution_v1/job_owner.py": "aac8c36139996df6705cd3924822f9c56fdf6e694df6a8faaa81dd792142304b",
+    "autonomous_v1/run_worker.py": "a018ed62c6a51511347194d36341c690faa3d8893552f46a7a825b7b90195034",
+    "autonomous_v1/plan.json": "838e7d4c1afc22fc4757a56ec0c755d5d303902d0ed600767d95c507d0402e08"
+  }
+}

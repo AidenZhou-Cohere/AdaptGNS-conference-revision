@@ -1,0 +1,37 @@
+{
+  "schema": "goop3d_observed_publication_review_v1",
+  "review_sha256": "aac4d1971e93b6d3e2f62fcca34741b37400455e385f87cf0e12b62278257682",
+  "package_manifest_sha256": "a01ce81582ab15f419cfa31fabd4c874b839876d91677b69ca4da60c09f17446",
+  "files": {
+    "publication_plan_v2_review.json": {
+      "source": "work/goop3d_completion_20261007/review_v1/publication_plan_v2_review.json",
+      "bytes": 1326,
+      "sha256": "aac4d1971e93b6d3e2f62fcca34741b37400455e385f87cf0e12b62278257682"
+    },
+    "publication_plan_v2_initial_relative_path_error.json": {
+      "source": "work/goop3d_completion_20261007/review_v1/publication_plan_v2_initial_relative_path_error.json",
+      "bytes": 1211,
+      "sha256": "e3ceecc54e2a712eba0d074fd34dc0521881af1c95712b4ea5f78f26696d51da"
+    },
+    "publication_plan_v2_original_review_tool.json": {
+      "source": "work/goop3d_completion_20261007/review_v1/publication_plan_v2_original_review_tool.json",
+      "bytes": 442,
+      "sha256": "613f365c0f00dfecf7f9d876811bdf7abc585e4fab2df2b32f88ec4bcfcbc962"
+    },
+    "review_publication_plan_v2.py": {
+      "source": "work/goop3d_completion_20261007/review_v1/review_publication_plan_v2.py",
+      "bytes": 8494,
+      "sha256": "0e696f14f4cfeb471b209062909be88e7925bcc3c41adcc333deeb7e433bb717"
+    },
+    "publication_copy_original_tools.json": {
+      "source": "work/goop3d_completion_20261007/root/publication_copy_original_tools.json",
+      "bytes": 783,
+      "sha256": "80b0bbef06a99795334c4ce5c4936328860de1e83122660ad06ae9f8055d18f2"
+    },
+    "README.md": {
+      "bytes": 457,
+      "sha256": "acfbfc9f829bfab8f1e0f40ff43f104e3890c2d441f3a160a1e5d1c09fbd32d7",
+      "source": "root authored supporting note"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "check_descriptions_sha256": "ff8d8690fa70838e01148c2444d183f93cbd82fc0f0ba4d5c58583409d16e48c",
+  "checks": 22315,
+  "full_autonomous_cells": 2160,
+  "metadata_only": true,
+  "missing_cells": 1829,
+  "original_ledger_sha256": "ef0673b69180c0c648d7220a300ac526c115482b0aa26ddab39a2ddd9146939b",
+  "plan_sha256": "838e7d4c1afc22fc4757a56ec0c755d5d303902d0ed600767d95c507d0402e08",
+  "retained_original_cells": 331,
+  "scientific_arrays_or_models_read": false,
+  "status": "passed_metadata_partition_review",
+  "worker_source_or_live_runtime_review": false
+}

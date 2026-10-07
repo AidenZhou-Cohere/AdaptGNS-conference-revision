@@ -1,0 +1,26 @@
+{
+  "status": "v4_excludes_only_historical_accounting_from_combined_appendix",
+  "renderer_sha256": "045c6be707f3d93a17cae4a7218b405bb2723d1a2c92c423029186d53b561dcd",
+  "test_source_sha256": "38649a8d9f1613d7d74037cfcc0f626e5a9d3e3c95db8e3692470063c6c3926b",
+  "receipt_sha256": "d813199c8a56c7e71b9fd48ea4f251ae746d4e3902f86dcdfd64c21eddc73e51",
+  "combined_appendix_sha256": "ef082f8a63709f1f37d0c69ff0e111c6124b35d7f69859a4009f17de253f848c",
+  "combined_scientific_tables": 12,
+  "standalone_tables_preserved": 13,
+  "all12combined_tabular_blocks_unchanged": true,
+  "accounting_label_or_reference_in_combined": false,
+  "all_other_payloads_byte_identical_to_v3": [
+    "claim_source_map.json",
+    "complete_observed_companion.json.gz",
+    "findings_observed.md",
+    "inputs.json",
+    "observed_accounting.tex",
+    "observed_accuracy.tex",
+    "observed_clean.tex",
+    "observed_contrasts.tex",
+    "observed_diagnostics.tex",
+    "observed_intro.tex",
+    "observed_training.tex",
+    "source_summary_unchanged.json"
+  ],
+  "manuscript_edited": false
+}

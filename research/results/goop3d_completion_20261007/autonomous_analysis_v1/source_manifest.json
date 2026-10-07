@@ -1,0 +1,38 @@
+{
+  "analysis_source_sha256": "1e41c9b26a3c63354bcbecb7266f2a7b20520c359807c23f67f0c71dbfa31f7c",
+  "analysis_source_bytes": 35435,
+  "plan_sha256": "838e7d4c1afc22fc4757a56ec0c755d5d303902d0ed600767d95c507d0402e08",
+  "worker_source_sha256": "a018ed62c6a51511347194d36341c690faa3d8893552f46a7a825b7b90195034",
+  "original_ledger": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_final_evaluation_20261006_v1/final_evaluation_ledger.json",
+    "sha256": "ef0673b69180c0c648d7220a300ac526c115482b0aa26ddab39a2ddd9146939b",
+    "bytes": 6940087
+  },
+  "metadata": {
+    "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/metadata.json",
+    "sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+    "bytes": 471
+  },
+  "arithmetic_sources": {
+    "audit_goop3d_saved_arrays_v1.py": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_saved_arrays_v1.py",
+      "sha256": "633d7034d687acdc4e743e78c67fb5bcf1c81352ed524829d5ba01b163158491",
+      "bytes": 49419
+    },
+    "goop3d_saved_diagnostic_audit_v1.py": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_saved_diagnostic_audit_v1.py",
+      "sha256": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+      "bytes": 26291
+    },
+    "audit_goop3d_paired_arrays_v1.py": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/audit_goop3d_paired_arrays_v1.py",
+      "sha256": "a520fdf0766038b99ad075b27cbc227721745bce9c5cd5e0cb1416535f6897f9",
+      "bytes": 12678
+    },
+    "summarize_goop3d_graph_support_v1.py": {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+      "sha256": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+      "bytes": 57671
+    }
+  }
+}

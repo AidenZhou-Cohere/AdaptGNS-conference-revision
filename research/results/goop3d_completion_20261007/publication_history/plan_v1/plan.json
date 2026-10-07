@@ -1,0 +1,2380 @@
+{
+  "created_utc": "2026-10-07T02:42:06.290244+00:00",
+  "files": [
+    {
+      "bytes": 6152,
+      "destination": "README.md",
+      "role": "package_scope_and_instructions",
+      "sha256": "c672e8fc18b326f1f9c44f4320bc26e4c9e7b82433b66de3e4b5ab0e6a6bde0e",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/PACKAGE_README.md"
+    },
+    {
+      "bytes": 6735,
+      "destination": "autonomous_analysis_v1/HANDOFF.md",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "c5078f30ec9584614c51a556a85c75687f7f9dfb8a982f0bf9ca907495cebc4f",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/HANDOFF.md"
+    },
+    {
+      "bytes": 35435,
+      "destination": "autonomous_analysis_v1/analyze.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "1e41c9b26a3c63354bcbecb7266f2a7b20520c359807c23f67f0c71dbfa31f7c",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/analyze.py"
+    },
+    {
+      "bytes": 33467,
+      "destination": "autonomous_analysis_v1/history/analyze.initial_candidate.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "0cf621bcc6f4962080ef5bfd96d6c8f103a21c8d923b48ae426d6422316b089f",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/analyze.initial_candidate.py"
+    },
+    {
+      "bytes": 6715,
+      "destination": "autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/HANDOFF.md",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "508b65d4a16ad495912c3fb92c35cc1991534adc63086caa986474dd5c1c45e9",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/HANDOFF.md"
+    },
+    {
+      "bytes": 2335,
+      "destination": "autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/resume_arguments.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "821ae0fa832ac921777f85492f1a5fedaa097ee7c42a80b407f1d6820dabd8f9",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/resume_arguments.json"
+    },
+    {
+      "bytes": 2321,
+      "destination": "autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/run_arguments.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "67eda8e1527d7a40692bb7b24bb130b07178afca937621be0dc22834a7eef09c",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/run_arguments.json"
+    },
+    {
+      "bytes": 1885,
+      "destination": "autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/source_manifest.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "27c4a63f7b23835261cd33b198c113f0e905bfc8ca91319cc8f3166e2d06bb08",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/source_manifest.json"
+    },
+    {
+      "bytes": 2365,
+      "destination": "autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/synthetic_verification.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "a1a33f63489838b0538070ba70b366a80539d581b9d56c775bb0dab4ab40777f",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/history/handoff_before_teal_metadata_path_correction/synthetic_verification.json"
+    },
+    {
+      "bytes": 2297,
+      "destination": "autonomous_analysis_v1/resume_arguments.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "9db36ba9fcca17055de5f2b937f7510cacbba4c4748141d82980ba696c44ea80",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/resume_arguments.json"
+    },
+    {
+      "bytes": 2283,
+      "destination": "autonomous_analysis_v1/run_arguments.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "762f3578f7c97728e66346fc573686c0a0102b43660d9315eeb8fd3d212bd928",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/run_arguments.json"
+    },
+    {
+      "bytes": 1847,
+      "destination": "autonomous_analysis_v1/source_manifest.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "b9b42cd55d598fbace8d231ad23dc8618ec2b95a4b49ce89070be02d74b404eb",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/source_manifest.json"
+    },
+    {
+      "bytes": 1249,
+      "destination": "autonomous_analysis_v1/synthetic_test_attempt1.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "0559dacc4eab1edbe1c43647f690422e2c1673e7fdb72e7df56dae2a241375bf",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_test_attempt1.log"
+    },
+    {
+      "bytes": 8670,
+      "destination": "autonomous_analysis_v1/synthetic_test_attempt2.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "ab60a0b2d4259eaf8f08f3c5ca41ce1e0b05a3a917fde5942389a42437c26410",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_test_attempt2.log"
+    },
+    {
+      "bytes": 751,
+      "destination": "autonomous_analysis_v1/synthetic_test_attempt3.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "8b8343e4963b4e0bfddbc351500b63af003ce138e9ea6d2842ee24ba7c51fe00",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_test_attempt3.log"
+    },
+    {
+      "bytes": 1066,
+      "destination": "autonomous_analysis_v1/synthetic_test_attempt4.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "3c06bbf61b6a56b49baeded72a39c8829eb22c3fd81ad44b1b42cd337adea9d8",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_test_attempt4.log"
+    },
+    {
+      "bytes": 1066,
+      "destination": "autonomous_analysis_v1/synthetic_test_final.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "b6ca787df6e21ab97595c5bdae0f83745f3b1756a0f3ba16a1d559ff08f7cd54",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_test_final.log"
+    },
+    {
+      "bytes": 2541,
+      "destination": "autonomous_analysis_v1/synthetic_verification.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "631f8761e96793661621e65c08f2281bbf63950910cfd1f7b7337b2c47ace034",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/synthetic_verification.json"
+    },
+    {
+      "bytes": 18028,
+      "destination": "autonomous_analysis_v1/test_analysis.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "d6a1988359df7368dd91bbc0bfac966ce5930fac5599a0dbdecacf2a1fb0df6d",
+      "source": "work/goop3d_completion_20261007/autonomous_analysis_v1/test_analysis.py"
+    },
+    {
+      "bytes": 14797,
+      "destination": "autonomous_v1/history/run_worker.initial_fresh_only.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "8ec11bd4401f5c33f7967f6f0f90769f66e445ad4dbf646f1c32d9bc31384d53",
+      "source": "work/goop3d_completion_20261007/autonomous_v1/history/run_worker.initial_fresh_only.py"
+    },
+    {
+      "bytes": 1491063,
+      "destination": "autonomous_v1/plan.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "838e7d4c1afc22fc4757a56ec0c755d5d303902d0ed600767d95c507d0402e08",
+      "source": "work/goop3d_completion_20261007/autonomous_v1/plan.json"
+    },
+    {
+      "bytes": 20668,
+      "destination": "autonomous_v1/remote_paths.txt",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "3666554bd2b3d236f03deeabc5b43aca118d39520e6b6a79bf549d5754f8007b",
+      "source": "work/goop3d_completion_20261007/autonomous_v1/remote_paths.txt"
+    },
+    {
+      "bytes": 26646,
+      "destination": "autonomous_v1/run_worker.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "a018ed62c6a51511347194d36341c690faa3d8893552f46a7a825b7b90195034",
+      "source": "work/goop3d_completion_20261007/autonomous_v1/run_worker.py"
+    },
+    {
+      "bytes": 77364,
+      "destination": "autonomous_v1/transfer_files.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "993d163899006c2689ce0b12544659609e88c7363648a857a96d753517bb5383",
+      "source": "work/goop3d_completion_20261007/autonomous_v1/transfer_files.json"
+    },
+    {
+      "bytes": 11223,
+      "destination": "external_references.json",
+      "role": "reference_inventory",
+      "sha256": "aa5889c730e7817d52746d4ec520f423efa3d8215cc69aa0f4e87e785cc71df5",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/external_references.json"
+    },
+    {
+      "bytes": 16683,
+      "destination": "frozen/runtime/adaptive-gns/gns/data_loader.py",
+      "role": "frozen_scientific_source",
+      "sha256": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/data_loader.py"
+    },
+    {
+      "bytes": 3178,
+      "destination": "frozen/runtime/adaptive-gns/gns/device_utils.py",
+      "role": "frozen_scientific_source",
+      "sha256": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/device_utils.py"
+    },
+    {
+      "bytes": 17276,
+      "destination": "frozen/runtime/adaptive-gns/gns/graph_network.py",
+      "role": "frozen_scientific_source",
+      "sha256": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/graph_network.py"
+    },
+    {
+      "bytes": 32300,
+      "destination": "frozen/runtime/adaptive-gns/gns/learned_simulator.py",
+      "role": "frozen_scientific_source",
+      "sha256": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/learned_simulator.py"
+    },
+    {
+      "bytes": 2117,
+      "destination": "frozen/runtime/adaptive-gns/gns/losses.py",
+      "role": "frozen_scientific_source",
+      "sha256": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/losses.py"
+    },
+    {
+      "bytes": 6308,
+      "destination": "frozen/runtime/adaptive-gns/gns/model_io.py",
+      "role": "frozen_scientific_source",
+      "sha256": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "source": "outputs/AdaptGNS/adaptive-gns/gns/model_io.py"
+    },
+    {
+      "bytes": 12678,
+      "destination": "frozen/runtime/cuda_preparation/audit_goop3d_paired_arrays_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "a520fdf0766038b99ad075b27cbc227721745bce9c5cd5e0cb1416535f6897f9",
+      "source": "work/deadline_research_20261005/cuda_preparation/audit_goop3d_paired_arrays_v1.py"
+    },
+    {
+      "bytes": 49419,
+      "destination": "frozen/runtime/cuda_preparation/audit_goop3d_saved_arrays_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "633d7034d687acdc4e743e78c67fb5bcf1c81352ed524829d5ba01b163158491",
+      "source": "work/deadline_research_20261005/cuda_preparation/audit_goop3d_saved_arrays_v1.py"
+    },
+    {
+      "bytes": 31215,
+      "destination": "frozen/runtime/cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+      "source": "work/deadline_research_20261005/cuda_preparation/evaluate_goop3d_graph_support_v1.py"
+    },
+    {
+      "bytes": 14036,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_graph_support_vectorized_v1.py"
+    },
+    {
+      "bytes": 25545,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_native_evaluation_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_native_evaluation_v1.py"
+    },
+    {
+      "bytes": 16248,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/audit_goop3d_observed_histories_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "36f6b18b903e1ce7f89c138155a1147fcfab581246f11e7f0bbc0517d9010aff",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/audit_goop3d_observed_histories_v1.py"
+    },
+    {
+      "bytes": 8382,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/check_goop3d_observed_history_summary_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "d266da3d5a437586c407aba20898374f62d459b2b9c2980232d241e4a56bf5ad",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/check_goop3d_observed_history_summary_v1.py"
+    },
+    {
+      "bytes": 18240,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/goop3d_observed_history_arithmetic_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "0f03e7876765fe56d9c9e33404b6e66ae014c81c5022b9c59b04d77d6c884161",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/goop3d_observed_history_arithmetic_v1.py"
+    },
+    {
+      "bytes": 26291,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/goop3d_saved_diagnostic_audit_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/goop3d_saved_diagnostic_audit_v1.py"
+    },
+    {
+      "bytes": 6160,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/observed_common.py",
+      "role": "frozen_scientific_source",
+      "sha256": "29c6b077882f55b82128403cc5885229b159b2d573ef84d8244d140fb8727970",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/observed_common.py"
+    },
+    {
+      "bytes": 4736,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/summarize_goop3d_observed_histories_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "8e7e4ea5a3dbed17f87e5e8af22ab7189e07e25d233462c50c699fbe284c05f2",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/summarize_goop3d_observed_histories_v1.py"
+    },
+    {
+      "bytes": 3159,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_observed_history_analysis_v1/worker_source_bindings.json",
+      "role": "frozen_scientific_source",
+      "sha256": "49ac2c94740c0c8a611f89e7dc816a62d7ba422c1c62423f1c3656c38e8f86ab",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_observed_history_analysis_UNADMITTED_transition_v1/worker_source_bindings.json"
+    },
+    {
+      "bytes": 26291,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_saved_diagnostic_audit_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_saved_diagnostic_audit_v1.py"
+    },
+    {
+      "bytes": 7909,
+      "destination": "frozen/runtime/cuda_preparation/goop3d_scientific_protocol_v1.md",
+      "role": "frozen_scientific_source",
+      "sha256": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+      "source": "work/deadline_research_20261005/cuda_preparation/goop3d_scientific_protocol_v1.md"
+    },
+    {
+      "bytes": 57671,
+      "destination": "frozen/runtime/cuda_preparation/summarize_goop3d_graph_support_v1.py",
+      "role": "frozen_scientific_source",
+      "sha256": "d7096bef018ac7e3d28cc429a4711d88209e48a1b812dda0aad995d6a41de5fd",
+      "source": "work/deadline_research_20261005/cuda_preparation/summarize_goop3d_graph_support_v1.py"
+    },
+    {
+      "bytes": 53415,
+      "destination": "frozen/runtime/cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+      "role": "frozen_scientific_source",
+      "sha256": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+      "source": "work/deadline_research_20261005/cuda_preparation/train_goop3d_graph_support_cuda_v2.py"
+    },
+    {
+      "bytes": 2304,
+      "destination": "frozen/runtime/research/budget_graph.py",
+      "role": "frozen_scientific_source",
+      "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "source": "outputs/AdaptGNS/research/budget_graph.py"
+    },
+    {
+      "bytes": 36701,
+      "destination": "frozen/runtime/research/full_rollout.py",
+      "role": "frozen_scientific_source",
+      "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "source": "outputs/AdaptGNS/research/full_rollout.py"
+    },
+    {
+      "bytes": 35249,
+      "destination": "frozen/runtime/research/full_same_state.py",
+      "role": "frozen_scientific_source",
+      "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "source": "outputs/AdaptGNS/research/full_same_state.py"
+    },
+    {
+      "bytes": 29638,
+      "destination": "frozen/runtime/research/full_training.py",
+      "role": "frozen_scientific_source",
+      "sha256": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "source": "outputs/AdaptGNS/research/full_training.py"
+    },
+    {
+      "bytes": 36931,
+      "destination": "frozen/runtime/research/graph_convention_bridge.py",
+      "role": "frozen_scientific_source",
+      "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "source": "outputs/AdaptGNS/research/graph_convention_bridge.py"
+    },
+    {
+      "bytes": 5052,
+      "destination": "observed_diagnosis_v1/SOURCE_FINDING.md",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "c97ccf8ff9c0dcc7c0ee1310dbf2104fe9ff7ebbe355669206033e10156383c2",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/SOURCE_FINDING.md"
+    },
+    {
+      "bytes": 1292,
+      "destination": "observed_diagnosis_v1/proposed_exact_seed_stats.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "ccdc66fca7c7c15c807613f57749674032a9acc7ca886938195c43b4bc6db82b",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/proposed_exact_seed_stats.py"
+    },
+    {
+      "bytes": 856,
+      "destination": "observed_diagnosis_v1/source_finding.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "d56a2b85268f45dcff04f2ce08456f452b3d7f7d36722e0d89c0ab7365b1fb57",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/source_finding.json"
+    },
+    {
+      "bytes": 234,
+      "destination": "observed_diagnosis_v1/source_probe.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "5b1aad8b9231a9206f1bf5ec4ea5230824cdf0055499d00c3af710be34f45382",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/source_probe.log"
+    },
+    {
+      "bytes": 3494,
+      "destination": "observed_diagnosis_v1/source_probe.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "c009a856b2f65877c5789843be7b3d7bf863c8a95f9b4d5d6374fb91d32cb434",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/source_probe.py"
+    },
+    {
+      "bytes": 10393,
+      "destination": "observed_diagnosis_v1/synthetic_source_probe.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "318d020ca14c4b00672ee1de76fd948f1405b2a9d857e531560f84302a280319",
+      "source": "work/goop3d_completion_20261007/observed_diagnosis_v1/synthetic_source_probe.json"
+    },
+    {
+      "bytes": 3680,
+      "destination": "observed_finalize_v2/HANDOFF.md",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "a3900e8398019eee474e9482bfed67dc297f2d660425eb6f84c32b63d8071f07",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/HANDOFF.md"
+    },
+    {
+      "bytes": 7697,
+      "destination": "observed_finalize_v2/check_observed_exact_variance_v2.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "9dce53c8f9e87ef1d0a828b163469f34c9249f5b242f26c3a0287f11f489bccb",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/check_observed_exact_variance_v2.py"
+    },
+    {
+      "bytes": 13641,
+      "destination": "observed_finalize_v2/finish_from_cache.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "8b6f46e24d2cc729fa7c585adce8ad6acae0cae85764dc4f3fc7ceaaaf698a6e",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/finish_from_cache.py"
+    },
+    {
+      "bytes": 805,
+      "destination": "observed_finalize_v2/run_arguments.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "74a5db0f130df182a13044c0ac1d491348956ffcb98a5e1ec30ecb3c14d36f95",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/run_arguments.json"
+    },
+    {
+      "bytes": 1717,
+      "destination": "observed_finalize_v2/source_manifest.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "7401c526d931fc5d44ffb7f1a9d98cd1b688fa01f45c628741260bea99c58cab",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/source_manifest.json"
+    },
+    {
+      "bytes": 786,
+      "destination": "observed_finalize_v2/synthetic_test_attempt1.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "e4eca37ceec5f116e8c34a958a42443cd421e41b2c1f240d520cd35016e8bc13",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/synthetic_test_attempt1.log"
+    },
+    {
+      "bytes": 6760,
+      "destination": "observed_finalize_v2/test_finish.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "fd8bbf1c6ead9f87e95a7851e741a938f3d5fc40640878b6c452be068b444134",
+      "source": "work/goop3d_completion_20261007/observed_finalize_v2/test_finish.py"
+    },
+    {
+      "bytes": 1724,
+      "destination": "observed_products/arithmetic_check.json",
+      "role": "verified_observed_product",
+      "sha256": "0fad18183f7f580780dc7e3e8157dad97da22b7ea69d75da465c8c988c484011",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/observed_finalized_v2/arithmetic_check.json"
+    },
+    {
+      "bytes": 31655957,
+      "destination": "observed_products/audit.json",
+      "role": "verified_observed_product",
+      "sha256": "83ea04367ceb9549387b89a50f7a8e48a74f2cf00d06b5da577af6349842d5cd",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/observed_finalized_v2/audit.json"
+    },
+    {
+      "bytes": 518659,
+      "destination": "observed_products/completion.json",
+      "role": "verified_observed_product",
+      "sha256": "148c81a072f33458a8a3f69862c33ef033ebee96027cd7e9c8198b4b282429a5",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/observed_finalized_v2/completion.json"
+    },
+    {
+      "bytes": 2221,
+      "destination": "observed_products/retained_original_failure.json",
+      "role": "verified_observed_product",
+      "sha256": "1ee80845881059ead8a3b8702db353200b49ae4e0c11817530f54351fbd2a993",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/observed_finalized_v2/retained_original_failure.json"
+    },
+    {
+      "bytes": 1897868,
+      "destination": "observed_products/summary.json",
+      "role": "verified_observed_product",
+      "sha256": "2130ccb1c0c116766a6f2ec6e724102fed48edbd692a279026aaf1dcdaa09109",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/observed_finalized_v2/summary.json"
+    },
+    {
+      "bytes": 5306,
+      "destination": "observed_v1/HANDOFF.md",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "8d911d3c6e5ebb7e691e42eeb92712f8b9f204e535353d31b6dc9644a66f54d9",
+      "source": "work/goop3d_completion_20261007/observed_v1/HANDOFF.md"
+    },
+    {
+      "bytes": 2819,
+      "destination": "observed_v1/protocol.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "d2c2815cfee9b1f0eb4aff854eb4acb6c00b0ec0b6f232e308bde9487078f167",
+      "source": "work/goop3d_completion_20261007/observed_v1/protocol.json"
+    },
+    {
+      "bytes": 27786,
+      "destination": "observed_v1/run_observed_resumable.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "8bcdb32f7d36a9a4c6f3bcfdb96eecbe36c5b419a855b35473448627e7e7f76b",
+      "source": "work/goop3d_completion_20261007/observed_v1/run_observed_resumable.py"
+    },
+    {
+      "bytes": 950,
+      "destination": "observed_v1/source_pins.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "365c8071abe5016a9092813d57177705386f6568efe03ce1893b640d4b8e7c92",
+      "source": "work/goop3d_completion_20261007/observed_v1/source_pins.json"
+    },
+    {
+      "bytes": 14172,
+      "destination": "observed_v1/synthetic_fixtures.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "91054d564f9b57bfe5c4c0d91be15ec6992b6ff8ae100de0234b7c10ae099bb9",
+      "source": "work/goop3d_completion_20261007/observed_v1/synthetic_fixtures.py"
+    },
+    {
+      "bytes": 3144,
+      "destination": "observed_v1/synthetic_summary_fixture.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "7099c7e550fe310631c5f9d51b76a306b31af24f69bec84c3bcc91fdfd592e6a",
+      "source": "work/goop3d_completion_20261007/observed_v1/synthetic_summary_fixture.py"
+    },
+    {
+      "bytes": 1605,
+      "destination": "observed_v1/synthetic_tests.log",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "d4af83ce6adc24797e9e3f2b33c36f556b41b50fe9d9370885c45c123b58c938",
+      "source": "work/goop3d_completion_20261007/observed_v1/synthetic_tests.log"
+    },
+    {
+      "bytes": 10157,
+      "destination": "observed_v1/test_resumable.py",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "0f8e34d495c931fdffb94e2c3d0fe31dc50266c377d0348029c0f83dea012b4a",
+      "source": "work/goop3d_completion_20261007/observed_v1/test_resumable.py"
+    },
+    {
+      "bytes": 1276,
+      "destination": "observed_v1/verification.json",
+      "role": "reviewed_source_protocol_test_or_history",
+      "sha256": "0296c0f32a02cee21b2c23ad628a26371f1a03898b9aa8ea3044149aa8640936",
+      "source": "work/goop3d_completion_20261007/observed_v1/verification.json"
+    },
+    {
+      "bytes": 5239,
+      "destination": "presentation_observed_v1/README.md",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "336c1c488aefb8d97104073d9f897cefb27b074c5213dc110d1d08e0241bad2e",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/README.md"
+    },
+    {
+      "bytes": 2433,
+      "destination": "presentation_observed_v1/actual_inputs_admitted_v2.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "1405bb396c9096bd05d896ba0df867f13e93ceb925f76e8fd21a144dba356343",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/actual_inputs_admitted_v2.json"
+    },
+    {
+      "bytes": 1929,
+      "destination": "presentation_observed_v1/actual_inputs_candidate_v1.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "2bdc5118d2219b74df4e8aee9b1a7e188cfede73afb822e0de9458709175a1c6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/actual_inputs_candidate_v1.json"
+    },
+    {
+      "bytes": 23831,
+      "destination": "presentation_observed_v1/generated_candidate_v1/appendix_goop3d_observed.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "75d9882116bb10c9ed9f1dcb64b023d1e6f6e4139c3f6a95bd159cbf60c3af22",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/appendix_goop3d_observed.tex"
+    },
+    {
+      "bytes": 68854,
+      "destination": "presentation_observed_v1/generated_candidate_v1/claim_source_map.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "d7afe766665664d2e758067517084e11601f13eaf45cdea95de6ac685031566d",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/claim_source_map.json"
+    },
+    {
+      "bytes": 1700,
+      "destination": "presentation_observed_v1/generated_candidate_v1/findings_observed.md",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "e93e4786f5567d6eda3afab2e98426aa863323885e8034198c18d64c47d2d40c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/findings_observed.md"
+    },
+    {
+      "bytes": 1929,
+      "destination": "presentation_observed_v1/generated_candidate_v1/inputs.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "2bdc5118d2219b74df4e8aee9b1a7e188cfede73afb822e0de9458709175a1c6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/inputs.json"
+    },
+    {
+      "bytes": 879,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_accounting.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "aa9e0891fdc8b7578c1fc08395455fbab0b35c7d7b53237b3368520b64eaf255",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_accounting.tex"
+    },
+    {
+      "bytes": 6278,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_accuracy.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "06d02188dccd588f69424659546054c74d55b310b69730e498029387d67ae974",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_accuracy.tex"
+    },
+    {
+      "bytes": 1786,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_clean.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "4c4ba99f26b0b32132ffb4a1d10db129f73a73b285275f41540c1e12bc51d9e6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_clean.tex"
+    },
+    {
+      "bytes": 3597,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_contrasts.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "77410a049adfd2d280093aa029c91a3245e16612cad5e0a3af4b51fa9ab40589",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_contrasts.tex"
+    },
+    {
+      "bytes": 5901,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_diagnostics.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "36e0681f1fb31e5047da0b3e02fc7d442d51434cf5df3454a77d0a74175b23d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_diagnostics.tex"
+    },
+    {
+      "bytes": 1839,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_intro.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "b17f53ba982eec9e67282ed010e7af9588d12bf76ec512653ae57606877fffc8",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_intro.tex"
+    },
+    {
+      "bytes": 3345,
+      "destination": "presentation_observed_v1/generated_candidate_v1/observed_training.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "90de0010ea7132559d8a67b178b6aa32f68f650a82eb9e10d923a36dd8d75bcf",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/observed_training.tex"
+    },
+    {
+      "bytes": 2366,
+      "destination": "presentation_observed_v1/generated_candidate_v1/receipt.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "c5fcd04fd464ae8376f900e9c810fa0155d8c2e7d7912e65ffa518e960c889f0",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/receipt.json"
+    },
+    {
+      "bytes": 23831,
+      "destination": "presentation_observed_v1/generated_candidate_v2/appendix_goop3d_observed.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "75d9882116bb10c9ed9f1dcb64b023d1e6f6e4139c3f6a95bd159cbf60c3af22",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/appendix_goop3d_observed.tex"
+    },
+    {
+      "bytes": 68854,
+      "destination": "presentation_observed_v1/generated_candidate_v2/claim_source_map.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "d7afe766665664d2e758067517084e11601f13eaf45cdea95de6ac685031566d",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/claim_source_map.json"
+    },
+    {
+      "bytes": 1700,
+      "destination": "presentation_observed_v1/generated_candidate_v2/findings_observed.md",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "e93e4786f5567d6eda3afab2e98426aa863323885e8034198c18d64c47d2d40c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/findings_observed.md"
+    },
+    {
+      "bytes": 2433,
+      "destination": "presentation_observed_v1/generated_candidate_v2/inputs.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "1405bb396c9096bd05d896ba0df867f13e93ceb925f76e8fd21a144dba356343",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/inputs.json"
+    },
+    {
+      "bytes": 879,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_accounting.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "aa9e0891fdc8b7578c1fc08395455fbab0b35c7d7b53237b3368520b64eaf255",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_accounting.tex"
+    },
+    {
+      "bytes": 6278,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_accuracy.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "06d02188dccd588f69424659546054c74d55b310b69730e498029387d67ae974",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_accuracy.tex"
+    },
+    {
+      "bytes": 1786,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_clean.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "4c4ba99f26b0b32132ffb4a1d10db129f73a73b285275f41540c1e12bc51d9e6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_clean.tex"
+    },
+    {
+      "bytes": 3597,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_contrasts.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "77410a049adfd2d280093aa029c91a3245e16612cad5e0a3af4b51fa9ab40589",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_contrasts.tex"
+    },
+    {
+      "bytes": 5901,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_diagnostics.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "36e0681f1fb31e5047da0b3e02fc7d442d51434cf5df3454a77d0a74175b23d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_diagnostics.tex"
+    },
+    {
+      "bytes": 1839,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_intro.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "b17f53ba982eec9e67282ed010e7af9588d12bf76ec512653ae57606877fffc8",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_intro.tex"
+    },
+    {
+      "bytes": 3345,
+      "destination": "presentation_observed_v1/generated_candidate_v2/observed_training.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "90de0010ea7132559d8a67b178b6aa32f68f650a82eb9e10d923a36dd8d75bcf",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/observed_training.tex"
+    },
+    {
+      "bytes": 2366,
+      "destination": "presentation_observed_v1/generated_candidate_v2/receipt.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "1ff7fbfb6f5e3aa5fecf1df4b13ef59e061d5971c9b051a1c1488f64d0dcd7df",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v2/receipt.json"
+    },
+    {
+      "bytes": 23245,
+      "destination": "presentation_observed_v1/generated_candidate_v3/appendix_goop3d_observed.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "cfaf529e44b59c0f35293c125f4cbfddb1c6809f9fe24150da70bbeeb4678061",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/appendix_goop3d_observed.tex"
+    },
+    {
+      "bytes": 71578,
+      "destination": "presentation_observed_v1/generated_candidate_v3/claim_source_map.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "5af416f47c9fde262cfa2e9fe4580f7811b719e0fd6b88919ea71f1243e5f522",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/claim_source_map.json"
+    },
+    {
+      "bytes": 1700,
+      "destination": "presentation_observed_v1/generated_candidate_v3/findings_observed.md",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "e93e4786f5567d6eda3afab2e98426aa863323885e8034198c18d64c47d2d40c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/findings_observed.md"
+    },
+    {
+      "bytes": 2433,
+      "destination": "presentation_observed_v1/generated_candidate_v3/inputs.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "1405bb396c9096bd05d896ba0df867f13e93ceb925f76e8fd21a144dba356343",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/inputs.json"
+    },
+    {
+      "bytes": 879,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_accounting.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "aa9e0891fdc8b7578c1fc08395455fbab0b35c7d7b53237b3368520b64eaf255",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_accounting.tex"
+    },
+    {
+      "bytes": 5784,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_accuracy.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "8acde550d7887e42a8e187a0fd4b4deafbc246fc0f555258ae6da27327b0f560",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_accuracy.tex"
+    },
+    {
+      "bytes": 1786,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_clean.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "4c4ba99f26b0b32132ffb4a1d10db129f73a73b285275f41540c1e12bc51d9e6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_clean.tex"
+    },
+    {
+      "bytes": 3568,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_contrasts.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "c7226b27dcff45bf76b70ae647c01781b5e904e1e267355b9f10b8848df25a13",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_contrasts.tex"
+    },
+    {
+      "bytes": 5901,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_diagnostics.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "36e0681f1fb31e5047da0b3e02fc7d442d51434cf5df3454a77d0a74175b23d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_diagnostics.tex"
+    },
+    {
+      "bytes": 1787,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_intro.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "b987014c7246c20476589095e1972ae22fba1de2371f7c51bb028f0c3c563aad",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_intro.tex"
+    },
+    {
+      "bytes": 3334,
+      "destination": "presentation_observed_v1/generated_candidate_v3/observed_training.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "016ba615cbb4e20ec8da0b9b5ba7cb4be5bd7309a2bd1d2dd2da39012b2d49d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/observed_training.tex"
+    },
+    {
+      "bytes": 2366,
+      "destination": "presentation_observed_v1/generated_candidate_v3/receipt.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "69d6046f000ae25f7253f23a10eb8b13eb5f4f40505283703fd2fff570db303c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v3/receipt.json"
+    },
+    {
+      "bytes": 22365,
+      "destination": "presentation_observed_v1/generated_candidate_v4/appendix_goop3d_observed.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "ef082f8a63709f1f37d0c69ff0e111c6124b35d7f69859a4009f17de253f848c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/appendix_goop3d_observed.tex"
+    },
+    {
+      "bytes": 71578,
+      "destination": "presentation_observed_v1/generated_candidate_v4/claim_source_map.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "5af416f47c9fde262cfa2e9fe4580f7811b719e0fd6b88919ea71f1243e5f522",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/claim_source_map.json"
+    },
+    {
+      "bytes": 1700,
+      "destination": "presentation_observed_v1/generated_candidate_v4/findings_observed.md",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "e93e4786f5567d6eda3afab2e98426aa863323885e8034198c18d64c47d2d40c",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/findings_observed.md"
+    },
+    {
+      "bytes": 2433,
+      "destination": "presentation_observed_v1/generated_candidate_v4/inputs.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "1405bb396c9096bd05d896ba0df867f13e93ceb925f76e8fd21a144dba356343",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/inputs.json"
+    },
+    {
+      "bytes": 879,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_accounting.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "aa9e0891fdc8b7578c1fc08395455fbab0b35c7d7b53237b3368520b64eaf255",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_accounting.tex"
+    },
+    {
+      "bytes": 5784,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_accuracy.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "8acde550d7887e42a8e187a0fd4b4deafbc246fc0f555258ae6da27327b0f560",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_accuracy.tex"
+    },
+    {
+      "bytes": 1786,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_clean.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "4c4ba99f26b0b32132ffb4a1d10db129f73a73b285275f41540c1e12bc51d9e6",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_clean.tex"
+    },
+    {
+      "bytes": 3568,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_contrasts.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "c7226b27dcff45bf76b70ae647c01781b5e904e1e267355b9f10b8848df25a13",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_contrasts.tex"
+    },
+    {
+      "bytes": 5901,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_diagnostics.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "36e0681f1fb31e5047da0b3e02fc7d442d51434cf5df3454a77d0a74175b23d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_diagnostics.tex"
+    },
+    {
+      "bytes": 1787,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_intro.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "b987014c7246c20476589095e1972ae22fba1de2371f7c51bb028f0c3c563aad",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_intro.tex"
+    },
+    {
+      "bytes": 3334,
+      "destination": "presentation_observed_v1/generated_candidate_v4/observed_training.tex",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "016ba615cbb4e20ec8da0b9b5ba7cb4be5bd7309a2bd1d2dd2da39012b2d49d9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/observed_training.tex"
+    },
+    {
+      "bytes": 2366,
+      "destination": "presentation_observed_v1/generated_candidate_v4/receipt.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "d813199c8a56c7e71b9fd48ea4f251ae746d4e3902f86dcdfd64c21eddc73e51",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v4/receipt.json"
+    },
+    {
+      "bytes": 36031,
+      "destination": "presentation_observed_v1/history/render_observed.editorial_v3.py",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "5e697b824d241f260c9ea7cb838bebc2b77cdac59ce7900f86282b23013422b4",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/history/render_observed.editorial_v3.py"
+    },
+    {
+      "bytes": 34237,
+      "destination": "presentation_observed_v1/history/render_observed.reviewed_v2.py",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "88eb4d966c0a2915cca598e8df091d70fb2c1a1249b233cf1bb8756f9e30914a",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/history/render_observed.reviewed_v2.py"
+    },
+    {
+      "bytes": 10904,
+      "destination": "presentation_observed_v1/history/test_render_observed.v3.py",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "79a67bcaa00221432d0e37a1c2729bcce5f3ea7813858e17a0390ec7c44b0b24",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/history/test_render_observed.v3.py"
+    },
+    {
+      "bytes": 36242,
+      "destination": "presentation_observed_v1/render_observed.py",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "045c6be707f3d93a17cae4a7218b405bb2723d1a2c92c423029186d53b561dcd",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/render_observed.py"
+    },
+    {
+      "bytes": 1038,
+      "destination": "presentation_observed_v1/synthetic_tests.log",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "2bfe3da81693b5115f518533d2926bcd0626ac1d91a65db2b9e5d94699a9a845",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/synthetic_tests.log"
+    },
+    {
+      "bytes": 1038,
+      "destination": "presentation_observed_v1/synthetic_tests_v3.log",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "ab2872b3d45778a4958e044a195a38843409c5162c1ecdf0dc73889e99947321",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/synthetic_tests_v3.log"
+    },
+    {
+      "bytes": 1038,
+      "destination": "presentation_observed_v1/synthetic_tests_v4.log",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "654e928e0ddc8b1765801ca06b4c977e5ba37ad254d9cd0d90ae7a86757c7b81",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/synthetic_tests_v4.log"
+    },
+    {
+      "bytes": 11069,
+      "destination": "presentation_observed_v1/test_render_observed.py",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "38649a8d9f1613d7d74037cfcc0f626e5a9d3e3c95db8e3692470063c6c3926b",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/test_render_observed.py"
+    },
+    {
+      "bytes": 1319,
+      "destination": "presentation_observed_v1/verification.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "d1ebd359092a1e12e98d741faab33d59357d3016eaf0d5bae5d97ee9b2e340df",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/verification.json"
+    },
+    {
+      "bytes": 1072,
+      "destination": "presentation_observed_v1/verification_admitted_v2.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "78ec72eccfe9f8d9e05b90fcbf4fd162630eb2b5435579a62a750cb7cf0833a9",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/verification_admitted_v2.json"
+    },
+    {
+      "bytes": 535,
+      "destination": "presentation_observed_v1/verification_editorial_v3.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "560d7f079261a2692fb167fd6a0d5bf5064d2ec988a7220911e6af50b29cacca",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/verification_editorial_v3.json"
+    },
+    {
+      "bytes": 1064,
+      "destination": "presentation_observed_v1/verification_editorial_v4.json",
+      "role": "reviewed_presentation_or_preserved_candidate",
+      "sha256": "8198d4912229742ff5f40daaaf5159e7ef5c3101fa0581e81c630ebf680d5629",
+      "source": "work/goop3d_completion_20261007/presentation_observed_v1/verification_editorial_v4.json"
+    },
+    {
+      "bytes": 9866,
+      "destination": "publication_tools/copy_verified.py",
+      "role": "publication_tool_or_synthetic_test",
+      "sha256": "9c0bf98b0a35aa582830e4c5de57da9b0b28d89ea719dce6383357940c57c250",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/copy_verified.py"
+    },
+    {
+      "bytes": 19606,
+      "destination": "publication_tools/prepare_plan.py",
+      "role": "publication_tool_or_synthetic_test",
+      "sha256": "c53d4d149b724c84f4533f5f2f96a1407bc47d16941448d9d754727f1a010ff1",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/prepare_plan.py"
+    },
+    {
+      "bytes": 1196,
+      "destination": "publication_tools/synthetic_tests.log",
+      "role": "publication_tool_or_synthetic_test",
+      "sha256": "f8216cdc1088820e2d0c3f71f58536b149b014712f5c81110789d7c2295d1911",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/synthetic_tests.log"
+    },
+    {
+      "bytes": 6785,
+      "destination": "publication_tools/test_copy_verified.py",
+      "role": "publication_tool_or_synthetic_test",
+      "sha256": "92ac0eb080dfadbaf1f2f5f5b1755d077f4ee7baf2843ab03d67e8a2c12c4b03",
+      "source": "work/goop3d_completion_20261007/publication_plan_v1/test_copy_verified.py"
+    },
+    {
+      "bytes": 548,
+      "destination": "review_v1/autonomous_analysis_collector_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "237edd8a55eb2d76f249a657c78cae28f3cc673407372750c2403384213ebc56",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_analysis_collector_test_tools.json"
+    },
+    {
+      "bytes": 1351,
+      "destination": "review_v1/autonomous_analysis_metadata_path_addendum.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "a72f8cc02eb4f17947720052a369af39ac1b65e7381a5e2cf2ff20fa267e2345",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_analysis_metadata_path_addendum.json"
+    },
+    {
+      "bytes": 3216,
+      "destination": "review_v1/autonomous_analysis_source_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "54523bfe2f8d1b39faebf3614ecd989b7a9f9f355e621820a6c89d040414011b",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_analysis_source_review.json"
+    },
+    {
+      "bytes": 1785,
+      "destination": "review_v1/autonomous_analysis_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "18c360ebdba068182f31c86871e419a9905f316c49e0094f06ec5dcf12bb2879",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_analysis_test_tools.json"
+    },
+    {
+      "bytes": 2658,
+      "destination": "review_v1/autonomous_dispatch_initial_fresh_only_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "03b4d2893e67cffea65420cdd41a8b19c33191d65d5019b6d5a12256f2cbaa1a",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_dispatch_initial_fresh_only_review.json"
+    },
+    {
+      "bytes": 2658,
+      "destination": "review_v1/autonomous_dispatch_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "aeba78957d5c85b1087c59ac393e4496669ef18a2087d3905d3402e1dec2168c",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_dispatch_review.json"
+    },
+    {
+      "bytes": 1734,
+      "destination": "review_v1/autonomous_final_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "93bf97cc15889c72c843790dee29468a5962ab8b3b8baf0ee0a7a5d52c17fd58",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_final_test_tools.json"
+    },
+    {
+      "bytes": 561,
+      "destination": "review_v1/autonomous_plan_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "c388dc00001004e0fa2a9aa17027c7904c35e30cba66c951c5a7580754db6d03",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_plan_review.json"
+    },
+    {
+      "bytes": 1575,
+      "destination": "review_v1/autonomous_resume_initial_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "73594560e9609a433c89bd7a9d5b642bc7d83cfcfa17a4b747e0cd40dd0f3e23",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_resume_initial_test_tools.json"
+    },
+    {
+      "bytes": 3079,
+      "destination": "review_v1/autonomous_source_resume_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "33ce20697bf4dd23fac82d0e7eefb941fde099af62aa61ef3c437db75e1e8cac",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_source_resume_review.json"
+    },
+    {
+      "bytes": 12091,
+      "destination": "review_v1/autonomous_startup_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "bbc25d5081cab1c0b1fdcfeeec7e7bef5a32418d9407f8dd79f458765826e8d9",
+      "source": "work/goop3d_completion_20261007/review_v1/autonomous_startup_review.json"
+    },
+    {
+      "bytes": 4447,
+      "destination": "review_v1/check_autonomous_dispatch.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "1360b444c99b40d3c55646a572f80f846ca2c8f5b3a406868bab7b979b4de0ca",
+      "source": "work/goop3d_completion_20261007/review_v1/check_autonomous_dispatch.py"
+    },
+    {
+      "bytes": 7602,
+      "destination": "review_v1/diagnose_observed_scalar_failure.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "18aa223e0b41c08bc652ce5a287cdd35d21b054d6bcc642f757f8b4d31ed194b",
+      "source": "work/goop3d_completion_20261007/review_v1/diagnose_observed_scalar_failure.py"
+    },
+    {
+      "bytes": 5328,
+      "destination": "review_v1/early_source_advice.md",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "d3aa3e48c3dafba014e6efb4ff429c45cf314c9e6700572d2e840662904e7a9a",
+      "source": "work/goop3d_completion_20261007/review_v1/early_source_advice.md"
+    },
+    {
+      "bytes": 413,
+      "destination": "review_v1/initial_plan_review_expectation_error.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "6c0836a703cd3849f05c543858ec450bc194bdc55dbe009db7c49d2e99b65727",
+      "source": "work/goop3d_completion_20261007/review_v1/initial_plan_review_expectation_error.json"
+    },
+    {
+      "bytes": 315,
+      "destination": "review_v1/metadata_path_review_initial_expectation_error.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "c7b45e1acf82fd65fc7532402ff3afef2553598a3a6c29ee4b06880ffccaeb80",
+      "source": "work/goop3d_completion_20261007/review_v1/metadata_path_review_initial_expectation_error.json"
+    },
+    {
+      "bytes": 338917,
+      "destination": "review_v1/observed_arithmetic_diagnosis_v1/diagnosis.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "02685d533fff4f3e43da3eb7354003b315bf5f376fbcb5971f84b40993821375",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_arithmetic_diagnosis_v1/diagnosis.json"
+    },
+    {
+      "bytes": 4927,
+      "destination": "review_v1/observed_arithmetic_diagnosis_v1/original_diagnostic_tool.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "bf56af5fee02adc07574ad75618b937bbf902d9c9de90820fbf7bc9af9e5875c",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_arithmetic_diagnosis_v1/original_diagnostic_tool.json"
+    },
+    {
+      "bytes": 429,
+      "destination": "review_v1/observed_editorial_v3_original_tool.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "6cd071352450135ff4f01f8b9cd9601cfc1972ccf04f83078e683167ccf7dd4f",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_editorial_v3_original_tool.json"
+    },
+    {
+      "bytes": 3786,
+      "destination": "review_v1/observed_editorial_v3_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "b928c27812f84ee1b2976fa26968e730389313784e05ce471a2c7ee2145dff5b",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_editorial_v3_review.json"
+    },
+    {
+      "bytes": 1683,
+      "destination": "review_v1/observed_final_products_initial_path_expectation_error.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "0664fe9dc2d881d2ffdc7559b4482c0d027b40536cbb3283e1854e5c1c73bd3c",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_final_products_initial_path_expectation_error.json"
+    },
+    {
+      "bytes": 480,
+      "destination": "review_v1/observed_final_products_v2_original_review_tool.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "d749bd51f3de6b2ac9fca7f671232555e4222a9ec5c618f0fc9009b4b26a7196",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_final_products_v2_original_review_tool.json"
+    },
+    {
+      "bytes": 18917,
+      "destination": "review_v1/observed_final_products_v2_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "107e11a40f174f069bf73016e21f8dfdffae2c88e2d74212c99e806421fb3fd5",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_final_products_v2_review.json"
+    },
+    {
+      "bytes": 2187,
+      "destination": "review_v1/observed_finalizer_v2_independent_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "052dfae5633b7ad7237582e8ec7b2ae484761331706c2f4c788b3e62b7457107",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_finalizer_v2_independent_tools.json"
+    },
+    {
+      "bytes": 8988,
+      "destination": "review_v1/observed_finalizer_v2_source_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "7dcf2d63d074a6e532daa60a951ee6579bc56564e5ef3d5e8081c5497c49acc4",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_finalizer_v2_source_review.json"
+    },
+    {
+      "bytes": 1677,
+      "destination": "review_v1/observed_independent_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "8666fbc37a225e762a048db5e2b4742de832be20c883ab217ceef484da561d56",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_independent_test_tools.json"
+    },
+    {
+      "bytes": 1738,
+      "destination": "review_v1/observed_presentation_v2_original_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "93fc19594bbd775ff790a6198136ea3e1e7352d80c93acba17a610d899764981",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_presentation_v2_original_tools.json"
+    },
+    {
+      "bytes": 1622,
+      "destination": "review_v1/observed_presentation_v2_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "ec028519d40603728e5a681b09abaf48afc667a0d30e269b22b33e64acb17832",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_presentation_v2_review.json"
+    },
+    {
+      "bytes": 2490,
+      "destination": "review_v1/observed_source_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "f8c99c3bd0c28cfb2b6b565651e9a7a4136db6980518733db9585cbd64ccb6ef",
+      "source": "work/goop3d_completion_20261007/review_v1/observed_source_review.json"
+    },
+    {
+      "bytes": 5895,
+      "destination": "review_v1/review_autonomous_plan.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "19135e7da0b5e52745a54402652fa25291f8c1badc05b4d6bac9355ec937d05c",
+      "source": "work/goop3d_completion_20261007/review_v1/review_autonomous_plan.py"
+    },
+    {
+      "bytes": 5895,
+      "destination": "review_v1/review_autonomous_plan_initial_order_expectation.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "254ec81ee53d2acebcc675c4ea4d802ee559daf8663eeab990b2f15eed9e7450",
+      "source": "work/goop3d_completion_20261007/review_v1/review_autonomous_plan_initial_order_expectation.py"
+    },
+    {
+      "bytes": 7569,
+      "destination": "review_v1/review_gpu_startup.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "a00b07ded0d992a3c4a8fd979e8e5ac9e961dba2f9cb5ec7129b0b9430e3a7b7",
+      "source": "work/goop3d_completion_20261007/review_v1/review_gpu_startup.py"
+    },
+    {
+      "bytes": 6700,
+      "destination": "review_v1/review_observed_editorial_v3.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "23734aa47a198b9df73f3df72a6b6e78191272a2f8e3b5013fc10023eaf930b3",
+      "source": "work/goop3d_completion_20261007/review_v1/review_observed_editorial_v3.py"
+    },
+    {
+      "bytes": 20391,
+      "destination": "review_v1/review_observed_final_products_initial_path_expectation.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "305e29469a317185e204937cff8effe135876f206f628724e0fbd902c3eb70d6",
+      "source": "work/goop3d_completion_20261007/review_v1/review_observed_final_products_initial_path_expectation.py"
+    },
+    {
+      "bytes": 20699,
+      "destination": "review_v1/review_observed_final_products_v2.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "20d93a2d8332dc7079a59790e3ee87fcc9ba553b4642877747fdca1f4bccee1c",
+      "source": "work/goop3d_completion_20261007/review_v1/review_observed_final_products_v2.py"
+    },
+    {
+      "bytes": 7450,
+      "destination": "review_v1/review_observed_finalizer_v2.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "bfc722f5c6abcb8dc491c6c2909b36c14f6f4481f9ce007b99794ed432d935d6",
+      "source": "work/goop3d_completion_20261007/review_v1/review_observed_finalizer_v2.py"
+    },
+    {
+      "bytes": 9151,
+      "destination": "review_v1/review_observed_presentation_v2.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "f87817ab5588b0d1cccf4adf131bca92c1517be1ae00d1c595c2c787480de93c",
+      "source": "work/goop3d_completion_20261007/review_v1/review_observed_presentation_v2.py"
+    },
+    {
+      "bytes": 3252,
+      "destination": "review_v1/test_autonomous_analysis_independent.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "77c4b8729f84afd72a0f0342374d47e7b880eea2d7efa138d62c203d47bb7c08",
+      "source": "work/goop3d_completion_20261007/review_v1/test_autonomous_analysis_independent.py"
+    },
+    {
+      "bytes": 8542,
+      "destination": "review_v1/test_autonomous_resume.py",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "45d8b123f26e1847f3ba77666f70b3913d54e02792c5e06fbbd1af389ae998a7",
+      "source": "work/goop3d_completion_20261007/review_v1/test_autonomous_resume.py"
+    },
+    {
+      "bytes": 1750,
+      "destination": "review_v1/transfer_independent_test_tools.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "ba01c65abc92195f6d7577c02c9c1b7f9e8801fdbe6dfb04af8bf0de850b5dac",
+      "source": "work/goop3d_completion_20261007/review_v1/transfer_independent_test_tools.json"
+    },
+    {
+      "bytes": 2116,
+      "destination": "review_v1/transfer_source_review.json",
+      "role": "independent_review_or_preserved_review_history",
+      "sha256": "5c4393d6d907b474f30a0557b10f46452aa5c4edc9dd957c4aa5e869105f97fd",
+      "source": "work/goop3d_completion_20261007/review_v1/transfer_source_review.json"
+    },
+    {
+      "bytes": 3697,
+      "destination": "root/TRANSFER_COMMITTED.md",
+      "role": "historical_operation_snapshot",
+      "sha256": "514fab9e4b9fa85bf9380b691491c4b4ff505d9bb78d188cde4771ba8b42c320",
+      "source": "work/goop3d_completion_20261007/root/TRANSFER_COMMITTED.md"
+    },
+    {
+      "bytes": 15733,
+      "destination": "root/audit_status_022558.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "1c4de722cc367ffb419b2727c2b7e4afa2d5a693ca7119634baeb75de1e85b8e",
+      "source": "work/goop3d_completion_20261007/root/audit_status_022558.json"
+    },
+    {
+      "bytes": 2937,
+      "destination": "root/autonomous_audit_snapshot001.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "a177ec1966606109b31648d67667b04a837ec758ad97057b11cbdb895c6adbd5",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001.json"
+    },
+    {
+      "bytes": 812,
+      "destination": "root/autonomous_audit_snapshot001.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "69f3b15de9fc7e8a14bbbfa0893c51ad04db92d963f4650e822ef7039b8c0bcc",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001.launch.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/owner.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/owner.stderr"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/owner.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/owner.stdout"
+    },
+    {
+      "bytes": 2937,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/spec.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "826fe85844982eb225f8a8a13bd4d98963346598d09b32d027f40bfa41198810",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/spec.json"
+    },
+    {
+      "bytes": 388,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/status.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "4e532b79a9aa0f4e1d5abee4100052e6dfa33e3efd1783a86f693e1c2eae22c9",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/status.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/worker.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/worker.stderr"
+    },
+    {
+      "bytes": 50891,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/worker.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "d9ec9939f05ffd5849d443ac13bf952ff70efafca4d62866dd2ec18becf9181d",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/jobs/autonomous_audit_snapshot001/worker.stdout"
+    },
+    {
+      "bytes": 66939,
+      "destination": "root/autonomous_audit_snapshot001_collection/files/transfer_manifest.json",
+      "role": "actual_collection_manifest",
+      "sha256": "0d752160650f5c4afaf654ea494df5fe3404acc10431de803c712ec645d377eb",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/files/transfer_manifest.json"
+    },
+    {
+      "bytes": 405,
+      "destination": "root/autonomous_audit_snapshot001_collection/original_transfer.json",
+      "role": "actual_collection_receipt",
+      "sha256": "6d956bd5ab33236e33503df9acef9f338d02914529e3f7ec14796ba5f675621b",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/original_transfer.json"
+    },
+    {
+      "bytes": 213,
+      "destination": "root/autonomous_audit_snapshot001_collection/verified.json",
+      "role": "actual_collection_receipt",
+      "sha256": "833081eed1f95706bb678fafe1c72efe6fe9e95228dbf19883dc108c62ea08d7",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot001_collection/verified.json"
+    },
+    {
+      "bytes": 2953,
+      "destination": "root/autonomous_audit_snapshot002.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "e0d8488bf21c2f2aad145eb5d105408b3a4eff371be20a13d28c6a175b5d3751",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot002.json"
+    },
+    {
+      "bytes": 812,
+      "destination": "root/autonomous_audit_snapshot002.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "9f43086810da537827ec219a84a55ddae7d04e6962306925a568d55eaca1f4dd",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_snapshot002.launch.json"
+    },
+    {
+      "bytes": 7462,
+      "destination": "root/autonomous_audit_status_022959.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "33f38c0e2d241bbad0086c5b79779b6b4e2ee4424aaca2c614c7ac53dc0a4675",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_status_022959.json"
+    },
+    {
+      "bytes": 7459,
+      "destination": "root/autonomous_audit_status_023146.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "cceaccab7b26551a15b59871bf61032f830536294861a2c0542086852ee009fb",
+      "source": "work/goop3d_completion_20261007/root/autonomous_audit_status_023146.json"
+    },
+    {
+      "bytes": 1173,
+      "destination": "root/autonomous_worker00_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "faabd1e8c4a31ff2ceea193e1abf87c0ad4f45abae3b482ac5eb0f1c6beaf74d",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker00_attempt1.json"
+    },
+    {
+      "bytes": 786,
+      "destination": "root/autonomous_worker00_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "369504bc8fbbebcfafc55002d248dbe97a05a811e188783487810ac7c1bde5eb",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker00_attempt1.launch.json"
+    },
+    {
+      "bytes": 1173,
+      "destination": "root/autonomous_worker01_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "a6c172ab930a1b36756d073f4928756a47ceccfb391a35a2d5c5fc8b7a1d4299",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker01_attempt1.json"
+    },
+    {
+      "bytes": 786,
+      "destination": "root/autonomous_worker01_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "5c8868d4104e309a7309d00e860e33a24966cbf4afa227be1b673086b1485f46",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker01_attempt1.launch.json"
+    },
+    {
+      "bytes": 1173,
+      "destination": "root/autonomous_worker02_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "3f40f6bdf42c4707aeb6091fb84f1042a72192d03a4d005f3cef91e017063ccb",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker02_attempt1.json"
+    },
+    {
+      "bytes": 786,
+      "destination": "root/autonomous_worker02_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "921837c1bec8f97e21c0fb87241aaeec96b4a421cca7adb9950a3dd9621bc7f7",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker02_attempt1.launch.json"
+    },
+    {
+      "bytes": 1173,
+      "destination": "root/autonomous_worker03_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "a024935cd2e087c3f5cc111c7fbcea3a6782eca63c8184d1937f5b92acaf2577",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker03_attempt1.json"
+    },
+    {
+      "bytes": 786,
+      "destination": "root/autonomous_worker03_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "f47655d1e670c4ec19f1ae487d1b45c7be6eb5cb41276d2d39348db956e739b8",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker03_attempt1.launch.json"
+    },
+    {
+      "bytes": 1216,
+      "destination": "root/autonomous_worker04_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "67af96b82534c0e6daf166d9a5ef9f2097b0845219ce4ca331543ac4ef1bc647",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker04_attempt1.json"
+    },
+    {
+      "bytes": 788,
+      "destination": "root/autonomous_worker04_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "48dead28899f42274969cc29fdba455fa57185721e1fa5f468d949b64e896932",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker04_attempt1.launch.json"
+    },
+    {
+      "bytes": 1216,
+      "destination": "root/autonomous_worker05_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "a090ad75f50b11f625f221cd43b97941306191b4f724bd5f080312fa4515c2a8",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker05_attempt1.json"
+    },
+    {
+      "bytes": 788,
+      "destination": "root/autonomous_worker05_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7c3c4a160c646d468118452492373101c41379c53c6bac7d2ee800bfba452d97",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker05_attempt1.launch.json"
+    },
+    {
+      "bytes": 1216,
+      "destination": "root/autonomous_worker06_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "94b8dcef5d5170a94f5dcff2adb14153279c5bad5f9d6649c5a3204a78f5f39b",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker06_attempt1.json"
+    },
+    {
+      "bytes": 788,
+      "destination": "root/autonomous_worker06_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "773c1e3632567b65280838ffa9837bc8b703db746e41aa962e51a4a35d0058a9",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker06_attempt1.launch.json"
+    },
+    {
+      "bytes": 1216,
+      "destination": "root/autonomous_worker07_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "de5fb90bebc9963da3285c3288a2879393e39e373b9b50d143c4045f817c628b",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker07_attempt1.json"
+    },
+    {
+      "bytes": 788,
+      "destination": "root/autonomous_worker07_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "6ef274a31f3aae913f070f2980b6d7118fb3e23b540a76fcc1cb014765bd4a6a",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker07_attempt1.launch.json"
+    },
+    {
+      "bytes": 1225,
+      "destination": "root/autonomous_worker08_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "8d7efdf7f679fa89dfddf8f1bc5db0a618851b76c5e6c5d62c85917bc935f4de",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker08_attempt1.json"
+    },
+    {
+      "bytes": 793,
+      "destination": "root/autonomous_worker08_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "2d64f261c1ab126a18266ca1aa970726a8d85b8414e2366c8b9cbbfd6a314b6a",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker08_attempt1.launch.json"
+    },
+    {
+      "bytes": 1225,
+      "destination": "root/autonomous_worker09_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "5faa3da507f7cd37ed9a2370e9d2ed1027f18a2e5c14df86efa07fe6784a6c73",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker09_attempt1.json"
+    },
+    {
+      "bytes": 793,
+      "destination": "root/autonomous_worker09_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7f312166bfdc95a2825a3d49bfbebb73cefcb9273dca0cf5760bdc4963c8da7a",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker09_attempt1.launch.json"
+    },
+    {
+      "bytes": 1226,
+      "destination": "root/autonomous_worker10_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7c05de5adc27e7a684878a55a7cc253c72f0c8eda0173ccc2ec25c68816f0e5b",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker10_attempt1.json"
+    },
+    {
+      "bytes": 793,
+      "destination": "root/autonomous_worker10_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7d3ac7e09a38e5499a090d14b6ace4fcf67fe483dd2b42b5d226bf95a36c48a7",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker10_attempt1.launch.json"
+    },
+    {
+      "bytes": 1226,
+      "destination": "root/autonomous_worker11_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "2f75ab39c2e5802b98d2448e2e5e991d99b8448499ffc5ddf087bb3ea1195c83",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker11_attempt1.json"
+    },
+    {
+      "bytes": 793,
+      "destination": "root/autonomous_worker11_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "52a1e4788926674733b1518d767c7fe6814c4e53d5baef0e4a75775974482261",
+      "source": "work/goop3d_completion_20261007/root/autonomous_worker11_attempt1.launch.json"
+    },
+    {
+      "bytes": 4491,
+      "destination": "root/collect_completed.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "e49045a420622f33261fb913d12b46ad5ddc4b45428e611699decbb518b03a06",
+      "source": "work/goop3d_completion_20261007/root/collect_completed.py"
+    },
+    {
+      "bytes": 22661,
+      "destination": "root/gpu_startup_host0.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "6b17dedbd3f4194ec3da779951bd7b3e7fca86a6e38a81951018e68dd8fcc5bc",
+      "source": "work/goop3d_completion_20261007/root/gpu_startup_host0.json"
+    },
+    {
+      "bytes": 22977,
+      "destination": "root/gpu_startup_host1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "881f97d24000999cfbba6df46759f22f5a9eb9221741d1cb813c1d2bec66fd94",
+      "source": "work/goop3d_completion_20261007/root/gpu_startup_host1.json"
+    },
+    {
+      "bytes": 23005,
+      "destination": "root/gpu_startup_host2.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "4ab5e36bb686ecf2d04d21b058a19d01d50092e5aeaf3c150ce268ecf8de4e94",
+      "source": "work/goop3d_completion_20261007/root/gpu_startup_host2.json"
+    },
+    {
+      "bytes": 2522,
+      "destination": "root/initial_host_observations.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "c0053cad566048a38ad840094da1db201ca007aee179bfd2069e139f2e11f70d",
+      "source": "work/goop3d_completion_20261007/root/initial_host_observations.json"
+    },
+    {
+      "bytes": 1695,
+      "destination": "root/job_owner.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "aac8c36139996df6705cd3924822f9c56fdf6e694df6a8faaa81dd792142304b",
+      "source": "work/goop3d_completion_20261007/root/job_owner.py"
+    },
+    {
+      "bytes": 3346,
+      "destination": "root/launch_remote.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "b34878316aa5cc8b22a97a688269598ab9e996a0282d498cce14e6b97bc109ef",
+      "source": "work/goop3d_completion_20261007/root/launch_remote.py"
+    },
+    {
+      "bytes": 3216,
+      "destination": "root/launch_remote_observed_attempt1_preserved.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "8c72d439bba4bbcccc2a2ff04c022138ce2d6a31ac2ede485290e928ab444909",
+      "source": "work/goop3d_completion_20261007/root/launch_remote_observed_attempt1_preserved.py"
+    },
+    {
+      "bytes": 3288,
+      "destination": "root/observe_remote.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "305b99bf8cd234941593d8b90f4d7e934e3a3e88425cf9fb632ef04b7951ac0b",
+      "source": "work/goop3d_completion_20261007/root/observe_remote.py"
+    },
+    {
+      "bytes": 1098,
+      "destination": "root/observed_16cpu_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "b1e4c8ad66b10133271f0fdde62836aab66eceb75ac000b2448bcc9697de3f1c",
+      "source": "work/goop3d_completion_20261007/root/observed_16cpu_attempt1.json"
+    },
+    {
+      "bytes": 897,
+      "destination": "root/observed_16cpu_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "1f01b5399fdd08ac02902fd9b5eb90db923a9d99504fa081095325cf7769c0d1",
+      "source": "work/goop3d_completion_20261007/root/observed_16cpu_attempt1.launch.json"
+    },
+    {
+      "bytes": 1414,
+      "destination": "root/observed_cache_finalize_v2_attempt1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "5eea47f0d06afb60f0168f5eced987ba48fb59cb9ad40ceb6234bf74ed7012e8",
+      "source": "work/goop3d_completion_20261007/root/observed_cache_finalize_v2_attempt1.json"
+    },
+    {
+      "bytes": 957,
+      "destination": "root/observed_cache_finalize_v2_attempt1.launch.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "fd319aa85b0e3fb392824c571aa68a98acb1e7d5dea2c55c009be9be2fbfc808",
+      "source": "work/goop3d_completion_20261007/root/observed_cache_finalize_v2_attempt1.launch.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/owner.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/owner.stderr"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/owner.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/owner.stdout"
+    },
+    {
+      "bytes": 1098,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/spec.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "ba89e82240c82acb0d24ab6c9cd3cf36bfbcc111033330b06efa4204c1bcd40d",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/spec.json"
+    },
+    {
+      "bytes": 386,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/status.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "6d73c6a12581c7c16b566d47985d2cf875a4e2ee0e5118fff0c1dca52317bf0e",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/status.json"
+    },
+    {
+      "bytes": 2372,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/worker.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "f964f896d5ddf8bfde696d2daa9de17da795560ffdce242f90e1a18787eb1de3",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/worker.stderr"
+    },
+    {
+      "bytes": 466226,
+      "destination": "root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/worker.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "f9f2e663d3c54f8a19469b187834653ae67c73e8d8d839e349f8c4196e2ea44d",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/jobs/observed_16cpu_attempt1/worker.stdout"
+    },
+    {
+      "bytes": 492393,
+      "destination": "root/observed_failure_collection_v1/files/transfer_manifest.json",
+      "role": "actual_collection_manifest",
+      "sha256": "138fcc907b68ef20516aaddb768cb1aded5e6fc77e12874af2f9cb737a10561a",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/files/transfer_manifest.json"
+    },
+    {
+      "bytes": 399,
+      "destination": "root/observed_failure_collection_v1/original_transfer.json",
+      "role": "actual_collection_receipt",
+      "sha256": "0701a28ee4334e269ed95b78ec3952210e40250331fa23471e04c51562294bf8",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/original_transfer.json"
+    },
+    {
+      "bytes": 213,
+      "destination": "root/observed_failure_collection_v1/verified.json",
+      "role": "actual_collection_receipt",
+      "sha256": "23f79735597ad0185e3051172fe398b143554e6f8199cecc90d8a5ce7433bc9e",
+      "source": "work/goop3d_completion_20261007/root/observed_failure_collection_v1/verified.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/owner.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/owner.stderr"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/owner.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/owner.stdout"
+    },
+    {
+      "bytes": 1414,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/spec.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "2bdc7cf41caeb305d9cedd5685bd5cb371911b547db9932ea65c291f0dc02d7d",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/spec.json"
+    },
+    {
+      "bytes": 388,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/status.json",
+      "role": "actual_job_completion_evidence",
+      "sha256": "3d0c4c942be0c84fb63ccecf6ae55e58f18ae9049e9f35a359e2fec52a2a9e92",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/status.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/worker.stderr",
+      "role": "actual_job_completion_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/worker.stderr"
+    },
+    {
+      "bytes": 805,
+      "destination": "root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/worker.stdout",
+      "role": "actual_job_completion_evidence",
+      "sha256": "84d838a764e7118d084b90f29f9fd0bea591c8316846873bd6dc8ffe51e1111c",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/jobs/observed_cache_finalize_v2_attempt1/worker.stdout"
+    },
+    {
+      "bytes": 2537,
+      "destination": "root/observed_finalized_v2_collection/files/transfer_manifest.json",
+      "role": "actual_collection_manifest",
+      "sha256": "a2b9d1c9b5ee09834acc2859032aad8ad8bbe9c43e7c83e38a709dd4e05efcaf",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/files/transfer_manifest.json"
+    },
+    {
+      "bytes": 413,
+      "destination": "root/observed_finalized_v2_collection/original_transfer.json",
+      "role": "actual_collection_receipt",
+      "sha256": "215daff3cd3dcbcac7de361304689320fcc72ea871d96ff347a79fc540ca1140",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/original_transfer.json"
+    },
+    {
+      "bytes": 211,
+      "destination": "root/observed_finalized_v2_collection/verified.json",
+      "role": "actual_collection_receipt",
+      "sha256": "95778f76a289ea4ce3e06032318a693b13d09b4d914f6f11f3e6d6bab6101fda",
+      "source": "work/goop3d_completion_20261007/root/observed_finalized_v2_collection/verified.json"
+    },
+    {
+      "bytes": 537908,
+      "destination": "root/observed_finalizer_status_023531.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "328103226fb4054047875b76ebdbcc0011e263e06aae27ebd650631c3773e045",
+      "source": "work/goop3d_completion_20261007/root/observed_finalizer_status_023531.json"
+    },
+    {
+      "bytes": 1177,
+      "destination": "root/observed_numerical_admission.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "6de51c22c327934c17c62a1e07513cdd41859ac25e4f98cac36d42dd60cda49c",
+      "source": "work/goop3d_completion_20261007/root/observed_numerical_admission.json"
+    },
+    {
+      "bytes": 6482,
+      "destination": "root/observed_progress_0224.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "eea3c500cddfb4b10f2fca325c6901d04163853f1178e1e7c1587087abc18d88",
+      "source": "work/goop3d_completion_20261007/root/observed_progress_0224.json"
+    },
+    {
+      "bytes": 6479,
+      "destination": "root/observed_progress_022405.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "432717b0fa6fb63e06c97b7f676a595961670613eeb517fa6e2c76eede31d902",
+      "source": "work/goop3d_completion_20261007/root/observed_progress_022405.json"
+    },
+    {
+      "bytes": 6490,
+      "destination": "root/observed_progress_022526.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "ccce43bb1243125e030c3441588376db17d4cda30a00ac00737066c8a1ab5c7b",
+      "source": "work/goop3d_completion_20261007/root/observed_progress_022526.json"
+    },
+    {
+      "bytes": 8119,
+      "destination": "root/observed_progress_022654.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "ba9a3a35529fc05ae5f92fefabe126ca24da76f478124f4bf4a4d08634646406",
+      "source": "work/goop3d_completion_20261007/root/observed_progress_022654.json"
+    },
+    {
+      "bytes": 6025,
+      "destination": "root/observed_startup.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7fe3ae6a90f2525422c3e8f4688cee78a4fb6d41d9e83b8e67808b77f2b102a0",
+      "source": "work/goop3d_completion_20261007/root/observed_startup.json"
+    },
+    {
+      "bytes": 6005,
+      "destination": "root/original_launch_tools.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7b3514511451838a0842a4f750b3f2a91bec7992be4bda0267be300b548f4fd5",
+      "source": "work/goop3d_completion_20261007/root/original_launch_tools.json"
+    },
+    {
+      "bytes": 28463,
+      "destination": "root/progress_0221_host0.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "8460406da5d3e127934e19bb51cd11b4c60d70f38e11cfedec3ada569bf3bc81",
+      "source": "work/goop3d_completion_20261007/root/progress_0221_host0.json"
+    },
+    {
+      "bytes": 23130,
+      "destination": "root/progress_0221_host1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "03b4eb8c92de5939ad08f8bbbf5c00f7f609f071f6109758840509097542cfe0",
+      "source": "work/goop3d_completion_20261007/root/progress_0221_host1.json"
+    },
+    {
+      "bytes": 23104,
+      "destination": "root/progress_0221_host2.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "76552f219ac2e50acd8c761059d4d31d59b2c2abf15f6561b7d7fc447ce79bd0",
+      "source": "work/goop3d_completion_20261007/root/progress_0221_host2.json"
+    },
+    {
+      "bytes": 28670,
+      "destination": "root/progress_0222_host0.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "0bc6c3bf57e7a965a278bee72804941398b5964333d95e51769192f5db644b69",
+      "source": "work/goop3d_completion_20261007/root/progress_0222_host0.json"
+    },
+    {
+      "bytes": 23361,
+      "destination": "root/progress_0222_host1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "0602a86ec4299f73ec0fd02912671c19c48876bcb152fc44ba4f906721579e1e",
+      "source": "work/goop3d_completion_20261007/root/progress_0222_host1.json"
+    },
+    {
+      "bytes": 23179,
+      "destination": "root/progress_0222_host2.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "7a33207bfbbcbce8d08c2bae0bcd248764d11b05865143d7e5fcaad8ba8bf4b3",
+      "source": "work/goop3d_completion_20261007/root/progress_0222_host2.json"
+    },
+    {
+      "bytes": 30771,
+      "destination": "root/progress_0229_host0.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "e8d349c8c4608fa1d4e2eab3d60ee1c77de75ca3f16207188448c8ad45eef438",
+      "source": "work/goop3d_completion_20261007/root/progress_0229_host0.json"
+    },
+    {
+      "bytes": 24013,
+      "destination": "root/progress_0229_host1.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "b8112f904b857c1ab3cced6f3f3884efe949c0c55864982b9741f28e112095a7",
+      "source": "work/goop3d_completion_20261007/root/progress_0229_host1.json"
+    },
+    {
+      "bytes": 23499,
+      "destination": "root/progress_0229_host2.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "c2d617320876cd193b93c2363375d3541be59052970dee506f9e85e7a9ad8b85",
+      "source": "work/goop3d_completion_20261007/root/progress_0229_host2.json"
+    },
+    {
+      "bytes": 1907,
+      "destination": "root/progress_all.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "f0d73ea91e134317c139c78523625b0dac2942e126edc2535925cb713828fbad",
+      "source": "work/goop3d_completion_20261007/root/progress_all.py"
+    },
+    {
+      "bytes": 2611,
+      "destination": "root/runtime_metadata_quoting_failure.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "bebe8760556b2e54c04c0ddd39b0fd5a7d9da48a01d83845111397c1d8c16d53",
+      "source": "work/goop3d_completion_20261007/root/runtime_metadata_quoting_failure.json"
+    },
+    {
+      "bytes": 5221,
+      "destination": "root/stage_runtime.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "52b91d354e5b16c9779c8cf40ff1933ad55160c3610aa4eec2bd82d52ac31b0a",
+      "source": "work/goop3d_completion_20261007/root/stage_runtime.py"
+    },
+    {
+      "bytes": 5901,
+      "destination": "root/startup_verified.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "8279c91efa9a1c371f119a8c3498d11bf3560b982b74091ceae68e8c1b776515",
+      "source": "work/goop3d_completion_20261007/root/startup_verified.json"
+    },
+    {
+      "bytes": 4127,
+      "destination": "root/status_before_resumption/0_author_handoff_20261007.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "9dc7a4da68a172930d25247ba01f11a10f9e3b455e571147f2ba21a08b66477f",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/0_author_handoff_20261007.md"
+    },
+    {
+      "bytes": 4059,
+      "destination": "root/status_before_resumption/1_AUTHOR_HANDOFF.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "cb775efcc64a9feb050553928d1aa483b5104eca2e7e3d544b14ae68aa332d3d",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/1_AUTHOR_HANDOFF.md"
+    },
+    {
+      "bytes": 34858,
+      "destination": "root/status_before_resumption/2_README.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "cbafae802f151e38548d9118f69efec83ca6e7e82a6a76b93ecd1de5e884b244",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/2_README.md"
+    },
+    {
+      "bytes": 34938,
+      "destination": "root/status_before_resumption/3_README.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "378f8e41e20863b0e21c68531066a7537153f2b98b56309103b3ccde4e883460",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/3_README.md"
+    },
+    {
+      "bytes": 41471,
+      "destination": "root/status_before_resumption/4_research_findings.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "175c732c7f06611c016f625a57a1dd29bf4d7bb18bd79934d7f62fa5ba418e6c",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/4_research_findings.md"
+    },
+    {
+      "bytes": 52633,
+      "destination": "root/status_before_resumption/5_submission_checklist.md",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "836aba02950ece2254e51af15d262fa1becd084e273c55add52fdb27259b93f0",
+      "source": "work/goop3d_completion_20261007/root/status_before_resumption/5_submission_checklist.md"
+    },
+    {
+      "bytes": 12052,
+      "destination": "root/test_transfer_committed.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "d652776b62a7b410585c26d7915fa96da99b4f6e532d4b2e85016bfd570329fe",
+      "source": "work/goop3d_completion_20261007/root/test_transfer_committed.py"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_aquamarine-toad-75/destination.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/destination.stderr"
+    },
+    {
+      "bytes": 316,
+      "destination": "root/transfer_aquamarine-toad-75/destination.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "0a548a51eedf0d0b52c37492a074b51f4b872b647ae701040de5c69cecbe69e5",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/destination.stdout"
+    },
+    {
+      "bytes": 77364,
+      "destination": "root/transfer_aquamarine-toad-75/manifest.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "993d163899006c2689ce0b12544659609e88c7363648a857a96d753517bb5383",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/manifest.json"
+    },
+    {
+      "bytes": 166,
+      "destination": "root/transfer_aquamarine-toad-75/processes.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "48a9af82f1bdb567240b4f141fe9cfb2dc3f3f14a1ee05dd05577ba24f8166af",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/processes.json"
+    },
+    {
+      "bytes": 297,
+      "destination": "root/transfer_aquamarine-toad-75/result.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "10a81145f523852625b03c8504aafa634fa6c38b30288b4d032c9a24b565fc63",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/result.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_aquamarine-toad-75/source.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_aquamarine-toad-75/source.stderr"
+    },
+    {
+      "bytes": 24883,
+      "destination": "root/transfer_committed.py",
+      "role": "historical_operation_snapshot",
+      "sha256": "7cbd0816b221b7745c8bfe4541b579d260b28e7646f7c84d4b2a166f897fb6f1",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed.py"
+    },
+    {
+      "bytes": 763,
+      "destination": "root/transfer_committed_aqua_initial_0228/binding.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "c164baac7833d7cc520dac722536d5117e2a8c34ea1e10cb58e98188fdcec323",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/binding.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_aqua_initial_0228/destination.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/destination.stderr"
+    },
+    {
+      "bytes": 282,
+      "destination": "root/transfer_committed_aqua_initial_0228/destination.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "cc139032b44527ad1cf46af74839004957230dcc2ab68e368054c5bed8cae1a3",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/destination.stdout"
+    },
+    {
+      "bytes": 16,
+      "destination": "root/transfer_committed_aqua_initial_0228/destination_inventory.exit.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d24219f6de94b955cf36d25bd2aca88e2d35eef45b9317b7083f55ec8fe9653c",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/destination_inventory.exit.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_aqua_initial_0228/destination_inventory.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/destination_inventory.stderr"
+    },
+    {
+      "bytes": 489,
+      "destination": "root/transfer_committed_aqua_initial_0228/destination_inventory.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "9719c79679d8540e2a99059661cb29071ead6089ca3ac72bf1db2eea500999b6",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/destination_inventory.stdout"
+    },
+    {
+      "bytes": 2522,
+      "destination": "root/transfer_committed_aqua_initial_0228/initial_host_observations.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "c0053cad566048a38ad840094da1db201ca007aee179bfd2069e139f2e11f70d",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/initial_host_observations.json"
+    },
+    {
+      "bytes": 11111,
+      "destination": "root/transfer_committed_aqua_initial_0228/manifest.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d52dab6f3f3ac82762d5d463b5c4a8c9874435e56ecbf4c9811c82da96f72e05",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/manifest.json"
+    },
+    {
+      "bytes": 82,
+      "destination": "root/transfer_committed_aqua_initial_0228/processes.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "90a6f15a5c0715a3659c6bc6c9b0c93bcd0e712045ba61f12390fa8875709645",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/processes.json"
+    },
+    {
+      "bytes": 860,
+      "destination": "root/transfer_committed_aqua_initial_0228/request.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "9a4b0986ddf5856d9f4cc3d3cd186bf6d100c6149299992491f802108db331a3",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/request.json"
+    },
+    {
+      "bytes": 1342,
+      "destination": "root/transfer_committed_aqua_initial_0228/result.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "519187c26e27ca9a7bc127266077459f2d2aa163273597d4f9f389a23c3ae47c",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/result.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_aqua_initial_0228/source.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/source.stderr"
+    },
+    {
+      "bytes": 16,
+      "destination": "root/transfer_committed_aqua_initial_0228/source_inventory.exit.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d24219f6de94b955cf36d25bd2aca88e2d35eef45b9317b7083f55ec8fe9653c",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/source_inventory.exit.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_aqua_initial_0228/source_inventory.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/source_inventory.stderr"
+    },
+    {
+      "bytes": 12565,
+      "destination": "root/transfer_committed_aqua_initial_0228/source_inventory.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "68dadb6788916bd5b1df84c88ded45b4e6312cbbaf7ab809badca0341f2f42ee",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_aqua_initial_0228/source_inventory.stdout"
+    },
+    {
+      "bytes": 1605,
+      "destination": "root/transfer_committed_synthetic_tests.log",
+      "role": "historical_operation_snapshot",
+      "sha256": "8ff76c5f107d23f43b5f91ce9fe59146d22c3d7fc4185521594e8d6e39918709",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_synthetic_tests.log"
+    },
+    {
+      "bytes": 891,
+      "destination": "root/transfer_committed_verification.json",
+      "role": "historical_operation_snapshot",
+      "sha256": "ca9620804dbbe8373e974f83dee9d4fcd42939fb635ca43e1bb18ef3d8dedce2",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_verification.json"
+    },
+    {
+      "bytes": 754,
+      "destination": "root/transfer_committed_yellow_initial_0228/binding.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "95f69d8d9edb4dc02df11f9f43b6cca9d07ee4ae6a89fad889700fa23e335e6b",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/binding.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_yellow_initial_0228/destination.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/destination.stderr"
+    },
+    {
+      "bytes": 282,
+      "destination": "root/transfer_committed_yellow_initial_0228/destination.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "c2d0357afca40083637c1973742f8f411ed10fae4abc037a566d691f902a760f",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/destination.stdout"
+    },
+    {
+      "bytes": 16,
+      "destination": "root/transfer_committed_yellow_initial_0228/destination_inventory.exit.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d24219f6de94b955cf36d25bd2aca88e2d35eef45b9317b7083f55ec8fe9653c",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/destination_inventory.exit.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_yellow_initial_0228/destination_inventory.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/destination_inventory.stderr"
+    },
+    {
+      "bytes": 487,
+      "destination": "root/transfer_committed_yellow_initial_0228/destination_inventory.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d28bafa90b3d478abd23e6535ce9448e59bb8aede95b1af3d3d296b3699e4004",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/destination_inventory.stdout"
+    },
+    {
+      "bytes": 2522,
+      "destination": "root/transfer_committed_yellow_initial_0228/initial_host_observations.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "c0053cad566048a38ad840094da1db201ca007aee179bfd2069e139f2e11f70d",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/initial_host_observations.json"
+    },
+    {
+      "bytes": 19016,
+      "destination": "root/transfer_committed_yellow_initial_0228/manifest.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "5057c0f708dd42322446c683e8c3d18306a2c399a0f266bcec603978b92b9c25",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/manifest.json"
+    },
+    {
+      "bytes": 81,
+      "destination": "root/transfer_committed_yellow_initial_0228/processes.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "36aab8c945c0a18b97201427ac2a437d2e4237c48d3b898a7add0b9166b254c8",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/processes.json"
+    },
+    {
+      "bytes": 851,
+      "destination": "root/transfer_committed_yellow_initial_0228/request.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "0649999ccc33380044fac958435851a85e8ba9d9be4cd86418f3640847d0a627",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/request.json"
+    },
+    {
+      "bytes": 1332,
+      "destination": "root/transfer_committed_yellow_initial_0228/result.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e92e9bdd1889e1c10212a3ba74b1dbf497bccc1e2d91de899f8168da8c9b774e",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/result.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_yellow_initial_0228/source.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/source.stderr"
+    },
+    {
+      "bytes": 16,
+      "destination": "root/transfer_committed_yellow_initial_0228/source_inventory.exit.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "d24219f6de94b955cf36d25bd2aca88e2d35eef45b9317b7083f55ec8fe9653c",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/source_inventory.exit.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_committed_yellow_initial_0228/source_inventory.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/source_inventory.stderr"
+    },
+    {
+      "bytes": 22722,
+      "destination": "root/transfer_committed_yellow_initial_0228/source_inventory.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "a173e47b9b56787dca7cacc0ee3bb729b99a109089e8d783a1da881b483f6ef3",
+      "source": "work/goop3d_completion_20261007/root/transfer_committed_yellow_initial_0228/source_inventory.stdout"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_yellow-worm-77/destination.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/destination.stderr"
+    },
+    {
+      "bytes": 311,
+      "destination": "root/transfer_yellow-worm-77/destination.stdout",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "3ff8027dff811928e5019699472218f9204c3c9a50eb2017ee183aceb0a35221",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/destination.stdout"
+    },
+    {
+      "bytes": 77364,
+      "destination": "root/transfer_yellow-worm-77/manifest.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "993d163899006c2689ce0b12544659609e88c7363648a857a96d753517bb5383",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/manifest.json"
+    },
+    {
+      "bytes": 166,
+      "destination": "root/transfer_yellow-worm-77/processes.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "0d71ec9d7b68f185f4303a42b801e7e6a434f1d720e54ed45c7336813a185c9e",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/processes.json"
+    },
+    {
+      "bytes": 293,
+      "destination": "root/transfer_yellow-worm-77/result.json",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "9a25c0651b9738dbc0fba9c6d8520c54bcc8739e9937203983c11abada1b0e7b",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/result.json"
+    },
+    {
+      "bytes": 0,
+      "destination": "root/transfer_yellow-worm-77/source.stderr",
+      "role": "historical_transfer_or_status_evidence",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source": "work/goop3d_completion_20261007/root/transfer_yellow-worm-77/source.stderr"
+    }
+  ],
+  "numerical_product_gate": {
+    "admission": {
+      "destination": "root/observed_numerical_admission.json",
+      "sha256": "6de51c22c327934c17c62a1e07513cdd41859ac25e4f98cac36d42dd60cda49c"
+    },
+    "products": {
+      "arithmetic_check.json": {
+        "destination": "observed_products/arithmetic_check.json",
+        "sha256": "0fad18183f7f580780dc7e3e8157dad97da22b7ea69d75da465c8c988c484011"
+      },
+      "audit.json": {
+        "destination": "observed_products/audit.json",
+        "sha256": "83ea04367ceb9549387b89a50f7a8e48a74f2cf00d06b5da577af6349842d5cd"
+      },
+      "completion.json": {
+        "destination": "observed_products/completion.json",
+        "sha256": "148c81a072f33458a8a3f69862c33ef033ebee96027cd7e9c8198b4b282429a5"
+      },
+      "retained_original_failure.json": {
+        "destination": "observed_products/retained_original_failure.json",
+        "sha256": "1ee80845881059ead8a3b8702db353200b49ae4e0c11817530f54351fbd2a993"
+      },
+      "summary.json": {
+        "destination": "observed_products/summary.json",
+        "sha256": "2130ccb1c0c116766a6f2ec6e724102fed48edbd692a279026aaf1dcdaa09109"
+      }
+    },
+    "review": {
+      "destination": "review_v1/observed_final_products_v2_review.json",
+      "sha256": "107e11a40f174f069bf73016e21f8dfdffae2c88e2d74212c99e806421fb3fd5"
+    },
+    "scope": "Observed-history only; no autonomous numerical admission",
+    "status": "reviewed_for_publication",
+    "transfer_manifest": {
+      "destination": "root/observed_finalized_v2_collection/files/transfer_manifest.json",
+      "sha256": "a2b9d1c9b5ee09834acc2859032aad8ad8bbe9c43e7c83e38a709dd4e05efcaf"
+    }
+  },
+  "package": "research/results/goop3d_completion_20261007",
+  "pending": [
+    "Autonomous completion and independent actual-product review",
+    "Final manuscript integration and native LaTeX/page-layout verification",
+    "Author verification and submission decision"
+  ],
+  "prohibited_actions": [
+    "No training, evaluation, array audit, or scientific recomputation",
+    "No network, Git mutation, or process launch",
+    "No overwrite of existing package"
+  ],
+  "schema": "goop3d_completion_publication_plan_v1",
+  "scope": "Reviewed observed-history completion; frozen sources and historical operational provenance; autonomous numerical products are reference-only."
+}

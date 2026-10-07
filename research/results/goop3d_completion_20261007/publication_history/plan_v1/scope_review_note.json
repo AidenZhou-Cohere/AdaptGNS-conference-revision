@@ -1,0 +1,7 @@
+{
+  "status": "superseded_before_copy_no_publication_admission",
+  "plan_sha256": "22e6cd738d2449c7b5723a9650f08871ffb7573ac76269c001fb07121112c38b",
+  "finding": "The directory snapshot captured newly created presentation v3/v4 source/products while the package README described v2. Every selected byte matched its pin, but the package scope description lagged live editorial work.",
+  "effect": "No copy, Git change, process launch, scientific execution or publication occurred. Parent explicitly held copying for final manuscript/native compilation/integration review.",
+  "resolution": "Prepare a successor explicit sealed selection after parent provides final integration paths and pins. Preserve this candidate and verification outputs."
+}

@@ -1,0 +1,13 @@
+{
+  "frozen_files_sha256": {
+    "audit_goop3d_observed_histories_v1.py": "36f6b18b903e1ce7f89c138155a1147fcfab581246f11e7f0bbc0517d9010aff",
+    "check_goop3d_observed_history_summary_v1.py": "d266da3d5a437586c407aba20898374f62d459b2b9c2980232d241e4a56bf5ad",
+    "goop3d_observed_history_arithmetic_v1.py": "0f03e7876765fe56d9c9e33404b6e66ae014c81c5022b9c59b04d77d6c884161",
+    "goop3d_saved_diagnostic_audit_v1.py": "d772313e7a475897cc2dc7d5a893d10c89a8cad67fee9c9b5fe2fa3683006c2a",
+    "observed_common.py": "29c6b077882f55b82128403cc5885229b159b2d573ef84d8244d140fb8727970",
+    "summarize_goop3d_observed_histories_v1.py": "8e7e4ea5a3dbed17f87e5e8af22ab7189e07e25d233462c50c699fbe284c05f2",
+    "worker_source_bindings.json": "49ac2c94740c0c8a611f89e7dc816a62d7ba422c1c62423f1c3656c38e8f86ab"
+  },
+  "runner_sha256": "8bcdb32f7d36a9a4c6f3bcfdb96eecbe36c5b419a855b35473448627e7e7f76b",
+  "schema": "goop3d_resumable_observed_source_pins_v1"
+}

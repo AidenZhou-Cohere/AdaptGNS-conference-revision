@@ -1,0 +1,15 @@
+{
+  "status": "source_defect_independently_confirmed_against_actual_cache",
+  "no_real_arrays_or_results_read": true,
+  "comparison_tolerance_changed": false,
+  "frozen_sources_modified": false,
+  "files": {
+    "SOURCE_FINDING.md": "c97ccf8ff9c0dcc7c0ee1310dbf2104fe9ff7ebbe355669206033e10156383c2",
+    "proposed_exact_seed_stats.py": "ccdc66fca7c7c15c807613f57749674032a9acc7ca886938195c43b4bc6db82b",
+    "source_probe.py": "c009a856b2f65877c5789843be7b3d7bf863c8a95f9b4d5d6374fb91d32cb434",
+    "synthetic_source_probe.json": "318d020ca14c4b00672ee1de76fd948f1405b2a9d857e531560f84302a280319",
+    "source_probe.log": "5b1aad8b9231a9206f1bf5ec4ea5230824cdf0055499d00c3af710be34f45382"
+  },
+  "independent_actual_cache_diagnosis_sha256": "02685d533fff4f3e43da3eb7354003b315bf5f376fbcb5971f84b40993821375",
+  "independent_actual_cache_mismatches": 36
+}

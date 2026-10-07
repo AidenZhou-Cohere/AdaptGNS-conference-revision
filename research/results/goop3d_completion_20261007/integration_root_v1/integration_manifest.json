@@ -1,0 +1,29 @@
+{
+  "scope": "One observed-only appendix insertion, one main reference, builder mappings; title/abstract/all preexisting table bytes preserved.",
+  "removed_attempted_paragraph": "\\paragraph{Attempted Goop3D extension.}\nAn exploratory Goop3D extension completed six 25,000-update training endpoints, with base-only and mixed-graph arms at three paired seeds. Its autonomous comparison remained incomplete, and a subsequent observed-history analysis did not complete auditing. We therefore report no Goop3D accuracy. All incomplete outcomes and unsuccessful analysis attempts are retained in the reproducibility material.",
+  "main_addition": " The separate Goop3D 25k observed-test comparison likewise narrows the risk gap, but fixed-random exposure improves only one of three seeds (Appendix~\\ref{sec:goop3d-25k-exposure}).",
+  "outputs": {
+    "work/manuscript_body.tex": {
+      "sha256": "9d26e4f0e3075484a9627bf710cffc2aa452bd7d8614b4759f07d84d4521ce49",
+      "bytes": 588073
+    },
+    "work/conference_experiments_main.tex": {
+      "sha256": "264a1db12f29d992c2294a488f0cf8e711a8eef5aa4b3a12e3e29f0ff5e4e2d8",
+      "bytes": 15395
+    },
+    "work/goop3d_observed_appendix.tex": {
+      "sha256": "ef082f8a63709f1f37d0c69ff0e111c6124b35d7f69859a4009f17de253f848c",
+      "bytes": 22365
+    },
+    "work/build_manuscript.py": {
+      "sha256": "eeaf5245dd5a4ad2275ad0653e1c6499a9c418ac11a62b0a4c60d6bab23a24fe",
+      "bytes": 3077
+    },
+    "outputs/revised_manuscript.tex": {
+      "sha256": "2e6b43c8178ead7d1fef331d8f6437f4d156d73b7cf07b305385ba66b21c7291",
+      "bytes": 696207
+    }
+  },
+  "all_preexisting_tables_preserved": 42,
+  "native_compilation_pending": true
+}

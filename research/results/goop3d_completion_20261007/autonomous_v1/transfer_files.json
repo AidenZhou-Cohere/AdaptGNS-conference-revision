@@ -1,0 +1,1473 @@
+{
+  "files": [
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid.json",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid.json",
+      "role": "valid",
+      "sha256": "f79a20101e3926a9aa9ba91c060f694d673a9f58ef8b565ebf895f7dc2793cef",
+      "size_bytes": 133173
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test.json",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test.json",
+      "role": "test",
+      "sha256": "08edf3282267c05a427fc264a1a3aa547e062bc9b5ccb8ab7f982cfb3a9fb7cb",
+      "size_bytes": 132773
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort.json",
+      "relative_path": "goop3d_completion_20261006_v1/cohort/cohort.json",
+      "role": "cohort",
+      "sha256": "645343fc2a1c6ef0a82e212e351b03b1a4d081702d3c8e2187b244a62c6b9bef",
+      "size_bytes": 5290
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/cohort/cohort_audit.json",
+      "relative_path": "goop3d_completion_20261006_v1/cohort/cohort_audit.json",
+      "role": "cohort_audit",
+      "sha256": "796d50adf33b20eb040200c829d31650ff5bc97927440220ea3c9489db7d840d",
+      "size_bytes": 6330
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed0/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed0/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "1ee0043cdeba64b752ba4459c524c2d81e6a407d3dcfabd4eca5f0b2cf7df2f5",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed1/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed1/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "2c758fbc5da76ce5b8458edec82ec617bdead52ee14bd40c3ffeaced94dc3791",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed0/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed0/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "ce1c4647c3dbdbf8f1ff21ec0e523b666eb5cedd4b8959efd1e801ba04d0bfee",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed1/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed1/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "17fa66e27e348e1e93e967e694b96d42e82b0e17a0deb3b0935b83f890230297",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed2/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed2/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "fe1697aac142474db83d10dc1b75e7b478628d6e95d9859da9d2cbfd79df8f56",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed2/checkpoint-000025000.pt",
+      "relative_path": "goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed2/checkpoint-000025000.pt",
+      "role": "frozen_25000_checkpoint",
+      "sha256": "39c57d1576433d602155451c38d9a5b8a1510d9b4060b33aec95225a7b10ef4a",
+      "size_bytes": null
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/research/full_training.py",
+      "relative_path": "research/full_training.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "c6bec98cb8200ef74c3d5d30309dba858c0dbef49f3380a0bc8762683c04e60d",
+      "size_bytes": 29638
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/data_loader.py",
+      "relative_path": "adaptive-gns/gns/data_loader.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "287f26902068d84ea1fd74cccbd37459e415d046a10453f1011c6fecb1330bef",
+      "size_bytes": 16683
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/device_utils.py",
+      "relative_path": "adaptive-gns/gns/device_utils.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "324db853f98a85a6a2f83755cb1d67e18edac2f503e5dc33d6bd39352749b326",
+      "size_bytes": 3178
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/graph_network.py",
+      "relative_path": "adaptive-gns/gns/graph_network.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "af91d949063441ba876fbfbaefceee65f7f16947fe98053720a1ccb15feffe91",
+      "size_bytes": 17276
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/learned_simulator.py",
+      "relative_path": "adaptive-gns/gns/learned_simulator.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "216c73a236da6e2441828c4942068cc19618d339859d6492480f07ae2429eadf",
+      "size_bytes": 32300
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/losses.py",
+      "relative_path": "adaptive-gns/gns/losses.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "94ba3f2eb6f103527801f251919675e77e242fff262728f03f0e87cd4e2ea0e5",
+      "size_bytes": 2117
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/adaptive-gns/gns/model_io.py",
+      "relative_path": "adaptive-gns/gns/model_io.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "06599b723814f0be507a3f4210abe10e21f8ada7deeda1acaced07351d82de2e",
+      "size_bytes": 6308
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/research/graph_convention_bridge.py",
+      "relative_path": "research/graph_convention_bridge.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "2c589c3c762631de5d3b3d60b986cc71178b97b3a76d0ce0d02132247b0be42d",
+      "size_bytes": 36931
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/research/full_rollout.py",
+      "relative_path": "research/full_rollout.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "b0a37ee47619e699298b86865649e63c402cc1cb5dc2fa3dfd4055f7fa966eb8",
+      "size_bytes": 36701
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/research/full_same_state.py",
+      "relative_path": "research/full_same_state.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "ff0f9b428791453a1592c23e0c1a4f31653418f74654c859701f52a70f32f592",
+      "size_bytes": 35249
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/research/budget_graph.py",
+      "relative_path": "research/budget_graph.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "951f0d13863672f1dd248febf8cc960ba500103ca95361e06c9b0577913a8187",
+      "size_bytes": 2304
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+      "relative_path": "cuda_preparation/evaluate_goop3d_graph_support_v1.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "9364dbbdd44d78212979f9cc6b381a545d0d875b9463d84d33155b3787c6a1de",
+      "size_bytes": 31215
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+      "relative_path": "cuda_preparation/train_goop3d_graph_support_cuda_v2.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "8de9b7d1de9435c1042151be49d0f6521b0a562ae9094d9e50060262ecad8fdc",
+      "size_bytes": 53415
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_native_evaluation_v1.py",
+      "relative_path": "cuda_preparation/goop3d_native_evaluation_v1.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "a742123093aff433f3a4e302929a52bae4f5fee9610195d86df726852575b1d5",
+      "size_bytes": 25545
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+      "relative_path": "cuda_preparation/goop3d_graph_support_vectorized_v1.py",
+      "role": "frozen_source_or_protocol",
+      "sha256": "ca5898ec3f487d8138adf7479743156874a7796df09841f8ff7711b97536ad50",
+      "size_bytes": 14036
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/cuda_preparation/goop3d_scientific_protocol_v1.md",
+      "relative_path": "cuda_preparation/goop3d_scientific_protocol_v1.md",
+      "role": "frozen_source_or_protocol",
+      "sha256": "5010f9023a3eee45f85bee80b35fc8e506ca145667daf75027b32c92658faa70",
+      "size_bytes": 7909
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000000.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000000.npy",
+      "role": "valid_positions",
+      "sha256": "7d5bfb70a2b3fa39fcb1ca63d27b1576f789b0f407a585954a22d87a3747aaea",
+      "size_bytes": 30846608
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000000.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000000.npy",
+      "role": "valid_particle_types",
+      "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+      "size_bytes": 68448
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000000.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000000.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000003.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000003.npy",
+      "role": "valid_positions",
+      "sha256": "d514fc10dc1db3fb6672599fd547b3a67a62a3041536369feb601ed130bcedc7",
+      "size_bytes": 25071020
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000003.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000003.npy",
+      "role": "valid_particle_types",
+      "sha256": "1919e070001a3c26a752d7e1e3166b180f115e14c9392eaaf5f70c32bb28f226",
+      "size_bytes": 55656
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000003.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000003.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000006.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000006.npy",
+      "role": "valid_positions",
+      "sha256": "0371e5bc7fe15412ae673d442c937d3f68c576a7add217081644c1f22693b194",
+      "size_bytes": 28209848
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000006.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000006.npy",
+      "role": "valid_particle_types",
+      "sha256": "8969cfb43803b1e4dd845690b864b3afef46975fc83debb99a2d1fb78120fab7",
+      "size_bytes": 62608
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000006.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000006.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000010.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000010.npy",
+      "role": "valid_positions",
+      "sha256": "544b2b5597009258de75d3730a8eabf4512af2ccba9661903808a3196ddc00db",
+      "size_bytes": 37767200
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000010.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000010.npy",
+      "role": "valid_particle_types",
+      "sha256": "fae8f4a957ada2ce0dc7557ce0aa2ea39c647457a99204d882ccd28d3f84dcf1",
+      "size_bytes": 83776
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000010.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000010.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000013.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000013.npy",
+      "role": "valid_positions",
+      "sha256": "b059db7f9046e21d9f37cdf6f43f4c023ccfc9bb3a2ebbfb62e5bab78137489b",
+      "size_bytes": 17507492
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000013.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000013.npy",
+      "role": "valid_particle_types",
+      "sha256": "a58a78526f8a041948649714c5fdd62bac1f25a479b5121c097b15d4d9b772a2",
+      "size_bytes": 38904
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000013.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000013.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000017.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000017.npy",
+      "role": "valid_positions",
+      "sha256": "5d4f317cdefa9406b388c8e053f0c90a4848f0c96fbf17d16b97f97af9372bc7",
+      "size_bytes": 37792484
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000017.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000017.npy",
+      "role": "valid_particle_types",
+      "sha256": "1d18cc1748b2bf63984b257690f98c3f2e09c95b156e2a53fc088a52166ab349",
+      "size_bytes": 83832
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000017.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000017.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000020.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000020.npy",
+      "role": "valid_positions",
+      "sha256": "1084289db888d007566be424aef6ce43279267b9e0e41b271cb5f59808278259",
+      "size_bytes": 39370928
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000020.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000020.npy",
+      "role": "valid_particle_types",
+      "sha256": "8176e96be81f551f688a259b2a13e9d8c5a40e872d83290487968664e70adf7b",
+      "size_bytes": 87328
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000020.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000020.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000023.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000023.npy",
+      "role": "valid_positions",
+      "sha256": "ca0f60f48ab5b3e60b0a13b2405d704cb8189bd8db3073b0c9336c91c84092b6",
+      "size_bytes": 11771636
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000023.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000023.npy",
+      "role": "valid_particle_types",
+      "sha256": "e9ab34abb3e1b27bf2eb956b635ddb5a2584bd2ca3ba2cfe699f5077631f8db2",
+      "size_bytes": 26200
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000023.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000023.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000027.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000027.npy",
+      "role": "valid_positions",
+      "sha256": "18c1aa9b1cb26d9cd7b1160785d9809436d43313f5bcb2b89a6f4ac531eaac74",
+      "size_bytes": 27173204
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000027.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000027.npy",
+      "role": "valid_particle_types",
+      "sha256": "a4195a03a59fc6a5d0e546fe29b5faf029d7fb9140adcd159fd2785caf367487",
+      "size_bytes": 60312
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000027.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000027.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000030.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000030.npy",
+      "role": "valid_positions",
+      "sha256": "9147376b15c74fae3fce5c488e8239f23708c3a1877221831b68d5dbc963d50e",
+      "size_bytes": 30846608
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000030.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000030.npy",
+      "role": "valid_particle_types",
+      "sha256": "56212a48a3b6caaff90108261649c797ebd1198a86fca9fc6213909269b82cbe",
+      "size_bytes": 68448
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000030.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000030.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000034.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000034.npy",
+      "role": "valid_positions",
+      "sha256": "d2b62402f1292e14eaeace58779db026d1c2cb44166f70b791c192221c8d42a7",
+      "size_bytes": 19338776
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000034.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000034.npy",
+      "role": "valid_particle_types",
+      "sha256": "9d77c1ba121c64b9ac6ee6f1244914290b655cba754f69d0f5a7c8f410ce0e36",
+      "size_bytes": 42960
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000034.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000034.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000037.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000037.npy",
+      "role": "valid_positions",
+      "sha256": "c4c8243ce027de692996d5bc7b957ee9066487933a94bde3d12317d6692de434",
+      "size_bytes": 9347984
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000037.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000037.npy",
+      "role": "valid_particle_types",
+      "sha256": "b0ecc13156284618b34c3e844bf7f6f8d358530ae7ccdf5c26a6b6ac62fb1ae3",
+      "size_bytes": 20832
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000037.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000037.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000040.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000040.npy",
+      "role": "valid_positions",
+      "sha256": "e07f83040cf0eea432d7a74fbce3aa9b51185ae9abbb3cf5b6430099cc88b4e4",
+      "size_bytes": 12696308
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000040.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000040.npy",
+      "role": "valid_particle_types",
+      "sha256": "411b042385a712d6b522babe4ea55821c23ba0204bfd3c59a2c5bc7eb29afffa",
+      "size_bytes": 28248
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000040.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000040.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000044.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000044.npy",
+      "role": "valid_positions",
+      "sha256": "c1fffd3c3a36f0cc7c133e8c82739575466148fcc8e07739bdec3f90e5d983e3",
+      "size_bytes": 18009560
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000044.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000044.npy",
+      "role": "valid_particle_types",
+      "sha256": "844db1a90c997615f166fe7faffd6be2b2967b8a35b622765ebaa90e22cbee7c",
+      "size_bytes": 40016
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000044.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000044.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000047.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000047.npy",
+      "role": "valid_positions",
+      "sha256": "4937d926b06bd020de2814b9c8c7b52a4981e9f31319879842771c50382133e3",
+      "size_bytes": 18175712
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000047.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000047.npy",
+      "role": "valid_particle_types",
+      "sha256": "cdf3a82a7af3fb97f96c524b8b6f7baebf97576ecb201a5da4e71753be060850",
+      "size_bytes": 40384
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000047.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000047.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000051.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000051.npy",
+      "role": "valid_positions",
+      "sha256": "1f87d6e816bf481d51e724d00382973ea550cb955dacf05f1f767223035001c5",
+      "size_bytes": 45868916
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000051.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000051.npy",
+      "role": "valid_particle_types",
+      "sha256": "a66b5c9a10f3fda2c3cab91cc184797ef1395de88c77379d1175a7a29e2836ab",
+      "size_bytes": 101720
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000051.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000051.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000054.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000054.npy",
+      "role": "valid_positions",
+      "sha256": "98a52ea97e7fe50cd01be65a457d8b74f10a7d6dc48ffc9cd49fcdb56d5208de",
+      "size_bytes": 13274228
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000054.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000054.npy",
+      "role": "valid_particle_types",
+      "sha256": "5e8e7f11ec80b42e6d6ca312b0292e1467a8dfd2e981f3115ceb4fed9fbbde5a",
+      "size_bytes": 29528
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000054.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000054.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000058.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000058.npy",
+      "role": "valid_positions",
+      "sha256": "137f18434b8bc733bc7ee1a1a545511b2a003bbef3c7007920d2c107052272c4",
+      "size_bytes": 15253604
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000058.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000058.npy",
+      "role": "valid_particle_types",
+      "sha256": "93cc8a21bd739df34cff0b3bec8158eaecc1e750578c37aacf78a3af9b9fe017",
+      "size_bytes": 33912
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000058.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000058.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000061.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000061.npy",
+      "role": "valid_positions",
+      "sha256": "a561f046ab27065d8f365e799846bd2e3f1b10b0a6221b88f620cf5c83ce45d8",
+      "size_bytes": 11341808
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000061.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000061.npy",
+      "role": "valid_particle_types",
+      "sha256": "9b3832c473fb07c18b0df96c8bc1266105fc6ef82f6123d6515a632e6c7028f3",
+      "size_bytes": 25248
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000061.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000061.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000064.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000064.npy",
+      "role": "valid_positions",
+      "sha256": "b5e63015195eaaa2361e8e0d2cdafb461d67cd03c34d09d91f7fb755c2d47e32",
+      "size_bytes": 25298576
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000064.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000064.npy",
+      "role": "valid_particle_types",
+      "sha256": "54d2418383cf13468ca7ed6c57c3092e5b40e0848d7a61d0b34af4f00540ed91",
+      "size_bytes": 56160
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000064.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000064.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000068.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000068.npy",
+      "role": "valid_positions",
+      "sha256": "be8704c2217c697efaff9e635a497866e1ce524181556df97ac6c0c148e97711",
+      "size_bytes": 40219748
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000068.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000068.npy",
+      "role": "valid_particle_types",
+      "sha256": "f1f2caae729b90fb4e2ff578e3c9d07a59d49c159201d958e4ab9e5ea6fa26bd",
+      "size_bytes": 89208
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000068.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000068.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000071.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000071.npy",
+      "role": "valid_positions",
+      "sha256": "b72f8995fcac9b2c0f982c0f3b4b242492659816a3a884708c107f7bf0ed0749",
+      "size_bytes": 15517280
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000071.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000071.npy",
+      "role": "valid_particle_types",
+      "sha256": "c6591ee0e459e1f6749a2e4cbb0342d1ee752c7ff6ea489591eda9818ae6753b",
+      "size_bytes": 34496
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000071.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000071.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000075.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000075.npy",
+      "role": "valid_positions",
+      "sha256": "8f1ec8123fbc1be2efccb298f2658546c311f2ac6f3a962517319fc078955c44",
+      "size_bytes": 44416892
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000075.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000075.npy",
+      "role": "valid_particle_types",
+      "sha256": "dfb4bde7484691091f4fb52bbc19a152b66dd63917829c9182559c2c94942ca5",
+      "size_bytes": 98504
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000075.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000075.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000078.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000078.npy",
+      "role": "valid_positions",
+      "sha256": "b827134eaaaa305d1b1edd64747e519c133afd0a58e7684d2859d3b7a9ce355b",
+      "size_bytes": 29235656
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000078.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000078.npy",
+      "role": "valid_particle_types",
+      "sha256": "fcef9744bf4504fb67ee8d71b88ab378ee00bb9983da694ec8031c2389959d0c",
+      "size_bytes": 64880
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000078.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000078.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000081.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000081.npy",
+      "role": "valid_positions",
+      "sha256": "7e519ad611795ea9ffeda3bdebc30210759525aa46f9e3a9ca8a30f193f4ca21",
+      "size_bytes": 21180896
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000081.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000081.npy",
+      "role": "valid_particle_types",
+      "sha256": "326f3657137e1d772a2e5e72a35fdfbedfcfed9d1e3ac2327d36c0c0dfe36b93",
+      "size_bytes": 47040
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000081.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000081.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000085.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000085.npy",
+      "role": "valid_positions",
+      "sha256": "0624713a0cccc03c4c515a6ffc4591b5376f9ef0c7b278dd0219bc8f134f5516",
+      "size_bytes": 41657324
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000085.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000085.npy",
+      "role": "valid_particle_types",
+      "sha256": "4ab1c3dc34e0b0316eb4c34b9ba0f2a83a15bdc3d8222b0c08d745414b268683",
+      "size_bytes": 92392
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000085.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000085.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000088.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000088.npy",
+      "role": "valid_positions",
+      "sha256": "2b2b150e29477e03ca9abaa5de85aa2764b973cc6fc17a4fd7c3f7ff2e205637",
+      "size_bytes": 10261820
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000088.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000088.npy",
+      "role": "valid_particle_types",
+      "sha256": "6d604746702826c8dd73fceb6c558ae4434f35db1f48b6630b94f82ff6329f94",
+      "size_bytes": 22856
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000088.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000088.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000092.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000092.npy",
+      "role": "valid_positions",
+      "sha256": "fedeaa4d4bc1c6e8accee54e44d7cc3a67ea9dc4484814f5e932522bbedc42a0",
+      "size_bytes": 42502532
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000092.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000092.npy",
+      "role": "valid_particle_types",
+      "sha256": "b1a824eb3114ba7daef5d73266357bd35ef9218e57add252f537e311711031d5",
+      "size_bytes": 94264
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000092.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000092.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000095.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000095.npy",
+      "role": "valid_positions",
+      "sha256": "3341058620392a9011cce8609d66cf25100f38787774dc7a6bf4e85033783f77",
+      "size_bytes": 37702184
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000095.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000095.npy",
+      "role": "valid_particle_types",
+      "sha256": "a32520e9f80c2e38f01bf3c0ec964e0045e6c49c762bdba590cc8b7f96c5b70b",
+      "size_bytes": 83632
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000095.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000095.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/position_000099.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/position_000099.npy",
+      "role": "valid_positions",
+      "sha256": "ea04331b23f05ea24ff701f11c61644c95979fcf6b4c4cb5cc92eab27a24157c",
+      "size_bytes": 30861056
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/type_000099.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/type_000099.npy",
+      "role": "valid_particle_types",
+      "sha256": "77c4b54f6abbfc5e9fb9798efe9794390e8b430de459d9f4b3fdc9372482c667",
+      "size_bytes": 68480
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/valid/step_context_000099.npy",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/valid/step_context_000099.npy",
+      "role": "valid_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_numeric_train_valid_20261006_v1/metadata.json",
+      "relative_path": "goop3d_numeric_train_valid_20261006_v1/metadata.json",
+      "role": "valid_metadata",
+      "sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+      "size_bytes": 471
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000000.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000000.npy",
+      "role": "test_positions",
+      "sha256": "f70a8486c05fe8fba97d6a42816692ba556cbb439e730810e02225d3351b5d83",
+      "size_bytes": 28664960
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000000.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000000.npy",
+      "role": "test_particle_types",
+      "sha256": "8d6b672fd301af84b187bfbe4b921d9d74bd03e779b1bc814c7e2f31767c7e6a",
+      "size_bytes": 63616
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000000.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000000.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000003.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000003.npy",
+      "role": "test_positions",
+      "sha256": "f12ef5f433f6565292cb1def75c9b48f5e33b80b9bac6904c579df551858d37f",
+      "size_bytes": 45883364
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000003.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000003.npy",
+      "role": "test_particle_types",
+      "sha256": "1f939a4d1bad2779e47e7c8316cf63257fe490d041c3d076cf75c1c4a52f18da",
+      "size_bytes": 101752
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000003.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000003.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000006.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000006.npy",
+      "role": "test_positions",
+      "sha256": "180c36facfd925ac51259dced999ade9432b9872ca6be8287c555288f0ecf430",
+      "size_bytes": 34436936
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000006.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000006.npy",
+      "role": "test_particle_types",
+      "sha256": "0bac1ee9040936eeb81498a10284aa32a97cbf797281ed2c65cb473b300e6f75",
+      "size_bytes": 76400
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000006.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000006.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000010.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000010.npy",
+      "role": "test_positions",
+      "sha256": "1f2a1cfefc2ce09e9a5840d2d6c2aa8aec876780faaa80ee4b9b5530bbf897ce",
+      "size_bytes": 14639564
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000010.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000010.npy",
+      "role": "test_particle_types",
+      "sha256": "e7fe7ecc1b63d796018a7d4d6c285bcab0af73735c268b718eebde2fd87e8cd3",
+      "size_bytes": 32552
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000010.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000010.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000013.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000013.npy",
+      "role": "test_positions",
+      "sha256": "44a470c7b6b395f0d01cb1033b04ef54377c7967a9506a8c3c8de67e934ca7b9",
+      "size_bytes": 51731192
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000013.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000013.npy",
+      "role": "test_particle_types",
+      "sha256": "94d41c11ca659179e821e47df17e6054775cb4ed126ddabd48e24cf20fb1e06e",
+      "size_bytes": 114704
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000013.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000013.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000017.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000017.npy",
+      "role": "test_positions",
+      "sha256": "b6d5dd7730bc1757e4246329a92736eb351354fbafc0ee973818fffcb019198e",
+      "size_bytes": 24695372
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000017.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000017.npy",
+      "role": "test_particle_types",
+      "sha256": "b28b2b85fc3d5a1a8a89fdb8b0c634d2a2cbb87c091cff1738fbcd4d8b467f30",
+      "size_bytes": 54824
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000017.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000017.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000020.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000020.npy",
+      "role": "test_positions",
+      "sha256": "060f8f477fb7af37508f4149f802a2ad3034535156861d59a4ae94645c531406",
+      "size_bytes": 16734524
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000020.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000020.npy",
+      "role": "test_particle_types",
+      "sha256": "b23767e18f6dc8d3432baaa2788cc49f1e94d483660a70f2886f05dfab61d47e",
+      "size_bytes": 37192
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000020.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000020.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000023.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000023.npy",
+      "role": "test_positions",
+      "sha256": "8e9c5e4ff4e0c49bd05ab4996ea9ab501e607766fffc4352c2c94bf58af020ed",
+      "size_bytes": 12772160
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000023.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000023.npy",
+      "role": "test_particle_types",
+      "sha256": "e800c01e216b99faff087a335b54523427b49a645bb2828822a58e6892bff598",
+      "size_bytes": 28416
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000023.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000023.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000027.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000027.npy",
+      "role": "test_positions",
+      "sha256": "f8dd114e44a4139607fe2abe5a47f3c66ac9861a9b5dbd37cbfa77c5025f1248",
+      "size_bytes": 15398084
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000027.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000027.npy",
+      "role": "test_particle_types",
+      "sha256": "1c88f792d23c2ea63d269a04115523eac667ad6ad0fbcb901c80b4c3c0542797",
+      "size_bytes": 34232
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000027.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000027.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000030.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000030.npy",
+      "role": "test_positions",
+      "sha256": "1e3ddb12849a9c48dba32fca7144d9921318de3ffe6421fa5fe7a3773553baaf",
+      "size_bytes": 29719664
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000030.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000030.npy",
+      "role": "test_particle_types",
+      "sha256": "e62cc3cdc503c09a247a1dd13ccf7cb0c2355b6f20069c2f5f5f178c8690d04f",
+      "size_bytes": 65952
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000030.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000030.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000034.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000034.npy",
+      "role": "test_positions",
+      "sha256": "8e9d7c6daefa196a701685de2e09f33037d23fe44ce7e4971dd216639d1c53fe",
+      "size_bytes": 22210316
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000034.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000034.npy",
+      "role": "test_particle_types",
+      "sha256": "bc644cf07e7a12fb92a230abefb17e8d97fc9fad289e891dff046b60493f3603",
+      "size_bytes": 49320
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000034.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000034.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000037.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000037.npy",
+      "role": "test_positions",
+      "sha256": "03d7342b403daf502b18d677adc985326f6d2bb9824cb324c9305ee88064ba76",
+      "size_bytes": 19129280
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000037.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000037.npy",
+      "role": "test_particle_types",
+      "sha256": "9fc56dd3e472f330143b7a09bb26bc2b17be145d4fe67fd566fea946a8f6b863",
+      "size_bytes": 42496
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000037.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000037.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000040.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000040.npy",
+      "role": "test_positions",
+      "sha256": "827b619e7184670d1b92bd46edb1511f0f0dae27f38f80f477bb971dfce87a25",
+      "size_bytes": 28776932
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000040.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000040.npy",
+      "role": "test_particle_types",
+      "sha256": "5f4df80341db3e18f400244a4bec5a85cd622974979ed1bb472a4d3078f3ec30",
+      "size_bytes": 63864
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000040.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000040.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000044.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000044.npy",
+      "role": "test_positions",
+      "sha256": "a8f7e4696616651de2a8e01a4b7527759ec7b147c99dc745b18cb70efbb5feb6",
+      "size_bytes": 12537380
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000044.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000044.npy",
+      "role": "test_particle_types",
+      "sha256": "d4cbf4012611faf9ebf28933f4d36fbcff312c64f3c65ff47cd9069ebfd6beec",
+      "size_bytes": 27896
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000044.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000044.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000047.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000047.npy",
+      "role": "test_positions",
+      "sha256": "c2979991f4684c78e32ece347e3fac41bf934d94cf336e1df8f56556ea01ccbe",
+      "size_bytes": 30098924
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000047.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000047.npy",
+      "role": "test_particle_types",
+      "sha256": "856beb3a475f0c7cc604ba9c8425ca9ce6b636a2b6e2c7e6fe814581d9229d5c",
+      "size_bytes": 66792
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000047.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000047.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000051.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000051.npy",
+      "role": "test_positions",
+      "sha256": "4949f56dbff4c69c39058cb84eb9c151b9cf704a683a9fe2109709e9abec51fc",
+      "size_bytes": 24659252
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000051.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000051.npy",
+      "role": "test_particle_types",
+      "sha256": "0489aa2855b703d55e739bfdf30d6bb285665380eea4bac698dab3a9bceababb",
+      "size_bytes": 54744
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000051.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000051.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000054.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000054.npy",
+      "role": "test_positions",
+      "sha256": "17f9cda73e694a2c127f562cd632639f3b9c03ae6c22d3c135058ddcbfe6f37b",
+      "size_bytes": 19327940
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000054.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000054.npy",
+      "role": "test_particle_types",
+      "sha256": "ecd9fef81f7fc99e54b98d050fcf5bfb54ba48518dc4aaa105a498837f0127f7",
+      "size_bytes": 42936
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000054.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000054.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000058.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000058.npy",
+      "role": "test_positions",
+      "sha256": "886b3e1eb145f5bcd579ec98a0fb3ef249fa6e3dea1d5545394b88e4565e88a2",
+      "size_bytes": 44615552
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000058.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000058.npy",
+      "role": "test_particle_types",
+      "sha256": "78f0ef4b611ae46e9684b13991193a991bc0fa557b128a8fc3235a220e242052",
+      "size_bytes": 98944
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000058.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000058.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000061.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000061.npy",
+      "role": "test_positions",
+      "sha256": "f4e4e0dbd38ba5a50f015d24b20192edb3a51ad5fc14e1dadc2e9af2d4758b23",
+      "size_bytes": 37312088
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000061.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000061.npy",
+      "role": "test_particle_types",
+      "sha256": "18681afd78b9041bea27469daf88ae6714e3ba5fbf07a1ae2ba921ed3f35d1c5",
+      "size_bytes": 82768
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000061.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000061.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000064.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000064.npy",
+      "role": "test_positions",
+      "sha256": "5c83a95cb29f3b436ed6fa4642061279b79b3a810b0336a5da4ddd19ec749b61",
+      "size_bytes": 37037576
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000064.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000064.npy",
+      "role": "test_particle_types",
+      "sha256": "6768f978b38386400643cb11751c5ac86c696864b55e7dbedd484d2a3c12e4a0",
+      "size_bytes": 82160
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000064.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000064.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000068.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000068.npy",
+      "role": "test_positions",
+      "sha256": "79c6cbd6cefe3875552226f24ac45be38bf5b7d34825076544739ad7d9fd806d",
+      "size_bytes": 39696008
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000068.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000068.npy",
+      "role": "test_particle_types",
+      "sha256": "7714965763a88a0e1de3994f1232a5145d960881770a3d5d168a459d1ffa2bf9",
+      "size_bytes": 88048
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000068.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000068.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000071.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000071.npy",
+      "role": "test_positions",
+      "sha256": "7d2a7f13853e99bb49327be9e8d227bd1ab139a3f0e4e3705a5a579f77f54233",
+      "size_bytes": 42921524
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000071.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000071.npy",
+      "role": "test_particle_types",
+      "sha256": "45e068e05aecc85a6cf559988f450424d3dae86c29bc2241a438d511e2841f60",
+      "size_bytes": 95192
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000071.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000071.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000075.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000075.npy",
+      "role": "test_positions",
+      "sha256": "1d652b14476498cb1ae6b84753493ee8d5c6b178992d52ad5bebe163da3b5488",
+      "size_bytes": 16738136
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000075.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000075.npy",
+      "role": "test_particle_types",
+      "sha256": "facaad7d756ab9e1b897ecad80461f4192fd60287bcfea73e8df3d8ddad57a49",
+      "size_bytes": 37200
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000075.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000075.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000078.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000078.npy",
+      "role": "test_positions",
+      "sha256": "bcec0e81cdfde5df843cd27e6ca2e597446840804ad653d9e8c3e4c066d95540",
+      "size_bytes": 45012872
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000078.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000078.npy",
+      "role": "test_particle_types",
+      "sha256": "fc36bdf71256bca91ccb91a4f79ed48245a94e16baec3fc559924544115d3632",
+      "size_bytes": 99824
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000078.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000078.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000081.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000081.npy",
+      "role": "test_positions",
+      "sha256": "02604fbb740ecc9b88e73d6d7da6598c513b7882cf3e4a69a737d6a3086ca164",
+      "size_bytes": 39782696
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000081.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000081.npy",
+      "role": "test_particle_types",
+      "sha256": "d76c374bff3f5e94b0758576394da593333edf57e113fe1875c6ee4bc0db2f9a",
+      "size_bytes": 88240
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000081.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000081.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000085.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000085.npy",
+      "role": "test_positions",
+      "sha256": "632797d02a6095b21609074093fa6accb15fed70fa587624bd4ad9e2780483d6",
+      "size_bytes": 16445564
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000085.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000085.npy",
+      "role": "test_particle_types",
+      "sha256": "38fb348acbd5587a74db243cabd9df26a17c5354d8609bf9897baf530551ac19",
+      "size_bytes": 36552
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000085.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000085.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000088.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000088.npy",
+      "role": "test_positions",
+      "sha256": "d10927ef63a55e0727712ed510d7df1c38821ff549eef72489a280ac8b445933",
+      "size_bytes": 18461060
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000088.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000088.npy",
+      "role": "test_particle_types",
+      "sha256": "0dd651bce9ea910e82e5e9c15d0d398e4337a74be009d05f8eae7af4c50f8ebf",
+      "size_bytes": 41016
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000088.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000088.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000092.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000092.npy",
+      "role": "test_positions",
+      "sha256": "9465f221a70482ddfa4e89351c87868945bcc89e850fd9c9a443cf5a3bef0239",
+      "size_bytes": 11153984
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000092.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000092.npy",
+      "role": "test_particle_types",
+      "sha256": "1cd3ad9e368d59e6039ee2eadeecb9e0beade30fddc1661420374116496c41ef",
+      "size_bytes": 24832
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000092.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000092.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000095.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000095.npy",
+      "role": "test_positions",
+      "sha256": "a9ecc08d780ecb1ca74f9230f7ed49d221b4cf66d630650a06d0104f959780f8",
+      "size_bytes": 13397036
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000095.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000095.npy",
+      "role": "test_particle_types",
+      "sha256": "48b6ac9a528ddfe5925ab2d19d5a6085e84fb88b20542672bae18db6aa4a16ae",
+      "size_bytes": 29800
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000095.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000095.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/position_000099.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/position_000099.npy",
+      "role": "test_positions",
+      "sha256": "c0ff7c6f69e1561ba4d852eba4d883db90d052a23b59e9a277404887d0b69812",
+      "size_bytes": 16369712
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/type_000099.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/type_000099.npy",
+      "role": "test_particle_types",
+      "sha256": "c22b04583492821f1c01a30174b6112e545bcb2ae64a6dcdb8bd97a82ae934a6",
+      "size_bytes": 36384
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/test/step_context_000099.npy",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/test/step_context_000099.npy",
+      "role": "test_step_context",
+      "sha256": "33fbab13c5cbced7f1fc732440327cf7ae6af1f8141662b2f47f171d84baf405",
+      "size_bytes": 1332
+    },
+    {
+      "path": "/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261006_v1/test_numeric/metadata.json",
+      "relative_path": "goop3d_completion_20261006_v1/test_numeric/metadata.json",
+      "role": "test_metadata",
+      "sha256": "727cec55bc529c142596954773284e897aaed257e907ab6439d5c367853e4a55",
+      "size_bytes": 471
+    }
+  ],
+  "known_size_bytes": 1603135693,
+  "note": "Only frozen 30-source grids per split; positions/types and small preserved step_context, six checkpoints, exact manifests/metadata/cohort, and minimal source closure. Existing validated Python environment is reused, not copied.",
+  "original_host": "aidenzhou-teal-rat-80-5c78ffbffc-g8djt",
+  "remote_repo": "/root/repos/AdaptGNS-cuda-20261006",
+  "schema": "goop3d_completion_transfer_inputs_v1",
+  "unknown_sizes": [
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed0/checkpoint-000025000.pt",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed1/checkpoint-000025000.pt",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed0/checkpoint-000025000.pt",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed1/checkpoint-000025000.pt",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/base_seed2/checkpoint-000025000.pt",
+    "/root/repos/AdaptGNS-cuda-20261006/goop3d_graph_support_science_25k_20261006_v1/jobs/mix_seed2/checkpoint-000025000.pt"
+  ]
+}

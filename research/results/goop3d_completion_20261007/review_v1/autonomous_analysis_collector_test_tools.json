@@ -1,0 +1,7 @@
+{
+  "chunk_id": "00e0fc",
+  "wall_time_seconds": 0.708585667,
+  "exit_code": 0,
+  "original_token_count": 104,
+  "output": "test_original331_plus_one_marker_and_missing_input_rejected (__main__.CollectorTests.test_original331_plus_one_marker_and_missing_input_rejected) ... ok\ntest_index_publication_failure_keeps_memory_and_orphan_reusable (__main__.CheckpointTests.test_index_publication_failure_keeps_memory_and_orphan_reusable) ... ok\n\n----------------------------------------------------------------------\nRan 2 tests in 0.581s\n\nOK\n"
+}

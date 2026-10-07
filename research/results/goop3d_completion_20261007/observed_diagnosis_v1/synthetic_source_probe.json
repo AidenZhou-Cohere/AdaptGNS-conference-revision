@@ -1,0 +1,435 @@
+{
+  "status": "source_defect_reproduced_synthetic_only",
+  "real_failed_leaf_identified": false,
+  "tolerance_changed": false,
+  "variance_formula": "sum_{i<j}(xi-xj)^2 / (3 * 2)",
+  "source_files": {
+    "summarize_goop3d_observed_histories_v1.py": "8e7e4ea5a3dbed17f87e5e8af22ab7189e07e25d233462c50c699fbe284c05f2",
+    "check_goop3d_observed_history_summary_v1.py": "d266da3d5a437586c407aba20898374f62d459b2b9c2980232d241e4a56bf5ad"
+  },
+  "cases": [
+    {
+      "seed_values": [
+        100000.1,
+        100000.1,
+        100000.1
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.1,
+          "2": 100000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 0.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.1,
+          "2": 100000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 1.7822383544867465e-11
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": false,
+      "proposed": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.1,
+          "2": 100000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 0.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        1651982.6,
+        1651982.6,
+        1651982.6
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 1651982.6,
+          "1": 1651982.6,
+          "2": 1651982.6
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 1651982.6000000003,
+        "sample_sd": 0.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 1651982.6,
+          "1": 1651982.6,
+          "2": 1651982.6
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 1651982.6000000003,
+        "sample_sd": 2.8515813671787943e-10
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": false,
+      "proposed": {
+        "seed_values": {
+          "0": 1651982.6,
+          "1": 1651982.6,
+          "2": 1651982.6
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 1651982.6000000003,
+        "sample_sd": 0.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        100000000.1,
+        100000000.1,
+        100000000.1
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 100000000.1,
+          "1": 100000000.1,
+          "2": 100000000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000000.09999998,
+        "sample_sd": 0.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 100000000.1,
+          "1": 100000000.1,
+          "2": 100000000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000000.09999998,
+        "sample_sd": 1.8250120749944284e-08
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": false,
+      "proposed": {
+        "seed_values": {
+          "0": 100000000.1,
+          "1": 100000000.1,
+          "2": 100000000.1
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000000.09999998,
+        "sample_sd": 0.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        100000.1,
+        100000.10000000002,
+        100000.10000000003
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.10000000002,
+          "2": 100000.10000000003
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 1.4551915228366852e-11
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.10000000002,
+          "2": 100000.10000000003
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 1.4551915228366852e-11
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": 100000.1,
+          "1": 100000.10000000002,
+          "2": 100000.10000000003
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 100000.10000000002,
+        "sample_sd": 1.4551915228366852e-11
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        1.0,
+        2.0,
+        3.0
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 1.0,
+          "1": 2.0,
+          "2": 3.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2.0,
+        "sample_sd": 1.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 1.0,
+          "1": 2.0,
+          "2": 3.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2.0,
+        "sample_sd": 1.0
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": 1.0,
+          "1": 2.0,
+          "2": 3.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2.0,
+        "sample_sd": 1.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": -1.0,
+          "1": 0.0,
+          "2": 1.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 1.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": -1.0,
+          "1": 0.0,
+          "2": 1.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 1.0
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": -1.0,
+          "1": 0.0,
+          "2": 1.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 1.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 0.0,
+        "sample_sd": 0.0
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        null,
+        1.0,
+        2.0
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": null,
+          "1": 1.0,
+          "2": 2.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 2,
+        "mean": null,
+        "sample_sd": null
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": null,
+          "1": 1.0,
+          "2": 2.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 2,
+        "mean": null,
+        "sample_sd": null
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": null,
+          "1": 1.0,
+          "2": 2.0
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 2,
+        "mean": null,
+        "sample_sd": null
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        1e-250,
+        2e-250,
+        3e-250
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 1e-250,
+          "1": 2e-250,
+          "2": 3e-250
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2e-250,
+        "sample_sd": 1e-250
+      },
+      "frozen_checker": {
+        "seed_values": {
+          "0": 1e-250,
+          "1": 2e-250,
+          "2": 3e-250
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2e-250,
+        "sample_sd": 0.0
+      },
+      "frozen_checker_error": null,
+      "frozen_checker_matches": true,
+      "proposed": {
+        "seed_values": {
+          "0": 1e-250,
+          "1": 2e-250,
+          "2": 3e-250
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2e-250,
+        "sample_sd": 1e-250
+      },
+      "proposed_matches_existing_tolerance": true
+    },
+    {
+      "seed_values": [
+        1e+155,
+        2e+155,
+        3e+155
+      ],
+      "summarizer": {
+        "seed_values": {
+          "0": 1e+155,
+          "1": 2e+155,
+          "2": 3e+155
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2e+155,
+        "sample_sd": 1.0000000000000001e+155
+      },
+      "frozen_checker": null,
+      "frozen_checker_error": {
+        "type": "OverflowError",
+        "message": "(34, 'Result too large')"
+      },
+      "frozen_checker_matches": null,
+      "proposed": {
+        "seed_values": {
+          "0": 1e+155,
+          "1": 2e+155,
+          "2": 3e+155
+        },
+        "required_seed_pairs": 3,
+        "defined_seed_pairs": 3,
+        "mean": 2e+155,
+        "sample_sd": 1.0000000000000001e+155
+      },
+      "proposed_matches_existing_tolerance": true
+    }
+  ]
+}

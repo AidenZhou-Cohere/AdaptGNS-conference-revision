@@ -1,0 +1,13 @@
+{
+  "source_sha256": "2e6b43c8178ead7d1fef331d8f6437f4d156d73b7cf07b305385ba66b21c7291",
+  "exact_generated_source_delta_verified": true,
+  "all_other_generated_bytes_unchanged": true,
+  "native_compile_result": {
+    "path": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/outputs/revised_manuscript.tex",
+    "kind": "success",
+    "message": "The current source compiled successfully with the desktop editor's compiler."
+  },
+  "compile_evidence_note": "This result is transcribed from the actual compile_latex_document tool response in the integration functions.exec call; compilation was not repeated.",
+  "eight_page_main_guard_unchanged": true,
+  "pdf_export_performed": false
+}

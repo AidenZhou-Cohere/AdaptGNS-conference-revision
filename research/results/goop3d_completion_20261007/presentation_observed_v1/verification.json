@@ -1,0 +1,31 @@
+{
+  "status": "8_synthetic_tests_and_candidate_roundtrip_passed",
+  "product_review_state": "pending_independent_actual_product_review",
+  "candidate_statistic_objects": 1382,
+  "source_summary_bytes_unchanged": true,
+  "manuscript_edits": false,
+  "autonomous_reads": false,
+  "science_executed": false,
+  "files": {
+    "work/goop3d_completion_20261007/presentation_observed_v1/render_observed.py": {
+      "sha256": "88eb4d966c0a2915cca598e8df091d70fb2c1a1249b233cf1bb8756f9e30914a",
+      "bytes": 34237
+    },
+    "work/goop3d_completion_20261007/presentation_observed_v1/test_render_observed.py": {
+      "sha256": "79a67bcaa00221432d0e37a1c2729bcce5f3ea7813858e17a0390ec7c44b0b24",
+      "bytes": 10904
+    },
+    "work/goop3d_completion_20261007/presentation_observed_v1/synthetic_tests.log": {
+      "sha256": "2bfe3da81693b5115f518533d2926bcd0626ac1d91a65db2b9e5d94699a9a845",
+      "bytes": 1038
+    },
+    "work/goop3d_completion_20261007/presentation_observed_v1/README.md": {
+      "sha256": "336c1c488aefb8d97104073d9f897cefb27b074c5213dc110d1d08e0241bad2e",
+      "bytes": 5239
+    },
+    "work/goop3d_completion_20261007/presentation_observed_v1/generated_candidate_v1/receipt.json": {
+      "sha256": "c5fcd04fd464ae8376f900e9c810fa0155d8c2e7d7912e65ffa518e960c889f0",
+      "bytes": 2366
+    }
+  }
+}

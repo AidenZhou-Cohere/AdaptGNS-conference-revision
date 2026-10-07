@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "stdout": "{\"launched\": true, \"job\": \"/root/repos/AdaptGNS-cuda-20261006/goop3d_completion_20261007/jobs/observed_16cpu_attempt1\", \"owner_pid\": 85845, \"owner_start_ticks\": 832594569, \"owner_pgid\": 85845, \"spec_sha256\": \"ba89e82240c82acb0d24ab6c9cd3cf36bfbcc111033330b06efa4204c1bcd40d\", \"hostname\": \"aidenzhou-teal-rat-80-5c78ffbffc-g8djt\", \"boot_id\": \"4419f0f5-8f54-4cfd-9306-f4a9fc0dd5e6\"}\n",
+  "stderr": "",
+  "sources": {
+    "execution_v1/job_owner.py": "aac8c36139996df6705cd3924822f9c56fdf6e694df6a8faaa81dd792142304b",
+    "observed_v1/run_observed_resumable.py": "8bcdb32f7d36a9a4c6f3bcfdb96eecbe36c5b419a855b35473448627e7e7f76b",
+    "observed_v1/source_pins.json": "365c8071abe5016a9092813d57177705386f6568efe03ce1893b640d4b8e7c92",
+    "observed_v1/protocol.json": "d2c2815cfee9b1f0eb4aff854eb4acb6c00b0ec0b6f232e308bde9487078f167"
+  }
+}

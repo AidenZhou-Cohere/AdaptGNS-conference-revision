@@ -1,0 +1,173 @@
+\section{Experiments}
+We separate two questions: does training on expanded graphs improve a simulator, and does residual risk improve placement of a fixed expansion budget? Fresh Goop and Sand models and paired WaterDrop continuations test both. Earlier WaterDrop controls examine why error ranking and action value differ; historical comparisons remain in Appendix~\ref{sec:historical-audit}.
+
+\subsection{Learning to use expanded graphs}
+\begin{figure*}[t]
+\centering
+\setlength{\unitlength}{1pt}
+\begin{picture}(470,213)
+\put(30.000000,194.000000){\makebox(0,0)[l]{\small\bfseries A  Graph exposure}}
+\put(268.000000,194.000000){\makebox(0,0)[l]{\small\bfseries B  Risk placement}}
+\put(30.000000,179.000000){\makebox(0,0)[l]{\footnotesize Full-rollout MSE under random25}}
+\put(268.000000,179.000000){\makebox(0,0)[l]{\footnotesize Observed-state risk minus random MSE}}
+\put(268.000000,166.000000){\makebox(0,0)[l]{\scriptsize Position-coordinate MSE ($\times 10^{-10}$)}}
+\put(30.000000,166.000000){\makebox(0,0)[l]{\scriptsize Mean over all 395 forecasts}}
+\linethickness{0.35pt}
+\qbezier(43.000000,51.000000)(43.000000,103.000000)(43.000000,155.000000)
+\linethickness{0.55pt}
+\qbezier(43.000000,51.000000)(133.000000,51.000000)(223.000000,51.000000)
+\linethickness{0.35pt}
+\qbezier(40.000000,51.000000)(41.500000,51.000000)(43.000000,51.000000)
+\put(36.000000,51.000000){\makebox(0,0)[r]{\scriptsize 0}}
+\linethickness{0.35pt}
+\qbezier(40.000000,88.818182)(41.500000,88.818182)(43.000000,88.818182)
+\put(36.000000,88.818182){\makebox(0,0)[r]{\scriptsize 0.2}}
+\linethickness{0.35pt}
+\qbezier(40.000000,126.636364)(41.500000,126.636364)(43.000000,126.636364)
+\put(36.000000,126.636364){\makebox(0,0)[r]{\scriptsize 0.4}}
+\linethickness{0.35pt}
+\qbezier(81.000000,89.381448)(129.500000,79.038378)(178.000000,68.695309)
+\linethickness{0.5pt}
+\put(81.000000,89.381448){\circle{4.4}}
+\linethickness{0.5pt}
+\put(178.000000,68.695309){\circle{4.4}}
+\linethickness{0.35pt}
+\qbezier(85.000000,89.464997)(133.500000,84.725765)(182.000000,79.986532)
+\linethickness{0.5pt}
+\put(85.000000,89.464997){\circle*{4.4}}
+\linethickness{0.5pt}
+\put(182.000000,79.986532){\circle*{4.4}}
+\linethickness{0.35pt}
+\qbezier[20](89.000000,144.933322)(137.500000,111.119071)(186.000000,77.304820)
+\linethickness{0.5pt}
+\put(89.000000,144.933322){\makebox(0,0){\scriptsize$\triangle$}}
+\linethickness{0.5pt}
+\put(186.000000,77.304820){\makebox(0,0){\scriptsize$\triangle$}}
+\linethickness{1.20pt}
+\qbezier(77.000000,107.926589)(85.000000,107.926589)(93.000000,107.926589)
+\linethickness{1.20pt}
+\qbezier(174.000000,75.328887)(182.000000,75.328887)(190.000000,75.328887)
+\put(85.000000,37.000000){\makebox(0,0){\scriptsize Base-only}}
+\put(85.000000,27.000000){\makebox(0,0){\scriptsize training}}
+\put(182.000000,37.000000){\makebox(0,0){\scriptsize Mixed-graph}}
+\put(182.000000,27.000000){\makebox(0,0){\scriptsize training}}
+\linethickness{0.35pt}
+\qbezier(281.000000,51.000000)(281.000000,103.000000)(281.000000,155.000000)
+\linethickness{0.55pt}
+\qbezier(281.000000,51.000000)(371.000000,51.000000)(461.000000,51.000000)
+\linethickness{0.35pt}
+\qbezier(278.000000,51.000000)(279.500000,51.000000)(281.000000,51.000000)
+\put(274.000000,51.000000){\makebox(0,0)[r]{\scriptsize 0}}
+\linethickness{0.35pt}
+\qbezier(278.000000,85.666667)(279.500000,85.666667)(281.000000,85.666667)
+\put(274.000000,85.666667){\makebox(0,0)[r]{\scriptsize 3}}
+\linethickness{0.35pt}
+\qbezier(278.000000,120.333333)(279.500000,120.333333)(281.000000,120.333333)
+\put(274.000000,120.333333){\makebox(0,0)[r]{\scriptsize 6}}
+\linethickness{0.35pt}
+\qbezier(278.000000,155.000000)(279.500000,155.000000)(281.000000,155.000000)
+\put(274.000000,155.000000){\makebox(0,0)[r]{\scriptsize 9}}
+\linethickness{0.35pt}
+\qbezier(319.000000,112.461269)(367.500000,84.862955)(416.000000,57.264641)
+\linethickness{0.5pt}
+\put(319.000000,112.461269){\circle{4.4}}
+\linethickness{0.5pt}
+\put(416.000000,57.264641){\circle{4.4}}
+\linethickness{0.35pt}
+\qbezier(323.000000,143.936119)(371.500000,137.970393)(420.000000,132.004666)
+\linethickness{0.5pt}
+\put(323.000000,143.936119){\circle*{4.4}}
+\linethickness{0.5pt}
+\put(420.000000,132.004666){\circle*{4.4}}
+\linethickness{0.35pt}
+\qbezier[20](327.000000,118.034885)(375.500000,90.034515)(424.000000,62.034144)
+\linethickness{0.5pt}
+\put(327.000000,118.034885){\makebox(0,0){\scriptsize$\triangle$}}
+\linethickness{0.5pt}
+\put(424.000000,62.034144){\makebox(0,0){\scriptsize$\triangle$}}
+\linethickness{1.20pt}
+\qbezier(315.000000,124.810758)(323.000000,124.810758)(331.000000,124.810758)
+\linethickness{1.20pt}
+\qbezier(412.000000,83.767817)(420.000000,83.767817)(428.000000,83.767817)
+\put(323.000000,37.000000){\makebox(0,0){\scriptsize Base-only}}
+\put(323.000000,27.000000){\makebox(0,0){\scriptsize training}}
+\put(420.000000,37.000000){\makebox(0,0){\scriptsize Mixed-graph}}
+\put(420.000000,27.000000){\makebox(0,0){\scriptsize training}}
+\linethickness{0.5pt}
+\put(116.000000,10.000000){\circle{4.4}}
+\put(124.000000,10.000000){\makebox(0,0)[l]{\scriptsize Seed 0}}
+\linethickness{0.5pt}
+\put(188.000000,10.000000){\circle*{4.4}}
+\put(196.000000,10.000000){\makebox(0,0)[l]{\scriptsize Seed 1}}
+\linethickness{0.5pt}
+\put(260.000000,10.000000){\makebox(0,0){\scriptsize$\triangle$}}
+\put(268.000000,10.000000){\makebox(0,0)[l]{\scriptsize Seed 2}}
+\linethickness{1.20pt}
+\qbezier(325.000000,10.000000)(332.000000,10.000000)(339.000000,10.000000)
+\put(344.000000,10.000000){\makebox(0,0)[l]{\scriptsize Mean}}
+\end{picture}
+\caption{Goop separates graph exposure from risk placement. Three paired faithful models per training arm are trained from initialization for 100,000 updates. A: random25 evaluation improves in every seed after mixed-graph training (30 complete H395 rollouts per seed and arm). B: previous-observed-base risk remains worse than random at identical histories in every seed, although its deficit narrows (150 histories per model). Symbols show seed means; short bars show three-seed means; small horizontal offsets separate seeds. These panels use different endpoints and scales. The full study records 1,077/1,080 completed rollouts: three seed-2 mixed-arm guards affect base, dense and cached risk. The mixed cached-risk full-horizon mean and its training interaction remain undefined.}
+\label{fig:goop-exposure-placement}
+\end{figure*}
+
+For each of Goop and Sand, we train six faithful models from initialization to 100k: base-only and mixed-graph arms at three paired seeds. Both use width 128, ten message-passing blocks and all 1,000 training trajectories. Mix adds a uniformly random quarter of optional pairs with probability $1/2$; initial weights, frames and noise are paired. Native capped base graphs and self-messages are preserved. Random25, speed25, risk25 and RMS25 use the same quarter-annulus budget and radius ratio 1.267; base and dense control expansion. Speed25 scores displacement magnitude; RMS25 scores relative velocity over native neighbors (Appendix~\ref{sec:implementation-details}). Each observed test uses 150 common histories per model, with risk scored on the preceding observed base history. Autonomous risk instead caches scores from its own preceding selected graph. Sand's distinct native-CUDA lineage is qualified in Appendix~\ref{sec:sand-graph-exposure}.
+
+On Goop, fixed-random25 H395 MSE falls from $0.301\pm0.169$ to $0.129\pm0.031$ after exposure, improving every seed. At matched histories, previous-observed risk remains worse than random in every mixed-model seed despite a smaller deficit (Table~\ref{tab:goop-exposure-placement}). Its correlation is $.214\pm.088$ with base error but $.001\pm.048$ with its own sparse-action benefit. Exposure improves this simulator without making residual rank a reliable allocation guide.
+
+\begin{table}[t]
+\centering\scriptsize
+\caption{Observed-test position-coordinate MSE contrasts (column scales; three paired-seed means $\pm$ sample SD). Rows 1--2 compare training arms at fixed policies; rows 3--4 compare risk with random within each arm. Risk uses the preceding observed base graph. The interaction is the mixed-minus-base change in that gap; negative favors the first term. Goop and Sand train from initialization to 100k; WaterDrop continues inspected 100k parents to 110k. Materials are not pooled.}
+\label{tab:goop-exposure-placement}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lccc}
+\toprule
+Contrast & \shortstack{Goop\\$\times10^{-10}$} & \shortstack{WaterDrop\\$\times10^{-10}$} & \shortstack{Sand\\$\times10^{-9}$}\\
+\midrule
+Mix $-$ base (base) & $-3.04\pm5.12$ & $+0.70\pm0.40$ & $-0.84\pm2.91$\\
+Mix $-$ base (random) & $-5.51\pm4.28$ & $+0.28\pm0.92$ & $-3.85\pm3.66$\\
+Risk $-$ random (base) & $+6.39\pm1.45$ & $+1.62\pm1.07$ & $+4.76\pm3.80$\\
+Risk $-$ random (mix) & $+2.84\pm3.62$ & $-0.99\pm0.67$ & $+1.87\pm1.04$\\
+Training interaction & $-3.55\pm2.18$ & $-2.61\pm0.74$ & $-2.89\pm2.81$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Frames average within trajectories, then trajectories within each seed; means and sample SDs retain all three seeds. Figure~\ref{fig:goop-exposure-placement} shows the Goop pairs. Follow-up designs are exploratory, informed by earlier analyses, with endpoints and policies fixed before evaluation.
+
+WaterDrop pairs 10k continuations from three faithful 100k parents, inheriting optimizer state and matched frame/noise schedules. This estimates effects conditional on those inspected parents. Exposure changes the observed-test risk-minus-random gap from $(+1.62\pm1.07)\times10^{-10}$ to $(-0.99\pm0.67)\times10^{-10}$, reversing every seed. Validation's gap improves too, but mixed risk remains worse than random on average.
+
+Sand also narrows the observed-test risk deficit in every seed, yet risk remains worse than random in both arms. Its gap changes from $(+4.76\pm3.80)\times10^{-9}$ to $(+1.87\pm1.04)\times10^{-9}$. A better interaction therefore need not mean better allocation than random. The separate Goop3D 25k observed-test comparison likewise narrows the risk gap, but fixed-random exposure improves only one of three seeds (Appendix~\ref{sec:goop3d-25k-exposure}).
+
+\subsection{Does the effect survive autonomous feedback?}
+All six policies are evaluated for all 395 forecasts on 30 Goop test trajectories per model. Of 1,080 required outcomes, 1,077 complete and three hit the candidate-pair guard, all in mixed seed 2: base, dense and cached risk each fail once. Their three-seed full-horizon means remain undefined (Table~\ref{tab:goop-rollouts}), as does the full-horizon risk-minus-random training interaction. The cached-risk comparison with random changes sign across the two defined seeds; we do not average those survivors. Pointwise MSE at forecast 200 remains a secondary endpoint and does not replace the full horizon.
+
+\begin{table}[t]
+\centering\scriptsize
+\caption{Full-horizon position-MSE training effects at fixed evaluation policies (mixed minus base; three-seed mean $\pm$ sample SD). A negative effect does not establish that expansion beats the native base graph. Cached risk uses its preceding selected graph. Goop H395 and Sand H314 require 90 outcomes per arm/policy; WaterDrop H995 requires 81. Lower lines report base/mixed unsuccessful ($U$) and not-completed ($N$) counts. A dash preserves an undefined effect; NP denotes a policy not predeclared.}
+\label{tab:goop-rollouts}
+\setlength{\tabcolsep}{2pt}
+\begin{tabular}{lccc}
+\toprule
+Policy & Goop & WaterDrop & Sand\\
+\midrule
+Base & \shortstack{---\\$U:0/1,\ N:0/0$} & \shortstack{$-0.005\pm0.008$\\$U:0/0,\ N:0/0$} & \shortstack{$-0.00004\pm0.003$\\$U:0/0,\ N:0/0$}\\[2pt]
+Dense & \shortstack{---\\$U:0/1,\ N:0/0$} & \shortstack{$-0.012\pm0.004$\\$U:0/0,\ N:0/0$} & \shortstack{$-0.003\pm0.003$\\$U:0/0,\ N:0/0$}\\[2pt]
+Random25 & \shortstack{$-0.172\pm0.163$\\$U:0/0,\ N:0/0$} & \shortstack{$-0.006\pm0.006$\\$U:0/0,\ N:0/0$} & \shortstack{$-0.011\pm0.019$\\$U:0/0,\ N:0/0$}\\[2pt]
+Speed25 & \shortstack{$-0.160\pm0.137$\\$U:0/0,\ N:0/0$} & \shortstack{$-0.005\pm0.006$\\$U:0/0,\ N:0/0$} & \shortstack{$+0.010\pm0.019$\\$U:0/0,\ N:0/0$}\\[2pt]
+Cached risk25 & \shortstack{---\\$U:0/1,\ N:0/0$} & \shortstack{$-0.003\pm0.001$\\$U:0/0,\ N:0/0$} & \shortstack{$+0.009\pm0.012$\\$U:0/0,\ N:0/0$}\\[2pt]
+RMS25 & \shortstack{$-0.208\pm0.204$\\$U:0/0,\ N:0/0$} & NP & \shortstack{$-0.003\pm0.005$\\$U:0/0,\ N:0/0$}\\[2pt]
+\bottomrule
+\end{tabular}
+\end{table}
+
+Goop mixed speed25 and RMS25 have full-horizon MSE $.112\pm.027$ and $.125\pm.032$ and beat random25 in every seed. Mixed random, speed and RMS still place $22.16\%$, $19.55\%$ and $20.53\%$ of particles beyond the metadata box by $10^{-6}$, versus $0.0632\%$ for truth. Their mean trajectory-maximum excursions are $.401$, $.417$ and $.426$, versus $.000722$. These are geometric diagnostics, not conservation tests. All policies, failures and costs remain in Appendix~\ref{sec:goop-graph-exposure}; Figure~\ref{fig:qualitative-goop2d} gives a fixed metadata-selected example.
+
+All 810 WaterDrop H995 outcomes complete. Mix improves random25 by $-.0060\pm.0056$, and dense, speed and cached risk also improve in every seed. Its autonomous risk-minus-random interaction is nevertheless $+.00284\pm.00466$, with mixed seed signs. Box excursions and increased recorded times remain (Appendix~\ref{sec:waterdrop-110k-exposure}).
+
+All 1,080 Sand H314 outcomes complete, but exposure makes cached-risk error worse in every seed ($+.00917\pm.01201$), widening its risk-minus-random gap in every seed ($+.01975\pm.03062$). Random25 improves in two seeds, not three, and native base beats it in every seed of both arms. Dense exposure improves every seed, yet dense remains worse than native base and random. Thus fixed-policy exposure gains do not establish that expansion beats the base graph. All Sand policy means, signs, physical mismatches and costs remain in Appendix~\ref{sec:sand-graph-exposure}.
+
+\subsection{Why can residual ranking misallocate?}
+The earlier WaterDrop controls isolate residual ranking from action value: at 100k updates, faithful/NLL risk correlates with base error ($.357\pm.060$ / $.411\pm.023$), but weakly with actual sparse benefit ($-.021\pm.049$ / $-.052\pm.013$); random has lower one-step error in every seed. Restoring trained self-messages reduces error without reversing that validation/test ordering. Risk's larger alignment gain is outweighed by its squared prediction change in every full-model seed. Autonomous signs vary, with failures and box excursions under both graph conventions (Appendices~\ref{sec:compact-study}, \ref{sec:actual-action-benefit}, \ref{sec:graph-bridge}, \ref{sec:optional-exposure}, \ref{sec:full-results} and~\ref{sec:native-rollout-followup}). These findings motivate testing exposure separately from placement.
+
+\subsection{What computation does the policy require?}
+Previous-observed risk includes an extra scoring pass; autonomous cached risk reuses its previous forward output. Their timings measure different computations. Fixed-order autonomous measurements also follow different geometries, so elapsed time and edge counts do not establish a causal speedup. The appendix retains measured cost alongside every policy's error and failure counts. The studies use only three training seeds, reuse earlier evidence to develop follow-up questions, and remain distinct from the original saved-model comparisons.

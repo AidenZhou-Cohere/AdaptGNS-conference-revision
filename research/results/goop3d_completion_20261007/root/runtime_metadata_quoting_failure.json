@@ -1,0 +1,67 @@
+{
+  "launches": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "0b905d",
+        "wall_time_seconds": 1.000782917,
+        "session_id": 26760,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "bd641d",
+        "wall_time_seconds": 1.000849167,
+        "session_id": 82057,
+        "original_token_count": 0,
+        "output": ""
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "5bcded",
+        "wall_time_seconds": 1.00178925,
+        "session_id": 51063,
+        "original_token_count": 0,
+        "output": ""
+      }
+    }
+  ],
+  "exits": [
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "dcef98",
+        "wall_time_seconds": 0.000126916,
+        "exit_code": 2,
+        "original_token_count": 93,
+        "output": "/bin/bash: -c: line 1: syntax error near unexpected token `json.dumps'\n/bin/bash: -c: line 1: `/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python -c import json,sys,numpy,scipy,torch,torch_geometric;print(json.dumps({python:sys.version,numpy:numpy.__version__,scipy:scipy.__version__,torch:torch.__version__,cuda:torch.version.cuda,pyg:torch_geometric.__version__}))'\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "a26846",
+        "wall_time_seconds": 0.000009209,
+        "exit_code": 2,
+        "original_token_count": 93,
+        "output": "/bin/bash: -c: line 1: syntax error near unexpected token `json.dumps'\n/bin/bash: -c: line 1: `/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python -c import json,sys,numpy,scipy,torch,torch_geometric;print(json.dumps({python:sys.version,numpy:numpy.__version__,scipy:scipy.__version__,torch:torch.__version__,cuda:torch.version.cuda,pyg:torch_geometric.__version__}))'\n"
+      }
+    },
+    {
+      "status": "fulfilled",
+      "value": {
+        "chunk_id": "d5863d",
+        "wall_time_seconds": 0.000018125,
+        "exit_code": 2,
+        "original_token_count": 93,
+        "output": "/bin/bash: -c: line 1: syntax error near unexpected token `json.dumps'\n/bin/bash: -c: line 1: `/root/repos/AdaptGNS-cuda-20261006/.venv/bin/python -c import json,sys,numpy,scipy,torch,torch_geometric;print(json.dumps({python:sys.version,numpy:numpy.__version__,scipy:scipy.__version__,torch:torch.__version__,cuda:torch.version.cuda,pyg:torch_geometric.__version__}))'\n"
+      }
+    }
+  ],
+  "cause": "Root quoting error in metadata-only SSH command; remote shell rejected before Python or scientific code started."
+}

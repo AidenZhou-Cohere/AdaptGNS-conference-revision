@@ -1,0 +1,17 @@
+{
+  "status": "exited",
+  "owner": {
+    "pid": 87032,
+    "start_ticks": 832705409,
+    "pgid": 87032
+  },
+  "spec_sha256": "2bdc7cf41caeb305d9cedd5685bd5cb371911b547db9932ea65c291f0dc02d7d",
+  "started_utc_seconds": 1791340457.0848303,
+  "child": {
+    "pid": 87033,
+    "start_ticks": 832705413,
+    "pgid": 87032
+  },
+  "returncode": 0,
+  "finished_utc_seconds": 1791340522.5070531
+}
