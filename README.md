@@ -4,7 +4,7 @@ Can a particle simulator preserve useful accuracy while spending fewer additiona
 
 ![Native, dense and quarter-budget graphs](generated/constructive_overview.png)
 
-On common WaterDrop histories, mixed-training random and residual-guided quarter-budget graphs achieve lower next-step error than dense expansion in all three seeds on both validation and test, using about 25% fewer total directed messages on test. Training with graph expansions also improves fixed-random autonomous forecasts in Goop and WaterDrop. Uncertainty ranking does not add a consistent advantage across studies; simple budget-matched controls, native graphs and full rollouts show where the benefit holds. The edge allowance concerns extra messages, and does not by itself establish a runtime saving.
+On common WaterDrop histories, random and residual-guided quarter-budget graphs achieve lower next-step error than dense expansion in all three seeds on both validation and test, under both base-only and mixed training, using about 25% fewer total directed messages on test. With base-only training, random expansion also beats the native graph in every seed on both splits. These comparisons reuse each trained model; a separately dense-trained simulator is not included. Training with graph expansions also improves fixed-random autonomous forecasts in Goop and WaterDrop. Uncertainty ranking does not add a consistent advantage across studies; simple budget-matched controls, native graphs and full rollouts show where the benefit holds. The edge allowance concerns extra messages, and does not by itself establish a runtime saving.
 
 ## Reproduce the paper from saved results
 

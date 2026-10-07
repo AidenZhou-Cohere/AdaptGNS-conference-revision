@@ -22,13 +22,15 @@ Goop and Sand train from initialization; WaterDrop estimates continuation effect
 
 Figure~\ref{fig:observed-accuracy-budget} puts observed-test accuracy beside the three edge budgets. Dense expansion is a reference, not an accuracy upper bound: additional messages can make a learned prediction worse. In WaterDrop's mixed arm, the native, quarter-budget and dense graphs average 4,802, 5,418 and 7,269 directed messages on the same histories. The quarter budget saves at least 75\% of the optional messages, or about 25\% of the total relative to dense expansion.
 
-Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 beat dense expansion in every WaterDrop seed on validation and test. Their observed-test MSEs are $3.559\times10^{-9}$ and $3.658\times10^{-9}$, compared with $3.791\times10^{-9}$ for dense and $4.104\times10^{-9}$ for native base. The random result matters: economical expansion does not require a successful uncertainty ranking. Across materials, the native reference also matters; in Sand's mixed arm, native base has lower mean observed-test error than Random25.
+Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 beat dense expansion in every WaterDrop seed on validation and test. Their observed-test MSEs are $3.559\times10^{-9}$ and $3.658\times10^{-9}$, compared with $3.791\times10^{-9}$ for dense and $4.104\times10^{-9}$ for native base. The random result matters: economical expansion does not require a successful uncertainty ranking.
+
+The same advantage holds after \emph{base-only training}: Risk25 and Random25 beat dense expansion in every seed on both splits, and Random25 also beats the native graph. Thus the result does not depend on exposure to quarter-budget graphs. These comparisons reuse each trained model; a separately dense-trained simulator could yield a different tradeoff. Across materials, the native reference also matters: in Sand's mixed arm, native base has lower mean observed-test error than Random25.
 
 % VISUAL_BUDGET_INSERT
 
 \takeaway{Takeaway 1}{%
 \textbf{A useful forecast need not spend every optional interaction.}
-With mixed training on common WaterDrop histories, quarter-budget random and residual-guided graphs use about 25\% fewer total messages than dense expansion and achieve lower next-step error in all three seeds on both splits. This is an accuracy--edge result; runtime and autonomous motion require separate tests.}
+On common WaterDrop histories, quarter-budget random and residual-guided graphs use about 25\% fewer total messages than dense expansion and achieve lower next-step error in all three seeds on both splits, under both training regimes. This compares graph choices within each trained model; runtime and autonomous motion require separate tests.}
 
 \subsection{Why uncertainty looks like a useful allocation signal}
 The budget comparison leaves a natural question: can we spend these few additions around the difficult parts of the motion? Figure~\ref{fig:residual-times} follows one fixed WaterDrop trajectory through observed histories, comparing the model's predicted residual score with the error of the same next-step prediction. The compact initial mass receives a fairly even score; later, detached particles and the left boundary stand out. The predicted and realized fields share broad features but disagree locally. These maps show the error signal of a learned predictor, rather than intrinsic physical uncertainty.

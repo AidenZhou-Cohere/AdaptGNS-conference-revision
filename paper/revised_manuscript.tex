@@ -561,7 +561,7 @@ Abstract}\vspace{0.5ex}\begin{quote}}{\par\end{quote}\vskip 1ex}
 \fancyhead[CE,CO]{\small\bfseries Adaptive Interaction Graphs for Particle Simulation}
 
 \begin{abstract}
-Larger interaction graphs give a particle simulator more context, but every added edge requires more message passing. We ask whether selective expansion can preserve accuracy while adding fewer edges. AdaptGNS retains the native graph and selects at most a quarter of the nearby candidate pairs, using uncertainty from the previous prediction to guide the choice. Training with randomly expanded graphs prepares the simulator for these additions. In three-seed studies of Goop, WaterDrop and Sand, we test whether a small expansion budget preserves accuracy, and whether uncertainty spends that budget better than random placement. For mixed-trained WaterDrop models, quarter-budget graphs on shared test histories use about 25\% fewer total messages than dense expansion and achieve lower next-step error in every seed. Both random and uncertainty-guided placement achieve this result. Training with expansion also reduces Goop's full-rollout MSE from 0.301 to 0.129 under the same random policy. Uncertainty guidance offers no consistent advantage across settings; on Sand, expansion training worsens uncertainty-guided rollouts. The evidence supports selective expansion as a way to improve the accuracy--edge tradeoff, while showing that predicting difficulty alone does not identify the best additional interactions.
+Larger interaction graphs give a particle simulator more context, but every added edge requires more message passing. We ask whether selective expansion can preserve accuracy while adding fewer edges. AdaptGNS retains the native graph and selects at most a quarter of the nearby candidate pairs, using uncertainty from the previous prediction to guide the choice. Training with randomly expanded graphs prepares the simulator for these additions. In three-seed studies of Goop, WaterDrop and Sand, we test whether a small expansion budget preserves accuracy, and whether uncertainty spends that budget better than random placement. On common observed WaterDrop histories, random and uncertainty-guided quarter-budget graphs beat dense expansion in every seed and split under both training regimes, with about 25\% fewer total messages on test. These comparisons reuse each trained model. Training with expansion also reduces Goop's full-rollout MSE from 0.301 to 0.129 under the same random policy. Uncertainty guidance offers no consistent advantage across settings; on Sand, expansion training worsens uncertainty-guided rollouts. The evidence supports selective expansion as a way to improve the accuracy--edge tradeoff, while showing that predicting difficulty alone does not identify the best additional interactions.
 \end{abstract}
 
 \section{Introduction}
@@ -569,9 +569,9 @@ A splash may need more interaction partners than a quietly moving patch of fluid
 
 AdaptGNS explores this question through selective graph expansion. It keeps the simulator's native connections and spends a limited allowance of extra pairs. Predicted uncertainty provides an intuitive allocation rule: give more context to particles the model finds difficult. A residual head supplies that signal, and caching its preceding output avoids a separate scoring pass at each forecast. The uncertainty maps are visually compelling because difficulty is spatially structured. The question is whether using that structure makes a limited edge budget more useful.
 
-Our experiments distinguish two sources of value: \textbf{using fewer additions than dense expansion, and choosing those additions better than a simple budget-matched rule.} We find a clear example of the first in WaterDrop. With mixed training on common observed histories, a quarter-annulus budget lowers next-step error relative to dense expansion while using about 25\% fewer total messages. Both uncertainty-guided and random placement achieve this result in every seed. The savings belong to selective expansion; attributing an additional gain to uncertainty requires the random control.
+Our experiments distinguish two sources of value: \textbf{using fewer additions than dense expansion, and choosing those additions better than a simple budget-matched rule.} WaterDrop supplies a clear example of the first. On common observed histories, a quarter-annulus budget lowers next-step error relative to dense expansion while using about 25\% fewer total messages. Both uncertainty-guided and random placement achieve this in every seed and split, even when training uses only native graphs. The result therefore does not require training on quarter-budget expansions. Attributing an additional gain to uncertainty still requires the random control.
 
-Training also changes what that allowance buys. Under the same random-expansion policy, graph exposure improves autonomous forecasts in every paired Goop and WaterDrop seed. Yet uncertainty does not consistently improve the placement of those messages, and Sand shows that narrowing the observed risk deficit can accompany worse rollouts once predictions feed back into future graphs. We organize the paper around this path from an edge budget to a useful forecast (Figure~\ref{fig:constructive-overview}): compare sparse and dense expansion, examine the uncertainty signal, and test training, placement and feedback. The goal remains economical interaction graphs; the evidence shows which parts of that design currently deliver.
+Training also changes what that allowance buys. Under the same random-expansion policy, graph exposure improves autonomous forecasts in every paired Goop and WaterDrop seed. Yet uncertainty does not consistently improve the placement of those messages, and Sand shows that narrowing the observed risk deficit can accompany worse rollouts once predictions feed back into future graphs. Our contribution is a controlled study of these choices within a fixed-particle simulator: an explicit allowance of local pairs and a cached controller let us separate training exposure, message placement and autonomous feedback. Figure~\ref{fig:constructive-overview} follows this path from an edge budget to a useful forecast. The goal remains economical interaction graphs; the evidence shows which parts of that design currently deliver.
 
 \begin{figure*}[t]
 \centering
@@ -927,7 +927,9 @@ Training also changes what that allowance buys. Under the same random-expansion 
 \section{Related work}
 Graph networks learn interactions\citep{battaglia2016}; GNS combines geometric particle graphs with message passing and noise-augmented training\citep{sanchez2020}. We build on released particle GNS software\citep{kumar2023}. Neural SPH incorporates physical structure into fluid prediction\citep{toshev2024}. Our intervention changes communication while retaining each trained simulator for a policy comparison.
 
-MeshGraphNets predicts a sizing field for remeshing\citep{pfaff2021}, while LAMP learns refinement and coarsening under an error--computation tradeoff\citep{wu2023}. We retain the particle set and add local pairs. NRI and dNRI infer relational structure\citep{kipf2018,graber2020}; curvature-based rewiring addresses communication bottlenecks\citep{topping2022}; AdaMeshNet changes connectivity within message-passing layers\citep{seo2025}. These approaches motivate adaptation without equating prediction difficulty with the value of an additional edge. Faithful regression\citep{stirn2023} addresses the mean--variance optimization problem studied by \citet{seitzer2022}; we adopt its mean-gradient separation as a control.
+MeshGraphNets learns a sizing field for mesh adaptation\citep{pfaff2021}, while LAMP learns refinement and coarsening under an error--computation objective\citep{wu2023}. AdaMeshNet schedules added connections across message-passing layers using distance and velocity information\citep{seo2025}. We study a complementary allocation decision: retain the particles and their native graph, select local additional pairs under a hard per-step allowance, and reuse preceding residual predictions to guide the next graph. Our controlled comparisons separate training with graph expansions from uncertainty-guided placement, then test the resulting autonomous feedback.
+
+NRI and dNRI infer relational structure\citep{kipf2018,graber2020}; curvature-based rewiring addresses communication bottlenecks\citep{topping2022}. Faithful regression\citep{stirn2023} addresses the mean--variance optimization problem studied by \citet{seitzer2022}; we adopt its mean-gradient separation as a control.
 
 \section{Budgeted graph adaptation}
 \subsection{An allowance for additional interactions}
@@ -981,7 +983,9 @@ Goop and Sand train from initialization; WaterDrop estimates continuation effect
 
 Figure~\ref{fig:observed-accuracy-budget} puts observed-test accuracy beside the three edge budgets. Dense expansion is a reference, not an accuracy upper bound: additional messages can make a learned prediction worse. In WaterDrop's mixed arm, the native, quarter-budget and dense graphs average 4,802, 5,418 and 7,269 directed messages on the same histories. The quarter budget saves at least 75\% of the optional messages, or about 25\% of the total relative to dense expansion.
 
-Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 beat dense expansion in every WaterDrop seed on validation and test. Their observed-test MSEs are $3.559\times10^{-9}$ and $3.658\times10^{-9}$, compared with $3.791\times10^{-9}$ for dense and $4.104\times10^{-9}$ for native base. The random result matters: economical expansion does not require a successful uncertainty ranking. Across materials, the native reference also matters; in Sand's mixed arm, native base has lower mean observed-test error than Random25.
+Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 beat dense expansion in every WaterDrop seed on validation and test. Their observed-test MSEs are $3.559\times10^{-9}$ and $3.658\times10^{-9}$, compared with $3.791\times10^{-9}$ for dense and $4.104\times10^{-9}$ for native base. The random result matters: economical expansion does not require a successful uncertainty ranking.
+
+The same advantage holds after \emph{base-only training}: Risk25 and Random25 beat dense expansion in every seed on both splits, and Random25 also beats the native graph. Thus the result does not depend on exposure to quarter-budget graphs. These comparisons reuse each trained model; a separately dense-trained simulator could yield a different tradeoff. Across materials, the native reference also matters: in Sand's mixed arm, native base has lower mean observed-test error than Random25.
 
 \begin{figure*}[t]
 \centering
@@ -999,977 +1003,514 @@ Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 b
 \definecolor{pvswhite}{HTML}{FFFFFF}
 \definecolor{pvszero}{HTML}{93A3AE}
 \definecolor{pvspurple}{HTML}{866196}
-\begin{picture}(470,280)
-\color{pvsink}
-\put(8.000000000,270.000000000){\makebox(0,0)[l]{\fontsize{12}{13}\selectfont\bfseries Accuracy with fewer added messages}}
-\color{pvsink}
-\put(93.000000000,252.000000000){\makebox(0,0){\fontsize{10.5}{11.5}\selectfont\bfseries Goop}}
-\color{pvsmuted}
-\put(93.000000000,239.000000000){\makebox(0,0){\fontsize{7.1}{8.1}\selectfont 100k from scratch}}
-\color{pvsmuted}
-\put(32.000000000,227.000000000){\makebox(0,0)[l]{\fontsize{7.1}{8.1}\selectfont Position MSE $\times10^{-8}$}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,164.830188679)(93.000000000,164.830188679)(154.000000000,164.830188679)
-\color{pvsmuted}
-\put(28.000000000,164.830188679){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.2}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,190.490566038)(93.000000000,190.490566038)(154.000000000,190.490566038)
-\color{pvsmuted}
-\put(28.000000000,190.490566038){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.4}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,216.150943396)(93.000000000,216.150943396)(154.000000000,216.150943396)
-\color{pvsmuted}
-\put(28.000000000,216.150943396){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.6}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(32.000000000,152.000000000)(32.000000000,186.000000000)(32.000000000,220.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(32.000000000,173.845160980)(33.415200000,173.845160980)(34.830400000,173.845160980)
-\qbezier(36.880000000,173.845160980)(38.295200000,173.845160980)(39.710400000,173.845160980)
-\qbezier(41.760000000,173.845160980)(43.175200000,173.845160980)(44.590400000,173.845160980)
-\qbezier(46.640000000,173.845160980)(48.055200000,173.845160980)(49.470400000,173.845160980)
-\qbezier(51.520000000,173.845160980)(52.935200000,173.845160980)(54.350400000,173.845160980)
-\qbezier(56.400000000,173.845160980)(57.815200000,173.845160980)(59.230400000,173.845160980)
-\qbezier(61.280000000,173.845160980)(62.695200000,173.845160980)(64.110400000,173.845160980)
-\qbezier(66.160000000,173.845160980)(67.575200000,173.845160980)(68.990400000,173.845160980)
-\qbezier(71.040000000,173.845160980)(72.455200000,173.845160980)(73.870400000,173.845160980)
-\qbezier(75.920000000,173.845160980)(77.335200000,173.845160980)(78.750400000,173.845160980)
-\qbezier(80.800000000,173.845160980)(82.215200000,173.845160980)(83.630400000,173.845160980)
-\qbezier(85.680000000,173.845160980)(87.095200000,173.845160980)(88.510400000,173.845160980)
-\qbezier(90.560000000,173.845160980)(91.975200000,173.845160980)(93.390400000,173.845160980)
-\qbezier(95.440000000,173.845160980)(96.855200000,173.845160980)(98.270400000,173.845160980)
-\qbezier(100.320000000,173.845160980)(101.735200000,173.845160980)(103.150400000,173.845160980)
-\qbezier(105.200000000,173.845160980)(106.615200000,173.845160980)(108.030400000,173.845160980)
-\qbezier(110.080000000,173.845160980)(111.495200000,173.845160980)(112.910400000,173.845160980)
-\qbezier(114.960000000,173.845160980)(116.375200000,173.845160980)(117.790400000,173.845160980)
-\qbezier(119.840000000,173.845160980)(121.255200000,173.845160980)(122.670400000,173.845160980)
-\qbezier(124.720000000,173.845160980)(126.135200000,173.845160980)(127.550400000,173.845160980)
-\qbezier(129.600000000,173.845160980)(131.015200000,173.845160980)(132.430400000,173.845160980)
-\qbezier(134.480000000,173.845160980)(135.895200000,173.845160980)(137.310400000,173.845160980)
-\qbezier(139.360000000,173.845160980)(140.775200000,173.845160980)(142.190400000,173.845160980)
-\qbezier(144.240000000,173.845160980)(145.655200000,173.845160980)(147.070400000,173.845160980)
-\qbezier(149.120000000,173.845160980)(150.535200000,173.845160980)(151.950400000,173.845160980)
-\color{pvsink}
-\put(36.000000000,214.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Base-only training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(38.200000000,172.285970409){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(41.000000000,167.543598395){\color{pvswhite}\circle*{2.7}}
-\put(41.000000000,167.543598395){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(42.400000000,180.305914137)(43.800000000,181.705914137)(45.200000000,183.105914137)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(42.400000000,183.105914137)(43.800000000,181.705914137)(45.200000000,180.305914137)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(36.600000000,173.845160980)(41.000000000,173.845160980)(45.400000000,173.845160980)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(59.200000000,172.081394277){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(62.000000000,165.921294726){\color{pvswhite}\circle*{2.7}}
-\put(62.000000000,165.921294726){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(63.400000000,179.394377398)(64.800000000,180.794377398)(66.200000000,182.194377398)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(63.400000000,182.194377398)(64.800000000,180.794377398)(66.200000000,179.394377398)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(57.600000000,172.932355467)(62.000000000,172.932355467)(66.400000000,172.932355467)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(79.200000000,174.632451854){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(82.000000000,172.481972332){\color{pvswhite}\circle*{2.7}}
-\put(82.000000000,172.481972332){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(83.400000000,185.525187937)(84.800000000,186.925187937)(86.200000000,188.325187937)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(83.400000000,188.325187937)(84.800000000,186.925187937)(86.200000000,185.525187937)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(77.600000000,178.013204041)(82.000000000,178.013204041)(86.400000000,178.013204041)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(99.200000000,178.905468369){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(102.000000000,176.240036545){\color{pvswhite}\circle*{2.7}}
-\put(102.000000000,176.240036545){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(103.400000000,186.837292840)(104.800000000,188.237292840)(106.200000000,189.637292840)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(103.400000000,189.637292840)(104.800000000,188.237292840)(106.200000000,186.837292840)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(97.600000000,181.127599252)(102.000000000,181.127599252)(106.400000000,181.127599252)
-\color{pvspurple}
-\linethickness{0.8pt}
-\put(119.200000000,184.046297791){\circle*{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\put(122.000000000,180.624739770){\color{pvswhite}\circle*{2.7}}
-\put(122.000000000,180.624739770){\circle{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(123.400000000,193.489755763)(124.800000000,194.889755763)(126.200000000,196.289755763)
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(123.400000000,196.289755763)(124.800000000,194.889755763)(126.200000000,193.489755763)
-\color{pvspurple}
-\linethickness{1.15pt}
-\qbezier(117.600000000,186.520264441)(122.000000000,186.520264441)(126.400000000,186.520264441)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(142.200000000,193.767145785){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(145.000000000,193.847494893){\color{pvswhite}\circle*{2.7}}
-\put(145.000000000,193.847494893){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(146.400000000,206.503887354)(147.800000000,207.903887354)(149.200000000,209.303887354)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(146.400000000,209.303887354)(147.800000000,207.903887354)(149.200000000,206.503887354)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(140.600000000,198.506176011)(145.000000000,198.506176011)(149.400000000,198.506176011)
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,76.830188679)(93.000000000,76.830188679)(154.000000000,76.830188679)
-\color{pvsmuted}
-\put(28.000000000,76.830188679){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.2}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,102.490566038)(93.000000000,102.490566038)(154.000000000,102.490566038)
-\color{pvsmuted}
-\put(28.000000000,102.490566038){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.4}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(32.000000000,128.150943396)(93.000000000,128.150943396)(154.000000000,128.150943396)
-\color{pvsmuted}
-\put(28.000000000,128.150943396){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 1.6}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(32.000000000,64.000000000)(32.000000000,98.000000000)(32.000000000,132.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(32.000000000,81.946738073)(33.415200000,81.946738073)(34.830400000,81.946738073)
-\qbezier(36.880000000,81.946738073)(38.295200000,81.946738073)(39.710400000,81.946738073)
-\qbezier(41.760000000,81.946738073)(43.175200000,81.946738073)(44.590400000,81.946738073)
-\qbezier(46.640000000,81.946738073)(48.055200000,81.946738073)(49.470400000,81.946738073)
-\qbezier(51.520000000,81.946738073)(52.935200000,81.946738073)(54.350400000,81.946738073)
-\qbezier(56.400000000,81.946738073)(57.815200000,81.946738073)(59.230400000,81.946738073)
-\qbezier(61.280000000,81.946738073)(62.695200000,81.946738073)(64.110400000,81.946738073)
-\qbezier(66.160000000,81.946738073)(67.575200000,81.946738073)(68.990400000,81.946738073)
-\qbezier(71.040000000,81.946738073)(72.455200000,81.946738073)(73.870400000,81.946738073)
-\qbezier(75.920000000,81.946738073)(77.335200000,81.946738073)(78.750400000,81.946738073)
-\qbezier(80.800000000,81.946738073)(82.215200000,81.946738073)(83.630400000,81.946738073)
-\qbezier(85.680000000,81.946738073)(87.095200000,81.946738073)(88.510400000,81.946738073)
-\qbezier(90.560000000,81.946738073)(91.975200000,81.946738073)(93.390400000,81.946738073)
-\qbezier(95.440000000,81.946738073)(96.855200000,81.946738073)(98.270400000,81.946738073)
-\qbezier(100.320000000,81.946738073)(101.735200000,81.946738073)(103.150400000,81.946738073)
-\qbezier(105.200000000,81.946738073)(106.615200000,81.946738073)(108.030400000,81.946738073)
-\qbezier(110.080000000,81.946738073)(111.495200000,81.946738073)(112.910400000,81.946738073)
-\qbezier(114.960000000,81.946738073)(116.375200000,81.946738073)(117.790400000,81.946738073)
-\qbezier(119.840000000,81.946738073)(121.255200000,81.946738073)(122.670400000,81.946738073)
-\qbezier(124.720000000,81.946738073)(126.135200000,81.946738073)(127.550400000,81.946738073)
-\qbezier(129.600000000,81.946738073)(131.015200000,81.946738073)(132.430400000,81.946738073)
-\qbezier(134.480000000,81.946738073)(135.895200000,81.946738073)(137.310400000,81.946738073)
-\qbezier(139.360000000,81.946738073)(140.775200000,81.946738073)(142.190400000,81.946738073)
-\qbezier(144.240000000,81.946738073)(145.655200000,81.946738073)(147.070400000,81.946738073)
-\qbezier(149.120000000,81.946738073)(150.535200000,81.946738073)(151.950400000,81.946738073)
-\color{pvsink}
-\put(36.000000000,126.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Mixed training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(38.200000000,73.294826708){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(41.000000000,76.880518942){\color{pvswhite}\circle*{2.7}}
-\put(41.000000000,76.880518942){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(42.400000000,94.264868570)(43.800000000,95.664868570)(45.200000000,97.064868570)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(42.400000000,97.064868570)(43.800000000,95.664868570)(45.200000000,94.264868570)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(36.600000000,81.946738073)(41.000000000,81.946738073)(45.400000000,81.946738073)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(59.200000000,71.571564009){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(62.000000000,70.757715789){\color{pvswhite}\circle*{2.7}}
-\put(62.000000000,70.757715789){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(63.400000000,89.873054855)(64.800000000,91.273054855)(66.200000000,92.673054855)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(63.400000000,92.673054855)(64.800000000,91.273054855)(66.200000000,89.873054855)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(57.600000000,77.867444884)(62.000000000,77.867444884)(66.400000000,77.867444884)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(79.200000000,71.896877884){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(82.000000000,77.173481844){\color{pvswhite}\circle*{2.7}}
-\put(82.000000000,77.173481844){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(83.400000000,91.392387718)(84.800000000,92.792387718)(86.200000000,94.192387718)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(83.400000000,94.192387718)(84.800000000,92.792387718)(86.200000000,91.392387718)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(77.600000000,80.620915815)(82.000000000,80.620915815)(86.400000000,80.620915815)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(99.200000000,72.267130127){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(102.000000000,79.751702642){\color{pvswhite}\circle*{2.7}}
-\put(102.000000000,79.751702642){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(103.400000000,91.098181188)(104.800000000,92.498181188)(106.200000000,93.898181188)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(103.400000000,93.898181188)(104.800000000,92.498181188)(106.200000000,91.098181188)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(97.600000000,81.505671319)(102.000000000,81.505671319)(106.400000000,81.505671319)
-\color{pvspurple}
-\linethickness{0.8pt}
-\put(119.200000000,76.914844527){\circle*{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\put(122.000000000,82.378239789){\color{pvswhite}\circle*{2.7}}
-\put(122.000000000,82.378239789){\circle{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(123.400000000,97.271861479)(124.800000000,98.671861479)(126.200000000,100.071861479)
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(123.400000000,100.071861479)(124.800000000,98.671861479)(126.200000000,97.271861479)
-\color{pvspurple}
-\linethickness{1.15pt}
-\qbezier(117.600000000,85.988315265)(122.000000000,85.988315265)(126.400000000,85.988315265)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(142.200000000,79.231791532){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(145.000000000,79.404515363){\color{pvswhite}\circle*{2.7}}
-\put(145.000000000,79.404515363){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(146.400000000,98.991772172)(147.800000000,100.391772172)(149.200000000,101.791772172)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(146.400000000,101.791772172)(147.800000000,100.391772172)(149.200000000,98.991772172)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(140.600000000,86.342693023)(145.000000000,86.342693023)(149.400000000,86.342693023)
-\color{pvsink}
-\put(41.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries N}}
-\color{pvsteal}
-\put(62.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries R}}
-\color{pvsblue}
-\put(82.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries S}}
-\color{pvsrust}
-\put(102.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries Q}}
-\color{pvspurple}
-\put(122.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries V}}
-\color{pvsnative}
-\put(145.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries D}}
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(57.000000000,43.000000000)(57.000000000,45.000000000)(57.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(127.000000000,43.000000000)(127.000000000,45.000000000)(127.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(57.000000000,43.000000000)(92.000000000,43.000000000)(127.000000000,43.000000000)
-\color{pvsmuted}
-\put(41.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont 0}}
-\color{pvsmuted}
-\put(92.000000000,35.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $\le25\%$}}
-\color{pvsmuted}
-\put(145.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $100\%$}}
-\color{pvsink}
-\put(246.000000000,252.000000000){\makebox(0,0){\fontsize{10.5}{11.5}\selectfont\bfseries WaterDrop}}
-\color{pvsmuted}
-\put(246.000000000,239.000000000){\makebox(0,0){\fontsize{7.1}{8.1}\selectfont 100k $\to$ 110k paired}}
-\color{pvsmuted}
-\put(185.000000000,227.000000000){\makebox(0,0)[l]{\fontsize{7.1}{8.1}\selectfont Position MSE $\times10^{-9}$}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,160.500000000)(246.000000000,160.500000000)(307.000000000,160.500000000)
-\color{pvsmuted}
-\put(181.000000000,160.500000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 3.4}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,186.000000000)(246.000000000,186.000000000)(307.000000000,186.000000000)
-\color{pvsmuted}
-\put(181.000000000,186.000000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 4.0}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,211.500000000)(246.000000000,211.500000000)(307.000000000,211.500000000)
-\color{pvsmuted}
-\put(181.000000000,211.500000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 4.6}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(185.000000000,152.000000000)(185.000000000,186.000000000)(185.000000000,220.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(185.000000000,187.448172194)(186.415200000,187.448172194)(187.830400000,187.448172194)
-\qbezier(189.880000000,187.448172194)(191.295200000,187.448172194)(192.710400000,187.448172194)
-\qbezier(194.760000000,187.448172194)(196.175200000,187.448172194)(197.590400000,187.448172194)
-\qbezier(199.640000000,187.448172194)(201.055200000,187.448172194)(202.470400000,187.448172194)
-\qbezier(204.520000000,187.448172194)(205.935200000,187.448172194)(207.350400000,187.448172194)
-\qbezier(209.400000000,187.448172194)(210.815200000,187.448172194)(212.230400000,187.448172194)
-\qbezier(214.280000000,187.448172194)(215.695200000,187.448172194)(217.110400000,187.448172194)
-\qbezier(219.160000000,187.448172194)(220.575200000,187.448172194)(221.990400000,187.448172194)
-\qbezier(224.040000000,187.448172194)(225.455200000,187.448172194)(226.870400000,187.448172194)
-\qbezier(228.920000000,187.448172194)(230.335200000,187.448172194)(231.750400000,187.448172194)
-\qbezier(233.800000000,187.448172194)(235.215200000,187.448172194)(236.630400000,187.448172194)
-\qbezier(238.680000000,187.448172194)(240.095200000,187.448172194)(241.510400000,187.448172194)
-\qbezier(243.560000000,187.448172194)(244.975200000,187.448172194)(246.390400000,187.448172194)
-\qbezier(248.440000000,187.448172194)(249.855200000,187.448172194)(251.270400000,187.448172194)
-\qbezier(253.320000000,187.448172194)(254.735200000,187.448172194)(256.150400000,187.448172194)
-\qbezier(258.200000000,187.448172194)(259.615200000,187.448172194)(261.030400000,187.448172194)
-\qbezier(263.080000000,187.448172194)(264.495200000,187.448172194)(265.910400000,187.448172194)
-\qbezier(267.960000000,187.448172194)(269.375200000,187.448172194)(270.790400000,187.448172194)
-\qbezier(272.840000000,187.448172194)(274.255200000,187.448172194)(275.670400000,187.448172194)
-\qbezier(277.720000000,187.448172194)(279.135200000,187.448172194)(280.550400000,187.448172194)
-\qbezier(282.600000000,187.448172194)(284.015200000,187.448172194)(285.430400000,187.448172194)
-\qbezier(287.480000000,187.448172194)(288.895200000,187.448172194)(290.310400000,187.448172194)
-\qbezier(292.360000000,187.448172194)(293.775200000,187.448172194)(295.190400000,187.448172194)
-\qbezier(297.240000000,187.448172194)(298.655200000,187.448172194)(300.070400000,187.448172194)
-\qbezier(302.120000000,187.448172194)(303.535200000,187.448172194)(304.950400000,187.448172194)
-\color{pvsink}
-\put(189.000000000,214.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Base-only training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(191.200000000,200.449157655){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(194.000000000,180.848999919){\color{pvswhite}\circle*{2.7}}
-\put(194.000000000,180.848999919){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(195.400000000,179.646359009)(196.800000000,181.046359009)(198.200000000,182.446359009)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(195.400000000,182.446359009)(196.800000000,181.046359009)(198.200000000,179.646359009)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(189.600000000,187.448172194)(194.000000000,187.448172194)(198.400000000,187.448172194)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(217.200000000,181.711068078){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(220.000000000,166.940921327){\color{pvswhite}\circle*{2.7}}
-\put(220.000000000,166.940921327){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(221.400000000,160.867964931)(222.800000000,162.267964931)(224.200000000,163.667964931)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(221.400000000,163.667964931)(222.800000000,162.267964931)(224.200000000,160.867964931)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(215.600000000,170.306651445)(220.000000000,170.306651445)(224.400000000,170.306651445)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(242.200000000,189.807073322){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(245.000000000,178.463595372){\color{pvswhite}\circle*{2.7}}
-\put(245.000000000,178.463595372){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(246.400000000,173.230977328)(247.800000000,174.630977328)(249.200000000,176.030977328)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(246.400000000,176.030977328)(247.800000000,174.630977328)(249.200000000,173.230977328)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(240.600000000,180.967215341)(245.000000000,180.967215341)(249.400000000,180.967215341)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(267.200000000,183.692643500){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(270.000000000,177.914211486){\color{pvswhite}\circle*{2.7}}
-\put(270.000000000,177.914211486){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(271.400000000,168.515733031)(272.800000000,169.915733031)(274.200000000,171.315733031)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(271.400000000,171.315733031)(272.800000000,169.915733031)(274.200000000,168.515733031)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(265.600000000,177.174196006)(270.000000000,177.174196006)(274.400000000,177.174196006)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(295.200000000,193.500470760){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(298.000000000,210.636601886){\color{pvswhite}\circle*{2.7}}
-\put(298.000000000,210.636601886){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(299.400000000,190.812902799)(300.800000000,192.212902799)(302.200000000,193.612902799)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(299.400000000,193.612902799)(300.800000000,192.212902799)(302.200000000,190.812902799)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(293.600000000,198.783325148)(298.000000000,198.783325148)(302.400000000,198.783325148)
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,72.500000000)(246.000000000,72.500000000)(307.000000000,72.500000000)
-\color{pvsmuted}
-\put(181.000000000,72.500000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 3.4}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,98.000000000)(246.000000000,98.000000000)(307.000000000,98.000000000)
-\color{pvsmuted}
-\put(181.000000000,98.000000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 4.0}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(185.000000000,123.500000000)(246.000000000,123.500000000)(307.000000000,123.500000000)
-\color{pvsmuted}
-\put(181.000000000,123.500000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 4.6}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(185.000000000,64.000000000)(185.000000000,98.000000000)(185.000000000,132.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(185.000000000,102.403133632)(186.415200000,102.403133632)(187.830400000,102.403133632)
-\qbezier(189.880000000,102.403133632)(191.295200000,102.403133632)(192.710400000,102.403133632)
-\qbezier(194.760000000,102.403133632)(196.175200000,102.403133632)(197.590400000,102.403133632)
-\qbezier(199.640000000,102.403133632)(201.055200000,102.403133632)(202.470400000,102.403133632)
-\qbezier(204.520000000,102.403133632)(205.935200000,102.403133632)(207.350400000,102.403133632)
-\qbezier(209.400000000,102.403133632)(210.815200000,102.403133632)(212.230400000,102.403133632)
-\qbezier(214.280000000,102.403133632)(215.695200000,102.403133632)(217.110400000,102.403133632)
-\qbezier(219.160000000,102.403133632)(220.575200000,102.403133632)(221.990400000,102.403133632)
-\qbezier(224.040000000,102.403133632)(225.455200000,102.403133632)(226.870400000,102.403133632)
-\qbezier(228.920000000,102.403133632)(230.335200000,102.403133632)(231.750400000,102.403133632)
-\qbezier(233.800000000,102.403133632)(235.215200000,102.403133632)(236.630400000,102.403133632)
-\qbezier(238.680000000,102.403133632)(240.095200000,102.403133632)(241.510400000,102.403133632)
-\qbezier(243.560000000,102.403133632)(244.975200000,102.403133632)(246.390400000,102.403133632)
-\qbezier(248.440000000,102.403133632)(249.855200000,102.403133632)(251.270400000,102.403133632)
-\qbezier(253.320000000,102.403133632)(254.735200000,102.403133632)(256.150400000,102.403133632)
-\qbezier(258.200000000,102.403133632)(259.615200000,102.403133632)(261.030400000,102.403133632)
-\qbezier(263.080000000,102.403133632)(264.495200000,102.403133632)(265.910400000,102.403133632)
-\qbezier(267.960000000,102.403133632)(269.375200000,102.403133632)(270.790400000,102.403133632)
-\qbezier(272.840000000,102.403133632)(274.255200000,102.403133632)(275.670400000,102.403133632)
-\qbezier(277.720000000,102.403133632)(279.135200000,102.403133632)(280.550400000,102.403133632)
-\qbezier(282.600000000,102.403133632)(284.015200000,102.403133632)(285.430400000,102.403133632)
-\qbezier(287.480000000,102.403133632)(288.895200000,102.403133632)(290.310400000,102.403133632)
-\qbezier(292.360000000,102.403133632)(293.775200000,102.403133632)(295.190400000,102.403133632)
-\qbezier(297.240000000,102.403133632)(298.655200000,102.403133632)(300.070400000,102.403133632)
-\qbezier(302.120000000,102.403133632)(303.535200000,102.403133632)(304.950400000,102.403133632)
-\color{pvsink}
-\put(189.000000000,126.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Mixed training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(191.200000000,113.810455516){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(194.000000000,95.630207946){\color{pvswhite}\circle*{2.7}}
-\put(194.000000000,95.630207946){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(195.400000000,96.368737434)(196.800000000,97.768737434)(198.200000000,99.168737434)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(195.400000000,99.168737434)(196.800000000,97.768737434)(198.200000000,96.368737434)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(189.600000000,102.403133632)(194.000000000,102.403133632)(198.400000000,102.403133632)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(217.200000000,96.427777724){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(220.000000000,75.682766447){\color{pvswhite}\circle*{2.7}}
-\put(220.000000000,75.682766447){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(221.400000000,76.920044333)(222.800000000,78.320044333)(224.200000000,79.720044333)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(221.400000000,79.720044333)(222.800000000,78.320044333)(224.200000000,76.920044333)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(215.600000000,83.476862835)(220.000000000,83.476862835)(224.400000000,83.476862835)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(242.200000000,100.441751369){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(245.000000000,80.886263103){\color{pvswhite}\circle*{2.7}}
-\put(245.000000000,80.886263103){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(246.400000000,79.552328381)(247.800000000,80.952328381)(249.200000000,82.352328381)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(246.400000000,82.352328381)(247.800000000,80.952328381)(249.200000000,79.552328381)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(240.600000000,87.426780951)(245.000000000,87.426780951)(249.400000000,87.426780951)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(267.200000000,90.808910226){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(270.000000000,74.723578362){\color{pvswhite}\circle*{2.7}}
-\put(270.000000000,74.723578362){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(271.400000000,70.841543866)(272.800000000,72.241543866)(274.200000000,73.641543866)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(271.400000000,73.641543866)(272.800000000,72.241543866)(274.200000000,70.841543866)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(265.600000000,79.258010818)(270.000000000,79.258010818)(274.400000000,79.258010818)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(295.200000000,97.623036680){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(298.000000000,88.364768699){\color{pvswhite}\circle*{2.7}}
-\put(298.000000000,88.364768699){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(299.400000000,79.914764764)(300.800000000,81.314764764)(302.200000000,82.714764764)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(299.400000000,82.714764764)(300.800000000,81.314764764)(302.200000000,79.914764764)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(293.600000000,89.100856715)(298.000000000,89.100856715)(302.400000000,89.100856715)
-\color{pvsink}
-\put(194.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries N}}
-\color{pvsteal}
-\put(220.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries R}}
-\color{pvsblue}
-\put(245.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries S}}
-\color{pvsrust}
-\put(270.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries Q}}
-\color{pvsnative}
-\put(298.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries D}}
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(215.000000000,43.000000000)(215.000000000,45.000000000)(215.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(275.000000000,43.000000000)(275.000000000,45.000000000)(275.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(215.000000000,43.000000000)(245.000000000,43.000000000)(275.000000000,43.000000000)
-\color{pvsmuted}
-\put(194.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont 0}}
-\color{pvsmuted}
-\put(245.000000000,35.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $\le25\%$}}
-\color{pvsmuted}
-\put(298.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $100\%$}}
-\color{pvsink}
-\put(399.000000000,252.000000000){\makebox(0,0){\fontsize{10.5}{11.5}\selectfont\bfseries Sand}}
-\color{pvsmuted}
-\put(399.000000000,239.000000000){\makebox(0,0){\fontsize{7.1}{8.1}\selectfont 100k from scratch}}
-\color{pvsmuted}
-\put(338.000000000,227.000000000){\makebox(0,0)[l]{\fontsize{7.1}{8.1}\selectfont Position MSE $\times10^{-8}$}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,156.250000000)(399.000000000,156.250000000)(460.000000000,156.250000000)
-\color{pvsmuted}
-\put(334.000000000,156.250000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 3}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,184.583333333)(399.000000000,184.583333333)(460.000000000,184.583333333)
-\color{pvsmuted}
-\put(334.000000000,184.583333333){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 5}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,212.916666667)(399.000000000,212.916666667)(460.000000000,212.916666667)
-\color{pvsmuted}
-\put(334.000000000,212.916666667){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 7}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(338.000000000,152.000000000)(338.000000000,186.000000000)(338.000000000,220.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(338.000000000,161.890456186)(339.415200000,161.890456186)(340.830400000,161.890456186)
-\qbezier(342.880000000,161.890456186)(344.295200000,161.890456186)(345.710400000,161.890456186)
-\qbezier(347.760000000,161.890456186)(349.175200000,161.890456186)(350.590400000,161.890456186)
-\qbezier(352.640000000,161.890456186)(354.055200000,161.890456186)(355.470400000,161.890456186)
-\qbezier(357.520000000,161.890456186)(358.935200000,161.890456186)(360.350400000,161.890456186)
-\qbezier(362.400000000,161.890456186)(363.815200000,161.890456186)(365.230400000,161.890456186)
-\qbezier(367.280000000,161.890456186)(368.695200000,161.890456186)(370.110400000,161.890456186)
-\qbezier(372.160000000,161.890456186)(373.575200000,161.890456186)(374.990400000,161.890456186)
-\qbezier(377.040000000,161.890456186)(378.455200000,161.890456186)(379.870400000,161.890456186)
-\qbezier(381.920000000,161.890456186)(383.335200000,161.890456186)(384.750400000,161.890456186)
-\qbezier(386.800000000,161.890456186)(388.215200000,161.890456186)(389.630400000,161.890456186)
-\qbezier(391.680000000,161.890456186)(393.095200000,161.890456186)(394.510400000,161.890456186)
-\qbezier(396.560000000,161.890456186)(397.975200000,161.890456186)(399.390400000,161.890456186)
-\qbezier(401.440000000,161.890456186)(402.855200000,161.890456186)(404.270400000,161.890456186)
-\qbezier(406.320000000,161.890456186)(407.735200000,161.890456186)(409.150400000,161.890456186)
-\qbezier(411.200000000,161.890456186)(412.615200000,161.890456186)(414.030400000,161.890456186)
-\qbezier(416.080000000,161.890456186)(417.495200000,161.890456186)(418.910400000,161.890456186)
-\qbezier(420.960000000,161.890456186)(422.375200000,161.890456186)(423.790400000,161.890456186)
-\qbezier(425.840000000,161.890456186)(427.255200000,161.890456186)(428.670400000,161.890456186)
-\qbezier(430.720000000,161.890456186)(432.135200000,161.890456186)(433.550400000,161.890456186)
-\qbezier(435.600000000,161.890456186)(437.015200000,161.890456186)(438.430400000,161.890456186)
-\qbezier(440.480000000,161.890456186)(441.895200000,161.890456186)(443.310400000,161.890456186)
-\qbezier(445.360000000,161.890456186)(446.775200000,161.890456186)(448.190400000,161.890456186)
-\qbezier(450.240000000,161.890456186)(451.655200000,161.890456186)(453.070400000,161.890456186)
-\qbezier(455.120000000,161.890456186)(456.535200000,161.890456186)(457.950400000,161.890456186)
-\color{pvsink}
-\put(342.000000000,214.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Base-only training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(344.200000000,156.470682677){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(347.000000000,157.830878292){\color{pvswhite}\circle*{2.7}}
-\put(347.000000000,157.830878292){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(348.400000000,169.969807588)(349.800000000,171.369807588)(351.200000000,172.769807588)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(348.400000000,172.769807588)(349.800000000,171.369807588)(351.200000000,169.969807588)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(342.600000000,161.890456186)(347.000000000,161.890456186)(351.400000000,161.890456186)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(365.200000000,159.718796814){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(368.000000000,161.305020663){\color{pvswhite}\circle*{2.7}}
-\put(368.000000000,161.305020663){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(369.400000000,177.553976558)(370.800000000,178.953976558)(372.200000000,180.353976558)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(369.400000000,180.353976558)(370.800000000,178.953976558)(372.200000000,177.553976558)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(363.600000000,166.659264678)(368.000000000,166.659264678)(372.400000000,166.659264678)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(385.200000000,167.627525754){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(388.000000000,165.391308152){\color{pvswhite}\circle*{2.7}}
-\put(388.000000000,165.391308152){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(389.400000000,191.271250232)(390.800000000,192.671250232)(392.200000000,194.071250232)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(389.400000000,194.071250232)(390.800000000,192.671250232)(392.200000000,191.271250232)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(383.600000000,175.230028046)(388.000000000,175.230028046)(392.400000000,175.230028046)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(405.200000000,163.371294311){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(408.000000000,164.914525133){\color{pvswhite}\circle*{2.7}}
-\put(408.000000000,164.914525133){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(409.400000000,190.519326071)(410.800000000,191.919326071)(412.200000000,193.319326071)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(409.400000000,193.319326071)(410.800000000,191.919326071)(412.200000000,190.519326071)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(403.600000000,173.401715171)(408.000000000,173.401715171)(412.400000000,173.401715171)
-\color{pvspurple}
-\linethickness{0.8pt}
-\put(425.200000000,167.646531671){\circle*{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\put(428.000000000,169.737374402){\color{pvswhite}\circle*{2.7}}
-\put(428.000000000,169.737374402){\circle{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(429.400000000,190.853209137)(430.800000000,192.253209137)(432.200000000,193.653209137)
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(429.400000000,193.653209137)(430.800000000,192.253209137)(432.200000000,190.853209137)
-\color{pvspurple}
-\linethickness{1.15pt}
-\qbezier(423.600000000,176.545705070)(428.000000000,176.545705070)(432.400000000,176.545705070)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(448.200000000,186.250213196){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(451.000000000,186.953833095){\color{pvswhite}\circle*{2.7}}
-\put(451.000000000,186.953833095){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(452.400000000,213.153539729)(453.800000000,214.553539729)(455.200000000,215.953539729)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(452.400000000,215.953539729)(453.800000000,214.553539729)(455.200000000,213.153539729)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(446.600000000,195.919195340)(451.000000000,195.919195340)(455.400000000,195.919195340)
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,68.250000000)(399.000000000,68.250000000)(460.000000000,68.250000000)
-\color{pvsmuted}
-\put(334.000000000,68.250000000){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 3}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,96.583333333)(399.000000000,96.583333333)(460.000000000,96.583333333)
-\color{pvsmuted}
-\put(334.000000000,96.583333333){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 5}}
-\color{pvsgrid}
-\linethickness{0.4pt}
-\qbezier(338.000000000,124.916666667)(399.000000000,124.916666667)(460.000000000,124.916666667)
-\color{pvsmuted}
-\put(334.000000000,124.916666667){\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont 7}}
-\color{pvszero}
-\linethickness{0.65pt}
-\qbezier(338.000000000,64.000000000)(338.000000000,98.000000000)(338.000000000,132.000000000)
-\color{pvszero}
-\linethickness{0.8pt}
-\qbezier(338.000000000,72.695204985)(339.415200000,72.695204985)(340.830400000,72.695204985)
-\qbezier(342.880000000,72.695204985)(344.295200000,72.695204985)(345.710400000,72.695204985)
-\qbezier(347.760000000,72.695204985)(349.175200000,72.695204985)(350.590400000,72.695204985)
-\qbezier(352.640000000,72.695204985)(354.055200000,72.695204985)(355.470400000,72.695204985)
-\qbezier(357.520000000,72.695204985)(358.935200000,72.695204985)(360.350400000,72.695204985)
-\qbezier(362.400000000,72.695204985)(363.815200000,72.695204985)(365.230400000,72.695204985)
-\qbezier(367.280000000,72.695204985)(368.695200000,72.695204985)(370.110400000,72.695204985)
-\qbezier(372.160000000,72.695204985)(373.575200000,72.695204985)(374.990400000,72.695204985)
-\qbezier(377.040000000,72.695204985)(378.455200000,72.695204985)(379.870400000,72.695204985)
-\qbezier(381.920000000,72.695204985)(383.335200000,72.695204985)(384.750400000,72.695204985)
-\qbezier(386.800000000,72.695204985)(388.215200000,72.695204985)(389.630400000,72.695204985)
-\qbezier(391.680000000,72.695204985)(393.095200000,72.695204985)(394.510400000,72.695204985)
-\qbezier(396.560000000,72.695204985)(397.975200000,72.695204985)(399.390400000,72.695204985)
-\qbezier(401.440000000,72.695204985)(402.855200000,72.695204985)(404.270400000,72.695204985)
-\qbezier(406.320000000,72.695204985)(407.735200000,72.695204985)(409.150400000,72.695204985)
-\qbezier(411.200000000,72.695204985)(412.615200000,72.695204985)(414.030400000,72.695204985)
-\qbezier(416.080000000,72.695204985)(417.495200000,72.695204985)(418.910400000,72.695204985)
-\qbezier(420.960000000,72.695204985)(422.375200000,72.695204985)(423.790400000,72.695204985)
-\qbezier(425.840000000,72.695204985)(427.255200000,72.695204985)(428.670400000,72.695204985)
-\qbezier(430.720000000,72.695204985)(432.135200000,72.695204985)(433.550400000,72.695204985)
-\qbezier(435.600000000,72.695204985)(437.015200000,72.695204985)(438.430400000,72.695204985)
-\qbezier(440.480000000,72.695204985)(441.895200000,72.695204985)(443.310400000,72.695204985)
-\qbezier(445.360000000,72.695204985)(446.775200000,72.695204985)(448.190400000,72.695204985)
-\qbezier(450.240000000,72.695204985)(451.655200000,72.695204985)(453.070400000,72.695204985)
-\qbezier(455.120000000,72.695204985)(456.535200000,72.695204985)(457.950400000,72.695204985)
-\color{pvsink}
-\put(342.000000000,126.000000000){\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Mixed training}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(344.200000000,70.212335884){\circle*{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\put(347.000000000,70.417665256){\color{pvswhite}\circle*{2.7}}
-\put(347.000000000,70.417665256){\circle{2.7}}
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(348.400000000,76.055613816)(349.800000000,77.455613816)(351.200000000,78.855613816)
-\color{pvsink}
-\linethickness{0.65pt}
-\qbezier(348.400000000,78.855613816)(349.800000000,77.455613816)(351.200000000,76.055613816)
-\color{pvsink}
-\linethickness{1.15pt}
-\qbezier(342.600000000,72.695204985)(347.000000000,72.695204985)(351.400000000,72.695204985)
-\color{pvsteal}
-\linethickness{0.8pt}
-\put(365.200000000,69.227985271){\circle*{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\put(368.000000000,70.871725282){\color{pvswhite}\circle*{2.7}}
-\put(368.000000000,70.871725282){\circle{2.7}}
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(369.400000000,78.100555487)(370.800000000,79.500555487)(372.200000000,80.900555487)
-\color{pvsteal}
-\linethickness{0.65pt}
-\qbezier(369.400000000,80.900555487)(370.800000000,79.500555487)(372.200000000,78.100555487)
-\color{pvsteal}
-\linethickness{1.15pt}
-\qbezier(363.600000000,73.200088680)(368.000000000,73.200088680)(372.400000000,73.200088680)
-\color{pvsblue}
-\linethickness{0.8pt}
-\put(385.200000000,76.534769652){\circle*{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\put(388.000000000,74.024813208){\color{pvswhite}\circle*{2.7}}
-\put(388.000000000,74.024813208){\circle{2.7}}
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(389.400000000,86.190854186)(390.800000000,87.590854186)(392.200000000,88.990854186)
-\color{pvsblue}
-\linethickness{0.65pt}
-\qbezier(389.400000000,88.990854186)(390.800000000,87.590854186)(392.200000000,86.190854186)
-\color{pvsblue}
-\linethickness{1.15pt}
-\qbezier(383.600000000,79.383479015)(388.000000000,79.383479015)(392.400000000,79.383479015)
-\color{pvsrust}
-\linethickness{0.8pt}
-\put(405.200000000,70.698649192){\circle*{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\put(408.000000000,73.046588824){\color{pvswhite}\circle*{2.7}}
-\put(408.000000000,73.046588824){\circle{2.7}}
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(409.400000000,82.395428995)(410.800000000,83.795428995)(412.200000000,85.195428995)
-\color{pvsrust}
-\linethickness{0.65pt}
-\qbezier(409.400000000,85.195428995)(410.800000000,83.795428995)(412.200000000,82.395428995)
-\color{pvsrust}
-\linethickness{1.15pt}
-\qbezier(403.600000000,75.846889004)(408.000000000,75.846889004)(412.400000000,75.846889004)
-\color{pvspurple}
-\linethickness{0.8pt}
-\put(425.200000000,73.050610287){\circle*{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\put(428.000000000,76.208612704){\color{pvswhite}\circle*{2.7}}
-\put(428.000000000,76.208612704){\circle{2.7}}
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(429.400000000,83.735739147)(430.800000000,85.135739147)(432.200000000,86.535739147)
-\color{pvspurple}
-\linethickness{0.65pt}
-\qbezier(429.400000000,86.535739147)(430.800000000,85.135739147)(432.200000000,83.735739147)
-\color{pvspurple}
-\linethickness{1.15pt}
-\qbezier(423.600000000,78.131654046)(428.000000000,78.131654046)(432.400000000,78.131654046)
-\color{pvsnative}
-\linethickness{0.8pt}
-\put(448.200000000,82.369128381){\circle*{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\put(451.000000000,86.048701051){\color{pvswhite}\circle*{2.7}}
-\put(451.000000000,86.048701051){\circle{2.7}}
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(452.400000000,91.641599794)(453.800000000,93.041599794)(455.200000000,94.441599794)
-\color{pvsnative}
-\linethickness{0.65pt}
-\qbezier(452.400000000,94.441599794)(453.800000000,93.041599794)(455.200000000,91.641599794)
-\color{pvsnative}
-\linethickness{1.15pt}
-\qbezier(446.600000000,87.153143075)(451.000000000,87.153143075)(455.400000000,87.153143075)
-\color{pvsink}
-\put(347.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries N}}
-\color{pvsteal}
-\put(368.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries R}}
-\color{pvsblue}
-\put(388.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries S}}
-\color{pvsrust}
-\put(408.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries Q}}
-\color{pvspurple}
-\put(428.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries V}}
-\color{pvsnative}
-\put(451.000000000,54.000000000){\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\bfseries D}}
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(363.000000000,43.000000000)(363.000000000,45.000000000)(363.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(433.000000000,43.000000000)(433.000000000,45.000000000)(433.000000000,47.000000000)
-\color{pvszero}
-\linethickness{0.6pt}
-\qbezier(363.000000000,43.000000000)(398.000000000,43.000000000)(433.000000000,43.000000000)
-\color{pvsmuted}
-\put(347.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont 0}}
-\color{pvsmuted}
-\put(398.000000000,35.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $\le25\%$}}
-\color{pvsmuted}
-\put(451.000000000,39.000000000){\makebox(0,0){\fontsize{7.2}{8.2}\selectfont $100\%$}}
-\color{pvsmuted}
-\put(235.000000000,23.000000000){\makebox(0,0){\fontsize{7.1}{8.1}\selectfont Budget classes: fraction of annulus messages added; native messages retained}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(15.000000000,10.000000000){\circle*{3.0}}
-\color{pvsink}
-\put(20.000000000,10.000000000){\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont seed 0}}
-\color{pvsink}
-\linethickness{0.8pt}
-\put(63.000000000,10.000000000){\color{pvswhite}\circle*{3.0}}
-\put(63.000000000,10.000000000){\circle{3.0}}
-\color{pvsink}
-\put(68.000000000,10.000000000){\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont seed 1}}
-\color{pvsmuted}
-\linethickness{0.9pt}
-\qbezier(109.500000000,8.500000000)(111.000000000,10.000000000)(112.500000000,11.500000000)
-\color{pvsmuted}
-\linethickness{0.9pt}
-\qbezier(109.500000000,11.500000000)(111.000000000,10.000000000)(112.500000000,8.500000000)
-\color{pvsink}
-\put(116.000000000,10.000000000){\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont seed 2}}
-\color{pvsink}
-\linethickness{1.1pt}
-\qbezier(163.000000000,10.000000000)(168.000000000,10.000000000)(173.000000000,10.000000000)
-\color{pvsink}
-\put(179.000000000,10.000000000){\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont three-seed mean}}
-\color{pvszero}
-\linethickness{0.7pt}
-\qbezier(284.000000000,10.000000000)(285.377500000,10.000000000)(286.755000000,10.000000000)
-\qbezier(288.750000000,10.000000000)(290.127500000,10.000000000)(291.505000000,10.000000000)
-\qbezier(293.500000000,10.000000000)(294.877500000,10.000000000)(296.255000000,10.000000000)
-\qbezier(298.250000000,10.000000000)(299.627500000,10.000000000)(301.005000000,10.000000000)
-\color{pvsmuted}
-\put(309.000000000,10.000000000){\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont native mean; lower MSE is better}}
+\begin{picture}(470,300)
+\put(8.000000000,290.625000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{12}{13}\selectfont\bfseries WaterDrop: accuracy versus total messages}}
+\put(8.000000000,277.500000000){\color{pvsmuted}\makebox(0,0)[l]{\fontsize{7.6}{8.6}\selectfont\mdseries Observed-test coordinate MSE $\times10^{-9}$}}
+\put(227.000000000,277.500000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries N native}}
+\put(273.000000000,277.500000000){\color{pvsteal}\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries R random}}
+\put(326.000000000,277.500000000){\color{pvsblue}\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries S speed}}
+\put(374.000000000,277.500000000){\color{pvsrust}\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries Q risk}}
+\put(419.000000000,277.500000000){\color{pvsnative}\makebox(0,0)[l]{\fontsize{7.0}{8.0}\selectfont\bfseries D dense}}
+\put(128.000000000,267.187500000){\color{pvsink}\makebox(0,0){\fontsize{9.2}{10.2}\selectfont\bfseries Base-only training}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(34.000000000,161.250000000)(128.000000000,161.250000000)(222.000000000,161.250000000)}
+\put(29.000000000,161.250000000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 3.2}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(34.000000000,185.156250000)(128.000000000,185.156250000)(222.000000000,185.156250000)}
+\put(29.000000000,185.156250000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 3.6}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(34.000000000,209.062500000)(128.000000000,209.062500000)(222.000000000,209.062500000)}
+\put(29.000000000,209.062500000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.0}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(34.000000000,232.968750000)(128.000000000,232.968750000)(222.000000000,232.968750000)}
+\put(29.000000000,232.968750000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.4}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(34.000000000,256.875000000)(128.000000000,256.875000000)(222.000000000,256.875000000)}
+\put(29.000000000,256.875000000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.8}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(54.663581650,161.250000000)(54.663581650,209.062500000)(54.663581650,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(54.663581650,158.437500000)(54.663581650,159.843750000)(54.663581650,161.250000000)}
+\put(54.663581650,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 4,802}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(90.854768519,161.250000000)(90.854768519,209.062500000)(90.854768519,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(90.854768519,158.437500000)(90.854768519,159.843750000)(90.854768519,161.250000000)}
+\put(90.854768519,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 5,418}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(199.601216330,161.250000000)(199.601216330,209.062500000)(199.601216330,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(199.601216330,158.437500000)(199.601216330,159.843750000)(199.601216330,161.250000000)}
+\put(199.601216330,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 7,269}}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(34.000000000,161.250000000)(128.000000000,161.250000000)(222.000000000,161.250000000)}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(34.000000000,161.250000000)(34.000000000,209.062500000)(34.000000000,256.875000000)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(34.000000000,211.098992148)(35.434736842,211.098992148)(36.869473684,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(38.947368421,211.098992148)(40.382105263,211.098992148)(41.816842105,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(43.894736842,211.098992148)(45.329473684,211.098992148)(46.764210526,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(48.842105263,211.098992148)(50.276842105,211.098992148)(51.711578947,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(53.789473684,211.098992148)(55.224210526,211.098992148)(56.658947368,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(58.736842105,211.098992148)(60.171578947,211.098992148)(61.606315789,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(63.684210526,211.098992148)(65.118947368,211.098992148)(66.553684211,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(68.631578947,211.098992148)(70.066315789,211.098992148)(71.501052632,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(73.578947368,211.098992148)(75.013684211,211.098992148)(76.448421053,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(78.526315789,211.098992148)(79.961052632,211.098992148)(81.395789474,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(83.473684211,211.098992148)(84.908421053,211.098992148)(86.343157895,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(88.421052632,211.098992148)(89.855789474,211.098992148)(91.290526316,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(93.368421053,211.098992148)(94.803157895,211.098992148)(96.237894737,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(98.315789474,211.098992148)(99.750526316,211.098992148)(101.185263158,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(103.263157895,211.098992148)(104.697894737,211.098992148)(106.132631579,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(108.210526316,211.098992148)(109.645263158,211.098992148)(111.080000000,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(113.157894737,211.098992148)(114.592631579,211.098992148)(116.027368421,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(118.105263158,211.098992148)(119.540000000,211.098992148)(120.974736842,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(123.052631579,211.098992148)(124.487368421,211.098992148)(125.922105263,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(128.000000000,211.098992148)(129.434736842,211.098992148)(130.869473684,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(132.947368421,211.098992148)(134.382105263,211.098992148)(135.816842105,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(137.894736842,211.098992148)(139.329473684,211.098992148)(140.764210526,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(142.842105263,211.098992148)(144.276842105,211.098992148)(145.711578947,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(147.789473684,211.098992148)(149.224210526,211.098992148)(150.658947368,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(152.736842105,211.098992148)(154.171578947,211.098992148)(155.606315789,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(157.684210526,211.098992148)(159.118947368,211.098992148)(160.553684211,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(162.631578947,211.098992148)(164.066315789,211.098992148)(165.501052632,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(167.578947368,211.098992148)(169.013684211,211.098992148)(170.448421053,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(172.526315789,211.098992148)(173.961052632,211.098992148)(175.395789474,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(177.473684211,211.098992148)(178.908421053,211.098992148)(180.343157895,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(182.421052632,211.098992148)(183.855789474,211.098992148)(185.290526316,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(187.368421053,211.098992148)(188.803157895,211.098992148)(190.237894737,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(192.315789474,211.098992148)(193.750526316,211.098992148)(195.185263158,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(197.263157895,211.098992148)(198.697894737,211.098992148)(200.132631579,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(202.210526316,211.098992148)(203.645263158,211.098992148)(205.080000000,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(207.157894737,211.098992148)(208.592631579,211.098992148)(210.027368421,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(212.105263158,211.098992148)(213.540000000,211.098992148)(214.974736842,211.098992148)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(217.052631579,211.098992148)(218.487368421,211.098992148)(219.922105263,211.098992148)}
+\put(52.363581650,229.381627952){\color{pvsink}\linethickness{0.8pt}\circle*{3.2}}
+\put(54.663581650,201.818906136){\color{pvswhite}\circle*{3.2}}
+\put(54.663581650,201.818906136){\color{pvsink}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(55.363581650,200.596442356)(56.963581650,202.096442356)(58.563581650,203.596442356)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(55.363581650,203.596442356)(56.963581650,202.096442356)(58.563581650,200.596442356)}
+{\color{pvsink}\linethickness{1.5pt}\qbezier(50.163581650,211.098992148)(54.663581650,211.098992148)(59.163581650,211.098992148)}
+\put(80.554768519,203.031189485){\color{pvsteal}\linethickness{0.8pt}\circle*{3.2}}
+\put(82.854768519,182.260670616){\color{pvswhite}\circle*{3.2}}
+\put(82.854768519,182.260670616){\color{pvsteal}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(83.554768519,174.189325684)(85.154768519,175.689325684)(86.754768519,177.189325684)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(83.554768519,177.189325684)(85.154768519,175.689325684)(86.754768519,174.189325684)}
+{\color{pvsteal}\linethickness{1.5pt}\qbezier(86.354768519,186.993728595)(90.854768519,186.993728595)(95.354768519,186.993728595)}
+\put(88.554768519,214.416196858){\color{pvsblue}\linethickness{0.8pt}\circle*{3.2}}
+\put(90.854768519,198.464430991){\color{pvswhite}\circle*{3.2}}
+\put(90.854768519,198.464430991){\color{pvsblue}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(91.554768519,191.574811868)(93.154768519,193.074811868)(94.754768519,194.574811868)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(91.554768519,194.574811868)(93.154768519,193.074811868)(94.754768519,191.574811868)}
+{\color{pvsblue}\linethickness{1.5pt}\qbezier(86.354768519,201.985146573)(90.854768519,201.985146573)(95.354768519,201.985146573)}
+\put(96.554768519,205.817779922){\color{pvsrust}\linethickness{0.8pt}\circle*{3.2}}
+\put(98.854768519,197.691859902){\color{pvswhite}\circle*{3.2}}
+\put(98.854768519,197.691859902){\color{pvsrust}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(99.554768519,184.943999575)(101.154768519,186.443999575)(102.754768519,187.943999575)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(99.554768519,187.943999575)(101.154768519,186.443999575)(102.754768519,184.943999575)}
+{\color{pvsrust}\linethickness{1.5pt}\qbezier(86.354768519,196.651213133)(90.854768519,196.651213133)(95.354768519,196.651213133)}
+\put(197.301216330,219.610037006){\color{pvsnative}\linethickness{0.8pt}\circle*{3.2}}
+\put(199.601216330,243.707721403){\color{pvswhite}\circle*{3.2}}
+\put(199.601216330,243.707721403){\color{pvsnative}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(200.301216330,216.299394561)(201.901216330,217.799394561)(203.501216330,219.299394561)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(200.301216330,219.299394561)(201.901216330,217.799394561)(203.501216330,216.299394561)}
+{\color{pvsnative}\linethickness{1.5pt}\qbezier(195.101216330,227.039050990)(199.601216330,227.039050990)(204.101216330,227.039050990)}
+\put(366.000000000,267.187500000){\color{pvsink}\makebox(0,0){\fontsize{9.2}{10.2}\selectfont\bfseries Mixed training}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(272.000000000,161.250000000)(366.000000000,161.250000000)(460.000000000,161.250000000)}
+\put(267.000000000,161.250000000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 3.2}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(272.000000000,185.156250000)(366.000000000,185.156250000)(460.000000000,185.156250000)}
+\put(267.000000000,185.156250000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 3.6}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(272.000000000,209.062500000)(366.000000000,209.062500000)(460.000000000,209.062500000)}
+\put(267.000000000,209.062500000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.0}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(272.000000000,232.968750000)(366.000000000,232.968750000)(460.000000000,232.968750000)}
+\put(267.000000000,232.968750000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.4}}
+{\color{pvsgrid}\linethickness{0.4pt}\qbezier(272.000000000,256.875000000)(366.000000000,256.875000000)(460.000000000,256.875000000)}
+\put(267.000000000,256.875000000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{7.2}{8.2}\selectfont\mdseries 4.8}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(292.663581650,161.250000000)(292.663581650,209.062500000)(292.663581650,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(292.663581650,158.437500000)(292.663581650,159.843750000)(292.663581650,161.250000000)}
+\put(292.663581650,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 4,802}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(328.854768519,161.250000000)(328.854768519,209.062500000)(328.854768519,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(328.854768519,158.437500000)(328.854768519,159.843750000)(328.854768519,161.250000000)}
+\put(328.854768519,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 5,418}}
+{\color{pvsgrid}\linethickness{0.55pt}\qbezier(437.601216330,161.250000000)(437.601216330,209.062500000)(437.601216330,256.875000000)}
+{\color{pvszero}\linethickness{0.65pt}\qbezier(437.601216330,158.437500000)(437.601216330,159.843750000)(437.601216330,161.250000000)}
+\put(437.601216330,150.937500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries 7,269}}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(272.000000000,161.250000000)(366.000000000,161.250000000)(460.000000000,161.250000000)}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(272.000000000,161.250000000)(272.000000000,209.062500000)(272.000000000,256.875000000)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(272.000000000,215.254406670)(273.434736842,215.254406670)(274.869473684,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(276.947368421,215.254406670)(278.382105263,215.254406670)(279.816842105,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(281.894736842,215.254406670)(283.329473684,215.254406670)(284.764210526,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(286.842105263,215.254406670)(288.276842105,215.254406670)(289.711578947,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(291.789473684,215.254406670)(293.224210526,215.254406670)(294.658947368,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(296.736842105,215.254406670)(298.171578947,215.254406670)(299.606315789,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(301.684210526,215.254406670)(303.118947368,215.254406670)(304.553684211,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(306.631578947,215.254406670)(308.066315789,215.254406670)(309.501052632,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(311.578947368,215.254406670)(313.013684211,215.254406670)(314.448421053,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(316.526315789,215.254406670)(317.961052632,215.254406670)(319.395789474,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(321.473684211,215.254406670)(322.908421053,215.254406670)(324.343157895,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(326.421052632,215.254406670)(327.855789474,215.254406670)(329.290526316,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(331.368421053,215.254406670)(332.803157895,215.254406670)(334.237894737,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(336.315789474,215.254406670)(337.750526316,215.254406670)(339.185263158,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(341.263157895,215.254406670)(342.697894737,215.254406670)(344.132631579,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(346.210526316,215.254406670)(347.645263158,215.254406670)(349.080000000,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(351.157894737,215.254406670)(352.592631579,215.254406670)(354.027368421,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(356.105263158,215.254406670)(357.540000000,215.254406670)(358.974736842,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(361.052631579,215.254406670)(362.487368421,215.254406670)(363.922105263,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(366.000000000,215.254406670)(367.434736842,215.254406670)(368.869473684,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(370.947368421,215.254406670)(372.382105263,215.254406670)(373.816842105,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(375.894736842,215.254406670)(377.329473684,215.254406670)(378.764210526,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(380.842105263,215.254406670)(382.276842105,215.254406670)(383.711578947,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(385.789473684,215.254406670)(387.224210526,215.254406670)(388.658947368,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(390.736842105,215.254406670)(392.171578947,215.254406670)(393.606315789,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(395.684210526,215.254406670)(397.118947368,215.254406670)(398.553684211,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(400.631578947,215.254406670)(402.066315789,215.254406670)(403.501052632,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(405.578947368,215.254406670)(407.013684211,215.254406670)(408.448421053,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(410.526315789,215.254406670)(411.961052632,215.254406670)(413.395789474,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(415.473684211,215.254406670)(416.908421053,215.254406670)(418.343157895,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(420.421052632,215.254406670)(421.855789474,215.254406670)(423.290526316,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(425.368421053,215.254406670)(426.803157895,215.254406670)(428.237894737,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(430.315789474,215.254406670)(431.750526316,215.254406670)(433.185263158,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(435.263157895,215.254406670)(436.697894737,215.254406670)(438.132631579,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(440.210526316,215.254406670)(441.645263158,215.254406670)(443.080000000,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(445.157894737,215.254406670)(446.592631579,215.254406670)(448.027368421,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(450.105263158,215.254406670)(451.540000000,215.254406670)(452.974736842,215.254406670)}
+{\color{pvszero}\linethickness{0.75pt}\qbezier(455.052631579,215.254406670)(456.487368421,215.254406670)(457.922105263,215.254406670)}
+\put(290.363581650,231.295953070){\color{pvsink}\linethickness{0.8pt}\circle*{3.2}}
+\put(292.663581650,205.729979924){\color{pvswhite}\circle*{3.2}}
+\put(292.663581650,205.729979924){\color{pvsink}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(293.363581650,207.237287017)(294.963581650,208.737287017)(296.563581650,210.237287017)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(293.363581650,210.237287017)(294.963581650,208.737287017)(296.563581650,207.237287017)}
+{\color{pvsink}\linethickness{1.5pt}\qbezier(288.163581650,215.254406670)(292.663581650,215.254406670)(297.163581650,215.254406670)}
+\put(318.554768519,206.851562424){\color{pvsteal}\linethickness{0.8pt}\circle*{3.2}}
+\put(320.854768519,177.678890316){\color{pvswhite}\circle*{3.2}}
+\put(320.854768519,177.678890316){\color{pvsteal}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(321.554768519,179.887562343)(323.154768519,181.387562343)(324.754768519,182.887562343)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(321.554768519,182.887562343)(323.154768519,181.387562343)(324.754768519,179.887562343)}
+{\color{pvsteal}\linethickness{1.5pt}\qbezier(324.354768519,188.639338361)(328.854768519,188.639338361)(333.354768519,188.639338361)}
+\put(326.554768519,212.496212863){\color{pvsblue}\linethickness{0.8pt}\circle*{3.2}}
+\put(328.854768519,184.996307488){\color{pvswhite}\circle*{3.2}}
+\put(328.854768519,184.996307488){\color{pvsblue}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(329.554768519,183.589211785)(331.154768519,185.089211785)(332.754768519,186.589211785)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(329.554768519,186.589211785)(331.154768519,185.089211785)(332.754768519,183.589211785)}
+{\color{pvsblue}\linethickness{1.5pt}\qbezier(324.354768519,194.193910712)(328.854768519,194.193910712)(333.354768519,194.193910712)}
+\put(334.554768519,198.950030006){\color{pvsrust}\linethickness{0.8pt}\circle*{3.2}}
+\put(336.854768519,176.330032071){\color{pvswhite}\circle*{3.2}}
+\put(336.854768519,176.330032071){\color{pvsrust}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(337.554768519,171.339671062)(339.154768519,172.839671062)(340.754768519,174.339671062)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(337.554768519,174.339671062)(339.154768519,172.839671062)(340.754768519,171.339671062)}
+{\color{pvsrust}\linethickness{1.5pt}\qbezier(324.354768519,182.706577713)(328.854768519,182.706577713)(333.354768519,182.706577713)}
+\put(435.301216330,208.532395332){\color{pvsnative}\linethickness{0.8pt}\circle*{3.2}}
+\put(437.601216330,195.512955983){\color{pvswhite}\circle*{3.2}}
+\put(437.601216330,195.512955983){\color{pvsnative}\linethickness{0.65pt}\circle{3.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(438.301216330,184.098887950)(439.901216330,185.598887950)(441.501216330,187.098887950)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(438.301216330,187.098887950)(439.901216330,185.598887950)(441.501216330,184.098887950)}
+{\color{pvsnative}\linethickness{1.5pt}\qbezier(433.101216330,196.548079755)(437.601216330,196.548079755)(442.101216330,196.548079755)}
+\put(235.000000000,137.812500000){\color{pvsmuted}\makebox(0,0){\fontsize{7.5}{8.5}\selectfont\mdseries Mean total directed messages; mean bars at exact x, seed symbols offset}}
+{\color{pvsgrid}\linethickness{0.6pt}\qbezier(8.000000000,130.312500000)(235.000000000,130.312500000)(462.000000000,130.312500000)}
+\put(112.000000000,121.875000000){\color{pvsink}\makebox(0,0){\fontsize{8.6}{9.6}\selectfont\bfseries Goop: optional-message budgets}}
+\put(350.000000000,121.875000000){\color{pvsink}\makebox(0,0){\fontsize{8.6}{9.6}\selectfont\bfseries Sand: optional-message budgets}}
+\put(68.000000000,110.625000000){\color{pvsink}\makebox(0,0){\fontsize{7.4}{8.4}\selectfont\bfseries Base-only}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(28.000000000,55.653409091)(68.000000000,55.653409091)(108.000000000,55.653409091)}
+\put(24.000000000,55.653409091){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.2}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(28.000000000,75.085227273)(68.000000000,75.085227273)(108.000000000,75.085227273)}
+\put(24.000000000,75.085227273){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.4}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(28.000000000,94.517045455)(68.000000000,94.517045455)(108.000000000,94.517045455)}
+\put(24.000000000,94.517045455){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.6}}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(28.000000000,45.937500000)(28.000000000,72.656250000)(28.000000000,99.375000000)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(28.000000000,62.480171621)(29.450000000,62.480171621)(30.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(33.000000000,62.480171621)(34.450000000,62.480171621)(35.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(38.000000000,62.480171621)(39.450000000,62.480171621)(40.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(43.000000000,62.480171621)(44.450000000,62.480171621)(45.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(48.000000000,62.480171621)(49.450000000,62.480171621)(50.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(53.000000000,62.480171621)(54.450000000,62.480171621)(55.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(58.000000000,62.480171621)(59.450000000,62.480171621)(60.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(63.000000000,62.480171621)(64.450000000,62.480171621)(65.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(68.000000000,62.480171621)(69.450000000,62.480171621)(70.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(73.000000000,62.480171621)(74.450000000,62.480171621)(75.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(78.000000000,62.480171621)(79.450000000,62.480171621)(80.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(83.000000000,62.480171621)(84.450000000,62.480171621)(85.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(88.000000000,62.480171621)(89.450000000,62.480171621)(90.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(93.000000000,62.480171621)(94.450000000,62.480171621)(95.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(98.000000000,62.480171621)(99.450000000,62.480171621)(100.900000000,62.480171621)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(103.000000000,62.480171621)(104.450000000,62.480171621)(105.900000000,62.480171621)}
+\put(32.100000000,61.299444336){\color{pvsink}\linethickness{0.8pt}\circle*{2.2}}
+\put(34.000000000,57.708191198){\color{pvswhite}\circle*{2.2}}
+\put(34.000000000,57.708191198){\color{pvsink}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(34.800000000,67.401629330)(35.900000000,68.432879330)(37.000000000,69.464129330)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(34.800000000,69.464129330)(35.900000000,68.432879330)(37.000000000,67.401629330)}
+{\color{pvsink}\linethickness{1.1pt}\qbezier(30.500000000,62.480171621)(34.000000000,62.480171621)(37.500000000,62.480171621)}
+\put(34.000000000,37.500000000){\color{pvsink}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries N}}
+\put(45.700000000,61.144525094){\color{pvsteal}\linethickness{0.8pt}\circle*{2.2}}
+\put(47.600000000,56.479670296){\color{pvswhite}\circle*{2.2}}
+\put(47.600000000,56.479670296){\color{pvsteal}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(48.400000000,66.711350465)(49.500000000,67.742600465)(50.600000000,68.773850465)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(48.400000000,68.773850465)(49.500000000,67.742600465)(50.600000000,66.711350465)}
+{\color{pvsteal}\linethickness{1.1pt}\qbezier(44.100000000,61.788931952)(47.600000000,61.788931952)(51.100000000,61.788931952)}
+\put(47.600000000,37.500000000){\color{pvsteal}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries R}}
+\put(59.300000000,63.076362897){\color{pvsblue}\linethickness{0.8pt}\circle*{2.2}}
+\put(61.200000000,61.447870592){\color{pvswhite}\circle*{2.2}}
+\put(61.200000000,61.447870592){\color{pvsblue}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(62.000000000,71.354025591)(63.100000000,72.385275591)(64.200000000,73.416525591)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(62.000000000,73.416525591)(63.100000000,72.385275591)(64.200000000,71.354025591)}
+{\color{pvsblue}\linethickness{1.1pt}\qbezier(57.700000000,65.636503027)(61.200000000,65.636503027)(64.700000000,65.636503027)}
+\put(61.200000000,37.500000000){\color{pvsblue}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries S}}
+\put(72.900000000,66.312187486){\color{pvsrust}\linethickness{0.8pt}\circle*{2.2}}
+\put(74.800000000,64.293737568){\color{pvswhite}\circle*{2.2}}
+\put(74.800000000,64.293737568){\color{pvsrust}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(75.600000000,72.347642464)(76.700000000,73.378892464)(77.800000000,74.410142464)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(75.600000000,74.410142464)(76.700000000,73.378892464)(77.800000000,72.347642464)}
+{\color{pvsrust}\linethickness{1.1pt}\qbezier(71.300000000,67.994939173)(74.800000000,67.994939173)(78.300000000,67.994939173)}
+\put(74.800000000,37.500000000){\color{pvsrust}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries Q}}
+\put(86.500000000,70.205180221){\color{pvspurple}\linethickness{0.8pt}\circle*{2.2}}
+\put(88.400000000,67.614139082){\color{pvswhite}\circle*{2.2}}
+\put(88.400000000,67.614139082){\color{pvspurple}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(89.200000000,77.385348970)(90.300000000,78.416598970)(91.400000000,79.447848970)}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(89.200000000,79.447848970)(90.300000000,78.416598970)(91.400000000,77.385348970)}
+{\color{pvspurple}\linethickness{1.1pt}\qbezier(84.900000000,72.078639424)(88.400000000,72.078639424)(91.900000000,72.078639424)}
+\put(88.400000000,37.500000000){\color{pvspurple}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries V}}
+\put(100.100000000,77.566480803){\color{pvsnative}\linethickness{0.8pt}\circle*{2.2}}
+\put(102.000000000,77.627326723){\color{pvswhite}\circle*{2.2}}
+\put(102.000000000,77.627326723){\color{pvsnative}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(102.800000000,87.240552397)(103.900000000,88.271802397)(105.000000000,89.303052397)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(102.800000000,89.303052397)(103.900000000,88.271802397)(105.000000000,87.240552397)}
+{\color{pvsnative}\linethickness{1.1pt}\qbezier(98.500000000,81.155203308)(102.000000000,81.155203308)(105.500000000,81.155203308)}
+\put(102.000000000,37.500000000){\color{pvsnative}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries D}}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(43.600000000,30.937500000)(68.000000000,30.937500000)(92.400000000,30.937500000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(43.600000000,30.937500000)(43.600000000,32.343750000)(43.600000000,33.750000000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(92.400000000,30.937500000)(92.400000000,32.343750000)(92.400000000,33.750000000)}
+\put(34.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries 0}}
+\put(68.000000000,24.375000000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $\le25\%$}}
+\put(102.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $100\%$}}
+\put(181.000000000,110.625000000){\color{pvsink}\makebox(0,0){\fontsize{7.4}{8.4}\selectfont\bfseries Mixed}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(141.000000000,55.653409091)(181.000000000,55.653409091)(221.000000000,55.653409091)}
+\put(137.000000000,55.653409091){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.2}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(141.000000000,75.085227273)(181.000000000,75.085227273)(221.000000000,75.085227273)}
+\put(137.000000000,75.085227273){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.4}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(141.000000000,94.517045455)(181.000000000,94.517045455)(221.000000000,94.517045455)}
+\put(137.000000000,94.517045455){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 1.6}}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(141.000000000,45.937500000)(141.000000000,72.656250000)(141.000000000,99.375000000)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(141.000000000,59.528015304)(142.450000000,59.528015304)(143.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(146.000000000,59.528015304)(147.450000000,59.528015304)(148.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(151.000000000,59.528015304)(152.450000000,59.528015304)(153.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(156.000000000,59.528015304)(157.450000000,59.528015304)(158.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(161.000000000,59.528015304)(162.450000000,59.528015304)(163.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(166.000000000,59.528015304)(167.450000000,59.528015304)(168.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(171.000000000,59.528015304)(172.450000000,59.528015304)(173.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(176.000000000,59.528015304)(177.450000000,59.528015304)(178.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(181.000000000,59.528015304)(182.450000000,59.528015304)(183.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(186.000000000,59.528015304)(187.450000000,59.528015304)(188.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(191.000000000,59.528015304)(192.450000000,59.528015304)(193.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(196.000000000,59.528015304)(197.450000000,59.528015304)(198.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(201.000000000,59.528015304)(202.450000000,59.528015304)(203.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(206.000000000,59.528015304)(207.450000000,59.528015304)(208.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(211.000000000,59.528015304)(212.450000000,59.528015304)(213.900000000,59.528015304)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(216.000000000,59.528015304)(217.450000000,59.528015304)(218.900000000,59.528015304)}
+\put(145.100000000,52.976187705){\color{pvsink}\linethickness{0.8pt}\circle*{2.2}}
+\put(147.000000000,55.691522658){\color{pvswhite}\circle*{2.2}}
+\put(147.000000000,55.691522658){\color{pvsink}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(147.800000000,68.885085549)(148.900000000,69.916335549)(150.000000000,70.947585549)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(147.800000000,70.947585549)(148.900000000,69.916335549)(150.000000000,68.885085549)}
+{\color{pvsink}\linethickness{1.1pt}\qbezier(143.500000000,59.528015304)(147.000000000,59.528015304)(150.500000000,59.528015304)}
+\put(147.000000000,37.500000000){\color{pvsink}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries N}}
+\put(158.700000000,51.671213621){\color{pvsteal}\linethickness{0.8pt}\circle*{2.2}}
+\put(160.600000000,51.054911280){\color{pvswhite}\circle*{2.2}}
+\put(160.600000000,51.054911280){\color{pvsteal}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(161.400000000,65.559299478)(162.500000000,66.590549478)(163.600000000,67.621799478)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(161.400000000,67.621799478)(162.500000000,66.590549478)(163.600000000,65.559299478)}
+{\color{pvsteal}\linethickness{1.1pt}\qbezier(157.100000000,56.438891459)(160.600000000,56.438891459)(164.100000000,56.438891459)}
+\put(160.600000000,37.500000000){\color{pvsteal}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries R}}
+\put(172.300000000,51.917563859){\color{pvsblue}\linethickness{0.8pt}\circle*{2.2}}
+\put(174.200000000,55.913374494){\color{pvswhite}\circle*{2.2}}
+\put(174.200000000,55.913374494){\color{pvsblue}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(175.000000000,66.709843741)(176.100000000,67.741093741)(177.200000000,68.772343741)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(175.000000000,68.772343741)(176.100000000,67.741093741)(177.200000000,66.709843741)}
+{\color{pvsblue}\linethickness{1.1pt}\qbezier(170.700000000,58.524010698)(174.200000000,58.524010698)(177.700000000,58.524010698)}
+\put(174.200000000,37.500000000){\color{pvsblue}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries S}}
+\put(185.900000000,52.197944547){\color{pvsrust}\linethickness{0.8pt}\circle*{2.2}}
+\put(187.800000000,57.865782173){\color{pvswhite}\circle*{2.2}}
+\put(187.800000000,57.865782173){\color{pvsrust}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(188.600000000,66.487050142)(189.700000000,67.518300142)(190.800000000,68.549550142)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(188.600000000,68.549550142)(189.700000000,67.518300142)(190.800000000,66.487050142)}
+{\color{pvsrust}\linethickness{1.1pt}\qbezier(184.300000000,59.194008954)(187.800000000,59.194008954)(191.300000000,59.194008954)}
+\put(187.800000000,37.500000000){\color{pvsrust}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries Q}}
+\put(199.500000000,55.717516372){\color{pvspurple}\linethickness{0.8pt}\circle*{2.2}}
+\put(201.400000000,59.854778343){\color{pvswhite}\circle*{2.2}}
+\put(201.400000000,59.854778343){\color{pvspurple}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(202.200000000,71.162189220)(203.300000000,72.193439220)(204.400000000,73.224689220)}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(202.200000000,73.224689220)(203.300000000,72.193439220)(204.400000000,71.162189220)}
+{\color{pvspurple}\linethickness{1.1pt}\qbezier(197.900000000,62.588577979)(201.400000000,62.588577979)(204.900000000,62.588577979)}
+\put(201.400000000,37.500000000){\color{pvspurple}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries V}}
+\put(213.100000000,57.472069406){\color{pvsnative}\linethickness{0.8pt}\circle*{2.2}}
+\put(215.000000000,57.602867876){\color{pvswhite}\circle*{2.2}}
+\put(215.000000000,57.602867876){\color{pvsnative}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(215.800000000,72.464624933)(216.900000000,73.495874933)(218.000000000,74.527124933)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(215.800000000,74.527124933)(216.900000000,73.495874933)(218.000000000,72.464624933)}
+{\color{pvsnative}\linethickness{1.1pt}\qbezier(211.500000000,62.856937405)(215.000000000,62.856937405)(218.500000000,62.856937405)}
+\put(215.000000000,37.500000000){\color{pvsnative}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries D}}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(156.600000000,30.937500000)(181.000000000,30.937500000)(205.400000000,30.937500000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(156.600000000,30.937500000)(156.600000000,32.343750000)(156.600000000,33.750000000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(205.400000000,30.937500000)(205.400000000,32.343750000)(205.400000000,33.750000000)}
+\put(147.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries 0}}
+\put(181.000000000,24.375000000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $\le25\%$}}
+\put(215.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $100\%$}}
+\put(306.000000000,110.625000000){\color{pvsink}\makebox(0,0){\fontsize{7.4}{8.4}\selectfont\bfseries Base-only}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(266.000000000,49.277343750)(306.000000000,49.277343750)(346.000000000,49.277343750)}
+\put(262.000000000,49.277343750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 3}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(266.000000000,71.542968750)(306.000000000,71.542968750)(346.000000000,71.542968750)}
+\put(262.000000000,71.542968750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 5}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(266.000000000,93.808593750)(306.000000000,93.808593750)(346.000000000,93.808593750)}
+\put(262.000000000,93.808593750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 7}}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(266.000000000,45.937500000)(266.000000000,72.656250000)(266.000000000,99.375000000)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(266.000000000,53.709871359)(267.450000000,53.709871359)(268.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(271.000000000,53.709871359)(272.450000000,53.709871359)(273.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(276.000000000,53.709871359)(277.450000000,53.709871359)(278.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(281.000000000,53.709871359)(282.450000000,53.709871359)(283.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(286.000000000,53.709871359)(287.450000000,53.709871359)(288.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(291.000000000,53.709871359)(292.450000000,53.709871359)(293.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(296.000000000,53.709871359)(297.450000000,53.709871359)(298.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(301.000000000,53.709871359)(302.450000000,53.709871359)(303.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(306.000000000,53.709871359)(307.450000000,53.709871359)(308.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(311.000000000,53.709871359)(312.450000000,53.709871359)(313.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(316.000000000,53.709871359)(317.450000000,53.709871359)(318.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(321.000000000,53.709871359)(322.450000000,53.709871359)(323.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(326.000000000,53.709871359)(327.450000000,53.709871359)(328.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(331.000000000,53.709871359)(332.450000000,53.709871359)(333.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(336.000000000,53.709871359)(337.450000000,53.709871359)(338.900000000,53.709871359)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(341.000000000,53.709871359)(342.450000000,53.709871359)(343.900000000,53.709871359)}
+\put(270.100000000,49.450766258){\color{pvsink}\linethickness{0.8pt}\circle*{2.2}}
+\put(272.000000000,50.519669981){\color{pvswhite}\circle*{2.2}}
+\put(272.000000000,50.519669981){\color{pvsink}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(272.800000000,60.127927838)(273.900000000,61.159177838)(275.000000000,62.190427838)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(272.800000000,62.190427838)(273.900000000,61.159177838)(275.000000000,60.127927838)}
+{\color{pvsink}\linethickness{1.1pt}\qbezier(268.500000000,53.709871359)(272.000000000,53.709871359)(275.500000000,53.709871359)}
+\put(272.000000000,37.500000000){\color{pvsink}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries N}}
+\put(283.700000000,52.003282423){\color{pvsteal}\linethickness{0.8pt}\circle*{2.2}}
+\put(285.600000000,53.249809436){\color{pvswhite}\circle*{2.2}}
+\put(285.600000000,53.249809436){\color{pvsteal}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(286.400000000,66.087913564)(287.500000000,67.119163564)(288.600000000,68.150413564)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(286.400000000,68.150413564)(287.500000000,67.119163564)(288.600000000,66.087913564)}
+{\color{pvsteal}\linethickness{1.1pt}\qbezier(282.100000000,57.457418474)(285.600000000,57.457418474)(289.100000000,57.457418474)}
+\put(285.600000000,37.500000000){\color{pvsteal}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries R}}
+\put(297.300000000,58.218322169){\color{pvsblue}\linethickness{0.8pt}\circle*{2.2}}
+\put(299.200000000,56.461000432){\color{pvswhite}\circle*{2.2}}
+\put(299.200000000,56.461000432){\color{pvsblue}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(300.000000000,76.867572563)(301.100000000,77.898822563)(302.200000000,78.930072563)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(300.000000000,78.930072563)(301.100000000,77.898822563)(302.200000000,76.867572563)}
+{\color{pvsblue}\linethickness{1.1pt}\qbezier(295.700000000,64.192715054)(299.200000000,64.192715054)(302.700000000,64.192715054)}
+\put(299.200000000,37.500000000){\color{pvsblue}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries S}}
+\put(310.900000000,54.873581467){\color{pvsrust}\linethickness{0.8pt}\circle*{2.2}}
+\put(312.800000000,56.086322600){\color{pvswhite}\circle*{2.2}}
+\put(312.800000000,56.086322600){\color{pvsrust}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(313.600000000,76.276676278)(314.700000000,77.307926278)(315.800000000,78.339176278)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(313.600000000,78.339176278)(314.700000000,77.307926278)(315.800000000,76.276676278)}
+{\color{pvsrust}\linethickness{1.1pt}\qbezier(309.300000000,62.755943448)(312.800000000,62.755943448)(316.300000000,62.755943448)}
+\put(312.800000000,37.500000000){\color{pvsrust}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries Q}}
+\put(324.500000000,58.233257885){\color{pvspurple}\linethickness{0.8pt}\circle*{2.2}}
+\put(326.400000000,59.876337421){\color{pvswhite}\circle*{2.2}}
+\put(326.400000000,59.876337421){\color{pvspurple}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(327.200000000,76.539056813)(328.300000000,77.570306813)(329.400000000,78.601556813)}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(327.200000000,78.601556813)(328.300000000,77.570306813)(329.400000000,76.539056813)}
+{\color{pvspurple}\linethickness{1.1pt}\qbezier(322.900000000,65.226634040)(326.400000000,65.226634040)(329.900000000,65.226634040)}
+\put(326.400000000,37.500000000){\color{pvspurple}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries V}}
+\put(338.100000000,72.852878936){\color{pvsnative}\linethickness{0.8pt}\circle*{2.2}}
+\put(340.000000000,73.405815530){\color{pvswhite}\circle*{2.2}}
+\put(340.000000000,73.405815530){\color{pvsnative}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(340.800000000,94.063673225)(341.900000000,95.094923225)(343.000000000,96.126173225)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(340.800000000,96.126173225)(341.900000000,95.094923225)(343.000000000,94.063673225)}
+{\color{pvsnative}\linethickness{1.1pt}\qbezier(336.500000000,80.451205897)(340.000000000,80.451205897)(343.500000000,80.451205897)}
+\put(340.000000000,37.500000000){\color{pvsnative}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries D}}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(281.600000000,30.937500000)(306.000000000,30.937500000)(330.400000000,30.937500000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(281.600000000,30.937500000)(281.600000000,32.343750000)(281.600000000,33.750000000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(330.400000000,30.937500000)(330.400000000,32.343750000)(330.400000000,33.750000000)}
+\put(272.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries 0}}
+\put(306.000000000,24.375000000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $\le25\%$}}
+\put(340.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $100\%$}}
+\put(419.000000000,110.625000000){\color{pvsink}\makebox(0,0){\fontsize{7.4}{8.4}\selectfont\bfseries Mixed}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(379.000000000,49.277343750)(419.000000000,49.277343750)(459.000000000,49.277343750)}
+\put(375.000000000,49.277343750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 3}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(379.000000000,71.542968750)(419.000000000,71.542968750)(459.000000000,71.542968750)}
+\put(375.000000000,71.542968750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 5}}
+{\color{pvsgrid}\linethickness{0.35pt}\qbezier(379.000000000,93.808593750)(419.000000000,93.808593750)(459.000000000,93.808593750)}
+\put(375.000000000,93.808593750){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.5}{7.5}\selectfont\mdseries 7}}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(379.000000000,45.937500000)(379.000000000,72.656250000)(379.000000000,99.375000000)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(379.000000000,52.770588477)(380.450000000,52.770588477)(381.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(384.000000000,52.770588477)(385.450000000,52.770588477)(386.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(389.000000000,52.770588477)(390.450000000,52.770588477)(391.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(394.000000000,52.770588477)(395.450000000,52.770588477)(396.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(399.000000000,52.770588477)(400.450000000,52.770588477)(401.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(404.000000000,52.770588477)(405.450000000,52.770588477)(406.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(409.000000000,52.770588477)(410.450000000,52.770588477)(411.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(414.000000000,52.770588477)(415.450000000,52.770588477)(416.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(419.000000000,52.770588477)(420.450000000,52.770588477)(421.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(424.000000000,52.770588477)(425.450000000,52.770588477)(426.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(429.000000000,52.770588477)(430.450000000,52.770588477)(431.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(434.000000000,52.770588477)(435.450000000,52.770588477)(436.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(439.000000000,52.770588477)(440.450000000,52.770588477)(441.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(444.000000000,52.770588477)(445.450000000,52.770588477)(446.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(449.000000000,52.770588477)(450.450000000,52.770588477)(451.900000000,52.770588477)}
+{\color{pvszero}\linethickness{0.6pt}\qbezier(454.000000000,52.770588477)(455.450000000,52.770588477)(456.900000000,52.770588477)}
+\put(383.100000000,50.819436747){\color{pvsink}\linethickness{0.8pt}\circle*{2.2}}
+\put(385.000000000,50.980793929){\color{pvswhite}\circle*{2.2}}
+\put(385.000000000,50.980793929){\color{pvsink}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(385.800000000,55.480284754)(386.900000000,56.511534754)(388.000000000,57.542784754)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(385.800000000,57.542784754)(386.900000000,56.511534754)(388.000000000,55.480284754)}
+{\color{pvsink}\linethickness{1.1pt}\qbezier(381.500000000,52.770588477)(385.000000000,52.770588477)(388.500000000,52.770588477)}
+\put(385.000000000,37.500000000){\color{pvsink}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries N}}
+\put(396.700000000,50.045889160){\color{pvsteal}\linethickness{0.8pt}\circle*{2.2}}
+\put(398.600000000,51.337614996){\color{pvswhite}\circle*{2.2}}
+\put(398.600000000,51.337614996){\color{pvsteal}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(399.400000000,57.087293145)(400.500000000,58.118543145)(401.600000000,59.149793145)}
+{\color{pvsteal}\linethickness{0.7pt}\qbezier(399.400000000,59.149793145)(400.500000000,58.118543145)(401.600000000,57.087293145)}
+{\color{pvsteal}\linethickness{1.1pt}\qbezier(395.100000000,53.167349100)(398.600000000,53.167349100)(402.100000000,53.167349100)}
+\put(398.600000000,37.500000000){\color{pvsteal}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries R}}
+\put(410.300000000,55.787893431){\color{pvsblue}\linethickness{0.8pt}\circle*{2.2}}
+\put(412.200000000,53.815455233){\color{pvswhite}\circle*{2.2}}
+\put(412.200000000,53.815455233){\color{pvsblue}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(413.000000000,63.445018685)(414.100000000,64.476268685)(415.200000000,65.507518685)}
+{\color{pvsblue}\linethickness{0.7pt}\qbezier(413.000000000,65.507518685)(414.100000000,64.476268685)(415.200000000,63.445018685)}
+{\color{pvsblue}\linethickness{1.1pt}\qbezier(408.700000000,58.026539116)(412.200000000,58.026539116)(415.700000000,58.026539116)}
+\put(412.200000000,37.500000000){\color{pvsblue}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries S}}
+\put(423.900000000,51.201603915){\color{pvsrust}\linethickness{0.8pt}\circle*{2.2}}
+\put(425.800000000,53.046721916){\color{pvswhite}\circle*{2.2}}
+\put(425.800000000,53.046721916){\color{pvsrust}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(426.600000000,60.462400543)(427.700000000,61.493650543)(428.800000000,62.524900543)}
+{\color{pvsrust}\linethickness{0.7pt}\qbezier(426.600000000,62.524900543)(427.700000000,61.493650543)(428.800000000,60.462400543)}
+{\color{pvsrust}\linethickness{1.1pt}\qbezier(422.300000000,55.247325458)(425.800000000,55.247325458)(429.300000000,55.247325458)}
+\put(425.800000000,37.500000000){\color{pvsrust}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries Q}}
+\put(437.500000000,53.049882164){\color{pvspurple}\linethickness{0.8pt}\circle*{2.2}}
+\put(439.400000000,55.531584432){\color{pvswhite}\circle*{2.2}}
+\put(439.400000000,55.531584432){\color{pvspurple}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(440.200000000,61.515677363)(441.300000000,62.546927363)(442.400000000,63.578177363)}
+{\color{pvspurple}\linethickness{0.7pt}\qbezier(440.200000000,63.578177363)(441.300000000,62.546927363)(442.400000000,61.515677363)}
+{\color{pvspurple}\linethickness{1.1pt}\qbezier(435.900000000,57.042797986)(439.400000000,57.042797986)(442.900000000,57.042797986)}
+\put(439.400000000,37.500000000){\color{pvspurple}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries V}}
+\put(451.100000000,60.372798498){\color{pvsnative}\linethickness{0.8pt}\circle*{2.2}}
+\put(453.000000000,63.264374447){\color{pvswhite}\circle*{2.2}}
+\put(453.000000000,63.264374447){\color{pvsnative}\linethickness{0.65pt}\circle{2.2}}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(453.800000000,67.728463073)(454.900000000,68.759713073)(456.000000000,69.790963073)}
+{\color{pvsnative}\linethickness{0.7pt}\qbezier(453.800000000,69.790963073)(454.900000000,68.759713073)(456.000000000,67.728463073)}
+{\color{pvsnative}\linethickness{1.1pt}\qbezier(449.500000000,64.132295339)(453.000000000,64.132295339)(456.500000000,64.132295339)}
+\put(453.000000000,37.500000000){\color{pvsnative}\makebox(0,0){\fontsize{7.0}{8.0}\selectfont\bfseries D}}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(394.600000000,30.937500000)(419.000000000,30.937500000)(443.400000000,30.937500000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(394.600000000,30.937500000)(394.600000000,32.343750000)(394.600000000,33.750000000)}
+{\color{pvszero}\linethickness{0.55pt}\qbezier(443.400000000,30.937500000)(443.400000000,32.343750000)(443.400000000,33.750000000)}
+\put(385.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries 0}}
+\put(419.000000000,24.375000000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $\le25\%$}}
+\put(453.000000000,27.187500000){\color{pvsmuted}\makebox(0,0){\fontsize{6.6}{7.6}\selectfont\mdseries $100\%$}}
+\put(235.000000000,16.875000000){\color{pvsmuted}\makebox(0,0){\fontsize{6.9}{7.9}\selectfont\mdseries Lower panels: coordinate MSE $\times10^{-8}$; V = relative-velocity RMS}}
+\put(17.000000000,5.625000000){\color{pvsink}\linethickness{0.8pt}\circle*{2.8}}
+\put(22.000000000,5.625000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont\mdseries seed 0}}
+\put(71.000000000,5.625000000){\color{pvswhite}\circle*{2.8}}
+\put(71.000000000,5.625000000){\color{pvsink}\linethickness{0.65pt}\circle{2.8}}
+\put(76.000000000,5.625000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont\mdseries seed 1}}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(123.600000000,4.312500000)(125.000000000,5.625000000)(126.400000000,6.937500000)}
+{\color{pvsink}\linethickness{0.7pt}\qbezier(123.600000000,6.937500000)(125.000000000,5.625000000)(126.400000000,4.312500000)}
+\put(130.000000000,5.625000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont\mdseries seed 2}}
+{\color{pvsink}\linethickness{1.25pt}\qbezier(178.000000000,5.625000000)(183.000000000,5.625000000)(188.000000000,5.625000000)}
+\put(193.000000000,5.625000000){\color{pvsink}\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont\mdseries mean}}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(239.000000000,5.625000000)(240.377500000,5.625000000)(241.755000000,5.625000000)}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(243.750000000,5.625000000)(245.127500000,5.625000000)(246.505000000,5.625000000)}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(248.500000000,5.625000000)(249.877500000,5.625000000)(251.255000000,5.625000000)}
+{\color{pvszero}\linethickness{0.7pt}\qbezier(253.250000000,5.625000000)(254.627500000,5.625000000)(256.005000000,5.625000000)}
+\put(264.000000000,5.625000000){\color{pvsmuted}\makebox(0,0)[l]{\fontsize{6.8}{7.8}\selectfont\mdseries native mean}}
+\put(462.000000000,5.625000000){\color{pvsmuted}\makebox(0,0)[r]{\fontsize{6.8}{7.8}\selectfont\mdseries Lower error is better}}
 \end{picture}
 \endgroup
 
-\caption{\textbf{Smaller expansions can outperform dense connectivity.} Common observed test histories, all declared policies and both training arms. N: native; R: random; S: speed; Q: preceding-observed-base risk; V: relative-velocity RMS; D: dense. WaterDrop omits V. Symbols show seeds 0--2, short bars their mean, and dashed lines the native mean. Brackets group policies by categorical fractions of added messages, with native messages retained; this is not an empirical total-edge axis. Goop and Sand use 150 histories from 30 sources per model; WaterDrop uses 297 from 27.}
+\caption{\textbf{Selective expansion can improve accuracy at a smaller message budget.} Within each training arm, policies use the same fixed models and observed test histories. A separately dense-trained model is not included. WaterDrop (top) plots position-coordinate MSE against mean total directed messages; counts are identical across arms. Mean bars use exact counts; seed symbols are offset horizontally for legibility. Goop/Sand (bottom) retain categorical fractions of dense optional annulus additions, with native messages retained; their axes do not show measured total counts. Q uses preceding observed-base risk. Symbols show three seeds per policy and arm; dashed lines mark native means. These observed-state comparisons do not establish runtime or autonomous gains.}
 \label{fig:observed-accuracy-budget}
 \end{figure*}
 
 
 \takeaway{Takeaway 1}{%
 \textbf{A useful forecast need not spend every optional interaction.}
-With mixed training on common WaterDrop histories, quarter-budget random and residual-guided graphs use about 25\% fewer total messages than dense expansion and achieve lower next-step error in all three seeds on both splits. This is an accuracy--edge result; runtime and autonomous motion require separate tests.}
+On common WaterDrop histories, quarter-budget random and residual-guided graphs use about 25\% fewer total messages than dense expansion and achieve lower next-step error in all three seeds on both splits, under both training regimes. This compares graph choices within each trained model; runtime and autonomous motion require separate tests.}
 
 \subsection{Why uncertainty looks like a useful allocation signal}
 The budget comparison leaves a natural question: can we spend these few additions around the difficult parts of the motion? Figure~\ref{fig:residual-times} follows one fixed WaterDrop trajectory through observed histories, comparing the model's predicted residual score with the error of the same next-step prediction. The compact initial mass receives a fairly even score; later, detached particles and the left boundary stand out. The predicted and realized fields share broad features but disagree locally. These maps show the error signal of a learned predictor, rather than intrinsic physical uncertainty.
@@ -14246,7 +13787,7 @@ Computation also requires a common-state comparison. Adding pairs increases the 
 \section{Limitations and conclusion}
 The evidence comes from three-seed exploratory comparisons and includes continuations from inspected parents. Different data, horizons and backends do not isolate material effects; Sand's native-CUDA lineage does not establish optimization equivalence. Radius thresholds and top-budget selection can be discontinuous, and extra edges can amplify error. Neither the conditional theory nor lower MSE establishes stable physical simulation. Conservation, peak memory and optimized runtime remain unmeasured.
 
-The purpose of adaptive interaction graphs is to preserve useful accuracy with a limited allowance of additional messages. WaterDrop demonstrates that a quarter-annulus graph can outperform dense expansion on common observed histories, while graph exposure improves fixed-random autonomous forecasts in Goop and WaterDrop. These results give selective expansion a concrete role. They also locate the remaining difficulty: residual uncertainty does not reliably identify which additions are worth making, and narrowing an observed placement deficit need not improve autonomous forecasts. Training for the graph changes, retaining simple equal-budget controls, and measuring the resulting trajectories are essential to judging the tradeoff. Learning interaction benefit directly is a promising next step.
+The purpose of adaptive interaction graphs is to preserve useful accuracy with a limited allowance of additional messages. WaterDrop demonstrates that a quarter-annulus graph can outperform dense expansion on common observed histories under both base-only and mixed training, while graph exposure improves fixed-random autonomous forecasts in Goop and WaterDrop. These results give selective expansion a concrete role. They also locate the remaining difficulty: residual uncertainty does not reliably identify which additions are worth making, and narrowing an observed placement deficit need not improve autonomous forecasts. Training for the graph changes, retaining simple equal-budget controls, and measuring the resulting trajectories are essential to judging the tradeoff. Learning interaction benefit directly is a promising next step.
 
 \clearpage
 \typeout{REVISION-MAIN-PAGES: \the\numexpr\value{page}-1\relax}
