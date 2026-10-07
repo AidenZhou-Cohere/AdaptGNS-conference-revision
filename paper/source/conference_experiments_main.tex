@@ -1,18 +1,7 @@
 \section{Experiments}
-Uncertainty-guided adaptation begins with an appealing signal: some particles are harder for the model to predict than others. We first examine that signal, then ask whether it identifies useful additional interactions. This motivates the paired tests of graph exposure, placement and autonomous feedback that follow.
+We ask what a limited allowance of extra messages buys, whether uncertainty helps spend it, and whether the resulting accuracy survives autonomous motion. Native graphs anchor the comparison at zero additions; dense expansion spends the entire optional annulus. All quarter-budget policies use the same number of additions on common positions.
 
-\subsection{What the residual signal tells us}
-Figure~\ref{fig:residual-times} follows one fixed WaterDrop trajectory through observed histories, comparing the model's predicted residual score with the error of the same next-step prediction. The compact initial mass receives a fairly even score; later, detached particles and the left boundary stand out. The predicted and realized fields share broad features but disagree locally. These maps show the error signal of a learned predictor, rather than intrinsic physical uncertainty.
-
-% VISUAL_UNCERTAINTY_TIME_INSERT
-
-We quantify this diagnostic information with six WaterDrop models trained for 100k updates: three faithful and three conventional NLL models, each evaluated on 297 observed-test histories. Their preceding-base risk correlates with base error at $.357\pm.060$ and $.411\pm.023$, respectively. Yet its correlation with the benefit of the actual risk-selected sparse graph is only $-.021\pm.049$ and $-.052\pm.013$ (Figure~\ref{fig:uncertainty-associations}). The score contains information about prediction difficulty; a meaningful error signal still leaves the allocation question open. This observed-state control is separate from the paired 110k continuation study below.
-
-% VISUAL_UNCERTAINTY_ASSOCIATIONS_INSERT
-
-The residual head was trained to predict error, not to value an added interaction. We next ask whether training with expanded graphs improves forecasts under a fixed expansion rule, and then whether that exposure improves residual-guided placement.
-
-\subsection{Training changes the value of added messages}
+\subsection{Accuracy without dense expansion}
 \begin{table}[t]
 \centering\small
 \caption{Paired graph-exposure comparisons. Three paired seeds per study, with two training arms. Histories are common observed-test histories per model. Rollouts show test sources $\times$forecasts. WaterDrop continues inspected 100k parents for 10k further updates.}
@@ -29,17 +18,34 @@ Sand &100k&150&$30\times314$\\
 \end{tabular}
 \end{table}
 
-Goop and Sand train from initialization; WaterDrop estimates continuation effects conditional on inspected parents. These follow-ups are exploratory and informed by earlier evidence. We compare every declared policy. Frames average within trajectories, trajectories within seeds, and means and sample standard deviations use all three paired seeds. Figure~\ref{fig:cross-material-evidence} includes both defined effects and undefined full-horizon comparisons.
+Goop and Sand train from initialization; WaterDrop estimates continuation effects conditional on inspected parents. These follow-ups are exploratory and informed by earlier evidence. We compare every declared policy. Frames average within trajectories, trajectories within seeds, and means and sample standard deviations use all three paired seeds. Complete policy tables and paired seed effects appear in Appendix~\ref{sec:complete-policy-comparisons}.
 
+Figure~\ref{fig:observed-accuracy-budget} puts observed-test accuracy beside the three edge budgets. Dense expansion is a reference, not an accuracy upper bound: additional messages can make a learned prediction worse. In WaterDrop's mixed arm, the native, quarter-budget and dense graphs average 4,802, 5,418 and 7,269 directed messages on the same histories. The quarter budget saves at least 75\% of the optional messages, or about 25\% of the total relative to dense expansion.
+
+Here, the smaller graph also lowers prediction error. Both Risk25 and Random25 beat dense expansion in every WaterDrop seed on validation and test. Their observed-test MSEs are $3.559\times10^{-9}$ and $3.658\times10^{-9}$, compared with $3.791\times10^{-9}$ for dense and $4.104\times10^{-9}$ for native base. The random result matters: economical expansion does not require a successful uncertainty ranking. Across materials, the native reference also matters; in Sand's mixed arm, native base has lower mean observed-test error than Random25.
+
+% VISUAL_BUDGET_INSERT
+
+\takeaway{Takeaway 1}{%
+\textbf{A useful forecast need not spend every optional interaction.}
+With mixed training on common WaterDrop histories, quarter-budget random and residual-guided graphs use about 25\% fewer total messages than dense expansion and achieve lower next-step error in all three seeds on both splits. This is an accuracy--edge result; runtime and autonomous motion require separate tests.}
+
+\subsection{Why uncertainty looks like a useful allocation signal}
+The budget comparison leaves a natural question: can we spend these few additions around the difficult parts of the motion? Figure~\ref{fig:residual-times} follows one fixed WaterDrop trajectory through observed histories, comparing the model's predicted residual score with the error of the same next-step prediction. The compact initial mass receives a fairly even score; later, detached particles and the left boundary stand out. The predicted and realized fields share broad features but disagree locally. These maps show the error signal of a learned predictor, rather than intrinsic physical uncertainty.
+
+% VISUAL_UNCERTAINTY_TIME_INSERT
+
+We quantify this diagnostic information with six WaterDrop models trained for 100k updates: three faithful and three conventional NLL models, each evaluated on 297 observed-test histories. Their preceding-base risk correlates with base error at $.357\pm.060$ and $.411\pm.023$, respectively. Yet its correlation with the benefit of the actual risk-selected sparse graph is only $-.021\pm.049$ and $-.052\pm.013$ (Figure~\ref{fig:uncertainty-associations}). The score contains information about prediction difficulty; a meaningful error signal still leaves the allocation question open. This observed-state control is separate from the paired 110k continuation comparisons.
+
+% VISUAL_UNCERTAINTY_ASSOCIATIONS_INSERT
+
+A map of difficulty thus motivates selective expansion without settling its placement. Before asking the score to allocate messages, we next test whether the simulator has learned to use the proposed graph changes.
+
+\subsection{Training for a limited edge budget}
 At fixed Random25 evaluation, mixed training reduces Goop full-rollout MSE from $0.301\pm0.169$ to $0.129\pm0.031$, improving every seed. WaterDrop improves under random, dense, speed and cached-risk evaluation in every seed. The fixed-random comparison requires no learned placement rule: exposure changes the simulator's response under the same expansion policy.
 
 Sand limits this positive finding. Random25 improves in two seeds, but native base beats random in every seed under both training arms. Dense exposure improves every seed, yet dense remains worse than native base and random. Making an expanded policy better therefore need not make expansion preferable to the native graph.
 
-\takeaway{Takeaway 1}{%
-\textbf{Exposure can improve forecasts under a fixed expansion rule.}
-Mixed-graph training improves fixed-random rollouts in every Goop and WaterDrop
-seed. This gain comes from exposure to graph expansions; it does not depend on
-residual-guided placement.}
 
 \subsection{Residual risk does not reliably locate interaction benefit}
 The allocation intuition is to give difficult particles more context. Equal-budget random placement tests whether the residual score improves where that context is supplied. On common observed histories, all policies receive the same current input; the score must improve placement, not merely add messages.
@@ -50,20 +56,18 @@ WaterDrop provides a qualified positive result: exposure reverses the observed-t
 
 The separate Goop3D 25k observed-history extension also narrows the test risk gap in every seed, while fixed-random exposure improves only one of three test seeds (Appendix~\ref{sec:goop3d-25k-exposure}). It does not establish a general material or dimensionality effect.
 
-% VISUAL_EVIDENCE_INSERT
+
 
 \subsection{Observed placement gains can reverse under feedback}
 An allocation changes positions and future neighborhoods. Cached risk also changes the graph producing its next scores. Sand shows why this feedback matters: exposure narrows the observed risk deficit, yet worsens cached-risk rollout error in every seed ($+.00917\pm.01201$) and widens its gap to random ($+.01975\pm.03062$). All 1,080 Sand outcomes complete.
 
-WaterDrop completes all 810 outcomes, but its autonomous risk-minus-random training interaction is $+.00284\pm.00466$, with mixed seed signs. The observed-test reversal therefore does not yield a consistent autonomous allocation gain.
+WaterDrop completes all 810 outcomes. Within the mixed arm, cached risk beats dense H995 error in every seed (mean $.03868$ versus $.04324$), using 7,317 versus 8,333 mean directed messages along its own predicted trajectories. This is a descriptive rollout comparison: geometry differs, and speed achieves a lower mean error ($.03511$). The autonomous risk-minus-random training interaction is $+.00284\pm.00466$, with mixed seed signs. The observed-test reversal therefore does not yield a consistent autonomous allocation gain.
 
 Goop completes 1,077 of 1,080 outcomes. Three candidate-pair guards occur in mixed seed 2, one each for base, dense and cached risk. Affected mixed-arm full-horizon means and the cached-risk training interaction remain undefined. The two defined risk-versus-random seed comparisons have opposite signs. Among complete mixed-arm policies, speed and RMS beat random in every seed, with MSE $.112\pm.027$ and $.125\pm.032$.
 
 \takeaway{Takeaway 2}{%
-\textbf{Residual error does not reliably locate useful interactions.}
-On Sand, exposure narrows the observed risk-minus-random deficit but worsens
-cached-risk rollout error in every seed. Useful allocation must be assessed
-through the predictions and trajectories it changes.}
+\textbf{A useful edge budget needs more than a map of difficulty.}
+Training with sparse expansions improves fixed-random Goop and WaterDrop rollouts in every seed. Uncertainty ranking adds no consistent advantage across settings: on Sand, exposure narrows the observed risk deficit while worsening cached-risk rollouts.}
 
 \paragraph{Lower error still leaves physical mismatch.}
 Figure~\ref{fig:qualitative-goop2d} shows truth settling along the floor while forecasts leave suspended groups or send particles outside the box. This fixed example is not a controlled training comparison. Across Goop's mixed random, speed and RMS rollouts, 19.55--22.16\% of particles lie more than $10^{-6}$ outside the metadata box, versus $0.0632\%$ for truth. These geometric diagnostics do not test conservation.

@@ -1,5 +1,5 @@
 {
-  "caption_latex": "\\textbf{Adding messages, placing them, and sustaining their benefit are different problems.} Native edges are retained while a fixed budget is added from the local annulus (schematic; self-messages omitted). The cards separate training, placement on matched observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for each named contrast; negative means lower error or a smaller risk-minus-random gap. The cross retains Goop's undefined full-horizon interaction.",
+  "caption_latex": "\\textbf{The goal is accurate forecasts with fewer additional interactions.} The quarter-budget graph retains every native edge and only a quarter of the optional additions shown in the dense graph (schematic; self-messages omitted). The cards separate training, placement on matched observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for each named contrast; negative means lower error or a smaller risk-minus-random gap. The cross retains Goop's undefined full-horizon interaction.",
   "dimensions_pt": [
     470,
     238
@@ -10,19 +10,19 @@
       "bbox": [
         26.666666666666668,
         725.6617838541666,
-        1353.0,
+        1211.171875,
         42.009765625
       ],
-      "text": "Learn to use extra messages. Then test where they help."
+      "text": "Preserve accuracy. Spend fewer extra interactions."
     },
     {
       "bbox": [
-        22.25,
+        97.5,
         659.1666666666666,
-        355.5,
+        205.0,
         28.333333333333258
       ],
-      "text": "Keep native messages"
+      "text": "Native graph"
     },
     {
       "bbox": [
@@ -35,66 +35,66 @@
     },
     {
       "bbox": [
-        571.0,
+        605.0,
         659.1666666666666,
-        338.0,
+        270.0,
         28.333333333333258
       ],
-      "text": "Find local candidates"
+      "text": "Dense expansion"
     },
     {
       "bbox": [
-        633.0,
+        570.0,
         416.29687499999994,
-        214.0,
+        340.0,
         27.40625
       ],
-      "text": "6 optional pairs"
+      "text": "4 native + 8 added pairs"
     },
     {
       "bbox": [
-        1080.5,
+        1070.5,
         659.1666666666666,
-        399.0,
+        419.0,
         28.333333333333258
       ],
-      "text": "Append the same budget"
+      "text": "Quarter-budget expansion"
     },
     {
       "bbox": [
-        1148.0,
+        1110.0,
         416.29687499999994,
-        264.0,
+        340.0,
         27.40625
       ],
-      "text": "B = 1 selected pair"
+      "text": "4 native + 2 added pairs"
     },
     {
       "bbox": [
-        384.1666666666667,
+        338.1666666666667,
         574.1637369791666,
-        165.00000000000006,
+        257.00000000000006,
         25.005859375
       ],
-      "text": "local annulus"
+      "text": "add every candidate"
     },
     {
       "bbox": [
-        913.6666666666667,
+        885.1119791666667,
         574.1637369791666,
-        186.0,
+        243.109375,
         25.005859375
       ],
-      "text": "rank or sample"
+      "text": "keep only a quarter"
     },
     {
       "bbox": [
         53.333333333333336,
-        305.8333333333333,
-        246.99999999999997,
-        35.0
+        305.6292317708333,
+        397.15625,
+        35.408203125
       ],
-      "text": "Learn to use"
+      "text": "Train for the budget"
     },
     {
       "bbox": [
@@ -145,10 +145,10 @@
       "bbox": [
         573.3333333333334,
         305.6292317708333,
-        278.0,
+        257.0,
         35.408203125
       ],
-      "text": "Choose where"
+      "text": "Spend it well"
     },
     {
       "bbox": [
@@ -292,9 +292,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Learn to use extra messages. Then test where they help.",
+      "plain": "Preserve accuracy. Spend fewer extra interactions.",
       "size": 12.5,
-      "tex": "Learn to use extra messages. Then test where they help.",
+      "tex": "Preserve accuracy. Spend fewer extra interactions.",
       "x": 8,
       "y": 224
     },
@@ -303,9 +303,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Keep native messages",
+      "plain": "Native graph",
       "size": 8.5,
-      "tex": "Keep native messages",
+      "tex": "Native graph",
       "x": 60,
       "y": 202
     },
@@ -437,9 +437,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Find local candidates",
+      "plain": "Dense expansion",
       "size": 8.5,
-      "tex": "Find local candidates",
+      "tex": "Dense expansion",
       "x": 222,
       "y": 202
     },
@@ -485,7 +485,7 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 197,
@@ -495,7 +495,7 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 204,
@@ -505,7 +505,7 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 204,
@@ -515,7 +515,7 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 224,
@@ -525,7 +525,7 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 239,
@@ -535,12 +535,32 @@
     },
     {
       "color": "blue",
-      "dashed": true,
+      "dashed": false,
       "kind": "line",
       "width": 0.8,
       "x1": 208,
       "x2": 230,
       "y1": 179.85,
+      "y2": 182.7
+    },
+    {
+      "color": "blue",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 204,
+      "x2": 220,
+      "y1": 158.95,
+      "y2": 139.0
+    },
+    {
+      "color": "blue",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.8,
+      "x1": 246,
+      "x2": 230,
+      "y1": 148.5,
       "y2": 182.7
     },
     {
@@ -620,9 +640,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "6 optional pairs",
+      "plain": "4 native + 8 added pairs",
       "size": 8,
-      "tex": "6 optional pairs",
+      "tex": "4 native + 8 added pairs",
       "x": 222,
       "y": 129
     },
@@ -631,9 +651,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Append the same budget",
+      "plain": "Quarter-budget expansion",
       "size": 8.5,
-      "tex": "Append the same budget",
+      "tex": "Quarter-budget expansion",
       "x": 384,
       "y": 202
     },
@@ -686,6 +706,16 @@
       "x2": 382,
       "y1": 143.75,
       "y2": 139.0
+    },
+    {
+      "color": "teal",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 401,
+      "x2": 392,
+      "y1": 165.6,
+      "y2": 182.7
     },
     {
       "color": "teal",
@@ -773,9 +803,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "B = 1 selected pair",
+      "plain": "4 native + 2 added pairs",
       "size": 8,
-      "tex": "$B=1$ selected pair",
+      "tex": "4 native + 2 added pairs",
       "x": 384,
       "y": 129
     },
@@ -844,9 +874,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "local annulus",
+      "plain": "add every candidate",
       "size": 7.5,
-      "tex": "local annulus",
+      "tex": "add every candidate",
       "x": 140,
       "y": 176
     },
@@ -855,9 +885,9 @@
       "bold": false,
       "color": "muted",
       "kind": "text",
-      "plain": "rank or sample",
+      "plain": "keep only a quarter",
       "size": 7.5,
-      "tex": "rank or sample",
+      "tex": "keep only a quarter",
       "x": 302,
       "y": 176
     },
@@ -884,9 +914,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Learn to use",
+      "plain": "Train for the budget",
       "size": 10.5,
-      "tex": "Learn to use",
+      "tex": "Train for the budget",
       "x": 16,
       "y": 97
     },
@@ -1039,9 +1069,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "Choose where",
+      "plain": "Spend it well",
       "size": 10.5,
-      "tex": "Choose where",
+      "tex": "Spend it well",
       "x": 172,
       "y": 97
     },
@@ -1431,9 +1461,9 @@
     }
   ],
   "sha256": {
-    "constructive_overview.png": "0718b66c0a19eb9625e8fc7fd9d2b85c3366e80342806553a7f5cedc0c5dde9d",
-    "constructive_overview.svg": "2d67621d7bf89a082aae00bd67998cb52f000d73f89547db839bef4aeef9f1a6",
-    "constructive_overview.tex": "382aa6d3ec0e6ef738aecb5646bc063bb3b87c75c5ffb584c0c1788ba03b7b55",
-    "constructive_overview_picture.tex": "9231af2bb8defaa0cf7ba6f30959c070b6923c96922b4502590a666b36856814"
+    "constructive_overview.png": "e499bc53e5e39b7b3e5c5d46e5ac542ac15312444cbea612f5e4f7d6f40a4edf",
+    "constructive_overview.svg": "923c354ed0e56f063b5e6fa51fa643ba04d07ac1f8644ab93cd408ae16dad755",
+    "constructive_overview.tex": "fc50e5e4472eddbc91a99fba077a3cb6b308a9fbd98e888e16e9580efaa3e4ec",
+    "constructive_overview_picture.tex": "5860ac0e0ad3c550449b8808877a4578e7039385e57133ff1fc7108ca573d3af"
   }
 }

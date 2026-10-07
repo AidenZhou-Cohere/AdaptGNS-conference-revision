@@ -69,7 +69,10 @@ Both the predictor input and target depend on this noise. Calibration for the au
 Within each seed, frames average equally within trajectory and trajectories equally; paired differences are computed on matching units before aggregation. Reported mean $\pm$ SD uses all three seed means and the sample SD, not a confidence interval. A failed or missing required outcome makes its full-horizon aggregate undefined rather than creating a survivor-only mean. Accepted prefixes and secondary endpoints cannot substitute for that aggregate. Validation and test remain separate.
 
 \section{Complete policy comparisons}
-The tables compare every declared policy, both training arms, and the full autonomous horizon. Observed columns report position-coordinate MSE on common histories. Risk25 in these columns uses the preceding observed base history; rollout Risk25 uses its own selected-graph cache. The main figure presents paired effects; these absolute results show the baselines from which those effects arise. Machine-readable results include all ordered seed values and additional metrics.
+\label{sec:complete-policy-comparisons}
+The tables compare every declared policy, both training arms, and the full autonomous horizon. Observed columns report position-coordinate MSE on common histories. Risk25 in these columns uses the preceding observed base history; rollout Risk25 uses its own selected-graph cache. Figure~\ref{fig:cross-material-evidence} presents paired effects alongside these absolute baselines. Machine-readable results include all ordered seed values and additional metrics.
+
+% VISUAL_EVIDENCE_INSERT
 
 \subsection{Goop}
 \label{sec:goop-graph-exposure}

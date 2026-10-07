@@ -39,32 +39,33 @@ def load():
 
 def overview(data,feedback):
     p=Picture(470,238)
-    p.text(8,224,'Learn to use extra messages. Then test where they help.',size=12.5,bold=True)
+    p.text(8,224,'Preserve accuracy. Spend fewer extra interactions.',size=12.5,bold=True)
     coords=((11,38),(18,54),(34,33),(38,50),(53,61),(60,43),(22,76),(44,79))
     native=((0,1),(2,3),(3,4),(4,5))
-    optional=((0,2),(1,3),(1,6),(3,5),(4,7),(6,7))
-    for stage,(left,title) in enumerate(((35,'Keep native messages'),(197,'Find local candidates'),(359,'Append the same budget'))):
+    optional=((0,2),(1,3),(1,6),(3,5),(4,7),(6,7),(1,2),(5,7))
+    for stage,(left,title) in enumerate(((35,'Native graph'),(197,'Dense expansion'),(359,'Quarter-budget expansion'))):
         center=left+25
         p.text(center,202,title,size=8.5,align='center',bold=True)
         nodes=[(left+(x-11),139+(y-33)*.95) for x,y in coords]
         for a,b in native:p.line(*nodes[a],*nodes[b],color='native',width=1.1)
         if stage==1:
-            for a,b in optional:p.line(*nodes[a],*nodes[b],color='blue',width=.8,dashed=True)
+            for a,b in optional:p.line(*nodes[a],*nodes[b],color='blue',width=.8)
         if stage==2:
             p.line(*nodes[0],*nodes[2],color='teal',width=2.2)
+            p.line(*nodes[4],*nodes[7],color='teal',width=2.2)
             p.circle(*nodes[2],r=4.3,color='teal',filled=False,width=1)
         for x,y in nodes:p.circle(x,y,r=2.1,color='ink')
-        p.text(center,129,('4 native pairs','6 optional pairs','B = 1 selected pair')[stage],
-               (None,None,r'$B=1$ selected pair')[stage],size=8,align='center',color='muted')
+        p.text(center,129,('4 native pairs','4 native + 8 added pairs','4 native + 2 added pairs')[stage],
+               (None,None,None)[stage],size=8,align='center',color='muted')
     p.arrow(103,162,177,162,color='zero',width=1.1,head=5)
     p.arrow(265,162,339,162,color='zero',width=1.1,head=5)
-    p.text(140,176,'local annulus',size=7.5,align='center',color='muted')
-    p.text(302,176,'rank or sample',size=7.5,align='center',color='muted')
+    p.text(140,176,'add every candidate',size=7.5,align='center',color='muted')
+    p.text(302,176,'keep only a quarter',size=7.5,align='center',color='muted')
     p.line(8,117,462,117,color='grid',width=.7)
     signs=[]
     for j,(heading,control,contrast) in enumerate((
-        ('Learn to use','Change training; fix random25','Random rollout: mixed − base'),
-        ('Choose where','Same observed test histories','Mixed model: risk − random'),
+        ('Train for the budget','Change training; fix random25','Random rollout: mixed − base'),
+        ('Spend it well','Same observed test histories','Mixed model: risk − random'),
         ('Survive feedback','Predict → rebuild → predict','Rollout risk gap: mixed − base'))):
         left=8+j*156;p.rect(left,18,142,89,color='wash')
         p.text(left+8,97,heading,size=10.5,bold=True)
@@ -84,14 +85,14 @@ def overview(data,feedback):
     p.circle(145,7,r=2.5,color='rust');p.text(153,7,'positive',size=7.5,color='muted')
     p.cross(216,7,r=2.3);p.text(224,7,'undefined',size=7.5,color='muted')
     p.text(320,7,'Each triplet: seeds 0, 1, 2',size=7.5,color='muted')
-    caption=(r'\textbf{Adding messages, placing them, and sustaining their benefit are different problems.} '
-             r'Native edges are retained while a fixed budget is added from the local annulus '
+    caption=(r'\textbf{The goal is accurate forecasts with fewer additional interactions.} '
+             r'The quarter-budget graph retains every native edge and only a quarter of the optional additions shown in the dense graph '
              r'(schematic; self-messages omitted). The cards separate training, placement on matched '
              r'observed test histories, and autonomous feedback. Triplets show seeds 0, 1, and 2 for '
              r'each named contrast; negative means lower error or a smaller risk-minus-random gap. '
              r"The cross retains Goop's undefined full-horizon interaction.")
     product=p.save(HERE,'constructive_overview',caption,'fig:constructive-overview')
-    return {'product':product,'seed_signs':signs,'concept_graph':{'native_pairs':native,'optional_pairs':optional,'selected_pairs':[(0,2)],'nodes':coords}}
+    return {'product':product,'seed_signs':signs,'concept_graph':{'native_pairs':native,'optional_pairs':optional,'selected_pairs':[(0,2),(4,7)],'nodes':coords}}
 
 
 def atlas(data,feedback):

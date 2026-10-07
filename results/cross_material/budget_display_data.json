@@ -1,0 +1,1017 @@
+{
+  "aggregation": "Histories average within each trajectory, trajectories equally within each model seed; saved mean and sample SD span all three seeds.",
+  "autonomous_data_included": false,
+  "axis": "Categorical budget classes; separate policy columns inside each class, not a continuous empirical edge-count axis.",
+  "budget_definition": "Native keeps original directed edges; dense appends both orientations of all annulus pairs; sparse appends both orientations of floor(0.25*number_of_annulus_pairs). The fraction is an upper bound on added directed messages relative to dense additions on that same state, not total-edge fraction or measured runtime.",
+  "materials": {
+    "Goop": {
+      "histories_per_seed": 150,
+      "histories_per_source": 5,
+      "policies": 6,
+      "sources": 30,
+      "updates": "100k from scratch"
+    },
+    "Sand": {
+      "histories_per_seed": 150,
+      "histories_per_source": 5,
+      "policies": 6,
+      "sources": 30,
+      "updates": "100k from scratch"
+    },
+    "WaterDrop": {
+      "histories_per_seed": 297,
+      "histories_per_source": 11,
+      "policies": 5,
+      "sources": 27,
+      "updates": "100k to 110k paired"
+    }
+  },
+  "metric": "position-coordinate MSE for one-step prediction",
+  "rows": [
+    {
+      "budget_class": "zero",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        1.2581112399493861e-08,
+        1.2211486345483478e-08,
+        1.331531389599642e-08
+      ],
+      "policy": "base",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/base/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2702637546991252e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 5.618586000263305e-10,
+        "seed_values": {
+          "0": 1.2581112399493861e-08,
+          "1": 1.2211486345483478e-08,
+          "2": 1.331531389599642e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.2565167495084005e-08,
+        1.2085042088963952e-08,
+        1.3244267650153698e-08
+      ],
+      "policy": "random25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/random25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2631492411400553e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 5.824519047288094e-10,
+        "seed_values": {
+          "0": 1.2565167495084005e-08,
+          "1": 1.2085042088963952e-08,
+          "2": 1.3244267650153698e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.2763999923900402e-08,
+        1.259638901999603e-08,
+        1.3722110236280885e-08
+      ],
+      "policy": "speed25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/speed25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.3027499726725772e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 6.073600034289551e-10,
+        "seed_values": {
+          "0": 1.2763999923900402e-08,
+          "1": 1.259638901999603e-08,
+          "2": 1.3722110236280885e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.3097043858190537e-08,
+        1.288929696602747e-08,
+        1.3824377236083994e-08
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/previous-observed-base-risk25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.3270239353434e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 4.910104759999696e-10,
+        "seed_values": {
+          "0": 1.3097043858190537e-08,
+          "1": 1.288929696602747e-08,
+          "2": 1.3824377236083994e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.3497726151370075e-08,
+        1.3231045893848348e-08,
+        1.4342878022681882e-08
+      ],
+      "policy": "relative-velocity-RMS25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/relative-velocity-RMS25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.3690550022633435e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 5.804553856011405e-10,
+        "seed_values": {
+          "0": 1.3497726151370075e-08,
+          "1": 1.3231045893848348e-08,
+          "2": 1.4342878022681882e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "all",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        1.425538048031609e-08,
+        1.4261642984305772e-08,
+        1.5357214749646004e-08
+      ],
+      "policy": "dense",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/dense/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.4624746071422622e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 6.343442111131671e-10,
+        "seed_values": {
+          "0": 1.425538048031609e-08,
+          "1": 1.4261642984305772e-08,
+          "2": 1.5357214749646004e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "zero",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        1.1724449728688883e-08,
+        1.2003922799888617e-08,
+        1.3467997109157451e-08
+      ],
+      "policy": "base",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/base/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2398789879244983e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 9.364450730044302e-10,
+        "seed_values": {
+          "0": 1.1724449728688883e-08,
+          "1": 1.2003922799888617e-08,
+          "2": 1.3467997109157451e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.1590136606556968e-08,
+        1.1526704318870764e-08,
+        1.3125693981343472e-08
+      ],
+      "policy": "random25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/random25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2080844968923734e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 9.054214531620904e-10,
+        "seed_values": {
+          "0": 1.1590136606556968e-08,
+          "1": 1.1526704318870764e-08,
+          "2": 1.3125693981343472e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.1615491952716665e-08,
+        1.2026756673111372e-08,
+        1.3244112572131356e-08
+      ],
+      "policy": "speed25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/speed25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2295453732653131e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 8.469060531431237e-10,
+        "seed_values": {
+          "0": 1.1615491952716665e-08,
+          "1": 1.2026756673111372e-08,
+          "2": 1.3244112572131356e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.1644349848103776e-08,
+        1.2227706235334773e-08,
+        1.3221181769039285e-08
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/previous-observed-base-risk25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2364412617492612e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 7.972554188666925e-10,
+        "seed_values": {
+          "0": 1.1644349848103776e-08,
+          "1": 1.2227706235334773e-08,
+          "2": 1.3221181769039285e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        1.2006598176340764e-08,
+        1.2432421630638932e-08,
+        1.3702365674135879e-08
+      ],
+      "policy": "relative-velocity-RMS25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/relative-velocity-RMS25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.271379516037186e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 8.822047092769061e-10,
+        "seed_values": {
+          "0": 1.2006598176340764e-08,
+          "1": 1.2432421630638932e-08,
+          "2": 1.3702365674135879e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "all",
+      "material": "Goop",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        1.2187183751757363e-08,
+        1.2200646050372931e-08,
+        1.3836417536963298e-08
+      ],
+      "policy": "dense",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/dense/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 1.2741415779697864e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 9.483232279564784e-10,
+        "seed_values": {
+          "0": 1.2187183751757363e-08,
+          "1": 1.2200646050372931e-08,
+          "2": 1.3836417536963298e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "zero",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        4.339980180106878e-09,
+        3.878799998099936e-09,
+        3.883443741379134e-09
+      ],
+      "policy": "base",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/base/base",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 4.034074639861982e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.6493214367513353e-10,
+        "seed_values": [
+          4.339980180106878e-09,
+          3.878799998099936e-09,
+          3.883443741379134e-09
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.8990839547822555e-09,
+        3.5515510900442417e-09,
+        3.4415991748379896e-09
+      ],
+      "policy": "random25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/base/random25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.630744739888162e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.388028613770457e-10,
+        "seed_values": [
+          3.8990839547822555e-09,
+          3.5515510900442417e-09,
+          3.4415991748379896e-09
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        4.089578195802316e-09,
+        3.8226728322746325e-09,
+        3.732493584197204e-09
+      ],
+      "policy": "speed25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/base/speed25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.8815815374247175e-09,
+        "required_seeds": 3,
+        "sample_sd": 1.8568799535279084e-10,
+        "seed_values": [
+          4.089578195802316e-09,
+          3.8226728322746325e-09,
+          3.732493584197204e-09
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.945709258827857e-09,
+        3.8097461526035915e-09,
+        3.621546659550393e-09
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/base/previous-observed-base-risk25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.792334023660615e-09,
+        "required_seeds": 3,
+        "sample_sd": 1.6278124697988264e-10,
+        "seed_values": [
+          3.945709258827857e-09,
+          3.8097461526035915e-09,
+          3.621546659550393e-09
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "all",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        4.176481664930623e-09,
+        4.579684750267027e-09,
+        4.146185948214655e-09
+      ],
+      "policy": "dense",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/base/dense",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 4.300784121137435e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.4200956243399827e-10,
+        "seed_values": [
+          4.176481664930623e-09,
+          4.579684750267027e-09,
+          4.146185948214655e-09
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "zero",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        4.372010718034079e-09,
+        3.9442401869594655e-09,
+        3.994558527868705e-09
+      ],
+      "policy": "base",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/mix/base",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 4.103603144287417e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.3380537438517543e-10,
+        "seed_values": [
+          4.372010718034079e-09,
+          3.9442401869594655e-09,
+          3.994558527868705e-09
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.9630065346806946e-09,
+        3.4748886222849965e-09,
+        3.5369422195963685e-09
+      ],
+      "policy": "random25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/mix/random25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.6582791255206862e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.657193211922097e-10,
+        "seed_values": [
+          3.9630065346806946e-09,
+          3.4748886222849965e-09,
+          3.5369422195963685e-09
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        4.057452973398857e-09,
+        3.597323837710873e-09,
+        3.598878314839596e-09
+      ],
+      "policy": "speed25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/mix/speed25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.751218375316442e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.6520808037616337e-10,
+        "seed_values": [
+          4.057452973398857e-09,
+          3.597323837710873e-09,
+          3.598878314839596e-09
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.8307978876752825e-09,
+        3.4523194908630086e-09,
+        3.393918679204061e-09
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/mix/previous-observed-base-risk25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.5590120192474505e-09,
+        "required_seeds": 3,
+        "sample_sd": 2.371778497423589e-10,
+        "seed_values": [
+          3.8307978876752825e-09,
+          3.4523194908630086e-09,
+          3.393918679204061e-09
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "all",
+      "material": "WaterDrop",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        3.991130274834871e-09,
+        3.773288675268778e-09,
+        3.6074062297455936e-09
+      ],
+      "policy": "dense",
+      "source_key": "populations/observed_test/metrics/position_coordinate_mse/absolute/mix/dense",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 3.790608393283081e-09,
+        "required_seeds": 3,
+        "sample_sd": 1.9244743482050035e-10,
+        "seed_values": [
+          3.991130274834871e-09,
+          3.773288675268778e-09,
+          3.6074062297455936e-09
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "zero",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        3.0155776007417636e-08,
+        3.1115914088412774e-08,
+        4.067280535655123e-08
+      ],
+      "policy": "base",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/base/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.398149848412721e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 5.8146932016535416e-09,
+        "seed_values": {
+          "0": 3.0155776007417636e-08,
+          "1": 3.1115914088412774e-08,
+          "2": 4.067280535655123e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.244856245702357e-08,
+        3.356824987949927e-08,
+        4.602633639391973e-08
+      ],
+      "policy": "random25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/random25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.734771624348086e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 7.536727457439025e-09,
+        "seed_values": {
+          "0": 3.244856245702357e-08,
+          "1": 3.356824987949927e-08,
+          "2": 4.602633639391973e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.80311946499377e-08,
+        3.6452688107271107e-08,
+        5.570911781053344e-08
+      ],
+      "policy": "speed25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/speed25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 4.3397666855914076e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 1.0691201484506253e-08,
+        "seed_values": {
+          "0": 3.80311946499377e-08,
+          "1": 3.6452688107271107e-08,
+          "2": 5.570911781053344e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.502679598402777e-08,
+        3.6116135387783486e-08,
+        5.517834781469626e-08
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/previous-observed-base-risk25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 4.210709306216917e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 1.1333134636464892e-08,
+        "seed_values": {
+          "0": 3.502679598402777e-08,
+          "1": 3.6116135387783486e-08,
+          "2": 5.517834781469626e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.8044610591366735e-08,
+        3.952049957822971e-08,
+        5.5414029979179214e-08
+      ],
+      "policy": "relative-velocity-RMS25",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/relative-velocity-RMS25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 4.432638004959189e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 9.630500910970013e-09,
+        "seed_values": {
+          "0": 3.8044610591366735e-08,
+          "1": 3.952049957822971e-08,
+          "2": 5.5414029979179214e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "all",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        5.1176621079337504e-08,
+        5.167329394931864e-08,
+        7.115543980874246e-08
+      ],
+      "policy": "dense",
+      "source_key": "diagnostics/same_state_test/absolute/base/accuracy/dense/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 5.800178494579953e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 1.1394105852369916e-08,
+        "seed_values": {
+          "0": 5.1176621079337504e-08,
+          "1": 5.167329394931864e-08,
+          "2": 7.115543980874246e-08
+        }
+      },
+      "training_arm": "base"
+    },
+    {
+      "budget_class": "zero",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0,
+      "ordered_seed_values": [
+        3.138517827115993e-08,
+        3.153011665161959e-08,
+        3.6498080340542125e-08
+      ],
+      "policy": "base",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/base/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.313779175444055e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 2.9109974785193412e-09,
+        "seed_values": {
+          "0": 3.138517827115993e-08,
+          "1": 3.153011665161959e-08,
+          "2": 3.6498080340542125e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.0690342544013735e-08,
+        3.185062961058438e-08,
+        3.794156857922447e-08
+      ],
+      "policy": "random25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/random25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.349418024460753e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 3.894998558199721e-09,
+        "seed_values": {
+          "0": 3.0690342544013735e-08,
+          "1": 3.185062961058438e-08,
+          "2": 3.794156857922447e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.584807269550987e-08,
+        3.4076338735291575e-08,
+        4.36523676605503e-08
+      ],
+      "policy": "speed25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/speed25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.785892636378391e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 5.094873094666473e-09,
+        "seed_values": {
+          "0": 3.584807269550987e-08,
+          "1": 3.4076338735291575e-08,
+          "2": 4.36523676605503e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.172845825331751e-08,
+        3.338582740507848e-08,
+        4.0973243996704424e-08
+      ],
+      "policy": "previous-observed-base-risk25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/previous-observed-base-risk25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.5362509885033475e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 4.9291957843245835e-09,
+        "seed_values": {
+          "0": 3.172845825331751e-08,
+          "1": 3.338582740507848e-08,
+          "2": 4.0973243996704424e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "at_most_quarter",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 0.25,
+      "ordered_seed_values": [
+        3.3388666084589046e-08,
+        3.5617844261797534e-08,
+        4.1919345280259234e-08
+      ],
+      "policy": "relative-velocity-RMS25",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/relative-velocity-RMS25/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 3.697528520888194e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 4.424376377352643e-09,
+        "seed_values": {
+          "0": 3.3388666084589046e-08,
+          "1": 3.5617844261797534e-08,
+          "2": 4.1919345280259234e-08
+        }
+      },
+      "training_arm": "mix"
+    },
+    {
+      "budget_class": "all",
+      "material": "Sand",
+      "nominal_optional_budget_fraction": 1,
+      "ordered_seed_values": [
+        3.9966443562753524e-08,
+        4.2563788977150286e-08,
+        4.749995279566145e-08
+      ],
+      "policy": "dense",
+      "source_key": "diagnostics/same_state_test/absolute/mix/accuracy/dense/position_coordinate_mse",
+      "statistic_unchanged": {
+        "defined_seed_pairs": 3,
+        "mean": 4.334339511185509e-08,
+        "required_seed_pairs": 3,
+        "sample_sd": 3.8267845032780805e-09,
+        "seed_values": {
+          "0": 3.9966443562753524e-08,
+          "1": 4.2563788977150286e-08,
+          "2": 4.749995279566145e-08
+        }
+      },
+      "training_arm": "mix"
+    }
+  ],
+  "rows_required": 34,
+  "schema": "observed_accuracy_optional_budget_display_v1",
+  "seed_values_required": 102,
+  "source_scalar_map_sha256": "6b51a4de77719f5036e32ae79bddd280876deed0d648084b198b48f3e15a00b5",
+  "source_scope": "Already-published cross-material scalar map; observed test diagnostic only.",
+  "undefined_seed_values": 0,
+  "waterdrop_rms_policy": "not declared; not plotted as a missing or failed outcome",
+  "waterdrop_total_edges_context": [
+    {
+      "policy": "base",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/base/base",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 4801.720538720539,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          4801.720538720539,
+          4801.720538720539,
+          4801.720538720539
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "policy": "random25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/base/random25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "policy": "speed25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/base/speed25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "policy": "previous-observed-base-risk25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/base/previous-observed-base-risk25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "policy": "dense",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/base/dense",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 7268.744107744108,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          7268.744107744108,
+          7268.744107744108,
+          7268.744107744108
+        ]
+      },
+      "training_arm": "base"
+    },
+    {
+      "policy": "base",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/mix/base",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 4801.720538720539,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          4801.720538720539,
+          4801.720538720539,
+          4801.720538720539
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "policy": "random25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/mix/random25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "policy": "speed25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/mix/speed25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "policy": "previous-observed-base-risk25",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/mix/previous-observed-base-risk25",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 5417.74074074074,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          5417.74074074074,
+          5417.74074074074,
+          5417.74074074074
+        ]
+      },
+      "training_arm": "mix"
+    },
+    {
+      "policy": "dense",
+      "source_key": "populations/observed_test/metrics/directed_edges/absolute/mix/dense",
+      "statistic_unchanged": {
+        "defined_seeds": 3,
+        "mean": 7268.744107744108,
+        "required_seeds": 3,
+        "sample_sd": 0.0,
+        "seed_values": [
+          7268.744107744108,
+          7268.744107744108,
+          7268.744107744108
+        ]
+      },
+      "training_arm": "mix"
+    }
+  ]
+}

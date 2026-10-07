@@ -29,10 +29,10 @@ z
   </g>
   <g id="axes_1">
    <g id="text_1">
-    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="8" y="17.247559" transform="rotate(-0 8 17.247559)">Learn to use extra messages. Then test where they help.</text>
+    <text style="font-weight: 700; font-size: 12.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="8" y="17.247559" transform="rotate(-0 8 17.247559)">Preserve accuracy. Spend fewer extra interactions.</text>
    </g>
    <g id="text_2">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="60" y="38.20834" transform="rotate(-0 60 38.20834)">Keep native messages</text>
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="60" y="38.20834" transform="rotate(-0 60 38.20834)">Native graph</text>
    </g>
    <g id="line2d_1">
     <path d="M 35 94.25 
@@ -162,7 +162,7 @@ z
     <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="60" y="111.078438" transform="rotate(-0 60 111.078438)">4 native pairs</text>
    </g>
    <g id="text_4">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="222" y="38.20834" transform="rotate(-0 222 38.20834)">Find local candidates</text>
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="222" y="38.20834" transform="rotate(-0 222 38.20834)">Dense expansion</text>
    </g>
    <g id="line2d_5">
     <path d="M 197 94.25 
@@ -187,32 +187,42 @@ L 246 89.5
    <g id="line2d_9">
     <path d="M 197 94.25 
 L 220 99 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="line2d_10">
     <path d="M 204 79.05 
 L 224 82.85 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="line2d_11">
     <path d="M 204 79.05 
 L 208 58.15 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="line2d_12">
     <path d="M 224 82.85 
 L 246 89.5 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="line2d_13">
     <path d="M 239 72.4 
 L 230 55.3 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="line2d_14">
     <path d="M 208 58.15 
 L 230 55.3 
-" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke-dasharray: 2.4,1.76; stroke-dashoffset: 0; stroke: #3a7ba5; stroke-width: 0.8"/>
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_15">
+    <path d="M 204 79.05 
+L 220 99 
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
+   </g>
+   <g id="line2d_16">
+    <path d="M 246 89.5 
+L 230 55.3 
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #3a7ba5; stroke-width: 0.8"/>
    </g>
    <g id="patch_10">
     <path d="M 197 96.35 
@@ -319,34 +329,39 @@ z
 " clip-path="url(#p8cdb99d8db)" style="fill: #263544"/>
    </g>
    <g id="text_5">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="222" y="111.078438" transform="rotate(-0 222 111.078438)">6 optional pairs</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="222" y="111.078438" transform="rotate(-0 222 111.078438)">4 native + 8 added pairs</text>
    </g>
    <g id="text_6">
-    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="384" y="38.20834" transform="rotate(-0 384 38.20834)">Append the same budget</text>
+    <text style="font-weight: 700; font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #263544" x="384" y="38.20834" transform="rotate(-0 384 38.20834)">Quarter-budget expansion</text>
    </g>
-   <g id="line2d_15">
+   <g id="line2d_17">
     <path d="M 359 94.25 
 L 366 79.05 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #768a98; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_16">
+   <g id="line2d_18">
     <path d="M 382 99 
 L 386 82.85 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #768a98; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_17">
+   <g id="line2d_19">
     <path d="M 386 82.85 
 L 401 72.4 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #768a98; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_18">
+   <g id="line2d_20">
     <path d="M 401 72.4 
 L 408 89.5 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #768a98; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_19">
+   <g id="line2d_21">
     <path d="M 359 94.25 
 L 382 99 
+" clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #197f79; stroke-width: 2.2"/>
+   </g>
+   <g id="line2d_22">
+    <path d="M 401 72.4 
+L 392 55.3 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #197f79; stroke-width: 2.2"/>
    </g>
    <g id="patch_18">
@@ -467,45 +482,45 @@ z
 " clip-path="url(#p8cdb99d8db)" style="fill: #263544"/>
    </g>
    <g id="text_7">
-    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="384" y="111.078438" transform="rotate(-0 384 111.078438)">B = 1 selected pair</text>
+    <text style="font-size: 8px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="384" y="111.078438" transform="rotate(-0 384 111.078438)">4 native + 2 added pairs</text>
    </g>
-   <g id="line2d_20">
+   <g id="line2d_23">
     <path d="M 103 76 
 L 177 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_21">
+   <g id="line2d_24">
     <path d="M 172.497764 73.825172 
 L 177 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_22">
+   <g id="line2d_25">
     <path d="M 172.497764 78.174828 
 L 177 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_23">
+   <g id="line2d_26">
     <path d="M 265 76 
 L 339 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_24">
+   <g id="line2d_27">
     <path d="M 334.497764 73.825172 
 L 339 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
-   <g id="line2d_25">
+   <g id="line2d_28">
     <path d="M 334.497764 78.174828 
 L 339 76 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #93a3ae; stroke-width: 1.1"/>
    </g>
    <g id="text_8">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="140" y="63.948535" transform="rotate(-0 140 63.948535)">local annulus</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="140" y="63.948535" transform="rotate(-0 140 63.948535)">add every candidate</text>
    </g>
    <g id="text_9">
-    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="302" y="63.948535" transform="rotate(-0 302 63.948535)">rank or sample</text>
+    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #607281" x="302" y="63.948535" transform="rotate(-0 302 63.948535)">keep only a quarter</text>
    </g>
-   <g id="line2d_26">
+   <g id="line2d_29">
     <path d="M 8 121 
 L 462 121 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #dfe6ea; stroke-width: 0.7"/>
@@ -519,7 +534,7 @@ z
 " clip-path="url(#p8cdb99d8db)" style="fill: #f1f5f6"/>
    </g>
    <g id="text_10">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="16" y="143.727539" transform="rotate(-0 16 143.727539)">Learn to use</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="16" y="143.727949" transform="rotate(-0 16 143.727949)">Train for the budget</text>
    </g>
    <g id="text_11">
     <text style="font-size: 7.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="16" y="156.974516" transform="rotate(-0 16 156.974516)">Change training; fix random25</text>
@@ -662,7 +677,7 @@ z
 " clip-path="url(#p8cdb99d8db)" style="fill: #f1f5f6"/>
    </g>
    <g id="text_16">
-    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="172" y="143.727949" transform="rotate(-0 172 143.727949)">Choose where</text>
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #263544" x="172" y="143.727949" transform="rotate(-0 172 143.727949)">Spend it well</text>
    </g>
    <g id="text_17">
     <text style="font-size: 7.6px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="172" y="156.974516" transform="rotate(-0 172 156.974516)">Same observed test histories</text>
@@ -842,12 +857,12 @@ C 428.545176 184.504974 429.257431 184.8 430 184.8
 z
 " clip-path="url(#p8cdb99d8db)" style="fill: #b76432"/>
    </g>
-   <g id="line2d_27">
+   <g id="line2d_30">
     <path d="M 439.5 184.5 
 L 444.5 179.5 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #607281; stroke-width: 0.9"/>
    </g>
-   <g id="line2d_28">
+   <g id="line2d_31">
     <path d="M 439.5 179.5 
 L 444.5 184.5 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #607281; stroke-width: 0.9"/>
@@ -968,12 +983,12 @@ z
    <g id="text_29">
     <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #607281" x="153" y="232.948535" transform="rotate(-0 153 232.948535)">positive</text>
    </g>
-   <g id="line2d_29">
+   <g id="line2d_32">
     <path d="M 213.7 233.3 
 L 218.3 228.7 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #607281; stroke-width: 0.9"/>
    </g>
-   <g id="line2d_30">
+   <g id="line2d_33">
     <path d="M 213.7 228.7 
 L 218.3 233.3 
 " clip-path="url(#p8cdb99d8db)" style="fill: none; stroke: #607281; stroke-width: 0.9"/>

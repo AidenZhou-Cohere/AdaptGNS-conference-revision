@@ -1,10 +1,10 @@
 # Adaptive Interaction Graphs for Particle Simulation
 
-Can a particle simulator use uncertainty to spend extra interactions where they improve its forecasts? This repository provides the method, code, saved results and manuscript for testing that idea. Training with graph expansions can improve forecasts under a fixed expansion rule, but predicting error does not reliably identify where added interactions help.
+Can a particle simulator preserve useful accuracy while spending fewer additional interactions? AdaptGNS keeps the native graph and selects at most a quarter of the optional nearby pairs instead of adding them all. This repository provides the method, code, results and manuscript for evaluating that accuracy–edge tradeoff.
 
-![Constructive graph adaptation and the three experimental questions](generated/constructive_overview.png)
+![Native, dense and quarter-budget graphs](generated/constructive_overview.png)
 
-AdaptGNS keeps every native edge and adds a fixed budget of nearby particle pairs. Mixed-graph training exposes the simulator to extra messages; cached residual scores determine where to place them. Matched training comparisons, equal-budget random placement, and autonomous rollouts test the steps from predicted difficulty to useful adaptation. The central distinction is between predicting an error and predicting how much an added interaction will reduce it.
+On common WaterDrop histories, mixed-training random and residual-guided quarter-budget graphs achieve lower next-step error than dense expansion in all three seeds on both validation and test, using about 25% fewer total directed messages on test. Training with graph expansions also improves fixed-random autonomous forecasts in Goop and WaterDrop. Uncertainty ranking does not add a consistent advantage across studies; simple budget-matched controls, native graphs and full rollouts show where the benefit holds. The edge allowance concerns extra messages, and does not by itself establish a runtime saving.
 
 ## Reproduce the paper from saved results
 
@@ -16,7 +16,7 @@ python reproduce.py --output generated
 python -m unittest discover -s tests -v
 ```
 
-The command produces five figures in PNG, SVG and LaTeX, together with the complete primary, physical-diagnostic and Goop3D observed tables. It retains all 34 primary policy rows, 34 physical/cost rows, three Goop guard cases, all displayed seed effects and undefined means. Inputs are saved scalar records, particle coordinates and residual values; this command does not rerun simulations. The new [temporal uncertainty figure](generated/waterdrop_residual_times.png) compares predicted and realized residuals at three observed times, while the [six-model association chart](generated/uncertainty_associations.png) separates prediction difficulty from interaction benefit.
+The command produces six figures in PNG, SVG and LaTeX, together with the complete primary, physical-diagnostic and Goop3D observed tables. It retains all 34 primary policy rows, 34 physical/cost rows, three Goop guard cases, all displayed seed effects and undefined means. Inputs are saved scalar records, particle coordinates and residual values; this command does not rerun simulations. The [accuracy–budget comparison](generated/observed_accuracy_budget.png) retains every declared policy, both training arms and all three seeds on common observed histories. The [temporal uncertainty figure](generated/waterdrop_residual_times.png) compares predicted and realized residuals at three observed times, while the [six-model association chart](generated/uncertainty_associations.png) separates prediction difficulty from interaction benefit.
 
 ```sh
 python reproduce.py --tables-only --output generated

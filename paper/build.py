@@ -25,6 +25,7 @@ for marker, name in (
     ('% CONFERENCE_EXPERIMENTS_MAIN_INSERT', 'conference_experiments_main.tex'),
     ('% CURATED_APPENDIX_INSERT', 'curated_appendix.tex'),
     ('% VISUAL_OVERVIEW_INSERT', 'visual_overview_figure.tex'),
+    ('% VISUAL_BUDGET_INSERT', 'visual_budget_figure.tex'),
     ('% VISUAL_EVIDENCE_INSERT', 'visual_evidence_figure.tex'),
     ('% VISUAL_UNCERTAINTY_TIME_INSERT', 'visual_uncertainty_times.tex'),
     ('% VISUAL_UNCERTAINTY_ASSOCIATIONS_INSERT', 'visual_uncertainty_associations.tex'),

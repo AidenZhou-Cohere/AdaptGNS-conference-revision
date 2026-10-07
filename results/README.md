@@ -1,6 +1,6 @@
 # Saved scientific results
 
-`cross_material/printed_statistic_map.json` contains the records shown in the main quantitative figures; `all_scalar_statistic_map.json` supplies the remaining paired effects, absolute values, physical diagnostics and descriptive cost. Records retain ordered seed values, complete-population means, sample SDs and nulls.
+`cross_material/printed_statistic_map.json` contains the records shown in the overview and paired-effect figures; `all_scalar_statistic_map.json` supplies the remaining paired effects, absolute values, physical diagnostics and descriptive cost. Records retain ordered seed values, complete-population means, sample SDs and nulls.
 
 `tables/source_tables.json` contains saved decimal cells for every primary policy and both training arms, including all 34 primary and34 physical/cost rows. `goop3d/observed_statistics.json` contains the18 displayed observed-history contrasts. `goop2d/qualitative_glyphs.json` stores only the five displayed particle panels, including all 1,083 particles per panel and strict outside-box glyphs. These are saved figure coordinates, not a replacement for the simulation dataset.
 
@@ -9,3 +9,5 @@
 The standard-library table command copies saved cells and formats existing seed statistics. The figure command uses the same values and retains undefined means. Neither command trains a model, opens simulation arrays, pools additional samples or selects a checkpoint.
 
 `controls/waterdrop_residual_display.json` contains all 997 particle positions, current residual scores and realized per-coordinate errors at the first, middle and last scheduled targets of one fixed WaterDrop 100k diagnostic trajectory. The plot uses a shared spatial extent and logarithmic color scale. `controls/uncertainty_associations.json` contains the complete six-model preceding-risk correlations with error and actual sparse-action benefit from the original observed-history control. These maps and correlations use different score times, explicitly identified in their captions; neither is an autonomous rollout.
+
+`cross_material/budget_display_data.json` contains all 34 declared observed-test policy/training-arm rows and their 102 seed errors, copied from the full scalar map. The accuracy–budget figure groups policies by the fraction of optional messages they add (zero, at most one quarter, or all). These positions are budget categories, not measured total edge counts. Native means provide a reference for when adding edges helps.
