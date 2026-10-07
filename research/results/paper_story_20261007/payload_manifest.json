@@ -1,0 +1,463 @@
+{
+  "files": [
+    {
+      "source": "outputs/author_handoff_20261007.md",
+      "path": "manuscript/outputs/author_handoff_20261007.md",
+      "bytes": 3315,
+      "sha256": "62a37859a2c13663e9e7e4eee69bf741b377bac3dbd25aa116f4c248a3457987"
+    },
+    {
+      "source": "outputs/revised_manuscript.tex",
+      "path": "manuscript/outputs/revised_manuscript.tex",
+      "bytes": 705442,
+      "sha256": "25ff4acafc8dd2fd8879162e322193a130a3749293167697ce4157a7e1e91e05"
+    },
+    {
+      "source": "outputs/submission_checklist.md",
+      "path": "manuscript/outputs/submission_checklist.md",
+      "bytes": 54953,
+      "sha256": "0e06cd50700577b19fe58fd8712acd12540c692f62dd12f840275919ff2b80ed"
+    },
+    {
+      "source": "work/build_manuscript.py",
+      "path": "manuscript/work/build_manuscript.py",
+      "bytes": 3084,
+      "sha256": "bc6634df83c772e76a5abefe3a82a10e37467e3d01b6cba9f78cab83971b23ad"
+    },
+    {
+      "source": "work/conference_experiments_main.tex",
+      "path": "manuscript/work/conference_experiments_main.tex",
+      "bytes": 8945,
+      "sha256": "0a1d7c308f65c0fb0cf3f01020b6e8afae8034e0baa97b940b0a971075aab89e"
+    },
+    {
+      "source": "work/full_action_appendix.tex",
+      "path": "manuscript/work/full_action_appendix.tex",
+      "bytes": 5270,
+      "sha256": "46dfa1d9f1b964941d21c79df68d47ae263b234dca44cc4854532fb61f0342ca"
+    },
+    {
+      "source": "work/full_action_main.tex",
+      "path": "manuscript/work/full_action_main.tex",
+      "bytes": 3790,
+      "sha256": "43c1ec405d9b9003a9d606823a4615f0770d6b6aeab17e5ac1ca933961d4eda8"
+    },
+    {
+      "source": "work/full_evaluation_appendix.tex",
+      "path": "manuscript/work/full_evaluation_appendix.tex",
+      "bytes": 13957,
+      "sha256": "21abcaaa0452e63aadaae6b0baa1219e5f1b6af7bedc76a53ac5608addae3cbe"
+    },
+    {
+      "source": "work/full_evaluation_main.tex",
+      "path": "manuscript/work/full_evaluation_main.tex",
+      "bytes": 3432,
+      "sha256": "b425693db0b7920cacff060965f2f9d8f6746d70e53e07b2230764fafa70db00"
+    },
+    {
+      "source": "work/goop3d_observed_appendix.tex",
+      "path": "manuscript/work/goop3d_observed_appendix.tex",
+      "bytes": 22365,
+      "sha256": "ef082f8a63709f1f37d0c69ff0e111c6124b35d7f69859a4009f17de253f848c"
+    },
+    {
+      "source": "work/graph_bridge_appendix.tex",
+      "path": "manuscript/work/graph_bridge_appendix.tex",
+      "bytes": 6123,
+      "sha256": "990e2e0a90faefd5a93093b7580601b66c6c6b00a0dd7e4dd71915eaeb5099bf"
+    },
+    {
+      "source": "work/graph_bridge_main.tex",
+      "path": "manuscript/work/graph_bridge_main.tex",
+      "bytes": 1120,
+      "sha256": "8f79971a2891cde527b15a8521c5b40c5f65c80b7f32c6acabaf3595cb2ebebf"
+    },
+    {
+      "source": "work/manuscript_body.tex",
+      "path": "manuscript/work/manuscript_body.tex",
+      "bytes": 603751,
+      "sha256": "d51a03faa6b06194718b942a43f73a4b1ad1e9aafc9cd3d05229a28c322fa267"
+    },
+    {
+      "source": "work/native_followup_appendix.tex",
+      "path": "manuscript/work/native_followup_appendix.tex",
+      "bytes": 4443,
+      "sha256": "d22a5d8ef11c7bc577f7b9786cffb48ea7da028ceaf9faa01bb23c02b6e21bd8"
+    },
+    {
+      "source": "work/noise_augmentation_appendix.tex",
+      "path": "manuscript/work/noise_augmentation_appendix.tex",
+      "bytes": 2944,
+      "sha256": "7492bcf8431b83d45d684e63d3efa7068a70b249d2fd492abd0fcfea898bac1c"
+    },
+    {
+      "source": "work/nonadditive_allocation_appendix.tex",
+      "path": "manuscript/work/nonadditive_allocation_appendix.tex",
+      "bytes": 4798,
+      "sha256": "10fff4e53855a72a63c85189e35bc05bb7c3935671d28ff8467c291155a5eb73"
+    },
+    {
+      "source": "work/optional_exposure_appendix.tex",
+      "path": "manuscript/work/optional_exposure_appendix.tex",
+      "bytes": 7206,
+      "sha256": "4edb7a3aa7d3715bf285ab700f942044c5531e90f713aa80b60ad426d2b5c3f6"
+    },
+    {
+      "source": "work/optional_exposure_main.tex",
+      "path": "manuscript/work/optional_exposure_main.tex",
+      "bytes": 1435,
+      "sha256": "0c3d81b407d29ba3283b79b593aa47d9b417334977dd733907258d813686ffa8"
+    },
+    {
+      "source": "work/pilot_results.tex",
+      "path": "manuscript/work/pilot_results.tex",
+      "bytes": 1281,
+      "sha256": "5c7cfffa406194c1f03d4ba05e22b27ba9bbed3060275342eb082b01d504bf92"
+    },
+    {
+      "source": "work/rollout_results.tex",
+      "path": "manuscript/work/rollout_results.tex",
+      "bytes": 2881,
+      "sha256": "b52c6297d2b7ed79d87948f6fddfc7f1081cadf9722c38bd6d179bf0261801fe"
+    },
+    {
+      "source": "work/sources/aistats2027.sty",
+      "path": "manuscript/work/sources/aistats2027.sty",
+      "bytes": 19561,
+      "sha256": "33ab38f8aac4b2f1df9fe67e354928598200584e9568385f32deb889e1b81d42"
+    },
+    {
+      "source": "work/tie_symmetry_appendix.tex",
+      "path": "manuscript/work/tie_symmetry_appendix.tex",
+      "bytes": 2583,
+      "sha256": "cf02d169f06409a2b2f6ea2c290ffe9d00f52465848400ddc632b66b7dfe9b81"
+    },
+    {
+      "source": "outputs/revision_report.pdf",
+      "path": "report/revision_report.pdf",
+      "bytes": 1117527,
+      "sha256": "10dcfb78f2ed510a47c04d66ba8aff03a9aa71d6efeb90787930756d4c69b06e"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/abstract.tex",
+      "path": "editorial/abstract_critique/abstract.tex",
+      "bytes": 1276,
+      "sha256": "289b4e388e4db777934bb3b9be31286bba3f1f08330fbe654c7720f9ffd65886"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/critique.md",
+      "path": "editorial/abstract_critique/critique.md",
+      "bytes": 5357,
+      "sha256": "f9df98404eac95a275c745790caa8f5d7cab0f33c5a538b5dba031f44a078a7a"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/first_pass_redteam/corrections_approval.json",
+      "path": "editorial/abstract_critique/first_pass_redteam/corrections_approval.json",
+      "bytes": 1528,
+      "sha256": "14c93ce77be72a53e4ccb0fad6b483da522d41ec610b7cb7a821369ae3e671b6"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/first_pass_redteam/review.json",
+      "path": "editorial/abstract_critique/first_pass_redteam/review.json",
+      "bytes": 4923,
+      "sha256": "2dca6ac6dd22b7b4b8f1ed78187a18ecfc01e1cad6ff35ee53fe9b1da1a2668f"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/introduction.tex",
+      "path": "editorial/abstract_critique/introduction.tex",
+      "bytes": 3243,
+      "sha256": "5802f0cc98a323df10596e2644c68acae6c3f152fc658e54ee079572ba0d1916"
+    },
+    {
+      "source": "work/paper_story_20261007/abstract_critique/manifest.json",
+      "path": "editorial/abstract_critique/manifest.json",
+      "bytes": 1687,
+      "sha256": "6032817e2daa5ee0124433d7a9b80912824132467222c9c2320e886e6ee19bc0"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/conclusion_replacement.tex",
+      "path": "editorial/narrative_critique/conclusion_replacement.tex",
+      "bytes": 1259,
+      "sha256": "bc740eaea60eb401f6d34cb9000085645005fd4564eab5173bf64f27e740e39a"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/editorial_receipt.json",
+      "path": "editorial/narrative_critique/editorial_receipt.json",
+      "bytes": 1059,
+      "sha256": "c2b2691b58fe194d5cc9125cdb21f450af3d08444df1757b7e2520bf6ba1e2b9"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/editorial_red_team.md",
+      "path": "editorial/narrative_critique/editorial_red_team.md",
+      "bytes": 8591,
+      "sha256": "193d6c763ed603a2efa6f3ac766ebe13e9f25f7b4fb321e2061e3e2c86acdaef"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/experiment_sequence_replacement.tex",
+      "path": "editorial/narrative_critique/experiment_sequence_replacement.tex",
+      "bytes": 8101,
+      "sha256": "2a52a05844dfa84c74133b4ea559e00938a8bad839fada3a8b96bc4b5fa20172"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/intro_bridge_proposal.tex",
+      "path": "editorial/narrative_critique/intro_bridge_proposal.tex",
+      "bytes": 1304,
+      "sha256": "0734522d17775cf37093fd146de2d9f791a7b46069a2bb535a7f0b1494ba9528"
+    },
+    {
+      "source": "work/paper_story_20261007/narrative_critique/reader_review_applied_v1.md",
+      "path": "editorial/narrative_critique/reader_review_applied_v1.md",
+      "bytes": 5512,
+      "sha256": "d5987f0add672018b0bd5a4537dc948c7e261bb94824c7d716d6d9aca3bd58bc"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/README.md",
+      "path": "editorial/figure_v1/README.md",
+      "bytes": 2093,
+      "sha256": "fa45ae2f405cd6fb39e84a721dbe3409f89ccd2c1106b86f8952c9499583f627"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/build_figure.py",
+      "path": "editorial/figure_v1/build_figure.py",
+      "bytes": 11521,
+      "sha256": "b9dd0c5616e7129ea265121c3615c5ed9d4e551791b9312b5ca8099042a5cac5"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/figure_fidelity.json",
+      "path": "editorial/figure_v1/figure_fidelity.json",
+      "bytes": 21174,
+      "sha256": "1183d808ef5f598a2410ece436340779dfe8dc0e1feba14c8ccb13f07648147b"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/goop_first_results.png",
+      "path": "editorial/figure_v1/goop_first_results.png",
+      "bytes": 114911,
+      "sha256": "471eea2949d808c4b4d730978d439c58c12925c2bdd5536666da44ee0eac0670"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/goop_first_results.svg",
+      "path": "editorial/figure_v1/goop_first_results.svg",
+      "bytes": 15625,
+      "sha256": "4cf4344f2f2e15e6db8dae999c2e01c3513e3d1db47060a51f07a33563b4ec75"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/goop_first_results_figure.tex",
+      "path": "editorial/figure_v1/goop_first_results_figure.tex",
+      "bytes": 15095,
+      "sha256": "b1aa59dfbb2818324090eb470cf8c2471ec74659b0eee667cf4841ae86e9e4c7"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/goop_first_results_picture.tex",
+      "path": "editorial/figure_v1/goop_first_results_picture.tex",
+      "bytes": 14272,
+      "sha256": "d5da48e8858705b2b058484ff7b22fd89118b950b26fc6b96decef1674de3e33"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/integrated_source_review_v1.json",
+      "path": "editorial/figure_v1/integrated_source_review_v1.json",
+      "bytes": 3727,
+      "sha256": "a8f9afdceb8e01298978c8dddb32f04d67f1aded7ced4185a3cc1a327ccc7f34"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/matplotlib_cache/fontlist-v3.11.0.json",
+      "path": "editorial/figure_v1/matplotlib_cache/fontlist-v3.11.0.json",
+      "bytes": 290869,
+      "sha256": "3b38bc05e17945d6ca2a7951cd9afa92c4600952de1b652f419d4ba0ff2c98e3"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/preview_standalone.tex",
+      "path": "editorial/figure_v1/preview_standalone.tex",
+      "bytes": 14364,
+      "sha256": "4028b34bd41d964350984985e5c35fc7dc5bba851a737bbfe56b68ef6b931607"
+    },
+    {
+      "source": "work/paper_story_20261007/figure_v1/source_and_visual_review.json",
+      "path": "editorial/figure_v1/source_and_visual_review.json",
+      "bytes": 907,
+      "sha256": "2a0b523f413cdc855e4750ac63c2ae44f86d3b5eb790d3996e4df2c1ddbd6564"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/applied_first_pass_manifest.json",
+      "path": "editorial/root_v1/applied_first_pass_manifest.json",
+      "bytes": 428,
+      "sha256": "0cda69194475abd7724e3e1a27659164db83c1460f3bc5d90345cf0edb239389"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/before_manifest.json",
+      "path": "editorial/root_v1/before_manifest.json",
+      "bytes": 938,
+      "sha256": "491358d6a35f275620a49a34210e71c87b5c06f97955a7b86d668690c21bd1ec"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/editorial_plan.md",
+      "path": "editorial/root_v1/editorial_plan.md",
+      "bytes": 1621,
+      "sha256": "44b1a92757e3b4b355796d94fca998d5ff1ff00376a0286a45c8d8712f2bcb19"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/interpretation_and_limitations.tex",
+      "path": "editorial/root_v1/interpretation_and_limitations.tex",
+      "bytes": 4521,
+      "sha256": "d8b32f2eb1b6df11614924d2db3553bf03b97fa38b6a576b39e62e0eae44c511"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/methods.tex",
+      "path": "editorial/root_v1/methods.tex",
+      "bytes": 7205,
+      "sha256": "1e72b6151d546f7805337cb276f77eec1d67987e403b30c9295f6a3a84364d76"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/native_compile_result.json",
+      "path": "editorial/root_v1/native_compile_result.json",
+      "bytes": 579,
+      "sha256": "264bfd720f6d116404340e9b002064982351af57d27116cb17df84ddfd47633d"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/observed_table.tex",
+      "path": "editorial/root_v1/observed_table.tex",
+      "bytes": 1198,
+      "sha256": "2861e747dfad37918a4fa77d969430345682332a51beb22ed575e01d8ca07b44"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/original_goop_figure.tex",
+      "path": "editorial/root_v1/original_goop_figure.tex",
+      "bytes": 5923,
+      "sha256": "b69f41d1c8cb8739aae69689d5a5d3a80b50ec808e2dbaa23a12aa1286131475"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/original_observed_table.tex",
+      "path": "editorial/root_v1/original_observed_table.tex",
+      "bytes": 1166,
+      "sha256": "8395bc8dfaa1714514e77dace12f81a2526fc9c63d9de48e0d6e8e76de4b2b5d"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/original_rollout_table.tex",
+      "path": "editorial/root_v1/original_rollout_table.tex",
+      "bytes": 1604,
+      "sha256": "6d956a17354f6ea33cd7339ff637e376a73c108a1e5423c7d312a5c33c4198f8"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/report_promotion.json",
+      "path": "editorial/root_v1/report_promotion.json",
+      "bytes": 442,
+      "sha256": "eb6db316c5b293a1b63ab0c7d3bd09820e89b01406590c01312525d2a293d8b3"
+    },
+    {
+      "source": "work/paper_story_20261007/root_v1/rollout_table.tex",
+      "path": "editorial/root_v1/rollout_table.tex",
+      "bytes": 1091,
+      "sha256": "01d2e600f68f6ec26caa30327e4be1c8de65d82cc281dc166dd69e84d7cfed04"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/build_story_addendum.py",
+      "path": "editorial/report_v1/build_story_addendum.py",
+      "bytes": 9681,
+      "sha256": "ecac7113e6633a79d4257e06cb6470031041288fb8b8a7fcc88e3628b2b44dbc"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/candidate-22.png",
+      "path": "editorial/report_v1/candidate-22.png",
+      "bytes": 261248,
+      "sha256": "5d7e8856b91255e8d7e043cf27faab87cf9f3cf21e74c93a828b601cf70853ab"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/candidate-23.png",
+      "path": "editorial/report_v1/candidate-23.png",
+      "bytes": 203158,
+      "sha256": "df5a9aafc17be7b7ed2b2b27bce6bd7156bfb6d638f311f85742766b8a95880f"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/displayed_observed_statistics.json",
+      "path": "editorial/report_v1/displayed_observed_statistics.json",
+      "bytes": 9736,
+      "sha256": "a5448abd4830e150fcb690b1366a9b5a1c0a8eb0fe5bdcc0329bcf27b21096aa"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/independent_new_pages_reader_review.json",
+      "path": "editorial/report_v1/independent_new_pages_reader_review.json",
+      "bytes": 4619,
+      "sha256": "79efc169a9eb53a217d5c4e49c17cada12b9acd27cbc9f5850ff9e6ad331f723"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/pixel_preservation_review.json",
+      "path": "editorial/report_v1/pixel_preservation_review.json",
+      "bytes": 3929,
+      "sha256": "a3f5f486bbf5e406bc1f54b3d25b40ba8033645ebf07eea2ff2fb1ddfa98c82a"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/prose.json",
+      "path": "editorial/report_v1/prose.json",
+      "bytes": 4785,
+      "sha256": "fb9b16cead67a40b730b0cc1320e64a393c405d7761c56099f8e219740845bab"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v1/report_structure_review.json",
+      "path": "editorial/report_v1/report_structure_review.json",
+      "bytes": 956,
+      "sha256": "44e3dc43c30d2530db3d7c0a36825745e4067117749ec67b1b21119352d1c498"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/build_story_addendum.py",
+      "path": "editorial/report_v2/build_story_addendum.py",
+      "bytes": 9859,
+      "sha256": "24a55f6c7e47c8d61aa87685086a308f6e876eb90b9a52d75aca7cdf8cdebf47"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/candidate-22.png",
+      "path": "editorial/report_v2/candidate-22.png",
+      "bytes": 262141,
+      "sha256": "3571b50fc21961fdb1911ddbd03618e3a301a6bfe206e67ed08d9f254e9a5c03"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/candidate-23.png",
+      "path": "editorial/report_v2/candidate-23.png",
+      "bytes": 214592,
+      "sha256": "60f1f8a5c509df6a170d37aa82e910e02c8d346a5ae893fbbb94ef408d04313d"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/displayed_observed_statistics.json",
+      "path": "editorial/report_v2/displayed_observed_statistics.json",
+      "bytes": 9736,
+      "sha256": "a5448abd4830e150fcb690b1366a9b5a1c0a8eb0fe5bdcc0329bcf27b21096aa"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/independent_new_pages_reader_review.json",
+      "path": "editorial/report_v2/independent_new_pages_reader_review.json",
+      "bytes": 1400,
+      "sha256": "e31189453b30247af4f4eb4612bf8e92d6ac0264e66ad070140535dc846d36d6"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/pixel_preservation_review.json",
+      "path": "editorial/report_v2/pixel_preservation_review.json",
+      "bytes": 3762,
+      "sha256": "68f03d81c3c4c720af3a9924053eca771a923744d402e9e5f6e3dad9cb92f116"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/prose.json",
+      "path": "editorial/report_v2/prose.json",
+      "bytes": 4991,
+      "sha256": "79b3716625c6f094d04dc9d4dc2125434b72ccf0c58e6767164b03dbbc67ebd9"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/report_structure_review.json",
+      "path": "editorial/report_v2/report_structure_review.json",
+      "bytes": 956,
+      "sha256": "0a7e5f131fd0ab1a4e5260e6ab30368253d810ba8b786cde35cd4d628f25cbe6"
+    },
+    {
+      "source": "work/paper_story_20261007/report_v2/root_visual_review.json",
+      "path": "editorial/report_v2/root_visual_review.json",
+      "bytes": 514,
+      "sha256": "45e2a59c66393a119f51876c4a7a592ede19ea0011e8f37773dc632ff0698177"
+    },
+    {
+      "source": "work/goop3d_completion_20261007/report_addendum_recipe_v1/displayed_observed_statistics.json",
+      "path": "report/prepared_observed_statistics.json",
+      "bytes": 9736,
+      "sha256": "20c33b3e3fa96f6b179954caacf3eec292d751a37889afaec9fff51899e769cf"
+    }
+  ],
+  "payload_count": 76,
+  "payload_bytes": 4191119,
+  "previous_fork_commit": "323ff7d8c4de15a41d70cdeb3b3c9fdaae1d0593"
+}

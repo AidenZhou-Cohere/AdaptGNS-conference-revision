@@ -1,0 +1,175 @@
+{
+  "status": "all21originalpages_pixel_identical_at120dpi",
+  "pages": [
+    {
+      "page": 1,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "082c56bf7dfc4d328a914f6f4819a4a60ba2811181f7c4e7eb84a0e98e1d9cd7"
+    },
+    {
+      "page": 2,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "f2118235ce3c01840dc954d6fabc2737ad33796eb4a6daf30a138b08c7d0c6a3"
+    },
+    {
+      "page": 3,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "d784d68c2ac5b7e58895b83c5a7f461c278125ab7ad46596680dcd709cdfaaee"
+    },
+    {
+      "page": 4,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "9dd15b62a579724f45418ef652245af747a1b627ef20b26662bec5dcb3041e8b"
+    },
+    {
+      "page": 5,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "31dcfba156cdb10565f91ca132c6bce47f97ae9851445f5a133e753d7be9753c"
+    },
+    {
+      "page": 6,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "b433b7d79fc2009ceb3dd813c261093aca81cdcd826757d540725a8c8e6e1d2e"
+    },
+    {
+      "page": 7,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "0c7e44f87f15fe88460f6c90a33573e593ec292e56c52ba1210ad79bbffb55b7"
+    },
+    {
+      "page": 8,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "5e8a162f9dea52aa3b70eddceae405430c45f4be85a5d929066e5766a51bfb70"
+    },
+    {
+      "page": 9,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "e90e6591a4140df3d820ba2f28ccf88eff409b2d392d133a8acdddec0f4dc648"
+    },
+    {
+      "page": 10,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "f27c39b2e932008c69f6bb31d57a0d2ca295b9f4a9f6c362a84df78a0f96fe08"
+    },
+    {
+      "page": 11,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "10fec8849e2d80c97b8467b46770e7fa16cb38fe694973284414895cd692e9f3"
+    },
+    {
+      "page": 12,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "b3d2b44c3c17734f9be7f40b02ed2f410aff747f655bbc65febdb39ce720a0ff"
+    },
+    {
+      "page": 13,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "46c4d082aefb6e2241b2163dc6461b7f0a512af5ffd9e1e6ca1afc02c52aaf8b"
+    },
+    {
+      "page": 14,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "1072e14b27f186a9cee26c0bdd78b92dff044ffa599f7ae823ae7c8b73c67df4"
+    },
+    {
+      "page": 15,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "6531e102d8e870a45f34a4ecaf67911f38eb6552165ccb477eceeb97ba2211c5"
+    },
+    {
+      "page": 16,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "6b0d35ca021ad4b679c81045716d8797fd219d097e2540706de1a72415e36eb6"
+    },
+    {
+      "page": 17,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "f42ff58ad884275f2300cd5548960c38039aecaf64935901392de9133a5ca144"
+    },
+    {
+      "page": 18,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "8c5a7a2568ea7be56cc6a56869f5a94de158ce42b32d5dc8c015b65a225d2f13"
+    },
+    {
+      "page": 19,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "fe2a94beda0a0974092f3c38b8322cc1842aa7381d3e323d20773bdd684467c8"
+    },
+    {
+      "page": 20,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "b5e3f096e89c38443677bfdd62021e264826a71e06751c5eb44865df07b784a3"
+    },
+    {
+      "page": 21,
+      "size": [
+        1020,
+        1320
+      ],
+      "pixel_sha256": "f047d068753b4978dc7468362286bb01b2a7d75776a1e9b30b1cf6550298b998"
+    }
+  ],
+  "render_exit_code": 0,
+  "fontconfig_warnings_retained": "render_stderr.log"
+}

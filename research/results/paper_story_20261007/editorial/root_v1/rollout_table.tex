@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering\scriptsize
+\caption{Graph exposure has different effects across rollout policies. Entries are mixed-minus-base full-horizon position MSE, mean $\pm$ sample SD over three paired seeds; negative favors mixed training. Goop H395 and Sand H314 use 90 outcomes per arm/policy; WaterDrop H995 uses 81. All outcomes complete except one candidate-pair guard each in mixed Goop base, dense and cached risk: $\dagger$ leaves those full-horizon effects undefined. NP: policy not predeclared.}
+\label{tab:goop-rollouts}
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{lccc}
+\toprule
+Evaluation policy & Goop & WaterDrop & Sand\\
+\midrule
+Base & $\dagger$ & $-0.005\pm0.008$ & $-0.00004\pm0.003$\\
+Dense & $\dagger$ & $-0.012\pm0.004$ & $-0.003\pm0.003$\\
+Random25 & $-0.172\pm0.163$ & $-0.006\pm0.006$ & $-0.011\pm0.019$\\
+Speed25 & $-0.160\pm0.137$ & $-0.005\pm0.006$ & $+0.010\pm0.019$\\
+Cached risk25 & $\dagger$ & $-0.003\pm0.001$ & $+0.009\pm0.012$\\
+RMS25 & $-0.208\pm0.204$ & NP & $-0.003\pm0.005$\\
+\bottomrule
+\end{tabular}
+\end{table}

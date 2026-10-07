@@ -1,0 +1,87 @@
+{
+  "status": "targeted_main_review_requires_five_small_corrections",
+  "scope": "Changed main text only; source comparison and claim redteam, no scientific recomputation or canonical edit.",
+  "inputs": {
+    "work/manuscript_body.tex": {
+      "sha256": "417337d1235b1c7e3c740634fe0498bc4aebcf45bffa6f2074e2998d29a3d737",
+      "bytes": 603567
+    },
+    "work/conference_experiments_main.tex": {
+      "sha256": "0a1d7c308f65c0fb0cf3f01020b6e8afae8034e0baa97b940b0a971075aab89e",
+      "bytes": 8945
+    },
+    "outputs/revised_manuscript.tex": {
+      "sha256": "c8c5c2af899794074548813c2fef0b76ada332a5e49aca61b009e939bb1f1bdb",
+      "bytes": 704912
+    },
+    "work/paper_story_20261007/root_v1/before/work/manuscript_body.tex": {
+      "sha256": "9d26e4f0e3075484a9627bf710cffc2aa452bd7d8614b4759f07d84d4521ce49",
+      "bytes": 588073
+    },
+    "work/paper_story_20261007/root_v1/before/work/conference_experiments_main.tex": {
+      "sha256": "264a1db12f29d992c2294a488f0cf8e711a8eef5aa4b3a12e3e29f0ff5e4e2d8",
+      "bytes": 15395
+    }
+  },
+  "required_corrections": [
+    {
+      "id": "R1",
+      "file": "work/conference_experiments_main.tex",
+      "line": 11,
+      "issue": "Universal 150 observed test histories now incorrectly includes WaterDrop. Its retained appendix states 297 test histories per endpoint (128 validation).",
+      "replacement": "To isolate placement, we evaluate policies on the same observed test histories within each material: 150 per Goop/Sand model and 297 per WaterDrop endpoint."
+    },
+    {
+      "id": "R2",
+      "file": "work/conference_experiments_main.tex",
+      "line": 13,
+      "issue": "After newly defining action benefit, Its correlation grammatically attributes .214/.001 to benefit, including its own self-correlation. Both coefficients refer to the residual score.",
+      "replacement": "The residual score correlates with base error at $.214\\pm.088$ and with the benefit of its selected sparse action at $.001\\pm.048$."
+    },
+    {
+      "id": "R3",
+      "file": "work/manuscript_body.tex",
+      "line": 419,
+      "issue": "E0 is now a directed native edge set while S is unordered optional pairs; E0 union S mixes incompatible types.",
+      "replacement": "Define D(S)={(i,j),(j,i):{i,j} in S}, then use E0(x_t) union D(S), or explicitly define E0 plus S as bidirectional appending."
+    },
+    {
+      "id": "R4",
+      "file": "work/conference_experiments_main.tex",
+      "line": 19,
+      "issue": "Observed-table headline Training helps expanded graphs is too broad for its own WaterDrop positive mixed-minus-base Random25 effect (+0.28 +/-0.92).",
+      "replacement": "Training and placement effects differ across materials."
+    },
+    {
+      "id": "R5",
+      "file": "work/manuscript_body.tex",
+      "line": 295,
+      "issue": "Exact edge-cardinality identity requires an exact selected-set cardinality; arbitrary S subset C alone does not imply it.",
+      "replacement": "For an integer budget B_t>=0, select S_t subset C_R(x_t) with |S_t|=min(B_t,|C_R(x_t)|), then append both orientations."
+    }
+  ],
+  "optional_precision": [
+    "Define E_A in the cost identity as the native graph with the chosen directed additions; call the first term extra directed-message count (rather than unspecified cost). No runtime equality follows.",
+    "In conclusion replace the orphan phrase what that need means with which added interactions improve prediction.",
+    "The capped native graph can grow as particles cluster, up to its receiver cap; can grow is more precise than grows."
+  ],
+  "checks": {
+    "title_unchanged": true,
+    "abstract_claims_consistent_with_admitted_findings": true,
+    "abstract_exploratory_three_seed_and_continuation_qualifiers_retained": true,
+    "three_question_sequence_distinguishes_exposure_placement_feedback": true,
+    "observed_table_all_15_mean_sd_strings_exact_in_order": true,
+    "rollout_table_all_14_mean_sd_strings_exact_in_order": true,
+    "rollout_three_guard_daggers_and_one_np_preserved": true,
+    "removed_failure_zero_cells_fully_represented_by_caption": true,
+    "guard_location_mixed_goop_base_dense_cachedrisk_exact": true,
+    "no_survivor_averages_or_defined_guarded_means": true,
+    "waterdrop_test_vs_validation_and_autonomous_interaction_separated": true,
+    "sand_adverse_cachedrisk_and_nativebase_comparisons_preserved": true,
+    "physical_mismatch_and_unmeasured_memory_optimizedruntime_limits_retained": true,
+    "conditional_theory_does_not_claim_stability_or_useful_score_guarantee": true,
+    "no_unadmitted_d3_autonomous_claim": true,
+    "appendix_delta_exactly_one_idealized_graph_notation_sentence": true
+  },
+  "summary": "Substantive narrative improved and all main-table numeric/failure semantics are preserved. Fix history denominator, correlation antecedent, directed-pair lift, observed-table headline, and exact-budget premise before final approval."
+}

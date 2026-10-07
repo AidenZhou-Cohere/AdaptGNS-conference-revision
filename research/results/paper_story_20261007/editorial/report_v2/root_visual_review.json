@@ -1,0 +1,16 @@
+{
+  "status": "both_new_pages_visually_pass",
+  "candidate_sha256": "10dcfb78f2ed510a47c04d66ba8aff03a9aa71d6efeb90787930756d4c69b06e",
+  "new_pages": [
+    22,
+    23
+  ],
+  "findings": [
+    "Readable hierarchy, figures and tables",
+    "No clipped text, overlap or broken glyphs",
+    "Corrected residual-score reuse wording",
+    "Second-table scale and interaction definition explicit"
+  ],
+  "original21pages_pixel_preservation": "pixel_preservation_review.json",
+  "no_native_manuscript_pdf_export": true
+}

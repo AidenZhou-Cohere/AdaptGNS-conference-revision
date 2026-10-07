@@ -1,0 +1,32 @@
+[
+  {
+    "path": "outputs/revised_manuscript.tex",
+    "sha256": "2e6b43c8178ead7d1fef331d8f6437f4d156d73b7cf07b305385ba66b21c7291",
+    "bytes": 696207
+  },
+  {
+    "path": "work/manuscript_body.tex",
+    "sha256": "9d26e4f0e3075484a9627bf710cffc2aa452bd7d8614b4759f07d84d4521ce49",
+    "bytes": 588073
+  },
+  {
+    "path": "work/conference_experiments_main.tex",
+    "sha256": "264a1db12f29d992c2294a488f0cf8e711a8eef5aa4b3a12e3e29f0ff5e4e2d8",
+    "bytes": 15395
+  },
+  {
+    "path": "work/build_manuscript.py",
+    "sha256": "eeaf5245dd5a4ad2275ad0653e1c6499a9c418ac11a62b0a4c60d6bab23a24fe",
+    "bytes": 3077
+  },
+  {
+    "path": "outputs/author_handoff_20261007.md",
+    "sha256": "8c415f4ee28789544bed0156d39c0b0a3e5db85abef53531a08fa7194dd938e2",
+    "bytes": 4554
+  },
+  {
+    "path": "outputs/submission_checklist.md",
+    "sha256": "db81bc4fe0a9c1c4acc006fd23185ab242921adde20b03340cb0a2c3a63124e0",
+    "bytes": 53629
+  }
+]

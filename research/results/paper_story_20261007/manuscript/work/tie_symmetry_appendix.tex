@@ -1,0 +1,43 @@
+\subsection{Exact budgets and permutation symmetry}
+\label{sec:tie-symmetry}
+The particle-ID tie rule is a limitation of the reference controller. To state
+the obstruction precisely, let $X$ contain all information permitted to the
+selector, including candidate pairs, scores, and any history or coordinates
+used for tie breaking. Relabeling particles acts on $X$ and on unordered pairs.
+Assume candidate construction is equivariant and the budget $B$ is invariant.
+Let $G_X=\{\pi:\pi X=X\}$ be the stabilizer of the full input, with orbits
+$O_1,\ldots,O_m$ on the optional pairs.
+
+\begin{proposition}
+A deterministic exact-$B$ selector that is equivariant on the relabeling orbit
+of $X$ exists if and only if $B$ is a sum of sizes of a subset of the $O_j$.
+\end{proposition}
+\begin{proof}
+Equivariance requires $S(X)=S(gX)=gS(X)$ for every $g\in G_X$, so $S(X)$ must
+be a union of stabilizer orbits. Conversely, choose such a union $S_0$ at a
+representative $X_0$ and define $S(\pi X_0)=\pi S_0$. If
+$\pi X_0=\rho X_0$, then $\rho^{-1}\pi\in G_{X_0}$ fixes $S_0$, making the
+definition independent of the chosen relabeling.
+\end{proof}
+
+For example, four optional spokes incident to a center, with indistinguishable
+leaves under every permitted input feature, form one orbit of size four. An
+exact $25\%$ budget requires one spoke and cannot be deterministic and
+equivariant on that input. Distinct coordinate features can destroy this
+stabilizer; a visually symmetric drawing alone is insufficient.
+
+Equal pair priorities do not by themselves imply this impossibility.
+The priority $\max(s_i,s_j)$ can give identical values to several pairs incident
+to a node whose score exceeds those neighbors' scores, even when all node scores are distinct. On that domain,
+ordering by $(\max(s_i,s_j),\min(s_i,s_j))$ uniquely orders unordered pairs
+equivariantly while preserving the primary objective. Thus the frozen ID tie
+rule can break equivariance even when a deterministic alternative exists.
+
+Alternatively, iid continuous keys, independent of the selector input and
+attached to unordered pairs, can break only cutoff ties. This gives an exact budget and equivariance in
+distribution. If keys are transported with the relabeling, corresponding
+pairs have identical primary and secondary priorities, yielding pathwise
+equivariance almost surely. Restarting a scalar PRNG seed on a reordered pair
+array does not implement that coupling. These alternatives were not installed
+in the frozen experiment; no empirical effect of the tie rule on accuracy or
+runtime has been established here.

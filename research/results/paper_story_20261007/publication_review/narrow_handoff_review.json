@@ -1,0 +1,173 @@
+{
+  "scope": "Narrow new-package payload/source-copy and primary-handoff review only; no scientific/table/figure/PDF audits or historical corpus review. Root owns staged-byte/reprobuild/commit.",
+  "status": "all_payloads_and_primary_links_pass_one_root_readme_history_label_correction_requested",
+  "payloads": 76,
+  "bytes": 4191119,
+  "payload_source_hash_failures": [],
+  "unlisted_files": [
+    "README.md",
+    "payload_manifest.json",
+    "reference_manifest.json"
+  ],
+  "primary_links": [
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "current manuscript",
+      "target": "research/results/paper_story_20261007/manuscript/outputs/revised_manuscript.tex",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "23-page companion",
+      "target": "research/results/paper_story_20261007/report/revision_report.pdf",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "AUTHOR_HANDOFF.md",
+      "target": "AUTHOR_HANDOFF.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "manuscript",
+      "target": "research/results/goop3d_completion_20261007/manuscript/outputs/revised_manuscript.tex",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "Goop2D100k",
+      "target": "research/results/goop2d_graph_exposure_100k_20261006/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "WaterDrop110k continuation",
+      "target": "research/results/waterdrop_continuation_110k_20261006/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "Sand100k",
+      "target": "research/results/sand_graph_support_100k_20261006/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "21-page evidence report",
+      "target": "research/results/sand_report_addendum_20261006/revision_report_candidate.pdf",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "Goop3D observed-history comparison",
+      "target": "research/results/goop3d_completion_20261007/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "preserved failure evidence",
+      "target": "research/results/goop3d_observed_history_failure_20261007/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "closure/status addendum",
+      "target": "research/results/goop3d_observed_history_failure_closure_20261007/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "author handoff",
+      "target": "AUTHOR_HANDOFF.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "DesignSafe Sand arrays",
+      "target": "research/results/sand_data_admission_20261006/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/README.md",
+      "label": "two actual-data CUDA comparisons",
+      "target": "research/results/sand_cuda_validation_20261006/README.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/AUTHOR_HANDOFF.md",
+      "label": "current manuscript",
+      "target": "research/results/paper_story_20261007/manuscript/outputs/revised_manuscript.tex",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/AUTHOR_HANDOFF.md",
+      "label": "23-page research companion",
+      "target": "research/results/paper_story_20261007/report/revision_report.pdf",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/AUTHOR_HANDOFF.md",
+      "label": "submission checklist",
+      "target": "research/results/paper_story_20261007/manuscript/outputs/submission_checklist.md",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/research/results/paper_story_20261007/README.md",
+      "label": "revised_manuscript.tex",
+      "target": "manuscript/outputs/revised_manuscript.tex",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/research/results/paper_story_20261007/README.md",
+      "label": "Research companion",
+      "target": "report/revision_report.pdf",
+      "exists": true,
+      "within_repo": true
+    },
+    {
+      "doc": "outputs/AdaptGNS/research/results/paper_story_20261007/README.md",
+      "label": "AUTHOR_HANDOFF",
+      "target": "../../../AUTHOR_HANDOFF.md",
+      "exists": true,
+      "within_repo": true
+    }
+  ],
+  "source_hashes": {
+    "outputs/AdaptGNS/research/results/paper_story_20261007/payload_manifest.json": "fd661591cc0f0eddb6c90aa23fba184b261b2b3f0bf040a1d7904a8fe7f26969",
+    "outputs/AdaptGNS/research/results/paper_story_20261007/reference_manifest.json": "df12d099ce0d9725bf680491d97412c94a7c6c33fe38b4181cc7ae942f5768fd",
+    "outputs/AdaptGNS/research/results/paper_story_20261007/README.md": "457584596c5c3f946ba6a14e1504968ed3ae90eec00185c47b034197e3e77841",
+    "outputs/AdaptGNS/AUTHOR_HANDOFF.md": "8a2ff49553bfea9bb3aae67cdaee2e43682e424406cac8409d8036c458d07ef6",
+    "outputs/AdaptGNS/README.md": "1295f1dc2f43dd683d7e7f0fc7bf5655a1d88785c99795f1085c4ec37a7cc86a"
+  },
+  "content_checks": {
+    "current_manuscript_25ff4aca": true,
+    "report_23_pages_10dcfb78": true,
+    "title_unchanged_abstract_authorized": true,
+    "pending_registration_pdf_author_rights_anonymity": true,
+    "d3_observed_complete_autonomous_pending_final_experiment": true,
+    "no_anonymous_archive_certification": true,
+    "native_compile_not_pdf_export": true,
+    "source_historical_proposals_distinct_from_current": true
+  },
+  "requested_correction": "Root README old Current conference revision block still reads current and links old manuscript/report plus all12 GPUs live; explicitly label it Earlier observed-integration snapshot (October7 02:51UTC) or move under historical heading.",
+  "note": "76 payloads exact original source bytes; 3 metadata wrapper files intentionally outside payload file list."
+}

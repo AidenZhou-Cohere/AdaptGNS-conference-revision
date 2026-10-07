@@ -1,0 +1,58 @@
+{
+  "canonical_edits": false,
+  "caption_as_read": "\\textbf{Learning to use extra messages does not guarantee better placement.} Goop, three paired seeds trained for 100k updates. \\textbf{A:} the same random25 policy improves in every seed after mixed-graph training (30 complete H395 rollouts per seed and arm). \\textbf{B:} risk still loses to random on 150 matched observed histories per model, although every gap narrows. Risk uses the preceding observed base graph. Lines pair seeds; dark bars show their means. The panels use different endpoints and scales. Full-rollout guards are retained in Table~\\ref{tab:goop-rollouts}.",
+  "first_figure_labels": [
+    [
+      "fig:goop-exposure-placement"
+    ],
+    [
+      "fig:interaction-schematic"
+    ]
+  ],
+  "inference_review": {
+    "caption_precision": "Root adopted does-not-guarantee wording to avoid implying placement cannot be solved.",
+    "guard_coverage": "Caption cross-reference points to the main full-rollout table and adjacent full-cohort prose rather than compressing them into the picture.",
+    "reason": "Panel A shows the same random25 policy across training arms; panel B shows risk-minus-random at matched observed histories. All three seed pairs remain visible and the means are labeled. No universal expansion benefit, autonomous risk win, physical-validity claim, or statistical-significance claim is made.",
+    "status": "supported_with_explicit_Goop_and_endpoint_scope"
+  },
+  "manuscript_body_sha256": "417337d1235b1c7e3c740634fe0498bc4aebcf45bffa6f2074e2998d29a3d737",
+  "manuscript_output_sha256_when_read": "c8c5c2af899794074548813c2fef0b76ada332a5e49aca61b009e939bb1f1bdb",
+  "native_compilation_or_ui_actions": false,
+  "native_geometry": {
+    "body_labels_pt": [
+      7.5,
+      7.7,
+      8,
+      8.5
+    ],
+    "both_zero_baselines_present": true,
+    "explicit_distinct_endpoint_and_scale_labels": true,
+    "marker_white_knockouts_locally_scoped": true,
+    "native_text_metrics_verified_by_render": false,
+    "picture_height_pt": 264,
+    "picture_width_pt": 470,
+    "sans_font_color_and_unitlength_scoped": true,
+    "spare_width_pt": 17.82249999999999,
+    "textwidth_pt": 487.8225,
+    "title_font_pt": 11.5,
+    "xcolor_loaded": true
+  },
+  "new_scientific_runs": false,
+  "picture_identical_to_reviewed_fragment": true,
+  "picture_sha256": "d5da48e8858705b2b058484ff7b22fd89118b950b26fc6b96decef1674de3e33",
+  "redundant_full_fidelity_audit": false,
+  "schema": "goop_figure1_integrated_source_review_v1",
+  "scope": "Integrated source structure/geometry and previously inspected shared PNG. Root reports successful native compilation. No exported native PDF exists; native pixel/font/page-layout review remains pending author export.",
+  "source_order_figure1_results_figure2_method": true,
+  "unique_labels": true,
+  "visual_review": {
+    "critical_issues": [],
+    "native_visual_review_pending": "Author-exported PDF or page image required; do not infer visual success merely from native compile success.",
+    "nonblocking_suggestions": [
+      "If native export makes the 7.5-point legend or axis ticks small, enlarge those text labels slightly without moving data. The current PNG is legible and does not require this change.",
+      "Figure2 still uses tiny 5-point count labels beneath its three stages. Raising them to scriptsize and using one restrained accent on the selected edge would better match Figure1; preserve the four native/six optional/one selected pair geometry.",
+      "The Figure2 three-stage graph is now in the right narrative place. It explains construction after Figure1 establishes why exposure and placement must be separated."
+    ],
+    "shared_png_status": "clear_and_legible"
+  }
+}

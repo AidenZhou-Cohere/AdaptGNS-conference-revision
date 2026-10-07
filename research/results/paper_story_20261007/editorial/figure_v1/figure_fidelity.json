@@ -1,0 +1,948 @@
+{
+  "caption_latex": "\\textbf{Training on added edges improves Goop rollouts, but risk still trails random placement.} Three paired seeds are trained from initialization for 100,000 updates. \\textbf{A,} random25 position-coordinate MSE falls in every seed (30 complete H395 rollouts per seed and arm). \\textbf{B,} risk minus random remains positive at 150 matched observed histories per model, although every gap narrows; risk uses the preceding observed base graph. Lines pair seeds; black bars mark three-seed means. \\textbf{Endpoints and scales differ.} Across the full study, 1,077/1,080 rollouts complete; mixed seed-2 guards affect base, dense and cached risk. The mixed cached-risk full-horizon mean and its training interaction remain undefined.",
+  "dimensions_pt": [
+    470,
+    264
+  ],
+  "fidelity": {
+    "canonical_files_edited": false,
+    "endpoints_and_scales_explicit": true,
+    "exact_means": 4,
+    "exact_points": 12,
+    "full_cohort_guard_and_undefined_cached_risk_retained": true,
+    "matplotlib_preview_bounds_passed": true,
+    "native_compilation_performed": false,
+    "scientific_runs_or_array_reads": false,
+    "three_seed_pairing_preserved": true
+  },
+  "means": [
+    {
+      "display_value": 0.3010540765517958,
+      "panel": "exposure",
+      "raw_value": 0.3010540765517958,
+      "record": "random_base",
+      "scale": 1.0,
+      "x": 84,
+      "y": 144.158236275879
+    },
+    {
+      "display_value": 0.12866238449294384,
+      "panel": "exposure",
+      "raw_value": 0.12866238449294384,
+      "record": "random_mix",
+      "scale": 1.0,
+      "x": 182,
+      "y": 103.41110906196855
+    },
+    {
+      "display_value": 6.387469420334484,
+      "panel": "placement",
+      "raw_value": 6.387469420334484e-10,
+      "record": "gap_base",
+      "scale": 10000000000.0,
+      "x": 322,
+      "y": 165.2634471826092
+    },
+    {
+      "display_value": 2.8356764856887637,
+      "panel": "placement",
+      "raw_value": 2.835676485688764e-10,
+      "record": "gap_mix",
+      "scale": 10000000000.0,
+      "x": 420,
+      "y": 113.95977145994881
+    }
+  ],
+  "points": [
+    {
+      "display_value": 0.20297881034570903,
+      "panel": "exposure",
+      "raw_value": 0.20297881034570903,
+      "record": "random_base",
+      "scale": 1.0,
+      "seed": 0,
+      "x": 79,
+      "y": 120.97680971807668
+    },
+    {
+      "display_value": 0.09358096202928454,
+      "panel": "exposure",
+      "raw_value": 0.09358096202928454,
+      "record": "random_mix",
+      "scale": 1.0,
+      "seed": 0,
+      "x": 177,
+      "y": 95.11913647964907
+    },
+    {
+      "display_value": 0.20342065979292642,
+      "panel": "exposure",
+      "raw_value": 0.20342065979292642,
+      "record": "random_base",
+      "scale": 1.0,
+      "seed": 1,
+      "x": 84,
+      "y": 121.08124686014625
+    },
+    {
+      "display_value": 0.1532941622310476,
+      "panel": "exposure",
+      "raw_value": 0.1532941622310476,
+      "record": "random_mix",
+      "scale": 1.0,
+      "seed": 1,
+      "x": 182,
+      "y": 109.23316561824761
+    },
+    {
+      "display_value": 0.4967627595167518,
+      "panel": "exposure",
+      "raw_value": 0.4967627595167518,
+      "record": "random_base",
+      "scale": 1.0,
+      "seed": 2,
+      "x": 89,
+      "y": 190.41665224941406
+    },
+    {
+      "display_value": 0.13911202921849936,
+      "panel": "exposure",
+      "raw_value": 0.13911202921849936,
+      "record": "random_mix",
+      "scale": 1.0,
+      "seed": 2,
+      "x": 187,
+      "y": 105.88102508800894
+    },
+    {
+      "display_value": 5.318763631065317,
+      "panel": "placement",
+      "raw_value": 5.318763631065317e-10,
+      "record": "gap_base",
+      "scale": 10000000000.0,
+      "seed": 0,
+      "x": 317,
+      "y": 149.82658578205456
+    },
+    {
+      "display_value": 0.542132415468074,
+      "panel": "placement",
+      "raw_value": 5.42132415468074e-11,
+      "record": "gap_mix",
+      "scale": 10000000000.0,
+      "seed": 0,
+      "x": 415,
+      "y": 80.83080155676107
+    },
+    {
+      "display_value": 8.042548770635177,
+      "panel": "placement",
+      "raw_value": 8.042548770635177e-10,
+      "record": "gap_base",
+      "scale": 10000000000.0,
+      "seed": 1,
+      "x": 322,
+      "y": 189.17014890917477
+    },
+    {
+      "display_value": 7.010019164640091,
+      "panel": "placement",
+      "raw_value": 7.010019164640091e-10,
+      "record": "gap_mix",
+      "scale": 10000000000.0,
+      "seed": 1,
+      "x": 420,
+      "y": 174.25583237813464
+    },
+    {
+      "display_value": 5.801095859302958,
+      "panel": "placement",
+      "raw_value": 5.801095859302958e-10,
+      "record": "gap_base",
+      "scale": 10000000000.0,
+      "seed": 2,
+      "x": 327,
+      "y": 156.79360685659827
+    },
+    {
+      "display_value": 0.9548778769581264,
+      "panel": "placement",
+      "raw_value": 9.548778769581264e-11,
+      "record": "gap_mix",
+      "scale": 10000000000.0,
+      "seed": 2,
+      "x": 425,
+      "y": 86.79268044495072
+    }
+  ],
+  "primitives": [
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "A",
+      "plain": "A",
+      "size": 11.5,
+      "x": 17,
+      "y": 249
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Exposure helps rollouts",
+      "plain": "Exposure helps rollouts",
+      "size": 11.5,
+      "x": 34,
+      "y": 249
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "B",
+      "plain": "B",
+      "size": 11.5,
+      "x": 255,
+      "y": 249
+    },
+    {
+      "align": "left",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Risk still trails random",
+      "plain": "Risk still trails random",
+      "size": 11.5,
+      "x": 272,
+      "y": 249
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Random25 $\\cdot$ all 395 forecasts",
+      "plain": "Random25 \u00b7 all 395 forecasts",
+      "size": 8.5,
+      "x": 17,
+      "y": 232
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "ink",
+      "kind": "text",
+      "latex": "150 matched observed histories",
+      "plain": "150 matched observed histories",
+      "size": 8.5,
+      "x": 255,
+      "y": 232
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Position-coordinate MSE",
+      "plain": "Position-coordinate MSE",
+      "size": 7.7,
+      "x": 17,
+      "y": 217
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Risk $-$ random MSE ($\\times10^{-10}$)",
+      "plain": "Risk \u2212 random MSE (\u00d710\u207b\u00b9\u2070)",
+      "size": 7.7,
+      "x": 255,
+      "y": 217
+    },
+    {
+      "color": "baseline",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.7,
+      "x1": 43,
+      "x2": 218,
+      "y1": 73.0,
+      "y2": 73.0
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.0",
+      "plain": "0.0",
+      "size": 7.5,
+      "x": 35,
+      "y": 73.0
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 43,
+      "x2": 218,
+      "y1": 96.63636363636364,
+      "y2": 96.63636363636364
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.1",
+      "plain": "0.1",
+      "size": 7.5,
+      "x": 35,
+      "y": 96.63636363636364
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 43,
+      "x2": 218,
+      "y1": 120.27272727272728,
+      "y2": 120.27272727272728
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.2",
+      "plain": "0.2",
+      "size": 7.5,
+      "x": 35,
+      "y": 120.27272727272728
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 43,
+      "x2": 218,
+      "y1": 143.9090909090909,
+      "y2": 143.9090909090909
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.3",
+      "plain": "0.3",
+      "size": 7.5,
+      "x": 35,
+      "y": 143.9090909090909
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 43,
+      "x2": 218,
+      "y1": 167.54545454545456,
+      "y2": 167.54545454545456
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.4",
+      "plain": "0.4",
+      "size": 7.5,
+      "x": 35,
+      "y": 167.54545454545456
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 43,
+      "x2": 218,
+      "y1": 191.1818181818182,
+      "y2": 191.1818181818182
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0.5",
+      "plain": "0.5",
+      "size": 7.5,
+      "x": 35,
+      "y": 191.1818181818182
+    },
+    {
+      "color": "seed0",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 79,
+      "x2": 177,
+      "y1": 120.97680971807668,
+      "y2": 95.11913647964907
+    },
+    {
+      "color": "seed0",
+      "kind": "marker",
+      "seed": 0,
+      "x": 79,
+      "y": 120.97680971807668
+    },
+    {
+      "color": "seed0",
+      "kind": "marker",
+      "seed": 0,
+      "x": 177,
+      "y": 95.11913647964907
+    },
+    {
+      "color": "seed1",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 84,
+      "x2": 182,
+      "y1": 121.08124686014625,
+      "y2": 109.23316561824761
+    },
+    {
+      "color": "seed1",
+      "kind": "marker",
+      "seed": 1,
+      "x": 84,
+      "y": 121.08124686014625
+    },
+    {
+      "color": "seed1",
+      "kind": "marker",
+      "seed": 1,
+      "x": 182,
+      "y": 109.23316561824761
+    },
+    {
+      "color": "seed2",
+      "dashed": true,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 89,
+      "x2": 187,
+      "y1": 190.41665224941406,
+      "y2": 105.88102508800894
+    },
+    {
+      "color": "seed2",
+      "kind": "marker",
+      "seed": 2,
+      "x": 89,
+      "y": 190.41665224941406
+    },
+    {
+      "color": "seed2",
+      "kind": "marker",
+      "seed": 2,
+      "x": 187,
+      "y": 105.88102508800894
+    },
+    {
+      "color": "ink",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 73,
+      "x2": 95,
+      "y1": 144.158236275879,
+      "y2": 144.158236275879
+    },
+    {
+      "color": "ink",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 171,
+      "x2": 193,
+      "y1": 103.41110906196855,
+      "y2": 103.41110906196855
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Base-only",
+      "plain": "Base-only",
+      "size": 8,
+      "x": 84,
+      "y": 58
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "training",
+      "plain": "training",
+      "size": 7.5,
+      "x": 84,
+      "y": 46
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Mixed-graph",
+      "plain": "Mixed-graph",
+      "size": 8,
+      "x": 182,
+      "y": 58
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "training",
+      "plain": "training",
+      "size": 7.5,
+      "x": 182,
+      "y": 46
+    },
+    {
+      "color": "baseline",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.7,
+      "x1": 281,
+      "x2": 456,
+      "y1": 73.0,
+      "y2": 73.0
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "0",
+      "plain": "0",
+      "size": 7.5,
+      "x": 273,
+      "y": 73.0
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 281,
+      "x2": 456,
+      "y1": 116.33333333333333,
+      "y2": 116.33333333333333
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "3",
+      "plain": "3",
+      "size": 7.5,
+      "x": 273,
+      "y": 116.33333333333333
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 281,
+      "x2": 456,
+      "y1": 159.66666666666666,
+      "y2": 159.66666666666666
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "6",
+      "plain": "6",
+      "size": 7.5,
+      "x": 273,
+      "y": 159.66666666666666
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.35,
+      "x1": 281,
+      "x2": 456,
+      "y1": 203.0,
+      "y2": 203.0
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "9",
+      "plain": "9",
+      "size": 7.5,
+      "x": 273,
+      "y": 203.0
+    },
+    {
+      "color": "seed0",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 317,
+      "x2": 415,
+      "y1": 149.82658578205456,
+      "y2": 80.83080155676107
+    },
+    {
+      "color": "seed0",
+      "kind": "marker",
+      "seed": 0,
+      "x": 317,
+      "y": 149.82658578205456
+    },
+    {
+      "color": "seed0",
+      "kind": "marker",
+      "seed": 0,
+      "x": 415,
+      "y": 80.83080155676107
+    },
+    {
+      "color": "seed1",
+      "dashed": false,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 322,
+      "x2": 420,
+      "y1": 189.17014890917477,
+      "y2": 174.25583237813464
+    },
+    {
+      "color": "seed1",
+      "kind": "marker",
+      "seed": 1,
+      "x": 322,
+      "y": 189.17014890917477
+    },
+    {
+      "color": "seed1",
+      "kind": "marker",
+      "seed": 1,
+      "x": 420,
+      "y": 174.25583237813464
+    },
+    {
+      "color": "seed2",
+      "dashed": true,
+      "kind": "line",
+      "width": 1.05,
+      "x1": 327,
+      "x2": 425,
+      "y1": 156.79360685659827,
+      "y2": 86.79268044495072
+    },
+    {
+      "color": "seed2",
+      "kind": "marker",
+      "seed": 2,
+      "x": 327,
+      "y": 156.79360685659827
+    },
+    {
+      "color": "seed2",
+      "kind": "marker",
+      "seed": 2,
+      "x": 425,
+      "y": 86.79268044495072
+    },
+    {
+      "color": "ink",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 311,
+      "x2": 333,
+      "y1": 165.2634471826092,
+      "y2": 165.2634471826092
+    },
+    {
+      "color": "ink",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 409,
+      "x2": 431,
+      "y1": 113.95977145994881,
+      "y2": 113.95977145994881
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Base-only",
+      "plain": "Base-only",
+      "size": 8,
+      "x": 322,
+      "y": 58
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "training",
+      "plain": "training",
+      "size": 7.5,
+      "x": 322,
+      "y": 46
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Mixed-graph",
+      "plain": "Mixed-graph",
+      "size": 8,
+      "x": 420,
+      "y": 58
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "training",
+      "plain": "training",
+      "size": 7.5,
+      "x": 420,
+      "y": 46
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Mean\\quad $0.301\\rightarrow0.129$",
+      "plain": "Mean  0.301 \u2192 0.129",
+      "size": 8.5,
+      "x": 130,
+      "y": 28
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "latex": "Mean gap\\quad $+6.39\\rightarrow+2.84$",
+      "plain": "Mean gap  +6.39 \u2192 +2.84",
+      "size": 8.5,
+      "x": 368,
+      "y": 28
+    },
+    {
+      "color": "seed0",
+      "kind": "marker",
+      "seed": 0,
+      "x": 95,
+      "y": 9
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Seed 0",
+      "plain": "Seed 0",
+      "size": 7.5,
+      "x": 104,
+      "y": 9
+    },
+    {
+      "color": "seed1",
+      "kind": "marker",
+      "seed": 1,
+      "x": 160,
+      "y": 9
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Seed 1",
+      "plain": "Seed 1",
+      "size": 7.5,
+      "x": 169,
+      "y": 9
+    },
+    {
+      "color": "seed2",
+      "kind": "marker",
+      "seed": 2,
+      "x": 225,
+      "y": 9
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Seed 2",
+      "plain": "Seed 2",
+      "size": 7.5,
+      "x": 234,
+      "y": 9
+    },
+    {
+      "color": "ink",
+      "dashed": false,
+      "kind": "line",
+      "width": 2.2,
+      "x1": 290,
+      "x2": 307,
+      "y1": 9,
+      "y2": 9
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "latex": "Three-seed mean",
+      "plain": "Three-seed mean",
+      "size": 7.5,
+      "x": 315,
+      "y": 9
+    }
+  ],
+  "products_sha256": {
+    "goop_first_results.png": "471eea2949d808c4b4d730978d439c58c12925c2bdd5536666da44ee0eac0670",
+    "goop_first_results.svg": "4cf4344f2f2e15e6db8dae999c2e01c3513e3d1db47060a51f07a33563b4ec75",
+    "goop_first_results_figure.tex": "b1aa59dfbb2818324090eb470cf8c2471ec74659b0eee667cf4841ae86e9e4c7",
+    "goop_first_results_picture.tex": "d5da48e8858705b2b058484ff7b22fd89118b950b26fc6b96decef1674de3e33",
+    "preview_standalone.tex": "4028b34bd41d964350984985e5c35fc7dc5bba851a737bbfe56b68ef6b931607"
+  },
+  "schema": "goop_first_results_presentation_v1",
+  "source": "/Users/aiden.zhou/Documents/Codex/2026-10-04/why-cangmai/work/conference_presentation_20261006/goop_integration_candidate_v1/figure_coordinates_and_source_AUDIT_PENDING.json",
+  "source_records_unchanged": {
+    "cached_risk_full_horizon_interaction": {
+      "defined_seed_pairs": 2,
+      "mean": null,
+      "required_seed_pairs": 3,
+      "sample_sd": null,
+      "seed_values": {
+        "0": -0.050423383377121614,
+        "1": 0.014363356840321667,
+        "2": null
+      }
+    },
+    "cached_risk_full_horizon_mix": {
+      "defined_seed_pairs": 2,
+      "mean": null,
+      "required_seed_pairs": 3,
+      "sample_sd": null,
+      "seed_values": {
+        "0": 0.08648144451392219,
+        "1": 0.15915797639202572,
+        "2": null
+      }
+    },
+    "gap_base": {
+      "defined_seed_pairs": 3,
+      "mean": 6.387469420334484e-10,
+      "required_seed_pairs": 3,
+      "sample_sd": 1.4534878177827962e-10,
+      "seed_values": {
+        "0": 5.318763631065317e-10,
+        "1": 8.042548770635177e-10,
+        "2": 5.801095859302958e-10
+      }
+    },
+    "gap_mix": {
+      "defined_seed_pairs": 3,
+      "mean": 2.835676485688764e-10,
+      "required_seed_pairs": 3,
+      "sample_sd": 3.620972563411806e-10,
+      "seed_values": {
+        "0": 5.42132415468074e-11,
+        "1": 7.010019164640091e-10,
+        "2": 9.548778769581264e-11
+      }
+    },
+    "observed_gap_interaction": {
+      "defined_seed_pairs": 3,
+      "mean": -3.5517929346457207e-10,
+      "required_seed_pairs": 3,
+      "sample_sd": 2.1820234574448324e-10,
+      "seed_values": {
+        "0": -4.776631215597243e-10,
+        "1": -1.0325296059950864e-10,
+        "2": -4.846217982344832e-10
+      }
+    },
+    "random_base": {
+      "defined_seed_pairs": 3,
+      "mean": 0.3010540765517958,
+      "required_seed_pairs": 3,
+      "sample_sd": 0.16948883517400715,
+      "seed_values": {
+        "0": 0.20297881034570903,
+        "1": 0.20342065979292642,
+        "2": 0.4967627595167518
+      }
+    },
+    "random_mix": {
+      "defined_seed_pairs": 3,
+      "mean": 0.12866238449294384,
+      "required_seed_pairs": 3,
+      "sample_sd": 0.031197962685914397,
+      "seed_values": {
+        "0": 0.09358096202928454,
+        "1": 0.1532941622310476,
+        "2": 0.13911202921849936
+      }
+    },
+    "random_training_effect": {
+      "defined_seed_pairs": 3,
+      "mean": -0.17239169205885194,
+      "required_seed_pairs": 3,
+      "sample_sd": 0.16315316942097033,
+      "seed_values": {
+        "0": -0.10939784831642449,
+        "1": -0.05012649756187881,
+        "2": -0.35765073029825245
+      }
+    }
+  },
+  "source_sha256": "3e2289459c065f6bfebd1f8055f4f5c863c595431ada0f17ff06b125c0a332b4",
+  "source_summary_sha256": "cec653b7a0bf657c2c21402f14fd50a2dda934cf1affcd2ab4c603dbced8bbb0"
+}

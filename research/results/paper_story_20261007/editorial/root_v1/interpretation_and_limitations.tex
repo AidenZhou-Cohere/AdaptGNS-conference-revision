@@ -1,0 +1,29 @@
+\section{What makes an interaction useful?}
+The experiments point to a mismatch between the quantity the residual head predicts and the quantity the controller needs. A residual head estimates error under the current model and graph. A useful allocation score must estimate how an action changes that error.
+
+\subsection{Prediction difficulty versus action benefit}
+At a fixed representation and mean predictor, the residual head's population optimum is the conditional vector squared residual divided by $d$, subject to the variance floor (Appendix~\ref{sec:residual-moment}). That residual can reflect missing interactions, but also ambiguity or model bias that extra messages do not correct. For example, a region with risk $10$ from unobserved forcing may gain nothing from expansion, whereas a region with risk $2$ from an omitted neighbor may gain $1$. Perfect error ranking would allocate to the wrong region.
+
+To express the distinction, fix the model and history $H_t$. Let $S$ be a set of optional pairs and compare both graph predictions with the same target $Y$ and loss $\mathcal E$:
+\begin{align}
+ G_{H_t}(S)=\mathbb E[&\mathcal E(f(H_t,E_0(x_t)),Y)\nonumber\\
+              &-\mathcal E(f(H_t,E_0(x_t)\cup S),Y)\mid H_t].
+\end{align}
+Positive $G$ means the added interactions improve the prediction. Residual calibration alone does not order $G$. Earlier WaterDrop controls make this gap visible: faithful and NLL risk correlate with base error ($.357\pm.060$ and $.411\pm.023$), but weakly with the benefit of their own sparse actions ($-.021\pm.049$ and $-.052\pm.013$). Random allocation has lower one-step error in every seed. Restoring trained self-messages lowers error without reversing that ordering. For risk allocation, a larger alignment with the target is outweighed by the squared prediction change in every full-model seed (Appendices~\ref{sec:actual-action-benefit} and~\ref{sec:graph-bridge}).
+
+For an additive surrogate, selecting $B$ pairs by estimated gains incurs at most $2B\delta$ regret when every estimate is within $\delta$ of its pair gain. Applying this familiar argument to cached residual scores requires bounds on estimation error, temporal drift and the risk--benefit mismatch, plus control of interactions among added pairs. Appendix~\ref{sec:allocation-score-conditions} gives the conditional result. The missing assumption is precisely the one the experiments probe: accurate residual scores need not approximate useful actions.
+
+\subsection{The cost of changing a trajectory}
+Caching removes a separate scoring pass at each subsequent forecast, but candidate construction, selection and extra messages still cost computation. Moreover, a changed graph produces changed positions, which change the next graph. With graphs interpreted consistently, the rollout edge-count difference decomposes exactly as
+\begin{align}
+ |E_{\mathrm A}(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm B})|
+ ={}&[|E_{\mathrm A}(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm A})|]\nonumber\\
+ &+[|E_0(x_t^{\mathrm A})|-|E_0(x_t^{\mathrm B})|].
+ \label{eq:decomposition}
+\end{align}
+The first term is the nonnegative cost of expansion on one state. The second is the effect of evolving toward a different geometry. A rollout with fewer edges can therefore have cheaper geometry without cheaper placement on a common input. We report measured costs alongside errors, but fixed-order shared-host timings and different predicted geometries do not establish an isolated wall-clock advantage.
+
+\section{Limitations}
+The experiments support a design distinction, not a universally effective allocation policy. They use three training seeds and exploratory follow-ups informed by earlier evidence. Goop and Sand use fresh 100k training, WaterDrop continues inspected 100k parents, and Goop3D is a separate 25k observed-history extension. Different sources, horizons and backends do not isolate material effects. Sand's native-CUDA training lineage does not establish CPU/CUDA optimization equivalence.
+
+Observed histories and autonomous rollouts test different regimes: cached scores and predicted positions both evolve during feedback. Hard radius thresholds and top-budget selection can be discontinuous near contacts or ties, and additional edges can amplify error. The conditional allocation bound does not establish stability. Box excursions are geometric diagnostics rather than conservation tests. The compact controls use few inspected trajectories; peak memory and optimized runtime comparisons remain unmeasured.

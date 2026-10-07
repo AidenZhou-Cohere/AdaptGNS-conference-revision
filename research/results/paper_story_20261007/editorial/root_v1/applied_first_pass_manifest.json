@@ -1,0 +1,14 @@
+{
+  "work/manuscript_body.tex": {
+    "sha256": "d166296176138560072ed7f895ce25ce9e15bf669d559f1ff13a21a8f509d638",
+    "bytes": 603433
+  },
+  "work/conference_experiments_main.tex": {
+    "sha256": "c76b10b270f74840d02e90d6844438239e2620c7d41f66b60e66ae3a943a983d",
+    "bytes": 8733
+  },
+  "work/build_manuscript.py": {
+    "sha256": "bc6634df83c772e76a5abefe3a82a10e37467e3d01b6cba9f78cab83971b23ad",
+    "bytes": 3084
+  }
+}

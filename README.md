@@ -1,7 +1,13 @@
-# Adaptive Interaction Graphs: correctness and controlled experiments
+# Adaptive Interaction Graphs for Particle Simulation
+
+The [current manuscript](research/results/paper_story_20261007/manuscript/outputs/revised_manuscript.tex) presents the paired studies as a sequence: learning to use extra messages, selecting useful messages, and testing autonomous feedback. The author requested the new abstract, opening Goop figure and narrative revision; native compilation passes the eight-page main-text limit. The [23-page companion](research/results/paper_story_20261007/report/revision_report.pdf) adds a current visual synthesis and the complete Goop3D observed findings, preserving its earlier 21 pages. See [AUTHOR_HANDOFF.md](AUTHOR_HANDOFF.md) for remaining final PDF and author actions.
+
+The existing Goop3D autonomous cohort is the final experiment. Its complete analysis is pending; no new experiments follow it. All other completed results and historical attempts remain preserved. Earlier milestones below retain their dated status and do not override this summary.
 
 
-Current conference revision (October 7): the [manuscript](research/results/goop3d_completion_20261007/manuscript/outputs/revised_manuscript.tex) studies how training exposure to additional interactions differs from placing those interactions using residual risk. Complete paired comparisons now cover [Goop2D100k](research/results/goop2d_graph_exposure_100k_20261006/README.md), [WaterDrop110k continuation](research/results/waterdrop_continuation_110k_20261006/README.md), and [Sand100k](research/results/sand_graph_support_100k_20261006/README.md). Fixed-random autonomous error improves in every paired Goop and WaterDrop seed, and in two of three Sand seeds. Sand's native base policy still beats random expansion in every seed under both training arms.
+## Earlier observed-integration snapshot (October 7, 02:51 UTC)
+
+The following paragraphs retain the status at that earlier snapshot. The [manuscript](research/results/goop3d_completion_20261007/manuscript/outputs/revised_manuscript.tex) studies how training exposure to additional interactions differs from placing those interactions using residual risk. Complete paired comparisons now cover [Goop2D100k](research/results/goop2d_graph_exposure_100k_20261006/README.md), [WaterDrop110k continuation](research/results/waterdrop_continuation_110k_20261006/README.md), and [Sand100k](research/results/sand_graph_support_100k_20261006/README.md). Fixed-random autonomous error improves in every paired Goop and WaterDrop seed, and in two of three Sand seeds. Sand's native base policy still beats random expansion in every seed under both training arms.
 
 Graph exposure and risk placement remain distinct findings. On Sand, exposure narrows the observed-history risk deficit but worsens autonomous cached-risk error in every seed. All 1,080 Sand autonomous outcomes and all six policies are retained, alongside adverse physical drift and descriptive cost increases. These complete controls support a conditional benefit from graph exposure without establishing general adaptive accuracy or efficiency superiority.
 

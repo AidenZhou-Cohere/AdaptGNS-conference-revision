@@ -1,0 +1,27 @@
+{
+  "canonical_edits": false,
+  "created_utc": "2026-10-07T04:46:15.726542+00:00",
+  "files": {
+    "conclusion_replacement.tex": {
+      "bytes": 1259,
+      "sha256": "bc740eaea60eb401f6d34cb9000085645005fd4564eab5173bf64f27e740e39a"
+    },
+    "editorial_red_team.md": {
+      "bytes": 8591,
+      "sha256": "193d6c763ed603a2efa6f3ac766ebe13e9f25f7b4fb321e2061e3e2c86acdaef"
+    },
+    "experiment_sequence_replacement.tex": {
+      "bytes": 8101,
+      "sha256": "2a52a05844dfa84c74133b4ea559e00938a8bad839fada3a8b96bc4b5fa20172"
+    },
+    "intro_bridge_proposal.tex": {
+      "bytes": 1304,
+      "sha256": "0734522d17775cf37093fd146de2d9f791a7b46069a2bb535a7f0b1494ba9528"
+    }
+  },
+  "native_compilation": "Not applicable: editorial fragments for root integration, not a standalone manuscript.",
+  "new_autonomous_goop3d_claims": false,
+  "schema": "paper_story_editorial_preparation_v1",
+  "science_or_data_reaudit": false,
+  "scope": "Independent main-paper narrative critique and concrete proposed prose using current admitted statements only."
+}

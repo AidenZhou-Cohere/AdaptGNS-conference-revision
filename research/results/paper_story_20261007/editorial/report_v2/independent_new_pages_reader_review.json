@@ -1,0 +1,25 @@
+{
+  "candidate_sha256": "10dcfb78f2ed510a47c04d66ba8aff03a9aa71d6efeb90787930756d4c69b06e",
+  "corrections_confirmed": {
+    "page22_runtime_wording": "reuses preceding predictions to choose edges; cheaply removed",
+    "page23_second_table_note": "shared position-coordinate MSE x10^-9 scale and mixed-minus-base-only change-in-gap definition visible"
+  },
+  "created_utc": "2026-10-07T04:53:44.241359+00:00",
+  "further_report_work": "None until separately admitted final Goop3D results.",
+  "layout": "Both changed pages remain readable and aligned; no clipping, overlap, broken glyphs or displaced footer. Figure and table labels clear.",
+  "prior_reader_review": "../report_v1/independent_new_pages_reader_review.json",
+  "reviewed_page_images": {
+    "22": {
+      "path": "candidate-22.png",
+      "sha256": "3571b50fc21961fdb1911ddbd03618e3a301a6bfe206e67ed08d9f254e9a5c03"
+    },
+    "23": {
+      "path": "candidate-23.png",
+      "sha256": "60f1f8a5c509df6a170d37aa82e910e02c8d346a5ae893fbbb94ef408d04313d"
+    }
+  },
+  "schema": "report_new_pages_independent_reader_review_v2",
+  "scope": "Changed new pages only. Previous v1 source/transcription review retained; no scientific reaudit or old-page preservation check performed.",
+  "source_sha256": "24a55f6c7e47c8d61aa87685086a308f6e876eb90b9a52d75aca7cdf8cdebf47",
+  "status": "approved_new_pages_after_requested_copy_clarifications"
+}
