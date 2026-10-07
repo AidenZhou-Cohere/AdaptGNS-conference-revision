@@ -91,11 +91,16 @@ The experiments suggest a different target for an allocator. Residual risk estim
  &-\mathcal E(f(H_t,E_0(x_t)\cup D(S)),Y).
  \label{eq:intervention-benefit}
 \end{align}
-Both predictions use the same loss and target; positive benefit means expansion helped. A large residual could indicate missing interaction information, but it could also reflect ambiguity or model bias that the added pairs cannot correct. Accurate residual prediction supplies no ordering of these benefits.
+Both predictions use the same loss and target; positive benefit means expansion helped. For vector squared error, write the base residual as $r=Y-f(H_t,E_0)$ and the prediction change as $\delta=f(H_t,E_0\cup D(S))-f(H_t,E_0)$. Then
+\begin{equation}
+ \Delta=2r^\top\delta-\|\delta\|^2.
+ \label{eq:benefit-alignment}
+\end{equation}
+The alignment gain must exceed the squared magnitude of the prediction change. Predicting the size of the residual supplies neither the direction nor the size of the response to a new neighbor. Large error may reflect missing interaction information, but it may also reflect ambiguity or model bias that extra messages cannot correct.
 
 Benefit belongs to the selected set, not necessarily to each edge independently. Message passing can combine or oppose information from several additions. A per-particle error score lacks both a direction for changing a prediction and an explicit measure of these interactions. The budget fixes the action size; it is the response to that action that the experiments assess.
 
-Separate WaterDrop controls show the same mismatch under faithful and conventional heteroscedastic objectives. Risk correlates with base error but weakly with its own sparse-action benefit, and random has lower one-step error in every seed. Restoring the trained self-messages lowers error without reversing that ordering. The exact loss-change analysis separates alignment with the target from the squared prediction change (Appendix~\ref{sec:actual-action-benefit}). Conditional score-perturbation bounds require the residual score to approximate useful action values; that assumption is not supplied by residual calibration (Appendix~\ref{sec:allocation-score-conditions}).
+The WaterDrop diagnostic in Figure~\ref{fig:uncertainty-associations} shows this mismatch under both objectives. Relative to random placement, risk allocation's greater alignment with the target is outweighed by its larger squared prediction change in every seed. Restoring trained self-messages lowers error without reversing the risk--random ordering (Appendix~\ref{sec:actual-action-benefit}). Conditional score-perturbation bounds require the residual score to approximate useful action values; that assumption is not supplied by residual calibration (Appendix~\ref{sec:allocation-score-conditions}).
 
 Computation also requires a common-state comparison. Adding pairs increases the number of directed messages on that state. A smaller graph later in a rollout can result from a different predicted geometry rather than cheaper placement. Caching removes a separate subsequent scoring pass, while construction, selection and extra messages still cost work. Different geometries and shared-host execution prevent an isolated-speedup conclusion; Appendix~\ref{sec:physical-cost} gives the decomposition and measured costs.
 

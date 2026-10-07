@@ -1,0 +1,92 @@
+{
+  "action_benefit": "base normalized vector squared error minus normalized vector squared error under the saved Risk25 graph",
+  "correlation": "Spearman, first within frame then averaged within trajectory and seed",
+  "frames_per_trajectory": 11,
+  "graph_convention": "uncapped, no self messages",
+  "models": 6,
+  "records": [
+    {
+      "base_error": {
+        "defined_seed_count": 3,
+        "mean": 0.3570596885055079,
+        "sample_sd": 0.05982048148723314,
+        "seed_values": [
+          {
+            "seed": 0,
+            "value": 0.2912563018307774
+          },
+          {
+            "seed": 1,
+            "value": 0.40815274605687113
+          },
+          {
+            "seed": 2,
+            "value": 0.37177001762887524
+          }
+        ]
+      },
+      "objective": "faithful",
+      "own_action_benefit": {
+        "defined_seeds": 3,
+        "mean": -0.02121411219979559,
+        "required_seeds": 3,
+        "sample_seed_sd": 0.04870007819470949,
+        "seed_values": [
+          -0.0072217541444325175,
+          0.018958109775829162,
+          -0.07537869223078342
+        ]
+      }
+    },
+    {
+      "base_error": {
+        "defined_seed_count": 3,
+        "mean": 0.41132316764445265,
+        "sample_sd": 0.022635736895298665,
+        "seed_values": [
+          {
+            "seed": 0,
+            "value": 0.39474984545356684
+          },
+          {
+            "seed": 1,
+            "value": 0.4371132663582894
+          },
+          {
+            "seed": 2,
+            "value": 0.40210639112150176
+          }
+        ]
+      },
+      "objective": "nll",
+      "own_action_benefit": {
+        "defined_seeds": 3,
+        "mean": -0.05178438414348182,
+        "required_seeds": 3,
+        "sample_seed_sd": 0.013072258243802504,
+        "seed_values": [
+          -0.038289259906994784,
+          -0.05267573998342554,
+          -0.06438815254002511
+        ]
+      }
+    }
+  ],
+  "scope": "Separate from the paired110k continuation study; diagnostic association, not causal effect of the score",
+  "score": "previous observed base residual score",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "source_hashes": {
+    "action_benefit.json": "a109ded345ce79265940d4d6660487c417ae45433e781b0a4451845f7dc9de19",
+    "full_same_state.json": "bef3c5958aa61a48cb3d1d294a6b458a0e8ca0069d4a631a227d356318b080b1"
+  },
+  "source_keys": {
+    "base_error": "objectives/{objective}/metrics/correlation/previous_risk_vs_base_error",
+    "own_action_benefit": "objectives/{objective}/correlation/normalized/previous-observed-base-risk25/previous_observed_base_q"
+  },
+  "study": "WaterDrop100k observed-history diagnostic",
+  "trajectories_per_model": 27
+}

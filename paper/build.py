@@ -26,6 +26,8 @@ for marker, name in (
     ('% CURATED_APPENDIX_INSERT', 'curated_appendix.tex'),
     ('% VISUAL_OVERVIEW_INSERT', 'visual_overview_figure.tex'),
     ('% VISUAL_EVIDENCE_INSERT', 'visual_evidence_figure.tex'),
+    ('% VISUAL_UNCERTAINTY_TIME_INSERT', 'visual_uncertainty_times.tex'),
+    ('% VISUAL_UNCERTAINTY_ASSOCIATIONS_INSERT', 'visual_uncertainty_associations.tex'),
     ('% VISUAL_PARTICLE_INSERT', 'visual_particle_figure.tex')):
     insert = ROOT / 'source' / name
     body = body.replace(marker, insert.read_text())

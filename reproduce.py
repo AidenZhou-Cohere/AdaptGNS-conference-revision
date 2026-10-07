@@ -9,7 +9,7 @@ def main():
  a=p.parse_args();root=Path(__file__).resolve().parent
  out=a.output.resolve();out.mkdir(parents=True,exist_ok=True)
  env={**os.environ,'REPRODUCTION_OUTPUT':str(out),'PYTHONDONTWRITEBYTECODE':'1'}
- scripts=['tables/build_tables.py'] if a.tables_only else ['figures/build_figures.py','figures/build_qualitative.py','tables/build_tables.py']
+ scripts=['tables/build_tables.py'] if a.tables_only else ['figures/build_figures.py','figures/build_qualitative.py','figures/build_uncertainty_figure.py','figures/build_uncertainty_associations.py','tables/build_tables.py']
  with tempfile.TemporaryDirectory(prefix='aig-figures-') as cache:
   env['MPLCONFIGDIR']=cache
   for script in scripts:subprocess.run([sys.executable,str(root/script)],env=env,check=True)

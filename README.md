@@ -8,7 +8,7 @@ AdaptGNS keeps every native edge and adds a fixed budget of nearby particle pair
 
 ## Reproduce the paper from saved results
 
-Python 3.12 and Matplotlib are sufficient; the tables also work with the Python standard library alone.
+Python 3.12, Matplotlib and Pillow are sufficient; the tables also work with the Python standard library alone.
 
 ```sh
 python -m pip install -r requirements-figures.txt
@@ -16,7 +16,7 @@ python reproduce.py --output generated
 python -m unittest discover -s tests -v
 ```
 
-The command produces three figures in PNG, SVG and LaTeX, together with the complete primary, physical-diagnostic and Goop3D observed tables. It retains all 34 primary policy rows,34 physical/cost rows, three Goop guard cases, all displayed seed effects and undefined means. Inputs are decimal/scalar records and saved particle glyphs; this command does not rerun simulations.
+The command produces five figures in PNG, SVG and LaTeX, together with the complete primary, physical-diagnostic and Goop3D observed tables. It retains all 34 primary policy rows, 34 physical/cost rows, three Goop guard cases, all displayed seed effects and undefined means. Inputs are saved scalar records, particle coordinates and residual values; this command does not rerun simulations. The new [temporal uncertainty figure](generated/waterdrop_residual_times.png) compares predicted and realized residuals at three observed times, while the [six-model association chart](generated/uncertainty_associations.png) separates prediction difficulty from interaction benefit.
 
 ```sh
 python reproduce.py --tables-only --output generated

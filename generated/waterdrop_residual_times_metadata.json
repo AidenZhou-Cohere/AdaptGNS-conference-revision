@@ -1,0 +1,30 @@
+{
+  "color_quantization": "256 colors interpolated across fixed sequential anchors",
+  "dimensions_pt": [
+    470,
+    390
+  ],
+  "display_data_sha256": "e71ff9fd861b3eb8df3f39aac7b0479c4a0e8fe5a1da32da07ba3e51a5967a8f",
+  "figure_sha256": {
+    "waterdrop_residual_times.png": "74631cf459d99149c476627081a4d4345d888d1c9b624dd0dc95fa592410bd26",
+    "waterdrop_residual_times.svg": "99f0b119b903d54c2469bd3ed4a8fd4a1ef1d30cfe315c88b2cb7477bce65284",
+    "waterdrop_residual_times.tex": "c6f97ee47c5fcbdb765ca96146b7bf9023abdf2452b15288d422c18e6844ac48",
+    "waterdrop_residual_times_picture.tex": "12c8edb05d6e1005d67771d93dcee7e1f570ab8ee728714106eebe049062a57a"
+  },
+  "log10_color_limits": [
+    -7,
+    0
+  ],
+  "particle_glyphs": 5982,
+  "shared_spatial_limits": [
+    0.07831729849129915,
+    0.9137351090714335
+  ],
+  "value_transforms": [
+    "One shared log10 color mapping; 256 sequential colors",
+    "Same isotropic spatial mapping across panels; no coordinate clipping",
+    "All particles retained in their original order"
+  ],
+  "zero_color": "#BFC4CA",
+  "zero_values": 0
+}

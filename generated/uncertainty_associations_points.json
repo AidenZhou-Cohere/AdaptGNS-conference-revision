@@ -1,0 +1,41 @@
+{
+  "points": [
+    {
+      "base_error": 0.2912563018307774,
+      "objective": "faithful",
+      "own_action_benefit": -0.0072217541444325175,
+      "seed": 0
+    },
+    {
+      "base_error": 0.40815274605687113,
+      "objective": "faithful",
+      "own_action_benefit": 0.018958109775829162,
+      "seed": 1
+    },
+    {
+      "base_error": 0.37177001762887524,
+      "objective": "faithful",
+      "own_action_benefit": -0.07537869223078342,
+      "seed": 2
+    },
+    {
+      "base_error": 0.39474984545356684,
+      "objective": "nll",
+      "own_action_benefit": -0.038289259906994784,
+      "seed": 0
+    },
+    {
+      "base_error": 0.4371132663582894,
+      "objective": "nll",
+      "own_action_benefit": -0.05267573998342554,
+      "seed": 1
+    },
+    {
+      "base_error": 0.40210639112150176,
+      "objective": "nll",
+      "own_action_benefit": -0.06438815254002511,
+      "seed": 2
+    }
+  ],
+  "statistical_recomputation": false
+}

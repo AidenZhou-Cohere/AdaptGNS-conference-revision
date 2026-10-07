@@ -322,7 +322,7 @@ For a saved base residual $r_i=y_i-p_{i,0}$ and complete-action prediction chang
  b_{i,a}=\|r_i\|^2-\|r_i-\Delta_{i,a}\|^2
         =2r_i^\top\Delta_{i,a}-\|\Delta_{i,a}\|^2.
 \end{equation}
-A separate WaterDrop full-model comparison uses 1,782 saved observed-history cases under its original no-self-loop evaluation convention. Faithful and NLL risk correlate with base error ($.357\pm.060$ and $.411\pm.023$), but weakly with their own sparse-action benefit ($-.021\pm.049$ and $-.052\pm.013$). Random has lower one-step error in every seed. For risk allocation, greater target alignment is outweighed by the squared prediction change in every seed. These whole-action associations share the base residual algebraically and do not identify marginal edge values or a causal role for the risk score.
+A separate WaterDrop full-model comparison uses 1,782 saved observed-history cases under its original no-self-loop evaluation convention. Faithful and NLL risk correlate with base error ($.357\pm.060$ and $.411\pm.023$), but weakly with their own sparse-action benefit ($-.021\pm.049$ and $-.052\pm.013$). Random has lower one-step error in every seed. Relative to random placement, risk allocation's greater target alignment is outweighed by its larger squared prediction change in every seed. These whole-action associations share the base residual algebraically and do not identify marginal edge values or a causal role for the risk score.
 
 \paragraph{Restoring trained self-messages.}\label{sec:graph-bridge}
 A separate paired WaterDrop graph-convention screen restores self-messages, varies the receiver cap, and retains current- and preceding-observed-base risk controls. Native self-messages lower error, while no current- or previous-risk selector beats random in any seed on validation or test. The native cap does not bind on the 425 inspected geometries. Thus the original risk--random ordering is not explained solely by the omitted self-messages. The screen changes graph inputs at fixed observed histories and does not establish autonomous stability. 
@@ -372,5 +372,4 @@ Change in gap & $-0.034\pm0.130$ & $-0.247\pm0.135$\\
 At fixed Random25 evaluation, exposure improves observed-history position MSE in two of three validation seeds and one of three test seeds. On test, the risk-minus-random gap narrows in all three seeds; mixed risk still loses to random in two seeds and has a positive mean gap. Validation has negative and positive interaction signs. Neither the narrowing nor the mixed-training mean establishes general superiority of risk allocation. Observed histories alone do not establish autonomous accuracy, stability or speedup.
 
 % GOOP3D_AUTONOMOUS_H295_SEPARATE_INSERT
-
 

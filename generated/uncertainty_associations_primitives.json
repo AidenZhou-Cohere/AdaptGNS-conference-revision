@@ -1,0 +1,481 @@
+{
+  "caption_latex": "\\textbf{An error signal is not a benefit signal.} Each line shows one WaterDrop 100k model: the preceding observed residual score correlates with base error but weakly with the signed improvement under its actual Risk25 graph. This score is one observed step older than the current scores in Figure~\\ref{fig:residual-times}. All six models use 27 test trajectories and 11 observed histories per trajectory; frame correlations average within trajectory and seed. This diagnostic uses uncapped graphs without self-messages and is separate from the paired 110k continuation study.",
+  "categorical_seed_offsets_pt": [
+    -3.5,
+    0,
+    3.5
+  ],
+  "dimensions_pt": [
+    225,
+    211
+  ],
+  "label": "fig:uncertainty-associations",
+  "preview_text_bounds": [
+    {
+      "bbox": [
+        29.0,
+        646.6666666666666,
+        692.0,
+        33.33333333333326
+      ],
+      "text": "An error signal is not a benefit signal"
+    },
+    {
+      "bbox": [
+        71.0625,
+        600.8704427083333,
+        607.875,
+        24.92578125
+      ],
+      "text": "WaterDrop \u00b7 six models trained for 100k updates"
+    },
+    {
+      "bbox": [
+        20.0,
+        507.6666666666667,
+        150.5625,
+        24.666666666666686
+      ],
+      "text": "Spearman \u03c1"
+    },
+    {
+      "bbox": [
+        32.0,
+        208.21505376344084,
+        38.0,
+        24.0
+      ],
+      "text": "0.0"
+    },
+    {
+      "bbox": [
+        32.0,
+        330.79569892473114,
+        38.0,
+        24.0
+      ],
+      "text": "0.2"
+    },
+    {
+      "bbox": [
+        32.0,
+        453.3763440860215,
+        38.0,
+        24.0
+      ],
+      "text": "0.4"
+    },
+    {
+      "bbox": [
+        177.64583333333334,
+        549.4999999999999,
+        121.37500000000003,
+        27.666666666666742
+      ],
+      "text": "Faithful"
+    },
+    {
+      "bbox": [
+        113.69791666666669,
+        90.0,
+        65.9375,
+        26.666666666666657
+      ],
+      "text": "Error"
+    },
+    {
+      "bbox": [
+        281.0,
+        89.63020833333333,
+        98.0,
+        27.40625
+      ],
+      "text": "Benefit"
+    },
+    {
+      "bbox": [
+        548.8333333333334,
+        549.4999999999999,
+        59.0,
+        27.666666666666742
+      ],
+      "text": "NLL"
+    },
+    {
+      "bbox": [
+        450.36458333333337,
+        90.0,
+        65.9375,
+        26.666666666666657
+      ],
+      "text": "Error"
+    },
+    {
+      "bbox": [
+        624.3333333333334,
+        89.63020833333333,
+        98.0,
+        27.40625
+      ],
+      "text": "Benefit"
+    },
+    {
+      "bbox": [
+        52.96875,
+        31.49055989583333,
+        644.0625,
+        23.685546875
+      ],
+      "text": "Each line connects the two correlations for one seed."
+    }
+  ],
+  "primitives": [
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "An error signal is not a benefit signal",
+      "size": 10,
+      "tex": "An error signal is not a benefit signal",
+      "x": 112.5,
+      "y": 199
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "WaterDrop \u00b7 six models trained for 100k updates",
+      "size": 7.4,
+      "tex": "WaterDrop: six models trained for 100k updates",
+      "x": 112.5,
+      "y": 184
+    },
+    {
+      "align": "left",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Spearman \u03c1",
+      "size": 7.4,
+      "tex": "Spearman $\\rho$",
+      "x": 6,
+      "y": 156
+    },
+    {
+      "color": "zero",
+      "dashed": true,
+      "kind": "line",
+      "width": 0.7,
+      "x1": 27,
+      "x2": 216,
+      "y1": 66.06451612903226,
+      "y2": 66.06451612903226
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "0.0",
+      "size": 7.2,
+      "tex": "0.0",
+      "x": 21,
+      "y": 66.06451612903226
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.4,
+      "x1": 27,
+      "x2": 216,
+      "y1": 102.83870967741936,
+      "y2": 102.83870967741936
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "0.2",
+      "size": 7.2,
+      "tex": "0.2",
+      "x": 21,
+      "y": 102.83870967741936
+    },
+    {
+      "color": "grid",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.4,
+      "x1": 27,
+      "x2": 216,
+      "y1": 139.61290322580646,
+      "y2": 139.61290322580646
+    },
+    {
+      "align": "right",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "0.4",
+      "size": 7.2,
+      "tex": "0.4",
+      "x": 21,
+      "y": 139.61290322580646
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "Faithful",
+      "size": 8.3,
+      "tex": "Faithful",
+      "x": 71.5,
+      "y": 169
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 40.5,
+      "x2": 95.5,
+      "y1": 119.61809420759455,
+      "y2": 64.73664520570112
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 40.5,
+      "y": 119.61809420759455
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 95.5,
+      "y": 64.73664520570112
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 44.0,
+      "x2": 99.0,
+      "y1": 141.11195653303758,
+      "y2": 69.55036212007181
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 44.0,
+      "y": 141.11195653303758
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 99.0,
+      "y": 69.55036212007181
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 47.5,
+      "x2": 102.5,
+      "y1": 134.42222904788997,
+      "y2": 52.2045630414366
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 47.5,
+      "y": 134.42222904788997
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 102.5,
+      "y": 52.2045630414366
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "teal",
+      "kind": "text",
+      "plain": "Error",
+      "size": 8,
+      "tex": "Error",
+      "x": 44,
+      "y": 31
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "rust",
+      "kind": "text",
+      "plain": "Benefit",
+      "size": 8,
+      "tex": "Benefit",
+      "x": 99,
+      "y": 31
+    },
+    {
+      "align": "center",
+      "bold": true,
+      "color": "ink",
+      "kind": "text",
+      "plain": "NLL",
+      "size": 8.3,
+      "tex": "NLL",
+      "x": 173.5,
+      "y": 169
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 141.5,
+      "x2": 198.5,
+      "y1": 138.64755222855905,
+      "y2": 59.02423285581064
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 141.5,
+      "y": 138.64755222855905
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 198.5,
+      "y": 59.02423285581064
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 145.0,
+      "x2": 202.0,
+      "y1": 146.43695542716932,
+      "y2": 56.378976841757236
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 145.0,
+      "y": 146.43695542716932
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 202.0,
+      "y": 56.378976841757236
+    },
+    {
+      "color": "native",
+      "dashed": false,
+      "kind": "line",
+      "width": 0.65,
+      "x1": 148.5,
+      "x2": 205.5,
+      "y1": 140.00020739976003,
+      "y2": 54.22540421038248
+    },
+    {
+      "color": "teal",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 148.5,
+      "y": 140.00020739976003
+    },
+    {
+      "color": "rust",
+      "filled": true,
+      "kind": "circle",
+      "r": 2.25,
+      "width": 0.8,
+      "x": 205.5,
+      "y": 54.22540421038248
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "teal",
+      "kind": "text",
+      "plain": "Error",
+      "size": 8,
+      "tex": "Error",
+      "x": 145,
+      "y": 31
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "rust",
+      "kind": "text",
+      "plain": "Benefit",
+      "size": 8,
+      "tex": "Benefit",
+      "x": 202,
+      "y": 31
+    },
+    {
+      "align": "center",
+      "bold": false,
+      "color": "muted",
+      "kind": "text",
+      "plain": "Each line connects the two correlations for one seed.",
+      "size": 7.1,
+      "tex": "Each line connects the two correlations for one seed.",
+      "x": 112.5,
+      "y": 13
+    }
+  ],
+  "sha256": {
+    "uncertainty_associations.png": "e2abff9e4c8c2abe8e5ce9b89b0cc0e96c74aebb2ca3b9d05e9008dfb88cd3ae",
+    "uncertainty_associations.svg": "8d41b1fe20bd521bc7ff73768b50fded3703aa77099eb293d4a7c27a8b9bef01",
+    "uncertainty_associations.tex": "5ab5610257ab1f47ccf346d03164a464c2da050392a6f1a49d08519e638968d9",
+    "uncertainty_associations_picture.tex": "c0e0d4b890b3dfd39df41b58690c40907c59a91a617a6b939c598866f12b8226"
+  }
+}

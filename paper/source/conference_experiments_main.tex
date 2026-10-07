@@ -1,9 +1,21 @@
 \section{Experiments}
-Adaptive graphs aim to concentrate interactions where local dynamics are difficult. We test two parts of this idea: whether training makes added messages more useful, and whether residual risk identifies where they help. We then follow the allocation through the motion it creates.
+Uncertainty-guided adaptation begins with an appealing signal: some particles are harder for the model to predict than others. We first examine that signal, then ask whether it identifies useful additional interactions. This motivates the paired tests of graph exposure, placement and autonomous feedback that follow.
 
+\subsection{What the residual signal tells us}
+Figure~\ref{fig:residual-times} follows one fixed WaterDrop trajectory through observed histories, comparing the model's predicted residual score with the error of the same next-step prediction. The compact initial mass receives a fairly even score; later, detached particles and the left boundary stand out. The predicted and realized fields share broad features but disagree locally. These maps show the error signal of a learned predictor, rather than intrinsic physical uncertainty.
+
+% VISUAL_UNCERTAINTY_TIME_INSERT
+
+We quantify this diagnostic information with six WaterDrop models trained for 100k updates: three faithful and three conventional NLL models, each evaluated on 297 observed-test histories. Their preceding-base risk correlates with base error at $.357\pm.060$ and $.411\pm.023$, respectively. Yet its correlation with the benefit of the actual risk-selected sparse graph is only $-.021\pm.049$ and $-.052\pm.013$ (Figure~\ref{fig:uncertainty-associations}). The score contains information about prediction difficulty; a meaningful error signal still leaves the allocation question open. This observed-state control is separate from the paired 110k continuation study below.
+
+% VISUAL_UNCERTAINTY_ASSOCIATIONS_INSERT
+
+The residual head was trained to predict error, not to value an added interaction. We next ask whether training with expanded graphs improves forecasts under a fixed expansion rule, and then whether that exposure improves residual-guided placement.
+
+\subsection{Training changes the value of added messages}
 \begin{table}[t]
 \centering\small
-\caption{Three paired seeds per study, with two training arms. Histories are common observed-test histories per model. Rollouts show test sources $\times$forecasts. WaterDrop continues inspected 100k parents for 10k further updates.}
+\caption{Paired graph-exposure comparisons. Three paired seeds per study, with two training arms. Histories are common observed-test histories per model. Rollouts show test sources $\times$forecasts. WaterDrop continues inspected 100k parents for 10k further updates.}
 \label{tab:study-overview}
 \setlength{\tabcolsep}{3pt}
 \begin{tabular}{lccc}
@@ -19,7 +31,6 @@ Sand &100k&150&$30\times314$\\
 
 Goop and Sand train from initialization; WaterDrop estimates continuation effects conditional on inspected parents. These follow-ups are exploratory and informed by earlier evidence. We compare every declared policy. Frames average within trajectories, trajectories within seeds, and means and sample standard deviations use all three paired seeds. Figure~\ref{fig:cross-material-evidence} includes both defined effects and undefined full-horizon comparisons.
 
-\subsection{Training changes the value of added messages}
 At fixed Random25 evaluation, mixed training reduces Goop full-rollout MSE from $0.301\pm0.169$ to $0.129\pm0.031$, improving every seed. WaterDrop improves under random, dense, speed and cached-risk evaluation in every seed. The fixed-random comparison requires no learned placement rule: exposure changes the simulator's response under the same expansion policy.
 
 Sand limits this positive finding. Random25 improves in two seeds, but native base beats random in every seed under both training arms. Dense exposure improves every seed, yet dense remains worse than native base and random. Making an expanded policy better therefore need not make expansion preferable to the native graph.
