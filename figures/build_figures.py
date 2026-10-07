@@ -39,7 +39,7 @@ def load():
 
 def overview(data,feedback):
     p=Picture(470,238)
-    p.text(8,224,'One controlled graph change. Three different tests.',size=12.5,bold=True)
+    p.text(8,224,'Learn to use extra messages. Then test where they help.',size=12.5,bold=True)
     coords=((11,38),(18,54),(34,33),(38,50),(53,61),(60,43),(22,76),(44,79))
     native=((0,1),(2,3),(3,4),(4,5))
     optional=((0,2),(1,3),(1,6),(3,5),(4,7),(6,7))

@@ -1,3 +1,37 @@
+\definecolor{takeawayfill}{gray}{0.96}
+\newlength{\takeawaywidth}
+\newcommand{\takeaway}[2]{%
+  \par\addvspace{6pt}%
+  \begingroup
+  \setlength{\fboxrule}{0.4pt}%
+  \setlength{\fboxsep}{0pt}%
+  \setlength{\takeawaywidth}{\dimexpr\linewidth-2\fboxrule\relax}%
+  \noindent\fcolorbox{black}{black}{%
+    \vbox{%
+      \offinterlineskip
+      \hbox to \takeawaywidth{%
+        \hspace{8.4pt}%
+        \normalfont\normalsize\bfseries\color{white}%
+        \rule[-3pt]{0pt}{15pt}#1\hfil
+      }%
+      \hbox{\colorbox{takeawayfill}{%
+        \parbox[t]{\takeawaywidth}{%
+          \normalfont\normalsize
+          \setlength{\parindent}{0pt}%
+          \setlength{\parskip}{0pt}%
+          \leftskip=8.4pt\relax
+          \rightskip=8.4pt\relax
+          \vspace*{5pt}%
+          \strut #2\par
+          \vspace*{5pt}%
+        }%
+      }}%
+    }%
+  }%
+  \endgroup
+  \par\addvspace{6pt}%
+}
+
 \begin{document}
 \twocolumn[
 \aistatstitle{Adaptive Interaction Graphs for Particle Simulation}
@@ -6,23 +40,23 @@
 \fancyhead[CE,CO]{\small\bfseries Adaptive Interaction Graphs for Particle Simulation}
 
 \begin{abstract}
-More messages do not automatically make a better particle simulator. They change the computation of a model trained on a particular interaction graph. We construct adaptive graphs that preserve native edges and append an exact budget of nearby pairs, then study how the simulator learns to use these messages and where a controller should place them. Mixed-graph training exposes the model to random expansions; cached residual scores allocate pairs with one simulator pass per forecast after initialization. Three-seed studies on Goop, WaterDrop and Sand, with paired continuations for WaterDrop, reveal different answers to these two questions. Exposure improves fixed-random rollout error in every Goop and WaterDrop seed, reducing Goop mean MSE from 0.301 to 0.129. Residual-guided placement is less reliable. On Sand, exposure lowers observed-history error under risk-guided allocation while worsening cached-risk rollout error in every seed. Prediction difficulty therefore differs from the benefit of an added interaction, and a favorable comparison on observed states need not survive autonomous feedback. These distinctions provide a practical basis for constructing and evaluating adaptive particle graphs.
+Uncertainty-guided graph expansion aims to improve particle forecasts by giving difficult regions more interaction partners. We test the assumption that predicted difficulty identifies useful additional interactions. Our central finding is that training with graph expansions can improve forecasts under a fixed expansion rule, but residual uncertainty does not reliably locate beneficial additions. We formulate AdaptGNS as a budgeted expansion of the simulator's native graph, with random graph exposure during training and allocation from cached residual scores during rollout. This separates how the simulator is trained from where interactions are added, while requiring one simulator pass per forecast after initialization. Three-seed studies on Goop, WaterDrop and Sand, including paired WaterDrop continuations, show that exposure improves fixed-random rollouts in every Goop and WaterDrop seed; Goop mean MSE falls from 0.301 to 0.129. Residual-guided placement still loses to equal-budget random placement on Goop and Sand observed test histories. On Sand, exposure narrows this observed deficit while worsening cached-risk rollouts in every seed. The resulting design target is the improvement caused by an added interaction, which a prediction of error alone does not supply.
 \end{abstract}
 
 \section{Introduction}
-A graph-based particle simulator decides which particles exchange messages before predicting their motion\citep{sanchez2020}. Enlarging a neighborhood seems an obvious way to supply more information near difficult interactions. Yet additional messages can also perturb a prediction that was already accurate. The model has learned a computation on one distribution of graphs; changing its connectivity at prediction time changes that computation. Before asking where to add interactions, we must ask whether the simulator has learned to use them.
+A splash or sudden collision is a natural place to spend more computation in a particle simulation. An adaptive interaction graph offers a simple way to do so: give selected particles more neighbors in the graph-based simulator\citep{sanchez2020}. The model's predicted uncertainty seems like an equally natural guide---expand where it expects to be wrong. We investigate whether this intuition improves the motion a learned simulator forecasts over long horizons.
 
-Residual prediction offers an appealing allocation rule: spend more computation where the model expects a large error. Its weakness is equally intuitive. A simulator may be wrong because it lacks information from another particle, because the state leaves some forcing unobserved, or because the model cannot express the required dynamics. Extra messages can address some of these errors and leave others untouched. A good prediction of difficulty need not identify a useful intervention.
+Our central finding is that \textbf{training for graph expansion can improve forecasts under a fixed expansion rule, but predicting error does not reliably identify where added interactions help.} These are different learning problems. The simulator must respond productively to added messages; the allocator must choose additions that improve prediction. Residual uncertainty measures difficulty under the current model. It does not say whether missing interaction information causes an error, or whether a particular extra neighbor can correct it.
 
-We investigate this gap with constructive adaptive graphs. We retain the simulator's native graph and append a specified number of optional local pairs. Graph-exposure training lets the model encounter such expansions before evaluation. A cached residual controller then chooses pairs using scores from its preceding prediction. Figure~\ref{fig:constructive-overview} shows the graph operation and the three comparisons it enables: change training at a fixed policy, compare placement on common histories, and follow placement through autonomous feedback.
+We make this distinction testable with a budgeted formulation of \emph{AdaptGNS}. It preserves the native graph and appends a fixed number of nearby pairs. Mixed-graph training exposes the simulator to such additions before evaluation. A residual controller chooses pairs using scores cached from its preceding prediction, avoiding a separate scoring pass after initialization. Equal-budget random placement supplies the essential control: any advantage of residual ranking must come from where the added messages go, rather than how many are supplied on the same state.
 
-The resulting evidence contains a clear tension. Under the same random expansion policy, graph exposure improves every paired Goop and WaterDrop seed. But Goop residual allocation still loses to random on observed test histories. Sand makes the consequence visible: exposure narrows its observed risk deficit while worsening cached-risk rollouts in every seed. Our contribution is the constructive intervention and the paired study of this separation. The central question is whether a graph change improves the model's prediction, rather than whether its endpoints are difficult to predict.
+The experiments follow this allocation intuition to its missing link. At fixed random placement, graph exposure improves every paired Goop and WaterDrop seed. But residual ranking still loses to random on Goop and Sand observed test histories. Closing the feedback loop makes the distinction consequential: on Sand, exposure narrows the observed risk deficit while worsening cached-risk rollout error in every seed. Figure~\ref{fig:constructive-overview} organizes this argument around learning to use messages, testing their placement on common histories, and following their effect through autonomous motion. Together, these comparisons show why a useful signal of prediction difficulty is insufficient evidence for a useful graph intervention.
 
 % VISUAL_OVERVIEW_INSERT
 
-\section{Constructive adaptive graphs}
+\section{Budgeted graph adaptation}
 \subsection{Changing messages without replacing the native graph}
-The simulator receives six consecutive frames $H_t$, particle attributes and boundary information. It predicts normalized acceleration and a positive residual score for each particle; acceleration is transformed back to physical coordinates before integration. Let $E_0(x_t)$ be its native directed graph, including self-messages and the receiver cap of 128. We preserve this graph and collect optional unordered pairs in a surrounding annulus. If $P_\rho(x_t)$ contains the unordered geometric pairs inside radius $\rho$, then
+Our AdaptGNS formulation receives six consecutive frames $H_t$, particle attributes and boundary information. It predicts normalized acceleration and a positive residual score for each particle; acceleration is transformed back to physical coordinates before integration. Let $E_0(x_t)$ be its native directed graph, including self-messages and the receiver cap of 128. We preserve this graph and collect optional unordered pairs in a surrounding annulus. If $P_\rho(x_t)$ contains the unordered geometric pairs inside radius $\rho$, then
 \[
  C_R(x_t)=P_R(x_t)\setminus P_r(x_t),\qquad R>r.
 \]
@@ -50,7 +84,7 @@ The source of the score matters. During autonomous motion it comes from the cont
 
 % CONFERENCE_EXPERIMENTS_MAIN_INSERT
 
-\section{From residual risk to interaction benefit}
+\section{Why uncertainty is not enough}
 The experiments suggest a different target for an allocator. Residual risk estimates error under the current model and graph. For a fixed model, history $H_t$ and target $Y$, the realized benefit of adding pairs $S$ is instead
 \begin{align}
  \Delta(S;H_t,Y)={}&\mathcal E(f(H_t,E_0(x_t)),Y)\nonumber\\
@@ -73,7 +107,7 @@ MeshGraphNets predicts a sizing field for remeshing\citep{pfaff2021}, while LAMP
 \section{Limitations and conclusion}
 The evidence comes from three-seed exploratory comparisons and includes continuations from inspected parents. Different data, horizons and backends do not isolate material effects; Sand's native-CUDA lineage does not establish optimization equivalence. Radius thresholds and top-budget selection can be discontinuous, and extra edges can amplify error. Neither the conditional theory nor lower MSE establishes stable physical simulation. Conservation, peak memory and optimized runtime remain unmeasured.
 
-Constructive graphs make additional messages a controllable intervention. Exposure can teach a simulator to use those messages, but residual ranking does not consistently identify where they help. The contrast between Goop/WaterDrop exposure gains and Sand's adverse cached-risk feedback makes that distinction consequential. Adaptive graph methods should be judged by the benefit of their interventions and the trajectories they create, with complete policy comparisons alongside their computational cost.
+Adaptive interaction graphs aim to spend computation where it improves a forecast. Our experiments show that learning to use extra messages and choosing where to add them are distinct tasks. Graph exposure improves a fixed expansion policy in Goop and WaterDrop, while residual ranking does not reliably improve placement; Sand shows that an observed gain can reverse under autonomous feedback. The practical lesson is to train for the proposed graph changes and evaluate an allocator by the improvement those changes cause. Learning that improvement directly is a promising next step. An informative uncertainty map alone does not establish it.
 
 \clearpage
 \typeout{REVISION-MAIN-PAGES: \the\numexpr\value{page}-1\relax}

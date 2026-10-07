@@ -1,10 +1,10 @@
 # Adaptive Interaction Graphs for Particle Simulation
 
-Code, saved scientific results and manuscript sources for studying three distinct questions: whether a simulator learns to use extra messages, whether a score places those messages effectively on a common state, and whether the benefit survives autonomous feedback.
+Can a particle simulator use uncertainty to spend extra interactions where they improve its forecasts? This repository provides the method, code, saved results and manuscript for testing that idea. Training with graph expansions can improve forecasts under a fixed expansion rule, but predicting error does not reliably identify where added interactions help.
 
 ![Constructive graph adaptation and the three experimental questions](generated/constructive_overview.png)
 
-The method keeps every native edge and adds a fixed budget of nearby particle pairs. Mixed-graph training teaches the simulator to use extra messages; cached residual scores determine where to place them. The experiments separate these choices: learning to use an expansion can help even when residual-guided placement does not outperform random placement.
+AdaptGNS keeps every native edge and adds a fixed budget of nearby particle pairs. Mixed-graph training exposes the simulator to extra messages; cached residual scores determine where to place them. Matched training comparisons, equal-budget random placement, and autonomous rollouts test the steps from predicted difficulty to useful adaptation. The central distinction is between predicting an error and predicting how much an added interaction will reduce it.
 
 ## Reproduce the paper from saved results
 

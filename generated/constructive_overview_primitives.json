@@ -10,10 +10,10 @@
       "bbox": [
         26.666666666666668,
         725.6617838541666,
-        1225.0,
+        1353.0,
         42.009765625
       ],
-      "text": "One controlled graph change. Three different tests."
+      "text": "Learn to use extra messages. Then test where they help."
     },
     {
       "bbox": [
@@ -292,9 +292,9 @@
       "bold": true,
       "color": "ink",
       "kind": "text",
-      "plain": "One controlled graph change. Three different tests.",
+      "plain": "Learn to use extra messages. Then test where they help.",
       "size": 12.5,
-      "tex": "One controlled graph change. Three different tests.",
+      "tex": "Learn to use extra messages. Then test where they help.",
       "x": 8,
       "y": 224
     },
@@ -1431,9 +1431,9 @@
     }
   ],
   "sha256": {
-    "constructive_overview.png": "1c3c7cc7272702c0ee5a8af9dc5452a0ee73873b6716960434ff6d5afac5e542",
-    "constructive_overview.svg": "f628edcd672d7ab32ba22a4bde63f47a77f05fbc62b462fe81c70f2ca317b158",
-    "constructive_overview.tex": "eda69ba989e1d071bb0ccceed96d14518d7f243e221774809b094d0a4fc3388b",
-    "constructive_overview_picture.tex": "a2546abdd500129ae20cdf2070b0cdde1c3e0ce18e80ce4671ac30cd82f6fc1c"
+    "constructive_overview.png": "0718b66c0a19eb9625e8fc7fd9d2b85c3366e80342806553a7f5cedc0c5dde9d",
+    "constructive_overview.svg": "2d67621d7bf89a082aae00bd67998cb52f000d73f89547db839bef4aeef9f1a6",
+    "constructive_overview.tex": "382aa6d3ec0e6ef738aecb5646bc063bb3b87c75c5ffb584c0c1788ba03b7b55",
+    "constructive_overview_picture.tex": "9231af2bb8defaa0cf7ba6f30959c070b6923c96922b4502590a666b36856814"
   }
 }
