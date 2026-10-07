@@ -1,0 +1,70 @@
+{
+  "kind": "exact author-review publication copies",
+  "files": {
+    "revised_manuscript.tex": {
+      "source": "outputs/revised_manuscript.tex",
+      "bytes": 674141,
+      "sha256": "c3bad4dcd3eb89070ad21c34e61615651b5556d86a938d890e71505704c00288"
+    },
+    "manuscript_body.tex": {
+      "source": "work/manuscript_body.tex",
+      "bytes": 588480,
+      "sha256": "dbac08be154067246c1c630e699990f4dfb2ef1431120d6c88250420daddeaae"
+    },
+    "conference_experiments_main.tex": {
+      "source": "work/conference_experiments_main.tex",
+      "bytes": 15214,
+      "sha256": "7a3b359f6f38672c3de9d7b8843b8b1fec86ef4aed5fb0850c1956a7d6c92b2e"
+    },
+    "reader_memo.md": {
+      "source": "work/final_reader_check_20261007/memo.md",
+      "bytes": 2830,
+      "sha256": "edc34356e7a99f8ffce0126a0a7f89a6552bb0a3a7f360d58496ee34c275589b"
+    },
+    "policy_source_trace.md": {
+      "source": "work/final_reader_check_20261007/full_model_policy_source_trace.md",
+      "bytes": 8293,
+      "sha256": "0f8aa3b808e3fbff461a13f4d2882e636e5939adff7a79b2ef7d11c3befdf15a"
+    },
+    "initial_review_expectation_error.json": {
+      "source": "work/final_reader_check_20261007/kinematic_clarity_review.json",
+      "bytes": 3545,
+      "sha256": "40fdb8cffdd47788d75f07e0dba7460484638c05afff6761ff1e4e51a2126d75"
+    },
+    "independent_review.json": {
+      "source": "work/final_reader_check_20261007/kinematic_clarity_review_v2.json",
+      "bytes": 4390,
+      "sha256": "21b8ad5aba3e3b64182688438ec12a4b368e9551739f7aa0fb8cdb88671c1e18"
+    },
+    "edit_record.json": {
+      "source": "work/kinematic_policy_clarity_root_v1/edit_record.json",
+      "bytes": 2484,
+      "sha256": "c3941eb35373ba20ec4b8f494464860b9883a0273335defa2b3c312a0c42dad9"
+    },
+    "native_compile.json": {
+      "source": "work/kinematic_policy_clarity_root_v1/native_compile.json",
+      "bytes": 310,
+      "sha256": "eb40f80976d84468a0d28e9f8b5f5db1470fed20ee7d71d30c68fa4d57bc1984"
+    },
+    "submission_checklist.md": {
+      "source": "outputs/submission_checklist.md",
+      "bytes": 52633,
+      "sha256": "836aba02950ece2254e51af15d262fa1becd084e273c55add52fdb27259b93f0"
+    },
+    "packaging_audit_historical.md": {
+      "source": "outputs/supplement_packaging_audit.md",
+      "bytes": 15843,
+      "sha256": "59fcc86750b91c472e7ba05bc9b89462256e17eb185253e420fecabcc85d55db"
+    },
+    "old_bundle_README_historical.md": {
+      "source": "outputs/author_review_bundle_d9d3a51.README.md",
+      "bytes": 4771,
+      "sha256": "2620bdfe995d26209ba36fe68528a7b0c7c3ce5c91a1fb88895c2dbc7105f5a0"
+    },
+    "author_handoff_20261007.md": {
+      "source": "outputs/author_handoff_20261007.md",
+      "bytes": 4127,
+      "sha256": "9dc7a4da68a172930d25247ba01f11a10f9e3b455e571147f2ba21a08b66477f"
+    }
+  }
+}

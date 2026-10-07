@@ -1,0 +1,118 @@
+{
+  "actions": {
+    "archive_builders_compiler_or_tests": false,
+    "model_array_dataset_access": false,
+    "network_or_UI": false,
+    "scientific_code_or_aggregation": false,
+    "source_or_repository_edits": false,
+    "written_artifact": "this separate review only"
+  },
+  "bindings": {
+    "copy_manifest_sha256": "88c97c355d6a8cc5623e6a377aa78500a1a939af22f631700e32d39343ecaa9c",
+    "current_manuscript_sha256": "c3bad4dcd3eb89070ad21c34e61615651b5556d86a938d890e71505704c00288",
+    "current_report_sha256": "bb76664ad0aea0989438af9ad7474f1fd0d109aa6482816e255ef9a741149cbb",
+    "independent_source_review_sha256": "21b8ad5aba3e3b64182688438ec12a4b368e9551739f7aa0fb8cdb88671c1e18",
+    "local_handoff_sha256": "9dc7a4da68a172930d25247ba01f11a10f9e3b455e571147f2ba21a08b66477f",
+    "optional_abstract_sha256": "e55de4c7e8fc84387a64796a8f47af2e8fe4cd929615d340e3d8f4e039ea3530",
+    "portable_handoff_sha256": "cb775efcc64a9feb050553928d1aa483b5104eca2e7e3d544b14ae68aa332d3d"
+  },
+  "content_checks": [
+    "All 13 copy_manifest payloads exactly match the declared source bytes, sizes and SHA256 values; the package contains those payloads plus README and copy_manifest, 15 files total.",
+    "All six primary relative links in repository AUTHOR_HANDOFF.md resolve. Manuscript, report and optional abstract targets are byte-identical to their current canonical files.",
+    "Portable and local handoff prose is identical apart from link targets. Root README points to the new manuscript and portable handoff.",
+    "The package checklist handoff link resolves after the rename to author_handoff_20261007.md; the obsolete author_handoff_local.md is absent.",
+    "October 7 08:00 UTC new-work cutoff and recorded 11:59 UTC submission deadline match the current plan.",
+    "PDF export/visual inspection, registration comparison, human scientific/AI disclosure verification, rights, anonymity, venue checks and author upload remain accurately pending.",
+    "The old author_review_bundle_d9d3a51 is explicitly historical, non-anonymous, incomplete for the latest studies and not a submission archive."
+  ],
+  "limits": "Local publication review only. No remote URL check, PDF rendered-content inspection, anonymous archive certification, comprehensive historical-link inventory or independent repeat of the source-definition audit. Native compilation is supported by the supplied saved result, not rerun here.",
+  "portability_caveat": "The exact archived local handoff linked by the packaged checklist retains six absolute /Users links. Those resolve on this Mac but are not portable. Package README identifies these as local copies and points to ../../../AUTHOR_HANDOFF.md, the portable primary. Root explicitly elected to preserve original bytes and record this caveat; no additional transformed copy is required for this author-review scope.",
+  "preserved_review_expectation_error": {
+    "disposition": "All copy/link/artifact/content assertions had already passed. Fresh status confirmed only README.md, AUTHOR_HANDOFF.md and the 15-file package are changed, now staged. This corrected review accepts that authorized state. No scientific or source defect was found and no prior review file was overwritten.",
+    "failed_expectation": "The receipt writer incorrectly required the authorized files to remain unstaged. Root staged the same 17-file set during the review.",
+    "original_tool": {
+      "chunk_id": "b3194a",
+      "exit_code": 1,
+      "original_token_count": 23,
+      "output": "Traceback (most recent call last):\n  File \"<stdin>\", line 51, in <module>\nAssertionError\n",
+      "wall_time_seconds": 0.311434333
+    }
+  },
+  "repository_scope": {
+    "actual_staged_union": [
+      {
+        "path": "AUTHOR_HANDOFF.md",
+        "status": "A "
+      },
+      {
+        "path": "README.md",
+        "status": "M "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/README.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/author_handoff_20261007.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/conference_experiments_main.tex",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/copy_manifest.json",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/edit_record.json",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/independent_review.json",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/initial_review_expectation_error.json",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/manuscript_body.tex",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/native_compile.json",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/old_bundle_README_historical.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/packaging_audit_historical.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/policy_source_trace.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/reader_memo.md",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/revised_manuscript.tex",
+        "status": "A "
+      },
+      {
+        "path": "research/results/kinematic_policy_clarity_20261007/submission_checklist.md",
+        "status": "A "
+      }
+    ],
+    "other_changed_files": [],
+    "root_authorized_staging": true
+  },
+  "reviewer": "/root/completion_curation",
+  "schema": "author_handoff_publication_narrow_review_curation_v1",
+  "verdict": "pass_with_documented_secondary_local_copy_portability_caveat"
+}

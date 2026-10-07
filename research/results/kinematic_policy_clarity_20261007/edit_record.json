@@ -1,0 +1,20 @@
+{
+  "scope": "Two explanatory additions only; no changed experiment, result, source implementation, title, abstract, existing math, figure or table.",
+  "main_addition": "Speed25 scores displacement magnitude; RMS25 scores relative velocity over native neighbors (Appendix~\\ref{sec:implementation-details}). ",
+  "appendix_addition": "\\paragraph{Full-model kinematic controls.}\nFor Goop and Sand, let $z_i^0,\\ldots,z_i^5$ be the current six-frame history. Speed25 uses $s_i=\\|z_i^5-z_i^4\\|_2$, computed in float32 without normalization or timestep division. RMS25 converts positions to float64 before computing $v_i=(z_i^5-z_i^4)/\\Delta t$ and $s_i=(|\\mathcal N_i|^{-1}\\sum_{j\\in\\mathcal N_i}\\|v_j-v_i\\|_2^2)^{1/2}$, with score zero for an empty neighborhood. Here $\\mathcal N_i$ contains incoming nonself neighbors remaining after the native base's 128-edge receiver cap. Self-edge candidates participate in that cap but are excluded from the RMS sum and count. Both studies use the adapter's fixed $\\Delta t=.0025$; autonomous entry also checks equality with metadata. Both controls rank optional pairs by $\\max(s_i,s_j)$ with lexicographic particle-ID ties. Histories are observed in common-state comparisons and updated with each policy's predictions in rollouts. Native pair construction queries each radius and then applies a strict float32-distance comparison ($d<r$ or $d<1.267r$, with $r=.015$); the annulus is expanded minus geometric base pairs. Incoming edges are ordered by receiver, distance and source ID before capping. Dense appends both directions of every annulus pair; sparse policies append their selected pairs. Neither restores short-range pairs omitted by the cap nor recaps the final graph.\n\n",
+  "files": {
+    "outputs/revised_manuscript.tex": {
+      "before_sha256": "a31587aeaf19f79893aaf297f00f4759516de34d2086f57f2966b3edee08be9e",
+      "after_sha256": "c3bad4dcd3eb89070ad21c34e61615651b5556d86a938d890e71505704c00288"
+    },
+    "work/manuscript_body.tex": {
+      "before_sha256": "311c7120730c47a86aee08d8f528697b919ad84c96fc887795bb6c4b8266f0e8",
+      "after_sha256": "dbac08be154067246c1c630e699990f4dfb2ef1431120d6c88250420daddeaae"
+    },
+    "work/conference_experiments_main.tex": {
+      "before_sha256": "22f44dcd10750741e16eeb390b86fb285993354a3b99308c360e4eda98dd2554",
+      "after_sha256": "7a3b359f6f38672c3de9d7b8843b8b1fec86ef4aed5fb0850c1956a7d6c92b2e"
+    }
+  },
+  "builder_matches_exact_two_additions": true
+}
